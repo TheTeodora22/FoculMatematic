@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Profil — Focul Matematic{% endblock %}
+
+{% block content %}
+<h1>Profilul tău</h1>
+<div class="card">
+    <p><strong>Utilizator:</strong> {{ profile.user.username }}</p>
+    <p><strong>Clasă:</strong> {{ profile.clasa }}</p>
+    <p><strong>Nivel:</strong> {{ profile.level }}</p>
+    <p><strong>XP:</strong> {{ profile.xp }}</p>
+    <p class="muted" style="margin-bottom:0;">Avatar: {{ profile.avatar }} · Temă: {{ profile.theme }}</p>
+</div>
+<p><a href="{% url 'quiz_list' %}">Mergi la chestionare</a></p>
+{% endblock %}

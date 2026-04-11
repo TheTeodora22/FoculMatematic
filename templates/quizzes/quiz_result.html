@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Rezultat — {{ quiz.title }}{% endblock %}
+
+{% block content %}
+<h1>Rezultat</h1>
+<p style="font-size:1.25rem;margin-bottom:0.5rem;">
+    <strong>{{ quiz.title }}</strong>
+</p>
+<p>
+    Ai obținut <strong>{{ attempt.score }}</strong> din <strong>{{ attempt.max_score }}</strong> puncte.
+</p>
+{% if attempt.max_score > 0 %}
+    {% widthratio attempt.score attempt.max_score 100 as pct %}
+    <p class="muted">Procent: {{ pct }}%</p>
+{% endif %}
+<p style="margin-top:1.5rem;">
+    <a class="btn" href="{% url 'quiz_list' %}">Alte chestionare</a>
+    {% if user.is_authenticated %}
+        <a href="{% url 'quiz_take' quiz.pk %}" style="margin-left:1rem;">Reîncearcă același chestionar</a>
+    {% endif %}
+</p>
+{% endblock %}

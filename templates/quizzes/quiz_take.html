@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}{{ quiz.title }} — Focul Matematic{% endblock %}
+
+{% block content %}
+<h1>{{ quiz.title }}</h1>
+<p class="muted">Dificultate: {{ quiz.get_difficulty_display }}</p>
+{% if quiz.description %}
+    <p>{{ quiz.description }}</p>
+{% endif %}
+
+{% if not questions %}
+    <p class="muted">Acest chestionar nu are încă întrebări.</p>
+    <p><a href="{% url 'quiz_list' %}">Înapoi la listă</a></p>
+{% else %}
+    <form method="post" action="">
+        {% csrf_token %}
+        {% for question in questions %}
+            <fieldset class="card" style="margin-top:1rem;">
+                <legend style="font-weight:600;padding:0 0.25rem;">Întrebarea {{ forloop.counter }}</legend>
+                <p style="margin:0.5rem 0 0;">{{ question.text }}</p>
+                <p class="muted" style="margin:0.25rem 0 0;">{{ question.points }} puncte</p>
+                <ul class="options">
+                    {% for option in question.options.all %}
+                        <li>
+                            <label>
+                                <input type="radio" name="q_{{ question.id }}" value="{{ option.id }}" required>
+                                {{ option.text }}
+                            </label>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </fieldset>
+        {% endfor %}
+        <p style="margin-top:1.25rem;">
+            <button type="submit" class="btn">Trimite răspunsurile</button>
+            <a href="{% url 'quiz_list' %}" class="muted" style="margin-left:1rem;">Anulează</a>
+        </p>
+    </form>
+{% endif %}
+{% endblock %}

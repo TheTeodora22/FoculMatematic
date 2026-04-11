@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}Acasă — Focul Matematic{% endblock %}
+
+{% block content %}
+<h1>Focul Matematic</h1>
+<p>Exersează matematica cu chestionare pentru gimnaziu și liceu.</p>
+<p><a class="btn" href="{% url 'quiz_list' %}">Vezi chestionarele</a></p>
+{% endblock %}

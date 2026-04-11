@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Focul Matematic{% endblock %}</title>
+    <style>
+        :root {
+            --bg: #0f1419;
+            --surface: #1a2332;
+            --text: #e7ecf3;
+            --muted: #8b9cb3;
+            --accent: #e85d04;
+            --accent-hover: #f48c06;
+            --border: #2d3a4d;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { color: var(--accent-hover); text-decoration: underline; }
+        header {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 0.75rem 1.25rem;
+        }
+        header nav {
+            max-width: 48rem;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+        }
+        header .brand { font-weight: 700; font-size: 1.1rem; }
+        header .links { display: flex; gap: 1rem; flex-wrap: wrap; margin-left: auto; }
+        main {
+            max-width: 48rem;
+            margin: 0 auto;
+            padding: 1.5rem 1.25rem 3rem;
+        }
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.5rem; margin: 0 0 1rem; }
+        h2 { font-size: 1.15rem; margin: 1.25rem 0 0.5rem; }
+        .muted { color: var(--muted); font-size: 0.9rem; }
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--bg) !important;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none !important;
+        }
+        .btn:hover { background: var(--accent-hover); color: var(--bg) !important; }
+        ul.options { list-style: none; padding: 0; margin: 0.5rem 0 0; }
+        ul.options li { margin: 0.35rem 0; }
+        .messages { list-style: none; padding: 0; margin: 0 0 1rem; }
+        .messages li { padding: 0.5rem; border-radius: 6px; background: var(--surface); border: 1px solid var(--border); }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            max-width: 22rem;
+            padding: 0.5rem 0.65rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 6px;
+        }
+    </style>
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="brand"><a href="{% url 'index' %}">Focul Matematic</a></span>
+            <span class="links">
+                <a href="{% url 'quiz_list' %}">Chestionare</a>
+                {% if user.is_authenticated %}
+                    <a href="{% url 'profile' %}">Profil ({{ user.username }})</a>
+                    <a href="{% url 'logout' %}">Deconectare</a>
+                {% else %}
+                    <a href="{% url 'login' %}">Conectare</a>
+                {% endif %}
+            </span>
+        </nav>
+    </header>
+    <main>
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
