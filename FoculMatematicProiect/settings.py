@@ -82,6 +82,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'quizzes.context_processors.quiz_navigation',
+                'FoculMatematic.context_processors.curriculum_navigation',
                 'accounts.context_processors.theme_preference',
             ],
         },

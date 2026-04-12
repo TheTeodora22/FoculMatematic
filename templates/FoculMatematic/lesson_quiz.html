@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz — {{ lesson.title }}{% endblock %}
+
+{% block content %}
+<p class="muted">
+  <a href="{% url 'lesson_detail' lesson.slug %}">← {{ lesson.title }}</a>
+</p>
+<h1>Quiz: {{ lesson.title }}</h1>
+
+{% if not questions %}
+  <p class="muted">Nu există întrebări pentru această lecție.</p>
+  <p><a href="{% url 'lesson_detail' lesson.slug %}">Înapoi la lecție</a></p>
+{% else %}
+  <form method="post" action="">
+    {% csrf_token %}
+    {% for question in questions %}
+      <fieldset class="card" style="margin-top:1rem;">
+        <legend style="font-weight:600;padding:0 0.25rem;">Întrebarea {{ forloop.counter }}</legend>
+        <p style="margin:0.5rem 0 0;">{{ question.text }}</p>
+        <p class="muted" style="margin:0.25rem 0 0;">{{ question.points }} puncte</p>
+        <ul class="options" style="list-style:none;padding-left:0;margin-top:0.75rem;">
+          {% for choice in question.choices.all %}
+            <li style="margin:0.35rem 0;">
+              <label>
+                <input type="radio" name="q_{{ question.id }}" value="{{ choice.id }}" required>
+                {{ choice.text }}
+              </label>
+            </li>
+          {% endfor %}
+        </ul>
+      </fieldset>
+    {% endfor %}
+    <p style="margin-top:1.25rem;">
+      <button type="submit" class="btn">Trimite răspunsurile</button>
+      <a href="{% url 'lesson_detail' lesson.slug %}" class="muted" style="margin-left:1rem;">Anulează</a>
+    </p>
+  </form>
+{% endif %}
+{% endblock %}

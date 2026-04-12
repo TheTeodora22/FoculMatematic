@@ -8,9 +8,10 @@
     <div class="herotext">
       <h1>Pregătire pentru <strong>matematică</strong> cu <strong>chestionare interactive</strong></h1>
       <p>
-        Exersează pe gimnaziu și liceu: alege un chestionar, răspunde la întrebări și vezi rezultatul imediat după trimitere.
+        Parcurge lecțiile pe clase și capitole, rezolvă quiz-uri după fiecare lecție și urmărește progresul. Poți folosi și chestionarele suplimentare după tag-uri.
       </p>
-      <a class="buton" href="{% url 'quiz_list' %}">Vezi chestionarele</a>
+      <a class="buton" href="{% url 'school_class_list' %}">Începe după clasă</a>
+      <a class="buton" href="{% url 'quiz_list' %}" style="margin-left:0.75rem;opacity:0.95;">Chestionare</a>
     </div>
 
     <img class="piramida hero-visual hero-visual--dark" src="{% static 'core/img/5-cell-ezgif.com-instagif.gif' %}" alt="">

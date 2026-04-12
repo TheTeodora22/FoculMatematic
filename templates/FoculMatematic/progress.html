@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Progres — Focul Matematic{% endblock %}
+
+{% block content %}
+<h1>Progresul tău</h1>
+
+<p>
+  Ai parcurs quiz-ul pentru
+  <strong>{{ completed_lesson_count }}</strong>
+  {% if completed_lesson_count == 1 %}lecție{% else %}lecții{% endif %}
+  (cel puțin o trimitere) și ai rezolvat în total
+  <strong>{{ total_quizzes }}</strong> quiz-uri.
+</p>
+
+<h2 style="margin-top:1.75rem;font-size:1.1rem;">Completare pe clasă</h2>
+{% if not class_rows %}
+  <p class="muted">Nu există clase configurate.</p>
+{% else %}
+  <ul style="list-style:none;padding-left:0;">
+    {% for row in class_rows %}
+      <li class="card" style="margin-top:0.75rem;padding:1rem;">
+        <strong>{{ row.school_class.title }}</strong>
+        <span class="muted"> — {{ row.completed_lessons }} / {{ row.total_lessons }} lecții</span>
+        {% if row.total_lessons %}
+          <span class="muted">({{ row.percent }}%)</span>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+<h2 style="margin-top:1.75rem;font-size:1.1rem;">Lecții completate</h2>
+{% if not completed_lessons %}
+  <p class="muted">Încă nu ai trimis niciun quiz. Explorează <a href="{% url 'school_class_list' %}">clasele</a>.</p>
+{% else %}
+  <ul style="padding-left:1.25rem;">
+    {% for les in completed_lessons %}
+      <li style="margin:0.35rem 0;">
+        <a href="{% url 'lesson_detail' les.slug %}">{{ les.title }}</a>
+        <span class="muted">({{ les.chapter.school_class.title }})</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+<h2 style="margin-top:1.75rem;font-size:1.1rem;">Ultimele scoruri</h2>
+{% if not recent_attempts %}
+  <p class="muted">Nicio încercare încă.</p>
+{% else %}
+  <ul style="list-style:none;padding-left:0;">
+    {% for att in recent_attempts %}
+      <li class="card" style="margin-top:0.5rem;padding:0.75rem 1rem;">
+        <a href="{% url 'lesson_quiz_results' att.lesson.slug att.id %}">{{ att.lesson.title }}</a>
+        <span class="muted"> — {{ att.score }}/{{ att.max_score }} · {{ att.created_at|date:"d.m.Y H:i" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+{% endblock %}

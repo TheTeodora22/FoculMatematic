@@ -48,10 +48,11 @@
         </li>
 
         <li><a href="{% url 'index' %}" onclick="closeSidebar()">Acasă</a></li>
+        <li><a href="{% url 'school_class_list' %}" onclick="closeSidebar()">Clase (lecții)</a></li>
         <li><a href="{% url 'quiz_list' %}" onclick="closeSidebar()">Chestionare</a></li>
-        <li><a href="{% url 'quiz_classes' %}" onclick="closeSidebar()">Clase</a></li>
         <li><a href="{% url 'quiz_exams' %}" onclick="closeSidebar()">Examene</a></li>
         {% if user.is_authenticated %}
+          <li><a href="{% url 'user_progress' %}" onclick="closeSidebar()">Progres</a></li>
           <li><a href="{% url 'profile' %}" onclick="closeSidebar()">Profil ({{ user.username }})</a></li>
         {% else %}
           <li><a href="{% url 'login' %}" onclick="closeSidebar()">Conectare</a></li>
@@ -64,7 +65,11 @@
         <li class="navMain has-dropdown">
           <button type="button" class="navDDToggle" aria-expanded="false" aria-controls="submenu-clase" id="nav-btn-clase">Clase</button>
           <ul class="submenu" id="submenu-clase" role="menu">
-            <li role="none"><a role="menuitem" href="{% url 'quiz_classes' %}">Toate clasele</a></li>
+            <li role="none"><a role="menuitem" href="{% url 'school_class_list' %}">Lecții pe clasă</a></li>
+            {% for sc in nav_school_classes %}
+            <li role="none"><a role="menuitem" href="{% url 'school_class_detail' sc.slug %}">{{ sc.title }}</a></li>
+            {% endfor %}
+            <li role="none"><a role="menuitem" href="{% url 'quiz_classes' %}">Chestionare pe clasă (tag-uri)</a></li>
             {% for tag in nav_quiz_class_tags %}
             <li role="none"><a role="menuitem" href="{% url 'quiz_list_by_tag' tag.slug %}">{{ tag.name }}</a></li>
             {% endfor %}
@@ -84,6 +89,7 @@
         <li class="navMain"><a href="{% url 'quiz_list' %}">Chestionare</a></li>
 
         {% if user.is_authenticated %}
+          <li class="navMain"><a href="{% url 'user_progress' %}">Progres</a></li>
           <li class="navMain"><a href="{% url 'profile' %}">Profil</a></li>
         {% else %}
           <li class="navMain"><a href="{% url 'login' %}">Conectare</a></li>

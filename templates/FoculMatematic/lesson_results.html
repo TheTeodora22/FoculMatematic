@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Rezultate — {{ lesson.title }}{% endblock %}
+
+{% block content %}
+<h1>Rezultate</h1>
+<p style="font-size:1.1rem;margin-bottom:0.5rem;">
+  <strong>{{ lesson.title }}</strong>
+</p>
+<p>
+  Ai obținut <strong>{{ attempt.score }}</strong> din <strong>{{ attempt.max_score }}</strong> puncte.
+</p>
+{% if attempt.max_score > 0 %}
+  {% widthratio attempt.score attempt.max_score 100 as pct %}
+  <p class="muted">Procent: {{ pct }}%</p>
+{% endif %}
+
+<h2 style="margin-top:1.75rem;font-size:1.1rem;">Detalii</h2>
+{% for row in detail_rows %}
+  <div class="card" style="margin-top:1rem;">
+    <p style="margin:0;font-weight:600;">Întrebarea {{ forloop.counter }}</p>
+    <p style="margin:0.35rem 0 0;">{{ row.question.text }}</p>
+    {% if row.picked %}
+      <p style="margin:0.5rem 0 0;">
+        Răspunsul tău: <strong>{{ row.picked.text }}</strong>
+        {% if row.picked_ok %}
+          <span class="muted">— corect</span>
+        {% else %}
+          <span class="muted">— greșit</span>
+        {% endif %}
+      </p>
+    {% endif %}
+    {% if row.correct_choice and not row.picked_ok %}
+      <p class="muted" style="margin:0.35rem 0 0;">
+        Răspuns corect: {{ row.correct_choice.text }}
+      </p>
+    {% endif %}
+  </div>
+{% endfor %}
+
+<p style="margin-top:1.5rem;">
+  <a class="btn" href="{% url 'lesson_quiz' lesson.slug %}">Reîncearcă quiz-ul</a>
+  <a href="{% url 'lesson_detail' lesson.slug %}" style="margin-left:1rem;">Înapoi la lecție</a>
+  <a href="{% url 'user_progress' %}" style="margin-left:1rem;">Progresul meu</a>
+</p>
+{% endblock %}

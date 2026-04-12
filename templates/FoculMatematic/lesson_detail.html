@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}{{ lesson.title }} — Focul Matematic{% endblock %}
+
+{% block content %}
+<p class="muted">
+  <a href="{% url 'school_class_detail' lesson.chapter.school_class.slug %}">← {{ lesson.chapter.school_class.title }}</a>
+  · {{ lesson.chapter.title }}
+</p>
+<h1>{{ lesson.title }}</h1>
+
+{% if lesson.content %}
+  <div class="lesson-body" style="margin-top:1rem;line-height:1.6;">
+    {{ lesson.content|linebreaks }}
+  </div>
+{% else %}
+  <p class="muted">Conținutul lecției va fi adăugat în curând.</p>
+{% endif %}
+
+<p style="margin-top:1.5rem;">
+  {% if user.is_authenticated %}
+    {% if has_questions %}
+      <a class="btn" href="{% url 'lesson_quiz' lesson.slug %}">Începe quiz-ul lecției</a>
+    {% else %}
+      <span class="muted">Quiz-ul nu este încă disponibil pentru această lecție.</span>
+    {% endif %}
+  {% else %}
+    <a class="btn" href="{% url 'login' %}?next={% url 'lesson_quiz' lesson.slug %}">Conectează-te pentru quiz</a>
+  {% endif %}
+</p>
+{% endblock %}

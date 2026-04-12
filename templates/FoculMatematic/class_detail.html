@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}{{ school_class.title }} — Focul Matematic{% endblock %}
+
+{% block content %}
+<h1>{{ school_class.title }}</h1>
+<p class="muted">
+  <a href="{% url 'school_class_list' %}">← Toate clasele</a>
+</p>
+
+{% if not chapters %}
+  <p class="muted">Nu există capitole pentru această clasă încă.</p>
+{% else %}
+  {% for chapter in chapters %}
+    <section class="card" style="margin-top:1.25rem;" id="capitol-{{ chapter.slug }}">
+      <h2 style="margin:0 0 0.75rem;">{{ chapter.title }}</h2>
+      {% if chapter.lessons.all %}
+        <ul style="margin:0;padding-left:1.25rem;">
+          {% for lesson in chapter.lessons.all %}
+            <li style="margin:0.35rem 0;">
+              <a href="{% url 'lesson_detail' lesson.slug %}">{{ lesson.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="muted" style="margin:0;">Nicio lecție încă în acest capitol.</p>
+      {% endif %}
+    </section>
+  {% endfor %}
+{% endif %}
+{% endblock %}

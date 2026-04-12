@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Clase — Focul Matematic{% endblock %}
+
+{% block content %}
+<h1>Clase</h1>
+<p class="muted">Alege clasa pentru a vedea capitolele și lecțiile.</p>
+
+<div class="hub-grid">
+  {% for sc in school_classes %}
+    <a class="card hub-card" href="{% url 'school_class_detail' sc.slug %}">
+      <h2 style="margin:0 0 0.35rem;">{{ sc.title }}</h2>
+      <p class="muted" style="margin:0;">Vezi capitolele</p>
+    </a>
+  {% empty %}
+    <p class="muted">Nu există încă clase configurate. Adaugă conținut din panoul de administrare.</p>
+  {% endfor %}
+</div>
+{% endblock %}
