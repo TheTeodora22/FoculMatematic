@@ -1,0 +1,521 @@
+/* Tema: light / dark / system (prefers-color-scheme) — aplicat pe <html data-theme="..."> */
+/* Fundal luminos principal: #FCEEEE */
+
+html[data-theme="dark"] body {
+    background: #352f36;
+}
+
+/* --- Temă luminosă (#FCEEEE + accente calde) --- */
+html[data-theme="light"] {
+    color-scheme: light;
+}
+
+html[data-theme="light"] body {
+    background: #fceeee;
+}
+
+html[data-theme="light"] .container {
+    background: #fceeee;
+}
+
+html[data-theme="light"] .content-area {
+    color: #3d3235;
+}
+
+html[data-theme="light"] .content-area a {
+    color: #b91c1c;
+}
+
+html[data-theme="light"] .content-area a:hover {
+    color: #dc2626;
+}
+
+html[data-theme="light"] .content-area h1 {
+    text-shadow: none;
+    color: #352a2d;
+}
+
+html[data-theme="light"] .content-area .muted {
+    color: #7a6569;
+}
+
+html[data-theme="light"] .card {
+    background: #fff8f8;
+    border-color: #e8cfcf;
+    box-shadow: 0 2px 12px rgba(92, 50, 55, 0.08);
+}
+
+html[data-theme="light"] .messages li {
+    background: #fff4f4;
+    border-color: #e0c4c4;
+    color: #3d3235;
+}
+
+html[data-theme="light"] .content-area input[type="text"],
+html[data-theme="light"] .content-area input[type="password"],
+html[data-theme="light"] .content-area input[type="email"],
+html[data-theme="light"] .content-area select {
+    background: #fffbfb;
+    border-color: #d8b8b8;
+    color: #3d3235;
+}
+
+html[data-theme="light"] .footer {
+    background: linear-gradient(180deg, #f0dbdb 0%, #e6cfcf 55%, #dec6c6 100%);
+    border-top: 1px solid #cfa8a8;
+    box-shadow: 0 -8px 28px rgba(80, 30, 35, 0.14);
+}
+
+html[data-theme="light"] .footer hr {
+    border-color: #c9a0a0;
+}
+
+html[data-theme="light"] .copyright p {
+    color: #5c3d42;
+    font-weight: 500;
+}
+
+html[data-theme="light"] .socialmedia .fa {
+    color: #7c0a02;
+}
+
+html[data-theme="light"] .smalllogo {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
+}
+
+html[data-theme="light"] .herotext h1,
+html[data-theme="light"] .herotext p {
+    color: #3d2e32;
+    text-shadow: none;
+}
+
+/* Buton hero: păstrăm animația glowing — interior deschis, contur gradient vizibil */
+html[data-theme="light"] .buton {
+    color: #4a2c24 !important;
+}
+
+html[data-theme="light"] .buton::after {
+    background-color: #fff8f8;
+}
+
+html[data-theme="light"] .buton::before {
+    opacity: 1 !important;
+    filter: blur(9px);
+    animation: glowing 20s linear infinite;
+}
+
+html[data-theme="light"] .buton:hover::after {
+    background: rgba(255, 248, 248, 0.35);
+}
+
+html[data-theme="light"] ul.options label {
+    color: #3d3235;
+}
+
+html[data-theme="light"] .card legend {
+    color: #3d3235;
+}
+
+html[data-theme="light"] .btn {
+    box-shadow: 0 2px 12px rgba(180, 50, 20, 0.22);
+}
+
+html[data-theme="light"] .quiz-tag-pill {
+    background: #fff8f8;
+    border-color: #dcbaba;
+    color: #8b3a0f !important;
+}
+
+html[data-theme="light"] a.hub-card {
+    color: #352a2d !important;
+}
+
+html[data-theme="light"] a.hub-card h2 {
+    color: #352a2d !important;
+}
+
+html[data-theme="light"] a.hub-card .muted {
+    color: #7a6569 !important;
+}
+
+html[data-theme="light"] .profile-actions__sep {
+    color: #9a7d82;
+}
+
+/* Submeniu navbar — fundal deschis, text închis cald (fără „negru tare”) */
+html[data-theme="light"] .submenu a {
+    background: #fffbfb;
+    color: #4a3a3e;
+    border-color: #e0c8c8;
+    text-shadow: none;
+}
+
+html[data-theme="light"] .submenu a:hover {
+    background: #fdeaea;
+    color: #7c0a02;
+    border-color: #d4a8a8;
+}
+
+/* Hero: imagine statică (PNG) pe luminos, GIF pe întunecat */
+.hero-visual--light {
+    display: none !important;
+}
+
+.hero-visual--dark {
+    display: block;
+}
+
+html[data-theme="light"] .hero-visual--dark {
+    display: none !important;
+}
+
+html[data-theme="light"] .hero-visual--light {
+    display: block !important;
+}
+
+/* --- System: luminos --- */
+@media (prefers-color-scheme: light) {
+    html[data-theme="system"] {
+        color-scheme: light;
+    }
+
+    html[data-theme="system"] body {
+        background: #fceeee;
+    }
+
+    html[data-theme="system"] .container {
+        background: #fceeee;
+    }
+
+    html[data-theme="system"] .content-area {
+        color: #3d3235;
+    }
+
+    html[data-theme="system"] .content-area a {
+        color: #b91c1c;
+    }
+
+    html[data-theme="system"] .content-area a:hover {
+        color: #dc2626;
+    }
+
+    html[data-theme="system"] .content-area h1 {
+        text-shadow: none;
+        color: #352a2d;
+    }
+
+    html[data-theme="system"] .content-area .muted {
+        color: #7a6569;
+    }
+
+    html[data-theme="system"] .card {
+        background: #fff8f8;
+        border-color: #e8cfcf;
+        box-shadow: 0 2px 12px rgba(92, 50, 55, 0.08);
+    }
+
+    html[data-theme="system"] .messages li {
+        background: #fff4f4;
+        border-color: #e0c4c4;
+        color: #3d3235;
+    }
+
+    html[data-theme="system"] .content-area input[type="text"],
+    html[data-theme="system"] .content-area input[type="password"],
+    html[data-theme="system"] .content-area input[type="email"],
+    html[data-theme="system"] .content-area select {
+        background: #fffbfb;
+        border-color: #d8b8b8;
+        color: #3d3235;
+    }
+
+    html[data-theme="system"] .footer {
+        background: linear-gradient(180deg, #f0dbdb 0%, #e6cfcf 55%, #dec6c6 100%);
+        border-top: 1px solid #cfa8a8;
+        box-shadow: 0 -8px 28px rgba(80, 30, 35, 0.14);
+    }
+
+    html[data-theme="system"] .footer hr {
+        border-color: #c9a0a0;
+    }
+
+    html[data-theme="system"] .copyright p {
+        color: #5c3d42;
+        font-weight: 500;
+    }
+
+    html[data-theme="system"] .socialmedia .fa {
+        color: #7c0a02;
+    }
+
+    html[data-theme="system"] .smalllogo {
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
+    }
+
+    html[data-theme="system"] .herotext h1,
+    html[data-theme="system"] .herotext p {
+        color: #3d2e32;
+        text-shadow: none;
+    }
+
+    html[data-theme="system"] .buton {
+        color: #4a2c24 !important;
+    }
+
+    html[data-theme="system"] .buton::after {
+        background-color: #fff8f8;
+    }
+
+    html[data-theme="system"] .buton::before {
+        opacity: 1 !important;
+        filter: blur(9px);
+        animation: glowing 20s linear infinite;
+    }
+
+    html[data-theme="system"] .buton:hover::after {
+        background: rgba(255, 248, 248, 0.35);
+    }
+
+    html[data-theme="system"] ul.options label {
+        color: #3d3235;
+    }
+
+    html[data-theme="system"] .card legend {
+        color: #3d3235;
+    }
+
+    html[data-theme="system"] .btn {
+        box-shadow: 0 2px 12px rgba(180, 50, 20, 0.22);
+    }
+
+    html[data-theme="system"] .quiz-tag-pill {
+        background: #fff8f8;
+        border-color: #dcbaba;
+        color: #8b3a0f !important;
+    }
+
+    html[data-theme="system"] .profile-actions__sep {
+        color: #9a7d82;
+    }
+
+    html[data-theme="system"] a.hub-card {
+        color: #352a2d !important;
+    }
+
+    html[data-theme="system"] a.hub-card h2 {
+        color: #352a2d !important;
+    }
+
+    html[data-theme="system"] a.hub-card .muted {
+        color: #7a6569 !important;
+    }
+
+    html[data-theme="system"] .submenu a {
+        background: #fffbfb;
+        color: #4a3a3e;
+        border-color: #e0c8c8;
+        text-shadow: none;
+    }
+
+    html[data-theme="system"] .submenu a:hover {
+        background: #fdeaea;
+        color: #7c0a02;
+        border-color: #d4a8a8;
+    }
+
+    html[data-theme="system"] .hero-visual--dark {
+        display: none !important;
+    }
+
+    html[data-theme="system"] .hero-visual--light {
+        display: block !important;
+    }
+}
+
+/* --- System: întunecat (implicit ca FMStyle) --- */
+@media (prefers-color-scheme: dark) {
+    html[data-theme="system"] body {
+        background: #352f36;
+    }
+
+    html[data-theme="system"] .hero-visual--light {
+        display: none !important;
+    }
+
+    html[data-theme="system"] .hero-visual--dark {
+        display: block !important;
+    }
+}
+
+/* Forțat întunecat — la fel ca stilul original */
+html[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+html[data-theme="dark"] .hero-visual--light {
+    display: none !important;
+}
+
+html[data-theme="dark"] .hero-visual--dark {
+    display: block !important;
+}
+
+/* Profil: formular */
+.settings-heading {
+    font-size: 1.15rem;
+    margin: 1.75rem 0 0.75rem;
+}
+
+.settings-card-title {
+    font-size: 1rem;
+    margin: 0 0 0.75rem;
+    font-weight: 600;
+}
+
+.settings-form label {
+    font-weight: 500;
+}
+
+.form-error {
+    display: block;
+    color: #f87171;
+    font-size: 0.88rem;
+    margin-top: 0.25rem;
+}
+
+.theme-field-label {
+    font-weight: 500;
+    margin: 0.75rem 0 0.5rem;
+}
+
+.theme-help {
+    margin: 0.85rem 0 0;
+    font-size: 0.9rem;
+    max-width: 26rem;
+}
+
+/* Comutator 3 stări: întunecat | sistem | luminos */
+.theme-toggle {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 340px;
+    background: rgba(0, 0, 0, 0.32);
+    border-radius: 9999px;
+    padding: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.theme-toggle__knob {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    width: calc((100% - 8px) / 3);
+    border-radius: 9999px;
+    background: linear-gradient(165deg, #4a4248, #312c32);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    transition: transform 0.32s cubic-bezier(0.34, 1.25, 0.56, 1);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.theme-toggle[data-current="system"] .theme-toggle__knob {
+    transform: translateX(100%);
+}
+
+.theme-toggle[data-current="light"] .theme-toggle__knob {
+    transform: translateX(200%);
+}
+
+.theme-toggle__btn {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 0;
+    margin: 0;
+    padding: 0.55rem 0.35rem;
+    border: none;
+    border-radius: 9999px;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(0.72rem, 2.2vw, 0.82rem);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.55);
+    background: transparent;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.15s ease;
+}
+
+.theme-toggle__btn:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.theme-toggle__btn[aria-pressed="true"] {
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.theme-toggle__btn:active {
+    transform: scale(0.97);
+}
+
+html[data-theme="light"] .theme-toggle {
+    background: #e5cfcf;
+    border-color: rgba(100, 50, 55, 0.14);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+html[data-theme="light"] .theme-toggle__knob {
+    background: linear-gradient(165deg, #fffdfd, #fceeee);
+    box-shadow: 0 2px 10px rgba(80, 35, 40, 0.12);
+}
+
+html[data-theme="light"] .theme-toggle__btn {
+    color: rgba(70, 48, 52, 0.5);
+}
+
+html[data-theme="light"] .theme-toggle__btn:hover {
+    color: rgba(70, 48, 52, 0.9);
+}
+
+html[data-theme="light"] .theme-toggle__btn[aria-pressed="true"] {
+    color: #4a3035;
+    text-shadow: none;
+}
+
+@media (prefers-color-scheme: light) {
+    html[data-theme="system"] .theme-toggle {
+        background: #e5cfcf;
+        border-color: rgba(100, 50, 55, 0.14);
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    html[data-theme="system"] .theme-toggle__knob {
+        background: linear-gradient(165deg, #fffdfd, #fceeee);
+        box-shadow: 0 2px 10px rgba(80, 35, 40, 0.12);
+    }
+
+    html[data-theme="system"] .theme-toggle__btn {
+        color: rgba(70, 48, 52, 0.5);
+    }
+
+    html[data-theme="system"] .theme-toggle__btn:hover {
+        color: rgba(70, 48, 52, 0.9);
+    }
+
+    html[data-theme="system"] .theme-toggle__btn[aria-pressed="true"] {
+        color: #4a3035;
+        text-shadow: none;
+    }
+}
+
+html[data-theme="light"] .form-error {
+    color: #b91c1c;
+}
+
+@media (prefers-color-scheme: light) {
+    html[data-theme="system"] .form-error {
+        color: #b91c1c;
+    }
+}
