@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Examene — Focul Matematic{% endblock %}
+
+{% block content %}
+<h1>Examene</h1>
+<p class="muted">Chestionare grupate după tipul de examen.</p>
+
+<div class="hub-grid">
+  {% for tag in exam_tags %}
+    <a class="card hub-card" href="{% url 'quiz_list_by_tag' tag.slug %}">
+      <h2 style="margin:0 0 0.35rem;">{{ tag.name }}</h2>
+      <p class="muted" style="margin:0;">Vezi chestionarele pentru acest examen</p>
+    </a>
+  {% empty %}
+    <p class="muted">Nu există încă categorii de examene configurate.</p>
+  {% endfor %}
+</div>
+
+<p style="margin-top:1.5rem;"><a href="{% url 'quiz_list' %}">Toate chestionarele</a></p>
+{% endblock %}

@@ -1,10 +1,18 @@
 {% extends "base.html" %}
 
-{% block title %}Chestionare — Focul Matematic{% endblock %}
+{% block title %}{% if current_tag %}{{ current_tag.name }} — chestionare{% else %}Chestionare{% endif %} — Focul Matematic{% endblock %}
 
 {% block content %}
-<h1>Chestionare</h1>
-<p class="muted">Alege un chestionar de matematică. Ai nevoie de cont pentru a trimite răspunsurile.</p>
+<h1>{% if current_tag %}Chestionare: {{ current_tag.name }}{% else %}Chestionare{% endif %}</h1>
+<p class="muted">
+  {% if current_tag %}
+    Afișăm chestionarele etichetate pentru această categorie.
+    <a href="{% if current_tag.kind == 'class' %}{% url 'quiz_classes' %}{% else %}{% url 'quiz_exams' %}{% endif %}">Înapoi la {% if current_tag.kind == 'class' %}Clase{% else %}Examene{% endif %}</a>
+    · <a href="{% url 'quiz_list' %}">Toate chestionarele</a>
+  {% else %}
+    Alege un chestionar de matematică. Ai nevoie de cont pentru a trimite răspunsurile.
+  {% endif %}
+</p>
 
 {% if not quizzes %}
     <p class="muted">Nu există încă chestionare. Revino curând.</p>
@@ -12,7 +20,18 @@
     {% for quiz in quizzes %}
         <article class="card">
             <h2 style="margin:0 0 0.25rem;">{{ quiz.title }}</h2>
-            <p class="muted" style="margin:0 0 0.75rem;">Dificultate: {{ quiz.get_difficulty_display }}</p>
+            <p class="muted" style="margin:0 0 0.35rem;">Dificultate: {{ quiz.get_difficulty_display }}</p>
+            {% with tag_list=quiz.tags.all %}
+            {% if tag_list %}
+            <p class="quiz-tag-row" style="margin:0 0 0.75rem;">
+              {% for t in tag_list %}
+                <a class="quiz-tag-pill" href="{% url 'quiz_list_by_tag' t.slug %}">{{ t.name }}</a>
+              {% endfor %}
+            </p>
+            {% else %}
+            <p class="muted" style="margin:0 0 0.75rem;">Fără categorii încă — le poți adăuga din admin.</p>
+            {% endif %}
+            {% endwith %}
             {% if quiz.description %}
                 <p style="margin:0 0 1rem;">{{ quiz.description }}</p>
             {% endif %}

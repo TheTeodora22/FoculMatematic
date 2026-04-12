@@ -3,31 +3,70 @@ from django.db.models import Prefetch
 from django.http import HttpResponseBadRequest
 from django.shortcuts import get_object_or_404, redirect, render
 
-from .models import AnswerOption, Question, Quiz, QuizAttempt
+from .models import AnswerOption, Question, Quiz, QuizAttempt, QuizQuestion, QuizTag
 
 
-def _quiz_with_questions():
-    return Quiz.objects.prefetch_related(
-        Prefetch(
-            "questions",
-            queryset=Question.objects.order_by("id").prefetch_related("options"),
-        )
+def _quiz_for_take(pk):
+    return get_object_or_404(
+        Quiz.objects.prefetch_related(
+            Prefetch(
+                "question_links",
+                queryset=QuizQuestion.objects.select_related("question")
+                .prefetch_related(
+                    Prefetch(
+                        "question__options",
+                        queryset=AnswerOption.objects.order_by("pk"),
+                    )
+                )
+                .order_by("order", "pk"),
+            )
+        ),
+        pk=pk,
     )
 
 
+def _ordered_questions(quiz):
+    return [link.question for link in quiz.question_links.all()]
+
+
 def quiz_list(request):
-    quizzes = Quiz.objects.order_by("title")
-    return render(request, "quizzes/quiz_list.html", {"quizzes": quizzes})
+    quizzes = Quiz.objects.prefetch_related("tags").order_by("title")
+    return render(
+        request,
+        "quizzes/quiz_list.html",
+        {"quizzes": quizzes, "current_tag": None},
+    )
 
 
-def _get_quiz_for_take(pk):
-    return get_object_or_404(_quiz_with_questions(), pk=pk)
+def quiz_list_by_tag(request, tag_slug):
+    tag = get_object_or_404(QuizTag, slug=tag_slug)
+    quizzes = (
+        Quiz.objects.filter(tags=tag)
+        .prefetch_related("tags")
+        .distinct()
+        .order_by("title")
+    )
+    return render(
+        request,
+        "quizzes/quiz_list.html",
+        {"quizzes": quizzes, "current_tag": tag},
+    )
+
+
+def class_hub(request):
+    tags = QuizTag.objects.filter(kind=QuizTag.KIND_CLASS).order_by("sort_order", "slug")
+    return render(request, "quizzes/class_hub.html", {"class_tags": tags})
+
+
+def exam_hub(request):
+    tags = QuizTag.objects.filter(kind=QuizTag.KIND_EXAM).order_by("sort_order", "slug")
+    return render(request, "quizzes/exam_hub.html", {"exam_tags": tags})
 
 
 @login_required
 def quiz_take(request, pk):
-    quiz = _get_quiz_for_take(pk)
-    questions = list(quiz.questions.all())
+    quiz = _quiz_for_take(pk)
+    questions = _ordered_questions(quiz)
 
     if request.method == "POST":
         valid_option_ids_by_question = {

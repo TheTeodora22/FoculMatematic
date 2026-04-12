@@ -1,0 +1,679 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', fantasy;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    min-width: 100%;
+    overflow: scroll;
+}
+header {
+    background: linear-gradient(120deg, #7C0A02, #B22222, #E25822);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 10%;
+    height: 10vh;
+    width:100%;
+  
+ 
+}
+.logo {
+    width: 30%;
+    pointer-events: none;
+    user-select: none;
+    min-width: 390px;
+}
+
+.nav__link {
+    list-style: none;
+    user-select: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav__link ul {
+    list-style: none;
+    user-select: none;
+}
+.nav__link li {
+    height: 40px;
+    padding: 0 6px;
+    position: relative;
+}
+.nav__link li a {
+    transition: all 0.3s ease 0s;
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+.nav__link li a:hover {
+    color: #a90710;
+}
+
+.navDDToggle {
+    font: inherit;
+    font-weight: 500;
+    font-size: inherit;
+    letter-spacing: inherit;
+    height: 100%;
+    padding: 0 10px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s ease 0s;
+}
+.navDDToggle:hover {
+    color: #a90710;
+}
+
+.nav__link > li,
+.nav__link > li > a {
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    font-size: clamp(0.78rem, 1.6vw, 0.88rem);
+    letter-spacing: 0.01em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__link > li > .navDDToggle {
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    font-size: clamp(0.78rem, 1.6vw, 0.88rem);
+    letter-spacing: 0.01em;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Specificitate mai mare decât regula de mai sus — roșu la hover ca linkurile */
+.nav__link > li > .navDDToggle:hover {
+    color: #a90710;
+}
+
+/* Lipit de rândul de nav: fără „falie” între Clase/Examene și listă (evită bounce) */
+.submenu {
+    left: 0;
+    top: 100%;
+    margin-top: -6px;
+    padding-top: 6px;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 50;
+    pointer-events: none;
+    transition: opacity 0.15s ease, visibility 0.15s ease;
+    transition-delay: 0.05s;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+}
+.nav__link li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition-delay: 0s;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .nav__link li.has-dropdown:hover .submenu {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .nav__link li.nav-dropdown-open .submenu {
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+        z-index: 1000;
+    }
+}
+
+.submenu li {
+    float: none;
+    width: 150%;
+    padding-bottom: 5px;
+    
+}
+.submenu a:hover {
+    background: #312c32;
+    color: #000000;
+    text-decoration: none;
+}
+.submenu a,
+.submenu a:visited,
+.submenu a:focus {
+    text-decoration: none;
+}
+.submenu a {
+    background: #352f36;
+    color: #dcd4c5;
+    text-shadow: 2px 2px 5px black;
+    border-radius: 5%;
+    padding: 0 0.5rem;
+    border-width: 3px;
+    border-color: #312c32;
+    border-style: solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 2.75rem;
+    line-height: 1.25;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(63, 56, 65, 0.747);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    user-select: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+.sidebar ul {
+    list-style: none;
+    user-select: none;
+    padding-left: 0;
+    margin: 0;
+}
+.sidebar li {
+    height: 50px;
+    padding: 0px 20px;
+    position: relative;
+    width: 100%;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+.sidebar li:hover {
+    background-color: #312c32;
+}
+.sidebar li a {
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #000;
+    text-decoration: none;
+}
+.sidebar li a:hover {
+    color: #a90710;
+}
+.sidebar li:first-child {
+    margin-right: auto;
+}
+.sidebar > li,
+.sidebar > li > a {
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+}
+.sidebar .submenu {
+    position: absolute;
+    left: 100%; 
+    top: 0; 
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    transition: opacity 0.3s, visibility 0.3s;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding-left: 10px;
+    display: none;
+    flex-direction: column;
+}
+
+.sidebar li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar .submenu li {
+
+    width: 100%;
+    padding: 5px 20px;
+}
+.sidebar .submenu a:hover {
+    background: #D1D5DB;
+    color: #000000;
+    text-decoration: none;
+}
+.sidebar .submenu li a,
+.sidebar .submenu li a:visited,
+.sidebar .submenu li a:focus {
+    color: #000000;
+    padding: 0 8px;
+    min-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.25;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1025px) {
+    .navHamburger {
+        display: none !important;
+    }
+    .sidebar
+    {
+        display: none;
+    }
+    .hero
+    {
+        padding-bottom: 200px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .navMain {
+        display: none !important;
+    }
+    /* Hero: text deasupra, GIF dedesubt — fără comprimare pe lățime */
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 6vh;
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 1.5rem;
+    }
+    .herotext {
+        width: 100%;
+        max-width: 32rem;
+        text-align: center;
+    }
+    .herotext h1 {
+        font-size: clamp(1.3rem, 5.5vw, 1.85rem);
+    }
+    .herotext p {
+        font-size: clamp(0.95rem, 3.8vw, 1.1rem);
+        padding-top: 1rem;
+        padding-bottom: 1.25rem;
+    }
+    .piramida {
+        width: min(88vw, 360px);
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .navHamburger {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo
+    {
+        width: 50%;
+        min-width: 0px;
+    }
+    .smalllogo
+    {
+        min-width: 25%;
+    }
+   
+}
+@media screen and (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+.container {
+    width: 100%;
+    min-height: 90vh;
+    background: #352f36;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.hero {
+    width: 100%;
+    background: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 15vh;
+    padding-right: 10px;
+    padding-left: 20px;
+}
+.piramida
+{
+    width:35vw;
+    height: auto;
+}
+.herotext
+{
+    height: 100%;
+    width: 45%;
+   
+}
+.herotext h1
+{
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+    font-size: 	5vw;
+    text-shadow: 2px 2px 5px black;
+    color:#dcd4c5;
+}
+.herotext strong
+{
+    font-weight: 100;
+}
+.herotext p{
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 2vw;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-shadow: 2px 2px 5px black;
+    color:#dcd4c5;
+}
+
+.buton
+{
+    margin: 10px;
+    padding: 20px 30px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    color: #dcd4c5;
+    font-size: clamp(0.95rem, 2vw, 1.15rem);
+    text-align: center;
+    display: inline-block;
+}
+.buton::after
+{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #352f36;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    color: #dcd4c5;
+}
+.buton::before
+{
+    content: "";
+    background: linear-gradient(45deg, #7C0A02, #B22222, #E25822, #B22222, #7C0A02 );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600% ;
+    z-index: -2;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+    color: #dcd4c5;
+}
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+.buton:hover::before
+{
+    opacity: 1;
+}
+.buton:hover::after
+{
+    background: transparent;
+}
+.buton:active::before
+{
+    opacity: 1;
+}
+.buton:active
+{
+    font-weight: bold;
+}
+.footer
+{
+    background-color: #312c32;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px -10px 10px #312c32;
+    height: 15%;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.smalllogo
+{
+    padding-top: 10px;
+    max-width: 20%;
+    
+}
+hr
+{
+    width:90%;
+    border: 0.5px solid #352f36;
+    border-radius: 5px;
+}
+.copyright
+{
+    padding: 10px;
+}
+.copyright p
+{
+    font-size: small;
+    font-family: "Montserrat";
+    font-weight: 200;
+}
+.socialmedia
+{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+.socialmedia .fa {
+    padding: 12px;
+    font-size: 1.35rem;
+    width: auto;
+    min-width: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #dcd4c5;
+}
+
+/* Zonă principală (pagini aplicație) */
+.content-area {
+    align-self: stretch;
+    width: 100%;
+    flex: 1;
+    padding: 2rem 6% 3rem;
+    box-sizing: border-box;
+    color: #dcd4c5;
+}
+.content-area a {
+    color: #f4a261;
+    text-decoration: none;
+}
+.content-area a:hover {
+    color: #ffc078;
+    text-decoration: underline;
+}
+.content-area h1 {
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+    font-size: clamp(1.35rem, 3vw, 1.75rem);
+    margin: 0 0 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+}
+.content-area h2 {
+    font-size: 1.1rem;
+    margin: 1.25rem 0 0.5rem;
+}
+.content-area .muted {
+    color: #a39e9a;
+    font-size: 0.95rem;
+}
+.messages {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.25rem;
+}
+.messages li {
+    padding: 0.65rem 1rem;
+    border-radius: 8px;
+    background: #312c32;
+    border: 1px solid #4a4248;
+    margin-bottom: 0.5rem;
+}
+.card {
+    background: #312c32;
+    border: 1px solid #4a4248;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.card legend {
+    color: #dcd4c5;
+    font-family: 'Montserrat', serif;
+}
+.btn {
+    display: inline-block;
+    margin-top: 0.25rem;
+    padding: 0.55rem 1.15rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none !important;
+    color: #1a120e !important;
+    background: linear-gradient(120deg, #e25822, #f4a261);
+}
+.btn:hover {
+    filter: brightness(1.08);
+    color: #1a120e !important;
+}
+ul.options {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+}
+ul.options li {
+    margin: 0.4rem 0;
+}
+ul.options label {
+    cursor: pointer;
+    color: #dcd4c5;
+}
+.content-area input[type="text"],
+.content-area input[type="password"],
+.content-area input[type="email"] {
+    width: 100%;
+    max-width: 22rem;
+    padding: 0.5rem 0.65rem;
+    margin-top: 0.25rem;
+    background: #252028;
+    border: 1px solid #4a4248;
+    color: #dcd4c5;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+.content-area fieldset.card {
+    min-width: 0;
+}
+.profile-actions {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+.profile-actions__sep {
+    margin: 0 0.35rem;
+    color: #a39e9a;
+}
+a.buton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    color: #dcd4c5 !important;
+    vertical-align: middle;
+}
+
+.hub-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+a.hub-card {
+    display: block;
+    text-decoration: none !important;
+    color: inherit !important;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+a.hub-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+.quiz-tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+.quiz-tag-pill {
+    display: inline-block;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    background: #252028;
+    border: 1px solid #5c5359;
+    color: #f4d9c6 !important;
+    text-decoration: none !important;
+}
+.quiz-tag-pill:hover {
+    border-color: #e25822;
+    color: #ffc078 !important;
+}

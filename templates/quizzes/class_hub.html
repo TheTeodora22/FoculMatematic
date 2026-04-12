@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Clase — Focul Matematic{% endblock %}
+
+{% block content %}
+<h1>Clase</h1>
+<p class="muted">Alege clasa pentru a vedea chestionarele potrivite nivelului tău.</p>
+
+<div class="hub-grid">
+  {% for tag in class_tags %}
+    <a class="card hub-card" href="{% url 'quiz_list_by_tag' tag.slug %}">
+      <h2 style="margin:0 0 0.35rem;">{{ tag.name }}</h2>
+      <p class="muted" style="margin:0;">Vezi chestionarele pentru această clasă</p>
+    </a>
+  {% empty %}
+    <p class="muted">Nu există încă categorii de clase configurate.</p>
+  {% endfor %}
+</div>
+
+<p style="margin-top:1.5rem;"><a href="{% url 'quiz_list' %}">Toate chestionarele</a></p>
+{% endblock %}

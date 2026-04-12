@@ -4,12 +4,126 @@
 
 {% block content %}
 <h1>Profilul tău</h1>
-<div class="card">
-    <p><strong>Utilizator:</strong> {{ profile.user.username }}</p>
-    <p><strong>Clasă:</strong> {{ profile.clasa }}</p>
-    <p><strong>Nivel:</strong> {{ profile.level }}</p>
-    <p><strong>XP:</strong> {{ profile.xp }}</p>
-    <p class="muted" style="margin-bottom:0;">Avatar: {{ profile.avatar }} · Temă: {{ profile.theme }}</p>
+
+<div class="card profile-summary">
+  <p><strong>Utilizator:</strong> {{ profile.user.username }}</p>
+  <p><strong>Clasă:</strong> {{ profile.clasa }}</p>
+  <p><strong>Nivel:</strong> {{ profile.level }}</p>
+  <p><strong>XP:</strong> {{ profile.xp }}</p>
+  <p class="muted" style="margin-bottom:0;">Avatar: {{ profile.avatar }}</p>
 </div>
-<p><a href="{% url 'quiz_list' %}">Mergi la chestionare</a></p>
+
+<h2 class="settings-heading">Cont</h2>
+<div class="card">
+  <h3 class="settings-card-title">Schimbă numele de utilizator</h3>
+  <form method="post" action="" class="settings-form">
+    {% csrf_token %}
+    <input type="hidden" name="action" value="username">
+    <p>
+      <label for="id_username">{{ username_form.username.label }}</label><br>
+      {{ username_form.username }}
+      {% if username_form.username.errors %}
+        <span class="form-error">{{ username_form.username.errors.0 }}</span>
+      {% endif %}
+    </p>
+    <button type="submit" class="btn">Salvează</button>
+  </form>
+</div>
+
+<div class="card">
+  <h3 class="settings-card-title">Schimbă parola</h3>
+  <form method="post" action="" class="settings-form">
+    {% csrf_token %}
+    <input type="hidden" name="action" value="password">
+    <p>
+      <label for="id_old_password">{{ password_form.old_password.label }}</label><br>
+      {{ password_form.old_password }}
+      {% if password_form.old_password.errors %}
+        <span class="form-error">{{ password_form.old_password.errors.0 }}</span>
+      {% endif %}
+    </p>
+    <p>
+      <label for="id_new_password1">{{ password_form.new_password1.label }}</label><br>
+      {{ password_form.new_password1 }}
+      {% if password_form.new_password1.errors %}
+        <span class="form-error">{{ password_form.new_password1.errors.0 }}</span>
+      {% endif %}
+    </p>
+    <p>
+      <label for="id_new_password2">{{ password_form.new_password2.label }}</label><br>
+      {{ password_form.new_password2 }}
+      {% if password_form.new_password2.errors %}
+        <span class="form-error">{{ password_form.new_password2.errors.0 }}</span>
+      {% endif %}
+    </p>
+    {% if password_form.non_field_errors %}
+      <p class="form-error">{{ password_form.non_field_errors.0 }}</p>
+    {% endif %}
+    <button type="submit" class="btn">Actualizează parola</button>
+  </form>
+</div>
+
+<h2 class="settings-heading">Aspect</h2>
+<div class="card">
+  <h3 class="settings-card-title">Temă</h3>
+  <form method="post" action="" class="settings-form" id="profile-theme-form">
+    {% csrf_token %}
+    <input type="hidden" name="action" value="theme">
+    {{ theme_form.theme }}
+    {% if theme_form.theme.errors %}
+      <p class="form-error">{{ theme_form.theme.errors.0 }}</p>
+    {% endif %}
+    <p class="theme-field-label" id="theme-toggle-label">{{ theme_form.theme.label }}</p>
+    <div
+      class="theme-toggle"
+      role="group"
+      aria-labelledby="theme-toggle-label"
+      data-current="{{ profile.theme }}"
+    >
+      <span class="theme-toggle__knob" aria-hidden="true"></span>
+      <button type="button" class="theme-toggle__btn" data-theme="dark" aria-pressed="false">Întunecat</button>
+      <button type="button" class="theme-toggle__btn" data-theme="system" aria-pressed="false">Sistem</button>
+      <button type="button" class="theme-toggle__btn" data-theme="light" aria-pressed="false">Luminos</button>
+    </div>
+    <p class="muted theme-help">{{ theme_form.theme.help_text }}</p>
+  </form>
+</div>
+
+<p class="profile-actions">
+  <a href="{% url 'quiz_list' %}">Mergi la chestionare</a>
+  <span class="profile-actions__sep">·</span>
+  <a href="{% url 'logout' %}">Deconectare</a>
+</p>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+(function () {
+  var form = document.getElementById("profile-theme-form");
+  if (!form) return;
+  var hidden = form.querySelector('input[name="theme"]');
+  var toggle = form.querySelector(".theme-toggle");
+  var buttons = form.querySelectorAll(".theme-toggle__btn");
+  if (!hidden || !toggle || !buttons.length) return;
+
+  function setVisual(value) {
+    toggle.setAttribute("data-current", value);
+    hidden.value = value;
+    buttons.forEach(function (btn) {
+      btn.setAttribute("aria-pressed", btn.getAttribute("data-theme") === value ? "true" : "false");
+    });
+  }
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var v = btn.getAttribute("data-theme");
+      if (!v || hidden.value === v) return;
+      setVisual(v);
+      form.submit();
+    });
+  });
+
+  setVisual(hidden.value || "system");
+})();
+</script>
 {% endblock %}

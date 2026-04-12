@@ -1,9 +1,19 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Acasă — Focul Matematic{% endblock %}
 
 {% block content %}
-<h1>Focul Matematic</h1>
-<p>Exersează matematica cu chestionare pentru gimnaziu și liceu.</p>
-<p><a class="btn" href="{% url 'quiz_list' %}">Vezi chestionarele</a></p>
+  <div class="hero">
+    <div class="herotext">
+      <h1>Pregătire pentru <strong>matematică</strong> cu <strong>chestionare interactive</strong></h1>
+      <p>
+        Exersează pe gimnaziu și liceu: alege un chestionar, răspunde la întrebări și vezi rezultatul imediat după trimitere.
+      </p>
+      <a class="buton" href="{% url 'quiz_list' %}">Vezi chestionarele</a>
+    </div>
+
+    <img class="piramida hero-visual hero-visual--dark" src="{% static 'core/img/5-cell-ezgif.com-instagif.gif' %}" alt="">
+    <img class="piramida hero-visual hero-visual--light" src="{% static 'core/img/5-cell-light.gif' %}" alt="">
+  </div>
 {% endblock %}

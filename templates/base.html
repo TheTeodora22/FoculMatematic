@@ -1,112 +1,135 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="ro" data-theme="{{ theme_pref }}">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}Focul Matematic{% endblock %}</title>
-    <style>
-        :root {
-            --bg: #0f1419;
-            --surface: #1a2332;
-            --text: #e7ecf3;
-            --muted: #8b9cb3;
-            --accent: #e85d04;
-            --accent-hover: #f48c06;
-            --border: #2d3a4d;
-        }
-        * { box-sizing: border-box; }
-        body {
-            margin: 0;
-            min-height: 100vh;
-            font-family: system-ui, "Segoe UI", Roboto, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.5;
-        }
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { color: var(--accent-hover); text-decoration: underline; }
-        header {
-            background: var(--surface);
-            border-bottom: 1px solid var(--border);
-            padding: 0.75rem 1.25rem;
-        }
-        header nav {
-            max-width: 48rem;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 1rem;
-        }
-        header .brand { font-weight: 700; font-size: 1.1rem; }
-        header .links { display: flex; gap: 1rem; flex-wrap: wrap; margin-left: auto; }
-        main {
-            max-width: 48rem;
-            margin: 0 auto;
-            padding: 1.5rem 1.25rem 3rem;
-        }
-        .card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.25rem 1.5rem;
-            margin-bottom: 1rem;
-        }
-        h1 { font-size: 1.5rem; margin: 0 0 1rem; }
-        h2 { font-size: 1.15rem; margin: 1.25rem 0 0.5rem; }
-        .muted { color: var(--muted); font-size: 0.9rem; }
-        .btn {
-            display: inline-block;
-            background: var(--accent);
-            color: var(--bg) !important;
-            font-weight: 600;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            border: none;
-            cursor: pointer;
-            text-decoration: none !important;
-        }
-        .btn:hover { background: var(--accent-hover); color: var(--bg) !important; }
-        ul.options { list-style: none; padding: 0; margin: 0.5rem 0 0; }
-        ul.options li { margin: 0.35rem 0; }
-        .messages { list-style: none; padding: 0; margin: 0 0 1rem; }
-        .messages li { padding: 0.5rem; border-radius: 6px; background: var(--surface); border: 1px solid var(--border); }
-        input[type="text"], input[type="password"], input[type="email"] {
-            width: 100%;
-            max-width: 22rem;
-            padding: 0.5rem 0.65rem;
-            background: var(--bg);
-            border: 1px solid var(--border);
-            color: var(--text);
-            border-radius: 6px;
-        }
-    </style>
-    {% block extra_css %}{% endblock %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{% block title %}Focul Matematic | Resurse Bacalaureat si Evaluarea Nationala{% endblock %}</title>
+
+  <meta name="description"
+        content="Descoperă secretul succesului la Bacalaureat și Evaluarea Națională cu cursuri interactive, resurse premium și ghidare pas cu pas spre rezultate excelente!"/>
+
+  <link rel="canonical" href="{% block canonical %}{% endblock %}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="{% static 'core/img/FMImage.png' %}">
+  <link rel="stylesheet" href="{% static 'core/css/FMStyle.css' %}">
+  <link rel="stylesheet" href="{% static 'core/css/FMTheme.css' %}">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Focul-Matematic-Acasa">
+
+  {% block extra_head %}{% endblock %}
+  {% block extra_css %}{% endblock %}
 </head>
+
 <body>
-    <header>
-        <nav>
-            <span class="brand"><a href="{% url 'index' %}">Focul Matematic</a></span>
-            <span class="links">
-                <a href="{% url 'quiz_list' %}">Chestionare</a>
-                {% if user.is_authenticated %}
-                    <a href="{% url 'profile' %}">Profil ({{ user.username }})</a>
-                    <a href="{% url 'logout' %}">Deconectare</a>
-                {% else %}
-                    <a href="{% url 'login' %}">Conectare</a>
-                {% endif %}
-            </span>
-        </nav>
-    </header>
-    <main>
-        {% if messages %}
-            <ul class="messages">
-                {% for message in messages %}
-                    <li>{{ message }}</li>
-                {% endfor %}
-            </ul>
+  <header>
+    <a href="{% url 'index' %}">
+      <img class="logo" src="{% static 'core/img/Focul-Matematic.png' %}" alt="Focul Matematic">
+    </a>
+
+    <nav>
+      <ul class="sidebar">
+        <li onclick="closeSidebar()">
+          <a href="#" aria-label="Închide meniul">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+            </svg>
+          </a>
+        </li>
+
+        <li><a href="{% url 'index' %}" onclick="closeSidebar()">Acasă</a></li>
+        <li><a href="{% url 'quiz_list' %}" onclick="closeSidebar()">Chestionare</a></li>
+        <li><a href="{% url 'quiz_classes' %}" onclick="closeSidebar()">Clase</a></li>
+        <li><a href="{% url 'quiz_exams' %}" onclick="closeSidebar()">Examene</a></li>
+        {% if user.is_authenticated %}
+          <li><a href="{% url 'profile' %}" onclick="closeSidebar()">Profil ({{ user.username }})</a></li>
+        {% else %}
+          <li><a href="{% url 'login' %}" onclick="closeSidebar()">Conectare</a></li>
         {% endif %}
-        {% block content %}{% endblock %}
-    </main>
+      </ul>
+
+      <ul class="nav__link">
+        <li class="navMain"><a href="{% url 'index' %}">Acasă</a></li>
+
+        <li class="navMain has-dropdown">
+          <button type="button" class="navDDToggle" aria-expanded="false" aria-controls="submenu-clase" id="nav-btn-clase">Clase</button>
+          <ul class="submenu" id="submenu-clase" role="menu">
+            <li role="none"><a role="menuitem" href="{% url 'quiz_classes' %}">Toate clasele</a></li>
+            {% for tag in nav_quiz_class_tags %}
+            <li role="none"><a role="menuitem" href="{% url 'quiz_list_by_tag' tag.slug %}">{{ tag.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+
+        <li class="navMain has-dropdown">
+          <button type="button" class="navDDToggle" aria-expanded="false" aria-controls="submenu-examene" id="nav-btn-examene">Examene</button>
+          <ul class="submenu" id="submenu-examene" role="menu">
+            <li role="none"><a role="menuitem" href="{% url 'quiz_exams' %}">Toate examenele</a></li>
+            {% for tag in nav_quiz_exam_tags %}
+            <li role="none"><a role="menuitem" href="{% url 'quiz_list_by_tag' tag.slug %}">{{ tag.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+
+        <li class="navMain"><a href="{% url 'quiz_list' %}">Chestionare</a></li>
+
+        {% if user.is_authenticated %}
+          <li class="navMain"><a href="{% url 'profile' %}">Profil</a></li>
+        {% else %}
+          <li class="navMain"><a href="{% url 'login' %}">Conectare</a></li>
+        {% endif %}
+
+        <li onclick="showSidebar()" class="navHamburger">
+          <a href="#" aria-label="Deschide meniul">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="content-area">
+      {% if messages %}
+        <ul class="messages">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% block content %}{% endblock %}
+    </div>
+
+    <footer class="footer">
+      <img class="smalllogo" src="{% static 'core/img/Focul-Matematic.png' %}" alt="logo">
+
+      <div class="socialmedia">
+        <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa fa-youtube"></i></a>
+      </div>
+
+      <hr>
+
+      <div class="copyright">
+        <p>© {% now "Y" %}. All rights reserved</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="{% static 'core/js/FMJava.js' %}"></script>
+  {% block extra_js %}{% endblock %}
 </body>
 </html>
