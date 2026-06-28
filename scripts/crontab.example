@@ -1,0 +1,7 @@
+# Backup zilnic la 03:15 (ora locală). Instalare: crontab -e și adaugă o linie
+# (înlocuiește calea cu cea reală a proiectului).
+#
+# 15 3 * * * /home/teo/Proiecte/FoculMatematic/FoculMatematicProiect/scripts/daily-backup.sh >> /home/teo/Proiecte/FoculMatematic/FoculMatematicProiect/backups/cron.log 2>&1
+#
+# Păstrează backup-uri 60 de zile:
+# 15 3 * * * /cale/către/proiect/scripts/daily-backup.sh --keep-days 60 >> /cale/către/proiect/backups/cron.log 2>&1

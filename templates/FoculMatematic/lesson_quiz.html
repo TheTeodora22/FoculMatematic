@@ -12,8 +12,11 @@
   <p class="muted">Nu există întrebări pentru această lecție.</p>
   <p><a href="{% url 'lesson_detail' lesson.slug %}">Înapoi la lecție</a></p>
 {% else %}
-  <form method="post" action="">
+  <form method="post" action="" class="fm-prevent-double-submit">
     {% csrf_token %}
+    {% if form_token %}
+    <input type="hidden" name="fm_form_token" value="{{ form_token }}">
+    {% endif %}
     {% for question in questions %}
       <fieldset class="card" style="margin-top:1rem;">
         <legend style="font-weight:600;padding:0 0.25rem;">Întrebarea {{ forloop.counter }}</legend>

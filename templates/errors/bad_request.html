@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Cerere invalidă — Focul Matematic{% endblock %}
+
+{% block content %}
+<h1>400 — Cerere invalidă</h1>
+<p class="muted" style="max-width:36rem;line-height:1.55;">{{ error_message }}</p>
+<p style="margin-top:1.25rem;display:flex;flex-wrap:wrap;gap:0.5rem;">
+  {% if retry_url %}
+    <a class="btn" href="{{ retry_url }}">{{ retry_label }}</a>
+  {% endif %}
+  <a class="btn" href="{% url 'index' %}">Acasă</a>
+</p>
+{% endblock %}

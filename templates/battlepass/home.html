@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}BattlePass — Focul Matematic{% endblock %}
+
+{% block content %}
+<h1>BattlePass</h1>
+
+{% if not season %}
+  <div class="card" style="margin-top:1rem;">
+    <p class="muted" style="margin:0;">
+      Momentan nu există un sezon activ. Revino mai târziu sau întreabă administratorul site-ului.
+    </p>
+    <p style="margin-top:1rem;margin-bottom:0;">
+      Progresul tău la nivel se vede în <a href="{% url 'profile' %}">profil</a>.
+    </p>
+  </div>
+{% else %}
+  <p class="muted" style="margin-top:0.25rem;">
+    {{ season.name }} · {{ season.start_date|date:"d.m.Y" }} – {{ season.end_date|date:"d.m.Y" }}
+  </p>
+
+  {% if user.is_authenticated %}
+    <p style="margin-top:0.75rem;">
+      Nivelul tău curent: <strong>{{ user_level }}</strong>
+      (urcă nivelul exersând — vezi <a href="{% url 'profile' %}">profilul</a>).
+    </p>
+  {% else %}
+    <p class="muted" style="margin-top:0.75rem;">
+      <a href="{% url 'login' %}?next={% url 'battlepass_home' %}">Conectează-te</a> pentru a revendica recompensele.
+    </p>
+  {% endif %}
+
+  <div class="hub-grid" style="margin-top:1.25rem;">
+    {% for row in tier_cards %}
+      {% with tier=row.tier %}
+      <div class="card hub-card" style="cursor:default;text-decoration:none;color:inherit;">
+        <h2 style="margin:0 0 0.35rem;font-size:1.05rem;">Nivel necesar: {{ tier.level_req }}</h2>
+        <p style="margin:0 0 0.35rem;font-weight:600;">{{ tier.reward_name }}</p>
+        <p class="muted" style="margin:0;font-size:0.88rem;">
+          Tip: {{ tier.get_reward_type_display }}
+          {% if tier.reward_value %}· {{ tier.reward_value }}{% endif %}
+        </p>
+        {% if user.is_authenticated %}
+          {% if row.claimed %}
+            <p style="margin:0.75rem 0 0;color:#86efac;font-weight:600;">Revendicat</p>
+          {% elif row.unlocked %}
+            <form method="post" action="{% url 'battlepass_claim' tier.id %}" class="fm-prevent-double-submit" style="margin:0.75rem 0 0;">
+              {% csrf_token %}
+              <button type="submit" class="btn">Revendică</button>
+            </form>
+          {% else %}
+            <p class="muted" style="margin:0.75rem 0 0;">Deblochezi la nivel {{ tier.level_req }}.</p>
+          {% endif %}
+        {% endif %}
+      </div>
+      {% endwith %}
+    {% empty %}
+      <p class="muted">Nu există niveluri configurate pentru acest sezon.</p>
+    {% endfor %}
+  </div>
+{% endif %}
+{% endblock %}

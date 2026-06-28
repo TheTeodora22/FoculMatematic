@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Achievements — Focul Matematic{% endblock %}
+
+{% block content %}
+<h1>Achievements</h1>
+
+{% if user.is_authenticated %}
+  <p class="muted" style="margin-top:0.25rem;">
+    {{ unlocked_count }} / {{ total_count }} unlocked
+  </p>
+{% else %}
+  <p class="muted" style="margin-top:0.25rem;">
+    <a href="{% url 'login' %}?next={% url 'achievement_list' %}">Log in</a> to unlock achievements and track your progress.
+  </p>
+{% endif %}
+
+<div class="hub-grid" style="margin-top:1.25rem;">
+  {% for row in rows %}
+    {% with a=row.achievement %}
+    <div class="card hub-card achievement-card{% if not row.unlocked %} achievement-card--locked{% endif %}" style="cursor:default;{% if not row.unlocked %}opacity:0.82;{% endif %}">
+      <div class="achievement-card__icon" aria-hidden="true">{{ a.icon }}</div>
+      <h2 style="margin:0.35rem 0 0.25rem;font-size:1.05rem;">{{ a.title }}</h2>
+      <p class="muted" style="margin:0;font-size:0.88rem;line-height:1.45;">{{ a.description }}</p>
+      {% if row.unlocked %}
+        <p style="margin:0.65rem 0 0;font-size:0.8rem;color:#86efac;font-weight:600;">
+          Unlocked{% if row.unlocked_at %} · {{ row.unlocked_at|date:"M j, Y" }}{% endif %}
+        </p>
+      {% else %}
+        {% if row.progress and row.progress.1 %}
+          {% widthratio row.progress.0 row.progress.1 100 as prog_pct %}
+          <p class="muted" style="margin:0.5rem 0 0.25rem;font-size:0.82rem;">
+            Progress: {{ row.progress.0 }} / {{ row.progress.1 }}
+          </p>
+          <div class="xp-bar" style="height:0.45rem;margin-top:0;" role="progressbar" aria-valuenow="{{ prog_pct }}" aria-valuemin="0" aria-valuemax="100">
+            <div class="xp-bar__fill" style="width: {{ prog_pct }}%;"></div>
+          </div>
+        {% else %}
+          <p class="muted" style="margin:0.65rem 0 0;font-size:0.82rem;">Locked</p>
+        {% endif %}
+      {% endif %}
+    </div>
+    {% endwith %}
+  {% empty %}
+    <p class="muted">No achievements configured yet. Add them in the admin site.</p>
+  {% endfor %}
+</div>
+{% endblock %}

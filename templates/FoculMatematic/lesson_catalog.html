@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Catalog lecții — Focul Matematic{% endblock %}
+
+{% block content %}
+<h1>Catalog lecții</h1>
+<p class="muted">
+  Filtrează după <strong>clasă</strong> și opțional după <strong>capitol</strong>. Fiecare lecție duce la conținut și quiz.
+  <a href="{% url 'school_class_list' %}">← Clase (structură pe capitole)</a>
+</p>
+
+<h2 class="visually-hidden">Filtre</h2>
+<p class="quiz-tag-row" style="margin:0 0 0.5rem;">
+  <span class="muted" style="margin-right:0.35rem;font-size:0.85rem;">Clasă:</span>
+  <a class="quiz-tag-pill{% if not current_class %} is-active{% endif %}" href="{% url 'lesson_catalog' %}">Toate</a>
+  {% for sc in school_classes %}
+    <a class="quiz-tag-pill{% if current_class and current_class.pk == sc.pk %} is-active{% endif %}" href="{% url 'lesson_catalog' %}?clasa={{ sc.slug }}">{{ sc.title }}</a>
+  {% endfor %}
+</p>
+
+{% if current_class %}
+<p class="quiz-tag-row" style="margin:0 0 1rem;">
+  <span class="muted" style="margin-right:0.35rem;font-size:0.85rem;">Capitol:</span>
+  <a class="quiz-tag-pill{% if not current_chapter_slug %} is-active{% endif %}" href="{% url 'lesson_catalog' %}?clasa={{ current_class.slug }}">Toate</a>
+  {% for ch in chapter_choices %}
+    <a class="quiz-tag-pill{% if current_chapter_slug == ch.slug %} is-active{% endif %}" href="{% url 'lesson_catalog' %}?clasa={{ current_class.slug }}&capitol={{ ch.slug }}">{{ ch.title }}</a>
+  {% endfor %}
+</p>
+{% endif %}
+
+{% if not lessons %}
+  <p class="muted">Nicio lecție nu se potrivește filtrelor curente.</p>
+{% else %}
+  <ul style="list-style:none;padding-left:0;">
+    {% for lesson in lessons %}
+      <li class="card" style="margin-top:0.65rem;padding:0.85rem 1rem;">
+        <a href="{% url 'lesson_detail' lesson.slug %}"><strong>{{ lesson.title }}</strong></a>
+        <p class="muted" style="margin:0.35rem 0 0;font-size:0.88rem;">
+          {{ lesson.chapter.school_class.title }} · {{ lesson.chapter.title }}
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+{% endblock %}

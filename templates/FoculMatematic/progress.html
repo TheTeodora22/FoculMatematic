@@ -1,19 +1,30 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Progres — Focul Matematic{% endblock %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'core/css/progress_page.css' %}">
+{% endblock %}
+
 {% block content %}
 <h1>Progresul tău</h1>
+
+<p>
+  Mai jos ai două tipuri de progres: <strong>lecții</strong> (quiz după fiecare lecție din curriculum)
+  și <strong>chestionare</strong> (liste după clasă / examen). În ambele cazuri, „completat” înseamnă
+  că ai trimis cel puțin o dată răspunsurile pentru o lecție, respectiv pentru un chestionar.
+</p>
 
 <p>
   Ai parcurs quiz-ul pentru
   <strong>{{ completed_lesson_count }}</strong>
   {% if completed_lesson_count == 1 %}lecție{% else %}lecții{% endif %}
   (cel puțin o trimitere) și ai rezolvat în total
-  <strong>{{ total_quizzes }}</strong> quiz-uri.
+  <strong>{{ total_quizzes }}</strong> quiz-uri la lecții.
 </p>
 
-<h2 style="margin-top:1.75rem;font-size:1.1rem;">Completare pe clasă</h2>
+<h2 style="margin-top:1.75rem;font-size:1.1rem;">Lecții — completare pe clasă (curriculum)</h2>
 {% if not class_rows %}
   <p class="muted">Nu există clase configurate.</p>
 {% else %}
@@ -24,13 +35,64 @@
         <span class="muted"> — {{ row.completed_lessons }} / {{ row.total_lessons }} lecții</span>
         {% if row.total_lessons %}
           <span class="muted">({{ row.percent }}%)</span>
+          <div class="progress-meter-wrap">
+            <meter min="0" max="{{ row.total_lessons }}" value="{{ row.completed_lessons }}">{{ row.percent }}%</meter>
+          </div>
+        {% else %}
+          <span class="muted"> — nicio lecție încă în curriculum.</span>
         {% endif %}
       </li>
     {% endfor %}
   </ul>
 {% endif %}
 
-<h2 style="margin-top:1.75rem;font-size:1.1rem;">Lecții completate</h2>
+<h2 style="margin-top:1.75rem;font-size:1.1rem;">Chestionare — pe clasă (tag-uri)</h2>
+{% if not quiz_tag_class_rows %}
+  <p class="muted">Nu există tag-uri de tip clasă pentru chestionare.</p>
+{% else %}
+  <ul style="list-style:none;padding-left:0;">
+    {% for row in quiz_tag_class_rows %}
+      <li class="card" style="margin-top:0.75rem;padding:1rem;">
+        {% if row.total > 0 %}
+          <a href="{% url 'quiz_list_by_tag' row.tag.slug %}"><strong>{{ row.tag.name }}</strong></a>
+          <span class="muted"> — {{ row.done }} / {{ row.total }} chestionare</span>
+          <span class="muted">({{ row.percent }}%)</span>
+          <div class="progress-meter-wrap">
+            <meter min="0" max="{{ row.total }}" value="{{ row.done }}">{{ row.percent }}%</meter>
+          </div>
+        {% else %}
+          <strong>{{ row.tag.name }}</strong>
+          <span class="muted"> — niciun chestionar cu acest tag încă.</span>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+<h2 style="margin-top:1.75rem;font-size:1.1rem;">Chestionare — examene (tag-uri)</h2>
+{% if not quiz_tag_exam_rows %}
+  <p class="muted">Nu există tag-uri de tip examen pentru chestionare.</p>
+{% else %}
+  <ul style="list-style:none;padding-left:0;">
+    {% for row in quiz_tag_exam_rows %}
+      <li class="card" style="margin-top:0.75rem;padding:1rem;">
+        {% if row.total > 0 %}
+          <a href="{% url 'quiz_list_by_tag' row.tag.slug %}"><strong>{{ row.tag.name }}</strong></a>
+          <span class="muted"> — {{ row.done }} / {{ row.total }} chestionare</span>
+          <span class="muted">({{ row.percent }}%)</span>
+          <div class="progress-meter-wrap">
+            <meter min="0" max="{{ row.total }}" value="{{ row.done }}">{{ row.percent }}%</meter>
+          </div>
+        {% else %}
+          <strong>{{ row.tag.name }}</strong>
+          <span class="muted"> — niciun chestionar cu acest tag încă.</span>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+<h2 style="margin-top:1.75rem;font-size:1.1rem;">Lecții completate (quiz la lecție)</h2>
 {% if not completed_lessons %}
   <p class="muted">Încă nu ai trimis niciun quiz. Explorează <a href="{% url 'school_class_list' %}">clasele</a>.</p>
 {% else %}
@@ -44,7 +106,7 @@
   </ul>
 {% endif %}
 
-<h2 style="margin-top:1.75rem;font-size:1.1rem;">Ultimele scoruri</h2>
+<h2 style="margin-top:1.75rem;font-size:1.1rem;">Ultimele scoruri (quiz la lecție)</h2>
 {% if not recent_attempts %}
   <p class="muted">Nicio încercare încă.</p>
 {% else %}

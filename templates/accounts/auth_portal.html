@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+{% load static %}
+{% load socialaccount %}
+
+{% block title %}Conectare — Focul Matematic{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'core/css/auth_portal.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="auth-portal" data-active-tab="{{ auth_active_tab }}">
+  <div class="auth-portal__panel" role="region" aria-label="Autentificare">
+    <h1 class="auth-portal__title">Focul Matematic</h1>
+
+    {% get_providers as socialaccount_providers %}
+    {% if socialaccount_providers %}
+    <div class="auth-portal__oauth" role="group" aria-label="Cont Google">
+      <div class="auth-portal__oauth-buttons">
+        {% for provider in socialaccount_providers %}
+        <a
+          class="auth-portal__oauth-btn auth-portal__oauth-btn--{{ provider.id }}"
+          href="{% provider_login_url provider.id next=next %}"
+        >
+          {% if provider.id == "google" %}
+            <span class="auth-portal__oauth-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            </span>
+            Google
+          {% else %}
+            {{ provider.name }}
+          {% endif %}
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    <p class="auth-portal__divider"><span></span></p>
+    {% endif %}
+
+    <div class="auth-portal__tabs" role="tablist" aria-label="Mod autentificare">
+      <button
+        type="button"
+        class="auth-portal__tab"
+        role="tab"
+        id="tab-login"
+        aria-selected="{% if auth_active_tab == 'login' %}true{% else %}false{% endif %}"
+        aria-controls="panel-login"
+        tabindex="{% if auth_active_tab == 'login' %}0{% else %}-1{% endif %}"
+        data-tab="login"
+      >Conectare</button>
+      <button
+        type="button"
+        class="auth-portal__tab"
+        role="tab"
+        id="tab-register"
+        aria-selected="{% if auth_active_tab == 'register' %}true{% else %}false{% endif %}"
+        aria-controls="panel-register"
+        tabindex="{% if auth_active_tab == 'register' %}0{% else %}-1{% endif %}"
+        data-tab="register"
+      >Înregistrare</button>
+    </div>
+
+    <div
+      id="panel-login"
+      class="auth-portal__panel-body"
+      role="tabpanel"
+      aria-labelledby="tab-login"
+      {% if auth_active_tab != 'login' %}hidden{% endif %}
+    >
+      {% if login_form.non_field_errors %}
+        <ul class="auth-portal__errors">
+          {% for err in login_form.non_field_errors %}<li>{{ err }}</li>{% endfor %}
+        </ul>
+      {% endif %}
+      <form method="post" action="{% url 'login' %}" class="auth-portal__form" novalidate>
+        {% csrf_token %}
+        <input type="hidden" name="action" value="login">
+        <input type="hidden" name="next" value="{{ next|default:'' }}">
+        <p class="auth-portal__field">
+          <label for="{{ login_form.username.id_for_label }}">{{ login_form.username.label }}</label>
+          {{ login_form.username }}
+          {% if login_form.username.errors %}
+            <span class="form-error">{{ login_form.username.errors.0 }}</span>
+          {% endif %}
+        </p>
+        <p class="auth-portal__field">
+          <label for="{{ login_form.password.id_for_label }}">{{ login_form.password.label }}</label>
+          {{ login_form.password }}
+          {% if login_form.password.errors %}
+            <span class="form-error">{{ login_form.password.errors.0 }}</span>
+          {% endif %}
+        </p>
+        <button type="submit" class="btn auth-portal__submit">Conectare</button>
+      </form>
+    </div>
+
+    <div
+      id="panel-register"
+      class="auth-portal__panel-body"
+      role="tabpanel"
+      aria-labelledby="tab-register"
+      {% if auth_active_tab != 'register' %}hidden{% endif %}
+    >
+      <form method="post" action="{% url 'register' %}" class="auth-portal__form" novalidate>
+        {% csrf_token %}
+        <input type="hidden" name="action" value="register">
+        <input type="hidden" name="next" value="{{ next|default:'' }}">
+        <p class="auth-portal__field">
+          <label for="{{ register_form.username.id_for_label }}">{{ register_form.username.label }}</label>
+          {{ register_form.username }}
+          {% if register_form.username.errors %}
+            <span class="form-error">{{ register_form.username.errors.0 }}</span>
+          {% endif %}
+        </p>
+        <p class="auth-portal__field">
+          <label for="{{ register_form.email.id_for_label }}">{{ register_form.email.label }}</label>
+          {{ register_form.email }}
+          {% if register_form.email.errors %}
+            <span class="form-error">{{ register_form.email.errors.0 }}</span>
+          {% endif %}
+        </p>
+        <p class="auth-portal__field">
+          <label for="{{ register_form.password1.id_for_label }}">{{ register_form.password1.label }}</label>
+          {{ register_form.password1 }}
+          {% if register_form.password1.errors %}
+            <span class="form-error">{{ register_form.password1.errors.0 }}</span>
+          {% endif %}
+        </p>
+        <p class="auth-portal__field">
+          <label for="{{ register_form.password2.id_for_label }}">{{ register_form.password2.label }}</label>
+          {{ register_form.password2 }}
+          {% if register_form.password2.errors %}
+            <span class="form-error">{{ register_form.password2.errors.0 }}</span>
+          {% endif %}
+        </p>
+        {% if register_form.non_field_errors %}
+          <ul class="auth-portal__errors">
+            {% for err in register_form.non_field_errors %}<li>{{ err }}</li>{% endfor %}
+          </ul>
+        {% endif %}
+        <button type="submit" class="btn auth-portal__submit">Creează cont</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+(function () {
+  var root = document.querySelector(".auth-portal");
+  if (!root) return;
+  var tabs = root.querySelectorAll(".auth-portal__tab");
+  var panels = {
+    login: document.getElementById("panel-login"),
+    register: document.getElementById("panel-register"),
+  };
+
+  function activate(name) {
+    if (!panels.login || !panels.register) return;
+    var isLogin = name === "login";
+    panels.login.hidden = !isLogin;
+    panels.register.hidden = isLogin;
+    tabs.forEach(function (t) {
+      var on = t.getAttribute("data-tab") === name;
+      t.setAttribute("aria-selected", on ? "true" : "false");
+      t.tabIndex = on ? 0 : -1;
+    });
+    root.setAttribute("data-active-tab", name);
+  }
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      activate(tab.getAttribute("data-tab") || "login");
+    });
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (!root.contains(document.activeElement)) return;
+    if (document.activeElement.classList.contains("auth-portal__tab")) {
+      var cur = root.getAttribute("data-active-tab") || "login";
+      if (e.key === "ArrowRight" && cur === "login") {
+        e.preventDefault();
+        activate("register");
+        document.getElementById("tab-register").focus();
+      } else if (e.key === "ArrowLeft" && cur === "register") {
+        e.preventDefault();
+        activate("login");
+        document.getElementById("tab-login").focus();
+      }
+    }
+  });
+})();
+</script>
+{% endblock %}

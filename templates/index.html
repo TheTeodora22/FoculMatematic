@@ -10,8 +10,10 @@
       <p>
         Parcurge lecțiile pe clase și capitole, rezolvă quiz-uri după fiecare lecție și urmărește progresul. Poți folosi și chestionarele suplimentare după tag-uri.
       </p>
-      <a class="buton" href="{% url 'school_class_list' %}">Începe după clasă</a>
-      <a class="buton" href="{% url 'quiz_list' %}" style="margin-left:0.75rem;opacity:0.95;">Chestionare</a>
+      <div class="hero-cta">
+        <a class="buton" href="{% url 'school_class_list' %}">Începe după clasă</a>
+        <a class="buton buton--secondary" href="{% url 'quiz_list' %}">Chestionare</a>
+      </div>
     </div>
 
     <img class="piramida hero-visual hero-visual--dark" src="{% static 'core/img/5-cell-ezgif.com-instagif.gif' %}" alt="">

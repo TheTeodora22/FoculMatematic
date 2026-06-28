@@ -8,10 +8,18 @@
 
 <div class="hub-grid">
   {% for sc in school_classes %}
-    <a class="card hub-card" href="{% url 'school_class_detail' sc.slug %}">
-      <h2 style="margin:0 0 0.35rem;">{{ sc.title }}</h2>
-      <p class="muted" style="margin:0;">Vezi capitolele</p>
-    </a>
+    <div class="card hub-card" style="display:flex;flex-direction:column;gap:0.75rem;">
+      <div>
+        <h2 style="margin:0 0 0.35rem;">{{ sc.title }}</h2>
+        <p class="muted" style="margin:0;">Capitole și lecții</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:auto;">
+        <a class="btn" href="{% url 'school_class_detail' sc.slug %}">Lecții</a>
+        {% if sc.quiz_tag %}
+          <a class="btn" href="{% url 'quiz_list_by_tag' sc.quiz_tag.slug %}">Chestionare</a>
+        {% endif %}
+      </div>
+    </div>
   {% empty %}
     <p class="muted">Nu există încă clase configurate. Adaugă conținut din panoul de administrare.</p>
   {% endfor %}

@@ -14,6 +14,17 @@
   {% endif %}
 </p>
 
+{% if all_tags %}
+<h2 class="visually-hidden">Filtre categorii</h2>
+<p class="quiz-tag-row" style="margin:0 0 1rem;">
+  <span class="muted" style="margin-right:0.35rem;font-size:0.85rem;">Categorie:</span>
+  <a class="quiz-tag-pill{% if not current_tag %} is-active{% endif %}" href="{% url 'quiz_list' %}">Toate</a>
+  {% for t in all_tags %}
+    <a class="quiz-tag-pill{% if current_tag and current_tag.pk == t.pk %} is-active{% endif %}" href="{% url 'quiz_list' %}?tag={{ t.slug }}">{{ t.name }}</a>
+  {% endfor %}
+</p>
+{% endif %}
+
 {% if not quizzes %}
     <p class="muted">Nu există încă chestionare. Revino curând.</p>
 {% else %}

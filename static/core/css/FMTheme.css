@@ -89,6 +89,14 @@ html[data-theme="light"] .herotext p {
     text-shadow: none;
 }
 
+/* Hero (light): același layout ca FMStyle — GIF static proporțional, fără overflow */
+html[data-theme="light"] .hero .piramida,
+html[data-theme="light"] .hero .hero-visual {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Buton hero: păstrăm animația glowing — interior deschis, contur gradient vizibil */
 html[data-theme="light"] .buton {
     color: #4a2c24 !important;
@@ -126,6 +134,12 @@ html[data-theme="light"] .quiz-tag-pill {
     color: #8b3a0f !important;
 }
 
+html[data-theme="light"] .quiz-tag-pill.is-active {
+    background: #ffe8dc;
+    border-color: #e25822;
+    color: #5c2100 !important;
+}
+
 html[data-theme="light"] a.hub-card {
     color: #352a2d !important;
 }
@@ -151,6 +165,27 @@ html[data-theme="light"] .submenu a {
 }
 
 html[data-theme="light"] .submenu a:hover {
+    background: #fdeaea;
+    color: #7c0a02;
+    border-color: #d4a8a8;
+}
+
+html[data-theme="light"] .sidebar-details__summary {
+    color: #352a2d;
+}
+
+html[data-theme="light"] .sidebar-details .sidebar-submenu {
+    background: rgba(124, 10, 2, 0.07);
+}
+
+html[data-theme="light"] .sidebar-details .sidebar-submenu a {
+    background: #fffbfb;
+    color: #4a3a3e;
+    border-color: #e0c8c8;
+    text-shadow: none;
+}
+
+html[data-theme="light"] .sidebar-details .sidebar-submenu a:hover {
     background: #fdeaea;
     color: #7c0a02;
     border-color: #d4a8a8;
@@ -258,6 +293,13 @@ html[data-theme="light"] .hero-visual--light {
         text-shadow: none;
     }
 
+    html[data-theme="system"] .hero .piramida,
+    html[data-theme="system"] .hero .hero-visual {
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+    }
+
     html[data-theme="system"] .buton {
         color: #4a2c24 !important;
     }
@@ -294,6 +336,12 @@ html[data-theme="light"] .hero-visual--light {
         color: #8b3a0f !important;
     }
 
+    html[data-theme="system"] .quiz-tag-pill.is-active {
+        background: #ffe8dc;
+        border-color: #e25822;
+        color: #5c2100 !important;
+    }
+
     html[data-theme="system"] .profile-actions__sep {
         color: #9a7d82;
     }
@@ -318,6 +366,27 @@ html[data-theme="light"] .hero-visual--light {
     }
 
     html[data-theme="system"] .submenu a:hover {
+        background: #fdeaea;
+        color: #7c0a02;
+        border-color: #d4a8a8;
+    }
+
+    html[data-theme="system"] .sidebar-details__summary {
+        color: #352a2d;
+    }
+
+    html[data-theme="system"] .sidebar-details .sidebar-submenu {
+        background: rgba(124, 10, 2, 0.07);
+    }
+
+    html[data-theme="system"] .sidebar-details .sidebar-submenu a {
+        background: #fffbfb;
+        color: #4a3a3e;
+        border-color: #e0c8c8;
+        text-shadow: none;
+    }
+
+    html[data-theme="system"] .sidebar-details .sidebar-submenu a:hover {
         background: #fdeaea;
         color: #7c0a02;
         border-color: #d4a8a8;

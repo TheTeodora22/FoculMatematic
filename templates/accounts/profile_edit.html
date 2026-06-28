@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Editare profil — Focul Matematic{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'core/css/profile_page.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="profile-page">
+  <p class="muted" style="margin:0 0 0.5rem;">
+    <a href="{% url 'profile' %}">← Înapoi</a>
+  </p>
+  <h1 class="profile-page__title">Editare profil</h1>
+
+  <form method="post" action="" class="settings-form" id="profile-edit-form">
+    {% csrf_token %}
+    <input type="hidden" name="action" value="profile">
+    <div class="profile-panel" style="margin-bottom:1rem;">
+      <h2 class="profile-panel__title" style="margin-top:0;">Cont</h2>
+      <p>
+        <label for="{{ form.username.id_for_label }}">{{ form.username.label }}</label><br>
+        {{ form.username }}
+        {% if form.username.errors %}
+          <span class="form-error">{{ form.username.errors.0 }}</span>
+        {% endif %}
+      </p>
+      <p>
+        <label for="{{ form.email.id_for_label }}">{{ form.email.label }}</label><br>
+        {{ form.email }}
+        {% if form.email.errors %}
+          <span class="form-error">{{ form.email.errors.0 }}</span>
+        {% endif %}
+      </p>
+      <p>
+        <label for="{{ form.clasa.id_for_label }}">{{ form.clasa.label }}</label><br>
+        {{ form.clasa }}
+        {% if form.clasa.errors %}
+          <span class="form-error">{{ form.clasa.errors.0 }}</span>
+        {% endif %}
+      </p>
+    </div>
+
+    <div class="profile-panel" style="margin-bottom:1rem;">
+      <h2 class="profile-panel__title" style="margin-top:0;">Avatar</h2>
+      {{ form.avatar }}
+      {% if form.avatar.errors %}
+        <p class="form-error">{{ form.avatar.errors.0 }}</p>
+      {% endif %}
+      <div
+        class="avatar-picker"
+        role="group"
+        aria-label="Avatar"
+        data-current="{{ form.avatar.value|default:profile.avatar }}"
+      >
+        {% for opt in avatar_options %}
+          <button
+            type="button"
+            class="avatar-picker__btn"
+            data-avatar="{{ opt.key }}"
+            aria-pressed="{% if form.avatar.value|default:profile.avatar == opt.key %}true{% else %}false{% endif %}"
+          >
+            <span class="avatar-picker__emoji" aria-hidden="true">{{ opt.emoji }}</span>
+            <span class="avatar-picker__label">{{ opt.label }}</span>
+          </button>
+        {% endfor %}
+      </div>
+    </div>
+
+    {% if form.non_field_errors %}
+      <p class="form-error">{{ form.non_field_errors.0 }}</p>
+    {% endif %}
+
+    <p style="margin-top:1rem;">
+      <button type="submit" class="btn">Salvează</button>
+      <a href="{% url 'profile' %}" class="muted" style="margin-left:1rem;">Renunță</a>
+    </p>
+  </form>
+
+  <form method="post" action="" class="settings-form profile-panel" style="margin-top:1.5rem;">
+    {% csrf_token %}
+    <input type="hidden" name="action" value="password">
+    <h2 class="profile-panel__title" style="margin-top:0;">Parolă</h2>
+    <p>
+      <label for="{{ password_form.old_password.id_for_label }}">{{ password_form.old_password.label }}</label><br>
+      {{ password_form.old_password }}
+      {% if password_form.old_password.errors %}
+        <span class="form-error">{{ password_form.old_password.errors.0 }}</span>
+      {% endif %}
+    </p>
+    <p>
+      <label for="{{ password_form.new_password1.id_for_label }}">{{ password_form.new_password1.label }}</label><br>
+      {{ password_form.new_password1 }}
+      {% if password_form.new_password1.errors %}
+        <span class="form-error">{{ password_form.new_password1.errors.0 }}</span>
+      {% endif %}
+    </p>
+    <p>
+      <label for="{{ password_form.new_password2.id_for_label }}">{{ password_form.new_password2.label }}</label><br>
+      {{ password_form.new_password2 }}
+      {% if password_form.new_password2.errors %}
+        <span class="form-error">{{ password_form.new_password2.errors.0 }}</span>
+      {% endif %}
+    </p>
+    {% if password_form.non_field_errors %}
+      <p class="form-error">{{ password_form.non_field_errors.0 }}</p>
+    {% endif %}
+    <button type="submit" class="btn">Schimbă parola</button>
+  </form>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+(function () {
+  var form = document.getElementById("profile-edit-form");
+  if (!form) return;
+  var hidden = form.querySelector('input[name="avatar"]');
+  var picker = form.querySelector(".avatar-picker");
+  var buttons = form.querySelectorAll(".avatar-picker__btn");
+  if (!hidden || !picker || !buttons.length) return;
+
+  function setAvatar(value) {
+    hidden.value = value;
+    picker.setAttribute("data-current", value);
+    buttons.forEach(function (btn) {
+      btn.setAttribute(
+        "aria-pressed",
+        btn.getAttribute("data-avatar") === value ? "true" : "false"
+      );
+    });
+  }
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var v = btn.getAttribute("data-avatar");
+      if (!v) return;
+      setAvatar(v);
+    });
+  });
+
+  setAvatar(hidden.value || picker.getAttribute("data-current") || "ember");
+})();
+</script>
+{% endblock %}

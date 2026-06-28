@@ -1,5 +1,5 @@
+from django.conf import settings
 from django.db import models
-from django.contrib.auth.models import User
 
 
 class QuizTag(models.Model):
@@ -39,6 +39,10 @@ class Quiz(models.Model):
         QuizTag,
         related_name="quizzes",
         blank=True,
+    )
+    max_xp = models.PositiveIntegerField(
+        default=50,
+        help_text="XP maxim la finalizare. XP acordat = acest număr × (scor / scor maxim). 0 = fără XP.",
     )
 
     def __str__(self):
@@ -95,7 +99,7 @@ class AnswerOption(models.Model):
 
 
 class QuizAttempt(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE)
     score = models.IntegerField(default=0)
     max_score = models.IntegerField(default=0)

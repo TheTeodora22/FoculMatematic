@@ -20,9 +20,14 @@ from django.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("accounts/", include("django.contrib.auth.urls")),
     path("accounts/", include("accounts.urls")),
+    path("accounts/", include("allauth.urls")),
+    path("accounts/", include("django.contrib.auth.urls")),
     path("", include("FoculMatematic.urls")),
     path("quizzes/", include("quizzes.urls")),
     path("battlepass/", include("battlepass.urls")),
+    path("achievements/", include("achievements.urls")),
 ]
+
+handler404 = "FoculMatematic.views.handler404"
+handler500 = "FoculMatematic.views.handler500"

@@ -48,11 +48,40 @@
         </li>
 
         <li><a href="{% url 'index' %}" onclick="closeSidebar()">Acasă</a></li>
-        <li><a href="{% url 'school_class_list' %}" onclick="closeSidebar()">Clase (lecții)</a></li>
-        <li><a href="{% url 'quiz_list' %}" onclick="closeSidebar()">Chestionare</a></li>
-        <li><a href="{% url 'quiz_exams' %}" onclick="closeSidebar()">Examene</a></li>
+        <li class="sidebar-item-expandable">
+          <details class="sidebar-details">
+            <summary class="sidebar-details__summary">Clase</summary>
+            <ul class="sidebar-submenu">
+              <li><a href="{% url 'school_class_list' %}" onclick="closeSidebar()">Toate clasele</a></li>
+              <li><a href="{% url 'lesson_catalog' %}" onclick="closeSidebar()">Catalog lecții (filtre)</a></li>
+              {% for sc in nav_school_classes %}
+                <li>
+                  <a href="{% url 'school_class_detail' sc.slug %}" onclick="closeSidebar()">{{ sc.title }}</a>
+                  {% if sc.quiz_tag %}
+                    <span class="muted"> · </span>
+                    <a href="{% url 'quiz_list_by_tag' sc.quiz_tag.slug %}" onclick="closeSidebar()">Chestionare</a>
+                  {% endif %}
+                </li>
+              {% endfor %}
+              {% for tag in nav_quiz_class_tags %}
+                <li><a href="{% url 'quiz_list_by_tag' tag.slug %}" onclick="closeSidebar()">{{ tag.name }}</a></li>
+              {% endfor %}
+            </ul>
+          </details>
+        </li>
+        <li><a href="{% url 'battlepass_home' %}" onclick="closeSidebar()">BattlePass</a></li>
+        <li class="sidebar-item-expandable">
+          <details class="sidebar-details">
+            <summary class="sidebar-details__summary">Examene</summary>
+            <ul class="sidebar-submenu">
+              <li><a href="{% url 'quiz_exams' %}" onclick="closeSidebar()">Toate examenele</a></li>
+              {% for tag in nav_quiz_exam_tags %}
+                <li><a href="{% url 'quiz_list_by_tag' tag.slug %}" onclick="closeSidebar()">{{ tag.name }}</a></li>
+              {% endfor %}
+            </ul>
+          </details>
+        </li>
         {% if user.is_authenticated %}
-          <li><a href="{% url 'user_progress' %}" onclick="closeSidebar()">Progres</a></li>
           <li><a href="{% url 'profile' %}" onclick="closeSidebar()">Profil ({{ user.username }})</a></li>
         {% else %}
           <li><a href="{% url 'login' %}" onclick="closeSidebar()">Conectare</a></li>
@@ -63,13 +92,24 @@
         <li class="navMain"><a href="{% url 'index' %}">Acasă</a></li>
 
         <li class="navMain has-dropdown">
-          <button type="button" class="navDDToggle" aria-expanded="false" aria-controls="submenu-clase" id="nav-btn-clase">Clase</button>
+          <a
+            href="{% url 'school_class_list' %}"
+            class="navDDToggle"
+            id="nav-btn-clase"
+            aria-haspopup="true"
+            aria-controls="submenu-clase"
+          >Clase</a>
           <ul class="submenu" id="submenu-clase" role="menu">
-            <li role="none"><a role="menuitem" href="{% url 'school_class_list' %}">Lecții pe clasă</a></li>
+            <li role="none"><a role="menuitem" href="{% url 'lesson_catalog' %}">Catalog lecții</a></li>
             {% for sc in nav_school_classes %}
-            <li role="none"><a role="menuitem" href="{% url 'school_class_detail' sc.slug %}">{{ sc.title }}</a></li>
+            <li role="none">
+              <a role="menuitem" href="{% url 'school_class_detail' sc.slug %}">{{ sc.title }}</a>
+              {% if sc.quiz_tag %}
+                <span class="muted" aria-hidden="true"> · </span>
+                <a role="menuitem" href="{% url 'quiz_list_by_tag' sc.quiz_tag.slug %}">Chestionare</a>
+              {% endif %}
+            </li>
             {% endfor %}
-            <li role="none"><a role="menuitem" href="{% url 'quiz_classes' %}">Chestionare pe clasă (tag-uri)</a></li>
             {% for tag in nav_quiz_class_tags %}
             <li role="none"><a role="menuitem" href="{% url 'quiz_list_by_tag' tag.slug %}">{{ tag.name }}</a></li>
             {% endfor %}
@@ -77,7 +117,13 @@
         </li>
 
         <li class="navMain has-dropdown">
-          <button type="button" class="navDDToggle" aria-expanded="false" aria-controls="submenu-examene" id="nav-btn-examene">Examene</button>
+          <a
+            href="{% url 'quiz_exams' %}"
+            class="navDDToggle"
+            id="nav-btn-examene"
+            aria-haspopup="true"
+            aria-controls="submenu-examene"
+          >Examene</a>
           <ul class="submenu" id="submenu-examene" role="menu">
             <li role="none"><a role="menuitem" href="{% url 'quiz_exams' %}">Toate examenele</a></li>
             {% for tag in nav_quiz_exam_tags %}
@@ -86,10 +132,9 @@
           </ul>
         </li>
 
-        <li class="navMain"><a href="{% url 'quiz_list' %}">Chestionare</a></li>
+        <li class="navMain nav-item--nowrap"><a href="{% url 'battlepass_home' %}">BattlePass</a></li>
 
         {% if user.is_authenticated %}
-          <li class="navMain"><a href="{% url 'user_progress' %}">Progres</a></li>
           <li class="navMain"><a href="{% url 'profile' %}">Profil</a></li>
         {% else %}
           <li class="navMain"><a href="{% url 'login' %}">Conectare</a></li>

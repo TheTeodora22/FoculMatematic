@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Pagină negăsită — Focul Matematic{% endblock %}
+
+{% block content %}
+<h1>404 — Pagina nu există</h1>
+<p class="muted">
+  Adresa pe care ai ajuns nu corespunde unei pagini din site. Verifică linkul sau folosește meniul de sus.
+</p>
+<p style="margin-top:1.25rem;">
+  <a class="btn" href="{% url 'index' %}">Acasă</a>
+  <a class="btn" href="{% url 'school_class_list' %}" style="margin-left:0.5rem;">Clase</a>
+  <a class="btn" href="{% url 'quiz_list' %}" style="margin-left:0.5rem;">Chestionare</a>
+</p>
+{% endblock %}

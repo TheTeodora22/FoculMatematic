@@ -52,10 +52,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
+    "allauth.socialaccount.providers.google",
     "accounts.apps.AccountsConfig",
     "FoculMatematic.apps.FoculmatematicConfig",
     "quizzes",
     "battlepass",
+    "achievements.apps.AchievementsConfig",
 ]
 
 MIDDLEWARE = [
@@ -65,6 +71,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
@@ -93,14 +100,29 @@ WSGI_APPLICATION = 'FoculMatematicProiect.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+# https://docs.django.com/en/4.2/ref/settings/#databases
+# Setează POSTGRES_DB (și restul) în .env pentru PostgreSQL; altfel rămâne SQLite.
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+_postgres_db = os.getenv("POSTGRES_DB", "").strip()
+if _postgres_db:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": _postgres_db,
+            "USER": os.getenv("POSTGRES_USER", "postgres").strip() or "postgres",
+            "PASSWORD": os.getenv("POSTGRES_PASSWORD", ""),
+            "HOST": os.getenv("POSTGRES_HOST", "localhost").strip() or "localhost",
+            "PORT": os.getenv("POSTGRES_PORT", "5432").strip() or "5432",
+            "CONN_MAX_AGE": int(os.getenv("POSTGRES_CONN_MAX_AGE", "0") or "0"),
+        }
     }
-}
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
+    }
 
 
 # Password validation
@@ -145,5 +167,51 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+AUTH_USER_MODEL = "accounts.User"
+
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",
+    "allauth.account.auth_backends.AuthenticationBackend",
+]
+
+SITE_ID = 1
+
 LOGIN_URL = "/accounts/login/"
 LOGIN_REDIRECT_URL = "/"
+
+# django-allauth — aliniat cu contul local (username + email opțional)
+ACCOUNT_LOGIN_METHODS = {"username", "email"}
+ACCOUNT_EMAIL_VERIFICATION = "none"
+ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_USER_MODEL_USERNAME_FIELD = "username"
+
+# Înregistrare prin allauth (dacă folosești fluxul lor); portalul nostru rămâne separat
+ACCOUNT_SIGNUP_FIELDS = ["email", "username*", "password1*", "password2*"]
+
+SOCIALACCOUNT_AUTO_SIGNUP = True
+SOCIALACCOUNT_EMAIL_AUTHENTICATION = True
+SOCIALACCOUNT_EMAIL_AUTHENTICATION_AUTO_CONNECT = True
+SOCIALACCOUNT_QUERY_EMAIL = True
+
+
+def _socialaccount_providers():
+    """Încarcă chei din .env; fără chei, providerii nu apar în UI."""
+    prov = {}
+    g_cid = os.getenv("GOOGLE_OAUTH_CLIENT_ID", "").strip()
+    g_sec = os.getenv("GOOGLE_OAUTH_CLIENT_SECRET", "").strip()
+    if g_cid and g_sec:
+        prov["google"] = {
+            "APPS": [
+                {
+                    "client_id": g_cid,
+                    "secret": g_sec,
+                    "key": "",
+                }
+            ],
+            "SCOPE": ["profile", "email"],
+            "AUTH_PARAMS": {"access_type": "online"},
+        }
+    return prov
+
+
+SOCIALACCOUNT_PROVIDERS = _socialaccount_providers()

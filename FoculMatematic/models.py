@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User
+from django.conf import settings
 from django.db import models
 from django.urls import reverse
 
@@ -9,6 +9,16 @@ class SchoolClass(models.Model):
     title = models.CharField(max_length=120)
     slug = models.SlugField(max_length=80, unique=True)
     order = models.PositiveSmallIntegerField(default=0, db_index=True)
+    quiz_tag = models.ForeignKey(
+        "quizzes.QuizTag",
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="school_classes",
+        limit_choices_to={"kind": "class"},
+        verbose_name="Tag chestionare (clasă)",
+        help_text="Opțional: tag de tip „clasă” din app-ul chestionare; afișează link către lista filtrată.",
+    )
 
     class Meta:
         ordering = ["order", "slug"]
@@ -65,6 +75,10 @@ class Lesson(models.Model):
     )
     content = models.TextField(blank=True)
     order = models.PositiveSmallIntegerField(default=0, db_index=True)
+    quiz_max_xp = models.PositiveIntegerField(
+        default=50,
+        help_text="XP maxim pentru quiz-ul lecției. XP acordat = acest număr × (scor obținut / scor maxim).",
+    )
 
     class Meta:
         ordering = ["order", "slug"]
@@ -120,7 +134,11 @@ class Choice(models.Model):
 
 
 class QuizAttempt(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="lesson_quiz_attempts")
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="lesson_quiz_attempts",
+    )
     lesson = models.ForeignKey(
         Lesson,
         on_delete=models.CASCADE,
