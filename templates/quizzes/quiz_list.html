@@ -3,25 +3,16 @@
 {% block title %}Chestionare — Focul Matematic{% endblock %}
 
 {% block content %}
+<div class="page-content">
 <h1>Chestionare</h1>
-<p class="muted">Alege un chestionar de matematică. Ai nevoie de cont pentru a trimite răspunsurile.</p>
 
-{% if not quizzes %}
-    <p class="muted">Nu există încă chestionare. Revino curând.</p>
-{% else %}
-    {% for quiz in quizzes %}
-        <article class="card">
-            <h2 style="margin:0 0 0.25rem;">{{ quiz.title }}</h2>
-            <p class="muted" style="margin:0 0 0.75rem;">Dificultate: {{ quiz.get_difficulty_display }}</p>
-            {% if quiz.description %}
-                <p style="margin:0 0 1rem;">{{ quiz.description }}</p>
-            {% endif %}
-            {% if user.is_authenticated %}
-                <a class="btn" href="{% url 'quiz_take' quiz.pk %}">Începe</a>
-            {% else %}
-                <a class="btn" href="{% url 'login' %}?next={% url 'quiz_take' quiz.pk %}">Conectează-te pentru a începe</a>
-            {% endif %}
+<div class="class-grid">
+    {% for level in class_levels %}
+        <article class="card class-grid__item">
+            <h2 style="margin:0 0 0.75rem;">Clasa a {{ level }}-a</h2>
+            <a class="btn" href="{% url 'class_chapters' level %}">Vezi capitolele</a>
         </article>
     {% endfor %}
-{% endif %}
+</div>
+</div>
 {% endblock %}

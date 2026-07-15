@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Clasa a {{ class_level }}-a — Focul Matematic{% endblock %}
+
+{% block content %}
+<div class="page-content">
+    <h1>Clasa a {{ class_level }}-a</h1>
+
+    {% if not chapters %}
+        <p class="muted">Nu există încă capitole pentru această clasă.</p>
+    {% else %}
+        {% for chapter in chapters %}
+            <article class="card">
+                <h2 style="margin:0 0 0.75rem;">{{ chapter.title }}</h2>
+                <a class="btn btn-press" href="{% url 'chapter_topics' class_level chapter.slug %}">Deschide lecția</a>
+            </article>
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% load static lesson_tags %}
+
+{% block title %}Antrenare — {{ topic.title }}{% endblock %}
+
+{% block extra_head %}
+<script>document.documentElement.classList.add("fm-js");</script>
+<style>
+.fm-js .training-page--loading .training-layout {
+    visibility: hidden;
+}
+
+.fm-js .training-page--loading .training-loader {
+    display: flex;
+}
+
+.training-loader {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    min-height: 12rem;
+    margin: 2rem 0;
+    color: #c9bfb3;
+    font-family: "Montserrat", serif;
+}
+
+.training-loader--error {
+    color: #e8a0a0;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="page-content training-page training-page--loading">
+    <div class="training-header">
+        <span class="training-header__spacer" aria-hidden="true"></span>
+        <div class="training-header__content">
+            <div class="training-header__center">
+                {% render_lesson_tags topic %}
+                <h1>Antrenare</h1>
+                <p class="muted" id="training-progress">Întrebarea {{ index|add:1 }} din {{ questions|length }}</p>
+                <p class="training-save-error" id="training-save-error" hidden></p>
+            </div>
+            <a class="btn btn-press training-back" href="{% url 'topic_detail' topic.pk %}">Înapoi la lecție</a>
+        </div>
+        <span class="training-header__spacer" aria-hidden="true"></span>
+    </div>
+
+    <div class="training-loader" id="training-loader" aria-live="polite">
+        <p>Se încarcă întrebările...</p>
+    </div>
+
+    <div class="training-layout" id="training-layout">
+        <a
+            class="training-arrow training-arrow--prev{% if not has_prev %} training-arrow--placeholder{% endif %}"
+            href="{% if has_prev %}{% url 'training_index' topic.pk prev_index %}{% else %}#{% endif %}"
+            aria-label="Întrebarea anterioară"
+            {% if not has_prev %}aria-hidden="true"{% endif %}
+        ></a>
+
+        <div class="training-main">
+            {% csrf_token %}
+            <article class="card training-card">
+                <div id="training-question">
+                    <h2 style="margin:0 0 1rem;">{{ current.text }}</h2>
+
+                    {% if feedback %}
+                        <p class="training-feedback" style="margin:0 0 0.75rem;">
+                            {% if feedback.is_correct %}
+                                <span class="training-feedback--correct">Corect!</span>
+                            {% else %}
+                                <span class="training-feedback--wrong">Greșit. Încearcă alt răspuns.</span>
+                            {% endif %}
+                        </p>
+                    {% elif training_solved %}
+                        <p class="training-feedback training-feedback--correct" style="margin:0 0 0.75rem;">Răspuns corect</p>
+                    {% elif current_state.status == "wrong" %}
+                        <p class="training-feedback training-feedback--wrong" style="margin:0 0 0.75rem;">Încearcă din nou</p>
+                    {% endif %}
+
+                    {% if training_solved and current.explanation %}
+                        <p class="training-explanation" style="margin:0 0 1rem;">{{ current.explanation }}</p>
+                    {% endif %}
+
+                    <form method="post" class="training-options-form" action="{% url 'training_index' topic.pk index %}">
+                        {% csrf_token %}
+                        <fieldset style="border:none;padding:0;margin:0;">
+                            {% for option in current.options.all %}
+                                <label class="training-option{% if training_solved and option.is_correct %} training-option--correct{% elif selected_option_id == option.pk and feedback and not feedback.is_correct %} training-option--wrong{% endif %}">
+                                    <input
+                                        type="radio"
+                                        name="option_id"
+                                        value="{{ option.pk }}"
+                                        {% if training_solved %}disabled{% endif %}
+                                        {% if training_solved and option.is_correct %}checked{% endif %}
+                                        {% if selected_option_id == option.pk and feedback and not feedback.is_correct %}checked{% endif %}
+                                        {% if not training_solved %}required{% endif %}
+                                    >
+                                    <span>{{ option.text }}</span>
+                                </label>
+                            {% endfor %}
+                        </fieldset>
+                        {% if not training_solved %}
+                            <button type="submit" class="btn btn-press" style="margin-top:1rem;">Verifică răspunsul</button>
+                        {% endif %}
+                    </form>
+                </div>
+            </article>
+
+            <div class="training-grid" id="training-grid" aria-label="Progres antrenare">
+                {% for state in states %}
+                    <a
+                        href="{% url 'training_index' topic.pk forloop.counter0 %}"
+                        class="training-cell training-cell--{{ state.status }}"
+                        data-training-index="{{ forloop.counter0 }}"
+                        title="Întrebarea {{ forloop.counter }}"
+                        {% if forloop.counter0 == index %}aria-current="true"{% endif %}
+                    ></a>
+                {% endfor %}
+            </div>
+        </div>
+
+        <a
+            class="training-arrow training-arrow--next{% if not has_next %} training-arrow--placeholder{% endif %}"
+            href="{% if has_next %}{% url 'training_index' topic.pk next_index %}{% else %}#{% endif %}"
+            aria-label="Întrebarea următoare"
+            {% if not has_next %}aria-hidden="true"{% endif %}
+        ></a>
+    </div>
+</div>
+
+{{ training_payload|json_script:"training-data" }}
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'core/js/training.js' %}"></script>
+{% endblock %}

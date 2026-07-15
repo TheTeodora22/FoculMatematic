@@ -1,0 +1,7 @@
+{% if tags %}
+<div class="lesson-tags">
+    {% for tag in tags %}
+        <span class="lesson-tag lesson-tag--{{ tag.type }}">{{ tag.label }}</span>
+    {% endfor %}
+</div>
+{% endif %}

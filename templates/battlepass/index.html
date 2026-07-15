@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Battle Pass — Focul Matematic{% endblock %}
+
+{% block extra_css %}
+<style>
+    .tier-card { margin-bottom: 0.75rem; }
+    .tier-card.unlocked { border-color: #2d6a4f; }
+    .tier-card.locked { opacity: 0.75; }
+    .tier-status { font-weight: 600; margin-top: 0.35rem; }
+    .tier-status.unlocked { color: #52b788; }
+    .tier-status.locked { color: #a89f94; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="page-content">
+<h1>Battle Pass</h1>
+
+{% if not season %}
+    <p class="muted">Nu există un sezon activ momentan. Revino curând!</p>
+{% else %}
+    <div class="card">
+        <p style="margin:0;"><strong>{{ season.name }}</strong></p>
+        <p class="muted" style="margin:0.35rem 0 0;">
+            {{ season.start_date|date:"d.m.Y" }} — {{ season.end_date|date:"d.m.Y" }}
+        </p>
+        <p style="margin:0.75rem 0 0;">Nivelul tău curent: <strong>{{ profile.level }}</strong></p>
+    </div>
+
+    <h2>Recompense</h2>
+    {% for item in tiers %}
+        <div class="card tier-card {% if item.unlocked %}unlocked{% else %}locked{% endif %}">
+            <p style="margin:0;">
+                <strong>Nivel {{ item.tier.level_req }}</strong> — {{ item.tier.reward_name }}
+            </p>
+            <p class="muted" style="margin:0.25rem 0 0;">
+                Tip: {{ item.tier.get_reward_type_display }}
+            </p>
+            {% if item.unlocked %}
+                <p class="tier-status unlocked">
+                    {% if item.owned %}Deblocat și obținut{% else %}Deblocat{% endif %}
+                </p>
+            {% else %}
+                <p class="tier-status locked">Blocat — ajunge la nivelul {{ item.tier.level_req }}</p>
+            {% endif %}
+        </div>
+    {% empty %}
+        <p class="muted">Acest sezon nu are încă recompense configurate.</p>
+    {% endfor %}
+{% endif %}
+
+<p style="margin-top:1.5rem;">
+    <a href="{% url 'profile' %}">Înapoi la profil</a>
+    ·
+    <a href="{% url 'quiz_list' %}">Chestionare</a>
+</p>
+</div>
+{% endblock %}

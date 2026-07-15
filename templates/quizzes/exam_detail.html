@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load lesson_tags %}
+
+{% block title %}{{ exam.title }} — Focul Matematic{% endblock %}
+
+{% block content %}
+<div class="page-content">
+    <h1>{{ exam.title }}</h1>
+    <p>{{ exam.description }}</p>
+
+    {% if chapters %}
+        <h2>Capitole</h2>
+        {% for chapter in chapters %}
+            <article class="card">
+                <h2 style="margin:0 0 0.75rem;">{{ chapter.title }}</h2>
+                <a class="btn btn-press" href="{% url 'exam_chapter_topics' exam.slug chapter.slug %}">Deschide lecția</a>
+            </article>
+        {% endfor %}
+    {% endif %}
+
+    {% if topics %}
+        <h2{% if chapters %} style="margin-top:2rem;"{% endif %}>Subiecte</h2>
+        {% for topic in topics %}
+            <article class="card">
+                {% render_lesson_tags topic %}
+                <h2 style="margin:0 0 0.25rem;">{{ topic.title }}</h2>
+                <p class="muted" style="margin:0 0 0.75rem;">Dificultate: {{ topic.get_difficulty_display }}</p>
+                {% if topic.description %}
+                    <p style="margin:0 0 1rem;">{{ topic.description }}</p>
+                {% endif %}
+                <a class="btn btn-press" href="{% url 'topic_detail' topic.pk %}">Deschide lecția</a>
+            </article>
+        {% endfor %}
+    {% elif not chapters %}
+        <p class="muted">Subiectele dedicate acestui examen vor fi disponibile curând.</p>
+        <a class="btn btn-press" href="{% url 'class_chapters' exam.fallback_class %}">
+            Vezi materia pentru clasa a {{ exam.fallback_class }}-a
+        </a>
+    {% endif %}
+</div>
+{% endblock %}

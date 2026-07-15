@@ -1,0 +1,63 @@
+[
+  {
+    "class_level": 5,
+    "slug": "operatii-numere-naturale",
+    "title": "Operații cu numere naturale",
+    "order": 1,
+    "topics": [
+      "clasa_5_operatii_scrierea_si_citirea_numerelor_naturale.json",
+      "clasa_5_operatii_reprezentarea_pe_axa_numerelor.json",
+      "clasa_5_operatii_adunarea_numerelor_naturale.json",
+      "clasa_5_operatii_scaderea_numerelor_naturale.json",
+      "clasa_5_operatii_inmultirea_numerelor_naturale.json",
+      "clasa_5_operatii_cu_numere_naturale.json"
+    ]
+  },
+  {
+    "class_level": 5,
+    "slug": "divizibilitate",
+    "title": "Divizibilitatea numerelor naturale",
+    "order": 2,
+    "topics": [
+      "clasa_5_divizibilitatea_numerelor_naturale.json",
+      "clasa_5_operatii_factor_comun.json"
+    ]
+  },
+  {
+    "class_level": 5,
+    "slug": "fractii",
+    "title": "Fracții",
+    "order": 3,
+    "topics": [
+      "clasa_5_fractii_ordinare.json",
+      "clasa_5_fractii_zecimale.json"
+    ]
+  },
+  {
+    "class_level": 5,
+    "slug": "geometrie",
+    "title": "Elemente de geometrie și unități de măsură",
+    "order": 4,
+    "topics": [
+      "clasa_5_elemente_de_geometrie_si_unitate_de_masura.json"
+    ]
+  },
+  {
+    "class_level": 5,
+    "slug": "metode-aritmetice",
+    "title": "Metode aritmetice de rezolvare a problemelor",
+    "order": 5,
+    "topics": [
+      "clasa_5_metode_aritmetice_de_rezolvare_a_problemelor.json"
+    ]
+  },
+  {
+    "class_level": 5,
+    "slug": "exemple",
+    "title": "Exemple demo",
+    "order": 99,
+    "topics": [
+      "exemplu_adunari.json"
+    ]
+  }
+]

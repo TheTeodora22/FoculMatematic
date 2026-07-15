@@ -1,112 +1,141 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Focul Matematic{% endblock %}</title>
-    <style>
-        :root {
-            --bg: #0f1419;
-            --surface: #1a2332;
-            --text: #e7ecf3;
-            --muted: #8b9cb3;
-            --accent: #e85d04;
-            --accent-hover: #f48c06;
-            --border: #2d3a4d;
-        }
-        * { box-sizing: border-box; }
-        body {
-            margin: 0;
-            min-height: 100vh;
-            font-family: system-ui, "Segoe UI", Roboto, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.5;
-        }
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { color: var(--accent-hover); text-decoration: underline; }
-        header {
-            background: var(--surface);
-            border-bottom: 1px solid var(--border);
-            padding: 0.75rem 1.25rem;
-        }
-        header nav {
-            max-width: 48rem;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 1rem;
-        }
-        header .brand { font-weight: 700; font-size: 1.1rem; }
-        header .links { display: flex; gap: 1rem; flex-wrap: wrap; margin-left: auto; }
-        main {
-            max-width: 48rem;
-            margin: 0 auto;
-            padding: 1.5rem 1.25rem 3rem;
-        }
-        .card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.25rem 1.5rem;
-            margin-bottom: 1rem;
-        }
-        h1 { font-size: 1.5rem; margin: 0 0 1rem; }
-        h2 { font-size: 1.15rem; margin: 1.25rem 0 0.5rem; }
-        .muted { color: var(--muted); font-size: 0.9rem; }
-        .btn {
-            display: inline-block;
-            background: var(--accent);
-            color: var(--bg) !important;
-            font-weight: 600;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            border: none;
-            cursor: pointer;
-            text-decoration: none !important;
-        }
-        .btn:hover { background: var(--accent-hover); color: var(--bg) !important; }
-        ul.options { list-style: none; padding: 0; margin: 0.5rem 0 0; }
-        ul.options li { margin: 0.35rem 0; }
-        .messages { list-style: none; padding: 0; margin: 0 0 1rem; }
-        .messages li { padding: 0.5rem; border-radius: 6px; background: var(--surface); border: 1px solid var(--border); }
-        input[type="text"], input[type="password"], input[type="email"] {
-            width: 100%;
-            max-width: 22rem;
-            padding: 0.5rem 0.65rem;
-            background: var(--bg);
-            border: 1px solid var(--border);
-            color: var(--text);
-            border-radius: 6px;
-        }
-    </style>
+    <meta name="description" content="Exersează matematica cu chestionare interactive pentru gimnaziu și liceu.">
+    <link rel="icon" type="image/png" href="{% static 'core/img/FMImage.png' %}">
+    <link rel="apple-touch-icon" href="{% static 'core/img/FMImage.png' %}">
+    <link rel="stylesheet" href="{% static 'core/css/FMStyle.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/fm-app.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% block extra_head %}{% endblock %}
     {% block extra_css %}{% endblock %}
 </head>
 <body>
     <header>
+        <a href="{% url 'index' %}">
+            <img class="logo" src="{% static 'core/img/Focul-Matematic.png' %}" alt="Focul Matematic">
+        </a>
+
         <nav>
-            <span class="brand"><a href="{% url 'index' %}">Focul Matematic</a></span>
-            <span class="links">
-                <a href="{% url 'quiz_list' %}">Chestionare</a>
+            <ul class="sidebar">
+                <li onclick="closeSidebar()">
+                    <a href="#" aria-label="Închide meniul">
+                        <img src="{% static 'core/img/closesimple.svg' %}" alt="" width="24" height="24">
+                    </a>
+                </li>
+                <li><a href="{% url 'index' %}">Acasă</a></li>
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle" aria-expanded="false" aria-controls="submenu-clase" aria-haspopup="true">Clase</a>
+                    <ul class="submenu sidebar-submenu" id="submenu-clase">
+                        <li><a href="{% url 'class_chapters' 5 %}">Clasa a 5-a</a></li>
+                        <li><a href="{% url 'class_chapters' 6 %}">Clasa a 6-a</a></li>
+                        <li><a href="{% url 'class_chapters' 7 %}">Clasa a 7-a</a></li>
+                        <li><a href="{% url 'class_chapters' 8 %}">Clasa a 8-a</a></li>
+                        <li><a href="{% url 'class_chapters' 9 %}">Clasa a 9-a</a></li>
+                        <li><a href="{% url 'class_chapters' 10 %}">Clasa a 10-a</a></li>
+                        <li><a href="{% url 'class_chapters' 11 %}">Clasa a 11-a</a></li>
+                        <li><a href="{% url 'class_chapters' 12 %}">Clasa a 12-a</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle" aria-expanded="false" aria-controls="submenu-examene" aria-haspopup="true">Examene</a>
+                    <ul class="submenu sidebar-submenu" id="submenu-examene">
+                        <li><a href="{% url 'exam_detail' 'evaluare-nationala' %}">Evaluarea Națională</a></li>
+                        <li><a href="{% url 'exam_detail' 'bacalaureat' %}">Bacalaureat</a></li>
+                    </ul>
+                </li>
+                <li><a href="{% url 'quiz_list' %}">Chestionare</a></li>
                 {% if user.is_authenticated %}
-                    <a href="{% url 'profile' %}">Profil ({{ user.username }})</a>
-                    <a href="{% url 'logout' %}">Deconectare</a>
+                    <li><a href="{% url 'battlepass' %}">Battle Pass</a></li>
+                    <li><a href="{% url 'profile' %}">Profil</a></li>
+                    <li><a href="{% url 'logout' %}">Deconectare</a></li>
                 {% else %}
-                    <a href="{% url 'login' %}">Conectare</a>
+                    <li><a href="{% url 'register' %}">Înregistrare</a></li>
+                    <li><a href="{% url 'login' %}">Conectare</a></li>
                 {% endif %}
-            </span>
+            </ul>
+
+            <ul class="nav__link">
+                <li class="hideOnMobile"><a href="{% url 'index' %}">Acasă</a></li>
+
+                <li class="hideOnMobile has-submenu">
+                    <a href="#">Clase</a>
+                    <ul class="submenu">
+                        <li><a href="{% url 'class_chapters' 5 %}">Clasa a 5-a</a></li>
+                        <li><a href="{% url 'class_chapters' 6 %}">Clasa a 6-a</a></li>
+                        <li><a href="{% url 'class_chapters' 7 %}">Clasa a 7-a</a></li>
+                        <li><a href="{% url 'class_chapters' 8 %}">Clasa a 8-a</a></li>
+                        <li><a href="{% url 'class_chapters' 9 %}">Clasa a 9-a</a></li>
+                        <li><a href="{% url 'class_chapters' 10 %}">Clasa a 10-a</a></li>
+                        <li><a href="{% url 'class_chapters' 11 %}">Clasa a 11-a</a></li>
+                        <li><a href="{% url 'class_chapters' 12 %}">Clasa a 12-a</a></li>
+                    </ul>
+                </li>
+
+                <li class="hideOnMobile has-submenu">
+                    <a href="#">Examene</a>
+                    <ul class="submenu">
+                        <li><a href="{% url 'exam_detail' 'evaluare-nationala' %}">Evaluarea Națională</a></li>
+                        <li><a href="{% url 'exam_detail' 'bacalaureat' %}">Bacalaureat</a></li>
+                    </ul>
+                </li>
+
+                <li class="hideOnMobile"><a href="{% url 'quiz_list' %}">Chestionare</a></li>
+                {% if user.is_authenticated %}
+                    <li class="hideOnMobile"><a href="{% url 'battlepass' %}">Battle Pass</a></li>
+                    <li class="hideOnMobile"><a href="{% url 'profile' %}">Profil</a></li>
+                    <li class="hideOnMobile"><a href="{% url 'logout' %}">Deconectare</a></li>
+                {% else %}
+                    <li class="hideOnMobile nav-auth">
+                        <a href="{% url 'register' %}">Înregistrare</a>
+                        <span class="nav-auth-sep">/</span>
+                        <a href="{% url 'login' %}">Conectare</a>
+                    </li>
+                {% endif %}
+
+                <li onclick="showSidebar()" class="hideOnDesktop">
+                    <a href="#" aria-label="Deschide meniul">
+                        <img src="{% static 'core/img/menusimple.svg' %}" alt="" width="26" height="26">
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
-    <main>
+
+    <div class="container">
         {% if messages %}
-            <ul class="messages">
-                {% for message in messages %}
-                    <li>{{ message }}</li>
-                {% endfor %}
-            </ul>
+            <div class="page-content" style="padding-bottom:0;">
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li class="message message--{{ message.tags }}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
         {% endif %}
         {% block content %}{% endblock %}
-    </main>
+
+        <footer class="footer">
+            <img class="smalllogo" src="{% static 'core/img/Focul-Matematic.png' %}" alt="Focul Matematic">
+            <p class="footer-report">
+                <a href="{{ feedback_report_url }}?from={{ request.path }}" class="footer-feedback-link">Raportează o problemă</a>
+            </p>
+            <div class="socialmedia">
+                <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa fa-youtube"></i></a>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>© {% now "Y" %} Focul Matematic. Toate drepturile rezervate.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="{% static 'core/js/FMJava.js' %}"></script>
+    {% block extra_js %}{% endblock %}
 </body>
 </html>

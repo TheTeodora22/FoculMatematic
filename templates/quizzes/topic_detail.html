@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load lesson_tags %}
+
+{% block title %}{{ topic.title }} — Focul Matematic{% endblock %}
+
+{% block content %}
+<div class="page-content">
+    {% if topic.chapter %}
+        <p class="muted" style="margin:0 0 0.5rem;">
+            <a href="{% url 'class_chapters' topic.chapter.class_level %}">Clasa a {{ topic.chapter.class_level }}-a</a>
+            ·
+            <a href="{% url 'chapter_topics' topic.chapter.class_level topic.chapter.slug %}">{{ topic.chapter.title }}</a>
+        </p>
+    {% endif %}
+
+    {% render_lesson_tags topic %}
+    <h1>{{ topic.title }}</h1>
+    <p class="muted">Dificultate: {{ topic.get_difficulty_display }} · {{ question_count }} întrebări</p>
+    {% if topic.description %}
+        <p>{{ topic.description }}</p>
+    {% endif %}
+
+    <div class="auth-actions-row topic-actions">
+        <a class="btn" href="{% url 'generated_quiz' topic.pk %}">
+            {% if in_progress %}Continuă chestionarul{% else %}Generează chestionar{% endif %}
+        </a>
+        <a class="btn" href="{% url 'training' topic.pk %}">Antrenare</a>
+    </div>
+
+    <form method="post" action="{% url 'training_reset' topic.pk %}" style="margin-top:1.5rem;">
+        {% csrf_token %}
+        <button type="submit" class="btn btn--secondary" onclick="return confirm('Resetezi progresul de antrenare pentru acest subiect?');">
+            Resetează progres antrenare
+        </button>
+    </form>
+</div>
+{% endblock %}

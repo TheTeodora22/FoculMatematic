@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Eroare server — Focul Matematic{% endblock %}
+
+{% block content %}
+<div class="page-content">
+    <div class="auth-panel" style="max-width: 36rem; margin: 2rem auto;">
+        <h1>Ceva nu a mers bine</h1>
+        <p class="muted">
+            A apărut o eroare neașteptată. Echipa a fost notificată automat.
+            {% if report_id %}
+                Referință raport: <strong>#{{ report_id }}</strong>.
+            {% endif %}
+        </p>
+        <div class="auth-actions" style="margin-top: 1.5rem;">
+            <a class="btn" href="{% url 'index' %}">Acasă</a>
+            <a class="btn" href="{{ report_url }}">Raportează detalii suplimentare</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

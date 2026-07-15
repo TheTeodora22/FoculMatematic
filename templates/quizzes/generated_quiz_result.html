@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load lesson_tags %}
+
+{% block title %}Rezultat — {{ topic.title }}{% endblock %}
+
+{% block content %}
+<div class="page-content">
+    <h1>Rezultat chestionar</h1>
+    {% render_lesson_tags topic %}
+    <p class="muted">{{ topic.title }}</p>
+
+    <article class="card">
+        <p style="font-size:1.25rem;margin:0 0 0.5rem;">
+            {{ result.correct_count }} / {{ result.total_count }} corecte
+        </p>
+        {% if result.xp_gained %}
+            <p style="margin:0;">Ai câștigat {{ result.xp_gained }} XP.</p>
+        {% else %}
+            <p class="muted" style="margin:0;">Nu ai câștigat XP nou (întrebările corecte fuseseră deja recompensate).</p>
+        {% endif %}
+    </article>
+
+    {% if wrong_items %}
+        <h2>Explicații — răspunsuri greșite</h2>
+        {% for item in wrong_items %}
+            <article class="card">
+                <p style="margin:0 0 0.5rem;"><strong>{{ item.question.text }}</strong></p>
+                <p class="muted" style="margin:0 0 0.5rem;">
+                    Răspunsul tău: {{ item.selected_option.text }}
+                </p>
+                {% if item.question.explanation %}
+                    <p style="margin:0;">{{ item.question.explanation }}</p>
+                {% else %}
+                    <p class="muted" style="margin:0;">Nu există explicație pentru această întrebare.</p>
+                {% endif %}
+            </article>
+        {% endfor %}
+    {% endif %}
+
+    <div class="auth-actions-row topic-actions" style="margin-top:1.5rem;">
+        <a class="btn" href="{% url 'topic_detail' topic.pk %}">Înapoi la subiect</a>
+        <a class="btn" href="{% url 'generated_quiz' topic.pk %}">Generează din nou</a>
+    </div>
+</div>
+{% endblock %}

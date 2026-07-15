@@ -3,6 +3,7 @@
 {% block title %}{{ quiz.title }} — Focul Matematic{% endblock %}
 
 {% block content %}
+<div class="page-content">
 <h1>{{ quiz.title }}</h1>
 <p class="muted">Dificultate: {{ quiz.get_difficulty_display }}</p>
 {% if quiz.description %}
@@ -28,14 +29,24 @@
                                 {{ option.text }}
                             </label>
                         </li>
+                    {% empty %}
+                        <li class="muted">Această întrebare nu are opțiuni de răspuns.</li>
                     {% endfor %}
                 </ul>
             </fieldset>
         {% endfor %}
+        {% if not can_submit %}
+            <p class="muted" style="margin-top:1rem;">Nu poți trimite acest chestionar până când toate întrebările au opțiuni de răspuns.</p>
+        {% endif %}
         <p style="margin-top:1.25rem;">
-            <button type="submit" class="btn">Trimite răspunsurile</button>
+            {% if user.is_authenticated %}
+                <button type="submit" class="btn"{% if not can_submit %} disabled{% endif %}>Trimite răspunsurile</button>
+            {% else %}
+                <a class="btn" href="{% url 'login' %}?next={% url 'quiz_take' quiz.pk %}">Conectează-te pentru a trimite</a>
+            {% endif %}
             <a href="{% url 'quiz_list' %}" class="muted" style="margin-left:1rem;">Anulează</a>
         </p>
     </form>
 {% endif %}
+</div>
 {% endblock %}

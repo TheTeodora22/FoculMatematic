@@ -1,3 +1,3 @@
 from django.test import TestCase
 
-# Create your tests here.
+# Battle pass tests live in accounts/tests.py (integration with profile/XP).

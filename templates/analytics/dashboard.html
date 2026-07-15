@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Analitice — Focul Matematic{% endblock %}
+
+{% block content %}
+<div class="page-content">
+    <h1>Analitice</h1>
+    <p class="muted">Utilizatori activi și pagini accesate.</p>
+
+    <div style="margin:1rem 0;">
+        <a class="btn{% if days == 1 %} btn-press{% endif %}" href="?period=1">Azi</a>
+        <a class="btn{% if days == 7 %} btn-press{% endif %}" href="?period=7">7 zile</a>
+        <a class="btn{% if days == 30 %} btn-press{% endif %}" href="?period=30">30 zile</a>
+    </div>
+
+    <div class="analytics-grid">
+        <article class="card analytics-card">
+            <h2 style="margin:0 0 0.5rem;font-size:1rem;">Azi</h2>
+            <p class="analytics-stat">{{ today.unique_sessions }}</p>
+            <p class="muted" style="margin:0;">vizitatori (sesiuni)</p>
+            <p class="analytics-stat analytics-stat--small">{{ today.logged_in_users }}</p>
+            <p class="muted" style="margin:0;">utilizatori conectați</p>
+            <p class="analytics-stat analytics-stat--small">{{ today.views }}</p>
+            <p class="muted" style="margin:0;">vizualizări totale</p>
+        </article>
+
+        <article class="card analytics-card">
+            <h2 style="margin:0 0 0.5rem;font-size:1rem;">Ultimele {{ days }} zile</h2>
+            <p class="analytics-stat">{{ period.unique_sessions }}</p>
+            <p class="muted" style="margin:0;">vizitatori (sesiuni)</p>
+            <p class="analytics-stat analytics-stat--small">{{ period.logged_in_users }}</p>
+            <p class="muted" style="margin:0;">utilizatori conectați</p>
+            <p class="analytics-stat analytics-stat--small">{{ period.views }}</p>
+            <p class="muted" style="margin:0;">vizualizări totale</p>
+        </article>
+    </div>
+
+    <h2 style="margin:2rem 0 1rem;">Pagini cele mai accesate</h2>
+    {% if top_pages %}
+        <div class="card" style="overflow-x:auto;">
+            <table class="analytics-table">
+                <thead>
+                    <tr>
+                        <th>Pagină</th>
+                        <th>Vizualizări</th>
+                        <th>Sesiuni unice</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in top_pages %}
+                        <tr>
+                            <td><code>{{ row.path }}</code></td>
+                            <td>{{ row.views }}</td>
+                            <td>{{ row.unique_sessions }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <p class="muted">Nu există date încă pentru această perioadă.</p>
+    {% endif %}
+
+    {% if daily %}
+        <h2 style="margin:2rem 0 1rem;">Activitate zilnică</h2>
+        <div class="card" style="overflow-x:auto;">
+            <table class="analytics-table">
+                <thead>
+                    <tr>
+                        <th>Zi</th>
+                        <th>Sesiuni</th>
+                        <th>Utilizatori conectați</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in daily %}
+                        <tr>
+                            <td>{{ row.day }}</td>
+                            <td>{{ row.sessions }}</td>
+                            <td>{{ row.users }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% endif %}
+
+    <p class="muted" style="margin-top:2rem;">
+        <a href="{% url 'admin:analytics_pageview_changelist' %}">Vezi toate înregistrările brute în admin</a>
+    </p>
+</div>
+{% endblock %}

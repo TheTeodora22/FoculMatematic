@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load lesson_tags %}
+
+{% block title %}{{ chapter.title }} — Focul Matematic{% endblock %}
+
+{% block content %}
+<div class="page-content">
+    <p class="muted" style="margin:0 0 0.5rem;">
+        <a href="{% url 'class_chapters' class_level %}">Clasa a {{ class_level }}-a</a>
+    </p>
+    <h1>{{ chapter.title }}</h1>
+
+    {% if not topics %}
+        <p class="muted">Nu există încă subiecte în acest capitol.</p>
+    {% else %}
+        {% for topic in topics %}
+            <article class="card">
+                {% render_lesson_tags topic %}
+                <h2 style="margin:0 0 0.25rem;">{{ topic.title }}</h2>
+                <p class="muted" style="margin:0 0 0.75rem;">Dificultate: {{ topic.get_difficulty_display }}</p>
+                {% if topic.description %}
+                    <p style="margin:0 0 1rem;">{{ topic.description }}</p>
+                {% endif %}
+                <a class="btn btn-press" href="{% url 'topic_detail' topic.pk %}">Deschide lecția</a>
+            </article>
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}

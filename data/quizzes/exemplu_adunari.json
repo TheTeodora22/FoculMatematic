@@ -1,0 +1,107 @@
+{
+  "title": "Adunări — exemplu",
+  "description": "Chestionar demo pentru testarea modurilor Generează și Antrenare.",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "text": "Cât face 7 + 5?",
+      "points": 10,
+      "explanation": "Adunăm: 7 + 5 = 12.",
+      "options": [
+        {"text": "12", "is_correct": true},
+        {"text": "11", "is_correct": false},
+        {"text": "13", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Cât face 23 + 18?",
+      "points": 10,
+      "explanation": "23 + 18 = 41 (3 + 8 = 11, scriem 1 și împrumutăm 1 zecime).",
+      "options": [
+        {"text": "41", "is_correct": true},
+        {"text": "40", "is_correct": false},
+        {"text": "42", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Cât face 15 + 9?",
+      "points": 10,
+      "explanation": "15 + 9 = 24.",
+      "options": [
+        {"text": "24", "is_correct": true},
+        {"text": "23", "is_correct": false},
+        {"text": "25", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Cât face 30 + 12?",
+      "points": 10,
+      "explanation": "30 + 12 = 42.",
+      "options": [
+        {"text": "42", "is_correct": true},
+        {"text": "41", "is_correct": false},
+        {"text": "32", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Cât face 8 + 8?",
+      "points": 10,
+      "explanation": "8 + 8 = 16.",
+      "options": [
+        {"text": "16", "is_correct": true},
+        {"text": "14", "is_correct": false},
+        {"text": "18", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Cât face 45 + 5?",
+      "points": 10,
+      "explanation": "45 + 5 = 50.",
+      "options": [
+        {"text": "50", "is_correct": true},
+        {"text": "49", "is_correct": false},
+        {"text": "55", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Cât face 19 + 6?",
+      "points": 10,
+      "explanation": "19 + 6 = 25.",
+      "options": [
+        {"text": "25", "is_correct": true},
+        {"text": "24", "is_correct": false},
+        {"text": "26", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Cât face 11 + 14?",
+      "points": 10,
+      "explanation": "11 + 14 = 25.",
+      "options": [
+        {"text": "25", "is_correct": true},
+        {"text": "24", "is_correct": false},
+        {"text": "35", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Cât face 6 + 13?",
+      "points": 10,
+      "explanation": "6 + 13 = 19.",
+      "options": [
+        {"text": "19", "is_correct": true},
+        {"text": "18", "is_correct": false},
+        {"text": "20", "is_correct": false}
+      ]
+    },
+    {
+      "text": "Cât face 20 + 20?",
+      "points": 10,
+      "explanation": "20 + 20 = 40.",
+      "options": [
+        {"text": "40", "is_correct": true},
+        {"text": "30", "is_correct": false},
+        {"text": "22", "is_correct": false}
+      ]
+    }
+  ]
+}

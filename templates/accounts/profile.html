@@ -1,15 +1,140 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Profil — Focul Matematic{% endblock %}
 
 {% block content %}
-<h1>Profilul tău</h1>
-<div class="card">
-    <p><strong>Utilizator:</strong> {{ profile.user.username }}</p>
-    <p><strong>Clasă:</strong> {{ profile.clasa }}</p>
-    <p><strong>Nivel:</strong> {{ profile.level }}</p>
-    <p><strong>XP:</strong> {{ profile.xp }}</p>
-    <p class="muted" style="margin-bottom:0;">Avatar: {{ profile.avatar }} · Temă: {{ profile.theme }}</p>
+<div class="page-content profile-page">
+    <section class="profile-hero card">
+        <div class="profile-hero__main">
+            <img
+                class="profile-avatar"
+                src="{% static dashboard.avatar_path %}"
+                alt="Avatar {{ dashboard.profile.user.username }}"
+            >
+            <div class="profile-hero__info">
+                {% with user=dashboard.profile.user %}
+                    {% if user.get_full_name %}
+                        <p class="profile-display-name">{{ user.get_full_name }}</p>
+                        <p class="profile-username">@{{ user.username }}</p>
+                    {% else %}
+                        <p class="profile-display-name">{{ user.username }}</p>
+                    {% endif %}
+                {% endwith %}
+                <div class="profile-hero__badges">
+                    <span class="profile-level-badge">Nivel {{ dashboard.profile.level }}</span>
+                    <span class="profile-class-pill">Clasa a {{ dashboard.profile.clasa }}-a</span>
+                </div>
+                <p class="profile-xp-label muted">
+                    {{ dashboard.xp_progress.xp_in_level }} / {{ dashboard.xp_progress.xp_needed }} XP până la nivelul {{ dashboard.xp_progress.next_level }}
+                </p>
+                <div
+                    class="profile-xp-bar"
+                    role="progressbar"
+                    aria-valuenow="{{ dashboard.xp_progress.xp_in_level }}"
+                    aria-valuemin="0"
+                    aria-valuemax="{{ dashboard.xp_progress.xp_needed }}"
+                >
+                    {% widthratio dashboard.xp_progress.xp_in_level dashboard.xp_progress.xp_needed 100 as pct %}
+                    <div class="profile-xp-fill" style="width: {{ pct }}%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="profile-hero__actions">
+            <a class="btn btn-press" href="{% url 'battlepass' %}">Battle Pass</a>
+            <a class="btn btn-press" href="{{ dashboard.class_url }}">Clasa mea</a>
+            <a class="profile-edit-link" href="{% url 'profile_edit' %}">Editează profil</a>
+        </div>
+    </section>
+
+    <section class="profile-stats-grid">
+        <article class="card profile-stat-card">
+            <p class="profile-stat-card__label muted">XP total</p>
+            <p class="profile-stat-card__value">{{ dashboard.profile.xp }}</p>
+            <p class="profile-stat-card__hint muted">Nivel {{ dashboard.profile.level }}</p>
+        </article>
+        <article class="card profile-stat-card">
+            <p class="profile-stat-card__label muted">Clasă</p>
+            <p class="profile-stat-card__value">a {{ dashboard.profile.clasa }}-a</p>
+            <p class="profile-stat-card__hint muted">Materia ta</p>
+        </article>
+        <article class="card profile-stat-card">
+            <p class="profile-stat-card__label muted">Chestionare</p>
+            <p class="profile-stat-card__value">{{ dashboard.quizzes_count }}</p>
+            <p class="profile-stat-card__hint muted">Completate</p>
+        </article>
+        <article class="card profile-stat-card">
+            <p class="profile-stat-card__label muted">Precizie</p>
+            <p class="profile-stat-card__value">
+                {% if dashboard.correct_rate is not None %}{{ dashboard.correct_rate }}%{% else %}—{% endif %}
+            </p>
+            <p class="profile-stat-card__hint muted">Răspunsuri corecte</p>
+        </article>
+    </section>
+
+    <section class="card profile-bp-preview">
+        <h2 class="profile-section-title">Battle Pass</h2>
+        {% if dashboard.battlepass_preview.all_unlocked %}
+            <p class="muted">Ai deblocat toate recompensele din sezonul {{ dashboard.battlepass_preview.season_name }}.</p>
+        {% elif dashboard.battlepass_preview %}
+            <p style="margin:0;">
+                Următoarea recompensă: <strong>{{ dashboard.battlepass_preview.reward_name }}</strong>
+            </p>
+            <p class="muted" style="margin:0.35rem 0 0;">
+                Nivel {{ dashboard.battlepass_preview.level_req }} necesar
+                {% if dashboard.battlepass_preview.levels_remaining > 0 %}
+                    — încă {{ dashboard.battlepass_preview.levels_remaining }} nivel(uri)
+                {% endif %}
+                · {{ dashboard.battlepass_preview.xp_to_next_level }} XP până la următorul nivel
+            </p>
+        {% else %}
+            <p class="muted">Nu există un sezon Battle Pass activ momentan.</p>
+        {% endif %}
+        <a class="profile-bp-preview__link" href="{% url 'battlepass' %}">Vezi Battle Pass</a>
+    </section>
+
+    <section class="profile-activity">
+        <h2 class="profile-section-title">Ultimele chestionare</h2>
+        {% if dashboard.recent_activities %}
+            <div class="card profile-activity-wrap">
+                <table class="profile-activity-table">
+                    <thead>
+                        <tr>
+                            <th>Subiect</th>
+                            <th>Scor</th>
+                            <th>Dată</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for activity in dashboard.recent_activities %}
+                            <tr>
+                                <td>{{ activity.title }}</td>
+                                <td>
+                                    <span class="profile-score{% if activity.score == activity.max_score %} profile-score--perfect{% else %} profile-score--partial{% endif %}">
+                                        {{ activity.score }}/{{ activity.max_score }}
+                                    </span>
+                                </td>
+                                <td class="muted">{{ activity.when|date:"d.m.Y H:i" }}</td>
+                                <td><a class="profile-activity-link" href="{{ activity.result_url }}">Rezultat</a></td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% else %}
+            <div class="card profile-empty">
+                <img
+                    class="profile-empty__img"
+                    src="{% static 'core/img/5-cell-ezgif.com-instagif.gif' %}"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <p class="profile-empty__title">Încă nu ai completat niciun chestionar</p>
+                <p class="muted profile-empty__text">Rezolvă primul exercițiu și începe să câștigi XP!</p>
+                <a class="btn btn-press" href="{{ dashboard.class_url }}">Începe primul chestionar</a>
+            </div>
+        {% endif %}
+    </section>
 </div>
-<p><a href="{% url 'quiz_list' %}">Mergi la chestionare</a></p>
 {% endblock %}

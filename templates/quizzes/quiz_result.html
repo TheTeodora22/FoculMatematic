@@ -2,22 +2,60 @@
 
 {% block title %}Rezultat — {{ quiz.title }}{% endblock %}
 
+{% block extra_css %}
+<style>
+    .answer-card { margin-bottom: 1rem; }
+    .answer-card.correct { border-color: #2d6a4f; }
+    .answer-card.incorrect { border-color: #9b2226; }
+    .answer-status { font-weight: 600; margin: 0.5rem 0 0; }
+    .answer-status.correct { color: #52b788; }
+    .answer-status.incorrect { color: #e63946; }
+    .summary { margin-bottom: 1.5rem; }
+</style>
+{% endblock %}
+
 {% block content %}
+<div class="page-content">
 <h1>Rezultat</h1>
-<p style="font-size:1.25rem;margin-bottom:0.5rem;">
-    <strong>{{ quiz.title }}</strong>
-</p>
-<p>
-    Ai obținut <strong>{{ attempt.score }}</strong> din <strong>{{ attempt.max_score }}</strong> puncte.
-</p>
-{% if attempt.max_score > 0 %}
-    {% widthratio attempt.score attempt.max_score 100 as pct %}
-    <p class="muted">Procent: {{ pct }}%</p>
-{% endif %}
+<div class="card summary">
+    <p style="font-size:1.25rem;margin:0 0 0.5rem;">
+        <strong>{{ quiz.title }}</strong>
+    </p>
+    <p style="margin:0;">
+        Ai obținut <strong>{{ attempt.score }}</strong> din <strong>{{ attempt.max_score }}</strong> puncte.
+    </p>
+    {% if attempt.max_score > 0 %}
+        {% widthratio attempt.score attempt.max_score 100 as pct %}
+        <p class="muted" style="margin:0.5rem 0 0;">Procent: {{ pct }}%</p>
+    {% endif %}
+</div>
+
+<h2>Revizuire răspunsuri</h2>
+{% for answer in attempt.answers.all %}
+    <div class="card answer-card {% if answer.is_correct %}correct{% else %}incorrect{% endif %}">
+        <p style="margin:0 0 0.5rem;"><strong>{{ forloop.counter }}.</strong> {{ answer.question.text }}</p>
+        <p class="muted" style="margin:0;">Răspunsul tău: <strong>{{ answer.selected_option.text }}</strong></p>
+        {% if answer.is_correct %}
+            <p class="answer-status correct">Corect — +{{ answer.question.points }} puncte</p>
+        {% else %}
+            <p class="answer-status incorrect">Greșit — 0 puncte</p>
+            <p class="muted" style="margin:0.35rem 0 0;">
+                Răspuns corect:
+                {% for opt in answer.question.options.all %}
+                    {% if opt.is_correct %}<strong>{{ opt.text }}</strong>{% endif %}
+                {% endfor %}
+            </p>
+        {% endif %}
+    </div>
+{% empty %}
+    <p class="muted">Nu există răspunsuri salvate pentru această încercare.</p>
+{% endfor %}
+
 <p style="margin-top:1.5rem;">
     <a class="btn" href="{% url 'quiz_list' %}">Alte chestionare</a>
     {% if user.is_authenticated %}
         <a href="{% url 'quiz_take' quiz.pk %}" style="margin-left:1rem;">Reîncearcă același chestionar</a>
     {% endif %}
 </p>
+</div>
 {% endblock %}

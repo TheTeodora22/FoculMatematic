@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Raportează o problemă — Focul Matematic{% endblock %}
+
+{% block content %}
+<div class="page-content auth-page">
+    <div class="auth-panel">
+        <h1>Raportează o problemă</h1>
+        {% if sent %}
+            <p class="muted">Raportul tău a fost înregistrat. Mulțumim pentru feedback!</p>
+        {% else %}
+            <p class="muted">Descrie ce nu a funcționat. Dacă nu ești conectat, lasă un email ca să te putem contacta.</p>
+            {% if form.errors %}
+                <p class="muted auth-error">Corectează erorile de mai jos.</p>
+            {% endif %}
+            <form method="post" class="auth-form" action="{% url 'report_error' %}">
+                {% csrf_token %}
+                {{ form.page_url }}
+                <p>
+                    {{ form.description }}
+                    {% for error in form.description.errors %}
+                        <span class="muted" style="color:#e63946;display:block;">{{ error }}</span>
+                    {% endfor %}
+                </p>
+                {% if form.email %}
+                    <p>
+                        {{ form.email }}
+                        {% for error in form.email.errors %}
+                            <span class="muted" style="color:#e63946;display:block;">{{ error }}</span>
+                        {% endfor %}
+                    </p>
+                {% endif %}
+                <div class="auth-actions">
+                    <button type="submit" class="btn">Trimite raportul</button>
+                    <a class="auth-link" href="{% url 'index' %}">Înapoi acasă</a>
+                </div>
+            </form>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

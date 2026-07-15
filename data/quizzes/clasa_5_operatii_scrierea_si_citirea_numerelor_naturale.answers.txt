@@ -1,0 +1,151 @@
+Quiz: Scrierea și citirea numerelor naturale (50 întrebări)
+
+1. Determinați cifrele a, b și c, știind că 456 = a·100 + b·10 + c.
+   → a = 4, b = 5, c = 6
+
+2. Determinați cifrele a, b și c, știind că 789 = a·100 + b·10 + c.
+   → a = 7, b = 8, c = 9
+
+3. Determinați cifrele a, b și c, știind că 305 = a·100 + b·10 + c.
+   → a = 3, b = 0, c = 5
+
+4. Determinați cifrele a, b și c, știind că 620 = a·100 + b·10 + c.
+   → a = 6, b = 2, c = 0
+
+5. Determinați cifrele a, b și c, știind că 518 = a·100 + b·10 + c.
+   → a = 5, b = 1, c = 8
+
+6. Câte cifre s-au folosit pentru numerotarea unei cărți cu 35 de pagini?
+   → 61
+
+7. Câte cifre s-au folosit pentru numerotarea unei cărți cu 50 de pagini?
+   → 91
+
+8. Câte cifre s-au folosit pentru numerotarea unei cărți cu 80 de pagini?
+   → 151
+
+9. Câte cifre s-au folosit pentru numerotarea unei cărți cu 99 de pagini?
+   → 189
+
+10. Câte cifre s-au folosit pentru numerotarea unei cărți cu 120 de pagini?
+   → 252
+
+11. Pentru numerotarea paginilor unui manual s-au folosit 151 de cifre. Câte pagini are manualul?
+   → 80
+
+12. Pentru numerotarea paginilor unui manual s-au folosit 189 de cifre. Câte pagini are manualul?
+   → 99
+
+13. Pentru numerotarea paginilor unui manual s-au folosit 192 de cifre. Câte pagini are manualul?
+   → 100
+
+14. Pentru numerotarea paginilor unui manual s-au folosit 468 de cifre. Câte pagini are manualul?
+   → 192
+
+15. Câte numere naturale de forma ab verifică relația a + 2b = 9?
+   → 5
+
+16. Care dintre numerele următoare are forma ab și verifică a + 2b = 9?
+   → 52
+
+17. Câte numere naturale de forma ab verifică relația a + 2b = 11?
+   → 5
+
+18. Care dintre numerele următoare are forma ab și verifică a + 2b = 11?
+   → 53
+
+19. Câte numere naturale de forma ab verifică relația a + 2b = 13?
+   → 5
+
+20. Care dintre numerele următoare are forma ab și verifică a + 2b = 13?
+   → 54
+
+21. Câte numere naturale de forma ab verifică relația a + 2b = 15?
+   → 5
+
+22. Care dintre numerele următoare are forma ab și verifică a + 2b = 15?
+   → 55
+
+23. Scrierea cu cifre a numărului „treizeci și opt de mii nouă” este:
+   → 38 009
+
+24. Scrierea cu cifre a numărului „cinci mii opt” este:
+   → 5 008
+
+25. Scrierea cu cifre a numărului „două sute treizeci și patru” este:
+   → 234
+
+26. Scrierea cu cifre a numărului „un milion două sute” este:
+   → 1 200 000
+
+27. Scrierea cu cifre a numărului „nouă sute cinci” este:
+   → 905
+
+28. Scrierea cu litere a numărului 1 078 este:
+   → o mie șaptezeci și opt
+
+29. Scrierea cu litere a numărului 2 405 este:
+   → două mii patru sute cinci
+
+30. Scrierea cu litere a numărului 50 003 este:
+   → cincizeci de mii trei
+
+31. Scrierea cu litere a numărului 100 010 este:
+   → o sută de mii zece
+
+32. În numărul 1 234 567, cifra 3 este la ordinul:
+   → zecilor de mii
+
+33. În numărul 1 234 567, cifra 3 aparține clasei:
+   → miilor
+
+34. În numărul 23 456 981, cifra 9 este la ordinul:
+   → sutelor
+
+35. În numărul 23 456 981, cifra 9 aparține clasei:
+   → unităților
+
+36. În numărul 50 423 678, cifra 0 este la ordinul:
+   → unităților de milioane
+
+37. În numărul 50 423 678, cifra 0 aparține clasei:
+   → milioanelor
+
+38. În numărul 54 678, cifra 4 este la ordinul:
+   → miilor
+
+39. În numărul 54 678, cifra 4 aparține clasei:
+   → miilor
+
+40. Câte numere naturale între 30 și 60 conțin cifra 4?
+   → 12
+
+41. Câte numere naturale între 100 și 150 conțin cifra 5?
+   → 6
+
+42. Câte numere naturale între 20 și 40 conțin cifra 2?
+   → 11
+
+43. Răsturnatul numărului 73a este 437. Care este valoarea cifrei a?
+   → 4
+
+44. Răsturnatul numărului 95a este 459. Care este valoarea cifrei a?
+   → 4
+
+45. Răsturnatul numărului 13a este 831. Care este valoarea cifrei a?
+   → 8
+
+46. Câte numere naturale de forma a14b (a și b cifre, a ≠ 0) sunt impare?
+   → 45
+
+47. Câte numere naturale de forma a14b verifică relația a > b?
+   → 45
+
+48. Care este următorul termen al șirului: 10, 16, 22, ...?
+   → 28
+
+49. Care este următorul termen al șirului: 2, 6, 18, ...?
+   → 54
+
+50. Care este următorul termen al șirului: 5, 11, 23, ...?
+   → 47

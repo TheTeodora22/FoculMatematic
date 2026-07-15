@@ -1,0 +1,1107 @@
+{
+  "title": "Scrierea și citirea numerelor naturale",
+  "description": "Clasa a 5-a · Operații cu numere naturale",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "text": "Determinați cifrele a, b și c, știind că 456 = a·100 + b·10 + c.",
+      "points": 10,
+      "options": [
+        {
+          "text": "a = 4, b = 5, c = 6",
+          "is_correct": true
+        },
+        {
+          "text": "a = 5, b = 5, c = 6",
+          "is_correct": false
+        },
+        {
+          "text": "a = 4, b = 6, c = 6",
+          "is_correct": false
+        },
+        {
+          "text": "a = 6, b = 5, c = 4",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determinați cifrele a, b și c, știind că 789 = a·100 + b·10 + c.",
+      "points": 10,
+      "options": [
+        {
+          "text": "a = 7, b = 8, c = 9",
+          "is_correct": true
+        },
+        {
+          "text": "a = 8, b = 8, c = 9",
+          "is_correct": false
+        },
+        {
+          "text": "a = 7, b = 9, c = 9",
+          "is_correct": false
+        },
+        {
+          "text": "a = 9, b = 8, c = 7",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determinați cifrele a, b și c, știind că 305 = a·100 + b·10 + c.",
+      "points": 10,
+      "options": [
+        {
+          "text": "a = 3, b = 0, c = 5",
+          "is_correct": true
+        },
+        {
+          "text": "a = 4, b = 0, c = 5",
+          "is_correct": false
+        },
+        {
+          "text": "a = 3, b = 1, c = 5",
+          "is_correct": false
+        },
+        {
+          "text": "a = 5, b = 0, c = 3",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determinați cifrele a, b și c, știind că 620 = a·100 + b·10 + c.",
+      "points": 10,
+      "options": [
+        {
+          "text": "a = 6, b = 2, c = 0",
+          "is_correct": true
+        },
+        {
+          "text": "a = 7, b = 2, c = 0",
+          "is_correct": false
+        },
+        {
+          "text": "a = 6, b = 3, c = 0",
+          "is_correct": false
+        },
+        {
+          "text": "a = 0, b = 2, c = 6",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determinați cifrele a, b și c, știind că 518 = a·100 + b·10 + c.",
+      "points": 10,
+      "options": [
+        {
+          "text": "a = 5, b = 1, c = 8",
+          "is_correct": true
+        },
+        {
+          "text": "a = 6, b = 1, c = 8",
+          "is_correct": false
+        },
+        {
+          "text": "a = 5, b = 2, c = 8",
+          "is_correct": false
+        },
+        {
+          "text": "a = 8, b = 1, c = 5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte cifre s-au folosit pentru numerotarea unei cărți cu 35 de pagini?",
+      "points": 10,
+      "options": [
+        {
+          "text": "61",
+          "is_correct": true
+        },
+        {
+          "text": "51",
+          "is_correct": false
+        },
+        {
+          "text": "62",
+          "is_correct": false
+        },
+        {
+          "text": "72",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte cifre s-au folosit pentru numerotarea unei cărți cu 50 de pagini?",
+      "points": 10,
+      "options": [
+        {
+          "text": "91",
+          "is_correct": true
+        },
+        {
+          "text": "81",
+          "is_correct": false
+        },
+        {
+          "text": "92",
+          "is_correct": false
+        },
+        {
+          "text": "102",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte cifre s-au folosit pentru numerotarea unei cărți cu 80 de pagini?",
+      "points": 10,
+      "options": [
+        {
+          "text": "151",
+          "is_correct": true
+        },
+        {
+          "text": "141",
+          "is_correct": false
+        },
+        {
+          "text": "152",
+          "is_correct": false
+        },
+        {
+          "text": "162",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte cifre s-au folosit pentru numerotarea unei cărți cu 99 de pagini?",
+      "points": 10,
+      "options": [
+        {
+          "text": "189",
+          "is_correct": true
+        },
+        {
+          "text": "179",
+          "is_correct": false
+        },
+        {
+          "text": "190",
+          "is_correct": false
+        },
+        {
+          "text": "200",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte cifre s-au folosit pentru numerotarea unei cărți cu 120 de pagini?",
+      "points": 10,
+      "options": [
+        {
+          "text": "252",
+          "is_correct": true
+        },
+        {
+          "text": "242",
+          "is_correct": false
+        },
+        {
+          "text": "253",
+          "is_correct": false
+        },
+        {
+          "text": "263",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pentru numerotarea paginilor unui manual s-au folosit 151 de cifre. Câte pagini are manualul?",
+      "points": 10,
+      "options": [
+        {
+          "text": "80",
+          "is_correct": true
+        },
+        {
+          "text": "75",
+          "is_correct": false
+        },
+        {
+          "text": "83",
+          "is_correct": false
+        },
+        {
+          "text": "90",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pentru numerotarea paginilor unui manual s-au folosit 189 de cifre. Câte pagini are manualul?",
+      "points": 10,
+      "options": [
+        {
+          "text": "99",
+          "is_correct": true
+        },
+        {
+          "text": "94",
+          "is_correct": false
+        },
+        {
+          "text": "102",
+          "is_correct": false
+        },
+        {
+          "text": "109",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pentru numerotarea paginilor unui manual s-au folosit 192 de cifre. Câte pagini are manualul?",
+      "points": 10,
+      "options": [
+        {
+          "text": "100",
+          "is_correct": true
+        },
+        {
+          "text": "95",
+          "is_correct": false
+        },
+        {
+          "text": "103",
+          "is_correct": false
+        },
+        {
+          "text": "110",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pentru numerotarea paginilor unui manual s-au folosit 468 de cifre. Câte pagini are manualul?",
+      "points": 10,
+      "options": [
+        {
+          "text": "192",
+          "is_correct": true
+        },
+        {
+          "text": "187",
+          "is_correct": false
+        },
+        {
+          "text": "195",
+          "is_correct": false
+        },
+        {
+          "text": "202",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte numere naturale de forma ab verifică relația a + 2b = 9?",
+      "points": 10,
+      "options": [
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care dintre numerele următoare are forma ab și verifică a + 2b = 9?",
+      "points": 10,
+      "options": [
+        {
+          "text": "52",
+          "is_correct": true
+        },
+        {
+          "text": "90",
+          "is_correct": false
+        },
+        {
+          "text": "62",
+          "is_correct": false
+        },
+        {
+          "text": "42",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte numere naturale de forma ab verifică relația a + 2b = 11?",
+      "points": 10,
+      "options": [
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care dintre numerele următoare are forma ab și verifică a + 2b = 11?",
+      "points": 10,
+      "options": [
+        {
+          "text": "53",
+          "is_correct": true
+        },
+        {
+          "text": "91",
+          "is_correct": false
+        },
+        {
+          "text": "63",
+          "is_correct": false
+        },
+        {
+          "text": "43",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte numere naturale de forma ab verifică relația a + 2b = 13?",
+      "points": 10,
+      "options": [
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care dintre numerele următoare are forma ab și verifică a + 2b = 13?",
+      "points": 10,
+      "options": [
+        {
+          "text": "54",
+          "is_correct": true
+        },
+        {
+          "text": "92",
+          "is_correct": false
+        },
+        {
+          "text": "64",
+          "is_correct": false
+        },
+        {
+          "text": "44",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte numere naturale de forma ab verifică relația a + 2b = 15?",
+      "points": 10,
+      "options": [
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care dintre numerele următoare are forma ab și verifică a + 2b = 15?",
+      "points": 10,
+      "options": [
+        {
+          "text": "55",
+          "is_correct": true
+        },
+        {
+          "text": "93",
+          "is_correct": false
+        },
+        {
+          "text": "65",
+          "is_correct": false
+        },
+        {
+          "text": "45",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrierea cu cifre a numărului „treizeci și opt de mii nouă” este:",
+      "points": 10,
+      "options": [
+        {
+          "text": "38 009",
+          "is_correct": true
+        },
+        {
+          "text": "389",
+          "is_correct": false
+        },
+        {
+          "text": "3 809",
+          "is_correct": false
+        },
+        {
+          "text": "380 009",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrierea cu cifre a numărului „cinci mii opt” este:",
+      "points": 10,
+      "options": [
+        {
+          "text": "5 008",
+          "is_correct": true
+        },
+        {
+          "text": "58",
+          "is_correct": false
+        },
+        {
+          "text": "508",
+          "is_correct": false
+        },
+        {
+          "text": "50 008",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrierea cu cifre a numărului „două sute treizeci și patru” este:",
+      "points": 10,
+      "options": [
+        {
+          "text": "234",
+          "is_correct": true
+        },
+        {
+          "text": "2 034",
+          "is_correct": false
+        },
+        {
+          "text": "23 400",
+          "is_correct": false
+        },
+        {
+          "text": "2 340",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrierea cu cifre a numărului „un milion două sute” este:",
+      "points": 10,
+      "options": [
+        {
+          "text": "1 200 000",
+          "is_correct": true
+        },
+        {
+          "text": "1 200",
+          "is_correct": false
+        },
+        {
+          "text": "120 000",
+          "is_correct": false
+        },
+        {
+          "text": "12 000",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrierea cu cifre a numărului „nouă sute cinci” este:",
+      "points": 10,
+      "options": [
+        {
+          "text": "905",
+          "is_correct": true
+        },
+        {
+          "text": "9 500",
+          "is_correct": false
+        },
+        {
+          "text": "95",
+          "is_correct": false
+        },
+        {
+          "text": "9 050",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrierea cu litere a numărului 1 078 este:",
+      "points": 10,
+      "options": [
+        {
+          "text": "o mie șaptezeci și opt",
+          "is_correct": true
+        },
+        {
+          "text": "o sută șaptezeci și opt",
+          "is_correct": false
+        },
+        {
+          "text": "zece mii șaptezeci și opt",
+          "is_correct": false
+        },
+        {
+          "text": "un milion șaptezeci și opt",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrierea cu litere a numărului 2 405 este:",
+      "points": 10,
+      "options": [
+        {
+          "text": "două mii patru sute cinci",
+          "is_correct": true
+        },
+        {
+          "text": "două sute patru mii cinci",
+          "is_correct": false
+        },
+        {
+          "text": "douăzeci și patru mii cinci",
+          "is_correct": false
+        },
+        {
+          "text": "două mii patruzeci și cinci",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrierea cu litere a numărului 50 003 este:",
+      "points": 10,
+      "options": [
+        {
+          "text": "cincizeci de mii trei",
+          "is_correct": true
+        },
+        {
+          "text": "cinci mii trei",
+          "is_correct": false
+        },
+        {
+          "text": "cinci sute trei",
+          "is_correct": false
+        },
+        {
+          "text": "cinci milioane trei",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrierea cu litere a numărului 100 010 este:",
+      "points": 10,
+      "options": [
+        {
+          "text": "o sută de mii zece",
+          "is_correct": true
+        },
+        {
+          "text": "o mie zece",
+          "is_correct": false
+        },
+        {
+          "text": "un milion zece",
+          "is_correct": false
+        },
+        {
+          "text": "zece mii zece",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În numărul 1 234 567, cifra 3 este la ordinul:",
+      "points": 10,
+      "options": [
+        {
+          "text": "zecilor de mii",
+          "is_correct": true
+        },
+        {
+          "text": "unităților",
+          "is_correct": false
+        },
+        {
+          "text": "sutelor",
+          "is_correct": false
+        },
+        {
+          "text": "milioanelor",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În numărul 1 234 567, cifra 3 aparține clasei:",
+      "points": 10,
+      "options": [
+        {
+          "text": "miilor",
+          "is_correct": true
+        },
+        {
+          "text": "unităților",
+          "is_correct": false
+        },
+        {
+          "text": "milioanelor",
+          "is_correct": false
+        },
+        {
+          "text": "zecilor",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În numărul 23 456 981, cifra 9 este la ordinul:",
+      "points": 10,
+      "options": [
+        {
+          "text": "sutelor",
+          "is_correct": true
+        },
+        {
+          "text": "zecilor",
+          "is_correct": false
+        },
+        {
+          "text": "miilor",
+          "is_correct": false
+        },
+        {
+          "text": "milioanelor",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În numărul 23 456 981, cifra 9 aparține clasei:",
+      "points": 10,
+      "options": [
+        {
+          "text": "unităților",
+          "is_correct": true
+        },
+        {
+          "text": "unităților",
+          "is_correct": false
+        },
+        {
+          "text": "milioanelor",
+          "is_correct": false
+        },
+        {
+          "text": "zecilor",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În numărul 50 423 678, cifra 0 este la ordinul:",
+      "points": 10,
+      "options": [
+        {
+          "text": "unităților de milioane",
+          "is_correct": true
+        },
+        {
+          "text": "zecilor de milioane",
+          "is_correct": false
+        },
+        {
+          "text": "miilor",
+          "is_correct": false
+        },
+        {
+          "text": "sutelor de mii",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În numărul 50 423 678, cifra 0 aparține clasei:",
+      "points": 10,
+      "options": [
+        {
+          "text": "milioanelor",
+          "is_correct": true
+        },
+        {
+          "text": "unităților",
+          "is_correct": false
+        },
+        {
+          "text": "milioanelor",
+          "is_correct": false
+        },
+        {
+          "text": "zecilor",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În numărul 54 678, cifra 4 este la ordinul:",
+      "points": 10,
+      "options": [
+        {
+          "text": "miilor",
+          "is_correct": true
+        },
+        {
+          "text": "zecilor de mii",
+          "is_correct": false
+        },
+        {
+          "text": "sutelor",
+          "is_correct": false
+        },
+        {
+          "text": "unităților",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În numărul 54 678, cifra 4 aparține clasei:",
+      "points": 10,
+      "options": [
+        {
+          "text": "miilor",
+          "is_correct": true
+        },
+        {
+          "text": "unităților",
+          "is_correct": false
+        },
+        {
+          "text": "milioanelor",
+          "is_correct": false
+        },
+        {
+          "text": "zecilor",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte numere naturale între 30 și 60 conțin cifra 4?",
+      "points": 10,
+      "options": [
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte numere naturale între 100 și 150 conțin cifra 5?",
+      "points": 10,
+      "options": [
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte numere naturale între 20 și 40 conțin cifra 2?",
+      "points": 10,
+      "options": [
+        {
+          "text": "11",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Răsturnatul numărului 73a este 437. Care este valoarea cifrei a?",
+      "points": 10,
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Răsturnatul numărului 95a este 459. Care este valoarea cifrei a?",
+      "points": 10,
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Răsturnatul numărului 13a este 831. Care este valoarea cifrei a?",
+      "points": 10,
+      "options": [
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte numere naturale de forma a14b (a și b cifre, a ≠ 0) sunt impare?",
+      "points": 10,
+      "options": [
+        {
+          "text": "45",
+          "is_correct": true
+        },
+        {
+          "text": "40",
+          "is_correct": false
+        },
+        {
+          "text": "50",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte numere naturale de forma a14b verifică relația a > b?",
+      "points": 10,
+      "options": [
+        {
+          "text": "45",
+          "is_correct": true
+        },
+        {
+          "text": "40",
+          "is_correct": false
+        },
+        {
+          "text": "50",
+          "is_correct": false
+        },
+        {
+          "text": "90",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este următorul termen al șirului: 10, 16, 22, ...?",
+      "points": 10,
+      "options": [
+        {
+          "text": "28",
+          "is_correct": true
+        },
+        {
+          "text": "26",
+          "is_correct": false
+        },
+        {
+          "text": "30",
+          "is_correct": false
+        },
+        {
+          "text": "34",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este următorul termen al șirului: 2, 6, 18, ...?",
+      "points": 10,
+      "options": [
+        {
+          "text": "54",
+          "is_correct": true
+        },
+        {
+          "text": "36",
+          "is_correct": false
+        },
+        {
+          "text": "48",
+          "is_correct": false
+        },
+        {
+          "text": "72",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este următorul termen al șirului: 5, 11, 23, ...?",
+      "points": 10,
+      "options": [
+        {
+          "text": "47",
+          "is_correct": true
+        },
+        {
+          "text": "45",
+          "is_correct": false
+        },
+        {
+          "text": "49",
+          "is_correct": false
+        },
+        {
+          "text": "51",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

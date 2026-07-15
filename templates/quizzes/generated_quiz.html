@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load lesson_tags %}
+
+{% block title %}Chestionar — {{ topic.title }}{% endblock %}
+
+{% block content %}
+<div class="page-content">
+    <p class="muted" style="margin:0 0 0.5rem;">
+        <a href="{% url 'topic_detail' topic.pk %}">{{ topic.title }}</a>
+    </p>
+    {% render_lesson_tags topic %}
+    <h1>Chestionar generat</h1>
+    <p class="muted">Întrebarea {{ question_number }} din {{ total_count }}</p>
+
+    <article class="card">
+        <h2 style="margin:0 0 1rem;">{{ item.question.text }}</h2>
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="item_id" value="{{ item.pk }}">
+            <fieldset style="border:none;padding:0;margin:0;">
+                {% for option in item.question.options.all %}
+                    <label class="quiz-option" style="display:block;margin-bottom:0.75rem;cursor:pointer;">
+                        <input type="radio" name="option_id" value="{{ option.pk }}" required>
+                        {{ option.text }}
+                    </label>
+                {% endfor %}
+            </fieldset>
+            <button type="submit" class="btn" style="margin-top:1rem;">
+                {% if question_number == total_count %}Finalizează{% else %}Următoarea întrebare{% endif %}
+            </button>
+        </form>
+    </article>
+</div>
+{% endblock %}

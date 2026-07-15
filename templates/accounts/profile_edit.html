@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Editează profil — Focul Matematic{% endblock %}
+
+{% block extra_css %}
+<style>
+    .theme-preview-grid { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.75rem; }
+    .theme-preview-card {
+        border: 1px solid #4a424c;
+        border-radius: 6px;
+        padding: 0.5rem;
+        min-width: 5rem;
+    }
+    .theme-preview-card .swatches { display: flex; gap: 0.25rem; margin-top: 0.35rem; }
+    .theme-preview-card .swatch { width: 1.25rem; height: 1.25rem; border-radius: 3px; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="page-content">
+<h1>Editează profilul</h1>
+<form method="post" action="">
+    {% csrf_token %}
+    <div class="card">
+        {% for field in form %}
+            <p>
+                <label for="{{ field.id_for_label }}">{{ field.label }}</label><br>
+                {{ field }}
+                {% if field.name == "theme" %}
+                    <div class="theme-preview-grid" id="theme-preview">
+                        <div class="theme-preview-card" data-theme="light">
+                            <span class="muted">Light</span>
+                            <div class="swatches">
+                                <span class="swatch" style="background:#f5f7fa"></span>
+                                <span class="swatch" style="background:#e85d04"></span>
+                            </div>
+                        </div>
+                        <div class="theme-preview-card" data-theme="dark_theme_1">
+                            <span class="muted">Dark</span>
+                            <div class="swatches">
+                                <span class="swatch" style="background:#0f1419"></span>
+                                <span class="swatch" style="background:#e85d04"></span>
+                            </div>
+                        </div>
+                        <div class="theme-preview-card" data-theme="fire_theme">
+                            <span class="muted">Foc</span>
+                            <div class="swatches">
+                                <span class="swatch" style="background:#1a0a00"></span>
+                                <span class="swatch" style="background:#ff6b35"></span>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+                {% for error in field.errors %}
+                    <span class="muted" style="color:#e63946;display:block;">{{ error }}</span>
+                {% endfor %}
+            </p>
+        {% endfor %}
+    </div>
+    <button type="submit" class="btn">Salvează</button>
+    <a href="{% url 'profile' %}" style="margin-left:1rem;">Anulează</a>
+</form>
+</div>
+{% endblock %}
