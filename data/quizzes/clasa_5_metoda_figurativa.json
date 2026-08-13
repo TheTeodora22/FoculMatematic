@@ -1,0 +1,1400 @@
+{
+  "title": "Metoda figurativă",
+  "description": "Clasa a 5-a · Metode aritmetice de rezolvare a problemelor",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Suma a două numere este 27, iar diferența este 19. Cât reprezintă cele două părți egale?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Eliminăm diferența: 27 − 19 = 8.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "19",
+          "is_correct": false
+        },
+        {
+          "text": "46",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Două părți egale însumează 8. Cât reprezintă o parte?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "8 : 2 = 4.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Suma a două numere este 36, iar primul este de 3 ori al doilea. Câte părți avem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Primul are 3 părți și al doilea o parte.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Suma este 36 și raportul este 3. Care este numărul mai mic?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "36 : 4 = 9.",
+      "options": [
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "27",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Diferența dintre vârste este 28, iar tatăl va avea de 3 ori vârsta fiului. Câte părți reprezintă diferența?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3 părți − 1 parte = 2 părți.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "28",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Două părți valorează 28. Cât valorează o parte?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "28 : 2 = 14.",
+      "options": [
+        {
+          "text": "14",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "26",
+          "is_correct": false
+        },
+        {
+          "text": "42",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Perimetrul unui dreptunghi este 444 m, iar lățimea este cu 12 m mai mică. Ce calcul facem întâi?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Semiperimetrul este suma lungimii și lățimii.",
+      "options": [
+        {
+          "text": "444 : 2",
+          "is_correct": true
+        },
+        {
+          "text": "444 − 12",
+          "is_correct": false
+        },
+        {
+          "text": "444 : 4",
+          "is_correct": false
+        },
+        {
+          "text": "444 + 12",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Suma a două numere este 206. Adăugând cifra 1 în stânga unuia obținem celălalt număr. Diferența este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cifra 1 adăugată în stânga unui număr de două cifre mărește numărul cu 100.",
+      "options": [
+        {
+          "text": "100",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "206",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un număr este de 4 ori altul, iar suma lor este 60. Numărul mic este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem 5 părți: 60 : 5 = 12.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "48",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Doi frați cântăresc împreună cu părinții 238 kg. Copiii au câte 40 kg, iar tatăl are cu 14 kg mai mult decât mama. Mama are:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Părinții au 158 kg; eliminăm diferența 14 și împărțim la 2.",
+      "options": [
+        {
+          "text": "72",
+          "is_correct": true
+        },
+        {
+          "text": "58",
+          "is_correct": false
+        },
+        {
+          "text": "76",
+          "is_correct": false
+        },
+        {
+          "text": "86",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "37 de copii au participat la concurs, iar cei cu punctaj mic sunt de 3 ori mai mulți. Ce observăm?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "37 nu se împarte exact în 4, deci datele nu conduc la numere naturale.",
+      "options": [
+        {
+          "text": "date incompatibile",
+          "is_correct": true
+        },
+        {
+          "text": "9 copii",
+          "is_correct": false
+        },
+        {
+          "text": "12 copii",
+          "is_correct": false
+        },
+        {
+          "text": "28 copii",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Împărțind un număr la altul obținem câtul 5 și restul 14. Restul trebuie să fie:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În împărțirea cu rest, restul este mai mic decât împărțitorul.",
+      "options": [
+        {
+          "text": "mai mic decât împărțitorul",
+          "is_correct": true
+        },
+        {
+          "text": "egal cu împărțitorul",
+          "is_correct": false
+        },
+        {
+          "text": "mai mare decât împărțitorul",
+          "is_correct": false
+        },
+        {
+          "text": "întotdeauna zero",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "16 elevi ar mai încăpea câte doi în bancă, folosind încă 3 bănci. Câte locuri reprezintă cele 3 bănci?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3 · 2 = 6 locuri.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pe un desen, bara mare are 4 părți, iar bara mică una. Câtul este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Bara mare este de patru ori bara mică.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă suma minus diferența este impară, problema cu două numere naturale:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rezultatul trebuie împărțit la 2 și trebuie să fie natural.",
+      "options": [
+        {
+          "text": "nu are soluție",
+          "is_correct": true
+        },
+        {
+          "text": "are mereu soluție",
+          "is_correct": false
+        },
+        {
+          "text": "are două soluții",
+          "is_correct": false
+        },
+        {
+          "text": "are numere egale",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Verificarea pentru numerele 4 și 23, cu suma 27 și diferența 19, este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Verificăm atât suma, cât și diferența.",
+      "options": [
+        {
+          "text": "4 + 23 = 27 și 23 − 4 = 19",
+          "is_correct": true
+        },
+        {
+          "text": "4 · 23 = 27",
+          "is_correct": false
+        },
+        {
+          "text": "27 − 19 = 4",
+          "is_correct": false
+        },
+        {
+          "text": "23 : 4 = 19",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Alege desenul pentru suma 27 și diferența 19.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ambele bare au câte o parte comună, iar bara mare are încă 19.",
+      "interactive": {
+        "mode": "choose_scheme",
+        "answers": {
+          "scheme": 0
+        },
+        "schemes": [
+          {
+            "small_parts": 1,
+            "large_parts": 1,
+            "difference": 19,
+            "total": 27,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 1,
+            "large_parts": 2,
+            "difference": 19,
+            "total": 27,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 2,
+            "large_parts": 2,
+            "difference": 19,
+            "total": 27,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 1,
+            "large_parts": 3,
+            "difference": 0,
+            "total": 27,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege desenul pentru suma 36 și câtul 3.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul mare are 3 părți, iar cel mic una.",
+      "interactive": {
+        "mode": "choose_scheme",
+        "answers": {
+          "scheme": 0
+        },
+        "schemes": [
+          {
+            "small_parts": 1,
+            "large_parts": 3,
+            "difference": 0,
+            "total": 36,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 1,
+            "large_parts": 2,
+            "difference": 3,
+            "total": 36,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 2,
+            "large_parts": 3,
+            "difference": 0,
+            "total": 36,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 1,
+            "large_parts": 4,
+            "difference": 0,
+            "total": 36,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege desenul pentru diferența 28 și câtul 3.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Diferența dintre 3 părți și o parte este 28.",
+      "interactive": {
+        "mode": "choose_scheme",
+        "answers": {
+          "scheme": 0
+        },
+        "schemes": [
+          {
+            "small_parts": 1,
+            "large_parts": 3,
+            "difference": 28,
+            "total": null,
+            "small_label": "fiul",
+            "large_label": "tatăl"
+          },
+          {
+            "small_parts": 1,
+            "large_parts": 2,
+            "difference": 28,
+            "total": null,
+            "small_label": "fiul",
+            "large_label": "tatăl"
+          },
+          {
+            "small_parts": 2,
+            "large_parts": 3,
+            "difference": 28,
+            "total": null,
+            "small_label": "fiul",
+            "large_label": "tatăl"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Construiește schema: suma 60, numărul mare este de 4 ori numărul mic.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Schema are 1 parte și 4 părți.",
+      "interactive": {
+        "mode": "build_segments",
+        "answers": {
+          "small_parts": 1,
+          "large_parts": 4,
+          "difference": 0
+        },
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 4,
+          "difference": 0,
+          "total": 60,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Construiește schema: suma 48, numărul mare este de 3 ori numărul mic.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Schema are în total 4 părți.",
+      "interactive": {
+        "mode": "build_segments",
+        "answers": {
+          "small_parts": 1,
+          "large_parts": 3,
+          "difference": 0
+        },
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 3,
+          "difference": 0,
+          "total": 48,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Construiește schema pentru 27 și diferența 19.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cele două bare au o parte comună.",
+      "interactive": {
+        "mode": "build_segments",
+        "answers": {
+          "small_parts": 1,
+          "large_parts": 1,
+          "difference": 19
+        },
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 1,
+          "difference": 19,
+          "total": 27,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Împarte bara sumei 36 în numărul corect de părți.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "1 + 3 = 4 părți.",
+      "interactive": {
+        "mode": "divide_segments",
+        "answers": {
+          "parts": 4
+        },
+        "maximum": 8,
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 3,
+          "difference": 0,
+          "total": 36,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Împarte bara sumei 60 pentru raportul 4.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "1 + 4 = 5 părți.",
+      "interactive": {
+        "mode": "divide_segments",
+        "answers": {
+          "parts": 5
+        },
+        "maximum": 8,
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 4,
+          "difference": 0,
+          "total": 60,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Împarte diferența de vârstă în părți egale.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "3 − 1 = 2 părți.",
+      "interactive": {
+        "mode": "divide_segments",
+        "answers": {
+          "parts": 2
+        },
+        "maximum": 8,
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 3,
+          "difference": 28,
+          "total": null,
+          "small_label": "fiul",
+          "large_label": "tatăl"
+        }
+      }
+    },
+    {
+      "text": "Pune în ordine rezolvarea sumei 27 și diferenței 19.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Întâi eliminăm diferența, apoi aflăm o parte.",
+      "interactive": {
+        "mode": "order_steps",
+        "answers": {
+          "position:0": 0,
+          "position:1": 1,
+          "position:2": 2,
+          "position:3": 3
+        },
+        "steps": [
+          "27 − 19 = 8",
+          "8 : 2 = 4",
+          "4 + 19 = 23",
+          "4 + 23 = 27"
+        ],
+        "display_order": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 1,
+          "difference": 19,
+          "total": 27,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Pune în ordine rezolvarea sumei 36 și câtului 3.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărăm părțile înainte de împărțire.",
+      "interactive": {
+        "mode": "order_steps",
+        "answers": {
+          "position:0": 0,
+          "position:1": 1,
+          "position:2": 2,
+          "position:3": 3
+        },
+        "steps": [
+          "3 + 1 = 4 părți",
+          "36 : 4 = 9",
+          "9 · 3 = 27",
+          "9 + 27 = 36"
+        ],
+        "display_order": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 3,
+          "difference": 0,
+          "total": 36,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Pune în ordine problema de vârstă.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Diferența corespunde la două părți.",
+      "interactive": {
+        "mode": "order_steps",
+        "answers": {
+          "position:0": 0,
+          "position:1": 1,
+          "position:2": 2,
+          "position:3": 3
+        },
+        "steps": [
+          "3 − 1 = 2 părți",
+          "28 : 2 = 14",
+          "14 · 3 = 42",
+          "scădem cei 2 ani"
+        ],
+        "display_order": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 3,
+          "difference": 28,
+          "total": null,
+          "small_label": "fiul",
+          "large_label": "tatăl"
+        }
+      }
+    },
+    {
+      "text": "Elimină diferența 19 din suma 27.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "După eliminare rămân două părți egale cu suma 8.",
+      "interactive": {
+        "mode": "animate_difference",
+        "answers": {
+          "removed": 19,
+          "remaining": 8
+        },
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 1,
+          "difference": 19,
+          "total": 27,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Elimină diferența 14 din totalul de 158 kg al părinților.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "158 − 14 = 144.",
+      "interactive": {
+        "mode": "animate_difference",
+        "answers": {
+          "removed": 14,
+          "remaining": 144
+        },
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 1,
+          "difference": 14,
+          "total": 158,
+          "small_label": "mama",
+          "large_label": "tata"
+        }
+      }
+    },
+    {
+      "text": "Elimină diferența 12 din semiperimetrul 222.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "222 − 12 = 210.",
+      "interactive": {
+        "mode": "animate_difference",
+        "answers": {
+          "removed": 12,
+          "remaining": 210
+        },
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 1,
+          "difference": 12,
+          "total": 222,
+          "small_label": "lățimea",
+          "large_label": "lungimea"
+        }
+      }
+    },
+    {
+      "text": "Repară desenul pentru suma 36 și câtul 3.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Bara mare trebuie să aibă trei părți.",
+      "interactive": {
+        "mode": "repair_scheme",
+        "answers": {
+          "repair": 3
+        },
+        "choices": [
+          2,
+          3,
+          4
+        ],
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 2,
+          "difference": 0,
+          "total": 36,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Repară diferența din schema sumei 27.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Diferența corectă este 19.",
+      "interactive": {
+        "mode": "repair_scheme",
+        "answers": {
+          "repair": 19
+        },
+        "choices": [
+          17,
+          19,
+          21
+        ],
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 1,
+          "difference": 17,
+          "total": 27,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Repară desenul vârstelor.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Tatăl va avea de trei ori vârsta fiului.",
+      "interactive": {
+        "mode": "repair_scheme",
+        "answers": {
+          "repair": 3
+        },
+        "choices": [
+          2,
+          3,
+          4
+        ],
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 4,
+          "difference": 28,
+          "total": null,
+          "small_label": "fiul",
+          "large_label": "tatăl"
+        }
+      }
+    },
+    {
+      "text": "Citește desenul cu suma 36.",
+      "type": "figurative_method",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Bara mare are trei părți egale.",
+      "interactive": {
+        "mode": "figurative_true_false",
+        "answers": {
+          "answer": "true"
+        },
+        "statement": "Numărul mare este de trei ori numărul mic.",
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 3,
+          "difference": 0,
+          "total": 36,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Citește desenul cu suma 27.",
+      "type": "figurative_method",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "27 este suma; diferența este 19.",
+      "interactive": {
+        "mode": "figurative_true_false",
+        "answers": {
+          "answer": "false"
+        },
+        "statement": "Diferența dintre numere este 27.",
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 1,
+          "difference": 19,
+          "total": 27,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Citește desenul vârstelor.",
+      "type": "figurative_method",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "3 − 1 = 2 părți.",
+      "interactive": {
+        "mode": "figurative_true_false",
+        "answers": {
+          "answer": "true"
+        },
+        "statement": "Diferența reprezintă două părți.",
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 3,
+          "difference": 28,
+          "total": null,
+          "small_label": "fiul",
+          "large_label": "tatăl"
+        }
+      }
+    },
+    {
+      "text": "Alege restul pentru o împărțire cu câtul 3 și suma numerelor 36.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "36 se împarte exact la 4, deci restul este 0.",
+      "interactive": {
+        "mode": "remainder_slider",
+        "answers": {
+          "remainder": 0
+        },
+        "maximum": 8,
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 3,
+          "difference": 0,
+          "total": 36,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Alege restul pentru soluția 28 = 8 · 3 + r.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "28 = 24 + 4.",
+      "interactive": {
+        "mode": "remainder_slider",
+        "answers": {
+          "remainder": 4
+        },
+        "maximum": 7,
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 3,
+          "difference": 4,
+          "total": 36,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Alege restul pentru soluția 27 = 9 · 3 + r.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "27 = 9 · 3.",
+      "interactive": {
+        "mode": "remainder_slider",
+        "answers": {
+          "remainder": 0
+        },
+        "maximum": 5,
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 3,
+          "difference": 0,
+          "total": 36,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Suma este 24 și diferența 19. Există două numere naturale?",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "(24 − 19) : 2 = 2,5, deci nu obținem numere naturale.",
+      "interactive": {
+        "mode": "no_solution",
+        "answers": {
+          "possible": "no"
+        },
+        "note": "O parte trebuie să fie număr natural.",
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 1,
+          "difference": 19,
+          "total": 24,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Suma este 27 și diferența 19. Există soluție?",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "(27 − 19) : 2 = 4.",
+      "interactive": {
+        "mode": "no_solution",
+        "answers": {
+          "possible": "yes"
+        },
+        "note": "O parte trebuie să fie număr natural.",
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 1,
+          "difference": 19,
+          "total": 27,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Suma este 36 și câtul 3. Există soluție naturală?",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "36 : 4 = 9.",
+      "interactive": {
+        "mode": "no_solution",
+        "answers": {
+          "possible": "yes"
+        },
+        "note": "O parte trebuie să fie număr natural.",
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 3,
+          "difference": 0,
+          "total": 36,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Mută elevii pe bănci și află situația inițială.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "34 bănci ocupate și 4 libere: 38 bănci; 34 · 5 = 170 elevi.",
+      "interactive": {
+        "mode": "benches",
+        "answers": {
+          "bănci": 38,
+          "elevi": 170
+        },
+        "occupied": 34,
+        "free": 4,
+        "students_per_bench": 5,
+        "scheme": {
+          "small_parts": 34,
+          "large_parts": 34,
+          "difference": 4,
+          "total": 174,
+          "small_label": "bănci ocupate",
+          "large_label": "elevi"
+        }
+      }
+    },
+    {
+      "text": "Calculează pentru 20 de bănci ocupate, 3 libere și câte 4 elevi.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Sunt 23 de bănci și 80 de elevi.",
+      "interactive": {
+        "mode": "benches",
+        "answers": {
+          "bănci": 23,
+          "elevi": 80
+        },
+        "occupied": 20,
+        "free": 3,
+        "students_per_bench": 4,
+        "scheme": {
+          "small_parts": 20,
+          "large_parts": 20,
+          "difference": 3,
+          "total": 83,
+          "small_label": "bănci ocupate",
+          "large_label": "elevi"
+        }
+      }
+    },
+    {
+      "text": "Calculează pentru 12 bănci ocupate, 2 libere și câte 3 elevi.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Sunt 14 bănci și 36 de elevi.",
+      "interactive": {
+        "mode": "benches",
+        "answers": {
+          "bănci": 14,
+          "elevi": 36
+        },
+        "occupied": 12,
+        "free": 2,
+        "students_per_bench": 3,
+        "scheme": {
+          "small_parts": 12,
+          "large_parts": 12,
+          "difference": 2,
+          "total": 38,
+          "small_label": "bănci ocupate",
+          "large_label": "elevi"
+        }
+      }
+    },
+    {
+      "text": "Alege cele două desene echivalente pentru suma 36 și câtul 3.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "A doua schemă este prima scalată de două ori.",
+      "interactive": {
+        "mode": "equivalent_schemes",
+        "answers": {
+          "first": 0,
+          "second": 1
+        },
+        "schemes": [
+          {
+            "small_parts": 1,
+            "large_parts": 3,
+            "difference": 0,
+            "total": 36,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 2,
+            "large_parts": 6,
+            "difference": 0,
+            "total": 72,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 1,
+            "large_parts": 2,
+            "difference": 12,
+            "total": 36,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 1,
+            "large_parts": 3,
+            "difference": 0,
+            "total": 40,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege schemele echivalente pentru diferența 28 și câtul 3.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ambele rapoarte sunt 1 la 3 și diferențele sunt scalate identic.",
+      "interactive": {
+        "mode": "equivalent_schemes",
+        "answers": {
+          "first": 0,
+          "second": 1
+        },
+        "schemes": [
+          {
+            "small_parts": 1,
+            "large_parts": 3,
+            "difference": 28,
+            "total": null,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 2,
+            "large_parts": 6,
+            "difference": 56,
+            "total": null,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 1,
+            "large_parts": 2,
+            "difference": 28,
+            "total": null,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 1,
+            "large_parts": 4,
+            "difference": 28,
+            "total": null,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege desenele echivalente pentru suma 60 și câtul 4.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Raportul și totalul sunt dublate împreună.",
+      "interactive": {
+        "mode": "equivalent_schemes",
+        "answers": {
+          "first": 0,
+          "second": 1
+        },
+        "schemes": [
+          {
+            "small_parts": 1,
+            "large_parts": 4,
+            "difference": 0,
+            "total": 60,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 2,
+            "large_parts": 8,
+            "difference": 0,
+            "total": 120,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 1,
+            "large_parts": 3,
+            "difference": 0,
+            "total": 60,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 1,
+            "large_parts": 4,
+            "difference": 5,
+            "total": 60,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Rezolvă complet desenul: suma 27, diferența 19.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "27 − 19 = 8; 8 : 2 = 4; numerele sunt 4 și 23.",
+      "interactive": {
+        "mode": "full_puzzle",
+        "answers": {
+          "parts": 2,
+          "one_part": 4,
+          "small": 4,
+          "large": 23
+        },
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 1,
+          "difference": 19,
+          "total": 27,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Rezolvă complet desenul: suma 36, câtul 3.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "36 : 4 = 9; numerele sunt 9 și 27.",
+      "interactive": {
+        "mode": "full_puzzle",
+        "answers": {
+          "parts": 4,
+          "one_part": 9,
+          "small": 9,
+          "large": 27
+        },
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 3,
+          "difference": 0,
+          "total": 36,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    },
+    {
+      "text": "Rezolvă desenul vârstelor: diferența 28, câtul 3.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "28 : 2 = 14; vârstele din momentul comparat sunt 14 și 42.",
+      "interactive": {
+        "mode": "full_puzzle",
+        "answers": {
+          "parts": 2,
+          "one_part": 14,
+          "small": 14,
+          "large": 42
+        },
+        "scheme": {
+          "small_parts": 1,
+          "large_parts": 3,
+          "difference": 28,
+          "total": null,
+          "small_label": "numărul mic",
+          "large_label": "numărul mare"
+        }
+      }
+    }
+  ]
+}

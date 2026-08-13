@@ -1,18 +1,33 @@
 {% extends "base.html" %}
 
-{% block title %}Clasa a {{ class_level }}-a — Focul Matematic{% endblock %}
+{% block title %}Clasa a {{ class_level }}-a - Focul Matematic{% endblock %}
 
 {% block content %}
 <div class="page-content">
     <h1>Clasa a {{ class_level }}-a</h1>
 
-    {% if not chapters %}
-        <p class="muted">Nu există încă capitole pentru această clasă.</p>
+    {% if not chapter_states %}
+        <p class="muted">Nu exista inca capitole pentru aceasta clasa.</p>
     {% else %}
-        {% for chapter in chapters %}
-            <article class="card">
-                <h2 style="margin:0 0 0.75rem;">{{ chapter.title }}</h2>
-                <a class="btn btn-press" href="{% url 'chapter_topics' class_level chapter.slug %}">Deschide lecția</a>
+        {% for state in chapter_states %}
+            <article class="card learning-card">
+                <div class="learning-card__main">
+                    <h2 style="margin:0 0 0.35rem;">{{ state.chapter.title }}</h2>
+                    <p class="muted" style="margin:0;">
+                        {{ state.topic_count }} subiecte &middot; {{ state.question_count }} intrebari
+                        {% if state.in_progress_count %}
+                            &middot; {{ state.in_progress_count }} in progres
+                        {% endif %}
+                    </p>
+                    <div class="learning-progress" aria-label="Progres antrenare {{ state.training_percent }}%">
+                        <div class="learning-progress__fill" style="width: {{ state.training_percent }}%;"></div>
+                    </div>
+                    <p class="muted learning-card__meta">
+                        {{ state.training_correct }} rezolvate corect
+                        {% if state.training_wrong %}&middot; {{ state.training_wrong }} de reluat{% endif %}
+                    </p>
+                </div>
+                <a class="btn btn-press" href="{% url 'chapter_topics' class_level state.chapter.slug %}">Deschide capitolul</a>
             </article>
         {% endfor %}
     {% endif %}

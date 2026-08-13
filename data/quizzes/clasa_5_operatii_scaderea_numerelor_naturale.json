@@ -2,5 +2,1602 @@
   "title": "Scăderea numerelor naturale",
   "description": "Clasa a 5-a · Operații cu numere naturale",
   "difficulty": "easy",
-  "questions": []
+  "questions": [
+    {
+      "text": "Calculați diferența 2 537 − 1 322.",
+      "points": 10,
+      "explanation": "2 537 − 1 322 = 1 215. Verificare: 1 215 + 1 322 = 2 537.",
+      "options": [
+        {
+          "text": "1 115",
+          "is_correct": false
+        },
+        {
+          "text": "1 215",
+          "is_correct": true
+        },
+        {
+          "text": "1 205",
+          "is_correct": false
+        },
+        {
+          "text": "1 315",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați diferența 6 795 − 3 063.",
+      "points": 10,
+      "explanation": "6 795 − 3 063 = 3 732. Verificare: 3 732 + 3 063 = 6 795.",
+      "options": [
+        {
+          "text": "3 632",
+          "is_correct": false
+        },
+        {
+          "text": "3 732",
+          "is_correct": true
+        },
+        {
+          "text": "3 832",
+          "is_correct": false
+        },
+        {
+          "text": "4 732",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați diferența 3 172 − 2 183.",
+      "points": 10,
+      "explanation": "3 172 − 2 183 = 989. Verificare: 989 + 2 183 = 3 172.",
+      "options": [
+        {
+          "text": "889",
+          "is_correct": false
+        },
+        {
+          "text": "989",
+          "is_correct": true
+        },
+        {
+          "text": "999",
+          "is_correct": false
+        },
+        {
+          "text": "1 089",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați diferența 2 105 − 1 537.",
+      "points": 10,
+      "explanation": "2 105 − 1 537 = 568. Verificare: 568 + 1 537 = 2 105.",
+      "options": [
+        {
+          "text": "468",
+          "is_correct": false
+        },
+        {
+          "text": "568",
+          "is_correct": true
+        },
+        {
+          "text": "578",
+          "is_correct": false
+        },
+        {
+          "text": "668",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați diferența 25 002 − 7 279.",
+      "points": 10,
+      "explanation": "25 002 − 7 279 = 17 723. Verificare: 17 723 + 7 279 = 25 002.",
+      "options": [
+        {
+          "text": "17 623",
+          "is_correct": false
+        },
+        {
+          "text": "17 723",
+          "is_correct": true
+        },
+        {
+          "text": "17 823",
+          "is_correct": false
+        },
+        {
+          "text": "18 723",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă îl adunăm pe x cu 577, obținem 867. Cât este x?",
+      "points": 10,
+      "explanation": "x = 867 − 577 = 290.",
+      "options": [
+        {
+          "text": "280",
+          "is_correct": false
+        },
+        {
+          "text": "290",
+          "is_correct": true
+        },
+        {
+          "text": "300",
+          "is_correct": false
+        },
+        {
+          "text": "390",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Adunând 529 cu numărul natural x, obținem 630. Cât este x?",
+      "points": 10,
+      "explanation": "x = 630 − 529 = 101.",
+      "options": [
+        {
+          "text": "91",
+          "is_correct": false
+        },
+        {
+          "text": "101",
+          "is_correct": true
+        },
+        {
+          "text": "111",
+          "is_correct": false
+        },
+        {
+          "text": "201",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă îl adunăm pe x cu 1 286, se obține 5 875. Cât este x?",
+      "points": 10,
+      "explanation": "x = 5 875 − 1 286 = 4 589.",
+      "options": [
+        {
+          "text": "4 579",
+          "is_correct": false
+        },
+        {
+          "text": "4 589",
+          "is_correct": true
+        },
+        {
+          "text": "4 599",
+          "is_correct": false
+        },
+        {
+          "text": "4 689",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Suma dintre x și 44 561 este 894 552. Determinați x.",
+      "points": 10,
+      "explanation": "x = 894 552 − 44 561 = 849 991.",
+      "options": [
+        {
+          "text": "849 981",
+          "is_correct": false
+        },
+        {
+          "text": "849 991",
+          "is_correct": true
+        },
+        {
+          "text": "850 001",
+          "is_correct": false
+        },
+        {
+          "text": "850 091",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determinați x din egalitatea 247 + x = 783.",
+      "points": 10,
+      "explanation": "Termenul necunoscut este diferența dintre sumă și termenul cunoscut: x = 783 − 247 = 536.",
+      "options": [
+        {
+          "text": "526",
+          "is_correct": false
+        },
+        {
+          "text": "536",
+          "is_correct": true
+        },
+        {
+          "text": "546",
+          "is_correct": false
+        },
+        {
+          "text": "636",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determinați x din egalitatea x + 318 = 2 467.",
+      "points": 10,
+      "explanation": "x = 2 467 − 318 = 2 149.",
+      "options": [
+        {
+          "text": "2 139",
+          "is_correct": false
+        },
+        {
+          "text": "2 149",
+          "is_correct": true
+        },
+        {
+          "text": "2 159",
+          "is_correct": false
+        },
+        {
+          "text": "2 249",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determinați x din egalitatea 735 − x = 517.",
+      "points": 10,
+      "explanation": "Scăzătorul este diferența dintre descăzut și rezultat: x = 735 − 517 = 218.",
+      "options": [
+        {
+          "text": "208",
+          "is_correct": false
+        },
+        {
+          "text": "218",
+          "is_correct": true
+        },
+        {
+          "text": "228",
+          "is_correct": false
+        },
+        {
+          "text": "318",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 789 − 542 − 15.",
+      "points": 10,
+      "explanation": "Scăderile se efectuează de la stânga la dreapta: 789 − 542 = 247, apoi 247 − 15 = 232.",
+      "options": [
+        {
+          "text": "222",
+          "is_correct": false
+        },
+        {
+          "text": "232",
+          "is_correct": true
+        },
+        {
+          "text": "242",
+          "is_correct": false
+        },
+        {
+          "text": "332",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 1 299 − (234 − 199).",
+      "points": 10,
+      "explanation": "Mai întâi calculăm paranteza: 234 − 199 = 35. Apoi 1 299 − 35 = 1 264.",
+      "options": [
+        {
+          "text": "1 254",
+          "is_correct": false
+        },
+        {
+          "text": "1 264",
+          "is_correct": true
+        },
+        {
+          "text": "1 274",
+          "is_correct": false
+        },
+        {
+          "text": "1 364",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 16 801 − [5 622 − (1 240 − 559)].",
+      "points": 10,
+      "explanation": "1 240 − 559 = 681, apoi 5 622 − 681 = 4 941, iar 16 801 − 4 941 = 11 860.",
+      "options": [
+        {
+          "text": "11 850",
+          "is_correct": false
+        },
+        {
+          "text": "11 860",
+          "is_correct": true
+        },
+        {
+          "text": "11 870",
+          "is_correct": false
+        },
+        {
+          "text": "11 960",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 78 952 − (568 − 422) − (4 587 − 2 559).",
+      "points": 10,
+      "explanation": "Parantezele sunt 146 și 2 028. Atunci 78 952 − 146 − 2 028 = 76 778.",
+      "options": [
+        {
+          "text": "76 768",
+          "is_correct": false
+        },
+        {
+          "text": "76 778",
+          "is_correct": true
+        },
+        {
+          "text": "76 788",
+          "is_correct": false
+        },
+        {
+          "text": "76 878",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 5 000 − (1 250 + 750).",
+      "points": 10,
+      "explanation": "În paranteză avem 1 250 + 750 = 2 000, deci 5 000 − 2 000 = 3 000.",
+      "options": [
+        {
+          "text": "2 990",
+          "is_correct": false
+        },
+        {
+          "text": "3 000",
+          "is_correct": true
+        },
+        {
+          "text": "3 010",
+          "is_correct": false
+        },
+        {
+          "text": "3 100",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați diferența dintre cel mai mare și cel mai mic număr de patru cifre identice.",
+      "points": 10,
+      "explanation": "Numerele sunt 9 999 și 1 111. Diferența este 9 999 − 1 111 = 8 888.",
+      "options": [
+        {
+          "text": "8 878",
+          "is_correct": false
+        },
+        {
+          "text": "8 888",
+          "is_correct": true
+        },
+        {
+          "text": "8 898",
+          "is_correct": false
+        },
+        {
+          "text": "8 988",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați diferența dintre cel mai mare și cel mai mic număr de trei cifre distincte.",
+      "points": 10,
+      "explanation": "Cel mai mare este 987, iar cel mai mic este 102. Diferența este 987 − 102 = 885.",
+      "options": [
+        {
+          "text": "875",
+          "is_correct": false
+        },
+        {
+          "text": "885",
+          "is_correct": true
+        },
+        {
+          "text": "895",
+          "is_correct": false
+        },
+        {
+          "text": "985",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați diferența dintre cel mai mare și cel mai mic număr de patru cifre distincte.",
+      "points": 10,
+      "explanation": "Cel mai mare este 9 876, iar cel mai mic este 1 023. Diferența este 8 853.",
+      "options": [
+        {
+          "text": "8 843",
+          "is_correct": false
+        },
+        {
+          "text": "8 853",
+          "is_correct": true
+        },
+        {
+          "text": "8 863",
+          "is_correct": false
+        },
+        {
+          "text": "8 953",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați diferența dintre cel mai mare număr de patru cifre distincte și cel mai mic număr de trei cifre distincte.",
+      "points": 10,
+      "explanation": "Numerele sunt 9 876 și 102, iar 9 876 − 102 = 9 774.",
+      "options": [
+        {
+          "text": "9 764",
+          "is_correct": false
+        },
+        {
+          "text": "9 774",
+          "is_correct": true
+        },
+        {
+          "text": "9 784",
+          "is_correct": false
+        },
+        {
+          "text": "9 874",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte numere de forma abcd verifică egalitatea abcd − b53 − 7 000 = 2 000, dacă b53 este număr de trei cifre?",
+      "points": 10,
+      "explanation": "Egalitatea impune a = 9, c = 5 și d = 3. Cifra b poate fi oricare dintre 1, 2, ..., 9, deci există 9 numere.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "90",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "La nașterea lui Radu, tatăl său avea 28 de ani. Câți ani are Radu când tatăl său are 40 de ani?",
+      "points": 10,
+      "explanation": "Diferența de vârstă rămâne 28 de ani. Radu are 40 − 28 = 12 ani.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        },
+        {
+          "text": "112",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "La nașterea lui Radu, tatăl său avea 28 de ani. Câți ani va avea tatăl când Radu va împlini 18 ani?",
+      "points": 10,
+      "explanation": "Tatăl este cu 28 de ani mai mare: 18 + 28 = 46.",
+      "options": [
+        {
+          "text": "36",
+          "is_correct": false
+        },
+        {
+          "text": "46",
+          "is_correct": true
+        },
+        {
+          "text": "56",
+          "is_correct": false
+        },
+        {
+          "text": "146",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determinați numărul cu 176 mai mic decât suma numerelor 98 și 99.",
+      "points": 10,
+      "explanation": "98 + 99 = 197, iar 197 − 176 = 21.",
+      "options": [
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "21",
+          "is_correct": true
+        },
+        {
+          "text": "31",
+          "is_correct": false
+        },
+        {
+          "text": "121",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Horia și Radu au împreună 794 lei, Radu și Clara au 676 lei, iar toți trei au 1 250 lei. Câți lei are Radu?",
+      "points": 10,
+      "explanation": "Clara are 1 250 − 794 = 456 lei. Atunci Radu are 676 − 456 = 220 lei.",
+      "options": [
+        {
+          "text": "210",
+          "is_correct": false
+        },
+        {
+          "text": "220",
+          "is_correct": true
+        },
+        {
+          "text": "230",
+          "is_correct": false
+        },
+        {
+          "text": "320",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un autocar parcurge 349 km în prima zi, cu 52 km mai puțin în a doua zi, iar în a treia zi cu 276 km mai puțin decât în primele două zile la un loc. Câți kilometri are traseul?",
+      "points": 10,
+      "explanation": "A doua zi: 349 − 52 = 297 km. A treia zi: 349 + 297 − 276 = 370 km. Total: 349 + 297 + 370 = 1 016 km.",
+      "options": [
+        {
+          "text": "1 006",
+          "is_correct": false
+        },
+        {
+          "text": "1 016",
+          "is_correct": true
+        },
+        {
+          "text": "1 026",
+          "is_correct": false
+        },
+        {
+          "text": "1 116",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Suma a două numere naturale este 98, iar diferența lor este 82. Care este numărul mai mare?",
+      "points": 10,
+      "explanation": "Numărul mai mare este (98 + 82) : 2 = 90, iar cel mic este 8.",
+      "options": [
+        {
+          "text": "80",
+          "is_correct": false
+        },
+        {
+          "text": "90",
+          "is_correct": true
+        },
+        {
+          "text": "100",
+          "is_correct": false
+        },
+        {
+          "text": "190",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Suma a trei numere este 2 002. Dacă din fiecare se scade același număr, se obțin 175, 318 și 723. Ce număr s-a scăzut?",
+      "points": 10,
+      "explanation": "Suma rezultatelor este 1 216. S-au scăzut în total 2 002 − 1 216 = 786, adică de trei ori același număr. Numărul este 786 : 3 = 262.",
+      "options": [
+        {
+          "text": "252",
+          "is_correct": false
+        },
+        {
+          "text": "262",
+          "is_correct": true
+        },
+        {
+          "text": "272",
+          "is_correct": false
+        },
+        {
+          "text": "362",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Suma a trei numere este 2 002. Scăzând același număr din fiecare, obținem 175, 318 și 723. Care a fost cel mai mare număr inițial?",
+      "points": 10,
+      "explanation": "Numărul scăzut este 262. Cel mai mare număr inițial a fost 723 + 262 = 985.",
+      "options": [
+        {
+          "text": "975",
+          "is_correct": false
+        },
+        {
+          "text": "985",
+          "is_correct": true
+        },
+        {
+          "text": "995",
+          "is_correct": false
+        },
+        {
+          "text": "1 085",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Știind că x + 2y = 24 și x + y = 19, determinați y.",
+      "points": 10,
+      "explanation": "Scădem a doua egalitate din prima: (x + 2y) − (x + y) = 24 − 19, deci y = 5.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "105",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Știind că 3x + 2y = 18 și 2x + 2y = 14, determinați x.",
+      "points": 10,
+      "explanation": "Scădem egalitățile: x = 18 − 14 = 4.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "104",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Știind că x + 2y + z = 17 și x + y = 10, determinați y + z.",
+      "points": 10,
+      "explanation": "Scădem a doua sumă din prima: y + z = 17 − 10 = 7.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        },
+        {
+          "text": "107",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă a − b = 215 și b − c = 132, determinați a − c.",
+      "points": 10,
+      "explanation": "a − c = (a − b) + (b − c) = 215 + 132 = 347.",
+      "options": [
+        {
+          "text": "337",
+          "is_correct": false
+        },
+        {
+          "text": "347",
+          "is_correct": true
+        },
+        {
+          "text": "357",
+          "is_correct": false
+        },
+        {
+          "text": "447",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă a − c = 138 și b − c = 129, determinați a − b.",
+      "points": 10,
+      "explanation": "Scădem cele două diferențe: (a − c) − (b − c) = a − b = 138 − 129 = 9.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "19",
+          "is_correct": false
+        },
+        {
+          "text": "109",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă a − b = 72 și (a − c) − (b + c) = 18, determinați c.",
+      "points": 10,
+      "explanation": "Expresia este a − b − 2c = 18. Cum a − b = 72, avem 72 − 2c = 18, deci 2c = 54 și c = 27.",
+      "options": [
+        {
+          "text": "17",
+          "is_correct": false
+        },
+        {
+          "text": "27",
+          "is_correct": true
+        },
+        {
+          "text": "37",
+          "is_correct": false
+        },
+        {
+          "text": "127",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați (10 + 15 + 20 + ... + 2 010) − (9 + 13 + 17 + ... + 1 609).",
+      "points": 10,
+      "explanation": "Ambele sume au 401 termeni. Diferențele termen cu termen sunt 1, 2, 3, ..., 401, iar suma lor este 401 · 402 : 2 = 80 601.",
+      "options": [
+        {
+          "text": "80 591",
+          "is_correct": false
+        },
+        {
+          "text": "80 601",
+          "is_correct": true
+        },
+        {
+          "text": "80 611",
+          "is_correct": false
+        },
+        {
+          "text": "80 701",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați (10 + 20 + 30 + ... + 2 020) − (9 + 18 + 27 + ... + 1 818).",
+      "points": 10,
+      "explanation": "Fiecare sumă are 202 termeni. Diferența termenilor de același rang este 1 + 2 + ... + 202 = 202 · 203 : 2 = 20 503.",
+      "options": [
+        {
+          "text": "20 493",
+          "is_correct": false
+        },
+        {
+          "text": "20 503",
+          "is_correct": true
+        },
+        {
+          "text": "20 513",
+          "is_correct": false
+        },
+        {
+          "text": "20 603",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 400 000 + 40 000 + 4 000 + 400 + 40 + 4 − 3 − 30 − 300 − 3 000 − 30 000 − 300 000.",
+      "points": 10,
+      "explanation": "Prima grupă are suma 444 444, iar a doua 333 333. Diferența este 111 111.",
+      "options": [
+        {
+          "text": "111 101",
+          "is_correct": false
+        },
+        {
+          "text": "111 111",
+          "is_correct": true
+        },
+        {
+          "text": "111 121",
+          "is_correct": false
+        },
+        {
+          "text": "111 211",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este următorul termen al șirului 5 000, 4 875, 4 750, 4 625, ...?",
+      "points": 10,
+      "explanation": "La fiecare pas se scade 125. Așadar 4 625 − 125 = 4 500.",
+      "options": [
+        {
+          "text": "4 490",
+          "is_correct": false
+        },
+        {
+          "text": "4 500",
+          "is_correct": true
+        },
+        {
+          "text": "4 510",
+          "is_correct": false
+        },
+        {
+          "text": "4 600",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care afirmație despre scăderea numerelor naturale este adevărată?",
+      "points": 10,
+      "explanation": "Scăderea lui 0 nu schimbă numărul: a − 0 = a.",
+      "options": [
+        {
+          "text": "0 − a = a, pentru orice a",
+          "is_correct": false
+        },
+        {
+          "text": "a − 0 = a, pentru orice număr natural a",
+          "is_correct": true
+        },
+        {
+          "text": "a − a = a, pentru orice a",
+          "is_correct": false
+        },
+        {
+          "text": "a − b = b − a, pentru orice a și b",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care afirmație este falsă?",
+      "points": 10,
+      "explanation": "Scăderea nu este comutativă. De exemplu, 8 − 3 = 5, dar 3 − 8 nu este număr natural.",
+      "options": [
+        {
+          "text": "a − a = 0",
+          "is_correct": false
+        },
+        {
+          "text": "Scăderea este comutativă: a − b = b − a",
+          "is_correct": true
+        },
+        {
+          "text": "a − 0 = a",
+          "is_correct": false
+        },
+        {
+          "text": "Diferența se verifică adunând-o cu scăzătorul",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă scădem același număr natural din descăzut și din scăzător, fără a ieși din numerele naturale, atunci:",
+      "points": 10,
+      "explanation": "(a − k) − (b − k) = a − b, deoarece −k și +k se reduc.",
+      "options": [
+        {
+          "text": "diferența se dublează",
+          "is_correct": false
+        },
+        {
+          "text": "diferența rămâne aceeași",
+          "is_correct": true
+        },
+        {
+          "text": "diferența crește cu acel număr",
+          "is_correct": false
+        },
+        {
+          "text": "diferența devine întotdeauna 0",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă mărim descăzutul cu 25 și păstrăm același scăzător, ce se întâmplă cu diferența?",
+      "points": 10,
+      "explanation": "(a + 25) − b = (a − b) + 25.",
+      "options": [
+        {
+          "text": "Scade cu 25",
+          "is_correct": false
+        },
+        {
+          "text": "Crește cu 25",
+          "is_correct": true
+        },
+        {
+          "text": "Rămâne aceeași",
+          "is_correct": false
+        },
+        {
+          "text": "Se dublează",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă mărim scăzătorul cu 40, iar descăzutul rămâne neschimbat, ce se întâmplă cu diferența?",
+      "points": 10,
+      "explanation": "a − (b + 40) = (a − b) − 40, dacă scăderea este posibilă în numere naturale.",
+      "options": [
+        {
+          "text": "Crește cu 40",
+          "is_correct": false
+        },
+        {
+          "text": "Scade cu 40",
+          "is_correct": true
+        },
+        {
+          "text": "Rămâne aceeași",
+          "is_correct": false
+        },
+        {
+          "text": "Crește de 40 de ori",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care afirmație despre diferența unor numere de aceeași paritate este adevărată?",
+      "points": 10,
+      "explanation": "Par − par și impar − impar dau rezultate pare.",
+      "options": [
+        {
+          "text": "Diferența a două numere pare este impară.",
+          "is_correct": false
+        },
+        {
+          "text": "Diferența a două numere de aceeași paritate este pară.",
+          "is_correct": true
+        },
+        {
+          "text": "Diferența a două numere impare este impară.",
+          "is_correct": false
+        },
+        {
+          "text": "Diferența unui număr par și a unuia impar este pară.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care afirmație despre diferența unor numere de parități diferite este adevărată?",
+      "points": 10,
+      "explanation": "Numerele de parități diferite au o diferență impară, atunci când scăderea este posibilă.",
+      "options": [
+        {
+          "text": "Este întotdeauna pară.",
+          "is_correct": false
+        },
+        {
+          "text": "Diferența dintre un număr par și un număr impar este impară.",
+          "is_correct": true
+        },
+        {
+          "text": "Este întotdeauna 0.",
+          "is_correct": false
+        },
+        {
+          "text": "Nu poate fi stabilită.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Așază scăderea în coloană și calculează 8 642 − 3 217.",
+      "type": "column_subtraction",
+      "points": 10,
+      "explanation": "Rezultatul este 5 425. Marcăm fiecare coloană în care am avut nevoie să împrumutăm o zece.",
+      "interactive": {
+        "minuend": "8642",
+        "subtrahend": "3217",
+        "correct_result": "5425",
+        "borrow_columns": [
+          false,
+          false,
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "text": "Așază scăderea în coloană și calculează 7 532 − 2 418.",
+      "type": "column_subtraction",
+      "points": 10,
+      "explanation": "Rezultatul este 5 114. Marcăm fiecare coloană în care am avut nevoie să împrumutăm o zece.",
+      "interactive": {
+        "minuend": "7532",
+        "subtrahend": "2418",
+        "correct_result": "5114",
+        "borrow_columns": [
+          false,
+          false,
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "text": "Așază scăderea în coloană și calculează 8 753 − 2 864.",
+      "type": "column_subtraction",
+      "points": 10,
+      "explanation": "Rezultatul este 5 889. Marcăm fiecare coloană în care am avut nevoie să împrumutăm o zece.",
+      "interactive": {
+        "minuend": "8753",
+        "subtrahend": "2864",
+        "correct_result": "5889",
+        "borrow_columns": [
+          false,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "text": "Așază scăderea în coloană și calculează 6 431 − 2 785.",
+      "type": "column_subtraction",
+      "points": 10,
+      "explanation": "Rezultatul este 3 646. Marcăm fiecare coloană în care am avut nevoie să împrumutăm o zece.",
+      "interactive": {
+        "minuend": "6431",
+        "subtrahend": "2785",
+        "correct_result": "3646",
+        "borrow_columns": [
+          false,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "text": "Așază scăderea în coloană și calculează 9 005 − 4 237.",
+      "type": "column_subtraction",
+      "points": 10,
+      "explanation": "Rezultatul este 4 768. Marcăm fiecare coloană în care am avut nevoie să împrumutăm o zece.",
+      "interactive": {
+        "minuend": "9005",
+        "subtrahend": "4237",
+        "correct_result": "4768",
+        "borrow_columns": [
+          false,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "text": "Așază scăderea în coloană și calculează 32 410 − 17 685.",
+      "type": "column_subtraction",
+      "points": 10,
+      "explanation": "Rezultatul este 14 725. Marcăm fiecare coloană în care am avut nevoie să împrumutăm o zece.",
+      "interactive": {
+        "minuend": "32410",
+        "subtrahend": "17685",
+        "correct_result": "14725",
+        "borrow_columns": [
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "text": "Completează scăderea 7□4 − 2□9 = 465.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Scăderea completă este 734 − 269 = 465.",
+      "interactive": {
+        "minuend": "734",
+        "subtrahend": "269",
+        "result": "465",
+        "missing": [
+          "minuend:1",
+          "subtrahend:1"
+        ]
+      }
+    },
+    {
+      "text": "Completează scăderea 86□ − 347 = 5□5.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Scăderea completă este 862 − 347 = 515.",
+      "interactive": {
+        "minuend": "862",
+        "subtrahend": "347",
+        "result": "515",
+        "missing": [
+          "minuend:2",
+          "result:1"
+        ]
+      }
+    },
+    {
+      "text": "Completează scăderea 5□21 − 23□7 = 30□4.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Scăderea completă este 5 421 − 2 367 = 3 054.",
+      "interactive": {
+        "minuend": "5421",
+        "subtrahend": "2367",
+        "result": "3054",
+        "missing": [
+          "minuend:1",
+          "subtrahend:2",
+          "result:2"
+        ]
+      }
+    },
+    {
+      "text": "Completează scăderea 90□5 − 4□37 = 476□.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Scăderea completă este 9 005 − 4 237 = 4 768.",
+      "interactive": {
+        "minuend": "9005",
+        "subtrahend": "4237",
+        "result": "4768",
+        "missing": [
+          "minuend:2",
+          "subtrahend:1",
+          "result:3"
+        ]
+      }
+    },
+    {
+      "text": "Completează scăderea 7812 − 34□6 = 4□1□.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Scăderea completă este 7 812 − 3 496 = 4 316.",
+      "interactive": {
+        "minuend": "7812",
+        "subtrahend": "3496",
+        "result": "4316",
+        "missing": [
+          "subtrahend:2",
+          "result:1",
+          "result:3"
+        ]
+      }
+    },
+    {
+      "text": "Completează scăderea 324□0 − 1□685 = 14□25.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Scăderea completă este 32 410 − 17 685 = 14 725.",
+      "interactive": {
+        "minuend": "32410",
+        "subtrahend": "17685",
+        "result": "14725",
+        "missing": [
+          "minuend:3",
+          "subtrahend:1",
+          "result:2"
+        ]
+      }
+    },
+    {
+      "text": "Un elev a scris 5 032 − 1 876 = 3 256, dar a greșit o singură cifră. Apasă coloana greșită.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Rezultatul corect este 3 156. Cifra greșită era în coloana indicată.",
+      "interactive": {
+        "minuend": "5032",
+        "subtrahend": "1876",
+        "shown_result": "3256",
+        "correct_result": "3156",
+        "error_column": 1
+      }
+    },
+    {
+      "text": "Un elev a scris 8 425 − 2 317 = 6 118, dar a greșit o singură cifră. Apasă coloana greșită.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Rezultatul corect este 6 108. Cifra greșită era în coloana indicată.",
+      "interactive": {
+        "minuend": "8425",
+        "subtrahend": "2317",
+        "shown_result": "6118",
+        "correct_result": "6108",
+        "error_column": 2
+      }
+    },
+    {
+      "text": "Un elev a scris 9 764 − 3 528 = 6 235, dar a greșit o singură cifră. Apasă coloana greșită.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Rezultatul corect este 6 236. Cifra greșită era în coloana indicată.",
+      "interactive": {
+        "minuend": "9764",
+        "subtrahend": "3528",
+        "shown_result": "6235",
+        "correct_result": "6236",
+        "error_column": 3
+      }
+    },
+    {
+      "text": "Un elev a scris 7 500 − 2 486 = 5 114, dar a greșit o singură cifră. Apasă coloana greșită.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Rezultatul corect este 5 014. Cifra greșită era în coloana indicată.",
+      "interactive": {
+        "minuend": "7500",
+        "subtrahend": "2486",
+        "shown_result": "5114",
+        "correct_result": "5014",
+        "error_column": 1
+      }
+    },
+    {
+      "text": "Un elev a scris 6 342 − 2 197 = 4 045, dar a greșit o singură cifră. Apasă coloana greșită.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Rezultatul corect este 4 145. Cifra greșită era în coloana indicată.",
+      "interactive": {
+        "minuend": "6342",
+        "subtrahend": "2197",
+        "shown_result": "4045",
+        "correct_result": "4145",
+        "error_column": 1
+      }
+    },
+    {
+      "text": "Un elev a scris 32 410 − 17 685 = 14 735, dar a greșit o singură cifră. Apasă coloana greșită.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Rezultatul corect este 14 725. Cifra greșită era în coloana indicată.",
+      "interactive": {
+        "minuend": "32410",
+        "subtrahend": "17685",
+        "shown_result": "14735",
+        "correct_result": "14725",
+        "error_column": 3
+      }
+    },
+    {
+      "text": "Trage parantezele în expresia 80 − 30 + 10 astfel încât rezultatul să fie 40.",
+      "type": "parentheses_target",
+      "points": 10,
+      "explanation": "Parantezele se așază înaintea celui de-al doilea termen și după ultimul termen; expresia obținută are valoarea 40.",
+      "interactive": {
+        "tokens": [
+          "80",
+          "− 30",
+          "+ 10"
+        ],
+        "correct_open_index": 1,
+        "correct_close_index": 3,
+        "target": 40
+      }
+    },
+    {
+      "text": "Trage parantezele în expresia 90 − 40 + 15 astfel încât rezultatul să fie 35.",
+      "type": "parentheses_target",
+      "points": 10,
+      "explanation": "Parantezele se așază înaintea celui de-al doilea termen și după ultimul termen; expresia obținută are valoarea 35.",
+      "interactive": {
+        "tokens": [
+          "90",
+          "− 40",
+          "+ 15"
+        ],
+        "correct_open_index": 1,
+        "correct_close_index": 3,
+        "target": 35
+      }
+    },
+    {
+      "text": "Trage parantezele în expresia 120 − 35 + 25 astfel încât rezultatul să fie 60.",
+      "type": "parentheses_target",
+      "points": 10,
+      "explanation": "Parantezele se așază înaintea celui de-al doilea termen și după ultimul termen; expresia obținută are valoarea 60.",
+      "interactive": {
+        "tokens": [
+          "120",
+          "− 35",
+          "+ 25"
+        ],
+        "correct_open_index": 1,
+        "correct_close_index": 3,
+        "target": 60
+      }
+    },
+    {
+      "text": "Trage parantezele în expresia 150 − 60 − 10 astfel încât rezultatul să fie 100.",
+      "type": "parentheses_target",
+      "points": 10,
+      "explanation": "Parantezele se așază înaintea celui de-al doilea termen și după ultimul termen; expresia obținută are valoarea 100.",
+      "interactive": {
+        "tokens": [
+          "150",
+          "− 60",
+          "− 10"
+        ],
+        "correct_open_index": 1,
+        "correct_close_index": 3,
+        "target": 100
+      }
+    },
+    {
+      "text": "Trage parantezele în expresia 250 − 90 − 60 astfel încât rezultatul să fie 220.",
+      "type": "parentheses_target",
+      "points": 10,
+      "explanation": "Parantezele se așază înaintea celui de-al doilea termen și după ultimul termen; expresia obținută are valoarea 220.",
+      "interactive": {
+        "tokens": [
+          "250",
+          "− 90",
+          "− 60"
+        ],
+        "correct_open_index": 1,
+        "correct_close_index": 3,
+        "target": 220
+      }
+    },
+    {
+      "text": "Trage parantezele în expresia 500 − 180 + 120 astfel încât rezultatul să fie 200.",
+      "type": "parentheses_target",
+      "points": 10,
+      "explanation": "Parantezele se așază înaintea celui de-al doilea termen și după ultimul termen; expresia obținută are valoarea 200.",
+      "interactive": {
+        "tokens": [
+          "500",
+          "− 180",
+          "+ 120"
+        ],
+        "correct_open_index": 1,
+        "correct_close_index": 3,
+        "target": 200
+      }
+    },
+    {
+      "text": "Mașina scade 275 din fiecare număr introdus. Completează toate căsuțele libere.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru o ieșire lipsă scădem regula din intrare; pentru o intrare lipsă adunăm regula la ieșire.",
+      "interactive": {
+        "operation": "subtract",
+        "value": 275,
+        "rows": [
+          {
+            "input": 1200,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 625
+          },
+          {
+            "input": 1500,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina scade 125 din fiecare număr introdus. Completează toate căsuțele libere.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru o ieșire lipsă scădem regula din intrare; pentru o intrare lipsă adunăm regula la ieșire.",
+      "interactive": {
+        "operation": "subtract",
+        "value": 125,
+        "rows": [
+          {
+            "input": 900,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 475
+          },
+          {
+            "input": 1250,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina scade 340 din fiecare număr introdus. Completează toate căsuțele libere.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru o ieșire lipsă scădem regula din intrare; pentru o intrare lipsă adunăm regula la ieșire.",
+      "interactive": {
+        "operation": "subtract",
+        "value": 340,
+        "rows": [
+          {
+            "input": 1000,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 860
+          },
+          {
+            "input": 2000,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina scade 1 025 din fiecare număr introdus. Completează toate căsuțele libere.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru o ieșire lipsă scădem regula din intrare; pentru o intrare lipsă adunăm regula la ieșire.",
+      "interactive": {
+        "operation": "subtract",
+        "value": 1025,
+        "rows": [
+          {
+            "input": 2500,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 975
+          },
+          {
+            "input": 4000,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina scade 2 350 din fiecare număr introdus. Completează toate căsuțele libere.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru o ieșire lipsă scădem regula din intrare; pentru o intrare lipsă adunăm regula la ieșire.",
+      "interactive": {
+        "operation": "subtract",
+        "value": 2350,
+        "rows": [
+          {
+            "input": 7000,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 3900
+          },
+          {
+            "input": 10000,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina scade 4 075 din fiecare număr introdus. Completează toate căsuțele libere.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru o ieșire lipsă scădem regula din intrare; pentru o intrare lipsă adunăm regula la ieșire.",
+      "interactive": {
+        "operation": "subtract",
+        "value": 4075,
+        "rows": [
+          {
+            "input": 9500,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 5925
+          },
+          {
+            "input": 12000,
+            "output": null
+          }
+        ]
+      }
+    }
+  ]
 }

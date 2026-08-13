@@ -1,0 +1,1961 @@
+{
+  "title": "Scrierea în baza 10. Scrierea în baza 2",
+  "description": "Clasa a 5-a · Operații cu numere naturale",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Transformați numărul 18 din baza 10 în baza 2 folosind împărțiri succesive la 2.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Citind resturile de jos în sus obținem 10010₂.",
+      "interactive": {
+        "mode": "division_ladder",
+        "number": 18,
+        "rows": [
+          {
+            "dividend": 18,
+            "quotient": 9,
+            "remainder": 0
+          },
+          {
+            "dividend": 9,
+            "quotient": 4,
+            "remainder": 1
+          },
+          {
+            "dividend": 4,
+            "quotient": 2,
+            "remainder": 0
+          },
+          {
+            "dividend": 2,
+            "quotient": 1,
+            "remainder": 0
+          },
+          {
+            "dividend": 1,
+            "quotient": 0,
+            "remainder": 1
+          }
+        ],
+        "answers": {
+          "0:quotient": 9,
+          "0:remainder": 0,
+          "1:quotient": 4,
+          "1:remainder": 1,
+          "2:quotient": 2,
+          "2:remainder": 0,
+          "3:quotient": 1,
+          "3:remainder": 0,
+          "4:quotient": 0,
+          "4:remainder": 1
+        }
+      }
+    },
+    {
+      "text": "Transformați numărul 27 din baza 10 în baza 2 folosind împărțiri succesive la 2.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Citind resturile de jos în sus obținem 11011₂.",
+      "interactive": {
+        "mode": "division_ladder",
+        "number": 27,
+        "rows": [
+          {
+            "dividend": 27,
+            "quotient": 13,
+            "remainder": 1
+          },
+          {
+            "dividend": 13,
+            "quotient": 6,
+            "remainder": 1
+          },
+          {
+            "dividend": 6,
+            "quotient": 3,
+            "remainder": 0
+          },
+          {
+            "dividend": 3,
+            "quotient": 1,
+            "remainder": 1
+          },
+          {
+            "dividend": 1,
+            "quotient": 0,
+            "remainder": 1
+          }
+        ],
+        "answers": {
+          "0:quotient": 13,
+          "0:remainder": 1,
+          "1:quotient": 6,
+          "1:remainder": 1,
+          "2:quotient": 3,
+          "2:remainder": 0,
+          "3:quotient": 1,
+          "3:remainder": 1,
+          "4:quotient": 0,
+          "4:remainder": 1
+        }
+      }
+    },
+    {
+      "text": "Transformați numărul 35 din baza 10 în baza 2 folosind împărțiri succesive la 2.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Citind resturile de jos în sus obținem 100011₂.",
+      "interactive": {
+        "mode": "division_ladder",
+        "number": 35,
+        "rows": [
+          {
+            "dividend": 35,
+            "quotient": 17,
+            "remainder": 1
+          },
+          {
+            "dividend": 17,
+            "quotient": 8,
+            "remainder": 1
+          },
+          {
+            "dividend": 8,
+            "quotient": 4,
+            "remainder": 0
+          },
+          {
+            "dividend": 4,
+            "quotient": 2,
+            "remainder": 0
+          },
+          {
+            "dividend": 2,
+            "quotient": 1,
+            "remainder": 0
+          },
+          {
+            "dividend": 1,
+            "quotient": 0,
+            "remainder": 1
+          }
+        ],
+        "answers": {
+          "0:quotient": 17,
+          "0:remainder": 1,
+          "1:quotient": 8,
+          "1:remainder": 1,
+          "2:quotient": 4,
+          "2:remainder": 0,
+          "3:quotient": 2,
+          "3:remainder": 0,
+          "4:quotient": 1,
+          "4:remainder": 0,
+          "5:quotient": 0,
+          "5:remainder": 1
+        }
+      }
+    },
+    {
+      "text": "Transformați numărul 68 din baza 10 în baza 2 folosind împărțiri succesive la 2.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Citind resturile de jos în sus obținem 1000100₂.",
+      "interactive": {
+        "mode": "division_ladder",
+        "number": 68,
+        "rows": [
+          {
+            "dividend": 68,
+            "quotient": 34,
+            "remainder": 0
+          },
+          {
+            "dividend": 34,
+            "quotient": 17,
+            "remainder": 0
+          },
+          {
+            "dividend": 17,
+            "quotient": 8,
+            "remainder": 1
+          },
+          {
+            "dividend": 8,
+            "quotient": 4,
+            "remainder": 0
+          },
+          {
+            "dividend": 4,
+            "quotient": 2,
+            "remainder": 0
+          },
+          {
+            "dividend": 2,
+            "quotient": 1,
+            "remainder": 0
+          },
+          {
+            "dividend": 1,
+            "quotient": 0,
+            "remainder": 1
+          }
+        ],
+        "answers": {
+          "0:quotient": 34,
+          "0:remainder": 0,
+          "1:quotient": 17,
+          "1:remainder": 0,
+          "2:quotient": 8,
+          "2:remainder": 1,
+          "3:quotient": 4,
+          "3:remainder": 0,
+          "4:quotient": 2,
+          "4:remainder": 0,
+          "5:quotient": 1,
+          "5:remainder": 0,
+          "6:quotient": 0,
+          "6:remainder": 1
+        }
+      }
+    },
+    {
+      "text": "Transformați numărul 97 din baza 10 în baza 2 folosind împărțiri succesive la 2.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Citind resturile de jos în sus obținem 1100001₂.",
+      "interactive": {
+        "mode": "division_ladder",
+        "number": 97,
+        "rows": [
+          {
+            "dividend": 97,
+            "quotient": 48,
+            "remainder": 1
+          },
+          {
+            "dividend": 48,
+            "quotient": 24,
+            "remainder": 0
+          },
+          {
+            "dividend": 24,
+            "quotient": 12,
+            "remainder": 0
+          },
+          {
+            "dividend": 12,
+            "quotient": 6,
+            "remainder": 0
+          },
+          {
+            "dividend": 6,
+            "quotient": 3,
+            "remainder": 0
+          },
+          {
+            "dividend": 3,
+            "quotient": 1,
+            "remainder": 1
+          },
+          {
+            "dividend": 1,
+            "quotient": 0,
+            "remainder": 1
+          }
+        ],
+        "answers": {
+          "0:quotient": 48,
+          "0:remainder": 1,
+          "1:quotient": 24,
+          "1:remainder": 0,
+          "2:quotient": 12,
+          "2:remainder": 0,
+          "3:quotient": 6,
+          "3:remainder": 0,
+          "4:quotient": 3,
+          "4:remainder": 0,
+          "5:quotient": 1,
+          "5:remainder": 1,
+          "6:quotient": 0,
+          "6:remainder": 1
+        }
+      }
+    },
+    {
+      "text": "Descompuneți numărul 812 în puteri ale lui 10.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare cifră se înmulțește cu puterea lui 10 corespunzătoare poziției sale.",
+      "interactive": {
+        "mode": "decompose",
+        "base": 10,
+        "number": "812",
+        "terms": [
+          {
+            "digit": 8,
+            "exponent": 2,
+            "contribution": 800
+          },
+          {
+            "digit": 1,
+            "exponent": 1,
+            "contribution": 10
+          },
+          {
+            "digit": 2,
+            "exponent": 0,
+            "contribution": 2
+          }
+        ],
+        "answers": {
+          "0:contribution": 800,
+          "1:contribution": 10,
+          "2:contribution": 2
+        }
+      }
+    },
+    {
+      "text": "Descompuneți numărul 1 121 în puteri ale lui 10.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare cifră se înmulțește cu puterea lui 10 corespunzătoare poziției sale.",
+      "interactive": {
+        "mode": "decompose",
+        "base": 10,
+        "number": "1121",
+        "terms": [
+          {
+            "digit": 1,
+            "exponent": 3,
+            "contribution": 1000
+          },
+          {
+            "digit": 1,
+            "exponent": 2,
+            "contribution": 100
+          },
+          {
+            "digit": 2,
+            "exponent": 1,
+            "contribution": 20
+          },
+          {
+            "digit": 1,
+            "exponent": 0,
+            "contribution": 1
+          }
+        ],
+        "answers": {
+          "0:contribution": 1000,
+          "1:contribution": 100,
+          "2:contribution": 20,
+          "3:contribution": 1
+        }
+      }
+    },
+    {
+      "text": "Descompuneți numărul 67 008 în puteri ale lui 10.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare cifră se înmulțește cu puterea lui 10 corespunzătoare poziției sale.",
+      "interactive": {
+        "mode": "decompose",
+        "base": 10,
+        "number": "67008",
+        "terms": [
+          {
+            "digit": 6,
+            "exponent": 4,
+            "contribution": 60000
+          },
+          {
+            "digit": 7,
+            "exponent": 3,
+            "contribution": 7000
+          },
+          {
+            "digit": 0,
+            "exponent": 2,
+            "contribution": 0
+          },
+          {
+            "digit": 0,
+            "exponent": 1,
+            "contribution": 0
+          },
+          {
+            "digit": 8,
+            "exponent": 0,
+            "contribution": 8
+          }
+        ],
+        "answers": {
+          "0:contribution": 60000,
+          "1:contribution": 7000,
+          "2:contribution": 0,
+          "3:contribution": 0,
+          "4:contribution": 8
+        }
+      }
+    },
+    {
+      "text": "Descompuneți numărul 12 014 în puteri ale lui 10.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare cifră se înmulțește cu puterea lui 10 corespunzătoare poziției sale.",
+      "interactive": {
+        "mode": "decompose",
+        "base": 10,
+        "number": "12014",
+        "terms": [
+          {
+            "digit": 1,
+            "exponent": 4,
+            "contribution": 10000
+          },
+          {
+            "digit": 2,
+            "exponent": 3,
+            "contribution": 2000
+          },
+          {
+            "digit": 0,
+            "exponent": 2,
+            "contribution": 0
+          },
+          {
+            "digit": 1,
+            "exponent": 1,
+            "contribution": 10
+          },
+          {
+            "digit": 4,
+            "exponent": 0,
+            "contribution": 4
+          }
+        ],
+        "answers": {
+          "0:contribution": 10000,
+          "1:contribution": 2000,
+          "2:contribution": 0,
+          "3:contribution": 10,
+          "4:contribution": 4
+        }
+      }
+    },
+    {
+      "text": "Descompuneți numărul 101₂ în puteri ale lui 2.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma contribuțiilor este 5, deci 101₂ = 5₁₀.",
+      "interactive": {
+        "mode": "decompose",
+        "base": 2,
+        "number": "101",
+        "terms": [
+          {
+            "digit": 1,
+            "exponent": 2,
+            "contribution": 4
+          },
+          {
+            "digit": 0,
+            "exponent": 1,
+            "contribution": 0
+          },
+          {
+            "digit": 1,
+            "exponent": 0,
+            "contribution": 1
+          }
+        ],
+        "answers": {
+          "0:contribution": 4,
+          "1:contribution": 0,
+          "2:contribution": 1
+        }
+      }
+    },
+    {
+      "text": "Descompuneți numărul 1101₂ în puteri ale lui 2.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma contribuțiilor este 13, deci 1101₂ = 13₁₀.",
+      "interactive": {
+        "mode": "decompose",
+        "base": 2,
+        "number": "1101",
+        "terms": [
+          {
+            "digit": 1,
+            "exponent": 3,
+            "contribution": 8
+          },
+          {
+            "digit": 1,
+            "exponent": 2,
+            "contribution": 4
+          },
+          {
+            "digit": 0,
+            "exponent": 1,
+            "contribution": 0
+          },
+          {
+            "digit": 1,
+            "exponent": 0,
+            "contribution": 1
+          }
+        ],
+        "answers": {
+          "0:contribution": 8,
+          "1:contribution": 4,
+          "2:contribution": 0,
+          "3:contribution": 1
+        }
+      }
+    },
+    {
+      "text": "Descompuneți numărul 1010101₂ în puteri ale lui 2.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma contribuțiilor este 85, deci 1010101₂ = 85₁₀.",
+      "interactive": {
+        "mode": "decompose",
+        "base": 2,
+        "number": "1010101",
+        "terms": [
+          {
+            "digit": 1,
+            "exponent": 6,
+            "contribution": 64
+          },
+          {
+            "digit": 0,
+            "exponent": 5,
+            "contribution": 0
+          },
+          {
+            "digit": 1,
+            "exponent": 4,
+            "contribution": 16
+          },
+          {
+            "digit": 0,
+            "exponent": 3,
+            "contribution": 0
+          },
+          {
+            "digit": 1,
+            "exponent": 2,
+            "contribution": 4
+          },
+          {
+            "digit": 0,
+            "exponent": 1,
+            "contribution": 0
+          },
+          {
+            "digit": 1,
+            "exponent": 0,
+            "contribution": 1
+          }
+        ],
+        "answers": {
+          "0:contribution": 64,
+          "1:contribution": 0,
+          "2:contribution": 16,
+          "3:contribution": 0,
+          "4:contribution": 4,
+          "5:contribution": 0,
+          "6:contribution": 1
+        }
+      }
+    },
+    {
+      "text": "Descompuneți numărul 11001011₂ în puteri ale lui 2.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma contribuțiilor este 203, deci 11001011₂ = 203₁₀.",
+      "interactive": {
+        "mode": "decompose",
+        "base": 2,
+        "number": "11001011",
+        "terms": [
+          {
+            "digit": 1,
+            "exponent": 7,
+            "contribution": 128
+          },
+          {
+            "digit": 1,
+            "exponent": 6,
+            "contribution": 64
+          },
+          {
+            "digit": 0,
+            "exponent": 5,
+            "contribution": 0
+          },
+          {
+            "digit": 0,
+            "exponent": 4,
+            "contribution": 0
+          },
+          {
+            "digit": 1,
+            "exponent": 3,
+            "contribution": 8
+          },
+          {
+            "digit": 0,
+            "exponent": 2,
+            "contribution": 0
+          },
+          {
+            "digit": 1,
+            "exponent": 1,
+            "contribution": 2
+          },
+          {
+            "digit": 1,
+            "exponent": 0,
+            "contribution": 1
+          }
+        ],
+        "answers": {
+          "0:contribution": 128,
+          "1:contribution": 64,
+          "2:contribution": 0,
+          "3:contribution": 0,
+          "4:contribution": 8,
+          "5:contribution": 0,
+          "6:contribution": 2,
+          "7:contribution": 1
+        }
+      }
+    },
+    {
+      "text": "Compuneți numărul în baza 10 din suma de puteri, seria 1.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Adunând contribuțiile obținem 812.",
+      "interactive": {
+        "mode": "compose",
+        "base": 10,
+        "terms": [
+          {
+            "value": 800,
+            "label": "8 · 10²"
+          },
+          {
+            "value": 10,
+            "label": "1 · 10¹"
+          },
+          {
+            "value": 2,
+            "label": "2 · 10⁰"
+          }
+        ],
+        "answers": {
+          "number": "812"
+        }
+      }
+    },
+    {
+      "text": "Compuneți numărul în baza 10 din suma de puteri, seria 2.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Adunând contribuțiile obținem 1 121.",
+      "interactive": {
+        "mode": "compose",
+        "base": 10,
+        "terms": [
+          {
+            "value": 1000,
+            "label": "1 · 10³"
+          },
+          {
+            "value": 100,
+            "label": "1 · 10²"
+          },
+          {
+            "value": 20,
+            "label": "2 · 10¹"
+          },
+          {
+            "value": 1,
+            "label": "1 · 10⁰"
+          }
+        ],
+        "answers": {
+          "number": "1121"
+        }
+      }
+    },
+    {
+      "text": "Compuneți numărul în baza 10 din suma de puteri, seria 3.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Adunând contribuțiile obținem 67 008.",
+      "interactive": {
+        "mode": "compose",
+        "base": 10,
+        "terms": [
+          {
+            "value": 60000,
+            "label": "6 · 10⁴"
+          },
+          {
+            "value": 7000,
+            "label": "7 · 10³"
+          },
+          {
+            "value": 8,
+            "label": "8 · 10⁰"
+          }
+        ],
+        "answers": {
+          "number": "67008"
+        }
+      }
+    },
+    {
+      "text": "Compuneți numărul în baza 10 din suma de puteri, seria 4.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Adunând contribuțiile obținem 12 014.",
+      "interactive": {
+        "mode": "compose",
+        "base": 10,
+        "terms": [
+          {
+            "value": 10000,
+            "label": "1 · 10⁴"
+          },
+          {
+            "value": 2000,
+            "label": "2 · 10³"
+          },
+          {
+            "value": 10,
+            "label": "1 · 10¹"
+          },
+          {
+            "value": 4,
+            "label": "4 · 10⁰"
+          }
+        ],
+        "answers": {
+          "number": "12014"
+        }
+      }
+    },
+    {
+      "text": "Compuneți numărul în baza 2 din puterile date, seria 1.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma este 21, iar 21₁₀ = 10101₂.",
+      "interactive": {
+        "mode": "compose",
+        "base": 2,
+        "terms": [
+          {
+            "value": 16,
+            "label": "1 · 2⁴"
+          },
+          {
+            "value": 4,
+            "label": "1 · 2²"
+          },
+          {
+            "value": 1,
+            "label": "1 · 2⁰"
+          }
+        ],
+        "answers": {
+          "number": "10101"
+        }
+      }
+    },
+    {
+      "text": "Compuneți numărul în baza 2 din puterile date, seria 2.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma este 42, iar 42₁₀ = 101010₂.",
+      "interactive": {
+        "mode": "compose",
+        "base": 2,
+        "terms": [
+          {
+            "value": 32,
+            "label": "1 · 2⁵"
+          },
+          {
+            "value": 8,
+            "label": "1 · 2³"
+          },
+          {
+            "value": 2,
+            "label": "1 · 2¹"
+          }
+        ],
+        "answers": {
+          "number": "101010"
+        }
+      }
+    },
+    {
+      "text": "Compuneți numărul în baza 2 din puterile date, seria 3.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma este 85, iar 85₁₀ = 1010101₂.",
+      "interactive": {
+        "mode": "compose",
+        "base": 2,
+        "terms": [
+          {
+            "value": 64,
+            "label": "1 · 2⁶"
+          },
+          {
+            "value": 16,
+            "label": "1 · 2⁴"
+          },
+          {
+            "value": 4,
+            "label": "1 · 2²"
+          },
+          {
+            "value": 1,
+            "label": "1 · 2⁰"
+          }
+        ],
+        "answers": {
+          "number": "1010101"
+        }
+      }
+    },
+    {
+      "text": "Compuneți numărul în baza 2 din puterile date, seria 4.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma este 203, iar 203₁₀ = 11001011₂.",
+      "interactive": {
+        "mode": "compose",
+        "base": 2,
+        "terms": [
+          {
+            "value": 128,
+            "label": "1 · 2⁷"
+          },
+          {
+            "value": 64,
+            "label": "1 · 2⁶"
+          },
+          {
+            "value": 8,
+            "label": "1 · 2³"
+          },
+          {
+            "value": 2,
+            "label": "1 · 2¹"
+          },
+          {
+            "value": 1,
+            "label": "1 · 2⁰"
+          }
+        ],
+        "answers": {
+          "number": "11001011"
+        }
+      }
+    },
+    {
+      "text": "Completați tabelul pozițional pentru 5072 în baza 10, seria 1.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Contribuția unei cifre este cifra · 10^exponent.",
+      "interactive": {
+        "mode": "place_table",
+        "base": 10,
+        "number": "5072",
+        "rows": [
+          {
+            "digit": 5,
+            "exponent": 3,
+            "contribution": 5000,
+            "missing": "digit"
+          },
+          {
+            "digit": 0,
+            "exponent": 2,
+            "contribution": 0,
+            "missing": "exponent"
+          },
+          {
+            "digit": 7,
+            "exponent": 1,
+            "contribution": 70,
+            "missing": "contribution"
+          },
+          {
+            "digit": 2,
+            "exponent": 0,
+            "contribution": 2,
+            "missing": "digit"
+          }
+        ],
+        "answers": {
+          "0:digit": 5,
+          "1:exponent": 2,
+          "2:contribution": 70,
+          "3:digit": 2
+        }
+      }
+    },
+    {
+      "text": "Completați tabelul pozițional pentru 12014 în baza 10, seria 2.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Contribuția unei cifre este cifra · 10^exponent.",
+      "interactive": {
+        "mode": "place_table",
+        "base": 10,
+        "number": "12014",
+        "rows": [
+          {
+            "digit": 1,
+            "exponent": 4,
+            "contribution": 10000,
+            "missing": "digit"
+          },
+          {
+            "digit": 2,
+            "exponent": 3,
+            "contribution": 2000,
+            "missing": "exponent"
+          },
+          {
+            "digit": 0,
+            "exponent": 2,
+            "contribution": 0,
+            "missing": "contribution"
+          },
+          {
+            "digit": 1,
+            "exponent": 1,
+            "contribution": 10,
+            "missing": "digit"
+          },
+          {
+            "digit": 4,
+            "exponent": 0,
+            "contribution": 4,
+            "missing": "exponent"
+          }
+        ],
+        "answers": {
+          "0:digit": 1,
+          "1:exponent": 3,
+          "2:contribution": 0,
+          "3:digit": 1,
+          "4:exponent": 0
+        }
+      }
+    },
+    {
+      "text": "Completați tabelul pozițional pentru 110101 în baza 2, seria 3.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Contribuția unei cifre este cifra · 2^exponent.",
+      "interactive": {
+        "mode": "place_table",
+        "base": 2,
+        "number": "110101",
+        "rows": [
+          {
+            "digit": 1,
+            "exponent": 5,
+            "contribution": 32,
+            "missing": "digit"
+          },
+          {
+            "digit": 1,
+            "exponent": 4,
+            "contribution": 16,
+            "missing": "exponent"
+          },
+          {
+            "digit": 0,
+            "exponent": 3,
+            "contribution": 0,
+            "missing": "contribution"
+          },
+          {
+            "digit": 1,
+            "exponent": 2,
+            "contribution": 4,
+            "missing": "digit"
+          },
+          {
+            "digit": 0,
+            "exponent": 1,
+            "contribution": 0,
+            "missing": "exponent"
+          },
+          {
+            "digit": 1,
+            "exponent": 0,
+            "contribution": 1,
+            "missing": "contribution"
+          }
+        ],
+        "answers": {
+          "0:digit": 1,
+          "1:exponent": 4,
+          "2:contribution": 0,
+          "3:digit": 1,
+          "4:exponent": 1,
+          "5:contribution": 1
+        }
+      }
+    },
+    {
+      "text": "Completați tabelul pozițional pentru 1011001 în baza 2, seria 4.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Contribuția unei cifre este cifra · 2^exponent.",
+      "interactive": {
+        "mode": "place_table",
+        "base": 2,
+        "number": "1011001",
+        "rows": [
+          {
+            "digit": 1,
+            "exponent": 6,
+            "contribution": 64,
+            "missing": "digit"
+          },
+          {
+            "digit": 0,
+            "exponent": 5,
+            "contribution": 0,
+            "missing": "exponent"
+          },
+          {
+            "digit": 1,
+            "exponent": 4,
+            "contribution": 16,
+            "missing": "contribution"
+          },
+          {
+            "digit": 1,
+            "exponent": 3,
+            "contribution": 8,
+            "missing": "digit"
+          },
+          {
+            "digit": 0,
+            "exponent": 2,
+            "contribution": 0,
+            "missing": "exponent"
+          },
+          {
+            "digit": 0,
+            "exponent": 1,
+            "contribution": 0,
+            "missing": "contribution"
+          },
+          {
+            "digit": 1,
+            "exponent": 0,
+            "contribution": 1,
+            "missing": "digit"
+          }
+        ],
+        "answers": {
+          "0:digit": 1,
+          "1:exponent": 5,
+          "2:contribution": 16,
+          "3:digit": 1,
+          "4:exponent": 2,
+          "5:contribution": 0,
+          "6:digit": 1
+        }
+      }
+    },
+    {
+      "text": "Potriviți prin tragere cifrele selectate din 812₁₀ cu puterile pozițiilor lor.",
+      "type": "base_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Puterea poziției crește de la dreapta spre stânga, începând cu exponentul 0.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "cifra 8",
+            "right": "10²"
+          },
+          {
+            "left": "cifra 1",
+            "right": "10¹"
+          },
+          {
+            "left": "cifra 2",
+            "right": "10⁰"
+          }
+        ],
+        "right_order": [
+          2,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Potriviți prin tragere cifrele selectate din 5072₁₀ cu puterile pozițiilor lor.",
+      "type": "base_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Puterea poziției crește de la dreapta spre stânga, începând cu exponentul 0.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "cifra 5",
+            "right": "10³"
+          },
+          {
+            "left": "cifra 0",
+            "right": "10²"
+          },
+          {
+            "left": "cifra 7",
+            "right": "10¹"
+          },
+          {
+            "left": "cifra 2",
+            "right": "10⁰"
+          }
+        ],
+        "right_order": [
+          3,
+          2,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Potriviți prin tragere cifrele selectate din 1101₂ cu puterile pozițiilor lor.",
+      "type": "base_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Puterea poziției crește de la dreapta spre stânga, începând cu exponentul 0.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "primul 1",
+            "right": "2³"
+          },
+          {
+            "left": "al doilea 1",
+            "right": "2²"
+          },
+          {
+            "left": "cifra 0",
+            "right": "2¹"
+          },
+          {
+            "left": "ultimul 1",
+            "right": "2⁰"
+          }
+        ],
+        "right_order": [
+          3,
+          2,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Potriviți prin tragere cifrele selectate din 10110₂ cu puterile pozițiilor lor.",
+      "type": "base_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Puterea poziției crește de la dreapta spre stânga, începând cu exponentul 0.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "primul 1",
+            "right": "2⁴"
+          },
+          {
+            "left": "primul 0",
+            "right": "2³"
+          },
+          {
+            "left": "al doilea 1",
+            "right": "2²"
+          },
+          {
+            "left": "al doilea 0",
+            "right": "2⁰"
+          }
+        ],
+        "right_order": [
+          3,
+          2,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Aprindeți biții potriviți pentru a reprezenta numărul 13 în baza 2.",
+      "type": "binary_toggle",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "13₁₀ = 1101₂.",
+      "interactive": {
+        "decimal": 13,
+        "binary": "1101"
+      }
+    },
+    {
+      "text": "Aprindeți biții potriviți pentru a reprezenta numărul 18 în baza 2.",
+      "type": "binary_toggle",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "18₁₀ = 10010₂.",
+      "interactive": {
+        "decimal": 18,
+        "binary": "10010"
+      }
+    },
+    {
+      "text": "Aprindeți biții potriviți pentru a reprezenta numărul 27 în baza 2.",
+      "type": "binary_toggle",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "27₁₀ = 11011₂.",
+      "interactive": {
+        "decimal": 27,
+        "binary": "11011"
+      }
+    },
+    {
+      "text": "Aprindeți biții potriviți pentru a reprezenta numărul 35 în baza 2.",
+      "type": "binary_toggle",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "35₁₀ = 100011₂.",
+      "interactive": {
+        "decimal": 35,
+        "binary": "100011"
+      }
+    },
+    {
+      "text": "Aprindeți biții potriviți pentru a reprezenta numărul 68 în baza 2.",
+      "type": "binary_toggle",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "68₁₀ = 1000100₂.",
+      "interactive": {
+        "decimal": 68,
+        "binary": "1000100"
+      }
+    },
+    {
+      "text": "Completați cifrele lipsă din scrierea în baza 2 a numărului 13.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Scrierea completă este 1101₂.",
+      "interactive": {
+        "mode": "missing_digits",
+        "base": 2,
+        "digits": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "missing_indices": [
+          1
+        ],
+        "decimal": 13,
+        "answers": {
+          "digit:1": 1
+        }
+      }
+    },
+    {
+      "text": "Completați cifrele lipsă din scrierea în baza 2 a numărului 18.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Scrierea completă este 10010₂.",
+      "interactive": {
+        "mode": "missing_digits",
+        "base": 2,
+        "digits": [
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "missing_indices": [
+          1,
+          3
+        ],
+        "decimal": 18,
+        "answers": {
+          "digit:1": 0,
+          "digit:3": 1
+        }
+      }
+    },
+    {
+      "text": "Completați cifrele lipsă din scrierea în baza 2 a numărului 27.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Scrierea completă este 11011₂.",
+      "interactive": {
+        "mode": "missing_digits",
+        "base": 2,
+        "digits": [
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "missing_indices": [
+          2,
+          4
+        ],
+        "decimal": 27,
+        "answers": {
+          "digit:2": 0,
+          "digit:4": 1
+        }
+      }
+    },
+    {
+      "text": "Completați cifrele lipsă din scrierea în baza 2 a numărului 45.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Scrierea completă este 101101₂.",
+      "interactive": {
+        "mode": "missing_digits",
+        "base": 2,
+        "digits": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "missing_indices": [
+          1,
+          4
+        ],
+        "decimal": 45,
+        "answers": {
+          "digit:1": 0,
+          "digit:4": 0
+        }
+      }
+    },
+    {
+      "text": "Completați cifrele lipsă din scrierea în baza 2 a numărului 77.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Scrierea completă este 1001101₂.",
+      "interactive": {
+        "mode": "missing_digits",
+        "base": 2,
+        "digits": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "missing_indices": [
+          2,
+          5
+        ],
+        "decimal": 77,
+        "answers": {
+          "digit:2": 0,
+          "digit:5": 0
+        }
+      }
+    },
+    {
+      "text": "Potriviți reprezentările echivalente, seria 1.",
+      "type": "base_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare cartonaș trebuie asociat cu aceeași valoare scrisă în altă formă.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "5₁₀",
+            "right": "101₂"
+          },
+          {
+            "left": "9₁₀",
+            "right": "1001₂"
+          },
+          {
+            "left": "12₁₀",
+            "right": "1100₂"
+          },
+          {
+            "left": "15₁₀",
+            "right": "1111₂"
+          }
+        ],
+        "right_order": [
+          2,
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Potriviți reprezentările echivalente, seria 2.",
+      "type": "base_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare cartonaș trebuie asociat cu aceeași valoare scrisă în altă formă.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "18₁₀",
+            "right": "10010₂"
+          },
+          {
+            "left": "21₁₀",
+            "right": "10101₂"
+          },
+          {
+            "left": "26₁₀",
+            "right": "11010₂"
+          },
+          {
+            "left": "31₁₀",
+            "right": "11111₂"
+          }
+        ],
+        "right_order": [
+          2,
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Potriviți reprezentările echivalente, seria 3.",
+      "type": "base_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare cartonaș trebuie asociat cu aceeași valoare scrisă în altă formă.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "1011₂",
+            "right": "2³ + 2¹ + 2⁰"
+          },
+          {
+            "left": "1100₂",
+            "right": "2³ + 2²"
+          },
+          {
+            "left": "10001₂",
+            "right": "2⁴ + 2⁰"
+          },
+          {
+            "left": "10110₂",
+            "right": "2⁴ + 2² + 2¹"
+          }
+        ],
+        "right_order": [
+          2,
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Potriviți reprezentările echivalente, seria 4.",
+      "type": "base_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare cartonaș trebuie asociat cu aceeași valoare scrisă în altă formă.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "3 · 10² + 4 · 10 + 2",
+            "right": "342₁₀"
+          },
+          {
+            "left": "7 · 10³ + 5",
+            "right": "7005₁₀"
+          },
+          {
+            "left": "9 · 10² + 8 · 10",
+            "right": "980₁₀"
+          },
+          {
+            "left": "10⁴ + 2 · 10² + 1",
+            "right": "10201₁₀"
+          }
+        ],
+        "right_order": [
+          2,
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Detectivul conversiilor: apăsați primul pas greșit din rezolvarea 1.",
+      "type": "base_error",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La 3 : 2 restul este 1, nu 0.",
+      "interactive": {
+        "steps": [
+          "13 : 2 = 6, rest 1",
+          "6 : 2 = 3, rest 0",
+          "3 : 2 = 1, rest 0",
+          "1 : 2 = 0, rest 1",
+          "Rezultat: 1101₂"
+        ],
+        "error_index": 2
+      }
+    },
+    {
+      "text": "Detectivul conversiilor: apăsați primul pas greșit din rezolvarea 2.",
+      "type": "base_error",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "16 + 4 + 2 = 22, nu 24.",
+      "interactive": {
+        "steps": [
+          "10110₂ = 1·2⁴ + 0·2³ + 1·2² + 1·2¹ + 0·2⁰",
+          "= 16 + 0 + 4 + 2 + 0",
+          "= 24₁₀",
+          "Deci 10110₂ = 24₁₀"
+        ],
+        "error_index": 2
+      }
+    },
+    {
+      "text": "Detectivul conversiilor: apăsați primul pas greșit din rezolvarea 3.",
+      "type": "base_error",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma este 67 008, nu 67 080.",
+      "interactive": {
+        "steps": [
+          "67008 = 6·10⁴ + 7·10³ + 0·10² + 0·10 + 8",
+          "= 60 000 + 7 000 + 0 + 0 + 8",
+          "= 67 080",
+          "Deci descompunerea dă numărul inițial."
+        ],
+        "error_index": 2
+      }
+    },
+    {
+      "text": "Detectivul conversiilor: apăsați primul pas greșit din rezolvarea 4.",
+      "type": "base_error",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Resturile trebuie citite de jos în sus, inclusiv ultimul rest 1: 10010₂.",
+      "interactive": {
+        "steps": [
+          "18 : 2 = 9, rest 0",
+          "9 : 2 = 4, rest 1",
+          "4 : 2 = 2, rest 0",
+          "2 : 2 = 1, rest 0",
+          "Resturile citite de sus în jos dau 0100₂"
+        ],
+        "error_index": 4
+      }
+    },
+    {
+      "text": "În baza 2 putem folosi numai cifrele 0 și 1.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Sistemul binar are exact două cifre: 0 și 1.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Numărul 111₂ este egal cu 111₁₀.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "111₂ = 4 + 2 + 1 = 7₁₀.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Un număr binar care se termină în 0 reprezintă un număr par.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Ultima cifră arată contribuția lui 2⁰; dacă este 0, numărul este par.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Numărul 10001₂ este pătratul unui număr natural.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "10001₂ = 17₁₀, iar 17 nu este pătrat perfect.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Comparați 10101₂ și 20₁₀.",
+      "format": "grid",
+      "points": 10,
+      "explanation": "10101₂ = 21₁₀.",
+      "options": [
+        {
+          "text": "10101₂ < 20₁₀",
+          "is_correct": false
+        },
+        {
+          "text": "10101₂ > 20₁₀",
+          "is_correct": true
+        },
+        {
+          "text": "10101₂ = 20₁₀",
+          "is_correct": false
+        },
+        {
+          "text": "Nu se pot compara",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Comparați 11010₂ și 27₁₀.",
+      "format": "grid",
+      "points": 10,
+      "explanation": "11010₂ = 26₁₀.",
+      "options": [
+        {
+          "text": "11010₂ > 27₁₀",
+          "is_correct": false
+        },
+        {
+          "text": "11010₂ < 27₁₀",
+          "is_correct": true
+        },
+        {
+          "text": "11010₂ = 27₁₀",
+          "is_correct": false
+        },
+        {
+          "text": "Nu se pot compara",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este cel mai mare număr?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "100000₂ = 32, iar 11111₂ = 31.",
+      "options": [
+        {
+          "text": "30₁₀",
+          "is_correct": false
+        },
+        {
+          "text": "100000₂",
+          "is_correct": true
+        },
+        {
+          "text": "11111₂",
+          "is_correct": false
+        },
+        {
+          "text": "29₁₀",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este cel mai mic număr?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1110₂ = 14₁₀.",
+      "options": [
+        {
+          "text": "15₁₀",
+          "is_correct": false
+        },
+        {
+          "text": "1110₂",
+          "is_correct": true
+        },
+        {
+          "text": "10000₂",
+          "is_correct": false
+        },
+        {
+          "text": "10001₂",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce semn completează corect: 101101₂ __ 45₁₀?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "101101₂ = 32 + 8 + 4 + 1 = 45.",
+      "options": [
+        {
+          "text": "<",
+          "is_correct": false
+        },
+        {
+          "text": "=",
+          "is_correct": true
+        },
+        {
+          "text": ">",
+          "is_correct": false
+        },
+        {
+          "text": "≠",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce semn completează corect: 1000001₂ __ 64₁₀?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1000001₂ = 65₁₀.",
+      "options": [
+        {
+          "text": "<",
+          "is_correct": false
+        },
+        {
+          "text": ">",
+          "is_correct": true
+        },
+        {
+          "text": "=",
+          "is_correct": false
+        },
+        {
+          "text": "≤",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Completați egalitatea care începe cu 21 în baza 10.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Valoarea lipsă este 10101 în baza 2.",
+      "interactive": {
+        "mode": "complete_equality",
+        "left_value": "21",
+        "left_base": 10,
+        "answer_base": 2,
+        "answers": {
+          "value": "10101"
+        }
+      }
+    },
+    {
+      "text": "Completați egalitatea care începe cu 11010 în baza 2.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Valoarea lipsă este 26 în baza 10.",
+      "interactive": {
+        "mode": "complete_equality",
+        "left_value": "11010",
+        "left_base": 2,
+        "answer_base": 10,
+        "answers": {
+          "value": "26"
+        }
+      }
+    },
+    {
+      "text": "Completați egalitatea care începe cu 85 în baza 10.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Valoarea lipsă este 1010101 în baza 2.",
+      "interactive": {
+        "mode": "complete_equality",
+        "left_value": "85",
+        "left_base": 10,
+        "answer_base": 2,
+        "answers": {
+          "value": "1010101"
+        }
+      }
+    },
+    {
+      "text": "Completați egalitatea care începe cu 11001011 în baza 2.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Valoarea lipsă este 203 în baza 10.",
+      "interactive": {
+        "mode": "complete_equality",
+        "left_value": "11001011",
+        "left_base": 2,
+        "answer_base": 10,
+        "answers": {
+          "value": "203"
+        }
+      }
+    },
+    {
+      "text": "Descifrați codul secret 1, format din 3 litere.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Codurile indică pozițiile literelor în alfabet și formează cuvântul FOC.",
+      "interactive": {
+        "mode": "secret_code",
+        "items": [
+          {
+            "binary": "110",
+            "position": 6
+          },
+          {
+            "binary": "1111",
+            "position": 15
+          },
+          {
+            "binary": "11",
+            "position": 3
+          }
+        ],
+        "answers": {
+          "letter:0": "F",
+          "letter:1": "O",
+          "letter:2": "C"
+        }
+      }
+    },
+    {
+      "text": "Descifrați codul secret 2, format din 3 litere.",
+      "type": "base_values",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Codurile indică pozițiile literelor în alfabet și formează cuvântul MAT.",
+      "interactive": {
+        "mode": "secret_code",
+        "items": [
+          {
+            "binary": "1101",
+            "position": 13
+          },
+          {
+            "binary": "1",
+            "position": 1
+          },
+          {
+            "binary": "10100",
+            "position": 20
+          }
+        ],
+        "answers": {
+          "letter:0": "M",
+          "letter:1": "A",
+          "letter:2": "T"
+        }
+      }
+    }
+  ]
+}

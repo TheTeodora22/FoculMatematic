@@ -1,0 +1,658 @@
+{
+  "title": "Aproximări; compararea, ordonarea și reprezentarea pe axa numerelor a unor fracții zecimale cu un număr finit de zecimale",
+  "description": "Clasa a 5-a · Fracții zecimale",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Compară 1,7 și 1,8 (A).",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "symbol",
+        "left": [
+          17,
+          10
+        ],
+        "right": [
+          18,
+          10
+        ],
+        "left_label": "1,7",
+        "right_label": "1,8",
+        "relation": "<"
+      },
+      "explanation": "Comparăm mai întâi părțile întregi, apoi zecimalele: 1,7 < 1,8."
+    },
+    {
+      "text": "Compară 23,5 și 23,51 (B).",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "symbol",
+        "left": [
+          235,
+          10
+        ],
+        "right": [
+          2351,
+          100
+        ],
+        "left_label": "23,5",
+        "right_label": "23,51",
+        "relation": "<"
+      },
+      "explanation": "Comparăm mai întâi părțile întregi, apoi zecimalele: 23,5 < 23,51."
+    },
+    {
+      "text": "Compară 304,2 și 204,2 (C).",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "symbol",
+        "left": [
+          3042,
+          10
+        ],
+        "right": [
+          2042,
+          10
+        ],
+        "left_label": "304,2",
+        "right_label": "204,2",
+        "relation": ">"
+      },
+      "explanation": "Comparăm mai întâi părțile întregi, apoi zecimalele: 304,2 > 204,2."
+    },
+    {
+      "text": "Compară 15,7 și 15,70 (D).",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "symbol",
+        "left": [
+          157,
+          10
+        ],
+        "right": [
+          1570,
+          100
+        ],
+        "left_label": "15,7",
+        "right_label": "15,70",
+        "relation": "="
+      },
+      "explanation": "Comparăm mai întâi părțile întregi, apoi zecimalele: 15,7 = 15,70."
+    },
+    {
+      "text": "Compară 0,34 și 0,44 (E).",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "symbol",
+        "left": [
+          34,
+          100
+        ],
+        "right": [
+          44,
+          100
+        ],
+        "left_label": "0,34",
+        "right_label": "0,44",
+        "relation": "<"
+      },
+      "explanation": "Comparăm mai întâi părțile întregi, apoi zecimalele: 0,34 < 0,44."
+    },
+    {
+      "text": "Compară 0,07 și 0,007 (F).",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "symbol",
+        "left": [
+          7,
+          100
+        ],
+        "right": [
+          7,
+          1000
+        ],
+        "left_label": "0,07",
+        "right_label": "0,007",
+        "relation": ">"
+      },
+      "explanation": "Comparăm mai întâi părțile întregi, apoi zecimalele: 0,07 > 0,007."
+    },
+    {
+      "text": "Compară 3,8 și 3,4 (G).",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "symbol",
+        "left": [
+          38,
+          10
+        ],
+        "right": [
+          34,
+          10
+        ],
+        "left_label": "3,8",
+        "right_label": "3,4",
+        "relation": ">"
+      },
+      "explanation": "Comparăm mai întâi părțile întregi, apoi zecimalele: 3,8 > 3,4."
+    },
+    {
+      "text": "Compară 5,29 și 5,43 (H).",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "symbol",
+        "left": [
+          529,
+          100
+        ],
+        "right": [
+          543,
+          100
+        ],
+        "left_label": "5,29",
+        "right_label": "5,43",
+        "relation": "<"
+      },
+      "explanation": "Comparăm mai întâi părțile întregi, apoi zecimalele: 5,29 < 5,43."
+    },
+    {
+      "text": "Ordonează fracțiile zecimale A, crescător.",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "order",
+        "direction": "asc",
+        "items": [
+          {
+            "label": "7,9",
+            "numerator": 79,
+            "denominator": 10
+          },
+          {
+            "label": "0,5",
+            "numerator": 5,
+            "denominator": 10
+          },
+          {
+            "label": "4,25",
+            "numerator": 425,
+            "denominator": 100
+          },
+          {
+            "label": "0,09",
+            "numerator": 9,
+            "denominator": 100
+          },
+          {
+            "label": "63,7",
+            "numerator": 637,
+            "denominator": 10
+          }
+        ],
+        "correct_order": [
+          3,
+          1,
+          2,
+          0,
+          4
+        ],
+        "display_order": [
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "explanation": "Ordinea corectă este: 0,09, 0,5, 4,25, 7,9, 63,7."
+    },
+    {
+      "text": "Ordonează fracțiile zecimale B, descrescător.",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "order",
+        "direction": "desc",
+        "items": [
+          {
+            "label": "2,7",
+            "numerator": 27,
+            "denominator": 10
+          },
+          {
+            "label": "3,8",
+            "numerator": 38,
+            "denominator": 10
+          },
+          {
+            "label": "1,7",
+            "numerator": 17,
+            "denominator": 10
+          },
+          {
+            "label": "0,95",
+            "numerator": 95,
+            "denominator": 100
+          },
+          {
+            "label": "0,03",
+            "numerator": 3,
+            "denominator": 100
+          },
+          {
+            "label": "0,45",
+            "numerator": 45,
+            "denominator": 100
+          }
+        ],
+        "correct_order": [
+          1,
+          0,
+          2,
+          3,
+          5,
+          4
+        ],
+        "display_order": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "explanation": "Ordinea corectă este: 3,8, 2,7, 1,7, 0,95, 0,45, 0,03."
+    },
+    {
+      "text": "Ordonează fracțiile zecimale C, crescător.",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "order",
+        "direction": "asc",
+        "items": [
+          {
+            "label": "0,123",
+            "numerator": 123,
+            "denominator": 1000
+          },
+          {
+            "label": "1,23",
+            "numerator": 123,
+            "denominator": 100
+          },
+          {
+            "label": "12,3",
+            "numerator": 123,
+            "denominator": 10
+          },
+          {
+            "label": "0,0123",
+            "numerator": 123,
+            "denominator": 10000
+          }
+        ],
+        "correct_order": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "display_order": [
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "explanation": "Ordinea corectă este: 0,0123, 0,123, 1,23, 12,3."
+    },
+    {
+      "text": "Ordonează fracțiile zecimale D, descrescător.",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "order",
+        "direction": "desc",
+        "items": [
+          {
+            "label": "5,875",
+            "numerator": 5875,
+            "denominator": 1000
+          },
+          {
+            "label": "23,4",
+            "numerator": 234,
+            "denominator": 10
+          },
+          {
+            "label": "5,9876",
+            "numerator": 59876,
+            "denominator": 10000
+          },
+          {
+            "label": "0,74",
+            "numerator": 74,
+            "denominator": 100
+          }
+        ],
+        "correct_order": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "display_order": [
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "explanation": "Ordinea corectă este: 23,4, 5,9876, 5,875, 0,74."
+    },
+    {
+      "text": "Reprezintă 0,7 pe axa numerelor (A).",
+      "type": "fraction_axis",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "place",
+        "target_numerator": 7,
+        "denominator": 10,
+        "maximum": 1,
+        "answer_tick": 7,
+        "target_label": "0,7"
+      },
+      "explanation": "Împărțim unitatea în 10 părți egale și alegem gradația corespunzătoare lui 0,7."
+    },
+    {
+      "text": "Reprezintă 1,5 pe axa numerelor (B).",
+      "type": "fraction_axis",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "place",
+        "target_numerator": 15,
+        "denominator": 10,
+        "maximum": 2,
+        "answer_tick": 15,
+        "target_label": "1,5"
+      },
+      "explanation": "Împărțim unitatea în 10 părți egale și alegem gradația corespunzătoare lui 1,5."
+    },
+    {
+      "text": "Reprezintă 2,3 pe axa numerelor (C).",
+      "type": "fraction_axis",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "place",
+        "target_numerator": 23,
+        "denominator": 10,
+        "maximum": 3,
+        "answer_tick": 23,
+        "target_label": "2,3"
+      },
+      "explanation": "Împărțim unitatea în 10 părți egale și alegem gradația corespunzătoare lui 2,3."
+    },
+    {
+      "text": "Reprezintă 1,4 pe axa numerelor (D).",
+      "type": "fraction_axis",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "place",
+        "target_numerator": 14,
+        "denominator": 10,
+        "maximum": 2,
+        "answer_tick": 14,
+        "target_label": "1,4"
+      },
+      "explanation": "Împărțim unitatea în 10 părți egale și alegem gradația corespunzătoare lui 1,4."
+    },
+    {
+      "text": "Reprezintă 3,6 pe axa numerelor (E).",
+      "type": "fraction_axis",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "place",
+        "target_numerator": 36,
+        "denominator": 10,
+        "maximum": 4,
+        "answer_tick": 36,
+        "target_label": "3,6"
+      },
+      "explanation": "Împărțim unitatea în 10 părți egale și alegem gradația corespunzătoare lui 3,6."
+    },
+    {
+      "text": "Reprezintă 2,8 pe axa numerelor (F).",
+      "type": "fraction_axis",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "place",
+        "target_numerator": 28,
+        "denominator": 10,
+        "maximum": 3,
+        "answer_tick": 28,
+        "target_label": "2,8"
+      },
+      "explanation": "Împărțim unitatea în 10 părți egale și alegem gradația corespunzătoare lui 2,8."
+    },
+    {
+      "text": "Rotunjire A: 23,145 la ordinul unităților.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "Rotunjește 23,145 la ordinul unităților.",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul rotunjirii"
+          }
+        ],
+        "answers": {
+          "missing": "23"
+        }
+      },
+      "explanation": "Privim cifra imediat din dreapta ordinului cerut; rezultatul este 23."
+    },
+    {
+      "text": "Rotunjire B: 13,5 la ordinul unităților.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "Rotunjește 13,5 la ordinul unităților.",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul rotunjirii"
+          }
+        ],
+        "answers": {
+          "missing": "14"
+        }
+      },
+      "explanation": "Privim cifra imediat din dreapta ordinului cerut; rezultatul este 14."
+    },
+    {
+      "text": "Rotunjire C: 423,7 la ordinul zecilor.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "Rotunjește 423,7 la ordinul zecilor.",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul rotunjirii"
+          }
+        ],
+        "answers": {
+          "missing": "420"
+        }
+      },
+      "explanation": "Privim cifra imediat din dreapta ordinului cerut; rezultatul este 420."
+    },
+    {
+      "text": "Rotunjire D: 4,279 la ordinul zecimilor.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "Rotunjește 4,279 la ordinul zecimilor.",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul rotunjirii"
+          }
+        ],
+        "answers": {
+          "missing": "4,3"
+        }
+      },
+      "explanation": "Privim cifra imediat din dreapta ordinului cerut; rezultatul este 4,3."
+    },
+    {
+      "text": "Rotunjire E: 0,3651 la ordinul sutimi.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "Rotunjește 0,3651 la ordinul sutimi.",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul rotunjirii"
+          }
+        ],
+        "answers": {
+          "missing": "0,37"
+        }
+      },
+      "explanation": "Privim cifra imediat din dreapta ordinului cerut; rezultatul este 0,37."
+    },
+    {
+      "text": "Rotunjire F: 8,25346 la ordinul miimi.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "Rotunjește 8,25346 la ordinul miimi.",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul rotunjirii"
+          }
+        ],
+        "answers": {
+          "missing": "8,253"
+        }
+      },
+      "explanation": "Privim cifra imediat din dreapta ordinului cerut; rezultatul este 8,253."
+    },
+    {
+      "text": "Care număr este mai mare?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Părțile întregi sunt egale; 99 sutimi sunt mai multe decât 9 zecimi.",
+      "options": [
+        {
+          "text": "306,9",
+          "is_correct": false
+        },
+        {
+          "text": "306,99",
+          "is_correct": true
+        },
+        {
+          "text": "306,09",
+          "is_correct": false
+        },
+        {
+          "text": "306,099",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este ordinea crescătoare corectă?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Comparăm părțile întregi și apoi cifrele zecimale.",
+      "options": [
+        {
+          "text": "0,5 < 0,09 < 4,25",
+          "is_correct": false
+        },
+        {
+          "text": "0,09 < 0,5 < 4,25",
+          "is_correct": true
+        },
+        {
+          "text": "4,25 < 0,5 < 0,09",
+          "is_correct": false
+        },
+        {
+          "text": "0,09 < 4,25 < 0,5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Rotunjirea lui 6,782 la sutimi este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cifra miimilor este 2, deci cifra sutimilor rămâne neschimbată.",
+      "options": [
+        {
+          "text": "6,79",
+          "is_correct": false
+        },
+        {
+          "text": "6,78",
+          "is_correct": true
+        },
+        {
+          "text": "6,8",
+          "is_correct": false
+        },
+        {
+          "text": "6,782",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

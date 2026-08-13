@@ -1,0 +1,955 @@
+{
+  "title": "Cel mai mic multiplu comun a două numere naturale. Aducerea fracțiilor la un numitor comun",
+  "description": "Clasa a 5-a · Fracții ordinare",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "text": "Care este c.m.m.m.c. al numerelor 6 și 8?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Primul multiplu comun nenul este 24.",
+      "options": [
+        {
+          "text": "36",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": true
+        },
+        {
+          "text": "48",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este c.m.m.m.c. al numerelor 4 și 9?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "4 și 9 sunt prime între ele, deci produsul este 36.",
+      "options": [
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": true
+        },
+        {
+          "text": "72",
+          "is_correct": false
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Alege cel mai mic multiplu comun al numerelor 12 și 18.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "36 este primul număr divizibil cu 12 și cu 18.",
+      "options": [
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": true
+        },
+        {
+          "text": "72",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă 5 divide 20, atunci c.m.m.m.c.(5,20) este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Când un număr îl divide pe celălalt, c.m.m.m.c. este numărul mai mare.",
+      "options": [
+        {
+          "text": "25",
+          "is_correct": false
+        },
+        {
+          "text": "20",
+          "is_correct": true
+        },
+        {
+          "text": "100",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Două turnuri folosesc piese de 6 cm și 8 cm. Care este cea mai mică înălțime comună?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Căutăm c.m.m.m.c.(6,8)=24.",
+      "options": [
+        {
+          "text": "36 cm",
+          "is_correct": false
+        },
+        {
+          "text": "24 cm",
+          "is_correct": true
+        },
+        {
+          "text": "48 cm",
+          "is_correct": false
+        },
+        {
+          "text": "14 cm",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cel mai mic numitor comun pentru 1/6 și 5/8 este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Este c.m.m.m.c.(6,8).",
+      "options": [
+        {
+          "text": "36",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": true
+        },
+        {
+          "text": "48",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Aducând 3/4 și 5/6 la numitorul 12 obținem:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Amplificăm prima fracție cu 3 și a doua cu 2.",
+      "options": [
+        {
+          "text": "9/12 și 5/12",
+          "is_correct": false
+        },
+        {
+          "text": "9/12 și 10/12",
+          "is_correct": true
+        },
+        {
+          "text": "3/12 și 5/12",
+          "is_correct": false
+        },
+        {
+          "text": "6/12 și 10/12",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cu ce factor amplificăm 7/9 pentru a avea numitorul 36?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "9·4=36.",
+      "options": [
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "27",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cu ce factor amplificăm 5/12 pentru a avea numitorul 60?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "12·5=60.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "48",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care pereche este adusă corect la același numitor?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Factorii sunt 4 și 3.",
+      "options": [
+        {
+          "text": "2/3=8/12 și 3/4=6/12",
+          "is_correct": false
+        },
+        {
+          "text": "2/3=8/12 și 3/4=9/12",
+          "is_correct": true
+        },
+        {
+          "text": "2/3=4/12 și 3/4=9/12",
+          "is_correct": false
+        },
+        {
+          "text": "2/3=6/12 și 3/4=9/12",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "După aducerea la numitor comun, care este mai mare: 3/5 sau 4/7?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3/5=21/35, iar 4/7=20/35.",
+      "options": [
+        {
+          "text": "Sunt egale",
+          "is_correct": false
+        },
+        {
+          "text": "3/5",
+          "is_correct": true
+        },
+        {
+          "text": "Nu se pot compara",
+          "is_correct": false
+        },
+        {
+          "text": "4/7",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ordinea crescătoare a fracțiilor 2/3, 3/5 și 5/6 este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La numitorul 30 obținem 18/30, 20/30 și 25/30.",
+      "options": [
+        {
+          "text": "5/6, 2/3, 3/5",
+          "is_correct": false
+        },
+        {
+          "text": "3/5, 2/3, 5/6",
+          "is_correct": true
+        },
+        {
+          "text": "3/5, 5/6, 2/3",
+          "is_correct": false
+        },
+        {
+          "text": "2/3, 3/5, 5/6",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă numitorii sunt 15 și 25, cel mai mic numitor comun este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(15,25)=75.",
+      "options": [
+        {
+          "text": "40",
+          "is_correct": false
+        },
+        {
+          "text": "75",
+          "is_correct": true
+        },
+        {
+          "text": "375",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Relația dintre c.m.m.d.c. și c.m.m.m.c. pentru a și b este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul celor două este egal cu produsul numerelor.",
+      "options": [
+        {
+          "text": "c.m.m.m.c. = a+b",
+          "is_correct": false
+        },
+        {
+          "text": "c.m.m.d.c. · c.m.m.m.c. = a · b",
+          "is_correct": true
+        },
+        {
+          "text": "c.m.m.d.c. = a·b",
+          "is_correct": false
+        },
+        {
+          "text": "c.m.m.d.c. + c.m.m.m.c. = a+b",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cel mai mic multiplu comun este întotdeauna diferit de zero.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Definiția cere cel mai mic multiplu comun nenul.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă două numere sunt prime între ele, c.m.m.m.c. este produsul lor.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "C.m.m.d.c. este 1, deci c.m.m.m.c.=a·b.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pentru a aduce fracții la același numitor trebuie să le schimbăm valoarea.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Folosim fracții echivalente, deci valoarea se păstrează.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Numitorul comun ales poate fi orice multiplu comun al numitorilor, dar de obicei îl folosim pe cel mai mic.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Cel mai mic numitor comun produce numere mai ușor de calculat.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Completează șirurile de multipli pentru 3 și 5.",
+      "type": "lcm_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Primul multiplu comun nenul este 15.",
+      "interactive": {
+        "mode": "lists",
+        "a": 3,
+        "b": 5,
+        "answers": {
+          "multiples_a": "3,6,9,12,15,18,21,24,27,30",
+          "multiples_b": "5,10,15,20,25,30,35,40,45",
+          "common": "15,30,45",
+          "lcm": 15
+        }
+      }
+    },
+    {
+      "text": "Completează șirurile de multipli pentru 6 și 8.",
+      "type": "lcm_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Primul multiplu comun nenul este 24.",
+      "interactive": {
+        "mode": "lists",
+        "a": 6,
+        "b": 8,
+        "answers": {
+          "multiples_a": "6,12,18,24,30,36,42,48,54,60",
+          "multiples_b": "8,16,24,32,40,48,56,64,72",
+          "common": "24,48,72",
+          "lcm": 24
+        }
+      }
+    },
+    {
+      "text": "Completează șirurile de multipli pentru 12 și 18.",
+      "type": "lcm_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Primul multiplu comun nenul este 36.",
+      "interactive": {
+        "mode": "lists",
+        "a": 12,
+        "b": 18,
+        "answers": {
+          "multiples_a": "12,24,36,48,60,72,84,96,108",
+          "multiples_b": "18,36,54,72,90,108",
+          "common": "36,72,108",
+          "lcm": 36
+        }
+      }
+    },
+    {
+      "text": "Selectează multiplii comuni ai numerelor 4 și 6.",
+      "type": "lcm_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cel mai mic dintre multiplii comuni selectați este 12.",
+      "interactive": {
+        "mode": "select",
+        "a": 4,
+        "b": 6,
+        "candidates": [
+          8,
+          12,
+          16,
+          18,
+          24,
+          30,
+          36,
+          48
+        ],
+        "answers": {
+          "common": "12,24,36,48",
+          "lcm": 12
+        }
+      }
+    },
+    {
+      "text": "Selectează multiplii comuni ai numerelor 5 și 7.",
+      "type": "lcm_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cel mai mic dintre multiplii comuni selectați este 35.",
+      "interactive": {
+        "mode": "select",
+        "a": 5,
+        "b": 7,
+        "candidates": [
+          20,
+          28,
+          35,
+          42,
+          70,
+          105
+        ],
+        "answers": {
+          "common": "35,70,105",
+          "lcm": 35
+        }
+      }
+    },
+    {
+      "text": "Șirul din 6 în 6 și șirul din 8 în 8 pornesc simultan. La ce număr se întâlnesc prima dată?",
+      "type": "lcm_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Prima întâlnire este la 24, adică c.m.m.m.c.(6,8).",
+      "interactive": {
+        "mode": "sync",
+        "a": 6,
+        "b": 8,
+        "multiples_a": [
+          6,
+          12,
+          18,
+          24
+        ],
+        "multiples_b": [
+          8,
+          16,
+          24
+        ],
+        "answers": {
+          "lcm": 24
+        }
+      }
+    },
+    {
+      "text": "Șirul din 9 în 9 și șirul din 12 în 12 pornesc simultan. La ce număr se întâlnesc prima dată?",
+      "type": "lcm_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Prima întâlnire este la 36, adică c.m.m.m.c.(9,12).",
+      "interactive": {
+        "mode": "sync",
+        "a": 9,
+        "b": 12,
+        "multiples_a": [
+          9,
+          18,
+          27,
+          36
+        ],
+        "multiples_b": [
+          12,
+          24,
+          36
+        ],
+        "answers": {
+          "lcm": 36
+        }
+      }
+    },
+    {
+      "text": "Șirul din 10 în 10 și șirul din 15 în 15 pornesc simultan. La ce număr se întâlnesc prima dată?",
+      "type": "lcm_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Prima întâlnire este la 30, adică c.m.m.m.c.(10,15).",
+      "interactive": {
+        "mode": "sync",
+        "a": 10,
+        "b": 15,
+        "multiples_a": [
+          10,
+          20,
+          30
+        ],
+        "multiples_b": [
+          15,
+          30
+        ],
+        "answers": {
+          "lcm": 30
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 1/2 și 7/15 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(2,15)=30; factorii sunt 15 și 2.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          7,
+          15
+        ],
+        "answers": {
+          "left_factor": 15,
+          "right_factor": 2,
+          "left_numerator": 15,
+          "right_numerator": 14,
+          "common_denominator": 30
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 3/4 și 16/25 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(4,25)=100; factorii sunt 25 și 4.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          3,
+          4
+        ],
+        "right": [
+          16,
+          25
+        ],
+        "answers": {
+          "left_factor": 25,
+          "right_factor": 4,
+          "left_numerator": 75,
+          "right_numerator": 64,
+          "common_denominator": 100
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 3/14 și 2/9 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(14,9)=126; factorii sunt 9 și 14.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          3,
+          14
+        ],
+        "right": [
+          2,
+          9
+        ],
+        "answers": {
+          "left_factor": 9,
+          "right_factor": 14,
+          "left_numerator": 27,
+          "right_numerator": 28,
+          "common_denominator": 126
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 7/12 și 8/5 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(12,5)=60; factorii sunt 5 și 12.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          7,
+          12
+        ],
+        "right": [
+          8,
+          5
+        ],
+        "answers": {
+          "left_factor": 5,
+          "right_factor": 12,
+          "left_numerator": 35,
+          "right_numerator": 96,
+          "common_denominator": 60
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 1/6 și 5/8 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(6,8)=24; factorii sunt 4 și 3.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          1,
+          6
+        ],
+        "right": [
+          5,
+          8
+        ],
+        "answers": {
+          "left_factor": 4,
+          "right_factor": 3,
+          "left_numerator": 4,
+          "right_numerator": 15,
+          "common_denominator": 24
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 5/9 și 2/3 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(9,3)=9; factorii sunt 1 și 3.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          5,
+          9
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "answers": {
+          "left_factor": 1,
+          "right_factor": 3,
+          "left_numerator": 5,
+          "right_numerator": 6,
+          "common_denominator": 9
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 7/18 și 8/27 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(18,27)=54; factorii sunt 3 și 2.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          7,
+          18
+        ],
+        "right": [
+          8,
+          27
+        ],
+        "answers": {
+          "left_factor": 3,
+          "right_factor": 2,
+          "left_numerator": 21,
+          "right_numerator": 16,
+          "common_denominator": 54
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 3/10 și 7/15 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(10,15)=30; factorii sunt 3 și 2.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          3,
+          10
+        ],
+        "right": [
+          7,
+          15
+        ],
+        "answers": {
+          "left_factor": 3,
+          "right_factor": 2,
+          "left_numerator": 9,
+          "right_numerator": 14,
+          "common_denominator": 30
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 5/12 și 11/20 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(12,20)=60; factorii sunt 5 și 3.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          5,
+          12
+        ],
+        "right": [
+          11,
+          20
+        ],
+        "answers": {
+          "left_factor": 5,
+          "right_factor": 3,
+          "left_numerator": 25,
+          "right_numerator": 33,
+          "common_denominator": 60
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 4/21 și 5/14 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(21,14)=42; factorii sunt 2 și 3.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          4,
+          21
+        ],
+        "right": [
+          5,
+          14
+        ],
+        "answers": {
+          "left_factor": 2,
+          "right_factor": 3,
+          "left_numerator": 8,
+          "right_numerator": 15,
+          "common_denominator": 42
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 9/20 și 11/30 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(20,30)=60; factorii sunt 3 și 2.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          9,
+          20
+        ],
+        "right": [
+          11,
+          30
+        ],
+        "answers": {
+          "left_factor": 3,
+          "right_factor": 2,
+          "left_numerator": 27,
+          "right_numerator": 22,
+          "common_denominator": 60
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 2/7 și 3/5 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(7,5)=35; factorii sunt 5 și 7.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          2,
+          7
+        ],
+        "right": [
+          3,
+          5
+        ],
+        "answers": {
+          "left_factor": 5,
+          "right_factor": 7,
+          "left_numerator": 10,
+          "right_numerator": 21,
+          "common_denominator": 35
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 5/16 și 49/96 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(16,96)=96; factorii sunt 6 și 1.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          5,
+          16
+        ],
+        "right": [
+          49,
+          96
+        ],
+        "answers": {
+          "left_factor": 6,
+          "right_factor": 1,
+          "left_numerator": 30,
+          "right_numerator": 49,
+          "common_denominator": 96
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 3/8 și 5/12 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(8,12)=24; factorii sunt 3 și 2.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          3,
+          8
+        ],
+        "right": [
+          5,
+          12
+        ],
+        "answers": {
+          "left_factor": 3,
+          "right_factor": 2,
+          "left_numerator": 9,
+          "right_numerator": 10,
+          "common_denominator": 24
+        }
+      }
+    }
+  ]
+}

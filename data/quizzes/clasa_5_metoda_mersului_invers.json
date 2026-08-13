@@ -1,0 +1,2716 @@
+{
+  "title": "Metoda mersului invers",
+  "description": "Clasa a 5-a · Metode aritmetice de rezolvare a problemelor",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Operația inversă înmulțirii cu 5 este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțirea și împărțirea cu același număr se anulează.",
+      "options": [
+        {
+          "text": "împărțirea la 5",
+          "is_correct": true
+        },
+        {
+          "text": "adunarea cu 5",
+          "is_correct": false
+        },
+        {
+          "text": "scăderea cu 5",
+          "is_correct": false
+        },
+        {
+          "text": "înmulțirea cu 5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Operația inversă scăderii lui 9 este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunăm ceea ce a fost scăzut.",
+      "options": [
+        {
+          "text": "adunarea lui 9",
+          "is_correct": true
+        },
+        {
+          "text": "împărțirea la 9",
+          "is_correct": false
+        },
+        {
+          "text": "scăderea lui 9",
+          "is_correct": false
+        },
+        {
+          "text": "înmulțirea cu 9",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Din 11 refacem operația «împărțire la 5». Primul pas invers este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Inversa împărțirii la 5 este înmulțirea cu 5.",
+      "options": [
+        {
+          "text": "11 × 5",
+          "is_correct": true
+        },
+        {
+          "text": "11 : 5",
+          "is_correct": false
+        },
+        {
+          "text": "11 + 5",
+          "is_correct": false
+        },
+        {
+          "text": "11 − 5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ioana obține 11 după ce împarte la 5. Numărul dinaintea împărțirii este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "11 × 5 = 55.",
+      "options": [
+        {
+          "text": "55",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "50",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "După ce scădem 5 obținem 50. Numărul anterior este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "50 + 5 = 55.",
+      "options": [
+        {
+          "text": "55",
+          "is_correct": true
+        },
+        {
+          "text": "45",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "250",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "După înmulțirea cu 5 obținem 50. Numărul inițial este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "50 : 5 = 10.",
+      "options": [
+        {
+          "text": "10",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "45",
+          "is_correct": false
+        },
+        {
+          "text": "250",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un număr este împărțit la 8 și se obține 251. Numărul anterior este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "251 × 8 = 2008.",
+      "options": [
+        {
+          "text": "2008",
+          "is_correct": true
+        },
+        {
+          "text": "243",
+          "is_correct": false
+        },
+        {
+          "text": "259",
+          "is_correct": false
+        },
+        {
+          "text": "2016",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "După ce adunăm 5 obținem 256. Valoarea anterioară este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "256 − 5 = 251.",
+      "options": [
+        {
+          "text": "251",
+          "is_correct": true
+        },
+        {
+          "text": "261",
+          "is_correct": false
+        },
+        {
+          "text": "51",
+          "is_correct": false
+        },
+        {
+          "text": "1280",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "O operație dus–întors corectă este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Operațiile inverse readuc valoarea inițială.",
+      "options": [
+        {
+          "text": "×7 urmat de :7",
+          "is_correct": true
+        },
+        {
+          "text": "+7 urmat de ×7",
+          "is_correct": false
+        },
+        {
+          "text": "−7 urmat de :7",
+          "is_correct": false
+        },
+        {
+          "text": "×7 urmat de −7",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Tudor ia jumătate din 12 bomboane. Câte rămân?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "12 : 2 = 6.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "După ce Ioana ia jumătate, rămân 3 bomboane. Înainte erau:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Refacem înjumătățirea prin înmulțire cu 2.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Într-un tabel al mersului invers, completăm valorile:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pornim de la ultima valoare cunoscută.",
+      "options": [
+        {
+          "text": "de la rezultat spre început",
+          "is_correct": true
+        },
+        {
+          "text": "aleatoriu",
+          "is_correct": false
+        },
+        {
+          "text": "numai de la stânga",
+          "is_correct": false
+        },
+        {
+          "text": "fără operații inverse",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pentru verificare, după aflarea numărului inițial:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Drumul direct trebuie să producă rezultatul din enunț.",
+      "options": [
+        {
+          "text": "refacem drumul direct",
+          "is_correct": true
+        },
+        {
+          "text": "schimbăm rezultatul final",
+          "is_correct": false
+        },
+        {
+          "text": "ștergem operațiile",
+          "is_correct": false
+        },
+        {
+          "text": "adunăm toate valorile",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă rezultatul final este 8 și ultima operație a fost împărțirea la 10, mergând invers obținem:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "8 × 10 = 80.",
+      "options": [
+        {
+          "text": "80",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un lanț invers trebuie să folosească operațiile:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Începem cu ultima operație a drumului direct.",
+      "options": [
+        {
+          "text": "în ordine inversă apariției",
+          "is_correct": true
+        },
+        {
+          "text": "în aceeași ordine",
+          "is_correct": false
+        },
+        {
+          "text": "în ordine alfabetică",
+          "is_correct": false
+        },
+        {
+          "text": "doar înmulțiri",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Construiește drumul invers pentru lanțul lui Ioana.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 10.",
+      "interactive": {
+        "mode": "build_reverse_path",
+        "answers": {
+          "node:0": 55,
+          "node:1": 50,
+          "node:2": 10
+        },
+        "start": 10,
+        "end": 11,
+        "operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "+",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "nodes": [
+          10,
+          50,
+          55,
+          11
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          11,
+          55,
+          50,
+          10
+        ]
+      }
+    },
+    {
+      "text": "Construiește drumul invers pentru lanțul lui Mara.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 18.",
+      "interactive": {
+        "mode": "build_reverse_path",
+        "answers": {
+          "node:0": 13,
+          "node:1": 6,
+          "node:2": 18
+        },
+        "start": 18,
+        "end": 26,
+        "operations": [
+          {
+            "op": "/",
+            "value": 3
+          },
+          {
+            "op": "+",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 2
+          }
+        ],
+        "nodes": [
+          18,
+          6,
+          13,
+          26
+        ],
+        "inverse_operations": [
+          {
+            "op": "/",
+            "value": 2
+          },
+          {
+            "op": "-",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 3
+          }
+        ],
+        "reverse_nodes": [
+          26,
+          13,
+          6,
+          18
+        ]
+      }
+    },
+    {
+      "text": "Construiește drumul invers pentru lanțul lui Radu.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 25.",
+      "interactive": {
+        "mode": "build_reverse_path",
+        "answers": {
+          "node:0": 80,
+          "node:1": 20,
+          "node:2": 25
+        },
+        "start": 25,
+        "end": 8,
+        "operations": [
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "*",
+            "value": 4
+          },
+          {
+            "op": "/",
+            "value": 10
+          }
+        ],
+        "nodes": [
+          25,
+          20,
+          80,
+          8
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 10
+          },
+          {
+            "op": "/",
+            "value": 4
+          },
+          {
+            "op": "+",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          8,
+          80,
+          20,
+          25
+        ]
+      }
+    },
+    {
+      "text": "Așază operațiile inverse pentru traseul lui Ioana.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 10.",
+      "interactive": {
+        "mode": "drag_inverse_ops",
+        "answers": {
+          "op:0": "×5",
+          "op:1": "-5",
+          "op:2": ":5"
+        },
+        "start": 10,
+        "end": 11,
+        "operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "+",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "nodes": [
+          10,
+          50,
+          55,
+          11
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          11,
+          55,
+          50,
+          10
+        ],
+        "operation_pool": [
+          ":5",
+          "-5",
+          "×5"
+        ]
+      }
+    },
+    {
+      "text": "Așază operațiile inverse pentru traseul lui Mara.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 18.",
+      "interactive": {
+        "mode": "drag_inverse_ops",
+        "answers": {
+          "op:0": ":2",
+          "op:1": "-7",
+          "op:2": "×3"
+        },
+        "start": 18,
+        "end": 26,
+        "operations": [
+          {
+            "op": "/",
+            "value": 3
+          },
+          {
+            "op": "+",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 2
+          }
+        ],
+        "nodes": [
+          18,
+          6,
+          13,
+          26
+        ],
+        "inverse_operations": [
+          {
+            "op": "/",
+            "value": 2
+          },
+          {
+            "op": "-",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 3
+          }
+        ],
+        "reverse_nodes": [
+          26,
+          13,
+          6,
+          18
+        ],
+        "operation_pool": [
+          "×3",
+          "-7",
+          ":2"
+        ]
+      }
+    },
+    {
+      "text": "Așază operațiile inverse pentru traseul lui Radu.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 25.",
+      "interactive": {
+        "mode": "drag_inverse_ops",
+        "answers": {
+          "op:0": "×10",
+          "op:1": ":4",
+          "op:2": "+5"
+        },
+        "start": 25,
+        "end": 8,
+        "operations": [
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "*",
+            "value": 4
+          },
+          {
+            "op": "/",
+            "value": 10
+          }
+        ],
+        "nodes": [
+          25,
+          20,
+          80,
+          8
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 10
+          },
+          {
+            "op": "/",
+            "value": 4
+          },
+          {
+            "op": "+",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          8,
+          80,
+          20,
+          25
+        ],
+        "operation_pool": [
+          "+5",
+          ":4",
+          "×10"
+        ]
+      }
+    },
+    {
+      "text": "Întoarce săgețile și completează operațiile pentru Ioana.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 10.",
+      "interactive": {
+        "mode": "reverse_arrows",
+        "answers": {
+          "direction": "reverse",
+          "op:0": "×5",
+          "op:1": "-5",
+          "op:2": ":5"
+        },
+        "start": 10,
+        "end": 11,
+        "operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "+",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "nodes": [
+          10,
+          50,
+          55,
+          11
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          11,
+          55,
+          50,
+          10
+        ]
+      }
+    },
+    {
+      "text": "Întoarce săgețile și completează operațiile pentru Mara.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 18.",
+      "interactive": {
+        "mode": "reverse_arrows",
+        "answers": {
+          "direction": "reverse",
+          "op:0": ":2",
+          "op:1": "-7",
+          "op:2": "×3"
+        },
+        "start": 18,
+        "end": 26,
+        "operations": [
+          {
+            "op": "/",
+            "value": 3
+          },
+          {
+            "op": "+",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 2
+          }
+        ],
+        "nodes": [
+          18,
+          6,
+          13,
+          26
+        ],
+        "inverse_operations": [
+          {
+            "op": "/",
+            "value": 2
+          },
+          {
+            "op": "-",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 3
+          }
+        ],
+        "reverse_nodes": [
+          26,
+          13,
+          6,
+          18
+        ]
+      }
+    },
+    {
+      "text": "Întoarce săgețile și completează operațiile pentru Radu.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 25.",
+      "interactive": {
+        "mode": "reverse_arrows",
+        "answers": {
+          "direction": "reverse",
+          "op:0": "×10",
+          "op:1": ":4",
+          "op:2": "+5"
+        },
+        "start": 25,
+        "end": 8,
+        "operations": [
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "*",
+            "value": 4
+          },
+          {
+            "op": "/",
+            "value": 10
+          }
+        ],
+        "nodes": [
+          25,
+          20,
+          80,
+          8
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 10
+          },
+          {
+            "op": "/",
+            "value": 4
+          },
+          {
+            "op": "+",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          8,
+          80,
+          20,
+          25
+        ]
+      }
+    },
+    {
+      "text": "Potrivește perechile de operații inverse – setul 1.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare operație este anulată de inversa ei.",
+      "interactive": {
+        "mode": "pair_inverse",
+        "answers": {
+          "pair:0": "-5",
+          "pair:1": ":5",
+          "pair:2": "-9"
+        },
+        "pairs": [
+          {
+            "left": "+5",
+            "right": "-5"
+          },
+          {
+            "left": "×5",
+            "right": ":5"
+          },
+          {
+            "left": "+9",
+            "right": "-9"
+          }
+        ],
+        "right_order": [
+          1,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Potrivește perechile de operații inverse – setul 2.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare operație este anulată de inversa ei.",
+      "interactive": {
+        "mode": "pair_inverse",
+        "answers": {
+          "pair:0": "×3",
+          "pair:1": "-7",
+          "pair:2": ":2"
+        },
+        "pairs": [
+          {
+            "left": ":3",
+            "right": "×3"
+          },
+          {
+            "left": "+7",
+            "right": "-7"
+          },
+          {
+            "left": "×2",
+            "right": ":2"
+          }
+        ],
+        "right_order": [
+          1,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Potrivește perechile de operații inverse – setul 3.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare operație este anulată de inversa ei.",
+      "interactive": {
+        "mode": "pair_inverse",
+        "answers": {
+          "pair:0": "+5",
+          "pair:1": ":4",
+          "pair:2": "×10"
+        },
+        "pairs": [
+          {
+            "left": "-5",
+            "right": "+5"
+          },
+          {
+            "left": "×4",
+            "right": ":4"
+          },
+          {
+            "left": ":10",
+            "right": "×10"
+          }
+        ],
+        "right_order": [
+          1,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Ordonează pașii invers pentru Ioana.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 10.",
+      "interactive": {
+        "mode": "order_reverse",
+        "answers": {
+          "position:0": 0,
+          "position:1": 1,
+          "position:2": 2
+        },
+        "start": 10,
+        "end": 11,
+        "operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "+",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "nodes": [
+          10,
+          50,
+          55,
+          11
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          11,
+          55,
+          50,
+          10
+        ],
+        "steps": [
+          "×5",
+          "-5",
+          ":5"
+        ],
+        "display_order": [
+          2,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Ordonează pașii invers pentru Mara.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 18.",
+      "interactive": {
+        "mode": "order_reverse",
+        "answers": {
+          "position:0": 0,
+          "position:1": 1,
+          "position:2": 2
+        },
+        "start": 18,
+        "end": 26,
+        "operations": [
+          {
+            "op": "/",
+            "value": 3
+          },
+          {
+            "op": "+",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 2
+          }
+        ],
+        "nodes": [
+          18,
+          6,
+          13,
+          26
+        ],
+        "inverse_operations": [
+          {
+            "op": "/",
+            "value": 2
+          },
+          {
+            "op": "-",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 3
+          }
+        ],
+        "reverse_nodes": [
+          26,
+          13,
+          6,
+          18
+        ],
+        "steps": [
+          ":2",
+          "-7",
+          "×3"
+        ],
+        "display_order": [
+          2,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Ordonează pașii invers pentru Radu.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 25.",
+      "interactive": {
+        "mode": "order_reverse",
+        "answers": {
+          "position:0": 0,
+          "position:1": 1,
+          "position:2": 2
+        },
+        "start": 25,
+        "end": 8,
+        "operations": [
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "*",
+            "value": 4
+          },
+          {
+            "op": "/",
+            "value": 10
+          }
+        ],
+        "nodes": [
+          25,
+          20,
+          80,
+          8
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 10
+          },
+          {
+            "op": "/",
+            "value": 4
+          },
+          {
+            "op": "+",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          8,
+          80,
+          20,
+          25
+        ],
+        "steps": [
+          "×10",
+          ":4",
+          "+5"
+        ],
+        "display_order": [
+          2,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Găsește primul pas invers greșit în traseul lui Ioana.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Al doilea cartonaș nu este inversa operației corespunzătoare.",
+      "interactive": {
+        "mode": "reverse_error",
+        "answers": {
+          "step": 1
+        },
+        "start": 10,
+        "end": 11,
+        "operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "+",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "nodes": [
+          10,
+          50,
+          55,
+          11
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          11,
+          55,
+          50,
+          10
+        ],
+        "shown_steps": [
+          "×5",
+          "+99",
+          ":5"
+        ]
+      }
+    },
+    {
+      "text": "Găsește primul pas invers greșit în traseul lui Mara.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Al doilea cartonaș nu este inversa operației corespunzătoare.",
+      "interactive": {
+        "mode": "reverse_error",
+        "answers": {
+          "step": 1
+        },
+        "start": 18,
+        "end": 26,
+        "operations": [
+          {
+            "op": "/",
+            "value": 3
+          },
+          {
+            "op": "+",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 2
+          }
+        ],
+        "nodes": [
+          18,
+          6,
+          13,
+          26
+        ],
+        "inverse_operations": [
+          {
+            "op": "/",
+            "value": 2
+          },
+          {
+            "op": "-",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 3
+          }
+        ],
+        "reverse_nodes": [
+          26,
+          13,
+          6,
+          18
+        ],
+        "shown_steps": [
+          ":2",
+          "×99",
+          "×3"
+        ]
+      }
+    },
+    {
+      "text": "Găsește primul pas invers greșit în traseul lui Radu.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Al doilea cartonaș nu este inversa operației corespunzătoare.",
+      "interactive": {
+        "mode": "reverse_error",
+        "answers": {
+          "step": 1
+        },
+        "start": 25,
+        "end": 8,
+        "operations": [
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "*",
+            "value": 4
+          },
+          {
+            "op": "/",
+            "value": 10
+          }
+        ],
+        "nodes": [
+          25,
+          20,
+          80,
+          8
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 10
+          },
+          {
+            "op": "/",
+            "value": 4
+          },
+          {
+            "op": "+",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          8,
+          80,
+          20,
+          25
+        ],
+        "shown_steps": [
+          "×10",
+          ":99",
+          "+5"
+        ]
+      }
+    },
+    {
+      "text": "Repară operația din mijlocul lanțului lui Ioana.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 10.",
+      "interactive": {
+        "mode": "repair_chain",
+        "answers": {
+          "repair": "-5"
+        },
+        "start": 10,
+        "end": 11,
+        "operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "+",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "nodes": [
+          10,
+          50,
+          55,
+          11
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          11,
+          55,
+          50,
+          10
+        ],
+        "choices": [
+          "-5",
+          "+1",
+          ":2"
+        ]
+      }
+    },
+    {
+      "text": "Repară operația din mijlocul lanțului lui Mara.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 18.",
+      "interactive": {
+        "mode": "repair_chain",
+        "answers": {
+          "repair": "-7"
+        },
+        "start": 18,
+        "end": 26,
+        "operations": [
+          {
+            "op": "/",
+            "value": 3
+          },
+          {
+            "op": "+",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 2
+          }
+        ],
+        "nodes": [
+          18,
+          6,
+          13,
+          26
+        ],
+        "inverse_operations": [
+          {
+            "op": "/",
+            "value": 2
+          },
+          {
+            "op": "-",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 3
+          }
+        ],
+        "reverse_nodes": [
+          26,
+          13,
+          6,
+          18
+        ],
+        "choices": [
+          "-7",
+          "+1",
+          ":2"
+        ]
+      }
+    },
+    {
+      "text": "Repară operația din mijlocul lanțului lui Radu.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 25.",
+      "interactive": {
+        "mode": "repair_chain",
+        "answers": {
+          "repair": ":4"
+        },
+        "start": 25,
+        "end": 8,
+        "operations": [
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "*",
+            "value": 4
+          },
+          {
+            "op": "/",
+            "value": 10
+          }
+        ],
+        "nodes": [
+          25,
+          20,
+          80,
+          8
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 10
+          },
+          {
+            "op": "/",
+            "value": 4
+          },
+          {
+            "op": "+",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          8,
+          80,
+          20,
+          25
+        ],
+        "choices": [
+          ":4",
+          "+1",
+          ":2"
+        ]
+      }
+    },
+    {
+      "text": "Pornește mașina timpului matematică pentru Ioana.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 10.",
+      "interactive": {
+        "mode": "time_machine",
+        "answers": {
+          "node:0": 55,
+          "node:1": 50,
+          "node:2": 10
+        },
+        "start": 10,
+        "end": 11,
+        "operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "+",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "nodes": [
+          10,
+          50,
+          55,
+          11
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          11,
+          55,
+          50,
+          10
+        ],
+        "icon": "⏳"
+      }
+    },
+    {
+      "text": "Pornește mașina timpului matematică pentru Mara.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 18.",
+      "interactive": {
+        "mode": "time_machine",
+        "answers": {
+          "node:0": 13,
+          "node:1": 6,
+          "node:2": 18
+        },
+        "start": 18,
+        "end": 26,
+        "operations": [
+          {
+            "op": "/",
+            "value": 3
+          },
+          {
+            "op": "+",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 2
+          }
+        ],
+        "nodes": [
+          18,
+          6,
+          13,
+          26
+        ],
+        "inverse_operations": [
+          {
+            "op": "/",
+            "value": 2
+          },
+          {
+            "op": "-",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 3
+          }
+        ],
+        "reverse_nodes": [
+          26,
+          13,
+          6,
+          18
+        ],
+        "icon": "⏳"
+      }
+    },
+    {
+      "text": "Pornește mașina timpului matematică pentru Radu.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 25.",
+      "interactive": {
+        "mode": "time_machine",
+        "answers": {
+          "node:0": 80,
+          "node:1": 20,
+          "node:2": 25
+        },
+        "start": 25,
+        "end": 8,
+        "operations": [
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "*",
+            "value": 4
+          },
+          {
+            "op": "/",
+            "value": 10
+          }
+        ],
+        "nodes": [
+          25,
+          20,
+          80,
+          8
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 10
+          },
+          {
+            "op": "/",
+            "value": 4
+          },
+          {
+            "op": "+",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          8,
+          80,
+          20,
+          25
+        ],
+        "icon": "⏳"
+      }
+    },
+    {
+      "text": "Reglează numărul inițial al lui Ioana până obții 11.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 10.",
+      "interactive": {
+        "mode": "start_slider",
+        "answers": {
+          "start": 10
+        },
+        "start": 10,
+        "end": 11,
+        "operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "+",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "nodes": [
+          10,
+          50,
+          55,
+          11
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          11,
+          55,
+          50,
+          10
+        ],
+        "maximum": 40
+      }
+    },
+    {
+      "text": "Reglează numărul inițial al lui Mara până obții 26.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 18.",
+      "interactive": {
+        "mode": "start_slider",
+        "answers": {
+          "start": 18
+        },
+        "start": 18,
+        "end": 26,
+        "operations": [
+          {
+            "op": "/",
+            "value": 3
+          },
+          {
+            "op": "+",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 2
+          }
+        ],
+        "nodes": [
+          18,
+          6,
+          13,
+          26
+        ],
+        "inverse_operations": [
+          {
+            "op": "/",
+            "value": 2
+          },
+          {
+            "op": "-",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 3
+          }
+        ],
+        "reverse_nodes": [
+          26,
+          13,
+          6,
+          18
+        ],
+        "maximum": 40
+      }
+    },
+    {
+      "text": "Reglează numărul inițial al lui Radu până obții 8.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 25.",
+      "interactive": {
+        "mode": "start_slider",
+        "answers": {
+          "start": 25
+        },
+        "start": 25,
+        "end": 8,
+        "operations": [
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "*",
+            "value": 4
+          },
+          {
+            "op": "/",
+            "value": 10
+          }
+        ],
+        "nodes": [
+          25,
+          20,
+          80,
+          8
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 10
+          },
+          {
+            "op": "/",
+            "value": 4
+          },
+          {
+            "op": "+",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          8,
+          80,
+          20,
+          25
+        ],
+        "maximum": 40
+      }
+    },
+    {
+      "text": "După două înjumătățiri rămân 3 bomboane. Reconstituie grămada.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim de două ori cu 2: inițial erau 12 bomboane.",
+      "interactive": {
+        "mode": "candies",
+        "answers": {
+          "stage:1": 6,
+          "stage:2": 12
+        },
+        "stages": [
+          {
+            "label": "după al doilea copil",
+            "value": 3
+          },
+          {
+            "label": "înaintea celui de-al doilea",
+            "value": 6
+          },
+          {
+            "label": "inițial",
+            "value": 12
+          }
+        ],
+        "icon": "🍬"
+      }
+    },
+    {
+      "text": "După două înjumătățiri rămân 5 bomboane. Reconstituie grămada.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim de două ori cu 2: inițial erau 20 bomboane.",
+      "interactive": {
+        "mode": "candies",
+        "answers": {
+          "stage:1": 10,
+          "stage:2": 20
+        },
+        "stages": [
+          {
+            "label": "după al doilea copil",
+            "value": 5
+          },
+          {
+            "label": "înaintea celui de-al doilea",
+            "value": 10
+          },
+          {
+            "label": "inițial",
+            "value": 20
+          }
+        ],
+        "icon": "🍬"
+      }
+    },
+    {
+      "text": "După două înjumătățiri rămân 4 bomboane. Reconstituie grămada.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim de două ori cu 2: inițial erau 16 bomboane.",
+      "interactive": {
+        "mode": "candies",
+        "answers": {
+          "stage:1": 8,
+          "stage:2": 16
+        },
+        "stages": [
+          {
+            "label": "după al doilea copil",
+            "value": 4
+          },
+          {
+            "label": "înaintea celui de-al doilea",
+            "value": 8
+          },
+          {
+            "label": "inițial",
+            "value": 16
+          }
+        ],
+        "icon": "🍬"
+      }
+    },
+    {
+      "text": "În două vase rămân câte 36 l. Completează refacerea transferurilor.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Refacem pe rând ultimul și apoi primul transfer.",
+      "interactive": {
+        "mode": "water_transfer",
+        "answers": {
+          "stage:1": 18,
+          "stage:2": 27
+        },
+        "stages": [
+          {
+            "label": "egal în fiecare vas",
+            "value": 36
+          },
+          {
+            "label": "o parte",
+            "value": 18
+          },
+          {
+            "label": "cantitatea inițială din A",
+            "value": 27
+          }
+        ],
+        "icons": [
+          "🛢️",
+          "🛢️"
+        ]
+      }
+    },
+    {
+      "text": "În două vase rămân câte 48 l. Completează refacerea transferurilor.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Refacem pe rând ultimul și apoi primul transfer.",
+      "interactive": {
+        "mode": "water_transfer",
+        "answers": {
+          "stage:1": 24,
+          "stage:2": 36
+        },
+        "stages": [
+          {
+            "label": "egal în fiecare vas",
+            "value": 48
+          },
+          {
+            "label": "o parte",
+            "value": 24
+          },
+          {
+            "label": "cantitatea inițială din A",
+            "value": 36
+          }
+        ],
+        "icons": [
+          "🛢️",
+          "🛢️"
+        ]
+      }
+    },
+    {
+      "text": "În două vase rămân câte 60 l. Completează refacerea transferurilor.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Refacem pe rând ultimul și apoi primul transfer.",
+      "interactive": {
+        "mode": "water_transfer",
+        "answers": {
+          "stage:1": 30,
+          "stage:2": 45
+        },
+        "stages": [
+          {
+            "label": "egal în fiecare vas",
+            "value": 60
+          },
+          {
+            "label": "o parte",
+            "value": 30
+          },
+          {
+            "label": "cantitatea inițială din A",
+            "value": 45
+          }
+        ],
+        "icons": [
+          "🛢️",
+          "🛢️"
+        ]
+      }
+    },
+    {
+      "text": "Completează tabelul invers pentru problema cu bomboane.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Tabelul se completează de jos în sus, dublând valorile.",
+      "interactive": {
+        "mode": "reverse_table",
+        "answers": {
+          "stage:1": 6,
+          "stage:2": 12
+        },
+        "stages": [
+          {
+            "label": "final",
+            "value": 3
+          },
+          {
+            "label": "etapa a doua",
+            "value": 6
+          },
+          {
+            "label": "inițial",
+            "value": 12
+          }
+        ],
+        "columns": [
+          "Moment",
+          "Cantitate"
+        ]
+      }
+    },
+    {
+      "text": "Completează tabelul invers pentru problema cu nuci.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Tabelul se completează de jos în sus, dublând valorile.",
+      "interactive": {
+        "mode": "reverse_table",
+        "answers": {
+          "stage:1": 8,
+          "stage:2": 16
+        },
+        "stages": [
+          {
+            "label": "final",
+            "value": 4
+          },
+          {
+            "label": "etapa a doua",
+            "value": 8
+          },
+          {
+            "label": "inițial",
+            "value": 16
+          }
+        ],
+        "columns": [
+          "Moment",
+          "Cantitate"
+        ]
+      }
+    },
+    {
+      "text": "Completează tabelul invers pentru problema cu mere.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Tabelul se completează de jos în sus, dublând valorile.",
+      "interactive": {
+        "mode": "reverse_table",
+        "answers": {
+          "stage:1": 10,
+          "stage:2": 20
+        },
+        "stages": [
+          {
+            "label": "final",
+            "value": 5
+          },
+          {
+            "label": "etapa a doua",
+            "value": 10
+          },
+          {
+            "label": "inițial",
+            "value": 20
+          }
+        ],
+        "columns": [
+          "Moment",
+          "Cantitate"
+        ]
+      }
+    },
+    {
+      "text": "Alege enunțul reprezentat de traseul lui Ioana.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 10.",
+      "interactive": {
+        "mode": "choose_story",
+        "answers": {
+          "story": 0
+        },
+        "start": 10,
+        "end": 11,
+        "operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "+",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "nodes": [
+          10,
+          50,
+          55,
+          11
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          11,
+          55,
+          50,
+          10
+        ],
+        "stories": [
+          "Înmulțesc cu 5, adun 5, împart la 5.",
+          "Adun 5 de trei ori.",
+          "Împart numai la 5."
+        ]
+      }
+    },
+    {
+      "text": "Alege enunțul reprezentat de traseul lui Mara.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 18.",
+      "interactive": {
+        "mode": "choose_story",
+        "answers": {
+          "story": 0
+        },
+        "start": 18,
+        "end": 26,
+        "operations": [
+          {
+            "op": "/",
+            "value": 3
+          },
+          {
+            "op": "+",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 2
+          }
+        ],
+        "nodes": [
+          18,
+          6,
+          13,
+          26
+        ],
+        "inverse_operations": [
+          {
+            "op": "/",
+            "value": 2
+          },
+          {
+            "op": "-",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 3
+          }
+        ],
+        "reverse_nodes": [
+          26,
+          13,
+          6,
+          18
+        ],
+        "stories": [
+          "Împart la 3, adun 7, înmulțesc cu 2.",
+          "Înmulțesc cu 3 și scad 7.",
+          "Adun 2 și împart la 7."
+        ]
+      }
+    },
+    {
+      "text": "Alege enunțul reprezentat de traseul lui Radu.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 25.",
+      "interactive": {
+        "mode": "choose_story",
+        "answers": {
+          "story": 0
+        },
+        "start": 25,
+        "end": 8,
+        "operations": [
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "*",
+            "value": 4
+          },
+          {
+            "op": "/",
+            "value": 10
+          }
+        ],
+        "nodes": [
+          25,
+          20,
+          80,
+          8
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 10
+          },
+          {
+            "op": "/",
+            "value": 4
+          },
+          {
+            "op": "+",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          8,
+          80,
+          20,
+          25
+        ],
+        "stories": [
+          "Scad 5, înmulțesc cu 4, împart la 10.",
+          "Adun 5 și împart la 4.",
+          "Înmulțesc numai cu 10."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvă puzzle-ul complet al mersului invers pentru Ioana.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 10.",
+      "interactive": {
+        "mode": "full_reverse_puzzle",
+        "answers": {
+          "op:0": "×5",
+          "op:1": "-5",
+          "op:2": ":5",
+          "node:0": 55,
+          "node:1": 50,
+          "node:2": 10,
+          "start": 10
+        },
+        "start": 10,
+        "end": 11,
+        "operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "+",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "nodes": [
+          10,
+          50,
+          55,
+          11
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          11,
+          55,
+          50,
+          10
+        ]
+      }
+    },
+    {
+      "text": "Rezolvă puzzle-ul complet al mersului invers pentru Mara.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 18.",
+      "interactive": {
+        "mode": "full_reverse_puzzle",
+        "answers": {
+          "op:0": ":2",
+          "op:1": "-7",
+          "op:2": "×3",
+          "node:0": 13,
+          "node:1": 6,
+          "node:2": 18,
+          "start": 18
+        },
+        "start": 18,
+        "end": 26,
+        "operations": [
+          {
+            "op": "/",
+            "value": 3
+          },
+          {
+            "op": "+",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 2
+          }
+        ],
+        "nodes": [
+          18,
+          6,
+          13,
+          26
+        ],
+        "inverse_operations": [
+          {
+            "op": "/",
+            "value": 2
+          },
+          {
+            "op": "-",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 3
+          }
+        ],
+        "reverse_nodes": [
+          26,
+          13,
+          6,
+          18
+        ]
+      }
+    },
+    {
+      "text": "Rezolvă puzzle-ul complet al mersului invers pentru Radu.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 25.",
+      "interactive": {
+        "mode": "full_reverse_puzzle",
+        "answers": {
+          "op:0": "×10",
+          "op:1": ":4",
+          "op:2": "+5",
+          "node:0": 80,
+          "node:1": 20,
+          "node:2": 25,
+          "start": 25
+        },
+        "start": 25,
+        "end": 8,
+        "operations": [
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "*",
+            "value": 4
+          },
+          {
+            "op": "/",
+            "value": 10
+          }
+        ],
+        "nodes": [
+          25,
+          20,
+          80,
+          8
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 10
+          },
+          {
+            "op": "/",
+            "value": 4
+          },
+          {
+            "op": "+",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          8,
+          80,
+          20,
+          25
+        ]
+      }
+    },
+    {
+      "text": "Verifică traseul dus–întors al lui Ioana.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 10.",
+      "interactive": {
+        "mode": "round_trip",
+        "answers": {
+          "initial": 10,
+          "final": 11,
+          "verified": "yes"
+        },
+        "start": 10,
+        "end": 11,
+        "operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "+",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "nodes": [
+          10,
+          50,
+          55,
+          11
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 5
+          },
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "/",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          11,
+          55,
+          50,
+          10
+        ]
+      }
+    },
+    {
+      "text": "Verifică traseul dus–întors al lui Mara.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 18.",
+      "interactive": {
+        "mode": "round_trip",
+        "answers": {
+          "initial": 18,
+          "final": 26,
+          "verified": "yes"
+        },
+        "start": 18,
+        "end": 26,
+        "operations": [
+          {
+            "op": "/",
+            "value": 3
+          },
+          {
+            "op": "+",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 2
+          }
+        ],
+        "nodes": [
+          18,
+          6,
+          13,
+          26
+        ],
+        "inverse_operations": [
+          {
+            "op": "/",
+            "value": 2
+          },
+          {
+            "op": "-",
+            "value": 7
+          },
+          {
+            "op": "*",
+            "value": 3
+          }
+        ],
+        "reverse_nodes": [
+          26,
+          13,
+          6,
+          18
+        ]
+      }
+    },
+    {
+      "text": "Verifică traseul dus–întors al lui Radu.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul inițial este 25.",
+      "interactive": {
+        "mode": "round_trip",
+        "answers": {
+          "initial": 25,
+          "final": 8,
+          "verified": "yes"
+        },
+        "start": 25,
+        "end": 8,
+        "operations": [
+          {
+            "op": "-",
+            "value": 5
+          },
+          {
+            "op": "*",
+            "value": 4
+          },
+          {
+            "op": "/",
+            "value": 10
+          }
+        ],
+        "nodes": [
+          25,
+          20,
+          80,
+          8
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 10
+          },
+          {
+            "op": "/",
+            "value": 4
+          },
+          {
+            "op": "+",
+            "value": 5
+          }
+        ],
+        "reverse_nodes": [
+          8,
+          80,
+          20,
+          25
+        ]
+      }
+    }
+  ]
+}

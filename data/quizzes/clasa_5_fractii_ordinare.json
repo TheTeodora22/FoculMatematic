@@ -1,6 +1,880 @@
 {
-  "title": "Fracții ordinare",
-  "description": "Clasa a 5-a",
+  "title": "Fracții ordinare. Fracții echivalente. Procente",
+  "description": "Clasa a 5-a · Fracții ordinare",
   "difficulty": "medium",
-  "questions": []
+  "questions": [
+    {
+      "text": "Ce arată numărătorul unei fracții?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numărătorul arată numărul părților luate.",
+      "options": [
+        {
+          "text": "Mărimea întregului",
+          "is_correct": false
+        },
+        {
+          "text": "Câte părți egale au fost luate",
+          "is_correct": true
+        },
+        {
+          "text": "Câte fracții sunt echivalente",
+          "is_correct": false
+        },
+        {
+          "text": "În câte părți a fost împărțit întregul",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce arată numitorul unei fracții?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorul indică numărul total de părți egale.",
+      "options": [
+        {
+          "text": "Câte procente lipsesc",
+          "is_correct": false
+        },
+        {
+          "text": "În câte părți egale este împărțit întregul",
+          "is_correct": true
+        },
+        {
+          "text": "Valoarea numărătorului",
+          "is_correct": false
+        },
+        {
+          "text": "Câte părți au fost luate",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un întreg este împărțit în 8 părți egale și sunt luate 3. Ce fracție s-a luat?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "S-au luat 3 dintre cele 8 părți egale.",
+      "options": [
+        {
+          "text": "5/8",
+          "is_correct": false
+        },
+        {
+          "text": "3/8",
+          "is_correct": true
+        },
+        {
+          "text": "3/5",
+          "is_correct": false
+        },
+        {
+          "text": "8/3",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cum se numește fracția 4/7?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "4 < 7, deci fracția este subunitară.",
+      "options": [
+        {
+          "text": "supraunitară",
+          "is_correct": false
+        },
+        {
+          "text": "subunitară",
+          "is_correct": true
+        },
+        {
+          "text": "procent",
+          "is_correct": false
+        },
+        {
+          "text": "echiunitară",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cum se numește fracția 7/7?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numărătorul este egal cu numitorul.",
+      "options": [
+        {
+          "text": "supraunitară",
+          "is_correct": false
+        },
+        {
+          "text": "echiunitară",
+          "is_correct": true
+        },
+        {
+          "text": "ireductibilă",
+          "is_correct": false
+        },
+        {
+          "text": "subunitară",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cum se numește fracția 9/5?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "9 > 5, deci fracția este supraunitară.",
+      "options": [
+        {
+          "text": "echiunitară",
+          "is_correct": false
+        },
+        {
+          "text": "supraunitară",
+          "is_correct": true
+        },
+        {
+          "text": "procentuală",
+          "is_correct": false
+        },
+        {
+          "text": "subunitară",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care fracție este echivalentă cu 2/3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Am înmulțit numărătorul și numitorul cu 3.",
+      "options": [
+        {
+          "text": "6/8",
+          "is_correct": false
+        },
+        {
+          "text": "6/9",
+          "is_correct": true
+        },
+        {
+          "text": "8/9",
+          "is_correct": false
+        },
+        {
+          "text": "4/9",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care pereche NU conține fracții echivalente?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3 · 20 ≠ 5 · 9, deci fracțiile nu sunt echivalente.",
+      "options": [
+        {
+          "text": "2/3 și 6/9",
+          "is_correct": false
+        },
+        {
+          "text": "3/5 și 9/20",
+          "is_correct": true
+        },
+        {
+          "text": "3/4 și 12/16",
+          "is_correct": false
+        },
+        {
+          "text": "1/2 și 4/8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce înseamnă 35%?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Procent înseamnă «la sută».",
+      "options": [
+        {
+          "text": "100 din 35",
+          "is_correct": false
+        },
+        {
+          "text": "35 din 100",
+          "is_correct": true
+        },
+        {
+          "text": "3 din 5",
+          "is_correct": false
+        },
+        {
+          "text": "35 din 10",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care scriere este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Orice procent p% se scrie p/100.",
+      "options": [
+        {
+          "text": "25% = 100/25",
+          "is_correct": false
+        },
+        {
+          "text": "25% = 25/100",
+          "is_correct": true
+        },
+        {
+          "text": "25% = 1/25",
+          "is_correct": false
+        },
+        {
+          "text": "25% = 25/10",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Numitorul arată câte părți egale formează întregul.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Aceasta este semnificația numitorului.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Fracția 4/4 este subunitară.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "4/4 este echiunitară, deoarece numărătorul este egal cu numitorul.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Fracțiile 2/3 și 6/9 sunt echivalente.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "2 · 9 = 3 · 6 = 18.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pentru orice număr natural p, p% înseamnă p/100.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Simbolul % înseamnă «la sută».",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Colorează 2/5 din întreg.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Trebuie colorate 2 dintre cele 5 părți egale.",
+      "interactive": {
+        "mode": "color",
+        "numerator": 2,
+        "denominator": 5,
+        "shape": "bar",
+        "answers": {
+          "selected": "0,1"
+        }
+      }
+    },
+    {
+      "text": "Colorează 3/8 din întreg.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Trebuie colorate 3 dintre cele 8 părți egale.",
+      "interactive": {
+        "mode": "color",
+        "numerator": 3,
+        "denominator": 8,
+        "shape": "circle",
+        "answers": {
+          "selected": "0,1,2"
+        }
+      }
+    },
+    {
+      "text": "Colorează 4/6 din întreg.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Trebuie colorate 4 dintre cele 6 părți egale.",
+      "interactive": {
+        "mode": "color",
+        "numerator": 4,
+        "denominator": 6,
+        "shape": "grid",
+        "answers": {
+          "selected": "0,1,2,3"
+        }
+      }
+    },
+    {
+      "text": "Colorează 1/4 din întreg.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Trebuie colorate 1 dintre cele 4 părți egale.",
+      "interactive": {
+        "mode": "color",
+        "numerator": 1,
+        "denominator": 4,
+        "shape": "circle",
+        "answers": {
+          "selected": "0"
+        }
+      }
+    },
+    {
+      "text": "Colorează 7/10 din întreg.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Trebuie colorate 7 dintre cele 10 părți egale.",
+      "interactive": {
+        "mode": "color",
+        "numerator": 7,
+        "denominator": 10,
+        "shape": "bar",
+        "answers": {
+          "selected": "0,1,2,3,4,5,6"
+        }
+      }
+    },
+    {
+      "text": "Scrie fracția reprezentată de banda colorată.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Sunt colorate 3 dintre cele 7 părți egale, deci fracția este 3/7.",
+      "interactive": {
+        "mode": "read",
+        "numerator": 3,
+        "denominator": 7,
+        "shape": "bar",
+        "answers": {
+          "numerator": 3,
+          "denominator": 7
+        }
+      }
+    },
+    {
+      "text": "Ce fracție din disc este colorată?",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Sunt colorate 5 dintre cele 8 părți egale, deci fracția este 5/8.",
+      "interactive": {
+        "mode": "read",
+        "numerator": 5,
+        "denominator": 8,
+        "shape": "circle",
+        "answers": {
+          "numerator": 5,
+          "denominator": 8
+        }
+      }
+    },
+    {
+      "text": "Scrie fracția arătată de mozaic.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Sunt colorate 4 dintre cele 9 părți egale, deci fracția este 4/9.",
+      "interactive": {
+        "mode": "read",
+        "numerator": 4,
+        "denominator": 9,
+        "shape": "grid",
+        "answers": {
+          "numerator": 4,
+          "denominator": 9
+        }
+      }
+    },
+    {
+      "text": "Ce parte din cerc a fost colorată? Scrie răspunsul ca fracție.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Sunt colorate 2 dintre cele 5 părți egale, deci fracția este 2/5.",
+      "interactive": {
+        "mode": "read",
+        "numerator": 2,
+        "denominator": 5,
+        "shape": "circle",
+        "answers": {
+          "numerator": 2,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "text": "Ce fracție din tablă este colorată?",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Sunt colorate 7 dintre cele 10 părți egale, deci fracția este 7/10.",
+      "interactive": {
+        "mode": "read",
+        "numerator": 7,
+        "denominator": 10,
+        "shape": "grid",
+        "answers": {
+          "numerator": 7,
+          "denominator": 10
+        }
+      }
+    },
+    {
+      "text": "Construiește fracția 2/3 și urmărește cum se schimbă desenul.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția cerută are numărătorul 2 și numitorul 3.",
+      "interactive": {
+        "mode": "construct",
+        "numerator": 2,
+        "denominator": 3,
+        "shape": "bar",
+        "answers": {
+          "numerator": 2,
+          "denominator": 3
+        }
+      }
+    },
+    {
+      "text": "Construiește fracția 4/7 și urmărește cum se schimbă desenul.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția cerută are numărătorul 4 și numitorul 7.",
+      "interactive": {
+        "mode": "construct",
+        "numerator": 4,
+        "denominator": 7,
+        "shape": "circle",
+        "answers": {
+          "numerator": 4,
+          "denominator": 7
+        }
+      }
+    },
+    {
+      "text": "Construiește fracția 5/5 și urmărește cum se schimbă desenul.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția cerută are numărătorul 5 și numitorul 5.",
+      "interactive": {
+        "mode": "construct",
+        "numerator": 5,
+        "denominator": 5,
+        "shape": "grid",
+        "answers": {
+          "numerator": 5,
+          "denominator": 5
+        }
+      }
+    },
+    {
+      "text": "Construiește fracția 6/8 și urmărește cum se schimbă desenul.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția cerută are numărătorul 6 și numitorul 8.",
+      "interactive": {
+        "mode": "construct",
+        "numerator": 6,
+        "denominator": 8,
+        "shape": "bar",
+        "answers": {
+          "numerator": 6,
+          "denominator": 8
+        }
+      }
+    },
+    {
+      "text": "Construiește fracția 3/10 și urmărește cum se schimbă desenul.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția cerută are numărătorul 3 și numitorul 10.",
+      "interactive": {
+        "mode": "construct",
+        "numerator": 3,
+        "denominator": 10,
+        "shape": "grid",
+        "answers": {
+          "numerator": 3,
+          "denominator": 10
+        }
+      }
+    },
+    {
+      "text": "În fracția 8/5, scrie cel mai mare numărător natural care transformă fracția într-una subunitară.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Răspunsul este 4/5: comparăm numărătorul cu numitorul 5.",
+      "interactive": {
+        "mode": "repair",
+        "numerator": 8,
+        "denominator": 5,
+        "editable": "numerator",
+        "target_label": "subunitară",
+        "answers": {
+          "numerator": 4
+        }
+      }
+    },
+    {
+      "text": "În fracția 3/7, schimbă numărătorul astfel încât fracția să fie echiunitară.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Răspunsul este 7/7: comparăm numărătorul cu numitorul 7.",
+      "interactive": {
+        "mode": "repair",
+        "numerator": 3,
+        "denominator": 7,
+        "editable": "numerator",
+        "target_label": "echiunitară",
+        "answers": {
+          "numerator": 7
+        }
+      }
+    },
+    {
+      "text": "În fracția 4/4, scrie cel mai mic numărător natural care face fracția supraunitară.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Răspunsul este 5/4: comparăm numărătorul cu numitorul 4.",
+      "interactive": {
+        "mode": "repair",
+        "numerator": 4,
+        "denominator": 4,
+        "editable": "numerator",
+        "target_label": "supraunitară",
+        "answers": {
+          "numerator": 5
+        }
+      }
+    },
+    {
+      "text": "În fracția 9/6, schimbă numărătorul astfel încât fracția să fie echiunitară.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Răspunsul este 6/6: comparăm numărătorul cu numitorul 6.",
+      "interactive": {
+        "mode": "repair",
+        "numerator": 9,
+        "denominator": 6,
+        "editable": "numerator",
+        "target_label": "echiunitară",
+        "answers": {
+          "numerator": 6
+        }
+      }
+    },
+    {
+      "text": "În fracția 5/8, scrie cel mai mic numărător natural care face fracția supraunitară.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Răspunsul este 9/8: comparăm numărătorul cu numitorul 8.",
+      "interactive": {
+        "mode": "repair",
+        "numerator": 5,
+        "denominator": 8,
+        "editable": "numerator",
+        "target_label": "supraunitară",
+        "answers": {
+          "numerator": 9
+        }
+      }
+    },
+    {
+      "text": "Construiește lanțul care începe cu piesa 1/2 | 3/4; laturile vecine trebuie să fie echivalente.",
+      "type": "fraction_domino",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Verificăm fiecare îmbinare prin amplificare, simplificare sau transformare în procent.",
+      "interactive": {
+        "tiles": [
+          {
+            "left": "1/2",
+            "right": "3/4"
+          },
+          {
+            "left": "6/8",
+            "right": "2/3"
+          },
+          {
+            "left": "4/6",
+            "right": "25%"
+          },
+          {
+            "left": "1/4",
+            "right": "3/5"
+          }
+        ],
+        "correct_order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "display_order": [
+          2,
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Construiește lanțul care începe cu piesa 2/5 | 1/2; laturile vecine trebuie să fie echivalente.",
+      "type": "fraction_domino",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Verificăm fiecare îmbinare prin amplificare, simplificare sau transformare în procent.",
+      "interactive": {
+        "tiles": [
+          {
+            "left": "2/5",
+            "right": "1/2"
+          },
+          {
+            "left": "5/10",
+            "right": "3/4"
+          },
+          {
+            "left": "9/12",
+            "right": "1/3"
+          },
+          {
+            "left": "2/6",
+            "right": "4/5"
+          }
+        ],
+        "correct_order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "display_order": [
+          1,
+          3,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "text": "Construiește lanțul care începe cu piesa 20% | 2/5; laturile vecine trebuie să fie echivalente.",
+      "type": "fraction_domino",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Verificăm fiecare îmbinare prin amplificare, simplificare sau transformare în procent.",
+      "interactive": {
+        "tiles": [
+          {
+            "left": "20%",
+            "right": "2/5"
+          },
+          {
+            "left": "4/10",
+            "right": "3/5"
+          },
+          {
+            "left": "6/10",
+            "right": "1/4"
+          },
+          {
+            "left": "25/100",
+            "right": "7/8"
+          }
+        ],
+        "correct_order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "display_order": [
+          3,
+          1,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "text": "Construiește lanțul care începe cu piesa 3/9 | 1/2; laturile vecine trebuie să fie echivalente.",
+      "type": "fraction_domino",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Verificăm fiecare îmbinare prin amplificare, simplificare sau transformare în procent.",
+      "interactive": {
+        "tiles": [
+          {
+            "left": "3/9",
+            "right": "1/2"
+          },
+          {
+            "left": "4/8",
+            "right": "2/7"
+          },
+          {
+            "left": "6/21",
+            "right": "75%"
+          },
+          {
+            "left": "3/4",
+            "right": "5/6"
+          }
+        ],
+        "correct_order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "display_order": [
+          2,
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Transformă fracția 1/2 într-o fracție cu numitorul 100 și apoi în procent.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "1/2 = 50/100 = 50%.",
+      "interactive": {
+        "mode": "percent",
+        "numerator": 1,
+        "denominator": 2,
+        "answers": {
+          "hundredths": 50,
+          "percent": 50
+        }
+      }
+    },
+    {
+      "text": "Transformă fracția 1/4 într-o fracție cu numitorul 100 și apoi în procent.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "1/4 = 25/100 = 25%.",
+      "interactive": {
+        "mode": "percent",
+        "numerator": 1,
+        "denominator": 4,
+        "answers": {
+          "hundredths": 25,
+          "percent": 25
+        }
+      }
+    },
+    {
+      "text": "Transformă fracția 3/5 într-o fracție cu numitorul 100 și apoi în procent.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "3/5 = 60/100 = 60%.",
+      "interactive": {
+        "mode": "percent",
+        "numerator": 3,
+        "denominator": 5,
+        "answers": {
+          "hundredths": 60,
+          "percent": 60
+        }
+      }
+    },
+    {
+      "text": "Transformă fracția 7/10 într-o fracție cu numitorul 100 și apoi în procent.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "7/10 = 70/100 = 70%.",
+      "interactive": {
+        "mode": "percent",
+        "numerator": 7,
+        "denominator": 10,
+        "answers": {
+          "hundredths": 70,
+          "percent": 70
+        }
+      }
+    }
+  ]
 }

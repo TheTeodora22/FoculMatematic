@@ -1,6 +1,1174 @@
 {
   "title": "Factor comun",
   "description": "Clasa a 5-a · Operații cu numere naturale",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Calculează eficient 3 · 45 + 3 · 15.",
+      "points": 10,
+      "explanation": "Scoatem 3 factor comun: 3 · (45 + 15) = 3 · 60 = 180.",
+      "options": [
+        {
+          "text": "150",
+          "is_correct": false
+        },
+        {
+          "text": "180",
+          "is_correct": true
+        },
+        {
+          "text": "165",
+          "is_correct": false
+        },
+        {
+          "text": "195",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează folosind factorul comun: 20 · 48 + 20 · 2.",
+      "points": 10,
+      "explanation": "20 · (48 + 2) = 20 · 50 = 1 000.",
+      "options": [
+        {
+          "text": "960",
+          "is_correct": false
+        },
+        {
+          "text": "1 000",
+          "is_correct": true
+        },
+        {
+          "text": "980",
+          "is_correct": false
+        },
+        {
+          "text": "1 020",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează eficient 28 · 521 − 28 · 21.",
+      "points": 10,
+      "explanation": "28 · (521 − 21) = 28 · 500 = 14 000.",
+      "options": [
+        {
+          "text": "13 500",
+          "is_correct": false
+        },
+        {
+          "text": "14 000",
+          "is_correct": true
+        },
+        {
+          "text": "14 028",
+          "is_correct": false
+        },
+        {
+          "text": "15 000",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează 128 · 337 + 128 · 663 prin scoaterea factorului comun.",
+      "points": 10,
+      "explanation": "128 · (337 + 663) = 128 · 1 000 = 128 000.",
+      "options": [
+        {
+          "text": "127 000",
+          "is_correct": false
+        },
+        {
+          "text": "128 000",
+          "is_correct": true
+        },
+        {
+          "text": "128 100",
+          "is_correct": false
+        },
+        {
+          "text": "129 000",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează eficient 2 029 · 599 + 2 029.",
+      "points": 10,
+      "explanation": "Al doilea termen este 2 029 · 1. Obținem 2 029 · (599 + 1) = 2 029 · 600 = 1 217 400.",
+      "options": [
+        {
+          "text": "1 215 400",
+          "is_correct": false
+        },
+        {
+          "text": "1 217 400",
+          "is_correct": true
+        },
+        {
+          "text": "1 217 029",
+          "is_correct": false
+        },
+        {
+          "text": "1 219 400",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează 1 000 · 372 + 259 · 1 000 − 153 · 1 000.",
+      "points": 10,
+      "explanation": "Scoatem 1 000 factor comun: 1 000 · (372 + 259 − 153) = 478 000.",
+      "options": [
+        {
+          "text": "468 000",
+          "is_correct": false
+        },
+        {
+          "text": "478 000",
+          "is_correct": true
+        },
+        {
+          "text": "477 000",
+          "is_correct": false
+        },
+        {
+          "text": "488 000",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este forma factorizată a expresiei 12 · 13 + 12 · 15 + 12 · 72?",
+      "points": 10,
+      "explanation": "Factorul 12 apare în fiecare produs și se scoate în fața parantezei.",
+      "options": [
+        {
+          "text": "12 · (13 · 15 · 72)",
+          "is_correct": false
+        },
+        {
+          "text": "12 · (13 + 15 + 72)",
+          "is_correct": true
+        },
+        {
+          "text": "12 + (13 + 15 + 72)",
+          "is_correct": false
+        },
+        {
+          "text": "36 · (13 + 15 + 72)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este forma factorizată corectă pentru 63 · 78 − 63 · 33 + 63 · 45?",
+      "points": 10,
+      "explanation": "Păstrăm în paranteză semnele și factorii rămași.",
+      "options": [
+        {
+          "text": "63 · (78 − 33 · 45)",
+          "is_correct": false
+        },
+        {
+          "text": "63 · (78 − 33 + 45)",
+          "is_correct": true
+        },
+        {
+          "text": "63 · (78 + 33 − 45)",
+          "is_correct": false
+        },
+        {
+          "text": "189 · (78 − 33 + 45)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În egalitatea 125 · 234 − 125 · 28 + 125 · 194 = 125 · (234 − 28 + 194), factorul comun este:",
+      "points": 10,
+      "explanation": "125 este factor în toate cele trei produse.",
+      "options": [
+        {
+          "text": "234",
+          "is_correct": false
+        },
+        {
+          "text": "125",
+          "is_correct": true
+        },
+        {
+          "text": "28",
+          "is_correct": false
+        },
+        {
+          "text": "194",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce termen trebuie scris ca produs cu 1 înainte de a scoate factor comun din 2 413 · 1 001 − 2 413?",
+      "points": 10,
+      "explanation": "Orice număr este produsul dintre el și 1.",
+      "options": [
+        {
+          "text": "2 413 = 1 · 1",
+          "is_correct": false
+        },
+        {
+          "text": "2 413 = 2 413 · 1",
+          "is_correct": true
+        },
+        {
+          "text": "2 413 = 2 413 · 0",
+          "is_correct": false
+        },
+        {
+          "text": "2 413 = 2 413 + 1",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "De ce este mai rapid calculul 80 · 12 + 50 · 12 = 12 · (80 + 50)?",
+      "points": 10,
+      "explanation": "Distributivitatea păstrează valoarea și reduce numărul operațiilor.",
+      "options": [
+        {
+          "text": "Schimbă valoarea expresiei.",
+          "is_correct": false
+        },
+        {
+          "text": "Înlocuiește două înmulțiri cu o adunare și o înmulțire.",
+          "is_correct": true
+        },
+        {
+          "text": "Elimină factorul 12.",
+          "is_correct": false
+        },
+        {
+          "text": "Transformă suma într-o diferență.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Știind că x = 4, calculează (x + 1) · (2x + 11) · (3x − 7).",
+      "points": 10,
+      "explanation": "Factorii sunt 5, 19 și 5, deci produsul este 475.",
+      "options": [
+        {
+          "text": "95",
+          "is_correct": false
+        },
+        {
+          "text": "475",
+          "is_correct": true
+        },
+        {
+          "text": "375",
+          "is_correct": false
+        },
+        {
+          "text": "575",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Știind că y = 9, calculează (y + 5) · (2y − 4) · (3y + 3).",
+      "points": 10,
+      "explanation": "Factorii sunt 14, 14 și 30. Produsul este 14 · 14 · 30 = 5 880.",
+      "options": [
+        {
+          "text": "4 880",
+          "is_correct": false
+        },
+        {
+          "text": "5 880",
+          "is_correct": true
+        },
+        {
+          "text": "5 680",
+          "is_correct": false
+        },
+        {
+          "text": "6 880",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Știind că x = 5 și a + b = 13, calculează 3x + 7a + 7b.",
+      "points": 10,
+      "explanation": "3x + 7(a + b) = 15 + 91 = 106.",
+      "options": [
+        {
+          "text": "96",
+          "is_correct": false
+        },
+        {
+          "text": "106",
+          "is_correct": true
+        },
+        {
+          "text": "101",
+          "is_correct": false
+        },
+        {
+          "text": "111",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Știind că x = 5 și a + b = 13, calculează x(a + b) + 50.",
+      "points": 10,
+      "explanation": "x(a + b) + 50 = 5 · 13 + 50 = 115.",
+      "options": [
+        {
+          "text": "65",
+          "is_correct": false
+        },
+        {
+          "text": "115",
+          "is_correct": true
+        },
+        {
+          "text": "105",
+          "is_correct": false
+        },
+        {
+          "text": "125",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determină x dacă a − b = 6 și x + 3a − 3b = 20.",
+      "points": 10,
+      "explanation": "3a − 3b = 3(a − b) = 18. Atunci x + 18 = 20, deci x = 2.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determină x dacă a − b = 6 și 7a − 7b + x = 55.",
+      "points": 10,
+      "explanation": "7(a − b) + x = 42 + x = 55, deci x = 13.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": true
+        },
+        {
+          "text": "42",
+          "is_correct": false
+        },
+        {
+          "text": "49",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "O echipă cumpără 12 tricouri la 80 lei și 12 șorturi la 50 lei. Cât costă echipamentul?",
+      "points": 10,
+      "explanation": "Pentru fiecare jucător costul este 80 + 50 = 130 lei. Pentru 12 jucători: 12 · 130 = 1 560 lei.",
+      "options": [
+        {
+          "text": "1 440",
+          "is_correct": false
+        },
+        {
+          "text": "1 560",
+          "is_correct": true
+        },
+        {
+          "text": "1 500",
+          "is_correct": false
+        },
+        {
+          "text": "1 680",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În 7 cutii sunt câte 12 borcane, iar în fiecare borcan sunt 9 bile. Câte bile sunt?",
+      "points": 10,
+      "explanation": "7 · 12 · 9 = 7 · 108 = 756.",
+      "options": [
+        {
+          "text": "648",
+          "is_correct": false
+        },
+        {
+          "text": "756",
+          "is_correct": true
+        },
+        {
+          "text": "728",
+          "is_correct": false
+        },
+        {
+          "text": "864",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un biciclist merge 19 km în prima zi, de 4 ori mai mult în a doua, în a treia de 4 ori cât în primele două zile împreună, iar în ultima cu 5 km mai mult decât în a treia. Cât parcurge?",
+      "points": 10,
+      "explanation": "Zilele: 19, 76, 380 și 385 km. Totalul este 860 km.",
+      "options": [
+        {
+          "text": "835",
+          "is_correct": false
+        },
+        {
+          "text": "860",
+          "is_correct": true
+        },
+        {
+          "text": "855",
+          "is_correct": false
+        },
+        {
+          "text": "880",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un penar are 9 pixuri a 5 lei, 5 creioane a 3 lei, două radiere a 2 lei și o ascuțitoare a 7 lei. Cât costă?",
+      "points": 10,
+      "explanation": "9 · 5 + 5 · 3 + 2 · 2 + 7 = 45 + 15 + 4 + 7 = 71 lei.",
+      "options": [
+        {
+          "text": "67",
+          "is_correct": false
+        },
+        {
+          "text": "71",
+          "is_correct": true
+        },
+        {
+          "text": "69",
+          "is_correct": false
+        },
+        {
+          "text": "74",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un lot are 18 fete și 18 băieți. Fiecare primește un caiet de 7 lei și un pix de 3 lei. Care este costul total?",
+      "points": 10,
+      "explanation": "Sunt 36 elevi, iar un set costă 10 lei: 36 · 10 = 360 lei.",
+      "options": [
+        {
+          "text": "180",
+          "is_correct": false
+        },
+        {
+          "text": "360",
+          "is_correct": true
+        },
+        {
+          "text": "340",
+          "is_correct": false
+        },
+        {
+          "text": "380",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un magazin pregătește 25 de pachete. Fiecare conține 4 caiete de 6 lei și 4 pixuri de 2 lei. Cât valorează toate pachetele?",
+      "points": 10,
+      "explanation": "Un pachet costă 4 · (6 + 2) = 32 lei. Toate costă 25 · 32 = 800 lei.",
+      "options": [
+        {
+          "text": "600",
+          "is_correct": false
+        },
+        {
+          "text": "800",
+          "is_correct": true
+        },
+        {
+          "text": "750",
+          "is_correct": false
+        },
+        {
+          "text": "850",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Produsul a două numere este 414. Dacă mărim unul dintre factori cu 10, produsul devine 644. Care sunt factorii?",
+      "points": 10,
+      "explanation": "Creșterea produsului este 230, adică 10 ori celălalt factor. Acesta este 23, iar 414 : 23 = 18.",
+      "options": [
+        {
+          "text": "21 și 19",
+          "is_correct": false
+        },
+        {
+          "text": "23 și 18",
+          "is_correct": true
+        },
+        {
+          "text": "22 și 18",
+          "is_correct": false
+        },
+        {
+          "text": "23 și 20",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un factor este strict cuprins între 9 și 17, iar celălalt este cuprins între 11 și 22. Care este cel mai mic produs posibil?",
+      "points": 10,
+      "explanation": "Cel mai mic prim factor este 10, iar al doilea este 11. Produsul minim este 110.",
+      "options": [
+        {
+          "text": "99",
+          "is_correct": false
+        },
+        {
+          "text": "110",
+          "is_correct": true
+        },
+        {
+          "text": "121",
+          "is_correct": false
+        },
+        {
+          "text": "198",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este cea mai mare valoare a produsului a două numere naturale cu suma 9?",
+      "points": 10,
+      "explanation": "Factorii cât mai apropiați dau produs maxim: 4 · 5 = 20.",
+      "options": [
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "20",
+          "is_correct": true
+        },
+        {
+          "text": "21",
+          "is_correct": false
+        },
+        {
+          "text": "27",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă produsul numerelor naturale a și b este 72, care afirmație este sigur adevărată?",
+      "points": 10,
+      "explanation": "Produsul a două numere impare ar fi impar, dar 72 este par.",
+      "options": [
+        {
+          "text": "Ambele sunt impare.",
+          "is_correct": false
+        },
+        {
+          "text": "Cel puțin unul dintre a și b este par.",
+          "is_correct": true
+        },
+        {
+          "text": "Ambele au două cifre.",
+          "is_correct": false
+        },
+        {
+          "text": "Unul dintre ele este 9.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care poate fi ultima cifră a produsului a două numere naturale consecutive?",
+      "points": 10,
+      "explanation": "Un produs de numere consecutive se poate termina cu 0, 2 sau 6; de exemplu 3 · 4 = 12 și 4 · 5 = 20, iar 7 · 8 = 56.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care relație folosește greșit factorul comun?",
+      "points": 10,
+      "explanation": "În paranteză trebuie păstrată adunarea: 43 · (5 + 4), nu înmulțirea.",
+      "options": [
+        {
+          "text": "28 · 7 + 28 · 12 = 28 · (7 + 12)",
+          "is_correct": false
+        },
+        {
+          "text": "43 · 5 + 43 · 4 = 43 · (5 · 4)",
+          "is_correct": true
+        },
+        {
+          "text": "121 · 9 − 121 = 121 · (9 − 1)",
+          "is_correct": false
+        },
+        {
+          "text": "8 · 5 + 8 · 6 − 8 = 8 · (5 + 6 − 1)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce urmează în șirul 5, 15, 25, 35, ... dacă îl scriem folosind factor comun?",
+      "points": 10,
+      "explanation": "Termenii sunt 5 · 1, 5 · 3, 5 · 5, 5 · 7; urmează 5 · 9 = 45.",
+      "options": [
+        {
+          "text": "40",
+          "is_correct": false
+        },
+        {
+          "text": "45",
+          "is_correct": true
+        },
+        {
+          "text": "50",
+          "is_correct": false
+        },
+        {
+          "text": "55",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează rapid 702 · 65 + 35 · 702.",
+      "points": 10,
+      "explanation": "Scoatem 702 factor comun: 702 · (65 + 35) = 702 · 100 = 70 200.",
+      "options": [
+        {
+          "text": "7 020",
+          "is_correct": false
+        },
+        {
+          "text": "70 200",
+          "is_correct": true
+        },
+        {
+          "text": "69 200",
+          "is_correct": false
+        },
+        {
+          "text": "70 902",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă 24x + 24 · 15 = 24 · 40, cât este x?",
+      "points": 10,
+      "explanation": "24 · (x + 15) = 24 · 40, deci x + 15 = 40 și x = 25.",
+      "options": [
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "25",
+          "is_correct": true
+        },
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "40",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă 35 · 18 − 35x = 35 · 11, cât este x?",
+      "points": 10,
+      "explanation": "35 · (18 − x) = 35 · 11, deci 18 − x = 11 și x = 7.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "29",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "La un spectacol, 18 adulți și 18 copii cumpără fiecare câte un bilet. Biletul unui adult costă 30 lei, iar al unui copil 15 lei. Cât se încasează?",
+      "points": 10,
+      "explanation": "Scoatem 18 factor comun: 18 · (30 + 15) = 18 · 45 = 810 lei.",
+      "options": [
+        {
+          "text": "540 lei",
+          "is_correct": false
+        },
+        {
+          "text": "810 lei",
+          "is_correct": true
+        },
+        {
+          "text": "720 lei",
+          "is_correct": false
+        },
+        {
+          "text": "900 lei",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care expresie este sigur divizibilă cu 25?",
+      "points": 10,
+      "explanation": "Expresia este 25 · (37 + 13), deci are factorul 25.",
+      "options": [
+        {
+          "text": "24 · 37 + 25 · 13",
+          "is_correct": false
+        },
+        {
+          "text": "25 · 37 + 25 · 13",
+          "is_correct": true
+        },
+        {
+          "text": "25 · 37 + 13",
+          "is_correct": false
+        },
+        {
+          "text": "37 + 25 · 13",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Construiește forma factorizată pentru 3 · 45 + 3 · 15.",
+      "type": "factor_builder",
+      "points": 10,
+      "explanation": "Forma corectă este 3 · (45 + 15), iar rezultatul este 180.",
+      "interactive": {
+        "expression": "3 · 45 + 3 · 15",
+        "common_factor": 3,
+        "inner_terms": [
+          45,
+          15
+        ],
+        "operators": [
+          "+"
+        ],
+        "result": 180
+      }
+    },
+    {
+      "text": "Construiește forma factorizată pentru 20 · 48 + 20 · 2.",
+      "type": "factor_builder",
+      "points": 10,
+      "explanation": "Forma corectă este 20 · (48 + 2), iar rezultatul este 1 000.",
+      "interactive": {
+        "expression": "20 · 48 + 20 · 2",
+        "common_factor": 20,
+        "inner_terms": [
+          48,
+          2
+        ],
+        "operators": [
+          "+"
+        ],
+        "result": 1000
+      }
+    },
+    {
+      "text": "Construiește forma factorizată pentru 28 · 521 − 28 · 21.",
+      "type": "factor_builder",
+      "points": 10,
+      "explanation": "Forma corectă este 28 · (521 − 21), iar rezultatul este 14 000.",
+      "interactive": {
+        "expression": "28 · 521 − 28 · 21",
+        "common_factor": 28,
+        "inner_terms": [
+          521,
+          21
+        ],
+        "operators": [
+          "−"
+        ],
+        "result": 14000
+      }
+    },
+    {
+      "text": "Construiește forma factorizată pentru 12 · 13 + 12 · 15 + 12 · 72.",
+      "type": "factor_builder",
+      "points": 10,
+      "explanation": "Forma corectă este 12 · (13 + 15 + 72), iar rezultatul este 1 200.",
+      "interactive": {
+        "expression": "12 · 13 + 12 · 15 + 12 · 72",
+        "common_factor": 12,
+        "inner_terms": [
+          13,
+          15,
+          72
+        ],
+        "operators": [
+          "+",
+          "+"
+        ],
+        "result": 1200
+      }
+    },
+    {
+      "text": "Construiește forma factorizată pentru 63 · 78 − 63 · 33 + 63 · 45.",
+      "type": "factor_builder",
+      "points": 10,
+      "explanation": "Forma corectă este 63 · (78 − 33 + 45), iar rezultatul este 5 670.",
+      "interactive": {
+        "expression": "63 · 78 − 63 · 33 + 63 · 45",
+        "common_factor": 63,
+        "inner_terms": [
+          78,
+          33,
+          45
+        ],
+        "operators": [
+          "−",
+          "+"
+        ],
+        "result": 5670
+      }
+    },
+    {
+      "text": "Construiește forma factorizată pentru 2 413 · 1 001 − 2 413.",
+      "type": "factor_builder",
+      "points": 10,
+      "explanation": "Forma corectă este 2413 · (1001 − 1), iar rezultatul este 2 413 000.",
+      "interactive": {
+        "expression": "2 413 · 1 001 − 2 413",
+        "common_factor": 2413,
+        "inner_terms": [
+          1001,
+          1
+        ],
+        "operators": [
+          "−"
+        ],
+        "result": 2413000
+      }
+    },
+    {
+      "text": "Construiește forma factorizată pentru 1 000 · 372 + 1 000 · 259 − 1 000 · 153.",
+      "type": "factor_builder",
+      "points": 10,
+      "explanation": "Forma corectă este 1000 · (372 + 259 − 153), iar rezultatul este 478 000.",
+      "interactive": {
+        "expression": "1 000 · 372 + 1 000 · 259 − 1 000 · 153",
+        "common_factor": 1000,
+        "inner_terms": [
+          372,
+          259,
+          153
+        ],
+        "operators": [
+          "+",
+          "−"
+        ],
+        "result": 478000
+      }
+    },
+    {
+      "text": "Construiește forma factorizată pentru 125 · 234 − 125 · 28 + 125 · 194.",
+      "type": "factor_builder",
+      "points": 10,
+      "explanation": "Forma corectă este 125 · (234 − 28 + 194), iar rezultatul este 50 000.",
+      "interactive": {
+        "expression": "125 · 234 − 125 · 28 + 125 · 194",
+        "common_factor": 125,
+        "inner_terms": [
+          234,
+          28,
+          194
+        ],
+        "operators": [
+          "−",
+          "+"
+        ],
+        "result": 50000
+      }
+    },
+    {
+      "text": "În rezolvarea expresiei 43 · 5 + 43 · 4, la ce pas apare prima greșeală?",
+      "type": "factor_error",
+      "points": 10,
+      "explanation": "În paranteză trebuia păstrat semnul +: 43 · (5 + 4).",
+      "interactive": {
+        "steps": [
+          "43 · 5 + 43 · 4",
+          "= 43 · (5 · 4)",
+          "= 43 · 20",
+          "= 860"
+        ],
+        "error_index": 1
+      }
+    },
+    {
+      "text": "În rezolvarea expresiei 28 · 7 + 28 · 12, la ce pas apare prima greșeală?",
+      "type": "factor_error",
+      "points": 10,
+      "explanation": "Ultimul calcul este greșit: 28 · 19 = 532.",
+      "interactive": {
+        "steps": [
+          "28 · 7 + 28 · 12",
+          "= 28 · (7 + 12)",
+          "= 28 · 19",
+          "= 512"
+        ],
+        "error_index": 3
+      }
+    },
+    {
+      "text": "În rezolvarea expresiei 121 · 9 − 121, la ce pas apare prima greșeală?",
+      "type": "factor_error",
+      "points": 10,
+      "explanation": "9 − 1 = 8, nu 10.",
+      "interactive": {
+        "steps": [
+          "121 · 9 − 121",
+          "= 121 · (9 − 1)",
+          "= 121 · 10",
+          "= 1 210"
+        ],
+        "error_index": 2
+      }
+    },
+    {
+      "text": "În rezolvarea expresiei 8 · 5 + 8 · 6 − 8, la ce pas apare prima greșeală?",
+      "type": "factor_error",
+      "points": 10,
+      "explanation": "5 + 6 − 1 = 10, nu 12.",
+      "interactive": {
+        "steps": [
+          "8 · 5 + 8 · 6 − 8",
+          "= 8 · (5 + 6 − 1)",
+          "= 8 · 12",
+          "= 96"
+        ],
+        "error_index": 2
+      }
+    },
+    {
+      "text": "În rezolvarea expresiei 15 · 38 + 15 · 162, la ce pas apare prima greșeală?",
+      "type": "factor_error",
+      "points": 10,
+      "explanation": "38 + 162 este 200, nu 100.",
+      "interactive": {
+        "steps": [
+          "15 · 38 + 15 · 162",
+          "= 15 · (38 + 162)",
+          "= 15 · 100",
+          "= 1 500"
+        ],
+        "error_index": 2
+      }
+    },
+    {
+      "text": "Potrivește fiecare expresie cu forma ei factorizată: 7 · 18 + 7 · 12; 9 · 25 − 9 · 5; 4 · 16 + 4.",
+      "type": "factor_match",
+      "points": 10,
+      "explanation": "În fiecare pereche am scos în fața parantezei factorul care apare în toate produsele.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "7 · 18 + 7 · 12",
+            "right": "7 · (18 + 12)"
+          },
+          {
+            "left": "9 · 25 − 9 · 5",
+            "right": "9 · (25 − 5)"
+          },
+          {
+            "left": "4 · 16 + 4",
+            "right": "4 · (16 + 1)"
+          }
+        ],
+        "right_order": [
+          2,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Potrivește fiecare expresie cu forma ei factorizată: 12 · 8 + 12 · 2; 15 · 30 − 15 · 10; 25 · 3 + 25 · 7.",
+      "type": "factor_match",
+      "points": 10,
+      "explanation": "În fiecare pereche am scos în fața parantezei factorul care apare în toate produsele.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "12 · 8 + 12 · 2",
+            "right": "12 · (8 + 2)"
+          },
+          {
+            "left": "15 · 30 − 15 · 10",
+            "right": "15 · (30 − 10)"
+          },
+          {
+            "left": "25 · 3 + 25 · 7",
+            "right": "25 · (3 + 7)"
+          }
+        ],
+        "right_order": [
+          1,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Potrivește fiecare expresie cu forma ei factorizată: 6 · 14 + 6 · 5 − 6; 11 · 20 + 11 · 80; 32 · 9 − 32 · 4.",
+      "type": "factor_match",
+      "points": 10,
+      "explanation": "În fiecare pereche am scos în fața parantezei factorul care apare în toate produsele.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "6 · 14 + 6 · 5 − 6",
+            "right": "6 · (14 + 5 − 1)"
+          },
+          {
+            "left": "11 · 20 + 11 · 80",
+            "right": "11 · (20 + 80)"
+          },
+          {
+            "left": "32 · 9 − 32 · 4",
+            "right": "32 · (9 − 4)"
+          }
+        ],
+        "right_order": [
+          2,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Potrivește fiecare expresie cu forma ei factorizată: 100 · 27 + 100 · 73; 48 · 51 − 48; 13 · 6 + 13 · 14.",
+      "type": "factor_match",
+      "points": 10,
+      "explanation": "În fiecare pereche am scos în fața parantezei factorul care apare în toate produsele.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "100 · 27 + 100 · 73",
+            "right": "100 · (27 + 73)"
+          },
+          {
+            "left": "48 · 51 − 48",
+            "right": "48 · (51 − 1)"
+          },
+          {
+            "left": "13 · 6 + 13 · 14",
+            "right": "13 · (6 + 14)"
+          }
+        ],
+        "right_order": [
+          1,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "text": "Potrivește fiecare expresie cu forma ei factorizată: 125 · 16 − 125 · 8; 40 · 23 + 40 · 77; 72 · 5 + 72 · 4 + 72.",
+      "type": "factor_match",
+      "points": 10,
+      "explanation": "În fiecare pereche am scos în fața parantezei factorul care apare în toate produsele.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "125 · 16 − 125 · 8",
+            "right": "125 · (16 − 8)"
+          },
+          {
+            "left": "40 · 23 + 40 · 77",
+            "right": "40 · (23 + 77)"
+          },
+          {
+            "left": "72 · 5 + 72 · 4 + 72",
+            "right": "72 · (5 + 4 + 1)"
+          }
+        ],
+        "right_order": [
+          0,
+          2,
+          1
+        ]
+      }
+    }
+  ]
 }

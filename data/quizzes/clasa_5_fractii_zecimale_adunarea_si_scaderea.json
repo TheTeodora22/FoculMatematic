@@ -1,0 +1,671 @@
+{
+  "title": "Adunarea și scăderea fracțiilor zecimale cu un număr finit de zecimale nenule",
+  "description": "Clasa a 5-a · Fracții zecimale",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Adună în coloană 0,28 + 0,69 (A).",
+      "type": "column_addition",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "decimal_places": 2,
+        "correct_result": "097",
+        "addend1": "028",
+        "addend2": "069",
+        "carry_columns": [
+          false,
+          true,
+          false
+        ]
+      },
+      "explanation": "Aliniem virgulele și completăm cu zerouri dacă este nevoie. Rezultatul este 0,97."
+    },
+    {
+      "text": "Adună în coloană 10,3 + 4,5 (B).",
+      "type": "column_addition",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "decimal_places": 1,
+        "correct_result": "148",
+        "addend1": "103",
+        "addend2": "045",
+        "carry_columns": [
+          false,
+          false,
+          false
+        ]
+      },
+      "explanation": "Aliniem virgulele și completăm cu zerouri dacă este nevoie. Rezultatul este 14,8."
+    },
+    {
+      "text": "Adună în coloană 24,25 + 0,97 (C).",
+      "type": "column_addition",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "decimal_places": 2,
+        "correct_result": "2522",
+        "addend1": "2425",
+        "addend2": "0097",
+        "carry_columns": [
+          false,
+          true,
+          true,
+          false
+        ]
+      },
+      "explanation": "Aliniem virgulele și completăm cu zerouri dacă este nevoie. Rezultatul este 25,22."
+    },
+    {
+      "text": "Adună în coloană 75,468 + 256,309 (D).",
+      "type": "column_addition",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "decimal_places": 3,
+        "correct_result": "331777",
+        "addend1": "075468",
+        "addend2": "256309",
+        "carry_columns": [
+          true,
+          true,
+          false,
+          false,
+          true,
+          false
+        ]
+      },
+      "explanation": "Aliniem virgulele și completăm cu zerouri dacă este nevoie. Rezultatul este 331,777."
+    },
+    {
+      "text": "Adună în coloană 0,44 + 29,107 (E).",
+      "type": "column_addition",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "decimal_places": 3,
+        "correct_result": "29547",
+        "addend1": "00440",
+        "addend2": "29107",
+        "carry_columns": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "explanation": "Aliniem virgulele și completăm cu zerouri dacă este nevoie. Rezultatul este 29,547."
+    },
+    {
+      "text": "Adună în coloană 2,3 + 8,5 (F).",
+      "type": "column_addition",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "decimal_places": 1,
+        "correct_result": "108",
+        "addend1": "023",
+        "addend2": "085",
+        "carry_columns": [
+          true,
+          false,
+          false
+        ]
+      },
+      "explanation": "Aliniem virgulele și completăm cu zerouri dacă este nevoie. Rezultatul este 10,8."
+    },
+    {
+      "text": "Scade în coloană 12,7 − 5,8 (G).",
+      "type": "column_subtraction",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "decimal_places": 1,
+        "correct_result": "069",
+        "minuend": "127",
+        "subtrahend": "058",
+        "borrow_columns": [
+          false,
+          true,
+          true
+        ]
+      },
+      "explanation": "Aliniem virgulele și completăm cu zerouri dacă este nevoie. Rezultatul este 6,9."
+    },
+    {
+      "text": "Scade în coloană 14,75 − 1,26 (H).",
+      "type": "column_subtraction",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "decimal_places": 2,
+        "correct_result": "1349",
+        "minuend": "1475",
+        "subtrahend": "0126",
+        "borrow_columns": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      "explanation": "Aliniem virgulele și completăm cu zerouri dacă este nevoie. Rezultatul este 13,49."
+    },
+    {
+      "text": "Scade în coloană 0,4853 − 0,2178 (I).",
+      "type": "column_subtraction",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "decimal_places": 4,
+        "correct_result": "02675",
+        "minuend": "04853",
+        "subtrahend": "02178",
+        "borrow_columns": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      "explanation": "Aliniem virgulele și completăm cu zerouri dacă este nevoie. Rezultatul este 0,2675."
+    },
+    {
+      "text": "Scade în coloană 43,256 − 21,8 (J).",
+      "type": "column_subtraction",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "decimal_places": 3,
+        "correct_result": "21456",
+        "minuend": "43256",
+        "subtrahend": "21800",
+        "borrow_columns": [
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      "explanation": "Aliniem virgulele și completăm cu zerouri dacă este nevoie. Rezultatul este 21,456."
+    },
+    {
+      "text": "Scade în coloană 3,60 − 2,18 (K).",
+      "type": "column_subtraction",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "decimal_places": 2,
+        "correct_result": "142",
+        "minuend": "360",
+        "subtrahend": "218",
+        "borrow_columns": [
+          false,
+          false,
+          true
+        ]
+      },
+      "explanation": "Aliniem virgulele și completăm cu zerouri dacă este nevoie. Rezultatul este 1,42."
+    },
+    {
+      "text": "Scade în coloană 218,00 − 12,45 (L).",
+      "type": "column_subtraction",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "decimal_places": 2,
+        "correct_result": "20555",
+        "minuend": "21800",
+        "subtrahend": "01245",
+        "borrow_columns": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      "explanation": "Aliniem virgulele și completăm cu zerouri dacă este nevoie. Rezultatul este 205,55."
+    },
+    {
+      "text": "Calculează expresia zecimală A.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "2,3 + 8,5",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "10,8"
+        }
+      },
+      "explanation": "Respectăm ordinea operațiilor și aliniem zecimalele. Rezultatul este 10,8."
+    },
+    {
+      "text": "Calculează expresia zecimală B.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "17,5 + 32,32 + 10",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "59,82"
+        }
+      },
+      "explanation": "Respectăm ordinea operațiilor și aliniem zecimalele. Rezultatul este 59,82."
+    },
+    {
+      "text": "Calculează expresia zecimală C.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "11,05 + 4,275 + 90",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "105,325"
+        }
+      },
+      "explanation": "Respectăm ordinea operațiilor și aliniem zecimalele. Rezultatul este 105,325."
+    },
+    {
+      "text": "Calculează expresia zecimală D.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "13,5 + 2,7 − 6,8",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "9,4"
+        }
+      },
+      "explanation": "Respectăm ordinea operațiilor și aliniem zecimalele. Rezultatul este 9,4."
+    },
+    {
+      "text": "Calculează expresia zecimală E.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "456,258 − 208,208 + 54,65",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "302,7"
+        }
+      },
+      "explanation": "Respectăm ordinea operațiilor și aliniem zecimalele. Rezultatul este 302,7."
+    },
+    {
+      "text": "Calculează expresia zecimală F.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "18,3458 − 6,0059 + 10,203",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "22,5429"
+        }
+      },
+      "explanation": "Respectăm ordinea operațiilor și aliniem zecimalele. Rezultatul este 22,5429."
+    },
+    {
+      "text": "Detectivul greșelilor A: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "Scriem 10,3 deasupra lui 4,5",
+          "Aliniem virgulele",
+          "Calculăm 103 + 45 = 148",
+          "Rezultatul este 1,48"
+        ],
+        "error_index": 3
+      },
+      "explanation": "După alinierea zecimalelor, 10,3 + 4,5 = 14,8."
+    },
+    {
+      "text": "Detectivul greșelilor B: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "Pentru 3,60 − 2,18 adăugăm un zero",
+          "Scădem 360 − 218 = 142",
+          "Așezăm virgula: 14,2"
+        ],
+        "error_index": 2
+      },
+      "explanation": "Sunt două zecimale, deci rezultatul este 1,42."
+    },
+    {
+      "text": "Detectivul greșelilor C: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "14,75 − 1,26",
+          "Scădem sutimile: 5 − 6 = 1",
+          "Este nevoie de împrumut la sutimi",
+          "Rezultatul corect este 13,49"
+        ],
+        "error_index": 1
+      },
+      "explanation": "Nu putem calcula 5 − 6 fără împrumut; acesta este primul pas greșit."
+    },
+    {
+      "text": "Detectivul greșelilor D: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "0,44 + 29,107",
+          "Scriem 0,440 + 29,107",
+          "Adunăm 440 + 29107 = 29447",
+          "Rezultatul este 29,447"
+        ],
+        "error_index": 2
+      },
+      "explanation": "440 + 29107 = 29547, deci suma corectă este 29,547."
+    },
+    {
+      "text": "Într-un depozit sunt 126,75 t de făină și se aduc încă 24,5 t. Câte tone sunt acum?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "126,75 + 24,5 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "151,25"
+        }
+      },
+      "explanation": "126,75 + 24,50 = 151,25 t."
+    },
+    {
+      "text": "La aprozar erau 29,72 kg de lămâi și s-au vândut 14,35 kg. Câte kilograme au rămas?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "29,72 − 14,35 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "15,37"
+        }
+      },
+      "explanation": "Rămân 15,37 kg."
+    },
+    {
+      "text": "Dintr-un balot de 34,5 m s-au vândut 14,15 m, apoi cu 2,7 m mai puțin. Cât a rămas?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "34,5 − 14,15 − (14,15 − 2,7) = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "8,9"
+        }
+      },
+      "explanation": "În ziua a doua s-au vândut 11,45 m; au rămas 8,9 m."
+    },
+    {
+      "text": "Un biciclist parcurge 21,25 km, apoi cu 7,3 km mai mult, iar în ziua a treia cu 10 km mai puțin decât în a doua zi. Cât parcurge în total?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "21,25 + 28,55 + 18,55 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "68,35"
+        }
+      },
+      "explanation": "Distanța totală este 68,35 km."
+    },
+    {
+      "text": "Un joc costă 41,35 lei. Ce rest primești din 50 de lei?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "50 − 41,35 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "8,65"
+        }
+      },
+      "explanation": "Restul este 8,65 lei."
+    },
+    {
+      "text": "Cumperi un tricou de 24,75 lei și o pereche de mănuși de 23,48 lei. Cât plătești?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "24,75 + 23,48 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "48,23"
+        }
+      },
+      "explanation": "Plătești 48,23 lei."
+    },
+    {
+      "text": "Calculează expresia zecimală G.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "a,b + b,a = 2,2; determină a + b",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "2"
+        }
+      },
+      "explanation": "Respectăm ordinea operațiilor și aliniem zecimalele. Rezultatul este 2."
+    },
+    {
+      "text": "Calculează expresia zecimală H.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "43,1 + 3,9 − 1,2",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "45,8"
+        }
+      },
+      "explanation": "Respectăm ordinea operațiilor și aliniem zecimalele. Rezultatul este 45,8."
+    },
+    {
+      "text": "Calculează expresia zecimală I.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "5,71 + 12,91 − 7,52",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "11,1"
+        }
+      },
+      "explanation": "Respectăm ordinea operațiilor și aliniem zecimalele. Rezultatul este 11,1."
+    },
+    {
+      "text": "Rezultatul calculului 13,5 + 7,32 este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "13,50 + 7,32 = 20,82.",
+      "options": [
+        {
+          "text": "6,18",
+          "is_correct": false
+        },
+        {
+          "text": "20,82",
+          "is_correct": true
+        },
+        {
+          "text": "8,67",
+          "is_correct": false
+        },
+        {
+          "text": "20,35",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Rezultatul calculului 1,73 − 1,56 este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1,73 − 1,56 = 0,17.",
+      "options": [
+        {
+          "text": "1,17",
+          "is_correct": false
+        },
+        {
+          "text": "0,17",
+          "is_correct": true
+        },
+        {
+          "text": "3,29",
+          "is_correct": false
+        },
+        {
+          "text": "2,17",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Restul primit din 100 lei pentru o cumpărătură de 79,85 lei este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "100,00 − 79,85 = 20,15.",
+      "options": [
+        {
+          "text": "21,15 lei",
+          "is_correct": false
+        },
+        {
+          "text": "20,15 lei",
+          "is_correct": true
+        },
+        {
+          "text": "20,25 lei",
+          "is_correct": false
+        },
+        {
+          "text": "19,15 lei",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

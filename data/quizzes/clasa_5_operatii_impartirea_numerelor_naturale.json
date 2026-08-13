@@ -1,0 +1,1118 @@
+{
+  "title": "Împărțirea cu rest a numerelor naturale",
+  "description": "Clasa a 5-a · Operații cu numere naturale",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Determinați câtul și restul împărțirii 104 : 5.",
+      "format": "grid",
+      "points": 10,
+      "explanation": "104 = 5 · 20 + 4, iar 4 < 5.",
+      "options": [
+        {
+          "text": "câtul 19, restul 9",
+          "is_correct": false
+        },
+        {
+          "text": "câtul 20, restul 4",
+          "is_correct": true
+        },
+        {
+          "text": "câtul 21, restul 1",
+          "is_correct": false
+        },
+        {
+          "text": "câtul 20, restul 5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determinați câtul și restul împărțirii 235 : 7.",
+      "format": "grid",
+      "points": 10,
+      "explanation": "235 = 7 · 33 + 4, iar 4 < 7.",
+      "options": [
+        {
+          "text": "câtul 32, restul 11",
+          "is_correct": false
+        },
+        {
+          "text": "câtul 33, restul 4",
+          "is_correct": true
+        },
+        {
+          "text": "câtul 34, restul 3",
+          "is_correct": false
+        },
+        {
+          "text": "câtul 33, restul 5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determinați câtul și restul împărțirii 566 : 9.",
+      "format": "grid",
+      "points": 10,
+      "explanation": "566 = 9 · 62 + 8, iar 8 < 9.",
+      "options": [
+        {
+          "text": "câtul 61, restul 17",
+          "is_correct": false
+        },
+        {
+          "text": "câtul 62, restul 8",
+          "is_correct": true
+        },
+        {
+          "text": "câtul 63, restul 1",
+          "is_correct": false
+        },
+        {
+          "text": "câtul 62, restul 9",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determinați câtul și restul împărțirii 1 117 : 12.",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1 117 = 12 · 93 + 1, iar 1 < 12.",
+      "options": [
+        {
+          "text": "câtul 92, restul 13",
+          "is_correct": false
+        },
+        {
+          "text": "câtul 93, restul 1",
+          "is_correct": true
+        },
+        {
+          "text": "câtul 94, restul 9",
+          "is_correct": false
+        },
+        {
+          "text": "câtul 93, restul 12",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determinați câtul și restul împărțirii 2 141 : 15.",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2 141 = 15 · 142 + 11, iar 11 < 15.",
+      "options": [
+        {
+          "text": "câtul 141, restul 26",
+          "is_correct": false
+        },
+        {
+          "text": "câtul 142, restul 11",
+          "is_correct": true
+        },
+        {
+          "text": "câtul 143, restul 6",
+          "is_correct": false
+        },
+        {
+          "text": "câtul 142, restul 15",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determinați câtul și restul împărțirii 1 726 : 11.",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1 726 = 11 · 156 + 10, iar 10 < 11.",
+      "options": [
+        {
+          "text": "câtul 155, restul 21",
+          "is_correct": false
+        },
+        {
+          "text": "câtul 156, restul 10",
+          "is_correct": true
+        },
+        {
+          "text": "câtul 157, restul 9",
+          "is_correct": false
+        },
+        {
+          "text": "câtul 156, restul 11",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este proba corectă pentru împărțirea 474 : 21, cu câtul 22 și restul 12?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Proba este 21 · 22 + 12 = 474 și 12 < 21.",
+      "options": [
+        {
+          "text": "474 = 21 · 12 + 22",
+          "is_correct": false
+        },
+        {
+          "text": "474 = 21 · 22 + 12",
+          "is_correct": true
+        },
+        {
+          "text": "474 = 21 · 22 − 12",
+          "is_correct": false
+        },
+        {
+          "text": "474 = 22 · 12 + 21",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care egalitate descrie o împărțire cu rest corectă?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În varianta corectă, egalitatea este adevărată și restul 14 este mai mic decât 17.",
+      "options": [
+        {
+          "text": "36 = 7 · 4 + 8",
+          "is_correct": false
+        },
+        {
+          "text": "99 = 17 · 5 + 14",
+          "is_correct": true
+        },
+        {
+          "text": "82 = 6 · 13 + 6",
+          "is_correct": false
+        },
+        {
+          "text": "55 = 5 · 10 + 5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În egalitatea 453 = 21 · 21 + 12, care este împărțitorul?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În forma D = Î · C + R, împărțitorul este 21.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "21",
+          "is_correct": true
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        },
+        {
+          "text": "453",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În egalitatea 112 = 10 · 10 + 12, de ce nu avem o împărțire cu rest corectă?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Restul 12 nu poate fi rest la împărțirea la 10; trebuie să fie între 0 și 9.",
+      "options": [
+        {
+          "text": "Câtul este prea mic",
+          "is_correct": false
+        },
+        {
+          "text": "Restul nu este mai mic decât împărțitorul",
+          "is_correct": true
+        },
+        {
+          "text": "Deîmpărțitul trebuie să fie impar",
+          "is_correct": false
+        },
+        {
+          "text": "Împărțitorul trebuie să fie mai mare decât deîmpărțitul",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte resturi diferite sunt posibile la împărțirea unui număr la 6?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Resturile posibile sunt 0, 1, 2, 3, 4 și 5.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care sunt toate numerele naturale care, împărțite la 6, au câtul 13?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numerele sunt 6 · 13 + r, unde r poate fi 0, 1, 2, 3, 4 sau 5.",
+      "options": [
+        {
+          "text": "79, 80, 81, 82, 83, 84",
+          "is_correct": false
+        },
+        {
+          "text": "78, 79, 80, 81, 82, 83",
+          "is_correct": true
+        },
+        {
+          "text": "78, 79, 80, 81, 82",
+          "is_correct": false
+        },
+        {
+          "text": "78, 84, 90, 96, 102, 108",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este cel mai mic număr natural de trei cifre care dă restul 8 la împărțirea la 11?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "107 = 11 · 9 + 8.",
+      "options": [
+        {
+          "text": "108",
+          "is_correct": false
+        },
+        {
+          "text": "107",
+          "is_correct": true
+        },
+        {
+          "text": "118",
+          "is_correct": false
+        },
+        {
+          "text": "99",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este cel mai mare număr natural de trei cifre care dă restul 8 la împărțirea la 11?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "998 = 11 · 90 + 8.",
+      "options": [
+        {
+          "text": "988",
+          "is_correct": false
+        },
+        {
+          "text": "998",
+          "is_correct": true
+        },
+        {
+          "text": "989",
+          "is_correct": false
+        },
+        {
+          "text": "999",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este suma tuturor resturilor posibile la împărțirea la 7?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Resturile posibile sunt 0, 1, 2, 3, 4, 5, 6, cu suma 21.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "21",
+          "is_correct": true
+        },
+        {
+          "text": "28",
+          "is_correct": false
+        },
+        {
+          "text": "49",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un număr împărțit la 10 are câtul de două ori mai mare decât restul. Care este cel mai mic număr pozitiv posibil?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru restul 1, câtul este 2, deci numărul este 10 · 2 + 1 = 21.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "21",
+          "is_correct": true
+        },
+        {
+          "text": "20",
+          "is_correct": false
+        },
+        {
+          "text": "42",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Radu împarte 44 de bomboane în mod egal la 7 prieteni. Câte bomboane îi rămân?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "44 = 7 · 6 + 2.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "130 de elevi merg în autocare cu câte 24 de locuri. Câte autocare sunt necesare pentru toți elevii?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Se umplu 5 autocare și rămân 10 elevi, deci este necesar și al șaselea autocar.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "905 cărți sunt puse în cutii de câte 40. Câte cutii se umplu complet?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "905 = 40 · 22 + 25, deci 22 de cutii sunt pline.",
+      "options": [
+        {
+          "text": "21",
+          "is_correct": false
+        },
+        {
+          "text": "22",
+          "is_correct": true
+        },
+        {
+          "text": "23",
+          "is_correct": false
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "O panglică de 257 cm se taie în bucăți de câte 12 cm. Ce lungime rămâne netăiată?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "257 = 12 · 21 + 5.",
+      "options": [
+        {
+          "text": "4 cm",
+          "is_correct": false
+        },
+        {
+          "text": "5 cm",
+          "is_correct": true
+        },
+        {
+          "text": "11 cm",
+          "is_correct": false
+        },
+        {
+          "text": "17 cm",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un joc oferă o viață bonus la fiecare 9 monede. Din 76 de monede, câte rămân după obținerea tuturor vieților posibile?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "76 = 9 · 8 + 4.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un fermier pune 1 003 mere în lăzi de câte 35. Câte mere rămân în afara lăzilor complete?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1 003 = 35 · 28 + 23.",
+      "options": [
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "23",
+          "is_correct": true
+        },
+        {
+          "text": "28",
+          "is_correct": false
+        },
+        {
+          "text": "33",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Restul unei împărțiri poate fi egal cu împărțitorul.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Restul trebuie să fie strict mai mic decât împărțitorul.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Dacă un număr dă restul 3 la împărțirea la 6, atunci este divizibil cu 3.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Numărul are forma 6q + 3 = 3(2q + 1).",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Există un număr care dă restul 3 la împărțirea la 6 și restul 2 la împărțirea la 3.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Orice număr de forma 6q + 3 este divizibil cu 3, deci are restul 0 la împărțirea la 3.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "La împărțirea la 15, restul 14 este posibil.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Orice rest de la 0 la 14 este posibil la împărțirea la 15.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Efectuați în coloană împărțirea 104 : 5.",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul este 20, iar restul final este 4. Verificare: 5 · 20 + 4 = 104.",
+      "interactive": {
+        "dividend": 104,
+        "divisor": 5,
+        "quotient": 20,
+        "remainder": 4,
+        "remainders": [
+          1,
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "text": "Efectuați în coloană împărțirea 235 : 7.",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul este 33, iar restul final este 4. Verificare: 7 · 33 + 4 = 235.",
+      "interactive": {
+        "dividend": 235,
+        "divisor": 7,
+        "quotient": 33,
+        "remainder": 4,
+        "remainders": [
+          2,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "text": "Efectuați în coloană împărțirea 566 : 9.",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul este 62, iar restul final este 8. Verificare: 9 · 62 + 8 = 566.",
+      "interactive": {
+        "dividend": 566,
+        "divisor": 9,
+        "quotient": 62,
+        "remainder": 8,
+        "remainders": [
+          5,
+          2,
+          8
+        ]
+      }
+    },
+    {
+      "text": "Efectuați în coloană împărțirea 1 117 : 12.",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul este 93, iar restul final este 1. Verificare: 12 · 93 + 1 = 1 117.",
+      "interactive": {
+        "dividend": 1117,
+        "divisor": 12,
+        "quotient": 93,
+        "remainder": 1,
+        "remainders": [
+          1,
+          11,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Efectuați în coloană împărțirea 2 141 : 15.",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul este 142, iar restul final este 11. Verificare: 15 · 142 + 11 = 2 141.",
+      "interactive": {
+        "dividend": 2141,
+        "divisor": 15,
+        "quotient": 142,
+        "remainder": 11,
+        "remainders": [
+          2,
+          6,
+          4,
+          11
+        ]
+      }
+    },
+    {
+      "text": "Efectuați în coloană împărțirea 1 726 : 11.",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul este 156, iar restul final este 10. Verificare: 11 · 156 + 10 = 1 726.",
+      "interactive": {
+        "dividend": 1726,
+        "divisor": 11,
+        "quotient": 156,
+        "remainder": 10,
+        "remainders": [
+          1,
+          6,
+          7,
+          10
+        ]
+      }
+    },
+    {
+      "text": "Completați valoarea lipsă din relația împărțirii cu rest, seria 1.",
+      "type": "division_relation",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Relația completă este 104 = 5 · 20 + 4.",
+      "interactive": {
+        "dividend": 104,
+        "divisor": 5,
+        "quotient": 20,
+        "remainder": 4,
+        "missing": "remainder"
+      }
+    },
+    {
+      "text": "Completați valoarea lipsă din relația împărțirii cu rest, seria 2.",
+      "type": "division_relation",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Relația completă este 235 = 7 · 33 + 4.",
+      "interactive": {
+        "dividend": 235,
+        "divisor": 7,
+        "quotient": 33,
+        "remainder": 4,
+        "missing": "quotient"
+      }
+    },
+    {
+      "text": "Completați valoarea lipsă din relația împărțirii cu rest, seria 3.",
+      "type": "division_relation",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Relația completă este 566 = 9 · 62 + 8.",
+      "interactive": {
+        "dividend": 566,
+        "divisor": 9,
+        "quotient": 62,
+        "remainder": 8,
+        "missing": "dividend"
+      }
+    },
+    {
+      "text": "Completați valoarea lipsă din relația împărțirii cu rest, seria 4.",
+      "type": "division_relation",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Relația completă este 1 117 = 12 · 93 + 1.",
+      "interactive": {
+        "dividend": 1117,
+        "divisor": 12,
+        "quotient": 93,
+        "remainder": 1,
+        "missing": "divisor"
+      }
+    },
+    {
+      "text": "Completați valoarea lipsă din relația împărțirii cu rest, seria 5.",
+      "type": "division_relation",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Relația completă este 2 141 = 15 · 142 + 11.",
+      "interactive": {
+        "dividend": 2141,
+        "divisor": 15,
+        "quotient": 142,
+        "remainder": 11,
+        "missing": "remainder"
+      }
+    },
+    {
+      "text": "Completați valoarea lipsă din relația împărțirii cu rest, seria 6.",
+      "type": "division_relation",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Relația completă este 1 726 = 11 · 156 + 10.",
+      "interactive": {
+        "dividend": 1726,
+        "divisor": 11,
+        "quotient": 156,
+        "remainder": 10,
+        "missing": "quotient"
+      }
+    },
+    {
+      "text": "Completați celulele lipsă din tabelul împărțirii cu rest, seria 1.",
+      "type": "division_table",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pe fiecare rând folosim D = Î · C + R și verificăm R < Î.",
+      "interactive": {
+        "rows": [
+          {
+            "dividend": 104,
+            "divisor": 5,
+            "quotient": 20,
+            "remainder": 4,
+            "missing": "quotient"
+          },
+          {
+            "dividend": 235,
+            "divisor": 7,
+            "quotient": 33,
+            "remainder": 4,
+            "missing": "remainder"
+          },
+          {
+            "dividend": 566,
+            "divisor": 9,
+            "quotient": 62,
+            "remainder": 8,
+            "missing": "dividend"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completați celulele lipsă din tabelul împărțirii cu rest, seria 2.",
+      "type": "division_table",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pe fiecare rând folosim D = Î · C + R și verificăm R < Î.",
+      "interactive": {
+        "rows": [
+          {
+            "dividend": 474,
+            "divisor": 21,
+            "quotient": 22,
+            "remainder": 12,
+            "missing": "remainder"
+          },
+          {
+            "dividend": 453,
+            "divisor": 22,
+            "quotient": 20,
+            "remainder": 13,
+            "missing": "quotient"
+          },
+          {
+            "dividend": 121,
+            "divisor": 10,
+            "quotient": 12,
+            "remainder": 1,
+            "missing": "divisor"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completați celulele lipsă din tabelul împărțirii cu rest, seria 3.",
+      "type": "division_table",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pe fiecare rând folosim D = Î · C + R și verificăm R < Î.",
+      "interactive": {
+        "rows": [
+          {
+            "dividend": 1117,
+            "divisor": 12,
+            "quotient": 93,
+            "remainder": 1,
+            "missing": "quotient"
+          },
+          {
+            "dividend": 2141,
+            "divisor": 15,
+            "quotient": 142,
+            "remainder": 11,
+            "missing": "remainder"
+          },
+          {
+            "dividend": 1726,
+            "divisor": 11,
+            "quotient": 156,
+            "remainder": 10,
+            "missing": "dividend"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completați celulele lipsă din tabelul împărțirii cu rest, seria 4.",
+      "type": "division_table",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pe fiecare rând folosim D = Î · C + R și verificăm R < Î.",
+      "interactive": {
+        "rows": [
+          {
+            "dividend": 257,
+            "divisor": 12,
+            "quotient": 21,
+            "remainder": 5,
+            "missing": "remainder"
+          },
+          {
+            "dividend": 1003,
+            "divisor": 35,
+            "quotient": 28,
+            "remainder": 23,
+            "missing": "quotient"
+          },
+          {
+            "dividend": 905,
+            "divisor": 40,
+            "quotient": 22,
+            "remainder": 25,
+            "missing": "divisor"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completați celulele lipsă din tabelul împărțirii cu rest, seria 5.",
+      "type": "division_table",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pe fiecare rând folosim D = Î · C + R și verificăm R < Î.",
+      "interactive": {
+        "rows": [
+          {
+            "dividend": 82,
+            "divisor": 6,
+            "quotient": 13,
+            "remainder": 4,
+            "missing": "dividend"
+          },
+          {
+            "dividend": 998,
+            "divisor": 11,
+            "quotient": 90,
+            "remainder": 8,
+            "missing": "quotient"
+          },
+          {
+            "dividend": 107,
+            "divisor": 11,
+            "quotient": 9,
+            "remainder": 8,
+            "missing": "remainder"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completați celulele lipsă din tabelul împărțirii cu rest, seria 6.",
+      "type": "division_table",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pe fiecare rând folosim D = Î · C + R și verificăm R < Î.",
+      "interactive": {
+        "rows": [
+          {
+            "dividend": 1428,
+            "divisor": 49,
+            "quotient": 29,
+            "remainder": 7,
+            "missing": "quotient"
+          },
+          {
+            "dividend": 362,
+            "divisor": 72,
+            "quotient": 5,
+            "remainder": 2,
+            "missing": "remainder"
+          },
+          {
+            "dividend": 297,
+            "divisor": 17,
+            "quotient": 17,
+            "remainder": 8,
+            "missing": "divisor"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Un număr împărțit la 49 are câtul 29 și restul 7. Determinați numărul.",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul este 49 · 29 + 7 = 1 428.",
+      "interactive": {
+        "answer": 1428,
+        "suffix": ""
+      }
+    },
+    {
+      "text": "Un număr împărțit la 6 are câtul 13 și restul 4. Determinați numărul.",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul este 6 · 13 + 4 = 82.",
+      "interactive": {
+        "answer": 82,
+        "suffix": ""
+      }
+    },
+    {
+      "text": "Scrieți cel mai mic număr de trei cifre care dă restul 8 la împărțirea la 11.",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "107 = 11 · 9 + 8.",
+      "interactive": {
+        "answer": 107,
+        "suffix": ""
+      }
+    },
+    {
+      "text": "Scrieți cel mai mare număr de trei cifre care dă restul 8 la împărțirea la 11.",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "998 = 11 · 90 + 8.",
+      "interactive": {
+        "answer": 998,
+        "suffix": ""
+      }
+    },
+    {
+      "text": "Calculați suma tuturor resturilor posibile la împărțirea la 7.",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "0 + 1 + 2 + 3 + 4 + 5 + 6 = 21.",
+      "interactive": {
+        "answer": 21,
+        "suffix": ""
+      }
+    },
+    {
+      "text": "Dacă a și b sunt numere naturale, determinați restul împărțirii lui 17a + 17b + 25 la 17.",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Termenii 17a și 17b se împart exact, iar 25 dă restul 8.",
+      "interactive": {
+        "answer": 8,
+        "suffix": ""
+      }
+    },
+    {
+      "text": "Dacă a și b sunt numere naturale, determinați restul împărțirii lui 16a + 28b + 13 la 4.",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Primii doi termeni sunt multipli de 4, iar 13 dă restul 1.",
+      "interactive": {
+        "answer": 1,
+        "suffix": ""
+      }
+    },
+    {
+      "text": "Determinați restul împărțirii numărului 1 · 2 · 3 · … · 203 + 2 003 la 2 002.",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul conține factorul 2 002, iar 2 003 = 2 002 + 1.",
+      "interactive": {
+        "answer": 1,
+        "suffix": ""
+      }
+    },
+    {
+      "text": "Suma a trei numere este 121. Primul împărțit la al treilea dă câtul 10 și restul 5, iar al doilea dă câtul 5 și restul 4. Determinați al treilea număr.",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numerele sunt 10c + 5, 5c + 4 și c; din 16c + 9 = 121 obținem c = 7.",
+      "interactive": {
+        "answer": 7,
+        "suffix": ""
+      }
+    },
+    {
+      "text": "Suma a trei numere este 135. Primele două, împărțite la al treilea, dau câturile 12 și 31 și resturile 1 și 2. Determinați cel mai mare număr.",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Al treilea este 3, iar primele două sunt 37 și 95.",
+      "interactive": {
+        "answer": 95,
+        "suffix": ""
+      }
+    },
+    {
+      "text": "Un număr este cu 72 mai mare decât altul. Suma lor împărțită la diferență dă câtul 5 și restul 2. Determinați numărul mai mic.",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma este 72 · 5 + 2 = 362; numărul mic este (362 − 72) : 2 = 145.",
+      "interactive": {
+        "answer": 145,
+        "suffix": ""
+      }
+    },
+    {
+      "text": "Suma a trei numere este 297. Primul împărțit la al doilea dă câtul 2 și restul 25, iar la al treilea dă câtul 11 și restul 8. Determinați primul număr.",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Din relații rezultă numerele 195, 85 și 17.",
+      "interactive": {
+        "answer": 195,
+        "suffix": ""
+      }
+    }
+  ]
+}

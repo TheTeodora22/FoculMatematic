@@ -1,0 +1,589 @@
+{
+  "title": "Compararea puterilor",
+  "description": "Clasa a 5-a · Operații cu numere naturale",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "text": "Care dintre puterile cu baza 25 este mai mare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La aceeași bază mai mare decât 1, exponentul mai mare dă puterea mai mare.",
+      "options": [
+        {
+          "text": "Sunt egale",
+          "is_correct": false
+        },
+        {
+          "text": "25²⁷",
+          "is_correct": true
+        },
+        {
+          "text": "25²⁵",
+          "is_correct": false
+        },
+        {
+          "text": "Nu se pot compara",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Alege numărul mai mic dintre 16¹²³ și 16¹²⁴.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Bazele sunt egale, iar 123 < 124.",
+      "options": [
+        {
+          "text": "Sunt egale",
+          "is_correct": false
+        },
+        {
+          "text": "16¹²³",
+          "is_correct": true
+        },
+        {
+          "text": "16¹²⁴",
+          "is_correct": false
+        },
+        {
+          "text": "16²⁴⁷",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este mai mare: 2⁰¹¹³ sau 2⁰¹¹⁵?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Zerourile din fața exponentului nu schimbă valoarea: 115 > 113.",
+      "options": [
+        {
+          "text": "Sunt egale",
+          "is_correct": false
+        },
+        {
+          "text": "2⁰¹¹⁵",
+          "is_correct": true
+        },
+        {
+          "text": "2⁰¹¹³",
+          "is_correct": false
+        },
+        {
+          "text": "2²",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dintre 111⁴ și 111³, care este mai mică?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru aceeași bază, comparăm exponenții.",
+      "options": [
+        {
+          "text": "Sunt egale",
+          "is_correct": false
+        },
+        {
+          "text": "111³",
+          "is_correct": true
+        },
+        {
+          "text": "111⁴",
+          "is_correct": false
+        },
+        {
+          "text": "111¹²",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este mai mică dintre 15²⁷ și 17²⁷?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La același exponent nenul, baza mai mică produce puterea mai mică.",
+      "options": [
+        {
+          "text": "Sunt egale",
+          "is_correct": false
+        },
+        {
+          "text": "15²⁷",
+          "is_correct": true
+        },
+        {
+          "text": "17²⁷",
+          "is_correct": false
+        },
+        {
+          "text": "2²⁷",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Alege puterea mai mare dintre 24²³ și 23²³.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Exponenții sunt egali, deci comparăm bazele.",
+      "options": [
+        {
+          "text": "Sunt egale",
+          "is_correct": false
+        },
+        {
+          "text": "24²³",
+          "is_correct": true
+        },
+        {
+          "text": "23²³",
+          "is_correct": false
+        },
+        {
+          "text": "47²³",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care dintre 2¹⁰¹¹⁴ și 3¹⁰¹¹⁴ este mai mare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu același exponent pozitiv, baza 3 este mai mare decât baza 2.",
+      "options": [
+        {
+          "text": "Sunt egale",
+          "is_correct": false
+        },
+        {
+          "text": "3¹⁰¹¹⁴",
+          "is_correct": true
+        },
+        {
+          "text": "2¹⁰¹¹⁴",
+          "is_correct": false
+        },
+        {
+          "text": "6¹⁰¹¹⁴",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Alege numărul mai mic dintre 989¹²³ și 987¹²³.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Exponenții sunt egali și 987 < 989.",
+      "options": [
+        {
+          "text": "Sunt egale",
+          "is_correct": false
+        },
+        {
+          "text": "987¹²³",
+          "is_correct": true
+        },
+        {
+          "text": "989¹²³",
+          "is_correct": false
+        },
+        {
+          "text": "2¹²³",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este mai mare după aducerea la baza 5: 5⁹ sau 25⁴?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "25⁴ = (5²)⁴ = 5⁸, iar 5⁹ > 5⁸.",
+      "options": [
+        {
+          "text": "Sunt egale",
+          "is_correct": false
+        },
+        {
+          "text": "5⁹",
+          "is_correct": true
+        },
+        {
+          "text": "25⁴",
+          "is_correct": false
+        },
+        {
+          "text": "5⁴",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Compară 4³³ și 8²¹. Care este mai mare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "4³³ = 2⁶⁶, iar 8²¹ = 2⁶³; 66 > 63.",
+      "options": [
+        {
+          "text": "Sunt egale",
+          "is_correct": false
+        },
+        {
+          "text": "4³³",
+          "is_correct": true
+        },
+        {
+          "text": "8²¹",
+          "is_correct": false
+        },
+        {
+          "text": "2¹²",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este mai mică dintre 2⁴⁶ și 16¹²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "16¹² = (2⁴)¹² = 2⁴⁸, deci 2⁴⁶ este mai mică.",
+      "options": [
+        {
+          "text": "Sunt egale",
+          "is_correct": false
+        },
+        {
+          "text": "2⁴⁶",
+          "is_correct": true
+        },
+        {
+          "text": "16¹²",
+          "is_correct": false
+        },
+        {
+          "text": "2²",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Compară 125⁴ și 25⁷. Care este mai mare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "125⁴ = 5¹², iar 25⁷ = 5¹⁴.",
+      "options": [
+        {
+          "text": "Sunt egale",
+          "is_correct": false
+        },
+        {
+          "text": "25⁷",
+          "is_correct": true
+        },
+        {
+          "text": "125⁴",
+          "is_correct": false
+        },
+        {
+          "text": "5³",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este mai mare dintre 3⁵ și 5³?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3⁵ = 243, iar 5³ = 125.",
+      "options": [
+        {
+          "text": "Sunt egale",
+          "is_correct": false
+        },
+        {
+          "text": "3⁵",
+          "is_correct": true
+        },
+        {
+          "text": "5³",
+          "is_correct": false
+        },
+        {
+          "text": "8³",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Alege cel mai mare număr dintre 2⁵, 3³, 5² și 4².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Valorile sunt 32, 27, 25 și 16.",
+      "options": [
+        {
+          "text": "5²",
+          "is_correct": false
+        },
+        {
+          "text": "2⁵",
+          "is_correct": true
+        },
+        {
+          "text": "3³",
+          "is_correct": false
+        },
+        {
+          "text": "4²",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Alege semnul corect între 25²⁷ și 25²⁹.",
+      "type": "power_compare",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Bazele sunt egale; 27 < 29.",
+      "interactive": {
+        "left": "25²⁷",
+        "right": "25²⁹",
+        "relation": "<"
+      }
+    },
+    {
+      "text": "Alege semnul corect între 16¹²⁴ și 16¹²⁴.",
+      "type": "power_compare",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Expresiile sunt identice.",
+      "interactive": {
+        "left": "16¹²⁴",
+        "right": "16¹²⁴",
+        "relation": "="
+      }
+    },
+    {
+      "text": "Alege semnul corect între 21⁵³ și 24⁵³.",
+      "type": "power_compare",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Exponenții sunt egali, iar 21 < 24.",
+      "interactive": {
+        "left": "21⁵³",
+        "right": "24⁵³",
+        "relation": "<"
+      }
+    },
+    {
+      "text": "Alege semnul corect între 9¹⁵ și 3²⁹.",
+      "type": "power_compare",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "9¹⁵ = 3³⁰, iar 3³⁰ > 3²⁹.",
+      "interactive": {
+        "left": "9¹⁵",
+        "right": "3²⁹",
+        "relation": ">"
+      }
+    },
+    {
+      "text": "Alege semnul corect între 8¹¹ și 4¹⁶.",
+      "type": "power_compare",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "8¹¹ = 2³³, iar 4¹⁶ = 2³²; de fapt 2³³ > 2³².",
+      "interactive": {
+        "left": "8¹¹",
+        "right": "4¹⁶",
+        "relation": ">"
+      }
+    },
+    {
+      "text": "Alege semnul corect între 125⁶ și 25⁹.",
+      "type": "power_compare",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "125⁶ = 5¹⁸ și 25⁹ = 5¹⁸.",
+      "interactive": {
+        "left": "125⁶",
+        "right": "25⁹",
+        "relation": "="
+      }
+    },
+    {
+      "text": "Alege semnul corect între 2²⁰ și 4⁹.",
+      "type": "power_compare",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "4⁹ = 2¹⁸, iar 20 > 18.",
+      "interactive": {
+        "left": "2²⁰",
+        "right": "4⁹",
+        "relation": ">"
+      }
+    },
+    {
+      "text": "Alege semnul corect între 7⁴ și 5⁵.",
+      "type": "power_compare",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "7⁴ = 2 401, iar 5⁵ = 3 125.",
+      "interactive": {
+        "left": "7⁴",
+        "right": "5⁵",
+        "relation": "<"
+      }
+    },
+    {
+      "text": "Așază în ordine crescătoare puterile: 2⁴, 3³, 5², 4³.",
+      "type": "power_order",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Comparăm valorile sau aducem puterile la aceeași bază.",
+      "interactive": {
+        "direction": "asc",
+        "items": [
+          {
+            "label": "2⁴",
+            "value": 16
+          },
+          {
+            "label": "3³",
+            "value": 27
+          },
+          {
+            "label": "5²",
+            "value": 25
+          },
+          {
+            "label": "4³",
+            "value": 64
+          }
+        ],
+        "display_order": [
+          2,
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Așază în ordine descrescătoare puterile: 5³, 2⁷, 3⁴, 10².",
+      "type": "power_order",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Comparăm valorile sau aducem puterile la aceeași bază.",
+      "interactive": {
+        "direction": "desc",
+        "items": [
+          {
+            "label": "5³",
+            "value": 125
+          },
+          {
+            "label": "2⁷",
+            "value": 128
+          },
+          {
+            "label": "3⁴",
+            "value": 81
+          },
+          {
+            "label": "10²",
+            "value": 100
+          }
+        ],
+        "display_order": [
+          2,
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Așază în ordine crescătoare puterile: 4⁵, 2¹¹, 8³, 16².",
+      "type": "power_order",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Comparăm valorile sau aducem puterile la aceeași bază.",
+      "interactive": {
+        "direction": "asc",
+        "items": [
+          {
+            "label": "4⁵",
+            "value": 1024
+          },
+          {
+            "label": "2¹¹",
+            "value": 2048
+          },
+          {
+            "label": "8³",
+            "value": 512
+          },
+          {
+            "label": "16²",
+            "value": 256
+          }
+        ],
+        "display_order": [
+          1,
+          3,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "text": "Așază în ordine descrescătoare puterile: 9³, 3⁷, 27³, 81².",
+      "type": "power_order",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Comparăm valorile sau aducem puterile la aceeași bază.",
+      "interactive": {
+        "direction": "desc",
+        "items": [
+          {
+            "label": "9³",
+            "value": 729
+          },
+          {
+            "label": "3⁷",
+            "value": 2187
+          },
+          {
+            "label": "27³",
+            "value": 19683
+          },
+          {
+            "label": "81²",
+            "value": 6561
+          }
+        ],
+        "display_order": [
+          2,
+          0,
+          3,
+          1
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,692 @@
+{
+  "title": "Înmulțirea fracțiilor zecimale cu un număr finit de zecimale nenule",
+  "description": "Clasa a 5-a · Fracții zecimale",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Înmulțește în coloană 1,5 × 6 (A).",
+      "type": "column_multiplication",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "multiplicand": "15",
+        "multiplier": "6",
+        "correct_result": "90",
+        "carry_columns": [
+          true,
+          false
+        ],
+        "multiplicand_decimal_places": 1,
+        "multiplier_decimal_places": 0,
+        "decimal_places": 1
+      },
+      "explanation": "Înmulțim cifrele ca la numere naturale, apoi punem virgula la 1 cifră de la dreapta. Rezultatul este 9,0."
+    },
+    {
+      "text": "Înmulțește în coloană 2,75 × 3 (B).",
+      "type": "column_multiplication",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "multiplicand": "275",
+        "multiplier": "3",
+        "correct_result": "825",
+        "carry_columns": [
+          true,
+          true,
+          false
+        ],
+        "multiplicand_decimal_places": 2,
+        "multiplier_decimal_places": 0,
+        "decimal_places": 2
+      },
+      "explanation": "Înmulțim cifrele ca la numere naturale, apoi punem virgula la 2 cifre de la dreapta. Rezultatul este 8,25."
+    },
+    {
+      "text": "Înmulțește în coloană 24,21 × 7 (C).",
+      "type": "column_multiplication",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "multiplicand": "02421",
+        "multiplier": "7",
+        "correct_result": "16947",
+        "carry_columns": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "multiplicand_decimal_places": 2,
+        "multiplier_decimal_places": 0,
+        "decimal_places": 2
+      },
+      "explanation": "Înmulțim cifrele ca la numere naturale, apoi punem virgula la 2 cifre de la dreapta. Rezultatul este 169,47."
+    },
+    {
+      "text": "Înmulțește în coloană 8,00 × 4 (D).",
+      "type": "column_multiplication",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "multiplicand": "0800",
+        "multiplier": "4",
+        "correct_result": "3200",
+        "carry_columns": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "multiplicand_decimal_places": 2,
+        "multiplier_decimal_places": 0,
+        "decimal_places": 2
+      },
+      "explanation": "Înmulțim cifrele ca la numere naturale, apoi punem virgula la 2 cifre de la dreapta. Rezultatul este 32,00."
+    },
+    {
+      "text": "Înmulțește în coloană 44,32 × 5 (E).",
+      "type": "column_multiplication",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "multiplicand": "04432",
+        "multiplier": "5",
+        "correct_result": "22160",
+        "carry_columns": [
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "multiplicand_decimal_places": 2,
+        "multiplier_decimal_places": 0,
+        "decimal_places": 2
+      },
+      "explanation": "Înmulțim cifrele ca la numere naturale, apoi punem virgula la 2 cifre de la dreapta. Rezultatul este 221,60."
+    },
+    {
+      "text": "Înmulțește în coloană 72,56 × 5 (F).",
+      "type": "column_multiplication",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "multiplicand": "07256",
+        "multiplier": "5",
+        "correct_result": "36280",
+        "carry_columns": [
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "multiplicand_decimal_places": 2,
+        "multiplier_decimal_places": 0,
+        "decimal_places": 2
+      },
+      "explanation": "Înmulțim cifrele ca la numere naturale, apoi punem virgula la 2 cifre de la dreapta. Rezultatul este 362,80."
+    },
+    {
+      "text": "Înmulțește în coloană 14,052 × 8 (G).",
+      "type": "column_multiplication",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "multiplicand": "014052",
+        "multiplier": "8",
+        "correct_result": "112416",
+        "carry_columns": [
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "multiplicand_decimal_places": 3,
+        "multiplier_decimal_places": 0,
+        "decimal_places": 3
+      },
+      "explanation": "Înmulțim cifrele ca la numere naturale, apoi punem virgula la 3 cifre de la dreapta. Rezultatul este 112,416."
+    },
+    {
+      "text": "Înmulțește în coloană 7,29 × 7 (H).",
+      "type": "column_multiplication",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "multiplicand": "0729",
+        "multiplier": "7",
+        "correct_result": "5103",
+        "carry_columns": [
+          true,
+          true,
+          true,
+          false
+        ],
+        "multiplicand_decimal_places": 2,
+        "multiplier_decimal_places": 0,
+        "decimal_places": 2
+      },
+      "explanation": "Înmulțim cifrele ca la numere naturale, apoi punem virgula la 2 cifre de la dreapta. Rezultatul este 51,03."
+    },
+    {
+      "text": "Calculează expresia A.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "2,3 × 10",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "23"
+        }
+      },
+      "explanation": "La înmulțirea cu 10, virgula se mută cu un loc la dreapta: 23."
+    },
+    {
+      "text": "Calculează expresia B.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "1,73 × 10",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "17,3"
+        }
+      },
+      "explanation": "Virgula se mută cu un loc la dreapta: 17,3."
+    },
+    {
+      "text": "Calculează expresia C.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "0,03 × 100",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "3"
+        }
+      },
+      "explanation": "La înmulțirea cu 100, virgula se mută două locuri la dreapta: 3."
+    },
+    {
+      "text": "Calculează expresia D.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "12,51 × 100",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "1251"
+        }
+      },
+      "explanation": "Mutăm virgula două locuri la dreapta: 1251."
+    },
+    {
+      "text": "Calculează expresia E.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "0,253 × 1000",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "253"
+        }
+      },
+      "explanation": "Mutăm virgula trei locuri la dreapta: 253."
+    },
+    {
+      "text": "Calculează expresia F.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "4,20035 × 10000",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "42003,5"
+        }
+      },
+      "explanation": "Mutăm virgula patru locuri la dreapta: 42003,5."
+    },
+    {
+      "text": "Calculează expresia G.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "0,002 × 10000",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "20"
+        }
+      },
+      "explanation": "Mutăm virgula patru locuri la dreapta: 20."
+    },
+    {
+      "text": "Calculează expresia H.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "0,7 × 10 × 3,8",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "26,6"
+        }
+      },
+      "explanation": "Calculăm atent produsul și poziția virgulei. Rezultatul este 26,6."
+    },
+    {
+      "text": "Calculează expresia I.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "0,431 × 8 × 2,56",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "8,82688"
+        }
+      },
+      "explanation": "Calculăm atent produsul și poziția virgulei. Rezultatul este 8,82688."
+    },
+    {
+      "text": "Calculează expresia J.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "3,7 × (2,59 + 2,41)",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "18,5"
+        }
+      },
+      "explanation": "Mai întâi calculăm paranteza: 2,59 + 2,41 = 5, apoi 3,7 × 5 = 18,5."
+    },
+    {
+      "text": "Calculează expresia K.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "6,12 × (4,23 − 4,03)",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "1,224"
+        }
+      },
+      "explanation": "Diferența din paranteză este 0,20, iar 6,12 × 0,20 = 1,224."
+    },
+    {
+      "text": "Calculează expresia L.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "2 × 0,1 × 5",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "1"
+        }
+      },
+      "explanation": "Grupăm 2 × 5 = 10, apoi 10 × 0,1 = 1."
+    },
+    {
+      "text": "Calculează expresia M.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "6,12 × 5,93 × (78,124 + 21,876)",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Rezultatul"
+          }
+        ],
+        "answers": {
+          "missing": "3629,16"
+        }
+      },
+      "explanation": "Paranteza este 100; apoi 6,12 × 5,93 × 100 = 3629,16."
+    },
+    {
+      "text": "Detectivul greșelilor A: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "Pentru 4,5 × 3,7 eliminăm temporar virgulele",
+          "Calculăm 45 × 37 = 1665",
+          "Factorii au împreună două zecimale",
+          "Produsul este 166,5"
+        ],
+        "error_index": 3
+      },
+      "explanation": "Produsul trebuie să aibă două zecimale: 16,65."
+    },
+    {
+      "text": "Detectivul greșelilor B: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "2,05 × 0,23",
+          "Calculăm 205 × 23 = 4715",
+          "Factorii au împreună patru zecimale",
+          "Rezultatul este 4,715"
+        ],
+        "error_index": 3
+      },
+      "explanation": "Cu patru zecimale, rezultatul corect este 0,4715."
+    },
+    {
+      "text": "Detectivul greșelilor C: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "0,03 × 100",
+          "Mutăm virgula două locuri spre stânga",
+          "Obținem 3"
+        ],
+        "error_index": 1
+      },
+      "explanation": "La înmulțirea cu 100, virgula se mută două locuri spre dreapta."
+    },
+    {
+      "text": "Detectivul greșelilor D: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "8,4 × 0,25",
+          "Scriem 0,25 = 1/4",
+          "Calculăm 8,4 : 4 = 2,1",
+          "Produsul este 21"
+        ],
+        "error_index": 3
+      },
+      "explanation": "Produsul este 2,1, nu 21."
+    },
+    {
+      "text": "Un magazin primește 60 de saci a câte 45,75 kg și 40 de saci a câte 38,5 kg. Câte kilograme de făină primește?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "60 × 45,75 + 40 × 38,5 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "4285"
+        }
+      },
+      "explanation": "Cele două cantități sunt 2745 kg și 1540 kg; totalul este 4285 kg."
+    },
+    {
+      "text": "Un turist parcurge 0,75 dintr-un traseu de 20 km în prima zi. Câți kilometri parcurge?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "0,75 × 20 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "15"
+        }
+      },
+      "explanation": "0,75 × 20 = 15 km."
+    },
+    {
+      "text": "Un corn cântărește 0,079 kg. Cât cântăresc 13 cornuri?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "0,079 × 13 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "1,027"
+        }
+      },
+      "explanation": "Cele 13 cornuri cântăresc 1,027 kg."
+    },
+    {
+      "text": "Într-o călimară sunt 0,023 l de cerneală. Câtă cerneală este în 12 călimări?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "0,023 × 12 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "0,276"
+        }
+      },
+      "explanation": "În total sunt 0,276 l."
+    },
+    {
+      "text": "Un magazin vinde 92,55 m de stofă dimineața, iar după-amiaza de 2,5 ori mai mult. Câți metri vinde după-amiaza?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "92,55 × 2,5 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "231,375"
+        }
+      },
+      "explanation": "După-amiaza se vând 231,375 m."
+    },
+    {
+      "text": "Un pachet conține 12 manuale de câte 0,483 kg, iar ambalajul cântărește 0,244 kg. Cât cântărește pachetul?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "12 × 0,483 + 0,244 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "6,04"
+        }
+      },
+      "explanation": "Manualele cântăresc 5,796 kg; cu ambalajul, pachetul are 6,04 kg."
+    },
+    {
+      "text": "Rezultatul calculului 123,04 × 100 este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mutăm virgula două poziții spre dreapta.",
+      "options": [
+        {
+          "text": "1 230,4",
+          "is_correct": false
+        },
+        {
+          "text": "12 304",
+          "is_correct": true
+        },
+        {
+          "text": "123,4",
+          "is_correct": false
+        },
+        {
+          "text": "1,2304",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un număr natural este cuprins între 6,32 × 1,3 și 6,32 × 1,9. Care poate fi acesta?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Limitele sunt 8,216 și 12,008; dintre variante, 9 se află în interval.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care produs este egal cu 1?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2 × 5 = 10, iar 10 × 0,1 = 1.",
+      "options": [
+        {
+          "text": "5 × 2,7 × 2",
+          "is_correct": false
+        },
+        {
+          "text": "2 × 0,1 × 5",
+          "is_correct": true
+        },
+        {
+          "text": "3,5 × 2 × 1,6",
+          "is_correct": false
+        },
+        {
+          "text": "2,5 × 3,14",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

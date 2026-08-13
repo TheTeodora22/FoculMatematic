@@ -1,0 +1,883 @@
+{
+  "title": "Cel mai mare divizor comun a două numere naturale. Amplificarea și simplificarea fracțiilor. Fracții ireductibile",
+  "description": "Clasa a 5-a · Fracții ordinare",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "text": "Care este c.m.m.d.c. al numerelor 18 și 24?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cel mai mare divizor comun este 6.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este c.m.m.d.c. al numerelor 35 și 42?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Divizorii comuni sunt 1 și 7.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Numerele 13 și 30 sunt prime între ele deoarece c.m.m.d.c. este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Au doar divizorul comun 1.",
+      "options": [
+        {
+          "text": "30",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "390",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Amplificând 3/5 cu 4 obținem:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim numărătorul și numitorul cu 4.",
+      "options": [
+        {
+          "text": "12/5",
+          "is_correct": false
+        },
+        {
+          "text": "12/20",
+          "is_correct": true
+        },
+        {
+          "text": "3/20",
+          "is_correct": false
+        },
+        {
+          "text": "7/9",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cu ce număr a fost amplificată fracția 2/7 pentru a obține 10/35?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2·5=10 și 7·5=35.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Simplificând 24/36 cu 6 obținem:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "24:6=4 și 36:6=6.",
+      "options": [
+        {
+          "text": "6/4",
+          "is_correct": false
+        },
+        {
+          "text": "4/6",
+          "is_correct": true
+        },
+        {
+          "text": "4/30",
+          "is_correct": false
+        },
+        {
+          "text": "18/30",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Forma ireductibilă a fracției 50/75 este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "c.m.m.d.c.(50,75)=25.",
+      "options": [
+        {
+          "text": "25/50",
+          "is_correct": false
+        },
+        {
+          "text": "2/3",
+          "is_correct": true
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "10/15",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care fracție este ireductibilă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "8 și 11 au c.m.m.d.c. egal cu 1.",
+      "options": [
+        {
+          "text": "12/10",
+          "is_correct": false
+        },
+        {
+          "text": "8/11",
+          "is_correct": true
+        },
+        {
+          "text": "49/64",
+          "is_correct": false
+        },
+        {
+          "text": "6/18",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Prin care număr se poate simplifica fracția 35/70?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "5 divide atât 35, cât și 70.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce numitor obținem amplificând 3/4 pentru a avea numărătorul 12?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Factorul este 4, deci 4·4=16.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": true
+        },
+        {
+          "text": "20",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care fracție NU este echivalentă cu 6/9?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "12/15=4/5, nu 2/3.",
+      "options": [
+        {
+          "text": "18/27",
+          "is_correct": false
+        },
+        {
+          "text": "12/15",
+          "is_correct": true
+        },
+        {
+          "text": "24/36",
+          "is_correct": false
+        },
+        {
+          "text": "2/3",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte grupe identice, cel mult, se pot forma din 24 de mere și 36 de pere?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numărul maxim de grupe este c.m.m.d.c.(24,36)=12.",
+      "options": [
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "O fracție este ireductibilă dacă:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "C.m.m.d.c. al termenilor trebuie să fie 1.",
+      "options": [
+        {
+          "text": "numitorul este par",
+          "is_correct": false
+        },
+        {
+          "text": "numărătorul și numitorul sunt prime între ele",
+          "is_correct": true
+        },
+        {
+          "text": "ambii termeni sunt compuși",
+          "is_correct": false
+        },
+        {
+          "text": "numărătorul este mai mic",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Simplificarea unei fracții înseamnă:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Valoarea fracției trebuie păstrată.",
+      "options": [
+        {
+          "text": "împărțirea doar a numărătorului",
+          "is_correct": false
+        },
+        {
+          "text": "împărțirea ambilor termeni la același divizor comun",
+          "is_correct": true
+        },
+        {
+          "text": "adunarea termenilor",
+          "is_correct": false
+        },
+        {
+          "text": "scăderea aceluiași număr",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Amplificarea păstrează valoarea fracției.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Se înmulțesc ambii termeni cu același număr nenul.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Fracția 9/15 este ireductibilă.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Se poate simplifica prin 3.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Două numere naturale consecutive sunt prime între ele.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Divizorul lor comun poate fi doar 1.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "La simplificare putem împărți numărătorul și numitorul prin numere diferite.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Trebuie folosit același divizor comun.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Completează tabelul divizorilor pentru 18 și 24.",
+      "type": "gcd_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Divizorii comuni sunt 1,2,3,6, iar cel mai mare este 6.",
+      "interactive": {
+        "mode": "table",
+        "a": 18,
+        "b": 24,
+        "answers": {
+          "divisors_a": "1,2,3,6,9,18",
+          "divisors_b": "1,2,3,4,6,8,12,24",
+          "common": "1,2,3,6",
+          "gcd": 6
+        }
+      }
+    },
+    {
+      "text": "Completează tabelul divizorilor pentru 15 și 30.",
+      "type": "gcd_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Divizorii comuni sunt 1,3,5,15, iar cel mai mare este 15.",
+      "interactive": {
+        "mode": "table",
+        "a": 15,
+        "b": 30,
+        "answers": {
+          "divisors_a": "1,3,5,15",
+          "divisors_b": "1,2,3,5,6,10,15,30",
+          "common": "1,3,5,15",
+          "gcd": 15
+        }
+      }
+    },
+    {
+      "text": "Găsește divizorii comuni ai numerelor 24 și 36.",
+      "type": "gcd_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Divizorii comuni sunt 1,2,3,4,6,12; c.m.m.d.c. este 12.",
+      "interactive": {
+        "mode": "select",
+        "a": 24,
+        "b": 36,
+        "candidates": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8,
+          9,
+          12
+        ],
+        "answers": {
+          "common": "1,2,3,4,6,12",
+          "gcd": 12
+        }
+      }
+    },
+    {
+      "text": "Găsește divizorii comuni ai numerelor 14 și 25.",
+      "type": "gcd_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Divizorii comuni sunt 1; c.m.m.d.c. este 1.",
+      "interactive": {
+        "mode": "select",
+        "a": 14,
+        "b": 25,
+        "candidates": [
+          1,
+          2,
+          5,
+          7,
+          10,
+          14,
+          25
+        ],
+        "answers": {
+          "common": "1",
+          "gcd": 1
+        }
+      }
+    },
+    {
+      "text": "Împarte sandvișurile în cât mai multe platouri identice.",
+      "type": "gcd_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Putem forma cel mult 6 grupe, fiecare cu 3 și 4 obiecte.",
+      "interactive": {
+        "mode": "packing",
+        "a": 18,
+        "b": 24,
+        "answers": {
+          "groups": 6,
+          "per_a": 3,
+          "per_b": 4
+        }
+      }
+    },
+    {
+      "text": "Formează cât mai multe pachete identice din cele două colecții.",
+      "type": "gcd_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Putem forma cel mult 14 grupe, fiecare cu 2 și 3 obiecte.",
+      "interactive": {
+        "mode": "packing",
+        "a": 28,
+        "b": 42,
+        "answers": {
+          "groups": 14,
+          "per_a": 2,
+          "per_b": 3
+        }
+      }
+    },
+    {
+      "text": "Așază obiectele în numărul maxim de cutii identice.",
+      "type": "gcd_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Putem forma cel mult 16 grupe, fiecare cu 2 și 3 obiecte.",
+      "interactive": {
+        "mode": "packing",
+        "a": 32,
+        "b": 48,
+        "answers": {
+          "groups": 16,
+          "per_a": 2,
+          "per_b": 3
+        }
+      }
+    },
+    {
+      "text": "Amplifică fracția 1/3 cu 4.",
+      "type": "fraction_scale",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim ambii termeni cu 4.",
+      "interactive": {
+        "mode": "amplify",
+        "numerator": 1,
+        "denominator": 3,
+        "factor": 4,
+        "result_numerator": 4,
+        "result_denominator": 12,
+        "answers": {
+          "factor": 4,
+          "result_numerator": 4,
+          "result_denominator": 12
+        }
+      }
+    },
+    {
+      "text": "Amplifică fracția 4/7 cu 6.",
+      "type": "fraction_scale",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim ambii termeni cu 6.",
+      "interactive": {
+        "mode": "amplify",
+        "numerator": 4,
+        "denominator": 7,
+        "factor": 6,
+        "result_numerator": 24,
+        "result_denominator": 42,
+        "answers": {
+          "factor": 6,
+          "result_numerator": 24,
+          "result_denominator": 42
+        }
+      }
+    },
+    {
+      "text": "Amplifică fracția 5/12 cu 7.",
+      "type": "fraction_scale",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim ambii termeni cu 7.",
+      "interactive": {
+        "mode": "amplify",
+        "numerator": 5,
+        "denominator": 12,
+        "factor": 7,
+        "result_numerator": 35,
+        "result_denominator": 84,
+        "answers": {
+          "factor": 7,
+          "result_numerator": 35,
+          "result_denominator": 84
+        }
+      }
+    },
+    {
+      "text": "Simplifică fracția 24/36 cu 6.",
+      "type": "fraction_scale",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Împărțim ambii termeni la 6.",
+      "interactive": {
+        "mode": "simplify",
+        "numerator": 24,
+        "denominator": 36,
+        "factor": 6,
+        "result_numerator": 144,
+        "result_denominator": 216,
+        "answers": {
+          "factor": 6,
+          "result_numerator": 4,
+          "result_denominator": 6
+        }
+      }
+    },
+    {
+      "text": "Simplifică fracția 42/49 cu 7.",
+      "type": "fraction_scale",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Împărțim ambii termeni la 7.",
+      "interactive": {
+        "mode": "simplify",
+        "numerator": 42,
+        "denominator": 49,
+        "factor": 7,
+        "result_numerator": 294,
+        "result_denominator": 343,
+        "answers": {
+          "factor": 7,
+          "result_numerator": 6,
+          "result_denominator": 7
+        }
+      }
+    },
+    {
+      "text": "Completează factorul și fracția echivalentă pornind de la 3/5.",
+      "type": "fraction_scale",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Factorul comun este 4.",
+      "interactive": {
+        "mode": "missing_factor",
+        "numerator": 3,
+        "denominator": 5,
+        "factor": 4,
+        "result_numerator": 12,
+        "result_denominator": 20,
+        "answers": {
+          "factor": 4,
+          "result_numerator": 12,
+          "result_denominator": 20
+        }
+      }
+    },
+    {
+      "text": "Completează factorul și fracția echivalentă pornind de la 7/9.",
+      "type": "fraction_scale",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Factorul comun este 3.",
+      "interactive": {
+        "mode": "missing_factor",
+        "numerator": 7,
+        "denominator": 9,
+        "factor": 3,
+        "result_numerator": 21,
+        "result_denominator": 27,
+        "answers": {
+          "factor": 3,
+          "result_numerator": 21,
+          "result_denominator": 27
+        }
+      }
+    },
+    {
+      "text": "Refă fracția inițială știind că prin amplificare cu 6 s-a obținut 30/48.",
+      "type": "fraction_scale",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Împărțim termenii rezultatului la 6.",
+      "interactive": {
+        "mode": "restore",
+        "numerator": 5,
+        "denominator": 8,
+        "factor": 6,
+        "result_numerator": 30,
+        "result_denominator": 48,
+        "answers": {
+          "factor": 6,
+          "numerator": 5,
+          "denominator": 8
+        }
+      }
+    },
+    {
+      "text": "Refă fracția inițială știind că prin amplificare cu 5 s-a obținut 10/55.",
+      "type": "fraction_scale",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Împărțim termenii rezultatului la 5.",
+      "interactive": {
+        "mode": "restore",
+        "numerator": 2,
+        "denominator": 11,
+        "factor": 5,
+        "result_numerator": 10,
+        "result_denominator": 55,
+        "answers": {
+          "factor": 5,
+          "numerator": 2,
+          "denominator": 11
+        }
+      }
+    },
+    {
+      "text": "Simplifică fracția 35/50 cu 5.",
+      "type": "fraction_scale",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Împărțim ambii termeni la 5.",
+      "interactive": {
+        "mode": "simplify",
+        "numerator": 35,
+        "denominator": 50,
+        "factor": 5,
+        "result_numerator": 175,
+        "result_denominator": 250,
+        "answers": {
+          "factor": 5,
+          "result_numerator": 7,
+          "result_denominator": 10
+        }
+      }
+    },
+    {
+      "text": "Simplifică succesiv fracția 36/96 până la forma ireductibilă.",
+      "type": "fraction_reduce_path",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Forma ireductibilă este 3/8.",
+      "interactive": {
+        "numerator": 36,
+        "denominator": 96,
+        "steps": [
+          {
+            "factor": 3,
+            "numerator": 12,
+            "denominator": 32
+          },
+          {
+            "factor": 4,
+            "numerator": 3,
+            "denominator": 8
+          }
+        ]
+      }
+    },
+    {
+      "text": "Simplifică succesiv fracția 50/75 până la forma ireductibilă.",
+      "type": "fraction_reduce_path",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Forma ireductibilă este 2/3.",
+      "interactive": {
+        "numerator": 50,
+        "denominator": 75,
+        "steps": [
+          {
+            "factor": 5,
+            "numerator": 10,
+            "denominator": 15
+          },
+          {
+            "factor": 5,
+            "numerator": 2,
+            "denominator": 3
+          }
+        ]
+      }
+    },
+    {
+      "text": "Simplifică succesiv fracția 84/126 până la forma ireductibilă.",
+      "type": "fraction_reduce_path",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Forma ireductibilă este 2/3.",
+      "interactive": {
+        "numerator": 84,
+        "denominator": 126,
+        "steps": [
+          {
+            "factor": 2,
+            "numerator": 42,
+            "denominator": 63
+          },
+          {
+            "factor": 3,
+            "numerator": 14,
+            "denominator": 21
+          },
+          {
+            "factor": 7,
+            "numerator": 2,
+            "denominator": 3
+          }
+        ]
+      }
+    },
+    {
+      "text": "Simplifică succesiv fracția 64/200 până la forma ireductibilă.",
+      "type": "fraction_reduce_path",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Forma ireductibilă este 8/25.",
+      "interactive": {
+        "numerator": 64,
+        "denominator": 200,
+        "steps": [
+          {
+            "factor": 4,
+            "numerator": 16,
+            "denominator": 50
+          },
+          {
+            "factor": 2,
+            "numerator": 8,
+            "denominator": 25
+          }
+        ]
+      }
+    },
+    {
+      "text": "Simplifică succesiv fracția 90/150 până la forma ireductibilă.",
+      "type": "fraction_reduce_path",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Forma ireductibilă este 3/5.",
+      "interactive": {
+        "numerator": 90,
+        "denominator": 150,
+        "steps": [
+          {
+            "factor": 3,
+            "numerator": 30,
+            "denominator": 50
+          },
+          {
+            "factor": 10,
+            "numerator": 3,
+            "denominator": 5
+          }
+        ]
+      }
+    }
+  ]
+}

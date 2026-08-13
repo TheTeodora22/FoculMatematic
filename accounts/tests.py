@@ -17,7 +17,20 @@ from battlepass.services import get_active_season, grant_tier_rewards
 from django.utils import timezone
 from datetime import timedelta
 
-from quizzes.models import AnswerOption, GeneratedQuizSession, GeneratedQuizSessionQuestion, Question, Quiz
+from quizzes.models import (
+    AnswerOption,
+    Chapter,
+    GeneratedQuizSession,
+    GeneratedQuizSessionQuestion,
+    Question,
+    Quiz,
+)
+from quizzes.learning import (
+    get_mistake_review_items,
+    get_next_learning_step,
+    get_topic_learning_state,
+)
+from quizzes.services import submit_quiz_attempt
 
 
 class RegisterTests(TestCase):
@@ -145,6 +158,65 @@ class ProfileStatsTests(TestCase):
         self.assertEqual(dashboard["quizzes_count"], 1)
         self.assertIn("recent_activities", dashboard)
         self.assertIn("avatars/default.svg", dashboard["avatar_path"])
+
+
+class LearningPathTests(TestCase):
+    def setUp(self):
+        self.user = User.objects.create_user(username="learner", password="x")
+        profile = get_or_create_profile(self.user)
+        profile.clasa = 5
+        profile.save(update_fields=["clasa"])
+        self.topic = Quiz.objects.create(title="Learning topic", difficulty="easy")
+        self.q1 = Question.objects.create(quiz=self.topic, text="1+1?", points=10)
+        self.q2 = Question.objects.create(quiz=self.topic, text="2+2?", points=10)
+        self.correct1 = AnswerOption.objects.create(
+            question=self.q1, text="2", is_correct=True
+        )
+        AnswerOption.objects.create(question=self.q1, text="3", is_correct=False)
+        AnswerOption.objects.create(question=self.q2, text="3", is_correct=False)
+        self.correct2 = AnswerOption.objects.create(
+            question=self.q2, text="4", is_correct=True
+        )
+
+    def test_classic_wrong_answer_feeds_review(self):
+        wrong = self.q2.options.filter(is_correct=False).first()
+        submit_quiz_attempt(
+            self.user,
+            self.topic,
+            {self.q1.id: self.correct1.id, self.q2.id: wrong.id},
+        )
+
+        review_items = get_mistake_review_items(self.user)
+        self.assertEqual(review_items[0]["question"], self.q2)
+        self.assertEqual(review_items[0]["topic"], self.topic)
+
+    def test_topic_learning_state_counts_training_progress(self):
+        submit_quiz_attempt(
+            self.user,
+            self.topic,
+            {self.q1.id: self.correct1.id, self.q2.id: self.correct2.id},
+        )
+
+        state = get_topic_learning_state(self.user, self.topic)
+        self.assertEqual(state["question_count"], 2)
+        self.assertEqual(state["training_correct"], 2)
+        self.assertEqual(state["training_percent"], 100)
+        self.assertEqual(state["next_action"]["kind"], "quiz")
+
+    def test_next_step_prefers_in_progress_session(self):
+        chapter = Chapter.objects.create(
+            class_level=5,
+            slug="learning",
+            title="Learning",
+            order=1,
+        )
+        self.topic.chapter = chapter
+        self.topic.save(update_fields=["chapter"])
+        GeneratedQuizSession.objects.create(user=self.user, topic=self.topic)
+
+        step = get_next_learning_step(self.user)
+        self.assertEqual(step["kind"], "resume")
+        self.assertEqual(step["title"], self.topic.title)
 
 
 class XpTests(TestCase):

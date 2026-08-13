@@ -1,0 +1,1214 @@
+{
+  "title": "Împărțirea numerelor naturale cu rest 0",
+  "description": "Clasa a 5-a · Operații cu numere naturale",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "text": "Calculați câtul 624 : 4.",
+      "format": "grid",
+      "points": 10,
+      "explanation": "624 : 4 = 156, deoarece 156 · 4 = 624.",
+      "options": [
+        {
+          "text": "146",
+          "is_correct": false
+        },
+        {
+          "text": "156",
+          "is_correct": true
+        },
+        {
+          "text": "154",
+          "is_correct": false
+        },
+        {
+          "text": "166",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați câtul 1 560 : 65.",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1 560 : 65 = 24, deoarece 24 · 65 = 1 560.",
+      "options": [
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": true
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        },
+        {
+          "text": "240",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați câtul 1 960 : 70.",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1 960 : 70 = 28, deoarece 28 · 70 = 1 960.",
+      "options": [
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "28",
+          "is_correct": true
+        },
+        {
+          "text": "27",
+          "is_correct": false
+        },
+        {
+          "text": "280",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați câtul 6 496 : 112.",
+      "format": "grid",
+      "points": 10,
+      "explanation": "6 496 : 112 = 58, deoarece 58 · 112 = 6 496.",
+      "options": [
+        {
+          "text": "48",
+          "is_correct": false
+        },
+        {
+          "text": "58",
+          "is_correct": true
+        },
+        {
+          "text": "56",
+          "is_correct": false
+        },
+        {
+          "text": "68",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați câtul 157 541 : 257.",
+      "format": "grid",
+      "points": 10,
+      "explanation": "157 541 : 257 = 613, deoarece 613 · 257 = 157 541.",
+      "options": [
+        {
+          "text": "603",
+          "is_correct": false
+        },
+        {
+          "text": "613",
+          "is_correct": true
+        },
+        {
+          "text": "6 110",
+          "is_correct": false
+        },
+        {
+          "text": "621",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este proba corectă pentru 2 268 : 63 = 36?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La împărțirea exactă, câtul înmulțit cu împărțitorul dă deîmpărțitul.",
+      "options": [
+        {
+          "text": "36 + 63 = 2 268",
+          "is_correct": false
+        },
+        {
+          "text": "36 · 63 = 2 268",
+          "is_correct": true
+        },
+        {
+          "text": "2 268 · 63 = 36",
+          "is_correct": false
+        },
+        {
+          "text": "2 268 − 36 = 63",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Știind că 47 160 : 72 = 655, ce calcul verifică rezultatul?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Calculăm 655 · 72 și trebuie să obținem 47 160.",
+      "options": [
+        {
+          "text": "655 + 72",
+          "is_correct": false
+        },
+        {
+          "text": "655 · 72",
+          "is_correct": true
+        },
+        {
+          "text": "47 160 · 72",
+          "is_correct": false
+        },
+        {
+          "text": "47 160 − 655",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care egalitate este echivalentă cu a : 19 = 34?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Deîmpărțitul este produsul dintre împărțitor și cât.",
+      "options": [
+        {
+          "text": "a = 34 : 19",
+          "is_correct": false
+        },
+        {
+          "text": "a = 19 · 34",
+          "is_correct": true
+        },
+        {
+          "text": "a = 34 − 19",
+          "is_correct": false
+        },
+        {
+          "text": "a = 19 + 34",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă x : 35 = 28, cât este x?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x = 35 · 28 = 980.",
+      "options": [
+        {
+          "text": "63",
+          "is_correct": false
+        },
+        {
+          "text": "980",
+          "is_correct": true
+        },
+        {
+          "text": "805",
+          "is_correct": false
+        },
+        {
+          "text": "1 225",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă 4 860 : x = 45, cât este x?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x = 4 860 : 45 = 108.",
+      "options": [
+        {
+          "text": "45",
+          "is_correct": false
+        },
+        {
+          "text": "108",
+          "is_correct": true
+        },
+        {
+          "text": "98",
+          "is_correct": false
+        },
+        {
+          "text": "135",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Numărul 742 împărțit la un număr dă câtul 53. Care este împărțitorul?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Împărțitorul este 742 : 53 = 14.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": true
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "53",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câtul numerelor 13 500 și 125 este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "13 500 : 125 = 108.",
+      "options": [
+        {
+          "text": "98",
+          "is_correct": false
+        },
+        {
+          "text": "108",
+          "is_correct": true
+        },
+        {
+          "text": "105",
+          "is_correct": false
+        },
+        {
+          "text": "118",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "La o împărțire exactă, deîmpărțitul este egal cu împărțitorul înmulțit cu câtul.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Relația este D = Î · C.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă 960 : 12 = 80, atunci 960 : (12 · 5) = 80 · 5.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Mărirea împărțitorului de 5 ori micșorează câtul de 5 ori: rezultatul este 16.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Egalitatea 646 : 19 + 361 : 19 = (646 + 361) : 19 este corectă.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Ambele membre sunt 53; împărțirea este distributivă față de adunare când termenii se împart exact.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Împărțirea numerelor naturale este comutativă.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "De exemplu, 12 : 3 = 4, dar 3 : 12 nu are cât natural exact.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "4 860 kg de cartofi sunt puse egal în 108 lăzi. Câte kilograme sunt în fiecare ladă?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "4 860 : 108 = 45 kg.",
+      "options": [
+        {
+          "text": "35",
+          "is_correct": false
+        },
+        {
+          "text": "45",
+          "is_correct": true
+        },
+        {
+          "text": "54",
+          "is_correct": false
+        },
+        {
+          "text": "108",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un club cumpără echipament identic pentru 78 de elevi și plătește 6 396 lei. Cât costă un echipament?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "6 396 : 78 = 82 lei.",
+      "options": [
+        {
+          "text": "72",
+          "is_correct": false
+        },
+        {
+          "text": "82",
+          "is_correct": true
+        },
+        {
+          "text": "78",
+          "is_correct": false
+        },
+        {
+          "text": "92",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "La o cantină, 18 kg de salam costă 414 lei. Cât costă un kilogram?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "414 : 18 = 23 lei.",
+      "options": [
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "23",
+          "is_correct": true
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "40 de cutii conțin împreună 1 120 de pachete. Câte pachete sunt într-o cutie?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1 120 : 40 = 28.",
+      "options": [
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "28",
+          "is_correct": true
+        },
+        {
+          "text": "30",
+          "is_correct": false
+        },
+        {
+          "text": "40",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un depozit are 75 de cutii, fiecare cu 5 flacoane. Acestea se împart egal la 25 de farmacii. Câte flacoane primește o farmacie?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sunt 75 · 5 = 375 flacoane, iar 375 : 25 = 15.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": true
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        },
+        {
+          "text": "75",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "O carte are 336 de pagini. Mara citește același număr de pagini în fiecare zi și termină în 14 zile. Câte pagini citește zilnic?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "336 : 14 = 24 pagini.",
+      "options": [
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": true
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        },
+        {
+          "text": "28",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "O fabrică ambalează 2 940 de biscuiți în pachete de câte 35. Câte pachete obține?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2 940 : 35 = 84.",
+      "options": [
+        {
+          "text": "74",
+          "is_correct": false
+        },
+        {
+          "text": "84",
+          "is_correct": true
+        },
+        {
+          "text": "80",
+          "is_correct": false
+        },
+        {
+          "text": "94",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un traseu de 1 872 km este parcurs în 24 de etape egale. Câți kilometri are o etapă?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1 872 : 24 = 78 km.",
+      "options": [
+        {
+          "text": "68",
+          "is_correct": false
+        },
+        {
+          "text": "78",
+          "is_correct": true
+        },
+        {
+          "text": "72",
+          "is_correct": false
+        },
+        {
+          "text": "88",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Efectuați în coloană împărțirea 624 : 4.",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul este 156, iar ultimul rest este 0.",
+      "interactive": {
+        "dividend": 624,
+        "divisor": 4,
+        "quotient": 156,
+        "remainders": [
+          2,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Efectuați în coloană împărțirea 735 : 35.",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul este 21, iar ultimul rest este 0.",
+      "interactive": {
+        "dividend": 735,
+        "divisor": 35,
+        "quotient": 21,
+        "remainders": [
+          7,
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Efectuați în coloană împărțirea 1 560 : 65.",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul este 24, iar ultimul rest este 0.",
+      "interactive": {
+        "dividend": 1560,
+        "divisor": 65,
+        "quotient": 24,
+        "remainders": [
+          1,
+          15,
+          26,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Efectuați în coloană împărțirea 6 496 : 112.",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul este 58, iar ultimul rest este 0.",
+      "interactive": {
+        "dividend": 6496,
+        "divisor": 112,
+        "quotient": 58,
+        "remainders": [
+          6,
+          64,
+          89,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Completați cifrele lipsă din împărțirea exactă, seria 1.",
+      "type": "missing_digits",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Împărțirea completă este 624 : 4 = 156.",
+      "interactive": {
+        "operation": "divide",
+        "dividend": "624",
+        "divisor": "004",
+        "quotient": "156",
+        "missing": [
+          "dividend:1",
+          "quotient:1"
+        ]
+      }
+    },
+    {
+      "text": "Completați cifrele lipsă din împărțirea exactă, seria 2.",
+      "type": "missing_digits",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Împărțirea completă este 735 : 35 = 21.",
+      "interactive": {
+        "operation": "divide",
+        "dividend": "735",
+        "divisor": "035",
+        "quotient": "021",
+        "missing": [
+          "divisor:1",
+          "quotient:2"
+        ]
+      }
+    },
+    {
+      "text": "Completați cifrele lipsă din împărțirea exactă, seria 3.",
+      "type": "missing_digits",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Împărțirea completă este 1 560 : 65 = 24.",
+      "interactive": {
+        "operation": "divide",
+        "dividend": "1560",
+        "divisor": "0065",
+        "quotient": "0024",
+        "missing": [
+          "dividend:2",
+          "divisor:2",
+          "quotient:3"
+        ]
+      }
+    },
+    {
+      "text": "Completați cifrele lipsă din împărțirea exactă, seria 4.",
+      "type": "missing_digits",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Împărțirea completă este 42 000 : 100 = 420.",
+      "interactive": {
+        "operation": "divide",
+        "dividend": "42000",
+        "divisor": "00100",
+        "quotient": "00420",
+        "missing": [
+          "dividend:1",
+          "quotient:3"
+        ]
+      }
+    },
+    {
+      "text": "Un elev a scris 624 : 4 = 166. Apăsați coloana greșită.",
+      "type": "error_spotting",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul corect este 156.",
+      "interactive": {
+        "operation": "divide",
+        "dividend": "624",
+        "divisor": "004",
+        "shown_result": "166",
+        "correct_result": "156",
+        "error_column": 1
+      }
+    },
+    {
+      "text": "Un elev a scris 1 560 : 65 = 34. Apăsați coloana greșită.",
+      "type": "error_spotting",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul corect este 24.",
+      "interactive": {
+        "operation": "divide",
+        "dividend": "1560",
+        "divisor": "0065",
+        "shown_result": "0034",
+        "correct_result": "0024",
+        "error_column": 2
+      }
+    },
+    {
+      "text": "Un elev a scris 644 : 28 = 33. Apăsați coloana greșită.",
+      "type": "error_spotting",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul corect este 23.",
+      "interactive": {
+        "operation": "divide",
+        "dividend": "644",
+        "divisor": "028",
+        "shown_result": "033",
+        "correct_result": "023",
+        "error_column": 1
+      }
+    },
+    {
+      "text": "Un elev a scris 2 268 : 63 = 26. Apăsați coloana greșită.",
+      "type": "error_spotting",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul corect este 36.",
+      "interactive": {
+        "operation": "divide",
+        "dividend": "2268",
+        "divisor": "0063",
+        "shown_result": "0026",
+        "correct_result": "0036",
+        "error_column": 2
+      }
+    },
+    {
+      "text": "Completați valoarea lipsă din relația împărțirii, seria 1.",
+      "type": "division_relation",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Deîmpărțitul = împărțitor × cât.",
+      "interactive": {
+        "dividend": 2268,
+        "divisor": 63,
+        "quotient": 36,
+        "missing": "quotient"
+      }
+    },
+    {
+      "text": "Completați valoarea lipsă din relația împărțirii, seria 2.",
+      "type": "division_relation",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Deîmpărțitul = împărțitor × cât.",
+      "interactive": {
+        "dividend": 4860,
+        "divisor": 108,
+        "quotient": 45,
+        "missing": "divisor"
+      }
+    },
+    {
+      "text": "Completați valoarea lipsă din relația împărțirii, seria 3.",
+      "type": "division_relation",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Deîmpărțitul = împărțitor × cât.",
+      "interactive": {
+        "dividend": 742,
+        "divisor": 14,
+        "quotient": 53,
+        "missing": "dividend"
+      }
+    },
+    {
+      "text": "Completați valoarea lipsă din relația împărțirii, seria 4.",
+      "type": "division_relation",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Deîmpărțitul = împărțitor × cât.",
+      "interactive": {
+        "dividend": 13500,
+        "divisor": 125,
+        "quotient": 108,
+        "missing": "quotient"
+      }
+    },
+    {
+      "text": "Mașina împarte la 4. Completați căsuțele.",
+      "type": "input_output",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pentru ieșire împărțim; pentru intrarea lipsă înmulțim ieșirea cu regula.",
+      "interactive": {
+        "operation": "divide",
+        "value": 4,
+        "rows": [
+          {
+            "input": 624,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 200
+          },
+          {
+            "input": 1440,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina împarte la 7. Completați căsuțele.",
+      "type": "input_output",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pentru ieșire împărțim; pentru intrarea lipsă înmulțim ieșirea cu regula.",
+      "interactive": {
+        "operation": "divide",
+        "value": 7,
+        "rows": [
+          {
+            "input": 735,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 112
+          },
+          {
+            "input": 2450,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina împarte la 12. Completați căsuțele.",
+      "type": "input_output",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pentru ieșire împărțim; pentru intrarea lipsă înmulțim ieșirea cu regula.",
+      "interactive": {
+        "operation": "divide",
+        "value": 12,
+        "rows": [
+          {
+            "input": 960,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 125
+          },
+          {
+            "input": 2016,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina împarte la 25. Completați căsuțele.",
+      "type": "input_output",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pentru ieșire împărțim; pentru intrarea lipsă înmulțim ieșirea cu regula.",
+      "interactive": {
+        "operation": "divide",
+        "value": 25,
+        "rows": [
+          {
+            "input": 2500,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 84
+          },
+          {
+            "input": 4500,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completați toate rezultatele din lanțul de operații, seria 1.",
+      "type": "operation_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Efectuăm operațiile succesiv, de la stânga la dreapta.",
+      "interactive": {
+        "start": 1800,
+        "steps": [
+          {
+            "operation": "divide",
+            "value": 12,
+            "result": 150
+          },
+          {
+            "operation": "multiply",
+            "value": 5,
+            "result": 750
+          },
+          {
+            "operation": "subtract",
+            "value": 50,
+            "result": 700
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completați toate rezultatele din lanțul de operații, seria 2.",
+      "type": "operation_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Efectuăm operațiile succesiv, de la stânga la dreapta.",
+      "interactive": {
+        "start": 2400,
+        "steps": [
+          {
+            "operation": "divide",
+            "value": 8,
+            "result": 300
+          },
+          {
+            "operation": "add",
+            "value": 75,
+            "result": 375
+          },
+          {
+            "operation": "divide",
+            "value": 5,
+            "result": 75
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completați toate rezultatele din lanțul de operații, seria 3.",
+      "type": "operation_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Efectuăm operațiile succesiv, de la stânga la dreapta.",
+      "interactive": {
+        "start": 6300,
+        "steps": [
+          {
+            "operation": "divide",
+            "value": 7,
+            "result": 900
+          },
+          {
+            "operation": "divide",
+            "value": 9,
+            "result": 100
+          },
+          {
+            "operation": "multiply",
+            "value": 4,
+            "result": 400
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completați toate rezultatele din lanțul de operații, seria 4.",
+      "type": "operation_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Efectuăm operațiile succesiv, de la stânga la dreapta.",
+      "interactive": {
+        "start": 4800,
+        "steps": [
+          {
+            "operation": "divide",
+            "value": 16,
+            "result": 300
+          },
+          {
+            "operation": "add",
+            "value": 60,
+            "result": 360
+          },
+          {
+            "operation": "divide",
+            "value": 6,
+            "result": 60
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completați celulele lipsă din tabelul 1.",
+      "type": "division_table",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pe fiecare rând folosim relația D = Î · C.",
+      "interactive": {
+        "rows": [
+          {
+            "dividend": 624,
+            "divisor": 4,
+            "quotient": 156,
+            "missing": "quotient"
+          },
+          {
+            "dividend": 735,
+            "divisor": 35,
+            "quotient": 21,
+            "missing": "divisor"
+          },
+          {
+            "dividend": 1560,
+            "divisor": 65,
+            "quotient": 24,
+            "missing": "dividend"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completați celulele lipsă din tabelul 2.",
+      "type": "division_table",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pe fiecare rând folosim relația D = Î · C.",
+      "interactive": {
+        "rows": [
+          {
+            "dividend": 2268,
+            "divisor": 63,
+            "quotient": 36,
+            "missing": "quotient"
+          },
+          {
+            "dividend": 4860,
+            "divisor": 108,
+            "quotient": 45,
+            "missing": "divisor"
+          },
+          {
+            "dividend": 742,
+            "divisor": 14,
+            "quotient": 53,
+            "missing": "dividend"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completați celulele lipsă din tabelul 3.",
+      "type": "division_table",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pe fiecare rând folosim relația D = Î · C.",
+      "interactive": {
+        "rows": [
+          {
+            "dividend": 6496,
+            "divisor": 112,
+            "quotient": 58,
+            "missing": "quotient"
+          },
+          {
+            "dividend": 2940,
+            "divisor": 35,
+            "quotient": 84,
+            "missing": "divisor"
+          },
+          {
+            "dividend": 1872,
+            "divisor": 24,
+            "quotient": 78,
+            "missing": "dividend"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completați celulele lipsă din tabelul 4.",
+      "type": "division_table",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pe fiecare rând folosim relația D = Î · C.",
+      "interactive": {
+        "rows": [
+          {
+            "dividend": 42000,
+            "divisor": 100,
+            "quotient": 420,
+            "missing": "quotient"
+          },
+          {
+            "dividend": 13500,
+            "divisor": 125,
+            "quotient": 108,
+            "missing": "divisor"
+          },
+          {
+            "dividend": 1120,
+            "divisor": 40,
+            "quotient": 28,
+            "missing": "dividend"
+          }
+        ]
+      }
+    },
+    {
+      "text": "4 860 kg de cartofi se distribuie egal în 108 lăzi. Câte kilograme intră într-o ladă?",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "4 860 : 108 = 45.",
+      "interactive": {
+        "answer": 45,
+        "suffix": "kg"
+      }
+    },
+    {
+      "text": "6 396 de lei reprezintă costul a 78 de echipamente identice. Cât costă unul?",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "6 396 : 78 = 82.",
+      "interactive": {
+        "answer": 82,
+        "suffix": "lei"
+      }
+    },
+    {
+      "text": "2 940 de biscuiți se pun câte 35 într-un pachet. Câte pachete se obțin?",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "2 940 : 35 = 84.",
+      "interactive": {
+        "answer": 84,
+        "suffix": "pachete"
+      }
+    },
+    {
+      "text": "1 872 km se împart în 24 de etape egale. Câți kilometri are o etapă?",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "1 872 : 24 = 78.",
+      "interactive": {
+        "answer": 78,
+        "suffix": "km"
+      }
+    },
+    {
+      "text": "Pentru 225 bucăți din produsul «felicitare de naștere» s-au plătit 900 lei. Cât costă o bucată?",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "900 : 225 = 4 lei.",
+      "interactive": {
+        "answer": 4,
+        "suffix": "lei"
+      }
+    },
+    {
+      "text": "Pentru 120 bucăți din produsul «felicitare pentru prieten» s-au plătit 360 lei. Cât costă o bucată?",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "360 : 120 = 3 lei.",
+      "interactive": {
+        "answer": 3,
+        "suffix": "lei"
+      }
+    },
+    {
+      "text": "Pentru 96 bucăți din produsul «card de mulțumire» s-au plătit 384 lei. Cât costă o bucată?",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "384 : 96 = 4 lei.",
+      "interactive": {
+        "answer": 4,
+        "suffix": "lei"
+      }
+    },
+    {
+      "text": "Pentru 76 bucăți din produsul «card aniversar» s-au plătit 228 lei. Cât costă o bucată?",
+      "type": "numeric_input",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "228 : 76 = 3 lei.",
+      "interactive": {
+        "answer": 3,
+        "suffix": "lei"
+      }
+    }
+  ]
+}

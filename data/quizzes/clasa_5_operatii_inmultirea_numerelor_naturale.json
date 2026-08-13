@@ -2,5 +2,1328 @@
   "title": "Înmulțirea numerelor naturale, proprietăți",
   "description": "Clasa a 5-a · Operații cu numere naturale",
   "difficulty": "easy",
-  "questions": []
+  "questions": [
+    {
+      "text": "Calculați produsul 12 · 35.",
+      "points": 10,
+      "explanation": "12 · 35 = 420.",
+      "options": [
+        {
+          "text": "410",
+          "is_correct": false
+        },
+        {
+          "text": "420",
+          "is_correct": true
+        },
+        {
+          "text": "430",
+          "is_correct": false
+        },
+        {
+          "text": "520",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați produsul 35 · 25.",
+      "points": 10,
+      "explanation": "35 · 25 = 875.",
+      "options": [
+        {
+          "text": "775",
+          "is_correct": false
+        },
+        {
+          "text": "875",
+          "is_correct": true
+        },
+        {
+          "text": "825",
+          "is_correct": false
+        },
+        {
+          "text": "975",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați produsul 128 · 45.",
+      "points": 10,
+      "explanation": "128 · 45 = 5 760.",
+      "options": [
+        {
+          "text": "5 660",
+          "is_correct": false
+        },
+        {
+          "text": "5 760",
+          "is_correct": true
+        },
+        {
+          "text": "5 750",
+          "is_correct": false
+        },
+        {
+          "text": "6 760",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați produsul 324 · 15.",
+      "points": 10,
+      "explanation": "324 · 15 = 4 860.",
+      "options": [
+        {
+          "text": "4 760",
+          "is_correct": false
+        },
+        {
+          "text": "4 860",
+          "is_correct": true
+        },
+        {
+          "text": "4 850",
+          "is_correct": false
+        },
+        {
+          "text": "5 860",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați produsul 128 · 204.",
+      "points": 10,
+      "explanation": "128 · 204 = 26 112.",
+      "options": [
+        {
+          "text": "25 112",
+          "is_correct": false
+        },
+        {
+          "text": "26 112",
+          "is_correct": true
+        },
+        {
+          "text": "26 012",
+          "is_correct": false
+        },
+        {
+          "text": "27 112",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați produsul 305 · 207.",
+      "points": 10,
+      "explanation": "305 · 207 = 63 135.",
+      "options": [
+        {
+          "text": "62 035",
+          "is_correct": false
+        },
+        {
+          "text": "63 135",
+          "is_correct": true
+        },
+        {
+          "text": "63 125",
+          "is_correct": false
+        },
+        {
+          "text": "64 135",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați rapid 2 · 37 · 5.",
+      "points": 10,
+      "explanation": "Grupăm 2 · 5 = 10, apoi 10 · 37 = 370.",
+      "options": [
+        {
+          "text": "185",
+          "is_correct": false
+        },
+        {
+          "text": "370",
+          "is_correct": true
+        },
+        {
+          "text": "360",
+          "is_correct": false
+        },
+        {
+          "text": "740",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați rapid 25 · 17 · 4.",
+      "points": 10,
+      "explanation": "25 · 4 = 100, iar 100 · 17 = 1 700.",
+      "options": [
+        {
+          "text": "1 600",
+          "is_correct": false
+        },
+        {
+          "text": "1 700",
+          "is_correct": true
+        },
+        {
+          "text": "1 725",
+          "is_correct": false
+        },
+        {
+          "text": "2 700",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați rapid 250 · 2 · 4 · 5.",
+      "points": 10,
+      "explanation": "250 · 4 = 1 000 și 2 · 5 = 10; produsul este 10 000.",
+      "options": [
+        {
+          "text": "5 000",
+          "is_correct": false
+        },
+        {
+          "text": "10 000",
+          "is_correct": true
+        },
+        {
+          "text": "8 000",
+          "is_correct": false
+        },
+        {
+          "text": "20 000",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce regrupare calculează cel mai rapid 16 · 25 · 14?",
+      "points": 10,
+      "explanation": "16 · 25 = 400, apoi 400 · 14 = 5 600.",
+      "options": [
+        {
+          "text": "16 · (25 + 14)",
+          "is_correct": false
+        },
+        {
+          "text": "(16 · 25) · 14",
+          "is_correct": true
+        },
+        {
+          "text": "(16 + 25) · 14",
+          "is_correct": false
+        },
+        {
+          "text": "16 · (25 − 14)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care produs are aceeași valoare ca 18 · 7 · 5?",
+      "points": 10,
+      "explanation": "Comutativitatea permite schimbarea ordinii factorilor.",
+      "options": [
+        {
+          "text": "18 · (7 + 5)",
+          "is_correct": false
+        },
+        {
+          "text": "18 · 5 · 7",
+          "is_correct": true
+        },
+        {
+          "text": "18 · 7 + 5",
+          "is_correct": false
+        },
+        {
+          "text": "18 + 7 · 5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 35 · 99 folosind 99 = 100 − 1.",
+      "points": 10,
+      "explanation": "35 · 99 = 35 · 100 − 35 = 3 465.",
+      "options": [
+        {
+          "text": "3 365",
+          "is_correct": false
+        },
+        {
+          "text": "3 465",
+          "is_correct": true
+        },
+        {
+          "text": "3 500",
+          "is_correct": false
+        },
+        {
+          "text": "3 535",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 27 · 101.",
+      "points": 10,
+      "explanation": "27 · 101 = 27 · 100 + 27 = 2 727.",
+      "options": [
+        {
+          "text": "2 627",
+          "is_correct": false
+        },
+        {
+          "text": "2 727",
+          "is_correct": true
+        },
+        {
+          "text": "2 700",
+          "is_correct": false
+        },
+        {
+          "text": "2 827",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 15 · 102.",
+      "points": 10,
+      "explanation": "15 · 102 = 15 · 100 + 15 · 2 = 1 530.",
+      "options": [
+        {
+          "text": "1 500",
+          "is_correct": false
+        },
+        {
+          "text": "1 530",
+          "is_correct": true
+        },
+        {
+          "text": "1 520",
+          "is_correct": false
+        },
+        {
+          "text": "1 630",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care expresie este egală cu 48 · 23?",
+      "points": 10,
+      "explanation": "Aplicăm distributivitatea față de adunare: 48(20 + 3).",
+      "options": [
+        {
+          "text": "48 · 20 + 3",
+          "is_correct": false
+        },
+        {
+          "text": "48 · 20 + 48 · 3",
+          "is_correct": true
+        },
+        {
+          "text": "48 + 20 · 3",
+          "is_correct": false
+        },
+        {
+          "text": "48 · 20 · 3",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 64 · 125 folosind o grupare convenabilă.",
+      "points": 10,
+      "explanation": "64 · 125 = 8 · (8 · 125) = 8 · 1 000 = 8 000.",
+      "options": [
+        {
+          "text": "7 000",
+          "is_correct": false
+        },
+        {
+          "text": "8 000",
+          "is_correct": true
+        },
+        {
+          "text": "8 125",
+          "is_correct": false
+        },
+        {
+          "text": "16 000",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă 4 · (x + 11) = 60, cât este x?",
+      "points": 10,
+      "explanation": "x + 11 = 15, deci x = 4.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă 9 · (2y − 4) = 126, cât este y?",
+      "points": 10,
+      "explanation": "2y − 4 = 14, deci 2y = 18 și y = 9.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Produsul a două numere este 414. Dacă un factor este 18, care este celălalt?",
+      "points": 10,
+      "explanation": "414 : 18 = 23.",
+      "options": [
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "23",
+          "is_correct": true
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În numărul 2x34, produsul cifrelor este 24. Care este cifra x?",
+      "points": 10,
+      "explanation": "2 · x · 3 · 4 = 24x = 96, deci x = 4.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este ultima cifră a produsului 32 · 34 · 37?",
+      "points": 10,
+      "explanation": "Folosim ultimele cifre: 2 · 4 · 7 = 56, deci ultima cifră este 6.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un biciclist parcurge 19 km în prima zi, de 4 ori mai mult în a doua, de 3 ori mai mult decât în prima în a treia și de 5 ori mai mult decât în a treia în ultima zi. Câți kilometri parcurge în total?",
+      "points": 10,
+      "explanation": "Zilele sunt 19, 76, 57 și 285 km; totalul este 437 km.",
+      "options": [
+        {
+          "text": "418",
+          "is_correct": false
+        },
+        {
+          "text": "437",
+          "is_correct": true
+        },
+        {
+          "text": "456",
+          "is_correct": false
+        },
+        {
+          "text": "513",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Într-un penar sunt 9 pixuri, 5 creioane, 2 radiere și o ascuțitoare. Pixul costă 5 lei, creionul 3 lei, radiera 2 lei, iar ascuțitoarea 7 lei. Cât costă penarul plin?",
+      "points": 10,
+      "explanation": "9 · 5 + 5 · 3 + 2 · 2 + 7 = 71 lei.",
+      "options": [
+        {
+          "text": "61",
+          "is_correct": false
+        },
+        {
+          "text": "71",
+          "is_correct": true
+        },
+        {
+          "text": "69",
+          "is_correct": false
+        },
+        {
+          "text": "81",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un factor este cuprins între 9 și 17, iar celălalt între 11 și 22. Care este cel mai mare produs posibil?",
+      "points": 10,
+      "explanation": "Alegem factorii cei mai mari: 17 · 22 = 374.",
+      "options": [
+        {
+          "text": "187",
+          "is_correct": false
+        },
+        {
+          "text": "374",
+          "is_correct": true
+        },
+        {
+          "text": "352",
+          "is_correct": false
+        },
+        {
+          "text": "484",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este cel mai mare produs a două numere naturale cu suma 9?",
+      "points": 10,
+      "explanation": "Factorii cât mai apropiați dau produsul maxim: 4 · 5 = 20.",
+      "options": [
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "20",
+          "is_correct": true
+        },
+        {
+          "text": "21",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Suma a două numere este 431 și 2a + 5b = 1 696. Care este b?",
+      "points": 10,
+      "explanation": "Din a = 431 − b rezultă 862 + 3b = 1 696, deci b = 278.",
+      "options": [
+        {
+          "text": "153",
+          "is_correct": false
+        },
+        {
+          "text": "278",
+          "is_correct": true
+        },
+        {
+          "text": "263",
+          "is_correct": false
+        },
+        {
+          "text": "293",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Din 7 cutii, fiecare cu 12 borcane, iar fiecare borcan cu 9 bile, câte bile sunt în total?",
+      "points": 10,
+      "explanation": "7 · 12 · 9 = 756.",
+      "options": [
+        {
+          "text": "108",
+          "is_correct": false
+        },
+        {
+          "text": "756",
+          "is_correct": true
+        },
+        {
+          "text": "588",
+          "is_correct": false
+        },
+        {
+          "text": "864",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un dreptunghi are lungimea 24 m și lățimea de 3 ori mai mică. Care este aria lui?",
+      "points": 10,
+      "explanation": "Lățimea este 24 : 3 = 8 m, iar aria este 24 · 8 = 192 m².",
+      "options": [
+        {
+          "text": "64",
+          "is_correct": false
+        },
+        {
+          "text": "192",
+          "is_correct": true
+        },
+        {
+          "text": "72",
+          "is_correct": false
+        },
+        {
+          "text": "576",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "O sală are 18 rânduri a câte 24 de locuri. La un spectacol rămân libere 37 de locuri. Câți spectatori sunt?",
+      "points": 10,
+      "explanation": "Sala are 18 · 24 = 432 de locuri; 432 − 37 = 395 spectatori.",
+      "options": [
+        {
+          "text": "358",
+          "is_correct": false
+        },
+        {
+          "text": "395",
+          "is_correct": true
+        },
+        {
+          "text": "405",
+          "is_correct": false
+        },
+        {
+          "text": "432",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care afirmație este adevărată pentru orice număr natural a?",
+      "points": 10,
+      "explanation": "Numărul 1 este elementul neutru al înmulțirii.",
+      "options": [
+        {
+          "text": "a · 0 = a",
+          "is_correct": false
+        },
+        {
+          "text": "a · 1 = a",
+          "is_correct": true
+        },
+        {
+          "text": "a · a = a",
+          "is_correct": false
+        },
+        {
+          "text": "a · 2 = a",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă un factor este 0, produsul este:",
+      "points": 10,
+      "explanation": "Orice număr înmulțit cu 0 dă 0.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "egal cu celălalt factor",
+          "is_correct": false
+        },
+        {
+          "text": "imposibil de stabilit",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă a este par și b este impar, ce paritate are a · b?",
+      "points": 10,
+      "explanation": "Un factor par face produsul par.",
+      "options": [
+        {
+          "text": "impar",
+          "is_correct": false
+        },
+        {
+          "text": "par",
+          "is_correct": true
+        },
+        {
+          "text": "mereu 1",
+          "is_correct": false
+        },
+        {
+          "text": "imposibil de stabilit",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă produsul a · b este impar, atunci:",
+      "points": 10,
+      "explanation": "Un produs este impar numai dacă ambii factori sunt impari.",
+      "options": [
+        {
+          "text": "a și b sunt amândoi pari",
+          "is_correct": false
+        },
+        {
+          "text": "a și b sunt amândoi impari",
+          "is_correct": true
+        },
+        {
+          "text": "exact unul este par",
+          "is_correct": false
+        },
+        {
+          "text": "cel puțin unul este 0",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ultima cifră a produsului a două numere naturale consecutive poate fi:",
+      "points": 10,
+      "explanation": "Produsele n(n+1) au ultima cifră posibilă 0, 2 sau 6.",
+      "options": [
+        {
+          "text": "doar 4",
+          "is_correct": false
+        },
+        {
+          "text": "0, 2 sau 6",
+          "is_correct": true
+        },
+        {
+          "text": "1, 3 sau 5",
+          "is_correct": false
+        },
+        {
+          "text": "doar 8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Există un număr natural n pentru care n(n + 1) = 2 017?",
+      "points": 10,
+      "explanation": "44 · 45 = 1 980, iar 45 · 46 = 2 070; 2 017 este între ele.",
+      "options": [
+        {
+          "text": "Da, n = 44",
+          "is_correct": false
+        },
+        {
+          "text": "Nu",
+          "is_correct": true
+        },
+        {
+          "text": "Da, n = 45",
+          "is_correct": false
+        },
+        {
+          "text": "Da, n = 2017",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează în coloană produsul 128 · 4.",
+      "type": "column_multiplication",
+      "points": 10,
+      "explanation": "Produsul este 512. Transporturile se obțin succesiv de la dreapta la stânga.",
+      "interactive": {
+        "multiplicand": "128",
+        "multiplier": "4",
+        "correct_result": "512",
+        "carry_columns": [
+          true,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "text": "Calculează în coloană produsul 305 · 7.",
+      "type": "column_multiplication",
+      "points": 10,
+      "explanation": "Produsul este 2 135. Transporturile se obțin succesiv de la dreapta la stânga.",
+      "interactive": {
+        "multiplicand": "305",
+        "multiplier": "7",
+        "correct_result": "2135",
+        "carry_columns": [
+          true,
+          false,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "text": "Calculează în coloană produsul 246 · 3.",
+      "type": "column_multiplication",
+      "points": 10,
+      "explanation": "Produsul este 738. Transporturile se obțin succesiv de la dreapta la stânga.",
+      "interactive": {
+        "multiplicand": "246",
+        "multiplier": "3",
+        "correct_result": "738",
+        "carry_columns": [
+          true,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "text": "Calculează în coloană produsul 412 · 6.",
+      "type": "column_multiplication",
+      "points": 10,
+      "explanation": "Produsul este 2 472. Transporturile se obțin succesiv de la dreapta la stânga.",
+      "interactive": {
+        "multiplicand": "412",
+        "multiplier": "6",
+        "correct_result": "2472",
+        "carry_columns": [
+          true,
+          false,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "text": "Calculează în coloană produsul 125 · 8.",
+      "type": "column_multiplication",
+      "points": 10,
+      "explanation": "Produsul este 1 000. Transporturile se obțin succesiv de la dreapta la stânga.",
+      "interactive": {
+        "multiplicand": "125",
+        "multiplier": "8",
+        "correct_result": "1000",
+        "carry_columns": [
+          true,
+          true,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "text": "Calculează în coloană produsul 1 024 · 5.",
+      "type": "column_multiplication",
+      "points": 10,
+      "explanation": "Produsul este 5 120. Transporturile se obțin succesiv de la dreapta la stânga.",
+      "interactive": {
+        "multiplicand": "1024",
+        "multiplier": "5",
+        "correct_result": "5120",
+        "carry_columns": [
+          false,
+          true,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "text": "Completează cifrele lipsă din înmulțirea în coloană, seria 1.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Înmulțirea completă este 128 · 4 = 512.",
+      "interactive": {
+        "operation": "multiply",
+        "factor1": "128",
+        "factor2": "004",
+        "result": "512",
+        "missing": [
+          "factor1:1",
+          "result:1"
+        ]
+      }
+    },
+    {
+      "text": "Completează cifrele lipsă din înmulțirea în coloană, seria 2.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Înmulțirea completă este 305 · 7 = 2 135.",
+      "interactive": {
+        "operation": "multiply",
+        "factor1": "0305",
+        "factor2": "0007",
+        "result": "2135",
+        "missing": [
+          "factor1:2",
+          "result:2"
+        ]
+      }
+    },
+    {
+      "text": "Completează cifrele lipsă din înmulțirea în coloană, seria 3.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Înmulțirea completă este 246 · 3 = 738.",
+      "interactive": {
+        "operation": "multiply",
+        "factor1": "246",
+        "factor2": "003",
+        "result": "738",
+        "missing": [
+          "factor1:1",
+          "result:2"
+        ]
+      }
+    },
+    {
+      "text": "Completează cifrele lipsă din înmulțirea în coloană, seria 4.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Înmulțirea completă este 35 · 25 = 875.",
+      "interactive": {
+        "operation": "multiply",
+        "factor1": "035",
+        "factor2": "025",
+        "result": "875",
+        "missing": [
+          "factor1:1",
+          "factor2:1",
+          "result:2"
+        ]
+      }
+    },
+    {
+      "text": "Completează cifrele lipsă din înmulțirea în coloană, seria 5.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Înmulțirea completă este 48 · 23 = 1 104.",
+      "interactive": {
+        "operation": "multiply",
+        "factor1": "0048",
+        "factor2": "0023",
+        "result": "1104",
+        "missing": [
+          "factor1:2",
+          "factor2:2",
+          "result:1"
+        ]
+      }
+    },
+    {
+      "text": "Completează cifrele lipsă din înmulțirea în coloană, seria 6.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Înmulțirea completă este 125 · 8 = 1 000.",
+      "interactive": {
+        "operation": "multiply",
+        "factor1": "0125",
+        "factor2": "0008",
+        "result": "1000",
+        "missing": [
+          "factor1:2",
+          "result:1",
+          "result:3"
+        ]
+      }
+    },
+    {
+      "text": "Un elev a scris 128 · 4 = 502. Apasă coloana greșită.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Produsul corect este 512.",
+      "interactive": {
+        "operation": "multiply",
+        "factor1": "128",
+        "factor2": "004",
+        "shown_result": "502",
+        "correct_result": "512",
+        "error_column": 1
+      }
+    },
+    {
+      "text": "Un elev a scris 305 · 7 = 2 035. Apasă coloana greșită.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Produsul corect este 2 135.",
+      "interactive": {
+        "operation": "multiply",
+        "factor1": "0305",
+        "factor2": "0007",
+        "shown_result": "2035",
+        "correct_result": "2135",
+        "error_column": 1
+      }
+    },
+    {
+      "text": "Un elev a scris 246 · 3 = 728. Apasă coloana greșită.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Produsul corect este 738.",
+      "interactive": {
+        "operation": "multiply",
+        "factor1": "246",
+        "factor2": "003",
+        "shown_result": "728",
+        "correct_result": "738",
+        "error_column": 1
+      }
+    },
+    {
+      "text": "Un elev a scris 412 · 6 = 2 462. Apasă coloana greșită.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Produsul corect este 2 472.",
+      "interactive": {
+        "operation": "multiply",
+        "factor1": "0412",
+        "factor2": "0006",
+        "shown_result": "2462",
+        "correct_result": "2472",
+        "error_column": 2
+      }
+    },
+    {
+      "text": "Un elev a scris 125 · 8 = 1 100. Apasă coloana greșită.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Produsul corect este 1 000.",
+      "interactive": {
+        "operation": "multiply",
+        "factor1": "0125",
+        "factor2": "0008",
+        "shown_result": "1100",
+        "correct_result": "1000",
+        "error_column": 1
+      }
+    },
+    {
+      "text": "Un elev a scris 1 024 · 5 = 5 020. Apasă coloana greșită.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Produsul corect este 5 120.",
+      "interactive": {
+        "operation": "multiply",
+        "factor1": "1024",
+        "factor2": "0005",
+        "shown_result": "5020",
+        "correct_result": "5120",
+        "error_column": 1
+      }
+    },
+    {
+      "text": "Trage parantezele astfel încât rezultatul expresiei să fie 75.",
+      "type": "parentheses_drag",
+      "points": 10,
+      "explanation": "Cu parantezele în pozițiile corecte, rezultatul este 75.",
+      "interactive": {
+        "tokens": [
+          "13",
+          "+ 2",
+          "· 5"
+        ],
+        "correct_open_index": 0,
+        "correct_close_index": 2
+      }
+    },
+    {
+      "text": "Trage parantezele astfel încât rezultatul expresiei să fie 4.",
+      "type": "parentheses_drag",
+      "points": 10,
+      "explanation": "Cu parantezele în pozițiile corecte, rezultatul este 4.",
+      "interactive": {
+        "tokens": [
+          "19",
+          "− 5",
+          "· 3"
+        ],
+        "correct_open_index": 1,
+        "correct_close_index": 3
+      }
+    },
+    {
+      "text": "Trage parantezele astfel încât rezultatul expresiei să fie 120.",
+      "type": "parentheses_drag",
+      "points": 10,
+      "explanation": "Cu parantezele în pozițiile corecte, rezultatul este 120.",
+      "interactive": {
+        "tokens": [
+          "24",
+          "− 4",
+          "· 6"
+        ],
+        "correct_open_index": 0,
+        "correct_close_index": 2
+      }
+    },
+    {
+      "text": "Trage parantezele astfel încât rezultatul expresiei să fie 70.",
+      "type": "parentheses_drag",
+      "points": 10,
+      "explanation": "Cu parantezele în pozițiile corecte, rezultatul este 70.",
+      "interactive": {
+        "tokens": [
+          "7",
+          "· 8",
+          "+ 2"
+        ],
+        "correct_open_index": 1,
+        "correct_close_index": 3
+      }
+    },
+    {
+      "text": "Trage parantezele astfel încât rezultatul expresiei să fie 80.",
+      "type": "parentheses_drag",
+      "points": 10,
+      "explanation": "Cu parantezele în pozițiile corecte, rezultatul este 80.",
+      "interactive": {
+        "tokens": [
+          "18",
+          "+ 2",
+          "· 4"
+        ],
+        "correct_open_index": 0,
+        "correct_close_index": 2
+      }
+    },
+    {
+      "text": "Trage parantezele astfel încât rezultatul expresiei să fie 28.",
+      "type": "parentheses_drag",
+      "points": 10,
+      "explanation": "Cu parantezele în pozițiile corecte, rezultatul este 28.",
+      "interactive": {
+        "tokens": [
+          "100",
+          "− 9",
+          "· 8"
+        ],
+        "correct_open_index": 1,
+        "correct_close_index": 3
+      }
+    },
+    {
+      "text": "Mașina înmulțește cu 3. Completează toate căsuțele libere.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru ieșire înmulțim cu regula; pentru intrarea lipsă împărțim ieșirea la regulă.",
+      "interactive": {
+        "operation": "multiply",
+        "value": 3,
+        "rows": [
+          {
+            "input": 12,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 45
+          },
+          {
+            "input": 28,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina înmulțește cu 4. Completează toate căsuțele libere.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru ieșire înmulțim cu regula; pentru intrarea lipsă împărțim ieșirea la regulă.",
+      "interactive": {
+        "operation": "multiply",
+        "value": 4,
+        "rows": [
+          {
+            "input": 25,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 144
+          },
+          {
+            "input": 125,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina înmulțește cu 5. Completează toate căsuțele libere.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru ieșire înmulțim cu regula; pentru intrarea lipsă împărțim ieșirea la regulă.",
+      "interactive": {
+        "operation": "multiply",
+        "value": 5,
+        "rows": [
+          {
+            "input": 48,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 625
+          },
+          {
+            "input": 306,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina înmulțește cu 7. Completează toate căsuțele libere.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru ieșire înmulțim cu regula; pentru intrarea lipsă împărțim ieșirea la regulă.",
+      "interactive": {
+        "operation": "multiply",
+        "value": 7,
+        "rows": [
+          {
+            "input": 32,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 700
+          },
+          {
+            "input": 215,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina înmulțește cu 11. Completează toate căsuțele libere.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru ieșire înmulțim cu regula; pentru intrarea lipsă împărțim ieșirea la regulă.",
+      "interactive": {
+        "operation": "multiply",
+        "value": 11,
+        "rows": [
+          {
+            "input": 45,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 1353
+          },
+          {
+            "input": 708,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina înmulțește cu 25. Completează toate căsuțele libere.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru ieșire înmulțim cu regula; pentru intrarea lipsă împărțim ieșirea la regulă.",
+      "interactive": {
+        "operation": "multiply",
+        "value": 25,
+        "rows": [
+          {
+            "input": 16,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 2500
+          },
+          {
+            "input": 124,
+            "output": null
+          }
+        ]
+      }
+    }
+  ]
 }

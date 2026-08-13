@@ -1,0 +1,1912 @@
+{
+  "title": "Metoda falsei ipoteze",
+  "description": "Clasa a 5-a · Metode aritmetice de rezolvare a problemelor",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "În problema cu bidoane, dacă presupunem că toate sunt «bidoane de 3 l», ce total obținem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "10 · 3 = 30.",
+      "options": [
+        {
+          "text": "30",
+          "is_correct": true
+        },
+        {
+          "text": "72",
+          "is_correct": false
+        },
+        {
+          "text": "42",
+          "is_correct": false
+        },
+        {
+          "text": "100",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În problema cu găini și iepuri, dacă presupunem că toate sunt «găini», ce total obținem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "100 · 2 = 200.",
+      "options": [
+        {
+          "text": "200",
+          "is_correct": true
+        },
+        {
+          "text": "240",
+          "is_correct": false
+        },
+        {
+          "text": "40",
+          "is_correct": false
+        },
+        {
+          "text": "400",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În problema cu apartamente, dacă presupunem că toate sunt «apartamente cu 2 camere», ce total obținem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "18 · 2 = 36.",
+      "options": [
+        {
+          "text": "36",
+          "is_correct": true
+        },
+        {
+          "text": "42",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "54",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În problema cu probleme de concurs, dacă presupunem că toate sunt «probleme greșite», ce total obținem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "7 · -1 = -7.",
+      "options": [
+        {
+          "text": "-7",
+          "is_correct": true
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        },
+        {
+          "text": "28",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În problema cu bancnote, dacă presupunem că toate sunt «bancnote de 5 lei», ce total obținem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "9 · 5 = 45.",
+      "options": [
+        {
+          "text": "45",
+          "is_correct": true
+        },
+        {
+          "text": "65",
+          "is_correct": false
+        },
+        {
+          "text": "20",
+          "is_correct": false
+        },
+        {
+          "text": "90",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În problema cu albine, dacă presupunem că toate sunt «vizite la 20 de flori», ce total obținem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "60 · 20 = 1200.",
+      "options": [
+        {
+          "text": "1200",
+          "is_correct": true
+        },
+        {
+          "text": "1310",
+          "is_correct": false
+        },
+        {
+          "text": "110",
+          "is_correct": false
+        },
+        {
+          "text": "1500",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În problema cu acțiuni, dacă presupunem că toate sunt «acțiuni de 12 euro», ce total obținem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "18 · 12 = 216.",
+      "options": [
+        {
+          "text": "216",
+          "is_correct": true
+        },
+        {
+          "text": "346",
+          "is_correct": false
+        },
+        {
+          "text": "130",
+          "is_correct": false
+        },
+        {
+          "text": "450",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În problema cu păsări și vite, dacă presupunem că toate sunt «păsări», ce total obținem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "320 · 2 = 640.",
+      "options": [
+        {
+          "text": "640",
+          "is_correct": true
+        },
+        {
+          "text": "880",
+          "is_correct": false
+        },
+        {
+          "text": "240",
+          "is_correct": false
+        },
+        {
+          "text": "1280",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În problema cu vase, dacă presupunem că toate sunt «vase de 3 l», ce total obținem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "7 · 3 = 21.",
+      "options": [
+        {
+          "text": "21",
+          "is_correct": true
+        },
+        {
+          "text": "89",
+          "is_correct": false
+        },
+        {
+          "text": "68",
+          "is_correct": false
+        },
+        {
+          "text": "140",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În problema cu săgeți, dacă presupunem că toate sunt «săgeți în afara cercului», ce total obținem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "8 · -3 = -24.",
+      "options": [
+        {
+          "text": "-24",
+          "is_correct": true
+        },
+        {
+          "text": "54",
+          "is_correct": false
+        },
+        {
+          "text": "78",
+          "is_correct": false
+        },
+        {
+          "text": "80",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În problema cu probleme rezolvate, dacă presupunem că toate sunt «probleme greșite», ce total obținem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "6 · -2 = -12.",
+      "options": [
+        {
+          "text": "-12",
+          "is_correct": true
+        },
+        {
+          "text": "48",
+          "is_correct": false
+        },
+        {
+          "text": "60",
+          "is_correct": false
+        },
+        {
+          "text": "-11",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În problema cu coșuri cu fructe, dacă presupunem că toate sunt «coșuri mici», ce total obținem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "20 · 3 = 60.",
+      "options": [
+        {
+          "text": "60",
+          "is_correct": true
+        },
+        {
+          "text": "92",
+          "is_correct": false
+        },
+        {
+          "text": "32",
+          "is_correct": false
+        },
+        {
+          "text": "140",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În problema cu bilete, dacă presupunem că toate sunt «bilete de 8 lei», ce total obținem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "50 · 8 = 400.",
+      "options": [
+        {
+          "text": "400",
+          "is_correct": true
+        },
+        {
+          "text": "460",
+          "is_correct": false
+        },
+        {
+          "text": "60",
+          "is_correct": false
+        },
+        {
+          "text": "600",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În problema cu monede, dacă presupunem că toate sunt «monede de 2 lei», ce total obținem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "30 · 2 = 60.",
+      "options": [
+        {
+          "text": "60",
+          "is_correct": true
+        },
+        {
+          "text": "99",
+          "is_correct": false
+        },
+        {
+          "text": "39",
+          "is_correct": false
+        },
+        {
+          "text": "150",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În problema cu pachete de cărți, dacă presupunem că toate sunt «pachete mici», ce total obținem?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "24 · 10 = 240.",
+      "options": [
+        {
+          "text": "240",
+          "is_correct": true
+        },
+        {
+          "text": "285",
+          "is_correct": false
+        },
+        {
+          "text": "45",
+          "is_correct": false
+        },
+        {
+          "text": "360",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "choose hypothesis – bidoane",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Presupunem toate obiectele de tipul cu valoarea 3.",
+      "interactive": {
+        "mode": "choose_hypothesis",
+        "scenario": {
+          "label": "bidoane",
+          "count": 10,
+          "low": 3,
+          "high": 10,
+          "total": 72,
+          "low_name": "bidoane de 3 l",
+          "high_name": "bidoane de 10 l",
+          "unit": "litri",
+          "icons": [
+            "🫙",
+            "🛢️"
+          ],
+          "assumed_total": 30,
+          "mismatch": 42,
+          "unit_difference": 7,
+          "high_count": 6,
+          "low_count": 4
+        },
+        "answers": {
+          "hypothesis": "low"
+        },
+        "choices": [
+          "low",
+          "high"
+        ]
+      }
+    },
+    {
+      "text": "choose hypothesis – găini și iepuri",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Presupunem toate obiectele de tipul cu valoarea 2.",
+      "interactive": {
+        "mode": "choose_hypothesis",
+        "scenario": {
+          "label": "găini și iepuri",
+          "count": 100,
+          "low": 2,
+          "high": 4,
+          "total": 240,
+          "low_name": "găini",
+          "high_name": "iepuri",
+          "unit": "picioare",
+          "icons": [
+            "🐔",
+            "🐇"
+          ],
+          "assumed_total": 200,
+          "mismatch": 40,
+          "unit_difference": 2,
+          "high_count": 20,
+          "low_count": 80
+        },
+        "answers": {
+          "hypothesis": "low"
+        },
+        "choices": [
+          "low",
+          "high"
+        ]
+      }
+    },
+    {
+      "text": "choose hypothesis – apartamente",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Presupunem toate obiectele de tipul cu valoarea 2.",
+      "interactive": {
+        "mode": "choose_hypothesis",
+        "scenario": {
+          "label": "apartamente",
+          "count": 18,
+          "low": 2,
+          "high": 3,
+          "total": 42,
+          "low_name": "apartamente cu 2 camere",
+          "high_name": "apartamente cu 3 camere",
+          "unit": "camere",
+          "icons": [
+            "🏠",
+            "🏢"
+          ],
+          "assumed_total": 36,
+          "mismatch": 6,
+          "unit_difference": 1,
+          "high_count": 6,
+          "low_count": 12
+        },
+        "answers": {
+          "hypothesis": "low"
+        },
+        "choices": [
+          "low",
+          "high"
+        ]
+      }
+    },
+    {
+      "text": "all same simulator – probleme de concurs",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ipoteza produce totalul -7.",
+      "interactive": {
+        "mode": "all_same_simulator",
+        "scenario": {
+          "label": "probleme de concurs",
+          "count": 7,
+          "low": -1,
+          "high": 4,
+          "total": 18,
+          "low_name": "probleme greșite",
+          "high_name": "probleme corecte",
+          "unit": "puncte",
+          "icons": [
+            "✗",
+            "✓"
+          ],
+          "assumed_total": -7,
+          "mismatch": 25,
+          "unit_difference": 5,
+          "high_count": 5,
+          "low_count": 2
+        },
+        "answers": {
+          "assumed_total": -7
+        },
+        "maximum": 7
+      }
+    },
+    {
+      "text": "all same simulator – bancnote",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ipoteza produce totalul 45.",
+      "interactive": {
+        "mode": "all_same_simulator",
+        "scenario": {
+          "label": "bancnote",
+          "count": 9,
+          "low": 5,
+          "high": 10,
+          "total": 65,
+          "low_name": "bancnote de 5 lei",
+          "high_name": "bancnote de 10 lei",
+          "unit": "lei",
+          "icons": [
+            "💵",
+            "💶"
+          ],
+          "assumed_total": 45,
+          "mismatch": 20,
+          "unit_difference": 5,
+          "high_count": 4,
+          "low_count": 5
+        },
+        "answers": {
+          "assumed_total": 45
+        },
+        "maximum": 9
+      }
+    },
+    {
+      "text": "all same simulator – albine",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ipoteza produce totalul 1200.",
+      "interactive": {
+        "mode": "all_same_simulator",
+        "scenario": {
+          "label": "albine",
+          "count": 60,
+          "low": 20,
+          "high": 25,
+          "total": 1310,
+          "low_name": "vizite la 20 de flori",
+          "high_name": "vizite la 25 de flori",
+          "unit": "flori",
+          "icons": [
+            "🐝",
+            "🌼"
+          ],
+          "assumed_total": 1200,
+          "mismatch": 110,
+          "unit_difference": 5,
+          "high_count": 22,
+          "low_count": 38
+        },
+        "answers": {
+          "assumed_total": 1200
+        },
+        "maximum": 60
+      }
+    },
+    {
+      "text": "mismatch meter – acțiuni",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Nepotrivirea este 346 − 216 = 130.",
+      "interactive": {
+        "mode": "mismatch_meter",
+        "scenario": {
+          "label": "acțiuni",
+          "count": 18,
+          "low": 12,
+          "high": 25,
+          "total": 346,
+          "low_name": "acțiuni de 12 euro",
+          "high_name": "acțiuni de 25 euro",
+          "unit": "euro",
+          "icons": [
+            "📄",
+            "📈"
+          ],
+          "assumed_total": 216,
+          "mismatch": 130,
+          "unit_difference": 13,
+          "high_count": 10,
+          "low_count": 8
+        },
+        "answers": {
+          "mismatch": 130
+        }
+      }
+    },
+    {
+      "text": "mismatch meter – păsări și vite",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Nepotrivirea este 880 − 640 = 240.",
+      "interactive": {
+        "mode": "mismatch_meter",
+        "scenario": {
+          "label": "păsări și vite",
+          "count": 320,
+          "low": 2,
+          "high": 4,
+          "total": 880,
+          "low_name": "păsări",
+          "high_name": "vite",
+          "unit": "picioare",
+          "icons": [
+            "🐦",
+            "🐄"
+          ],
+          "assumed_total": 640,
+          "mismatch": 240,
+          "unit_difference": 2,
+          "high_count": 120,
+          "low_count": 200
+        },
+        "answers": {
+          "mismatch": 240
+        }
+      }
+    },
+    {
+      "text": "mismatch meter – vase",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Nepotrivirea este 89 − 21 = 68.",
+      "interactive": {
+        "mode": "mismatch_meter",
+        "scenario": {
+          "label": "vase",
+          "count": 7,
+          "low": 3,
+          "high": 20,
+          "total": 89,
+          "low_name": "vase de 3 l",
+          "high_name": "vase de 20 l",
+          "unit": "litri",
+          "icons": [
+            "🥛",
+            "🫙"
+          ],
+          "assumed_total": 21,
+          "mismatch": 68,
+          "unit_difference": 17,
+          "high_count": 4,
+          "low_count": 3
+        },
+        "answers": {
+          "mismatch": 68
+        }
+      }
+    },
+    {
+      "text": "replacement count – săgeți",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O înlocuire schimbă totalul cu 13; sunt necesare 6 înlocuiri.",
+      "interactive": {
+        "mode": "replacement_count",
+        "scenario": {
+          "label": "săgeți",
+          "count": 8,
+          "low": -3,
+          "high": 10,
+          "total": 54,
+          "low_name": "săgeți în afara cercului",
+          "high_name": "săgeți în interior",
+          "unit": "puncte",
+          "icons": [
+            "○",
+            "🎯"
+          ],
+          "assumed_total": -24,
+          "mismatch": 78,
+          "unit_difference": 13,
+          "high_count": 6,
+          "low_count": 2
+        },
+        "answers": {
+          "unit_difference": 13,
+          "replacements": 6
+        }
+      }
+    },
+    {
+      "text": "replacement count – probleme rezolvate",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O înlocuire schimbă totalul cu 12; sunt necesare 5 înlocuiri.",
+      "interactive": {
+        "mode": "replacement_count",
+        "scenario": {
+          "label": "probleme rezolvate",
+          "count": 6,
+          "low": -2,
+          "high": 10,
+          "total": 48,
+          "low_name": "probleme greșite",
+          "high_name": "probleme corecte",
+          "unit": "puncte",
+          "icons": [
+            "✗",
+            "✓"
+          ],
+          "assumed_total": -12,
+          "mismatch": 60,
+          "unit_difference": 12,
+          "high_count": 5,
+          "low_count": 1
+        },
+        "answers": {
+          "unit_difference": 12,
+          "replacements": 5
+        }
+      }
+    },
+    {
+      "text": "replacement count – coșuri cu fructe",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O înlocuire schimbă totalul cu 4; sunt necesare 8 înlocuiri.",
+      "interactive": {
+        "mode": "replacement_count",
+        "scenario": {
+          "label": "coșuri cu fructe",
+          "count": 20,
+          "low": 3,
+          "high": 7,
+          "total": 92,
+          "low_name": "coșuri mici",
+          "high_name": "coșuri mari",
+          "unit": "fructe",
+          "icons": [
+            "🧺",
+            "🍎"
+          ],
+          "assumed_total": 60,
+          "mismatch": 32,
+          "unit_difference": 4,
+          "high_count": 8,
+          "low_count": 12
+        },
+        "answers": {
+          "unit_difference": 4,
+          "replacements": 8
+        }
+      }
+    },
+    {
+      "text": "heads legs – bilete",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 15 «bilete de 12 lei» și 35 «bilete de 8 lei».",
+      "interactive": {
+        "mode": "heads_legs",
+        "scenario": {
+          "label": "bilete",
+          "count": 50,
+          "low": 8,
+          "high": 12,
+          "total": 460,
+          "low_name": "bilete de 8 lei",
+          "high_name": "bilete de 12 lei",
+          "unit": "lei",
+          "icons": [
+            "🎫",
+            "🎟️"
+          ],
+          "assumed_total": 400,
+          "mismatch": 60,
+          "unit_difference": 4,
+          "high_count": 15,
+          "low_count": 35
+        },
+        "answers": {
+          "high_count": 15,
+          "low_count": 35
+        },
+        "theme": "heads_legs"
+      }
+    },
+    {
+      "text": "heads legs – monede",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 13 «monede de 5 lei» și 17 «monede de 2 lei».",
+      "interactive": {
+        "mode": "heads_legs",
+        "scenario": {
+          "label": "monede",
+          "count": 30,
+          "low": 2,
+          "high": 5,
+          "total": 99,
+          "low_name": "monede de 2 lei",
+          "high_name": "monede de 5 lei",
+          "unit": "lei",
+          "icons": [
+            "🪙",
+            "💰"
+          ],
+          "assumed_total": 60,
+          "mismatch": 39,
+          "unit_difference": 3,
+          "high_count": 13,
+          "low_count": 17
+        },
+        "answers": {
+          "high_count": 13,
+          "low_count": 17
+        },
+        "theme": "heads_legs"
+      }
+    },
+    {
+      "text": "heads legs – pachete de cărți",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 9 «pachete mari» și 15 «pachete mici».",
+      "interactive": {
+        "mode": "heads_legs",
+        "scenario": {
+          "label": "pachete de cărți",
+          "count": 24,
+          "low": 10,
+          "high": 15,
+          "total": 285,
+          "low_name": "pachete mici",
+          "high_name": "pachete mari",
+          "unit": "cărți",
+          "icons": [
+            "📘",
+            "📚"
+          ],
+          "assumed_total": 240,
+          "mismatch": 45,
+          "unit_difference": 5,
+          "high_count": 9,
+          "low_count": 15
+        },
+        "answers": {
+          "high_count": 9,
+          "low_count": 15
+        },
+        "theme": "heads_legs"
+      }
+    },
+    {
+      "text": "score cards – bidoane",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 6 «bidoane de 10 l» și 4 «bidoane de 3 l».",
+      "interactive": {
+        "mode": "score_cards",
+        "scenario": {
+          "label": "bidoane",
+          "count": 10,
+          "low": 3,
+          "high": 10,
+          "total": 72,
+          "low_name": "bidoane de 3 l",
+          "high_name": "bidoane de 10 l",
+          "unit": "litri",
+          "icons": [
+            "🫙",
+            "🛢️"
+          ],
+          "assumed_total": 30,
+          "mismatch": 42,
+          "unit_difference": 7,
+          "high_count": 6,
+          "low_count": 4
+        },
+        "answers": {
+          "high_count": 6,
+          "low_count": 4
+        },
+        "theme": "score_cards"
+      }
+    },
+    {
+      "text": "score cards – găini și iepuri",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 20 «iepuri» și 80 «găini».",
+      "interactive": {
+        "mode": "score_cards",
+        "scenario": {
+          "label": "găini și iepuri",
+          "count": 100,
+          "low": 2,
+          "high": 4,
+          "total": 240,
+          "low_name": "găini",
+          "high_name": "iepuri",
+          "unit": "picioare",
+          "icons": [
+            "🐔",
+            "🐇"
+          ],
+          "assumed_total": 200,
+          "mismatch": 40,
+          "unit_difference": 2,
+          "high_count": 20,
+          "low_count": 80
+        },
+        "answers": {
+          "high_count": 20,
+          "low_count": 80
+        },
+        "theme": "score_cards"
+      }
+    },
+    {
+      "text": "score cards – apartamente",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 6 «apartamente cu 3 camere» și 12 «apartamente cu 2 camere».",
+      "interactive": {
+        "mode": "score_cards",
+        "scenario": {
+          "label": "apartamente",
+          "count": 18,
+          "low": 2,
+          "high": 3,
+          "total": 42,
+          "low_name": "apartamente cu 2 camere",
+          "high_name": "apartamente cu 3 camere",
+          "unit": "camere",
+          "icons": [
+            "🏠",
+            "🏢"
+          ],
+          "assumed_total": 36,
+          "mismatch": 6,
+          "unit_difference": 1,
+          "high_count": 6,
+          "low_count": 12
+        },
+        "answers": {
+          "high_count": 6,
+          "low_count": 12
+        },
+        "theme": "score_cards"
+      }
+    },
+    {
+      "text": "containers – probleme de concurs",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 5 «probleme corecte» și 2 «probleme greșite».",
+      "interactive": {
+        "mode": "containers",
+        "scenario": {
+          "label": "probleme de concurs",
+          "count": 7,
+          "low": -1,
+          "high": 4,
+          "total": 18,
+          "low_name": "probleme greșite",
+          "high_name": "probleme corecte",
+          "unit": "puncte",
+          "icons": [
+            "✗",
+            "✓"
+          ],
+          "assumed_total": -7,
+          "mismatch": 25,
+          "unit_difference": 5,
+          "high_count": 5,
+          "low_count": 2
+        },
+        "answers": {
+          "high_count": 5,
+          "low_count": 2
+        },
+        "theme": "containers"
+      }
+    },
+    {
+      "text": "containers – bancnote",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 4 «bancnote de 10 lei» și 5 «bancnote de 5 lei».",
+      "interactive": {
+        "mode": "containers",
+        "scenario": {
+          "label": "bancnote",
+          "count": 9,
+          "low": 5,
+          "high": 10,
+          "total": 65,
+          "low_name": "bancnote de 5 lei",
+          "high_name": "bancnote de 10 lei",
+          "unit": "lei",
+          "icons": [
+            "💵",
+            "💶"
+          ],
+          "assumed_total": 45,
+          "mismatch": 20,
+          "unit_difference": 5,
+          "high_count": 4,
+          "low_count": 5
+        },
+        "answers": {
+          "high_count": 4,
+          "low_count": 5
+        },
+        "theme": "containers"
+      }
+    },
+    {
+      "text": "containers – albine",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 22 «vizite la 25 de flori» și 38 «vizite la 20 de flori».",
+      "interactive": {
+        "mode": "containers",
+        "scenario": {
+          "label": "albine",
+          "count": 60,
+          "low": 20,
+          "high": 25,
+          "total": 1310,
+          "low_name": "vizite la 20 de flori",
+          "high_name": "vizite la 25 de flori",
+          "unit": "flori",
+          "icons": [
+            "🐝",
+            "🌼"
+          ],
+          "assumed_total": 1200,
+          "mismatch": 110,
+          "unit_difference": 5,
+          "high_count": 22,
+          "low_count": 38
+        },
+        "answers": {
+          "high_count": 22,
+          "low_count": 38
+        },
+        "theme": "containers"
+      }
+    },
+    {
+      "text": "money notes – acțiuni",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 10 «acțiuni de 25 euro» și 8 «acțiuni de 12 euro».",
+      "interactive": {
+        "mode": "money_notes",
+        "scenario": {
+          "label": "acțiuni",
+          "count": 18,
+          "low": 12,
+          "high": 25,
+          "total": 346,
+          "low_name": "acțiuni de 12 euro",
+          "high_name": "acțiuni de 25 euro",
+          "unit": "euro",
+          "icons": [
+            "📄",
+            "📈"
+          ],
+          "assumed_total": 216,
+          "mismatch": 130,
+          "unit_difference": 13,
+          "high_count": 10,
+          "low_count": 8
+        },
+        "answers": {
+          "high_count": 10,
+          "low_count": 8
+        },
+        "theme": "money_notes"
+      }
+    },
+    {
+      "text": "money notes – păsări și vite",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 120 «vite» și 200 «păsări».",
+      "interactive": {
+        "mode": "money_notes",
+        "scenario": {
+          "label": "păsări și vite",
+          "count": 320,
+          "low": 2,
+          "high": 4,
+          "total": 880,
+          "low_name": "păsări",
+          "high_name": "vite",
+          "unit": "picioare",
+          "icons": [
+            "🐦",
+            "🐄"
+          ],
+          "assumed_total": 640,
+          "mismatch": 240,
+          "unit_difference": 2,
+          "high_count": 120,
+          "low_count": 200
+        },
+        "answers": {
+          "high_count": 120,
+          "low_count": 200
+        },
+        "theme": "money_notes"
+      }
+    },
+    {
+      "text": "money notes – vase",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 4 «vase de 20 l» și 3 «vase de 3 l».",
+      "interactive": {
+        "mode": "money_notes",
+        "scenario": {
+          "label": "vase",
+          "count": 7,
+          "low": 3,
+          "high": 20,
+          "total": 89,
+          "low_name": "vase de 3 l",
+          "high_name": "vase de 20 l",
+          "unit": "litri",
+          "icons": [
+            "🥛",
+            "🫙"
+          ],
+          "assumed_total": 21,
+          "mismatch": 68,
+          "unit_difference": 17,
+          "high_count": 4,
+          "low_count": 3
+        },
+        "answers": {
+          "high_count": 4,
+          "low_count": 3
+        },
+        "theme": "money_notes"
+      }
+    },
+    {
+      "text": "bees flowers – săgeți",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 6 «săgeți în interior» și 2 «săgeți în afara cercului».",
+      "interactive": {
+        "mode": "bees_flowers",
+        "scenario": {
+          "label": "săgeți",
+          "count": 8,
+          "low": -3,
+          "high": 10,
+          "total": 54,
+          "low_name": "săgeți în afara cercului",
+          "high_name": "săgeți în interior",
+          "unit": "puncte",
+          "icons": [
+            "○",
+            "🎯"
+          ],
+          "assumed_total": -24,
+          "mismatch": 78,
+          "unit_difference": 13,
+          "high_count": 6,
+          "low_count": 2
+        },
+        "answers": {
+          "high_count": 6,
+          "low_count": 2
+        },
+        "theme": "bees_flowers"
+      }
+    },
+    {
+      "text": "bees flowers – probleme rezolvate",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 5 «probleme corecte» și 1 «probleme greșite».",
+      "interactive": {
+        "mode": "bees_flowers",
+        "scenario": {
+          "label": "probleme rezolvate",
+          "count": 6,
+          "low": -2,
+          "high": 10,
+          "total": 48,
+          "low_name": "probleme greșite",
+          "high_name": "probleme corecte",
+          "unit": "puncte",
+          "icons": [
+            "✗",
+            "✓"
+          ],
+          "assumed_total": -12,
+          "mismatch": 60,
+          "unit_difference": 12,
+          "high_count": 5,
+          "low_count": 1
+        },
+        "answers": {
+          "high_count": 5,
+          "low_count": 1
+        },
+        "theme": "bees_flowers"
+      }
+    },
+    {
+      "text": "bees flowers – coșuri cu fructe",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 8 «coșuri mari» și 12 «coșuri mici».",
+      "interactive": {
+        "mode": "bees_flowers",
+        "scenario": {
+          "label": "coșuri cu fructe",
+          "count": 20,
+          "low": 3,
+          "high": 7,
+          "total": 92,
+          "low_name": "coșuri mici",
+          "high_name": "coșuri mari",
+          "unit": "fructe",
+          "icons": [
+            "🧺",
+            "🍎"
+          ],
+          "assumed_total": 60,
+          "mismatch": 32,
+          "unit_difference": 4,
+          "high_count": 8,
+          "low_count": 12
+        },
+        "answers": {
+          "high_count": 8,
+          "low_count": 12
+        },
+        "theme": "bees_flowers"
+      }
+    },
+    {
+      "text": "shares – bilete",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 15 «bilete de 12 lei» și 35 «bilete de 8 lei».",
+      "interactive": {
+        "mode": "shares",
+        "scenario": {
+          "label": "bilete",
+          "count": 50,
+          "low": 8,
+          "high": 12,
+          "total": 460,
+          "low_name": "bilete de 8 lei",
+          "high_name": "bilete de 12 lei",
+          "unit": "lei",
+          "icons": [
+            "🎫",
+            "🎟️"
+          ],
+          "assumed_total": 400,
+          "mismatch": 60,
+          "unit_difference": 4,
+          "high_count": 15,
+          "low_count": 35
+        },
+        "answers": {
+          "high_count": 15,
+          "low_count": 35
+        },
+        "theme": "shares"
+      }
+    },
+    {
+      "text": "shares – monede",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 13 «monede de 5 lei» și 17 «monede de 2 lei».",
+      "interactive": {
+        "mode": "shares",
+        "scenario": {
+          "label": "monede",
+          "count": 30,
+          "low": 2,
+          "high": 5,
+          "total": 99,
+          "low_name": "monede de 2 lei",
+          "high_name": "monede de 5 lei",
+          "unit": "lei",
+          "icons": [
+            "🪙",
+            "💰"
+          ],
+          "assumed_total": 60,
+          "mismatch": 39,
+          "unit_difference": 3,
+          "high_count": 13,
+          "low_count": 17
+        },
+        "answers": {
+          "high_count": 13,
+          "low_count": 17
+        },
+        "theme": "shares"
+      }
+    },
+    {
+      "text": "shares – pachete de cărți",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 9 «pachete mari» și 15 «pachete mici».",
+      "interactive": {
+        "mode": "shares",
+        "scenario": {
+          "label": "pachete de cărți",
+          "count": 24,
+          "low": 10,
+          "high": 15,
+          "total": 285,
+          "low_name": "pachete mici",
+          "high_name": "pachete mari",
+          "unit": "cărți",
+          "icons": [
+            "📘",
+            "📚"
+          ],
+          "assumed_total": 240,
+          "mismatch": 45,
+          "unit_difference": 5,
+          "high_count": 9,
+          "low_count": 15
+        },
+        "answers": {
+          "high_count": 9,
+          "low_count": 15
+        },
+        "theme": "shares"
+      }
+    },
+    {
+      "text": "vases – bidoane",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 6 «bidoane de 10 l» și 4 «bidoane de 3 l».",
+      "interactive": {
+        "mode": "vases",
+        "scenario": {
+          "label": "bidoane",
+          "count": 10,
+          "low": 3,
+          "high": 10,
+          "total": 72,
+          "low_name": "bidoane de 3 l",
+          "high_name": "bidoane de 10 l",
+          "unit": "litri",
+          "icons": [
+            "🫙",
+            "🛢️"
+          ],
+          "assumed_total": 30,
+          "mismatch": 42,
+          "unit_difference": 7,
+          "high_count": 6,
+          "low_count": 4
+        },
+        "answers": {
+          "high_count": 6,
+          "low_count": 4
+        },
+        "theme": "vases"
+      }
+    },
+    {
+      "text": "vases – găini și iepuri",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 20 «iepuri» și 80 «găini».",
+      "interactive": {
+        "mode": "vases",
+        "scenario": {
+          "label": "găini și iepuri",
+          "count": 100,
+          "low": 2,
+          "high": 4,
+          "total": 240,
+          "low_name": "găini",
+          "high_name": "iepuri",
+          "unit": "picioare",
+          "icons": [
+            "🐔",
+            "🐇"
+          ],
+          "assumed_total": 200,
+          "mismatch": 40,
+          "unit_difference": 2,
+          "high_count": 20,
+          "low_count": 80
+        },
+        "answers": {
+          "high_count": 20,
+          "low_count": 80
+        },
+        "theme": "vases"
+      }
+    },
+    {
+      "text": "vases – apartamente",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 6 «apartamente cu 3 camere» și 12 «apartamente cu 2 camere».",
+      "interactive": {
+        "mode": "vases",
+        "scenario": {
+          "label": "apartamente",
+          "count": 18,
+          "low": 2,
+          "high": 3,
+          "total": 42,
+          "low_name": "apartamente cu 2 camere",
+          "high_name": "apartamente cu 3 camere",
+          "unit": "camere",
+          "icons": [
+            "🏠",
+            "🏢"
+          ],
+          "assumed_total": 36,
+          "mismatch": 6,
+          "unit_difference": 1,
+          "high_count": 6,
+          "low_count": 12
+        },
+        "answers": {
+          "high_count": 6,
+          "low_count": 12
+        },
+        "theme": "vases"
+      }
+    },
+    {
+      "text": "hypothesis error – probleme de concurs",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Nepotrivirea corectă este 25.",
+      "interactive": {
+        "mode": "hypothesis_error",
+        "scenario": {
+          "label": "probleme de concurs",
+          "count": 7,
+          "low": -1,
+          "high": 4,
+          "total": 18,
+          "low_name": "probleme greșite",
+          "high_name": "probleme corecte",
+          "unit": "puncte",
+          "icons": [
+            "✗",
+            "✓"
+          ],
+          "assumed_total": -7,
+          "mismatch": 25,
+          "unit_difference": 5,
+          "high_count": 5,
+          "low_count": 2
+        },
+        "answers": {
+          "step": 2
+        },
+        "steps": [
+          "Presupunem toate: probleme greșite",
+          "Total ipotetic: -7",
+          "Nepotrivire: 11",
+          "O înlocuire: 5"
+        ]
+      }
+    },
+    {
+      "text": "hypothesis error – bancnote",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Nepotrivirea corectă este 20.",
+      "interactive": {
+        "mode": "hypothesis_error",
+        "scenario": {
+          "label": "bancnote",
+          "count": 9,
+          "low": 5,
+          "high": 10,
+          "total": 65,
+          "low_name": "bancnote de 5 lei",
+          "high_name": "bancnote de 10 lei",
+          "unit": "lei",
+          "icons": [
+            "💵",
+            "💶"
+          ],
+          "assumed_total": 45,
+          "mismatch": 20,
+          "unit_difference": 5,
+          "high_count": 4,
+          "low_count": 5
+        },
+        "answers": {
+          "step": 2
+        },
+        "steps": [
+          "Presupunem toate: bancnote de 5 lei",
+          "Total ipotetic: 45",
+          "Nepotrivire: 110",
+          "O înlocuire: 5"
+        ]
+      }
+    },
+    {
+      "text": "hypothesis error – albine",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Nepotrivirea corectă este 110.",
+      "interactive": {
+        "mode": "hypothesis_error",
+        "scenario": {
+          "label": "albine",
+          "count": 60,
+          "low": 20,
+          "high": 25,
+          "total": 1310,
+          "low_name": "vizite la 20 de flori",
+          "high_name": "vizite la 25 de flori",
+          "unit": "flori",
+          "icons": [
+            "🐝",
+            "🌼"
+          ],
+          "assumed_total": 1200,
+          "mismatch": 110,
+          "unit_difference": 5,
+          "high_count": 22,
+          "low_count": 38
+        },
+        "answers": {
+          "step": 2
+        },
+        "steps": [
+          "Presupunem toate: vizite la 20 de flori",
+          "Total ipotetic: 1200",
+          "Nepotrivire: 2510",
+          "O înlocuire: 5"
+        ]
+      }
+    },
+    {
+      "text": "hypothesis table – acțiuni",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Completăm tabelul în ordinea ipoteză, nepotrivire, înlocuiri.",
+      "interactive": {
+        "mode": "hypothesis_table",
+        "scenario": {
+          "label": "acțiuni",
+          "count": 18,
+          "low": 12,
+          "high": 25,
+          "total": 346,
+          "low_name": "acțiuni de 12 euro",
+          "high_name": "acțiuni de 25 euro",
+          "unit": "euro",
+          "icons": [
+            "📄",
+            "📈"
+          ],
+          "assumed_total": 216,
+          "mismatch": 130,
+          "unit_difference": 13,
+          "high_count": 10,
+          "low_count": 8
+        },
+        "answers": {
+          "assumed_total": 216,
+          "mismatch": 130,
+          "replacements": 10
+        }
+      }
+    },
+    {
+      "text": "hypothesis table – păsări și vite",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Completăm tabelul în ordinea ipoteză, nepotrivire, înlocuiri.",
+      "interactive": {
+        "mode": "hypothesis_table",
+        "scenario": {
+          "label": "păsări și vite",
+          "count": 320,
+          "low": 2,
+          "high": 4,
+          "total": 880,
+          "low_name": "păsări",
+          "high_name": "vite",
+          "unit": "picioare",
+          "icons": [
+            "🐦",
+            "🐄"
+          ],
+          "assumed_total": 640,
+          "mismatch": 240,
+          "unit_difference": 2,
+          "high_count": 120,
+          "low_count": 200
+        },
+        "answers": {
+          "assumed_total": 640,
+          "mismatch": 240,
+          "replacements": 120
+        }
+      }
+    },
+    {
+      "text": "hypothesis table – vase",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Completăm tabelul în ordinea ipoteză, nepotrivire, înlocuiri.",
+      "interactive": {
+        "mode": "hypothesis_table",
+        "scenario": {
+          "label": "vase",
+          "count": 7,
+          "low": 3,
+          "high": 20,
+          "total": 89,
+          "low_name": "vase de 3 l",
+          "high_name": "vase de 20 l",
+          "unit": "litri",
+          "icons": [
+            "🥛",
+            "🫙"
+          ],
+          "assumed_total": 21,
+          "mismatch": 68,
+          "unit_difference": 17,
+          "high_count": 4,
+          "low_count": 3
+        },
+        "answers": {
+          "assumed_total": 21,
+          "mismatch": 68,
+          "replacements": 4
+        }
+      }
+    },
+    {
+      "text": "full hypothesis puzzle – săgeți",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Soluția completă este 2 și 6.",
+      "interactive": {
+        "mode": "full_hypothesis_puzzle",
+        "scenario": {
+          "label": "săgeți",
+          "count": 8,
+          "low": -3,
+          "high": 10,
+          "total": 54,
+          "low_name": "săgeți în afara cercului",
+          "high_name": "săgeți în interior",
+          "unit": "puncte",
+          "icons": [
+            "○",
+            "🎯"
+          ],
+          "assumed_total": -24,
+          "mismatch": 78,
+          "unit_difference": 13,
+          "high_count": 6,
+          "low_count": 2
+        },
+        "answers": {
+          "assumed_total": -24,
+          "mismatch": 78,
+          "unit_difference": 13,
+          "high_count": 6,
+          "low_count": 2
+        }
+      }
+    },
+    {
+      "text": "full hypothesis puzzle – probleme rezolvate",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Soluția completă este 1 și 5.",
+      "interactive": {
+        "mode": "full_hypothesis_puzzle",
+        "scenario": {
+          "label": "probleme rezolvate",
+          "count": 6,
+          "low": -2,
+          "high": 10,
+          "total": 48,
+          "low_name": "probleme greșite",
+          "high_name": "probleme corecte",
+          "unit": "puncte",
+          "icons": [
+            "✗",
+            "✓"
+          ],
+          "assumed_total": -12,
+          "mismatch": 60,
+          "unit_difference": 12,
+          "high_count": 5,
+          "low_count": 1
+        },
+        "answers": {
+          "assumed_total": -12,
+          "mismatch": 60,
+          "unit_difference": 12,
+          "high_count": 5,
+          "low_count": 1
+        }
+      }
+    },
+    {
+      "text": "full hypothesis puzzle – coșuri cu fructe",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Soluția completă este 12 și 8.",
+      "interactive": {
+        "mode": "full_hypothesis_puzzle",
+        "scenario": {
+          "label": "coșuri cu fructe",
+          "count": 20,
+          "low": 3,
+          "high": 7,
+          "total": 92,
+          "low_name": "coșuri mici",
+          "high_name": "coșuri mari",
+          "unit": "fructe",
+          "icons": [
+            "🧺",
+            "🍎"
+          ],
+          "assumed_total": 60,
+          "mismatch": 32,
+          "unit_difference": 4,
+          "high_count": 8,
+          "low_count": 12
+        },
+        "answers": {
+          "assumed_total": 60,
+          "mismatch": 32,
+          "unit_difference": 4,
+          "high_count": 8,
+          "low_count": 12
+        }
+      }
+    },
+    {
+      "text": "hypothesis verify – bilete",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Verificare: 35·8 + 15·12 = 460.",
+      "interactive": {
+        "mode": "hypothesis_verify",
+        "scenario": {
+          "label": "bilete",
+          "count": 50,
+          "low": 8,
+          "high": 12,
+          "total": 460,
+          "low_name": "bilete de 8 lei",
+          "high_name": "bilete de 12 lei",
+          "unit": "lei",
+          "icons": [
+            "🎫",
+            "🎟️"
+          ],
+          "assumed_total": 400,
+          "mismatch": 60,
+          "unit_difference": 4,
+          "high_count": 15,
+          "low_count": 35
+        },
+        "answers": {
+          "high_count": 15,
+          "low_count": 35,
+          "verified_total": 460,
+          "verified": "yes"
+        }
+      }
+    },
+    {
+      "text": "hypothesis verify – monede",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Verificare: 17·2 + 13·5 = 99.",
+      "interactive": {
+        "mode": "hypothesis_verify",
+        "scenario": {
+          "label": "monede",
+          "count": 30,
+          "low": 2,
+          "high": 5,
+          "total": 99,
+          "low_name": "monede de 2 lei",
+          "high_name": "monede de 5 lei",
+          "unit": "lei",
+          "icons": [
+            "🪙",
+            "💰"
+          ],
+          "assumed_total": 60,
+          "mismatch": 39,
+          "unit_difference": 3,
+          "high_count": 13,
+          "low_count": 17
+        },
+        "answers": {
+          "high_count": 13,
+          "low_count": 17,
+          "verified_total": 99,
+          "verified": "yes"
+        }
+      }
+    },
+    {
+      "text": "hypothesis verify – pachete de cărți",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Verificare: 15·10 + 9·15 = 285.",
+      "interactive": {
+        "mode": "hypothesis_verify",
+        "scenario": {
+          "label": "pachete de cărți",
+          "count": 24,
+          "low": 10,
+          "high": 15,
+          "total": 285,
+          "low_name": "pachete mici",
+          "high_name": "pachete mari",
+          "unit": "cărți",
+          "icons": [
+            "📘",
+            "📚"
+          ],
+          "assumed_total": 240,
+          "mismatch": 45,
+          "unit_difference": 5,
+          "high_count": 9,
+          "low_count": 15
+        },
+        "answers": {
+          "high_count": 9,
+          "low_count": 15,
+          "verified_total": 285,
+          "verified": "yes"
+        }
+      }
+    }
+  ]
+}

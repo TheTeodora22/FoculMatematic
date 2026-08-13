@@ -1,6 +1,1358 @@
 {
-  "title": "Metode aritmetice de rezolvare a problemelor",
-  "description": "Clasa a 5-a",
-  "difficulty": "easy",
-  "questions": []
+  "title": "Metoda reducerii la unitate",
+  "description": "Clasa a 5-a · Metode aritmetice de rezolvare a problemelor",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "8 kg de mere costă 24 de lei. Cât costă 5 kg de mere?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un kilogram costă 24 : 8 = 3 lei, iar 5 kg costă 5 · 3 = 15 lei.",
+      "options": [
+        {
+          "text": "12 lei",
+          "is_correct": false
+        },
+        {
+          "text": "15 lei",
+          "is_correct": true
+        },
+        {
+          "text": "18 lei",
+          "is_correct": false
+        },
+        {
+          "text": "21 lei",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "6 caiete identice costă 42 de lei. Cât costă 9 caiete?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un caiet costă 42 : 6 = 7 lei, deci 9 caiete costă 9 · 7 = 63 lei.",
+      "options": [
+        {
+          "text": "54 lei",
+          "is_correct": false
+        },
+        {
+          "text": "63 lei",
+          "is_correct": true
+        },
+        {
+          "text": "56 lei",
+          "is_correct": false
+        },
+        {
+          "text": "72 lei",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "2 litri de ulei costă 18 lei. Cât costă un litru?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Reducem la unitate: 18 : 2 = 9 lei.",
+      "options": [
+        {
+          "text": "8 lei",
+          "is_correct": false
+        },
+        {
+          "text": "9 lei",
+          "is_correct": true
+        },
+        {
+          "text": "16 lei",
+          "is_correct": false
+        },
+        {
+          "text": "36 lei",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "5 metri de material costă 45 de lei. Cât costă 8 metri?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un metru costă 45 : 5 = 9 lei, iar 8 metri costă 8 · 9 = 72 lei.",
+      "options": [
+        {
+          "text": "64 lei",
+          "is_correct": false
+        },
+        {
+          "text": "72 lei",
+          "is_correct": true
+        },
+        {
+          "text": "68 lei",
+          "is_correct": false
+        },
+        {
+          "text": "80 lei",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "12 muncitori termină o lucrare în 5 zile. În câte zile o termină 20 de muncitori cu aceeași putere de muncă?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un muncitor ar termina în 12 · 5 = 60 de zile, iar 20 de muncitori în 60 : 20 = 3 zile.",
+      "options": [
+        {
+          "text": "2 zile",
+          "is_correct": false
+        },
+        {
+          "text": "3 zile",
+          "is_correct": true
+        },
+        {
+          "text": "8 zile",
+          "is_correct": false
+        },
+        {
+          "text": "12 zile",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "4 robinete identice umplu un bazin în 12 ore. În cât timp îl umplu 6 robinete?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un robinet ar avea nevoie de 4 · 12 = 48 de ore, iar 6 robinete de 48 : 6 = 8 ore.",
+      "options": [
+        {
+          "text": "6 ore",
+          "is_correct": false
+        },
+        {
+          "text": "8 ore",
+          "is_correct": true
+        },
+        {
+          "text": "16 ore",
+          "is_correct": false
+        },
+        {
+          "text": "18 ore",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "3 pompe identice golesc un rezervor în 8 ore. În cât timp îl golesc 4 pompe?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O pompă ar lucra 3 · 8 = 24 de ore, iar 4 pompe 24 : 4 = 6 ore.",
+      "options": [
+        {
+          "text": "4 ore",
+          "is_correct": false
+        },
+        {
+          "text": "6 ore",
+          "is_correct": true
+        },
+        {
+          "text": "9 ore",
+          "is_correct": false
+        },
+        {
+          "text": "12 ore",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "30 de elevi plantează puieții în 4 ore. În cât timp ar termina 20 de elevi, lucrând la fel?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un elev ar lucra 30 · 4 = 120 de ore, iar 20 de elevi 120 : 20 = 6 ore.",
+      "options": [
+        {
+          "text": "3 ore",
+          "is_correct": false
+        },
+        {
+          "text": "6 ore",
+          "is_correct": true
+        },
+        {
+          "text": "5 ore",
+          "is_correct": false
+        },
+        {
+          "text": "8 ore",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "12 pixuri identice costă 60 de lei. Care este prețul unui pix?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "60 : 12 = 5 lei pentru un pix.",
+      "options": [
+        {
+          "text": "4 lei",
+          "is_correct": false
+        },
+        {
+          "text": "5 lei",
+          "is_correct": true
+        },
+        {
+          "text": "6 lei",
+          "is_correct": false
+        },
+        {
+          "text": "12 lei",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "6 robinete umplu piscina în 3 ore. În cât timp ar umple-o un singur robinet?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Când numărul robinetelor scade de 6 ori, timpul crește de 6 ori: 3 · 6 = 18 ore.",
+      "options": [
+        {
+          "text": "2 ore",
+          "is_correct": false
+        },
+        {
+          "text": "18 ore",
+          "is_correct": true
+        },
+        {
+          "text": "9 ore",
+          "is_correct": false
+        },
+        {
+          "text": "36 ore",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care schemă arată corect reducerea la unitate pentru 8 kg care costă 24 lei și 5 kg cu preț necunoscut?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi aflăm prețul unui kilogram împărțind la 8, apoi înmulțim cu 5.",
+      "options": [
+        {
+          "text": "8 kg → 5 kg; 24 : 5",
+          "is_correct": false
+        },
+        {
+          "text": "8 kg → 1 kg → 5 kg; 24 : 8 · 5",
+          "is_correct": true
+        },
+        {
+          "text": "24 · 8 : 5",
+          "is_correct": false
+        },
+        {
+          "text": "24 + 8 + 5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă numărul muncitorilor crește, iar lucrarea rămâne aceeași, timpul necesar:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai mulți muncitori împart aceeași lucrare, deci timpul scade.",
+      "options": [
+        {
+          "text": "crește",
+          "is_correct": false
+        },
+        {
+          "text": "scade",
+          "is_correct": true
+        },
+        {
+          "text": "rămâne mereu egal",
+          "is_correct": false
+        },
+        {
+          "text": "devine zero",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un caiet costă 4 lei. Cât plătim pentru 7 caiete?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "7 · 4 = 28 lei.",
+      "options": [
+        {
+          "text": "11 lei",
+          "is_correct": false
+        },
+        {
+          "text": "28 lei",
+          "is_correct": true
+        },
+        {
+          "text": "21 lei",
+          "is_correct": false
+        },
+        {
+          "text": "32 lei",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un pătrat cu latura de 5 cm are perimetrul de 20 cm. Ce perimetru are un pătrat cu latura de 9 cm?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru 1 cm de latură corespund 4 cm de perimetru; 9 · 4 = 36 cm.",
+      "options": [
+        {
+          "text": "24 cm",
+          "is_correct": false
+        },
+        {
+          "text": "36 cm",
+          "is_correct": true
+        },
+        {
+          "text": "29 cm",
+          "is_correct": false
+        },
+        {
+          "text": "45 cm",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un pește parcurge 300 m în 6 secunde, cu viteză constantă. Câți metri parcurge într-o secundă?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "300 : 6 = 50 m într-o secundă.",
+      "options": [
+        {
+          "text": "30 m",
+          "is_correct": false
+        },
+        {
+          "text": "50 m",
+          "is_correct": true
+        },
+        {
+          "text": "60 m",
+          "is_correct": false
+        },
+        {
+          "text": "1 800 m",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Clopotele bat de 3 ori în 12 secunde, considerând același timp pentru fiecare bătaie. În câte secunde bat de 12 ori?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O bătaie corespunde la 12 : 3 = 4 secunde, iar 12 bătăi la 12 · 4 = 48 secunde.",
+      "options": [
+        {
+          "text": "36 secunde",
+          "is_correct": false
+        },
+        {
+          "text": "48 secunde",
+          "is_correct": true
+        },
+        {
+          "text": "40 secunde",
+          "is_correct": false
+        },
+        {
+          "text": "144 secunde",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Din 200 litri de apă de mare se obțin 8 grame de sare. Câte grame se obțin din 400 litri?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cantitatea de apă se dublează, deci se dublează și sarea: 8 · 2 = 16 grame.",
+      "options": [
+        {
+          "text": "4 grame",
+          "is_correct": false
+        },
+        {
+          "text": "16 grame",
+          "is_correct": true
+        },
+        {
+          "text": "8 grame",
+          "is_correct": false
+        },
+        {
+          "text": "32 grame",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "O culegere este terminată în 25 de zile, dar nu știm câte probleme se rezolvă zilnic. Putem afla în câte zile se termină dacă se rezolvă 5 probleme pe zi?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Nu putem afla numărul total de probleme fără ritmul inițial de lucru.",
+      "options": [
+        {
+          "text": "Da, în 5 zile",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, lipsește numărul inițial de probleme pe zi",
+          "is_correct": true
+        },
+        {
+          "text": "Da, în 20 de zile",
+          "is_correct": false
+        },
+        {
+          "text": "Da, în 125 de zile",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dintr-o sârmă se fac 13 bucăți de câte 4 m. Ce lungime totală are sârma?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "13 · 4 = 52 m.",
+      "options": [
+        {
+          "text": "48 m",
+          "is_correct": false
+        },
+        {
+          "text": "52 m",
+          "is_correct": true
+        },
+        {
+          "text": "56 m",
+          "is_correct": false
+        },
+        {
+          "text": "64 m",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Produsul a două numere este 60. Dacă primul număr devine 12, cât trebuie să fie al doilea pentru ca produsul să rămână 60?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "60 : 12 = 5.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Reglează imaginea pentru a arăta cât costă 5 kg de mere, dacă 8 kg costă 24 lei.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un kilogram costă 3 lei, deci 5 kg costă 15 lei.",
+      "interactive": {
+        "mode": "visual_scale",
+        "initial_quantity": 8,
+        "initial_value": 24,
+        "target_quantity": 5,
+        "target_value": 15,
+        "unit": "kg",
+        "icon": "🍎",
+        "answers": {
+          "quantity": 5,
+          "value": 15
+        }
+      }
+    },
+    {
+      "text": "Reglează imaginea pentru 9 caiete, știind că 6 caiete costă 42 lei.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un caiet costă 7 lei, deci 9 caiete costă 63 lei.",
+      "interactive": {
+        "mode": "visual_scale",
+        "initial_quantity": 6,
+        "initial_value": 42,
+        "target_quantity": 9,
+        "target_value": 63,
+        "unit": "caiete",
+        "icon": "📘",
+        "answers": {
+          "quantity": 9,
+          "value": 63
+        }
+      }
+    },
+    {
+      "text": "Reglează imaginea pentru 7 sticle, dacă 4 sticle conțin împreună 12 litri.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O sticlă conține 3 litri, iar 7 sticle conțin 21 litri.",
+      "interactive": {
+        "mode": "visual_scale",
+        "initial_quantity": 4,
+        "initial_value": 12,
+        "target_quantity": 7,
+        "target_value": 21,
+        "unit": "sticle",
+        "icon": "🧴",
+        "answers": {
+          "quantity": 7,
+          "value": 21
+        }
+      }
+    },
+    {
+      "text": "Așază operațiile pe drumul 12 pixuri → 1 pix → 7 pixuri.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Împărțim 60 la 12 și înmulțim rezultatul cu 7: obținem 35 lei.",
+      "interactive": {
+        "mode": "unit_path",
+        "values": [
+          12,
+          1,
+          7
+        ],
+        "paired_values": [
+          60,
+          5,
+          35
+        ],
+        "unit": "lei",
+        "operation_choices": [
+          ": 12",
+          "× 7",
+          "× 12",
+          ": 7"
+        ],
+        "answers": {
+          "operation:0": ": 12",
+          "operation:1": "× 7"
+        }
+      }
+    },
+    {
+      "text": "Așază operațiile pe drumul 9 bilete → 1 bilet → 5 bilete.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un bilet costă 8 lei, iar 5 bilete costă 40 lei.",
+      "interactive": {
+        "mode": "unit_path",
+        "values": [
+          9,
+          1,
+          5
+        ],
+        "paired_values": [
+          72,
+          8,
+          40
+        ],
+        "unit": "lei",
+        "operation_choices": [
+          ": 9",
+          "× 5",
+          "× 9",
+          ": 5"
+        ],
+        "answers": {
+          "operation:0": ": 9",
+          "operation:1": "× 5"
+        }
+      }
+    },
+    {
+      "text": "Așază operațiile pe drumul 6 metri → 1 metru → 4 metri.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un metru costă 9 lei, iar 4 metri costă 36 lei.",
+      "interactive": {
+        "mode": "unit_path",
+        "values": [
+          6,
+          1,
+          4
+        ],
+        "paired_values": [
+          54,
+          9,
+          36
+        ],
+        "unit": "lei",
+        "operation_choices": [
+          ": 6",
+          "× 4",
+          "× 6",
+          ": 4"
+        ],
+        "answers": {
+          "operation:0": ": 6",
+          "operation:1": "× 4"
+        }
+      }
+    },
+    {
+      "text": "Echilibrează latura și perimetrul pentru un pătrat cu latura de 9 cm.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Perimetrul este de 4 ori latura: 9 · 4 = 36 cm.",
+      "interactive": {
+        "mode": "balance",
+        "initial_quantity": 5,
+        "initial_value": 20,
+        "target_quantity": 9,
+        "target_value": 36,
+        "relation": "direct",
+        "labels": [
+          "Latură (cm)",
+          "Perimetru (cm)"
+        ],
+        "answers": {
+          "quantity": 9,
+          "value": 36
+        }
+      }
+    },
+    {
+      "text": "Echilibrează numărul muncitorilor și timpul pentru 20 de muncitori.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul rămâne 60, deci 20 de muncitori lucrează 3 zile.",
+      "interactive": {
+        "mode": "balance",
+        "initial_quantity": 12,
+        "initial_value": 5,
+        "target_quantity": 20,
+        "target_value": 3,
+        "relation": "inverse",
+        "labels": [
+          "Muncitori",
+          "Zile"
+        ],
+        "answers": {
+          "quantity": 20,
+          "value": 3
+        }
+      }
+    },
+    {
+      "text": "Echilibrează numărul pompelor și timpul pentru 8 pompe.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul rămâne 24, deci 8 pompe lucrează 3 ore.",
+      "interactive": {
+        "mode": "balance",
+        "initial_quantity": 4,
+        "initial_value": 6,
+        "target_quantity": 8,
+        "target_value": 3,
+        "relation": "inverse",
+        "labels": [
+          "Pompe",
+          "Ore"
+        ],
+        "answers": {
+          "quantity": 8,
+          "value": 3
+        }
+      }
+    },
+    {
+      "text": "Pune în coș 7 caiete și calculează totalul, dacă unul costă 3 lei.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "7 · 3 = 21 lei.",
+      "interactive": {
+        "mode": "basket",
+        "unit_price": 3,
+        "target_quantity": 7,
+        "icon": "📘",
+        "currency": "lei",
+        "answers": {
+          "count": 7,
+          "total": 21
+        }
+      }
+    },
+    {
+      "text": "Pune în coș 6 sticle și calculează totalul, dacă una costă 5 lei.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "6 · 5 = 30 lei.",
+      "interactive": {
+        "mode": "basket",
+        "unit_price": 5,
+        "target_quantity": 6,
+        "icon": "🧴",
+        "currency": "lei",
+        "answers": {
+          "count": 6,
+          "total": 30
+        }
+      }
+    },
+    {
+      "text": "Pune în coș 4 bilete și calculează totalul, dacă unul costă 8 lei.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "4 · 8 = 32 lei.",
+      "interactive": {
+        "mode": "basket",
+        "unit_price": 8,
+        "target_quantity": 4,
+        "icon": "🎫",
+        "currency": "lei",
+        "answers": {
+          "count": 4,
+          "total": 32
+        }
+      }
+    },
+    {
+      "text": "Deschide 9 robinete și determină timpul, dacă 6 robinete umplu piscina în 3 ore.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un robinet ar lucra 18 ore; 9 robinete lucrează 2 ore.",
+      "interactive": {
+        "mode": "faucets",
+        "initial_count": 6,
+        "initial_time": 3,
+        "target_count": 9,
+        "target_time": 2,
+        "icon": "🚰",
+        "answers": {
+          "count": 9,
+          "time": 2
+        }
+      }
+    },
+    {
+      "text": "Deschide 6 robinete și determină timpul, dacă 4 robinete umplu bazinul în 12 ore.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un robinet ar lucra 48 de ore; 6 robinete lucrează 8 ore.",
+      "interactive": {
+        "mode": "faucets",
+        "initial_count": 4,
+        "initial_time": 12,
+        "target_count": 6,
+        "target_time": 8,
+        "icon": "🚰",
+        "answers": {
+          "count": 6,
+          "time": 8
+        }
+      }
+    },
+    {
+      "text": "Deschide 4 pompe și determină timpul, dacă 3 pompe golesc rezervorul în 8 ore.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O pompă ar lucra 24 de ore; 4 pompe lucrează 6 ore.",
+      "interactive": {
+        "mode": "faucets",
+        "initial_count": 3,
+        "initial_time": 8,
+        "target_count": 4,
+        "target_time": 6,
+        "icon": "⚙️",
+        "answers": {
+          "count": 4,
+          "time": 6
+        }
+      }
+    },
+    {
+      "text": "Alege sensul dependenței dintre cantitatea cumpărată și prețul total.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cantitatea și prețul total cresc împreună.",
+      "interactive": {
+        "mode": "dependency_direction",
+        "first_change": "Mai multe kilograme",
+        "second_change": "Preț mai mare",
+        "answers": {
+          "relation": "direct"
+        }
+      }
+    },
+    {
+      "text": "Alege sensul dependenței dintre muncitori și timpul aceleiași lucrări.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O mărime crește, iar cealaltă scade.",
+      "interactive": {
+        "mode": "dependency_direction",
+        "first_change": "Mai mulți muncitori",
+        "second_change": "Mai puține zile",
+        "answers": {
+          "relation": "inverse"
+        }
+      }
+    },
+    {
+      "text": "Alege sensul dependenței dintre robinete și timpul de umplere.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Când numărul robinetelor scade, timpul crește.",
+      "interactive": {
+        "mode": "dependency_direction",
+        "first_change": "Mai puține robinete",
+        "second_change": "Mai mult timp",
+        "answers": {
+          "relation": "inverse"
+        }
+      }
+    },
+    {
+      "text": "Completează tabelul cantitate–preț.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Prețul unei unități este 3 lei.",
+      "interactive": {
+        "mode": "unit_table",
+        "columns": [
+          "Cantitate",
+          "Preț"
+        ],
+        "rows": [
+          {
+            "Cantitate": 8,
+            "Preț": 24,
+            "missing": "Preț"
+          },
+          {
+            "Cantitate": 1,
+            "Preț": 3,
+            "missing": "Cantitate"
+          },
+          {
+            "Cantitate": 5,
+            "Preț": 15,
+            "missing": "Preț"
+          }
+        ],
+        "answers": {
+          "0:Preț": 24,
+          "1:Cantitate": 1,
+          "2:Preț": 15
+        }
+      }
+    },
+    {
+      "text": "Completează tabelul muncitori–zile pentru aceeași lucrare.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul dintre muncitori și zile este 60.",
+      "interactive": {
+        "mode": "unit_table",
+        "columns": [
+          "Muncitori",
+          "Zile"
+        ],
+        "rows": [
+          {
+            "Muncitori": 12,
+            "Zile": 5,
+            "missing": "Zile"
+          },
+          {
+            "Muncitori": 1,
+            "Zile": 60,
+            "missing": "Muncitori"
+          },
+          {
+            "Muncitori": 20,
+            "Zile": 3,
+            "missing": "Zile"
+          }
+        ],
+        "answers": {
+          "0:Zile": 5,
+          "1:Muncitori": 1,
+          "2:Zile": 3
+        }
+      }
+    },
+    {
+      "text": "Completează tabelul latură–perimetru pentru pătrate.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Perimetrul pătratului este de 4 ori latura.",
+      "interactive": {
+        "mode": "unit_table",
+        "columns": [
+          "Latură",
+          "Perimetru"
+        ],
+        "rows": [
+          {
+            "Latură": 5,
+            "Perimetru": 20,
+            "missing": "Perimetru"
+          },
+          {
+            "Latură": 1,
+            "Perimetru": 4,
+            "missing": "Latură"
+          },
+          {
+            "Latură": 9,
+            "Perimetru": 36,
+            "missing": "Perimetru"
+          }
+        ],
+        "answers": {
+          "0:Perimetru": 20,
+          "1:Latură": 1,
+          "2:Perimetru": 36
+        }
+      }
+    },
+    {
+      "text": "Trage operațiile corecte între 8 kg, 1 kg și 5 kg.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Împărțim la 8, apoi înmulțim cu 5.",
+      "interactive": {
+        "mode": "operation_drop",
+        "nodes": [
+          "8 kg",
+          "1 kg",
+          "5 kg"
+        ],
+        "operation_choices": [
+          "× 5",
+          ": 5",
+          ": 8",
+          "× 8"
+        ],
+        "answers": {
+          "operation:0": ": 8",
+          "operation:1": "× 5"
+        }
+      }
+    },
+    {
+      "text": "Trage operațiile corecte între 12 pixuri, 1 pix și 7 pixuri.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Împărțim la 12, apoi înmulțim cu 7.",
+      "interactive": {
+        "mode": "operation_drop",
+        "nodes": [
+          "12 pixuri",
+          "1 pix",
+          "7 pixuri"
+        ],
+        "operation_choices": [
+          "× 7",
+          ": 7",
+          ": 12",
+          "× 12"
+        ],
+        "answers": {
+          "operation:0": ": 12",
+          "operation:1": "× 7"
+        }
+      }
+    },
+    {
+      "text": "Trage operațiile corecte între 6 robinete, 1 robinet și 9 robinete, urmărind timpul.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pentru un robinet timpul se mărește de 6 ori, apoi se împarte la 9.",
+      "interactive": {
+        "mode": "operation_drop",
+        "nodes": [
+          "6 robinete",
+          "1 robinet",
+          "9 robinete"
+        ],
+        "operation_choices": [
+          ": 9",
+          "× 9",
+          "× 6",
+          ": 6"
+        ],
+        "answers": {
+          "operation:0": "× 6",
+          "operation:1": ": 9"
+        }
+      }
+    },
+    {
+      "text": "Mută banda la timpul necesar pentru 6 muncitori, dacă 12 muncitori termină în 5 zile.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un muncitor ar lucra 60 de zile, iar 6 muncitori 10 zile.",
+      "interactive": {
+        "mode": "timeline",
+        "minimum": 1,
+        "maximum": 15,
+        "step": 1,
+        "target_time": 10,
+        "initial_label": "12 muncitori: 5 zile",
+        "target_label": "6 muncitori: ? zile",
+        "answers": {
+          "time": 10
+        }
+      }
+    },
+    {
+      "text": "Mută banda la timpul necesar pentru 8 robinete, dacă 4 robinete umplu bazinul în 12 ore.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un robinet ar lucra 48 de ore, iar 8 robinete 6 ore.",
+      "interactive": {
+        "mode": "timeline",
+        "minimum": 1,
+        "maximum": 15,
+        "step": 1,
+        "target_time": 6,
+        "initial_label": "4 robinete: 12 ore",
+        "target_label": "8 robinete: ? ore",
+        "answers": {
+          "time": 6
+        }
+      }
+    },
+    {
+      "text": "Construiește o problemă coerentă despre cumpărături.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Problema corectă întreabă prețul unei alte cantități de mere.",
+      "interactive": {
+        "mode": "problem_builder",
+        "groups": [
+          {
+            "label": "Context",
+            "choices": [
+              "8 kg de mere costă 24 lei.",
+              "8 muncitori termină în 24 zile.",
+              "8 robinete umplu în 24 ore."
+            ]
+          },
+          {
+            "label": "Întrebare",
+            "choices": [
+              "Cât costă 5 kg?",
+              "În cât timp lucrează 5 muncitori?",
+              "Câte robinete sunt necesare?"
+            ]
+          },
+          {
+            "label": "Legătură",
+            "choices": [
+              "Cantitatea și prețul cresc sau scad împreună.",
+              "Numărul și timpul variază invers.",
+              "Datele nu au nicio legătură."
+            ]
+          }
+        ],
+        "answers": {
+          "choice:0": 0,
+          "choice:1": 0,
+          "choice:2": 0
+        }
+      }
+    },
+    {
+      "text": "Construiește o problemă coerentă despre o lucrare.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pentru aceeași lucrare, numărul muncitorilor și timpul variază invers.",
+      "interactive": {
+        "mode": "problem_builder",
+        "groups": [
+          {
+            "label": "Context",
+            "choices": [
+              "12 caiete costă 60 lei.",
+              "12 muncitori termină lucrarea în 5 zile.",
+              "12 metri de material costă 5 lei."
+            ]
+          },
+          {
+            "label": "Întrebare",
+            "choices": [
+              "În câte zile termină 20 de muncitori?",
+              "Cât costă 20 de caiete?",
+              "Câți metri sunt necesari?"
+            ]
+          },
+          {
+            "label": "Legătură",
+            "choices": [
+              "Mai mulți muncitori înseamnă mai puține zile.",
+              "Mai mulți muncitori înseamnă mai multe zile.",
+              "Timpul nu depinde de muncitori."
+            ]
+          }
+        ],
+        "answers": {
+          "choice:0": 1,
+          "choice:1": 0,
+          "choice:2": 0
+        }
+      }
+    },
+    {
+      "text": "Mută timpul până când peștele parcurge 300 m, știind că parcurge 50 m pe secundă.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "300 : 50 = 6 secunde.",
+      "interactive": {
+        "mode": "speed_simulator",
+        "speed": 50,
+        "target_distance": 300,
+        "maximum_time": 10,
+        "target_time": 6,
+        "icon": "🐟",
+        "answers": {
+          "time": 6
+        }
+      }
+    },
+    {
+      "text": "Mută timpul până când mașina produce 320 de piese, dacă produce 40 de piese pe minut.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "320 : 40 = 8 minute.",
+      "interactive": {
+        "mode": "speed_simulator",
+        "speed": 40,
+        "target_distance": 320,
+        "maximum_time": 12,
+        "target_time": 8,
+        "icon": "🏭",
+        "answers": {
+          "time": 8
+        }
+      }
+    },
+    {
+      "text": "Potrivește fiecare problemă cu schema și răspunsul corect.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare schemă trece prin valoarea unei unități.",
+      "interactive": {
+        "mode": "triple_match",
+        "triples": [
+          {
+            "problem": "8 kg costă 24 lei; 5 kg costă?",
+            "scheme": "24 : 8 · 5",
+            "answer": "15 lei"
+          },
+          {
+            "problem": "12 muncitori, 5 zile; 20 muncitori?",
+            "scheme": "12 · 5 : 20",
+            "answer": "3 zile"
+          },
+          {
+            "problem": "4 robinete, 12 ore; 6 robinete?",
+            "scheme": "4 · 12 : 6",
+            "answer": "8 ore"
+          }
+        ],
+        "scheme_order": [
+          1,
+          2,
+          0
+        ],
+        "answer_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "scheme:0": 0,
+          "scheme:1": 1,
+          "scheme:2": 2,
+          "answer:0": 0,
+          "answer:1": 1,
+          "answer:2": 2
+        }
+      }
+    },
+    {
+      "text": "Potrivește noile probleme cu rezolvările lor.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Identificăm dacă mărimile variază împreună sau invers.",
+      "interactive": {
+        "mode": "triple_match",
+        "triples": [
+          {
+            "problem": "6 caiete costă 42 lei; 9 caiete?",
+            "scheme": "42 : 6 · 9",
+            "answer": "63 lei"
+          },
+          {
+            "problem": "3 pompe, 8 ore; 4 pompe?",
+            "scheme": "3 · 8 : 4",
+            "answer": "6 ore"
+          },
+          {
+            "problem": "Latura 5 cm dă P = 20 cm; latura 9 cm?",
+            "scheme": "20 : 5 · 9",
+            "answer": "36 cm"
+          }
+        ],
+        "scheme_order": [
+          1,
+          2,
+          0
+        ],
+        "answer_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "scheme:0": 0,
+          "scheme:1": 1,
+          "scheme:2": 2,
+          "answer:0": 0,
+          "answer:1": 1,
+          "answer:2": 2
+        }
+      }
+    },
+    {
+      "text": "Mere – decide dacă afirmația este corectă.",
+      "type": "unit_reduction",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Prețul se dublează odată cu cantitatea.",
+      "interactive": {
+        "mode": "visual_true_false",
+        "statement": "Dacă 8 kg costă 24 lei, atunci 16 kg costă 48 lei.",
+        "icon": "🍎",
+        "visual_note": "Cantitatea s-a dublat.",
+        "answers": {
+          "answer": "true"
+        }
+      }
+    },
+    {
+      "text": "Robinete – decide dacă afirmația este corectă.",
+      "type": "unit_reduction",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Când robinetele se înjumătățesc, timpul se dublează.",
+      "interactive": {
+        "mode": "visual_true_false",
+        "statement": "Dacă 6 robinete umplu bazinul în 3 ore, atunci 3 robinete îl umplu în 6 ore.",
+        "icon": "🚰",
+        "visual_note": "Numărul robinetelor s-a înjumătățit.",
+        "answers": {
+          "answer": "true"
+        }
+      }
+    },
+    {
+      "text": "Muncitori – decide dacă afirmația este corectă.",
+      "type": "unit_reduction",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Mai mulți muncitori au nevoie de mai puțin timp: 24 de muncitori termină în 3 zile, deci afirmația este falsă.",
+      "interactive": {
+        "mode": "visual_true_false",
+        "statement": "Dacă 12 muncitori termină în 6 zile, atunci 24 de muncitori termină în 12 zile.",
+        "icon": "👷",
+        "visual_note": "Sunt de două ori mai mulți muncitori.",
+        "answers": {
+          "answer": "false"
+        }
+      }
+    },
+    {
+      "text": "Pătrat – decide dacă afirmația este corectă.",
+      "type": "unit_reduction",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "P = 4 · l, deci latura și perimetrul cresc în același raport.",
+      "interactive": {
+        "mode": "visual_true_false",
+        "statement": "Dacă latura unui pătrat se dublează, atunci și perimetrul se dublează.",
+        "icon": "⬜",
+        "visual_note": "Perimetrul este de patru ori latura.",
+        "answers": {
+          "answer": "true"
+        }
+      }
+    }
+  ]
 }

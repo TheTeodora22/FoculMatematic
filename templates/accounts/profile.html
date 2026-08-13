@@ -47,6 +47,42 @@
         </div>
     </section>
 
+    {% if dashboard.next_learning_step %}
+        <section class="card learning-next-card">
+            <div class="learning-next-card__copy">
+                <p class="learning-eyebrow">Urmatorul pas</p>
+                <h2 class="profile-section-title">{{ dashboard.next_learning_step.title }}</h2>
+                <p class="muted" style="margin:0;">{{ dashboard.next_learning_step.subtitle }}</p>
+            </div>
+            <a class="btn btn-press" href="{{ dashboard.next_learning_step.url }}">{{ dashboard.next_learning_step.action }}</a>
+        </section>
+    {% endif %}
+
+    <section class="card learning-review-card">
+        <div class="learning-review-card__header">
+            <h2 class="profile-section-title">Greseli de recapitulat</h2>
+            {% if dashboard.mistake_review_items %}
+                <span class="muted">{{ dashboard.mistake_review_items|length }} recomandari</span>
+            {% endif %}
+        </div>
+        {% if dashboard.mistake_review_items %}
+            <div class="learning-review-list">
+                {% for item in dashboard.mistake_review_items %}
+                    <article class="learning-review-item">
+                        <div>
+                            <p class="learning-review-item__topic">{{ item.topic.title }}</p>
+                            <p class="muted learning-review-item__question">{{ item.question.text|truncatechars:120 }}</p>
+                            <p class="muted learning-review-item__reason">{{ item.reason }}</p>
+                        </div>
+                        <a class="profile-activity-link" href="{{ item.url }}">Reia</a>
+                    </article>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="muted" style="margin:0;">Nu ai greseli marcate pentru recapitulare. Cand apar, le strangem aici.</p>
+        {% endif %}
+    </section>
+
     <section class="profile-stats-grid">
         <article class="card profile-stat-card">
             <p class="profile-stat-card__label muted">XP total</p>

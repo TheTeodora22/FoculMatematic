@@ -1,0 +1,1075 @@
+{
+  "title": "Reguli de calcul cu puteri",
+  "description": "Clasa a 5-a · Operații cu numere naturale",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "text": "Scrie 7⁴ · 7³ sub forma unei singure puteri.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La înmulțirea puterilor cu aceeași bază adunăm exponenții: 4 + 3 = 7.",
+      "options": [
+        {
+          "text": "7¹²",
+          "is_correct": false
+        },
+        {
+          "text": "7⁷",
+          "is_correct": true
+        },
+        {
+          "text": "7¹",
+          "is_correct": false
+        },
+        {
+          "text": "49⁷",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este forma simplificată a lui 13¹¹ · 13²³?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Păstrăm baza 13 și adunăm exponenții: 11 + 23 = 34.",
+      "options": [
+        {
+          "text": "13²⁵³",
+          "is_correct": false
+        },
+        {
+          "text": "13³⁴",
+          "is_correct": true
+        },
+        {
+          "text": "13¹²",
+          "is_correct": false
+        },
+        {
+          "text": "169³⁴",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează folosind o singură putere: 5⁹ · 5⁴.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "5⁹ · 5⁴ = 5⁹⁺⁴ = 5¹³.",
+      "options": [
+        {
+          "text": "5³⁶",
+          "is_correct": false
+        },
+        {
+          "text": "5¹³",
+          "is_correct": true
+        },
+        {
+          "text": "5⁵",
+          "is_correct": false
+        },
+        {
+          "text": "25¹³",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce rezultat obții pentru 2¹⁵ · 2⁶ · 2?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem 2 = 2¹, apoi 15 + 6 + 1 = 22.",
+      "options": [
+        {
+          "text": "2²¹",
+          "is_correct": false
+        },
+        {
+          "text": "2²²",
+          "is_correct": true
+        },
+        {
+          "text": "6²²",
+          "is_correct": false
+        },
+        {
+          "text": "2⁹⁰",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrie 9²¹ : 9⁸ sub forma unei singure puteri.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La împărțire scădem exponenții: 21 − 8 = 13.",
+      "options": [
+        {
+          "text": "9²⁹",
+          "is_correct": false
+        },
+        {
+          "text": "9¹³",
+          "is_correct": true
+        },
+        {
+          "text": "1¹³",
+          "is_correct": false
+        },
+        {
+          "text": "9¹⁶⁸",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este rezultatul lui 23¹² : 23¹²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Exponenții se scad: 12 − 12 = 0, iar orice număr nenul la puterea 0 este 1.",
+      "options": [
+        {
+          "text": "23¹",
+          "is_correct": false
+        },
+        {
+          "text": "23⁰ = 1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "23²⁴",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Simplifică 5³¹ : 5²⁷.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "31 − 27 = 4.",
+      "options": [
+        {
+          "text": "5⁵⁸",
+          "is_correct": false
+        },
+        {
+          "text": "5⁴",
+          "is_correct": true
+        },
+        {
+          "text": "5³",
+          "is_correct": false
+        },
+        {
+          "text": "1⁴",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrie 14⁴⁵ : 14²⁰ ca o singură putere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Păstrăm baza și calculăm 45 − 20 = 25.",
+      "options": [
+        {
+          "text": "14⁶⁵",
+          "is_correct": false
+        },
+        {
+          "text": "14²⁵",
+          "is_correct": true
+        },
+        {
+          "text": "1²⁵",
+          "is_correct": false
+        },
+        {
+          "text": "14²⁰",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Simplifică (3⁴)⁵.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La puterea unei puteri înmulțim exponenții: 4 · 5 = 20.",
+      "options": [
+        {
+          "text": "3⁹",
+          "is_correct": false
+        },
+        {
+          "text": "3²⁰",
+          "is_correct": true
+        },
+        {
+          "text": "3¹",
+          "is_correct": false
+        },
+        {
+          "text": "15²⁰",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este forma unei singure puteri pentru (7³)⁶?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3 · 6 = 18.",
+      "options": [
+        {
+          "text": "7⁹",
+          "is_correct": false
+        },
+        {
+          "text": "7¹⁸",
+          "is_correct": true
+        },
+        {
+          "text": "7²",
+          "is_correct": false
+        },
+        {
+          "text": "42¹⁸",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Simplifică ((2²)³)⁴.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim exponenții: 2 · 3 · 4 = 24.",
+      "options": [
+        {
+          "text": "2⁹",
+          "is_correct": false
+        },
+        {
+          "text": "2²⁴",
+          "is_correct": true
+        },
+        {
+          "text": "24²",
+          "is_correct": false
+        },
+        {
+          "text": "2¹⁴",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrie (4 · 5)³ folosind puterile factorilor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Puterea unui produs se distribuie fiecărui factor.",
+      "options": [
+        {
+          "text": "4³ · 5",
+          "is_correct": false
+        },
+        {
+          "text": "4³ · 5³",
+          "is_correct": true
+        },
+        {
+          "text": "20⁶",
+          "is_correct": false
+        },
+        {
+          "text": "4 · 5³",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care expresie este egală cu 35⁴?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "35 = 5 · 7, deci 35⁴ = 5⁴ · 7⁴.",
+      "options": [
+        {
+          "text": "5⁴ + 7⁴",
+          "is_correct": false
+        },
+        {
+          "text": "5⁴ · 7⁴",
+          "is_correct": true
+        },
+        {
+          "text": "5² · 7²",
+          "is_correct": false
+        },
+        {
+          "text": "5 · 7⁴",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrie 12⁶ : 6⁶ sub forma unei singure puteri.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Puterile au același exponent: 12⁶ : 6⁶ = (12 : 6)⁶ = 2⁶.",
+      "options": [
+        {
+          "text": "6⁰",
+          "is_correct": false
+        },
+        {
+          "text": "2⁶",
+          "is_correct": true
+        },
+        {
+          "text": "2¹²",
+          "is_correct": false
+        },
+        {
+          "text": "18⁶",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Transformă 8⁵ · 6⁵ într-o singură putere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru același exponent, înmulțim bazele și păstrăm exponentul.",
+      "options": [
+        {
+          "text": "14⁵",
+          "is_correct": false
+        },
+        {
+          "text": "48⁵",
+          "is_correct": true
+        },
+        {
+          "text": "8³⁰",
+          "is_correct": false
+        },
+        {
+          "text": "48¹⁰",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Simplifică 3⁵ · 3⁷ : 3⁴.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Exponentul final este 5 + 7 − 4 = 8.",
+      "options": [
+        {
+          "text": "3¹⁶",
+          "is_correct": false
+        },
+        {
+          "text": "3⁸",
+          "is_correct": true
+        },
+        {
+          "text": "3¹⁴",
+          "is_correct": false
+        },
+        {
+          "text": "3⁶",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrie 2⁴ · 5⁴ · 10³ ca o singură putere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2⁴ · 5⁴ = 10⁴, apoi 10⁴ · 10³ = 10⁷.",
+      "options": [
+        {
+          "text": "10¹¹",
+          "is_correct": false
+        },
+        {
+          "text": "10⁷",
+          "is_correct": true
+        },
+        {
+          "text": "10¹²",
+          "is_correct": false
+        },
+        {
+          "text": "7¹⁰",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care dintre expresii este un pătrat perfect pentru orice număr natural a?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a⁶ = (a³)²; o putere cu exponent par este pătratul unei puteri.",
+      "options": [
+        {
+          "text": "a⁵",
+          "is_correct": false
+        },
+        {
+          "text": "a⁶",
+          "is_correct": true
+        },
+        {
+          "text": "a⁹",
+          "is_correct": false
+        },
+        {
+          "text": "a⁷",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pentru a⁵ · a³ se păstrează baza și se adună exponenții.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "a⁵ · a³ = a⁸.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Egalitatea (a⁴)³ = a⁷ este corectă.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Exponenții se înmulțesc: (a⁴)³ = a¹².",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Dacă a este nenul, atunci a⁹ : a⁹ = 1.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "a⁹ : a⁹ = a⁰ = 1.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Puterea unui produs se calculează prin (a · b)ⁿ = aⁿ · bⁿ.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Exponentul se distribuie ambilor factori.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Egalitatea a⁸ : a³ = a⁵ este valabilă pentru a nenul.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Scădem exponenții: 8 − 3 = 5.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Completează exponenții pentru 5³ · 5⁷ : 5⁴.",
+      "type": "power_rule_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "3 + 7 = 10, apoi 10 − 4 = 6.",
+      "interactive": {
+        "expression": "5³ · 5⁷ : 5⁴",
+        "stages": [
+          {
+            "label": "5³ · 5⁷",
+            "base": 5,
+            "exponent": 10
+          },
+          {
+            "label": "5¹⁰ : 5⁴",
+            "base": 5,
+            "exponent": 6
+          }
+        ]
+      }
+    },
+    {
+      "text": "Transformă pas cu pas 2⁶ · 2⁵ · 2².",
+      "type": "power_rule_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Adunăm pe rând exponenții.",
+      "interactive": {
+        "expression": "2⁶ · 2⁵ · 2²",
+        "stages": [
+          {
+            "label": "2⁶ · 2⁵",
+            "base": 2,
+            "exponent": 11
+          },
+          {
+            "label": "2¹¹ · 2²",
+            "base": 2,
+            "exponent": 13
+          }
+        ]
+      }
+    },
+    {
+      "text": "Simplifică în doi pași 7²⁰ : 7⁸ · 7³.",
+      "type": "power_rule_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Mai întâi scădem, apoi adunăm exponenții.",
+      "interactive": {
+        "expression": "7²⁰ : 7⁸ · 7³",
+        "stages": [
+          {
+            "label": "7²⁰ : 7⁸",
+            "base": 7,
+            "exponent": 12
+          },
+          {
+            "label": "7¹² · 7³",
+            "base": 7,
+            "exponent": 15
+          }
+        ]
+      }
+    },
+    {
+      "text": "Ridică puterea la putere și completează rezultatul.",
+      "type": "power_rule_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La puterea unei puteri înmulțim exponenții.",
+      "interactive": {
+        "expression": "(3⁵)⁴",
+        "stages": [
+          {
+            "label": "5 · 4",
+            "base": 3,
+            "exponent": 20
+          }
+        ]
+      }
+    },
+    {
+      "text": "Simplifică expresia ((5²)³)².",
+      "type": "power_rule_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "2 · 3 = 6, apoi 6 · 2 = 12.",
+      "interactive": {
+        "expression": "((5²)³)²",
+        "stages": [
+          {
+            "label": "(5²)³",
+            "base": 5,
+            "exponent": 6
+          },
+          {
+            "label": "(5⁶)²",
+            "base": 5,
+            "exponent": 12
+          }
+        ]
+      }
+    },
+    {
+      "text": "Unește mai întâi factorii cu același exponent.",
+      "type": "power_rule_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "2⁶ · 5⁶ = 10⁶, apoi adunăm 6 + 3.",
+      "interactive": {
+        "expression": "2⁶ · 5⁶ · 10³",
+        "stages": [
+          {
+            "label": "2⁶ · 5⁶",
+            "base": 10,
+            "exponent": 6
+          },
+          {
+            "label": "10⁶ · 10³",
+            "base": 10,
+            "exponent": 9
+          }
+        ]
+      }
+    },
+    {
+      "text": "Transformă câtul și apoi simplifică.",
+      "type": "power_rule_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aplicăm regula aceluiași exponent, apoi adunăm exponenții.",
+      "interactive": {
+        "expression": "18⁵ : 6⁵ · 3²",
+        "stages": [
+          {
+            "label": "18⁵ : 6⁵",
+            "base": 3,
+            "exponent": 5
+          },
+          {
+            "label": "3⁵ · 3²",
+            "base": 3,
+            "exponent": 7
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completează traseul pentru 4³ · 2³ · 8².",
+      "type": "power_rule_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "4³ · 2³ = (4 · 2)³ = 8³, apoi 8³ · 8² = 8⁵.",
+      "interactive": {
+        "expression": "4³ · 2³ · 8²",
+        "stages": [
+          {
+            "label": "4³ · 2³",
+            "base": 8,
+            "exponent": 3
+          },
+          {
+            "label": "8³ · 8²",
+            "base": 8,
+            "exponent": 5
+          }
+        ]
+      }
+    },
+    {
+      "text": "Redu expresia 11¹⁷ : 11⁵ : 11⁴.",
+      "type": "power_rule_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Scădem succesiv: 17 − 5 − 4 = 8.",
+      "interactive": {
+        "expression": "11¹⁷ : 11⁵ : 11⁴",
+        "stages": [
+          {
+            "label": "11¹⁷ : 11⁵",
+            "base": 11,
+            "exponent": 12
+          },
+          {
+            "label": "11¹² : 11⁴",
+            "base": 11,
+            "exponent": 8
+          }
+        ]
+      }
+    },
+    {
+      "text": "Calculează exponenții din (2³)⁴ · 2⁵.",
+      "type": "power_rule_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "3 · 4 = 12, apoi 12 + 5 = 17.",
+      "interactive": {
+        "expression": "(2³)⁴ · 2⁵",
+        "stages": [
+          {
+            "label": "(2³)⁴",
+            "base": 2,
+            "exponent": 12
+          },
+          {
+            "label": "2¹² · 2⁵",
+            "base": 2,
+            "exponent": 17
+          }
+        ]
+      }
+    },
+    {
+      "text": "Simplifică 6⁹ : 6³ · 6² : 6⁴.",
+      "type": "power_rule_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Calculăm de la stânga la dreapta: 9 − 3 + 2 − 4 = 4.",
+      "interactive": {
+        "expression": "6⁹ : 6³ · 6² : 6⁴",
+        "stages": [
+          {
+            "label": "6⁹ : 6³",
+            "base": 6,
+            "exponent": 6
+          },
+          {
+            "label": "6⁶ · 6²",
+            "base": 6,
+            "exponent": 8
+          },
+          {
+            "label": "6⁸ : 6⁴",
+            "base": 6,
+            "exponent": 4
+          }
+        ]
+      }
+    },
+    {
+      "text": "Scrie produsul 25⁴ · 4⁴ · 10² ca o putere a lui 10.",
+      "type": "power_rule_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "25⁴ · 4⁴ = 100⁴ = 10⁸, apoi obținem 10¹⁰.",
+      "interactive": {
+        "expression": "25⁴ · 4⁴ · 10²",
+        "stages": [
+          {
+            "label": "25⁴ · 4⁴",
+            "base": 100,
+            "exponent": 4
+          },
+          {
+            "label": "100⁴",
+            "base": 10,
+            "exponent": 8
+          },
+          {
+            "label": "10⁸ · 10²",
+            "base": 10,
+            "exponent": 10
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completează simplificarea lui 9⁷ : 3⁷ · 3⁴.",
+      "type": "power_rule_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "(9 : 3)⁷ = 3⁷, apoi 7 + 4 = 11.",
+      "interactive": {
+        "expression": "9⁷ : 3⁷ · 3⁴",
+        "stages": [
+          {
+            "label": "9⁷ : 3⁷",
+            "base": 3,
+            "exponent": 7
+          },
+          {
+            "label": "3⁷ · 3⁴",
+            "base": 3,
+            "exponent": 11
+          }
+        ]
+      }
+    },
+    {
+      "text": "Transformă 16³ · 4² într-o putere a lui 2.",
+      "type": "power_rule_chain",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "16 = 2⁴ și 4 = 2², deci 12 + 4 = 16.",
+      "interactive": {
+        "expression": "16³ · 4²",
+        "stages": [
+          {
+            "label": "16³",
+            "base": 2,
+            "exponent": 12
+          },
+          {
+            "label": "4²",
+            "base": 2,
+            "exponent": 4
+          },
+          {
+            "label": "2¹² · 2⁴",
+            "base": 2,
+            "exponent": 16
+          }
+        ]
+      }
+    },
+    {
+      "text": "Potrivește fiecare expresie cu forma sa simplificată: 7⁴ · 7³, 5¹¹ : 5⁶, (2³)⁴.",
+      "type": "power_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aplicăm regula indicată de baze și exponenți.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "7⁴ · 7³",
+            "right": "7⁷"
+          },
+          {
+            "left": "5¹¹ : 5⁶",
+            "right": "5⁵"
+          },
+          {
+            "left": "(2³)⁴",
+            "right": "2¹²"
+          }
+        ],
+        "right_order": [
+          2,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Potrivește fiecare expresie cu forma sa simplificată: 3⁵ · 4⁵, 18⁶ : 6⁶, (5²)³.",
+      "type": "power_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aplicăm regula indicată de baze și exponenți.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "3⁵ · 4⁵",
+            "right": "12⁵"
+          },
+          {
+            "left": "18⁶ : 6⁶",
+            "right": "3⁶"
+          },
+          {
+            "left": "(5²)³",
+            "right": "5⁶"
+          }
+        ],
+        "right_order": [
+          1,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Potrivește fiecare expresie cu forma sa simplificată: 2⁷ · 2 · 2³, 9¹⁵ : 9¹⁰, 25⁴ · 4⁴.",
+      "type": "power_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aplicăm regula indicată de baze și exponenți.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "2⁷ · 2 · 2³",
+            "right": "2¹¹"
+          },
+          {
+            "left": "9¹⁵ : 9¹⁰",
+            "right": "9⁵"
+          },
+          {
+            "left": "25⁴ · 4⁴",
+            "right": "100⁴"
+          }
+        ],
+        "right_order": [
+          2,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Potrivește fiecare expresie cu forma sa simplificată: (7⁴)², 6³ · 5³, 12⁹ : 12⁴.",
+      "type": "power_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aplicăm regula indicată de baze și exponenți.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "(7⁴)²",
+            "right": "7⁸"
+          },
+          {
+            "left": "6³ · 5³",
+            "right": "30³"
+          },
+          {
+            "left": "12⁹ : 12⁴",
+            "right": "12⁵"
+          }
+        ],
+        "right_order": [
+          1,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "text": "Potrivește fiecare expresie cu forma sa simplificată: 4⁶ · 2⁶, (3⁵)³, 10¹² : 10⁷.",
+      "type": "power_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aplicăm regula indicată de baze și exponenți.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "4⁶ · 2⁶",
+            "right": "8⁶"
+          },
+          {
+            "left": "(3⁵)³",
+            "right": "3¹⁵"
+          },
+          {
+            "left": "10¹² : 10⁷",
+            "right": "10⁵"
+          }
+        ],
+        "right_order": [
+          0,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Apasă primul pas greșit din rezolvarea care pornește de la 4³ · 4⁵.",
+      "type": "factor_error",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Verificăm regula aplicată și calculul exponentului.",
+      "interactive": {
+        "steps": [
+          "4³ · 4⁵",
+          "= 4³·⁵",
+          "= 4¹⁵"
+        ],
+        "error_index": 1
+      }
+    },
+    {
+      "text": "Apasă primul pas greșit din rezolvarea care pornește de la 7¹² : 7⁴.",
+      "type": "factor_error",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Verificăm regula aplicată și calculul exponentului.",
+      "interactive": {
+        "steps": [
+          "7¹² : 7⁴",
+          "= 7¹²⁺⁴",
+          "= 7¹⁶"
+        ],
+        "error_index": 1
+      }
+    },
+    {
+      "text": "Apasă primul pas greșit din rezolvarea care pornește de la (5³)⁴.",
+      "type": "factor_error",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Verificăm regula aplicată și calculul exponentului.",
+      "interactive": {
+        "steps": [
+          "(5³)⁴",
+          "= 5³⁺⁴",
+          "= 5⁷"
+        ],
+        "error_index": 1
+      }
+    },
+    {
+      "text": "Apasă primul pas greșit din rezolvarea care pornește de la 3⁶ · 2⁶.",
+      "type": "factor_error",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Verificăm regula aplicată și calculul exponentului.",
+      "interactive": {
+        "steps": [
+          "3⁶ · 2⁶",
+          "= (3 · 2)⁶",
+          "= 6⁷"
+        ],
+        "error_index": 2
+      }
+    },
+    {
+      "text": "Apasă primul pas greșit din rezolvarea care pornește de la 18⁵ : 6⁵.",
+      "type": "factor_error",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Verificăm regula aplicată și calculul exponentului.",
+      "interactive": {
+        "steps": [
+          "18⁵ : 6⁵",
+          "= (18 : 6)⁵",
+          "= 3⁶"
+        ],
+        "error_index": 2
+      }
+    }
+  ]
+}

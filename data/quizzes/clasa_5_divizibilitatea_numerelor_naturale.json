@@ -1,6 +1,2419 @@
 {
   "title": "Divizibilitatea numerelor naturale",
-  "description": "Clasa a 5-a",
-  "difficulty": "easy",
-  "questions": []
+  "description": "Clasa a 5-a · Divizor. Multiplu. Divizori și multipli comuni",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Completați relația care arată că 7 divide 56.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "relation",
+        "a": 56,
+        "b": 7,
+        "c": 8,
+        "missing": "c",
+        "fields": [
+          {
+            "key": "c"
+          }
+        ],
+        "answers": {
+          "c": 8
+        }
+      },
+      "explanation": "56 = 7 · 8; de aceea 7 este divizor al lui 56, iar 56 este multiplu de 7."
+    },
+    {
+      "text": "Completați relația care arată că 15 divide 120.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "relation",
+        "a": 120,
+        "b": 15,
+        "c": 8,
+        "missing": "b",
+        "fields": [
+          {
+            "key": "b"
+          }
+        ],
+        "answers": {
+          "b": 15
+        }
+      },
+      "explanation": "120 = 15 · 8; de aceea 15 este divizor al lui 120, iar 120 este multiplu de 15."
+    },
+    {
+      "text": "Completați relația care arată că 13 divide 143.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "relation",
+        "a": 143,
+        "b": 13,
+        "c": 11,
+        "missing": "a",
+        "fields": [
+          {
+            "key": "a"
+          }
+        ],
+        "answers": {
+          "a": 143
+        }
+      },
+      "explanation": "143 = 13 · 11; de aceea 13 este divizor al lui 143, iar 143 este multiplu de 13."
+    },
+    {
+      "text": "Alegeți toate denumirile corecte pentru relația 56 = 7 · 8.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "role",
+        "cards": [
+          {
+            "id": "a_div",
+            "label": "7 este divizor al lui 56"
+          },
+          {
+            "id": "b_mult",
+            "label": "56 este multiplu de 7"
+          },
+          {
+            "id": "a_mult",
+            "label": "7 este multiplu de 56"
+          },
+          {
+            "id": "b_div",
+            "label": "56 este divizor al lui 7"
+          }
+        ],
+        "correct_ids": [
+          "a_div",
+          "b_mult"
+        ]
+      },
+      "explanation": "7 este divizor, iar 56 este multiplu, deoarece împărțirea 56 : 7 este exactă."
+    },
+    {
+      "text": "Alegeți toate denumirile corecte pentru relația 143 = 13 · 11.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "role",
+        "cards": [
+          {
+            "id": "a_div",
+            "label": "13 este divizor al lui 143"
+          },
+          {
+            "id": "b_mult",
+            "label": "143 este multiplu de 13"
+          },
+          {
+            "id": "a_mult",
+            "label": "13 este multiplu de 143"
+          },
+          {
+            "id": "b_div",
+            "label": "143 este divizor al lui 13"
+          }
+        ],
+        "correct_ids": [
+          "a_div",
+          "b_mult"
+        ]
+      },
+      "explanation": "13 este divizor, iar 143 este multiplu, deoarece împărțirea 143 : 13 este exactă."
+    },
+    {
+      "text": "Alegeți toate denumirile corecte pentru relația 120 = 8 · 15.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "role",
+        "cards": [
+          {
+            "id": "a_div",
+            "label": "8 este divizor al lui 120"
+          },
+          {
+            "id": "b_mult",
+            "label": "120 este multiplu de 8"
+          },
+          {
+            "id": "a_mult",
+            "label": "8 este multiplu de 120"
+          },
+          {
+            "id": "b_div",
+            "label": "120 este divizor al lui 8"
+          }
+        ],
+        "correct_ids": [
+          "a_div",
+          "b_mult"
+        ]
+      },
+      "explanation": "8 este divizor, iar 120 este multiplu, deoarece împărțirea 120 : 8 este exactă."
+    },
+    {
+      "text": "Construiți toate perechile de factori pentru numărul 36.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "factor_pairs",
+        "number": 36,
+        "pairs": [
+          [
+            1,
+            36
+          ],
+          [
+            2,
+            18
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "fields": [
+          {
+            "key": "pair:0:left"
+          },
+          {
+            "key": "pair:0:right"
+          },
+          {
+            "key": "pair:1:left"
+          },
+          {
+            "key": "pair:1:right"
+          },
+          {
+            "key": "pair:2:left"
+          },
+          {
+            "key": "pair:2:right"
+          },
+          {
+            "key": "pair:3:left"
+          },
+          {
+            "key": "pair:3:right"
+          },
+          {
+            "key": "pair:4:left"
+          },
+          {
+            "key": "pair:4:right"
+          }
+        ],
+        "answers": {
+          "pair:0:left": 1,
+          "pair:0:right": 36,
+          "pair:1:left": 2,
+          "pair:1:right": 18,
+          "pair:2:left": 3,
+          "pair:2:right": 12,
+          "pair:3:left": 4,
+          "pair:3:right": 9,
+          "pair:4:left": 6,
+          "pair:4:right": 6
+        }
+      },
+      "explanation": "Fiecare pereche are produsul egal cu numărul dat; numerele din perechi sunt divizori."
+    },
+    {
+      "text": "Construiți toate perechile de factori pentru numărul 48.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "factor_pairs",
+        "number": 48,
+        "pairs": [
+          [
+            1,
+            48
+          ],
+          [
+            2,
+            24
+          ],
+          [
+            3,
+            16
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "fields": [
+          {
+            "key": "pair:0:left"
+          },
+          {
+            "key": "pair:0:right"
+          },
+          {
+            "key": "pair:1:left"
+          },
+          {
+            "key": "pair:1:right"
+          },
+          {
+            "key": "pair:2:left"
+          },
+          {
+            "key": "pair:2:right"
+          },
+          {
+            "key": "pair:3:left"
+          },
+          {
+            "key": "pair:3:right"
+          },
+          {
+            "key": "pair:4:left"
+          },
+          {
+            "key": "pair:4:right"
+          }
+        ],
+        "answers": {
+          "pair:0:left": 1,
+          "pair:0:right": 48,
+          "pair:1:left": 2,
+          "pair:1:right": 24,
+          "pair:2:left": 3,
+          "pair:2:right": 16,
+          "pair:3:left": 4,
+          "pair:3:right": 12,
+          "pair:4:left": 6,
+          "pair:4:right": 8
+        }
+      },
+      "explanation": "Fiecare pereche are produsul egal cu numărul dat; numerele din perechi sunt divizori."
+    },
+    {
+      "text": "Construiți toate perechile de factori pentru numărul 60.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "factor_pairs",
+        "number": 60,
+        "pairs": [
+          [
+            1,
+            60
+          ],
+          [
+            2,
+            30
+          ],
+          [
+            3,
+            20
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            6,
+            10
+          ]
+        ],
+        "fields": [
+          {
+            "key": "pair:0:left"
+          },
+          {
+            "key": "pair:0:right"
+          },
+          {
+            "key": "pair:1:left"
+          },
+          {
+            "key": "pair:1:right"
+          },
+          {
+            "key": "pair:2:left"
+          },
+          {
+            "key": "pair:2:right"
+          },
+          {
+            "key": "pair:3:left"
+          },
+          {
+            "key": "pair:3:right"
+          },
+          {
+            "key": "pair:4:left"
+          },
+          {
+            "key": "pair:4:right"
+          },
+          {
+            "key": "pair:5:left"
+          },
+          {
+            "key": "pair:5:right"
+          }
+        ],
+        "answers": {
+          "pair:0:left": 1,
+          "pair:0:right": 60,
+          "pair:1:left": 2,
+          "pair:1:right": 30,
+          "pair:2:left": 3,
+          "pair:2:right": 20,
+          "pair:3:left": 4,
+          "pair:3:right": 15,
+          "pair:4:left": 5,
+          "pair:4:right": 12,
+          "pair:5:left": 6,
+          "pair:5:right": 10
+        }
+      },
+      "explanation": "Fiecare pereche are produsul egal cu numărul dat; numerele din perechi sunt divizori."
+    },
+    {
+      "text": "Fabrica divizorilor: scrieți toți divizorii numărului 24.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "divisor_list",
+        "number": 24,
+        "fields": [
+          {
+            "key": "list"
+          }
+        ],
+        "answers": {
+          "list": "1,2,3,4,6,8,12,24"
+        }
+      },
+      "explanation": "Divizorii lui 24 sunt: 1, 2, 3, 4, 6, 8, 12, 24."
+    },
+    {
+      "text": "Fabrica divizorilor: scrieți toți divizorii numărului 40.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "divisor_list",
+        "number": 40,
+        "fields": [
+          {
+            "key": "list"
+          }
+        ],
+        "answers": {
+          "list": "1,2,4,5,8,10,20,40"
+        }
+      },
+      "explanation": "Divizorii lui 40 sunt: 1, 2, 4, 5, 8, 10, 20, 40."
+    },
+    {
+      "text": "Fabrica divizorilor: scrieți toți divizorii numărului 63.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "divisor_list",
+        "number": 63,
+        "fields": [
+          {
+            "key": "list"
+          }
+        ],
+        "answers": {
+          "list": "1,3,7,9,21,63"
+        }
+      },
+      "explanation": "Divizorii lui 63 sunt: 1, 3, 7, 9, 21, 63."
+    },
+    {
+      "text": "Selectați toți divizorii lui 28.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "divisors",
+        "cards": [
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "14",
+            "label": "14"
+          },
+          {
+            "id": "28",
+            "label": "28"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "12",
+            "label": "12"
+          }
+        ],
+        "correct_ids": [
+          "1",
+          "2",
+          "4",
+          "7",
+          "14",
+          "28"
+        ]
+      },
+      "explanation": "Un număr este selectat dacă 28 se împarte exact la el."
+    },
+    {
+      "text": "Selectați toți divizorii lui 45.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "divisors",
+        "cards": [
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          },
+          {
+            "id": "15",
+            "label": "15"
+          },
+          {
+            "id": "45",
+            "label": "45"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "10",
+            "label": "10"
+          },
+          {
+            "id": "20",
+            "label": "20"
+          }
+        ],
+        "correct_ids": [
+          "1",
+          "3",
+          "5",
+          "9",
+          "15",
+          "45"
+        ]
+      },
+      "explanation": "Un număr este selectat dacă 45 se împarte exact la el."
+    },
+    {
+      "text": "Selectați toți divizorii lui 64.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "divisors",
+        "cards": [
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "16",
+            "label": "16"
+          },
+          {
+            "id": "32",
+            "label": "32"
+          },
+          {
+            "id": "64",
+            "label": "64"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "12",
+            "label": "12"
+          }
+        ],
+        "correct_ids": [
+          "1",
+          "2",
+          "4",
+          "8",
+          "16",
+          "32",
+          "64"
+        ]
+      },
+      "explanation": "Un număr este selectat dacă 64 se împarte exact la el."
+    },
+    {
+      "text": "Selectați toți multiplii lui 6.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "multiples",
+        "cards": [
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "12",
+            "label": "12"
+          },
+          {
+            "id": "18",
+            "label": "18"
+          },
+          {
+            "id": "20",
+            "label": "20"
+          },
+          {
+            "id": "24",
+            "label": "24"
+          },
+          {
+            "id": "30",
+            "label": "30"
+          },
+          {
+            "id": "35",
+            "label": "35"
+          },
+          {
+            "id": "42",
+            "label": "42"
+          },
+          {
+            "id": "48",
+            "label": "48"
+          }
+        ],
+        "correct_ids": [
+          "6",
+          "12",
+          "18",
+          "24",
+          "30",
+          "42",
+          "48"
+        ]
+      },
+      "explanation": "Multiplii selectați se pot scrie sub forma 6 · n."
+    },
+    {
+      "text": "Selectați toți multiplii lui 7.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "multiples",
+        "cards": [
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "14",
+            "label": "14"
+          },
+          {
+            "id": "19",
+            "label": "19"
+          },
+          {
+            "id": "21",
+            "label": "21"
+          },
+          {
+            "id": "28",
+            "label": "28"
+          },
+          {
+            "id": "32",
+            "label": "32"
+          },
+          {
+            "id": "35",
+            "label": "35"
+          },
+          {
+            "id": "42",
+            "label": "42"
+          },
+          {
+            "id": "49",
+            "label": "49"
+          }
+        ],
+        "correct_ids": [
+          "7",
+          "14",
+          "21",
+          "28",
+          "35",
+          "42",
+          "49"
+        ]
+      },
+      "explanation": "Multiplii selectați se pot scrie sub forma 7 · n."
+    },
+    {
+      "text": "Selectați toți multiplii lui 9.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "multiples",
+        "cards": [
+          {
+            "id": "9",
+            "label": "9"
+          },
+          {
+            "id": "18",
+            "label": "18"
+          },
+          {
+            "id": "25",
+            "label": "25"
+          },
+          {
+            "id": "27",
+            "label": "27"
+          },
+          {
+            "id": "36",
+            "label": "36"
+          },
+          {
+            "id": "45",
+            "label": "45"
+          },
+          {
+            "id": "50",
+            "label": "50"
+          },
+          {
+            "id": "54",
+            "label": "54"
+          },
+          {
+            "id": "63",
+            "label": "63"
+          }
+        ],
+        "correct_ids": [
+          "9",
+          "18",
+          "27",
+          "36",
+          "45",
+          "54",
+          "63"
+        ]
+      },
+      "explanation": "Multiplii selectați se pot scrie sub forma 9 · n."
+    },
+    {
+      "text": "Sortați numerele după relația de divizibilitate cu 4.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "two_zones",
+        "zones": [
+          {
+            "id": "yes",
+            "label": "Divizibile cu 4"
+          },
+          {
+            "id": "no",
+            "label": "Nu sunt divizibile cu 4"
+          }
+        ],
+        "cards": [
+          {
+            "id": "12",
+            "label": "12",
+            "zone": "yes"
+          },
+          {
+            "id": "14",
+            "label": "14",
+            "zone": "no"
+          },
+          {
+            "id": "20",
+            "label": "20",
+            "zone": "yes"
+          },
+          {
+            "id": "22",
+            "label": "22",
+            "zone": "no"
+          },
+          {
+            "id": "28",
+            "label": "28",
+            "zone": "yes"
+          },
+          {
+            "id": "31",
+            "label": "31",
+            "zone": "no"
+          },
+          {
+            "id": "36",
+            "label": "36",
+            "zone": "yes"
+          },
+          {
+            "id": "42",
+            "label": "42",
+            "zone": "no"
+          }
+        ]
+      },
+      "explanation": "În prima zonă intră numai numerele care se împart exact la numărul dat."
+    },
+    {
+      "text": "Sortați numerele după relația de divizibilitate cu 6.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "two_zones",
+        "zones": [
+          {
+            "id": "yes",
+            "label": "Divizibile cu 6"
+          },
+          {
+            "id": "no",
+            "label": "Nu sunt divizibile cu 6"
+          }
+        ],
+        "cards": [
+          {
+            "id": "18",
+            "label": "18",
+            "zone": "yes"
+          },
+          {
+            "id": "20",
+            "label": "20",
+            "zone": "no"
+          },
+          {
+            "id": "24",
+            "label": "24",
+            "zone": "yes"
+          },
+          {
+            "id": "27",
+            "label": "27",
+            "zone": "no"
+          },
+          {
+            "id": "30",
+            "label": "30",
+            "zone": "yes"
+          },
+          {
+            "id": "35",
+            "label": "35",
+            "zone": "no"
+          },
+          {
+            "id": "42",
+            "label": "42",
+            "zone": "yes"
+          },
+          {
+            "id": "50",
+            "label": "50",
+            "zone": "no"
+          }
+        ]
+      },
+      "explanation": "În prima zonă intră numai numerele care se împart exact la numărul dat."
+    },
+    {
+      "text": "Sortați numerele după relația de divizibilitate cu 9.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "two_zones",
+        "zones": [
+          {
+            "id": "yes",
+            "label": "Divizibile cu 9"
+          },
+          {
+            "id": "no",
+            "label": "Nu sunt divizibile cu 9"
+          }
+        ],
+        "cards": [
+          {
+            "id": "18",
+            "label": "18",
+            "zone": "yes"
+          },
+          {
+            "id": "25",
+            "label": "25",
+            "zone": "no"
+          },
+          {
+            "id": "27",
+            "label": "27",
+            "zone": "yes"
+          },
+          {
+            "id": "36",
+            "label": "36",
+            "zone": "yes"
+          },
+          {
+            "id": "44",
+            "label": "44",
+            "zone": "no"
+          },
+          {
+            "id": "54",
+            "label": "54",
+            "zone": "yes"
+          },
+          {
+            "id": "63",
+            "label": "63",
+            "zone": "yes"
+          },
+          {
+            "id": "70",
+            "label": "70",
+            "zone": "no"
+          }
+        ]
+      },
+      "explanation": "În prima zonă intră numai numerele care se împart exact la numărul dat."
+    },
+    {
+      "text": "Așezați divizorii numerelor 24 și 40 în diagrama corectă.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "venn",
+        "zones": [
+          {
+            "id": "a",
+            "label": "Numai pentru 24"
+          },
+          {
+            "id": "common",
+            "label": "Divizori comuni"
+          },
+          {
+            "id": "b",
+            "label": "Numai pentru 40"
+          }
+        ],
+        "cards": [
+          {
+            "id": "1",
+            "label": "1",
+            "zone": "common"
+          },
+          {
+            "id": "2",
+            "label": "2",
+            "zone": "common"
+          },
+          {
+            "id": "3",
+            "label": "3",
+            "zone": "a"
+          },
+          {
+            "id": "4",
+            "label": "4",
+            "zone": "common"
+          },
+          {
+            "id": "5",
+            "label": "5",
+            "zone": "b"
+          },
+          {
+            "id": "6",
+            "label": "6",
+            "zone": "a"
+          },
+          {
+            "id": "8",
+            "label": "8",
+            "zone": "common"
+          },
+          {
+            "id": "10",
+            "label": "10",
+            "zone": "b"
+          },
+          {
+            "id": "12",
+            "label": "12",
+            "zone": "a"
+          },
+          {
+            "id": "20",
+            "label": "20",
+            "zone": "b"
+          },
+          {
+            "id": "24",
+            "label": "24",
+            "zone": "a"
+          },
+          {
+            "id": "40",
+            "label": "40",
+            "zone": "b"
+          }
+        ]
+      },
+      "explanation": "În intersecție se află: 1, 2, 4, 8."
+    },
+    {
+      "text": "Așezați divizorii numerelor 18 și 30 în diagrama corectă.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "venn",
+        "zones": [
+          {
+            "id": "a",
+            "label": "Numai pentru 18"
+          },
+          {
+            "id": "common",
+            "label": "Divizori comuni"
+          },
+          {
+            "id": "b",
+            "label": "Numai pentru 30"
+          }
+        ],
+        "cards": [
+          {
+            "id": "1",
+            "label": "1",
+            "zone": "common"
+          },
+          {
+            "id": "2",
+            "label": "2",
+            "zone": "common"
+          },
+          {
+            "id": "3",
+            "label": "3",
+            "zone": "common"
+          },
+          {
+            "id": "5",
+            "label": "5",
+            "zone": "b"
+          },
+          {
+            "id": "6",
+            "label": "6",
+            "zone": "common"
+          },
+          {
+            "id": "9",
+            "label": "9",
+            "zone": "a"
+          },
+          {
+            "id": "10",
+            "label": "10",
+            "zone": "b"
+          },
+          {
+            "id": "15",
+            "label": "15",
+            "zone": "b"
+          },
+          {
+            "id": "18",
+            "label": "18",
+            "zone": "a"
+          },
+          {
+            "id": "30",
+            "label": "30",
+            "zone": "b"
+          }
+        ]
+      },
+      "explanation": "În intersecție se află: 1, 2, 3, 6."
+    },
+    {
+      "text": "Așezați divizorii numerelor 36 și 48 în diagrama corectă.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "venn",
+        "zones": [
+          {
+            "id": "a",
+            "label": "Numai pentru 36"
+          },
+          {
+            "id": "common",
+            "label": "Divizori comuni"
+          },
+          {
+            "id": "b",
+            "label": "Numai pentru 48"
+          }
+        ],
+        "cards": [
+          {
+            "id": "1",
+            "label": "1",
+            "zone": "common"
+          },
+          {
+            "id": "2",
+            "label": "2",
+            "zone": "common"
+          },
+          {
+            "id": "3",
+            "label": "3",
+            "zone": "common"
+          },
+          {
+            "id": "4",
+            "label": "4",
+            "zone": "common"
+          },
+          {
+            "id": "6",
+            "label": "6",
+            "zone": "common"
+          },
+          {
+            "id": "8",
+            "label": "8",
+            "zone": "b"
+          },
+          {
+            "id": "9",
+            "label": "9",
+            "zone": "a"
+          },
+          {
+            "id": "12",
+            "label": "12",
+            "zone": "common"
+          },
+          {
+            "id": "16",
+            "label": "16",
+            "zone": "b"
+          },
+          {
+            "id": "18",
+            "label": "18",
+            "zone": "a"
+          },
+          {
+            "id": "24",
+            "label": "24",
+            "zone": "b"
+          },
+          {
+            "id": "36",
+            "label": "36",
+            "zone": "a"
+          },
+          {
+            "id": "48",
+            "label": "48",
+            "zone": "b"
+          }
+        ]
+      },
+      "explanation": "În intersecție se află: 1, 2, 3, 4, 6, 12."
+    },
+    {
+      "text": "Comparați listele și marcați cel mai mare divizor comun al numerelor 40 și 24.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "greatest_common",
+        "a": 40,
+        "b": 24,
+        "divisors_a": [
+          1,
+          2,
+          4,
+          5,
+          8,
+          10,
+          20,
+          40
+        ],
+        "divisors_b": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8,
+          12,
+          24
+        ],
+        "fields": [
+          {
+            "key": "greatest"
+          }
+        ],
+        "answers": {
+          "greatest": 8
+        }
+      },
+      "explanation": "Cel mai mare element care apare în ambele liste este 8."
+    },
+    {
+      "text": "Comparați listele și marcați cel mai mare divizor comun al numerelor 60 și 48.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "greatest_common",
+        "a": 60,
+        "b": 48,
+        "divisors_a": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          10,
+          12,
+          15,
+          20,
+          30,
+          60
+        ],
+        "divisors_b": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8,
+          12,
+          16,
+          24,
+          48
+        ],
+        "fields": [
+          {
+            "key": "greatest"
+          }
+        ],
+        "answers": {
+          "greatest": 12
+        }
+      },
+      "explanation": "Cel mai mare element care apare în ambele liste este 12."
+    },
+    {
+      "text": "Comparați listele și marcați cel mai mare divizor comun al numerelor 60 și 72.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "greatest_common",
+        "a": 60,
+        "b": 72,
+        "divisors_a": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          10,
+          12,
+          15,
+          20,
+          30,
+          60
+        ],
+        "divisors_b": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8,
+          9,
+          12,
+          18,
+          24,
+          36,
+          72
+        ],
+        "fields": [
+          {
+            "key": "greatest"
+          }
+        ],
+        "answers": {
+          "greatest": 12
+        }
+      },
+      "explanation": "Cel mai mare element care apare în ambele liste este 12."
+    },
+    {
+      "text": "Completați șirul multiplilor lui 4.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "sequence",
+        "rows": [
+          {
+            "label": "Multiplii lui 4",
+            "items": [
+              4,
+              {
+                "key": "term:1"
+              },
+              12,
+              {
+                "key": "term:3"
+              },
+              20,
+              24
+            ]
+          }
+        ],
+        "fields": [
+          {
+            "key": "term:1"
+          },
+          {
+            "key": "term:3"
+          }
+        ],
+        "answers": {
+          "term:1": 8,
+          "term:3": 16
+        }
+      },
+      "explanation": "Șirul continuă adunând de fiecare dată 4."
+    },
+    {
+      "text": "Completați șirul multiplilor lui 7.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "sequence",
+        "rows": [
+          {
+            "label": "Multiplii lui 7",
+            "items": [
+              7,
+              14,
+              {
+                "key": "term:2"
+              },
+              28,
+              {
+                "key": "term:4"
+              },
+              42
+            ]
+          }
+        ],
+        "fields": [
+          {
+            "key": "term:2"
+          },
+          {
+            "key": "term:4"
+          }
+        ],
+        "answers": {
+          "term:2": 21,
+          "term:4": 35
+        }
+      },
+      "explanation": "Șirul continuă adunând de fiecare dată 7."
+    },
+    {
+      "text": "Completați șirul multiplilor lui 9.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "sequence",
+        "rows": [
+          {
+            "label": "Multiplii lui 9",
+            "items": [
+              9,
+              {
+                "key": "term:1"
+              },
+              27,
+              36,
+              {
+                "key": "term:4"
+              },
+              54
+            ]
+          }
+        ],
+        "fields": [
+          {
+            "key": "term:1"
+          },
+          {
+            "key": "term:4"
+          }
+        ],
+        "answers": {
+          "term:1": 18,
+          "term:4": 45
+        }
+      },
+      "explanation": "Șirul continuă adunând de fiecare dată 9."
+    },
+    {
+      "text": "Completați cele două șiruri și observați multiplii comuni ai lui 4 și 6.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "dual_sequence",
+        "rows": [
+          {
+            "label": "Multiplii lui 4",
+            "items": [
+              4,
+              8,
+              {
+                "key": "4:3"
+              },
+              16,
+              {
+                "key": "4:5"
+              },
+              24
+            ]
+          },
+          {
+            "label": "Multiplii lui 6",
+            "items": [
+              6,
+              12,
+              {
+                "key": "6:3"
+              },
+              24,
+              {
+                "key": "6:5"
+              },
+              36
+            ]
+          }
+        ],
+        "fields": [
+          {
+            "key": "4:3"
+          },
+          {
+            "key": "4:5"
+          },
+          {
+            "key": "6:3"
+          },
+          {
+            "key": "6:5"
+          }
+        ],
+        "answers": {
+          "4:3": 12,
+          "4:5": 20,
+          "6:3": 18,
+          "6:5": 30
+        }
+      },
+      "explanation": "Valorile care apar în ambele șiruri sunt multipli comuni."
+    },
+    {
+      "text": "Completați cele două șiruri și observați multiplii comuni ai lui 6 și 9.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "dual_sequence",
+        "rows": [
+          {
+            "label": "Multiplii lui 6",
+            "items": [
+              6,
+              12,
+              {
+                "key": "6:3"
+              },
+              24,
+              {
+                "key": "6:5"
+              },
+              36
+            ]
+          },
+          {
+            "label": "Multiplii lui 9",
+            "items": [
+              9,
+              18,
+              {
+                "key": "9:3"
+              },
+              36,
+              {
+                "key": "9:5"
+              },
+              54
+            ]
+          }
+        ],
+        "fields": [
+          {
+            "key": "6:3"
+          },
+          {
+            "key": "6:5"
+          },
+          {
+            "key": "9:3"
+          },
+          {
+            "key": "9:5"
+          }
+        ],
+        "answers": {
+          "6:3": 18,
+          "6:5": 30,
+          "9:3": 27,
+          "9:5": 45
+        }
+      },
+      "explanation": "Valorile care apar în ambele șiruri sunt multipli comuni."
+    },
+    {
+      "text": "Completați cele două șiruri și observați multiplii comuni ai lui 8 și 12.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "dual_sequence",
+        "rows": [
+          {
+            "label": "Multiplii lui 8",
+            "items": [
+              8,
+              16,
+              {
+                "key": "8:3"
+              },
+              32,
+              {
+                "key": "8:5"
+              },
+              48
+            ]
+          },
+          {
+            "label": "Multiplii lui 12",
+            "items": [
+              12,
+              24,
+              {
+                "key": "12:3"
+              },
+              48,
+              {
+                "key": "12:5"
+              },
+              72
+            ]
+          }
+        ],
+        "fields": [
+          {
+            "key": "8:3"
+          },
+          {
+            "key": "8:5"
+          },
+          {
+            "key": "12:3"
+          },
+          {
+            "key": "12:5"
+          }
+        ],
+        "answers": {
+          "8:3": 24,
+          "8:5": 40,
+          "12:3": 36,
+          "12:5": 60
+        }
+      },
+      "explanation": "Valorile care apar în ambele șiruri sunt multipli comuni."
+    },
+    {
+      "text": "Două mașini repetă o acțiune la fiecare 15, respectiv 18 secunde. Marcați primele 3 momente comune.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "timeline",
+        "a": 15,
+        "b": 18,
+        "count": 3,
+        "fields": [
+          {
+            "key": "moments"
+          }
+        ],
+        "answers": {
+          "moments": "90,180,270"
+        }
+      },
+      "explanation": "Primele momente comune sunt 90, 180, 270 secunde."
+    },
+    {
+      "text": "Două proiectoare repetă o acțiune la fiecare 7, respectiv 5 secunde. Marcați primele 3 momente comune.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "timeline",
+        "a": 7,
+        "b": 5,
+        "count": 3,
+        "fields": [
+          {
+            "key": "moments"
+          }
+        ],
+        "answers": {
+          "moments": "35,70,105"
+        }
+      },
+      "explanation": "Primele momente comune sunt 35, 70, 105 secunde."
+    },
+    {
+      "text": "Două semnale repetă o acțiune la fiecare 9, respectiv 12 secunde. Marcați primele 3 momente comune.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "timeline",
+        "a": 9,
+        "b": 12,
+        "count": 3,
+        "fields": [
+          {
+            "key": "moments"
+          }
+        ],
+        "answers": {
+          "moments": "36,72,108"
+        }
+      },
+      "explanation": "Primele momente comune sunt 36, 72, 108 secunde."
+    },
+    {
+      "text": "Construiți șirurile și găsiți primul multiplu comun al numerelor 8 și 12.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "first_common",
+        "a": 8,
+        "b": 12,
+        "multiples_a": [
+          8,
+          16,
+          24
+        ],
+        "multiples_b": [
+          12,
+          24
+        ],
+        "fields": [
+          {
+            "key": "first"
+          }
+        ],
+        "answers": {
+          "first": 24
+        }
+      },
+      "explanation": "Primul număr pozitiv din ambele șiruri este 24."
+    },
+    {
+      "text": "Construiți șirurile și găsiți primul multiplu comun al numerelor 9 și 15.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "first_common",
+        "a": 9,
+        "b": 15,
+        "multiples_a": [
+          9,
+          18,
+          27,
+          36,
+          45
+        ],
+        "multiples_b": [
+          15,
+          30,
+          45
+        ],
+        "fields": [
+          {
+            "key": "first"
+          }
+        ],
+        "answers": {
+          "first": 45
+        }
+      },
+      "explanation": "Primul număr pozitiv din ambele șiruri este 45."
+    },
+    {
+      "text": "Construiți șirurile și găsiți primul multiplu comun al numerelor 12 și 18.",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "first_common",
+        "a": 12,
+        "b": 18,
+        "multiples_a": [
+          12,
+          24,
+          36
+        ],
+        "multiples_b": [
+          18,
+          36
+        ],
+        "fields": [
+          {
+            "key": "first"
+          }
+        ],
+        "answers": {
+          "first": 36
+        }
+      },
+      "explanation": "Primul număr pozitiv din ambele șiruri este 36."
+    },
+    {
+      "text": "Detectivul divizibilității: apăsați primul pas greșit din rezolvarea 1.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "Divizorii lui 18 sunt căutați în perechi.",
+          "1 · 18 și 2 · 9 sunt produse corecte.",
+          "3 · 5 = 18.",
+          "Lista finală conține 1, 2, 3, 5, 9, 18."
+        ],
+        "error_index": 2
+      },
+      "explanation": "3 · 5 este 15; perechea corectă este 3 · 6."
+    },
+    {
+      "text": "Detectivul divizibilității: apăsați primul pas greșit din rezolvarea 2.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "Multiplii lui 7 se obțin înmulțind cu numere naturale.",
+          "7 · 1 = 7, 7 · 2 = 14.",
+          "7 · 3 = 20.",
+          "Următorul multiplu ar fi 28."
+        ],
+        "error_index": 2
+      },
+      "explanation": "7 · 3 = 21, nu 20."
+    },
+    {
+      "text": "Detectivul divizibilității: apăsați primul pas greșit din rezolvarea 3.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "Divizorii lui 24 sunt 1, 2, 3, 4, 6, 8, 12, 24.",
+          "Divizorii lui 40 sunt 1, 2, 4, 5, 8, 10, 20, 40.",
+          "Divizorii comuni sunt 1, 2, 4, 8.",
+          "Cel mai mare divizor comun este 10."
+        ],
+        "error_index": 3
+      },
+      "explanation": "Cel mai mare element comun este 8."
+    },
+    {
+      "text": "Înlocuiți numărul greșit: «Divizorii lui 16 sunt 1, 2, 4, 6, 8, 16». Cu ce trebuie înlocuit 6?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "6 nu divide 16, iar lista completă rămâne 1, 2, 4, 8, 16.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "Nu trebuie să apară niciun număr în loc",
+          "is_correct": true
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "32",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Corectați afirmația: «Primii multipli pozitivi ai lui 9 sunt 9, 18, 26, 36». Ce număr îl înlocuiește pe 26?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "9 · 3 = 27.",
+      "options": [
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "27",
+          "is_correct": true
+        },
+        {
+          "text": "28",
+          "is_correct": false
+        },
+        {
+          "text": "29",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Corectați afirmația: «Cel mai mare divizor comun al lui 40 și 24 este 4». Valoarea corectă este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Divizorii comuni sunt 1, 2, 4 și 8.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "14 este multiplu de 7.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "14 = 7 · 2.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "13 divide 143.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "143 = 13 · 11.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "59 este divizibil cu 7.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "59 : 7 are restul 3.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "4 este divizor comun al numerelor 8 și 20.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Atât 8, cât și 20 se împart exact la 4.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Bingo: găsiți toate numerele divizibile cu 4.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "bingo",
+        "cards": [
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "10",
+            "label": "10"
+          },
+          {
+            "id": "12",
+            "label": "12"
+          },
+          {
+            "id": "15",
+            "label": "15"
+          },
+          {
+            "id": "16",
+            "label": "16"
+          },
+          {
+            "id": "18",
+            "label": "18"
+          },
+          {
+            "id": "20",
+            "label": "20"
+          },
+          {
+            "id": "22",
+            "label": "22"
+          },
+          {
+            "id": "24",
+            "label": "24"
+          },
+          {
+            "id": "27",
+            "label": "27"
+          },
+          {
+            "id": "28",
+            "label": "28"
+          },
+          {
+            "id": "30",
+            "label": "30"
+          }
+        ],
+        "correct_ids": [
+          "8",
+          "12",
+          "16",
+          "20",
+          "24",
+          "28"
+        ]
+      },
+      "explanation": "Sunt corecte numai numerele care se împart exact la 4."
+    },
+    {
+      "text": "Bingo: găsiți toate numerele divizibile cu 6.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "bingo",
+        "cards": [
+          {
+            "id": "12",
+            "label": "12"
+          },
+          {
+            "id": "14",
+            "label": "14"
+          },
+          {
+            "id": "18",
+            "label": "18"
+          },
+          {
+            "id": "20",
+            "label": "20"
+          },
+          {
+            "id": "24",
+            "label": "24"
+          },
+          {
+            "id": "25",
+            "label": "25"
+          },
+          {
+            "id": "30",
+            "label": "30"
+          },
+          {
+            "id": "32",
+            "label": "32"
+          },
+          {
+            "id": "36",
+            "label": "36"
+          },
+          {
+            "id": "40",
+            "label": "40"
+          },
+          {
+            "id": "42",
+            "label": "42"
+          },
+          {
+            "id": "45",
+            "label": "45"
+          }
+        ],
+        "correct_ids": [
+          "12",
+          "18",
+          "24",
+          "30",
+          "36",
+          "42"
+        ]
+      },
+      "explanation": "Sunt corecte numai numerele care se împart exact la 6."
+    },
+    {
+      "text": "Bingo: găsiți toate numerele divizibile cu 9.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "bingo",
+        "cards": [
+          {
+            "id": "9",
+            "label": "9"
+          },
+          {
+            "id": "12",
+            "label": "12"
+          },
+          {
+            "id": "18",
+            "label": "18"
+          },
+          {
+            "id": "20",
+            "label": "20"
+          },
+          {
+            "id": "27",
+            "label": "27"
+          },
+          {
+            "id": "30",
+            "label": "30"
+          },
+          {
+            "id": "36",
+            "label": "36"
+          },
+          {
+            "id": "40",
+            "label": "40"
+          },
+          {
+            "id": "45",
+            "label": "45"
+          },
+          {
+            "id": "50",
+            "label": "50"
+          },
+          {
+            "id": "54",
+            "label": "54"
+          },
+          {
+            "id": "63",
+            "label": "63"
+          }
+        ],
+        "correct_ids": [
+          "9",
+          "18",
+          "27",
+          "36",
+          "45",
+          "54",
+          "63"
+        ]
+      },
+      "explanation": "Sunt corecte numai numerele care se împart exact la 9."
+    },
+    {
+      "text": "Care număr este divizor al lui 30?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "30 = 5 · 6.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care număr este multiplu de 12?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "84 = 12 · 7.",
+      "options": [
+        {
+          "text": "70",
+          "is_correct": false
+        },
+        {
+          "text": "84",
+          "is_correct": true
+        },
+        {
+          "text": "82",
+          "is_correct": false
+        },
+        {
+          "text": "86",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este lista completă a divizorilor lui 10?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Toate cele patru numere împart exact pe 10.",
+      "options": [
+        {
+          "text": "1, 2, 10",
+          "is_correct": false
+        },
+        {
+          "text": "1, 2, 5, 10",
+          "is_correct": true
+        },
+        {
+          "text": "2, 5, 10",
+          "is_correct": false
+        },
+        {
+          "text": "1, 5, 10, 20",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este un divizor comun al numerelor 27 și 36?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "27 = 9 · 3 și 36 = 9 · 4.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este un multiplu comun al numerelor 8 și 12?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "48 = 8 · 6 = 12 · 4.",
+      "options": [
+        {
+          "text": "20",
+          "is_correct": false
+        },
+        {
+          "text": "48",
+          "is_correct": true
+        },
+        {
+          "text": "32",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este cel mai mare divizor comun al numerelor 60 și 48?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Divizorii comuni sunt 1, 2, 3, 4, 6 și 12.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este primul multiplu pozitiv comun al numerelor 9 și 12?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "36 apare primul în ambele șiruri de multipli.",
+      "options": [
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": true
+        },
+        {
+          "text": "27",
+          "is_correct": false
+        },
+        {
+          "text": "48",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "120 de flori se așază în rânduri egale. Care variantă folosește toate florile?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "8 · 15 = 120.",
+      "options": [
+        {
+          "text": "7 rânduri a câte 15",
+          "is_correct": false
+        },
+        {
+          "text": "8 rânduri a câte 15",
+          "is_correct": true
+        },
+        {
+          "text": "9 rânduri a câte 14",
+          "is_correct": false
+        },
+        {
+          "text": "11 rânduri a câte 10",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
 }

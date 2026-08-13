@@ -1,0 +1,2353 @@
+{
+  "title": "Criterii de divizibilitate",
+  "description": "Clasa a 5-a · Criteriile de divizibilitate cu 2, 3, 5, 9, 10 și puterile lui 10",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Completează tabelul mixt 1: apasă fiecare căsuță pentru a alege ✓ sau ×.",
+      "type": "criteria_table",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "numbers": [
+          10,
+          36,
+          40,
+          135,
+          300,
+          978,
+          2400,
+          22500
+        ],
+        "divisors": [
+          2,
+          3,
+          5,
+          9,
+          10
+        ],
+        "answers": {
+          "0:0": true,
+          "0:1": true,
+          "0:2": true,
+          "0:3": false,
+          "0:4": true,
+          "0:5": true,
+          "0:6": true,
+          "0:7": true,
+          "1:0": false,
+          "1:1": true,
+          "1:2": false,
+          "1:3": true,
+          "1:4": true,
+          "1:5": true,
+          "1:6": true,
+          "1:7": true,
+          "2:0": true,
+          "2:1": false,
+          "2:2": true,
+          "2:3": true,
+          "2:4": true,
+          "2:5": false,
+          "2:6": true,
+          "2:7": true,
+          "3:0": false,
+          "3:1": true,
+          "3:2": false,
+          "3:3": true,
+          "3:4": false,
+          "3:5": false,
+          "3:6": false,
+          "3:7": true,
+          "4:0": true,
+          "4:1": false,
+          "4:2": true,
+          "4:3": false,
+          "4:4": true,
+          "4:5": false,
+          "4:6": true,
+          "4:7": true
+        }
+      },
+      "explanation": "Fiecare răspuns se obține aplicând criteriul corespunzător, fără a efectua împărțirea."
+    },
+    {
+      "text": "Completează tabelul al ultimei cifre: apasă fiecare căsuță pentru a alege ✓ sau ×.",
+      "type": "criteria_table",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "numbers": [
+          48,
+          73,
+          90,
+          115,
+          224,
+          349,
+          401,
+          636
+        ],
+        "divisors": [
+          2,
+          5,
+          10
+        ],
+        "answers": {
+          "0:0": true,
+          "0:1": false,
+          "0:2": true,
+          "0:3": false,
+          "0:4": true,
+          "0:5": false,
+          "0:6": false,
+          "0:7": true,
+          "1:0": false,
+          "1:1": false,
+          "1:2": true,
+          "1:3": true,
+          "1:4": false,
+          "1:5": false,
+          "1:6": false,
+          "1:7": false,
+          "2:0": false,
+          "2:1": false,
+          "2:2": true,
+          "2:3": false,
+          "2:4": false,
+          "2:5": false,
+          "2:6": false,
+          "2:7": false
+        }
+      },
+      "explanation": "Fiecare răspuns se obține aplicând criteriul corespunzător, fără a efectua împărțirea."
+    },
+    {
+      "text": "Completează tabelul puterilor lui 10: apasă fiecare căsuță pentru a alege ✓ sau ×.",
+      "type": "criteria_table",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "numbers": [
+          400,
+          1010,
+          3400,
+          12000,
+          40910,
+          1002
+        ],
+        "divisors": [
+          10,
+          100,
+          1000
+        ],
+        "answers": {
+          "0:0": true,
+          "0:1": true,
+          "0:2": true,
+          "0:3": true,
+          "0:4": true,
+          "0:5": false,
+          "1:0": true,
+          "1:1": false,
+          "1:2": true,
+          "1:3": true,
+          "1:4": false,
+          "1:5": false,
+          "2:0": false,
+          "2:1": false,
+          "2:2": false,
+          "2:3": true,
+          "2:4": false,
+          "2:5": false
+        }
+      },
+      "explanation": "Fiecare răspuns se obține aplicând criteriul corespunzător, fără a efectua împărțirea."
+    },
+    {
+      "text": "Completează tabelul al sumei cifrelor: apasă fiecare căsuță pentru a alege ✓ sau ×.",
+      "type": "criteria_table",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "numbers": [
+          6498,
+          741,
+          9085,
+          3006,
+          999,
+          1242
+        ],
+        "divisors": [
+          3,
+          9
+        ],
+        "answers": {
+          "0:0": true,
+          "0:1": true,
+          "0:2": false,
+          "0:3": true,
+          "0:4": true,
+          "0:5": true,
+          "1:0": true,
+          "1:1": false,
+          "1:2": false,
+          "1:3": true,
+          "1:4": true,
+          "1:5": true
+        }
+      },
+      "explanation": "Fiecare răspuns se obține aplicând criteriul corespunzător, fără a efectua împărțirea."
+    },
+    {
+      "text": "Completează tabelul mixt 2: apasă fiecare căsuță pentru a alege ✓ sau ×.",
+      "type": "criteria_table",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "numbers": [
+          20,
+          24,
+          44,
+          45,
+          50,
+          60,
+          66,
+          72
+        ],
+        "divisors": [
+          2,
+          3,
+          5,
+          9,
+          10
+        ],
+        "answers": {
+          "0:0": true,
+          "0:1": true,
+          "0:2": true,
+          "0:3": false,
+          "0:4": true,
+          "0:5": true,
+          "0:6": true,
+          "0:7": true,
+          "1:0": false,
+          "1:1": true,
+          "1:2": false,
+          "1:3": true,
+          "1:4": false,
+          "1:5": true,
+          "1:6": true,
+          "1:7": true,
+          "2:0": true,
+          "2:1": false,
+          "2:2": false,
+          "2:3": true,
+          "2:4": true,
+          "2:5": true,
+          "2:6": false,
+          "2:7": false,
+          "3:0": false,
+          "3:1": false,
+          "3:2": false,
+          "3:3": true,
+          "3:4": false,
+          "3:5": false,
+          "3:6": false,
+          "3:7": true,
+          "4:0": true,
+          "4:1": false,
+          "4:2": false,
+          "4:3": false,
+          "4:4": true,
+          "4:5": true,
+          "4:6": false,
+          "4:7": false
+        }
+      },
+      "explanation": "Fiecare răspuns se obține aplicând criteriul corespunzător, fără a efectua împărțirea."
+    },
+    {
+      "text": "Completează tabelul cu zerouri la final: apasă fiecare căsuță pentru a alege ✓ sau ×.",
+      "type": "criteria_table",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "numbers": [
+          100,
+          250,
+          900,
+          1000,
+          1200,
+          4500,
+          10000
+        ],
+        "divisors": [
+          2,
+          5,
+          10,
+          100,
+          1000
+        ],
+        "answers": {
+          "0:0": true,
+          "0:1": true,
+          "0:2": true,
+          "0:3": true,
+          "0:4": true,
+          "0:5": true,
+          "0:6": true,
+          "1:0": true,
+          "1:1": true,
+          "1:2": true,
+          "1:3": true,
+          "1:4": true,
+          "1:5": true,
+          "1:6": true,
+          "2:0": true,
+          "2:1": true,
+          "2:2": true,
+          "2:3": true,
+          "2:4": true,
+          "2:5": true,
+          "2:6": true,
+          "3:0": true,
+          "3:1": false,
+          "3:2": true,
+          "3:3": true,
+          "3:4": true,
+          "3:5": true,
+          "3:6": true,
+          "4:0": false,
+          "4:1": false,
+          "4:2": false,
+          "4:3": true,
+          "4:4": false,
+          "4:5": false,
+          "4:6": true
+        }
+      },
+      "explanation": "Fiecare răspuns se obține aplicând criteriul corespunzător, fără a efectua împărțirea."
+    },
+    {
+      "text": "Selectează toate numerele divizibile cu 2 din setul A.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "28",
+            "label": "28"
+          },
+          {
+            "id": "35",
+            "label": "35"
+          },
+          {
+            "id": "49",
+            "label": "49"
+          },
+          {
+            "id": "120",
+            "label": "120"
+          },
+          {
+            "id": "1294",
+            "label": "1294"
+          },
+          {
+            "id": "2375",
+            "label": "2375"
+          },
+          {
+            "id": "5401",
+            "label": "5401"
+          },
+          {
+            "id": "145340",
+            "label": "145340"
+          }
+        ],
+        "correct_ids": [
+          "28",
+          "120",
+          "1294",
+          "145340"
+        ]
+      },
+      "explanation": "Sunt selectate exact numerele care respectă criteriul de divizibilitate cu 2."
+    },
+    {
+      "text": "Selectează toate numerele divizibile cu 5 din setul B.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "48",
+            "label": "48"
+          },
+          {
+            "id": "115",
+            "label": "115"
+          },
+          {
+            "id": "224",
+            "label": "224"
+          },
+          {
+            "id": "349",
+            "label": "349"
+          },
+          {
+            "id": "575",
+            "label": "575"
+          },
+          {
+            "id": "636",
+            "label": "636"
+          },
+          {
+            "id": "777",
+            "label": "777"
+          },
+          {
+            "id": "1002",
+            "label": "1002"
+          }
+        ],
+        "correct_ids": [
+          "115",
+          "575"
+        ]
+      },
+      "explanation": "Sunt selectate exact numerele care respectă criteriul de divizibilitate cu 5."
+    },
+    {
+      "text": "Selectează toate numerele divizibile cu 10 din setul C.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "20",
+            "label": "20"
+          },
+          {
+            "id": "44",
+            "label": "44"
+          },
+          {
+            "id": "50",
+            "label": "50"
+          },
+          {
+            "id": "60",
+            "label": "60"
+          },
+          {
+            "id": "81",
+            "label": "81"
+          },
+          {
+            "id": "96",
+            "label": "96"
+          },
+          {
+            "id": "120",
+            "label": "120"
+          },
+          {
+            "id": "135",
+            "label": "135"
+          }
+        ],
+        "correct_ids": [
+          "20",
+          "50",
+          "60",
+          "120"
+        ]
+      },
+      "explanation": "Sunt selectate exact numerele care respectă criteriul de divizibilitate cu 10."
+    },
+    {
+      "text": "Selectează toate numerele divizibile cu 100 din setul D.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "400",
+            "label": "400"
+          },
+          {
+            "id": "1010",
+            "label": "1010"
+          },
+          {
+            "id": "3400",
+            "label": "3400"
+          },
+          {
+            "id": "12000",
+            "label": "12000"
+          },
+          {
+            "id": "40910",
+            "label": "40910"
+          },
+          {
+            "id": "6000",
+            "label": "6000"
+          },
+          {
+            "id": "7205",
+            "label": "7205"
+          },
+          {
+            "id": "22500",
+            "label": "22500"
+          }
+        ],
+        "correct_ids": [
+          "400",
+          "3400",
+          "12000",
+          "6000",
+          "22500"
+        ]
+      },
+      "explanation": "Sunt selectate exact numerele care respectă criteriul de divizibilitate cu 100."
+    },
+    {
+      "text": "Selectează toate numerele divizibile cu 1000 din setul E.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "1000",
+            "label": "1000"
+          },
+          {
+            "id": "2400",
+            "label": "2400"
+          },
+          {
+            "id": "3000",
+            "label": "3000"
+          },
+          {
+            "id": "4500",
+            "label": "4500"
+          },
+          {
+            "id": "12000",
+            "label": "12000"
+          },
+          {
+            "id": "15000",
+            "label": "15000"
+          },
+          {
+            "id": "22005",
+            "label": "22005"
+          },
+          {
+            "id": "10000",
+            "label": "10000"
+          }
+        ],
+        "correct_ids": [
+          "1000",
+          "3000",
+          "12000",
+          "15000",
+          "10000"
+        ]
+      },
+      "explanation": "Sunt selectate exact numerele care respectă criteriul de divizibilitate cu 1000."
+    },
+    {
+      "text": "Selectează toate numerele divizibile cu 3 din setul F.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "741",
+            "label": "741"
+          },
+          {
+            "id": "9085",
+            "label": "9085"
+          },
+          {
+            "id": "6498",
+            "label": "6498"
+          },
+          {
+            "id": "1294",
+            "label": "1294"
+          },
+          {
+            "id": "3006",
+            "label": "3006"
+          },
+          {
+            "id": "401",
+            "label": "401"
+          },
+          {
+            "id": "636",
+            "label": "636"
+          },
+          {
+            "id": "575",
+            "label": "575"
+          }
+        ],
+        "correct_ids": [
+          "741",
+          "6498",
+          "3006",
+          "636"
+        ]
+      },
+      "explanation": "Sunt selectate exact numerele care respectă criteriul de divizibilitate cu 3."
+    },
+    {
+      "text": "Selectează toate numerele divizibile cu 9 din setul G.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "135",
+            "label": "135"
+          },
+          {
+            "id": "300",
+            "label": "300"
+          },
+          {
+            "id": "978",
+            "label": "978"
+          },
+          {
+            "id": "2400",
+            "label": "2400"
+          },
+          {
+            "id": "22500",
+            "label": "22500"
+          },
+          {
+            "id": "741",
+            "label": "741"
+          },
+          {
+            "id": "999",
+            "label": "999"
+          },
+          {
+            "id": "1242",
+            "label": "1242"
+          }
+        ],
+        "correct_ids": [
+          "135",
+          "22500",
+          "999",
+          "1242"
+        ]
+      },
+      "explanation": "Sunt selectate exact numerele care respectă criteriul de divizibilitate cu 9."
+    },
+    {
+      "text": "Selectează numerele care sunt simultan divizibile cu 2 și cu 3 din setul H.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "12",
+            "label": "12"
+          },
+          {
+            "id": "18",
+            "label": "18"
+          },
+          {
+            "id": "20",
+            "label": "20"
+          },
+          {
+            "id": "24",
+            "label": "24"
+          },
+          {
+            "id": "30",
+            "label": "30"
+          },
+          {
+            "id": "35",
+            "label": "35"
+          },
+          {
+            "id": "42",
+            "label": "42"
+          },
+          {
+            "id": "45",
+            "label": "45"
+          },
+          {
+            "id": "48",
+            "label": "48"
+          }
+        ],
+        "correct_ids": [
+          "12",
+          "18",
+          "24",
+          "30",
+          "42",
+          "48"
+        ]
+      },
+      "explanation": "Un număr ales trebuie să aibă ultima cifră pară și suma cifrelor divizibilă cu 3."
+    },
+    {
+      "text": "Sortează cartonașele setul I după divizibilitatea cu 2.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "two_zones",
+        "zones": [
+          {
+            "id": "yes",
+            "label": "Divizibile cu 2"
+          },
+          {
+            "id": "no",
+            "label": "Nedivizibile cu 2"
+          }
+        ],
+        "cards": [
+          {
+            "id": "n16",
+            "label": "16",
+            "zone": "yes"
+          },
+          {
+            "id": "n27",
+            "label": "27",
+            "zone": "no"
+          },
+          {
+            "id": "n30",
+            "label": "30",
+            "zone": "yes"
+          },
+          {
+            "id": "n41",
+            "label": "41",
+            "zone": "no"
+          },
+          {
+            "id": "n58",
+            "label": "58",
+            "zone": "yes"
+          },
+          {
+            "id": "n73",
+            "label": "73",
+            "zone": "no"
+          },
+          {
+            "id": "n84",
+            "label": "84",
+            "zone": "yes"
+          },
+          {
+            "id": "n95",
+            "label": "95",
+            "zone": "no"
+          }
+        ]
+      },
+      "explanation": "Aplicăm criteriul lui 2 fiecărui număr și îl așezăm în zona potrivită."
+    },
+    {
+      "text": "Sortează cartonașele setul J după divizibilitatea cu 5.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "two_zones",
+        "zones": [
+          {
+            "id": "yes",
+            "label": "Divizibile cu 5"
+          },
+          {
+            "id": "no",
+            "label": "Nedivizibile cu 5"
+          }
+        ],
+        "cards": [
+          {
+            "id": "n25",
+            "label": "25",
+            "zone": "yes"
+          },
+          {
+            "id": "n32",
+            "label": "32",
+            "zone": "no"
+          },
+          {
+            "id": "n40",
+            "label": "40",
+            "zone": "yes"
+          },
+          {
+            "id": "n51",
+            "label": "51",
+            "zone": "no"
+          },
+          {
+            "id": "n65",
+            "label": "65",
+            "zone": "yes"
+          },
+          {
+            "id": "n78",
+            "label": "78",
+            "zone": "no"
+          },
+          {
+            "id": "n90",
+            "label": "90",
+            "zone": "yes"
+          },
+          {
+            "id": "n104",
+            "label": "104",
+            "zone": "no"
+          }
+        ]
+      },
+      "explanation": "Aplicăm criteriul lui 5 fiecărui număr și îl așezăm în zona potrivită."
+    },
+    {
+      "text": "Sortează cartonașele setul K după divizibilitatea cu 10.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "two_zones",
+        "zones": [
+          {
+            "id": "yes",
+            "label": "Divizibile cu 10"
+          },
+          {
+            "id": "no",
+            "label": "Nedivizibile cu 10"
+          }
+        ],
+        "cards": [
+          {
+            "id": "n70",
+            "label": "70",
+            "zone": "yes"
+          },
+          {
+            "id": "n81",
+            "label": "81",
+            "zone": "no"
+          },
+          {
+            "id": "n120",
+            "label": "120",
+            "zone": "yes"
+          },
+          {
+            "id": "n135",
+            "label": "135",
+            "zone": "no"
+          },
+          {
+            "id": "n240",
+            "label": "240",
+            "zone": "yes"
+          },
+          {
+            "id": "n308",
+            "label": "308",
+            "zone": "no"
+          },
+          {
+            "id": "n990",
+            "label": "990",
+            "zone": "yes"
+          },
+          {
+            "id": "n1001",
+            "label": "1001",
+            "zone": "no"
+          }
+        ]
+      },
+      "explanation": "Aplicăm criteriul lui 10 fiecărui număr și îl așezăm în zona potrivită."
+    },
+    {
+      "text": "Sortează cartonașele setul L după divizibilitatea cu 3.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "two_zones",
+        "zones": [
+          {
+            "id": "yes",
+            "label": "Divizibile cu 3"
+          },
+          {
+            "id": "no",
+            "label": "Nedivizibile cu 3"
+          }
+        ],
+        "cards": [
+          {
+            "id": "n111",
+            "label": "111",
+            "zone": "yes"
+          },
+          {
+            "id": "n205",
+            "label": "205",
+            "zone": "no"
+          },
+          {
+            "id": "n318",
+            "label": "318",
+            "zone": "yes"
+          },
+          {
+            "id": "n421",
+            "label": "421",
+            "zone": "no"
+          },
+          {
+            "id": "n504",
+            "label": "504",
+            "zone": "yes"
+          },
+          {
+            "id": "n617",
+            "label": "617",
+            "zone": "no"
+          },
+          {
+            "id": "n729",
+            "label": "729",
+            "zone": "yes"
+          },
+          {
+            "id": "n802",
+            "label": "802",
+            "zone": "no"
+          }
+        ]
+      },
+      "explanation": "Aplicăm criteriul lui 3 fiecărui număr și îl așezăm în zona potrivită."
+    },
+    {
+      "text": "Sortează cartonașele setul M după divizibilitatea cu 9.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "two_zones",
+        "zones": [
+          {
+            "id": "yes",
+            "label": "Divizibile cu 9"
+          },
+          {
+            "id": "no",
+            "label": "Nedivizibile cu 9"
+          }
+        ],
+        "cards": [
+          {
+            "id": "n117",
+            "label": "117",
+            "zone": "yes"
+          },
+          {
+            "id": "n225",
+            "label": "225",
+            "zone": "yes"
+          },
+          {
+            "id": "n307",
+            "label": "307",
+            "zone": "no"
+          },
+          {
+            "id": "n432",
+            "label": "432",
+            "zone": "yes"
+          },
+          {
+            "id": "n540",
+            "label": "540",
+            "zone": "yes"
+          },
+          {
+            "id": "n703",
+            "label": "703",
+            "zone": "no"
+          },
+          {
+            "id": "n801",
+            "label": "801",
+            "zone": "yes"
+          },
+          {
+            "id": "n918",
+            "label": "918",
+            "zone": "yes"
+          }
+        ]
+      },
+      "explanation": "Aplicăm criteriul lui 9 fiecărui număr și îl așezăm în zona potrivită."
+    },
+    {
+      "text": "Sortează cartonașele setul N după divizibilitatea cu 100.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "two_zones",
+        "zones": [
+          {
+            "id": "yes",
+            "label": "Divizibile cu 100"
+          },
+          {
+            "id": "no",
+            "label": "Nedivizibile cu 100"
+          }
+        ],
+        "cards": [
+          {
+            "id": "n300",
+            "label": "300",
+            "zone": "yes"
+          },
+          {
+            "id": "n405",
+            "label": "405",
+            "zone": "no"
+          },
+          {
+            "id": "n800",
+            "label": "800",
+            "zone": "yes"
+          },
+          {
+            "id": "n1010",
+            "label": "1010",
+            "zone": "no"
+          },
+          {
+            "id": "n2700",
+            "label": "2700",
+            "zone": "yes"
+          },
+          {
+            "id": "n3405",
+            "label": "3405",
+            "zone": "no"
+          },
+          {
+            "id": "n9900",
+            "label": "9900",
+            "zone": "yes"
+          },
+          {
+            "id": "n10001",
+            "label": "10001",
+            "zone": "no"
+          }
+        ]
+      },
+      "explanation": "Aplicăm criteriul lui 100 fiecărui număr și îl așezăm în zona potrivită."
+    },
+    {
+      "text": "Selectează toate cifrele care pot înlocui litera a în 19a, astfel încât numărul să fie divizibil cu 2 (ultima cifră pară).",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digits",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          }
+        ],
+        "correct_ids": [
+          "0",
+          "2",
+          "4",
+          "6",
+          "8"
+        ]
+      },
+      "explanation": "Verificăm pe rând cifrele 0–9 cu criteriul de divizibilitate cu 2. Cifre corecte: 0, 2, 4, 6, 8."
+    },
+    {
+      "text": "Selectează toate cifrele care pot înlocui litera a în 65a, astfel încât numărul să fie divizibil cu 2 (ultima cifră pară).",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digits",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          }
+        ],
+        "correct_ids": [
+          "0",
+          "2",
+          "4",
+          "6",
+          "8"
+        ]
+      },
+      "explanation": "Verificăm pe rând cifrele 0–9 cu criteriul de divizibilitate cu 2. Cifre corecte: 0, 2, 4, 6, 8."
+    },
+    {
+      "text": "Selectează toate cifrele care pot înlocui litera a în 74a, astfel încât numărul să fie divizibil cu 5 (ultima cifră 0 sau 5).",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digits",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          }
+        ],
+        "correct_ids": [
+          "0",
+          "5"
+        ]
+      },
+      "explanation": "Verificăm pe rând cifrele 0–9 cu criteriul de divizibilitate cu 5. Cifre corecte: 0, 5."
+    },
+    {
+      "text": "Selectează toate cifrele care pot înlocui litera a în 4a2a, astfel încât numărul să fie divizibil cu 5 (ultima cifră 0 sau 5).",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digits",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          }
+        ],
+        "correct_ids": [
+          "0",
+          "5"
+        ]
+      },
+      "explanation": "Verificăm pe rând cifrele 0–9 cu criteriul de divizibilitate cu 5. Cifre corecte: 0, 5."
+    },
+    {
+      "text": "Selectează toate cifrele care pot înlocui litera a în 12a, astfel încât numărul să fie divizibil cu 10 (ultima cifră 0).",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digits",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          }
+        ],
+        "correct_ids": [
+          "0"
+        ]
+      },
+      "explanation": "Verificăm pe rând cifrele 0–9 cu criteriul de divizibilitate cu 10. Cifre corecte: 0."
+    },
+    {
+      "text": "Selectează toate cifrele care pot înlocui litera a în 7a5, astfel încât numărul să fie divizibil cu 3 (suma cifrelor).",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digits",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          }
+        ],
+        "correct_ids": [
+          "0",
+          "3",
+          "6",
+          "9"
+        ]
+      },
+      "explanation": "Verificăm pe rând cifrele 0–9 cu criteriul de divizibilitate cu 3. Cifre corecte: 0, 3, 6, 9."
+    },
+    {
+      "text": "Selectează toate cifrele care pot înlocui litera a în 98a, astfel încât numărul să fie divizibil cu 3 (suma cifrelor).",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digits",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          }
+        ],
+        "correct_ids": [
+          "1",
+          "4",
+          "7"
+        ]
+      },
+      "explanation": "Verificăm pe rând cifrele 0–9 cu criteriul de divizibilitate cu 3. Cifre corecte: 1, 4, 7."
+    },
+    {
+      "text": "Selectează toate cifrele care pot înlocui litera a în 4a8a, astfel încât numărul să fie divizibil cu 3 (suma cifrelor).",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digits",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          }
+        ],
+        "correct_ids": [
+          "0",
+          "3",
+          "6",
+          "9"
+        ]
+      },
+      "explanation": "Verificăm pe rând cifrele 0–9 cu criteriul de divizibilitate cu 3. Cifre corecte: 0, 3, 6, 9."
+    },
+    {
+      "text": "Selectează toate cifrele care pot înlocui litera a în 15a, astfel încât numărul să fie divizibil cu 9 (suma cifrelor).",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digits",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          }
+        ],
+        "correct_ids": [
+          "3"
+        ]
+      },
+      "explanation": "Verificăm pe rând cifrele 0–9 cu criteriul de divizibilitate cu 9. Cifre corecte: 3."
+    },
+    {
+      "text": "Selectează toate cifrele care pot înlocui litera a în 2a9, astfel încât numărul să fie divizibil cu 9 (suma cifrelor).",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digits",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          }
+        ],
+        "correct_ids": [
+          "7"
+        ]
+      },
+      "explanation": "Verificăm pe rând cifrele 0–9 cu criteriul de divizibilitate cu 9. Cifre corecte: 7."
+    },
+    {
+      "text": "Selectează toate cifrele care pot înlocui litera a în 333a, astfel încât numărul să fie divizibil cu 9 (suma cifrelor).",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digits",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          }
+        ],
+        "correct_ids": [
+          "0",
+          "9"
+        ]
+      },
+      "explanation": "Verificăm pe rând cifrele 0–9 cu criteriul de divizibilitate cu 9. Cifre corecte: 0, 9."
+    },
+    {
+      "text": "Selectează toate cifrele care pot înlocui litera a în 45a2, astfel încât numărul să fie divizibil cu 9 (suma cifrelor).",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digits",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          }
+        ],
+        "correct_ids": [
+          "7"
+        ]
+      },
+      "explanation": "Verificăm pe rând cifrele 0–9 cu criteriul de divizibilitate cu 9. Cifre corecte: 7."
+    },
+    {
+      "text": "Calculează suma cifrelor lui 6498 pentru a decide dacă numărul este divizibil cu 9 (atelier A).",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digit_sum",
+        "number": 6498,
+        "criterion": 9,
+        "fields": [
+          {
+            "key": "sum"
+          }
+        ],
+        "answers": {
+          "sum": 27
+        }
+      },
+      "explanation": "Suma cifrelor este 27; de aceea 6498 este divizibil cu 9."
+    },
+    {
+      "text": "Calculează suma cifrelor lui 741 pentru a decide dacă numărul este divizibil cu 3 (atelier B).",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digit_sum",
+        "number": 741,
+        "criterion": 3,
+        "fields": [
+          {
+            "key": "sum"
+          }
+        ],
+        "answers": {
+          "sum": 12
+        }
+      },
+      "explanation": "Suma cifrelor este 12; de aceea 741 este divizibil cu 3."
+    },
+    {
+      "text": "Calculează suma cifrelor lui 9085 pentru a decide dacă numărul este divizibil cu 3 (atelier C).",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digit_sum",
+        "number": 9085,
+        "criterion": 3,
+        "fields": [
+          {
+            "key": "sum"
+          }
+        ],
+        "answers": {
+          "sum": 22
+        }
+      },
+      "explanation": "Suma cifrelor este 22; de aceea 9085 nu este divizibil cu 3."
+    },
+    {
+      "text": "Calculează suma cifrelor lui 3006 pentru a decide dacă numărul este divizibil cu 9 (atelier D).",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digit_sum",
+        "number": 3006,
+        "criterion": 9,
+        "fields": [
+          {
+            "key": "sum"
+          }
+        ],
+        "answers": {
+          "sum": 9
+        }
+      },
+      "explanation": "Suma cifrelor este 9; de aceea 3006 este divizibil cu 9."
+    },
+    {
+      "text": "Calculează suma cifrelor lui 1294 pentru a decide dacă numărul este divizibil cu 3 (atelier E).",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digit_sum",
+        "number": 1294,
+        "criterion": 3,
+        "fields": [
+          {
+            "key": "sum"
+          }
+        ],
+        "answers": {
+          "sum": 16
+        }
+      },
+      "explanation": "Suma cifrelor este 16; de aceea 1294 nu este divizibil cu 3."
+    },
+    {
+      "text": "Calculează suma cifrelor lui 2375 pentru a decide dacă numărul este divizibil cu 9 (atelier F).",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digit_sum",
+        "number": 2375,
+        "criterion": 9,
+        "fields": [
+          {
+            "key": "sum"
+          }
+        ],
+        "answers": {
+          "sum": 17
+        }
+      },
+      "explanation": "Suma cifrelor este 17; de aceea 2375 nu este divizibil cu 9."
+    },
+    {
+      "text": "Calculează suma cifrelor lui 145340 pentru a decide dacă numărul este divizibil cu 3 (atelier G).",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digit_sum",
+        "number": 145340,
+        "criterion": 3,
+        "fields": [
+          {
+            "key": "sum"
+          }
+        ],
+        "answers": {
+          "sum": 17
+        }
+      },
+      "explanation": "Suma cifrelor este 17; de aceea 145340 nu este divizibil cu 3."
+    },
+    {
+      "text": "Calculează suma cifrelor lui 225035 pentru a decide dacă numărul este divizibil cu 9 (atelier H).",
+      "type": "divisibility_values",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "digit_sum",
+        "number": 225035,
+        "criterion": 9,
+        "fields": [
+          {
+            "key": "sum"
+          }
+        ],
+        "answers": {
+          "sum": 17
+        }
+      },
+      "explanation": "Suma cifrelor este 17; de aceea 225035 nu este divizibil cu 9."
+    },
+    {
+      "text": "Detectivul greșelilor A: apasă primul pas greșit din verificarea lui 6498.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "6 + 4 + 9 + 8 = 26",
+          "26 nu este divizibil cu 9",
+          "6498 nu este divizibil cu 9"
+        ],
+        "error_index": 0
+      },
+      "explanation": "Primul pas este greșit: 6 + 4 + 9 + 8 = 27, iar 27 este divizibil cu 9."
+    },
+    {
+      "text": "Detectivul greșelilor B: apasă primul pas greșit din verificarea lui 741.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "7 + 4 + 1 = 12",
+          "12 este divizibil cu 3",
+          "De aceea, 741 este divizibil cu 9"
+        ],
+        "error_index": 2
+      },
+      "explanation": "Primele două afirmații sunt corecte, dar 12 nu este divizibil cu 9; 741 nu este divizibil cu 9."
+    },
+    {
+      "text": "Detectivul greșelilor C: apasă primul pas greșit din verificarea lui 575.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "Ultima cifră este 5",
+          "575 este divizibil cu 5",
+          "Orice număr divizibil cu 5 este divizibil și cu 10"
+        ],
+        "error_index": 2
+      },
+      "explanation": "Pentru divizibilitate cu 10, ultima cifră trebuie să fie 0, nu 5."
+    },
+    {
+      "text": "Detectivul greșelilor D: apasă primul pas greșit din verificarea lui 1010.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "Ultimele două cifre sunt 10",
+          "10 conține un zero",
+          "Prin urmare, 1010 este divizibil cu 100"
+        ],
+        "error_index": 2
+      },
+      "explanation": "Un număr este divizibil cu 100 numai dacă ultimele două cifre sunt ambele 0."
+    },
+    {
+      "text": "Dacă ultima cifră a unui număr este 0, numărul este divizibil cu 2, cu 5 și cu 10.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Cifra 0 este pară și îndeplinește criteriile lui 5 și 10.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Orice număr care se termină în 5 este divizibil cu 10.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Pentru 10, ultima cifră trebuie să fie 0.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Dacă suma cifrelor unui număr este 18, numărul este divizibil atât cu 3, cât și cu 9.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "18 este divizibil atât cu 3, cât și cu 9.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Numărul 3400 este divizibil cu 1000.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Ultimele trei cifre sunt 400, nu 000.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Un număr divizibil cu 9 este întotdeauna divizibil și cu 3.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Orice sumă de cifre divizibilă cu 9 este și divizibilă cu 3.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care dintre numere este divizibil cu 2?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ultima cifră a lui 1294 este 4, o cifră pară.",
+      "options": [
+        {
+          "text": "2375",
+          "is_correct": false
+        },
+        {
+          "text": "1294",
+          "is_correct": true
+        },
+        {
+          "text": "5401",
+          "is_correct": false
+        },
+        {
+          "text": "225035",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care dintre numere este divizibil cu 5, dar nu cu 10?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "575 se termină în 5, nu în 0.",
+      "options": [
+        {
+          "text": "120",
+          "is_correct": false
+        },
+        {
+          "text": "575",
+          "is_correct": true
+        },
+        {
+          "text": "636",
+          "is_correct": false
+        },
+        {
+          "text": "1002",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care număr este divizibil cu 100?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ultimele două cifre ale lui 22500 sunt 00.",
+      "options": [
+        {
+          "text": "22505",
+          "is_correct": false
+        },
+        {
+          "text": "22500",
+          "is_correct": true
+        },
+        {
+          "text": "22450",
+          "is_correct": false
+        },
+        {
+          "text": "22005",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care număr este divizibil cu 1000?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ultimele trei cifre ale lui 12000 sunt 000.",
+      "options": [
+        {
+          "text": "12400",
+          "is_correct": false
+        },
+        {
+          "text": "12000",
+          "is_correct": true
+        },
+        {
+          "text": "12010",
+          "is_correct": false
+        },
+        {
+          "text": "10200",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este suma cifrelor numărului 6498?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "6 + 4 + 9 + 8 = 27.",
+      "options": [
+        {
+          "text": "26",
+          "is_correct": false
+        },
+        {
+          "text": "27",
+          "is_correct": true
+        },
+        {
+          "text": "28",
+          "is_correct": false
+        },
+        {
+          "text": "29",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care număr este divizibil cu 9?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma cifrelor lui 6498 este 27, multiplu de 9.",
+      "options": [
+        {
+          "text": "741",
+          "is_correct": false
+        },
+        {
+          "text": "6498",
+          "is_correct": true
+        },
+        {
+          "text": "9085",
+          "is_correct": false
+        },
+        {
+          "text": "1294",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte cifre pot înlocui a în numărul 15a pentru ca acesta să fie divizibil cu 9?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1 + 5 + a trebuie să fie multiplu de 9; singura cifră este a = 3.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Câte cifre pot înlocui a în numărul 19a pentru ca acesta să fie divizibil cu 2?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cifrele posibile sunt 0, 2, 4, 6 și 8.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un stadion are 7374 de locuri. Se pot împărți locurile egal în 9 zone?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma cifrelor este 21, iar 21 nu este divizibil cu 9.",
+      "options": [
+        {
+          "text": "Da, deoarece ultima cifră este pară",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, deoarece suma cifrelor este 21",
+          "is_correct": true
+        },
+        {
+          "text": "Da, deoarece suma cifrelor este 21",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, deoarece numărul nu se termină în 9",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care număr poate fi împărțit egal atât în grupe de 2, cât și în grupe de 3?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "42 este par, iar suma cifrelor sale este 6.",
+      "options": [
+        {
+          "text": "35",
+          "is_correct": false
+        },
+        {
+          "text": "42",
+          "is_correct": true
+        },
+        {
+          "text": "45",
+          "is_correct": false
+        },
+        {
+          "text": "49",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce cifră trebuie pusă la finalul lui 4091 pentru a obține un număr divizibil cu 10?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un număr divizibil cu 10 are ultima cifră 0.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2149 @@
+{
+  "title": "Numere prime. Numere compuse",
+  "description": "Clasa a 5-a · Recunoașterea numerelor prime și compuse",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Sortează numerele din setul A în cele trei zone.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "two_zones",
+        "zones": [
+          {
+            "id": "prime",
+            "label": "Numere prime"
+          },
+          {
+            "id": "composite",
+            "label": "Numere compuse"
+          },
+          {
+            "id": "neither",
+            "label": "Nici prim, nici compus"
+          }
+        ],
+        "cards": [
+          {
+            "id": "n1",
+            "label": "1",
+            "zone": "neither"
+          },
+          {
+            "id": "n2",
+            "label": "2",
+            "zone": "prime"
+          },
+          {
+            "id": "n4",
+            "label": "4",
+            "zone": "composite"
+          },
+          {
+            "id": "n5",
+            "label": "5",
+            "zone": "prime"
+          },
+          {
+            "id": "n9",
+            "label": "9",
+            "zone": "composite"
+          },
+          {
+            "id": "n11",
+            "label": "11",
+            "zone": "prime"
+          },
+          {
+            "id": "n15",
+            "label": "15",
+            "zone": "composite"
+          },
+          {
+            "id": "n17",
+            "label": "17",
+            "zone": "prime"
+          }
+        ]
+      },
+      "explanation": "Numărul 1 nu este nici prim, nici compus; un număr prim are exact doi divizori."
+    },
+    {
+      "text": "Sortează numerele din setul B în cele trei zone.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "two_zones",
+        "zones": [
+          {
+            "id": "prime",
+            "label": "Numere prime"
+          },
+          {
+            "id": "composite",
+            "label": "Numere compuse"
+          },
+          {
+            "id": "neither",
+            "label": "Nici prim, nici compus"
+          }
+        ],
+        "cards": [
+          {
+            "id": "n1",
+            "label": "1",
+            "zone": "neither"
+          },
+          {
+            "id": "n3",
+            "label": "3",
+            "zone": "prime"
+          },
+          {
+            "id": "n6",
+            "label": "6",
+            "zone": "composite"
+          },
+          {
+            "id": "n7",
+            "label": "7",
+            "zone": "prime"
+          },
+          {
+            "id": "n13",
+            "label": "13",
+            "zone": "prime"
+          },
+          {
+            "id": "n18",
+            "label": "18",
+            "zone": "composite"
+          },
+          {
+            "id": "n19",
+            "label": "19",
+            "zone": "prime"
+          },
+          {
+            "id": "n20",
+            "label": "20",
+            "zone": "composite"
+          }
+        ]
+      },
+      "explanation": "Numărul 1 nu este nici prim, nici compus; un număr prim are exact doi divizori."
+    },
+    {
+      "text": "Sortează numerele din setul C în cele trei zone.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "two_zones",
+        "zones": [
+          {
+            "id": "prime",
+            "label": "Numere prime"
+          },
+          {
+            "id": "composite",
+            "label": "Numere compuse"
+          },
+          {
+            "id": "neither",
+            "label": "Nici prim, nici compus"
+          }
+        ],
+        "cards": [
+          {
+            "id": "n1",
+            "label": "1",
+            "zone": "neither"
+          },
+          {
+            "id": "n23",
+            "label": "23",
+            "zone": "prime"
+          },
+          {
+            "id": "n25",
+            "label": "25",
+            "zone": "composite"
+          },
+          {
+            "id": "n29",
+            "label": "29",
+            "zone": "prime"
+          },
+          {
+            "id": "n33",
+            "label": "33",
+            "zone": "composite"
+          },
+          {
+            "id": "n37",
+            "label": "37",
+            "zone": "prime"
+          },
+          {
+            "id": "n49",
+            "label": "49",
+            "zone": "composite"
+          },
+          {
+            "id": "n53",
+            "label": "53",
+            "zone": "prime"
+          }
+        ]
+      },
+      "explanation": "Numărul 1 nu este nici prim, nici compus; un număr prim are exact doi divizori."
+    },
+    {
+      "text": "Sortează numerele din setul D în cele trei zone.",
+      "type": "divisibility_sort",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "two_zones",
+        "zones": [
+          {
+            "id": "prime",
+            "label": "Numere prime"
+          },
+          {
+            "id": "composite",
+            "label": "Numere compuse"
+          },
+          {
+            "id": "neither",
+            "label": "Nici prim, nici compus"
+          }
+        ],
+        "cards": [
+          {
+            "id": "n1",
+            "label": "1",
+            "zone": "neither"
+          },
+          {
+            "id": "n61",
+            "label": "61",
+            "zone": "prime"
+          },
+          {
+            "id": "n67",
+            "label": "67",
+            "zone": "prime"
+          },
+          {
+            "id": "n71",
+            "label": "71",
+            "zone": "prime"
+          },
+          {
+            "id": "n77",
+            "label": "77",
+            "zone": "composite"
+          },
+          {
+            "id": "n83",
+            "label": "83",
+            "zone": "prime"
+          },
+          {
+            "id": "n91",
+            "label": "91",
+            "zone": "composite"
+          },
+          {
+            "id": "n97",
+            "label": "97",
+            "zone": "prime"
+          }
+        ]
+      },
+      "explanation": "Numărul 1 nu este nici prim, nici compus; un număr prim are exact doi divizori."
+    },
+    {
+      "text": "Vânătoarea A: selectează toate numerele prime.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "138",
+            "label": "138"
+          },
+          {
+            "id": "179",
+            "label": "179"
+          },
+          {
+            "id": "183",
+            "label": "183"
+          },
+          {
+            "id": "318",
+            "label": "318"
+          },
+          {
+            "id": "381",
+            "label": "381"
+          },
+          {
+            "id": "813",
+            "label": "813"
+          }
+        ],
+        "correct_ids": [
+          "179"
+        ]
+      },
+      "explanation": "Numerele prime din panou sunt: 179."
+    },
+    {
+      "text": "Vânătoarea B: selectează toate numerele prime.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "71",
+            "label": "71"
+          },
+          {
+            "id": "73",
+            "label": "73"
+          },
+          {
+            "id": "79",
+            "label": "79"
+          },
+          {
+            "id": "81",
+            "label": "81"
+          },
+          {
+            "id": "83",
+            "label": "83"
+          },
+          {
+            "id": "87",
+            "label": "87"
+          },
+          {
+            "id": "89",
+            "label": "89"
+          },
+          {
+            "id": "91",
+            "label": "91"
+          }
+        ],
+        "correct_ids": [
+          "71",
+          "73",
+          "79",
+          "83",
+          "89"
+        ]
+      },
+      "explanation": "Numerele prime din panou sunt: 71, 73, 79, 83, 89."
+    },
+    {
+      "text": "Vânătoarea C: selectează toate numerele prime.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "101",
+            "label": "101"
+          },
+          {
+            "id": "103",
+            "label": "103"
+          },
+          {
+            "id": "105",
+            "label": "105"
+          },
+          {
+            "id": "107",
+            "label": "107"
+          },
+          {
+            "id": "109",
+            "label": "109"
+          },
+          {
+            "id": "111",
+            "label": "111"
+          },
+          {
+            "id": "113",
+            "label": "113"
+          },
+          {
+            "id": "115",
+            "label": "115"
+          }
+        ],
+        "correct_ids": [
+          "101",
+          "103",
+          "107",
+          "109",
+          "113"
+        ]
+      },
+      "explanation": "Numerele prime din panou sunt: 101, 103, 107, 109, 113."
+    },
+    {
+      "text": "Vânătoarea D: selectează toate numerele prime.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "157",
+            "label": "157"
+          },
+          {
+            "id": "163",
+            "label": "163"
+          },
+          {
+            "id": "167",
+            "label": "167"
+          },
+          {
+            "id": "169",
+            "label": "169"
+          },
+          {
+            "id": "173",
+            "label": "173"
+          },
+          {
+            "id": "177",
+            "label": "177"
+          },
+          {
+            "id": "179",
+            "label": "179"
+          },
+          {
+            "id": "181",
+            "label": "181"
+          }
+        ],
+        "correct_ids": [
+          "157",
+          "163",
+          "167",
+          "173",
+          "179",
+          "181"
+        ]
+      },
+      "explanation": "Numerele prime din panou sunt: 157, 163, 167, 173, 179, 181."
+    },
+    {
+      "text": "Laboratorul A: verifică numărul 71 prin împărțirile indicate și clasifică-l.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "trial",
+        "number": 71,
+        "tests": [
+          {
+            "divisor": 2,
+            "remainder": 1
+          },
+          {
+            "divisor": 3,
+            "remainder": 2
+          },
+          {
+            "divisor": 5,
+            "remainder": 1
+          },
+          {
+            "divisor": 7,
+            "remainder": 1
+          }
+        ],
+        "answers": {
+          "remainder:2": 1,
+          "remainder:3": 2,
+          "remainder:5": 1,
+          "remainder:7": 1,
+          "classification": "prim"
+        }
+      },
+      "explanation": "71 este prim; resturile completate arată dacă apare un divizor propriu."
+    },
+    {
+      "text": "Laboratorul B: verifică numărul 157 prin împărțirile indicate și clasifică-l.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "trial",
+        "number": 157,
+        "tests": [
+          {
+            "divisor": 2,
+            "remainder": 1
+          },
+          {
+            "divisor": 3,
+            "remainder": 1
+          },
+          {
+            "divisor": 5,
+            "remainder": 2
+          },
+          {
+            "divisor": 7,
+            "remainder": 3
+          },
+          {
+            "divisor": 11,
+            "remainder": 3
+          },
+          {
+            "divisor": 13,
+            "remainder": 1
+          }
+        ],
+        "answers": {
+          "remainder:2": 1,
+          "remainder:3": 1,
+          "remainder:5": 2,
+          "remainder:7": 3,
+          "remainder:11": 3,
+          "remainder:13": 1,
+          "classification": "prim"
+        }
+      },
+      "explanation": "157 este prim; resturile completate arată dacă apare un divizor propriu."
+    },
+    {
+      "text": "Laboratorul C: verifică numărul 221 prin împărțirile indicate și clasifică-l.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "trial",
+        "number": 221,
+        "tests": [
+          {
+            "divisor": 2,
+            "remainder": 1
+          },
+          {
+            "divisor": 3,
+            "remainder": 2
+          },
+          {
+            "divisor": 5,
+            "remainder": 1
+          },
+          {
+            "divisor": 7,
+            "remainder": 4
+          },
+          {
+            "divisor": 11,
+            "remainder": 1
+          },
+          {
+            "divisor": 13,
+            "remainder": 0
+          }
+        ],
+        "answers": {
+          "remainder:2": 1,
+          "remainder:3": 2,
+          "remainder:5": 1,
+          "remainder:7": 4,
+          "remainder:11": 1,
+          "remainder:13": 0,
+          "classification": "compus"
+        }
+      },
+      "explanation": "221 este compus; resturile completate arată dacă apare un divizor propriu."
+    },
+    {
+      "text": "Laboratorul D: verifică numărul 241 prin împărțirile indicate și clasifică-l.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "trial",
+        "number": 241,
+        "tests": [
+          {
+            "divisor": 2,
+            "remainder": 1
+          },
+          {
+            "divisor": 3,
+            "remainder": 1
+          },
+          {
+            "divisor": 5,
+            "remainder": 1
+          },
+          {
+            "divisor": 7,
+            "remainder": 3
+          },
+          {
+            "divisor": 11,
+            "remainder": 10
+          },
+          {
+            "divisor": 13,
+            "remainder": 7
+          }
+        ],
+        "answers": {
+          "remainder:2": 1,
+          "remainder:3": 1,
+          "remainder:5": 1,
+          "remainder:7": 3,
+          "remainder:11": 10,
+          "remainder:13": 7,
+          "classification": "prim"
+        }
+      },
+      "explanation": "241 este prim; resturile completate arată dacă apare un divizor propriu."
+    },
+    {
+      "text": "Detectivul greșelilor A: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "71 : 2 dă restul 1",
+          "71 : 3 dă restul 2",
+          "71 : 5 dă restul 0",
+          "71 este compus"
+        ],
+        "error_index": 2
+      },
+      "explanation": "71 : 5 dă restul 1, nu 0; numărul 71 este prim."
+    },
+    {
+      "text": "Detectivul greșelilor B: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "221 : 13 = 17",
+          "13 este divizor propriu al lui 221",
+          "221 este număr prim"
+        ],
+        "error_index": 2
+      },
+      "explanation": "Existența divizorului propriu 13 dovedește că 221 este compus."
+    },
+    {
+      "text": "Detectivul greșelilor C: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "1 are un singur divizor",
+          "Un număr prim are exact doi divizori",
+          "Prin urmare, 1 este număr prim"
+        ],
+        "error_index": 2
+      },
+      "explanation": "Numărul 1 nu este prim, deoarece nu are exact doi divizori."
+    },
+    {
+      "text": "Detectivul greșelilor D: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "2 are divizorii 1 și 2",
+          "2 este număr prim",
+          "Toate numerele prime sunt impare"
+        ],
+        "error_index": 2
+      },
+      "explanation": "Numărul 2 este singurul număr prim par."
+    },
+    {
+      "text": "Construcția A: formează numărul compus 30 folosind numai factorii primi potriviți.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "factor_product",
+        "target": 30,
+        "slot_count": 3,
+        "cards": [
+          {
+            "id": "c0",
+            "value": 2
+          },
+          {
+            "id": "c1",
+            "value": 3
+          },
+          {
+            "id": "c2",
+            "value": 5
+          },
+          {
+            "id": "c3",
+            "value": 7
+          },
+          {
+            "id": "c4",
+            "value": 11
+          }
+        ],
+        "correct_ids": [
+          "c0",
+          "c1",
+          "c2"
+        ],
+        "answers": {
+          "factors": "2,3,5"
+        }
+      },
+      "explanation": "30 = 2 · 3 · 5."
+    },
+    {
+      "text": "Construcția B: formează numărul compus 42 folosind numai factorii primi potriviți.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "factor_product",
+        "target": 42,
+        "slot_count": 3,
+        "cards": [
+          {
+            "id": "c0",
+            "value": 2
+          },
+          {
+            "id": "c1",
+            "value": 3
+          },
+          {
+            "id": "c2",
+            "value": 7
+          },
+          {
+            "id": "c3",
+            "value": 5
+          },
+          {
+            "id": "c4",
+            "value": 11
+          }
+        ],
+        "correct_ids": [
+          "c0",
+          "c1",
+          "c2"
+        ],
+        "answers": {
+          "factors": "2,3,7"
+        }
+      },
+      "explanation": "42 = 2 · 3 · 7."
+    },
+    {
+      "text": "Construcția C: formează numărul compus 60 folosind numai factorii primi potriviți.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "factor_product",
+        "target": 60,
+        "slot_count": 4,
+        "cards": [
+          {
+            "id": "c0",
+            "value": 2
+          },
+          {
+            "id": "c1",
+            "value": 2
+          },
+          {
+            "id": "c2",
+            "value": 3
+          },
+          {
+            "id": "c3",
+            "value": 5
+          },
+          {
+            "id": "c4",
+            "value": 7
+          },
+          {
+            "id": "c5",
+            "value": 11
+          }
+        ],
+        "correct_ids": [
+          "c0",
+          "c1",
+          "c2",
+          "c3"
+        ],
+        "answers": {
+          "factors": "2,2,3,5"
+        }
+      },
+      "explanation": "60 = 2 · 2 · 3 · 5."
+    },
+    {
+      "text": "Construcția D: formează numărul compus 84 folosind numai factorii primi potriviți.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "factor_product",
+        "target": 84,
+        "slot_count": 4,
+        "cards": [
+          {
+            "id": "c0",
+            "value": 2
+          },
+          {
+            "id": "c1",
+            "value": 2
+          },
+          {
+            "id": "c2",
+            "value": 3
+          },
+          {
+            "id": "c3",
+            "value": 7
+          },
+          {
+            "id": "c4",
+            "value": 5
+          },
+          {
+            "id": "c5",
+            "value": 11
+          }
+        ],
+        "correct_ids": [
+          "c0",
+          "c1",
+          "c2",
+          "c3"
+        ],
+        "answers": {
+          "factors": "2,2,3,7"
+        }
+      },
+      "explanation": "84 = 2 · 2 · 3 · 7."
+    },
+    {
+      "text": "Completează scrierea 30 = □ + □ cu două numere prime.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_pair",
+        "target": 30,
+        "operator": "+",
+        "unordered_pair": true,
+        "fields": [
+          {
+            "key": "left"
+          },
+          {
+            "key": "right"
+          }
+        ],
+        "answers": {
+          "left": 13,
+          "right": 17
+        }
+      },
+      "explanation": "O scriere corectă este 13 + 17 = 30; ambele numere sunt prime."
+    },
+    {
+      "text": "Completează scrierea 26 = □ + □ cu două numere prime.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_pair",
+        "target": 26,
+        "operator": "+",
+        "unordered_pair": true,
+        "fields": [
+          {
+            "key": "left"
+          },
+          {
+            "key": "right"
+          }
+        ],
+        "answers": {
+          "left": 7,
+          "right": 19
+        }
+      },
+      "explanation": "O scriere corectă este 7 + 19 = 26; ambele numere sunt prime."
+    },
+    {
+      "text": "Completează scrierea 38 = □ + □ cu două numere prime.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_pair",
+        "target": 38,
+        "operator": "+",
+        "unordered_pair": true,
+        "fields": [
+          {
+            "key": "left"
+          },
+          {
+            "key": "right"
+          }
+        ],
+        "answers": {
+          "left": 19,
+          "right": 19
+        }
+      },
+      "explanation": "O scriere corectă este 19 + 19 = 38; ambele numere sunt prime."
+    },
+    {
+      "text": "Completează scrierea 24 = □ + □ cu două numere prime.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_pair",
+        "target": 24,
+        "operator": "+",
+        "unordered_pair": true,
+        "fields": [
+          {
+            "key": "left"
+          },
+          {
+            "key": "right"
+          }
+        ],
+        "answers": {
+          "left": 11,
+          "right": 13
+        }
+      },
+      "explanation": "O scriere corectă este 11 + 13 = 24; ambele numere sunt prime."
+    },
+    {
+      "text": "Completează scrierea 46 = □ − □ cu două numere prime.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_pair",
+        "target": 46,
+        "operator": "−",
+        "unordered_pair": false,
+        "fields": [
+          {
+            "key": "left"
+          },
+          {
+            "key": "right"
+          }
+        ],
+        "answers": {
+          "left": 53,
+          "right": 7
+        }
+      },
+      "explanation": "O scriere corectă este 53 − 7 = 46; ambele numere sunt prime."
+    },
+    {
+      "text": "Completează scrierea 26 = □ − □ cu două numere prime.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_pair",
+        "target": 26,
+        "operator": "−",
+        "unordered_pair": false,
+        "fields": [
+          {
+            "key": "left"
+          },
+          {
+            "key": "right"
+          }
+        ],
+        "answers": {
+          "left": 31,
+          "right": 5
+        }
+      },
+      "explanation": "O scriere corectă este 31 − 5 = 26; ambele numere sunt prime."
+    },
+    {
+      "text": "Completează scrierea 41 = □ − □ cu două numere prime.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_pair",
+        "target": 41,
+        "operator": "−",
+        "unordered_pair": false,
+        "fields": [
+          {
+            "key": "left"
+          },
+          {
+            "key": "right"
+          }
+        ],
+        "answers": {
+          "left": 43,
+          "right": 2
+        }
+      },
+      "explanation": "O scriere corectă este 43 − 2 = 41; ambele numere sunt prime."
+    },
+    {
+      "text": "Completează scrierea 27 = □ − □ cu două numere prime.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_pair",
+        "target": 27,
+        "operator": "−",
+        "unordered_pair": false,
+        "fields": [
+          {
+            "key": "left"
+          },
+          {
+            "key": "right"
+          }
+        ],
+        "answers": {
+          "left": 29,
+          "right": 2
+        }
+      },
+      "explanation": "O scriere corectă este 29 − 2 = 27; ambele numere sunt prime."
+    },
+    {
+      "text": "Completează scrierea 39 = □ · □ cu două numere prime.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_pair",
+        "target": 39,
+        "operator": "×",
+        "unordered_pair": true,
+        "fields": [
+          {
+            "key": "left"
+          },
+          {
+            "key": "right"
+          }
+        ],
+        "answers": {
+          "left": 3,
+          "right": 13
+        }
+      },
+      "explanation": "O scriere corectă este 3 × 13 = 39; ambele numere sunt prime."
+    },
+    {
+      "text": "Completează scrierea 85 = □ · □ cu două numere prime.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_pair",
+        "target": 85,
+        "operator": "×",
+        "unordered_pair": true,
+        "fields": [
+          {
+            "key": "left"
+          },
+          {
+            "key": "right"
+          }
+        ],
+        "answers": {
+          "left": 5,
+          "right": 17
+        }
+      },
+      "explanation": "O scriere corectă este 5 × 17 = 85; ambele numere sunt prime."
+    },
+    {
+      "text": "Completează scrierea 77 = □ · □ cu două numere prime.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_pair",
+        "target": 77,
+        "operator": "×",
+        "unordered_pair": true,
+        "fields": [
+          {
+            "key": "left"
+          },
+          {
+            "key": "right"
+          }
+        ],
+        "answers": {
+          "left": 7,
+          "right": 11
+        }
+      },
+      "explanation": "O scriere corectă este 7 × 11 = 77; ambele numere sunt prime."
+    },
+    {
+      "text": "Completează scrierea 143 = □ · □ cu două numere prime.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_pair",
+        "target": 143,
+        "operator": "×",
+        "unordered_pair": true,
+        "fields": [
+          {
+            "key": "left"
+          },
+          {
+            "key": "right"
+          }
+        ],
+        "answers": {
+          "left": 11,
+          "right": 13
+        }
+      },
+      "explanation": "O scriere corectă este 11 × 13 = 143; ambele numere sunt prime."
+    },
+    {
+      "text": "Ecuația cu numere prime A: determină necunoscutele.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_equation",
+        "equation": "5a + 12b = 89",
+        "fields": [
+          {
+            "key": "a",
+            "label": "a"
+          },
+          {
+            "key": "b",
+            "label": "b"
+          }
+        ],
+        "answers": {
+          "a": 13,
+          "b": 2
+        }
+      },
+      "explanation": "Înlocuirea valorilor prime găsite verifică egalitatea."
+    },
+    {
+      "text": "Ecuația cu numere prime B: determină necunoscutele.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_equation",
+        "equation": "15a + 3b = 180",
+        "fields": [
+          {
+            "key": "a",
+            "label": "a"
+          },
+          {
+            "key": "b",
+            "label": "b"
+          }
+        ],
+        "answers": {
+          "a": 11,
+          "b": 5
+        }
+      },
+      "explanation": "Înlocuirea valorilor prime găsite verifică egalitatea."
+    },
+    {
+      "text": "Ecuația cu numere prime C: determină necunoscutele.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_equation",
+        "equation": "7a + 5b = 59",
+        "fields": [
+          {
+            "key": "a",
+            "label": "a"
+          },
+          {
+            "key": "b",
+            "label": "b"
+          }
+        ],
+        "answers": {
+          "a": 7,
+          "b": 2
+        }
+      },
+      "explanation": "Înlocuirea valorilor prime găsite verifică egalitatea."
+    },
+    {
+      "text": "Ecuația cu numere prime D: determină necunoscutele.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "prime_equation",
+        "equation": "4a + 3b = 43",
+        "fields": [
+          {
+            "key": "a",
+            "label": "a"
+          },
+          {
+            "key": "b",
+            "label": "b"
+          }
+        ],
+        "answers": {
+          "a": 7,
+          "b": 5
+        }
+      },
+      "explanation": "Înlocuirea valorilor prime găsite verifică egalitatea."
+    },
+    {
+      "text": "Selectează valorile lui n pentru care (n + 1)(n + 13) este număr prim.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          }
+        ],
+        "correct_ids": [
+          "0"
+        ]
+      },
+      "explanation": "Un produs este prim numai când unul dintre factorii naturali este 1; aici rezultă n = 0."
+    },
+    {
+      "text": "Selectează valorile lui n pentru care n² + 30n este număr prim.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          }
+        ],
+        "correct_ids": [
+          "1"
+        ]
+      },
+      "explanation": "n² + 30n = n(n + 30), iar în intervalul dat numai n = 1 produce numărul prim 31."
+    },
+    {
+      "text": "Selectează valorile lui n dintre 6 și 12 pentru care n² − 6n este număr prim.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          },
+          {
+            "id": "10",
+            "label": "10"
+          },
+          {
+            "id": "11",
+            "label": "11"
+          },
+          {
+            "id": "12",
+            "label": "12"
+          }
+        ],
+        "correct_ids": [
+          "7"
+        ]
+      },
+      "explanation": "n² − 6n = n(n − 6); singura valoare potrivită este n = 7."
+    },
+    {
+      "text": "Testează n = 0, 1, 2, 3 și selectează cazurile în care 6ⁿ + 3ⁿ + 2ⁿ + 1 este compus.",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          }
+        ],
+        "correct_ids": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      "explanation": "Pentru fiecare valoare indicată, expresia obținută este un număr compus."
+    },
+    {
+      "text": "Selectează valorile lui n pentru care toate numerele n + 1, n + 11, n + 27 sunt prime (setul 1).",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          },
+          {
+            "id": "10",
+            "label": "10"
+          },
+          {
+            "id": "11",
+            "label": "11"
+          },
+          {
+            "id": "12",
+            "label": "12"
+          },
+          {
+            "id": "13",
+            "label": "13"
+          },
+          {
+            "id": "14",
+            "label": "14"
+          },
+          {
+            "id": "15",
+            "label": "15"
+          },
+          {
+            "id": "16",
+            "label": "16"
+          },
+          {
+            "id": "17",
+            "label": "17"
+          },
+          {
+            "id": "18",
+            "label": "18"
+          },
+          {
+            "id": "19",
+            "label": "19"
+          },
+          {
+            "id": "20",
+            "label": "20"
+          }
+        ],
+        "correct_ids": [
+          "2"
+        ]
+      },
+      "explanation": "Verificarea fiecărei valori lasă soluțiile: 2."
+    },
+    {
+      "text": "Selectează valorile lui n pentru care toate numerele n + 1, n + 7, n + 13 sunt prime (setul 2).",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          },
+          {
+            "id": "10",
+            "label": "10"
+          },
+          {
+            "id": "11",
+            "label": "11"
+          },
+          {
+            "id": "12",
+            "label": "12"
+          },
+          {
+            "id": "13",
+            "label": "13"
+          },
+          {
+            "id": "14",
+            "label": "14"
+          },
+          {
+            "id": "15",
+            "label": "15"
+          },
+          {
+            "id": "16",
+            "label": "16"
+          },
+          {
+            "id": "17",
+            "label": "17"
+          },
+          {
+            "id": "18",
+            "label": "18"
+          },
+          {
+            "id": "19",
+            "label": "19"
+          },
+          {
+            "id": "20",
+            "label": "20"
+          }
+        ],
+        "correct_ids": [
+          "4",
+          "6",
+          "10",
+          "16"
+        ]
+      },
+      "explanation": "Verificarea fiecărei valori lasă soluțiile: 4, 6, 10, 16."
+    },
+    {
+      "text": "Selectează valorile lui n pentru care toate numerele n + 3, n + 9, n + 15 sunt prime (setul 3).",
+      "type": "divisibility_select",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "criteria",
+        "cards": [
+          {
+            "id": "0",
+            "label": "0"
+          },
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          },
+          {
+            "id": "4",
+            "label": "4"
+          },
+          {
+            "id": "5",
+            "label": "5"
+          },
+          {
+            "id": "6",
+            "label": "6"
+          },
+          {
+            "id": "7",
+            "label": "7"
+          },
+          {
+            "id": "8",
+            "label": "8"
+          },
+          {
+            "id": "9",
+            "label": "9"
+          },
+          {
+            "id": "10",
+            "label": "10"
+          },
+          {
+            "id": "11",
+            "label": "11"
+          },
+          {
+            "id": "12",
+            "label": "12"
+          },
+          {
+            "id": "13",
+            "label": "13"
+          },
+          {
+            "id": "14",
+            "label": "14"
+          },
+          {
+            "id": "15",
+            "label": "15"
+          },
+          {
+            "id": "16",
+            "label": "16"
+          },
+          {
+            "id": "17",
+            "label": "17"
+          },
+          {
+            "id": "18",
+            "label": "18"
+          },
+          {
+            "id": "19",
+            "label": "19"
+          },
+          {
+            "id": "20",
+            "label": "20"
+          }
+        ],
+        "correct_ids": [
+          "2",
+          "4",
+          "8",
+          "14"
+        ]
+      },
+      "explanation": "Verificarea fiecărei valori lasă soluțiile: 2, 4, 8, 14."
+    },
+    {
+      "text": "Camera de evadare A: află codul din trei cifre.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "escape_code",
+        "clues": [
+          {
+            "key": "digit:0",
+            "text": "Singurul număr prim par"
+          },
+          {
+            "key": "digit:1",
+            "text": "Cifra unităților numărului prim 19"
+          },
+          {
+            "key": "digit:2",
+            "text": "Cel mai mic număr prim impar"
+          }
+        ],
+        "answers": {
+          "digit:0": 2,
+          "digit:1": 9,
+          "digit:2": 3
+        }
+      },
+      "explanation": "Codul este 293."
+    },
+    {
+      "text": "Camera de evadare B: află codul din trei cifre.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "escape_code",
+        "clues": [
+          {
+            "key": "digit:0",
+            "text": "Numărul de divizori ai unui număr prim"
+          },
+          {
+            "key": "digit:1",
+            "text": "Cifra unităților lui 37"
+          },
+          {
+            "key": "digit:2",
+            "text": "Numărul prim dintre 4 și 6"
+          }
+        ],
+        "answers": {
+          "digit:0": 2,
+          "digit:1": 7,
+          "digit:2": 5
+        }
+      },
+      "explanation": "Codul este 275."
+    },
+    {
+      "text": "Camera de evadare C: află codul din trei cifre.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "escape_code",
+        "clues": [
+          {
+            "key": "digit:0",
+            "text": "Cifra zecilor lui 71"
+          },
+          {
+            "key": "digit:1",
+            "text": "Restul împărțirii lui 13 la 5"
+          },
+          {
+            "key": "digit:2",
+            "text": "Numărul prim care divide 9"
+          }
+        ],
+        "answers": {
+          "digit:0": 7,
+          "digit:1": 3,
+          "digit:2": 3
+        }
+      },
+      "explanation": "Codul este 733."
+    },
+    {
+      "text": "Numărul 1 este număr prim.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Numărul 1 are un singur divizor și nu este nici prim, nici compus.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Numărul 2 este singurul număr prim par.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Orice alt număr par are cel puțin divizorii 1, 2 și numărul însuși.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Orice număr natural mai mare decât 1 este prim sau compus.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Aceasta este clasificarea prezentată în lecție.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă un număr are un divizor propriu, atunci numărul este compus.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Divizorul propriu este diferit de 1 și de numărul însuși.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Toate numerele impare sunt prime.",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "De exemplu, 9 este impar și compus: 9 = 3 · 3.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Proiectul A: verifică dacă 6 este număr perfect.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "perfect_number",
+        "number": 6,
+        "candidates": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "correct_ids": [
+          "1",
+          "2",
+          "3"
+        ],
+        "answers": {
+          "divisors": "1,2,3",
+          "sum": 6
+        }
+      },
+      "explanation": "Divizorii mai mici decât numărul sunt 1, 2, 3; suma este 6, deci 6 perfect."
+    },
+    {
+      "text": "Proiectul B: verifică dacă 28 este număr perfect.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "perfect_number",
+        "number": 28,
+        "candidates": [
+          1,
+          2,
+          4,
+          7,
+          14,
+          21
+        ],
+        "correct_ids": [
+          "1",
+          "2",
+          "4",
+          "7",
+          "14"
+        ],
+        "answers": {
+          "divisors": "1,2,4,7,14",
+          "sum": 28
+        }
+      },
+      "explanation": "Divizorii mai mici decât numărul sunt 1, 2, 4, 7, 14; suma este 28, deci 28 perfect."
+    },
+    {
+      "text": "Proiectul C: verifică dacă 12 este număr perfect.",
+      "type": "prime_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "perfect_number",
+        "number": 12,
+        "candidates": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8
+        ],
+        "correct_ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "6"
+        ],
+        "answers": {
+          "divisors": "1,2,3,4,6",
+          "sum": 16
+        }
+      },
+      "explanation": "Divizorii mai mici decât numărul sunt 1, 2, 3, 4, 6; suma este 16, deci 12 nu este perfect."
+    },
+    {
+      "text": "Care dintre numere este prim?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "179 nu are niciun divizor propriu; celelalte numere sunt divizibile cu 3.",
+      "options": [
+        {
+          "text": "138",
+          "is_correct": false
+        },
+        {
+          "text": "179",
+          "is_correct": true
+        },
+        {
+          "text": "183",
+          "is_correct": false
+        },
+        {
+          "text": "813",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care dintre numere are exact doi divizori?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "97 are numai divizorii 1 și 97.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "97",
+          "is_correct": true
+        },
+        {
+          "text": "91",
+          "is_correct": false
+        },
+        {
+          "text": "100",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care număr dovedește că 299 este compus?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "299 = 13 · 23.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": true
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este o scriere a lui 85 ca produs de două numere prime?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "5 și 17 sunt prime, iar produsul lor este 85.",
+      "options": [
+        {
+          "text": "1 · 85",
+          "is_correct": false
+        },
+        {
+          "text": "5 · 17",
+          "is_correct": true
+        },
+        {
+          "text": "7 · 12",
+          "is_correct": false
+        },
+        {
+          "text": "3 · 28",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care dintre numere nu este nici prim, nici compus?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În lecție, numărul 1 este cazul special: nici prim, nici compus.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care număr este perfect?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Divizorii lui 6 mai mici decât el sunt 1, 2 și 3, iar suma lor este 6.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

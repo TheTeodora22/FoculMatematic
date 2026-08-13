@@ -1,3 +1,5 @@
+import json
+
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Prefetch
@@ -29,11 +31,251 @@ from .mode_services import (
     session_is_complete,
     start_or_resume_generated_session,
     submit_generated_answer,
+    submit_column_subtraction_answer,
+    submit_error_spotting_answer,
+    submit_input_output_answer,
+    submit_factor_builder_answer,
+    submit_factor_error_answer,
+    submit_factor_match_answer,
+    submit_missing_digits_answer,
     submit_training_answer,
+    submit_parentheses_answer,
+    submit_column_division_answer,
+    submit_division_relation_answer,
+    submit_operation_chain_answer,
+    submit_division_table_answer,
+    submit_numeric_input_answer,
+    submit_power_values_answer,
+    submit_power_match_answer,
+    submit_power_rule_chain_answer,
+    submit_power_compare_answer,
+    submit_power_order_answer,
+    submit_base_values_answer,
+    submit_base_match_answer,
+    submit_base_error_answer,
+    submit_unit_reduction_answer,
+    submit_comparison_method_answer,
+    submit_figurative_method_answer,
+    submit_reverse_method_answer,
+    submit_false_hypothesis_method_answer,
+    submit_operation_sequence_answer,
+    submit_operation_workbench_answer,
+    submit_divisibility_values_answer,
+    submit_divisibility_select_answer,
+    submit_divisibility_sort_answer,
+    submit_divisibility_error_answer,
+    submit_criteria_table_answer,
+    submit_prime_workbench_answer,
+    submit_decimal_workbench_answer,
+    submit_fraction_visual_answer,
+    submit_fraction_domino_answer,
+    submit_fraction_compare_answer,
+    submit_fraction_axis_answer,
+    submit_gcd_workbench_answer,
+    submit_fraction_scale_answer,
+    submit_fraction_reduce_path_answer,
+    submit_lcm_workbench_answer,
+    submit_common_denominator_answer,
+)
+from .learning import (
+    get_chapter_learning_states,
+    get_topic_learning_state,
+    get_topics_learning_states,
 )
 from .services import QuizSubmitError, submit_quiz_attempt
 
 VALID_CLASS_LEVELS = range(5, 13)
+
+
+def _submit_training_request(user, question, post_data):
+    if question.question_type in {
+        Question.TYPE_PARENTHESES_DRAG,
+        Question.TYPE_PARENTHESES_TARGET,
+    }:
+        return submit_parentheses_answer(
+            user,
+            question,
+            int(post_data.get("open_index", "")),
+            int(post_data.get("close_index", "")),
+        )
+    if question.question_type in {
+        Question.TYPE_COLUMN_SUBTRACTION,
+        Question.TYPE_COLUMN_ADDITION,
+        Question.TYPE_COLUMN_MULTIPLICATION,
+    }:
+        return submit_column_subtraction_answer(
+            user,
+            question,
+            post_data.get("result_digits", ""),
+            json.loads(post_data.get("borrow_columns", "[]")),
+        )
+    if question.question_type == Question.TYPE_MISSING_DIGITS:
+        return submit_missing_digits_answer(
+            user,
+            question,
+            json.loads(post_data.get("values", "{}")),
+        )
+    if question.question_type == Question.TYPE_ERROR_SPOTTING:
+        return submit_error_spotting_answer(
+            user,
+            question,
+            int(post_data.get("selected_column", "")),
+        )
+    if question.question_type == Question.TYPE_INPUT_OUTPUT:
+        return submit_input_output_answer(
+            user,
+            question,
+            json.loads(post_data.get("values", "{}")),
+        )
+    if question.question_type == Question.TYPE_COLUMN_DIVISION:
+        return submit_column_division_answer(
+            user, question, post_data.get("quotient", ""), json.loads(post_data.get("remainders", "[]"))
+        )
+    if question.question_type == Question.TYPE_DIVISION_RELATION:
+        return submit_division_relation_answer(user, question, post_data.get("value", ""))
+    if question.question_type == Question.TYPE_OPERATION_CHAIN:
+        return submit_operation_chain_answer(user, question, json.loads(post_data.get("values", "[]")))
+    if question.question_type == Question.TYPE_DIVISION_TABLE:
+        return submit_division_table_answer(user, question, json.loads(post_data.get("values", "{}")))
+    if question.question_type == Question.TYPE_NUMERIC_INPUT:
+        return submit_numeric_input_answer(user, question, post_data.get("value", ""))
+    if question.question_type == Question.TYPE_FACTOR_BUILDER:
+        return submit_factor_builder_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_FACTOR_ERROR:
+        return submit_factor_error_answer(
+            user, question, int(post_data.get("selected_step", ""))
+        )
+    if question.question_type == Question.TYPE_FACTOR_MATCH:
+        return submit_factor_match_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type in {
+        Question.TYPE_POWER_BUILDER,
+        Question.TYPE_POWER_TABLE,
+        Question.TYPE_POWER_CYCLE,
+        Question.TYPE_POWER_SQUARE,
+    }:
+        return submit_power_values_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_POWER_MATCH:
+        return submit_power_match_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_POWER_RULE_CHAIN:
+        return submit_power_rule_chain_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_POWER_COMPARE:
+        return submit_power_compare_answer(user, question, post_data.get("relation", ""))
+    if question.question_type == Question.TYPE_POWER_ORDER:
+        return submit_power_order_answer(
+            user, question, json.loads(post_data.get("order", "[]"))
+        )
+    if question.question_type in {Question.TYPE_BASE_VALUES, Question.TYPE_BINARY_TOGGLE}:
+        return submit_base_values_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_BASE_MATCH:
+        return submit_base_match_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_BASE_ERROR:
+        return submit_base_error_answer(
+            user, question, int(post_data.get("selected_step", ""))
+        )
+    if question.question_type == Question.TYPE_UNIT_REDUCTION:
+        return submit_unit_reduction_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_COMPARISON_METHOD:
+        return submit_comparison_method_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_FIGURATIVE_METHOD:
+        return submit_figurative_method_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_REVERSE_METHOD:
+        return submit_reverse_method_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_FALSE_HYPOTHESIS_METHOD:
+        return submit_false_hypothesis_method_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_OPERATION_SEQUENCE:
+        return submit_operation_sequence_answer(
+            user, question, json.loads(post_data.get("order", "[]"))
+        )
+    if question.question_type == Question.TYPE_OPERATION_WORKBENCH:
+        return submit_operation_workbench_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_DIVISIBILITY_VALUES:
+        return submit_divisibility_values_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_DIVISIBILITY_SELECT:
+        return submit_divisibility_select_answer(
+            user, question, json.loads(post_data.get("selected_ids", "[]"))
+        )
+    if question.question_type == Question.TYPE_DIVISIBILITY_SORT:
+        return submit_divisibility_sort_answer(
+            user, question, json.loads(post_data.get("placements", "{}"))
+        )
+    if question.question_type == Question.TYPE_DIVISIBILITY_ERROR:
+        return submit_divisibility_error_answer(
+            user, question, int(post_data.get("selected_step", ""))
+        )
+    if question.question_type == Question.TYPE_CRITERIA_TABLE:
+        return submit_criteria_table_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_PRIME_WORKBENCH:
+        return submit_prime_workbench_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_DECIMAL_WORKBENCH:
+        return submit_decimal_workbench_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_FRACTION_VISUAL:
+        return submit_fraction_visual_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_FRACTION_DOMINO:
+        return submit_fraction_domino_answer(
+            user, question, json.loads(post_data.get("order", "[]"))
+        )
+    if question.question_type == Question.TYPE_FRACTION_COMPARE:
+        return submit_fraction_compare_answer(
+            user,
+            question,
+            post_data.get("relation", ""),
+            json.loads(post_data.get("order", "[]")),
+        )
+    if question.question_type == Question.TYPE_FRACTION_AXIS:
+        return submit_fraction_axis_answer(
+            user, question, int(post_data.get("selected_tick", ""))
+        )
+    if question.question_type == Question.TYPE_GCD_WORKBENCH:
+        return submit_gcd_workbench_answer(user, question, json.loads(post_data.get("values", "{}")))
+    if question.question_type == Question.TYPE_FRACTION_SCALE:
+        return submit_fraction_scale_answer(user, question, json.loads(post_data.get("values", "{}")))
+    if question.question_type == Question.TYPE_FRACTION_REDUCE_PATH:
+        return submit_fraction_reduce_path_answer(user, question, json.loads(post_data.get("values", "{}")))
+    if question.question_type == Question.TYPE_LCM_WORKBENCH:
+        return submit_lcm_workbench_answer(user, question, json.loads(post_data.get("values", "{}")))
+    if question.question_type == Question.TYPE_COMMON_DENOMINATOR:
+        return submit_common_denominator_answer(user, question, json.loads(post_data.get("values", "{}")))
+    return submit_training_answer(
+        user,
+        question,
+        int(post_data.get("option_id", "")),
+    )
 
 
 def _quiz_with_questions():
@@ -59,7 +301,11 @@ def _get_quiz_for_take(pk):
 
 def quiz_take(request, pk):
     quiz = _get_quiz_for_take(pk)
-    questions = list(quiz.questions.all())
+    questions = [
+        question
+        for question in quiz.questions.all()
+        if question.question_type == Question.TYPE_MULTIPLE_CHOICE
+    ]
     can_submit = all(q.options.all() for q in questions)
 
     if request.method == "POST":
@@ -133,10 +379,11 @@ def class_chapters(request, class_level):
         Chapter.objects.filter(class_level=class_level, exam_slug="")
         .order_by("order", "title")
     )
+    chapter_states = get_chapter_learning_states(request.user, chapters)
     return render(
         request,
         "quizzes/class_chapters.html",
-        {"class_level": class_level, "chapters": chapters},
+        {"class_level": class_level, "chapter_states": chapter_states},
     )
 
 
@@ -145,11 +392,16 @@ def chapter_topics(request, class_level, slug):
     if class_level not in VALID_CLASS_LEVELS:
         return HttpResponseBadRequest("Clasă invalidă.")
     chapter = get_object_or_404(Chapter, class_level=class_level, slug=slug)
-    topics = chapter.topics.order_by("title")
+    topics = chapter.topics.order_by("order", "title")
+    topic_states = get_topics_learning_states(request.user, topics)
     return render(
         request,
         "quizzes/chapter_topics.html",
-        {"class_level": class_level, "chapter": chapter, "topics": topics},
+        {
+            "class_level": class_level,
+            "chapter": chapter,
+            "topic_states": topic_states,
+        },
     )
 
 
@@ -173,7 +425,7 @@ def exam_chapter_topics(request, exam_slug, chapter_slug):
     if exam is None:
         raise Http404
     chapter = get_object_or_404(Chapter, exam_slug=exam_slug, slug=chapter_slug)
-    topics = chapter.topics.order_by("title")
+    topics = chapter.topics.order_by("order", "title")
     return render(
         request,
         "quizzes/exam_chapter_topics.html",
@@ -186,6 +438,7 @@ def topic_detail(request, pk):
     topic = get_object_or_404(Quiz.objects.select_related("chapter"), pk=pk)
     in_progress = get_in_progress_session(request.user, topic)
     question_count = topic.questions.count()
+    learning_state = get_topic_learning_state(request.user, topic)
     return render(
         request,
         "quizzes/topic_detail.html",
@@ -193,6 +446,7 @@ def topic_detail(request, pk):
             "topic": topic,
             "in_progress": in_progress,
             "question_count": question_count,
+            "learning_state": learning_state,
         },
     )
 
@@ -368,18 +622,16 @@ def training(request, pk, index=None):
             return redirect("training_index", pk=pk, index=index)
 
         try:
-            option_id = int(request.POST.get("option_id", ""))
-        except (TypeError, ValueError):
-            return HttpResponseBadRequest("Răspuns invalid.")
-        try:
-            feedback = submit_training_answer(request.user, current, option_id)
+            feedback = _submit_training_request(request.user, current, request.POST)
             states = get_training_states(request.user, topic)
             current_state = states[index]
             training_solved = current_state["status"] == UserQuestionProgress.TRAINING_CORRECT
+        except (TypeError, ValueError, json.JSONDecodeError):
+            return HttpResponseBadRequest("Răspuns invalid.")
         except TopicModeError as exc:
             messages.error(request, exc.message)
 
-    selected_option_id = feedback["selected_option_id"] if feedback else None
+    selected_option_id = feedback.get("selected_option_id") if feedback else None
     training_payload = build_training_payload(
         request.user,
         topic,
@@ -415,13 +667,14 @@ def training_submit(request, pk):
     topic = _get_topic(pk)
     try:
         question_id = int(request.POST.get("question_id", ""))
-        option_id = int(request.POST.get("option_id", ""))
     except (TypeError, ValueError):
         return JsonResponse({"error": "Date invalide."}, status=400)
 
     question = get_object_or_404(Question, pk=question_id, quiz=topic)
     try:
-        result = submit_training_answer(request.user, question, option_id)
+        result = _submit_training_request(request.user, question, request.POST)
+    except (TypeError, ValueError, json.JSONDecodeError):
+        return JsonResponse({"error": "Date invalide."}, status=400)
     except TopicModeError as exc:
         return JsonResponse({"error": exc.message}, status=400)
 

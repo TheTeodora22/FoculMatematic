@@ -10,54 +10,768 @@
       "clasa_5_operatii_adunarea_numerelor_naturale.json",
       "clasa_5_operatii_scaderea_numerelor_naturale.json",
       "clasa_5_operatii_inmultirea_numerelor_naturale.json",
+      "clasa_5_operatii_factor_comun.json",
+      "clasa_5_operatii_impartirea_cu_rest.json",
+      "clasa_5_operatii_impartirea_numerelor_naturale.json",
+      "clasa_5_operatii_puterea_cu_exponent_natural.json",
+      "clasa_5_operatii_reguli_de_calcul_cu_puteri.json",
+      "clasa_5_operatii_compararea_puterilor.json",
+      "clasa_5_operatii_sisteme_de_numeratie.json",
       "clasa_5_operatii_cu_numere_naturale.json"
-    ]
-  },
-  {
-    "class_level": 5,
-    "slug": "divizibilitate",
-    "title": "Divizibilitatea numerelor naturale",
-    "order": 2,
-    "topics": [
-      "clasa_5_divizibilitatea_numerelor_naturale.json",
-      "clasa_5_operatii_factor_comun.json"
-    ]
-  },
-  {
-    "class_level": 5,
-    "slug": "fractii",
-    "title": "Fracții",
-    "order": 3,
-    "topics": [
-      "clasa_5_fractii_ordinare.json",
-      "clasa_5_fractii_zecimale.json"
-    ]
-  },
-  {
-    "class_level": 5,
-    "slug": "geometrie",
-    "title": "Elemente de geometrie și unități de măsură",
-    "order": 4,
-    "topics": [
-      "clasa_5_elemente_de_geometrie_si_unitate_de_masura.json"
     ]
   },
   {
     "class_level": 5,
     "slug": "metode-aritmetice",
     "title": "Metode aritmetice de rezolvare a problemelor",
-    "order": 5,
+    "order": 2,
     "topics": [
-      "clasa_5_metode_aritmetice_de_rezolvare_a_problemelor.json"
+      "clasa_5_metode_aritmetice_de_rezolvare_a_problemelor.json",
+      "clasa_5_metoda_comparatiei.json",
+      "clasa_5_metoda_figurativa.json",
+      "clasa_5_metoda_mersului_invers.json",
+      "clasa_5_metoda_falsei_ipoteze.json"
     ]
   },
   {
     "class_level": 5,
-    "slug": "exemple",
-    "title": "Exemple demo",
-    "order": 99,
+    "slug": "divizibilitate",
+    "title": "Divizibilitatea numerelor naturale",
+    "order": 3,
     "topics": [
-      "exemplu_adunari.json"
+      "clasa_5_divizibilitatea_numerelor_naturale.json",
+      "clasa_5_criterii_de_divizibilitate.json",
+      "clasa_5_numere_prime_numere_compuse.json"
+    ]
+  },
+  {
+    "class_level": 5,
+    "slug": "fractii-ordinare",
+    "title": "Fracții ordinare",
+    "order": 4,
+    "topics": [
+      "clasa_5_fractii_ordinare.json",
+      "clasa_5_fractii_ordinare_compararea_si_reprezentarea_pe_axa.json",
+      "clasa_5_fractii_ordinare_introducerea_si_scoaterea_intregilor.json",
+      "clasa_5_fractii_ordinare_cmmdc_amplificarea_si_simplificarea.json",
+      "clasa_5_fractii_ordinare_cmmmc_numitor_comun.json",
+      "clasa_5_fractii_ordinare_adunarea_si_scaderea.json",
+      "clasa_5_fractii_ordinare_inmultirea.json",
+      "clasa_5_fractii_ordinare_impartirea.json",
+      "clasa_5_fractii_ordinare_puterea.json",
+      "clasa_5_fractii_si_procente_dintr_un_numar.json"
+    ]
+  },
+  {
+    "class_level": 5,
+    "slug": "fractii-zecimale",
+    "title": "Fracții zecimale",
+    "order": 5,
+    "topics": [
+      "clasa_5_fractii_zecimale.json",
+      "clasa_5_fractii_zecimale_aproximarea_compararea_ordonarea_axa.json",
+      "clasa_5_fractii_zecimale_adunarea_si_scaderea.json",
+      "clasa_5_fractii_zecimale_inmultirea.json",
+      "clasa_5_fractii_zecimale_impartirea_numerelor_naturale.json",
+      "clasa_5_fractii_zecimale_impartirea.json",
+      "clasa_5_numere_rationale_pozitive_ordinea_operatiilor.json",
+      "clasa_5_metode_aritmetice_si_unitati_de_masura.json",
+      "clasa_5_organizarea_datelor_frecventa_grafice.json"
+    ]
+  },
+  {
+    "class_level": 5,
+    "slug": "geometrie",
+    "title": "Elemente de geometrie și unități de măsură",
+    "order": 6,
+    "topics": [
+      "clasa_5_elemente_de_geometrie_si_unitate_de_masura.json",
+      "clasa_5_geometrie_pozitii_relative_punct_dreapta.json",
+      "clasa_5_geometrie_lungimea_unui_segment_distanta.json",
+      "clasa_5_geometrie_mijlocul_segmentului_simetrie_fata_de_punct.json",
+      "clasa_5_geometrie_unghi_definitie_elemente_interior_exterior.json",
+      "clasa_5_geometrie_masura_unui_unghi_unghiuri_congruente.json",
+      "clasa_5_geometrie_clasificarea_unghiurilor.json",
+      "clasa_5_geometrie_figuri_congruente_axa_de_simetrie.json",
+      "clasa_5_geometrie_unitati_lungime_perimetru.json",
+      "clasa_5_geometrie_unitati_arie.json",
+      "clasa_5_geometrie_unitati_volum.json"
+    ]
+  },
+  {
+    "class_level": 6,
+    "slug": "multimi-numere-naturale",
+    "title": "Mulțimi și numere naturale",
+    "order": 1,
+    "topics": [
+      "clasa_6_u01_l01_multimi_descriere_notatii_si_reprezentari.json",
+      "clasa_6_u01_l02_relatii_intre_multimi.json",
+      "clasa_6_u01_l03_multimi_finite_si_infinite_cardinalul_unei_multimi.json",
+      "clasa_6_u01_l04_operatii_cu_multimi_reuniune_intersectie_diferenta.json",
+      "clasa_6_u01_l05_descompunerea_numerelor_naturale_in_factori_primi.json",
+      "clasa_6_u01_l06_cmmdc_si_cmmmc_numere_prime_intre_ele.json",
+      "clasa_6_u01_l07_proprietati_ale_divizibilitatii_in_n.json"
+    ]
+  },
+  {
+    "class_level": 6,
+    "slug": "rapoarte-proportii",
+    "title": "Rapoarte și proporții",
+    "order": 2,
+    "topics": [
+      "clasa_6_u02_l01_rapoarte.json",
+      "clasa_6_u02_l02_proportii_proprietatea_fundamentala.json",
+      "clasa_6_u02_l03_proportii_derivate.json",
+      "clasa_6_u02_l04_sir_de_rapoarte_egale.json",
+      "clasa_6_u02_l05_marimi_direct_proportionale.json",
+      "clasa_6_u02_l06_marimi_invers_proportionale.json",
+      "clasa_6_u02_l07_regula_de_trei_simpla.json",
+      "clasa_6_u02_l08_organizarea_si_reprezentarea_datelor.json",
+      "clasa_6_u02_l09_probabilitati.json"
+    ]
+  },
+  {
+    "class_level": 6,
+    "slug": "numere-intregi",
+    "title": "Numere întregi",
+    "order": 3,
+    "topics": [
+      "clasa_6_u03_l01_multimea_numerelor_intregi_opusul_si_modulul_compararea_si_ordonarea.json",
+      "clasa_6_u03_l02_adunarea_numerelor_intregi_proprietati.json",
+      "clasa_6_u03_l03_scaderea_numerelor_intregi.json",
+      "clasa_6_u03_l04_inmultirea_numerelor_intregi_proprietati.json",
+      "clasa_6_u03_l05_impartirea_numerelor_intregi.json",
+      "clasa_6_u03_l06_puterea_cu_exponent_natural_a_unui_numar_intreg_nenul.json",
+      "clasa_6_u03_l07_ordinea_efectuarii_operatiilor_si_folosirea_parantezelor.json",
+      "clasa_6_u03_l08_ecuatii_in_multimea_numerelor_intregi.json",
+      "clasa_6_u03_l09_inecuatii_in_multimea_numerelor_intregi.json",
+      "clasa_6_u03_l10_probleme_cu_ecuatii_si_inecuatii_in_numere_intregi.json"
+    ]
+  },
+  {
+    "class_level": 6,
+    "slug": "numere-rationale",
+    "title": "Numere raționale",
+    "order": 4,
+    "topics": [
+      "clasa_6_u04_l01_multimea_numerelor_rationale_opus_modul_comparare_si_ordonare.json",
+      "clasa_6_u04_l02_adunarea_si_scaderea_numerelor_rationale.json",
+      "clasa_6_u04_l03_inmultirea_numerelor_rationale_proprietati.json",
+      "clasa_6_u04_l04_impartirea_numerelor_rationale.json",
+      "clasa_6_u04_l05_puterea_cu_exponent_intreg_a_unui_numar_rational_nenul.json",
+      "clasa_6_u04_l06_ordinea_efectuarii_operatiilor_si_folosirea_parantezelor.json",
+      "clasa_6_u04_l07_ecuatii_in_multimea_numerelor_rationale.json",
+      "clasa_6_u04_l08_probleme_care_se_rezolva_folosind_ecuatii.json"
+    ]
+  },
+  {
+    "class_level": 6,
+    "slug": "geometrie-fundamentala",
+    "title": "Geometrie fundamentală",
+    "order": 5,
+    "topics": [
+      "clasa_6_u05_l01_unghiuri_opuse_la_varf_unghiuri_in_jurul_unui_punct_unghiuri_complemen.json",
+      "clasa_6_u05_l02_unghiuri_adiacente_bisectoarea_unui_unghi.json",
+      "clasa_6_u05_l03_drepte_paralele_criterii_de_paralelism.json",
+      "clasa_6_u05_l04_drepte_perpendiculare_distanta_de_la_un_punct_la_o_dreapta_mediatoarea.json",
+      "clasa_6_u05_l05_cercul_definitie_elemente_constructie_si_unghi_la_centru.json",
+      "clasa_6_u05_l06_pozitiile_unei_drepte_fata_de_un_cerc_pozitiile_relative_a_doua_cercur.json"
+    ]
+  },
+  {
+    "class_level": 6,
+    "slug": "triunghiuri",
+    "title": "Triunghiuri",
+    "order": 6,
+    "topics": [
+      "clasa_6_u06_l01_triunghiul_definitie_elemente_clasificare_perimetru_si_suma_unghiurilo.json",
+      "clasa_6_u06_l02_constructia_triunghiurilor_inegalitati_intre_elementele_triunghiului.json",
+      "clasa_6_u06_l03_linii_importante_in_triunghi.json",
+      "clasa_6_u06_l04_congruenta_triunghiurilor_criterii_de_congruenta.json",
+      "clasa_6_u06_l05_metoda_triunghiurilor_congruente.json",
+      "clasa_6_u06_l06_proprietati_ale_triunghiului_isoscel.json",
+      "clasa_6_u06_l07_proprietati_ale_triunghiului_echilateral.json",
+      "clasa_6_u06_l08_proprietati_ale_triunghiului_dreptunghic.json"
+    ]
+  },
+  {
+    "class_level": 7,
+    "slug": "numere-reale",
+    "title": "Numere reale",
+    "order": 1,
+    "topics": [
+      "clasa_7_u01_l01_radacina_patrata_a_patratului_unui_numar_natural_estimarea_radacinii_p.json",
+      "clasa_7_u01_l02_multimea_numerelor_reale.json",
+      "clasa_7_u01_l03_reguli_de_calcul_cu_radicali.json",
+      "clasa_7_u01_l04_adunarea_si_scaderea_numerelor_reale.json",
+      "clasa_7_u01_l05_inmultirea_si_impartirea_numerelor_reale.json",
+      "clasa_7_u01_l06_puterea_cu_exponent_intreg_a_unui_numar_real_ordinea_operatiilor.json",
+      "clasa_7_u01_l07_rationalizarea_numitorului_unei_fractii.json",
+      "clasa_7_u01_l08_media_aritmetica_ponderata_si_media_geometrica.json",
+      "clasa_7_u01_l09_ecuatia_de_forma_x2_a_unde_a_este_numar_real.json"
+    ]
+  },
+  {
+    "class_level": 7,
+    "slug": "ecuatii-sisteme-liniare",
+    "title": "Ecuații și sisteme liniare",
+    "order": 2,
+    "topics": [
+      "clasa_7_u02_l01_transformarea_unei_egalitati_intr_o_egalitate_echivalenta_identitati.json",
+      "clasa_7_u02_l02_ecuatii_de_forma_ax_b_0_multimea_solutiilor_ecuatii_echivalente.json",
+      "clasa_7_u02_l03_sisteme_de_doua_ecuatii_liniare_cu_doua_necunoscute.json",
+      "clasa_7_u02_l04_probleme_rezolvate_cu_ecuatii_sau_sisteme_de_ecuatii_liniare.json"
+    ]
+  },
+  {
+    "class_level": 7,
+    "slug": "organizarea-datelor",
+    "title": "Organizarea datelor",
+    "order": 3,
+    "topics": [
+      "clasa_7_u03_l01_produsul_cartezian_sisteme_de_axe_ortogonale_reprezentarea_punctelor_s.json",
+      "clasa_7_u03_l02_reprezentarea_si_interpretarea_dependentelor_functionale_poligonul_fre.json"
+    ]
+  },
+  {
+    "class_level": 7,
+    "slug": "patrulatere",
+    "title": "Patrulatere",
+    "order": 4,
+    "topics": [
+      "clasa_7_u04_l01_patrulaterul_convex_suma_masurilor_unghiurilor.json",
+      "clasa_7_u04_l02_paralelogramul_proprietati.json",
+      "clasa_7_u04_l03_aplicatii_ale_paralelogramului_in_geometria_triunghiului_linia_mijloci.json",
+      "clasa_7_u04_l04_dreptunghiul_proprietati.json",
+      "clasa_7_u04_l05_rombul_proprietati.json",
+      "clasa_7_u04_l06_patratul_proprietati.json",
+      "clasa_7_u04_l07_trapezul_clasificare_si_proprietati_linia_mijlocie.json",
+      "clasa_7_u04_l08_perimetre_si_arii.json"
+    ]
+  },
+  {
+    "class_level": 7,
+    "slug": "cercul",
+    "title": "Cercul",
+    "order": 5,
+    "topics": [
+      "clasa_7_u05_l01_cercul_coarde_si_arce_in_cerc_proprietati.json",
+      "clasa_7_u05_l02_unghiuri_inscrise_in_cerc.json",
+      "clasa_7_u05_l03_tangente_la_cerc.json",
+      "clasa_7_u05_l04_poligoane_regulate_inscrise_intr_un_cerc.json",
+      "clasa_7_u05_l05_lungimea_cercului_si_aria_discului.json"
+    ]
+  },
+  {
+    "class_level": 7,
+    "slug": "asemanarea-triunghiurilor",
+    "title": "Asemănarea triunghiurilor",
+    "order": 6,
+    "topics": [
+      "clasa_7_u06_l01_segmente_proportionale_teorema_paralelelor_echidistante.json",
+      "clasa_7_u06_l02_teorema_lui_thales.json",
+      "clasa_7_u06_l03_triunghiuri_asemenea_teorema_fundamentala_a_asemanarii.json",
+      "clasa_7_u06_l04_criterii_de_asemanare_aproximarea_distantelor_folosind_asemanarea.json"
+    ]
+  },
+  {
+    "class_level": 7,
+    "slug": "relatii-metrice-triunghi-dreptunghic",
+    "title": "Relații metrice în triunghiul dreptunghic",
+    "order": 7,
+    "topics": [
+      "clasa_7_u07_l01_proiectii_ortogonale_pe_o_dreapta_teorema_inaltimii.json",
+      "clasa_7_u07_l02_teorema_catetei.json",
+      "clasa_7_u07_l03_teorema_lui_pitagora.json",
+      "clasa_7_u07_l04_notiuni_de_trigonometrie_in_triunghiul_dreptunghic.json",
+      "clasa_7_u07_l05_rezolvarea_triunghiului_dreptunghic_si_calculul_elementelor_in_poligoa.json"
+    ]
+  },
+  {
+    "class_level": 8,
+    "slug": "intervale-inecuatii",
+    "title": "Intervale și inecuații",
+    "order": 1,
+    "topics": [
+      "clasa_8_u01_l01_multimi_definite_printr_o_proprietate_comuna_a_elementelor.json",
+      "clasa_8_u01_l02_intervale_numerice_si_reprezentarea_lor_pe_axa_intersectia_si_reuniune.json",
+      "clasa_8_u01_l03_inecuatii_de_forma_ax_b_0_unde_a_si_b_sunt_numere_reale.json"
+    ]
+  },
+  {
+    "class_level": 8,
+    "slug": "calcul-algebric",
+    "title": "Calcul algebric",
+    "order": 2,
+    "topics": [
+      "clasa_8_u02_l01_operatii_cu_numere_reale_reprezentate_prin_litere_reducerea_termenilor.json",
+      "clasa_8_u02_l02_formule_de_calcul_prescurtat.json",
+      "clasa_8_u02_l03_descompuneri_in_factori_utilizand_reguli_de_calcul_in_r.json",
+      "clasa_8_u02_l04_fractii_algebrice_operatii_cu_fractii_algebrice.json",
+      "clasa_8_u02_l05_ecuatia_de_forma_ax2_bx_c_0_unde_a_b_si_c_sunt_numere_reale_a_0.json"
+    ]
+  },
+  {
+    "class_level": 8,
+    "slug": "functii-statistica",
+    "title": "Funcții și statistică",
+    "order": 3,
+    "topics": [
+      "clasa_8_u03_l01_functii_definite_pe_multimi_finite.json",
+      "clasa_8_u03_l02_functia_de_forma_f_x_ax_b_interpretarea_geometrica_lecturi_grafice.json",
+      "clasa_8_u03_l03_elemente_de_statistica_indicatorii_tendintei_centrale.json"
+    ]
+  },
+  {
+    "class_level": 8,
+    "slug": "geometrie-in-spatiu",
+    "title": "Geometrie în spațiu",
+    "order": 4,
+    "topics": [
+      "clasa_8_u04_l01_puncte_drepte_si_plane.json",
+      "clasa_8_u04_l02_corpuri_geometrice_piramida_piramida_regulata_si_tetraedrul_regulat.json",
+      "clasa_8_u04_l03_corpuri_geometrice_prisma_dreapta_paralelipipedul_dreptunghic_si_cubul.json",
+      "clasa_8_u04_l04_corpuri_geometrice_cilindrul_circular_drept_si_conul_circular_drept.json",
+      "clasa_8_u04_l05_drepte_paralele_unghiul_a_doua_drepte.json",
+      "clasa_8_u04_l06_dreapta_paralela_cu_un_plan.json",
+      "clasa_8_u04_l07_plane_paralele.json",
+      "clasa_8_u04_l08_sectiuni_paralele_cu_baza_in_corpurile_geometrice_studiate.json",
+      "clasa_8_u04_l09_dreapta_perpendiculara_pe_un_plan_distanta_de_la_un_punct_la_un_plan.json",
+      "clasa_8_u04_l10_distanta_dintre_doua_plane_paralele_inaltimea_prismei_cilindrului_pira.json",
+      "clasa_8_u04_l11_plane_perpendiculare_sectiuni_diagonale_si_sectiuni_axiale.json",
+      "clasa_8_u04_l12_proiectii_pe_un_plan_unghiul_dintre_o_dreapta_si_un_plan.json",
+      "clasa_8_u04_l13_unghi_diedru_unghiul_plan_corespunzator_unghiul_a_doua_plane.json",
+      "clasa_8_u04_l14_teorema_celor_trei_perpendiculare_calculul_distantelor_in_spatiu.json"
+    ]
+  },
+  {
+    "class_level": 8,
+    "slug": "arii-volume",
+    "title": "Arii și volume",
+    "order": 5,
+    "topics": [
+      "clasa_8_u05_l01_distante_si_masuri_de_unghiuri_in_corpuri_geometrice.json",
+      "clasa_8_u05_l02_prisma_dreapta_arii_si_volum.json",
+      "clasa_8_u05_l03_piramida_regulata_arii_si_volum.json",
+      "clasa_8_u05_l04_trunchiul_de_piramida_regulata_arii_si_volum.json",
+      "clasa_8_u05_l05_cilindrul_circular_drept_arii_si_volum.json",
+      "clasa_8_u05_l06_conul_circular_drept_si_trunchiul_de_con_arii_si_volume.json",
+      "clasa_8_u05_l07_sfera.json"
+    ]
+  },
+  {
+    "class_level": 9,
+    "slug": "multimi-logica-matematica",
+    "title": "Mulțimi și logică matematică",
+    "order": 1,
+    "topics": [
+      "clasa_9_u01_l01_multimea_numerelor_reale_operatii_ordonare_modul_si_aproximari.json",
+      "clasa_9_u01_l02_puteri_radicali_si_operatii_cu_intervale_de_numere_reale.json",
+      "clasa_9_u01_l03_propozitii_predicate_si_cuantificatori.json",
+      "clasa_9_u01_l04_operatii_logice_elementare_si_legi_de_calcul.json",
+      "clasa_9_u01_l05_rationamente_logice_inductia_matematica_si_probleme_de_numarare.json"
+    ]
+  },
+  {
+    "class_level": 9,
+    "slug": "functii",
+    "title": "Funcții",
+    "order": 2,
+    "topics": [
+      "clasa_9_u02_l01_siruri_de_numere_reale_notatia_si_termenul_general.json",
+      "clasa_9_u02_l02_progresii_aritmetice_si_geometrice_aplicatii.json",
+      "clasa_9_u02_l03_functii_reper_cartezian_produs_cartezian_si_reprezentare_grafica.json",
+      "clasa_9_u02_l04_notiunea_imaginea_si_preimaginea_unei_functii.json",
+      "clasa_9_u02_l05_graficul_restrictiile_si_prelungirile_unei_functii_functii_numerice.json",
+      "clasa_9_u02_l06_proprietati_generale_ale_functiilor_marginire_paritate_periodicitate_s.json",
+      "clasa_9_u02_l07_compunerea_functiilor.json"
+    ]
+  },
+  {
+    "class_level": 9,
+    "slug": "functia-gradul-intai",
+    "title": "Funcția de gradul I",
+    "order": 3,
+    "topics": [
+      "clasa_9_u03_l01_functia_de_gradul_i_definitie_si_reprezentare_grafica.json",
+      "clasa_9_u03_l02_interpretarea_grafica_a_proprietatilor_algebrice_monotonie_si_semn.json",
+      "clasa_9_u03_l03_inecuatii_de_forma_ax_b_0_si_studiul_lor_pe_r.json",
+      "clasa_9_u03_l04_pozitia_relativa_a_doua_drepte.json",
+      "clasa_9_u03_l05_sisteme_de_ecuatii_si_sisteme_de_inecuatii_de_gradul_i.json"
+    ]
+  },
+  {
+    "class_level": 9,
+    "slug": "functia-gradul-doi",
+    "title": "Funcția de gradul al II-lea",
+    "order": 4,
+    "topics": [
+      "clasa_9_u04_l01_functia_de_gradul_al_ii_lea_forma_canonica_maximul_si_minimul.json",
+      "clasa_9_u04_l02_graficul_functiei_de_gradul_al_ii_lea_simetrie_si_intersectii_cu_axele.json",
+      "clasa_9_u04_l03_reprezentarea_grafica_si_imaginea_functiei_de_gradul_al_ii_lea.json",
+      "clasa_9_u04_l04_relatiile_lui_viete.json",
+      "clasa_9_u04_l05_interpretarea_geometrica_a_proprietatilor_algebrice_monotonie_si_semn.json",
+      "clasa_9_u04_l06_pozitia_relativa_a_unei_drepte_fata_de_o_parabola.json",
+      "clasa_9_u04_l07_sisteme_de_ecuatii_cu_ecuatii_de_gradul_al_ii_lea.json"
+    ]
+  },
+  {
+    "class_level": 9,
+    "slug": "vectori-plan",
+    "title": "Vectori în plan",
+    "order": 5,
+    "topics": [
+      "clasa_9_u05_l01_segmente_orientate_relatia_de_echipolenta.json",
+      "clasa_9_u05_l02_vectorul_de_pozitie_al_unui_punct_vectorul_lui_thales.json",
+      "clasa_9_u05_l03_operatii_cu_vectori_in_plan_adunarea_si_inmultirea_cu_scalari.json",
+      "clasa_9_u05_l04_descompunerea_unui_vector_dupa_doi_vectori_necoliniari.json"
+    ]
+  },
+  {
+    "class_level": 9,
+    "slug": "coliniaritate-concurenta-paralelism",
+    "title": "Coliniaritate, concurență și paralelism",
+    "order": 6,
+    "topics": [
+      "clasa_9_u06_l01_vectorul_de_pozitie_al_unui_punct_in_plan.json",
+      "clasa_9_u06_l02_teorema_lui_thales.json",
+      "clasa_9_u06_l03_vectorul_de_pozitie_al_centrului_de_greutate_al_unui_triunghi.json",
+      "clasa_9_u06_l04_teorema_bisectoarei_relatia_lui_sylvester.json",
+      "clasa_9_u06_l05_teorema_lui_menelau.json"
+    ]
+  },
+  {
+    "class_level": 9,
+    "slug": "trigonometrie",
+    "title": "Elemente de trigonometrie",
+    "order": 7,
+    "topics": [
+      "clasa_9_u07_l01_unghiuri_si_arce_masura_unghiurilor_si_arcelor.json",
+      "clasa_9_u07_l02_generalizarea_notiunii_de_unghi.json",
+      "clasa_9_u07_l03_functii_trigonometrice_sinus_cosinus_tangenta_si_cotangenta.json",
+      "clasa_9_u07_l04_semnul_functiilor_trigonometrice.json",
+      "clasa_9_u07_l05_formule_de_reducere_la_primul_cadran.json",
+      "clasa_9_u07_l06_paritatea_si_imparitatea_functiilor_trigonometrice.json",
+      "clasa_9_u07_l07_relatii_intre_functiile_trigonometrice_ale_aceluiasi_unghi.json",
+      "clasa_9_u07_l08_functiile_trigonometrice_ale_unei_sume_si_diferente_de_unghiuri.json",
+      "clasa_9_u07_l09_transformarea_sumelor_in_produs_si_a_produselor_in_sume.json"
+    ]
+  },
+  {
+    "class_level": 9,
+    "slug": "aplicatii-trigonometrie-geometrie",
+    "title": "Aplicații ale trigonometriei în geometrie",
+    "order": 8,
+    "topics": [
+      "clasa_9_u08_l01_produsul_scalar_a_doi_vectori_unghiul_a_doi_vectori_si_teorema_cosinus.json",
+      "clasa_9_u08_l02_aplicatii_vectoriale_in_geometria_plana_coliniaritate_si_relatia_lui_l.json",
+      "clasa_9_u08_l03_rezolvarea_triunghiurilor_raza_cercului_circumscris_si_inscris_formule.json"
+    ]
+  },
+  {
+    "class_level": 10,
+    "slug": "multimi-de-numere",
+    "title": "Mulțimi de numere",
+    "order": 1,
+    "topics": [
+      "clasa_10_u01_l01_multimea_numerelor_reale_puteri_si_radicali.json",
+      "clasa_10_u01_l02_radicali_de_ordin_n_proprietati_si_operatii.json",
+      "clasa_10_u01_l03_rationalizarea_numitorilor.json",
+      "clasa_10_u01_l04_puteri_cu_exponent_rational_si_real.json",
+      "clasa_10_u01_l05_logaritmi_proprietati_ale_logaritmilor.json",
+      "clasa_10_u01_l06_multimea_numerelor_complexe_forma_algebrica_si_operatii.json",
+      "clasa_10_u01_l07_numere_complexe_conjugate_si_modulul_unui_numar_complex.json",
+      "clasa_10_u01_l08_interpretarea_geometrica_a_numerelor_complexe.json",
+      "clasa_10_u01_l09_ecuatii_de_gradul_al_ii_lea_cu_coeficienti_reali_relatiile_lui_viete.json",
+      "clasa_10_u01_l10_numere_complexe_in_forma_trigonometrica_operatii_si_radicali.json"
+    ]
+  },
+  {
+    "class_level": 10,
+    "slug": "functii-ecuatii",
+    "title": "Funcții și ecuații",
+    "order": 2,
+    "topics": [
+      "clasa_10_u02_l01_functii_injective_surjective_si_bijective.json",
+      "clasa_10_u02_l02_functii_inversabile_inversa_unei_functii.json",
+      "clasa_10_u02_l03_functia_putere_cu_exponent_natural.json",
+      "clasa_10_u02_l04_functia_radical.json",
+      "clasa_10_u02_l05_functia_exponentiala.json",
+      "clasa_10_u02_l06_functia_logaritmica.json",
+      "clasa_10_u02_l07_functii_trigonometrice_directe_si_inverse.json",
+      "clasa_10_u02_l08_ecuatii_irationale.json",
+      "clasa_10_u02_l09_ecuatii_exponentiale.json",
+      "clasa_10_u02_l10_ecuatii_logaritmice.json",
+      "clasa_10_u02_l11_ecuatii_trigonometrice_fundamentale.json",
+      "clasa_10_u02_l12_ecuatii_trigonometrice_reductibile_la_ecuatii_fundamentale.json",
+      "clasa_10_u02_l13_ecuatii_trigonometrice_liniare_in_sin_x_si_cos_x.json"
+    ]
+  },
+  {
+    "class_level": 10,
+    "slug": "metode-de-numarare",
+    "title": "Metode de numărare",
+    "order": 3,
+    "topics": [
+      "clasa_10_u03_l01_metoda_inductiei_matematice.json",
+      "clasa_10_u03_l02_multimi_finite_ordonate.json",
+      "clasa_10_u03_l03_permutarile_unei_multimi_finite_calculul_lui_n.json",
+      "clasa_10_u03_l04_numarul_functiilor_bijective_intre_doua_multimi_finite.json",
+      "clasa_10_u03_l05_combinari_si_aranjamente_definitii_si_formule.json",
+      "clasa_10_u03_l06_drumuri_de_lungime_minima_intr_o_retea_formula_lui_pascal.json",
+      "clasa_10_u03_l07_numarul_functiilor_injective_intre_doua_multimi_finite.json",
+      "clasa_10_u03_l08_binomul_lui_newton_formula_si_aplicatii.json"
+    ]
+  },
+  {
+    "class_level": 10,
+    "slug": "matematici-financiare-statistica-probabilitati",
+    "title": "Matematici financiare, statistică și probabilități",
+    "order": 4,
+    "topics": [
+      "clasa_10_u04_l01_procente_dobanda_simpla_si_dobanda_compusa.json",
+      "clasa_10_u04_l02_taxa_pe_valoarea_adaugata_si_alte_elemente_de_calcul_financiar.json",
+      "clasa_10_u04_l03_date_statistice_culegerea_inregistrarea_si_clasificarea_datelor.json",
+      "clasa_10_u04_l04_serii_statistice_si_frecvente.json",
+      "clasa_10_u04_l05_reprezentarea_grafica_si_interpretarea_datelor_statistice.json",
+      "clasa_10_u04_l06_experimente_si_evenimente_aleatoare_operatii_cu_evenimente.json",
+      "clasa_10_u04_l07_probabilitatea_unui_eveniment_si_probabilitati_conditionate.json",
+      "clasa_10_u04_l08_evenimente_independente_scheme_clasice_de_probabilitate.json",
+      "clasa_10_u04_l09_variabile_aleatoare.json"
+    ]
+  },
+  {
+    "class_level": 10,
+    "slug": "geometrie-analitica",
+    "title": "Geometrie analitică",
+    "order": 5,
+    "topics": [
+      "clasa_10_u05_l01_reper_cartezian_in_plan_coordonatele_unui_vector.json",
+      "clasa_10_u05_l02_coordonatele_unei_sume_vectoriale_distanta_dintre_doua_puncte.json",
+      "clasa_10_u05_l03_dreapta_in_plan_ecuatia_determinata_de_un_punct_si_o_directie.json",
+      "clasa_10_u05_l04_ecuatia_dreptei_determinate_de_doua_puncte.json",
+      "clasa_10_u05_l05_conditii_de_paralelism_si_perpendicularitate_a_doua_drepte.json",
+      "clasa_10_u05_l06_distanta_de_la_un_punct_la_o_dreapta_si_distanta_dintre_doua_drepte_pa.json",
+      "clasa_10_u05_l07_aria_unui_triunghi_si_aria_unei_suprafete_poligonale_convexe.json"
+    ]
+  },
+  {
+    "class_level": 11,
+    "slug": "permutari",
+    "title": "Permutări",
+    "order": 1,
+    "topics": [
+      "clasa_11_u01_l01_notiunea_de_permutare.json",
+      "clasa_11_u01_l02_operatii_cu_permutari_compunerea_permutarilor_de_gradul_n.json",
+      "clasa_11_u01_l03_proprietati_ale_compunerii_permutarilor.json",
+      "clasa_11_u01_l04_puterea_unei_permutari_proprietati_ale_transpozitiilor.json",
+      "clasa_11_u01_l05_inversiunile_unei_permutari_semnul_unei_permutari.json"
+    ]
+  },
+  {
+    "class_level": 11,
+    "slug": "matrice",
+    "title": "Matrice",
+    "order": 2,
+    "topics": [
+      "clasa_11_u02_l01_tabel_matriceal_matrice_multimi_de_matrice.json",
+      "clasa_11_u02_l02_adunarea_matricelor_si_inmultirea_unei_matrice_cu_un_scalar.json",
+      "clasa_11_u02_l03_inmultirea_matricelor.json",
+      "clasa_11_u02_l04_puterea_unei_matrice_patratice.json",
+      "clasa_11_u02_l05_transpusa_unei_matrice.json"
+    ]
+  },
+  {
+    "class_level": 11,
+    "slug": "determinanti",
+    "title": "Determinanți",
+    "order": 3,
+    "topics": [
+      "clasa_11_u03_l01_determinantul_de_ordinul_n_proprietati.json",
+      "clasa_11_u03_l02_determinanti_de_ordinul_2_si_3.json",
+      "clasa_11_u03_l03_dezvoltarea_unui_determinant_dupa_o_linie_sau_o_coloana.json",
+      "clasa_11_u03_l04_ecuatia_dreptei_determinate_de_doua_puncte_coliniaritatea_a_trei_punct.json",
+      "clasa_11_u03_l05_distanta_de_la_un_punct_la_o_dreapta.json",
+      "clasa_11_u03_l06_aria_unei_suprafete_triunghiulare.json"
+    ]
+  },
+  {
+    "class_level": 11,
+    "slug": "sisteme-ecuatii-liniare",
+    "title": "Sisteme de ecuații liniare",
+    "order": 4,
+    "topics": [
+      "clasa_11_u04_l01_matrice_inversabile_din_mn_c.json",
+      "clasa_11_u04_l02_ecuatii_matriceale.json",
+      "clasa_11_u04_l03_sisteme_de_ecuatii_liniare_cu_trei_sau_patru_necunoscute.json",
+      "clasa_11_u04_l04_sisteme_de_ecuatii_liniare_de_tip_cramer.json",
+      "clasa_11_u04_l05_rangul_unei_matrice.json",
+      "clasa_11_u04_l06_studiul_compatibilitatii_si_rezolvarea_sistemelor_de_ecuatii_liniare.json"
+    ]
+  },
+  {
+    "class_level": 11,
+    "slug": "limite-functii",
+    "title": "Limite de funcții",
+    "order": 5,
+    "topics": [
+      "clasa_11_u05_l01_structura_de_ordine_a_multimii_numerelor_reale_intervale.json",
+      "clasa_11_u05_l02_multimi_marginite_marginile_unei_multimi_de_numere_reale.json",
+      "clasa_11_u05_l03_vecinatatile_unui_punct_pe_axa_reala.json",
+      "clasa_11_u05_l04_functii_reale_de_variabila_reala.json",
+      "clasa_11_u05_l05_limite_de_siruri_siruri_cu_limita_finita_si_infinita.json",
+      "clasa_11_u05_l06_proprietati_ale_sirurilor_care_au_limita.json",
+      "clasa_11_u05_l07_criterii_de_existenta_a_limitei_unui_sir.json",
+      "clasa_11_u05_l08_proprietatea_lui_weierstrass_si_aplicatii_ale_teoremei.json",
+      "clasa_11_u05_l09_operatii_cu_siruri_care_au_limita.json",
+      "clasa_11_u05_l10_limita_unei_functii_intr_un_punct_si_limite_laterale.json",
+      "clasa_11_u05_l11_proprietati_ale_functiilor_care_au_limita_limitele_functiilor_elementa.json",
+      "clasa_11_u05_l12_operatii_cu_limite_de_functii_limite_de_functii_compuse.json",
+      "clasa_11_u05_l13_asimptotele_functiilor_reale.json"
+    ]
+  },
+  {
+    "class_level": 11,
+    "slug": "functii-continue",
+    "title": "Funcții continue",
+    "order": 6,
+    "topics": [
+      "clasa_11_u06_l01_functii_continue_intr_un_punct_continuitate_laterala.json",
+      "clasa_11_u06_l02_prelungirea_prin_continuitate_puncte_de_discontinuitate.json",
+      "clasa_11_u06_l03_operatii_cu_functii_continue_continuitatea_functiilor_compuse.json",
+      "clasa_11_u06_l04_proprietati_ale_functiilor_continue_pe_un_interval.json",
+      "clasa_11_u06_l05_existenta_solutiilor_unei_ecuatii_studiul_semnului_unei_functii.json",
+      "clasa_11_u06_l06_proprietatea_lui_darboux.json"
+    ]
+  },
+  {
+    "class_level": 11,
+    "slug": "functii-derivabile",
+    "title": "Funcții derivabile",
+    "order": 7,
+    "topics": [
+      "clasa_11_u07_l01_derivata_unei_functii_intr_un_punct_derivabilitate_si_continuitate.json",
+      "clasa_11_u07_l02_derivate_laterale_si_derivatele_functiilor_elementare.json",
+      "clasa_11_u07_l03_operatii_cu_functii_derivabile_derivata_functiei_compuse_si_inverse.json",
+      "clasa_11_u07_l04_derivate_de_ordinul_al_ii_lea.json",
+      "clasa_11_u07_l05_aplicatii_ale_derivatelor_radacini_multiple_ale_ecuatiilor_polinomiale.json",
+      "clasa_11_u07_l06_functii_derivabile_pe_un_interval_teoremele_lui_fermat_si_rolle.json",
+      "clasa_11_u07_l07_teorema_lui_lagrange_si_consecinte.json",
+      "clasa_11_u07_l08_regulile_lui_lhospital.json",
+      "clasa_11_u07_l09_rolul_derivatei_intai_in_studiul_functiilor.json",
+      "clasa_11_u07_l10_monotonie_puncte_de_extrem_si_demonstrarea_inegalitatilor.json",
+      "clasa_11_u07_l11_rolul_derivatei_a_doua_convexitate_concavitate_si_puncte_de_inflexiune.json"
+    ]
+  },
+  {
+    "class_level": 11,
+    "slug": "reprezentarea-grafica-functiilor",
+    "title": "Reprezentarea grafică a funcțiilor",
+    "order": 8,
+    "topics": [
+      "clasa_11_u08_l01_etapele_reprezentarii_grafice_a_functiilor.json",
+      "clasa_11_u08_l02_reprezentarea_grafica_a_conicelor.json",
+      "clasa_11_u08_l03_rezolvarea_grafica_a_ecuatiilor.json"
+    ]
+  },
+  {
+    "class_level": 12,
+    "slug": "grupuri",
+    "title": "Grupuri",
+    "order": 1,
+    "topics": [
+      "clasa_12_u01_l01_legi_de_compozitie_pe_o_multime_definitii_si_exemple.json",
+      "clasa_12_u01_l02_operatii_modulo_n_si_partea_stabila.json",
+      "clasa_12_u01_l03_tabla_unei_legi_de_compozitie.json",
+      "clasa_12_u01_l04_proprietatile_legilor_de_compozitie_comutativitate_si_asociativitate.json",
+      "clasa_12_u01_l05_element_neutru_si_elemente_simetrizabile.json",
+      "clasa_12_u01_l06_notiunea_de_grup_exemple_de_grupuri.json",
+      "clasa_12_u01_l07_grupul_aditiv_al_resturilor_modulo_n_si_grupul_claselor_de_resturi_mod.json",
+      "clasa_12_u01_l08_grupul_permutarilor_si_grupul_simetric.json",
+      "clasa_12_u01_l09_grupuri_de_matrice_si_grupul_radacinilor_de_ordin_n_ale_unitatii.json",
+      "clasa_12_u01_l10_reguli_de_calcul_intr_un_grup.json",
+      "clasa_12_u01_l11_morfisme_de_grupuri.json",
+      "clasa_12_u01_l12_subgrupuri.json",
+      "clasa_12_u01_l13_grupuri_finite_ordinul_unui_element_si_teoreme_remarcabile.json"
+    ]
+  },
+  {
+    "class_level": 12,
+    "slug": "inele-corpuri",
+    "title": "Inele și corpuri",
+    "order": 2,
+    "topics": [
+      "clasa_12_u02_l01_inele_definitii_si_exemple.json",
+      "clasa_12_u02_l02_inelul_claselor_de_resturi_modulo_n_si_inele_de_matrice_patratice.json",
+      "clasa_12_u02_l03_inele_de_functii_reale.json",
+      "clasa_12_u02_l04_reguli_de_calcul_intr_un_inel.json",
+      "clasa_12_u02_l05_corpuri.json",
+      "clasa_12_u02_l06_morfisme_de_inele_si_corpuri.json"
+    ]
+  },
+  {
+    "class_level": 12,
+    "slug": "inele-de-polinoame",
+    "title": "Inele de polinoame",
+    "order": 3,
+    "topics": [
+      "clasa_12_u03_l01_multimea_polinoamelor_cu_coeficienti_intr_un_corp_comutativ.json",
+      "clasa_12_u03_l02_siruri_de_elemente_si_operatii_cu_siruri_intr_un_corp.json",
+      "clasa_12_u03_l03_forma_algebrica_a_polinoamelor_monoame_si_polinoame.json",
+      "clasa_12_u03_l04_valoarea_unui_polinom_si_functii_polinomiale.json",
+      "clasa_12_u03_l05_operatii_cu_polinoame_scrise_sub_forma_algebrica.json",
+      "clasa_12_u03_l06_impartirea_polinoamelor_schema_lui_horner.json",
+      "clasa_12_u03_l07_divizibilitatea_polinoamelor_relatia_si_proprietatile_divizibilitatii.json",
+      "clasa_12_u03_l08_cel_mai_mare_divizor_comun_al_polinoamelor.json",
+      "clasa_12_u03_l09_radacinile_unui_polinom_si_radacini_multiple.json",
+      "clasa_12_u03_l10_ecuatii_algebrice_si_polinoame_reductibile_in_factori_ireductibili.json",
+      "clasa_12_u03_l11_descompunerea_polinoamelor_in_factori_ireductibili.json",
+      "clasa_12_u03_l12_relatiile_lui_viete.json",
+      "clasa_12_u03_l13_ecuatii_algebrice_cu_coeficienti_intregi_rationali_sau_reali.json",
+      "clasa_12_u03_l14_ecuatii_algebrice_de_grad_superior_cu_coeficienti_complecsi.json",
+      "clasa_12_u03_l15_ecuatii_bipatrate_binome_si_reciproce.json"
+    ]
+  },
+  {
+    "class_level": 12,
+    "slug": "primitive",
+    "title": "Primitive",
+    "order": 4,
+    "topics": [
+      "clasa_12_u04_l01_probleme_care_conduc_la_notiunea_de_integrala.json",
+      "clasa_12_u04_l02_primitivele_unei_functii_integrala_nedefinita.json",
+      "clasa_12_u04_l03_proprietati_ale_integralei_nedefinite.json",
+      "clasa_12_u04_l04_primitive_uzuale_deduse_din_derivatele_functiilor_elementare.json",
+      "clasa_12_u04_l05_primitive_deduse_din_derivarea_functiilor_compuse.json",
+      "clasa_12_u04_l06_primitive_deduse_din_formula_de_derivare_a_produsului_a_doua_functii.json"
+    ]
+  },
+  {
+    "class_level": 12,
+    "slug": "integrala-definita",
+    "title": "Integrala definită",
+    "order": 5,
+    "topics": [
+      "clasa_12_u05_l01_diviziuni_ale_unui_interval_si_sume_riemann.json",
+      "clasa_12_u05_l02_integrabilitatea_unei_functii_pe_un_interval.json",
+      "clasa_12_u05_l03_integrabilitatea_functiilor_continue.json",
+      "clasa_12_u05_l04_formula_lui_leibniznewton.json",
+      "clasa_12_u05_l05_proprietati_ale_integralei_definite.json",
+      "clasa_12_u05_l06_integrarea_functiilor_continue.json",
+      "clasa_12_u05_l07_metoda_integrarii_prin_parti.json",
+      "clasa_12_u05_l08_metoda_schimbarii_de_variabila.json",
+      "clasa_12_u05_l09_calculul_integralelor_functiilor_rationale.json"
+    ]
+  },
+  {
+    "class_level": 12,
+    "slug": "aplicatii-integrala-definita",
+    "title": "Aplicații ale integralei definite",
+    "order": 6,
+    "topics": [
+      "clasa_12_u06_l01_aria_unei_suprafete_plane.json",
+      "clasa_12_u06_l02_volumul_corpurilor_de_rotatie.json",
+      "clasa_12_u06_l03_calculul_unor_limite_de_siruri_folosind_integrala_definita.json"
     ]
   }
 ]

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load lesson_tags %}
 
-{% block title %}{{ chapter.title }} — Focul Matematic{% endblock %}
+{% block title %}{{ chapter.title }} - Focul Matematic{% endblock %}
 
 {% block content %}
 <div class="page-content">
@@ -10,18 +10,30 @@
     </p>
     <h1>{{ chapter.title }}</h1>
 
-    {% if not topics %}
-        <p class="muted">Nu există încă subiecte în acest capitol.</p>
+    {% if not topic_states %}
+        <p class="muted">Nu exista inca subiecte in acest capitol.</p>
     {% else %}
-        {% for topic in topics %}
-            <article class="card">
-                {% render_lesson_tags topic %}
-                <h2 style="margin:0 0 0.25rem;">{{ topic.title }}</h2>
-                <p class="muted" style="margin:0 0 0.75rem;">Dificultate: {{ topic.get_difficulty_display }}</p>
-                {% if topic.description %}
-                    <p style="margin:0 0 1rem;">{{ topic.description }}</p>
-                {% endif %}
-                <a class="btn btn-press" href="{% url 'topic_detail' topic.pk %}">Deschide lecția</a>
+        {% for state in topic_states %}
+            <article class="card learning-card">
+                <div class="learning-card__main">
+                    {% render_lesson_tags state.topic %}
+                    <h2 style="margin:0 0 0.25rem;">{{ state.topic.title }}</h2>
+                    <p class="muted" style="margin:0 0 0.75rem;">
+                        Dificultate: {{ state.topic.get_difficulty_display }} &middot; {{ state.question_count }} intrebari
+                    </p>
+                    {% if state.topic.description %}
+                        <p style="margin:0 0 1rem;">{{ state.topic.description }}</p>
+                    {% endif %}
+                    <div class="learning-progress" aria-label="Progres antrenare {{ state.training_percent }}%">
+                        <div class="learning-progress__fill" style="width: {{ state.training_percent }}%;"></div>
+                    </div>
+                    <p class="muted learning-card__meta">
+                        {{ state.training_percent }}% antrenare
+                        {% if state.training_wrong %}&middot; {{ state.training_wrong }} greseli de reluat{% endif %}
+                        {% if state.in_progress %}&middot; chestionar inceput{% endif %}
+                    </p>
+                </div>
+                <a class="btn btn-press" href="{{ state.next_action_url }}">{{ state.next_action_label }}</a>
             </article>
         {% endfor %}
     {% endif %}

@@ -163,3 +163,19 @@ python manage.py seed_quizzes
 python manage.py test
 python manage.py collectstatic --noinput
 ```
+
+## Setup si verificare Windows
+
+Pentru setup local backend:
+
+```bat
+scripts\setup_backend.cmd
+```
+
+Pentru verificare backend:
+
+```bat
+scripts\check_backend.cmd
+```
+
+Scriptul de verificare ruleaza `manage.py check` si testele Django. Daca Python porneste din Microsoft Store alias si apare `Access is denied`, instaleaza Python 3.10+ de pe python.org sau dezactiveaza aliasurile `python.exe` / `python3.exe` din Windows App execution aliases, apoi ruleaza din nou `scripts\setup_backend.cmd`.

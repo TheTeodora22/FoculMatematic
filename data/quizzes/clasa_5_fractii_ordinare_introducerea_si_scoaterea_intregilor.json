@@ -1,0 +1,603 @@
+{
+  "title": "Introducerea și scoaterea întregilor dintr-o fracție",
+  "description": "Clasa a 5-a · Fracții ordinare",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "text": "Ce fracție obținem introducând întregii din 2 3/4?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2 · 4 + 3 = 11, iar numitorul rămâne 4.",
+      "options": [
+        {
+          "text": "9/4",
+          "is_correct": false
+        },
+        {
+          "text": "11/4",
+          "is_correct": true
+        },
+        {
+          "text": "11/3",
+          "is_correct": false
+        },
+        {
+          "text": "8/4",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Transformă 1 1/2 într-o fracție supraunitară.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1 · 2 + 1 = 3.",
+      "options": [
+        {
+          "text": "2/3",
+          "is_correct": false
+        },
+        {
+          "text": "3/2",
+          "is_correct": true
+        },
+        {
+          "text": "1/3",
+          "is_correct": false
+        },
+        {
+          "text": "2/2",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este forma de fracție a numărului mixt 3 5/8?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3 · 8 + 5 = 29.",
+      "options": [
+        {
+          "text": "29/5",
+          "is_correct": false
+        },
+        {
+          "text": "29/8",
+          "is_correct": true
+        },
+        {
+          "text": "8/29",
+          "is_correct": false
+        },
+        {
+          "text": "24/8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Introdu întregii în fracția 4 2/7.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "4 · 7 + 2 = 30.",
+      "options": [
+        {
+          "text": "18/7",
+          "is_correct": false
+        },
+        {
+          "text": "30/7",
+          "is_correct": true
+        },
+        {
+          "text": "30/2",
+          "is_correct": false
+        },
+        {
+          "text": "28/7",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce număr mixt corespunde fracției 23/8?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "23 : 8 = 2, rest 7.",
+      "options": [
+        {
+          "text": "2 3/8",
+          "is_correct": false
+        },
+        {
+          "text": "2 7/8",
+          "is_correct": true
+        },
+        {
+          "text": "7 2/8",
+          "is_correct": false
+        },
+        {
+          "text": "3 1/8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scoate întregii din fracția 41/5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "41 : 5 = 8, rest 1.",
+      "options": [
+        {
+          "text": "8 5/1",
+          "is_correct": false
+        },
+        {
+          "text": "8 1/5",
+          "is_correct": true
+        },
+        {
+          "text": "9 1/5",
+          "is_correct": false
+        },
+        {
+          "text": "7 6/5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Transformă fracția 62/11 în număr mixt.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "62 : 11 = 5, rest 7.",
+      "options": [
+        {
+          "text": "5 6/11",
+          "is_correct": false
+        },
+        {
+          "text": "5 7/11",
+          "is_correct": true
+        },
+        {
+          "text": "7 5/11",
+          "is_correct": false
+        },
+        {
+          "text": "6 2/11",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce obținem când scoatem întregii din 27/9?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "27 se împarte exact la 9, deci partea fracționară dispare.",
+      "options": [
+        {
+          "text": "3 1/9",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "9/3",
+          "is_correct": false
+        },
+        {
+          "text": "2 9/9",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În egalitatea 38/6 = 6 2/6, ce reprezintă numărul 6 din fața fracției?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Partea întreagă este câtul împărțirii numărătorului la numitor.",
+      "options": [
+        {
+          "text": "Numitorul inițial",
+          "is_correct": false
+        },
+        {
+          "text": "Câtul împărțirii 38 : 6",
+          "is_correct": true
+        },
+        {
+          "text": "Numărătorul inițial",
+          "is_correct": false
+        },
+        {
+          "text": "Restul împărțirii",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În transformarea 52/9 = 5 7/9, ce reprezintă 7?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Restul devine numărătorul părții fracționare.",
+      "options": [
+        {
+          "text": "Numitorul fracției",
+          "is_correct": false
+        },
+        {
+          "text": "Restul împărțirii 52 : 9",
+          "is_correct": true
+        },
+        {
+          "text": "Numărul de întregi",
+          "is_correct": false
+        },
+        {
+          "text": "Câtul împărțirii",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Între ce numere naturale consecutive se află 13/4?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "13/4 = 3 1/4.",
+      "options": [
+        {
+          "text": "4 și 5",
+          "is_correct": false
+        },
+        {
+          "text": "3 și 4",
+          "is_correct": true
+        },
+        {
+          "text": "12 și 13",
+          "is_correct": false
+        },
+        {
+          "text": "2 și 3",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Între ce numere naturale consecutive se află 29/6?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "29/6 = 4 5/6.",
+      "options": [
+        {
+          "text": "5 și 6",
+          "is_correct": false
+        },
+        {
+          "text": "4 și 5",
+          "is_correct": true
+        },
+        {
+          "text": "28 și 29",
+          "is_correct": false
+        },
+        {
+          "text": "3 și 4",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un buștean de 12 m este tăiat în 5 părți egale. Cât măsoară fiecare parte, ca număr mixt?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "12/5 = 2 2/5.",
+      "options": [
+        {
+          "text": "3 2/5 m",
+          "is_correct": false
+        },
+        {
+          "text": "2 2/5 m",
+          "is_correct": true
+        },
+        {
+          "text": "5 2/12 m",
+          "is_correct": false
+        },
+        {
+          "text": "2 1/5 m",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pe un platou încap 7 brioșe. Câte platouri reprezintă 18 brioșe?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "18 : 7 = 2, rest 4.",
+      "options": [
+        {
+          "text": "2 3/7 platouri",
+          "is_correct": false
+        },
+        {
+          "text": "2 4/7 platouri",
+          "is_correct": true
+        },
+        {
+          "text": "7 4/18 platouri",
+          "is_correct": false
+        },
+        {
+          "text": "3 1/7 platouri",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Șase greutăți identice cântăresc împreună 23 kg. Cât cântărește una?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "23/6 = 3 5/6.",
+      "options": [
+        {
+          "text": "3 4/6 kg",
+          "is_correct": false
+        },
+        {
+          "text": "3 5/6 kg",
+          "is_correct": true
+        },
+        {
+          "text": "6 5/23 kg",
+          "is_correct": false
+        },
+        {
+          "text": "4 1/6 kg",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care relație descrie corect introducerea întregilor din n a/b?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim partea întreagă cu numitorul și adunăm numărătorul.",
+      "options": [
+        {
+          "text": "(n · a + b)/a",
+          "is_correct": false
+        },
+        {
+          "text": "(n · b + a)/b",
+          "is_correct": true
+        },
+        {
+          "text": "(n + a)/(b + n)",
+          "is_correct": false
+        },
+        {
+          "text": "(n + b) · a/b",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "La introducerea întregilor în fracție, numitorul rămâne neschimbat.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Se modifică doar numărătorul: n · b + a.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În 31/7 = 4 3/7, numărul 3 este câtul împărțirii 31 : 7.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "4 este câtul, iar 3 este restul.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Dacă numărătorul se împarte exact la numitor, rezultatul este un număr natural.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Restul este zero, deci nu mai există parte fracționară.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Fracția 17/5 este egală cu numărul mixt 3 2/5.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "17 : 5 = 3, rest 2.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Transformă numărul mixt 2 3/4 într-o fracție.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "2 · 4 + 3 = 11, deci obținem 11/4.",
+      "interactive": {
+        "mode": "mixed_to_fraction",
+        "whole": 2,
+        "numerator": 3,
+        "denominator": 4,
+        "answers": {
+          "result": 11
+        }
+      }
+    },
+    {
+      "text": "Transformă numărul mixt 3 2/7 într-o fracție.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "3 · 7 + 2 = 23, deci obținem 23/7.",
+      "interactive": {
+        "mode": "mixed_to_fraction",
+        "whole": 3,
+        "numerator": 2,
+        "denominator": 7,
+        "answers": {
+          "result": 23
+        }
+      }
+    },
+    {
+      "text": "Transformă numărul mixt 4 3/5 într-o fracție.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "4 · 5 + 3 = 23, deci obținem 23/5.",
+      "interactive": {
+        "mode": "mixed_to_fraction",
+        "whole": 4,
+        "numerator": 3,
+        "denominator": 5,
+        "answers": {
+          "result": 23
+        }
+      }
+    },
+    {
+      "text": "Transformă numărul mixt 6 5/9 într-o fracție.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "6 · 9 + 5 = 59, deci obținem 59/9.",
+      "interactive": {
+        "mode": "mixed_to_fraction",
+        "whole": 6,
+        "numerator": 5,
+        "denominator": 9,
+        "answers": {
+          "result": 59
+        }
+      }
+    },
+    {
+      "text": "Scoate întregii din fracția 19/5.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "19 : 5 = 3, rest 4, deci 19/5 = 3 4/5.",
+      "interactive": {
+        "mode": "fraction_to_mixed",
+        "numerator": 19,
+        "denominator": 5,
+        "answers": {
+          "whole": 3,
+          "remainder": 4
+        }
+      }
+    },
+    {
+      "text": "Scoate întregii din fracția 43/8.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "43 : 8 = 5, rest 3, deci 43/8 = 5 3/8.",
+      "interactive": {
+        "mode": "fraction_to_mixed",
+        "numerator": 43,
+        "denominator": 8,
+        "answers": {
+          "whole": 5,
+          "remainder": 3
+        }
+      }
+    },
+    {
+      "text": "Scoate întregii din fracția 64/9.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "64 : 9 = 7, rest 1, deci 64/9 = 7 1/9.",
+      "interactive": {
+        "mode": "fraction_to_mixed",
+        "numerator": 64,
+        "denominator": 9,
+        "answers": {
+          "whole": 7,
+          "remainder": 1
+        }
+      }
+    },
+    {
+      "text": "Scoate întregii din fracția 73/12.",
+      "type": "fraction_visual",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "73 : 12 = 6, rest 1, deci 73/12 = 6 1/12.",
+      "interactive": {
+        "mode": "fraction_to_mixed",
+        "numerator": 73,
+        "denominator": 12,
+        "answers": {
+          "whole": 6,
+          "remainder": 1
+        }
+      }
+    }
+  ]
+}

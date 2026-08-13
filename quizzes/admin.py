@@ -20,6 +20,8 @@ class AnswerOptionInlineFormSet(BaseInlineFormSet):
         super().clean()
         if any(self.errors):
             return
+        if self.instance.question_type != Question.TYPE_MULTIPLE_CHOICE:
+            return
         options = [
             form.cleaned_data
             for form in self.forms
@@ -51,8 +53,8 @@ class ChapterAdmin(admin.ModelAdmin):
 
 @admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ("text_preview", "quiz", "points")
-    list_filter = ("quiz",)
+    list_display = ("text_preview", "quiz", "format_tag", "question_type", "points")
+    list_filter = ("quiz", "format_tag", "question_type")
     inlines = [AnswerOptionInline]
 
     @admin.display(description="Întrebare")
@@ -62,7 +64,7 @@ class QuestionAdmin(admin.ModelAdmin):
 
 @admin.register(Quiz)
 class QuizAdmin(admin.ModelAdmin):
-    list_display = ("title", "chapter", "difficulty", "class_levels", "exam_slugs", "question_count")
+    list_display = ("title", "chapter", "order", "difficulty", "class_levels", "exam_slugs", "question_count")
     list_filter = ("difficulty", "chapter")
     search_fields = ("title", "source_file")
 

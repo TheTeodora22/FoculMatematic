@@ -1,0 +1,1185 @@
+{
+  "title": "Puterea cu exponent natural a unui număr natural. Pătratul unui număr natural",
+  "description": "Clasa a 5-a · Operații cu numere naturale",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "text": "Calculează 2⁵.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2⁵ = 2 · 2 · 2 · 2 · 2 = 32.",
+      "options": [
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "32",
+          "is_correct": true
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este valoarea lui 3⁴?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3⁴ = 3 · 3 · 3 · 3 = 81.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "81",
+          "is_correct": true
+        },
+        {
+          "text": "64",
+          "is_correct": false
+        },
+        {
+          "text": "27",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează 10⁴.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O putere a lui 10 are atâtea zerouri cât arată exponentul.",
+      "options": [
+        {
+          "text": "40",
+          "is_correct": false
+        },
+        {
+          "text": "10000",
+          "is_correct": true
+        },
+        {
+          "text": "100000",
+          "is_correct": false
+        },
+        {
+          "text": "1000",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează 7² + 2³.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "7² + 2³ = 49 + 8 = 57.",
+      "options": [
+        {
+          "text": "49",
+          "is_correct": false
+        },
+        {
+          "text": "57",
+          "is_correct": true
+        },
+        {
+          "text": "64",
+          "is_correct": false
+        },
+        {
+          "text": "56",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează 5³ − 3².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "5³ − 3² = 125 − 9 = 116.",
+      "options": [
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "116",
+          "is_correct": true
+        },
+        {
+          "text": "122",
+          "is_correct": false
+        },
+        {
+          "text": "98",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este valoarea expresiei 2⁴ · 3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi calculăm puterea: 2⁴ · 3 = 16 · 3 = 48.",
+      "options": [
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "48",
+          "is_correct": true
+        },
+        {
+          "text": "64",
+          "is_correct": false
+        },
+        {
+          "text": "32",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează 4³ + 6².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "4³ + 6² = 64 + 36 = 100.",
+      "options": [
+        {
+          "text": "76",
+          "is_correct": false
+        },
+        {
+          "text": "100",
+          "is_correct": true
+        },
+        {
+          "text": "120",
+          "is_correct": false
+        },
+        {
+          "text": "88",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este rezultatul lui 1²⁰²⁶ + 9²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Orice putere a lui 1 este 1, deci 1 + 81 = 82.",
+      "options": [
+        {
+          "text": "81",
+          "is_correct": false
+        },
+        {
+          "text": "82",
+          "is_correct": true
+        },
+        {
+          "text": "2027",
+          "is_correct": false
+        },
+        {
+          "text": "83",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În scrierea 8⁵, care este exponentul?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Exponentul este numărul mic scris în dreapta sus; el arată câți factori egali cu 8 apar.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "40",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În scrierea 6³, care este baza?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Baza este numărul care se înmulțește cu el însuși.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "216",
+          "is_correct": false
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce produs reprezintă 4⁵?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Exponentul 5 cere cinci factori egali cu baza 4.",
+      "options": [
+        {
+          "text": "5 · 5 · 5 · 5",
+          "is_correct": false
+        },
+        {
+          "text": "4 · 4 · 4 · 4 · 4",
+          "is_correct": true
+        },
+        {
+          "text": "4 + 4 + 4 + 4 + 4",
+          "is_correct": false
+        },
+        {
+          "text": "4 · 5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care putere este egală cu 7 · 7 · 7?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul conține trei factori egali cu 7, deci este 7³.",
+      "options": [
+        {
+          "text": "3⁷",
+          "is_correct": false
+        },
+        {
+          "text": "7³",
+          "is_correct": true
+        },
+        {
+          "text": "21³",
+          "is_correct": false
+        },
+        {
+          "text": "7²",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce număr trebuie pus în locul lui n pentru ca 3ⁿ = 81?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3 · 3 · 3 · 3 = 81, deci exponentul este 4.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "27",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce număr trebuie pus în locul lui a pentru ca a³ = 125?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "125 = 5 · 5 · 5, deci baza este 5.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un pătrat are latura de 12 cm. Care este aria lui, scrisă mai întâi ca putere?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aria pătratului este latura la puterea a doua: 12² = 144 cm².",
+      "options": [
+        {
+          "text": "2¹² = 4 096 cm²",
+          "is_correct": false
+        },
+        {
+          "text": "12² = 144 cm²",
+          "is_correct": true
+        },
+        {
+          "text": "12³ = 1 728 cm²",
+          "is_correct": false
+        },
+        {
+          "text": "12 · 2 = 24 cm²",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Horia citește 2 pagini în prima zi și dublează zilnic numărul. Câte pagini citește în ziua a șasea?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În ziua a șasea citește 2⁶ = 64 de pagini.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "64",
+          "is_correct": true
+        },
+        {
+          "text": "128",
+          "is_correct": false
+        },
+        {
+          "text": "32",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pe prima căsuță a unei table sunt 2 boabe, iar pe fiecare căsuță următoare numărul se dublează. Câte boabe sunt pe căsuța a opta?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe căsuța a opta sunt 2⁸ = 256 de boabe.",
+      "options": [
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "256",
+          "is_correct": true
+        },
+        {
+          "text": "512",
+          "is_correct": false
+        },
+        {
+          "text": "128",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este ultima cifră a lui 2²⁰²⁶?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ultimele cifre se repetă 2, 4, 8, 6. Deoarece 2 026 dă restul 2 la împărțirea cu 4, ultima cifră este 4.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este ultima cifră a lui 7¹⁰³?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ciclul este 7, 9, 3, 1. Exponentul 103 dă restul 3 la împărțirea cu 4.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care dintre numere este pătrat perfect?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "625 = 25², deci este pătrat perfect.",
+      "options": [
+        {
+          "text": "125",
+          "is_correct": false
+        },
+        {
+          "text": "625",
+          "is_correct": true
+        },
+        {
+          "text": "575",
+          "is_correct": false
+        },
+        {
+          "text": "250",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Puterea 5⁴ conține patru factori egali cu 5.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "5⁴ = 5 · 5 · 5 · 5.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Egalitatea 3⁴ = 4³ este adevărată.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "3⁴ = 81, iar 4³ = 64.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Orice putere nenulă a numărului 1 este egală cu 1.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Produsul oricâtor factori egali cu 1 rămâne 1.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Numărul 225 este un pătrat perfect.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "225 = 15².",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ultima cifră a oricărei puteri nenule a lui 5 este 0.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Orice putere nenulă a lui 5 se termină în 5.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Numărul 90 poate fi pătratul unui număr natural.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "9² = 81 și 10² = 100, iar 90 este între aceste pătrate consecutive.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Scrie produsul 3 · 3 · 3 · 3 sub forma unei puteri.",
+      "type": "power_builder",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Sunt 4 factori egali cu 3, deci obținem 3⁴.",
+      "interactive": {
+        "mode": "compose",
+        "base": 3,
+        "exponent": 4,
+        "value": 81,
+        "factors": [
+          3,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "text": "Scrie produsul 6 · 6 · 6 sub forma unei puteri.",
+      "type": "power_builder",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Sunt 3 factori egali cu 6, deci obținem 6³.",
+      "interactive": {
+        "mode": "compose",
+        "base": 6,
+        "exponent": 3,
+        "value": 216,
+        "factors": [
+          6,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "text": "Scrie produsul 2 · 2 · 2 · 2 · 2 · 2 sub forma unei puteri.",
+      "type": "power_builder",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Sunt 6 factori egali cu 2, deci obținem 2⁶.",
+      "interactive": {
+        "mode": "compose",
+        "base": 2,
+        "exponent": 6,
+        "value": 64,
+        "factors": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "text": "Scrie produsul 9 · 9 · 9 sub forma unei puteri.",
+      "type": "power_builder",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Sunt 3 factori egali cu 9, deci obținem 9³.",
+      "interactive": {
+        "mode": "compose",
+        "base": 9,
+        "exponent": 3,
+        "value": 729,
+        "factors": [
+          9,
+          9,
+          9
+        ]
+      }
+    },
+    {
+      "text": "Desfă 5⁴ într-un produs de factori egali.",
+      "type": "power_builder",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Exponentul 4 arată că baza 5 apare de 4 ori ca factor.",
+      "interactive": {
+        "mode": "expand",
+        "base": 5,
+        "exponent": 4,
+        "value": 625,
+        "factors": [
+          5,
+          5,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "text": "Desfă 7³ într-un produs de factori egali.",
+      "type": "power_builder",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Exponentul 3 arată că baza 7 apare de 3 ori ca factor.",
+      "interactive": {
+        "mode": "expand",
+        "base": 7,
+        "exponent": 3,
+        "value": 343,
+        "factors": [
+          7,
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "text": "Desfă 2⁷ într-un produs de factori egali.",
+      "type": "power_builder",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Exponentul 7 arată că baza 2 apare de 7 ori ca factor.",
+      "interactive": {
+        "mode": "expand",
+        "base": 2,
+        "exponent": 7,
+        "value": 128,
+        "factors": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "text": "Desfă 4⁵ într-un produs de factori egali.",
+      "type": "power_builder",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Exponentul 5 arată că baza 4 apare de 5 ori ca factor.",
+      "interactive": {
+        "mode": "expand",
+        "base": 4,
+        "exponent": 5,
+        "value": 1024,
+        "factors": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "text": "Unește cu forma echivalentă puterile 2⁵, 3³, 5².",
+      "type": "power_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Baza se repetă ca factor de atâtea ori cât arată exponentul.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "2⁵",
+            "right": "2 · 2 · 2 · 2 · 2 = 32"
+          },
+          {
+            "left": "3³",
+            "right": "3 · 3 · 3 = 27"
+          },
+          {
+            "left": "5²",
+            "right": "5 · 5 = 25"
+          }
+        ],
+        "right_order": [
+          2,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Unește cu forma echivalentă puterile 4³, 6², 10³.",
+      "type": "power_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Baza se repetă ca factor de atâtea ori cât arată exponentul.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "4³",
+            "right": "4 · 4 · 4 = 64"
+          },
+          {
+            "left": "6²",
+            "right": "6 · 6 = 36"
+          },
+          {
+            "left": "10³",
+            "right": "10 · 10 · 10 = 1000"
+          }
+        ],
+        "right_order": [
+          1,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Unește cu forma echivalentă puterile 7², 3⁴, 2⁶.",
+      "type": "power_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Baza se repetă ca factor de atâtea ori cât arată exponentul.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "7²",
+            "right": "7 · 7 = 49"
+          },
+          {
+            "left": "3⁴",
+            "right": "3 · 3 · 3 · 3 = 81"
+          },
+          {
+            "left": "2⁶",
+            "right": "2 · 2 · 2 · 2 · 2 · 2 = 64"
+          }
+        ],
+        "right_order": [
+          2,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Unește cu forma echivalentă puterile 9², 5³, 8².",
+      "type": "power_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Baza se repetă ca factor de atâtea ori cât arată exponentul.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "9²",
+            "right": "9 · 9 = 81"
+          },
+          {
+            "left": "5³",
+            "right": "5 · 5 · 5 = 125"
+          },
+          {
+            "left": "8²",
+            "right": "8 · 8 = 64"
+          }
+        ],
+        "right_order": [
+          1,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "text": "Completează celulele libere pentru puterile cu bazele 2, 3, 5.",
+      "type": "power_table",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pe fiecare rând folosim relația: valoarea = baza înmulțită cu ea însăși de câte ori arată exponentul.",
+      "interactive": {
+        "rows": [
+          {
+            "base": 2,
+            "exponent": 5,
+            "value": 32,
+            "missing": "base"
+          },
+          {
+            "base": 3,
+            "exponent": 4,
+            "value": 81,
+            "missing": "exponent"
+          },
+          {
+            "base": 5,
+            "exponent": 3,
+            "value": 125,
+            "missing": "value"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completează celulele libere pentru puterile cu bazele 4, 6, 10.",
+      "type": "power_table",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pe fiecare rând folosim relația: valoarea = baza înmulțită cu ea însăși de câte ori arată exponentul.",
+      "interactive": {
+        "rows": [
+          {
+            "base": 4,
+            "exponent": 3,
+            "value": 64,
+            "missing": "value"
+          },
+          {
+            "base": 6,
+            "exponent": 2,
+            "value": 36,
+            "missing": "base"
+          },
+          {
+            "base": 10,
+            "exponent": 4,
+            "value": 10000,
+            "missing": "exponent"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completează celulele libere pentru puterile cu bazele 7, 2, 9.",
+      "type": "power_table",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pe fiecare rând folosim relația: valoarea = baza înmulțită cu ea însăși de câte ori arată exponentul.",
+      "interactive": {
+        "rows": [
+          {
+            "base": 7,
+            "exponent": 2,
+            "value": 49,
+            "missing": "exponent"
+          },
+          {
+            "base": 2,
+            "exponent": 8,
+            "value": 256,
+            "missing": "value"
+          },
+          {
+            "base": 9,
+            "exponent": 2,
+            "value": 81,
+            "missing": "base"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completează celulele libere pentru puterile cu bazele 3, 8, 5.",
+      "type": "power_table",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pe fiecare rând folosim relația: valoarea = baza înmulțită cu ea însăși de câte ori arată exponentul.",
+      "interactive": {
+        "rows": [
+          {
+            "base": 3,
+            "exponent": 5,
+            "value": 243,
+            "missing": "value"
+          },
+          {
+            "base": 8,
+            "exponent": 2,
+            "value": 64,
+            "missing": "exponent"
+          },
+          {
+            "base": 5,
+            "exponent": 4,
+            "value": 625,
+            "missing": "base"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Descoperă ultima cifră a lui 12³⁷.",
+      "type": "power_cycle",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ciclul are 4 poziții; poziția exponentului în ciclu indică ultima cifră.",
+      "interactive": {
+        "base": 12,
+        "exponent": 37,
+        "cycle": [
+          2,
+          4,
+          8,
+          6
+        ],
+        "last_digit": 2
+      }
+    },
+    {
+      "text": "Descoperă ultima cifră a lui 7⁴⁶.",
+      "type": "power_cycle",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ciclul are 4 poziții; poziția exponentului în ciclu indică ultima cifră.",
+      "interactive": {
+        "base": 7,
+        "exponent": 46,
+        "cycle": [
+          7,
+          9,
+          3,
+          1
+        ],
+        "last_digit": 9
+      }
+    },
+    {
+      "text": "Descoperă ultima cifră a lui 9¹²⁵.",
+      "type": "power_cycle",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ciclul are 2 poziții; poziția exponentului în ciclu indică ultima cifră.",
+      "interactive": {
+        "base": 9,
+        "exponent": 125,
+        "cycle": [
+          9,
+          1
+        ],
+        "last_digit": 9
+      }
+    },
+    {
+      "text": "Descoperă ultima cifră a lui 5²⁰²⁶.",
+      "type": "power_cycle",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ciclul are 1 poziții; poziția exponentului în ciclu indică ultima cifră.",
+      "interactive": {
+        "base": 5,
+        "exponent": 2026,
+        "cycle": [
+          5
+        ],
+        "last_digit": 5
+      }
+    },
+    {
+      "text": "Completează baza lipsă din egalitatea □⁴ = 625.",
+      "type": "power_builder",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Egalitatea completă este 5⁴ = 625.",
+      "interactive": {
+        "mode": "missing",
+        "base": 5,
+        "exponent": 4,
+        "value": 625,
+        "factors": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "missing": "base"
+      }
+    },
+    {
+      "text": "Completează exponentul lipsă din egalitatea 3□ = 243.",
+      "type": "power_builder",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Egalitatea completă este 3⁵ = 243.",
+      "interactive": {
+        "mode": "missing",
+        "base": 3,
+        "exponent": 5,
+        "value": 243,
+        "factors": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "missing": "exponent"
+      }
+    },
+    {
+      "text": "Completează valoarea lipsă din egalitatea 7³ = □.",
+      "type": "power_builder",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Egalitatea completă este 7³ = 343.",
+      "interactive": {
+        "mode": "missing",
+        "base": 7,
+        "exponent": 3,
+        "value": 343,
+        "factors": [
+          7,
+          7,
+          7
+        ],
+        "missing": "value"
+      }
+    },
+    {
+      "text": "Completează exponentul lipsă din egalitatea 10□ = 1000000.",
+      "type": "power_builder",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Egalitatea completă este 10⁶ = 1000000.",
+      "interactive": {
+        "mode": "missing",
+        "base": 10,
+        "exponent": 6,
+        "value": 1000000,
+        "factors": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "missing": "exponent"
+      }
+    },
+    {
+      "text": "Pătratul desenat are câte 3 pătrățele pe fiecare latură. Scrie numărul total ca putere și calculează-l.",
+      "type": "power_square",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Sunt 3 rânduri a câte 3 pătrățele: 3² = 9.",
+      "interactive": {
+        "side": 3,
+        "value": 9
+      }
+    },
+    {
+      "text": "Pătratul desenat are câte 4 pătrățele pe fiecare latură. Scrie numărul total ca putere și calculează-l.",
+      "type": "power_square",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Sunt 4 rânduri a câte 4 pătrățele: 4² = 16.",
+      "interactive": {
+        "side": 4,
+        "value": 16
+      }
+    },
+    {
+      "text": "Pătratul desenat are câte 5 pătrățele pe fiecare latură. Scrie numărul total ca putere și calculează-l.",
+      "type": "power_square",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Sunt 5 rânduri a câte 5 pătrățele: 5² = 25.",
+      "interactive": {
+        "side": 5,
+        "value": 25
+      }
+    },
+    {
+      "text": "Pătratul desenat are câte 6 pătrățele pe fiecare latură. Scrie numărul total ca putere și calculează-l.",
+      "type": "power_square",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Sunt 6 rânduri a câte 6 pătrățele: 6² = 36.",
+      "interactive": {
+        "side": 6,
+        "value": 36
+      }
+    }
+  ]
+}

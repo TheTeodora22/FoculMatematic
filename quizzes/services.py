@@ -2,7 +2,7 @@ from accounts.services import award_quiz_xp
 from accounts.utils import get_or_create_profile
 from battlepass.services import grant_tier_rewards
 
-from .models import QuizAttempt, QuizAttemptAnswer
+from .models import Question, QuizAttempt, QuizAttemptAnswer, UserQuestionProgress
 
 
 class QuizSubmitError(Exception):
@@ -17,7 +17,11 @@ def submit_quiz_attempt(user, quiz, answers_by_question_id: dict):
     answers_by_question_id: {question_id (int): option_id (int)}
   Returns dict cu attempt, xp_gained, leveled_up, new_rewards.
     """
-    questions = list(quiz.questions.prefetch_related("options").order_by("id"))
+    questions = list(
+        quiz.questions.filter(question_type=Question.TYPE_MULTIPLE_CHOICE)
+        .prefetch_related("options")
+        .order_by("id")
+    )
     if not questions:
         raise QuizSubmitError("Acest chestionar nu are întrebări.")
 
@@ -69,6 +73,17 @@ def submit_quiz_attempt(user, quiz, answers_by_question_id: dict):
             for q, option_id, is_correct in pending_answers
         ]
     )
+    for question, _option_id, is_correct in pending_answers:
+        progress, _ = UserQuestionProgress.objects.get_or_create(
+            user=user,
+            question=question,
+        )
+        progress.training_status = (
+            UserQuestionProgress.TRAINING_CORRECT
+            if is_correct
+            else UserQuestionProgress.TRAINING_WRONG
+        )
+        progress.save(update_fields=["training_status"])
 
     profile = get_or_create_profile(user)
     xp_gained, leveled_up = award_quiz_xp(profile, score)

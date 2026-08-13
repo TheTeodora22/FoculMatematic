@@ -1,0 +1,1659 @@
+{
+  "title": "Metoda comparației",
+  "description": "Clasa a 5-a · Metode aritmetice de rezolvare a problemelor",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Două caiete și un pix costă 24 lei, iar două caiete și două pixuri costă 40 lei. Cât costă un pix?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem situațiile: un pix costă 40 − 24 = 16 lei.",
+      "options": [
+        {
+          "text": "8 lei",
+          "is_correct": false
+        },
+        {
+          "text": "16 lei",
+          "is_correct": true
+        },
+        {
+          "text": "12 lei",
+          "is_correct": false
+        },
+        {
+          "text": "20 lei",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "6 coli și 8 carioci costă 58 lei, iar 6 coli și 12 carioci costă 78 lei. Cât costă o cariocă?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența de 4 carioci costă 20 lei, deci o cariocă costă 5 lei.",
+      "options": [
+        {
+          "text": "3 lei",
+          "is_correct": false
+        },
+        {
+          "text": "5 lei",
+          "is_correct": true
+        },
+        {
+          "text": "4 lei",
+          "is_correct": false
+        },
+        {
+          "text": "20 lei",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În problema cu 6 coli și 8 carioci, respectiv 6 coli și 12 carioci, termenul comun este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două situații au același număr de coli.",
+      "options": [
+        {
+          "text": "8 carioci",
+          "is_correct": false
+        },
+        {
+          "text": "6 coli",
+          "is_correct": true
+        },
+        {
+          "text": "12 carioci",
+          "is_correct": false
+        },
+        {
+          "text": "58 lei",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "2 coli și 7 carioci costă 41 lei, iar 7 coli și 2 carioci costă 31 lei. Ce trebuie făcut mai întâi pentru eliminare prin scădere?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Nu există inițial un termen de comparație egal.",
+      "options": [
+        {
+          "text": "Adunăm totalurile direct",
+          "is_correct": false
+        },
+        {
+          "text": "Egalizăm numărul unuia dintre obiecte",
+          "is_correct": true
+        },
+        {
+          "text": "Ignorăm cariocile",
+          "is_correct": false
+        },
+        {
+          "text": "Împărțim ambele totaluri la 2",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "7 containere de maculatură cântăresc cât 6 containere de plastic, iar împreună cu încă 5 containere de maculatură cântăresc 720 kg. Cât cântărește un container de maculatură?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim cele 6 containere de plastic cu 7 de maculatură și obținem 12 containere = 720 kg.",
+      "options": [
+        {
+          "text": "50 kg",
+          "is_correct": false
+        },
+        {
+          "text": "60 kg",
+          "is_correct": true
+        },
+        {
+          "text": "72 kg",
+          "is_correct": false
+        },
+        {
+          "text": "120 kg",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "3 pixuri și 3 creioane costă 41 lei, iar 8 pixuri și 6 creioane costă 82 lei. Ce observăm?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dublând prima situație obținem 6 pixuri și 6 creioane = 82 lei, nu 8 pixuri și 6 creioane.",
+      "options": [
+        {
+          "text": "Un pix costă 5 lei",
+          "is_correct": false
+        },
+        {
+          "text": "Datele sunt contradictorii",
+          "is_correct": true
+        },
+        {
+          "text": "Un creion costă 8 lei",
+          "is_correct": false
+        },
+        {
+          "text": "Ambele obiecte sunt gratuite",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "3 cărți și 4 caiete costă 62 lei, iar 3 cărți și 6 caiete costă 30 lei. Problema:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai multe caiete nu pot produce un total mai mic dacă prețurile sunt pozitive.",
+      "options": [
+        {
+          "text": "are soluția carte = 10 lei",
+          "is_correct": false
+        },
+        {
+          "text": "nu are soluție cu prețuri naturale pozitive",
+          "is_correct": true
+        },
+        {
+          "text": "are soluția caiet = 16 lei",
+          "is_correct": false
+        },
+        {
+          "text": "are întotdeauna două soluții",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "5 pungi de mălai și 7 pungi de făină cântăresc 31 kg, iar 7 pungi de mălai și 7 de făină cântăresc 35 kg. Cât cântărește o pungă de mălai?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Două pungi de mălai cântăresc 4 kg, deci una cântărește 2 kg.",
+      "options": [
+        {
+          "text": "1 kg",
+          "is_correct": false
+        },
+        {
+          "text": "2 kg",
+          "is_correct": true
+        },
+        {
+          "text": "4 kg",
+          "is_correct": false
+        },
+        {
+          "text": "7 kg",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "5 trandafiri și 6 garoafe costă 42 lei. Un trandafir costă cât 3 garoafe. Cât costă o garoafă?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim 5 trandafiri cu 15 garoafe; 21 de garoafe costă 42 lei.",
+      "options": [
+        {
+          "text": "1 leu",
+          "is_correct": false
+        },
+        {
+          "text": "2 lei",
+          "is_correct": true
+        },
+        {
+          "text": "3 lei",
+          "is_correct": false
+        },
+        {
+          "text": "6 lei",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "4 băieți și 6 fete confecționează 26 de mărțișoare, iar 5 băieți și 3 fete confecționează 19. Câte confecționează un băiat și o fată împreună?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin egalizare și eliminare se obține băiat = 2, fată = 3, împreună 5.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "3 robinete și 2 pompe au debitul total 31 hl/oră, iar 3 robinete și 8 pompe au 79 hl/oră. Care este debitul unei pompe?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "6 pompe în plus dau 48 hl/oră, deci o pompă are 8 hl/oră.",
+      "options": [
+        {
+          "text": "6 hl/oră",
+          "is_correct": false
+        },
+        {
+          "text": "8 hl/oră",
+          "is_correct": true
+        },
+        {
+          "text": "10 hl/oră",
+          "is_correct": false
+        },
+        {
+          "text": "16 hl/oră",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "2 cocoși cântăresc cât 3 găini, iar 8 cocoși și 9 găini cântăresc 42 kg. Cât cântărește o găină?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "8 cocoși echivalează cu 12 găini; în total sunt echivalentul a 21 găini = 42 kg.",
+      "options": [
+        {
+          "text": "1 kg",
+          "is_correct": false
+        },
+        {
+          "text": "2 kg",
+          "is_correct": true
+        },
+        {
+          "text": "3 kg",
+          "is_correct": false
+        },
+        {
+          "text": "4 kg",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pe o balanță, două cuburi cântăresc cât o piramidă și o bilă. Dacă un cub cântărește cât 11 bile, ce putem face?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Folosim echivalența pentru substituție.",
+      "options": [
+        {
+          "text": "Eliminăm toate bilele",
+          "is_correct": false
+        },
+        {
+          "text": "Înlocuim fiecare cub cu 11 bile",
+          "is_correct": true
+        },
+        {
+          "text": "Adunăm 11 la total",
+          "is_correct": false
+        },
+        {
+          "text": "Împărțim piramida la cub",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ogarul face 7 sărituri în timpul în care vulpea face 8. Pentru o perioadă comună de 5 asemenea intervale, ogarul face:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "7 · 5 = 35 sărituri.",
+      "options": [
+        {
+          "text": "13 sărituri",
+          "is_correct": false
+        },
+        {
+          "text": "35 sărituri",
+          "is_correct": true
+        },
+        {
+          "text": "40 sărituri",
+          "is_correct": false
+        },
+        {
+          "text": "56 sărituri",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă la 35 de sărituri ale ogarului, vulpea face 40, iar 5 sărituri de ogar măsoară cât 6 de vulpe, avantajul ogarului este echivalent cu:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "35 sărituri de ogar măsoară cât 42 de vulpe; diferența față de 40 este 2 la fiecare perioadă și duce la calculul urmăririi.",
+      "options": [
+        {
+          "text": "2 sărituri de vulpe",
+          "is_correct": false
+        },
+        {
+          "text": "6 sărituri de vulpe",
+          "is_correct": true
+        },
+        {
+          "text": "5 sărituri de vulpe",
+          "is_correct": false
+        },
+        {
+          "text": "12 sărituri de vulpe",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Patru dansatori și 6 dansatoare execută dansul în 5 minute. În cât timp îl execută 8 dansatori și 12 dansatoare, în aceleași condiții?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formația s-a dublat în aceeași proporție; fiecare execută același dans în 5 minute.",
+      "options": [
+        {
+          "text": "2 minute",
+          "is_correct": false
+        },
+        {
+          "text": "5 minute",
+          "is_correct": true
+        },
+        {
+          "text": "10 minute",
+          "is_correct": false
+        },
+        {
+          "text": "20 minute",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Când înmulțim un rând al comparației cu 3, trebuie să:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Întreaga situație trebuie scalată cu același factor.",
+      "options": [
+        {
+          "text": "înmulțim doar primul obiect",
+          "is_correct": false
+        },
+        {
+          "text": "înmulțim cu 3 toate cantitățile și totalul",
+          "is_correct": true
+        },
+        {
+          "text": "păstrăm totalul",
+          "is_correct": false
+        },
+        {
+          "text": "împărțim al doilea obiect",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "După eliminarea termenului comun obținem 4 carioci = 20 lei. Pasul următor este:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Reducem la unitate împărțind totalul la numărul de obiecte.",
+      "options": [
+        {
+          "text": "20 · 4",
+          "is_correct": false
+        },
+        {
+          "text": "20 : 4 = 5 lei pentru o cariocă",
+          "is_correct": true
+        },
+        {
+          "text": "20 − 4",
+          "is_correct": false
+        },
+        {
+          "text": "4 : 20",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care verificare este corectă dacă o coală costă 3 lei și o cariocă 5 lei?",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim prețurile în prima situație.",
+      "options": [
+        {
+          "text": "6 + 3 + 8 + 5 = 22",
+          "is_correct": false
+        },
+        {
+          "text": "6 · 3 + 8 · 5 = 58",
+          "is_correct": true
+        },
+        {
+          "text": "6 · 5 + 8 · 3 = 54",
+          "is_correct": false
+        },
+        {
+          "text": "58 : 3 = 5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pentru a elimina prin scădere o necunoscută, cele două situații trebuie să aibă:",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem cantități egale ale aceleiași necunoscute.",
+      "options": [
+        {
+          "text": "același total",
+          "is_correct": false
+        },
+        {
+          "text": "același termen de comparație",
+          "is_correct": true
+        },
+        {
+          "text": "numai numere pare",
+          "is_correct": false
+        },
+        {
+          "text": "exact două obiecte în total",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Folosește balanța pentru comparația cu coli și carioci.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Eliminăm cele 6 coli; 4 carioci costă 20 lei.",
+      "interactive": {
+        "mode": "balance",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 6,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 8,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 58
+          },
+          {
+            "items": [
+              {
+                "count": 6,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 12,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 78
+          }
+        ],
+        "answers": {
+          "diferență_obiecte": 4,
+          "diferență_total": 20,
+          "preț_unitar": 5
+        }
+      }
+    },
+    {
+      "text": "Folosește balanța pentru comparația cu caiete și pixuri.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Eliminăm cele 2 caiete; un pix costă 16 lei.",
+      "interactive": {
+        "mode": "balance",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 2,
+                "name": "caiete",
+                "icon": "📘"
+              },
+              {
+                "count": 1,
+                "name": "pix",
+                "icon": "🖊️"
+              }
+            ],
+            "total": 24
+          },
+          {
+            "items": [
+              {
+                "count": 2,
+                "name": "caiete",
+                "icon": "📘"
+              },
+              {
+                "count": 2,
+                "name": "pixuri",
+                "icon": "🖊️"
+              }
+            ],
+            "total": 40
+          }
+        ],
+        "answers": {
+          "diferență_obiecte": 1,
+          "diferență_total": 16,
+          "preț_unitar": 16
+        }
+      }
+    },
+    {
+      "text": "Folosește balanța pentru comparația cu mălai și făină.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Eliminăm cele 7 pungi de făină; 2 pungi de mălai cântăresc 4 kg.",
+      "interactive": {
+        "mode": "balance",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 5,
+                "name": "mălai",
+                "icon": "🌽"
+              },
+              {
+                "count": 7,
+                "name": "făină",
+                "icon": "🌾"
+              }
+            ],
+            "total": 31
+          },
+          {
+            "items": [
+              {
+                "count": 7,
+                "name": "mălai",
+                "icon": "🌽"
+              },
+              {
+                "count": 7,
+                "name": "făină",
+                "icon": "🌾"
+              }
+            ],
+            "total": 35
+          }
+        ],
+        "answers": {
+          "diferență_obiecte": 2,
+          "diferență_total": 4,
+          "preț_unitar": 2
+        }
+      }
+    },
+    {
+      "text": "Elimină termenii comuni: coli.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Tăiem 6 coli din ambele situații.",
+      "interactive": {
+        "mode": "cancel_common",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 6,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 8,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 58
+          },
+          {
+            "items": [
+              {
+                "count": 6,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 12,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 78
+          }
+        ],
+        "answers": {
+          "termeni_eliminați": 6,
+          "rest_obiecte": 4,
+          "rest_total": 20
+        }
+      }
+    },
+    {
+      "text": "Elimină termenii comuni: caiete.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Tăiem 2 caiete din ambele situații.",
+      "interactive": {
+        "mode": "cancel_common",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 2,
+                "name": "caiete",
+                "icon": "📘"
+              },
+              {
+                "count": 1,
+                "name": "pix",
+                "icon": "🖊️"
+              }
+            ],
+            "total": 24
+          },
+          {
+            "items": [
+              {
+                "count": 2,
+                "name": "caiete",
+                "icon": "📘"
+              },
+              {
+                "count": 2,
+                "name": "pixuri",
+                "icon": "🖊️"
+              }
+            ],
+            "total": 40
+          }
+        ],
+        "answers": {
+          "termeni_eliminați": 2,
+          "rest_obiecte": 1,
+          "rest_total": 16
+        }
+      }
+    },
+    {
+      "text": "Elimină termenii comuni: făină.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Tăiem 7 pungi de făină din ambele situații.",
+      "interactive": {
+        "mode": "cancel_common",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 5,
+                "name": "mălai",
+                "icon": "🌽"
+              },
+              {
+                "count": 7,
+                "name": "făină",
+                "icon": "🌾"
+              }
+            ],
+            "total": 31
+          },
+          {
+            "items": [
+              {
+                "count": 7,
+                "name": "mălai",
+                "icon": "🌽"
+              },
+              {
+                "count": 7,
+                "name": "făină",
+                "icon": "🌾"
+              }
+            ],
+            "total": 35
+          }
+        ],
+        "answers": {
+          "termeni_eliminați": 7,
+          "rest_obiecte": 2,
+          "rest_total": 4
+        }
+      }
+    },
+    {
+      "text": "Aliniază situațiile pentru comparația colilor.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Termenul comun este 6 coli.",
+      "interactive": {
+        "mode": "align_rows",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 6,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 8,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 58
+          },
+          {
+            "items": [
+              {
+                "count": 6,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 12,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 78
+          }
+        ],
+        "answers": {
+          "coloană_comună": 6,
+          "diferență": 20
+        }
+      }
+    },
+    {
+      "text": "Aliniază situațiile pentru comparația făinii.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Termenul comun este 7 pungi de făină.",
+      "interactive": {
+        "mode": "align_rows",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 5,
+                "name": "mălai",
+                "icon": "🌽"
+              },
+              {
+                "count": 7,
+                "name": "făină",
+                "icon": "🌾"
+              }
+            ],
+            "total": 31
+          },
+          {
+            "items": [
+              {
+                "count": 7,
+                "name": "mălai",
+                "icon": "🌽"
+              },
+              {
+                "count": 7,
+                "name": "făină",
+                "icon": "🌾"
+              }
+            ],
+            "total": 35
+          }
+        ],
+        "answers": {
+          "coloană_comună": 7,
+          "diferență": 4
+        }
+      }
+    },
+    {
+      "text": "Alege multiplicatorul pentru a egaliza cele 2 coli cu 14 coli.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim primul rând cu 7.",
+      "interactive": {
+        "mode": "equalize",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 2,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 7,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 41
+          },
+          {
+            "items": [
+              {
+                "count": 7,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 2,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 31
+          }
+        ],
+        "answers": {
+          "multiplier": 7,
+          "total_nou": 287
+        },
+        "multiplier_choices": [
+          2,
+          5,
+          7
+        ]
+      }
+    },
+    {
+      "text": "Egalizează 3 robinete din ambele situații.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Robinetele sunt deja egalizate.",
+      "interactive": {
+        "mode": "equalize",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 3,
+                "name": "robinete",
+                "icon": "🚰"
+              },
+              {
+                "count": 2,
+                "name": "pompe",
+                "icon": "⚙️"
+              }
+            ],
+            "total": 31
+          },
+          {
+            "items": [
+              {
+                "count": 3,
+                "name": "robinete",
+                "icon": "🚰"
+              },
+              {
+                "count": 8,
+                "name": "pompe",
+                "icon": "⚙️"
+              }
+            ],
+            "total": 79
+          }
+        ],
+        "answers": {
+          "multiplier": 1,
+          "diferență_total": 48
+        },
+        "multiplier_choices": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "text": "Egalizează numărul fetelor: 6 și 3.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim al doilea rând cu 2.",
+      "interactive": {
+        "mode": "equalize",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 4,
+                "name": "băieți",
+                "icon": "🕺"
+              },
+              {
+                "count": 6,
+                "name": "fete",
+                "icon": "💃"
+              }
+            ],
+            "total": 26
+          },
+          {
+            "items": [
+              {
+                "count": 5,
+                "name": "băieți",
+                "icon": "🕺"
+              },
+              {
+                "count": 3,
+                "name": "fete",
+                "icon": "💃"
+              }
+            ],
+            "total": 19
+          }
+        ],
+        "answers": {
+          "multiplier": 2,
+          "total_nou": 38
+        },
+        "multiplier_choices": [
+          2,
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "text": "Alege metoda pentru două situații care au deja 6 coli în comun.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Eliminăm colile prin scădere.",
+      "interactive": {
+        "mode": "choose_method",
+        "situation": "6 coli + 8 carioci = 58; 6 coli + 12 carioci = 78",
+        "answers": {
+          "method": "subtract"
+        }
+      }
+    },
+    {
+      "text": "Alege metoda când un trandafir costă cât 3 garoafe.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înlocuim trandafirii cu garoafe.",
+      "interactive": {
+        "mode": "choose_method",
+        "situation": "5 trandafiri + 6 garoafe = 42; 1 trandafir = 3 garoafe",
+        "answers": {
+          "method": "substitute"
+        }
+      }
+    },
+    {
+      "text": "Alege metoda când coeficienții aceleiași necunoscute au semne opuse.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Adunarea elimină termenii opuși.",
+      "interactive": {
+        "mode": "choose_method",
+        "situation": "3A + 2B = 31; 3A − 4B = 7",
+        "answers": {
+          "method": "add"
+        }
+      }
+    },
+    {
+      "text": "Completează tabelul colilor și cariocilor.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "4 carioci costă 20 lei.",
+      "interactive": {
+        "mode": "comparison_table",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 6,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 8,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 58
+          },
+          {
+            "items": [
+              {
+                "count": 6,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 12,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 78
+          }
+        ],
+        "answers": {
+          "diferență_obiecte": 4,
+          "diferență_total": 20,
+          "cariocă": 5
+        }
+      }
+    },
+    {
+      "text": "Completează tabelul robinetelor și pompelor.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "6 pompe au debitul 48 hl/oră.",
+      "interactive": {
+        "mode": "comparison_table",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 3,
+                "name": "robinete",
+                "icon": "🚰"
+              },
+              {
+                "count": 2,
+                "name": "pompe",
+                "icon": "⚙️"
+              }
+            ],
+            "total": 31
+          },
+          {
+            "items": [
+              {
+                "count": 3,
+                "name": "robinete",
+                "icon": "🚰"
+              },
+              {
+                "count": 8,
+                "name": "pompe",
+                "icon": "⚙️"
+              }
+            ],
+            "total": 79
+          }
+        ],
+        "answers": {
+          "diferență_pompe": 6,
+          "diferență_debit": 48,
+          "debit_pompă": 8
+        }
+      }
+    },
+    {
+      "text": "Completează tabelul pungilor de mălai și făină.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Două pungi de mălai cântăresc 4 kg.",
+      "interactive": {
+        "mode": "comparison_table",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 5,
+                "name": "mălai",
+                "icon": "🌽"
+              },
+              {
+                "count": 7,
+                "name": "făină",
+                "icon": "🌾"
+              }
+            ],
+            "total": 31
+          },
+          {
+            "items": [
+              {
+                "count": 7,
+                "name": "mălai",
+                "icon": "🌽"
+              },
+              {
+                "count": 7,
+                "name": "făină",
+                "icon": "🌾"
+              }
+            ],
+            "total": 35
+          }
+        ],
+        "answers": {
+          "diferență_mălai": 2,
+          "diferență_greutate": 4,
+          "mălai": 2
+        }
+      }
+    },
+    {
+      "text": "Înlocuiește containerele de plastic cu maculatură.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "12 containere de maculatură cântăresc 720 kg.",
+      "interactive": {
+        "mode": "substitution_machine",
+        "source_group": {
+          "items": [
+            {
+              "count": 6,
+              "name": "plastic",
+              "icon": "♻️"
+            }
+          ]
+        },
+        "target_group": {
+          "items": [
+            {
+              "count": 7,
+              "name": "maculatură",
+              "icon": "📦"
+            }
+          ]
+        },
+        "large_row": {
+          "items": [
+            {
+              "count": 5,
+              "name": "maculatură",
+              "icon": "📦"
+            },
+            {
+              "count": 6,
+              "name": "plastic",
+              "icon": "♻️"
+            }
+          ],
+          "total": 720
+        },
+        "result_row": {
+          "items": [
+            {
+              "count": 12,
+              "name": "maculatură",
+              "icon": "📦"
+            }
+          ],
+          "total": 720
+        },
+        "answers": {
+          "maculatură": 60,
+          "plastic": 70
+        }
+      }
+    },
+    {
+      "text": "Înlocuiește trandafirii cu garoafe.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "21 de garoafe costă 42 lei.",
+      "interactive": {
+        "mode": "substitution_machine",
+        "source_group": {
+          "items": [
+            {
+              "count": 1,
+              "name": "trandafir",
+              "icon": "🌹"
+            }
+          ]
+        },
+        "target_group": {
+          "items": [
+            {
+              "count": 3,
+              "name": "garoafe",
+              "icon": "🌸"
+            }
+          ]
+        },
+        "large_row": {
+          "items": [
+            {
+              "count": 5,
+              "name": "trandafiri",
+              "icon": "🌹"
+            },
+            {
+              "count": 6,
+              "name": "garoafe",
+              "icon": "🌸"
+            }
+          ],
+          "total": 42
+        },
+        "result_row": {
+          "items": [
+            {
+              "count": 21,
+              "name": "garoafe",
+              "icon": "🌸"
+            }
+          ],
+          "total": 42
+        },
+        "answers": {
+          "garoafă": 2,
+          "trandafir": 6
+        }
+      }
+    },
+    {
+      "text": "Înlocuiește cocoșii cu găini.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "8 cocoși echivalează cu 12 găini; totalul echivalează cu 21 găini.",
+      "interactive": {
+        "mode": "substitution_machine",
+        "source_group": {
+          "items": [
+            {
+              "count": 2,
+              "name": "cocoși",
+              "icon": "🐓"
+            }
+          ]
+        },
+        "target_group": {
+          "items": [
+            {
+              "count": 3,
+              "name": "găini",
+              "icon": "🐔"
+            }
+          ]
+        },
+        "large_row": {
+          "items": [
+            {
+              "count": 8,
+              "name": "cocoși",
+              "icon": "🐓"
+            },
+            {
+              "count": 9,
+              "name": "găini",
+              "icon": "🐔"
+            }
+          ],
+          "total": 42
+        },
+        "result_row": {
+          "items": [
+            {
+              "count": 21,
+              "name": "găini",
+              "icon": "🐔"
+            }
+          ],
+          "total": 42
+        },
+        "answers": {
+          "găină": 2,
+          "cocoș": 3
+        }
+      }
+    },
+    {
+      "text": "Găsește primul pas greșit în comparația colilor.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Diferența totalurilor este 20, nu 136.",
+      "interactive": {
+        "mode": "comparison_error",
+        "steps": [
+          "6 coli + 8 carioci = 58",
+          "6 coli + 12 carioci = 78",
+          "Scădem: 4 carioci = 136",
+          "O cariocă = 5 lei"
+        ],
+        "answers": {
+          "step": 2
+        }
+      }
+    },
+    {
+      "text": "Găsește primul pas greșit la multiplicarea unui rând.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Și totalul trebuie înmulțit cu 7.",
+      "interactive": {
+        "mode": "comparison_error",
+        "steps": [
+          "2 coli + 7 carioci = 41",
+          "Înmulțim rândul cu 7",
+          "14 coli + 49 carioci = 41",
+          "Totalul corect ar fi 287"
+        ],
+        "answers": {
+          "step": 2
+        }
+      }
+    },
+    {
+      "text": "Găsește primul pas greșit în substituție.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "15 + 6 = 21, nu 20.",
+      "interactive": {
+        "mode": "comparison_error",
+        "steps": [
+          "1 trandafir = 3 garoafe",
+          "5 trandafiri = 15 garoafe",
+          "15 + 6 = 20 garoafe",
+          "O garoafă costă 2 lei"
+        ],
+        "answers": {
+          "step": 2
+        }
+      }
+    },
+    {
+      "text": "Compară săriturile ogarului și vulpii.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "După 6 perioade, ogarul ajunge vulpea.",
+      "interactive": {
+        "mode": "animal_race",
+        "animal_a": {
+          "name": "Ogar",
+          "icon": "🐕",
+          "jumps": 7,
+          "distance": 5
+        },
+        "animal_b": {
+          "name": "Vulpe",
+          "icon": "🦊",
+          "jumps": 8,
+          "distance": 6
+        },
+        "common_period": 35,
+        "lead": 2,
+        "answers": {
+          "perioade": 6,
+          "sărituri_ogar": 42
+        }
+      }
+    },
+    {
+      "text": "Compară două broscuțe care sar în același timp.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "În fiecare perioadă apar 2 sărituri diferență.",
+      "interactive": {
+        "mode": "animal_race",
+        "animal_a": {
+          "name": "Verde",
+          "icon": "🐸",
+          "jumps": 4,
+          "distance": 12
+        },
+        "animal_b": {
+          "name": "Roșie",
+          "icon": "🐸",
+          "jumps": 6,
+          "distance": 12
+        },
+        "common_period": 12,
+        "lead": 2,
+        "answers": {
+          "diferență_sărituri": 2,
+          "perioade": 5
+        }
+      }
+    },
+    {
+      "text": "Completează formația dublă de dansatori.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Formația s-a dublat în aceeași proporție; timpul dansului rămâne 5 minute.",
+      "interactive": {
+        "mode": "dancers",
+        "initial_boys": 4,
+        "initial_girls": 6,
+        "initial_time": 5,
+        "target_boys": 8,
+        "target_girls": 12,
+        "answers": {
+          "boys": 8,
+          "girls": 12,
+          "time": 5
+        }
+      }
+    },
+    {
+      "text": "Completează o formație de trei ori mai mare.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul fiecărui tip de dansator s-a triplat; timpul coregrafiei rămâne 4 minute.",
+      "interactive": {
+        "mode": "dancers",
+        "initial_boys": 3,
+        "initial_girls": 5,
+        "initial_time": 4,
+        "target_boys": 9,
+        "target_girls": 15,
+        "answers": {
+          "boys": 9,
+          "girls": 15,
+          "time": 4
+        }
+      }
+    },
+    {
+      "text": "Potrivește problema cu comparația și răspunsul.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Eliminăm termenul comun și reducem diferența la unitate.",
+      "interactive": {
+        "mode": "comparison_match",
+        "triples": [
+          {
+            "problem": "6 coli + 8 carioci = 58; 6 coli + 12 carioci = 78",
+            "scheme": "(78 − 58) : (12 − 8)",
+            "answer": "cariocă = 5 lei"
+          },
+          {
+            "problem": "5 mălai + 7 făină = 31; 7 mălai + 7 făină = 35",
+            "scheme": "(35 − 31) : (7 − 5)",
+            "answer": "mălai = 2 kg"
+          },
+          {
+            "problem": "3 robinete + 2 pompe = 31; 3 robinete + 8 pompe = 79",
+            "scheme": "(79 − 31) : (8 − 2)",
+            "answer": "pompă = 8 hl/oră"
+          }
+        ],
+        "scheme_order": [
+          1,
+          2,
+          0
+        ],
+        "answer_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "scheme:0": 0,
+          "scheme:1": 1,
+          "scheme:2": 2,
+          "answer:0": 0,
+          "answer:1": 1,
+          "answer:2": 2
+        }
+      }
+    },
+    {
+      "text": "Potrivește substituțiile corecte.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înlocuim grupul echivalent și apoi reducem la unitate.",
+      "interactive": {
+        "mode": "comparison_match",
+        "triples": [
+          {
+            "problem": "1 trandafir = 3 garoafe; total 42 lei",
+            "scheme": "5 · 3 + 6 = 21 garoafe",
+            "answer": "garoafă = 2 lei"
+          },
+          {
+            "problem": "2 cocoși = 3 găini; total 42 kg",
+            "scheme": "8 cocoși = 12 găini; 12 + 9 = 21",
+            "answer": "găină = 2 kg"
+          },
+          {
+            "problem": "6 plastic = 7 maculatură; total 720 kg",
+            "scheme": "7 + 5 = 12 containere maculatură",
+            "answer": "maculatură = 60 kg"
+          }
+        ],
+        "scheme_order": [
+          1,
+          2,
+          0
+        ],
+        "answer_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "scheme:0": 0,
+          "scheme:1": 1,
+          "scheme:2": 2,
+          "answer:0": 0,
+          "answer:1": 1,
+          "answer:2": 2
+        }
+      }
+    },
+    {
+      "text": "Multiplicarea unui rând – adevărat sau fals.",
+      "type": "comparison_method",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Afirmația este adevărată.",
+      "interactive": {
+        "mode": "comparison_true_false",
+        "statement": "Dacă înmulțim cantitățile unui rând cu 3, trebuie să înmulțim și totalul cu 3.",
+        "icon": "✖️",
+        "note": "Întregul rând descrie de trei ori aceeași cumpărătură.",
+        "answers": {
+          "answer": "true"
+        }
+      }
+    },
+    {
+      "text": "Eliminarea termenului comun – adevărat sau fals.",
+      "type": "comparison_method",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Nu putem scădea cantități diferite ale necunoscutei.",
+      "interactive": {
+        "mode": "comparison_true_false",
+        "statement": "Putem elimina 6 coli dintr-un rând și 7 coli din celălalt ca și cum ar fi același termen.",
+        "icon": "✂️",
+        "note": "Cantitățile eliminate trebuie să fie egale.",
+        "answers": {
+          "answer": "false"
+        }
+      }
+    },
+    {
+      "text": "Substituția – adevărat sau fals.",
+      "type": "comparison_method",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "2 · 4 = 8 cocoși și 3 · 4 = 12 găini.",
+      "interactive": {
+        "mode": "comparison_true_false",
+        "statement": "Dacă 2 cocoși cântăresc cât 3 găini, putem înlocui 8 cocoși cu 12 găini.",
+        "icon": "⚖️",
+        "note": "Echivalența inițială este folosită de patru ori.",
+        "answers": {
+          "answer": "true"
+        }
+      }
+    }
+  ]
+}

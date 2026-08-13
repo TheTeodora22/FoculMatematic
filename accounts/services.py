@@ -161,6 +161,7 @@ def get_profile_dashboard(user) -> dict:
 
     from accounts.avatars import get_avatar_static_path
     from accounts.utils import get_or_create_profile
+    from quizzes.learning import get_mistake_review_items, get_next_learning_step
 
     profile = get_or_create_profile(user)
     quiz_stats = get_quiz_stats(user)
@@ -172,5 +173,7 @@ def get_profile_dashboard(user) -> dict:
         "avatar_path": get_avatar_static_path(profile.avatar),
         "class_url": reverse("class_chapters", args=[profile.clasa]),
         "battlepass_preview": get_battlepass_preview(user),
+        "next_learning_step": get_next_learning_step(user),
+        "mistake_review_items": get_mistake_review_items(user),
         **quiz_stats,
     }

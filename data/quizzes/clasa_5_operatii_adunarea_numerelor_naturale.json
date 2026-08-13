@@ -2,5 +2,1476 @@
   "title": "Adunarea numerelor naturale, proprietăți",
   "description": "Clasa a 5-a · Operații cu numere naturale",
   "difficulty": "easy",
-  "questions": []
+  "questions": [
+    {
+      "text": "Calculați suma 241 + 347.",
+      "points": 10,
+      "explanation": "Adunăm pe ordine: 1 + 7 = 8, 4 + 4 = 8, iar 2 + 3 = 5. Rezultatul este 588.",
+      "options": [
+        {
+          "text": "578",
+          "is_correct": false
+        },
+        {
+          "text": "588",
+          "is_correct": true
+        },
+        {
+          "text": "598",
+          "is_correct": false
+        },
+        {
+          "text": "688",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați suma 6 453 + 1 200.",
+      "points": 10,
+      "explanation": "Adăugăm 1 mie și 2 sute la 6 453: 6 453 + 1 200 = 7 653.",
+      "options": [
+        {
+          "text": "6 573",
+          "is_correct": false
+        },
+        {
+          "text": "7 553",
+          "is_correct": false
+        },
+        {
+          "text": "7 653",
+          "is_correct": true
+        },
+        {
+          "text": "7 753",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați suma 4 539 + 496.",
+      "points": 10,
+      "explanation": "Putem scrie 496 = 500 − 4. Astfel, 4 539 + 500 − 4 = 5 039 − 4 = 5 035.",
+      "options": [
+        {
+          "text": "4 935",
+          "is_correct": false
+        },
+        {
+          "text": "5 025",
+          "is_correct": false
+        },
+        {
+          "text": "5 035",
+          "is_correct": true
+        },
+        {
+          "text": "5 135",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați suma 1 020 + 3 057 + 59.",
+      "points": 10,
+      "explanation": "1 020 + 3 057 = 4 077, iar 4 077 + 59 = 4 136.",
+      "options": [
+        {
+          "text": "4 126",
+          "is_correct": false
+        },
+        {
+          "text": "4 136",
+          "is_correct": true
+        },
+        {
+          "text": "4 146",
+          "is_correct": false
+        },
+        {
+          "text": "4 236",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cum trebuie grupați și reordonați termenii sumei 22 + 23 + 24 + 100 + 76 + 77 + 78 pentru ca fiecare pereche din paranteze să aibă suma 100?",
+      "points": 10,
+      "explanation": "Folosim comutativitatea și asociativitatea: 22 + 78 = 100, 23 + 77 = 100 și 24 + 76 = 100. Cu termenul 100 obținem în total 400.",
+      "options": [
+        {
+          "text": "(22 + 78) + (23 + 77) + (24 + 76) + 100",
+          "is_correct": true
+        },
+        {
+          "text": "(22 + 23) + (24 + 76) + (77 + 78) + 100",
+          "is_correct": false
+        },
+        {
+          "text": "(22 + 76) + (23 + 78) + (24 + 77) + 100",
+          "is_correct": false
+        },
+        {
+          "text": "(22 + 24) + (23 + 76) + (77 + 78) + 100",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce grupare a sumei 24 + 68 + 76 + 32 evidențiază două perechi cu suma 100?",
+      "points": 10,
+      "explanation": "24 + 76 = 100 și 68 + 32 = 100. Așadar suma totală este 200.",
+      "options": [
+        {
+          "text": "(24 + 68) + (76 + 32)",
+          "is_correct": false
+        },
+        {
+          "text": "(24 + 76) + (68 + 32)",
+          "is_correct": true
+        },
+        {
+          "text": "(24 + 32) + (68 + 76)",
+          "is_correct": false
+        },
+        {
+          "text": "(24 + 68 + 76) + 32",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cum grupați termenii sumei 224 + 29 + 32 + 76 + 71 + 24 pentru a obține imediat sumele parțiale 300, 100 și 56?",
+      "points": 10,
+      "explanation": "224 + 76 = 300, 29 + 71 = 100, iar 32 + 24 = 56. Suma este 300 + 100 + 56 = 456.",
+      "options": [
+        {
+          "text": "(224 + 76) + (29 + 71) + (32 + 24)",
+          "is_correct": true
+        },
+        {
+          "text": "(224 + 29) + (32 + 76) + (71 + 24)",
+          "is_correct": false
+        },
+        {
+          "text": "(224 + 71) + (29 + 24) + (32 + 76)",
+          "is_correct": false
+        },
+        {
+          "text": "(224 + 24) + (29 + 32) + (76 + 71)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cum grupați termenii sumei 25 + 58 + 175 + 142 pentru a obține două sute rotunde?",
+      "points": 10,
+      "explanation": "25 + 175 = 200 și 58 + 142 = 200. Suma totală este 400.",
+      "options": [
+        {
+          "text": "(25 + 58) + (175 + 142)",
+          "is_correct": false
+        },
+        {
+          "text": "(25 + 175) + (58 + 142)",
+          "is_correct": true
+        },
+        {
+          "text": "(25 + 142) + (58 + 175)",
+          "is_correct": false
+        },
+        {
+          "text": "25 + (58 + 175) + 142",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cum grupați termenii sumei 444 + 999 + 556 + 1 pentru a forma două mii?",
+      "points": 10,
+      "explanation": "444 + 556 = 1 000, iar 999 + 1 = 1 000. În total obținem 2 000.",
+      "options": [
+        {
+          "text": "(444 + 999) + (556 + 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(444 + 556) + (999 + 1)",
+          "is_correct": true
+        },
+        {
+          "text": "(444 + 1) + (999 + 556)",
+          "is_correct": false
+        },
+        {
+          "text": "444 + (999 + 556) + 1",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pentru a calcula rapid 675 + 388, descompunem 388 astfel încât primul termen să devină 700. Ce descompunere este potrivită?",
+      "points": 10,
+      "explanation": "Lui 675 îi lipsesc 25 până la 700, deci scriem 388 = 25 + 363. Astfel, (675 + 25) + 363 = 700 + 363 = 1 063.",
+      "options": [
+        {
+          "text": "388 = 15 + 373",
+          "is_correct": false
+        },
+        {
+          "text": "388 = 25 + 363",
+          "is_correct": true
+        },
+        {
+          "text": "388 = 35 + 353",
+          "is_correct": false
+        },
+        {
+          "text": "388 = 75 + 313",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Completați calculul rapid: 489 + 650 = (489 + 11) + ... .",
+      "points": 10,
+      "explanation": "Dacă luăm 11 din 650, rămân 639. Atunci (489 + 11) + 639 = 500 + 639 = 1 139.",
+      "options": [
+        {
+          "text": "619",
+          "is_correct": false
+        },
+        {
+          "text": "629",
+          "is_correct": false
+        },
+        {
+          "text": "639",
+          "is_correct": true
+        },
+        {
+          "text": "661",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Completați calculul rapid: 798 + 456 = (798 + 2) + ... .",
+      "points": 10,
+      "explanation": "Din 456 folosim 2 pentru a completa 798 până la 800, deci rămân 454. Suma este 800 + 454 = 1 254.",
+      "options": [
+        {
+          "text": "452",
+          "is_correct": false
+        },
+        {
+          "text": "454",
+          "is_correct": true
+        },
+        {
+          "text": "456",
+          "is_correct": false
+        },
+        {
+          "text": "458",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Suma a două numere naturale consecutive este 43. Care sunt numerele?",
+      "points": 10,
+      "explanation": "Numerele consecutive din jurul jumătății lui 43 sunt 21 și 22, iar 21 + 22 = 43.",
+      "options": [
+        {
+          "text": "20 și 21",
+          "is_correct": false
+        },
+        {
+          "text": "21 și 22",
+          "is_correct": true
+        },
+        {
+          "text": "22 și 23",
+          "is_correct": false
+        },
+        {
+          "text": "20 și 23",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Suma a două numere naturale pare consecutive este 26. Care sunt numerele?",
+      "points": 10,
+      "explanation": "Numerele pare consecutive diferă cu 2. Perechea 12 și 14 are suma 26.",
+      "options": [
+        {
+          "text": "10 și 12",
+          "is_correct": false
+        },
+        {
+          "text": "11 și 15",
+          "is_correct": false
+        },
+        {
+          "text": "12 și 14",
+          "is_correct": true
+        },
+        {
+          "text": "13 și 15",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Suma a trei numere naturale impare consecutive este 57. Care sunt numerele?",
+      "points": 10,
+      "explanation": "Numărul din mijloc este 57 : 3 = 19. Numerele impare consecutive sunt 17, 19 și 21.",
+      "options": [
+        {
+          "text": "15, 17 și 19",
+          "is_correct": false
+        },
+        {
+          "text": "16, 19 și 22",
+          "is_correct": false
+        },
+        {
+          "text": "17, 19 și 21",
+          "is_correct": true
+        },
+        {
+          "text": "19, 21 și 23",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă numărul de două cifre ab adunat cu numărul a3 este 85, cât este ab + ba?",
+      "points": 10,
+      "explanation": "Ecuația este (10a + b) + (10a + 3) = 85, deci 20a + b = 82. Rezultă a = 4 și b = 2. Atunci ab = 42, ba = 24, iar suma este 66.",
+      "options": [
+        {
+          "text": "42",
+          "is_correct": false
+        },
+        {
+          "text": "60",
+          "is_correct": false
+        },
+        {
+          "text": "66",
+          "is_correct": true
+        },
+        {
+          "text": "84",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determinați numărul de forma ab pentru care 7ab + ab2 = 977.",
+      "points": 10,
+      "explanation": "Scriem 7ab = 700 + 10a + b și ab2 = 100a + 10b + 2. Rezultă 110a + 11b = 275, adică 10a + b = 25. Prin urmare, ab = 25.",
+      "options": [
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "25",
+          "is_correct": true
+        },
+        {
+          "text": "34",
+          "is_correct": false
+        },
+        {
+          "text": "52",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Determinați numărul de forma ab pentru care 4ab + ba9 = 852.",
+      "points": 10,
+      "explanation": "Avem 4ab = 400 + 10a + b și ba9 = 100b + 10a + 9. Ecuația devine 20a + 101b = 443, de unde b = 3 și a = 7. Așadar, ab = 73.",
+      "options": [
+        {
+          "text": "37",
+          "is_correct": false
+        },
+        {
+          "text": "63",
+          "is_correct": false
+        },
+        {
+          "text": "73",
+          "is_correct": true
+        },
+        {
+          "text": "83",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Numerele de două cifre ab și ba au suma 99, iar a − b = 5. Care este perechea (ab, ba)?",
+      "points": 10,
+      "explanation": "Din ab + ba = 99 rezultă a + b = 9. Împreună cu a − b = 5 obținem a = 7 și b = 2. Perechea este (72, 27).",
+      "options": [
+        {
+          "text": "(63, 36)",
+          "is_correct": false
+        },
+        {
+          "text": "(72, 27)",
+          "is_correct": true
+        },
+        {
+          "text": "(45, 54)",
+          "is_correct": false
+        },
+        {
+          "text": "(81, 18)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă a este un număr natural par, iar b este un număr natural impar, atunci a + b este:",
+      "points": 10,
+      "explanation": "Suma dintre un număr par și un număr impar este întotdeauna impară.",
+      "options": [
+        {
+          "text": "întotdeauna pară",
+          "is_correct": false
+        },
+        {
+          "text": "întotdeauna impară",
+          "is_correct": true
+        },
+        {
+          "text": "întotdeauna zero",
+          "is_correct": false
+        },
+        {
+          "text": "uneori pară, alteori impară",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă n este un număr natural par, n ≥ 2, ce paritate are suma (n − 1) + n + (n + 1)?",
+      "points": 10,
+      "explanation": "Numerele vecine lui n sunt impare. Suma impar + par + impar este pară. Echivalent, suma este 3n, iar n este par.",
+      "options": [
+        {
+          "text": "pară",
+          "is_correct": true
+        },
+        {
+          "text": "impară",
+          "is_correct": false
+        },
+        {
+          "text": "mereu egală cu n",
+          "is_correct": false
+        },
+        {
+          "text": "nu este număr natural",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați suma 1 + 2 + 3 + ... + 30.",
+      "points": 10,
+      "explanation": "Folosim formula 1 + 2 + ... + n = n(n + 1) : 2. Pentru n = 30 obținem 30 · 31 : 2 = 465.",
+      "options": [
+        {
+          "text": "435",
+          "is_correct": false
+        },
+        {
+          "text": "450",
+          "is_correct": false
+        },
+        {
+          "text": "465",
+          "is_correct": true
+        },
+        {
+          "text": "930",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați suma 9 + 10 + 11 + ... + 30.",
+      "points": 10,
+      "explanation": "Din suma 1 + 2 + ... + 30 = 465 scădem 1 + 2 + ... + 8 = 36. Rezultatul este 465 − 36 = 429.",
+      "options": [
+        {
+          "text": "393",
+          "is_correct": false
+        },
+        {
+          "text": "420",
+          "is_correct": false
+        },
+        {
+          "text": "429",
+          "is_correct": true
+        },
+        {
+          "text": "465",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă A = 1 + 2 + ... + 11 și B = 12 + 13 + ... + 20, cât este A + B?",
+      "points": 10,
+      "explanation": "Împreună, cele două sume conțin toate numerele de la 1 la 20. Așadar A + B = 20 · 21 : 2 = 210.",
+      "options": [
+        {
+          "text": "200",
+          "is_correct": false
+        },
+        {
+          "text": "210",
+          "is_correct": true
+        },
+        {
+          "text": "220",
+          "is_correct": false
+        },
+        {
+          "text": "420",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "La un concurs de tir, zonele valorează 9, 7, 5, 3 și 1 punct. Ioana a nimerit zonele de 9, 7, 5, 3 și 1 punct de 2, 3, 4, 5 și, respectiv, o dată. Ce punctaj a obținut?",
+      "points": 10,
+      "explanation": "Calculăm 2 · 9 + 3 · 7 + 4 · 5 + 5 · 3 + 1 · 1 = 18 + 21 + 20 + 15 + 1 = 75.",
+      "options": [
+        {
+          "text": "70",
+          "is_correct": false
+        },
+        {
+          "text": "73",
+          "is_correct": false
+        },
+        {
+          "text": "75",
+          "is_correct": true
+        },
+        {
+          "text": "80",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Știind că x + 2y + 13 = 24, determinați suma numerelor a = 18 + 2y + x și b = 2x + 77 + 4y.",
+      "points": 10,
+      "explanation": "Din x + 2y + 13 = 24 rezultă x + 2y = 11. Atunci a = 18 + 11 = 29, iar b = 2(x + 2y) + 77 = 22 + 77 = 99. Prin urmare, a + b = 128.",
+      "options": [
+        {
+          "text": "99",
+          "is_correct": false
+        },
+        {
+          "text": "118",
+          "is_correct": false
+        },
+        {
+          "text": "128",
+          "is_correct": true
+        },
+        {
+          "text": "139",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care dintre următoarele afirmații despre adunare este adevărată pentru orice număr natural a?",
+      "points": 10,
+      "explanation": "Numărul 0 este elementul neutru al adunării, deci a + 0 = a pentru orice număr natural a.",
+      "options": [
+        {
+          "text": "a + 0 = 0",
+          "is_correct": false
+        },
+        {
+          "text": "a + 1 = a",
+          "is_correct": false
+        },
+        {
+          "text": "a + 0 = a",
+          "is_correct": true
+        },
+        {
+          "text": "a + a = a",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care dintre următoarele afirmații este falsă pentru numerele naturale a, b și c?",
+      "points": 10,
+      "explanation": "În general, adăugarea lui b schimbă valoarea lui a. Egalitatea a + b = a este adevărată numai în cazul particular b = 0, nu pentru orice a și b.",
+      "options": [
+        {
+          "text": "a + b = b + a",
+          "is_correct": false
+        },
+        {
+          "text": "a + 0 = a",
+          "is_correct": false
+        },
+        {
+          "text": "(a + b) + c = a + (b + c)",
+          "is_correct": false
+        },
+        {
+          "text": "a + b = a pentru orice a și b",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Care afirmație despre folosirea parantezelor într-o sumă de numere naturale este adevărată?",
+      "points": 10,
+      "explanation": "Prin asociativitatea adunării, schimbarea grupării termenilor nu schimbă suma. Parantezele ne pot ajuta însă să efectuăm calculul mai ușor.",
+      "options": [
+        {
+          "text": "Parantezele măresc întotdeauna suma.",
+          "is_correct": false
+        },
+        {
+          "text": "Parantezele micșorează întotdeauna suma.",
+          "is_correct": false
+        },
+        {
+          "text": "Schimbarea grupării termenilor nu schimbă suma.",
+          "is_correct": true
+        },
+        {
+          "text": "Într-o sumă nu avem voie să folosim paranteze.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care dintre următoarele afirmații despre paritatea unei sume este adevărată?",
+      "points": 10,
+      "explanation": "Două numere impare au forma 2m + 1 și 2n + 1. Suma lor este 2(m + n + 1), deci este pară.",
+      "options": [
+        {
+          "text": "Suma a două numere impare este impară.",
+          "is_correct": false
+        },
+        {
+          "text": "Suma a două numere impare este pară.",
+          "is_correct": true
+        },
+        {
+          "text": "Suma unui număr par și a unuia impar este pară.",
+          "is_correct": false
+        },
+        {
+          "text": "Suma a două numere pare este impară.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cum trebuie grupați termenii sumei 135 + 48 + 65 + 52 pentru a forma două sute rotunde?",
+      "points": 10,
+      "explanation": "135 + 65 = 200, iar 48 + 52 = 100. Gruparea convenabilă conduce imediat la suma 300.",
+      "options": [
+        {
+          "text": "(135 + 65) + (48 + 52)",
+          "is_correct": true
+        },
+        {
+          "text": "(135 + 48) + (65 + 52)",
+          "is_correct": false
+        },
+        {
+          "text": "(135 + 52) + (48 + 65)",
+          "is_correct": false
+        },
+        {
+          "text": "135 + (48 + 65) + 52",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este cea mai eficientă grupare pentru calcularea sumei 398 + 247 + 602 + 53?",
+      "points": 10,
+      "explanation": "398 + 602 = 1 000, iar 247 + 53 = 300. Astfel calculăm imediat 1 000 + 300 = 1 300.",
+      "options": [
+        {
+          "text": "(398 + 247) + (602 + 53)",
+          "is_correct": false
+        },
+        {
+          "text": "(398 + 602) + (247 + 53)",
+          "is_correct": true
+        },
+        {
+          "text": "(398 + 53) + (247 + 602)",
+          "is_correct": false
+        },
+        {
+          "text": "398 + (247 + 602) + 53",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce număr trebuie scris în căsuță pentru ca (467 + □) + 125 = 1 000 + 125?",
+      "points": 10,
+      "explanation": "Pentru ca prima paranteză să fie 1 000, calculăm 1 000 − 467 = 533. Verificare: 467 + 533 = 1 000.",
+      "options": [
+        {
+          "text": "433",
+          "is_correct": false
+        },
+        {
+          "text": "523",
+          "is_correct": false
+        },
+        {
+          "text": "533",
+          "is_correct": true
+        },
+        {
+          "text": "543",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce număr trebuie scris în căsuță pentru ca (□ + 275) + (48 + 52) = 1 000 + 100?",
+      "points": 10,
+      "explanation": "A doua paranteză este deja 100. Pentru prima paranteză avem □ + 275 = 1 000, deci numărul lipsă este 1 000 − 275 = 725.",
+      "options": [
+        {
+          "text": "625",
+          "is_correct": false
+        },
+        {
+          "text": "715",
+          "is_correct": false
+        },
+        {
+          "text": "725",
+          "is_correct": true
+        },
+        {
+          "text": "825",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un elev a calculat 468 + 357 = 815. Care explicație identifică eroarea?",
+      "points": 10,
+      "explanation": "Suma corectă este 825. La unități, 8 + 7 = 15: scriem 5 și trecem o zece. Această zece trebuie adăugată la ordinul zecilor.",
+      "options": [
+        {
+          "text": "A uitat să adauge zecea obținută din 8 + 7.",
+          "is_correct": true
+        },
+        {
+          "text": "Trebuia să scadă numerele.",
+          "is_correct": false
+        },
+        {
+          "text": "Suma corectă este 815.",
+          "is_correct": false
+        },
+        {
+          "text": "A schimbat nepermis ordinea termenilor.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Maria a scris: 2 398 + 607 = 2 398 + 600 + 7 = 2 998 + 7 = 3 005. Andrei a obținut 2 995. Cine a calculat corect?",
+      "points": 10,
+      "explanation": "Descompunerea Mariei este corectă: 607 = 600 + 7, iar 2 398 + 600 + 7 = 3 005.",
+      "options": [
+        {
+          "text": "Doar Maria",
+          "is_correct": true
+        },
+        {
+          "text": "Doar Andrei",
+          "is_correct": false
+        },
+        {
+          "text": "Amândoi",
+          "is_correct": false
+        },
+        {
+          "text": "Niciunul",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care grup de trei numere are suma exact 1 000?",
+      "points": 10,
+      "explanation": "125 + 375 = 500, iar 500 + 500 = 1 000.",
+      "options": [
+        {
+          "text": "125, 375 și 500",
+          "is_correct": true
+        },
+        {
+          "text": "125, 365 și 500",
+          "is_correct": false
+        },
+        {
+          "text": "225, 375 și 500",
+          "is_correct": false
+        },
+        {
+          "text": "125, 375 și 600",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Într-o piramidă de numere, fiecare căsuță este suma celor două căsuțe aflate imediat sub ea. La bază sunt numerele 120, 80 și 50. Ce număr se află în vârf?",
+      "points": 10,
+      "explanation": "Pe rândul al doilea obținem 120 + 80 = 200 și 80 + 50 = 130. În vârf avem 200 + 130 = 330.",
+      "options": [
+        {
+          "text": "250",
+          "is_correct": false
+        },
+        {
+          "text": "300",
+          "is_correct": false
+        },
+        {
+          "text": "330",
+          "is_correct": true
+        },
+        {
+          "text": "450",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Într-o piramidă de numere, fiecare căsuță este suma celor două de sub ea. La bază sunt 40, x și 25, iar pe rândul următor sunt 100 și 85. Cât este x?",
+      "points": 10,
+      "explanation": "Din 40 + x = 100 rezultă x = 60. Verificăm și cealaltă căsuță: 60 + 25 = 85.",
+      "options": [
+        {
+          "text": "45",
+          "is_correct": false
+        },
+        {
+          "text": "50",
+          "is_correct": false
+        },
+        {
+          "text": "60",
+          "is_correct": true
+        },
+        {
+          "text": "65",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Într-o bibliotecă sunt 350 de cărți. Dintre acestea, 128 sunt cărți de aventuri, iar restul sunt cărți de știință. Câte cărți de știință sunt?",
+      "points": 10,
+      "explanation": "Căutăm termenul lipsă din adunarea 128 + □ = 350. Calculăm 350 − 128 = 222.",
+      "options": [
+        {
+          "text": "212",
+          "is_correct": false
+        },
+        {
+          "text": "222",
+          "is_correct": true
+        },
+        {
+          "text": "232",
+          "is_correct": false
+        },
+        {
+          "text": "478",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "O echipă a obținut 175 de puncte în prima rundă, 240 în a doua și 185 în a treia. Care este punctajul total?",
+      "points": 10,
+      "explanation": "Grupăm 175 + 185 = 360, apoi 360 + 240 = 600.",
+      "options": [
+        {
+          "text": "500",
+          "is_correct": false
+        },
+        {
+          "text": "590",
+          "is_correct": false
+        },
+        {
+          "text": "600",
+          "is_correct": true
+        },
+        {
+          "text": "610",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Trage parantezele astfel încât în interiorul lor să fie perechea de termeni cu suma 100.",
+      "type": "parentheses_drag",
+      "points": 10,
+      "explanation": "36 + 64 = 100, deci expresia se grupează astfel: (36 + 64) + 25 + 70.",
+      "interactive": {
+        "tokens": [
+          "36",
+          "+ 64",
+          "+ 25",
+          "+ 70"
+        ],
+        "correct_open_index": 0,
+        "correct_close_index": 2
+      }
+    },
+    {
+      "text": "Trage parantezele în jurul celor doi termeni consecutivi care au suma 100.",
+      "type": "parentheses_drag",
+      "points": 10,
+      "explanation": "48 + 52 = 100, deci obținem 15 + (48 + 52) + 36.",
+      "interactive": {
+        "tokens": [
+          "15",
+          "+ 48",
+          "+ 52",
+          "+ 36"
+        ],
+        "correct_open_index": 1,
+        "correct_close_index": 3
+      }
+    },
+    {
+      "text": "Trage parantezele astfel încât suma din interiorul lor să fie 1 000.",
+      "type": "parentheses_drag",
+      "points": 10,
+      "explanation": "275 + 725 = 1 000, deci gruparea corectă este (275 + 725) + 39 + 60.",
+      "interactive": {
+        "tokens": [
+          "275",
+          "+ 725",
+          "+ 39",
+          "+ 60"
+        ],
+        "correct_open_index": 0,
+        "correct_close_index": 2
+      }
+    },
+    {
+      "text": "Trage parantezele în jurul termenilor consecutivi care au suma 300.",
+      "type": "parentheses_drag",
+      "points": 10,
+      "explanation": "224 + 76 = 300, deci scriem (224 + 76) + 29 + 70.",
+      "interactive": {
+        "tokens": [
+          "224",
+          "+ 76",
+          "+ 29",
+          "+ 70"
+        ],
+        "correct_open_index": 0,
+        "correct_close_index": 2
+      }
+    },
+    {
+      "text": "Trage parantezele astfel încât în interior să fie trei termeni cu suma 500.",
+      "type": "parentheses_drag",
+      "points": 10,
+      "explanation": "120 + 80 + 300 = 500, deci expresia devine 45 + (120 + 80 + 300) + 70.",
+      "interactive": {
+        "tokens": [
+          "45",
+          "+ 120",
+          "+ 80",
+          "+ 300",
+          "+ 70"
+        ],
+        "correct_open_index": 1,
+        "correct_close_index": 4
+      }
+    },
+    {
+      "text": "Trage parantezele în jurul perechii de termeni care formează o mie rotundă.",
+      "type": "parentheses_drag",
+      "points": 10,
+      "explanation": "444 + 556 = 1 000, deci gruparea este 35 + (444 + 556) + 64.",
+      "interactive": {
+        "tokens": [
+          "35",
+          "+ 444",
+          "+ 556",
+          "+ 64"
+        ],
+        "correct_open_index": 1,
+        "correct_close_index": 3
+      }
+    },
+    {
+      "text": "Calculează în coloană suma 468 + 357.",
+      "type": "column_addition",
+      "points": 10,
+      "explanation": "Suma este 825. Marcăm coloanele în care ajunge un transport.",
+      "interactive": {
+        "addend1": "468",
+        "addend2": "357",
+        "correct_result": "825",
+        "carry_columns": [
+          true,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "text": "Calculează în coloană suma 2 384 + 4 675.",
+      "type": "column_addition",
+      "points": 10,
+      "explanation": "Suma este 7 059. Marcăm coloanele în care ajunge un transport.",
+      "interactive": {
+        "addend1": "2384",
+        "addend2": "4675",
+        "correct_result": "7059",
+        "carry_columns": [
+          true,
+          true,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "text": "Calculează în coloană suma 5 726 + 1 847.",
+      "type": "column_addition",
+      "points": 10,
+      "explanation": "Suma este 7 573. Marcăm coloanele în care ajunge un transport.",
+      "interactive": {
+        "addend1": "5726",
+        "addend2": "1847",
+        "correct_result": "7573",
+        "carry_columns": [
+          true,
+          false,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "text": "Calculează în coloană suma 3 408 + 2 576.",
+      "type": "column_addition",
+      "points": 10,
+      "explanation": "Suma este 5 984. Marcăm coloanele în care ajunge un transport.",
+      "interactive": {
+        "addend1": "3408",
+        "addend2": "2576",
+        "correct_result": "5984",
+        "carry_columns": [
+          false,
+          false,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "text": "Calculează în coloană suma 6 157 + 2 786.",
+      "type": "column_addition",
+      "points": 10,
+      "explanation": "Suma este 8 943. Marcăm coloanele în care ajunge un transport.",
+      "interactive": {
+        "addend1": "6157",
+        "addend2": "2786",
+        "correct_result": "8943",
+        "carry_columns": [
+          false,
+          true,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "text": "Calculează în coloană suma 42 315 + 35 678.",
+      "type": "column_addition",
+      "points": 10,
+      "explanation": "Suma este 77 993. Marcăm coloanele în care ajunge un transport.",
+      "interactive": {
+        "addend1": "42315",
+        "addend2": "35678",
+        "correct_result": "77993",
+        "carry_columns": [
+          false,
+          false,
+          false,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "text": "Completează adunarea 3□7 + 2□5 = 602.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Adunarea completă este 357 + 245 = 602.",
+      "interactive": {
+        "operation": "add",
+        "addend1": "357",
+        "addend2": "245",
+        "result": "602",
+        "missing": [
+          "addend1:1",
+          "addend2:1"
+        ]
+      }
+    },
+    {
+      "text": "Completează adunarea 44□ + 176 = 6□4.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Adunarea completă este 448 + 176 = 624.",
+      "interactive": {
+        "operation": "add",
+        "addend1": "448",
+        "addend2": "176",
+        "result": "624",
+        "missing": [
+          "addend1:2",
+          "result:1"
+        ]
+      }
+    },
+    {
+      "text": "Completează adunarea 2□84 + 46□5 = 70□9.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Adunarea completă este 2 384 + 4 675 = 7 059.",
+      "interactive": {
+        "operation": "add",
+        "addend1": "2384",
+        "addend2": "4675",
+        "result": "7059",
+        "missing": [
+          "addend1:1",
+          "addend2:2",
+          "result:2"
+        ]
+      }
+    },
+    {
+      "text": "Completează adunarea 57□6 + 1□47 = 757□.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Adunarea completă este 5 726 + 1 847 = 7 573.",
+      "interactive": {
+        "operation": "add",
+        "addend1": "5726",
+        "addend2": "1847",
+        "result": "7573",
+        "missing": [
+          "addend1:2",
+          "addend2:1",
+          "result:3"
+        ]
+      }
+    },
+    {
+      "text": "Completează adunarea 6157 + 27□6 = 8□4□.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Adunarea completă este 6 157 + 2 786 = 8 943.",
+      "interactive": {
+        "operation": "add",
+        "addend1": "6157",
+        "addend2": "2786",
+        "result": "8943",
+        "missing": [
+          "addend2:2",
+          "result:1",
+          "result:3"
+        ]
+      }
+    },
+    {
+      "text": "Completează adunarea 423□5 + 3□678 = 77□93.",
+      "type": "missing_digits",
+      "points": 10,
+      "explanation": "Adunarea completă este 42 315 + 35 678 = 77 993.",
+      "interactive": {
+        "operation": "add",
+        "addend1": "42315",
+        "addend2": "35678",
+        "result": "77993",
+        "missing": [
+          "addend1:3",
+          "addend2:1",
+          "result:2"
+        ]
+      }
+    },
+    {
+      "text": "Un elev a scris 468 + 357 = 815. Apasă coloana în care a greșit.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Suma corectă este 825.",
+      "interactive": {
+        "operation": "add",
+        "addend1": "468",
+        "addend2": "357",
+        "shown_result": "815",
+        "correct_result": "825",
+        "error_column": 1
+      }
+    },
+    {
+      "text": "Un elev a scris 2 384 + 4 675 = 7 049. Apasă coloana în care a greșit.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Suma corectă este 7 059.",
+      "interactive": {
+        "operation": "add",
+        "addend1": "2384",
+        "addend2": "4675",
+        "shown_result": "7049",
+        "correct_result": "7059",
+        "error_column": 2
+      }
+    },
+    {
+      "text": "Un elev a scris 5 726 + 1 847 = 7 473. Apasă coloana în care a greșit.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Suma corectă este 7 573.",
+      "interactive": {
+        "operation": "add",
+        "addend1": "5726",
+        "addend2": "1847",
+        "shown_result": "7473",
+        "correct_result": "7573",
+        "error_column": 1
+      }
+    },
+    {
+      "text": "Un elev a scris 3 408 + 2 576 = 5 994. Apasă coloana în care a greșit.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Suma corectă este 5 984.",
+      "interactive": {
+        "operation": "add",
+        "addend1": "3408",
+        "addend2": "2576",
+        "shown_result": "5994",
+        "correct_result": "5984",
+        "error_column": 2
+      }
+    },
+    {
+      "text": "Un elev a scris 6 157 + 2 786 = 8 843. Apasă coloana în care a greșit.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Suma corectă este 8 943.",
+      "interactive": {
+        "operation": "add",
+        "addend1": "6157",
+        "addend2": "2786",
+        "shown_result": "8843",
+        "correct_result": "8943",
+        "error_column": 1
+      }
+    },
+    {
+      "text": "Un elev a scris 42 315 + 35 678 = 77 983. Apasă coloana în care a greșit.",
+      "type": "error_spotting",
+      "points": 10,
+      "explanation": "Suma corectă este 77 993.",
+      "interactive": {
+        "operation": "add",
+        "addend1": "42315",
+        "addend2": "35678",
+        "shown_result": "77983",
+        "correct_result": "77993",
+        "error_column": 3
+      }
+    },
+    {
+      "text": "Mașina adună 125 la fiecare număr introdus. Completează căsuțele.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru ieșire adunăm regula; pentru o intrare lipsă scădem regula din ieșire.",
+      "interactive": {
+        "operation": "add",
+        "value": 125,
+        "rows": [
+          {
+            "input": 775,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 900
+          },
+          {
+            "input": 1200,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina adună 240 la fiecare număr introdus. Completează căsuțele.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru ieșire adunăm regula; pentru o intrare lipsă scădem regula din ieșire.",
+      "interactive": {
+        "operation": "add",
+        "value": 240,
+        "rows": [
+          {
+            "input": 385,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 1000
+          },
+          {
+            "input": 2500,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina adună 375 la fiecare număr introdus. Completează căsuțele.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru ieșire adunăm regula; pentru o intrare lipsă scădem regula din ieșire.",
+      "interactive": {
+        "operation": "add",
+        "value": 375,
+        "rows": [
+          {
+            "input": 625,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 1575
+          },
+          {
+            "input": 3000,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina adună 1 025 la fiecare număr introdus. Completează căsuțele.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru ieșire adunăm regula; pentru o intrare lipsă scădem regula din ieșire.",
+      "interactive": {
+        "operation": "add",
+        "value": 1025,
+        "rows": [
+          {
+            "input": 2500,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 4000
+          },
+          {
+            "input": 5200,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina adună 2 350 la fiecare număr introdus. Completează căsuțele.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru ieșire adunăm regula; pentru o intrare lipsă scădem regula din ieșire.",
+      "interactive": {
+        "operation": "add",
+        "value": 2350,
+        "rows": [
+          {
+            "input": 4650,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 10000
+          },
+          {
+            "input": 12000,
+            "output": null
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mașina adună 4 075 la fiecare număr introdus. Completează căsuțele.",
+      "type": "input_output",
+      "points": 10,
+      "explanation": "Pentru ieșire adunăm regula; pentru o intrare lipsă scădem regula din ieșire.",
+      "interactive": {
+        "operation": "add",
+        "value": 4075,
+        "rows": [
+          {
+            "input": 5925,
+            "output": null
+          },
+          {
+            "input": null,
+            "output": 15000
+          },
+          {
+            "input": 20000,
+            "output": null
+          }
+        ]
+      }
+    }
+  ]
 }

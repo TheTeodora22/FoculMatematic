@@ -1,3 +1,5 @@
+import json
+
 from django.contrib.auth.models import User
 from django.test import Client, TestCase
 from django.urls import reverse
@@ -9,6 +11,7 @@ from .mode_services import (
     session_is_complete,
     start_or_resume_generated_session,
     submit_generated_answer,
+    submit_parentheses_answer,
     submit_training_answer,
 )
 from .models import (
@@ -292,6 +295,578 @@ class TrainingTests(TopicModeTestMixin, TestCase):
         payload = response.json()
         self.assertFalse(payload["is_correct"])
         self.assertEqual(payload["status"], UserQuestionProgress.TRAINING_WRONG)
+
+    def test_parentheses_answer_and_json_payload(self):
+        question = Question.objects.create(
+            quiz=self.topic,
+            text="Pune parantezele.",
+            question_type=Question.TYPE_PARENTHESES_DRAG,
+            interactive_data={
+                "tokens": ["36", "+ 64", "+ 20"],
+                "correct_open_index": 0,
+                "correct_close_index": 2,
+            },
+            explanation="36 + 64 = 100.",
+        )
+        wrong = submit_parentheses_answer(self.user, question, 1, 3)
+        self.assertFalse(wrong["is_correct"])
+
+        self.client.login(username="trainuser", password="testpass123")
+        response = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": question.id, "open_index": 0, "close_index": 2},
+        )
+        self.assertEqual(response.status_code, 200)
+        payload = response.json()
+        self.assertTrue(payload["is_correct"])
+        self.assertEqual(payload["status"], UserQuestionProgress.TRAINING_CORRECT)
+
+    def test_all_subtraction_interactive_answers_are_checked(self):
+        cases = [
+            (
+                Question.TYPE_COLUMN_SUBTRACTION,
+                {
+                    "minuend": "8642",
+                    "subtrahend": "3217",
+                    "correct_result": "5425",
+                    "borrow_columns": [False, False, False, True],
+                },
+                {
+                    "result_digits": "5425",
+                    "borrow_columns": json.dumps([False, False, False, True]),
+                },
+            ),
+            (
+                Question.TYPE_MISSING_DIGITS,
+                {
+                    "minuend": "734",
+                    "subtrahend": "269",
+                    "result": "465",
+                    "missing": ["minuend:1", "subtrahend:1"],
+                },
+                {"values": json.dumps({"minuend:1": "3", "subtrahend:1": "6"})},
+            ),
+            (
+                Question.TYPE_ERROR_SPOTTING,
+                {
+                    "minuend": "5032",
+                    "subtrahend": "1876",
+                    "shown_result": "3256",
+                    "correct_result": "3156",
+                    "error_column": 1,
+                },
+                {"selected_column": "1"},
+            ),
+            (
+                Question.TYPE_PARENTHESES_TARGET,
+                {
+                    "tokens": ["80", "− 30", "+ 10"],
+                    "correct_open_index": 1,
+                    "correct_close_index": 3,
+                    "target": 40,
+                },
+                {"open_index": "1", "close_index": "3"},
+            ),
+            (
+                Question.TYPE_INPUT_OUTPUT,
+                {
+                    "operation": "subtract",
+                    "value": 275,
+                    "rows": [
+                        {"input": 1200, "output": None},
+                        {"input": None, "output": 625},
+                    ],
+                },
+                {"values": json.dumps({"0:output": "925", "1:input": "900"})},
+            ),
+        ]
+        self.client.login(username="trainuser", password="testpass123")
+
+        for index, (question_type, interactive, answer) in enumerate(cases):
+            with self.subTest(question_type=question_type):
+                question = Question.objects.create(
+                    quiz=self.topic,
+                    text=f"Exercițiu interactiv {index}",
+                    question_type=question_type,
+                    interactive_data=interactive,
+                    explanation="Rezolvare corectă.",
+                )
+                response = self.client.post(
+                    reverse("training_submit", args=[self.topic.pk]),
+                    {"question_id": question.id, **answer},
+                )
+                self.assertEqual(response.status_code, 200)
+                self.assertTrue(response.json()["is_correct"])
+                progress = UserQuestionProgress.objects.get(
+                    user=self.user, question=question
+                )
+                self.assertEqual(
+                    progress.training_status,
+                    UserQuestionProgress.TRAINING_CORRECT,
+                )
+
+    def test_addition_interactive_answers_are_checked(self):
+        cases = [
+            (
+                Question.TYPE_COLUMN_ADDITION,
+                {
+                    "addend1": "468",
+                    "addend2": "357",
+                    "correct_result": "825",
+                    "carry_columns": [True, True, False],
+                },
+                {
+                    "result_digits": "825",
+                    "borrow_columns": json.dumps([True, True, False]),
+                },
+            ),
+            (
+                Question.TYPE_MISSING_DIGITS,
+                {
+                    "operation": "add",
+                    "addend1": "357",
+                    "addend2": "245",
+                    "result": "602",
+                    "missing": ["addend1:1", "addend2:1"],
+                },
+                {"values": json.dumps({"addend1:1": "5", "addend2:1": "4"})},
+            ),
+            (
+                Question.TYPE_ERROR_SPOTTING,
+                {
+                    "operation": "add",
+                    "addend1": "468",
+                    "addend2": "357",
+                    "shown_result": "815",
+                    "correct_result": "825",
+                    "error_column": 1,
+                },
+                {"selected_column": "1"},
+            ),
+            (
+                Question.TYPE_INPUT_OUTPUT,
+                {
+                    "operation": "add",
+                    "value": 125,
+                    "rows": [
+                        {"input": 775, "output": None},
+                        {"input": None, "output": 900},
+                    ],
+                },
+                {"values": json.dumps({"0:output": "900", "1:input": "775"})},
+            ),
+        ]
+        self.client.login(username="trainuser", password="testpass123")
+        for index, (question_type, interactive, answer) in enumerate(cases):
+            with self.subTest(question_type=question_type):
+                question = Question.objects.create(
+                    quiz=self.topic,
+                    text=f"Adunare interactivă {index}",
+                    question_type=question_type,
+                    interactive_data=interactive,
+                )
+                response = self.client.post(
+                    reverse("training_submit", args=[self.topic.pk]),
+                    {"question_id": question.id, **answer},
+                )
+                self.assertEqual(response.status_code, 200)
+                self.assertTrue(response.json()["is_correct"])
+
+    def test_factor_common_interactive_answers_are_checked(self):
+        cases = [
+            (
+                Question.TYPE_FACTOR_BUILDER,
+                {"expression": "3 · 45 + 3 · 15", "common_factor": 3, "inner_terms": [45, 15], "operators": ["+"], "result": 180},
+                {"values": json.dumps({"factor": "3", "inner:0": "45", "inner:1": "15", "result": "180"})},
+            ),
+            (
+                Question.TYPE_FACTOR_ERROR,
+                {"steps": ["28 · 7 + 28 · 12", "= 28 · 19", "= 512"], "error_index": 2},
+                {"selected_step": "2"},
+            ),
+            (
+                Question.TYPE_FACTOR_MATCH,
+                {
+                    "pairs": [
+                        {"left": "7·2+7·3", "right": "7·(2+3)"},
+                        {"left": "8·9−8", "right": "8·(9−1)"},
+                        {"left": "4·5+4·5", "right": "4·(5+5)"},
+                    ],
+                    "right_order": [2, 0, 1],
+                },
+                {"values": json.dumps({"0": "0", "1": "1", "2": "2"})},
+            ),
+        ]
+        self.client.login(username="trainuser", password="testpass123")
+        for index, (question_type, interactive, answer) in enumerate(cases):
+            with self.subTest(question_type=question_type):
+                question = Question.objects.create(
+                    quiz=self.topic,
+                    text=f"Factor comun interactiv {index}",
+                    question_type=question_type,
+                    interactive_data=interactive,
+                )
+                response = self.client.post(
+                    reverse("training_submit", args=[self.topic.pk]),
+                    {"question_id": question.id, **answer},
+                )
+                self.assertEqual(response.status_code, 200)
+                self.assertTrue(response.json()["is_correct"])
+
+    def test_power_interactive_answers_are_checked(self):
+        cases = [
+            (
+                Question.TYPE_POWER_BUILDER,
+                {"mode": "compose", "base": 3, "exponent": 4, "value": 81, "factors": [3, 3, 3, 3]},
+                {"base": "3", "exponent": "4"},
+            ),
+            (
+                Question.TYPE_POWER_BUILDER,
+                {"mode": "expand", "base": 5, "exponent": 3, "value": 125, "factors": [5, 5, 5]},
+                {"factor:0": "5", "factor:1": "5", "factor:2": "5"},
+            ),
+            (
+                Question.TYPE_POWER_BUILDER,
+                {"mode": "missing", "base": 2, "exponent": 6, "value": 64, "factors": [2, 2, 2, 2, 2, 2], "missing": "value"},
+                {"value": "64"},
+            ),
+            (
+                Question.TYPE_POWER_MATCH,
+                {"pairs": [{"left": "2⁵", "right": "32"}, {"left": "3³", "right": "27"}, {"left": "5²", "right": "25"}], "right_order": [2, 0, 1]},
+                {"0": "0", "1": "1", "2": "2"},
+            ),
+            (
+                Question.TYPE_POWER_TABLE,
+                {"rows": [{"base": 2, "exponent": 5, "value": 32, "missing": "value"}, {"base": 3, "exponent": 4, "value": 81, "missing": "exponent"}]},
+                {"0:value": "32", "1:exponent": "4"},
+            ),
+            (
+                Question.TYPE_POWER_CYCLE,
+                {"base": 2, "exponent": 10, "cycle": [2, 4, 8, 6], "last_digit": 4},
+                {"cycle:0": "2", "cycle:1": "4", "cycle:2": "8", "cycle:3": "6", "last_digit": "4"},
+            ),
+            (
+                Question.TYPE_POWER_SQUARE,
+                {"side": 4, "value": 16},
+                {"base": "4", "exponent": "2", "value": "16"},
+            ),
+        ]
+        self.client.login(username="trainuser", password="testpass123")
+        for index, (question_type, interactive, values) in enumerate(cases):
+            with self.subTest(question_type=question_type):
+                question = Question.objects.create(
+                    quiz=self.topic,
+                    text=f"Putere interactivă {index}",
+                    question_type=question_type,
+                    format_tag=Question.FORMAT_INTERACTIVE,
+                    interactive_data=interactive,
+                )
+                response = self.client.post(
+                    reverse("training_submit", args=[self.topic.pk]),
+                    {"question_id": question.id, "values": json.dumps(values)},
+                )
+                self.assertEqual(response.status_code, 200)
+                self.assertTrue(response.json()["is_correct"])
+
+    def test_multiplication_interactive_answers_are_checked(self):
+        cases = [
+            (
+                Question.TYPE_COLUMN_MULTIPLICATION,
+                {
+                    "multiplicand": "128",
+                    "multiplier": "4",
+                    "correct_result": "512",
+                    "carry_columns": [True, True, False],
+                },
+                {"result_digits": "512", "borrow_columns": json.dumps([True, True, False])},
+            ),
+            (
+                Question.TYPE_MISSING_DIGITS,
+                {
+                    "operation": "multiply",
+                    "factor1": "128",
+                    "factor2": "004",
+                    "result": "512",
+                    "missing": ["factor1:1", "result:1"],
+                },
+                {"values": json.dumps({"factor1:1": "2", "result:1": "1"})},
+            ),
+            (
+                Question.TYPE_ERROR_SPOTTING,
+                {
+                    "operation": "multiply",
+                    "factor1": "128",
+                    "factor2": "004",
+                    "shown_result": "502",
+                    "correct_result": "512",
+                    "error_column": 1,
+                },
+                {"selected_column": "1"},
+            ),
+            (
+                Question.TYPE_INPUT_OUTPUT,
+                {
+                    "operation": "multiply",
+                    "value": 3,
+                    "rows": [{"input": 12, "output": None}, {"input": None, "output": 45}],
+                },
+                {"values": json.dumps({"0:output": "36", "1:input": "15"})},
+            ),
+        ]
+        self.client.login(username="trainuser", password="testpass123")
+        for index, (question_type, interactive, answer) in enumerate(cases):
+            with self.subTest(question_type=question_type):
+                question = Question.objects.create(
+                    quiz=self.topic,
+                    text=f"Înmulțire interactivă {index}",
+                    question_type=question_type,
+                    interactive_data=interactive,
+                )
+                response = self.client.post(
+                    reverse("training_submit", args=[self.topic.pk]),
+                    {"question_id": question.id, **answer},
+                )
+                self.assertEqual(response.status_code, 200)
+                self.assertTrue(response.json()["is_correct"])
+
+    def test_power_rules_and_comparison_answers_are_checked(self):
+        cases = [
+            (
+                Question.TYPE_POWER_RULE_CHAIN,
+                {"expression": "5³ · 5⁷ : 5⁴", "stages": [{"label": "5³ · 5⁷", "base": 5, "exponent": 10}, {"label": "5¹⁰ : 5⁴", "base": 5, "exponent": 6}]},
+                {"values": json.dumps({"stage:0": "10", "stage:1": "6"})},
+            ),
+            (
+                Question.TYPE_POWER_COMPARE,
+                {"left": "9¹⁵", "right": "3²⁹", "relation": ">"},
+                {"relation": ">"},
+            ),
+            (
+                Question.TYPE_POWER_ORDER,
+                {"direction": "asc", "items": [{"label": "2⁴", "value": 16}, {"label": "3³", "value": 27}, {"label": "5²", "value": 25}], "display_order": [1, 0, 2]},
+                {"order": json.dumps([0, 2, 1])},
+            ),
+        ]
+        self.client.login(username="trainuser", password="testpass123")
+        for index, (question_type, interactive, answer) in enumerate(cases):
+            with self.subTest(question_type=question_type):
+                question = Question.objects.create(
+                    quiz=self.topic,
+                    text=f"Regulă sau comparație {index}",
+                    question_type=question_type,
+                    format_tag=Question.FORMAT_INTERACTIVE,
+                    interactive_data=interactive,
+                )
+                response = self.client.post(
+                    reverse("training_submit", args=[self.topic.pk]),
+                    {"question_id": question.id, **answer},
+                )
+                self.assertEqual(response.status_code, 200)
+                self.assertTrue(response.json()["is_correct"])
+
+    def test_operation_order_interactive_answers_are_checked(self):
+        cases = [
+            (
+                Question.TYPE_OPERATION_SEQUENCE,
+                {"expression": "2 + 3² · 4", "steps": ["3²", "9 · 4", "2 + 36"], "display_order": [2, 0, 1], "correct_order": [0, 1, 2]},
+                {"order": json.dumps([0, 1, 2])},
+            ),
+            (
+                Question.TYPE_OPERATION_WORKBENCH,
+                {"expression": "80 − 7 · 6", "stages": [{"expression": "7 · 6", "answer": 42}, {"expression": "80 − 42", "answer": 38}]},
+                {"values": json.dumps({"stage:0": "42", "stage:1": "38"})},
+            ),
+        ]
+        self.client.login(username="trainuser", password="testpass123")
+        for index, (question_type, interactive, answer) in enumerate(cases):
+            with self.subTest(question_type=question_type):
+                question = Question.objects.create(
+                    quiz=self.topic,
+                    text=f"Ordinea operațiilor {index}",
+                    question_type=question_type,
+                    format_tag=Question.FORMAT_INTERACTIVE,
+                    interactive_data=interactive,
+                )
+                response = self.client.post(
+                    reverse("training_submit", args=[self.topic.pk]),
+                    {"question_id": question.id, **answer},
+                )
+                self.assertEqual(response.status_code, 200)
+                self.assertTrue(response.json()["is_correct"])
+
+    def test_division_interactive_answers_are_checked(self):
+        cases = [
+            (Question.TYPE_COLUMN_DIVISION, {"dividend": 624, "divisor": 4, "quotient": 156, "remainders": [2, 2, 0]}, {"quotient": "156", "remainders": json.dumps(["2", "2", "0"])}),
+            (Question.TYPE_COLUMN_DIVISION, {"dividend": 235, "divisor": 7, "quotient": 33, "remainder": 4, "remainders": [2, 2, 4]}, {"quotient": "33", "remainders": json.dumps(["2", "2", "4"])}),
+            (Question.TYPE_MISSING_DIGITS, {"operation": "divide", "dividend": "624", "divisor": "004", "quotient": "156", "missing": ["dividend:1", "quotient:1"]}, {"values": json.dumps({"dividend:1": "2", "quotient:1": "5"})}),
+            (Question.TYPE_ERROR_SPOTTING, {"operation": "divide", "dividend": "624", "divisor": "004", "shown_result": "166", "correct_result": "156", "error_column": 1}, {"selected_column": "1"}),
+            (Question.TYPE_DIVISION_RELATION, {"dividend": 2268, "divisor": 63, "quotient": 36, "missing": "quotient"}, {"value": "36"}),
+            (Question.TYPE_DIVISION_RELATION, {"dividend": 104, "divisor": 5, "quotient": 20, "remainder": 4, "missing": "remainder"}, {"value": "4"}),
+            (Question.TYPE_INPUT_OUTPUT, {"operation": "divide", "value": 4, "rows": [{"input": 624, "output": None}, {"input": None, "output": 200}]}, {"values": json.dumps({"0:output": "156", "1:input": "800"})}),
+            (Question.TYPE_OPERATION_CHAIN, {"start": 1800, "steps": [{"operation": "divide", "value": 12, "result": 150}, {"operation": "multiply", "value": 5, "result": 750}]}, {"values": json.dumps(["150", "750"])}),
+            (Question.TYPE_DIVISION_TABLE, {"rows": [{"dividend": 624, "divisor": 4, "quotient": 156, "missing": "quotient"}, {"dividend": 735, "divisor": 35, "quotient": 21, "missing": "divisor"}]}, {"values": json.dumps({"0:quotient": "156", "1:divisor": "35"})}),
+            (Question.TYPE_DIVISION_TABLE, {"rows": [{"dividend": 235, "divisor": 7, "quotient": 33, "remainder": 4, "missing": "remainder"}, {"dividend": 566, "divisor": 9, "quotient": 62, "remainder": 8, "missing": "quotient"}]}, {"values": json.dumps({"0:remainder": "4", "1:quotient": "62"})}),
+            (Question.TYPE_NUMERIC_INPUT, {"answer": 45, "suffix": "kg"}, {"value": "45"}),
+        ]
+        self.client.login(username="trainuser", password="testpass123")
+        for index, (question_type, interactive, answer) in enumerate(cases):
+            with self.subTest(question_type=question_type):
+                question = Question.objects.create(quiz=self.topic, text=f"Împărțire interactivă {index}", question_type=question_type, format_tag=Question.FORMAT_INTERACTIVE, interactive_data=interactive)
+                response = self.client.post(reverse("training_submit", args=[self.topic.pk]), {"question_id": question.id, **answer})
+                self.assertEqual(response.status_code, 200)
+                self.assertTrue(response.json()["is_correct"])
+
+    def test_unit_reduction_answers_are_checked(self):
+        question = Question.objects.create(
+            quiz=self.topic,
+            text="Alege sensul dependenței.",
+            question_type=Question.TYPE_UNIT_REDUCTION,
+            format_tag=Question.FORMAT_INTERACTIVE,
+            interactive_data={
+                "mode": "dependency_direction",
+                "first_change": "mai multe robinete",
+                "second_change": "mai puțin timp",
+                "answers": {"relation": "inverse"},
+            },
+        )
+        self.client.login(username="trainuser", password="testpass123")
+        response = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": question.id, "values": json.dumps({"relation": "inverse"})},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.json()["is_correct"])
+
+    def test_numeral_system_interactive_answers_are_checked(self):
+        cases = [
+            (
+                Question.TYPE_BASE_VALUES,
+                {"mode": "complete_equality", "left_value": "13", "left_base": 10, "answer_base": 2, "answers": {"value": "1101"}},
+                {"values": json.dumps({"value": "1101"})},
+            ),
+            (
+                Question.TYPE_BASE_MATCH,
+                {"pairs": [{"left": "5", "right": "101"}, {"left": "6", "right": "110"}, {"left": "7", "right": "111"}], "right_order": [2, 0, 1]},
+                {"values": json.dumps({"0": "0", "1": "1", "2": "2"})},
+            ),
+            (
+                Question.TYPE_BINARY_TOGGLE,
+                {"decimal": 13, "binary": "1101"},
+                {"values": json.dumps({"bits": "1101"})},
+            ),
+            (
+                Question.TYPE_BASE_ERROR,
+                {"steps": ["13 : 2 = 6 r 1", "6 : 2 = 3 r 0", "3 : 2 = 1 r 0"], "error_index": 2},
+                {"selected_step": "2"},
+            ),
+        ]
+        self.client.login(username="trainuser", password="testpass123")
+        for index, (question_type, interactive, answer) in enumerate(cases):
+            with self.subTest(question_type=question_type):
+                question = Question.objects.create(
+                    quiz=self.topic,
+                    text=f"Sisteme de numerație {index}",
+                    question_type=question_type,
+                    format_tag=Question.FORMAT_INTERACTIVE,
+                    interactive_data=interactive,
+                )
+                response = self.client.post(
+                    reverse("training_submit", args=[self.topic.pk]),
+                    {"question_id": question.id, **answer},
+                )
+                self.assertEqual(response.status_code, 200)
+                self.assertTrue(response.json()["is_correct"])
+
+    def test_divisibility_interactive_answers_are_checked(self):
+        cases = [
+            (
+                Question.TYPE_DIVISIBILITY_VALUES,
+                {"mode": "relation", "a": 56, "b": 7, "c": 8, "missing": "c", "fields": [{"key": "c"}], "answers": {"c": 8}},
+                {"values": json.dumps({"c": "8"})},
+            ),
+            (
+                Question.TYPE_DIVISIBILITY_VALUES,
+                {"mode": "digit_sum", "number": 6498, "criterion": 9, "fields": [{"key": "sum"}], "answers": {"sum": 27}},
+                {"values": json.dumps({"sum": "27"})},
+            ),
+            (
+                Question.TYPE_DIVISIBILITY_SELECT,
+                {"mode": "divisors", "cards": [{"id": "1", "label": "1"}, {"id": "2", "label": "2"}, {"id": "3", "label": "3"}, {"id": "4", "label": "4"}], "correct_ids": ["1", "2", "4"]},
+                {"selected_ids": json.dumps(["4", "1", "2"])},
+            ),
+            (
+                Question.TYPE_DIVISIBILITY_SORT,
+                {"mode": "two_zones", "zones": [{"id": "yes", "label": "Da"}, {"id": "no", "label": "Nu"}], "cards": [{"id": "12", "label": "12", "zone": "yes"}, {"id": "14", "label": "14", "zone": "no"}, {"id": "20", "label": "20", "zone": "yes"}, {"id": "22", "label": "22", "zone": "no"}]},
+                {"placements": json.dumps({"12": "yes", "14": "no", "20": "yes", "22": "no"})},
+            ),
+            (
+                Question.TYPE_DIVISIBILITY_ERROR,
+                {"steps": ["7 · 1 = 7", "7 · 2 = 14", "7 · 3 = 20"], "error_index": 2},
+                {"selected_step": "2"},
+            ),
+            (
+                Question.TYPE_CRITERIA_TABLE,
+                {
+                    "numbers": [10, 36, 45],
+                    "divisors": [2, 5],
+                    "answers": {"0:0": True, "0:1": True, "0:2": False, "1:0": True, "1:1": False, "1:2": True},
+                },
+                {"values": json.dumps({"0:0": True, "0:1": True, "0:2": False, "1:0": True, "1:1": False, "1:2": True})},
+            ),
+            (
+                Question.TYPE_PRIME_WORKBENCH,
+                {
+                    "mode": "trial",
+                    "number": 71,
+                    "tests": [{"divisor": 2, "remainder": 1}, {"divisor": 3, "remainder": 2}],
+                    "answers": {"remainder:2": 1, "remainder:3": 2, "classification": "prim"},
+                },
+                {"values": json.dumps({"remainder:2": "1", "remainder:3": "2", "classification": "prim"})},
+            ),
+            (
+                Question.TYPE_PRIME_WORKBENCH,
+                {"mode": "prime_pair", "target": 30, "operator": "+", "fields": [{"key": "left"}, {"key": "right"}], "answers": {"left": 13, "right": 17}},
+                {"values": json.dumps({"left": "7", "right": "23"})},
+            ),
+            (
+                Question.TYPE_DECIMAL_WORKBENCH,
+                {"mode": "conversion", "source": "37/100", "target_kind": "decimal", "fields": [{"key": "decimal"}], "answers": {"decimal": "0,37"}},
+                {"values": json.dumps({"decimal": "0.37"})},
+            ),
+        ]
+        self.client.login(username="trainuser", password="testpass123")
+        for index, (question_type, interactive, answer) in enumerate(cases):
+            with self.subTest(question_type=question_type):
+                question = Question.objects.create(
+                    quiz=self.topic,
+                    text=f"Divizibilitate interactivă {index}",
+                    question_type=question_type,
+                    format_tag=Question.FORMAT_INTERACTIVE,
+                    interactive_data=interactive,
+                )
+                response = self.client.post(
+                    reverse("training_submit", args=[self.topic.pk]),
+                    {"question_id": question.id, **answer},
+                )
+                self.assertEqual(response.status_code, 200)
+                self.assertTrue(response.json()["is_correct"])
+
+    def test_generated_quiz_excludes_parentheses_questions(self):
+        Question.objects.create(
+            quiz=self.topic,
+            text="Exercițiu interactiv",
+            question_type=Question.TYPE_PARENTHESES_DRAG,
+            interactive_data={
+                "tokens": ["36", "+ 64", "+ 20"],
+                "correct_open_index": 0,
+                "correct_close_index": 2,
+            },
+        )
+        picked = pick_questions_for_generated_quiz(self.user, self.topic, count=20)
+        self.assertTrue(picked)
+        self.assertTrue(
+            all(q.question_type == Question.TYPE_MULTIPLE_CHOICE for q in picked)
+        )
 
     def test_training_submit_requires_login(self):
         q0, correct0 = self.questions[0]
