@@ -1,6 +1,1061 @@
 {
   "title": "Împărțirea unei fracții zecimale cu un număr finit de zecimale nenule la un număr natural nenul; împărțirea a două fracții zecimale cu un număr finit de zecimale nenule; transformarea unei fracții zecimale periodice în fracție ordinară",
   "description": "Clasa a 5-a · Fracții zecimale",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Împarte în coloană 12,75 : 3 (A).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": "12,75",
+        "divisor": 3,
+        "display_dividend": "12,75",
+        "display_divisor": 3,
+        "quotient": "4,25",
+        "remainder": 0,
+        "remainders": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "calculation_base": "1275",
+        "calculation_digits": "1275",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest după cifra 3",
+          "Rest final"
+        ],
+        "instruction": "Împarte ca la numere naturale, fără să pierzi poziția virgulei din deîmpărțit."
+      },
+      "explanation": "Împărțirea echivalentă este 12,75 : 3, iar câtul este 4,25."
+    },
+    {
+      "text": "Împarte în coloană 72,15 : 5 (B).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": "72,15",
+        "divisor": 5,
+        "display_dividend": "72,15",
+        "display_divisor": 5,
+        "quotient": "14,43",
+        "remainder": 0,
+        "remainders": [
+          2,
+          2,
+          1,
+          0
+        ],
+        "calculation_base": "7215",
+        "calculation_digits": "7215",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest după cifra 3",
+          "Rest final"
+        ],
+        "instruction": "Împarte ca la numere naturale, fără să pierzi poziția virgulei din deîmpărțit."
+      },
+      "explanation": "Împărțirea echivalentă este 72,15 : 5, iar câtul este 14,43."
+    },
+    {
+      "text": "Împarte în coloană 12,9 : 3 (C).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": "12,9",
+        "divisor": 3,
+        "display_dividend": "12,9",
+        "display_divisor": 3,
+        "quotient": "4,3",
+        "remainder": 0,
+        "remainders": [
+          1,
+          0,
+          0
+        ],
+        "calculation_base": "129",
+        "calculation_digits": "129",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest final"
+        ],
+        "instruction": "Împarte ca la numere naturale, fără să pierzi poziția virgulei din deîmpărțit."
+      },
+      "explanation": "Împărțirea echivalentă este 12,9 : 3, iar câtul este 4,3."
+    },
+    {
+      "text": "Împarte în coloană 169,36 : 8 (D).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": "169,36",
+        "divisor": 8,
+        "display_dividend": "169,36",
+        "display_divisor": 8,
+        "quotient": "21,17",
+        "remainder": 0,
+        "remainders": [
+          1,
+          0,
+          1,
+          5,
+          0
+        ],
+        "calculation_base": "16936",
+        "calculation_digits": "16936",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest după cifra 3",
+          "Rest după cifra 4",
+          "Rest final"
+        ],
+        "instruction": "Împarte ca la numere naturale, fără să pierzi poziția virgulei din deîmpărțit."
+      },
+      "explanation": "Împărțirea echivalentă este 169,36 : 8, iar câtul este 21,17."
+    },
+    {
+      "text": "Împarte în coloană 3,21 : 0,5 (E).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": "32,1",
+        "divisor": 5,
+        "display_dividend": "32,1",
+        "display_divisor": 5,
+        "quotient": "6,42",
+        "remainder": 0,
+        "remainders": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "calculation_base": "321",
+        "calculation_digits": "3210",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest după cifra 3",
+          "Rest final"
+        ],
+        "instruction": "Am mutat virgula în ambele numere până când împărțitorul a devenit natural. Completează câtul și resturile."
+      },
+      "explanation": "Împărțirea echivalentă este 32,1 : 5, iar câtul este 6,42."
+    },
+    {
+      "text": "Împarte în coloană 435,2 : 0,04 (F).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": "43520",
+        "divisor": 4,
+        "display_dividend": "43520",
+        "display_divisor": 4,
+        "quotient": "10880",
+        "remainder": 0,
+        "remainders": [
+          0,
+          3,
+          3,
+          0,
+          0
+        ],
+        "calculation_base": "43520",
+        "calculation_digits": "43520",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest după cifra 3",
+          "Rest după cifra 4",
+          "Rest final"
+        ],
+        "instruction": "Am mutat virgula în ambele numere până când împărțitorul a devenit natural. Completează câtul și resturile."
+      },
+      "explanation": "Împărțirea echivalentă este 43520 : 4, iar câtul este 10880."
+    },
+    {
+      "text": "Împarte în coloană 157,293 : 1,25 (G).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": "15729,3",
+        "divisor": 125,
+        "display_dividend": "15729,3",
+        "display_divisor": 125,
+        "quotient": "125,8344",
+        "remainder": 0,
+        "remainders": [
+          1,
+          15,
+          32,
+          72,
+          104,
+          43,
+          55,
+          50,
+          0
+        ],
+        "calculation_base": "157293",
+        "calculation_digits": "157293000",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest după cifra 3",
+          "Rest după cifra 4",
+          "Rest după cifra 5",
+          "Rest după cifra 6",
+          "Rest după coborârea zeroului 1",
+          "Rest după coborârea zeroului 2",
+          "Rest final"
+        ],
+        "instruction": "Am mutat virgula în ambele numere până când împărțitorul a devenit natural. Completează câtul și resturile."
+      },
+      "explanation": "Împărțirea echivalentă este 15729,3 : 125, iar câtul este 125,8344."
+    },
+    {
+      "text": "Împarte în coloană 15,2 : 0,8 (H).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": "152",
+        "divisor": 8,
+        "display_dividend": "152",
+        "display_divisor": 8,
+        "quotient": "19",
+        "remainder": 0,
+        "remainders": [
+          1,
+          7,
+          0
+        ],
+        "calculation_base": "152",
+        "calculation_digits": "152",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest final"
+        ],
+        "instruction": "Am mutat virgula în ambele numere până când împărțitorul a devenit natural. Completează câtul și resturile."
+      },
+      "explanation": "Împărțirea echivalentă este 152 : 8, iar câtul este 19."
+    },
+    {
+      "text": "Așază virgula după împărțirea la o putere a lui 10 (A).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "comma",
+        "digits": "237",
+        "places": 2,
+        "answers": {
+          "position": "1"
+        }
+      },
+      "explanation": "Mutăm virgula spre stânga cu numărul cerut de poziții și obținem 2,37."
+    },
+    {
+      "text": "Așază virgula după împărțirea la o putere a lui 10 (B).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "comma",
+        "digits": "1245",
+        "places": 3,
+        "answers": {
+          "position": "1"
+        }
+      },
+      "explanation": "Mutăm virgula spre stânga cu numărul cerut de poziții și obținem 1,245."
+    },
+    {
+      "text": "Așază virgula după împărțirea la o putere a lui 10 (C).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "comma",
+        "digits": "002134",
+        "places": 5,
+        "answers": {
+          "position": "1"
+        }
+      },
+      "explanation": "Mutăm virgula spre stânga cu numărul cerut de poziții și obținem 0,02134."
+    },
+    {
+      "text": "Așază virgula după împărțirea la o putere a lui 10 (D).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "comma",
+        "digits": "00004",
+        "places": 4,
+        "answers": {
+          "position": "1"
+        }
+      },
+      "explanation": "Mutăm virgula spre stânga cu numărul cerut de poziții și obținem 0,0004."
+    },
+    {
+      "text": "Așază virgula după împărțirea la o putere a lui 10 (E).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "comma",
+        "digits": "129567",
+        "places": 5,
+        "answers": {
+          "position": "1"
+        }
+      },
+      "explanation": "Mutăm virgula spre stânga cu numărul cerut de poziții și obținem 1,29567."
+    },
+    {
+      "text": "Transformă împărțitorii în numere naturale (A).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "classification",
+        "instruction": "Alege puterea lui 10 cu care trebuie înmulțite ambele numere.",
+        "items": [
+          {
+            "id": "a",
+            "label": "3,21 : 0,5"
+          },
+          {
+            "id": "b",
+            "label": "435,2 : 0,04"
+          },
+          {
+            "id": "c",
+            "label": "157,293 : 1,25"
+          }
+        ],
+        "categories": [
+          {
+            "value": "1",
+            "label": "× 1"
+          },
+          {
+            "value": "10",
+            "label": "× 10"
+          },
+          {
+            "value": "100",
+            "label": "× 100"
+          },
+          {
+            "value": "1000",
+            "label": "× 1 000"
+          }
+        ],
+        "answers": {
+          "class:a": "10",
+          "class:b": "100",
+          "class:c": "100"
+        }
+      },
+      "explanation": "Numărăm zecimalele împărțitorului și înmulțim ambele numere cu puterea lui 10 corespunzătoare."
+    },
+    {
+      "text": "Transformă împărțitorii în numere naturale (B).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "classification",
+        "instruction": "Alege puterea lui 10 cu care trebuie înmulțite ambele numere.",
+        "items": [
+          {
+            "id": "a",
+            "label": "2,4 : 0,8"
+          },
+          {
+            "id": "b",
+            "label": "31,08 : 0,008"
+          },
+          {
+            "id": "c",
+            "label": "23,46 : 3"
+          }
+        ],
+        "categories": [
+          {
+            "value": "1",
+            "label": "× 1"
+          },
+          {
+            "value": "10",
+            "label": "× 10"
+          },
+          {
+            "value": "100",
+            "label": "× 100"
+          },
+          {
+            "value": "1000",
+            "label": "× 1 000"
+          }
+        ],
+        "answers": {
+          "class:a": "10",
+          "class:b": "1000",
+          "class:c": "1"
+        }
+      },
+      "explanation": "Numărăm zecimalele împărțitorului și înmulțim ambele numere cu puterea lui 10 corespunzătoare."
+    },
+    {
+      "text": "Transformă împărțitorii în numere naturale (C).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "classification",
+        "instruction": "Alege puterea lui 10 cu care trebuie înmulțite ambele numere.",
+        "items": [
+          {
+            "id": "a",
+            "label": "70,23 : 2,4"
+          },
+          {
+            "id": "b",
+            "label": "850,8 : 0,15"
+          },
+          {
+            "id": "c",
+            "label": "44 : 0,055"
+          }
+        ],
+        "categories": [
+          {
+            "value": "1",
+            "label": "× 1"
+          },
+          {
+            "value": "10",
+            "label": "× 10"
+          },
+          {
+            "value": "100",
+            "label": "× 100"
+          },
+          {
+            "value": "1000",
+            "label": "× 1 000"
+          }
+        ],
+        "answers": {
+          "class:a": "10",
+          "class:b": "100",
+          "class:c": "1000"
+        }
+      },
+      "explanation": "Numărăm zecimalele împărțitorului și înmulțim ambele numere cu puterea lui 10 corespunzătoare."
+    },
+    {
+      "text": "Transformă împărțitorii în numere naturale (D).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "classification",
+        "instruction": "Alege puterea lui 10 cu care trebuie înmulțite ambele numere.",
+        "items": [
+          {
+            "id": "a",
+            "label": "18,9 : 3,2"
+          },
+          {
+            "id": "b",
+            "label": "44,85 : 2,5"
+          },
+          {
+            "id": "c",
+            "label": "72,066 : 6"
+          }
+        ],
+        "categories": [
+          {
+            "value": "1",
+            "label": "× 1"
+          },
+          {
+            "value": "10",
+            "label": "× 10"
+          },
+          {
+            "value": "100",
+            "label": "× 100"
+          },
+          {
+            "value": "1000",
+            "label": "× 1 000"
+          }
+        ],
+        "answers": {
+          "class:a": "10",
+          "class:b": "10",
+          "class:c": "1"
+        }
+      },
+      "explanation": "Numărăm zecimalele împărțitorului și înmulțim ambele numere cu puterea lui 10 corespunzătoare."
+    },
+    {
+      "text": "Calculează împărțirea din seria A.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "14,3 : 5 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "2,86"
+        }
+      },
+      "explanation": "Rezultatul corect este 2,86."
+    },
+    {
+      "text": "Calculează împărțirea din seria B.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "12,7 : 20 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "0,635"
+        }
+      },
+      "explanation": "Rezultatul corect este 0,635."
+    },
+    {
+      "text": "Calculează împărțirea din seria C.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "55,79 : 4 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "13,9475"
+        }
+      },
+      "explanation": "Rezultatul corect este 13,9475."
+    },
+    {
+      "text": "Calculează împărțirea din seria D.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "129,567 : 100 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "1,29567"
+        }
+      },
+      "explanation": "Rezultatul corect este 1,29567."
+    },
+    {
+      "text": "Calculează împărțirea din seria E.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "2,(4) + 3,1(2) = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "5,5(6)"
+        }
+      },
+      "explanation": "2,(4)=22/9 și 3,1(2)=281/90; suma este 501/90=5,5(6)."
+    },
+    {
+      "text": "Detectivul greșelilor A: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "23,7 : 10",
+          "Mutăm virgula o poziție spre dreapta",
+          "Obținem 2,37"
+        ],
+        "error_index": 1
+      },
+      "explanation": "La împărțirea cu 10, virgula se mută o poziție spre stânga."
+    },
+    {
+      "text": "Detectivul greșelilor B: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "3,21 : 0,5",
+          "Înmulțim numai împărțitorul cu 10",
+          "Obținem 3,21 : 5",
+          "Câtul este 0,642"
+        ],
+        "error_index": 1
+      },
+      "explanation": "Trebuie să înmulțim ambele numere cu 10: 32,1 : 5 = 6,42."
+    },
+    {
+      "text": "Detectivul greșelilor C: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "0,(29) are perioada 29",
+          "Scriem 29 la numărător",
+          "La numitor scriem 9",
+          "Fracția este 29/9"
+        ],
+        "error_index": 2
+      },
+      "explanation": "Pentru două cifre în perioadă, numitorul este 99; fracția este 29/99."
+    },
+    {
+      "text": "Detectivul greșelilor D: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "8,2(7)",
+          "Scădem numărul fără paranteză: 827 − 82 = 745",
+          "Numitorul este 90",
+          "Simplificăm 745/90 la 149/9"
+        ],
+        "error_index": 3
+      },
+      "explanation": "Simplificarea corectă este 745/90 = 149/18."
+    },
+    {
+      "text": "Transformă numărul periodic 4,(7) în fracție ordinară (A).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "conversion",
+        "source": "4,(7)",
+        "target_kind": "fraction",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor"
+          }
+        ],
+        "answers": {
+          "numerator": "43",
+          "denominator": "9"
+        }
+      },
+      "explanation": "4,(7)=4+7/9=43/9."
+    },
+    {
+      "text": "Transformă numărul periodic 0,(29) în fracție ordinară (B).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "conversion",
+        "source": "0,(29)",
+        "target_kind": "fraction",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor"
+          }
+        ],
+        "answers": {
+          "numerator": "29",
+          "denominator": "99"
+        }
+      },
+      "explanation": "Perioada are două cifre, deci 0,(29)=29/99."
+    },
+    {
+      "text": "Transformă numărul periodic 1,(0258) în fracție ordinară (C).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "conversion",
+        "source": "1,(0258)",
+        "target_kind": "fraction",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor"
+          }
+        ],
+        "answers": {
+          "numerator": "3419",
+          "denominator": "3333"
+        }
+      },
+      "explanation": "1,(0258)=10257/9999, iar prin simplificare obținem 3419/3333."
+    },
+    {
+      "text": "Transformă numărul periodic 11,(8) în fracție ordinară (D).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "conversion",
+        "source": "11,(8)",
+        "target_kind": "fraction",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor"
+          }
+        ],
+        "answers": {
+          "numerator": "107",
+          "denominator": "9"
+        }
+      },
+      "explanation": "11,(8)=11+8/9=107/9."
+    },
+    {
+      "text": "Transformă numărul periodic 0,(031) în fracție ordinară (E).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "conversion",
+        "source": "0,(031)",
+        "target_kind": "fraction",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor"
+          }
+        ],
+        "answers": {
+          "numerator": "31",
+          "denominator": "999"
+        }
+      },
+      "explanation": "Perioada are trei cifre, deci numitorul inițial este 999."
+    },
+    {
+      "text": "Transformă numărul periodic 8,2(7) în fracție ordinară (F).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "conversion",
+        "source": "8,2(7)",
+        "target_kind": "fraction",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor"
+          }
+        ],
+        "answers": {
+          "numerator": "149",
+          "denominator": "18"
+        }
+      },
+      "explanation": "(827−82)/90=745/90=149/18."
+    },
+    {
+      "text": "Transformă numărul periodic 0,23(731) în fracție ordinară (G).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "conversion",
+        "source": "0,23(731)",
+        "target_kind": "fraction",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor"
+          }
+        ],
+        "answers": {
+          "numerator": "5927",
+          "denominator": "24975"
+        }
+      },
+      "explanation": "(23731−23)/99900=23708/99900=5927/24975."
+    },
+    {
+      "text": "Transformă numărul periodic 2,4(09) în fracție ordinară (H).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "conversion",
+        "source": "2,4(09)",
+        "target_kind": "fraction",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor"
+          }
+        ],
+        "answers": {
+          "numerator": "53",
+          "denominator": "22"
+        }
+      },
+      "explanation": "(2409−24)/990=2385/990=53/22."
+    },
+    {
+      "text": "Transformă numărul periodic 0,1(6) în fracție ordinară (I).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "conversion",
+        "source": "0,1(6)",
+        "target_kind": "fraction",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor"
+          }
+        ],
+        "answers": {
+          "numerator": "1",
+          "denominator": "6"
+        }
+      },
+      "explanation": "(16−1)/90=15/90=1/6."
+    },
+    {
+      "text": "Ioana plătește 12,75 lei pentru 3 creioane identice. Cât costă un creion?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "12,75 : 3 = □ lei",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "4,25"
+        }
+      },
+      "explanation": "Un creion costă 4,25 lei."
+    },
+    {
+      "text": "Zece țevi identice cântăresc 6,5 tone. Cât cântărește o țeavă?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "6,5 : 10 = □ t",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "0,65"
+        }
+      },
+      "explanation": "O țeavă cântărește 0,65 t."
+    },
+    {
+      "text": "60 de ace cântăresc 120,48 g. Cât cântăresc 12 ace?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "120,48 : 60 × 12 = □ g",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "24,096"
+        }
+      },
+      "explanation": "Un ac cântărește 2,008 g, iar 12 ace cântăresc 24,096 g."
+    },
+    {
+      "text": "Zece caiete identice cântăresc 2,345 kg. Cât cântărește un caiet?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "2,345 : 10 = □ kg",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "0,2345"
+        }
+      },
+      "explanation": "Un caiet cântărește 0,2345 kg."
+    },
+    {
+      "text": "Determină numărul de 100 de ori mai mic decât 263.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "263 : 100 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "2,63"
+        }
+      },
+      "explanation": "Împărțim la 100 și obținem 2,63."
+    },
+    {
+      "text": "Opt recipiente conțin împreună 31,08 l. Câți litri sunt într-un recipient?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "31,08 : 8 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "3,885"
+        }
+      },
+      "explanation": "Într-un recipient sunt 3,885 l."
+    },
+    {
+      "text": "Un traseu de 44,85 km este de 2,5 ori mai lung decât alt traseu. Care este lungimea traseului mai scurt?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "44,85 : 2,5 = □ km",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "17,94"
+        }
+      },
+      "explanation": "44,85 : 2,5 = 448,5 : 25 = 17,94 km."
+    }
+  ]
 }

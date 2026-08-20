@@ -1,6 +1,1328 @@
 {
-  "title": "Mulțimea numerelor reale. Operații, ordonare, modul și aproximări",
-  "description": "Clasa a 9-a · Mulțimi și logică matematică",
-  "difficulty": "easy",
-  "questions": []
+  "title": "Mulțimea numerelor reale. Operații algebrice, puteri și radicali",
+  "description": "Clasa a 9-a · Mulțimi și elemente de logică matematică",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Simplifică expresia și scrie rezultatul final.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Dezvoltăm cele două pătrate și reducem termenii asemenea: 4x²−12x+9−x²+6x−9=3x²−6x.",
+      "interactive": {
+        "mode": "simplify",
+        "expression": "(2x − 3)² − (x − 3)²",
+        "fields": [
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "result": "3x²−6x"
+        }
+      }
+    },
+    {
+      "text": "Simplifică folosind formula diferenței de pătrate.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aplicăm (u−v)(u+v)=u²−v²: (2√2)²−(3a)²=8−9a².",
+      "interactive": {
+        "mode": "simplify",
+        "expression": "(2√2 − 3a)(2√2 + 3a)",
+        "fields": [
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "result": "8−9a²"
+        }
+      }
+    },
+    {
+      "text": "Simplifică puterile, pentru a ≠ 0.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Adunăm exponenții la înmulțire și îl scădem la împărțire: a^(5+2−3)=a⁴.",
+      "interactive": {
+        "mode": "simplify",
+        "expression": "a⁵ · a² : a³",
+        "fields": [
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "result": "a⁴"
+        }
+      }
+    },
+    {
+      "text": "Calculează puterea monomului.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ridicăm la cub atât coeficientul, cât și litera: (−2)³a³=−8a³.",
+      "interactive": {
+        "mode": "simplify",
+        "expression": "(−2a)³",
+        "fields": [
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "result": "−8a³"
+        }
+      }
+    },
+    {
+      "text": "Simplifică expresia cu radicali.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "√50=5√2 și 2√8=4√2, deci diferența este √2.",
+      "interactive": {
+        "mode": "simplify",
+        "expression": "√50 − 2√8",
+        "fields": [
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "result": "√2"
+        }
+      }
+    },
+    {
+      "text": "Completează formula pătratului unei sume.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Termenul din mijloc este dublul produsului: 2ab.",
+      "interactive": {
+        "mode": "complete_rule",
+        "expression": "(a + b)² = a² + □ + b²",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Termenul lipsă"
+          }
+        ],
+        "answers": {
+          "missing": "2ab"
+        }
+      }
+    },
+    {
+      "text": "Completează regula puterilor cu aceeași bază.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La înmulțirea puterilor cu aceeași bază, exponenții se adună.",
+      "interactive": {
+        "mode": "complete_rule",
+        "expression": "aᵐ · aⁿ = a□",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Exponentul rezultat"
+          }
+        ],
+        "answers": {
+          "missing": "m+n"
+        }
+      }
+    },
+    {
+      "text": "Completează regula împărțirii puterilor, a ≠ 0.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La împărțire, exponenții se scad.",
+      "interactive": {
+        "mode": "complete_rule",
+        "expression": "aᵐ : aⁿ = a□",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Exponentul rezultat"
+          }
+        ],
+        "answers": {
+          "missing": "m−n"
+        }
+      }
+    },
+    {
+      "text": "Completează proprietatea elementului neutru.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul 1 este element neutru pentru înmulțire.",
+      "interactive": {
+        "mode": "complete_rule",
+        "expression": "a · □ = a",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Numărul lipsă"
+          }
+        ],
+        "answers": {
+          "missing": "1"
+        }
+      }
+    },
+    {
+      "text": "Decide dacă afirmația este adevărată sau falsă — varianta 1.",
+      "type": "algebra_workbench",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "În general √(a²)=|a|. Egalitatea cu a este sigură numai pentru a≥0.",
+      "interactive": {
+        "mode": "true_false",
+        "expression": "Pentru orice a real, √(a²) = a.",
+        "choices": [
+          "Adevărat",
+          "Fals"
+        ],
+        "answers": {
+          "choice": 1
+        }
+      }
+    },
+    {
+      "text": "Decide dacă afirmația este adevărată sau falsă — varianta 2.",
+      "type": "algebra_workbench",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Aceasta este regula produsului radicalilor pentru numere nenegative.",
+      "interactive": {
+        "mode": "true_false",
+        "expression": "Pentru a,b ≥ 0, √a · √b = √(ab).",
+        "choices": [
+          "Adevărat",
+          "Fals"
+        ],
+        "answers": {
+          "choice": 0
+        }
+      }
+    },
+    {
+      "text": "Decide dacă afirmația este adevărată sau falsă — varianta 3.",
+      "type": "algebra_workbench",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Lipsește termenul 2ab; formula corectă este a²+2ab+b².",
+      "interactive": {
+        "mode": "true_false",
+        "expression": "(a + b)² = a² + b² pentru orice a,b reale.",
+        "choices": [
+          "Adevărat",
+          "Fals"
+        ],
+        "answers": {
+          "choice": 1
+        }
+      }
+    },
+    {
+      "text": "Decide dacă afirmația este adevărată sau falsă — varianta 4.",
+      "type": "algebra_workbench",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Mulțimea numerelor raționale este inclusă în mulțimea numerelor reale.",
+      "interactive": {
+        "mode": "true_false",
+        "expression": "Orice număr rațional este număr real.",
+        "choices": [
+          "Adevărat",
+          "Fals"
+        ],
+        "answers": {
+          "choice": 0
+        }
+      }
+    },
+    {
+      "text": "Potrivește fiecare expresie cu forma sa simplificată.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Folosim cele trei identități remarcabile fundamentale.",
+      "interactive": {
+        "mode": "match",
+        "pairs": [
+          {
+            "left": "(a+b)²",
+            "right": "a²+2ab+b²"
+          },
+          {
+            "left": "(a−b)²",
+            "right": "a²−2ab+b²"
+          },
+          {
+            "left": "(a−b)(a+b)",
+            "right": "a²−b²"
+          }
+        ],
+        "options": [
+          "a²−b²",
+          "a²+2ab+b²",
+          "a²−2ab+b²"
+        ],
+        "answers": {
+          "match:0": 1,
+          "match:1": 2,
+          "match:2": 0
+        }
+      }
+    },
+    {
+      "text": "Potrivește fiecare putere cu rezultatul corect.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La produs adunăm exponenții, la cât îi scădem, iar la puterea unei puteri îi înmulțim.",
+      "interactive": {
+        "mode": "match",
+        "pairs": [
+          {
+            "left": "2³·2⁴",
+            "right": "2⁷"
+          },
+          {
+            "left": "5⁶:5²",
+            "right": "5⁴"
+          },
+          {
+            "left": "(3²)⁴",
+            "right": "3⁸"
+          }
+        ],
+        "options": [
+          "3⁸",
+          "2⁷",
+          "5⁴"
+        ],
+        "answers": {
+          "match:0": 1,
+          "match:1": 2,
+          "match:2": 0
+        }
+      }
+    },
+    {
+      "text": "Potrivește radicalii cu formele simplificate.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Scoatem de sub radical cel mai mare factor pătrat perfect.",
+      "interactive": {
+        "mode": "match",
+        "pairs": [
+          {
+            "left": "√12",
+            "right": "2√3"
+          },
+          {
+            "left": "√45",
+            "right": "3√5"
+          },
+          {
+            "left": "√72",
+            "right": "6√2"
+          }
+        ],
+        "options": [
+          "6√2",
+          "2√3",
+          "3√5"
+        ],
+        "answers": {
+          "match:0": 1,
+          "match:1": 2,
+          "match:2": 0
+        }
+      }
+    },
+    {
+      "text": "Găsește primul pas greșit în dezvoltare.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La pătratul sumei termenul din mijloc este 2·a·3=6a; pasul 2 este primul greșit.",
+      "interactive": {
+        "mode": "error",
+        "steps": [
+          "(a+3)²",
+          "= a²+3a+9",
+          "= a²+6a+9"
+        ],
+        "answers": {
+          "error": 1
+        }
+      }
+    },
+    {
+      "text": "Găsește primul pas greșit în calculul puterilor.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "a⁸:a²=a⁶, nu a⁴.",
+      "interactive": {
+        "mode": "error",
+        "steps": [
+          "a⁵·a³:a²",
+          "= a⁸:a²",
+          "= a⁴"
+        ],
+        "answers": {
+          "error": 2
+        }
+      }
+    },
+    {
+      "text": "Găsește primul pas greșit în simplificarea radicalului.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "√16=4, deci primul pas greșit este 16√3.",
+      "interactive": {
+        "mode": "error",
+        "steps": [
+          "√48",
+          "= √(16·3)",
+          "= 16√3",
+          "= 4√3"
+        ],
+        "answers": {
+          "error": 2
+        }
+      }
+    },
+    {
+      "text": "Găsește primul pas greșit în regula semnelor.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Minusul din fața parantezei schimbă semnul fiecărui termen.",
+      "interactive": {
+        "mode": "error",
+        "steps": [
+          "−(2a−5)",
+          "= −2a−5",
+          "Forma corectă este −2a+5"
+        ],
+        "answers": {
+          "error": 1
+        }
+      }
+    },
+    {
+      "text": "Construiește membrul drept al identității — varianta 1.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pătratul unei sume este a²+2ab+b².",
+      "interactive": {
+        "mode": "identity_builder",
+        "target": "(a+b)² = ?",
+        "pieces": [
+          "a²",
+          "+2ab",
+          "+b²",
+          "−2ab"
+        ],
+        "answers": {
+          "pieces": "0,1,2"
+        }
+      }
+    },
+    {
+      "text": "Construiește membrul drept al identității — varianta 2.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pătratul diferenței este x²−2xy+y².",
+      "interactive": {
+        "mode": "identity_builder",
+        "target": "(x−y)² = ?",
+        "pieces": [
+          "x²",
+          "−2xy",
+          "+y²",
+          "+2xy"
+        ],
+        "answers": {
+          "pieces": "0,1,2"
+        }
+      }
+    },
+    {
+      "text": "Construiește membrul drept al identității — varianta 3.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul sumei și diferenței este diferența pătratelor.",
+      "interactive": {
+        "mode": "identity_builder",
+        "target": "(m−n)(m+n) = ?",
+        "pieces": [
+          "m²",
+          "−n²",
+          "+n²",
+          "−2mn"
+        ],
+        "answers": {
+          "pieces": "0,1"
+        }
+      }
+    },
+    {
+      "text": "Alege parantezarea care produce rezultatul 49.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "(10−3)·(2+5)=7·7=49.",
+      "interactive": {
+        "mode": "parentheses",
+        "expression": "10 − 3 · 2 + 5",
+        "choices": [
+          "(10−3)·(2+5)",
+          "10−(3·2)+5",
+          "(10−3·2)+5",
+          "10−3·(2+5)"
+        ],
+        "answers": {
+          "choice": 0
+        }
+      }
+    },
+    {
+      "text": "Alege parantezarea care produce rezultatul 64.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "(12−4)·(3+5)=8·8=64.",
+      "interactive": {
+        "mode": "parentheses",
+        "expression": "12 − 4 · 3 + 5",
+        "choices": [
+          "(12−4)·(3+5)",
+          "12−(4·3)+5",
+          "(12−4·3)+5",
+          "12−4·(3+5)"
+        ],
+        "answers": {
+          "choice": 0
+        }
+      }
+    },
+    {
+      "text": "Alege ordinea corectă a operațiilor.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Se calculează întâi paranteza, apoi puterea, înmulțirea și la final adunarea.",
+      "interactive": {
+        "mode": "parentheses",
+        "expression": "3 + 2·(5−1)²",
+        "choices": [
+          "paranteză, putere, înmulțire, adunare",
+          "putere, paranteză, adunare, înmulțire",
+          "adunare, paranteză, putere, înmulțire",
+          "înmulțire, putere, paranteză, adunare"
+        ],
+        "answers": {
+          "choice": 0
+        }
+      }
+    },
+    {
+      "text": "Simplifică radicalul completând etapele — varianta 1.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "75=25·3, deci √75=5√3.",
+      "interactive": {
+        "mode": "radical_steps",
+        "expression": "√75",
+        "stages": [
+          "Descompune 75 ca produs între un pătrat perfect și alt factor.",
+          "Scoate pătratul perfect de sub radical."
+        ],
+        "fields": [
+          {
+            "key": "decomposition",
+            "label": "Descompunere"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat final"
+          }
+        ],
+        "answers": {
+          "decomposition": "25·3",
+          "result": "5√3"
+        }
+      }
+    },
+    {
+      "text": "Simplifică radicalul completând etapele — varianta 2.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "98=49·2, deci √98=7√2.",
+      "interactive": {
+        "mode": "radical_steps",
+        "expression": "√98",
+        "stages": [
+          "Identifică factorul pătrat perfect.",
+          "Simplifică."
+        ],
+        "fields": [
+          {
+            "key": "decomposition",
+            "label": "Descompunere"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat final"
+          }
+        ],
+        "answers": {
+          "decomposition": "49·2",
+          "result": "7√2"
+        }
+      }
+    },
+    {
+      "text": "Introdu factorul sub radical, pentru x≥0.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "3√5=√(3²·5)=√45.",
+      "interactive": {
+        "mode": "radical_steps",
+        "expression": "3√5",
+        "stages": [
+          "Ridică factorul exterior la pătrat.",
+          "Înmulțește sub radical."
+        ],
+        "fields": [
+          {
+            "key": "square",
+            "label": "Pătratul factorului"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat final"
+          }
+        ],
+        "answers": {
+          "square": "9",
+          "result": "√45"
+        }
+      }
+    },
+    {
+      "text": "Calculează produsul radicalilor.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "√6·√24=√144=12.",
+      "interactive": {
+        "mode": "radical_steps",
+        "expression": "√6 · √24",
+        "stages": [
+          "Unește radicalii.",
+          "Extrage rădăcina."
+        ],
+        "fields": [
+          {
+            "key": "product",
+            "label": "Radicalul obținut"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat final"
+          }
+        ],
+        "answers": {
+          "product": "√144",
+          "result": "12"
+        }
+      }
+    },
+    {
+      "text": "Compară cele două numere — varianta 1.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Deoarece 50>49, rezultă √50>√49=7.",
+      "interactive": {
+        "mode": "compare",
+        "expression": "√50  □  7",
+        "choices": [
+          "<",
+          "=",
+          ">"
+        ],
+        "answers": {
+          "choice": 2
+        }
+      }
+    },
+    {
+      "text": "Compară cele două numere — varianta 2.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "√18=√(9·2)=3√2.",
+      "interactive": {
+        "mode": "compare",
+        "expression": "3√2  □  √18",
+        "choices": [
+          "<",
+          "=",
+          ">"
+        ],
+        "answers": {
+          "choice": 1
+        }
+      }
+    },
+    {
+      "text": "Compară puterile.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "4³=(2²)³=2⁶.",
+      "interactive": {
+        "mode": "compare",
+        "expression": "2⁶  □  4³",
+        "choices": [
+          "<",
+          "=",
+          ">"
+        ],
+        "answers": {
+          "choice": 1
+        }
+      }
+    },
+    {
+      "text": "Compară numerele reale.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "−√9=−3, iar −3<−2.",
+      "interactive": {
+        "mode": "compare",
+        "expression": "−√9  □  −2",
+        "choices": [
+          "<",
+          "=",
+          ">"
+        ],
+        "answers": {
+          "choice": 0
+        }
+      }
+    },
+    {
+      "text": "Determină numărul real pozitiv x.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul pozitiv al cărui pătrat este 81 este 9.",
+      "interactive": {
+        "mode": "unknown",
+        "expression": "x² = 81, x>0",
+        "fields": [
+          {
+            "key": "x",
+            "label": "x"
+          }
+        ],
+        "answers": {
+          "x": "9"
+        }
+      }
+    },
+    {
+      "text": "Determină x.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ridicăm la pătrat: x=49.",
+      "interactive": {
+        "mode": "unknown",
+        "expression": "√x = 7",
+        "fields": [
+          {
+            "key": "x",
+            "label": "x"
+          }
+        ],
+        "answers": {
+          "x": "49"
+        }
+      }
+    },
+    {
+      "text": "Determină x, știind că x ≠ 0.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "x³=27, deci x=3.",
+      "interactive": {
+        "mode": "unknown",
+        "expression": "x⁵ : x² = 27",
+        "fields": [
+          {
+            "key": "x",
+            "label": "x"
+          }
+        ],
+        "answers": {
+          "x": "3"
+        }
+      }
+    },
+    {
+      "text": "Determină suma a+b.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Din (a+b)²=121 și condiția de pozitivitate rezultă a+b=11.",
+      "interactive": {
+        "mode": "unknown",
+        "expression": "(a+b)²=121 și a+b>0",
+        "fields": [
+          {
+            "key": "sum",
+            "label": "a+b"
+          }
+        ],
+        "answers": {
+          "sum": "11"
+        }
+      }
+    },
+    {
+      "text": "Calculează ambii membri și verifică identitatea — varianta 1.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ambii membri sunt egali cu 25, deci identitatea se verifică.",
+      "interactive": {
+        "mode": "verify_identity",
+        "identity": "(a+b)² = a²+2ab+b²",
+        "values": [
+          "a=2",
+          "b=3"
+        ],
+        "fields": [
+          {
+            "key": "left",
+            "label": "Membrul stâng"
+          },
+          {
+            "key": "right",
+            "label": "Membrul drept"
+          }
+        ],
+        "answers": {
+          "left": "25",
+          "right": "25",
+          "verdict": 0
+        }
+      }
+    },
+    {
+      "text": "Calculează ambii membri și verifică egalitatea propusă.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "9≠21; egalitatea propusă nu este o identitate.",
+      "interactive": {
+        "mode": "verify_identity",
+        "identity": "(a−b)² = a²−b²",
+        "values": [
+          "a=5",
+          "b=2"
+        ],
+        "fields": [
+          {
+            "key": "left",
+            "label": "Membrul stâng"
+          },
+          {
+            "key": "right",
+            "label": "Membrul drept"
+          }
+        ],
+        "answers": {
+          "left": "9",
+          "right": "21",
+          "verdict": 1
+        }
+      }
+    },
+    {
+      "text": "Calculează ambii membri și verifică identitatea — varianta 2.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "(7−4)(7+4)=3·11=33 și 49−16=33.",
+      "interactive": {
+        "mode": "verify_identity",
+        "identity": "(a−b)(a+b)=a²−b²",
+        "values": [
+          "a=7",
+          "b=4"
+        ],
+        "fields": [
+          {
+            "key": "left",
+            "label": "Membrul stâng"
+          },
+          {
+            "key": "right",
+            "label": "Membrul drept"
+          }
+        ],
+        "answers": {
+          "left": "33",
+          "right": "33",
+          "verdict": 0
+        }
+      }
+    },
+    {
+      "text": "Încadrează fiecare număr în cea mai mică mulțime indicată — varianta 1.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "7 este natural, −4 este întreg, 2/3 este rațional, iar √2 este irațional.",
+      "interactive": {
+        "mode": "classify",
+        "pairs": [
+          {
+            "left": "7",
+            "right": "N"
+          },
+          {
+            "left": "−4",
+            "right": "Z"
+          },
+          {
+            "left": "2/3",
+            "right": "Q"
+          },
+          {
+            "left": "√2",
+            "right": "R\\Q"
+          }
+        ],
+        "options": [
+          "N",
+          "Z",
+          "Q",
+          "R\\Q"
+        ],
+        "answers": {
+          "match:0": 0,
+          "match:1": 1,
+          "match:2": 2,
+          "match:3": 3
+        }
+      }
+    },
+    {
+      "text": "Încadrează expresiile după tip.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Recunoaștem forma dominantă a fiecărei expresii.",
+      "interactive": {
+        "mode": "classify",
+        "pairs": [
+          {
+            "left": "a⁵",
+            "right": "putere"
+          },
+          {
+            "left": "√13",
+            "right": "radical"
+          },
+          {
+            "left": "(a+b)²",
+            "right": "expresie algebrică"
+          }
+        ],
+        "options": [
+          "putere",
+          "radical",
+          "expresie algebrică"
+        ],
+        "answers": {
+          "match:0": 0,
+          "match:1": 1,
+          "match:2": 2
+        }
+      }
+    },
+    {
+      "text": "Încadrează fiecare număr în cea mai mică mulțime indicată — varianta 2.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "0 este natural în convenția lecției; zecimala periodică este rațională, iar π este irațional.",
+      "interactive": {
+        "mode": "classify",
+        "pairs": [
+          {
+            "left": "0",
+            "right": "N"
+          },
+          {
+            "left": "−11",
+            "right": "Z"
+          },
+          {
+            "left": "0,(3)",
+            "right": "Q"
+          },
+          {
+            "left": "π",
+            "right": "R\\Q"
+          }
+        ],
+        "options": [
+          "N",
+          "Z",
+          "Q",
+          "R\\Q"
+        ],
+        "answers": {
+          "match:0": 0,
+          "match:1": 1,
+          "match:2": 2,
+          "match:3": 3
+        }
+      }
+    },
+    {
+      "text": "Calculează media aritmetică a numerelor.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Media este 27:3=9.",
+      "interactive": {
+        "mode": "average",
+        "expression": "6, 9, 12",
+        "fields": [
+          {
+            "key": "sum",
+            "label": "Suma"
+          },
+          {
+            "key": "count",
+            "label": "Numărul valorilor"
+          },
+          {
+            "key": "mean",
+            "label": "Media"
+          }
+        ],
+        "answers": {
+          "sum": "27",
+          "count": "3",
+          "mean": "9"
+        }
+      }
+    },
+    {
+      "text": "Determină numărul lipsă folosind media aritmetică.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma trebuie să fie 3·11=33, deci x=33−8−14=11.",
+      "interactive": {
+        "mode": "average",
+        "expression": "Media numerelor 8, x și 14 este 11.",
+        "fields": [
+          {
+            "key": "total",
+            "label": "Suma celor trei numere"
+          },
+          {
+            "key": "x",
+            "label": "x"
+          }
+        ],
+        "answers": {
+          "total": "33",
+          "x": "11"
+        }
+      }
+    },
+    {
+      "text": "Calculează media aritmetică.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Valorile sunt 2,3,5; suma este 10, deci media este 10/3.",
+      "interactive": {
+        "mode": "average",
+        "expression": "√4, √9, √25",
+        "fields": [
+          {
+            "key": "values",
+            "label": "Valorile obținute"
+          },
+          {
+            "key": "mean",
+            "label": "Media"
+          }
+        ],
+        "answers": {
+          "values": "2,3,5",
+          "mean": "10/3"
+        }
+      }
+    },
+    {
+      "text": "Alege transformarea corectă la fiecare pas — varianta 1.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Dezvoltăm pătratul sumei, apoi reducem termenii x².",
+      "interactive": {
+        "mode": "transform_chain",
+        "expression": "(x+2)²−x²",
+        "steps": [
+          {
+            "options": [
+              "x²+4x+4−x²",
+              "x²+2x+4−x²",
+              "2x²+4"
+            ]
+          },
+          {
+            "options": [
+              "4x+4",
+              "2x+4",
+              "x²+4"
+            ]
+          }
+        ],
+        "answers": {
+          "step:0": 0,
+          "step:1": 0
+        }
+      }
+    },
+    {
+      "text": "Alege transformarea corectă la fiecare pas — varianta 2.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "108=36·3, iar √36=6.",
+      "interactive": {
+        "mode": "transform_chain",
+        "expression": "√108",
+        "steps": [
+          {
+            "options": [
+              "√(36·3)",
+              "√(18·6)",
+              "√(9·9)"
+            ]
+          },
+          {
+            "options": [
+              "6√3",
+              "3√12",
+              "18√3"
+            ]
+          }
+        ],
+        "answers": {
+          "step:0": 0,
+          "step:1": 0
+        }
+      }
+    },
+    {
+      "text": "Alege transformarea corectă la fiecare pas — varianta 3.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Întâi a⁷:a²=a⁵, apoi a⁵·a=a⁶.",
+      "interactive": {
+        "mode": "transform_chain",
+        "expression": "a⁷:a²·a",
+        "steps": [
+          {
+            "options": [
+              "a⁵·a",
+              "a⁹·a",
+              "a⁵:a"
+            ]
+          },
+          {
+            "options": [
+              "a⁶",
+              "a⁵",
+              "a⁴"
+            ]
+          }
+        ],
+        "answers": {
+          "step:0": 0,
+          "step:1": 0
+        }
+      }
+    },
+    {
+      "text": "Elementul neutru al adunării în R este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru orice a real, a+0=a.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "nu există",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "−1",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Inversul numărului real nenul a este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a·(1/a)=1 pentru a≠0.",
+      "options": [
+        {
+          "text": "−a",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1/a",
+          "is_correct": true
+        },
+        {
+          "text": "a",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Rezultatul lui (2³)⁴ este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La puterea unei puteri înmulțim exponenții: 3·4=12.",
+      "options": [
+        {
+          "text": "2⁷",
+          "is_correct": false
+        },
+        {
+          "text": "8⁴",
+          "is_correct": false
+        },
+        {
+          "text": "2¹²",
+          "is_correct": true
+        },
+        {
+          "text": "2⁸",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Forma simplificată a lui √32 este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "√32=√(16·2)=4√2.",
+      "options": [
+        {
+          "text": "16√2",
+          "is_correct": false
+        },
+        {
+          "text": "8√2",
+          "is_correct": false
+        },
+        {
+          "text": "4√2",
+          "is_correct": true
+        },
+        {
+          "text": "2√8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care număr este irațional?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "√7 nu poate fi scris ca raport al două numere întregi.",
+      "options": [
+        {
+          "text": "0,25",
+          "is_correct": false
+        },
+        {
+          "text": "2/9",
+          "is_correct": false
+        },
+        {
+          "text": "√7",
+          "is_correct": true
+        },
+        {
+          "text": "−3",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
 }

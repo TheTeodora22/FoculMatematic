@@ -1,6 +1,1217 @@
 {
   "title": "Număr rațional pozitiv; ordinea efectuării operațiilor cu numere raționale pozitive",
   "description": "Clasa a 5-a · Fracții zecimale",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Potrivește fiecare fracție ordinară cu forma zecimală și procentuală echivalentă.",
+      "type": "base_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția, scrierea zecimală și procentul pot reprezenta același număr rațional pozitiv.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "1/2",
+            "right": "0,5 = 50%"
+          },
+          {
+            "left": "3/4",
+            "right": "0,75 = 75%"
+          },
+          {
+            "left": "1/5",
+            "right": "0,2 = 20%"
+          },
+          {
+            "left": "5/4",
+            "right": "1,25 = 125%"
+          }
+        ],
+        "right_order": [
+          2,
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Unește fiecare fracție zecimală cu celelalte două forme ale aceluiași număr.",
+      "type": "base_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Transformăm fracția ordinară prin împărțire și procentul prin înmulțire cu 100.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "0,25",
+            "right": "1/4 = 25%"
+          },
+          {
+            "left": "0,6",
+            "right": "3/5 = 60%"
+          },
+          {
+            "left": "1,5",
+            "right": "3/2 = 150%"
+          },
+          {
+            "left": "0,125",
+            "right": "1/8 = 12,5%"
+          }
+        ],
+        "right_order": [
+          2,
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Potrivește procentele cu reprezentările lor echivalente.",
+      "type": "base_match",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un procent arată câte sutimi sunt luate: 40% = 40/100 = 0,4.",
+      "interactive": {
+        "pairs": [
+          {
+            "left": "10%",
+            "right": "0,1 = 1/10"
+          },
+          {
+            "left": "40%",
+            "right": "0,4 = 2/5"
+          },
+          {
+            "left": "80%",
+            "right": "0,8 = 4/5"
+          },
+          {
+            "left": "200%",
+            "right": "2 = 2/1"
+          }
+        ],
+        "right_order": [
+          2,
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Completează celelalte forme ale numărului 0,375.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "0,375 = 375/1000 = 3/8, iar 0,375 · 100 = 37,5%.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "0,375 = fracție ordinară = procent",
+        "fields": [
+          {
+            "key": "fraction",
+            "label": "Fracția ordinară"
+          },
+          {
+            "key": "percent",
+            "label": "Procentul (fără semnul %)"
+          }
+        ],
+        "answers": {
+          "fraction": "3/8",
+          "percent": "37,5"
+        }
+      }
+    },
+    {
+      "text": "Completează trio-ul de reprezentări pentru 4/5.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "4 : 5 = 0,8, iar 0,8 = 80%.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "4/5 = fracție zecimală = procent",
+        "fields": [
+          {
+            "key": "decimal",
+            "label": "Fracția zecimală"
+          },
+          {
+            "key": "percent",
+            "label": "Procentul (fără semnul %)"
+          }
+        ],
+        "answers": {
+          "decimal": "0,8",
+          "percent": "80"
+        }
+      }
+    },
+    {
+      "text": "Completează trio-ul de reprezentări pentru 125%.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "125% = 125/100 = 1,25 = 5/4.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "125% = fracție zecimală = fracție ordinară",
+        "fields": [
+          {
+            "key": "decimal",
+            "label": "Fracția zecimală"
+          },
+          {
+            "key": "fraction",
+            "label": "Fracția ordinară ireductibilă"
+          }
+        ],
+        "answers": {
+          "decimal": "1,25",
+          "fraction": "5/4"
+        }
+      }
+    },
+    {
+      "text": "Care cartonaș NU reprezintă același număr ca 0,5?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1/5 = 0,2; celelalte trei forme sunt egale cu 0,5.",
+      "options": [
+        {
+          "text": "50%",
+          "is_correct": false
+        },
+        {
+          "text": "5/10",
+          "is_correct": false
+        },
+        {
+          "text": "1/5",
+          "is_correct": true
+        },
+        {
+          "text": "1/2",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Găsește intrusul dintre reprezentările numărului 0,75.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "7,5% = 0,075, nu 0,75.",
+      "options": [
+        {
+          "text": "75%",
+          "is_correct": false
+        },
+        {
+          "text": "75/100",
+          "is_correct": false
+        },
+        {
+          "text": "7,5%",
+          "is_correct": true
+        },
+        {
+          "text": "3/4",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care reprezentare nu este echivalentă cu 1,25?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1/4 = 0,25, în timp ce celelalte reprezintă 1,25.",
+      "options": [
+        {
+          "text": "125%",
+          "is_correct": false
+        },
+        {
+          "text": "1,250",
+          "is_correct": false
+        },
+        {
+          "text": "1/4",
+          "is_correct": true
+        },
+        {
+          "text": "5/4",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Alege semnul corect.",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "3/4 = 0,75, iar 0,75 > 0,7.",
+      "interactive": {
+        "mode": "symbol",
+        "left": [
+          3,
+          4
+        ],
+        "right": [
+          7,
+          10
+        ],
+        "left_label": "3/4",
+        "right_label": "0,7",
+        "relation": ">"
+      }
+    },
+    {
+      "text": "Compară cele două forme fără a le confunda.",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "40% = 0,40, care este mai mare decât 0,39.",
+      "interactive": {
+        "mode": "symbol",
+        "left": [
+          2,
+          5
+        ],
+        "right": [
+          39,
+          100
+        ],
+        "left_label": "40%",
+        "right_label": "0,39",
+        "relation": ">"
+      }
+    },
+    {
+      "text": "Alege relația corectă dintre cele două reprezentări.",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "120% = 120/100 = 1,2.",
+      "interactive": {
+        "mode": "symbol",
+        "left": [
+          6,
+          5
+        ],
+        "right": [
+          6,
+          5
+        ],
+        "left_label": "1,2",
+        "right_label": "120%",
+        "relation": "="
+      }
+    },
+    {
+      "text": "Ordonează crescător cele patru reprezentări.",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Valorile sunt 0,75; 0,6; 0,8 și 0,55.",
+      "interactive": {
+        "mode": "order",
+        "direction": "asc",
+        "items": [
+          {
+            "label": "3/4",
+            "numerator": 3,
+            "denominator": 4
+          },
+          {
+            "label": "0,6",
+            "numerator": 3,
+            "denominator": 5
+          },
+          {
+            "label": "80%",
+            "numerator": 4,
+            "denominator": 5
+          },
+          {
+            "label": "0,55",
+            "numerator": 11,
+            "denominator": 20
+          }
+        ],
+        "correct_order": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "display_order": [
+          2,
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Ordonează descrescător numerele raționale.",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Scrise zecimal, valorile sunt 1,25; 1,2; 1,05 și 0,9.",
+      "interactive": {
+        "mode": "order",
+        "direction": "desc",
+        "items": [
+          {
+            "label": "125%",
+            "numerator": 5,
+            "denominator": 4
+          },
+          {
+            "label": "6/5",
+            "numerator": 6,
+            "denominator": 5
+          },
+          {
+            "label": "1,05",
+            "numerator": 21,
+            "denominator": 20
+          },
+          {
+            "label": "0,9",
+            "numerator": 9,
+            "denominator": 10
+          }
+        ],
+        "correct_order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "display_order": [
+          2,
+          0,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Așază în ordine crescătoare formele date.",
+      "type": "fraction_compare",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Valorile sunt 0,125; 0,15; 0,2 și 0,05.",
+      "interactive": {
+        "mode": "order",
+        "direction": "asc",
+        "items": [
+          {
+            "label": "1/8",
+            "numerator": 1,
+            "denominator": 8
+          },
+          {
+            "label": "15%",
+            "numerator": 3,
+            "denominator": 20
+          },
+          {
+            "label": "0,2",
+            "numerator": 1,
+            "denominator": 5
+          },
+          {
+            "label": "0,05",
+            "numerator": 1,
+            "denominator": 20
+          }
+        ],
+        "correct_order": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "display_order": [
+          1,
+          3,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "text": "Construiește traseul complet al calculelor.",
+      "type": "operation_sequence",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Transformăm forma diferită, calculăm paranteza, apoi operațiile de același ordin de la stânga la dreapta.",
+      "interactive": {
+        "expression": "0,5 · [3/4 + 0,25] : 2,5",
+        "steps": [
+          "3/4 = 0,75",
+          "0,75 + 0,25 = 1",
+          "0,5 · 1 = 0,5",
+          "0,5 : 2,5 = 0,2"
+        ],
+        "display_order": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "correct_order": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "text": "Așază calculele în ordinea corectă.",
+      "type": "operation_sequence",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Paranteza se calculează înaintea împărțirii și a scăderii.",
+      "interactive": {
+        "expression": "(2,4 + 1,6) : 0,5 − 3",
+        "steps": [
+          "2,4 + 1,6 = 4",
+          "4 : 0,5 = 8",
+          "8 − 3 = 5"
+        ],
+        "display_order": [
+          1,
+          2,
+          0
+        ],
+        "correct_order": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "text": "Construiește rezolvarea pas cu pas.",
+      "type": "operation_sequence",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Calculăm paranteza, apoi efectuăm înmulțirea și adunarea.",
+      "interactive": {
+        "expression": "3/5 · (2,5 − 0,5) + 1,2",
+        "steps": [
+          "2,5 − 0,5 = 2",
+          "3/5 · 2 = 1,2",
+          "1,2 + 1,2 = 2,4"
+        ],
+        "display_order": [
+          2,
+          0,
+          1
+        ],
+        "correct_order": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "text": "Ordonează cartonașele pentru a rezolva expresia.",
+      "type": "operation_sequence",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Procentul se transformă în 0,2, apoi se respectă prioritatea înmulțirii.",
+      "interactive": {
+        "expression": "20% · 35 + 1,5",
+        "steps": [
+          "20% = 0,2",
+          "0,2 · 35 = 7",
+          "7 + 1,5 = 8,5"
+        ],
+        "display_order": [
+          2,
+          0,
+          1
+        ],
+        "correct_order": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "text": "Completează toate rezultatele intermediare.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "4/5 = 0,8; obținem 10,08 − 4 = 6,08.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "2,4 · 4,2 − 3,2 : 4/5",
+        "fields": [
+          {
+            "key": "a",
+            "label": "2,4 · 4,2"
+          },
+          {
+            "key": "b",
+            "label": "3,2 : 4/5"
+          },
+          {
+            "key": "result",
+            "label": "Rezultatul final"
+          }
+        ],
+        "answers": {
+          "a": "10,08",
+          "b": "4",
+          "result": "6,08"
+        }
+      }
+    },
+    {
+      "text": "Calculează pe etape, respectând paranteza.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "1,2 + 0,7 = 1,9; apoi 3 · 1,9 = 5,7 și 25,41 − 5,7 = 19,71.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "25,41 − 3 · (1,2 + 0,7)",
+        "fields": [
+          {
+            "key": "a",
+            "label": "Paranteza"
+          },
+          {
+            "key": "b",
+            "label": "Produsul"
+          },
+          {
+            "key": "result",
+            "label": "Rezultatul final"
+          }
+        ],
+        "answers": {
+          "a": "1,9",
+          "b": "5,7",
+          "result": "19,71"
+        }
+      }
+    },
+    {
+      "text": "Completează traseul expresiei.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Adunarea și scăderea se efectuează de la stânga la dreapta.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "20 + 1,7 − 6,3",
+        "fields": [
+          {
+            "key": "a",
+            "label": "20 + 1,7"
+          },
+          {
+            "key": "result",
+            "label": "Rezultatul final"
+          }
+        ],
+        "answers": {
+          "a": "21,7",
+          "result": "15,4"
+        }
+      }
+    },
+    {
+      "text": "Calculează împărțirile succesive.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Operațiile sunt de același ordin, deci lucrăm de la stânga la dreapta.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "8,24 : 10 : 2",
+        "fields": [
+          {
+            "key": "a",
+            "label": "8,24 : 10"
+          },
+          {
+            "key": "result",
+            "label": "Rezultatul final"
+          }
+        ],
+        "answers": {
+          "a": "0,824",
+          "result": "0,412"
+        }
+      }
+    },
+    {
+      "text": "Completează rezultatele intermediare.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Paranteza dă 3, apoi 3 : 0,5 = 6 și 6 − 4,25 = 1,75.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "(2,73 + 0,27) : 0,5 − 4,25",
+        "fields": [
+          {
+            "key": "a",
+            "label": "Paranteza"
+          },
+          {
+            "key": "b",
+            "label": "Împărțirea"
+          },
+          {
+            "key": "result",
+            "label": "Rezultatul final"
+          }
+        ],
+        "answers": {
+          "a": "3",
+          "b": "6",
+          "result": "1,75"
+        }
+      }
+    },
+    {
+      "text": "Alege o formă comună și completează calculele.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cele două produse sunt 12 și 5, iar suma este 17.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "3/8 · 32 + 0,625 · 8",
+        "fields": [
+          {
+            "key": "a",
+            "label": "3/8 · 32"
+          },
+          {
+            "key": "b",
+            "label": "0,625 · 8"
+          },
+          {
+            "key": "result",
+            "label": "Rezultatul final"
+          }
+        ],
+        "answers": {
+          "a": "12",
+          "b": "5",
+          "result": "17"
+        }
+      }
+    },
+    {
+      "text": "Detectivul greșelilor: apasă primul pas incorect.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ultima operație este o scădere: 10,08 − 4 = 6,08.",
+      "interactive": {
+        "steps": [
+          "2,4 · 4,2 − 3,2 : 0,8",
+          "= 10,08 − 4",
+          "= 14,08"
+        ],
+        "error_index": 2
+      }
+    },
+    {
+      "text": "Găsește prima transformare greșită.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "0,1(6) = 1/6, nu 1/5.",
+      "interactive": {
+        "steps": [
+          "0,5 · [3/4 + 0,1(6)] : 2,5",
+          "0,1(6) = 1/5",
+          "3/4 + 1/5 = 19/20",
+          "rezultatul este 0,19"
+        ],
+        "error_index": 1
+      }
+    },
+    {
+      "text": "Verifică rezolvarea și apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "30% = 0,30; calculul corect este 24 + 5 = 29.",
+      "interactive": {
+        "steps": [
+          "30% din 80 + 1/4 din 20",
+          "30% = 0,03",
+          "0,03 · 80 + 5",
+          "= 7,4"
+        ],
+        "error_index": 1
+      }
+    },
+    {
+      "text": "Trage parantezele astfel încât expresia să aibă valoarea 16.",
+      "type": "parentheses_drag",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "(3 + 1) · 4 = 16.",
+      "interactive": {
+        "tokens": [
+          "3",
+          "+ 1",
+          "· 4"
+        ],
+        "correct_open_index": 0,
+        "correct_close_index": 2
+      }
+    },
+    {
+      "text": "Așază parantezele pentru a obține rezultatul 2.",
+      "type": "parentheses_drag",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "(8 − 2) : 3 = 2.",
+      "interactive": {
+        "tokens": [
+          "8",
+          "− 2",
+          ": 3"
+        ],
+        "correct_open_index": 0,
+        "correct_close_index": 2
+      }
+    },
+    {
+      "text": "Plasează parantezele astfel încât rezultatul să fie 8.",
+      "type": "parentheses_drag",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "(2,5 + 1,5) · 2 = 8.",
+      "interactive": {
+        "tokens": [
+          "2,5",
+          "+ 1,5",
+          "· 2"
+        ],
+        "correct_open_index": 0,
+        "correct_close_index": 2
+      }
+    },
+    {
+      "text": "Așază parantezele pentru ca rezultatul să fie 2,4.",
+      "type": "parentheses_drag",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "6 : (0,5 + 2) = 2,4.",
+      "interactive": {
+        "tokens": [
+          "6",
+          ": 0,5",
+          "+ 2"
+        ],
+        "correct_open_index": 1,
+        "correct_close_index": 3
+      }
+    },
+    {
+      "text": "Pentru 3/4 · 20, ce formă face calculul cel mai direct?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "20 se împarte exact la 4: 20 : 4 · 3 = 15.",
+      "options": [
+        {
+          "text": "0,75%",
+          "is_correct": false
+        },
+        {
+          "text": "7,5",
+          "is_correct": false
+        },
+        {
+          "text": "Fracția 3/4",
+          "is_correct": true
+        },
+        {
+          "text": "75",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pentru 25% din 80, ce scriere permite cel mai rapid calcul mintal?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "25% = 1/4, iar sfertul lui 80 este 20.",
+      "options": [
+        {
+          "text": "25 · 80",
+          "is_correct": false
+        },
+        {
+          "text": "25/10 din 80",
+          "is_correct": false
+        },
+        {
+          "text": "1/4 din 80",
+          "is_correct": true
+        },
+        {
+          "text": "0,25% din 80",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Transformă înainte de a calcula.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "2/5 = 0,4; apoi 0,4 · 15 + 0,3 = 6,3.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "2/5 · 15 + 0,3",
+        "fields": [
+          {
+            "key": "decimal",
+            "label": "2/5 scris zecimal"
+          },
+          {
+            "key": "product",
+            "label": "Produsul"
+          },
+          {
+            "key": "result",
+            "label": "Rezultatul final"
+          }
+        ],
+        "answers": {
+          "decimal": "0,4",
+          "product": "6",
+          "result": "6,3"
+        }
+      }
+    },
+    {
+      "text": "Transformă procentul și continuă calculul.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "60% = 0,6; 0,6 · 45 = 27, iar 27 − 7 = 20.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "60% · 45 − 7",
+        "fields": [
+          {
+            "key": "decimal",
+            "label": "60% scris zecimal"
+          },
+          {
+            "key": "product",
+            "label": "Produsul"
+          },
+          {
+            "key": "result",
+            "label": "Rezultatul final"
+          }
+        ],
+        "answers": {
+          "decimal": "0,6",
+          "product": "27",
+          "result": "20"
+        }
+      }
+    },
+    {
+      "text": "Ce număr trebuie pus în căsuță pentru ca 0,5 · □ + 1 = 6?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem 1: 0,5 · □ = 5, apoi împărțim la 0,5 și obținem 10.",
+      "options": [
+        {
+          "text": "2,5",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Alege cartonașul care completează egalitatea 3/4 · □ = 6.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "□ = 6 : 3/4 = 6 · 4/3 = 8.",
+      "options": [
+        {
+          "text": "4,5",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "6,75",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În trei zile s-au vândut 12,56 kg, 41,275 kg și 29,11 kg de cafea. Un kilogram costă 10 lei. Calculează încasarea.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cantitatea totală este 82,945 kg, iar încasarea este 829,45 lei.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "(12,56 + 41,275 + 29,11) · 10",
+        "fields": [
+          {
+            "key": "mass",
+            "label": "Cantitatea totală (kg)"
+          },
+          {
+            "key": "money",
+            "label": "Încasarea (lei)"
+          }
+        ],
+        "answers": {
+          "mass": "82,945",
+          "money": "829,45"
+        }
+      }
+    },
+    {
+      "text": "Un turist parcurge 24 km în trei zile: 3/8 din traseu în prima zi și 0,6 din rest în a doua zi. Câți kilometri parcurge în a treia zi?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "În prima zi parcurge 9 km; rămân 15 km, din care 0,6 înseamnă 9 km; restul este 6 km.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "24 km: ziua I = 3/8 din traseu; ziua II = 0,6 din rest",
+        "fields": [
+          {
+            "key": "day1",
+            "label": "Ziua I (km)"
+          },
+          {
+            "key": "day2",
+            "label": "Ziua II (km)"
+          },
+          {
+            "key": "day3",
+            "label": "Ziua III (km)"
+          }
+        ],
+        "answers": {
+          "day1": "9",
+          "day2": "9",
+          "day3": "6"
+        }
+      }
+    },
+    {
+      "text": "Douăzeci de vite consumă zilnic câte 12 kg de hrană. Cât consumă în 5 zile?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Într-o zi consumă 20 · 12 = 240 kg, iar în 5 zile 1 200 kg.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "20 · 12 · 5",
+        "fields": [
+          {
+            "key": "daily",
+            "label": "Consum într-o zi (kg)"
+          },
+          {
+            "key": "total",
+            "label": "Consum în 5 zile (kg)"
+          }
+        ],
+        "answers": {
+          "daily": "240",
+          "total": "1200"
+        }
+      }
+    },
+    {
+      "text": "Adi și Ioana au de rezolvat 32 de probleme. Adi rezolvă 3/8 din ele, iar Ioana 0,625 din ele. Cu câte probleme rezolvă Ioana mai mult?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Adi rezolvă 12, Ioana 20, deci Ioana rezolvă cu 8 probleme mai mult.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "3/8 · 32 și 0,625 · 32",
+        "fields": [
+          {
+            "key": "adi",
+            "label": "Problemele lui Adi"
+          },
+          {
+            "key": "ioana",
+            "label": "Problemele Ioanei"
+          },
+          {
+            "key": "difference",
+            "label": "Diferența"
+          }
+        ],
+        "answers": {
+          "adi": "12",
+          "ioana": "20",
+          "difference": "8"
+        }
+      }
+    },
+    {
+      "text": "Numerele 0,5, 1/2 și 50% reprezintă același număr rațional pozitiv.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Toate cele trei scrieri au valoarea 0,5.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "În expresia 2,4 + 1,6 · 5 se efectuează mai întâi adunarea.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Înmulțirea are prioritate: se calculează mai întâi 1,6 · 5.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Calculează 2,4 + 1,6 · 5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi 1,6 · 5 = 8, apoi 2,4 + 8 = 10,4.",
+      "options": [
+        {
+          "text": "20",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "10,4",
+          "is_correct": true
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este valoarea expresiei (4/5 + 0,2) · 3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "4/5 = 0,8; în paranteză obținem 1, apoi 1 · 3 = 3.",
+      "options": [
+        {
+          "text": "2,6",
+          "is_correct": false
+        },
+        {
+          "text": "0,3",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează 50% · 18 + 1/2 · 6.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "50% din 18 este 9, iar jumătate din 6 este 3; suma este 12.",
+      "options": [
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "21",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
 }

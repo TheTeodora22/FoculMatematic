@@ -202,7 +202,7 @@ def complete_generated_session(session: GeneratedQuizSession) -> dict:
 
 def get_training_questions(topic: Quiz) -> list[Question]:
     return list(
-        topic.questions.prefetch_related("options").order_by("id")
+        topic.questions.prefetch_related("options").order_by("order", "id")
     )
 
 
@@ -393,7 +393,9 @@ def submit_column_division_answer(user, question: Question, quotient: str, remai
     data = question.interactive_data or {}
     normalized_remainders = [str(value).strip() for value in remainders] if isinstance(remainders, list) else []
     expected_remainders = [str(value) for value in data.get("remainders", [])]
-    is_correct = str(quotient).strip() == str(data.get("quotient")) and normalized_remainders == expected_remainders
+    normalized_quotient = str(quotient).strip().replace(".", ",").replace(" ", "")
+    expected_quotient = str(data.get("quotient")).strip().replace(".", ",").replace(" ", "")
+    is_correct = normalized_quotient == expected_quotient and normalized_remainders == expected_remainders
     return _save_interactive_result(user, question, is_correct)
 
 
@@ -651,6 +653,137 @@ def submit_false_hypothesis_method_answer(user, question: Question, values: dict
     return _save_interactive_result(user, question, normalized == normalized_expected)
 
 
+def _geometry_point(value):
+    try:
+        x, y = str(value).split(",", 1)
+        return int(x), int(y)
+    except (TypeError, ValueError):
+        raise TopicModeError("Coordonatele punctului sunt invalide.")
+
+
+def submit_geometry_canvas_answer(user, question: Question, values: dict) -> dict:
+    if question.question_type != Question.TYPE_GEOMETRY_CANVAS:
+        raise TopicModeError("Acest exercițiu nu folosește atelierul geometric.")
+    if not isinstance(values, dict):
+        raise TopicModeError("Construcția geometrică trimisă este invalidă.")
+    data = question.interactive_data or {}
+    mode, expected = data.get("mode"), data.get("answers", {})
+    if mode in {"place_points", "reconstruct_model", "full_geometry_puzzle"}:
+        point_names = [point.get("name") for point in data.get("points", []) if point.get("name")]
+        tolerance = int(data.get("tolerance", 38))
+        for name in point_names:
+            actual, target = _geometry_point(values.get(name)), _geometry_point(expected.get(name))
+            if ((actual[0] - target[0]) ** 2 + (actual[1] - target[1]) ** 2) ** 0.5 > tolerance:
+                return _save_interactive_result(user, question, False)
+        remaining = {str(key): str(value).strip() for key, value in values.items() if key not in point_names}
+        remaining_expected = {str(key): str(value).strip() for key, value in expected.items() if key not in point_names}
+        return _save_interactive_result(user, question, remaining == remaining_expected)
+    if mode == "construct_figure":
+        normalized = {str(key): str(value).strip() for key, value in values.items()}
+        normalized_expected = {str(key): str(value).strip() for key, value in expected.items()}
+        if normalized.get("tool") == normalized_expected.get("tool") == "line":
+            correct = {normalized.get("first"), normalized.get("second")} == {normalized_expected.get("first"), normalized_expected.get("second")}
+            return _save_interactive_result(user, question, correct and len(normalized) == len(normalized_expected))
+        return _save_interactive_result(user, question, normalized == normalized_expected)
+    if mode in {"place_noncollinear", "place_collinear"}:
+        names = [point.get("name") for point in data.get("points", [])[:3]]
+        if len(names) != 3 or any(not name for name in names):
+            raise TopicModeError("Exercițiul nu are trei puncte valide.")
+        a, b, c = (_geometry_point(values.get(label)) for label in names)
+        base_length = max(((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2) ** 0.5, 1)
+        distance_from_line = abs((b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0])) / base_length
+        minimum_gap = min((((p[0] - r[0]) ** 2 + (p[1] - r[1]) ** 2) ** 0.5 for p, r in ((a, b), (a, c), (b, c))))
+        correct = distance_from_line > 18 if mode == "place_noncollinear" else distance_from_line <= 16 and minimum_gap >= 20
+        return _save_interactive_result(user, question, correct)
+    if mode == "coincidence":
+        names = [point.get("name") for point in data.get("points", [])[:2]]
+        if len(names) != 2:
+            raise TopicModeError("Exercițiul nu are două puncte valide.")
+        a, b = _geometry_point(values.get(names[0])), _geometry_point(values.get(names[1]))
+        distance = ((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2) ** 0.5
+        correct = (distance <= 28) if expected.get("relation") == "coincident" else (distance >= 36)
+        return _save_interactive_result(user, question, correct)
+    if mode == "plane_points":
+        inside_name, outside_name = expected.get("inside"), expected.get("outside")
+        inside, outside = _geometry_point(values.get(inside_name)), _geometry_point(values.get(outside_name))
+
+        def is_inside_plane(point):
+            x, y = point
+            if not 30 <= y <= 145:
+                return False
+            left = 85 - (y - 30) * 30 / 115
+            right = 365 - (y - 30) * 30 / 115
+            return left <= x <= right
+
+        correct = is_inside_plane(inside) and not is_inside_plane(outside)
+        return _save_interactive_result(user, question, correct)
+    if mode == "construction_checker" and data.get("validation"):
+        names = [point.get("name") for point in data.get("points", [])[:2]]
+        first, second = (_geometry_point(values.get(name)) for name in names)
+        if data["validation"] == "line_membership":
+            correct = abs(first[1] - 90) <= 16 and abs(second[1] - 90) >= 25 and values.get("tool") == "segment"
+        else:
+            correct = ((first[0] - 90) ** 2 + (first[1] - 90) ** 2) ** 0.5 <= 30 and abs(second[1] - 90) <= 16 and second[0] >= first[0] + 30 and values.get("tool") == "ray"
+        return _save_interactive_result(user, question, correct)
+    if mode in {"point_on_line", "repair_membership", "move_to_collinear"}:
+        name = (data.get("points") or [{}])[0].get("name")
+        point = _geometry_point(values.get(name))
+        line = data.get("line", {"a": 0, "b": 1, "c": -90})
+        a, b, c = line.get("a", 0), line.get("b", 1), line.get("c", -90)
+        distance = abs(a * point[0] + b * point[1] + c) / max((a * a + b * b) ** 0.5, 1)
+        on_line = distance <= 12
+        target_on_line = expected.get("membership", "on") == "on"
+        return _save_interactive_result(user, question, on_line == target_on_line)
+    if mode in {"make_concurrent", "make_parallel", "make_identical", "transform_relation", "repair_relation"}:
+        try:
+            angle = int(values.get("line_angle", 0)) % 180
+            line_y = int(values.get("line_y", 120))
+        except (TypeError, ValueError):
+            return _save_interactive_result(user, question, False)
+        parallel_angle = min(abs(angle), abs(180 - angle)) <= 5
+        relation = "identical" if parallel_angle and abs(line_y - 70) <= 8 else "parallel" if parallel_angle else "concurrent"
+        return _save_interactive_result(user, question, relation == expected.get("relation"))
+    if mode in {"min_lines", "max_lines", "arrange_line_count"}:
+        names = [point.get("name") for point in data.get("points", []) if point.get("name")]
+        if len(names) < 3:
+            raise TopicModeError("Exercițiul nu are suficiente puncte.")
+        points = [_geometry_point(values.get(name)) for name in names]
+        distances = [((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2) ** 0.5 for index, a in enumerate(points) for b in points[index + 1:]]
+        if not distances or min(distances) < 20:
+            return _save_interactive_result(user, question, False)
+
+        def line_distance(a, b, point):
+            base = max(((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2) ** 0.5, 1)
+            return abs((b[0] - a[0]) * (point[1] - a[1]) - (b[1] - a[1]) * (point[0] - a[0])) / base
+
+        from itertools import combinations
+        collinear_triples = sum(line_distance(a, b, c) <= 16 for a, b, c in combinations(points, 3))
+        target = expected.get("arrangement")
+        if target == "all_collinear":
+            farthest = max(combinations(points, 2), key=lambda pair: (pair[0][0] - pair[1][0]) ** 2 + (pair[0][1] - pair[1][1]) ** 2)
+            correct = all(line_distance(farthest[0], farthest[1], point) <= 16 for point in points)
+        elif target == "three_collinear":
+            correct = len(points) == 4 and collinear_triples == 1
+        else:
+            correct = collinear_triples == 0
+        return _save_interactive_result(user, question, correct)
+    tool_modes = {"ruler_line", "position_ruler", "ruler_set_square_parallel", "place_set_square", "slide_set_square", "parallel_through_point", "continue_construction", "repair_tools", "draw_concurrent", "draw_parallel", "draw_identical"}
+    if mode in tool_modes:
+        normalized = {str(k): str(v).strip() for k, v in values.items()}
+        normalized_expected = {str(k): str(v).strip() for k, v in expected.items()}
+        for key in {"ruler_angle", "square_angle", "line_angle"} & normalized_expected.keys():
+            try:
+                if int(normalized[key]) % 180 != int(normalized_expected[key]) % 180:
+                    return _save_interactive_result(user, question, False)
+                normalized[key] = normalized_expected[key]
+            except (KeyError, ValueError):
+                return _save_interactive_result(user, question, False)
+        return _save_interactive_result(user, question, normalized == normalized_expected)
+    normalized = {str(k): str(v).strip() for k, v in values.items()}
+    normalized_expected = {str(k): str(v).strip() for k, v in expected.items()}
+    return _save_interactive_result(user, question, normalized == normalized_expected)
+
+
 def submit_operation_sequence_answer(user, question: Question, order: list) -> dict:
     if question.question_type != Question.TYPE_OPERATION_SEQUENCE:
         raise TopicModeError("Acest exercițiu nu construiește ordinea operațiilor.")
@@ -767,6 +900,36 @@ def submit_decimal_workbench_answer(user, question: Question, values: dict) -> d
     return _save_interactive_result(user, question, normalized == expected)
 
 
+def submit_statistics_chart_answer(user, question: Question, values: dict) -> dict:
+    if question.question_type != Question.TYPE_STATISTICS_CHART:
+        raise TopicModeError("Acest exercițiu nu aparține atelierului statistic.")
+    if not isinstance(values, dict):
+        raise TopicModeError("Răspunsurile statistice sunt invalide.")
+    expected = {str(k): str(v).strip().replace(".", ",").replace(" ", "").lower()
+                for k, v in (question.interactive_data or {}).get("answers", {}).items()}
+    normalized = {str(k): str(v).strip().replace(".", ",").replace(" ", "").lower()
+                  for k, v in values.items()}
+    return _save_interactive_result(user, question, normalized == expected)
+
+
+def submit_algebra_workbench_answer(user, question: Question, values: dict) -> dict:
+    if question.question_type != Question.TYPE_ALGEBRA_WORKBENCH:
+        raise TopicModeError("Acest exercițiu nu aparține atelierului algebric.")
+    if not isinstance(values, dict):
+        raise TopicModeError("Răspunsurile algebrice sunt invalide.")
+
+    def normalize(value):
+        return (
+            str(value).strip().lower().replace(" ", "").replace("−", "-")
+            .replace("×", "*").replace("·", "*").replace("^", "")
+            .replace("²", "2").replace("³", "3").replace("√", "sqrt")
+        )
+
+    expected = {str(key): normalize(value) for key, value in (question.interactive_data or {}).get("answers", {}).items()}
+    normalized = {str(key): normalize(value) for key, value in values.items()}
+    return _save_interactive_result(user, question, normalized == expected)
+
+
 def submit_fraction_visual_answer(user, question: Question, values: dict) -> dict:
     if question.question_type != Question.TYPE_FRACTION_VISUAL:
         raise TopicModeError("Acest exercițiu nu conține o reprezentare de fracție.")
@@ -849,6 +1012,22 @@ def submit_lcm_workbench_answer(user, question: Question, values: dict) -> dict:
 
 def submit_common_denominator_answer(user, question: Question, values: dict) -> dict:
     return _submit_expected_values(user, question, Question.TYPE_COMMON_DENOMINATOR, values)
+
+
+def submit_fraction_product_answer(user, question: Question, values: dict) -> dict:
+    return _submit_expected_values(user, question, Question.TYPE_FRACTION_PRODUCT, values)
+
+
+def submit_fraction_division_answer(user, question: Question, values: dict) -> dict:
+    return _submit_expected_values(user, question, Question.TYPE_FRACTION_DIVISION, values)
+
+
+def submit_fraction_power_answer(user, question: Question, values: dict) -> dict:
+    return _submit_expected_values(user, question, Question.TYPE_FRACTION_POWER, values)
+
+
+def submit_fraction_percent_answer(user, question: Question, values: dict) -> dict:
+    return _submit_expected_values(user, question, Question.TYPE_FRACTION_PERCENT, values)
 
 
 def reset_training_progress(user, topic: Quiz) -> int:

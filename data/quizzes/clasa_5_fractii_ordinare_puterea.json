@@ -2,5 +2,1097 @@
   "title": "Puterea cu exponent natural a unei fracții ordinare",
   "description": "Clasa a 5-a · Fracții ordinare",
   "difficulty": "easy",
-  "questions": []
+  "questions": [
+    {
+      "text": "Rezultatul lui (2/3)³ este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ridicăm la cub atât 2, cât și 3.",
+      "options": [
+        {
+          "text": "8/9",
+          "is_correct": false
+        },
+        {
+          "text": "8/27",
+          "is_correct": true
+        },
+        {
+          "text": "2/27",
+          "is_correct": false
+        },
+        {
+          "text": "6/9",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cât este (5/7)⁰?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Orice fracție nenulă ridicată la puterea 0 este 1.",
+      "options": [
+        {
+          "text": "5/7",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "7/5",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrierea sub formă de produs a lui (3/4)⁴ este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Exponentul 4 arată că baza apare ca factor de patru ori.",
+      "options": [
+        {
+          "text": "3·4/4·4",
+          "is_correct": false
+        },
+        {
+          "text": "3/4 · 3/4 · 3/4 · 3/4",
+          "is_correct": true
+        },
+        {
+          "text": "12/16",
+          "is_correct": false
+        },
+        {
+          "text": "3/4 · 4",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Rezultatul lui (2/5)³ · (2/5)² este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La înmulțirea puterilor cu aceeași bază, adunăm exponenții.",
+      "options": [
+        {
+          "text": "(4/10)⁵",
+          "is_correct": false
+        },
+        {
+          "text": "(2/5)⁵",
+          "is_correct": true
+        },
+        {
+          "text": "(2/5)¹",
+          "is_correct": false
+        },
+        {
+          "text": "(2/5)⁶",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Rezultatul lui [(3/7)²]³ este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La puterea unei puteri, înmulțim exponenții.",
+      "options": [
+        {
+          "text": "(9/49)³",
+          "is_correct": false
+        },
+        {
+          "text": "(3/7)⁶",
+          "is_correct": true
+        },
+        {
+          "text": "(3/7)⁹",
+          "is_correct": false
+        },
+        {
+          "text": "(3/7)⁵",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pentru orice fracție nenulă a/b, avem (a/b)¹ = a/b.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Exponentul 1 păstrează baza neschimbată.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "La ridicarea unei fracții la putere se ridică la putere numai numărătorul.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Se ridică la putere atât numărătorul, cât și numitorul.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "(2/3)² · (5/7)² = (10/21)².",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Puterile au același exponent, deci putem înmulți bazele.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează (2/3)^3.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ridicăm separat numărătorul și numitorul: 2^3/3^3 = 8/27.",
+      "interactive": {
+        "mode": "build",
+        "base": [
+          2,
+          3
+        ],
+        "exponent": 3,
+        "answers": {
+          "numerator_power": 8,
+          "denominator_power": 27,
+          "result_numerator": 8,
+          "result_denominator": 27
+        }
+      }
+    },
+    {
+      "text": "Calculează (3/5)^4.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ridicăm separat numărătorul și numitorul: 3^4/5^4 = 81/625.",
+      "interactive": {
+        "mode": "build",
+        "base": [
+          3,
+          5
+        ],
+        "exponent": 4,
+        "answers": {
+          "numerator_power": 81,
+          "denominator_power": 625,
+          "result_numerator": 81,
+          "result_denominator": 625
+        }
+      }
+    },
+    {
+      "text": "Calculează (4/7)^2.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ridicăm separat numărătorul și numitorul: 4^2/7^2 = 16/49.",
+      "interactive": {
+        "mode": "build",
+        "base": [
+          4,
+          7
+        ],
+        "exponent": 2,
+        "answers": {
+          "numerator_power": 16,
+          "denominator_power": 49,
+          "result_numerator": 16,
+          "result_denominator": 49
+        }
+      }
+    },
+    {
+      "text": "Calculează (5/6)^3.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ridicăm separat numărătorul și numitorul: 5^3/6^3 = 125/216.",
+      "interactive": {
+        "mode": "build",
+        "base": [
+          5,
+          6
+        ],
+        "exponent": 3,
+        "answers": {
+          "numerator_power": 125,
+          "denominator_power": 216,
+          "result_numerator": 125,
+          "result_denominator": 216
+        }
+      }
+    },
+    {
+      "text": "Desfă (2/5)^3 ca produs de factori identici.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Puterea conține 3 factori egali cu 2/5.",
+      "interactive": {
+        "mode": "expand",
+        "base": [
+          2,
+          5
+        ],
+        "exponent": 3,
+        "answers": {
+          "factor_1": "2/5",
+          "factor_2": "2/5",
+          "factor_3": "2/5"
+        }
+      }
+    },
+    {
+      "text": "Desfă (4/9)^2 ca produs de factori identici.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Puterea conține 2 factori egali cu 4/9.",
+      "interactive": {
+        "mode": "expand",
+        "base": [
+          4,
+          9
+        ],
+        "exponent": 2,
+        "answers": {
+          "factor_1": "4/9",
+          "factor_2": "4/9"
+        }
+      }
+    },
+    {
+      "text": "Desfă (3/7)^4 ca produs de factori identici.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Puterea conține 4 factori egali cu 3/7.",
+      "interactive": {
+        "mode": "expand",
+        "base": [
+          3,
+          7
+        ],
+        "exponent": 4,
+        "answers": {
+          "factor_1": "3/7",
+          "factor_2": "3/7",
+          "factor_3": "3/7",
+          "factor_4": "3/7"
+        }
+      }
+    },
+    {
+      "text": "Scrie produsul 5/8 · 5/8 · 5/8 sub forma unei singure puteri.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Factorul 5/8 apare de 3 ori, deci obținem (5/8)^3.",
+      "interactive": {
+        "mode": "compress",
+        "product": "5/8 · 5/8 · 5/8",
+        "answers": {
+          "base": "5/8",
+          "exponent": 3
+        }
+      }
+    },
+    {
+      "text": "Scrie produsul 2/11 · 2/11 · 2/11 · 2/11 sub forma unei singure puteri.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Factorul 2/11 apare de 4 ori, deci obținem (2/11)^4.",
+      "interactive": {
+        "mode": "compress",
+        "product": "2/11 · 2/11 · 2/11 · 2/11",
+        "answers": {
+          "base": "2/11",
+          "exponent": 4
+        }
+      }
+    },
+    {
+      "text": "Scrie produsul 7/9 · 7/9 sub forma unei singure puteri.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Factorul 7/9 apare de 2 ori, deci obținem (7/9)^2.",
+      "interactive": {
+        "mode": "compress",
+        "product": "7/9 · 7/9",
+        "answers": {
+          "base": "7/9",
+          "exponent": 2
+        }
+      }
+    },
+    {
+      "text": "Completează exponentul din egalitatea (2/3)^□ = 16/81.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "2⁴/3⁴ = 16/81, deci exponentul este 4.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "(2/3)^□ = 16/81",
+        "fields": [
+          {
+            "key": "exponent",
+            "label": "Exponent"
+          }
+        ],
+        "answers": {
+          "exponent": 4
+        }
+      }
+    },
+    {
+      "text": "Completează baza: (□)³ = 27/125.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rădăcina cubică a lui 27 este 3, iar a lui 125 este 5.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "(□)³ = 27/125",
+        "fields": [
+          {
+            "key": "base",
+            "label": "Baza fracției"
+          }
+        ],
+        "answers": {
+          "base": "3/5"
+        }
+      }
+    },
+    {
+      "text": "Completează numărătorul: (□/4)² = 9/16.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul al cărui pătrat este 9 este 3.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "(□/4)² = 9/16",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător"
+          }
+        ],
+        "answers": {
+          "numerator": 3
+        }
+      }
+    },
+    {
+      "text": "Completează numitorul: (5/□)³ = 125/216.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numitorul căutat are cubul 216, deci este 6.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "(5/□)³ = 125/216",
+        "fields": [
+          {
+            "key": "denominator",
+            "label": "Numitor"
+          }
+        ],
+        "answers": {
+          "denominator": 6
+        }
+      }
+    },
+    {
+      "text": "Alege regula potrivită pentru (4/9)³ · (4/9)⁵.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Bazele sunt egale, deci adunăm exponenții.",
+      "interactive": {
+        "mode": "rule",
+        "expression": "(4/9)³ · (4/9)⁵",
+        "instruction": "Ce regulă aplicăm?",
+        "choices": [
+          {
+            "value": "add",
+            "label": "Păstrăm baza și adunăm exponenții"
+          },
+          {
+            "value": "multiply",
+            "label": "Păstrăm baza și înmulțim exponenții"
+          },
+          {
+            "value": "bases",
+            "label": "Înmulțim bazele și exponenții"
+          }
+        ],
+        "answer_key": "rule",
+        "fields": [],
+        "answers": {
+          "rule": "add"
+        }
+      }
+    },
+    {
+      "text": "Alege regula potrivită pentru (7/10)⁹ : (7/10)⁴.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La împărțirea puterilor cu aceeași bază, scădem exponenții.",
+      "interactive": {
+        "mode": "rule",
+        "expression": "(7/10)⁹ : (7/10)⁴",
+        "instruction": "Ce regulă aplicăm?",
+        "choices": [
+          {
+            "value": "subtract",
+            "label": "Păstrăm baza și scădem exponenții"
+          },
+          {
+            "value": "divide",
+            "label": "Împărțim exponenții"
+          },
+          {
+            "value": "invert",
+            "label": "Inversăm prima bază"
+          }
+        ],
+        "answer_key": "rule",
+        "fields": [],
+        "answers": {
+          "rule": "subtract"
+        }
+      }
+    },
+    {
+      "text": "Alege regula potrivită pentru [(2/5)³]⁴.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La puterea unei puteri, exponenții se înmulțesc.",
+      "interactive": {
+        "mode": "rule",
+        "expression": "[(2/5)³]⁴",
+        "instruction": "Ce regulă aplicăm?",
+        "choices": [
+          {
+            "value": "multiply",
+            "label": "Păstrăm baza și înmulțim exponenții"
+          },
+          {
+            "value": "add",
+            "label": "Adunăm exponenții"
+          },
+          {
+            "value": "keep",
+            "label": "Păstrăm numai exponentul exterior"
+          }
+        ],
+        "answer_key": "rule",
+        "fields": [],
+        "answers": {
+          "rule": "multiply"
+        }
+      }
+    },
+    {
+      "text": "Alege transformarea corectă pentru (3/4)⁵ · (2/7)⁵.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim bazele și păstrăm exponentul 5.",
+      "interactive": {
+        "mode": "rule",
+        "expression": "(3/4)⁵ · (2/7)⁵",
+        "instruction": "Puterile au același exponent.",
+        "choices": [
+          {
+            "value": "product",
+            "label": "[(3/4) · (2/7)]⁵"
+          },
+          {
+            "value": "sum",
+            "label": "[(3/4) + (2/7)]⁵"
+          },
+          {
+            "value": "ten",
+            "label": "(6/28)¹⁰"
+          }
+        ],
+        "answer_key": "rule",
+        "fields": [],
+        "answers": {
+          "rule": "product"
+        }
+      }
+    },
+    {
+      "text": "Construiește exponentul rezultat pentru (5/8)⁶ · (5/8)³.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Exponenții se adună: 6 + 3 = 9.",
+      "interactive": {
+        "mode": "exponent_rule",
+        "expression": "(5/8)⁶ · (5/8)³",
+        "instruction": "Alege operația dintre exponenți și completează rezultatul.",
+        "choices": [
+          {
+            "value": "+",
+            "label": "6 + 3"
+          },
+          {
+            "value": "−",
+            "label": "6 − 3"
+          },
+          {
+            "value": "·",
+            "label": "6 · 3"
+          }
+        ],
+        "answer_key": "operation",
+        "fields": [
+          {
+            "key": "result_exponent",
+            "label": "Exponent final"
+          }
+        ],
+        "answers": {
+          "operation": "+",
+          "result_exponent": 9
+        }
+      }
+    },
+    {
+      "text": "Construiește exponentul rezultat pentru (3/11)⁸ : (3/11)².",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Exponenții se scad: 8 − 2 = 6.",
+      "interactive": {
+        "mode": "exponent_rule",
+        "expression": "(3/11)⁸ : (3/11)²",
+        "instruction": "Alege operația dintre exponenți și completează rezultatul.",
+        "choices": [
+          {
+            "value": "−",
+            "label": "8 − 2"
+          },
+          {
+            "value": "+",
+            "label": "8 + 2"
+          },
+          {
+            "value": "·",
+            "label": "8 · 2"
+          }
+        ],
+        "answer_key": "operation",
+        "fields": [
+          {
+            "key": "result_exponent",
+            "label": "Exponent final"
+          }
+        ],
+        "answers": {
+          "operation": "−",
+          "result_exponent": 6
+        }
+      }
+    },
+    {
+      "text": "Construiește exponentul rezultat pentru [(7/9)²]⁵.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Exponenții se înmulțesc: 2 · 5 = 10.",
+      "interactive": {
+        "mode": "exponent_rule",
+        "expression": "[(7/9)²]⁵",
+        "instruction": "Alege operația dintre exponenți și completează rezultatul.",
+        "choices": [
+          {
+            "value": "·",
+            "label": "2 · 5"
+          },
+          {
+            "value": "+",
+            "label": "2 + 5"
+          },
+          {
+            "value": "−",
+            "label": "5 − 2"
+          }
+        ],
+        "answer_key": "operation",
+        "fields": [
+          {
+            "key": "result_exponent",
+            "label": "Exponent final"
+          }
+        ],
+        "answers": {
+          "operation": "·",
+          "result_exponent": 10
+        }
+      }
+    },
+    {
+      "text": "Construiește exponentul rezultat pentru (4/13)⁷ : (4/13)⁷.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Diferența exponenților este 0, iar puterea este 1.",
+      "interactive": {
+        "mode": "exponent_rule",
+        "expression": "(4/13)⁷ : (4/13)⁷",
+        "instruction": "Alege operația și completează exponentul.",
+        "choices": [
+          {
+            "value": "−",
+            "label": "7 − 7"
+          },
+          {
+            "value": "+",
+            "label": "7 + 7"
+          },
+          {
+            "value": "·",
+            "label": "7 · 7"
+          }
+        ],
+        "answer_key": "operation",
+        "fields": [
+          {
+            "key": "result_exponent",
+            "label": "Exponent final"
+          }
+        ],
+        "answers": {
+          "operation": "−",
+          "result_exponent": 0
+        }
+      }
+    },
+    {
+      "text": "Identifică primul pas greșit în calculul lui (2/3)³.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Și numitorul trebuie ridicat la cub: 3³ = 27.",
+      "interactive": {
+        "mode": "error",
+        "steps": [
+          "Ridicăm numărătorul: 2³ = 8.",
+          "Păstrăm numitorul: 3.",
+          "Obținem 8/3."
+        ],
+        "answers": {
+          "error_index": 1
+        }
+      }
+    },
+    {
+      "text": "Apasă prima transformare incorectă pentru (5/7)² · (5/7)³.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La înmulțire adunăm exponenții și obținem exponentul 5.",
+      "interactive": {
+        "mode": "error",
+        "steps": [
+          "Bazele sunt egale.",
+          "Înmulțim exponenții: 2 · 3 = 6.",
+          "Scriem (5/7)⁶."
+        ],
+        "answers": {
+          "error_index": 1
+        }
+      }
+    },
+    {
+      "text": "Găsește primul pas greșit în calculul [(3/4)²]³.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La puterea unei puteri înmulțim exponenții: 2 · 3 = 6.",
+      "interactive": {
+        "mode": "error",
+        "steps": [
+          "Păstrăm baza 3/4.",
+          "Adunăm exponenții: 2 + 3 = 5.",
+          "Obținem (3/4)⁵."
+        ],
+        "answers": {
+          "error_index": 1
+        }
+      }
+    },
+    {
+      "text": "Așază pașii calculului (3/5)³.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărătorul și numitorul se ridică la același exponent.",
+      "interactive": {
+        "mode": "order_steps",
+        "steps": [
+          "Ridicăm numărătorul: 3³ = 27.",
+          "Ridicăm numitorul: 5³ = 125.",
+          "Scriem rezultatul 27/125."
+        ],
+        "display_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "order": "0,1,2"
+        }
+      }
+    },
+    {
+      "text": "Construiește rezolvarea lui (2/7)⁴ · (2/7)³.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Mai întâi recunoaștem regula, apoi adunăm exponenții și păstrăm baza.",
+      "interactive": {
+        "mode": "order_steps",
+        "steps": [
+          "Observăm că bazele sunt egale.",
+          "Adunăm exponenții: 4 + 3 = 7.",
+          "Păstrăm baza 2/7.",
+          "Obținem (2/7)⁷."
+        ],
+        "display_order": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "answers": {
+          "order": "0,1,2,3"
+        }
+      }
+    },
+    {
+      "text": "Ordonează pașii pentru [(4/9)²]³.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Puterea unei puteri păstrează baza și înmulțește exponenții.",
+      "interactive": {
+        "mode": "order_steps",
+        "steps": [
+          "Identificăm puterea unei puteri.",
+          "Înmulțim exponenții: 2 · 3 = 6.",
+          "Păstrăm baza 4/9.",
+          "Scriem (4/9)⁶."
+        ],
+        "display_order": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "answers": {
+          "order": "0,1,2,3"
+        }
+      }
+    },
+    {
+      "text": "Potrivește fiecare putere cu rezultatul ei.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aplicăm regula indicată și păstrăm aceeași bază sau același exponent, după caz.",
+      "interactive": {
+        "mode": "match",
+        "pairs": [
+          {
+            "left": "(1/2)³",
+            "right": "1/8"
+          },
+          {
+            "left": "(2/3)²",
+            "right": "4/9"
+          },
+          {
+            "left": "(3/5)³",
+            "right": "27/125"
+          }
+        ],
+        "result_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "match_0": 0,
+          "match_1": 1,
+          "match_2": 2
+        }
+      }
+    },
+    {
+      "text": "Potrivește fiecare expresie cu puterea simplificată.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aplicăm regula indicată și păstrăm aceeași bază sau același exponent, după caz.",
+      "interactive": {
+        "mode": "match",
+        "pairs": [
+          {
+            "left": "(2/7)³ · (2/7)⁴",
+            "right": "(2/7)⁷"
+          },
+          {
+            "left": "(5/9)⁸ : (5/9)³",
+            "right": "(5/9)⁵"
+          },
+          {
+            "left": "[(3/4)²]⁵",
+            "right": "(3/4)¹⁰"
+          }
+        ],
+        "result_order": [
+          1,
+          2,
+          0
+        ],
+        "answers": {
+          "match_0": 0,
+          "match_1": 1,
+          "match_2": 2
+        }
+      }
+    },
+    {
+      "text": "Leagă fiecare produs de forma cu un singur exponent.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aplicăm regula indicată și păstrăm aceeași bază sau același exponent, după caz.",
+      "interactive": {
+        "mode": "match",
+        "pairs": [
+          {
+            "left": "(2/3)⁴ · (5/7)⁴",
+            "right": "(10/21)⁴"
+          },
+          {
+            "left": "(3/8)² · (4/5)²",
+            "right": "(3/10)²"
+          },
+          {
+            "left": "(7/9)³ : (2/5)³",
+            "right": "(35/18)³"
+          }
+        ],
+        "result_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "match_0": 0,
+          "match_1": 1,
+          "match_2": 2
+        }
+      }
+    },
+    {
+      "text": "Selectează partea din întreg reprezentată de (1/2)^3.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "(1/2)^3 = 1/2^3 = 1/8.",
+      "interactive": {
+        "mode": "visual",
+        "cell_count": 8,
+        "filled_cells": 1,
+        "caption": "Întregul a fost împărțit succesiv de 3 ori în câte 2 părți.",
+        "choices": [
+          "1/4",
+          "1/6",
+          "1/8",
+          "3/8"
+        ],
+        "answers": {
+          "selected": "1/8"
+        }
+      }
+    },
+    {
+      "text": "Selectează partea din întreg reprezentată de (1/3)^2.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "(1/3)^2 = 1/3^2 = 1/9.",
+      "interactive": {
+        "mode": "visual",
+        "cell_count": 9,
+        "filled_cells": 1,
+        "caption": "Întregul a fost împărțit succesiv de 2 ori în câte 3 părți.",
+        "choices": [
+          "1/6",
+          "1/9",
+          "2/9",
+          "1/27"
+        ],
+        "answers": {
+          "selected": "1/9"
+        }
+      }
+    },
+    {
+      "text": "Selectează partea din întreg reprezentată de (1/2)^4.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "(1/2)^4 = 1/2^4 = 1/16.",
+      "interactive": {
+        "mode": "visual",
+        "cell_count": 16,
+        "filled_cells": 1,
+        "caption": "Întregul a fost împărțit succesiv de 4 ori în câte 2 părți.",
+        "choices": [
+          "1/8",
+          "1/12",
+          "1/16",
+          "4/16"
+        ],
+        "answers": {
+          "selected": "1/16"
+        }
+      }
+    },
+    {
+      "text": "Scrie 81/256 ca putere cu baza 3/4.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "81 = 3⁴ și 256 = 4⁴.",
+      "interactive": {
+        "mode": "given_base",
+        "expression": "81/256 = (3/4)^□",
+        "fields": [
+          {
+            "key": "exponent",
+            "label": "Exponent"
+          }
+        ],
+        "answers": {
+          "exponent": 4
+        }
+      }
+    },
+    {
+      "text": "Scrie 32/243 ca putere cu baza 2/3.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "32 = 2⁵ și 243 = 3⁵.",
+      "interactive": {
+        "mode": "given_base",
+        "expression": "32/243 = (2/3)^□",
+        "fields": [
+          {
+            "key": "exponent",
+            "label": "Exponent"
+          }
+        ],
+        "answers": {
+          "exponent": 5
+        }
+      }
+    },
+    {
+      "text": "Scrie 343/216 ca putere cu exponentul 3.",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "343 = 7³ și 216 = 6³.",
+      "interactive": {
+        "mode": "given_exponent",
+        "expression": "343/216 = (□)³",
+        "fields": [
+          {
+            "key": "base",
+            "label": "Baza"
+          }
+        ],
+        "answers": {
+          "base": "7/6"
+        }
+      }
+    },
+    {
+      "text": "O foaie se înjumătățește succesiv de 4 ori. Ce fracție din foaia inițială reprezintă una dintre bucățile finale?",
+      "type": "fraction_power",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Calculăm (1/2)^4 = 1/16.",
+      "interactive": {
+        "mode": "problem",
+        "base": [
+          1,
+          2
+        ],
+        "exponent": 4,
+        "answers": {
+          "result_numerator": 1,
+          "result_denominator": 16
+        }
+      }
+    }
+  ]
 }

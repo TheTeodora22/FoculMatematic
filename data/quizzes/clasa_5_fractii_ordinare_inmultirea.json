@@ -2,5 +2,1302 @@
   "title": "Înmulțirea fracțiilor",
   "description": "Clasa a 5-a · Fracții ordinare",
   "difficulty": "easy",
-  "questions": []
+  "questions": [
+    {
+      "text": "Calculează 3 · 2/7.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem 3 ca 3/1 și înmulțim numărătorii.",
+      "options": [
+        {
+          "text": "5/7",
+          "is_correct": false
+        },
+        {
+          "text": "6/7",
+          "is_correct": true
+        },
+        {
+          "text": "3/14",
+          "is_correct": false
+        },
+        {
+          "text": "6/21",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Rezultatul lui 4/9 · 7/10 este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "4/9 · 7/10 = 28/90 = 14/45.",
+      "options": [
+        {
+          "text": "11/19",
+          "is_correct": false
+        },
+        {
+          "text": "14/45",
+          "is_correct": true
+        },
+        {
+          "text": "28/90",
+          "is_correct": false
+        },
+        {
+          "text": "28/19",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează și simplifică 5/6 · 9/20.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Simplificăm 5 cu 20 și 9 cu 6 înainte de înmulțire.",
+      "options": [
+        {
+          "text": "14/26",
+          "is_correct": false
+        },
+        {
+          "text": "3/8",
+          "is_correct": true
+        },
+        {
+          "text": "3/4",
+          "is_correct": false
+        },
+        {
+          "text": "45/120",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Produsul 2 1/7 · 3/5 este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2 1/7 = 15/7, iar 15/7 · 3/5 = 9/7 = 1 2/7.",
+      "options": [
+        {
+          "text": "9/35",
+          "is_correct": false
+        },
+        {
+          "text": "1 2/7",
+          "is_correct": true
+        },
+        {
+          "text": "2 4/7",
+          "is_correct": false
+        },
+        {
+          "text": "6/35",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Radu mănâncă 2/3 dintr-o bucată care reprezintă 3/8 din plăcintă. Ce fracție din plăcintă mănâncă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Calculăm 2/3 · 3/8 = 6/24 = 1/4.",
+      "options": [
+        {
+          "text": "2/8",
+          "is_correct": false
+        },
+        {
+          "text": "1/4",
+          "is_correct": true
+        },
+        {
+          "text": "6/11",
+          "is_correct": false
+        },
+        {
+          "text": "5/11",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Produsul a două fracții se obține înmulțind numărătorii între ei și numitorii între ei.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Aceasta este regula înmulțirii fracțiilor.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "La simplificarea în cruce putem simplifica doi numărători între ei.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Simplificăm un numărător cu un numitor.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Un număr mixt trebuie transformat în fracție înainte de înmulțire.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Introducem întregii în fracție, apoi efectuăm produsul.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează 3/1 · 2/7 și simplifică.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul este 6/7, care se simplifică la 6/7.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          3,
+          1
+        ],
+        "right": [
+          2,
+          7
+        ],
+        "answers": {
+          "raw_numerator": 6,
+          "raw_denominator": 7,
+          "result_numerator": 6,
+          "result_denominator": 7
+        }
+      }
+    },
+    {
+      "text": "Calculează 4/9 · 7/10 și simplifică.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul este 28/90, care se simplifică la 14/45.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          4,
+          9
+        ],
+        "right": [
+          7,
+          10
+        ],
+        "answers": {
+          "raw_numerator": 28,
+          "raw_denominator": 90,
+          "result_numerator": 14,
+          "result_denominator": 45
+        }
+      }
+    },
+    {
+      "text": "Calculează 5/6 · 9/20 și simplifică.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul este 45/120, care se simplifică la 3/8.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          5,
+          6
+        ],
+        "right": [
+          9,
+          20
+        ],
+        "answers": {
+          "raw_numerator": 45,
+          "raw_denominator": 120,
+          "result_numerator": 3,
+          "result_denominator": 8
+        }
+      }
+    },
+    {
+      "text": "Calculează 11/12 · 6/55 și simplifică.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul este 66/660, care se simplifică la 1/10.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          11,
+          12
+        ],
+        "right": [
+          6,
+          55
+        ],
+        "answers": {
+          "raw_numerator": 66,
+          "raw_denominator": 660,
+          "result_numerator": 1,
+          "result_denominator": 10
+        }
+      }
+    },
+    {
+      "text": "Simplifică în cruce și calculează 4/15 · 25/14.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "După simplificările în cruce, produsul ireductibil este 10/21.",
+      "interactive": {
+        "mode": "cross_cancel",
+        "left": [
+          4,
+          15
+        ],
+        "right": [
+          25,
+          14
+        ],
+        "cancellations": [
+          {
+            "first": 4,
+            "second": 14,
+            "factor": 2,
+            "first_result": 2,
+            "second_result": 7
+          },
+          {
+            "first": 25,
+            "second": 15,
+            "factor": 5,
+            "first_result": 5,
+            "second_result": 3
+          }
+        ],
+        "answers": {
+          "result_numerator": 10,
+          "result_denominator": 21,
+          "0:factor": 2,
+          "0:first_result": 2,
+          "0:second_result": 7,
+          "1:factor": 5,
+          "1:first_result": 5,
+          "1:second_result": 3
+        }
+      }
+    },
+    {
+      "text": "Simplifică în cruce și calculează 9/28 · 14/15.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "După simplificările în cruce, produsul ireductibil este 3/10.",
+      "interactive": {
+        "mode": "cross_cancel",
+        "left": [
+          9,
+          28
+        ],
+        "right": [
+          14,
+          15
+        ],
+        "cancellations": [
+          {
+            "first": 9,
+            "second": 15,
+            "factor": 3,
+            "first_result": 3,
+            "second_result": 5
+          },
+          {
+            "first": 14,
+            "second": 28,
+            "factor": 14,
+            "first_result": 1,
+            "second_result": 2
+          }
+        ],
+        "answers": {
+          "result_numerator": 3,
+          "result_denominator": 10,
+          "0:factor": 3,
+          "0:first_result": 3,
+          "0:second_result": 5,
+          "1:factor": 14,
+          "1:first_result": 1,
+          "1:second_result": 2
+        }
+      }
+    },
+    {
+      "text": "Simplifică în cruce și calculează 12/35 · 21/16.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "După simplificările în cruce, produsul ireductibil este 9/20.",
+      "interactive": {
+        "mode": "cross_cancel",
+        "left": [
+          12,
+          35
+        ],
+        "right": [
+          21,
+          16
+        ],
+        "cancellations": [
+          {
+            "first": 12,
+            "second": 16,
+            "factor": 4,
+            "first_result": 3,
+            "second_result": 4
+          },
+          {
+            "first": 21,
+            "second": 35,
+            "factor": 7,
+            "first_result": 3,
+            "second_result": 5
+          }
+        ],
+        "answers": {
+          "result_numerator": 9,
+          "result_denominator": 20,
+          "0:factor": 4,
+          "0:first_result": 3,
+          "0:second_result": 4,
+          "1:factor": 7,
+          "1:first_result": 3,
+          "1:second_result": 5
+        }
+      }
+    },
+    {
+      "text": "Simplifică în cruce și calculează 18/49 · 21/30.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "După simplificările în cruce, produsul ireductibil este 9/35.",
+      "interactive": {
+        "mode": "cross_cancel",
+        "left": [
+          18,
+          49
+        ],
+        "right": [
+          21,
+          30
+        ],
+        "cancellations": [
+          {
+            "first": 18,
+            "second": 30,
+            "factor": 6,
+            "first_result": 3,
+            "second_result": 5
+          },
+          {
+            "first": 21,
+            "second": 49,
+            "factor": 7,
+            "first_result": 3,
+            "second_result": 7
+          }
+        ],
+        "answers": {
+          "result_numerator": 9,
+          "result_denominator": 35,
+          "0:factor": 6,
+          "0:first_result": 3,
+          "0:second_result": 5,
+          "1:factor": 7,
+          "1:first_result": 3,
+          "1:second_result": 7
+        }
+      }
+    },
+    {
+      "text": "Reprezintă pe grilă produsul 2/3 · 4/5.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suprapunerea conține 8 din 15 căsuțe, adică 8/15.",
+      "interactive": {
+        "mode": "visual",
+        "left": [
+          2,
+          3
+        ],
+        "right": [
+          4,
+          5
+        ],
+        "columns": 3,
+        "rows": 5,
+        "first_columns": 2,
+        "second_rows": 4,
+        "answers": {
+          "selected": "0,1,3,4,6,7,9,10"
+        }
+      }
+    },
+    {
+      "text": "Reprezintă pe grilă produsul 3/4 · 2/3.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suprapunerea conține 6 din 12 căsuțe, adică 1/2.",
+      "interactive": {
+        "mode": "visual",
+        "left": [
+          3,
+          4
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "columns": 4,
+        "rows": 3,
+        "first_columns": 3,
+        "second_rows": 2,
+        "answers": {
+          "selected": "0,1,2,4,5,6"
+        }
+      }
+    },
+    {
+      "text": "Reprezintă pe grilă produsul 1/2 · 3/4.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suprapunerea conține 3 din 8 căsuțe, adică 3/8.",
+      "interactive": {
+        "mode": "visual",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          3,
+          4
+        ],
+        "columns": 2,
+        "rows": 4,
+        "first_columns": 1,
+        "second_rows": 3,
+        "answers": {
+          "selected": "0,2,4"
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea 3/5 · □/□ = 9/20.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Factorul lipsă este 3/4.",
+      "interactive": {
+        "mode": "missing",
+        "left": [
+          3,
+          5
+        ],
+        "right": [
+          3,
+          4
+        ],
+        "result": [
+          9,
+          20
+        ],
+        "missing": [
+          3,
+          4
+        ],
+        "missing_side": "right",
+        "editable": "fraction",
+        "answers": {
+          "missing_numerator": 3,
+          "missing_denominator": 4
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea 4/7 · 3/□ = 6/7.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Factorul lipsă este 3/2.",
+      "interactive": {
+        "mode": "missing",
+        "left": [
+          4,
+          7
+        ],
+        "right": [
+          3,
+          2
+        ],
+        "result": [
+          6,
+          7
+        ],
+        "missing": [
+          3,
+          2
+        ],
+        "missing_side": "right",
+        "editable": "denominator",
+        "answers": {
+          "missing_denominator": 2
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea 5/8 · □/15 = 1/6.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Factorul lipsă este 4/15.",
+      "interactive": {
+        "mode": "missing",
+        "left": [
+          5,
+          8
+        ],
+        "right": [
+          4,
+          15
+        ],
+        "result": [
+          1,
+          6
+        ],
+        "missing": [
+          4,
+          15
+        ],
+        "missing_side": "right",
+        "editable": "numerator",
+        "answers": {
+          "missing_numerator": 4
+        }
+      }
+    },
+    {
+      "text": "Alege simplificările în cruce permise pentru 4/15 · 25/14.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Se pot simplifica numai un numărător cu un numitor, folosind un divizor comun mai mare decât 1.",
+      "interactive": {
+        "mode": "cancel_select",
+        "left": [
+          4,
+          15
+        ],
+        "right": [
+          25,
+          14
+        ],
+        "candidates": [
+          {
+            "id": "a",
+            "label": "4 cu 14"
+          },
+          {
+            "id": "b",
+            "label": "25 cu 15"
+          },
+          {
+            "id": "c",
+            "label": "4 cu 15"
+          },
+          {
+            "id": "d",
+            "label": "25 cu 14"
+          }
+        ],
+        "answers": {
+          "selected": "a,b"
+        }
+      }
+    },
+    {
+      "text": "Alege simplificările în cruce permise pentru 9/28 · 14/15.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Se pot simplifica numai un numărător cu un numitor, folosind un divizor comun mai mare decât 1.",
+      "interactive": {
+        "mode": "cancel_select",
+        "left": [
+          9,
+          28
+        ],
+        "right": [
+          14,
+          15
+        ],
+        "candidates": [
+          {
+            "id": "a",
+            "label": "9 cu 15"
+          },
+          {
+            "id": "b",
+            "label": "14 cu 28"
+          },
+          {
+            "id": "c",
+            "label": "9 cu 28"
+          },
+          {
+            "id": "d",
+            "label": "14 cu 15"
+          }
+        ],
+        "answers": {
+          "selected": "a,b"
+        }
+      }
+    },
+    {
+      "text": "Alege simplificările în cruce permise pentru 12/35 · 21/16.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Se pot simplifica numai un numărător cu un numitor, folosind un divizor comun mai mare decât 1.",
+      "interactive": {
+        "mode": "cancel_select",
+        "left": [
+          12,
+          35
+        ],
+        "right": [
+          21,
+          16
+        ],
+        "candidates": [
+          {
+            "id": "a",
+            "label": "12 cu 16"
+          },
+          {
+            "id": "b",
+            "label": "21 cu 35"
+          },
+          {
+            "id": "c",
+            "label": "12 cu 35"
+          },
+          {
+            "id": "d",
+            "label": "21 cu 16"
+          }
+        ],
+        "answers": {
+          "selected": "a,b"
+        }
+      }
+    },
+    {
+      "text": "Identifică primul pas greșit în calculul 2/3 · 5/7.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul corect este 10/21, nu 21/10.",
+      "interactive": {
+        "mode": "error",
+        "left": [
+          2,
+          3
+        ],
+        "right": [
+          5,
+          7
+        ],
+        "steps": [
+          "Înmulțim numărătorii: 2 · 5 = 10.",
+          "Înmulțim numitorii: 3 · 7 = 21.",
+          "Produsul este 21/10."
+        ],
+        "answers": {
+          "error_index": 2
+        }
+      }
+    },
+    {
+      "text": "Apasă prima simplificare greșită din calculul 4/9 · 3/8.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "4 și 8 simplificate prin 4 devin 1 și 2.",
+      "interactive": {
+        "mode": "error",
+        "left": [
+          4,
+          9
+        ],
+        "right": [
+          3,
+          8
+        ],
+        "steps": [
+          "Simplificăm 4 cu 8 și obținem 1 și 4.",
+          "Simplificăm 3 cu 9 și obținem 1 și 3.",
+          "Înmulțim 1/3 · 1/4."
+        ],
+        "answers": {
+          "error_index": 0
+        }
+      }
+    },
+    {
+      "text": "Alege prima transformare incorectă pentru 1 1/2 · 2/3.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "1 1/2 = 3/2, deoarece 1 · 2 + 1 = 3.",
+      "interactive": {
+        "mode": "error",
+        "left": [
+          3,
+          2
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "steps": [
+          "1 1/2 = 2/2.",
+          "Înmulțim fracțiile obținute.",
+          "Simplificăm produsul."
+        ],
+        "answers": {
+          "error_index": 0
+        }
+      }
+    },
+    {
+      "text": "Așază pașii pentru calculul 3/5 · 10/21.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Simplificăm în cruce, apoi înmulțim valorile rămase.",
+      "interactive": {
+        "mode": "order_steps",
+        "left": [
+          3,
+          5
+        ],
+        "right": [
+          10,
+          21
+        ],
+        "steps": [
+          "Simplificăm 3 cu 21 prin 3.",
+          "Simplificăm 10 cu 5 prin 5.",
+          "Înmulțim 1/1 · 2/7.",
+          "Obținem 2/7."
+        ],
+        "display_order": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "answers": {
+          "order": "0,1,2,3"
+        }
+      }
+    },
+    {
+      "text": "Construiește rezolvarea produsului 2 1/4 · 8/15.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Mai întâi introducem întregii, apoi simplificăm și înmulțim.",
+      "interactive": {
+        "mode": "order_steps",
+        "left": [
+          9,
+          4
+        ],
+        "right": [
+          8,
+          15
+        ],
+        "steps": [
+          "Transformăm 2 1/4 în 9/4.",
+          "Simplificăm 8 cu 4 și 9 cu 15.",
+          "Înmulțim 3/1 · 2/5 = 6/5.",
+          "Scriem 6/5 = 1 1/5."
+        ],
+        "display_order": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "answers": {
+          "order": "0,1,2,3"
+        }
+      }
+    },
+    {
+      "text": "Ordonează pașii calculului 6 · 5/18.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul natural se scrie cu numitorul 1 înainte de calcul.",
+      "interactive": {
+        "mode": "order_steps",
+        "left": [
+          6,
+          1
+        ],
+        "right": [
+          5,
+          18
+        ],
+        "steps": [
+          "Scriem 6 ca fracția 6/1.",
+          "Simplificăm 6 cu 18 prin 6.",
+          "Calculăm 1/1 · 5/3 = 5/3.",
+          "Scoatem întregii: 5/3 = 1 2/3."
+        ],
+        "display_order": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "answers": {
+          "order": "0,1,2,3"
+        }
+      }
+    },
+    {
+      "text": "Potrivește fiecare produs cu rezultatul lui.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim numărătorii și numitorii, apoi simplificăm fiecare produs.",
+      "interactive": {
+        "mode": "match",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "pairs": [
+          {
+            "operation": "2/3 · 3/5",
+            "result": "2/5"
+          },
+          {
+            "operation": "4/7 · 7/8",
+            "result": "1/2"
+          },
+          {
+            "operation": "5/9 · 3/10",
+            "result": "1/6"
+          }
+        ],
+        "result_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "match_0": 0,
+          "match_1": 1,
+          "match_2": 2
+        }
+      }
+    },
+    {
+      "text": "Leagă fiecare înmulțire de valoarea corectă.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim numărătorii și numitorii, apoi simplificăm fiecare produs.",
+      "interactive": {
+        "mode": "match",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "pairs": [
+          {
+            "operation": "3 · 2/11",
+            "result": "6/11"
+          },
+          {
+            "operation": "7/12 · 6/7",
+            "result": "1/2"
+          },
+          {
+            "operation": "5/8 · 4/9",
+            "result": "5/18"
+          }
+        ],
+        "result_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "match_0": 0,
+          "match_1": 1,
+          "match_2": 2
+        }
+      }
+    },
+    {
+      "text": "Alege rezultatul potrivit pentru fiecare produs.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim numărătorii și numitorii, apoi simplificăm fiecare produs.",
+      "interactive": {
+        "mode": "match",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "pairs": [
+          {
+            "operation": "2 1/4 · 2/3",
+            "result": "3/2"
+          },
+          {
+            "operation": "1 2/5 · 5/7",
+            "result": "1"
+          },
+          {
+            "operation": "3 1/3 · 3/8",
+            "result": "5/4"
+          }
+        ],
+        "result_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "match_0": 0,
+          "match_1": 1,
+          "match_2": 2
+        }
+      }
+    },
+    {
+      "text": "Fiecare sesiune consumă 2/9 din baterie. Ce fracție din baterie consumă 4 sesiuni?",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Calculăm 4/1 · 2/9 = 8/9.",
+      "interactive": {
+        "mode": "problem",
+        "left": [
+          4,
+          1
+        ],
+        "right": [
+          2,
+          9
+        ],
+        "answers": {
+          "result_numerator": 8,
+          "result_denominator": 9
+        }
+      }
+    },
+    {
+      "text": "O tavă este plină în proporție de 2/3, iar Horia folosește 4/5 din cuburile existente. Ce fracție din tavă folosește?",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Calculăm 2/3 · 4/5 = 8/15.",
+      "interactive": {
+        "mode": "problem",
+        "left": [
+          2,
+          3
+        ],
+        "right": [
+          4,
+          5
+        ],
+        "answers": {
+          "result_numerator": 8,
+          "result_denominator": 15
+        }
+      }
+    },
+    {
+      "text": "Pentru o perdea sunt necesari 4 3/5 metri de material. Cât material este necesar pentru 4 perdele?",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Calculăm 4/1 · 23/5 = 92/5.",
+      "interactive": {
+        "mode": "problem",
+        "left": [
+          4,
+          1
+        ],
+        "right": [
+          23,
+          5
+        ],
+        "answers": {
+          "result_numerator": 92,
+          "result_denominator": 5
+        }
+      }
+    },
+    {
+      "text": "Pentru o porție sunt necesare 1/2 kg de zahăr. Ce cantitate este necesară pentru 3 porții?",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Calculăm 3/1 · 1/2 = 3/2.",
+      "interactive": {
+        "mode": "problem",
+        "left": [
+          3,
+          1
+        ],
+        "right": [
+          1,
+          2
+        ],
+        "answers": {
+          "result_numerator": 3,
+          "result_denominator": 2
+        }
+      }
+    },
+    {
+      "text": "Calculează 14 · 5/21 și scrie rezultatul ca număr mixt.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul este 10/3, adică 3 1/3.",
+      "interactive": {
+        "mode": "mixed",
+        "left": [
+          14,
+          1
+        ],
+        "right": [
+          5,
+          21
+        ],
+        "left_label": "14",
+        "right_label": "5/21",
+        "answers": {
+          "whole": 3,
+          "mixed_numerator": 1,
+          "mixed_denominator": 3
+        }
+      }
+    },
+    {
+      "text": "Calculează 4 2/7 · 5/11 și scrie rezultatul ca număr mixt.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul este 150/77, adică 1 73/77.",
+      "interactive": {
+        "mode": "mixed",
+        "left": [
+          30,
+          7
+        ],
+        "right": [
+          5,
+          11
+        ],
+        "left_label": "4 2/7",
+        "right_label": "5/11",
+        "answers": {
+          "whole": 1,
+          "mixed_numerator": 73,
+          "mixed_denominator": 77
+        }
+      }
+    },
+    {
+      "text": "Calculează 3 3/5 · 2 1/4 și scrie rezultatul ca număr mixt.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul este 81/10, adică 8 1/10.",
+      "interactive": {
+        "mode": "mixed",
+        "left": [
+          18,
+          5
+        ],
+        "right": [
+          9,
+          4
+        ],
+        "left_label": "3 3/5",
+        "right_label": "2 1/4",
+        "answers": {
+          "whole": 8,
+          "mixed_numerator": 1,
+          "mixed_denominator": 10
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea □/□ · 3/4 = 9/10.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Factorul lipsă este 6/5.",
+      "interactive": {
+        "mode": "inverse",
+        "left": [
+          6,
+          5
+        ],
+        "right": [
+          3,
+          4
+        ],
+        "result": [
+          9,
+          10
+        ],
+        "missing": [
+          6,
+          5
+        ],
+        "missing_side": "left",
+        "editable": "fraction",
+        "answers": {
+          "missing_numerator": 6,
+          "missing_denominator": 5
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea 5/7 · □/□ = 15/28.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Factorul lipsă este 3/4.",
+      "interactive": {
+        "mode": "inverse",
+        "left": [
+          5,
+          7
+        ],
+        "right": [
+          3,
+          4
+        ],
+        "result": [
+          15,
+          28
+        ],
+        "missing": [
+          3,
+          4
+        ],
+        "missing_side": "right",
+        "editable": "fraction",
+        "answers": {
+          "missing_numerator": 3,
+          "missing_denominator": 4
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea □/□ · 2/9 = 5/6.",
+      "type": "fraction_product",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Factorul lipsă este 15/4.",
+      "interactive": {
+        "mode": "inverse",
+        "left": [
+          15,
+          4
+        ],
+        "right": [
+          2,
+          9
+        ],
+        "result": [
+          5,
+          6
+        ],
+        "missing": [
+          15,
+          4
+        ],
+        "missing_side": "left",
+        "editable": "fraction",
+        "answers": {
+          "missing_numerator": 15,
+          "missing_denominator": 4
+        }
+      }
+    }
+  ]
 }

@@ -51,6 +51,7 @@ QUESTION_TYPES = {
     "figurative_method",
     "reverse_method",
     "false_hypothesis_method",
+    "geometry_canvas",
     "operation_sequence",
     "operation_workbench",
     "divisibility_values",
@@ -60,6 +61,8 @@ QUESTION_TYPES = {
     "criteria_table",
     "prime_workbench",
     "decimal_workbench",
+    "statistics_chart",
+    "algebra_workbench",
     "fraction_visual",
     "fraction_domino",
     "fraction_compare",
@@ -69,6 +72,10 @@ QUESTION_TYPES = {
     "fraction_reduce_path",
     "lcm_workbench",
     "common_denominator",
+    "fraction_product",
+    "fraction_division",
+    "fraction_power",
+    "fraction_percent",
 }
 QUESTION_FORMATS = {"grid", "true_false", "interactive"}
 CHAPTERS_MANIFEST = "chapters.json"
@@ -207,7 +214,7 @@ def _validate_quiz_payload(data: dict, source: str) -> None:
             raise SeedValidationError(
                 f"{source}: întrebarea {i} este grilă, dar are eticheta Interactiv."
             )
-        tagged_interactive_true_false = question_type in {"unit_reduction", "comparison_method", "figurative_method", "reverse_method"} and question_format == "true_false"
+        tagged_interactive_true_false = question_type in {"unit_reduction", "comparison_method", "figurative_method", "reverse_method", "false_hypothesis_method", "geometry_canvas", "algebra_workbench"} and question_format == "true_false"
         if question_type != "multiple_choice" and question_format != "interactive" and not tagged_interactive_true_false:
             raise SeedValidationError(
                 f"{source}: întrebarea {i} interactivă trebuie etichetată Interactiv."
@@ -324,13 +331,25 @@ def _validate_quiz_payload(data: dict, source: str) -> None:
             quotient = interactive.get("quotient")
             remainder = interactive.get("remainder", dividend % divisor if isinstance(dividend, int) and isinstance(divisor, int) and divisor > 0 else None)
             remainders = interactive.get("remainders")
-            if not all(isinstance(value, int) and value >= 0 for value in (dividend, quotient)) or not isinstance(divisor, int) or divisor <= 0:
+            quotient_text = str(quotient).replace(",", ".")
+            dividend_text = str(dividend).replace(",", ".")
+            if not re.fullmatch(r"\d+(?:\.\d+)?", dividend_text) or not isinstance(divisor, int) or divisor <= 0 or not re.fullmatch(r"\d+(?:\.\d+)?", quotient_text):
                 raise SeedValidationError(f"{source}: întrebarea {i} are date invalide pentru împărțirea în coloană.")
-            if not isinstance(remainder, int) or remainder < 0 or remainder >= divisor or dividend // divisor != quotient or dividend % divisor != remainder:
+            quotient_scale = 10 ** (len(quotient_text.split(".")[1]) if "." in quotient_text else 0)
+            quotient_integer = int(quotient_text.replace(".", ""))
+            dividend_scale = 10 ** (len(dividend_text.split(".")[1]) if "." in dividend_text else 0)
+            dividend_integer = int(dividend_text.replace(".", ""))
+            exact_decimal = dividend_scale > 1
+            equation_is_valid = quotient_integer * divisor * dividend_scale == dividend_integer * quotient_scale if exact_decimal else quotient_integer * divisor + remainder == dividend_integer * quotient_scale
+            if not isinstance(remainder, int) or remainder < 0 or remainder >= divisor or not equation_is_valid or (exact_decimal and remainder != 0):
                 raise SeedValidationError(f"{source}: întrebarea {i} are câtul sau restul final greșit.")
             expected_remainders = []
             current = 0
-            for digit in str(dividend):
+            base_digits = str(interactive.get("calculation_base", str(dividend_integer)))
+            calculation_digits = interactive.get("calculation_digits", base_digits)
+            if not isinstance(calculation_digits, str) or not calculation_digits.startswith(base_digits) or set(calculation_digits[len(base_digits):]) - {"0"}:
+                raise SeedValidationError(f"{source}: întrebarea {i} are zerouri de continuare invalide.")
+            for digit in calculation_digits:
                 current = current * 10 + int(digit)
                 expected_remainders.append(current % divisor)
                 current %= divisor
@@ -876,6 +895,19 @@ def _validate_quiz_payload(data: dict, source: str) -> None:
             if "high_count" in answers and expected_total != scenario["total"]:
                 raise SeedValidationError(f"{source}: întrebarea {i} are o soluție incompatibilă cu datele.")
             continue
+        if question_type == "geometry_canvas":
+            interactive = question.get("interactive", {})
+            mode, answers = interactive.get("mode"), interactive.get("answers")
+            allowed = {"choose_figure", "construct_figure", "place_points", "coincidence", "complete_notation", "identify_figure", "match_figure", "repair_drawing", "transform_figure", "choose_origin", "reverse_ray", "label_endpoints", "complete_markers", "point_membership", "select_figures", "enumerate_segments", "containing_segments", "place_noncollinear", "place_collinear", "build_triangle", "plane_points", "split_plane", "choose_halfplane", "move_boundary", "visual_true_false", "notation_detective", "match_notation", "instruction_sequence", "construction_checker", "reconstruct_model", "full_geometry_puzzle", "point_on_line", "membership_choice", "membership_symbol", "color_membership", "repair_membership", "odd_point", "move_to_collinear", "same_side", "choose_collinear", "select_collinear", "ruler_line", "position_ruler", "many_lines_point", "unique_line", "coincident_lines", "axiom_choice", "axiom_fill", "line_relation", "intersection_point", "make_concurrent", "make_parallel", "make_identical", "transform_relation", "repair_relation", "match_relation_notation", "complete_relation", "select_concurrent_pairs", "select_parallel_pairs", "sort_relations", "ruler_set_square_parallel", "place_set_square", "slide_set_square", "parallel_through_point", "continue_construction", "order_tool_steps", "repair_tools", "draw_concurrent", "draw_parallel", "draw_identical", "multi_condition", "line_count", "line_counter", "min_lines", "max_lines", "arrange_line_count", "intersection_count", "explore_three_lines"}
+            if mode not in allowed or not isinstance(answers, dict) or not answers:
+                raise SeedValidationError(f"{source}: întrebarea {i} are un exercițiu geometric SVG invalid.")
+            figures = interactive.get("figures", [])
+            if mode in {"choose_figure", "match_figure", "select_figures", "match_notation"} and (not isinstance(figures, list) or len(figures) < 2):
+                raise SeedValidationError(f"{source}: întrebarea {i} nu are suficiente figuri SVG.")
+            points = interactive.get("points", [])
+            if mode in {"place_points", "coincidence", "place_noncollinear", "place_collinear", "build_triangle", "plane_points", "reconstruct_model", "full_geometry_puzzle"} and (not isinstance(points, list) or len(points) < 2):
+                raise SeedValidationError(f"{source}: întrebarea {i} nu are punctele necesare.")
+            continue
         if question_type == "operation_sequence":
             interactive = question.get("interactive", {})
             steps = interactive.get("steps")
@@ -1040,12 +1072,207 @@ def _validate_quiz_payload(data: dict, source: str) -> None:
         if question_type == "common_denominator":
             interactive = question.get("interactive", {})
             left, right, answers = interactive.get("left"), interactive.get("right"), interactive.get("answers")
+            mode = interactive.get("mode")
             if (
-                interactive.get("mode") not in {"build", "compare", "order"}
+                mode not in {"build", "missing", "error", "calculate", "missing_term", "operator", "order_steps", "match", "problem", "mixed", "inverse"}
                 or not all(isinstance(value, list) and len(value) == 2 and all(isinstance(number, int) and number > 0 for number in value) for value in (left, right))
                 or not isinstance(answers, dict) or not answers
+                or not all(isinstance(key, str) and isinstance(value, (str, int)) for key, value in answers.items())
             ):
                 raise SeedValidationError(f"{source}: întrebarea {i} are o aducere la numitor comun invalidă.")
+            if mode in {"calculate", "missing_term", "operator", "problem", "mixed", "inverse"} and interactive.get("operation") not in {"+", "-"}:
+                raise SeedValidationError(f"{source}: întrebarea {i} nu are o operație cu fracții validă.")
+            if mode == "missing" and (
+                interactive.get("missing_position") not in {"numerator", "denominator"}
+                or not isinstance(interactive.get("known_value"), int)
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are o valoare lipsă invalidă.")
+            if mode == "error" and (
+                not isinstance(interactive.get("steps"), list)
+                or not 2 <= len(interactive["steps"]) <= 5
+                or not all(isinstance(step, str) and step.strip() for step in interactive["steps"])
+                or not isinstance(answers.get("error_index"), int)
+                or not 0 <= answers["error_index"] < len(interactive["steps"])
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are pași de verificare invalizi.")
+            if mode == "order_steps" and (
+                not isinstance(interactive.get("steps"), list)
+                or not 3 <= len(interactive["steps"]) <= 6
+                or not all(isinstance(step, str) and step.strip() for step in interactive["steps"])
+                or sorted(interactive.get("display_order", [])) != list(range(len(interactive["steps"])))
+                or answers.get("order") != ",".join(str(index) for index in range(len(interactive["steps"])))
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are o ordonare de pași invalidă.")
+            if mode == "match" and (
+                not isinstance(interactive.get("pairs"), list)
+                or not 3 <= len(interactive["pairs"]) <= 5
+                or not all(isinstance(pair, dict) and isinstance(pair.get("operation"), str) and isinstance(pair.get("result"), str) for pair in interactive["pairs"])
+                or sorted(interactive.get("result_order", [])) != list(range(len(interactive["pairs"])))
+                or any(answers.get(f"match_{index}") != index for index in range(len(interactive["pairs"])))
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are potriviri de fracții invalide.")
+            continue
+        if question_type == "fraction_product":
+            interactive = question.get("interactive", {})
+            mode = interactive.get("mode")
+            left, right, answers = interactive.get("left"), interactive.get("right"), interactive.get("answers")
+            if (
+                mode not in {"build", "cross_cancel", "visual", "missing", "cancel_select", "error", "order_steps", "match", "problem", "mixed", "inverse"}
+                or not all(isinstance(value, list) and len(value) == 2 and all(isinstance(number, int) and number > 0 for number in value) for value in (left, right))
+                or not isinstance(answers, dict) or not answers
+                or not all(isinstance(key, str) and isinstance(value, (str, int)) for key, value in answers.items())
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are o înmulțire de fracții invalidă.")
+            if mode == "visual" and (
+                not isinstance(interactive.get("rows"), int) or not 2 <= interactive["rows"] <= 10
+                or not isinstance(interactive.get("columns"), int) or not 2 <= interactive["columns"] <= 10
+                or not isinstance(answers.get("selected"), str)
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are o reprezentare vizuală invalidă.")
+            if mode == "cross_cancel" and (
+                not isinstance(interactive.get("cancellations"), list)
+                or not 1 <= len(interactive["cancellations"]) <= 2
+                or not all(isinstance(item, dict) and all(isinstance(item.get(key), int) and item[key] > 0 for key in ("first", "second", "factor", "first_result", "second_result")) for item in interactive["cancellations"])
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are simplificări în cruce invalide.")
+            if mode == "cancel_select" and (
+                not isinstance(interactive.get("candidates"), list)
+                or not 3 <= len(interactive["candidates"]) <= 6
+                or not all(isinstance(item, dict) and isinstance(item.get("id"), str) and isinstance(item.get("label"), str) for item in interactive["candidates"])
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are alegeri de simplificare invalide.")
+            if mode == "error" and (
+                not isinstance(interactive.get("steps"), list)
+                or not 2 <= len(interactive["steps"]) <= 5
+                or not all(isinstance(step, str) and step.strip() for step in interactive["steps"])
+                or not isinstance(answers.get("error_index"), int)
+                or not 0 <= answers["error_index"] < len(interactive["steps"])
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are pași de verificare invalizi.")
+            if mode == "order_steps" and (
+                not isinstance(interactive.get("steps"), list)
+                or not 3 <= len(interactive["steps"]) <= 6
+                or sorted(interactive.get("display_order", [])) != list(range(len(interactive["steps"])))
+                or answers.get("order") != ",".join(str(index) for index in range(len(interactive["steps"])))
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are o ordonare invalidă.")
+            if mode == "match" and (
+                not isinstance(interactive.get("pairs"), list)
+                or not 3 <= len(interactive["pairs"]) <= 5
+                or sorted(interactive.get("result_order", [])) != list(range(len(interactive["pairs"])))
+                or any(answers.get(f"match_{index}") != index for index in range(len(interactive["pairs"])))
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are potriviri invalide.")
+            continue
+        if question_type == "fraction_division":
+            interactive = question.get("interactive", {})
+            mode = interactive.get("mode")
+            left, right, answers = interactive.get("left"), interactive.get("right"), interactive.get("answers")
+            if (
+                mode not in {"reciprocal", "build", "cross_cancel", "visual", "missing", "cancel_select", "error", "order_steps", "match", "problem", "mixed", "inverse"}
+                or not all(isinstance(value, list) and len(value) == 2 and all(isinstance(number, int) and number > 0 for number in value) for value in (left, right))
+                or not isinstance(answers, dict) or not answers
+                or not all(isinstance(key, str) and isinstance(value, (str, int)) for key, value in answers.items())
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are o împărțire de fracții invalidă.")
+            if mode == "visual" and (
+                not isinstance(interactive.get("candidates"), list)
+                or not 3 <= len(interactive["candidates"]) <= 8
+                or not all(isinstance(value, int) and value >= 0 for value in interactive["candidates"])
+                or not isinstance(answers.get("groups"), int)
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are o reprezentare vizuală invalidă.")
+            if mode == "cross_cancel" and (
+                not isinstance(interactive.get("cancellations"), list)
+                or not 1 <= len(interactive["cancellations"]) <= 2
+                or not all(isinstance(item, dict) and all(isinstance(item.get(key), int) and item[key] > 0 for key in ("first", "second", "factor", "first_result", "second_result")) for item in interactive["cancellations"])
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are simplificări invalide.")
+            if mode == "cancel_select" and (
+                not isinstance(interactive.get("candidates"), list)
+                or not 3 <= len(interactive["candidates"]) <= 6
+                or not all(isinstance(item, dict) and isinstance(item.get("id"), str) and isinstance(item.get("label"), str) for item in interactive["candidates"])
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are alegeri de simplificare invalide.")
+            if mode == "error" and (
+                not isinstance(interactive.get("steps"), list)
+                or not 2 <= len(interactive["steps"]) <= 5
+                or not isinstance(answers.get("error_index"), int)
+                or not 0 <= answers["error_index"] < len(interactive["steps"])
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are pași de verificare invalizi.")
+            if mode == "order_steps" and (
+                not isinstance(interactive.get("steps"), list)
+                or not 3 <= len(interactive["steps"]) <= 6
+                or sorted(interactive.get("display_order", [])) != list(range(len(interactive["steps"])))
+                or answers.get("order") != ",".join(str(index) for index in range(len(interactive["steps"])))
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are o ordonare invalidă.")
+            if mode == "match" and (
+                not isinstance(interactive.get("pairs"), list)
+                or not 3 <= len(interactive["pairs"]) <= 5
+                or sorted(interactive.get("result_order", [])) != list(range(len(interactive["pairs"])))
+                or any(answers.get(f"match_{index}") != index for index in range(len(interactive["pairs"])))
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are potriviri invalide.")
+            continue
+        if question_type == "fraction_power":
+            interactive = question.get("interactive", {})
+            mode = interactive.get("mode")
+            answers = interactive.get("answers")
+            if (
+                mode not in {"build", "expand", "compress", "missing", "rule", "exponent_rule", "order_steps", "error", "match", "visual", "given_base", "given_exponent", "problem"}
+                or not isinstance(answers, dict) or not answers
+                or not all(isinstance(key, str) and isinstance(value, (str, int)) for key, value in answers.items())
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are o putere a unei fracții invalidă.")
+            if mode in {"order_steps", "error"} and (
+                not isinstance(interactive.get("steps"), list)
+                or not 2 <= len(interactive["steps"]) <= 6
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are pași invalizi.")
+            if mode == "order_steps" and sorted(interactive.get("display_order", [])) != list(range(len(interactive["steps"]))):
+                raise SeedValidationError(f"{source}: întrebarea {i} are o ordine invalidă.")
+            if mode == "match" and (
+                not isinstance(interactive.get("pairs"), list)
+                or not 3 <= len(interactive["pairs"]) <= 5
+                or sorted(interactive.get("result_order", [])) != list(range(len(interactive["pairs"])))
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are potriviri invalide.")
+            if mode == "visual" and (
+                not isinstance(interactive.get("cell_count"), int)
+                or not 2 <= interactive["cell_count"] <= 64
+                or not isinstance(interactive.get("choices"), list)
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are o reprezentare vizuală invalidă.")
+            continue
+        if question_type == "fraction_percent":
+            interactive = question.get("interactive", {})
+            mode, answers = interactive.get("mode"), interactive.get("answers")
+            if (
+                mode not in {"natural", "fraction", "unit_path", "missing", "convert", "grid", "slider", "price", "table", "order_steps", "error", "match", "problem"}
+                or not isinstance(answers, dict) or not answers
+                or not all(isinstance(key, str) and isinstance(value, (str, int)) for key, value in answers.items())
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are date invalide pentru fracții și procente.")
+            if mode in {"natural", "fraction", "unit_path", "missing", "convert", "price", "problem"} and (
+                not isinstance(interactive.get("fields"), list)
+                or not interactive["fields"]
+                or any(not isinstance(field, dict) or field.get("key") not in answers for field in interactive["fields"])
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} nu declară corect câmpurile.")
+            if mode in {"order_steps", "error"} and not isinstance(interactive.get("steps"), list):
+                raise SeedValidationError(f"{source}: întrebarea {i} are pași invalizi.")
+            if mode == "match" and (
+                not isinstance(interactive.get("pairs"), list)
+                or not 3 <= len(interactive["pairs"]) <= 5
+                or sorted(interactive.get("result_order", [])) != list(range(len(interactive["pairs"])))
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are potriviri invalide.")
+            if mode == "grid" and interactive.get("target") != answers.get("selected"):
+                raise SeedValidationError(f"{source}: întrebarea {i} are grila procentuală invalidă.")
+            if mode == "slider" and interactive.get("target") != answers.get("percent"):
+                raise SeedValidationError(f"{source}: întrebarea {i} are cursorul procentual invalid.")
             continue
         if question_type == "divisibility_values":
             interactive = question.get("interactive", {})
@@ -1142,10 +1369,53 @@ def _validate_quiz_payload(data: dict, source: str) -> None:
                 if not isinstance(interactive.get("number"), int) or not isinstance(interactive.get("candidates"), list):
                     raise SeedValidationError(f"{source}: întrebarea {i} are date invalide despre numărul perfect.")
             continue
+        if question_type == "statistics_chart":
+            interactive = question.get("interactive", {})
+            mode, answers = interactive.get("mode"), interactive.get("answers")
+            allowed = {"read_bar", "build_bar", "repair_bar", "read_line", "build_line", "frequency_table", "relative_frequency", "mean"}
+            labels, values = interactive.get("labels", []), interactive.get("values", [])
+            if mode not in allowed or not isinstance(answers, dict) or not answers:
+                raise SeedValidationError(f"{source}: întrebarea {i} are un atelier statistic invalid.")
+            if mode in {"read_bar", "build_bar", "repair_bar", "read_line", "build_line"} and (
+                not isinstance(labels, list) or len(labels) < 3 or not isinstance(values, list)
+                or len(labels) != len(values) or any(not isinstance(value, (int, float)) or value < 0 for value in values)
+                or not isinstance(interactive.get("max_value"), int) or interactive["max_value"] <= 0
+            ):
+                raise SeedValidationError(f"{source}: întrebarea {i} are date grafice invalide.")
+            if mode in {"frequency_table", "relative_frequency"} and not isinstance(interactive.get("categories"), list):
+                raise SeedValidationError(f"{source}: întrebarea {i} nu are categorii statistice.")
+            if mode == "mean" and not isinstance(interactive.get("dataset"), list):
+                raise SeedValidationError(f"{source}: întrebarea {i} nu are setul de date.")
+            continue
+        if question_type == "algebra_workbench":
+            interactive = question.get("interactive", {})
+            mode, answers = interactive.get("mode"), interactive.get("answers")
+            allowed_modes = {
+                "simplify", "complete_rule", "true_false", "match", "error",
+                "identity_builder", "parentheses", "radical_steps", "compare",
+                "unknown", "verify_identity", "classify", "average", "transform_chain",
+            }
+            if mode not in allowed_modes or not isinstance(answers, dict) or not answers:
+                raise SeedValidationError(f"{source}: întrebarea {i} are un atelier algebric invalid.")
+            fields = interactive.get("fields", [])
+            if fields and (not isinstance(fields, list) or any(
+                not isinstance(field, dict) or not field.get("key") or field["key"] not in answers
+                for field in fields
+            )):
+                raise SeedValidationError(f"{source}: întrebarea {i} are câmpuri algebrice invalide.")
+            if mode in {"true_false", "compare"} and not isinstance(interactive.get("choices"), list):
+                raise SeedValidationError(f"{source}: întrebarea {i} nu are variante interactive.")
+            if mode in {"match", "classify"} and not isinstance(interactive.get("pairs"), list):
+                raise SeedValidationError(f"{source}: întrebarea {i} nu are potriviri valide.")
+            if mode in {"error", "transform_chain"} and not isinstance(interactive.get("steps"), list):
+                raise SeedValidationError(f"{source}: întrebarea {i} nu are pași validați.")
+            if mode == "identity_builder" and not isinstance(interactive.get("pieces"), list):
+                raise SeedValidationError(f"{source}: întrebarea {i} nu are piese algebrice.")
+            continue
         if question_type == "decimal_workbench":
             interactive = question.get("interactive", {})
             mode, answers = interactive.get("mode"), interactive.get("answers")
-            allowed_modes = {"comma", "conversion", "build_fraction", "place_value", "words", "decompose", "amplify", "missing", "natural_n", "denominator", "zeros", "vessel"}
+            allowed_modes = {"comma", "conversion", "build_fraction", "place_value", "words", "decompose", "amplify", "missing", "natural_n", "denominator", "zeros", "vessel", "classification", "period_select", "period_notation", "average_balance"}
             if mode not in allowed_modes or not isinstance(answers, dict) or not answers:
                 raise SeedValidationError(f"{source}: întrebarea {i} are un atelier zecimal invalid.")
             fields = interactive.get("fields", [])
@@ -1209,7 +1479,7 @@ def _sync_options(question: Question, options_data: list) -> None:
     question.options.exclude(text__in=seen_texts).delete()
 
 
-def _sync_question(quiz: Quiz, question_data: dict) -> Question:
+def _sync_question(quiz: Quiz, question_data: dict, order: int = 0) -> Question:
     text = question_data["text"].strip()
     points = int(question_data.get("points", 10))
     explanation = question_data.get("explanation", "").strip()
@@ -1225,6 +1495,7 @@ def _sync_question(quiz: Quiz, question_data: dict) -> Question:
         quiz=quiz,
         text=text,
         defaults={
+            "order": order,
             "points": points,
             "explanation": explanation,
             "question_type": question_type,
@@ -1233,6 +1504,9 @@ def _sync_question(quiz: Quiz, question_data: dict) -> Question:
         },
     )
     updated_fields = []
+    if not created and question.order != order:
+        question.order = order
+        updated_fields.append("order")
     if not created and question.points != points:
         question.points = points
         updated_fields.append("points")
@@ -1282,8 +1556,8 @@ def sync_quiz_from_dict(
         quiz, created = Quiz.objects.get_or_create(title=title, defaults=defaults)
 
     seen_question_texts = set()
-    for question_data in data["questions"]:
-        question = _sync_question(quiz, question_data)
+    for question_order, question_data in enumerate(data["questions"], start=1):
+        question = _sync_question(quiz, question_data, question_order)
         seen_question_texts.add(question.text)
 
     quiz.questions.exclude(text__in=seen_question_texts).delete()

@@ -526,82 +526,6 @@
       }
     },
     {
-      "text": "Șirul din 6 în 6 și șirul din 8 în 8 pornesc simultan. La ce număr se întâlnesc prima dată?",
-      "type": "lcm_workbench",
-      "format": "interactive",
-      "points": 10,
-      "explanation": "Prima întâlnire este la 24, adică c.m.m.m.c.(6,8).",
-      "interactive": {
-        "mode": "sync",
-        "a": 6,
-        "b": 8,
-        "multiples_a": [
-          6,
-          12,
-          18,
-          24
-        ],
-        "multiples_b": [
-          8,
-          16,
-          24
-        ],
-        "answers": {
-          "lcm": 24
-        }
-      }
-    },
-    {
-      "text": "Șirul din 9 în 9 și șirul din 12 în 12 pornesc simultan. La ce număr se întâlnesc prima dată?",
-      "type": "lcm_workbench",
-      "format": "interactive",
-      "points": 10,
-      "explanation": "Prima întâlnire este la 36, adică c.m.m.m.c.(9,12).",
-      "interactive": {
-        "mode": "sync",
-        "a": 9,
-        "b": 12,
-        "multiples_a": [
-          9,
-          18,
-          27,
-          36
-        ],
-        "multiples_b": [
-          12,
-          24,
-          36
-        ],
-        "answers": {
-          "lcm": 36
-        }
-      }
-    },
-    {
-      "text": "Șirul din 10 în 10 și șirul din 15 în 15 pornesc simultan. La ce număr se întâlnesc prima dată?",
-      "type": "lcm_workbench",
-      "format": "interactive",
-      "points": 10,
-      "explanation": "Prima întâlnire este la 30, adică c.m.m.m.c.(10,15).",
-      "interactive": {
-        "mode": "sync",
-        "a": 10,
-        "b": 15,
-        "multiples_a": [
-          10,
-          20,
-          30
-        ],
-        "multiples_b": [
-          15,
-          30
-        ],
-        "answers": {
-          "lcm": 30
-        }
-      }
-    },
-    {
       "text": "Adu fracțiile 1/2 și 7/15 la cel mai mic numitor comun.",
       "type": "common_denominator",
       "format": "interactive",
@@ -877,77 +801,152 @@
       }
     },
     {
-      "text": "Adu fracțiile 2/7 și 3/5 la cel mai mic numitor comun.",
+      "text": "Completează: 2/3 = 8/?.",
       "type": "common_denominator",
       "format": "interactive",
       "points": 10,
-      "explanation": "c.m.m.m.c.(7,5)=35; factorii sunt 5 și 7.",
+      "explanation": "Amplificăm ambii termeni cu același factor; valoarea lipsă este 12.",
       "interactive": {
-        "mode": "build",
+        "mode": "missing",
         "left": [
           2,
-          7
+          3
         ],
         "right": [
-          3,
-          5
+          8,
+          12
         ],
+        "missing_position": "denominator",
+        "known_value": 8,
         "answers": {
-          "left_factor": 5,
-          "right_factor": 7,
-          "left_numerator": 10,
-          "right_numerator": 21,
-          "common_denominator": 35
+          "missing": 12
         }
       }
     },
     {
-      "text": "Adu fracțiile 5/16 și 49/96 la cel mai mic numitor comun.",
+      "text": "Completează: 5/12 = ?/60.",
       "type": "common_denominator",
       "format": "interactive",
       "points": 10,
-      "explanation": "c.m.m.m.c.(16,96)=96; factorii sunt 6 și 1.",
+      "explanation": "Amplificăm ambii termeni cu același factor; valoarea lipsă este 25.",
       "interactive": {
-        "mode": "build",
+        "mode": "missing",
         "left": [
           5,
-          16
+          12
         ],
         "right": [
-          49,
-          96
+          25,
+          60
         ],
+        "missing_position": "numerator",
+        "known_value": 60,
         "answers": {
-          "left_factor": 6,
-          "right_factor": 1,
-          "left_numerator": 30,
-          "right_numerator": 49,
-          "common_denominator": 96
+          "missing": 25
         }
       }
     },
     {
-      "text": "Adu fracțiile 3/8 și 5/12 la cel mai mic numitor comun.",
+      "text": "Completează: 3/8 = 15/?.",
       "type": "common_denominator",
       "format": "interactive",
       "points": 10,
-      "explanation": "c.m.m.m.c.(8,12)=24; factorii sunt 3 și 2.",
+      "explanation": "Amplificăm ambii termeni cu același factor; valoarea lipsă este 40.",
       "interactive": {
-        "mode": "build",
+        "mode": "missing",
         "left": [
           3,
           8
         ],
         "right": [
+          15,
+          40
+        ],
+        "missing_position": "denominator",
+        "known_value": 15,
+        "answers": {
+          "missing": 40
+        }
+      }
+    },
+    {
+      "text": "Identifică primul pas greșit în aducerea fracțiilor 2/3 și 5/8 la același numitor.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La pasul 3, numărătorul corect este 2 · 8 = 16, nu 18.",
+      "interactive": {
+        "mode": "error",
+        "left": [
+          2,
+          3
+        ],
+        "right": [
           5,
-          12
+          8
+        ],
+        "steps": [
+          "c.m.m.m.c.(3, 8) = 24",
+          "24 : 3 = 8 și 24 : 8 = 3",
+          "2/3 = 18/24",
+          "5/8 = 15/24"
         ],
         "answers": {
-          "left_factor": 3,
-          "right_factor": 2,
-          "left_numerator": 9,
-          "right_numerator": 10,
-          "common_denominator": 24
+          "error_index": 2
+        }
+      }
+    },
+    {
+      "text": "Identifică primul pas greșit în aducerea fracțiilor 3/4 și 7/10 la același numitor.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ultima transformare este greșită: 7/10 amplificată cu 2 este 14/20.",
+      "interactive": {
+        "mode": "error",
+        "left": [
+          3,
+          4
+        ],
+        "right": [
+          7,
+          10
+        ],
+        "steps": [
+          "c.m.m.m.c.(4, 10) = 20",
+          "Factorii de amplificare sunt 5 și 2",
+          "3/4 = 15/20",
+          "7/10 = 7/20"
+        ],
+        "answers": {
+          "error_index": 3
+        }
+      }
+    },
+    {
+      "text": "Identifică primul pas greșit în aducerea fracțiilor 5/6 și 3/14 la același numitor.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Primul pas este greșit: c.m.m.m.c.(6,14)=42, nu 84.",
+      "interactive": {
+        "mode": "error",
+        "left": [
+          5,
+          6
+        ],
+        "right": [
+          3,
+          14
+        ],
+        "steps": [
+          "c.m.m.m.c.(6, 14) = 84",
+          "Factorii sunt 14 și 6",
+          "5/6 = 70/84",
+          "3/14 = 18/84"
+        ],
+        "answers": {
+          "error_index": 0
         }
       }
     }

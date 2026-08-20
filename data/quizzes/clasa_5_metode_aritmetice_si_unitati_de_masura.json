@@ -1,6 +1,1463 @@
 {
   "title": "Metode aritmetice pentru rezolvarea problemelor cu fracții în care intervin și unități de măsură pentru lungime, arie, volum, capacitate, masă, timp și unități monetare",
   "description": "Clasa a 5-a · Fracții zecimale",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Pentru 14 m² de gard s-au folosit 3 500 g de vopsea. Reglează cantitatea pentru 35 m².",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un metru pătrat cere 250 g, deci 35 m² cer 8 750 g.",
+      "interactive": {
+        "mode": "visual_scale",
+        "initial_quantity": 14,
+        "initial_value": 3500,
+        "target_quantity": 35,
+        "target_value": 8750,
+        "unit": "m²",
+        "icon": "🎨",
+        "answers": {
+          "quantity": 35,
+          "value": 8750
+        }
+      }
+    },
+    {
+      "text": "Opt metri de material costă 120 lei. Construiește drumul printr-un metru pentru 13 m.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "120 : 8 = 15 lei/m, iar 13 m costă 195 lei.",
+      "interactive": {
+        "mode": "unit_path",
+        "values": [
+          8,
+          1,
+          13
+        ],
+        "paired_values": [
+          120,
+          15,
+          195
+        ],
+        "unit": "lei",
+        "operation_choices": [
+          ": 8",
+          "× 13",
+          "× 8",
+          ": 13"
+        ],
+        "answers": {
+          "operation:0": ": 8",
+          "operation:1": "× 13"
+        }
+      }
+    },
+    {
+      "text": "Douăzeci și patru de plăci acoperă 6 m². Câte plăci sunt necesare pentru 15 m²?",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O suprafață mai mare cere proporțional mai multe plăci: 60.",
+      "interactive": {
+        "mode": "balance",
+        "initial_quantity": 6,
+        "initial_value": 24,
+        "target_quantity": 15,
+        "target_value": 60,
+        "relation": "direct",
+        "labels": [
+          "suprafață",
+          "plăci"
+        ],
+        "answers": {
+          "quantity": 15,
+          "value": 60
+        }
+      }
+    },
+    {
+      "text": "Douăsprezece robinete umplu piscina în 13 ore și 20 de minute, adică 800 de minute. Află timpul pentru 32 de robinete.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul robinete · timp rămâne constant; rezultă 300 minute.",
+      "interactive": {
+        "mode": "balance",
+        "initial_quantity": 12,
+        "initial_value": 800,
+        "target_quantity": 32,
+        "target_value": 300,
+        "relation": "inverse",
+        "labels": [
+          "robinete",
+          "minute"
+        ],
+        "answers": {
+          "quantity": 32,
+          "value": 300
+        }
+      }
+    },
+    {
+      "text": "Opt pompe golesc un bazin în 18 ore. În cât timp îl golesc 12 pompe identice?",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Mai multe pompe înseamnă mai puțin timp: 8 · 18 : 12 = 12 ore.",
+      "interactive": {
+        "mode": "faucets",
+        "initial_count": 8,
+        "initial_time": 18,
+        "target_count": 12,
+        "target_time": 12,
+        "icon": "⚙️",
+        "answers": {
+          "count": 12,
+          "time": 12
+        }
+      }
+    },
+    {
+      "text": "Cantitatea cumpărată crește; prețul total, la același preț unitar, ce face?",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cele două mărimi cresc în același raport.",
+      "interactive": {
+        "mode": "dependency_direction",
+        "first_change": "cantitatea crește",
+        "second_change": "prețul total crește",
+        "answers": {
+          "relation": "direct"
+        }
+      }
+    },
+    {
+      "text": "Numărul robinetelor deschise crește; timpul de umplere ce face?",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Debitul total crește, deci timpul necesar scade.",
+      "interactive": {
+        "mode": "dependency_direction",
+        "first_change": "numărul robinetelor crește",
+        "second_change": "timpul scade",
+        "answers": {
+          "relation": "inverse"
+        }
+      }
+    },
+    {
+      "text": "Completează tabelul preț–cantitate prin reducere la unitate.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un kilogram costă 5 lei; 14 kg costă 70 lei.",
+      "interactive": {
+        "mode": "unit_table",
+        "columns": [
+          "cantitate",
+          "cost"
+        ],
+        "rows": [
+          {
+            "cantitate": 6,
+            "cost": 30,
+            "missing": "cost"
+          },
+          {
+            "cantitate": 1,
+            "cost": 5,
+            "missing": "cost"
+          },
+          {
+            "cantitate": 14,
+            "cost": 70,
+            "missing": "cost"
+          }
+        ],
+        "answers": {
+          "0:cost": 30,
+          "1:cost": 5,
+          "2:cost": 70
+        }
+      }
+    },
+    {
+      "text": "Așază operațiile pe traseul 40% din suprafață → 1% → întreaga suprafață.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Împărțim valoarea cunoscută la 40, apoi înmulțim cu 100.",
+      "interactive": {
+        "mode": "operation_drop",
+        "nodes": [
+          40,
+          1,
+          100
+        ],
+        "operation_choices": [
+          "× 100",
+          ": 100",
+          ": 40",
+          "× 40"
+        ],
+        "answers": {
+          "operation:0": ": 40",
+          "operation:1": "× 100"
+        }
+      }
+    },
+    {
+      "text": "Potrivește fiecare problemă cu schema și răspunsul ei.",
+      "type": "unit_reduction",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Reducerea la unitate poate descrie atât dependențe directe, cât și inverse.",
+      "interactive": {
+        "mode": "triple_match",
+        "triples": [
+          {
+            "problem": "8 m costă 120 lei; 13 m costă ?",
+            "scheme": "120 : 8 · 13",
+            "answer": "195 lei"
+          },
+          {
+            "problem": "24 plăci acoperă 6 m²; pentru 15 m²?",
+            "scheme": "24 : 6 · 15",
+            "answer": "60 plăci"
+          },
+          {
+            "problem": "8 pompe în 18 h; 12 pompe în ?",
+            "scheme": "8 · 18 : 12",
+            "answer": "12 ore"
+          }
+        ],
+        "scheme_order": [
+          1,
+          2,
+          0
+        ],
+        "answer_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "scheme:0": 0,
+          "scheme:1": 1,
+          "scheme:2": 2,
+          "answer:0": 0,
+          "answer:1": 1,
+          "answer:2": 2
+        }
+      }
+    },
+    {
+      "text": "Folosește balanța pentru comparația cu coli și carioci.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Eliminăm cele 6 coli; 4 carioci costă 20 lei.",
+      "interactive": {
+        "mode": "balance",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 6,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 8,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 58
+          },
+          {
+            "items": [
+              {
+                "count": 6,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 12,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 78
+          }
+        ],
+        "answers": {
+          "diferență_obiecte": 4,
+          "diferență_total": 20,
+          "preț_unitar": 5
+        }
+      }
+    },
+    {
+      "text": "Elimină termenii comuni: coli.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Tăiem 6 coli din ambele situații.",
+      "interactive": {
+        "mode": "cancel_common",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 6,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 8,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 58
+          },
+          {
+            "items": [
+              {
+                "count": 6,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 12,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 78
+          }
+        ],
+        "answers": {
+          "termeni_eliminați": 6,
+          "rest_obiecte": 4,
+          "rest_total": 20
+        }
+      }
+    },
+    {
+      "text": "Alege multiplicatorul pentru a egaliza cele 2 coli cu 14 coli.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim primul rând cu 7.",
+      "interactive": {
+        "mode": "equalize",
+        "rows": [
+          {
+            "items": [
+              {
+                "count": 2,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 7,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 41
+          },
+          {
+            "items": [
+              {
+                "count": 7,
+                "name": "coli",
+                "icon": "📄"
+              },
+              {
+                "count": 2,
+                "name": "carioci",
+                "icon": "🖍️"
+              }
+            ],
+            "total": 31
+          }
+        ],
+        "answers": {
+          "multiplier": 7,
+          "total_nou": 287
+        },
+        "multiplier_choices": [
+          2,
+          5,
+          7
+        ]
+      }
+    },
+    {
+      "text": "Alege metoda pentru două situații care au deja 6 coli în comun.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Eliminăm colile prin scădere.",
+      "interactive": {
+        "mode": "choose_method",
+        "situation": "6 coli + 8 carioci = 58; 6 coli + 12 carioci = 78",
+        "answers": {
+          "method": "subtract"
+        }
+      }
+    },
+    {
+      "text": "Găsește primul pas greșit în comparația colilor.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Diferența totalurilor este 20, nu 136.",
+      "interactive": {
+        "mode": "comparison_error",
+        "steps": [
+          "6 coli + 8 carioci = 58",
+          "6 coli + 12 carioci = 78",
+          "Scădem: 4 carioci = 136",
+          "O cariocă = 5 lei"
+        ],
+        "answers": {
+          "step": 2
+        }
+      }
+    },
+    {
+      "text": "Potrivește problema cu comparația și răspunsul.",
+      "type": "comparison_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Eliminăm termenul comun și reducem diferența la unitate.",
+      "interactive": {
+        "mode": "comparison_match",
+        "triples": [
+          {
+            "problem": "6 coli + 8 carioci = 58; 6 coli + 12 carioci = 78",
+            "scheme": "(78 − 58) : (12 − 8)",
+            "answer": "cariocă = 5 lei"
+          },
+          {
+            "problem": "5 mălai + 7 făină = 31; 7 mălai + 7 făină = 35",
+            "scheme": "(35 − 31) : (7 − 5)",
+            "answer": "mălai = 2 kg"
+          },
+          {
+            "problem": "3 robinete + 2 pompe = 31; 3 robinete + 8 pompe = 79",
+            "scheme": "(79 − 31) : (8 − 2)",
+            "answer": "pompă = 8 hl/oră"
+          }
+        ],
+        "scheme_order": [
+          1,
+          2,
+          0
+        ],
+        "answer_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "scheme:0": 0,
+          "scheme:1": 1,
+          "scheme:2": 2,
+          "answer:0": 0,
+          "answer:1": 1,
+          "answer:2": 2
+        }
+      }
+    },
+    {
+      "text": "Alege schema în care 7/11 din traseu au fost parcurși, iar 4/11 au rămas.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Barele reprezintă 7 părți parcurse și 4 părți rămase din același întreg.",
+      "interactive": {
+        "mode": "choose_scheme",
+        "answers": {
+          "scheme": 0
+        },
+        "schemes": [
+          {
+            "small_parts": 4,
+            "large_parts": 7,
+            "difference": 3,
+            "total": 11,
+            "small_label": "traseu rămas",
+            "large_label": "traseu parcurs"
+          },
+          {
+            "small_parts": 4,
+            "large_parts": 5,
+            "difference": 3,
+            "total": 11,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          },
+          {
+            "small_parts": 3,
+            "large_parts": 7,
+            "difference": 4,
+            "total": 11,
+            "small_label": "numărul mic",
+            "large_label": "numărul mare"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Elimină diferența dintre cele 7 părți parcurse și cele 4 părți rămase.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Eliminăm 3 părți din bara mare și rămân două bare egale de câte 4 părți.",
+      "interactive": {
+        "mode": "animate_difference",
+        "answers": {
+          "removed": 3,
+          "remaining": 8
+        },
+        "scheme": {
+          "small_parts": 4,
+          "large_parts": 7,
+          "difference": 3,
+          "total": 11,
+          "small_label": "traseu rămas",
+          "large_label": "traseu parcurs"
+        }
+      }
+    },
+    {
+      "text": "Ordonează aflarea traseului dacă 4/11 înseamnă 5,6 km.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aflăm mai întâi o parte, apoi întregul.",
+      "interactive": {
+        "mode": "order_steps",
+        "answers": {
+          "position:0": 0,
+          "position:1": 1,
+          "position:2": 2
+        },
+        "steps": [
+          "5,6 : 4 = 1,4 km",
+          "1,4 · 11 = 15,4 km",
+          "verificăm cele 11 părți"
+        ],
+        "display_order": [
+          2,
+          1,
+          0
+        ],
+        "scheme": {
+          "small_parts": 4,
+          "large_parts": 7,
+          "difference": 3,
+          "total": 11,
+          "small_label": "traseu rămas",
+          "large_label": "traseu parcurs"
+        }
+      }
+    },
+    {
+      "text": "Împarte traseul în numărul corect de părți egale.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numitorul comun este 11, deci întregul are 11 părți.",
+      "interactive": {
+        "mode": "divide_segments",
+        "answers": {
+          "parts": 11
+        },
+        "maximum": 14,
+        "scheme": {
+          "small_parts": 4,
+          "large_parts": 7,
+          "difference": 3,
+          "total": 11,
+          "small_label": "traseu rămas",
+          "large_label": "traseu parcurs"
+        }
+      }
+    },
+    {
+      "text": "Citește schema traseului.",
+      "type": "figurative_method",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "1 − 5/11 − 2/11 = 4/11.",
+      "interactive": {
+        "mode": "figurative_true_false",
+        "answers": {
+          "answer": "true"
+        },
+        "statement": "Distanța rămasă după cele două porțiuni reprezintă 4/11 din traseu.",
+        "scheme": {
+          "small_parts": 4,
+          "large_parts": 7,
+          "difference": 3,
+          "total": 11,
+          "small_label": "traseu rămas",
+          "large_label": "traseu parcurs"
+        }
+      }
+    },
+    {
+      "text": "Rezolvă schema în hectometri dacă ultimele 4 părți măsoară 56 hm.",
+      "type": "figurative_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O parte măsoară 14 hm; restul măsoară 56 hm, iar partea parcursă 98 hm.",
+      "interactive": {
+        "mode": "full_puzzle",
+        "answers": {
+          "parts": 11,
+          "one_part": 14,
+          "small": 56,
+          "large": 98
+        },
+        "scheme": {
+          "small_parts": 4,
+          "large_parts": 7,
+          "difference": 3,
+          "total": 11,
+          "small_label": "traseu rămas",
+          "large_label": "traseu parcurs"
+        }
+      }
+    },
+    {
+      "text": "Construiește drumul invers al unui calcul care pornește de la 96 lei.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pornim de la rezultat și aplicăm operațiile inverse.",
+      "interactive": {
+        "mode": "build_reverse_path",
+        "answers": {
+          "node:0": 24,
+          "node:1": 12,
+          "node:2": 96
+        },
+        "start": 96,
+        "end": 28,
+        "operations": [
+          {
+            "op": "/",
+            "value": 8
+          },
+          {
+            "op": "*",
+            "value": 2
+          },
+          {
+            "op": "+",
+            "value": 4
+          }
+        ],
+        "nodes": [
+          96,
+          12,
+          24,
+          28
+        ],
+        "inverse_operations": [
+          {
+            "op": "-",
+            "value": 4
+          },
+          {
+            "op": "/",
+            "value": 2
+          },
+          {
+            "op": "*",
+            "value": 8
+          }
+        ],
+        "reverse_nodes": [
+          28,
+          24,
+          12,
+          96
+        ]
+      }
+    },
+    {
+      "text": "Așază operațiile inverse pentru traseul 120 → :3 → −10 → :2.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aplicăm ×2, +10 și ×3, în această ordine.",
+      "interactive": {
+        "mode": "drag_inverse_ops",
+        "answers": {
+          "op:0": "×2",
+          "op:1": "+10",
+          "op:2": "×3"
+        },
+        "start": 120,
+        "end": 15,
+        "operations": [
+          {
+            "op": "/",
+            "value": 3
+          },
+          {
+            "op": "-",
+            "value": 10
+          },
+          {
+            "op": "/",
+            "value": 2
+          }
+        ],
+        "nodes": [
+          120,
+          40,
+          30,
+          15
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 2
+          },
+          {
+            "op": "+",
+            "value": 10
+          },
+          {
+            "op": "*",
+            "value": 3
+          }
+        ],
+        "reverse_nodes": [
+          15,
+          30,
+          40,
+          120
+        ],
+        "operation_pool": [
+          "×2",
+          "+10",
+          "×3"
+        ]
+      }
+    },
+    {
+      "text": "Reconstituie suma: după ultima cumpărătură rămân 40 lei, înainte erau 60, apoi 84, iar inițial 96.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Tabelul se completează de la restul final spre suma inițială.",
+      "interactive": {
+        "mode": "reverse_table",
+        "answers": {
+          "stage:1": 60,
+          "stage:2": 84,
+          "stage:3": 96
+        },
+        "stages": [
+          {
+            "label": "rest final",
+            "value": 40
+          },
+          {
+            "label": "restul al doilea",
+            "value": 60
+          },
+          {
+            "label": "primul rest",
+            "value": 84
+          },
+          {
+            "label": "suma inițială",
+            "value": 96
+          }
+        ]
+      }
+    },
+    {
+      "text": "Găsește primul pas invers greșit pentru traseul 120 → :3 → −10 → :2.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "După ×2 trebuie adunat 10, nu scăzut.",
+      "interactive": {
+        "mode": "reverse_error",
+        "answers": {
+          "step": 1
+        },
+        "start": 120,
+        "end": 15,
+        "operations": [
+          {
+            "op": "/",
+            "value": 3
+          },
+          {
+            "op": "-",
+            "value": 10
+          },
+          {
+            "op": "/",
+            "value": 2
+          }
+        ],
+        "nodes": [
+          120,
+          40,
+          30,
+          15
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 2
+          },
+          {
+            "op": "+",
+            "value": 10
+          },
+          {
+            "op": "*",
+            "value": 3
+          }
+        ],
+        "reverse_nodes": [
+          15,
+          30,
+          40,
+          120
+        ],
+        "shown_steps": [
+          "×2",
+          "−10",
+          "×3"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvă puzzle-ul complet pentru traseul care începe cu 120.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Drumul invers reface valoarea inițială 120.",
+      "interactive": {
+        "mode": "full_reverse_puzzle",
+        "answers": {
+          "op:0": "×2",
+          "op:1": "+10",
+          "op:2": "×3",
+          "node:0": 30,
+          "node:1": 40,
+          "node:2": 120,
+          "start": 120
+        },
+        "start": 120,
+        "end": 15,
+        "operations": [
+          {
+            "op": "/",
+            "value": 3
+          },
+          {
+            "op": "-",
+            "value": 10
+          },
+          {
+            "op": "/",
+            "value": 2
+          }
+        ],
+        "nodes": [
+          120,
+          40,
+          30,
+          15
+        ],
+        "inverse_operations": [
+          {
+            "op": "*",
+            "value": 2
+          },
+          {
+            "op": "+",
+            "value": 10
+          },
+          {
+            "op": "*",
+            "value": 3
+          }
+        ],
+        "reverse_nodes": [
+          15,
+          30,
+          40,
+          120
+        ]
+      }
+    },
+    {
+      "text": "Verifică traseul dus–întors care pornește de la 96.",
+      "type": "reverse_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Parcurgerea directă și cea inversă ajung la aceleași capete.",
+      "interactive": {
+        "mode": "round_trip",
+        "answers": {
+          "initial": 96,
+          "final": 28,
+          "verified": "yes"
+        },
+        "start": 96,
+        "end": 28,
+        "operations": [
+          {
+            "op": "/",
+            "value": 8
+          },
+          {
+            "op": "*",
+            "value": 2
+          },
+          {
+            "op": "+",
+            "value": 4
+          }
+        ],
+        "nodes": [
+          96,
+          12,
+          24,
+          28
+        ],
+        "inverse_operations": [
+          {
+            "op": "-",
+            "value": 4
+          },
+          {
+            "op": "/",
+            "value": 2
+          },
+          {
+            "op": "*",
+            "value": 8
+          }
+        ],
+        "reverse_nodes": [
+          28,
+          24,
+          12,
+          96
+        ]
+      }
+    },
+    {
+      "text": "Alege ipoteza de pornire pentru cele 12 vase.",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Presupunem mai întâi că toate vasele au 1,5 l.",
+      "interactive": {
+        "mode": "choose_hypothesis",
+        "scenario": {
+          "label": "vase cu apă",
+          "count": 12,
+          "low": 3,
+          "high": 7,
+          "total": 68,
+          "low_name": "vase de 1,5 l",
+          "high_name": "vase de 3,5 l",
+          "unit": "jumătăți de litru",
+          "icons": [
+            "🥛",
+            "🫙"
+          ],
+          "assumed_total": 36,
+          "mismatch": 32,
+          "unit_difference": 4,
+          "high_count": 8,
+          "low_count": 4
+        },
+        "answers": {
+          "hypothesis": "low"
+        },
+        "choices": [
+          "low",
+          "high"
+        ]
+      }
+    },
+    {
+      "text": "Simulează situația în care toate cele 12 vase au câte 1,5 l.",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "În jumătăți de litru, totalul presupus este 12 · 3 = 36.",
+      "interactive": {
+        "mode": "all_same_simulator",
+        "scenario": {
+          "label": "vase cu apă",
+          "count": 12,
+          "low": 3,
+          "high": 7,
+          "total": 68,
+          "low_name": "vase de 1,5 l",
+          "high_name": "vase de 3,5 l",
+          "unit": "jumătăți de litru",
+          "icons": [
+            "🥛",
+            "🫙"
+          ],
+          "assumed_total": 36,
+          "mismatch": 32,
+          "unit_difference": 4,
+          "high_count": 8,
+          "low_count": 4
+        },
+        "answers": {
+          "assumed_total": 36
+        },
+        "maximum": 12
+      }
+    },
+    {
+      "text": "Măsoară diferența dintre totalul real și ipoteza vaselor mici.",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Diferența este 68 − 36 = 32 jumătăți de litru.",
+      "interactive": {
+        "mode": "mismatch_meter",
+        "scenario": {
+          "label": "vase cu apă",
+          "count": 12,
+          "low": 3,
+          "high": 7,
+          "total": 68,
+          "low_name": "vase de 1,5 l",
+          "high_name": "vase de 3,5 l",
+          "unit": "jumătăți de litru",
+          "icons": [
+            "🥛",
+            "🫙"
+          ],
+          "assumed_total": 36,
+          "mismatch": 32,
+          "unit_difference": 4,
+          "high_count": 8,
+          "low_count": 4
+        },
+        "answers": {
+          "mismatch": 32
+        }
+      }
+    },
+    {
+      "text": "Află câte vase mici trebuie înlocuite cu vase mari.",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O înlocuire adaugă 4 jumătăți de litru; 32 : 4 = 8.",
+      "interactive": {
+        "mode": "replacement_count",
+        "scenario": {
+          "label": "vase cu apă",
+          "count": 12,
+          "low": 3,
+          "high": 7,
+          "total": 68,
+          "low_name": "vase de 1,5 l",
+          "high_name": "vase de 3,5 l",
+          "unit": "jumătăți de litru",
+          "icons": [
+            "🥛",
+            "🫙"
+          ],
+          "assumed_total": 36,
+          "mismatch": 32,
+          "unit_difference": 4,
+          "high_count": 8,
+          "low_count": 4
+        },
+        "answers": {
+          "unit_difference": 4,
+          "replacements": 8
+        }
+      }
+    },
+    {
+      "text": "Completează tabelul falsei ipoteze pentru vase.",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ipoteză 36, diferență 32, opt înlocuiri.",
+      "interactive": {
+        "mode": "hypothesis_table",
+        "scenario": {
+          "label": "vase cu apă",
+          "count": 12,
+          "low": 3,
+          "high": 7,
+          "total": 68,
+          "low_name": "vase de 1,5 l",
+          "high_name": "vase de 3,5 l",
+          "unit": "jumătăți de litru",
+          "icons": [
+            "🥛",
+            "🫙"
+          ],
+          "assumed_total": 36,
+          "mismatch": 32,
+          "unit_difference": 4,
+          "high_count": 8,
+          "low_count": 4
+        },
+        "answers": {
+          "assumed_total": 36,
+          "mismatch": 32,
+          "replacements": 8
+        }
+      }
+    },
+    {
+      "text": "Rezolvă puzzle-ul complet al coșurilor cu fructe.",
+      "type": "false_hypothesis_method",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultă 12 coșuri mici și 8 coșuri mari.",
+      "interactive": {
+        "mode": "full_hypothesis_puzzle",
+        "scenario": {
+          "label": "coșuri cu fructe",
+          "count": 20,
+          "low": 3,
+          "high": 7,
+          "total": 92,
+          "low_name": "coșuri mici",
+          "high_name": "coșuri mari",
+          "unit": "fructe",
+          "icons": [
+            "🧺",
+            "🍎"
+          ],
+          "assumed_total": 60,
+          "mismatch": 32,
+          "unit_difference": 4,
+          "high_count": 8,
+          "low_count": 12
+        },
+        "answers": {
+          "assumed_total": 60,
+          "mismatch": 32,
+          "unit_difference": 4,
+          "high_count": 8,
+          "low_count": 12
+        }
+      }
+    },
+    {
+      "text": "Gresia pentru 40% dintr-o podea costă 279,50 lei. Cât costă gresia pentru întreaga podea?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "279,50 : 40 = 6,9875 lei, apoi înmulțim cu 100.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "40% → 279,50 lei; 100% → ?",
+        "fields": [
+          {
+            "key": "one",
+            "label": "Costul pentru 1%"
+          },
+          {
+            "key": "total",
+            "label": "Costul total"
+          }
+        ],
+        "answers": {
+          "one": "6,9875",
+          "total": "698,75"
+        }
+      }
+    },
+    {
+      "text": "Din 3 600 t de cereale, 60% este grâu, 10% orz, iar restul porumb. Completează cantitățile.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Calculăm 60%, 10% și 30% din 3 600.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "3 600 t = 60% grâu + 10% orz + 30% porumb",
+        "fields": [
+          {
+            "key": "wheat",
+            "label": "Grâu (t)"
+          },
+          {
+            "key": "barley",
+            "label": "Orz (t)"
+          },
+          {
+            "key": "corn",
+            "label": "Porumb (t)"
+          }
+        ],
+        "answers": {
+          "wheat": "2160",
+          "barley": "360",
+          "corn": "1080"
+        }
+      }
+    },
+    {
+      "text": "O minge urcă la jumătate din înălțimea precedentă, apoi la jumătate, iar ultima dată la o treime și ajunge la 80 cm. Reconstituie înălțimea inițială.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Mergem invers: 80 · 3 · 2 · 2 = 960 cm.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "80 cm ← ×3 ← ×2 ← ×2",
+        "fields": [
+          {
+            "key": "before3",
+            "label": "Înaintea ultimei urcări"
+          },
+          {
+            "key": "before2",
+            "label": "Înaintea celei de-a doua"
+          },
+          {
+            "key": "start",
+            "label": "Înălțimea inițială"
+          }
+        ],
+        "answers": {
+          "before3": "240",
+          "before2": "480",
+          "start": "960"
+        }
+      }
+    },
+    {
+      "text": "Un elev are masa de 60 kg și înălțimea de 1,50 m. Calculează IMC = masă : înălțime².",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "60 : 2,25 = 26,666..., deci aproximativ 26,67.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "60 : (1,5 · 1,5)",
+        "fields": [
+          {
+            "key": "square",
+            "label": "Înălțimea la pătrat"
+          },
+          {
+            "key": "imc",
+            "label": "IMC, rotunjit la sutimi"
+          }
+        ],
+        "answers": {
+          "square": "2,25",
+          "imc": "26,67"
+        }
+      }
+    },
+    {
+      "text": "Un test are 20 de întrebări. Un răspuns corect valorează 5 puncte, unul greșit −1,5 puncte. Un elev obține 87 de puncte. Câte răspunsuri corecte are?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "18 · 5 − 2 · 1,5 = 90 − 3 = 87.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "5 · corecte − 1,5 · greșite = 87",
+        "fields": [
+          {
+            "key": "correct",
+            "label": "Răspunsuri corecte"
+          },
+          {
+            "key": "wrong",
+            "label": "Răspunsuri greșite"
+          }
+        ],
+        "answers": {
+          "correct": "18",
+          "wrong": "2"
+        }
+      }
+    },
+    {
+      "text": "Douăsprezece vase de 1,5 l și 3,5 l conțin împreună 34 l. Câte sunt din fiecare fel?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Dacă toate erau mici aveam 18 l; diferența 16 l înseamnă 8 înlocuiri de câte 2 l.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "12 vase; total 34 l",
+        "fields": [
+          {
+            "key": "small",
+            "label": "Vase de 1,5 l"
+          },
+          {
+            "key": "large",
+            "label": "Vase de 3,5 l"
+          }
+        ],
+        "answers": {
+          "small": "4",
+          "large": "8"
+        }
+      }
+    },
+    {
+      "text": "Patru robinete și cinci pompe umplu 105 hl într-o oră. O pompă are debit cât două robinete. Află debitele.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cele 5 pompe echivalează cu 10 robinete; 105 : 14 = 7,5 hl/oră pentru un robinet.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "4 robinete + 5 pompe; 1 pompă = 2 robinete",
+        "fields": [
+          {
+            "key": "tap",
+            "label": "Un robinet (hl/oră)"
+          },
+          {
+            "key": "pump",
+            "label": "O pompă (hl/oră)"
+          }
+        ],
+        "answers": {
+          "tap": "7,5",
+          "pump": "15"
+        }
+      }
+    },
+    {
+      "text": "La începutul unei excursii, 4/11 din traseu au rămas după două porțiuni și măsoară 5,6 km. Află traseul întreg.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "5,6 : 4 = 1,4 km pentru o parte; 1,4 · 11 = 15,4 km.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "4/11 din traseu = 5,6 km",
+        "fields": [
+          {
+            "key": "part",
+            "label": "O parte din 11 (km)"
+          },
+          {
+            "key": "total",
+            "label": "Traseul total (km)"
+          }
+        ],
+        "answers": {
+          "part": "1,4",
+          "total": "15,4"
+        }
+      }
+    },
+    {
+      "text": "Ce metodă este potrivită când ultima informație cunoscută este rezultatul final?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pornim de la final și refacem operațiile în ordine inversă.",
+      "options": [
+        {
+          "text": "Falsa ipoteză",
+          "is_correct": false
+        },
+        {
+          "text": "Reducerea la unitate",
+          "is_correct": false
+        },
+        {
+          "text": "Mersul invers",
+          "is_correct": true
+        },
+        {
+          "text": "Comparația",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce metodă folosește un desen cu segmente pentru părți din același întreg?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Segmentele fac vizibile fracțiile și restul din întreg.",
+      "options": [
+        {
+          "text": "Metoda comparației",
+          "is_correct": false
+        },
+        {
+          "text": "Reducerea la unitate",
+          "is_correct": false
+        },
+        {
+          "text": "Metoda figurativă",
+          "is_correct": true
+        },
+        {
+          "text": "Falsa ipoteză",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Ce metodă presupune temporar că toate obiectele sunt de același tip?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența față de total arată câte înlocuiri sunt necesare.",
+      "options": [
+        {
+          "text": "Mersul invers",
+          "is_correct": false
+        },
+        {
+          "text": "Comparația",
+          "is_correct": false
+        },
+        {
+          "text": "Falsa ipoteză",
+          "is_correct": true
+        },
+        {
+          "text": "Metoda figurativă",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
 }

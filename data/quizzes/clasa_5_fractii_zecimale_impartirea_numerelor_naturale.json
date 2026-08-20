@@ -1,6 +1,976 @@
 {
   "title": "Împărțirea a două numere naturale cu rezultat fracție zecimală; aplicație: media aritmetică a două sau mai multe numere naturale; transformarea unei fracții ordinare într-o fracție zecimală; periodicitate",
   "description": "Clasa a 5-a · Fracții zecimale",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Împarte în coloană: 23 : 5 (A).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": 23,
+        "divisor": 5,
+        "quotient": "4,6",
+        "remainder": 0,
+        "remainders": [
+          2,
+          3,
+          0
+        ],
+        "calculation_digits": "230",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest după ultima cifră folosită"
+        ],
+        "instruction": "Completează câtul zecimal și resturile intermediare. Adaugă zerouri după virgulă până când restul devine 0."
+      },
+      "explanation": "Urmărim resturile și coborâm 1 zero după virgulă. Câtul cerut este 4,6."
+    },
+    {
+      "text": "Împarte în coloană: 85 : 4 (B).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": 85,
+        "divisor": 4,
+        "quotient": "21,25",
+        "remainder": 0,
+        "remainders": [
+          0,
+          1,
+          2,
+          0
+        ],
+        "calculation_digits": "8500",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest după coborârea zeroului 1",
+          "Rest după ultima cifră folosită"
+        ],
+        "instruction": "Completează câtul zecimal și resturile intermediare. Adaugă zerouri după virgulă până când restul devine 0."
+      },
+      "explanation": "Urmărim resturile și coborâm 2 zerouri după virgulă. Câtul cerut este 21,25."
+    },
+    {
+      "text": "Împarte în coloană: 14 : 20 (C).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": 14,
+        "divisor": 20,
+        "quotient": "0,7",
+        "remainder": 0,
+        "remainders": [
+          1,
+          14,
+          0
+        ],
+        "calculation_digits": "140",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest după ultima cifră folosită"
+        ],
+        "instruction": "Completează câtul zecimal și resturile intermediare. Adaugă zerouri după virgulă până când restul devine 0."
+      },
+      "explanation": "Urmărim resturile și coborâm 1 zero după virgulă. Câtul cerut este 0,7."
+    },
+    {
+      "text": "Împarte în coloană: 7 : 25 (D).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": 7,
+        "divisor": 25,
+        "quotient": "0,28",
+        "remainder": 0,
+        "remainders": [
+          7,
+          20,
+          0
+        ],
+        "calculation_digits": "700",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după coborârea zeroului 1",
+          "Rest după ultima cifră folosită"
+        ],
+        "instruction": "Completează câtul zecimal și resturile intermediare. Adaugă zerouri după virgulă până când restul devine 0."
+      },
+      "explanation": "Urmărim resturile și coborâm 2 zerouri după virgulă. Câtul cerut este 0,28."
+    },
+    {
+      "text": "Împarte în coloană: 59 : 50 (E).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": 59,
+        "divisor": 50,
+        "quotient": "1,18",
+        "remainder": 0,
+        "remainders": [
+          5,
+          9,
+          40,
+          0
+        ],
+        "calculation_digits": "5900",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest după coborârea zeroului 1",
+          "Rest după ultima cifră folosită"
+        ],
+        "instruction": "Completează câtul zecimal și resturile intermediare. Adaugă zerouri după virgulă până când restul devine 0."
+      },
+      "explanation": "Urmărim resturile și coborâm 2 zerouri după virgulă. Câtul cerut este 1,18."
+    },
+    {
+      "text": "Împarte în coloană: 472 : 10 (F).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": 472,
+        "divisor": 10,
+        "quotient": "47,2",
+        "remainder": 0,
+        "remainders": [
+          4,
+          7,
+          2,
+          0
+        ],
+        "calculation_digits": "4720",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest după cifra 3",
+          "Rest după ultima cifră folosită"
+        ],
+        "instruction": "Completează câtul zecimal și resturile intermediare. Adaugă zerouri după virgulă până când restul devine 0."
+      },
+      "explanation": "Urmărim resturile și coborâm 1 zero după virgulă. Câtul cerut este 47,2."
+    },
+    {
+      "text": "Continuă cu zerouri: 37 : 15 (A).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": 37,
+        "divisor": 15,
+        "quotient": "2,4",
+        "remainder": 10,
+        "remainders": [
+          3,
+          7,
+          10
+        ],
+        "calculation_digits": "370",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest după ultima cifră folosită"
+        ],
+        "instruction": "Adaugă zerouri după virgulă și continuă împărțirea până la numărul de zecimale cerut."
+      },
+      "explanation": "Urmărim resturile și coborâm 1 zero după virgulă. Câtul cerut este 2,4."
+    },
+    {
+      "text": "Continuă cu zerouri: 25 : 9 (B).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": 25,
+        "divisor": 9,
+        "quotient": "2,777",
+        "remainder": 7,
+        "remainders": [
+          2,
+          7,
+          7,
+          7,
+          7
+        ],
+        "calculation_digits": "25000",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest după coborârea zeroului 1",
+          "Rest după coborârea zeroului 2",
+          "Rest după ultima cifră folosită"
+        ],
+        "instruction": "Adaugă zerouri după virgulă și continuă împărțirea până la numărul de zecimale cerut."
+      },
+      "explanation": "Urmărim resturile și coborâm 3 zerouri după virgulă. Câtul cerut este 2,777."
+    },
+    {
+      "text": "Continuă cu zerouri: 311 : 12 (C).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": 311,
+        "divisor": 12,
+        "quotient": "25,91",
+        "remainder": 8,
+        "remainders": [
+          3,
+          7,
+          11,
+          2,
+          8
+        ],
+        "calculation_digits": "31100",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest după cifra 3",
+          "Rest după coborârea zeroului 1",
+          "Rest după ultima cifră folosită"
+        ],
+        "instruction": "Adaugă zerouri după virgulă și continuă împărțirea până la numărul de zecimale cerut."
+      },
+      "explanation": "Urmărim resturile și coborâm 2 zerouri după virgulă. Câtul cerut este 25,91."
+    },
+    {
+      "text": "Continuă cu zerouri: 329 : 3 (D).",
+      "type": "column_division",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "dividend": 329,
+        "divisor": 3,
+        "quotient": "109,666",
+        "remainder": 2,
+        "remainders": [
+          0,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "calculation_digits": "329000",
+        "step_labels": [
+          "Rest după cifra 1",
+          "Rest după cifra 2",
+          "Rest după cifra 3",
+          "Rest după coborârea zeroului 1",
+          "Rest după coborârea zeroului 2",
+          "Rest după ultima cifră folosită"
+        ],
+        "instruction": "Adaugă zerouri după virgulă și continuă împărțirea până la numărul de zecimale cerut."
+      },
+      "explanation": "Urmărim resturile și coborâm 3 zerouri după virgulă. Câtul cerut este 109,666."
+    },
+    {
+      "text": "Mută virgula după împărțirea din seria A.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "comma",
+        "digits": "24",
+        "places": 1,
+        "answers": {
+          "position": "1"
+        }
+      },
+      "explanation": "Poziția corectă produce numărul 2,4."
+    },
+    {
+      "text": "Mută virgula după împărțirea din seria B.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "comma",
+        "digits": "007",
+        "places": 2,
+        "answers": {
+          "position": "1"
+        }
+      },
+      "explanation": "Poziția corectă produce numărul 0,07."
+    },
+    {
+      "text": "Mută virgula după împărțirea din seria C.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "comma",
+        "digits": "0015",
+        "places": 3,
+        "answers": {
+          "position": "1"
+        }
+      },
+      "explanation": "Poziția corectă produce numărul 0,015."
+    },
+    {
+      "text": "Mută virgula după împărțirea din seria D.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "comma",
+        "digits": "234",
+        "places": 1,
+        "answers": {
+          "position": "2"
+        }
+      },
+      "explanation": "Poziția corectă produce numărul 23,4."
+    },
+    {
+      "text": "Detectivul greșelilor A: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "23 : 5",
+          "23 : 5 = 4, rest 3",
+          "Coborâm un zero: 30 : 5 = 6",
+          "Rezultatul este 46"
+        ],
+        "error_index": 3
+      },
+      "explanation": "După partea întreagă se scrie virgula; rezultatul este 4,6."
+    },
+    {
+      "text": "Detectivul greșelilor B: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "85 : 4",
+          "8 : 4 = 2",
+          "5 : 4 = 1, rest 0",
+          "Câtul este 21,25"
+        ],
+        "error_index": 2
+      },
+      "explanation": "După 8 : 4, la coborârea lui 5 obținem 1 și rest 1, nu rest 0."
+    },
+    {
+      "text": "Detectivul greșelilor C: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "1/3 = 1 : 3",
+          "Adăugăm un zero și obținem 10 : 3 = 3, rest 1",
+          "Același rest reapare",
+          "Fracția este zecimală finită"
+        ],
+        "error_index": 3
+      },
+      "explanation": "Reapariția aceluiași rest arată că fracția este periodică: 0,(3)."
+    },
+    {
+      "text": "Detectivul greșelilor D: apasă primul pas greșit.",
+      "type": "divisibility_error",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "steps": [
+          "Media numerelor 4, 5, 11 și 13",
+          "Suma este 33",
+          "Sunt 4 numere",
+          "Media este 33 : 3 = 11"
+        ],
+        "error_index": 3
+      },
+      "explanation": "Suma se împarte la 4, deci media este 8,25."
+    },
+    {
+      "text": "Clasifică fracțiile din seria A.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "classification",
+        "items": [
+          {
+            "id": "a",
+            "label": "3/4"
+          },
+          {
+            "id": "b",
+            "label": "8/9"
+          },
+          {
+            "id": "c",
+            "label": "5/6"
+          }
+        ],
+        "categories": [
+          {
+            "value": "finita",
+            "label": "Finită"
+          },
+          {
+            "value": "simpla",
+            "label": "Periodică simplă"
+          },
+          {
+            "value": "mixta",
+            "label": "Periodică mixtă"
+          }
+        ],
+        "answers": {
+          "class:a": "finita",
+          "class:b": "simpla",
+          "class:c": "mixta"
+        }
+      },
+      "explanation": "După simplificare: numai factorii 2 și 5 în numitor dau o fracție zecimală finită; fără 2 și 5 obținem periodică simplă; combinația lor cu alți factori dă periodică mixtă."
+    },
+    {
+      "text": "Clasifică fracțiile din seria B.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "classification",
+        "items": [
+          {
+            "id": "a",
+            "label": "17/29"
+          },
+          {
+            "id": "b",
+            "label": "44/30"
+          },
+          {
+            "id": "c",
+            "label": "76/25"
+          }
+        ],
+        "categories": [
+          {
+            "value": "finita",
+            "label": "Finită"
+          },
+          {
+            "value": "simpla",
+            "label": "Periodică simplă"
+          },
+          {
+            "value": "mixta",
+            "label": "Periodică mixtă"
+          }
+        ],
+        "answers": {
+          "class:a": "simpla",
+          "class:b": "mixta",
+          "class:c": "finita"
+        }
+      },
+      "explanation": "După simplificare: numai factorii 2 și 5 în numitor dau o fracție zecimală finită; fără 2 și 5 obținem periodică simplă; combinația lor cu alți factori dă periodică mixtă."
+    },
+    {
+      "text": "Clasifică fracțiile din seria C.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "classification",
+        "items": [
+          {
+            "id": "a",
+            "label": "43/625"
+          },
+          {
+            "id": "b",
+            "label": "239/17"
+          },
+          {
+            "id": "c",
+            "label": "701/20"
+          }
+        ],
+        "categories": [
+          {
+            "value": "finita",
+            "label": "Finită"
+          },
+          {
+            "value": "simpla",
+            "label": "Periodică simplă"
+          },
+          {
+            "value": "mixta",
+            "label": "Periodică mixtă"
+          }
+        ],
+        "answers": {
+          "class:a": "finita",
+          "class:b": "simpla",
+          "class:c": "finita"
+        }
+      },
+      "explanation": "După simplificare: numai factorii 2 și 5 în numitor dau o fracție zecimală finită; fără 2 și 5 obținem periodică simplă; combinația lor cu alți factori dă periodică mixtă."
+    },
+    {
+      "text": "Clasifică fracțiile din seria D.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "classification",
+        "items": [
+          {
+            "id": "a",
+            "label": "37/15"
+          },
+          {
+            "id": "b",
+            "label": "403/600"
+          },
+          {
+            "id": "c",
+            "label": "9/125"
+          }
+        ],
+        "categories": [
+          {
+            "value": "finita",
+            "label": "Finită"
+          },
+          {
+            "value": "simpla",
+            "label": "Periodică simplă"
+          },
+          {
+            "value": "mixta",
+            "label": "Periodică mixtă"
+          }
+        ],
+        "answers": {
+          "class:a": "mixta",
+          "class:b": "mixta",
+          "class:c": "finita"
+        }
+      },
+      "explanation": "După simplificare: numai factorii 2 și 5 în numitor dau o fracție zecimală finită; fără 2 și 5 obținem periodică simplă; combinația lor cu alți factori dă periodică mixtă."
+    },
+    {
+      "text": "Clasifică fracțiile din seria E.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "classification",
+        "items": [
+          {
+            "id": "a",
+            "label": "1/12"
+          },
+          {
+            "id": "b",
+            "label": "4/9"
+          },
+          {
+            "id": "c",
+            "label": "25/75"
+          }
+        ],
+        "categories": [
+          {
+            "value": "finita",
+            "label": "Finită"
+          },
+          {
+            "value": "simpla",
+            "label": "Periodică simplă"
+          },
+          {
+            "value": "mixta",
+            "label": "Periodică mixtă"
+          }
+        ],
+        "answers": {
+          "class:a": "mixta",
+          "class:b": "simpla",
+          "class:c": "simpla"
+        }
+      },
+      "explanation": "După simplificare: numai factorii 2 și 5 în numitor dau o fracție zecimală finită; fără 2 și 5 obținem periodică simplă; combinația lor cu alți factori dă periodică mixtă."
+    },
+    {
+      "text": "Marchează perioada numărului 0,333333….",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "period_select",
+        "display": "0,333333…",
+        "choices": [
+          "3",
+          "33",
+          "333"
+        ],
+        "answers": {
+          "period": "3"
+        }
+      },
+      "explanation": "Grupul care se repetă este 3; acesta este perioada."
+    },
+    {
+      "text": "Marchează perioada numărului 4,636363….",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "period_select",
+        "display": "4,636363…",
+        "choices": [
+          "6",
+          "63",
+          "363"
+        ],
+        "answers": {
+          "period": "63"
+        }
+      },
+      "explanation": "Grupul care se repetă este 63; acesta este perioada."
+    },
+    {
+      "text": "Marchează perioada numărului 5,833333….",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "period_select",
+        "display": "5,833333…",
+        "choices": [
+          "8",
+          "3",
+          "83"
+        ],
+        "answers": {
+          "period": "3"
+        }
+      },
+      "explanation": "Grupul care se repetă este 3; acesta este perioada."
+    },
+    {
+      "text": "Marchează perioada numărului 0,3090909….",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "period_select",
+        "display": "0,3090909…",
+        "choices": [
+          "3",
+          "09",
+          "309"
+        ],
+        "answers": {
+          "period": "09"
+        }
+      },
+      "explanation": "Grupul care se repetă este 09; acesta este perioada."
+    },
+    {
+      "text": "Scrie cu paranteze numărul 0,333333… (A).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "period_notation",
+        "prefix": "0,",
+        "answers": {
+          "period": "3"
+        }
+      },
+      "explanation": "Perioada este 3, deci o scriem o singură dată între paranteze."
+    },
+    {
+      "text": "Scrie cu paranteze numărul 4,636363… (B).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "period_notation",
+        "prefix": "4,",
+        "answers": {
+          "period": "63"
+        }
+      },
+      "explanation": "Perioada este 63, deci o scriem o singură dată între paranteze."
+    },
+    {
+      "text": "Scrie cu paranteze numărul 5,833333… (C).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "period_notation",
+        "prefix": "5,8",
+        "answers": {
+          "period": "3"
+        }
+      },
+      "explanation": "Perioada este 3, deci o scriem o singură dată între paranteze."
+    },
+    {
+      "text": "Scrie cu paranteze numărul 0,3090909… (D).",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "period_notation",
+        "prefix": "0,3",
+        "answers": {
+          "period": "09"
+        }
+      },
+      "explanation": "Perioada este 09, deci o scriem o singură dată între paranteze."
+    },
+    {
+      "text": "Echilibrează media din seria A.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "average_balance",
+        "known_values": [
+          "12"
+        ],
+        "target": "15",
+        "initial": "1",
+        "min": 1,
+        "max": 30,
+        "step": "1",
+        "answers": {
+          "missing": "18"
+        }
+      },
+      "explanation": "Suma tuturor numerelor trebuie să fie media înmulțită cu numărul termenilor. Numărul lipsă este 18."
+    },
+    {
+      "text": "Echilibrează media din seria B.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "average_balance",
+        "known_values": [
+          "8",
+          "9"
+        ],
+        "target": "8",
+        "initial": "1",
+        "min": 1,
+        "max": 15,
+        "step": "1",
+        "answers": {
+          "missing": "7"
+        }
+      },
+      "explanation": "Suma tuturor numerelor trebuie să fie media înmulțită cu numărul termenilor. Numărul lipsă este 7."
+    },
+    {
+      "text": "Echilibrează media din seria C.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "average_balance",
+        "known_values": [
+          "6",
+          "8",
+          "5",
+          "10"
+        ],
+        "target": "8",
+        "initial": "1",
+        "min": 1,
+        "max": 15,
+        "step": "1",
+        "answers": {
+          "missing": "11"
+        }
+      },
+      "explanation": "Suma tuturor numerelor trebuie să fie media înmulțită cu numărul termenilor. Numărul lipsă este 11."
+    },
+    {
+      "text": "Echilibrează media din seria D.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "average_balance",
+        "known_values": [
+          "2,4"
+        ],
+        "target": "4,5",
+        "initial": "0",
+        "min": 0,
+        "max": 10,
+        "step": "0.1",
+        "answers": {
+          "missing": "6,6"
+        }
+      },
+      "explanation": "Suma tuturor numerelor trebuie să fie media înmulțită cu numărul termenilor. Numărul lipsă este 6,6."
+    },
+    {
+      "text": "O bomboană costă 5 lei, iar 10 bomboane identice costă la fel. Care este prețul unei bomboane?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "5 : 10 = □ lei",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "0,5"
+        }
+      },
+      "explanation": "Prețul este 0,5 lei."
+    },
+    {
+      "text": "100 de rezerve de stilou costă 30 de lei. Cât costă o rezervă?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "30 : 100 = □ lei",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "0,3"
+        }
+      },
+      "explanation": "O rezervă costă 0,3 lei."
+    },
+    {
+      "text": "Radu are mediile 9 și 10 în cele două semestre. Care este media anuală?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "(9 + 10) : 2 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "9,5"
+        }
+      },
+      "explanation": "Suma este 19, iar 19 : 2 = 9,5."
+    },
+    {
+      "text": "Media a două numere este 21,35, iar unul este 18,3. Determină celălalt număr.",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "2 × 21,35 − 18,3 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "24,4"
+        }
+      },
+      "explanation": "Suma celor două numere este 42,7; numărul lipsă este 24,4."
+    },
+    {
+      "text": "Media a trei numere este 7,14. Care este suma lor?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "3 × 7,14 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "21,42"
+        }
+      },
+      "explanation": "Suma este media înmulțită cu 3: 21,42."
+    },
+    {
+      "text": "Clara are notele 8, 9 și 7 la istorie. Care este media?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "(8 + 9 + 7) : 3 = □",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "8"
+        }
+      },
+      "explanation": "Suma notelor este 24, iar 24 : 3 = 8."
+    },
+    {
+      "text": "Un traseu de 21 km este împărțit egal în 4 etape. Câți kilometri are fiecare etapă?",
+      "type": "decimal_workbench",
+      "format": "interactive",
+      "points": 10,
+      "interactive": {
+        "mode": "missing",
+        "expression": "21 : 4 = □ km",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Răspuns"
+          }
+        ],
+        "answers": {
+          "missing": "5,25"
+        }
+      },
+      "explanation": "Fiecare etapă are 5,25 km."
+    }
+  ]
 }

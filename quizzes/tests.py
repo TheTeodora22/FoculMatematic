@@ -737,6 +737,42 @@ class TrainingTests(TopicModeTestMixin, TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTrue(response.json()["is_correct"])
 
+        approximate_points = Question.objects.create(
+            quiz=self.topic,
+            text="Plasează punctele aproape de marcaje.",
+            question_type=Question.TYPE_GEOMETRY_CANVAS,
+            format_tag=Question.FORMAT_INTERACTIVE,
+            interactive_data={
+                "mode": "place_points",
+                "answers": {"A": "100,80", "B": "260,80"},
+                "points": [{"name": "A"}, {"name": "B"}],
+            },
+        )
+        response = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": approximate_points.id, "values": json.dumps({"A": "128,96", "B": "235,61"})},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.json()["is_correct"])
+
+        reversible_line = Question.objects.create(
+            quiz=self.topic,
+            text="Construiește dreapta AB în orice ordine.",
+            question_type=Question.TYPE_GEOMETRY_CANVAS,
+            format_tag=Question.FORMAT_INTERACTIVE,
+            interactive_data={
+                "mode": "construct_figure",
+                "answers": {"tool": "line", "first": "A", "second": "B"},
+                "points": [{"name": "A"}, {"name": "B"}],
+            },
+        )
+        response = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": reversible_line.id, "values": json.dumps({"tool": "line", "first": "B", "second": "A"})},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.json()["is_correct"])
+
     def test_numeral_system_interactive_answers_are_checked(self):
         cases = [
             (
@@ -851,6 +887,198 @@ class TrainingTests(TopicModeTestMixin, TestCase):
                 self.assertEqual(response.status_code, 200)
                 self.assertTrue(response.json()["is_correct"])
 
+    def test_geometry_canvas_checks_exact_and_collinearity_answers(self):
+        self.client.login(username="trainuser", password="testpass123")
+        exact = Question.objects.create(
+            quiz=self.topic,
+            text="Alege figura geometrică.",
+            question_type=Question.TYPE_GEOMETRY_CANVAS,
+            format_tag=Question.FORMAT_INTERACTIVE,
+            interactive_data={"mode": "choose_figure", "answers": {"figure": 2}, "figures": [{"kind": "line"}, {"kind": "ray"}, {"kind": "segment"}]},
+        )
+        response = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": exact.id, "values": json.dumps({"figure": "2"})},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.json()["is_correct"])
+
+        point_on_line = Question.objects.create(
+            quiz=self.topic,
+            text="Mută punctul M pe dreapta d.",
+            question_type=Question.TYPE_GEOMETRY_CANVAS,
+            format_tag=Question.FORMAT_INTERACTIVE,
+            interactive_data={
+                "mode": "point_on_line",
+                "answers": {"membership": "on"},
+                "points": [{"name": "M"}],
+                "line": {"a": 0, "b": 1, "c": -90},
+            },
+        )
+        response = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": point_on_line.id, "values": json.dumps({"M": "245,90"})},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.json()["is_correct"])
+
+        ruler = Question.objects.create(
+            quiz=self.topic,
+            text="Așază rigla prin A și B.",
+            question_type=Question.TYPE_GEOMETRY_CANVAS,
+            format_tag=Question.FORMAT_INTERACTIVE,
+            interactive_data={
+                "mode": "ruler_line",
+                "answers": {"ruler_angle": 0, "ruler_x": 220, "ruler_y": 90, "line_angle": 0},
+            },
+        )
+        response = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": ruler.id, "values": json.dumps({"ruler_angle": "180", "ruler_x": "220", "ruler_y": "90", "line_angle": "180"})},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.json()["is_correct"])
+
+        almost_collinear = Question.objects.create(
+            quiz=self.topic,
+            text="Așază M, N și P aproximativ pe aceeași dreaptă.",
+            question_type=Question.TYPE_GEOMETRY_CANVAS,
+            format_tag=Question.FORMAT_INTERACTIVE,
+            interactive_data={"mode": "place_collinear", "answers": {"relation": "collinear"}, "points": [{"name": "M"}, {"name": "N"}, {"name": "P"}]},
+        )
+        response = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": almost_collinear.id, "values": json.dumps({"M": "20,50", "N": "150,55", "P": "290,63"})},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.json()["is_correct"])
+
+        coincidence = Question.objects.create(
+            quiz=self.topic,
+            text="Suprapune A și B.",
+            question_type=Question.TYPE_GEOMETRY_CANVAS,
+            format_tag=Question.FORMAT_INTERACTIVE,
+            interactive_data={"mode": "coincidence", "answers": {"relation": "coincident"}, "points": [{"name": "A"}, {"name": "B"}]},
+        )
+        response = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": coincidence.id, "values": json.dumps({"A": "200,90", "B": "222,101"})},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.json()["is_correct"])
+
+        plane_points = Question.objects.create(
+            quiz=self.topic,
+            text="Trage A în plan și B în afara lui.",
+            question_type=Question.TYPE_GEOMETRY_CANVAS,
+            format_tag=Question.FORMAT_INTERACTIVE,
+            interactive_data={"mode": "plane_points", "answers": {"inside": "A", "outside": "B"}, "points": [{"name": "A"}, {"name": "B"}]},
+        )
+        response = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": plane_points.id, "values": json.dumps({"A": "220,90", "B": "410,160"})},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.json()["is_correct"])
+
+        collinear = Question.objects.create(
+            quiz=self.topic,
+            text="Așază trei puncte coliniare.",
+            question_type=Question.TYPE_GEOMETRY_CANVAS,
+            format_tag=Question.FORMAT_INTERACTIVE,
+            interactive_data={"mode": "place_collinear", "answers": {"relation": "collinear"}, "points": [{"name": "A"}, {"name": "B"}, {"name": "C"}]},
+        )
+        response = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": collinear.id, "values": json.dumps({"A": "10,20", "B": "20,40", "C": "30,60"})},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.json()["is_correct"])
+
+        relation = Question.objects.create(
+            quiz=self.topic,
+            text="Transformă dreptele în drepte concurente.",
+            question_type=Question.TYPE_GEOMETRY_CANVAS,
+            format_tag=Question.FORMAT_INTERACTIVE,
+            interactive_data={"mode": "make_concurrent", "answers": {"relation": "concurrent"}},
+        )
+        response = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": relation.id, "values": json.dumps({"line_angle": "35", "line_y": "120", "relation": "concurrent"})},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.json()["is_correct"])
+
+        arrangement = Question.objects.create(
+            quiz=self.topic,
+            text="Aranjează patru puncte pe aceeași dreaptă.",
+            question_type=Question.TYPE_GEOMETRY_CANVAS,
+            format_tag=Question.FORMAT_INTERACTIVE,
+            interactive_data={
+                "mode": "arrange_line_count",
+                "answers": {"arrangement": "all_collinear"},
+                "points": [{"name": "A"}, {"name": "B"}, {"name": "C"}, {"name": "D"}],
+            },
+        )
+        response = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": arrangement.id, "values": json.dumps({"A": "40,80", "B": "140,84", "C": "240,87", "D": "350,92"})},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.json()["is_correct"])
+
+    def test_fraction_power_checks_all_interactive_values(self):
+        self.client.login(username="trainuser", password="testpass123")
+        question = Question.objects.create(
+            quiz=self.topic,
+            text="Construiește exponentul puterii unei fracții.",
+            question_type=Question.TYPE_FRACTION_POWER,
+            format_tag=Question.FORMAT_INTERACTIVE,
+            interactive_data={
+                "mode": "exponent_rule",
+                "answers": {"operation": "+", "result_exponent": 9},
+            },
+        )
+        wrong = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": question.id, "values": json.dumps({"operation": "-", "result_exponent": "9"})},
+        )
+        self.assertEqual(wrong.status_code, 200)
+        self.assertFalse(wrong.json()["is_correct"])
+
+        correct = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": question.id, "values": json.dumps({"operation": "+", "result_exponent": "9"})},
+        )
+        self.assertEqual(correct.status_code, 200)
+        self.assertTrue(correct.json()["is_correct"])
+
+    def test_fraction_percent_checks_all_interactive_values(self):
+        self.client.login(username="trainuser", password="testpass123")
+        question = Question.objects.create(
+            quiz=self.topic,
+            text="Calculează reducerea și prețul final.",
+            question_type=Question.TYPE_FRACTION_PERCENT,
+            format_tag=Question.FORMAT_INTERACTIVE,
+            interactive_data={
+                "mode": "price",
+                "answers": {"change": 30, "final": 170},
+            },
+        )
+        wrong = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": question.id, "values": json.dumps({"change": "30", "final": "230"})},
+        )
+        self.assertEqual(wrong.status_code, 200)
+        self.assertFalse(wrong.json()["is_correct"])
+
+        correct = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": question.id, "values": json.dumps({"change": "30", "final": "170"})},
+        )
+        self.assertEqual(correct.status_code, 200)
+        self.assertTrue(correct.json()["is_correct"])
+
     def test_generated_quiz_excludes_parentheses_questions(self):
         Question.objects.create(
             quiz=self.topic,
@@ -956,3 +1184,40 @@ class LessonTagTests(TestCase):
         self.assertIn("Clasa a 5-a", labels)
         self.assertIn("Clasa a 8-a", labels)
         self.assertIn("Evaluarea Națională", labels)
+
+
+class AlgebraWorkbenchTests(TestCase):
+    def setUp(self):
+        self.client = Client()
+        self.user = User.objects.create_user(username="algebrauser", password="testpass123")
+        chapter = Chapter.objects.create(class_level=9, slug="algebra-test", title="Algebră")
+        self.topic = Quiz.objects.create(title="Atelier algebric", difficulty="medium", chapter=chapter)
+        self.question = Question.objects.create(
+            quiz=self.topic,
+            text="Simplifică expresia.",
+            question_type=Question.TYPE_ALGEBRA_WORKBENCH,
+            format_tag=Question.FORMAT_INTERACTIVE,
+            interactive_data={
+                "mode": "simplify",
+                "expression": "(a+b)²",
+                "fields": [{"key": "result", "label": "Rezultat"}],
+                "answers": {"result": "a²+2ab+b²"},
+            },
+        )
+        self.client.login(username="algebrauser", password="testpass123")
+
+    def test_algebra_workbench_accepts_equivalent_notation(self):
+        response = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": self.question.id, "values": json.dumps({"result": "a^2 + 2ab + b^2"})},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.json()["is_correct"])
+
+    def test_algebra_workbench_rejects_wrong_answer(self):
+        response = self.client.post(
+            reverse("training_submit", args=[self.topic.pk]),
+            {"question_id": self.question.id, "values": json.dumps({"result": "a²+b²"})},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertFalse(response.json()["is_correct"])

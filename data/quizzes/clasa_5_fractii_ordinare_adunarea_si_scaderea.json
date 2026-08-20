@@ -2,5 +2,1187 @@
   "title": "Adunarea și scăderea fracțiilor",
   "description": "Clasa a 5-a · Fracții ordinare",
   "difficulty": "easy",
-  "questions": []
+  "questions": [
+    {
+      "text": "Calculează 3/11 + 5/11.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorul rămâne 11, iar numărătorii se adună.",
+      "options": [
+        {
+          "text": "2/11",
+          "is_correct": false
+        },
+        {
+          "text": "8/11",
+          "is_correct": true
+        },
+        {
+          "text": "15/11",
+          "is_correct": false
+        },
+        {
+          "text": "8/22",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează 17/18 − 5/18 și simplifică.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "17/18 − 5/18 = 12/18 = 2/3.",
+      "options": [
+        {
+          "text": "12/36",
+          "is_correct": false
+        },
+        {
+          "text": "2/3",
+          "is_correct": true
+        },
+        {
+          "text": "11/18",
+          "is_correct": false
+        },
+        {
+          "text": "12/18",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Rezultatul lui 1/3 + 2/5 este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1/3 = 5/15 și 2/5 = 6/15.",
+      "options": [
+        {
+          "text": "3/15",
+          "is_correct": false
+        },
+        {
+          "text": "11/15",
+          "is_correct": true
+        },
+        {
+          "text": "7/15",
+          "is_correct": false
+        },
+        {
+          "text": "3/8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Rezultatul lui 7/8 − 1/6 este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "7/8 = 21/24 și 1/6 = 4/24.",
+      "options": [
+        {
+          "text": "19/24",
+          "is_correct": false
+        },
+        {
+          "text": "17/24",
+          "is_correct": true
+        },
+        {
+          "text": "6/14",
+          "is_correct": false
+        },
+        {
+          "text": "6/2",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dintr-o grădină, 8/17 este plantată cu meri și 4/17 cu peri. Ce fracție rămâne liberă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Partea ocupată este 12/17, deci rămâne 17/17 − 12/17 = 5/17.",
+      "options": [
+        {
+          "text": "4/17",
+          "is_correct": false
+        },
+        {
+          "text": "5/17",
+          "is_correct": true
+        },
+        {
+          "text": "5/34",
+          "is_correct": false
+        },
+        {
+          "text": "12/17",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care calcul are rezultatul 1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La același numitor, 3/5 + 2/5 = 5/5 = 1.",
+      "options": [
+        {
+          "text": "1/3 + 1/3",
+          "is_correct": false
+        },
+        {
+          "text": "3/5 + 2/5",
+          "is_correct": true
+        },
+        {
+          "text": "5/6 − 1/3",
+          "is_correct": false
+        },
+        {
+          "text": "3/5 − 2/5",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "La adunarea fracțiilor cu același numitor, adunăm numărătorii și păstrăm numitorul.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Aceasta este regula pentru fracțiile cu același numitor.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pentru a calcula 1/3 + 1/4 putem aduna direct și numărătorii, și numitorii.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Mai întâi aducem fracțiile la același numitor.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "După efectuarea unei adunări sau scăderi, rezultatul trebuie simplificat dacă este reductibil.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Răspunsul final se scrie, de regulă, în formă ireductibilă.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Adu fracțiile 2/3 și 5/8 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(3, 8) = 24; factorii de amplificare sunt 8 și 3.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          2,
+          3
+        ],
+        "right": [
+          5,
+          8
+        ],
+        "answers": {
+          "left_factor": 8,
+          "right_factor": 3,
+          "left_numerator": 16,
+          "right_numerator": 15,
+          "common_denominator": 24
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 7/10 și 3/4 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(10, 4) = 20; factorii de amplificare sunt 2 și 5.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          7,
+          10
+        ],
+        "right": [
+          3,
+          4
+        ],
+        "answers": {
+          "left_factor": 2,
+          "right_factor": 5,
+          "left_numerator": 14,
+          "right_numerator": 15,
+          "common_denominator": 20
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 5/12 și 7/18 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(12, 18) = 36; factorii de amplificare sunt 3 și 2.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          5,
+          12
+        ],
+        "right": [
+          7,
+          18
+        ],
+        "answers": {
+          "left_factor": 3,
+          "right_factor": 2,
+          "left_numerator": 15,
+          "right_numerator": 14,
+          "common_denominator": 36
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 11/15 și 2/9 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(15, 9) = 45; factorii de amplificare sunt 3 și 5.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          11,
+          15
+        ],
+        "right": [
+          2,
+          9
+        ],
+        "answers": {
+          "left_factor": 3,
+          "right_factor": 5,
+          "left_numerator": 33,
+          "right_numerator": 10,
+          "common_denominator": 45
+        }
+      }
+    },
+    {
+      "text": "Adu fracțiile 3/14 și 5/21 la cel mai mic numitor comun.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "c.m.m.m.c.(14, 21) = 42; factorii de amplificare sunt 3 și 2.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          3,
+          14
+        ],
+        "right": [
+          5,
+          21
+        ],
+        "answers": {
+          "left_factor": 3,
+          "right_factor": 2,
+          "left_numerator": 9,
+          "right_numerator": 10,
+          "common_denominator": 42
+        }
+      }
+    },
+    {
+      "text": "Calculează 5/12 + 7/18.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La numitorul 36 obținem 15/36 + 14/36, iar rezultatul ireductibil este 29/36.",
+      "interactive": {
+        "mode": "calculate",
+        "left": [
+          5,
+          12
+        ],
+        "right": [
+          7,
+          18
+        ],
+        "operation": "+",
+        "answers": {
+          "left_numerator": 15,
+          "right_numerator": 14,
+          "common_denominator": 36,
+          "result_numerator": 29,
+          "result_denominator": 36
+        }
+      }
+    },
+    {
+      "text": "Calculează 11/15 - 2/9.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La numitorul 45 obținem 33/45 - 10/45, iar rezultatul ireductibil este 23/45.",
+      "interactive": {
+        "mode": "calculate",
+        "left": [
+          11,
+          15
+        ],
+        "right": [
+          2,
+          9
+        ],
+        "operation": "-",
+        "answers": {
+          "left_numerator": 33,
+          "right_numerator": 10,
+          "common_denominator": 45,
+          "result_numerator": 23,
+          "result_denominator": 45
+        }
+      }
+    },
+    {
+      "text": "Calculează 3/8 + 5/6.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La numitorul 24 obținem 9/24 + 20/24, iar rezultatul ireductibil este 29/24.",
+      "interactive": {
+        "mode": "calculate",
+        "left": [
+          3,
+          8
+        ],
+        "right": [
+          5,
+          6
+        ],
+        "operation": "+",
+        "answers": {
+          "left_numerator": 9,
+          "right_numerator": 20,
+          "common_denominator": 24,
+          "result_numerator": 29,
+          "result_denominator": 24
+        }
+      }
+    },
+    {
+      "text": "Calculează 13/14 - 5/21.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La numitorul 42 obținem 39/42 - 10/42, iar rezultatul ireductibil este 29/42.",
+      "interactive": {
+        "mode": "calculate",
+        "left": [
+          13,
+          14
+        ],
+        "right": [
+          5,
+          21
+        ],
+        "operation": "-",
+        "answers": {
+          "left_numerator": 39,
+          "right_numerator": 10,
+          "common_denominator": 42,
+          "result_numerator": 29,
+          "result_denominator": 42
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea 3/4 + □ = 13/12.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția lipsă este 1/3.",
+      "interactive": {
+        "mode": "missing_term",
+        "left": [
+          3,
+          4
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "result": [
+          13,
+          12
+        ],
+        "operation": "+",
+        "missing_side": "right",
+        "answers": {
+          "missing_numerator": 1,
+          "missing_denominator": 3
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea □ - 2/5 = 1/10.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția lipsă este 1/2.",
+      "interactive": {
+        "mode": "missing_term",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          2,
+          5
+        ],
+        "result": [
+          1,
+          10
+        ],
+        "operation": "-",
+        "missing_side": "left",
+        "answers": {
+          "missing_numerator": 1,
+          "missing_denominator": 2
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea 7/8 - □ = 1/2.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția lipsă este 3/8.",
+      "interactive": {
+        "mode": "missing_term",
+        "left": [
+          7,
+          8
+        ],
+        "right": [
+          3,
+          8
+        ],
+        "result": [
+          1,
+          2
+        ],
+        "operation": "-",
+        "missing_side": "right",
+        "answers": {
+          "missing_numerator": 3,
+          "missing_denominator": 8
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea □ + 5/12 = 3/4.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția lipsă este 1/3.",
+      "interactive": {
+        "mode": "missing_term",
+        "left": [
+          1,
+          3
+        ],
+        "right": [
+          5,
+          12
+        ],
+        "result": [
+          3,
+          4
+        ],
+        "operation": "+",
+        "missing_side": "left",
+        "answers": {
+          "missing_numerator": 1,
+          "missing_denominator": 3
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea 2/3 □ 1/6 = 5/6.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Operația corectă este +.",
+      "interactive": {
+        "mode": "operator",
+        "left": [
+          2,
+          3
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "result": [
+          5,
+          6
+        ],
+        "operation": "+",
+        "answers": {
+          "operator": "+"
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea 7/8 □ 3/8 = 1/2.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Operația corectă este -.",
+      "interactive": {
+        "mode": "operator",
+        "left": [
+          7,
+          8
+        ],
+        "right": [
+          3,
+          8
+        ],
+        "result": [
+          1,
+          2
+        ],
+        "operation": "-",
+        "answers": {
+          "operator": "-"
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea 5/12 □ 1/4 = 1/6.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Operația corectă este -.",
+      "interactive": {
+        "mode": "operator",
+        "left": [
+          5,
+          12
+        ],
+        "right": [
+          1,
+          4
+        ],
+        "result": [
+          1,
+          6
+        ],
+        "operation": "-",
+        "answers": {
+          "operator": "-"
+        }
+      }
+    },
+    {
+      "text": "Identifică primul pas greșit al rezolvării.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numitorul comun se păstrează: 4/12 + 3/12 = 7/12.",
+      "interactive": {
+        "mode": "error",
+        "left": [
+          1,
+          3
+        ],
+        "right": [
+          1,
+          4
+        ],
+        "operation": "+",
+        "steps": [
+          "c.m.m.m.c.(3, 4) = 12",
+          "1/3 = 4/12",
+          "1/4 = 3/12",
+          "4/12 + 3/12 = 7/24"
+        ],
+        "answers": {
+          "error_index": 3
+        }
+      }
+    },
+    {
+      "text": "Apasă primul pas care nu este corect.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cel mai mic multiplu comun este 20, nu 40.",
+      "interactive": {
+        "mode": "error",
+        "left": [
+          7,
+          10
+        ],
+        "right": [
+          1,
+          4
+        ],
+        "operation": "-",
+        "steps": [
+          "c.m.m.m.c.(10, 4) = 40",
+          "7/10 = 14/20",
+          "1/4 = 5/20",
+          "14/20 − 5/20 = 9/20"
+        ],
+        "answers": {
+          "error_index": 0
+        }
+      }
+    },
+    {
+      "text": "Alege prima transformare greșită.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "5/12 se amplifică cu 3, deci devine 15/36.",
+      "interactive": {
+        "mode": "error",
+        "left": [
+          2,
+          9
+        ],
+        "right": [
+          5,
+          12
+        ],
+        "operation": "+",
+        "steps": [
+          "c.m.m.m.c.(9, 12) = 36",
+          "2/9 = 8/36",
+          "5/12 = 20/36",
+          "8/36 + 20/36 = 28/36"
+        ],
+        "answers": {
+          "error_index": 2
+        }
+      }
+    },
+    {
+      "text": "Așază corect pașii pentru calculul 2/3 + 5/8.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Mai întâi alegem numitorul comun, apoi amplificăm, calculăm și scriem forma finală.",
+      "interactive": {
+        "mode": "order_steps",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "steps": [
+          "Determinăm c.m.m.m.c.(3, 8) = 24.",
+          "Scriem 2/3 = 16/24 și 5/8 = 15/24.",
+          "Adunăm: 16/24 + 15/24 = 31/24.",
+          "Scoatem întregii: 31/24 = 1 7/24."
+        ],
+        "display_order": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "answers": {
+          "order": "0,1,2,3"
+        }
+      }
+    },
+    {
+      "text": "Așază corect pașii pentru calculul 11/15 − 2/9.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ordinea este: numitor comun, amplificare, scădere, verificarea formei ireductibile.",
+      "interactive": {
+        "mode": "order_steps",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "steps": [
+          "Determinăm c.m.m.m.c.(15, 9) = 45.",
+          "Scriem 11/15 = 33/45 și 2/9 = 10/45.",
+          "Scădem: 33/45 − 10/45 = 23/45.",
+          "Verificăm că 23/45 este ireductibilă."
+        ],
+        "display_order": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "answers": {
+          "order": "0,1,2,3"
+        }
+      }
+    },
+    {
+      "text": "Construiește rezolvarea calculului 5/6 + 1/4.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pașii corecți duc la rezultatul 1 1/12.",
+      "interactive": {
+        "mode": "order_steps",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "steps": [
+          "Alegem numitorul comun 12.",
+          "Transformăm: 5/6 = 10/12 și 1/4 = 3/12.",
+          "Calculăm 10/12 + 3/12 = 13/12.",
+          "Scriem 13/12 = 1 1/12."
+        ],
+        "display_order": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "answers": {
+          "order": "0,1,2,3"
+        }
+      }
+    },
+    {
+      "text": "Potrivește fiecare calcul cu rezultatul său.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aducem la același numitor, efectuăm operația și simplificăm fiecare rezultat.",
+      "interactive": {
+        "mode": "match",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "pairs": [
+          {
+            "operation": "2/7 + 3/7",
+            "result": "5/7"
+          },
+          {
+            "operation": "11/12 − 3/12",
+            "result": "2/3"
+          },
+          {
+            "operation": "1/3 + 1/6",
+            "result": "1/2"
+          }
+        ],
+        "result_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "match_0": 0,
+          "match_1": 1,
+          "match_2": 2
+        }
+      }
+    },
+    {
+      "text": "Leagă fiecare operație de valoarea corectă.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aducem la același numitor, efectuăm operația și simplificăm fiecare rezultat.",
+      "interactive": {
+        "mode": "match",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "pairs": [
+          {
+            "operation": "3/4 − 1/6",
+            "result": "7/12"
+          },
+          {
+            "operation": "2/5 + 1/4",
+            "result": "13/20"
+          },
+          {
+            "operation": "7/9 − 1/3",
+            "result": "4/9"
+          }
+        ],
+        "result_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "match_0": 0,
+          "match_1": 1,
+          "match_2": 2
+        }
+      }
+    },
+    {
+      "text": "Alege rezultatul potrivit pentru fiecare calcul.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aducem la același numitor, efectuăm operația și simplificăm fiecare rezultat.",
+      "interactive": {
+        "mode": "match",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "pairs": [
+          {
+            "operation": "5/8 + 3/4",
+            "result": "11/8"
+          },
+          {
+            "operation": "13/15 − 2/5",
+            "result": "7/15"
+          },
+          {
+            "operation": "1/2 + 5/12",
+            "result": "11/12"
+          }
+        ],
+        "result_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "match_0": 0,
+          "match_1": 1,
+          "match_2": 2
+        }
+      }
+    },
+    {
+      "text": "Un elev a parcurs 1/3 dintr-un traseu dimineața și 2/5 după-amiaza. Ce fracție din traseu a parcurs?",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Operația este 1/3 + 2/5, iar rezultatul ireductibil este 11/15.",
+      "interactive": {
+        "mode": "problem",
+        "left": [
+          1,
+          3
+        ],
+        "right": [
+          2,
+          5
+        ],
+        "operation": "+",
+        "answers": {
+          "operator": "+",
+          "result_numerator": 11,
+          "result_denominator": 15
+        }
+      }
+    },
+    {
+      "text": "Dintr-o rolă s-au folosit dimineața 4 metri, apoi încă 7/10 metri. Câți metri s-au folosit în total?",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Operația este 4/1 + 7/10, iar rezultatul ireductibil este 47/10.",
+      "interactive": {
+        "mode": "problem",
+        "left": [
+          4,
+          1
+        ],
+        "right": [
+          7,
+          10
+        ],
+        "operation": "+",
+        "answers": {
+          "operator": "+",
+          "result_numerator": 47,
+          "result_denominator": 10
+        }
+      }
+    },
+    {
+      "text": "O plantă a crescut 1/2 cm într-o săptămână și 7/12 cm în următoarea. Care a fost creșterea totală?",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Operația este 1/2 + 7/12, iar rezultatul ireductibil este 13/12.",
+      "interactive": {
+        "mode": "problem",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          7,
+          12
+        ],
+        "operation": "+",
+        "answers": {
+          "operator": "+",
+          "result_numerator": 13,
+          "result_denominator": 12
+        }
+      }
+    },
+    {
+      "text": "Un vas conținea 25 3/4 litri de ulei, iar apoi s-au scos 18 5/6 litri. Cât ulei a rămas?",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Operația este 103/4 - 113/6, iar rezultatul ireductibil este 83/12.",
+      "interactive": {
+        "mode": "problem",
+        "left": [
+          103,
+          4
+        ],
+        "right": [
+          113,
+          6
+        ],
+        "operation": "-",
+        "answers": {
+          "operator": "-",
+          "result_numerator": 83,
+          "result_denominator": 12
+        }
+      }
+    },
+    {
+      "text": "Calculează 3/5 + 7/6 și scoate întregii din rezultat.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultatul este 53/30, adică 1 23/30.",
+      "interactive": {
+        "mode": "mixed",
+        "left": [
+          3,
+          5
+        ],
+        "right": [
+          7,
+          6
+        ],
+        "operation": "+",
+        "answers": {
+          "whole": 1,
+          "mixed_numerator": 23,
+          "mixed_denominator": 30
+        }
+      }
+    },
+    {
+      "text": "Calculează 17/8 - 3/4 și scoate întregii din rezultat.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultatul este 11/8, adică 1 3/8.",
+      "interactive": {
+        "mode": "mixed",
+        "left": [
+          17,
+          8
+        ],
+        "right": [
+          3,
+          4
+        ],
+        "operation": "-",
+        "answers": {
+          "whole": 1,
+          "mixed_numerator": 3,
+          "mixed_denominator": 8
+        }
+      }
+    },
+    {
+      "text": "Calculează 7/3 + 3/5 și scoate întregii din rezultat.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rezultatul este 44/15, adică 2 14/15.",
+      "interactive": {
+        "mode": "mixed",
+        "left": [
+          7,
+          3
+        ],
+        "right": [
+          3,
+          5
+        ],
+        "operation": "+",
+        "answers": {
+          "whole": 2,
+          "mixed_numerator": 14,
+          "mixed_denominator": 15
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea □ + 7/12 = 5/4.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția lipsă este 2/3.",
+      "interactive": {
+        "mode": "inverse",
+        "left": [
+          2,
+          3
+        ],
+        "right": [
+          7,
+          12
+        ],
+        "result": [
+          5,
+          4
+        ],
+        "operation": "+",
+        "missing_side": "left",
+        "answers": {
+          "missing_numerator": 2,
+          "missing_denominator": 3
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea 11/15 - □ = 1/3.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția lipsă este 2/5.",
+      "interactive": {
+        "mode": "inverse",
+        "left": [
+          11,
+          15
+        ],
+        "right": [
+          2,
+          5
+        ],
+        "result": [
+          1,
+          3
+        ],
+        "operation": "-",
+        "missing_side": "right",
+        "answers": {
+          "missing_numerator": 2,
+          "missing_denominator": 5
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea □ - 5/8 = 1/4.",
+      "type": "common_denominator",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția lipsă este 7/8.",
+      "interactive": {
+        "mode": "inverse",
+        "left": [
+          7,
+          8
+        ],
+        "right": [
+          5,
+          8
+        ],
+        "result": [
+          1,
+          4
+        ],
+        "operation": "-",
+        "missing_side": "left",
+        "answers": {
+          "missing_numerator": 7,
+          "missing_denominator": 8
+        }
+      }
+    }
+  ]
 }

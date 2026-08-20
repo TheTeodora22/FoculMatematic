@@ -2,5 +2,3173 @@
   "title": "Pozițiile relative ale unui punct față de o dreaptă. Puncte coliniare. Pozițiile relative a două drepte: drepte concurente, drepte paralele",
   "description": "Clasa a 5-a · Elemente de geometrie și unități de măsură",
   "difficulty": "easy",
-  "questions": []
+  "questions": [
+    {
+      "text": "Mută punctul M pe dreapta d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un punct aparține dreptei când centrul lui este pe linie.",
+      "interactive": {
+        "mode": "point_on_line",
+        "answers": {
+          "membership": "on"
+        },
+        "line": {
+          "a": 0,
+          "b": 1,
+          "c": -90
+        },
+        "draggable": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": ""
+          }
+        ],
+        "points": [
+          {
+            "name": "M",
+            "x": 180,
+            "y": 45
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mută punctul N în exteriorul dreptei d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Punctul exterior nu se află pe dreaptă.",
+      "interactive": {
+        "mode": "point_on_line",
+        "answers": {
+          "membership": "off"
+        },
+        "line": {
+          "a": 0,
+          "b": 1,
+          "c": -90
+        },
+        "draggable": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": ""
+          }
+        ],
+        "points": [
+          {
+            "name": "N",
+            "x": 230,
+            "y": 90
+          }
+        ]
+      }
+    },
+    {
+      "text": "Stabilește poziția punctului M față de dreapta d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Alegem «aparține» numai dacă centrul punctului se află pe dreaptă.",
+      "interactive": {
+        "mode": "membership_choice",
+        "answers": {
+          "membership": "on"
+        },
+        "choice_key": "membership",
+        "choices": [
+          "on",
+          "off"
+        ],
+        "figures": [
+          {
+            "kind": "point_line",
+            "label": "d",
+            "points": [
+              {
+                "name": "M",
+                "x": 220,
+                "y": 90
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completează simbolul pentru punctul M și dreapta d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Folosim ∈ pentru apartenență și ∉ pentru neapartenență.",
+      "interactive": {
+        "mode": "membership_symbol",
+        "answers": {
+          "symbol": "∈"
+        },
+        "choice_key": "symbol",
+        "choices": [
+          "∈",
+          "∉"
+        ],
+        "figures": [
+          {
+            "kind": "point_line",
+            "label": "d",
+            "points": [
+              {
+                "name": "M",
+                "x": 220,
+                "y": 90
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Stabilește poziția punctului N față de dreapta d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Alegem «aparține» numai dacă centrul punctului se află pe dreaptă.",
+      "interactive": {
+        "mode": "membership_choice",
+        "answers": {
+          "membership": "off"
+        },
+        "choice_key": "membership",
+        "choices": [
+          "on",
+          "off"
+        ],
+        "figures": [
+          {
+            "kind": "point_line",
+            "label": "d",
+            "points": [
+              {
+                "name": "N",
+                "x": 220,
+                "y": 45
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completează simbolul pentru punctul N și dreapta d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Folosim ∈ pentru apartenență și ∉ pentru neapartenență.",
+      "interactive": {
+        "mode": "membership_symbol",
+        "answers": {
+          "symbol": "∉"
+        },
+        "choice_key": "symbol",
+        "choices": [
+          "∈",
+          "∉"
+        ],
+        "figures": [
+          {
+            "kind": "point_line",
+            "label": "d",
+            "points": [
+              {
+                "name": "N",
+                "x": 220,
+                "y": 45
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Colorează punctele care aparțin dreptei d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "A și B sunt pe dreaptă, C este în exterior.",
+      "interactive": {
+        "mode": "color_membership",
+        "answers": {
+          "selected": "0,1"
+        },
+        "choice_key": "selected",
+        "choices": [
+          "0",
+          "1",
+          "2"
+        ],
+        "labels": [
+          "A",
+          "B",
+          "C"
+        ],
+        "multi": true,
+        "figures": [
+          {
+            "kind": "point_line",
+            "label": "d",
+            "points": [
+              {
+                "name": "A",
+                "x": 120,
+                "y": 90
+              },
+              {
+                "name": "B",
+                "x": 250,
+                "y": 90
+              },
+              {
+                "name": "C",
+                "x": 350,
+                "y": 45
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Repară desenul mutând punctul A pe dreapta d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "A trebuie mutat până când centrul lui ajunge pe dreaptă.",
+      "interactive": {
+        "mode": "repair_membership",
+        "answers": {
+          "membership": "on"
+        },
+        "line": {
+          "a": 0,
+          "b": 1,
+          "c": -90
+        },
+        "draggable": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": ""
+          }
+        ],
+        "points": [
+          {
+            "name": "A",
+            "x": 160,
+            "y": 45
+          }
+        ]
+      }
+    },
+    {
+      "text": "Repară desenul mutând punctul B în exteriorul dreptei d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "B trebuie scos de pe dreaptă.",
+      "interactive": {
+        "mode": "repair_membership",
+        "answers": {
+          "membership": "off"
+        },
+        "line": {
+          "a": 0,
+          "b": 1,
+          "c": -90
+        },
+        "draggable": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": ""
+          }
+        ],
+        "points": [
+          {
+            "name": "B",
+            "x": 260,
+            "y": 90
+          }
+        ]
+      }
+    },
+    {
+      "text": "Adevărat sau fals: punctul C aparține dreptei d.",
+      "type": "geometry_canvas",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "C este desenat deasupra dreptei.",
+      "interactive": {
+        "mode": "visual_true_false",
+        "answers": {
+          "answer": "false"
+        },
+        "statement": "C ∈ d",
+        "figures": [
+          {
+            "kind": "point_line",
+            "label": "d",
+            "points": [
+              {
+                "name": "A",
+                "x": 120,
+                "y": 90
+              },
+              {
+                "name": "B",
+                "x": 250,
+                "y": 90
+              },
+              {
+                "name": "C",
+                "x": 350,
+                "y": 45
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Adevărat sau fals: punctele A și B sunt coliniare.",
+      "type": "geometry_canvas",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Punctele A și B se află pe aceeași dreaptă.",
+      "interactive": {
+        "mode": "visual_true_false",
+        "answers": {
+          "answer": "true"
+        },
+        "statement": "A și B sunt coliniare.",
+        "figures": [
+          {
+            "kind": "point_line",
+            "label": "d",
+            "points": [
+              {
+                "name": "A",
+                "x": 120,
+                "y": 90
+              },
+              {
+                "name": "B",
+                "x": 250,
+                "y": 90
+              },
+              {
+                "name": "C",
+                "x": 350,
+                "y": 45
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mută A, B și C astfel încât să fie coliniare.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Toate cele trei puncte trebuie să se afle pe aceeași dreaptă.",
+      "interactive": {
+        "mode": "place_collinear",
+        "answers": {
+          "relation": "collinear"
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 100,
+            "y": 50
+          },
+          {
+            "name": "B",
+            "x": 240,
+            "y": 105
+          },
+          {
+            "name": "C",
+            "x": 370,
+            "y": 55
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mută A, B și C astfel încât să fie necoliniare.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cel puțin un punct trebuie să fie în afara dreptei celorlalte două.",
+      "interactive": {
+        "mode": "place_noncollinear",
+        "answers": {
+          "relation": "noncollinear"
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 100,
+            "y": 90
+          },
+          {
+            "name": "B",
+            "x": 240,
+            "y": 90
+          },
+          {
+            "name": "C",
+            "x": 370,
+            "y": 90
+          }
+        ]
+      }
+    },
+    {
+      "text": "Selectează punctul care strică alinierea.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "A, B și C sunt coliniare; D este exterior.",
+      "interactive": {
+        "mode": "odd_point",
+        "answers": {
+          "point": "D"
+        },
+        "choice_key": "point",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "figures": [
+          {
+            "kind": "point_line",
+            "label": "",
+            "points": [
+              {
+                "name": "A",
+                "x": 90,
+                "y": 90
+              },
+              {
+                "name": "B",
+                "x": 190,
+                "y": 90
+              },
+              {
+                "name": "C",
+                "x": 300,
+                "y": 90
+              },
+              {
+                "name": "D",
+                "x": 360,
+                "y": 45
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Găsește punctul necoliniar din al doilea desen.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "M și N se află pe dreaptă, P este în exterior.",
+      "interactive": {
+        "mode": "odd_point",
+        "answers": {
+          "point": "P"
+        },
+        "choice_key": "point",
+        "choices": [
+          "M",
+          "N",
+          "P"
+        ],
+        "figures": [
+          {
+            "kind": "point_line",
+            "label": "",
+            "points": [
+              {
+                "name": "M",
+                "x": 100,
+                "y": 90
+              },
+              {
+                "name": "N",
+                "x": 280,
+                "y": 90
+              },
+              {
+                "name": "P",
+                "x": 350,
+                "y": 130
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mută punctul C pe dreapta determinată de A și B.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "A, B și C devin coliniare.",
+      "interactive": {
+        "mode": "move_to_collinear",
+        "answers": {
+          "membership": "on"
+        },
+        "line": {
+          "a": 0,
+          "b": 1,
+          "c": -90
+        },
+        "draggable": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "AB",
+            "points": [],
+            "notation": ""
+          }
+        ],
+        "points": [
+          {
+            "name": "C",
+            "x": 320,
+            "y": 40
+          }
+        ]
+      }
+    },
+    {
+      "text": "Așază punctul P pe dreapta MN.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "P trebuie să ajungă pe dreapta MN.",
+      "interactive": {
+        "mode": "move_to_collinear",
+        "answers": {
+          "membership": "on"
+        },
+        "line": {
+          "a": 0,
+          "b": 1,
+          "c": -90
+        },
+        "draggable": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "MN",
+            "points": [],
+            "notation": ""
+          }
+        ],
+        "points": [
+          {
+            "name": "P",
+            "x": 300,
+            "y": 135
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege configurația în care A și B de aceeași parte a lui C.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Comparam ordinea punctelor pe dreaptă.",
+      "interactive": {
+        "mode": "same_side",
+        "answers": {
+          "side": "same"
+        },
+        "choice_key": "side",
+        "choices": [
+          "same",
+          "opposite"
+        ],
+        "figures": [
+          {
+            "kind": "point_line",
+            "label": "",
+            "points": [
+              {
+                "name": "A",
+                "x": 100,
+                "y": 90
+              },
+              {
+                "name": "B",
+                "x": 180,
+                "y": 90
+              },
+              {
+                "name": "C",
+                "x": 310,
+                "y": 90
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege configurația în care A și C de părți diferite ale lui B.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Comparam ordinea punctelor pe dreaptă.",
+      "interactive": {
+        "mode": "same_side",
+        "answers": {
+          "side": "opposite"
+        },
+        "choice_key": "side",
+        "choices": [
+          "same",
+          "opposite"
+        ],
+        "figures": [
+          {
+            "kind": "point_line",
+            "label": "",
+            "points": [
+              {
+                "name": "A",
+                "x": 100,
+                "y": 90
+              },
+              {
+                "name": "B",
+                "x": 180,
+                "y": 90
+              },
+              {
+                "name": "C",
+                "x": 310,
+                "y": 90
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege tripletul de puncte coliniare.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "A, B și C se află pe aceeași dreaptă.",
+      "interactive": {
+        "mode": "choose_collinear",
+        "answers": {
+          "triple": "A,B,C"
+        },
+        "choice_key": "triple",
+        "choices": [
+          "A,B,C",
+          "A,C,D",
+          "B,C,D"
+        ],
+        "figures": [
+          {
+            "kind": "point_line",
+            "label": "d",
+            "points": [
+              {
+                "name": "A",
+                "x": 100,
+                "y": 90
+              },
+              {
+                "name": "B",
+                "x": 220,
+                "y": 90
+              },
+              {
+                "name": "C",
+                "x": 340,
+                "y": 90
+              },
+              {
+                "name": "D",
+                "x": 300,
+                "y": 42
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege al doilea triplet coliniar.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "M, N și P aparțin aceleiași drepte.",
+      "interactive": {
+        "mode": "choose_collinear",
+        "answers": {
+          "triple": "M,N,P"
+        },
+        "choice_key": "triple",
+        "choices": [
+          "M,N,R",
+          "M,N,P",
+          "N,P,R"
+        ],
+        "figures": [
+          {
+            "kind": "point_line",
+            "label": "",
+            "points": [
+              {
+                "name": "M",
+                "x": 90,
+                "y": 90
+              },
+              {
+                "name": "N",
+                "x": 220,
+                "y": 90
+              },
+              {
+                "name": "P",
+                "x": 350,
+                "y": 90
+              },
+              {
+                "name": "R",
+                "x": 250,
+                "y": 40
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Selectează toate tripletele coliniare.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "A, B, C sunt pe prima dreaptă, iar M, N, P sunt pe a doua.",
+      "interactive": {
+        "mode": "select_collinear",
+        "answers": {
+          "selected": "0,2"
+        },
+        "choice_key": "selected",
+        "choices": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "multi": true,
+        "labels": [
+          "A, B, C",
+          "A, C, D",
+          "M, N, P",
+          "B, D, P"
+        ],
+        "figures": [
+          {
+            "kind": "two_point_lines",
+            "label": "",
+            "points": [
+              {
+                "name": "A",
+                "x": 90,
+                "y": 55
+              },
+              {
+                "name": "B",
+                "x": 210,
+                "y": 55
+              },
+              {
+                "name": "C",
+                "x": 340,
+                "y": 55
+              },
+              {
+                "name": "M",
+                "x": 80,
+                "y": 115
+              },
+              {
+                "name": "N",
+                "x": 220,
+                "y": 115
+              },
+              {
+                "name": "P",
+                "x": 360,
+                "y": 115
+              },
+              {
+                "name": "D",
+                "x": 285,
+                "y": 148
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Poziționează rigla prin punctele A și B, apoi trasează dreapta.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Marginea riglei trebuie să treacă prin ambele puncte.",
+      "interactive": {
+        "mode": "ruler_line",
+        "answers": {
+          "ruler_angle": 0,
+          "ruler_x": 220,
+          "ruler_y": 90,
+          "line_angle": 0
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 100,
+            "y": 90
+          },
+          {
+            "name": "B",
+            "x": 340,
+            "y": 90
+          }
+        ]
+      }
+    },
+    {
+      "text": "Trasează cu rigla dreapta oblică MN.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rotim rigla până când trece prin M și N.",
+      "interactive": {
+        "mode": "ruler_line",
+        "answers": {
+          "ruler_angle": 25,
+          "ruler_x": 220,
+          "ruler_y": 90,
+          "line_angle": 25
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": true,
+        "points": [
+          {
+            "name": "M",
+            "x": 110,
+            "y": 140
+          },
+          {
+            "name": "N",
+            "x": 330,
+            "y": 40
+          }
+        ]
+      }
+    },
+    {
+      "text": "Așază rigla exact peste punctele A și B.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rigla este aliniată când ambele puncte ating aceeași margine.",
+      "interactive": {
+        "mode": "position_ruler",
+        "answers": {
+          "ruler_angle": 0,
+          "ruler_x": 220,
+          "ruler_y": 90
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 100,
+            "y": 90
+          },
+          {
+            "name": "B",
+            "x": 340,
+            "y": 90
+          }
+        ]
+      }
+    },
+    {
+      "text": "Rotește rigla la 45° prin punctul O.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Centrul riglei rămâne în O și unghiul devine 45°.",
+      "interactive": {
+        "mode": "position_ruler",
+        "answers": {
+          "ruler_angle": 45,
+          "ruler_x": 220,
+          "ruler_y": 90
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": true,
+        "points": [
+          {
+            "name": "O",
+            "x": 220,
+            "y": 90
+          }
+        ]
+      }
+    },
+    {
+      "text": "Câte drepte distincte sunt desenate prin punctul O?",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Prin punctul O sunt desenate trei drepte distincte.",
+      "interactive": {
+        "mode": "many_lines_point",
+        "answers": {
+          "count": 3
+        },
+        "choice_key": "count",
+        "choices": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "figures": [
+          {
+            "kind": "spokes",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "count": 3
+          }
+        ]
+      }
+    },
+    {
+      "text": "Câte drepte distincte trec prin două puncte distincte A și B?",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Două puncte distincte determină o dreaptă și numai una.",
+      "interactive": {
+        "mode": "unique_line",
+        "answers": {
+          "count": 1
+        },
+        "choice_key": "count",
+        "choices": [
+          0,
+          1,
+          2,
+          "infinit"
+        ],
+        "figures": [
+          {
+            "kind": "point_line",
+            "label": "",
+            "points": [
+              {
+                "name": "A",
+                "x": 120,
+                "y": 90
+              },
+              {
+                "name": "B",
+                "x": 320,
+                "y": 90
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Câte drepte pot trece prin două puncte coincidente?",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Două puncte coincidente se comportă ca un singur punct.",
+      "interactive": {
+        "mode": "coincident_lines",
+        "answers": {
+          "count": "infinit"
+        },
+        "choice_key": "count",
+        "choices": [
+          0,
+          1,
+          5,
+          "infinit"
+        ],
+        "figures": [
+          {
+            "kind": "spokes",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "count": 5
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege desenul care respectă axioma dreptei.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Prin două puncte distincte trece o singură dreaptă.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 1
+        },
+        "figures": [
+          {
+            "kind": "spokes",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "count": 3
+          },
+          {
+            "kind": "point_line",
+            "label": "",
+            "points": [
+              {
+                "name": "A",
+                "x": 120,
+                "y": 90
+              },
+              {
+                "name": "B",
+                "x": 320,
+                "y": 90
+              }
+            ],
+            "notation": ""
+          },
+          {
+            "kind": "parallel",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completează axioma dreptei.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Două puncte distincte determină o dreaptă și numai una.",
+      "interactive": {
+        "mode": "axiom_fill",
+        "answers": {
+          "first": "două",
+          "second": "distincte",
+          "third": "una"
+        },
+        "fields": [
+          "first",
+          "second",
+          "third"
+        ]
+      }
+    },
+    {
+      "text": "Identifică dreptele paralele.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Analizăm numărul punctelor comune.",
+      "interactive": {
+        "mode": "line_relation",
+        "answers": {
+          "relation": "parallel"
+        },
+        "choice_key": "relation",
+        "choices": [
+          "parallel",
+          "concurrent",
+          "identical"
+        ],
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "parallel",
+            "points": [],
+            "notation": "",
+            "relation": "parallel"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Identifică dreptele concurente.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Analizăm numărul punctelor comune.",
+      "interactive": {
+        "mode": "line_relation",
+        "answers": {
+          "relation": "concurrent"
+        },
+        "choice_key": "relation",
+        "choices": [
+          "parallel",
+          "concurrent",
+          "identical"
+        ],
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "concurrent",
+            "points": [],
+            "notation": "",
+            "relation": "concurrent"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Identifică dreptele identice.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Analizăm numărul punctelor comune.",
+      "interactive": {
+        "mode": "line_relation",
+        "answers": {
+          "relation": "identical"
+        },
+        "choice_key": "relation",
+        "choices": [
+          "parallel",
+          "concurrent",
+          "identical"
+        ],
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "identical",
+            "points": [],
+            "notation": "",
+            "relation": "identical"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Selectează punctul de intersecție al dreptelor a și b.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Dreptele concurente au un singur punct comun.",
+      "interactive": {
+        "mode": "intersection_point",
+        "answers": {
+          "point": "O"
+        },
+        "choice_key": "point",
+        "choices": [
+          "A",
+          "O",
+          "B"
+        ],
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "",
+            "points": [
+              {
+                "name": "O",
+                "x": 220,
+                "y": 80
+              }
+            ],
+            "notation": "",
+            "relation": "concurrent"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Care este punctul comun al dreptelor CD și EF?",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "P este centrul intersecției.",
+      "interactive": {
+        "mode": "intersection_point",
+        "answers": {
+          "point": "P"
+        },
+        "choice_key": "point",
+        "choices": [
+          "C",
+          "D",
+          "P",
+          "F"
+        ],
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "",
+            "points": [
+              {
+                "name": "C",
+                "x": 100,
+                "y": 115
+              },
+              {
+                "name": "D",
+                "x": 340,
+                "y": 45
+              },
+              {
+                "name": "E",
+                "x": 100,
+                "y": 45
+              },
+              {
+                "name": "F",
+                "x": 340,
+                "y": 115
+              },
+              {
+                "name": "P",
+                "x": 220,
+                "y": 80
+              }
+            ],
+            "notation": "",
+            "relation": "concurrent"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Rotește dreapta b până devine concurentă cu a.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Dreptele trebuie să aibă exact un punct comun.",
+      "interactive": {
+        "mode": "make_concurrent",
+        "answers": {
+          "relation": "concurrent"
+        },
+        "choice_key": "relation",
+        "choices": [
+          "parallel",
+          "concurrent",
+          "identical"
+        ],
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "parallel",
+            "points": [],
+            "notation": "",
+            "relation": "parallel"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Transformă două drepte paralele în drepte concurente.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Rotirea uneia dintre drepte creează un punct de intersecție.",
+      "interactive": {
+        "mode": "make_concurrent",
+        "answers": {
+          "relation": "concurrent"
+        },
+        "choice_key": "relation",
+        "choices": [
+          "parallel",
+          "concurrent"
+        ],
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "parallel",
+            "points": [],
+            "notation": "",
+            "relation": "parallel"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Deplasează dreapta b până devine paralelă cu a.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Dreptele au aceeași direcție și nu coincid.",
+      "interactive": {
+        "mode": "make_parallel",
+        "answers": {
+          "relation": "parallel"
+        },
+        "choice_key": "relation",
+        "choices": [
+          "parallel",
+          "concurrent",
+          "identical"
+        ],
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "concurrent",
+            "points": [],
+            "notation": "",
+            "relation": "concurrent"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Transformă configurația în două drepte paralele distincte.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Păstrăm direcția și schimbăm poziția.",
+      "interactive": {
+        "mode": "make_parallel",
+        "answers": {
+          "relation": "parallel"
+        },
+        "choice_key": "relation",
+        "choices": [
+          "parallel",
+          "identical"
+        ],
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "identical",
+            "points": [],
+            "notation": "",
+            "relation": "identical"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Suprapune dreptele a și b.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Dreptele identice au toate punctele comune.",
+      "interactive": {
+        "mode": "make_identical",
+        "answers": {
+          "relation": "identical"
+        },
+        "choice_key": "relation",
+        "choices": [
+          "parallel",
+          "concurrent",
+          "identical"
+        ],
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "parallel",
+            "points": [],
+            "notation": "",
+            "relation": "parallel"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Transformă dreptele concurente în drepte paralele.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Schimbăm poziția sau direcția uneia dintre drepte.",
+      "interactive": {
+        "mode": "transform_relation",
+        "answers": {
+          "relation": "parallel"
+        },
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "concurrent",
+            "points": [],
+            "notation": "",
+            "relation": "concurrent"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Transformă dreptele paralele în drepte concurente.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Schimbăm poziția sau direcția uneia dintre drepte.",
+      "interactive": {
+        "mode": "transform_relation",
+        "answers": {
+          "relation": "concurrent"
+        },
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "parallel",
+            "points": [],
+            "notation": "",
+            "relation": "parallel"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Repară configurația astfel încât dreptele să fie paralele.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Dreptele paralele au aceeași direcție și niciun punct comun.",
+      "interactive": {
+        "mode": "repair_relation",
+        "answers": {
+          "relation": "parallel"
+        },
+        "choice_key": "relation",
+        "choices": [
+          "parallel",
+          "concurrent",
+          "identical"
+        ],
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "concurrent",
+            "points": [],
+            "notation": "",
+            "relation": "concurrent"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Asociază relația cu notația corectă.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare poziție are o notație specifică.",
+      "interactive": {
+        "mode": "match_relation_notation",
+        "answers": {
+          "match:0": "a∥b",
+          "match:1": "a∩b={O}",
+          "match:2": "a=b"
+        },
+        "relations": [
+          "parallel",
+          "concurrent",
+          "identical"
+        ],
+        "notations": [
+          "a∥b",
+          "a∩b={O}",
+          "a=b"
+        ],
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "parallel",
+            "points": [],
+            "notation": "",
+            "relation": "parallel"
+          },
+          {
+            "kind": "line_pair",
+            "label": "concurrent",
+            "points": [],
+            "notation": "",
+            "relation": "concurrent"
+          },
+          {
+            "kind": "line_pair",
+            "label": "identical",
+            "points": [],
+            "notation": "",
+            "relation": "identical"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completează simbolul dintre dreptele a și b.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Dreptele din desen sunt paralele.",
+      "interactive": {
+        "mode": "complete_relation",
+        "answers": {
+          "symbol": "∥"
+        },
+        "choice_key": "symbol",
+        "choices": [
+          "∥",
+          "=",
+          "∩"
+        ],
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "parallel",
+            "points": [],
+            "notation": "",
+            "relation": "parallel"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completează notația dreptelor identice.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Dreptele coincidente se notează a = b.",
+      "interactive": {
+        "mode": "complete_relation",
+        "answers": {
+          "symbol": "="
+        },
+        "choice_key": "symbol",
+        "choices": [
+          "∥",
+          "=",
+          "∈"
+        ],
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "identical",
+            "points": [],
+            "notation": "",
+            "relation": "identical"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Selectează toate perechile de drepte concurente.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Perechile selectate au câte un punct comun.",
+      "interactive": {
+        "mode": "select_concurrent_pairs",
+        "answers": {
+          "selected": "0,2"
+        },
+        "choice_key": "selected",
+        "choices": [
+          "0",
+          "1",
+          "2"
+        ],
+        "multi": true,
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "concurrent",
+            "points": [],
+            "notation": "",
+            "relation": "concurrent"
+          },
+          {
+            "kind": "line_pair",
+            "label": "parallel",
+            "points": [],
+            "notation": "",
+            "relation": "parallel"
+          },
+          {
+            "kind": "line_pair",
+            "label": "concurrent",
+            "points": [],
+            "notation": "",
+            "relation": "concurrent"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Selectează toate perechile de drepte paralele.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Perechile selectate nu au puncte comune.",
+      "interactive": {
+        "mode": "select_parallel_pairs",
+        "answers": {
+          "selected": "1,3"
+        },
+        "choice_key": "selected",
+        "choices": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "multi": true,
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "concurrent",
+            "points": [],
+            "notation": "",
+            "relation": "concurrent"
+          },
+          {
+            "kind": "line_pair",
+            "label": "parallel",
+            "points": [],
+            "notation": "",
+            "relation": "parallel"
+          },
+          {
+            "kind": "line_pair",
+            "label": "identical",
+            "points": [],
+            "notation": "",
+            "relation": "identical"
+          },
+          {
+            "kind": "line_pair",
+            "label": "parallel",
+            "points": [],
+            "notation": "",
+            "relation": "parallel"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Grupează relațiile în identice, concurente și paralele.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Clasificăm după numărul punctelor comune.",
+      "interactive": {
+        "mode": "sort_relations",
+        "answers": {
+          "match:0": "parallel",
+          "match:1": "concurrent",
+          "match:2": "identical"
+        },
+        "labels": [
+          "parallel",
+          "concurrent",
+          "identical"
+        ],
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "parallel",
+            "points": [],
+            "notation": "",
+            "relation": "parallel"
+          },
+          {
+            "kind": "line_pair",
+            "label": "concurrent",
+            "points": [],
+            "notation": "",
+            "relation": "concurrent"
+          },
+          {
+            "kind": "line_pair",
+            "label": "identical",
+            "points": [],
+            "notation": "",
+            "relation": "identical"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Construiește o paralelă la d folosind rigla și echerul.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția și unghiul instrumentelor sunt verificate geometric.",
+      "interactive": {
+        "mode": "ruler_set_square_parallel",
+        "answers": {
+          "ruler_angle": 0,
+          "ruler_x": 220,
+          "ruler_y": 120,
+          "square_angle": 0,
+          "square_x": 220,
+          "square_y": 70,
+          "line_angle": 0
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": true,
+        "show_square": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": 0
+          }
+        ],
+        "points": []
+      }
+    },
+    {
+      "text": "Construiește paralela oblică folosind ambele instrumente.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția și unghiul instrumentelor sunt verificate geometric.",
+      "interactive": {
+        "mode": "ruler_set_square_parallel",
+        "answers": {
+          "ruler_angle": 30,
+          "ruler_x": 220,
+          "ruler_y": 120,
+          "square_angle": 30,
+          "square_x": 220,
+          "square_y": 65,
+          "line_angle": 30
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": true,
+        "show_square": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": 30
+          }
+        ],
+        "points": []
+      }
+    },
+    {
+      "text": "Așază echerul cu o latură pe dreapta d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția și unghiul instrumentelor sunt verificate geometric.",
+      "interactive": {
+        "mode": "place_set_square",
+        "answers": {
+          "square_angle": 0,
+          "square_x": 220,
+          "square_y": 90
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": false,
+        "show_square": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": 0
+          }
+        ],
+        "points": []
+      }
+    },
+    {
+      "text": "Rotește echerul la 45° pe dreapta dată.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția și unghiul instrumentelor sunt verificate geometric.",
+      "interactive": {
+        "mode": "place_set_square",
+        "answers": {
+          "square_angle": 45,
+          "square_x": 220,
+          "square_y": 90
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": false,
+        "show_square": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": 45
+          }
+        ],
+        "points": []
+      }
+    },
+    {
+      "text": "Glisează echerul până la punctul O fără să-l rotești.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția și unghiul instrumentelor sunt verificate geometric.",
+      "interactive": {
+        "mode": "slide_set_square",
+        "answers": {
+          "square_angle": 0,
+          "square_x": 300,
+          "square_y": 60
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": false,
+        "show_square": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": 0
+          }
+        ],
+        "points": []
+      }
+    },
+    {
+      "text": "Glisează echerul oblic până la punctul P.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția și unghiul instrumentelor sunt verificate geometric.",
+      "interactive": {
+        "mode": "slide_set_square",
+        "answers": {
+          "square_angle": 25,
+          "square_x": 300,
+          "square_y": 55
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": false,
+        "show_square": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": 25
+          }
+        ],
+        "points": []
+      }
+    },
+    {
+      "text": "Trasează prin O paralela la d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția și unghiul instrumentelor sunt verificate geometric.",
+      "interactive": {
+        "mode": "parallel_through_point",
+        "answers": {
+          "ruler_angle": 0,
+          "ruler_x": 220,
+          "ruler_y": 120,
+          "square_angle": 0,
+          "square_x": 280,
+          "square_y": 60,
+          "line_angle": 0,
+          "through": "O"
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": true,
+        "show_square": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": 0
+          }
+        ],
+        "points": [
+          {
+            "name": "O",
+            "x": 280,
+            "y": 60
+          }
+        ]
+      }
+    },
+    {
+      "text": "Trasează prin P paralela oblică la a.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția și unghiul instrumentelor sunt verificate geometric.",
+      "interactive": {
+        "mode": "parallel_through_point",
+        "answers": {
+          "ruler_angle": 30,
+          "ruler_x": 220,
+          "ruler_y": 125,
+          "square_angle": 30,
+          "square_x": 290,
+          "square_y": 60,
+          "line_angle": 30,
+          "through": "P"
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": true,
+        "show_square": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": 30
+          }
+        ],
+        "points": [
+          {
+            "name": "P",
+            "x": 280,
+            "y": 60
+          }
+        ]
+      }
+    },
+    {
+      "text": "Continuă construcția începută și trasează paralela.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția și unghiul instrumentelor sunt verificate geometric.",
+      "interactive": {
+        "mode": "continue_construction",
+        "answers": {
+          "square_angle": 0,
+          "square_x": 280,
+          "square_y": 60,
+          "line_angle": 0
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": true,
+        "show_square": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": 0
+          }
+        ],
+        "points": []
+      }
+    },
+    {
+      "text": "Corectează poziția instrumentelor pentru o paralelă.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția și unghiul instrumentelor sunt verificate geometric.",
+      "interactive": {
+        "mode": "repair_tools",
+        "answers": {
+          "ruler_angle": 0,
+          "ruler_x": 220,
+          "ruler_y": 120,
+          "square_angle": 0,
+          "square_x": 280,
+          "square_y": 60
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": true,
+        "show_square": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": 0
+          }
+        ],
+        "points": []
+      }
+    },
+    {
+      "text": "Trasează două drepte concurente în O.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția și unghiul instrumentelor sunt verificate geometric.",
+      "interactive": {
+        "mode": "draw_concurrent",
+        "answers": {
+          "line_angle": 45,
+          "through": "O"
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": false,
+        "show_square": false,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": 0
+          }
+        ],
+        "points": [
+          {
+            "name": "O",
+            "x": 280,
+            "y": 60
+          }
+        ]
+      }
+    },
+    {
+      "text": "Trasează o dreaptă care intersectează d în P.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția și unghiul instrumentelor sunt verificate geometric.",
+      "interactive": {
+        "mode": "draw_concurrent",
+        "answers": {
+          "line_angle": 90,
+          "through": "P"
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": false,
+        "show_square": false,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": 0
+          }
+        ],
+        "points": [
+          {
+            "name": "P",
+            "x": 280,
+            "y": 60
+          }
+        ]
+      }
+    },
+    {
+      "text": "Trasează o dreaptă paralelă cu d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția și unghiul instrumentelor sunt verificate geometric.",
+      "interactive": {
+        "mode": "draw_parallel",
+        "answers": {
+          "line_angle": 0,
+          "through": "free"
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": false,
+        "show_square": false,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": 0
+          }
+        ],
+        "points": []
+      }
+    },
+    {
+      "text": "Trasează o paralelă la dreapta oblică a.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția și unghiul instrumentelor sunt verificate geometric.",
+      "interactive": {
+        "mode": "draw_parallel",
+        "answers": {
+          "line_angle": 30,
+          "through": "free"
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": false,
+        "show_square": false,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": 30
+          }
+        ],
+        "points": []
+      }
+    },
+    {
+      "text": "Trasează o dreaptă identică cu d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția și unghiul instrumentelor sunt verificate geometric.",
+      "interactive": {
+        "mode": "draw_identical",
+        "answers": {
+          "line_angle": 0,
+          "through": "A"
+        },
+        "tool_limits": {
+          "angle": [
+            0,
+            175,
+            5
+          ],
+          "x": [
+            40,
+            360,
+            10
+          ],
+          "y": [
+            30,
+            150,
+            10
+          ]
+        },
+        "show_ruler": false,
+        "show_square": false,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": 0
+          }
+        ],
+        "points": [
+          {
+            "name": "A",
+            "x": 280,
+            "y": 60
+          }
+        ]
+      }
+    },
+    {
+      "text": "Ordonează etapele construcției cu rigla și echerul – setul 1.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ordinea păstrează direcția echerului în timpul glisării.",
+      "interactive": {
+        "mode": "order_tool_steps",
+        "answers": {
+          "position:0": 0,
+          "position:1": 1,
+          "position:2": 2,
+          "position:3": 3
+        },
+        "steps": [
+          "așază echerul pe dreapta dată",
+          "fixează rigla lângă echer",
+          "glisează echerul până la punct",
+          "trasează paralela"
+        ],
+        "display_order": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "figures": [
+          {
+            "kind": "line",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Ordonează etapele construcției cu rigla și echerul – setul 2.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ordinea păstrează direcția echerului în timpul glisării.",
+      "interactive": {
+        "mode": "order_tool_steps",
+        "answers": {
+          "position:0": 0,
+          "position:1": 1,
+          "position:2": 2,
+          "position:3": 3
+        },
+        "steps": [
+          "așază echerul pe dreapta dată",
+          "fixează rigla lângă echer",
+          "glisează echerul până la punct",
+          "trasează paralela"
+        ],
+        "display_order": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "figures": [
+          {
+            "kind": "line",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Câte drepte determină maxim 5 puncte, oricare trei necoliniare?",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărăm perechile: 5·4:2 = 10.",
+      "interactive": {
+        "mode": "line_count",
+        "answers": {
+          "count": 10
+        },
+        "choice_key": "count",
+        "choices": [
+          10,
+          5,
+          9,
+          11
+        ],
+        "figures": [
+          {
+            "kind": "points",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "count": 5
+          }
+        ]
+      }
+    },
+    {
+      "text": "Câte drepte determină maxim 8 puncte, oricare trei necoliniare?",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărăm perechile: 8·7:2 = 28.",
+      "interactive": {
+        "mode": "line_count",
+        "answers": {
+          "count": 28
+        },
+        "choice_key": "count",
+        "choices": [
+          28,
+          8,
+          27,
+          29
+        ],
+        "figures": [
+          {
+            "kind": "points",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "count": 8
+          }
+        ]
+      }
+    },
+    {
+      "text": "Unește fiecare pereche de puncte o singură dată.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Patru puncte fără trei coliniare determină 6 drepte.",
+      "interactive": {
+        "mode": "line_counter",
+        "answers": {
+          "edges": "AB,AC,AD,BC,BD,CD"
+        },
+        "points": [
+          {
+            "name": "A",
+            "x": 100,
+            "y": 45
+          },
+          {
+            "name": "B",
+            "x": 330,
+            "y": 45
+          },
+          {
+            "name": "C",
+            "x": 100,
+            "y": 140
+          },
+          {
+            "name": "D",
+            "x": 330,
+            "y": 140
+          }
+        ]
+      }
+    },
+    {
+      "text": "Aranjează 6 puncte pentru a obține numărul minim de drepte.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Toate punctele pe aceeași dreaptă determină o singură dreaptă.",
+      "interactive": {
+        "mode": "min_lines",
+        "answers": {
+          "arrangement": "all_collinear",
+          "count": 1
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 70,
+            "y": 45
+          },
+          {
+            "name": "B",
+            "x": 150,
+            "y": 125
+          },
+          {
+            "name": "C",
+            "x": 230,
+            "y": 55
+          },
+          {
+            "name": "D",
+            "x": 310,
+            "y": 135
+          },
+          {
+            "name": "E",
+            "x": 380,
+            "y": 50
+          },
+          {
+            "name": "F",
+            "x": 390,
+            "y": 145
+          }
+        ]
+      }
+    },
+    {
+      "text": "Aranjează 6 puncte pentru numărul maxim de drepte.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Nici trei puncte nu trebuie să fie coliniare.",
+      "interactive": {
+        "mode": "max_lines",
+        "answers": {
+          "arrangement": "no_three_collinear",
+          "count": 15
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 60,
+            "y": 90
+          },
+          {
+            "name": "B",
+            "x": 125,
+            "y": 90
+          },
+          {
+            "name": "C",
+            "x": 190,
+            "y": 90
+          },
+          {
+            "name": "D",
+            "x": 255,
+            "y": 90
+          },
+          {
+            "name": "E",
+            "x": 320,
+            "y": 90
+          },
+          {
+            "name": "F",
+            "x": 385,
+            "y": 90
+          }
+        ]
+      }
+    },
+    {
+      "text": "Aranjează patru puncte astfel încât să determine 1 dreaptă.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția punctelor schimbă numărul dreptelor distincte.",
+      "interactive": {
+        "mode": "arrange_line_count",
+        "answers": {
+          "arrangement": "all_collinear"
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 80,
+            "y": 55
+          },
+          {
+            "name": "B",
+            "x": 190,
+            "y": 115
+          },
+          {
+            "name": "C",
+            "x": 300,
+            "y": 50
+          },
+          {
+            "name": "D",
+            "x": 370,
+            "y": 135
+          }
+        ]
+      }
+    },
+    {
+      "text": "Aranjează patru puncte astfel încât să determine 4 drepte.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția punctelor schimbă numărul dreptelor distincte.",
+      "interactive": {
+        "mode": "arrange_line_count",
+        "answers": {
+          "arrangement": "three_collinear"
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 80,
+            "y": 55
+          },
+          {
+            "name": "B",
+            "x": 190,
+            "y": 115
+          },
+          {
+            "name": "C",
+            "x": 300,
+            "y": 50
+          },
+          {
+            "name": "D",
+            "x": 370,
+            "y": 135
+          }
+        ]
+      }
+    },
+    {
+      "text": "Aranjează patru puncte astfel încât să determine 6 drepte.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Poziția punctelor schimbă numărul dreptelor distincte.",
+      "interactive": {
+        "mode": "arrange_line_count",
+        "answers": {
+          "arrangement": "no_three_collinear"
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 80,
+            "y": 55
+          },
+          {
+            "name": "B",
+            "x": 190,
+            "y": 115
+          },
+          {
+            "name": "C",
+            "x": 300,
+            "y": 50
+          },
+          {
+            "name": "D",
+            "x": 370,
+            "y": 135
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege desenul cu trei drepte care au un singur punct de intersecție.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cele trei drepte sunt concurente în același punct.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 1
+        },
+        "figures": [
+          {
+            "kind": "three_lines",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "case": "all_parallel"
+          },
+          {
+            "kind": "three_lines",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "case": "all_concurrent"
+          },
+          {
+            "kind": "three_lines",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "case": "pairwise"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege desenul cu trei puncte distincte de intersecție.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare pereche de drepte se intersectează într-un alt punct.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 2
+        },
+        "figures": [
+          {
+            "kind": "three_lines",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "case": "all_parallel"
+          },
+          {
+            "kind": "three_lines",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "case": "all_concurrent"
+          },
+          {
+            "kind": "three_lines",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "case": "pairwise"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege desenul în care cele trei drepte nu au puncte comune.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cele trei drepte sunt paralele distincte.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 0
+        },
+        "figures": [
+          {
+            "kind": "three_lines",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "case": "all_parallel"
+          },
+          {
+            "kind": "three_lines",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "case": "all_concurrent"
+          },
+          {
+            "kind": "three_lines",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "case": "pairwise"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege desenul cu două drepte paralele și o secantă.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Secanta intersectează ambele drepte paralele.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 1
+        },
+        "figures": [
+          {
+            "kind": "three_lines",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "case": "all_parallel"
+          },
+          {
+            "kind": "three_lines",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "case": "two_parallel_one_secant"
+          },
+          {
+            "kind": "three_lines",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "case": "pairwise"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Reconstituie configurația cu trei puncte coliniare și unul exterior.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "A, B și C sunt pe aceeași dreaptă, D este exterior.",
+      "interactive": {
+        "mode": "reconstruct_model",
+        "answers": {
+          "A": "100,90",
+          "B": "220,90",
+          "C": "340,90",
+          "D": "280,45"
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 100,
+            "y": 90
+          },
+          {
+            "name": "B",
+            "x": 220,
+            "y": 90
+          },
+          {
+            "name": "C",
+            "x": 340,
+            "y": 90
+          },
+          {
+            "name": "D",
+            "x": 280,
+            "y": 45
+          }
+        ]
+      }
+    },
+    {
+      "text": "Rezolvă puzzle-ul complet: punct O exterior și paralelă prin O.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Plasăm O, folosim instrumentele și notăm relația.",
+      "interactive": {
+        "mode": "full_geometry_puzzle",
+        "answers": {
+          "O": "300,50",
+          "A": "120,90",
+          "tool": "line",
+          "notation": "a∥d"
+        },
+        "tools": [
+          "line",
+          "ray",
+          "segment"
+        ],
+        "draggable": true,
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": ""
+          }
+        ],
+        "points": [
+          {
+            "name": "O",
+            "x": 300,
+            "y": 50
+          },
+          {
+            "name": "A",
+            "x": 120,
+            "y": 90
+          }
+        ]
+      }
+    },
+    {
+      "text": "Rezolvă puzzle-ul complet cu două drepte concurente în P.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "P este punctul comun al celor două drepte.",
+      "interactive": {
+        "mode": "full_geometry_puzzle",
+        "answers": {
+          "P": "220,90",
+          "A": "100,140",
+          "tool": "line",
+          "notation": "a∩b={P}"
+        },
+        "tools": [
+          "line",
+          "ray",
+          "segment"
+        ],
+        "draggable": true,
+        "figures": [
+          {
+            "kind": "line_pair",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "relation": "concurrent"
+          }
+        ],
+        "points": [
+          {
+            "name": "P",
+            "x": 220,
+            "y": 90
+          },
+          {
+            "name": "A",
+            "x": 100,
+            "y": 140
+          }
+        ]
+      }
+    }
+  ]
 }

@@ -2,5 +2,1207 @@
   "title": "Fracții/procente dintr-un număr natural sau dintr-o fracție ordinară",
   "description": "Clasa a 5-a · Fracții ordinare",
   "difficulty": "easy",
-  "questions": []
+  "questions": [
+    {
+      "text": "Cât este 3/5 din 20?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3/5 · 20 = 12.",
+      "options": [
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "60",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cât este 25% din 200?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "25/100 · 200 = 50.",
+      "options": [
+        {
+          "text": "75",
+          "is_correct": false
+        },
+        {
+          "text": "50",
+          "is_correct": true
+        },
+        {
+          "text": "125",
+          "is_correct": false
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Cât este 2/3 din 3/4?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2/3 · 3/4 = 1/2.",
+      "options": [
+        {
+          "text": "5/7",
+          "is_correct": false
+        },
+        {
+          "text": "1/2",
+          "is_correct": true
+        },
+        {
+          "text": "6/12",
+          "is_correct": false
+        },
+        {
+          "text": "2/7",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un produs de 240 lei are o reducere de 10%. Care este reducerea?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "10% din 240 este 24.",
+      "options": [
+        {
+          "text": "216 lei",
+          "is_correct": false
+        },
+        {
+          "text": "24 lei",
+          "is_correct": true
+        },
+        {
+          "text": "264 lei",
+          "is_correct": false
+        },
+        {
+          "text": "10 lei",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Dacă 2/5 dintr-un număr este 30, numărul este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Întregul este 30 : 2/5 = 75.",
+      "options": [
+        {
+          "text": "60",
+          "is_correct": false
+        },
+        {
+          "text": "75",
+          "is_correct": true
+        },
+        {
+          "text": "150",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pentru a afla 4/7 din 35, putem calcula 4/7 · 35.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "O fracție dintr-un număr se calculează prin înmulțire.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "15% din 80 este egal cu 15 · 80.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "15% înseamnă 15/100.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "3/4 din 2/5 se calculează prin produsul 3/4 · 2/5.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "O fracție dintr-o fracție este produsul lor.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează 1/4 din 100.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "1/4 din 100 este 1 · 100 : 4 = 25.",
+      "interactive": {
+        "mode": "natural",
+        "expression": "1/4 · 100",
+        "instruction": "Transformă expresia într-un produs și calculează.",
+        "fields": [
+          {
+            "key": "product_numerator",
+            "label": "Numărătorul produsului"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "product_numerator": 100,
+          "result": 25
+        }
+      }
+    },
+    {
+      "text": "Calculează 2/3 din 336.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "2/3 din 336 este 2 · 336 : 3 = 224.",
+      "interactive": {
+        "mode": "natural",
+        "expression": "2/3 · 336",
+        "instruction": "Transformă expresia într-un produs și calculează.",
+        "fields": [
+          {
+            "key": "product_numerator",
+            "label": "Numărătorul produsului"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "product_numerator": 672,
+          "result": 224
+        }
+      }
+    },
+    {
+      "text": "Calculează 2/5 din 75.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "2/5 din 75 este 2 · 75 : 5 = 30.",
+      "interactive": {
+        "mode": "natural",
+        "expression": "2/5 · 75",
+        "instruction": "Transformă expresia într-un produs și calculează.",
+        "fields": [
+          {
+            "key": "product_numerator",
+            "label": "Numărătorul produsului"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "product_numerator": 150,
+          "result": 30
+        }
+      }
+    },
+    {
+      "text": "Calculează 3/7 din 777.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "3/7 din 777 este 3 · 777 : 7 = 333.",
+      "interactive": {
+        "mode": "natural",
+        "expression": "3/7 · 777",
+        "instruction": "Transformă expresia într-un produs și calculează.",
+        "fields": [
+          {
+            "key": "product_numerator",
+            "label": "Numărătorul produsului"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "product_numerator": 2331,
+          "result": 333
+        }
+      }
+    },
+    {
+      "text": "Calculează 4/9 din 162.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "4/9 din 162 este 4 · 162 : 9 = 72.",
+      "interactive": {
+        "mode": "natural",
+        "expression": "4/9 · 162",
+        "instruction": "Transformă expresia într-un produs și calculează.",
+        "fields": [
+          {
+            "key": "product_numerator",
+            "label": "Numărătorul produsului"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "product_numerator": 648,
+          "result": 72
+        }
+      }
+    },
+    {
+      "text": "Calculează 1/3 din 3/7.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul celor două fracții este 1/7.",
+      "interactive": {
+        "mode": "fraction",
+        "expression": "1/3 · 3/7",
+        "instruction": "Înmulțește fracțiile și scrie rezultatul ireductibil.",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător rezultat"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor rezultat"
+          }
+        ],
+        "answers": {
+          "numerator": 1,
+          "denominator": 7
+        }
+      }
+    },
+    {
+      "text": "Calculează 3/4 din 4/3.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul celor două fracții este 1/1.",
+      "interactive": {
+        "mode": "fraction",
+        "expression": "3/4 · 4/3",
+        "instruction": "Înmulțește fracțiile și scrie rezultatul ireductibil.",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător rezultat"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor rezultat"
+          }
+        ],
+        "answers": {
+          "numerator": 1,
+          "denominator": 1
+        }
+      }
+    },
+    {
+      "text": "Calculează 2/5 din 15/19.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul celor două fracții este 6/19.",
+      "interactive": {
+        "mode": "fraction",
+        "expression": "2/5 · 15/19",
+        "instruction": "Înmulțește fracțiile și scrie rezultatul ireductibil.",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător rezultat"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor rezultat"
+          }
+        ],
+        "answers": {
+          "numerator": 6,
+          "denominator": 19
+        }
+      }
+    },
+    {
+      "text": "Calculează 5/12 din 18/5.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul celor două fracții este 3/2.",
+      "interactive": {
+        "mode": "fraction",
+        "expression": "5/12 · 18/5",
+        "instruction": "Înmulțește fracțiile și scrie rezultatul ireductibil.",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător rezultat"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor rezultat"
+          }
+        ],
+        "answers": {
+          "numerator": 3,
+          "denominator": 2
+        }
+      }
+    },
+    {
+      "text": "Dacă 5/8 dintr-o cantitate înseamnă 40, află cât reprezintă 3/8.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O parte valorează 40 : 5 = 8, iar 3 părți valorează 24.",
+      "interactive": {
+        "mode": "unit_path",
+        "expression": "5/8 → 40; 3/8 → ?",
+        "instruction": "Treci mai întâi printr-o singură parte egală.",
+        "path": [
+          {
+            "top": "5/8",
+            "bottom": "40"
+          },
+          {
+            "top": "1/8",
+            "bottom": "?"
+          },
+          {
+            "top": "3/8",
+            "bottom": "?"
+          }
+        ],
+        "fields": [
+          {
+            "key": "unit",
+            "label": "Valoarea lui 1/8"
+          },
+          {
+            "key": "result",
+            "label": "Valoarea cerută"
+          }
+        ],
+        "answers": {
+          "unit": 8,
+          "result": 24
+        }
+      }
+    },
+    {
+      "text": "Dacă 2/7 dintr-o cantitate înseamnă 10, află cât reprezintă 7/7.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O parte valorează 10 : 2 = 5, iar 7 părți valorează 35.",
+      "interactive": {
+        "mode": "unit_path",
+        "expression": "2/7 → 10; 7/7 → ?",
+        "instruction": "Treci mai întâi printr-o singură parte egală.",
+        "path": [
+          {
+            "top": "2/7",
+            "bottom": "10"
+          },
+          {
+            "top": "1/7",
+            "bottom": "?"
+          },
+          {
+            "top": "7/7",
+            "bottom": "?"
+          }
+        ],
+        "fields": [
+          {
+            "key": "unit",
+            "label": "Valoarea lui 1/7"
+          },
+          {
+            "key": "result",
+            "label": "Valoarea cerută"
+          }
+        ],
+        "answers": {
+          "unit": 5,
+          "result": 35
+        }
+      }
+    },
+    {
+      "text": "Dacă 3/5 dintr-o cantitate înseamnă 24, află cât reprezintă 1/5.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O parte valorează 24 : 3 = 8, iar 1 părți valorează 8.",
+      "interactive": {
+        "mode": "unit_path",
+        "expression": "3/5 → 24; 1/5 → ?",
+        "instruction": "Treci mai întâi printr-o singură parte egală.",
+        "path": [
+          {
+            "top": "3/5",
+            "bottom": "24"
+          },
+          {
+            "top": "1/5",
+            "bottom": "?"
+          },
+          {
+            "top": "1/5",
+            "bottom": "?"
+          }
+        ],
+        "fields": [
+          {
+            "key": "unit",
+            "label": "Valoarea lui 1/5"
+          },
+          {
+            "key": "result",
+            "label": "Valoarea cerută"
+          }
+        ],
+        "answers": {
+          "unit": 8,
+          "result": 8
+        }
+      }
+    },
+    {
+      "text": "Dacă 4/9 dintr-o cantitate înseamnă 36, află cât reprezintă 7/9.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O parte valorează 36 : 4 = 9, iar 7 părți valorează 63.",
+      "interactive": {
+        "mode": "unit_path",
+        "expression": "4/9 → 36; 7/9 → ?",
+        "instruction": "Treci mai întâi printr-o singură parte egală.",
+        "path": [
+          {
+            "top": "4/9",
+            "bottom": "36"
+          },
+          {
+            "top": "1/9",
+            "bottom": "?"
+          },
+          {
+            "top": "7/9",
+            "bottom": "?"
+          }
+        ],
+        "fields": [
+          {
+            "key": "unit",
+            "label": "Valoarea lui 1/9"
+          },
+          {
+            "key": "result",
+            "label": "Valoarea cerută"
+          }
+        ],
+        "answers": {
+          "unit": 9,
+          "result": 63
+        }
+      }
+    },
+    {
+      "text": "Află numărul dacă 3/5 din el este 24.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "24 : 3/5 = 40.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "3/5 din □ = 24",
+        "instruction": "Completează întregul.",
+        "fields": [
+          {
+            "key": "whole",
+            "label": "Întregul"
+          }
+        ],
+        "answers": {
+          "whole": 40
+        }
+      }
+    },
+    {
+      "text": "Află numărul dacă 15% din el este 45.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "45 : 15/100 = 300.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "15% din □ = 45",
+        "instruction": "Completează întregul.",
+        "fields": [
+          {
+            "key": "whole",
+            "label": "Întregul"
+          }
+        ],
+        "answers": {
+          "whole": 300
+        }
+      }
+    },
+    {
+      "text": "Completează procentul: □% din 200 = 30.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "30/200 = 15/100, deci 15%.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "□% din 200 = 30",
+        "instruction": "Află ce parte din 200 reprezintă 30.",
+        "fields": [
+          {
+            "key": "percent",
+            "label": "Procent"
+          }
+        ],
+        "answers": {
+          "percent": 15
+        }
+      }
+    },
+    {
+      "text": "Completează numărătorul: □/7 din 35 = 20.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O șeptime din 35 este 5, iar 20 conține 4 asemenea părți.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "□/7 · 35 = 20",
+        "instruction": "Află numărătorul fracției.",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător"
+          }
+        ],
+        "answers": {
+          "numerator": 4
+        }
+      }
+    },
+    {
+      "text": "Află fracția din 60 care este egală cu 45.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "45/60 se simplifică la 3/4.",
+      "interactive": {
+        "mode": "missing",
+        "expression": "□/□ din 60 = 45",
+        "instruction": "Scrie fracția în formă ireductibilă.",
+        "fields": [
+          {
+            "key": "numerator",
+            "label": "Numărător"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor"
+          }
+        ],
+        "answers": {
+          "numerator": 3,
+          "denominator": 4
+        }
+      }
+    },
+    {
+      "text": "Transformă 25% în fracție și calculează 25% din 80.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "25% = 25/100 = 1/4, iar 1/4 din 80 este 20.",
+      "interactive": {
+        "mode": "convert",
+        "expression": "25% = □/100 = □/□; apoi din 80",
+        "instruction": "Completează transformarea și rezultatul.",
+        "fields": [
+          {
+            "key": "hundredths",
+            "label": "Numărător din 100"
+          },
+          {
+            "key": "numerator",
+            "label": "Numărător ireductibil"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor ireductibil"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "hundredths": 25,
+          "numerator": 1,
+          "denominator": 4,
+          "result": 20
+        }
+      }
+    },
+    {
+      "text": "Transformă 40% în fracție și calculează 40% din 350.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "40% = 2/5, iar 2/5 din 350 este 140.",
+      "interactive": {
+        "mode": "convert",
+        "expression": "40% = □/100 = □/□; apoi din 350",
+        "instruction": "Completează transformarea și rezultatul.",
+        "fields": [
+          {
+            "key": "hundredths",
+            "label": "Numărător din 100"
+          },
+          {
+            "key": "numerator",
+            "label": "Numărător ireductibil"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor ireductibil"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "hundredths": 40,
+          "numerator": 2,
+          "denominator": 5,
+          "result": 140
+        }
+      }
+    },
+    {
+      "text": "Transformă 150% în fracție și calculează 150% din 40.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "150% = 3/2, iar 3/2 din 40 este 60.",
+      "interactive": {
+        "mode": "convert",
+        "expression": "150% = □/100 = □/□; apoi din 40",
+        "instruction": "Completează transformarea și rezultatul.",
+        "fields": [
+          {
+            "key": "hundredths",
+            "label": "Numărător din 100"
+          },
+          {
+            "key": "numerator",
+            "label": "Numărător ireductibil"
+          },
+          {
+            "key": "denominator",
+            "label": "Numitor ireductibil"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "hundredths": 150,
+          "numerator": 3,
+          "denominator": 2,
+          "result": 60
+        }
+      }
+    },
+    {
+      "text": "Reprezintă 15% pe grila de 100 de pătrățele.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "15% înseamnă 15 din 100 de pătrățele.",
+      "interactive": {
+        "mode": "grid",
+        "target": 15,
+        "answers": {
+          "selected": 15
+        }
+      }
+    },
+    {
+      "text": "Reprezintă 35% pe grila de 100 de pătrățele.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "35% înseamnă 35 din 100 de pătrățele.",
+      "interactive": {
+        "mode": "grid",
+        "target": 35,
+        "answers": {
+          "selected": 35
+        }
+      }
+    },
+    {
+      "text": "Reprezintă 72% pe grila de 100 de pătrățele.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "72% înseamnă 72 din 100 de pătrățele.",
+      "interactive": {
+        "mode": "grid",
+        "target": 72,
+        "answers": {
+          "selected": 72
+        }
+      }
+    },
+    {
+      "text": "Așază cursorul la 25%.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cursorul trebuie așezat la 25 din 100.",
+      "interactive": {
+        "mode": "slider",
+        "target": 25,
+        "step": 5,
+        "initial": 0,
+        "answers": {
+          "percent": 25
+        }
+      }
+    },
+    {
+      "text": "Așază cursorul la 65%.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cursorul trebuie așezat la 65 din 100.",
+      "interactive": {
+        "mode": "slider",
+        "target": 65,
+        "step": 5,
+        "initial": 10,
+        "answers": {
+          "percent": 65
+        }
+      }
+    },
+    {
+      "text": "Un televizor costă 2 400 lei și primește o reducere de 12%.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "12% din 2400 este 288; prețul final este 2112.",
+      "interactive": {
+        "mode": "price",
+        "expression": "12% din 2400",
+        "instruction": "Calculează valoarea reducerii, apoi prețul final.",
+        "fields": [
+          {
+            "key": "change",
+            "label": "Valoarea reducerii"
+          },
+          {
+            "key": "final",
+            "label": "Preț final"
+          }
+        ],
+        "answers": {
+          "change": 288,
+          "final": 2112
+        },
+        "initial": 2400,
+        "change_label": "12% reducere"
+      }
+    },
+    {
+      "text": "Prețul unei tone de combustibil este 4 800 lei și crește cu 3%.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "3% din 4800 este 144; prețul final este 4944.",
+      "interactive": {
+        "mode": "price",
+        "expression": "3% din 4800",
+        "instruction": "Calculează valoarea majorării, apoi prețul final.",
+        "fields": [
+          {
+            "key": "change",
+            "label": "Valoarea majorării"
+          },
+          {
+            "key": "final",
+            "label": "Preț final"
+          }
+        ],
+        "answers": {
+          "change": 144,
+          "final": 4944
+        },
+        "initial": 4800,
+        "change_label": "3% majorare"
+      }
+    },
+    {
+      "text": "Un ghiozdan de 320 lei este redus cu 15%.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "15% din 320 este 48; prețul final este 272.",
+      "interactive": {
+        "mode": "price",
+        "expression": "15% din 320",
+        "instruction": "Calculează valoarea reducerii, apoi prețul final.",
+        "fields": [
+          {
+            "key": "change",
+            "label": "Valoarea reducerii"
+          },
+          {
+            "key": "final",
+            "label": "Preț final"
+          }
+        ],
+        "answers": {
+          "change": 48,
+          "final": 272
+        },
+        "initial": 320,
+        "change_label": "15% reducere"
+      }
+    },
+    {
+      "text": "Distribuie bugetul de 1 000 lei conform procentelor.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare valoare este procentul indicat din total; valorile trebuie să însumeze totalul.",
+      "interactive": {
+        "mode": "table",
+        "total": 1000,
+        "rows": [
+          {
+            "label": "Cărți",
+            "percent": 35
+          },
+          {
+            "label": "Materiale",
+            "percent": 25
+          },
+          {
+            "label": "Transport",
+            "percent": 20
+          },
+          {
+            "label": "Activități",
+            "percent": 20
+          }
+        ],
+        "answers": {
+          "value_0": 350,
+          "value_1": 250,
+          "value_2": 200,
+          "value_3": 200
+        }
+      }
+    },
+    {
+      "text": "Completează cheltuielile din suma de 180 000 lei.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare valoare este procentul indicat din total; valorile trebuie să însumeze totalul.",
+      "interactive": {
+        "mode": "table",
+        "total": 180000,
+        "rows": [
+          {
+            "label": "Masă",
+            "percent": 52
+          },
+          {
+            "label": "Întreținere",
+            "percent": 23
+          },
+          {
+            "label": "Transport",
+            "percent": 9
+          },
+          {
+            "label": "Activități",
+            "percent": 12
+          },
+          {
+            "label": "Altele",
+            "percent": 4
+          }
+        ],
+        "answers": {
+          "value_0": 93600,
+          "value_1": 41400,
+          "value_2": 16200,
+          "value_3": 21600,
+          "value_4": 7200
+        }
+      }
+    },
+    {
+      "text": "Așază pașii pentru calculul lui 30% din 250.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Transformăm procentul sau fracția, calculăm partea și apoi formulăm răspunsul.",
+      "interactive": {
+        "mode": "order_steps",
+        "steps": [
+          "Scriem 30% = 30/100.",
+          "Înmulțim 30/100 cu 250.",
+          "Simplificăm și obținem 75.",
+          "Formulăm răspunsul: 75."
+        ],
+        "display_order": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "answers": {
+          "order": "0,1,2,3"
+        }
+      }
+    },
+    {
+      "text": "Construiește rezolvarea: 3/5 dintr-un drum de 45 km.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Transformăm procentul sau fracția, calculăm partea și apoi formulăm răspunsul.",
+      "interactive": {
+        "mode": "order_steps",
+        "steps": [
+          "Identificăm întregul: 45 km.",
+          "Scriem produsul 3/5 · 45.",
+          "Calculăm 45 : 5 · 3 = 27.",
+          "Răspundem: 27 km."
+        ],
+        "display_order": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "answers": {
+          "order": "0,1,2,3"
+        }
+      }
+    },
+    {
+      "text": "Identifică primul pas greșit în calculul lui 20% din 60.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "1200/100 este 12, nu 120.",
+      "interactive": {
+        "mode": "error",
+        "steps": [
+          "20% = 20/100.",
+          "20/100 · 60 = 1200/100.",
+          "1200/100 = 120."
+        ],
+        "answers": {
+          "error_index": 2
+        }
+      }
+    },
+    {
+      "text": "Găsește primul pas greșit pentru 3/4 din 28.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Împărțim mai întâi 28 la numitorul 4, apoi înmulțim cu 3.",
+      "interactive": {
+        "mode": "error",
+        "steps": [
+          "Scriem 3/4 · 28.",
+          "Calculăm 28 : 3 = 9 rest 1.",
+          "Înmulțim rezultatul cu 4."
+        ],
+        "answers": {
+          "error_index": 1
+        }
+      }
+    },
+    {
+      "text": "Potrivește fiecare expresie cu rezultatul ei.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Transformăm fiecare enunț în înmulțirea corespunzătoare și calculăm.",
+      "interactive": {
+        "mode": "match",
+        "pairs": [
+          {
+            "left": "1/4 din 80",
+            "right": "20"
+          },
+          {
+            "left": "30% din 90",
+            "right": "27"
+          },
+          {
+            "left": "2/3 din 45",
+            "right": "30"
+          }
+        ],
+        "result_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "match_0": 0,
+          "match_1": 1,
+          "match_2": 2
+        }
+      }
+    },
+    {
+      "text": "Potrivește fiecare situație cu schema corectă.",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Transformăm fiecare enunț în înmulțirea corespunzătoare și calculăm.",
+      "interactive": {
+        "mode": "match",
+        "pairs": [
+          {
+            "left": "Reducere de 15% din 200",
+            "right": "200 − 15/100 · 200"
+          },
+          {
+            "left": "Majorare de 10% a lui 500",
+            "right": "500 + 10/100 · 500"
+          },
+          {
+            "left": "3/5 din 40",
+            "right": "3/5 · 40"
+          }
+        ],
+        "result_order": [
+          1,
+          2,
+          0
+        ],
+        "answers": {
+          "match_0": 0,
+          "match_1": 1,
+          "match_2": 2
+        }
+      }
+    },
+    {
+      "text": "Într-o echipă, 3/5 dintre cei 20 de elevi sunt în clasa a V-a. Câți elevi sunt în clasa a V-a?",
+      "type": "fraction_percent",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O cincime din 20 este 4, iar trei cincimi înseamnă 12 elevi.",
+      "interactive": {
+        "mode": "problem",
+        "expression": "3/5 din 20",
+        "instruction": "Scrie calculul intermediar și răspunsul.",
+        "fields": [
+          {
+            "key": "unit",
+            "label": "Valoarea unei cincimi"
+          },
+          {
+            "key": "result",
+            "label": "Număr de elevi"
+          }
+        ],
+        "answers": {
+          "unit": 4,
+          "result": 12
+        }
+      }
+    }
+  ]
 }

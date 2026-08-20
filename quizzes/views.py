@@ -58,6 +58,7 @@ from .mode_services import (
     submit_figurative_method_answer,
     submit_reverse_method_answer,
     submit_false_hypothesis_method_answer,
+    submit_geometry_canvas_answer,
     submit_operation_sequence_answer,
     submit_operation_workbench_answer,
     submit_divisibility_values_answer,
@@ -67,6 +68,8 @@ from .mode_services import (
     submit_criteria_table_answer,
     submit_prime_workbench_answer,
     submit_decimal_workbench_answer,
+    submit_statistics_chart_answer,
+    submit_algebra_workbench_answer,
     submit_fraction_visual_answer,
     submit_fraction_domino_answer,
     submit_fraction_compare_answer,
@@ -76,6 +79,10 @@ from .mode_services import (
     submit_fraction_reduce_path_answer,
     submit_lcm_workbench_answer,
     submit_common_denominator_answer,
+    submit_fraction_product_answer,
+    submit_fraction_division_answer,
+    submit_fraction_power_answer,
+    submit_fraction_percent_answer,
 )
 from .learning import (
     get_chapter_learning_states,
@@ -206,6 +213,10 @@ def _submit_training_request(user, question, post_data):
         return submit_false_hypothesis_method_answer(
             user, question, json.loads(post_data.get("values", "{}"))
         )
+    if question.question_type == Question.TYPE_GEOMETRY_CANVAS:
+        return submit_geometry_canvas_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
     if question.question_type == Question.TYPE_OPERATION_SEQUENCE:
         return submit_operation_sequence_answer(
             user, question, json.loads(post_data.get("order", "[]"))
@@ -242,6 +253,14 @@ def _submit_training_request(user, question, post_data):
         return submit_decimal_workbench_answer(
             user, question, json.loads(post_data.get("values", "{}"))
         )
+    if question.question_type == Question.TYPE_STATISTICS_CHART:
+        return submit_statistics_chart_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
+    if question.question_type == Question.TYPE_ALGEBRA_WORKBENCH:
+        return submit_algebra_workbench_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
     if question.question_type == Question.TYPE_FRACTION_VISUAL:
         return submit_fraction_visual_answer(
             user, question, json.loads(post_data.get("values", "{}"))
@@ -271,6 +290,14 @@ def _submit_training_request(user, question, post_data):
         return submit_lcm_workbench_answer(user, question, json.loads(post_data.get("values", "{}")))
     if question.question_type == Question.TYPE_COMMON_DENOMINATOR:
         return submit_common_denominator_answer(user, question, json.loads(post_data.get("values", "{}")))
+    if question.question_type == Question.TYPE_FRACTION_PRODUCT:
+        return submit_fraction_product_answer(user, question, json.loads(post_data.get("values", "{}")))
+    if question.question_type == Question.TYPE_FRACTION_DIVISION:
+        return submit_fraction_division_answer(user, question, json.loads(post_data.get("values", "{}")))
+    if question.question_type == Question.TYPE_FRACTION_POWER:
+        return submit_fraction_power_answer(user, question, json.loads(post_data.get("values", "{}")))
+    if question.question_type == Question.TYPE_FRACTION_PERCENT:
+        return submit_fraction_percent_answer(user, question, json.loads(post_data.get("values", "{}")))
     return submit_training_answer(
         user,
         question,
@@ -282,7 +309,7 @@ def _quiz_with_questions():
     return Quiz.objects.prefetch_related(
         Prefetch(
             "questions",
-            queryset=Question.objects.order_by("id").prefetch_related("options"),
+            queryset=Question.objects.order_by("order", "id").prefetch_related("options"),
         )
     )
 

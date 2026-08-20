@@ -90,6 +90,7 @@ class Question(models.Model):
     TYPE_FIGURATIVE_METHOD = "figurative_method"
     TYPE_REVERSE_METHOD = "reverse_method"
     TYPE_FALSE_HYPOTHESIS_METHOD = "false_hypothesis_method"
+    TYPE_GEOMETRY_CANVAS = "geometry_canvas"
     TYPE_OPERATION_SEQUENCE = "operation_sequence"
     TYPE_OPERATION_WORKBENCH = "operation_workbench"
     TYPE_DIVISIBILITY_VALUES = "divisibility_values"
@@ -99,6 +100,8 @@ class Question(models.Model):
     TYPE_CRITERIA_TABLE = "criteria_table"
     TYPE_PRIME_WORKBENCH = "prime_workbench"
     TYPE_DECIMAL_WORKBENCH = "decimal_workbench"
+    TYPE_STATISTICS_CHART = "statistics_chart"
+    TYPE_ALGEBRA_WORKBENCH = "algebra_workbench"
     TYPE_FRACTION_VISUAL = "fraction_visual"
     TYPE_FRACTION_DOMINO = "fraction_domino"
     TYPE_FRACTION_COMPARE = "fraction_compare"
@@ -108,6 +111,10 @@ class Question(models.Model):
     TYPE_FRACTION_REDUCE_PATH = "fraction_reduce_path"
     TYPE_LCM_WORKBENCH = "lcm_workbench"
     TYPE_COMMON_DENOMINATOR = "common_denominator"
+    TYPE_FRACTION_PRODUCT = "fraction_product"
+    TYPE_FRACTION_DIVISION = "fraction_division"
+    TYPE_FRACTION_POWER = "fraction_power"
+    TYPE_FRACTION_PERCENT = "fraction_percent"
     TYPE_CHOICES = [
         (TYPE_MULTIPLE_CHOICE, "Grilă"),
         (TYPE_PARENTHESES_DRAG, "Plasează parantezele"),
@@ -143,6 +150,7 @@ class Question(models.Model):
         (TYPE_FIGURATIVE_METHOD, "Metoda figurativă"),
         (TYPE_REVERSE_METHOD, "Metoda mersului invers"),
         (TYPE_FALSE_HYPOTHESIS_METHOD, "Metoda falsei ipoteze"),
+        (TYPE_GEOMETRY_CANVAS, "Atelier geometric SVG"),
         (TYPE_OPERATION_SEQUENCE, "Construiește ordinea operațiilor"),
         (TYPE_OPERATION_WORKBENCH, "Calculează expresia pe etape"),
         (TYPE_DIVISIBILITY_VALUES, "Completează divizori și multipli"),
@@ -152,6 +160,8 @@ class Question(models.Model):
         (TYPE_CRITERIA_TABLE, "Tabelul criteriilor de divizibilitate"),
         (TYPE_PRIME_WORKBENCH, "Atelierul numerelor prime"),
         (TYPE_DECIMAL_WORKBENCH, "Atelierul fracțiilor zecimale"),
+        (TYPE_STATISTICS_CHART, "Atelier statistic cu grafice SVG"),
+        (TYPE_ALGEBRA_WORKBENCH, "Atelier algebric"),
         (TYPE_FRACTION_VISUAL, "Construiește și reprezintă fracții"),
         (TYPE_FRACTION_DOMINO, "Domino cu fracții echivalente"),
         (TYPE_FRACTION_COMPARE, "Compară și ordonează fracții"),
@@ -161,9 +171,14 @@ class Question(models.Model):
         (TYPE_FRACTION_REDUCE_PATH, "Traseu spre fracția ireductibilă"),
         (TYPE_LCM_WORKBENCH, "Atelier pentru c.m.m.m.c."),
         (TYPE_COMMON_DENOMINATOR, "Adu fracțiile la același numitor"),
+        (TYPE_FRACTION_PRODUCT, "Înmulțește fracții"),
+        (TYPE_FRACTION_DIVISION, "Împarte fracții"),
+        (TYPE_FRACTION_POWER, "Ridică fracții la putere"),
+        (TYPE_FRACTION_PERCENT, "Calculează fracții și procente dintr-o cantitate"),
     ]
 
     quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE, related_name="questions")
+    order = models.PositiveIntegerField(default=0)
     text = models.TextField()
     points = models.IntegerField(default=10)
     explanation = models.TextField(blank=True)
@@ -178,6 +193,9 @@ class Question(models.Model):
         choices=FORMAT_CHOICES,
         default=FORMAT_GRID,
     )
+
+    class Meta:
+        ordering = ["order", "id"]
 
     def __str__(self):
         return self.text[:50]

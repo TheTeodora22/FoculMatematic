@@ -1,6 +1,2557 @@
 {
   "title": "Punct, dreaptă, plan, semiplan, semidreaptă, segment de dreaptă",
-  "description": "Clasa a 5-a",
+  "description": "Clasa a 5-a · Elemente de geometrie și unități de măsură",
   "difficulty": "easy",
-  "questions": []
+  "questions": [
+    {
+      "text": "Alege desenul care reprezintă punctul A.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un punct este reprezentat printr-un semn mic și o literă mare.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 0
+        },
+        "figures": [
+          {
+            "kind": "point",
+            "label": "A",
+            "points": [],
+            "notation": "A"
+          },
+          {
+            "kind": "line",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "ray",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege desenul dreptei AB.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Dreapta continuă nelimitat în ambele sensuri.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 0
+        },
+        "figures": [
+          {
+            "kind": "line",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "ray",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": "α"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege desenul segmentului AB.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Segmentul are două extremități.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 0
+        },
+        "figures": [
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "ray",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": "α"
+          },
+          {
+            "kind": "halfplane",
+            "label": "ρ",
+            "points": [],
+            "notation": "ρ"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege desenul semidreptei AB.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "A este originea, iar săgeata indică sensul spre B.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 0
+        },
+        "figures": [
+          {
+            "kind": "ray",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": "α"
+          },
+          {
+            "kind": "halfplane",
+            "label": "ρ",
+            "points": [],
+            "notation": "ρ"
+          },
+          {
+            "kind": "point",
+            "label": "A",
+            "points": [],
+            "notation": "A"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege desenul planului α.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Planul este sugerat printr-un paralelogram.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 0
+        },
+        "figures": [
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": "α"
+          },
+          {
+            "kind": "halfplane",
+            "label": "ρ",
+            "points": [],
+            "notation": "ρ"
+          },
+          {
+            "kind": "point",
+            "label": "A",
+            "points": [],
+            "notation": "A"
+          },
+          {
+            "kind": "line",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege desenul unui semiplan.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O dreaptă-frontieră separă cele două semiplane.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 0
+        },
+        "figures": [
+          {
+            "kind": "halfplane",
+            "label": "ρ",
+            "points": [],
+            "notation": "ρ"
+          },
+          {
+            "kind": "point",
+            "label": "A",
+            "points": [],
+            "notation": "A"
+          },
+          {
+            "kind": "line",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Care figură nu are extremități și se prelungește în ambele sensuri?",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aceasta este dreapta.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 1
+        },
+        "figures": [
+          {
+            "kind": "point",
+            "label": "A",
+            "points": [],
+            "notation": "A"
+          },
+          {
+            "kind": "line",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "ray",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Care figură are exact două capete?",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Segmentul are două extremități.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 1
+        },
+        "figures": [
+          {
+            "kind": "line",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "ray",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": "α"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Care figură are o origine și un singur sens?",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aceasta este semidreapta.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 1
+        },
+        "figures": [
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "ray",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": "α"
+          },
+          {
+            "kind": "halfplane",
+            "label": "ρ",
+            "points": [],
+            "notation": "ρ"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege figura notată cu o literă grecească.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Planurile se notează frecvent cu α, β sau γ.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 1
+        },
+        "figures": [
+          {
+            "kind": "ray",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": "α"
+          },
+          {
+            "kind": "halfplane",
+            "label": "ρ",
+            "points": [],
+            "notation": "ρ"
+          },
+          {
+            "kind": "point",
+            "label": "A",
+            "points": [],
+            "notation": "A"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege figura care poate fi notată AB sau BA fără să se schimbe.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ordinea extremităților nu schimbă segmentul.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 3
+        },
+        "figures": [
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": "α"
+          },
+          {
+            "kind": "halfplane",
+            "label": "ρ",
+            "points": [],
+            "notation": "ρ"
+          },
+          {
+            "kind": "point",
+            "label": "A",
+            "points": [],
+            "notation": "A"
+          },
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege figura pentru care AB și BA au sensuri diferite.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Originea semidreptei este prima literă.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 3
+        },
+        "figures": [
+          {
+            "kind": "halfplane",
+            "label": "ρ",
+            "points": [],
+            "notation": "ρ"
+          },
+          {
+            "kind": "point",
+            "label": "A",
+            "points": [],
+            "notation": "A"
+          },
+          {
+            "kind": "line",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "ray",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege reprezentarea frontierei dintre două semiplane.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Dreapta colorată sau marcată este frontiera.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 3
+        },
+        "figures": [
+          {
+            "kind": "point",
+            "label": "A",
+            "points": [],
+            "notation": "A"
+          },
+          {
+            "kind": "line",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "halfplane",
+            "label": "ρ",
+            "points": [],
+            "notation": "ρ"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege figura determinată de două puncte și cu prelungire nelimitată.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Două puncte distincte determină o dreaptă.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 0
+        },
+        "figures": [
+          {
+            "kind": "line",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "ray",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": "α"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege porțiunea de dreaptă cuprinsă între A și B.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Porțiunea dintre cele două puncte este segmentul AB.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 0
+        },
+        "figures": [
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "ray",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": "α"
+          },
+          {
+            "kind": "halfplane",
+            "label": "ρ",
+            "points": [],
+            "notation": "ρ"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege urma vârfului unui creion pe foaie.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Modelul geometric este punctul.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 3
+        },
+        "figures": [
+          {
+            "kind": "ray",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": "α"
+          },
+          {
+            "kind": "halfplane",
+            "label": "ρ",
+            "points": [],
+            "notation": "ρ"
+          },
+          {
+            "kind": "point",
+            "label": "A",
+            "points": [],
+            "notation": "A"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege modelul geometric al unei suprafețe plane.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suprafața este sugerată printr-un plan.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 0
+        },
+        "figures": [
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": "α"
+          },
+          {
+            "kind": "halfplane",
+            "label": "ρ",
+            "points": [],
+            "notation": "ρ"
+          },
+          {
+            "kind": "point",
+            "label": "A",
+            "points": [],
+            "notation": "A"
+          },
+          {
+            "kind": "line",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege traseul care pornește din A și trece prin B fără să se termine.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Este semidreapta AB.",
+      "interactive": {
+        "mode": "choose_figure",
+        "answers": {
+          "figure": 3
+        },
+        "figures": [
+          {
+            "kind": "halfplane",
+            "label": "ρ",
+            "points": [],
+            "notation": "ρ"
+          },
+          {
+            "kind": "point",
+            "label": "A",
+            "points": [],
+            "notation": "A"
+          },
+          {
+            "kind": "line",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          },
+          {
+            "kind": "ray",
+            "label": "AB",
+            "points": [],
+            "notation": "AB"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Construiește dreapta AB.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Alegem instrumentul potrivit, apoi punctele în ordinea cerută; desenul apare imediat.",
+      "interactive": {
+        "mode": "construct_figure",
+        "answers": {
+          "tool": "line",
+          "first": "A",
+          "second": "B"
+        },
+        "tools": [
+          "line",
+          "segment",
+          "ray"
+        ],
+        "points": [
+          {
+            "name": "A",
+            "x": 110,
+            "y": 85
+          },
+          {
+            "name": "B",
+            "x": 260,
+            "y": 85
+          },
+          {
+            "name": "C",
+            "x": 360,
+            "y": 55
+          }
+        ]
+      }
+    },
+    {
+      "text": "Construiește semidreapta MN.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Alegem instrumentul potrivit, apoi punctele în ordinea cerută; desenul apare imediat.",
+      "interactive": {
+        "mode": "construct_figure",
+        "answers": {
+          "tool": "ray",
+          "first": "M",
+          "second": "N"
+        },
+        "tools": [
+          "line",
+          "segment",
+          "ray"
+        ],
+        "points": [
+          {
+            "name": "M",
+            "x": 120,
+            "y": 70
+          },
+          {
+            "name": "N",
+            "x": 280,
+            "y": 110
+          },
+          {
+            "name": "P",
+            "x": 380,
+            "y": 70
+          }
+        ]
+      }
+    },
+    {
+      "text": "Plasează punctele în locurile marcate – configurația 1.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare punct trebuie așezat pe marcajul cu aceeași literă.",
+      "interactive": {
+        "mode": "place_points",
+        "answers": {
+          "A": "110,85",
+          "B": "260,85",
+          "C": "360,55"
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 110,
+            "y": 85
+          },
+          {
+            "name": "B",
+            "x": 260,
+            "y": 85
+          },
+          {
+            "name": "C",
+            "x": 360,
+            "y": 55
+          }
+        ]
+      }
+    },
+    {
+      "text": "Plasează punctele în locurile marcate – configurația 2.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare punct trebuie așezat pe marcajul cu aceeași literă.",
+      "interactive": {
+        "mode": "place_points",
+        "answers": {
+          "M": "120,70",
+          "N": "280,110",
+          "P": "380,70"
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "M",
+            "x": 120,
+            "y": 70
+          },
+          {
+            "name": "N",
+            "x": 280,
+            "y": 110
+          },
+          {
+            "name": "P",
+            "x": 380,
+            "y": 70
+          }
+        ]
+      }
+    },
+    {
+      "text": "Suprapune punctele A și B pentru a obține A = B.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Punctele coincidente ocupă aceeași poziție.",
+      "interactive": {
+        "mode": "coincidence",
+        "answers": {
+          "relation": "coincident"
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 130,
+            "y": 80
+          },
+          {
+            "name": "B",
+            "x": 330,
+            "y": 80
+          }
+        ]
+      }
+    },
+    {
+      "text": "Separă punctele M și N, care sunt inițial suprapuse.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Mută unul dintre puncte suficient de departe pentru ca ele să devină distincte.",
+      "interactive": {
+        "mode": "coincidence",
+        "answers": {
+          "relation": "distinct"
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "M",
+            "x": 220,
+            "y": 90
+          },
+          {
+            "name": "N",
+            "x": 220,
+            "y": 90
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completează notația pentru segmentul cu extremitățile A și B.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Scriem literele punctelor; la semidreaptă originea este prima.",
+      "interactive": {
+        "mode": "complete_notation",
+        "answers": {
+          "notation": "AB"
+        },
+        "figures": [
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completează notația pentru semidreapta cu originea M și punctul N.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Scriem literele punctelor; la semidreaptă originea este prima.",
+      "interactive": {
+        "mode": "complete_notation",
+        "answers": {
+          "notation": "MN"
+        },
+        "figures": [
+          {
+            "kind": "ray",
+            "label": "MN",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Identifică tipul figurilor din cele trei desene – setul 1.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cele trei desene reprezintă același tip de figură, în poziții sau culori diferite.",
+      "interactive": {
+        "mode": "identify_figure",
+        "answers": {
+          "kind": "line"
+        },
+        "choices": [
+          "point",
+          "line",
+          "segment",
+          "ray",
+          "plane",
+          "halfplane"
+        ],
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": "",
+            "angle": -12
+          },
+          {
+            "kind": "line",
+            "label": "a",
+            "points": [],
+            "notation": "",
+            "angle": 0
+          },
+          {
+            "kind": "line",
+            "label": "b",
+            "points": [],
+            "notation": "",
+            "angle": 18
+          }
+        ]
+      }
+    },
+    {
+      "text": "Identifică tipul figurilor din cele trei desene – setul 2.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cele trei desene reprezintă același tip de figură, în poziții sau culori diferite.",
+      "interactive": {
+        "mode": "identify_figure",
+        "answers": {
+          "kind": "halfplane"
+        },
+        "choices": [
+          "point",
+          "line",
+          "segment",
+          "ray",
+          "plane",
+          "halfplane"
+        ],
+        "figures": [
+          {
+            "kind": "halfplane",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "boundary_label": "d"
+          },
+          {
+            "kind": "halfplane",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "boundary_label": "a"
+          },
+          {
+            "kind": "halfplane",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "boundary_label": "b"
+          }
+        ]
+      }
+    },
+    {
+      "text": "Asociază desenele cu denumirile – setul 1.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare desen are o singură denumire corectă.",
+      "interactive": {
+        "mode": "match_figure",
+        "answers": {
+          "match:0": "point",
+          "match:1": "segment",
+          "match:2": "ray"
+        },
+        "labels": [
+          "point",
+          "line",
+          "segment",
+          "ray",
+          "plane",
+          "halfplane"
+        ],
+        "figures": [
+          {
+            "kind": "point",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "variant": 0,
+            "angle": 0
+          },
+          {
+            "kind": "segment",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "variant": 1,
+            "angle": 0
+          },
+          {
+            "kind": "ray",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "variant": 2,
+            "angle": 10
+          }
+        ]
+      }
+    },
+    {
+      "text": "Asociază desenele cu denumirile – setul 2.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fiecare desen are o singură denumire corectă.",
+      "interactive": {
+        "mode": "match_figure",
+        "answers": {
+          "match:0": "line",
+          "match:1": "plane",
+          "match:2": "halfplane"
+        },
+        "labels": [
+          "point",
+          "line",
+          "segment",
+          "ray",
+          "plane",
+          "halfplane"
+        ],
+        "figures": [
+          {
+            "kind": "line",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "variant": 0,
+            "angle": -10
+          },
+          {
+            "kind": "plane",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "variant": 1,
+            "angle": 0
+          },
+          {
+            "kind": "halfplane",
+            "label": "",
+            "points": [],
+            "notation": "",
+            "variant": 2,
+            "angle": 0
+          }
+        ]
+      }
+    },
+    {
+      "text": "Repară desenul greșit al segmentului.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Segmentul nu are săgeți; semidreapta are una singură.",
+      "interactive": {
+        "mode": "repair_drawing",
+        "answers": {
+          "repair": "remove_arrows"
+        },
+        "choices": [
+          "remove_arrows",
+          "keep_one_arrow",
+          "add_two_arrows"
+        ],
+        "figures": [
+          {
+            "kind": "line",
+            "label": "AB",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Repară desenul greșit al semidreptei.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Segmentul nu are săgeți; semidreapta are una singură.",
+      "interactive": {
+        "mode": "repair_drawing",
+        "answers": {
+          "repair": "keep_one_arrow"
+        },
+        "choices": [
+          "remove_arrows",
+          "keep_one_arrow",
+          "add_two_arrows"
+        ],
+        "figures": [
+          {
+            "kind": "line",
+            "label": "AB",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Trage marcajele potrivite pentru a transforma segmentul AB în dreaptă.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pentru dreaptă punem săgeți în ambele sensuri; pentru semidreaptă păstrăm originea și o singură săgeată.",
+      "interactive": {
+        "mode": "transform_figure",
+        "answers": {
+          "left": "arrow",
+          "right": "arrow"
+        },
+        "choices": [
+          "cap",
+          "origine",
+          "arrow"
+        ],
+        "figures": [
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Trage marcajele potrivite pentru a transforma segmentul AB în semidreaptă AB.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pentru dreaptă punem săgeți în ambele sensuri; pentru semidreaptă păstrăm originea și o singură săgeată.",
+      "interactive": {
+        "mode": "transform_figure",
+        "answers": {
+          "left": "origine",
+          "right": "arrow"
+        },
+        "choices": [
+          "cap",
+          "origine",
+          "arrow"
+        ],
+        "figures": [
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege originea semidreptei AB.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Prima literă este originea semidreptei.",
+      "interactive": {
+        "mode": "choose_origin",
+        "answers": {
+          "origin": "A"
+        },
+        "choices": [
+          "A",
+          "B"
+        ],
+        "figures": [
+          {
+            "kind": "ray",
+            "label": "AB",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Alege originea semidreptei MN.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Prima literă este originea semidreptei.",
+      "interactive": {
+        "mode": "choose_origin",
+        "answers": {
+          "origin": "M"
+        },
+        "choices": [
+          "M",
+          "N"
+        ],
+        "figures": [
+          {
+            "kind": "ray",
+            "label": "MN",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Schimbă sensul semidreptei AB.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Inversăm ordinea literelor și mutăm originea.",
+      "interactive": {
+        "mode": "reverse_ray",
+        "answers": {
+          "notation": "BA"
+        },
+        "figures": [
+          {
+            "kind": "ray",
+            "label": "AB",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Schimbă sensul semidreptei MN.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Inversăm ordinea literelor și mutăm originea.",
+      "interactive": {
+        "mode": "reverse_ray",
+        "answers": {
+          "notation": "NM"
+        },
+        "figures": [
+          {
+            "kind": "ray",
+            "label": "MN",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Așază etichetele la extremitățile segmentului AB.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Etichetele se așază la cele două capete.",
+      "interactive": {
+        "mode": "label_endpoints",
+        "answers": {
+          "left": "A",
+          "right": "B"
+        },
+        "labels": [
+          "A",
+          "B"
+        ],
+        "figures": [
+          {
+            "kind": "segment",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Așază etichetele la extremitățile segmentului MN.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Etichetele se așază la cele două capete.",
+      "interactive": {
+        "mode": "label_endpoints",
+        "answers": {
+          "left": "M",
+          "right": "N"
+        },
+        "labels": [
+          "M",
+          "N"
+        ],
+        "figures": [
+          {
+            "kind": "segment",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completează marcajele pentru a obține segment.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Alegem capetele sau săgeata potrivită.",
+      "interactive": {
+        "mode": "complete_markers",
+        "answers": {
+          "left": "cap",
+          "right": "cap"
+        },
+        "choices": [
+          "cap",
+          "origine",
+          "arrow"
+        ],
+        "figures": [
+          {
+            "kind": "plain_line",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Completează marcajele pentru a obține semidreaptă.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Alegem capetele sau săgeata potrivită.",
+      "interactive": {
+        "mode": "complete_markers",
+        "answers": {
+          "left": "origine",
+          "right": "arrow"
+        },
+        "choices": [
+          "cap",
+          "origine",
+          "arrow"
+        ],
+        "figures": [
+          {
+            "kind": "plain_line",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Stabilește poziția punctului C față de dreapta d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Punctul este pe dreaptă numai dacă centrul său se află pe linie.",
+      "interactive": {
+        "mode": "point_membership",
+        "answers": {
+          "membership": "on"
+        },
+        "choices": [
+          "on",
+          "off"
+        ],
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [
+              {
+                "name": "C",
+                "x": 280,
+                "y": 80
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Stabilește poziția punctului P față de dreapta d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Punctul este pe dreaptă numai dacă centrul său se află pe linie.",
+      "interactive": {
+        "mode": "point_membership",
+        "answers": {
+          "membership": "off"
+        },
+        "choices": [
+          "on",
+          "off"
+        ],
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [
+              {
+                "name": "P",
+                "x": 280,
+                "y": 38
+              }
+            ],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Selectează toate segmentele din desen.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Selectăm numai figurile de tipul cerut.",
+      "interactive": {
+        "mode": "select_figures",
+        "answers": {
+          "selected": "0,2"
+        },
+        "figures": [
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": ""
+          },
+          {
+            "kind": "ray",
+            "label": "CD",
+            "points": [],
+            "notation": ""
+          },
+          {
+            "kind": "segment",
+            "label": "MN",
+            "points": [],
+            "notation": ""
+          },
+          {
+            "kind": "ray",
+            "label": "PQ",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Selectează toate semidreptele din desen.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Selectăm numai figurile de tipul cerut.",
+      "interactive": {
+        "mode": "select_figures",
+        "answers": {
+          "selected": "1,3"
+        },
+        "figures": [
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": ""
+          },
+          {
+            "kind": "ray",
+            "label": "CD",
+            "points": [],
+            "notation": ""
+          },
+          {
+            "kind": "segment",
+            "label": "MN",
+            "points": [],
+            "notation": ""
+          },
+          {
+            "kind": "ray",
+            "label": "PQ",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Enumeră toate segmentele determinate de punctele A, B, C, D.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Din n puncte distincte obținem câte un segment pentru fiecare pereche.",
+      "interactive": {
+        "mode": "enumerate_segments",
+        "answers": {
+          "segments": "AB,AC,AD,BC,BD,CD"
+        },
+        "figures": [
+          {
+            "kind": "line",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ],
+        "points": [
+          {
+            "name": "A",
+            "x": 90,
+            "y": 85
+          },
+          {
+            "name": "B",
+            "x": 190,
+            "y": 85
+          },
+          {
+            "name": "C",
+            "x": 290,
+            "y": 85
+          },
+          {
+            "name": "D",
+            "x": 390,
+            "y": 85
+          }
+        ]
+      }
+    },
+    {
+      "text": "Enumeră toate segmentele determinate de punctele M, N, P.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Din n puncte distincte obținem câte un segment pentru fiecare pereche.",
+      "interactive": {
+        "mode": "enumerate_segments",
+        "answers": {
+          "segments": "MN,MP,NP"
+        },
+        "figures": [
+          {
+            "kind": "line",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ],
+        "points": [
+          {
+            "name": "M",
+            "x": 120,
+            "y": 85
+          },
+          {
+            "name": "N",
+            "x": 250,
+            "y": 85
+          },
+          {
+            "name": "P",
+            "x": 380,
+            "y": 85
+          }
+        ]
+      }
+    },
+    {
+      "text": "Selectează segmentele care conțin punctul B.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un segment conține și punctele interioare dintre extremități.",
+      "interactive": {
+        "mode": "containing_segments",
+        "answers": {
+          "segments": "AB,AC,AD,BC,BD"
+        },
+        "figures": [
+          {
+            "kind": "line",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ],
+        "points": [
+          {
+            "name": "A",
+            "x": 90,
+            "y": 85
+          },
+          {
+            "name": "B",
+            "x": 190,
+            "y": 85
+          },
+          {
+            "name": "C",
+            "x": 290,
+            "y": 85
+          },
+          {
+            "name": "D",
+            "x": 390,
+            "y": 85
+          }
+        ]
+      }
+    },
+    {
+      "text": "Selectează segmentele care conțin punctul N.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un segment conține și punctele interioare dintre extremități.",
+      "interactive": {
+        "mode": "containing_segments",
+        "answers": {
+          "segments": "MN,MP,NP"
+        },
+        "figures": [
+          {
+            "kind": "line",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ],
+        "points": [
+          {
+            "name": "M",
+            "x": 120,
+            "y": 85
+          },
+          {
+            "name": "N",
+            "x": 250,
+            "y": 85
+          },
+          {
+            "name": "P",
+            "x": 380,
+            "y": 85
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mută A, B și C astfel încât să fie necoliniare.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Cele trei puncte nu trebuie să aparțină aceleiași drepte.",
+      "interactive": {
+        "mode": "place_noncollinear",
+        "answers": {
+          "relation": "noncollinear"
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 120,
+            "y": 85
+          },
+          {
+            "name": "B",
+            "x": 270,
+            "y": 85
+          },
+          {
+            "name": "C",
+            "x": 360,
+            "y": 85
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mută M, N și P astfel încât să fie necoliniare.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Unul dintre puncte trebuie scos vizibil de pe direcția celorlalte două.",
+      "interactive": {
+        "mode": "place_noncollinear",
+        "answers": {
+          "relation": "noncollinear"
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "M",
+            "x": 100,
+            "y": 70
+          },
+          {
+            "name": "N",
+            "x": 260,
+            "y": 70
+          },
+          {
+            "name": "P",
+            "x": 380,
+            "y": 70
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mută A, B și C astfel încât să fie aproximativ pe aceeași dreaptă și să rămână distincte.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Centrele punctelor pot avea o mică abatere față de linia ideală.",
+      "interactive": {
+        "mode": "place_collinear",
+        "answers": {
+          "relation": "collinear"
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 100,
+            "y": 50
+          },
+          {
+            "name": "B",
+            "x": 260,
+            "y": 100
+          },
+          {
+            "name": "C",
+            "x": 390,
+            "y": 50
+          }
+        ]
+      }
+    },
+    {
+      "text": "Așază trei puncte distincte aproximativ pe aceeași dreaptă.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Exercițiul acceptă o mică marjă de poziționare.",
+      "interactive": {
+        "mode": "place_collinear",
+        "answers": {
+          "relation": "collinear"
+        },
+        "draggable": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 120,
+            "y": 45
+          },
+          {
+            "name": "B",
+            "x": 250,
+            "y": 110
+          },
+          {
+            "name": "C",
+            "x": 380,
+            "y": 55
+          }
+        ]
+      }
+    },
+    {
+      "text": "Construiește triunghiul ABC unind punctele.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un triunghi are trei laturi care unesc cele trei puncte necoliniare.",
+      "interactive": {
+        "mode": "build_triangle",
+        "answers": {
+          "edges": "AB,AC,BC"
+        },
+        "tools": [
+          "segment"
+        ],
+        "points": [
+          {
+            "name": "A",
+            "x": 110,
+            "y": 85
+          },
+          {
+            "name": "B",
+            "x": 260,
+            "y": 85
+          },
+          {
+            "name": "C",
+            "x": 360,
+            "y": 55
+          }
+        ]
+      }
+    },
+    {
+      "text": "Construiește triunghiul MNP unind punctele.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Un triunghi are trei laturi care unesc cele trei puncte necoliniare.",
+      "interactive": {
+        "mode": "build_triangle",
+        "answers": {
+          "edges": "MN,MP,NP"
+        },
+        "tools": [
+          "segment"
+        ],
+        "points": [
+          {
+            "name": "M",
+            "x": 120,
+            "y": 70
+          },
+          {
+            "name": "N",
+            "x": 280,
+            "y": 110
+          },
+          {
+            "name": "P",
+            "x": 380,
+            "y": 70
+          }
+        ]
+      }
+    },
+    {
+      "text": "Trage punctul A în planul α și punctul B în afara planului.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Punctele sunt mutate direct pe desen: unul în paralelogram, celălalt în exterior.",
+      "interactive": {
+        "mode": "plane_points",
+        "answers": {
+          "inside": "A",
+          "outside": "B"
+        },
+        "draggable": true,
+        "figures": [
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": ""
+          }
+        ],
+        "points": [
+          {
+            "name": "A",
+            "x": 35,
+            "y": 35
+          },
+          {
+            "name": "B",
+            "x": 405,
+            "y": 150
+          }
+        ]
+      }
+    },
+    {
+      "text": "Trage punctul M în planul α și punctul N în afara planului.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Punctele sunt mutate direct pe desen: unul în paralelogram, celălalt în exterior.",
+      "interactive": {
+        "mode": "plane_points",
+        "answers": {
+          "inside": "M",
+          "outside": "N"
+        },
+        "draggable": true,
+        "figures": [
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": ""
+          }
+        ],
+        "points": [
+          {
+            "name": "M",
+            "x": 35,
+            "y": 145
+          },
+          {
+            "name": "N",
+            "x": 405,
+            "y": 35
+          }
+        ]
+      }
+    },
+    {
+      "text": "Împarte planul în două semiplane cu o frontieră orizontală.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O dreaptă împarte planul în două semiplane.",
+      "interactive": {
+        "mode": "split_plane",
+        "answers": {
+          "boundary": "horizontal"
+        },
+        "choices": [
+          "horizontal",
+          "vertical",
+          "diagonal"
+        ],
+        "figures": [
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Împarte planul în două semiplane cu o frontieră oblică.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "O dreaptă împarte planul în două semiplane.",
+      "interactive": {
+        "mode": "split_plane",
+        "answers": {
+          "boundary": "diagonal"
+        },
+        "choices": [
+          "horizontal",
+          "vertical",
+          "diagonal"
+        ],
+        "figures": [
+          {
+            "kind": "plane",
+            "label": "α",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Colorează semiplanul deasupra dreptei d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Alegem partea indicată a frontierei.",
+      "interactive": {
+        "mode": "choose_halfplane",
+        "answers": {
+          "side": "upper"
+        },
+        "choices": [
+          "upper",
+          "lower"
+        ],
+        "figures": [
+          {
+            "kind": "halfplane",
+            "label": "d",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Colorează semiplanul dedesubtul dreptei d.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Alegem partea indicată a frontierei.",
+      "interactive": {
+        "mode": "choose_halfplane",
+        "answers": {
+          "side": "lower"
+        },
+        "choices": [
+          "upper",
+          "lower"
+        ],
+        "figures": [
+          {
+            "kind": "halfplane",
+            "label": "d",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mută frontiera în poziția orizontală.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Frontiera rămâne o dreaptă și separă planul.",
+      "interactive": {
+        "mode": "move_boundary",
+        "answers": {
+          "boundary": "horizontal"
+        },
+        "choices": [
+          "horizontal",
+          "vertical",
+          "diagonal"
+        ],
+        "initial_boundary": "diagonal",
+        "figures": [
+          {
+            "kind": "halfplane",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mută frontiera în poziția verticală.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Frontiera rămâne o dreaptă și separă planul.",
+      "interactive": {
+        "mode": "move_boundary",
+        "answers": {
+          "boundary": "vertical"
+        },
+        "choices": [
+          "horizontal",
+          "vertical",
+          "diagonal"
+        ],
+        "initial_boundary": "horizontal",
+        "figures": [
+          {
+            "kind": "halfplane",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Adevărat sau fals: dreapta are două extremități.",
+      "type": "geometry_canvas",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Dreapta nu are extremități.",
+      "interactive": {
+        "mode": "visual_true_false",
+        "answers": {
+          "answer": "false"
+        },
+        "statement": "Dreapta are două extremități.",
+        "figures": [
+          {
+            "kind": "line",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Adevărat sau fals: segmentul AB este același cu segmentul BA.",
+      "type": "geometry_canvas",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Ordinea extremităților nu schimbă segmentul.",
+      "interactive": {
+        "mode": "visual_true_false",
+        "answers": {
+          "answer": "true"
+        },
+        "statement": "AB și BA reprezintă același segment.",
+        "figures": [
+          {
+            "kind": "segment",
+            "label": "AB",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Găsește notația greșită – setul 1.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Semidreapta ține cont de origine; planul se notează cu literă grecească.",
+      "interactive": {
+        "mode": "notation_detective",
+        "answers": {
+          "error": 1
+        },
+        "notations": [
+          "segment AB = BA",
+          "semidreapta AB = BA",
+          "dreapta AB = BA"
+        ]
+      }
+    },
+    {
+      "text": "Găsește notația greșită – setul 2.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Semidreapta ține cont de origine; planul se notează cu literă grecească.",
+      "interactive": {
+        "mode": "notation_detective",
+        "answers": {
+          "error": 2
+        },
+        "notations": [
+          "punct A",
+          "plan α",
+          "plan AB"
+        ]
+      }
+    },
+    {
+      "text": "Potrivește desenele cu notațiile – setul 1.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Folosim convenția de notare corespunzătoare fiecărei figuri.",
+      "interactive": {
+        "mode": "match_notation",
+        "answers": {
+          "match:0": "A",
+          "match:1": "AB",
+          "match:2": "CD"
+        },
+        "notations": [
+          "A",
+          "AB",
+          "CD"
+        ],
+        "figures": [
+          {
+            "kind": "point",
+            "label": "",
+            "points": [],
+            "notation": ""
+          },
+          {
+            "kind": "segment",
+            "label": "",
+            "points": [],
+            "notation": ""
+          },
+          {
+            "kind": "ray",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Potrivește desenele cu notațiile – setul 2.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Folosim convenția de notare corespunzătoare fiecărei figuri.",
+      "interactive": {
+        "mode": "match_notation",
+        "answers": {
+          "match:0": "d",
+          "match:1": "α",
+          "match:2": "ρ"
+        },
+        "notations": [
+          "d",
+          "α",
+          "ρ"
+        ],
+        "figures": [
+          {
+            "kind": "line",
+            "label": "",
+            "points": [],
+            "notation": ""
+          },
+          {
+            "kind": "plane",
+            "label": "",
+            "points": [],
+            "notation": ""
+          },
+          {
+            "kind": "halfplane",
+            "label": "",
+            "points": [],
+            "notation": ""
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mută A pe dreapta d, B în afara ei și construiește segmentul AB.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Mută punctele în pozițiile cerute și alege figura pe care o construiești.",
+      "interactive": {
+        "mode": "construction_checker",
+        "answers": {
+          "tool": "segment"
+        },
+        "tools": [
+          "segment",
+          "line"
+        ],
+        "validation": "line_membership",
+        "figures": [
+          {
+            "kind": "line",
+            "label": "d",
+            "points": [],
+            "notation": ""
+          }
+        ],
+        "points": [
+          {
+            "name": "A",
+            "x": 150,
+            "y": 45
+          },
+          {
+            "name": "B",
+            "x": 300,
+            "y": 90
+          }
+        ]
+      }
+    },
+    {
+      "text": "Mută M în originea semidreptei, N pe semidreaptă și construiește semidreapta MN.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Mută punctele în pozițiile cerute și alege figura pe care o construiești.",
+      "interactive": {
+        "mode": "construction_checker",
+        "answers": {
+          "tool": "ray"
+        },
+        "tools": [
+          "ray",
+          "segment"
+        ],
+        "validation": "ray_membership",
+        "figures": [
+          {
+            "kind": "ray",
+            "label": "MN",
+            "points": [],
+            "notation": ""
+          }
+        ],
+        "points": [
+          {
+            "name": "M",
+            "x": 180,
+            "y": 45
+          },
+          {
+            "name": "N",
+            "x": 300,
+            "y": 130
+          }
+        ]
+      }
+    },
+    {
+      "text": "Reconstituie modelul geometric 1.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Punctele trebuie mutate aproape de marcajele modelului.",
+      "interactive": {
+        "mode": "reconstruct_model",
+        "answers": {
+          "A": "110,85",
+          "B": "260,85",
+          "C": "360,55"
+        },
+        "model": [
+          {
+            "name": "A",
+            "x": 110,
+            "y": 85
+          },
+          {
+            "name": "B",
+            "x": 260,
+            "y": 85
+          },
+          {
+            "name": "C",
+            "x": 360,
+            "y": 55
+          }
+        ],
+        "draggable": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 110,
+            "y": 85
+          },
+          {
+            "name": "B",
+            "x": 260,
+            "y": 85
+          },
+          {
+            "name": "C",
+            "x": 360,
+            "y": 55
+          }
+        ]
+      }
+    },
+    {
+      "text": "Reconstituie modelul geometric 2.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Punctele trebuie mutate aproape de marcajele modelului.",
+      "interactive": {
+        "mode": "reconstruct_model",
+        "answers": {
+          "M": "120,70",
+          "N": "280,110",
+          "P": "380,70"
+        },
+        "model": [
+          {
+            "name": "M",
+            "x": 120,
+            "y": 70
+          },
+          {
+            "name": "N",
+            "x": 280,
+            "y": 110
+          },
+          {
+            "name": "P",
+            "x": 380,
+            "y": 70
+          }
+        ],
+        "draggable": true,
+        "points": [
+          {
+            "name": "M",
+            "x": 120,
+            "y": 70
+          },
+          {
+            "name": "N",
+            "x": 280,
+            "y": 110
+          },
+          {
+            "name": "P",
+            "x": 380,
+            "y": 70
+          }
+        ]
+      }
+    },
+    {
+      "text": "Rezolvă puzzle-ul geometric complet 1.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Plasăm punctele, alegem figura și scriem notația.",
+      "interactive": {
+        "mode": "full_geometry_puzzle",
+        "answers": {
+          "A": "110,85",
+          "B": "260,85",
+          "tool": "segment",
+          "notation": "AB"
+        },
+        "tools": [
+          "point",
+          "line",
+          "segment",
+          "ray"
+        ],
+        "draggable": true,
+        "points": [
+          {
+            "name": "A",
+            "x": 110,
+            "y": 85
+          },
+          {
+            "name": "B",
+            "x": 260,
+            "y": 85
+          }
+        ]
+      }
+    },
+    {
+      "text": "Rezolvă puzzle-ul geometric complet 2.",
+      "type": "geometry_canvas",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Plasăm punctele, alegem figura și scriem notația.",
+      "interactive": {
+        "mode": "full_geometry_puzzle",
+        "answers": {
+          "M": "120,70",
+          "N": "280,110",
+          "tool": "ray",
+          "notation": "MN"
+        },
+        "tools": [
+          "point",
+          "line",
+          "segment",
+          "ray"
+        ],
+        "draggable": true,
+        "points": [
+          {
+            "name": "M",
+            "x": 120,
+            "y": 70
+          },
+          {
+            "name": "N",
+            "x": 280,
+            "y": 110
+          }
+        ]
+      }
+    }
+  ]
 }

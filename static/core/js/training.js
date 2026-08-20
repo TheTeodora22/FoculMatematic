@@ -114,6 +114,7 @@
                 "figurative_method",
                 "reverse_method",
                 "false_hypothesis_method",
+                "geometry_canvas",
                 "operation_sequence",
                 "operation_workbench",
                 "divisibility_values",
@@ -123,6 +124,8 @@
                 "criteria_table",
                 "prime_workbench",
                 "decimal_workbench",
+                "statistics_chart",
+                "algebra_workbench",
                 "fraction_visual",
                 "fraction_domino",
                 "fraction_compare",
@@ -132,6 +135,10 @@
                 "fraction_reduce_path",
                 "lcm_workbench",
                 "common_denominator",
+                "fraction_product",
+                "fraction_division",
+                "fraction_power",
+                "fraction_percent",
             ].includes(question.type);
             const hasInteractiveTokens =
                 isInteractive && question.interactive && typeof question.interactive === "object";
@@ -489,11 +496,11 @@
         if (!question.divisionAnswer) question.divisionAnswer = { quotient: "", remainders: Array(item.remainders.length).fill("") };
         if (solved) question.divisionAnswer = { quotient: String(item.quotient), remainders: item.remainders.map(String) };
         const steps = item.remainders.map((_, index) =>
-            `<label class="division-step"><span>${index === item.remainders.length - 1 ? "Rest final" : `Rest după cifra ${index + 1}`}</span><input data-remainder-index="${index}" inputmode="numeric" value="${escapeHtml(question.divisionAnswer.remainders[index])}"${solved ? " disabled" : ""}></label>`
+            `<label class="division-step"><span>${escapeHtml(item.step_labels?.[index] || (index === item.remainders.length - 1 ? "Rest final" : `Rest după cifra ${index + 1}`))}</span><input data-remainder-index="${index}" inputmode="numeric" value="${escapeHtml(question.divisionAnswer.remainders[index])}"${solved ? " disabled" : ""}></label>`
         ).join("");
         return `<form class="training-division-column-form interactive-form">` +
-            `<div class="division-equation"><strong>${escapeHtml(item.dividend)}</strong><span>:</span><strong>${escapeHtml(item.divisor)}</strong><span>=</span><input class="division-quotient-input" inputmode="numeric" aria-label="Câtul împărțirii" value="${escapeHtml(question.divisionAnswer.quotient)}"${solved ? " disabled" : ""}></div>` +
-            `<p class="interactive-instruction">Completează câtul și restul obținut după coborârea fiecărei cifre. Restul final trebuie să fie mai mic decât împărțitorul.</p>` +
+            `<div class="division-equation"><strong>${escapeHtml(item.display_dividend ?? item.dividend)}</strong><span>:</span><strong>${escapeHtml(item.display_divisor ?? item.divisor)}</strong><span>=</span><input class="division-quotient-input" inputmode="decimal" aria-label="Câtul împărțirii" value="${escapeHtml(question.divisionAnswer.quotient)}"${solved ? " disabled" : ""}></div>` +
+            `<p class="interactive-instruction">${escapeHtml(item.instruction || "Completează câtul și restul obținut după coborârea fiecărei cifre. Restul final trebuie să fie mai mic decât împărțitorul.")}</p>` +
             `<div class="division-steps">${steps}</div>` +
             (solved ? "" : `<button type="submit" class="btn btn-press">Verifică răspunsul</button>`) + `</form>`;
     }
@@ -1066,6 +1073,244 @@
         return `<form class="training-hypothesis-form interactive-form">${body}${solved?"":'<button type="submit" class="btn btn-press">Verifică răspunsul</button>'}</form>`;
     }
 
+    function geometryRomanianLabel(value){
+        const labels={point:"punct",line:"dreaptă",segment:"segment",segments:"segmente",ray:"semidreaptă",plane:"plan",halfplane:"semiplan",plain_line:"linie",notation:"notație",on:"aparține",off:"nu aparține",cap:"capăt",origine:"origine",arrow:"săgeată",remove_arrows:"elimină săgețile",keep_one_arrow:"păstrează o singură săgeată",add_two_arrows:"adaugă două săgeți",horizontal:"orizontală",vertical:"verticală",diagonal:"oblică",upper:"deasupra",lower:"dedesubt",collinear:"coliniare",noncollinear:"necoliniare",parallel:"paralele",concurrent:"concurente",identical:"identice",same:"de aceeași parte",opposite:"de părți diferite",all_collinear:"toate coliniare",no_three_collinear:"nici trei coliniare",three_collinear:"trei coliniare",general:"poziție generală",two_rows:"două rânduri",all_parallel:"toate paralele",all_concurrent:"toate concurente",pairwise:"intersecții distincte",two_parallel_one_secant:"două paralele și o secantă",three_lines:"trei drepte",two_point_lines:"două drepte cu puncte",free:"poziție liberă"};
+        return labels[String(value)]||String(value).replaceAll("_"," ");
+    }
+
+    function geometryFigureSvg(figure, compact=false) {
+        const kind=figure.kind, label=figure.label||figure.notation||"",angle=Number(figure.angle)||0;
+        let shape="";
+        if(kind==="point") shape=`<circle cx="${220+(Number(figure.variant)||0)*18}" cy="80" r="7" class="geo-point"></circle>${label?`<text x="${236+(Number(figure.variant)||0)*18}" y="70" class="geo-notation">${escapeHtml(label)}</text>`:""}`;
+        else if(kind==="line"){
+            const namedPoints=/^[A-ZĂÂÎȘȚ]{2}$/.test(label)?`<circle cx="150" cy="80" r="6" class="geo-point"></circle><circle cx="290" cy="80" r="6" class="geo-point"></circle><text x="140" y="60" class="geo-notation">${escapeHtml(label[0])}</text><text x="286" y="60" class="geo-notation">${escapeHtml(label[1])}</text>`:"";
+            shape=`<g transform="rotate(${angle} 220 80)"><line x1="55" y1="80" x2="385" y2="80" class="geo-line"></line><path d="M55 80l14-8v16zM385 80l-14-8v16z" class="geo-arrow"></path>${namedPoints}</g>${label&&!namedPoints?`<text x="350" y="62" class="geo-notation">${escapeHtml(label)}</text>`:""}`;
+        }
+        else if(kind==="point_line") shape='<line x1="45" y1="90" x2="395" y2="90" class="geo-line geo-boundary"></line><path d="M45 90l14-8v16zM395 90l-14-8v16z" class="geo-arrow"></path>';
+        else if(kind==="line_pair"||kind==="parallel"){
+            const relation=kind==="parallel"?"parallel":figure.relation;
+            if(relation==="concurrent")shape='<line x1="65" y1="125" x2="375" y2="35" class="geo-line"></line><line x1="65" y1="35" x2="375" y2="125" class="geo-line geo-line--accent"></line>';
+            else if(relation==="identical")shape='<line x1="55" y1="80" x2="385" y2="80" class="geo-line geo-line--wide"></line><line x1="55" y1="80" x2="385" y2="80" class="geo-line geo-line--accent"></line>';
+            else shape='<line x1="55" y1="55" x2="385" y2="55" class="geo-line"></line><line x1="55" y1="110" x2="385" y2="110" class="geo-line geo-line--accent"></line>';
+        }
+        else if(kind==="spokes"){
+            const count=Math.max(1,Number(figure.count)||3);
+            shape=Array.from({length:count},(_,index)=>{const angle=index*Math.PI/count,x=Math.cos(angle)*180,y=Math.sin(angle)*70;return `<line x1="${220-x}" y1="${80-y}" x2="${220+x}" y2="${80+y}" class="geo-line${index%2?' geo-line--accent':''}"></line>`;}).join("")+ '<circle cx="220" cy="80" r="6" class="geo-point"></circle>';
+        }
+        else if(kind==="points"){
+            const count=Math.max(1,Number(figure.count)||4);
+            shape=Array.from({length:count},(_,index)=>{const x=75+(index%4)*95,y=55+Math.floor(index/4)*65+(index%2)*18;return `<circle cx="${x}" cy="${y}" r="6" class="geo-point"></circle><text x="${x+10}" y="${y-8}">${String.fromCharCode(65+index)}</text>`;}).join("");
+        }
+        else if(kind==="two_point_lines") shape='<line x1="45" y1="55" x2="395" y2="55" class="geo-line"></line><line x1="45" y1="115" x2="395" y2="115" class="geo-line geo-line--accent"></line>';
+        else if(kind==="three_lines"){
+            const lineCase=figure.case||"all_parallel";
+            if(lineCase==="all_concurrent")shape='<line x1="45" y1="80" x2="395" y2="80" class="geo-line"></line><line x1="70" y1="135" x2="370" y2="25" class="geo-line geo-line--accent"></line><line x1="70" y1="25" x2="370" y2="135" class="geo-line"></line><circle cx="220" cy="80" r="6" class="geo-point"></circle>';
+            else if(lineCase==="pairwise")shape='<line x1="55" y1="125" x2="385" y2="45" class="geo-line"></line><line x1="55" y1="35" x2="385" y2="115" class="geo-line geo-line--accent"></line><line x1="95" y1="140" x2="335" y2="20" class="geo-line"></line>';
+            else if(lineCase==="two_parallel_one_secant")shape='<line x1="45" y1="50" x2="395" y2="50" class="geo-line"></line><line x1="45" y1="115" x2="395" y2="115" class="geo-line geo-line--accent"></line><line x1="130" y1="145" x2="310" y2="20" class="geo-line"></line>';
+            else shape='<line x1="45" y1="40" x2="395" y2="40" class="geo-line"></line><line x1="45" y1="80" x2="395" y2="80" class="geo-line geo-line--accent"></line><line x1="45" y1="120" x2="395" y2="120" class="geo-line"></line>';
+        }
+        else if(kind==="segment") shape=`<g transform="rotate(${angle} 220 80)"><line x1="90" y1="80" x2="350" y2="80" class="geo-line"></line><line x1="90" y1="66" x2="90" y2="94" class="geo-cap"></line><line x1="350" y1="66" x2="350" y2="94" class="geo-cap"></line><circle cx="90" cy="80" r="6" class="geo-point"></circle><circle cx="350" cy="80" r="6" class="geo-point"></circle>${label.length>=2?`<text x="78" y="58" class="geo-notation">${escapeHtml(label[0])}</text><text x="350" y="58" class="geo-notation">${escapeHtml(label[1])}</text>`:""}</g>`;
+        else if(kind==="ray") shape=`<g transform="rotate(${angle} 220 80)"><line x1="90" y1="80" x2="375" y2="80" class="geo-line"></line><line x1="90" y1="66" x2="90" y2="94" class="geo-cap"></line><path d="M385 80l-16-9v18z" class="geo-arrow"></path><circle cx="90" cy="80" r="6" class="geo-point"></circle><circle cx="270" cy="80" r="6" class="geo-point"></circle>${label.length>=2?`<text x="78" y="58" class="geo-notation">${escapeHtml(label[0])}</text><text x="265" y="60" class="geo-notation">${escapeHtml(label[1])}</text>`:""}</g>`;
+        else if(kind==="plane") shape=`<polygon points="105,35 355,35 320,125 70,125" class="geo-plane"></polygon><text x="105" y="112" class="geo-plane-label">${escapeHtml(label||"α")}</text>`;
+        else if(kind==="halfplane") shape=`<polygon points="55,25 385,25 350,80 75,80" class="geo-half"></polygon><polygon points="75,80 350,80 320,140 35,140" class="geo-plane"></polygon><line x1="65" y1="80" x2="360" y2="80" class="geo-line geo-boundary"></line><text x="115" y="59" class="geo-plane-label">ρ</text><text x="295" y="122" class="geo-plane-label">π</text><text x="344" y="72" class="geo-boundary-label">${escapeHtml(figure.boundary_label||"d")}</text>`;
+        else shape='<line x1="90" y1="80" x2="350" y2="80" class="geo-line"></line>';
+        const extra=(figure.points||[]).map(point=>`<g><circle cx="${point.x}" cy="${point.y}" r="5" class="geo-point"></circle><text x="${point.x+9}" y="${point.y-9}">${escapeHtml(point.name)}</text></g>`).join("");
+        return `<svg class="geometry-figure${compact?" is-compact":""}" viewBox="0 0 440 160" role="img" aria-label="${escapeHtml(geometryRomanianLabel(kind))}">${shape}${extra}</svg>`;
+    }
+
+    function geometryPointCanvas(question, solved) {
+        const item=question.interactive, exact=["place_points","reconstruct_model","full_geometry_puzzle"].includes(item.mode);
+        if(!question.geometryInitialized){
+            (item.points||[]).forEach((point,index)=>{
+                if(question.answerValues[point.name]!==undefined)return;
+                if(item.mode==="full_geometry_puzzle")question.answerValues[point.name]=`${45+index*65},155`;
+                else question.answerValues[point.name]=`${Math.max(25,Math.min(415,point.x+(exact?(index%2?70:-70):0)))},${Math.max(25,Math.min(160,point.y+(exact?45:0)))}`;
+            });
+            question.geometryInitialized=true;
+        }
+        const targets=exact?(item.points||[]).map(point=>`<g class="geo-target"><circle cx="${point.x}" cy="${point.y}" r="16"></circle><text x="${point.x}" y="${point.y+4}" text-anchor="middle">${escapeHtml(point.name)}</text></g>`).join(""):"";
+        const points=(item.points||[]).map(point=>{const [x,y]=String(question.answerValues[point.name]).split(",").map(Number);return `<g class="geo-draggable" data-geometry-point="${escapeHtml(point.name)}" transform="translate(${x} ${y})"${solved?" aria-disabled=\"true\"":""}><circle r="9"></circle><text x="12" y="-10">${escapeHtml(point.name)}</text></g>`;}).join("");
+        return `<svg class="geometry-canvas" viewBox="0 0 440 180"><defs><pattern id="geometry-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="1"></path></pattern></defs><rect width="440" height="180" fill="url(#geometry-grid)"></rect>${item.figures?.map(fig=>geometryEmbeddedShape(fig)).join("")||""}${targets}${points}</svg>`;
+    }
+
+    function geometryEmbeddedShape(figure){
+        if(figure.kind==="plane")return `<polygon points="85,30 365,30 335,145 55,145" class="geo-plane"></polygon><text x="90" y="132" class="geo-plane-label">${escapeHtml(figure.label||"α")}</text>`;
+        if(figure.kind==="line")return `<line x1="35" y1="90" x2="405" y2="90" class="geo-line"></line>${figure.label?`<text x="382" y="76" class="geo-boundary-label">${escapeHtml(figure.label)}</text>`:""}`;
+        if(figure.kind==="ray")return `<line x1="90" y1="90" x2="395" y2="90" class="geo-line"></line><line x1="90" y1="73" x2="90" y2="107" class="geo-cap"></line><path d="M405 90l-16-9v18z" class="geo-arrow"></path><circle cx="90" cy="90" r="6" class="geo-point"></circle><text x="76" y="68" class="geo-notation">${escapeHtml((figure.label||"M")[0])}</text>`;
+        if(figure.kind==="line_pair"){
+            if(figure.relation==="concurrent")return '<line x1="35" y1="145" x2="405" y2="35" class="geo-line"></line><line x1="35" y1="35" x2="405" y2="145" class="geo-line geo-line--accent"></line>';
+            if(figure.relation==="identical")return '<line x1="35" y1="90" x2="405" y2="90" class="geo-line geo-line--wide"></line><line x1="35" y1="90" x2="405" y2="90" class="geo-line geo-line--accent"></line>';
+            return '<line x1="35" y1="60" x2="405" y2="60" class="geo-line"></line><line x1="35" y1="120" x2="405" y2="120" class="geo-line geo-line--accent"></line>';
+        }
+        return "";
+    }
+
+    function geometryChoices(question,key,choices,solved,labels=null){
+        return `<div class="geometry-choices">${choices.map((value,index)=>`<button type="button" data-geometry-choice-key="${escapeHtml(key)}" data-geometry-choice="${escapeHtml(value)}" class="${String(question.answerValues[key])===String(value)?"is-selected":""}"${solved?" disabled":""}>${escapeHtml(labels?.[index]||geometryRomanianLabel(value))}</button>`).join("")}</div>`;
+    }
+
+    function geometryRelationManipulator(question,solved){
+        const item=question.interactive,values=question.answerValues,start=item.figures?.[0]?.relation||"parallel",target=item.answers.relation;
+        if(!question.geometryRelationInitialized){
+            const relation=solved?target:start;
+            values.line_angle=String(relation==="concurrent"?40:0);
+            values.line_y=String(relation==="identical"?70:120);
+            question.geometryRelationInitialized=true;
+        }
+        const angle=Number(values.line_angle||0),lineY=Number(values.line_y||120),parallelAngle=Math.min(Math.abs(angle%180),Math.abs(180-(angle%180)))<=5;
+        const relation=parallelAngle?(Math.abs(lineY-70)<=8?"identical":"parallel"):"concurrent";
+        values.relation=relation;
+        return `<div class="geometry-relation-workbench"><svg class="geometry-canvas" viewBox="0 0 440 180"><defs><pattern id="geometry-relation-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="1"></path></pattern></defs><rect width="440" height="180" fill="url(#geometry-relation-grid)"></rect><line x1="35" y1="70" x2="405" y2="70" class="geo-line"></line><text x="388" y="57" class="geo-notation">a</text><g transform="rotate(${angle} 220 ${lineY})"><line x1="35" y1="${lineY}" x2="405" y2="${lineY}" class="geo-line geo-line--accent"></line></g><text x="388" y="${Math.min(165,lineY+22)}" class="geo-notation">b</text></svg><p class="geometry-relation-result">Poziția obținută: <b>${escapeHtml(geometryRomanianLabel(relation))}</b></p><div class="geometry-tool-controls"><label><span>înclinarea dreptei b: <b data-geometry-output="line_angle">${angle}</b>°</span><input type="range" min="0" max="90" step="5" value="${angle}" data-geometry-range="line_angle"${solved?" disabled":""}></label><label><span>poziția dreptei b: <b data-geometry-output="line_y">${lineY}</b></span><input type="range" min="45" max="135" step="5" value="${lineY}" data-geometry-range="line_y"${solved?" disabled":""}></label></div></div>`;
+    }
+
+    function geometryConstructionCanvas(question,solved){
+        const item=question.interactive,points=item.points||[],first=question.answerValues.first,second=question.answerValues.second,tool=question.answerValues.tool;
+        const a=points.find(point=>point.name===first),b=points.find(point=>point.name===second);
+        let drawing="";
+        if(a&&b&&tool){
+            const vx=b.x-a.x,vy=b.y-a.y,length=Math.hypot(vx,vy)||1,ux=vx/length,uy=vy/length;
+            if(tool==="segment")drawing=`<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" class="geometry-drawn-line"></line>`;
+            else if(tool==="ray")drawing=`<line x1="${a.x}" y1="${a.y}" x2="${a.x+ux*300}" y2="${a.y+uy*300}" class="geometry-drawn-line"></line><path d="M${a.x+ux*310} ${a.y+uy*310}l-16-9v18z" class="geo-arrow" transform="rotate(${Math.atan2(vy,vx)*180/Math.PI} ${a.x+ux*310} ${a.y+uy*310})"></path>`;
+            else if(tool==="line")drawing=`<line x1="${a.x-ux*260}" y1="${a.y-uy*260}" x2="${a.x+ux*360}" y2="${a.y+uy*360}" class="geometry-drawn-line"></line>`;
+        }
+        const pointSvg=points.map(point=>`<button></button><g class="geo-pickable${point.name===first||point.name===second?" is-selected":""}" data-geometry-pick-point="${escapeHtml(point.name)}"><circle cx="${point.x}" cy="${point.y}" r="10"></circle><text x="${point.x+14}" y="${point.y-10}">${escapeHtml(point.name)}</text></g>`).join("").replaceAll("<button></button>","");
+        return `<p class="interactive-instruction">Alege instrumentul, apoi apasă pe cele două puncte în ordinea cerută. Figura se desenează imediat.</p>${geometryChoices(question,"tool",item.tools,solved)}<svg class="geometry-canvas" viewBox="0 0 440 180"><defs><pattern id="geometry-construction-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="1"></path></pattern></defs><rect width="440" height="180" fill="url(#geometry-construction-grid)"></rect>${drawing}${pointSvg}</svg>`;
+    }
+
+    function geometryBoundaryCanvas(question,solved){
+        const item=question.interactive,side=question.answerValues.side||"",boundary=question.answerValues.boundary||item.initial_boundary||"";
+        let fills='<polygon points="70,25 370,25 340,90 55,90" class="geo-plane"></polygon><polygon points="55,90 340,90 310,155 35,155" class="geo-plane"></polygon>';
+        if(side==="upper")fills='<polygon points="70,25 370,25 340,90 55,90" class="geo-half geo-half--active"></polygon><polygon points="55,90 340,90 310,155 35,155" class="geo-plane"></polygon>';
+        if(side==="lower")fills='<polygon points="70,25 370,25 340,90 55,90" class="geo-plane"></polygon><polygon points="55,90 340,90 310,155 35,155" class="geo-half geo-half--active"></polygon>';
+        const angle=boundary==="vertical"?90:boundary==="diagonal"?-22:0;
+        const line=(boundary||item.mode==="choose_halfplane")?`<line x1="55" y1="90" x2="370" y2="90" class="geo-line geo-boundary" transform="rotate(${angle} 220 90)"></line><text x="355" y="78" class="geo-boundary-label">d</text>`:"";
+        const choices=item.mode==="choose_halfplane"?geometryChoices(question,"side",item.choices,solved):geometryChoices(question,"boundary",item.choices,solved);
+        return `<p class="interactive-instruction">Alege poziția, iar desenul se modifică imediat.</p><svg class="geometry-canvas geometry-boundary-canvas" viewBox="0 0 440 180">${fills}${line}<text x="90" y="145" class="geo-plane-label">α</text></svg>${choices}`;
+    }
+
+    function geometryDragSlots(question,solved){
+        const item=question.interactive,palette=item.labels||item.choices||[],left=question.answerValues.left||"",right=question.answerValues.right||"";
+        const marker=(value,side)=>{
+            const x=side==="left"?90:350;
+            if(value==="arrow")return `<path d="M${x} 80l${side==="left"?16:-16}-10v20z" class="geo-arrow"></path>`;
+            if(value==="cap"||value==="origine")return `<line x1="${x}" y1="63" x2="${x}" y2="97" class="geo-cap"></line><circle cx="${x}" cy="80" r="6" class="geo-point"></circle>`;
+            if(value)return `<circle cx="${x}" cy="80" r="7" class="geo-point"></circle><text x="${x+(side==="left"?-15:10)}" y="58" class="geo-notation">${escapeHtml(value)}</text>`;
+            return "";
+        };
+        const tiles=palette.map(value=>`<button type="button" draggable="true" data-geometry-drag-value="${escapeHtml(value)}" class="geometry-drag-tile${question.geometryPalette===String(value)?" is-selected":""}"${solved?" disabled":""}>${escapeHtml(geometryRomanianLabel(value))}</button>`).join("");
+        const slot=(side,value)=>`<button type="button" data-geometry-drop-slot="${side}" class="geometry-drop-slot"${solved?" disabled":""}><b>${side==="left"?"stânga":"dreapta"}</b><span>${value?escapeHtml(geometryRomanianLabel(value)):"trage aici"}</span></button>`;
+        return `<p class="interactive-instruction">Trage etichetele sau marcajele în cele două locuri. Pe telefon le poți apăsa pe rând.</p><div class="geometry-drag-palette">${tiles}</div><svg class="geometry-canvas" viewBox="0 0 440 160"><line x1="90" y1="80" x2="350" y2="80" class="geo-line"></line>${marker(left,"left")}${marker(right,"right")}</svg><div class="geometry-drop-row">${slot("left",left)}${slot("right",right)}</div>`;
+    }
+
+    function geometryEdgeBuilder(question,solved){
+        const item=question.interactive,points=item.points||[],selected=new Set(String(question.answerValues.edges||"").split(",").filter(Boolean));
+        const byName=Object.fromEntries(points.map(point=>[point.name,point]));
+        const lines=[...selected].map(edge=>{const a=byName[edge[0]],b=byName[edge[1]];return a&&b?`<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" class="geometry-drawn-line"></line>`:"";}).join("");
+        const nodes=points.map(point=>`<g class="geo-pickable${question.geometryEdgeStart===point.name?" is-selected":""}" data-geometry-edge-point="${escapeHtml(point.name)}"><circle cx="${point.x}" cy="${point.y}" r="10"></circle><text x="${point.x+14}" y="${point.y-10}">${escapeHtml(point.name)}</text></g>`).join("");
+        return `<p class="interactive-instruction">Unește punctele două câte două apăsând pe capetele fiecărui segment.</p><svg class="geometry-canvas" viewBox="0 0 440 180"><defs><pattern id="geometry-edge-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="1"></path></pattern></defs><rect width="440" height="180" fill="url(#geometry-edge-grid)"></rect>${lines}${nodes}</svg>`;
+    }
+
+    function geometryStaticPointCanvas(question){
+        const item=question.interactive;
+        return `<svg class="geometry-canvas" viewBox="0 0 440 180"><line x1="35" y1="90" x2="405" y2="90" class="geo-line"></line>${(item.points||[]).map(point=>`<circle cx="${point.x}" cy="90" r="7" class="geo-point"></circle><text x="${point.x-5}" y="68" class="geo-notation">${escapeHtml(point.name)}</text>`).join("")}</svg>`;
+    }
+
+    function geometryFields(question,solved,keys=null){
+        const reserved=new Set(["figure","kind","tool","target","origin","membership","side","boundary","answer","error","repair","selected","edges","conditions","first","second","left","right"]);
+        const selected=keys||Object.keys(question.interactive.answers).filter(key=>!reserved.has(key)&&!key.startsWith("match:")&&!key.startsWith("position:"));
+        return `<div class="geometry-fields">${selected.map(key=>`<label>${escapeHtml(geometryRomanianLabel(key))}<input data-geometry-key="${escapeHtml(key)}" value="${escapeHtml(question.answerValues[key]??"")}"${solved?" disabled":""}></label>`).join("")}</div>`;
+    }
+
+    function geometryToolWorkbench(question,solved){
+        const item=question.interactive, expected=item.answers||{}, limits=item.tool_limits||{}, values=question.answerValues;
+        Object.keys(expected).forEach(key=>{if(key!=="through"&&values[key]===undefined)values[key]=String(key.includes("angle")?90:key.endsWith("_x")?160:50);});
+        const current=(key,fallback)=>Number(values[key]??fallback);
+        const rulerAngle=current("ruler_angle",90),rulerX=current("ruler_x",160),rulerY=current("ruler_y",45);
+        const squareAngle=current("square_angle",90),squareX=current("square_x",290),squareY=current("square_y",120);
+        const lineAngle=current("line_angle",90),rad=lineAngle*Math.PI/180,dx=Math.cos(rad)*210,dy=Math.sin(rad)*90;
+        const ruler=item.show_ruler?`<g class="geometry-ruler" transform="translate(${rulerX} ${rulerY}) rotate(${rulerAngle})"><rect x="-145" y="-14" width="290" height="28" rx="4"></rect>${Array.from({length:29},(_,i)=>`<line x1="${-140+i*10}" y1="-14" x2="${-140+i*10}" y2="${i%5===0?2:-5}"></line>`).join("")}<text x="0" y="7" text-anchor="middle">RIGLĂ</text></g>`:"";
+        const square=item.show_square?`<g class="geometry-set-square" transform="translate(${squareX} ${squareY}) rotate(${squareAngle})"><path d="M-72 48H72L-72-48Z M-43 27H24L-43-17Z" fill-rule="evenodd"></path><text x="-34" y="39">ECHER</text></g>`:"";
+        const points=(item.points||[]).map(point=>`<circle cx="${point.x}" cy="${point.y}" r="6" class="geo-point"></circle><text x="${point.x+10}" y="${point.y-9}">${escapeHtml(point.name)}</text>`).join("");
+        const drawn=expected.line_angle!==undefined?`<line x1="${220-dx}" y1="${90-dy}" x2="${220+dx}" y2="${90+dy}" class="geometry-drawn-line"></line>`:"";
+        const controls=Object.keys(expected).filter(key=>key!=="through").map(key=>{
+            const type=key.includes("angle")?"angle":key.endsWith("_x")?"x":"y",range=limits[type]||[type==="angle"?0:30,type==="angle"?175:360,type==="angle"?5:10],fallback=type==="angle"?90:type==="x"?160:50;
+            const labels={ruler_angle:"unghiul riglei",ruler_x:"poziția riglei stânga–dreapta",ruler_y:"poziția riglei sus–jos",square_angle:"unghiul echerului",square_x:"poziția echerului stânga–dreapta",square_y:"poziția echerului sus–jos",line_angle:"unghiul dreptei trasate"};
+            return `<label><span>${escapeHtml(labels[key]||key.replaceAll("_"," "))}: <b data-geometry-output="${key}">${current(key,fallback)}</b></span><input type="range" min="${range[0]}" max="${range[1]}" step="${range[2]}" value="${current(key,fallback)}" data-geometry-range="${key}"${solved?" disabled":""}></label>`;
+        }).join("");
+        const through=expected.through!==undefined?geometryChoices(question,"through",[...(item.points||[]).map(point=>point.name),"free"].filter((value,index,array)=>array.indexOf(value)===index),solved,[...(item.points||[]).map(point=>`prin ${point.name}`),"poziție liberă"]):"";
+        return `<div class="geometry-tool-workbench"><svg class="geometry-canvas" viewBox="0 0 440 180"><defs><pattern id="geometry-tool-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="1"></path></pattern></defs><rect width="440" height="180" fill="url(#geometry-tool-grid)"></rect>${(item.figures||[]).map(geometryEmbeddedShape).join("")}${drawn}${points}${ruler}${square}</svg><div class="geometry-tool-controls">${controls}</div>${through}</div>`;
+    }
+
+    function geometryCanvasHtml(question){
+        const solved=isSolved(question),item=question.interactive,mode=item.mode;
+        if(!question.answerValues)question.answerValues={};
+        if(solved)Object.entries(item.answers).forEach(([key,value])=>{question.answerValues[key]=String(value);});
+        let body="";
+        if(mode==="choose_figure"){
+            body=`<div class="geometry-card-grid">${item.figures.map((figure,index)=>`<button type="button" data-geometry-choice-key="figure" data-geometry-choice="${index}" class="${String(question.answerValues.figure)===String(index)?"is-selected":""}"${solved?" disabled":""}><b>${String.fromCharCode(65+index)}</b>${geometryFigureSvg(figure,true)}</button>`).join("")}</div>`;
+        }else if(mode==="construct_figure"){
+            body=geometryConstructionCanvas(question,solved);
+        }else if(["transform_figure","label_endpoints","complete_markers"].includes(mode)){
+            body=geometryDragSlots(question,solved);
+        }else if(["place_points","coincidence","place_noncollinear","place_collinear","reconstruct_model","point_on_line","repair_membership","move_to_collinear"].includes(mode)){
+            body=`<p class="interactive-instruction">Trage punctele.</p>${geometryPointCanvas(question,solved)}`;
+        }else if(mode==="plane_points"){
+            body=`<p class="interactive-instruction">Trage punctele: primul în plan, al doilea în afara lui.</p>${geometryPointCanvas(question,solved)}`;
+        }else if(["split_plane","move_boundary","choose_halfplane"].includes(mode)){
+            body=geometryBoundaryCanvas(question,solved);
+        }else if(mode==="build_triangle"){
+            body=geometryEdgeBuilder(question,solved);
+        }else if(mode==="line_counter"){
+            body=geometryEdgeBuilder(question,solved);
+        }else if(["min_lines","max_lines","arrange_line_count"].includes(mode)){
+            body=`<p class="interactive-instruction">Trage punctele.</p>${geometryPointCanvas(question,solved)}`;
+        }else if(["enumerate_segments","containing_segments"].includes(mode)){
+            body=`${geometryStaticPointCanvas(question)}${geometryFields(question,solved,["segments"])}`;
+        }else if(mode==="full_geometry_puzzle"){
+            body=`${geometryPointCanvas(question,solved)}${geometryChoices(question,"tool",item.tools,solved)}${geometryFields(question,solved,["notation"])}`;
+        }else if(["match_figure","match_notation","match_relation_notation","sort_relations"].includes(mode)){
+            const options=mode==="match_figure"?item.labels:mode==="sort_relations"?item.labels:item.notations;
+            body=`<div class="geometry-match">${item.figures.map((figure,index)=>`<section>${geometryFigureSvg(figure,true)}<select data-geometry-select="match:${index}"${solved?" disabled":""}><option value="">Alege</option>${options.map(value=>`<option value="${escapeHtml(value)}"${question.answerValues[`match:${index}`]===value?" selected":""}>${escapeHtml(geometryRomanianLabel(value))}</option>`).join("")}</select></section>`).join("")}</div>`;
+        }else if(mode==="select_figures"){
+            const selected=new Set(String(question.answerValues.selected||"").split(",").filter(Boolean));
+            body=`<div class="geometry-card-grid">${item.figures.map((figure,index)=>`<button type="button" data-geometry-multi="selected" data-geometry-value="${index}" class="${selected.has(String(index))?"is-selected":""}"${solved?" disabled":""}>${geometryFigureSvg(figure,true)}</button>`).join("")}</div>`;
+        }else if(mode==="instruction_sequence"||mode==="order_tool_steps"){
+            body=`<div class="geometry-sequence">${item.steps.map((_,position)=>`<label><b>${position+1}</b><select data-geometry-select="position:${position}"${solved?" disabled":""}><option value="">Alege</option>${item.steps.map((step,index)=>`<option value="${index}"${String(question.answerValues[`position:${position}`])===String(index)?" selected":""}>${escapeHtml(step)}</option>`).join("")}</select></label>`).join("")}</div>`;
+        }else if(mode==="visual_true_false"){
+            body=`${geometryFigureSvg(item.figures[0])}<p class="geometry-statement">${escapeHtml(item.statement)}</p>${geometryChoices(question,"answer",["true","false"],solved,["Adevărat","Fals"])}`;
+        }else if(mode==="notation_detective"){
+            body=`<div class="geometry-notation-list">${item.notations.map((value,index)=>`<button type="button" data-geometry-choice-key="error" data-geometry-choice="${index}" class="${String(question.answerValues.error)===String(index)?"is-selected":""}"${solved?" disabled":""}>${escapeHtml(value)}</button>`).join("")}</div>`;
+        }else if(mode==="construction_checker"&&item.validation){
+            body=`<p class="interactive-instruction">Trage punctele, apoi alege figura construită.</p>${geometryPointCanvas(question,solved)}${geometryChoices(question,"tool",item.tools,solved)}`;
+        }else if(mode==="construction_checker"||mode==="multi_condition"){
+            const active=new Set(String(question.geometryConditions||"").split(",").filter(Boolean));
+            body=`${geometryPointCanvas(question,solved)}<div class="geometry-checklist">${item.conditions.map((condition,index)=>`<button type="button" data-geometry-condition="${index}" class="${active.has(String(index))?"is-selected":""}"${solved?" disabled":""}>✓ ${escapeHtml(condition)}</button>`).join("")}</div>`;
+        }else if(["make_concurrent","make_parallel","make_identical","transform_relation","repair_relation"].includes(mode)){
+            body=geometryRelationManipulator(question,solved);
+        }else if(["ruler_line","position_ruler","ruler_set_square_parallel","place_set_square","slide_set_square","parallel_through_point","continue_construction","repair_tools","draw_concurrent","draw_parallel","draw_identical"].includes(mode)){
+            body=geometryToolWorkbench(question,solved);
+        }else{
+            body=(item.figures||[]).map(figure=>geometryFigureSvg(figure)).join("");
+            const choiceMap={construct_figure:["tool",item.tools],identify_figure:["kind",item.choices],repair_drawing:["repair",item.choices],transform_figure:["target",item.choices],choose_origin:["origin",item.choices],complete_markers:null,point_membership:["membership",item.choices],split_plane:["boundary",item.choices],choose_halfplane:["side",item.choices],move_boundary:["boundary",item.choices]};
+            if(item.choice_key)body+=item.multi?geometryMultiText(question,item.choice_key,item.choices,solved,item.labels):geometryChoices(question,item.choice_key,item.choices,solved,item.labels);
+            else if(choiceMap[mode])body+=geometryChoices(question,choiceMap[mode][0],choiceMap[mode][1],solved);
+            if(mode==="construct_figure")body+=geometryChoices(question,"first",item.points.map(p=>p.name),solved)+geometryChoices(question,"second",item.points.map(p=>p.name),solved);
+            else if(mode==="label_endpoints")body+=geometryChoices(question,"left",item.labels,solved)+geometryChoices(question,"right",item.labels,solved);
+            else if(mode==="complete_markers")body+=geometryChoices(question,"left",item.choices,solved)+geometryChoices(question,"right",item.choices,solved);
+            else if(mode==="build_triangle")body+=geometryMultiText(question,"edges",["AB","AC","BC","MN","MP","NP"],solved);
+            else if(mode==="plane_points")body+=geometryChoices(question,"inside",item.points.map(p=>p.name),solved)+geometryChoices(question,"outside",item.points.map(p=>p.name),solved);
+            else if(mode==="containing_segments"||mode==="enumerate_segments")body+=geometryFields(question,solved,["segments"]);
+            else if(mode==="reverse_ray"||mode==="complete_notation")body+=geometryFields(question,solved,["notation"]);
+            else if(!item.choice_key)body+=geometryFields(question,solved);
+        }
+        return `<form class="training-geometry-form interactive-form">${body}${solved?"":'<button type="submit" class="btn btn-press">Verifică răspunsul</button>'}</form>`;
+    }
+
+    function geometryMultiText(question,key,choices,solved,labels=null){
+        const selected=new Set(String(question.answerValues[key]||"").split(",").filter(Boolean));
+        return `<div class="geometry-choices">${choices.map((value,index)=>`<button type="button" data-geometry-multi="${key}" data-geometry-value="${value}" class="${selected.has(String(value))?"is-selected":""}"${solved?" disabled":""}>${escapeHtml(labels?.[index]??geometryRomanianLabel(value))}</button>`).join("")}</div>`;
+    }
+
     function operationSequenceHtml(question) {
         const solved = isSolved(question), item = question.interactive;
         if (!question.operationOrder) question.operationOrder = [];
@@ -1184,7 +1429,8 @@
     }
 
     function decimalField(question, key, label, solved) {
-        return `<input class="decimal-input" data-decimal-key="${escapeHtml(key)}" inputmode="decimal" aria-label="${escapeHtml(label)}" value="${escapeHtml(question.answerValues[key] || "")}"${solved ? " disabled" : ""}>`;
+        const acceptsFraction = String(key).includes("fraction");
+        return `<input class="decimal-input" data-decimal-key="${escapeHtml(key)}" inputmode="${acceptsFraction ? "text" : "decimal"}" aria-label="${escapeHtml(label)}" value="${escapeHtml(question.answerValues[key] || "")}"${solved ? " disabled" : ""}>`;
     }
 
     function decimalWorkbenchHtml(question) {
@@ -1214,8 +1460,111 @@
         } else if (item.mode === "vessel") {
             const level = Number(question.answerValues.filled || 0), segments = Array.from({length:item.segments}, (_,i) => `<button type="button" data-vessel-level="${i + 1}" class="decimal-vessel-segment${i < level ? " is-filled" : ""}"${solved ? " disabled" : ""}></button>`).reverse().join("");
             body = `<p class="interactive-instruction">Apasă gradația care reprezintă cantitatea cerută.</p><div class="decimal-vessel"><div>${segments}</div><span>1</span><span>0</span></div><div class="decimal-vessel-target">Țintă: <strong>${escapeHtml(item.target_label)}</strong></div>`;
+        } else if (item.mode === "classification") {
+            body = `<p class="interactive-instruction">${escapeHtml(item.instruction || "Pentru fiecare fracție, alege tipul formei zecimale.")}</p><div class="decimal-classification">${item.items.map(entry => `<section><strong>${escapeHtml(entry.label)}</strong><div>${item.categories.map(category => `<button type="button" data-decimal-class-key="class:${escapeHtml(entry.id)}" data-decimal-class-value="${escapeHtml(category.value)}" class="${question.answerValues[`class:${entry.id}`] === category.value ? "is-selected" : ""}"${solved ? " disabled" : ""}>${escapeHtml(category.label)}</button>`).join("")}</div></section>`).join("")}</div>`;
+        } else if (item.mode === "period_select") {
+            body = `<div class="decimal-period-display">${escapeHtml(item.display)}</div><p class="interactive-instruction">Apasă grupul de cifre care reprezintă perioada.</p><div class="decimal-period-choices">${item.choices.map(choice => `<button type="button" data-decimal-choice-key="period" data-decimal-choice-value="${escapeHtml(choice)}" class="${question.answerValues.period === String(choice) ? "is-selected" : ""}"${solved ? " disabled" : ""}>${escapeHtml(choice)}</button>`).join("")}</div>`;
+        } else if (item.mode === "period_notation") {
+            body = `<div class="decimal-period-notation"><span>${escapeHtml(item.prefix)}(</span>${decimalField(question, "period", "Perioada", solved)}<span>)</span></div><p class="interactive-instruction">Completează cifrele care trebuie scrise între paranteze.</p>`;
+        } else if (item.mode === "average_balance") {
+            const value = question.answerValues.missing ?? item.initial;
+            body = `<p class="interactive-instruction">Mută cursorul până când media ajunge la valoarea cerută.</p><div class="decimal-average-balance"><section><span>Numere cunoscute</span><strong>${item.known_values.map(escapeHtml).join(" · ")}</strong></section><div class="decimal-average-beam"><span>media ${escapeHtml(item.target)}</span></div><section><label>Numărul lipsă: <b data-average-value>${escapeHtml(value)}</b></label><input type="range" min="${item.min}" max="${item.max}" step="${item.step}" value="${escapeHtml(value)}" data-average-range${solved ? " disabled" : ""}></section></div>`;
         }
         return `<form class="training-decimal-workbench-form interactive-form">${body}${solved ? "" : '<button type="submit" class="btn btn-press">Verifică răspunsul</button>'}</form>`;
+    }
+
+    function statisticsInput(question, key, label, solved) {
+        return `<input class="decimal-input" data-stat-key="${escapeHtml(key)}" inputmode="decimal" aria-label="${escapeHtml(label)}" value="${escapeHtml(question.answerValues[key] || "")}"${solved ? " disabled" : ""}>`;
+    }
+
+    function statisticsChartSvg(question, line = false) {
+        const item = question.interactive, solved = isSolved(question), W = 620, H = 300, L = 52, T = 18, B = 46;
+        const ph = H - T - B, pw = W - L - 18, max = item.max_value, step = item.step || Math.max(1, Math.ceil(max / 5));
+        const current = item.values.map((value, i) => solved ? value : Number(question.answerValues?.[`value:${i}`] ?? (item.mode === "repair_bar" ? item.shown_values[i] : (["build_bar","build_line"].includes(item.mode) ? 0 : value))));
+        const grid = Array.from({length: Math.floor(max / step) + 1}, (_, i) => { const v=i*step,y=T+ph-v/max*ph; return `<g><line x1="${L}" y1="${y}" x2="${L+pw}" y2="${y}" class="stat-grid-line"/><text x="${L-8}" y="${y+4}" text-anchor="end">${v}</text></g>`; }).join("");
+        const gap = pw / item.labels.length;
+        const labels = item.labels.map((label,i)=>`<text x="${L+gap*(i+.5)}" y="${H-18}" text-anchor="middle">${escapeHtml(label)}</text>`).join("");
+        let marks;
+        if (line) {
+            const pts=current.map((v,i)=>[L+gap*(i+.5),T+ph-v/max*ph]);
+            marks=`<path d="${pts.map((p,i)=>`${i?'L':'M'}${p[0]},${p[1]}`).join(' ')}" class="stat-line-path"/>`+pts.map((p,i)=>`<circle cx="${p[0]}" cy="${p[1]}" r="9" role="button" tabindex="0" aria-label="${escapeHtml(item.labels[i])}: ${current[i]}" data-stat-choice="${i}" class="stat-point${String(question.answerValues?.selected)===String(i)?' is-selected':''}"/>`).join("");
+        } else {
+            marks=current.map((v,i)=>{const h=v/max*ph,x=L+gap*i+gap*.18;return `<rect x="${x}" y="${T+ph-h}" width="${gap*.64}" height="${h}" rx="5" role="button" tabindex="0" aria-label="${escapeHtml(item.labels[i])}: ${v}" data-stat-choice="${i}" class="stat-bar${String(question.answerValues?.selected)===String(i)?' is-selected':''}"/>`;}).join("");
+        }
+        return `<svg class="statistics-chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${line?'Grafic cu linii':'Grafic cu bare'}">${grid}<line x1="${L}" y1="${T}" x2="${L}" y2="${T+ph}" class="stat-axis"/><line x1="${L}" y1="${T+ph}" x2="${L+pw}" y2="${T+ph}" class="stat-axis"/>${marks}${labels}</svg>`;
+    }
+
+    function statisticsChartHtml(question) {
+        const item=question.interactive, solved=isSolved(question); if(!question.answerValues)question.answerValues={};
+        if(solved)Object.entries(item.answers).forEach(([k,v])=>question.answerValues[k]=String(v));
+        let body="";
+        if(["read_bar","build_bar","repair_bar","read_line","build_line"].includes(item.mode)){
+            if(["build_bar","repair_bar","build_line"].includes(item.mode)){
+                body=`<div class="statistics-table-wrap"><table class="statistics-table statistics-source-table"><caption>Date de reprezentat</caption><thead><tr>${item.labels.map(label=>`<th>${escapeHtml(label)}</th>`).join("")}</tr></thead><tbody><tr>${item.values.map(value=>`<td>${escapeHtml(value)}</td>`).join("")}</tr></tbody></table></div>`;
+            }
+            body+=statisticsChartSvg(question,item.mode.includes("line"));
+            if(["build_bar","repair_bar","build_line"].includes(item.mode)) body+=`<div class="statistics-sliders">${item.labels.map((label,i)=>{const v=question.answerValues[`value:${i}`]??(item.mode==="repair_bar"?item.shown_values[i]:0);return `<label><span>${escapeHtml(label)}: <b>${v}</b></span><input type="range" min="0" max="${item.max_value}" step="${item.step||1}" value="${v}" data-stat-range="value:${i}"${solved?' disabled':''}></label>`;}).join("")}</div>`;
+            else body+=`<p class="interactive-instruction">Apasă direct bara sau punctul cerut.</p>`;
+        } else if(["frequency_table","relative_frequency"].includes(item.mode)){
+            body=`<div class="statistics-raw">${(item.raw_values||[]).map(v=>`<span>${escapeHtml(v)}</span>`).join("")}</div><div class="statistics-table-wrap"><table class="statistics-table"><thead><tr><th>Categorie</th><th>Frecvență</th>${item.mode==="relative_frequency"?'<th>Procent</th>':''}</tr></thead><tbody>${item.categories.map((c,i)=>`<tr><th>${escapeHtml(c)}</th><td>${statisticsInput(question,`frequency:${i}`,`Frecvența pentru ${c}`,solved)}</td>${item.mode==="relative_frequency"?`<td>${statisticsInput(question,`percent:${i}`,`Procentul pentru ${c}`,solved)}%</td>`:''}</tr>`).join("")}</tbody></table></div>`;
+        } else {
+            body=`<div class="statistics-dataset">${item.dataset.map(v=>`<span>${escapeHtml(v)}</span>`).join("")}</div><div class="decimal-fields">${item.fields.map(f=>`<label>${escapeHtml(f.label)}${statisticsInput(question,f.key,f.label,solved)}</label>`).join("")}</div>`;
+        }
+        return `<form class="training-statistics-form interactive-form">${body}${solved?'':'<button type="submit" class="btn btn-press">Verifică răspunsul</button>'}</form>`;
+    }
+
+    function algebraField(question, field, solved) {
+        const value = question.answerValues?.[field.key] ?? "";
+        return `<label class="algebra-field"><span>${escapeHtml(field.label)}</span><input data-algebra-key="${escapeHtml(field.key)}" type="text" inputmode="text" autocomplete="off" autocapitalize="off" spellcheck="false" value="${escapeHtml(value)}" aria-label="${escapeHtml(field.label)}"${solved ? " disabled" : ""}></label>`;
+    }
+
+    function algebraKeyboardHtml(item, solved) {
+        if (solved || !(item.fields || []).length) return "";
+        const source = [item.expression, item.identity, item.target, ...(item.stages || [])].filter(Boolean).join(" ");
+        const letters = [...new Set((source.match(/[a-zA-Z]/g) || []).map(letter => letter.toLowerCase()))].slice(0, 8);
+        const numericOnly = ["average", "verify_identity"].includes(item.mode);
+        const symbols = numericOnly
+            ? ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", ",", "/", "+", "−", "·", "(", ")"]
+            : ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", ...letters, "+", "−", "·", "/", "(", ")", "=", "√", "²", "³", "ⁿ"];
+        const unique = [...new Set(symbols)];
+        return `<section class="algebra-keyboard" aria-label="Tastatură matematică"><div class="algebra-keyboard-head"><strong>Tastatură matematică</strong><span>Apasă întâi căsuța în care vrei să scrii.</span></div><div class="algebra-keyboard-keys">${unique.map(symbol => `<button type="button" data-math-key="${escapeHtml(symbol)}" aria-label="Inserează ${escapeHtml(symbol)}">${escapeHtml(symbol)}</button>`).join("")}<button type="button" data-math-action="left" aria-label="Mută cursorul la stânga">←</button><button type="button" data-math-action="right" aria-label="Mută cursorul la dreapta">→</button><button type="button" data-math-action="backspace" aria-label="Șterge ultimul simbol">⌫</button><button type="button" data-math-action="clear" class="is-clear" aria-label="Golește căsuța">C</button></div></section>`;
+    }
+
+    function algebraWorkbenchHtml(question) {
+        const item = question.interactive, solved = isSolved(question);
+        if (!question.answerValues) question.answerValues = {};
+        if (solved) Object.entries(item.answers).forEach(([key, value]) => { question.answerValues[key] = String(value); });
+        const form = body => `<form class="training-algebra-form interactive-form"><div class="algebra-board">${body}${algebraKeyboardHtml(item, solved)}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică răspunsul</button>'}</form>`;
+        const fields = () => `<div class="algebra-fields">${(item.fields || []).map(field => algebraField(question, field, solved)).join("")}</div>`;
+
+        if (["simplify", "complete_rule", "radical_steps", "unknown", "average"].includes(item.mode)) {
+            const stages = (item.stages || []).map((stage, index) => `<div class="algebra-stage"><b>${index + 1}</b><span>${escapeHtml(stage)}</span></div>`).join("");
+            return form(`${item.expression ? `<div class="algebra-expression">${escapeHtml(item.expression)}</div>` : ""}${stages ? `<div class="algebra-stages">${stages}</div>` : ""}${fields()}`);
+        }
+        if (["true_false", "compare", "parentheses"].includes(item.mode)) {
+            const selected = String(question.answerValues.choice ?? "");
+            return form(`${item.expression ? `<div class="algebra-expression">${escapeHtml(item.expression)}</div>` : ""}<div class="algebra-choice-row">${item.choices.map((choice, index) => `<button type="button" data-algebra-choice="${index}" class="${selected === String(index) ? "is-selected" : ""}"${solved ? " disabled" : ""}>${escapeHtml(choice)}</button>`).join("")}</div>`);
+        }
+        if (["match", "classify"].includes(item.mode)) {
+            const options = item.options || item.pairs.map(pair => pair.right);
+            return form(`<div class="algebra-match-board">${item.pairs.map((pair, index) => `<label><strong>${escapeHtml(pair.left)}</strong><span>→</span><select data-algebra-key="match:${index}"${solved ? " disabled" : ""}><option value="">Alege</option>${options.map((option, optionIndex) => `<option value="${optionIndex}"${String(question.answerValues[`match:${index}`] ?? "") === String(optionIndex) ? " selected" : ""}>${escapeHtml(option)}</option>`).join("")}</select></label>`).join("")}</div>`);
+        }
+        if (item.mode === "error") {
+            const selected = String(question.answerValues.error ?? "");
+            return form(`<p class="interactive-instruction">Apasă primul pas greșit.</p><div class="algebra-error-steps">${item.steps.map((step, index) => `<button type="button" data-algebra-error="${index}" class="${selected === String(index) ? "is-selected" : ""}"${solved ? " disabled" : ""}><b>${index + 1}</b><span>${escapeHtml(step)}</span></button>`).join("")}</div>`);
+        }
+        if (item.mode === "identity_builder") {
+            const selected = String(question.answerValues.pieces ?? "").split(",").filter(Boolean).map(Number);
+            return form(`<div class="algebra-expression">${escapeHtml(item.target)}</div><p class="interactive-instruction">Apasă piesele în ordinea în care apar în membrul drept.</p><div class="algebra-piece-pool">${item.pieces.map((piece, index) => `<button type="button" data-algebra-piece="${index}" class="${selected.includes(index) ? "is-selected" : ""}"${solved ? " disabled" : ""}>${escapeHtml(piece)}</button>`).join("")}</div><div class="algebra-built-expression">${selected.map(index => `<span>${escapeHtml(item.pieces[index])}</span>`).join("") || "Construcția ta apare aici"}</div>`);
+        }
+        if (item.mode === "verify_identity") {
+            const selected = String(question.answerValues.verdict ?? "");
+            return form(`<div class="algebra-expression">${escapeHtml(item.identity)}</div><div class="algebra-values">${item.values.map(value => `<span>${escapeHtml(value)}</span>`).join("")}</div>${fields()}<div class="algebra-choice-row">${["Identitatea se verifică", "Identitatea nu se verifică"].map((choice, index) => `<button type="button" data-algebra-verdict="${index}" class="${selected === String(index) ? "is-selected" : ""}"${solved ? " disabled" : ""}>${choice}</button>`).join("")}</div>`);
+        }
+        if (item.mode === "transform_chain") {
+            return form(`<div class="algebra-expression">${escapeHtml(item.expression)}</div><div class="algebra-chain">${item.steps.map((step, index) => `<label><span>Pasul ${index + 1}</span><select data-algebra-key="step:${index}"${solved ? " disabled" : ""}><option value="">Alege transformarea</option>${step.options.map((option, optionIndex) => `<option value="${optionIndex}"${String(question.answerValues[`step:${index}`] ?? "") === String(optionIndex) ? " selected" : ""}>${escapeHtml(option)}</option>`).join("")}</select></label>`).join("")}</div>`);
+        }
+        return form(fields());
     }
 
     function fractionShapeHtml(question, numerator, denominator, shape, selectable = false) {
@@ -1382,8 +1731,246 @@
         const item = question.interactive, solved = isSolved(question);
         if (!question.answerValues) question.answerValues = {};
         if (solved) Object.entries(item.answers).forEach(([key,value]) => question.answerValues[key] = String(value));
+        const fractionInputs = (prefix, numeratorLabel = "Numărător", denominatorLabel = "Numitor") => `<span class="fraction-card">${lessonField(question,`${prefix}_numerator`,numeratorLabel,solved)}<i></i>${lessonField(question,`${prefix}_denominator`,denominatorLabel,solved)}</span>`;
+        const operationChoices = () => `<div class="fraction-operation-choices">${["+", "-"].map(operation => `<button type="button" data-fraction-operation="${operation}" class="fraction-operation-choice${String(question.answerValues.operator || "") === operation ? " is-selected" : ""}"${solved ? " disabled" : ""}>${operation}</button>`).join("")}</div>`;
+        if (item.mode === "calculate") {
+            const transformed = side => `<span class="fraction-card">${lessonField(question,`${side}_numerator`,`Numărătorul ${side === "left" ? "primei" : "celei de-a doua"} fracții`,solved)}<i></i>${lessonField(question,"common_denominator","Numitor comun",solved)}</span>`;
+            return `<form class="training-common-denominator-form interactive-form"><p class="interactive-instruction">Adu fracțiile la același numitor, efectuează operația și scrie rezultatul ireductibil.</p><div class="fraction-operation-row">${fractionCardHtml(item.left)}<b>${item.operation}</b>${fractionCardHtml(item.right)}</div><div class="fraction-workflow"><div>${transformed("left")}<b>${item.operation}</b>${transformed("right")}</div><span>→</span>${fractionInputs("result","Numărător rezultat","Numitor rezultat")}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică rezolvarea</button>'}</form>`;
+        }
+        if (item.mode === "missing_term" || item.mode === "inverse") {
+            const missing = fractionInputs("missing","Numărător lipsă","Numitor lipsă");
+            const left = item.missing_side === "left" ? missing : fractionCardHtml(item.left);
+            const right = item.missing_side === "right" ? missing : fractionCardHtml(item.right);
+            return `<form class="training-common-denominator-form interactive-form"><p class="interactive-instruction">Completează fracția lipsă astfel încât egalitatea să fie adevărată.</p><div class="fraction-operation-row">${left}<b>${item.operation}</b>${right}<b>=</b>${fractionCardHtml(item.result)}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică fracția</button>'}</form>`;
+        }
+        if (item.mode === "operator") {
+            return `<form class="training-common-denominator-form interactive-form"><p class="interactive-instruction">Alege operația care face egalitatea adevărată.</p><div class="fraction-operation-row">${fractionCardHtml(item.left)}${operationChoices()}${fractionCardHtml(item.right)}<b>=</b>${fractionCardHtml(item.result)}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică operația</button>'}</form>`;
+        }
+        if (item.mode === "problem") {
+            return `<form class="training-common-denominator-form interactive-form"><p class="interactive-instruction">Alege operația sugerată de problemă și completează rezultatul ireductibil.</p><div class="fraction-operation-row">${fractionCardHtml(item.left)}${operationChoices()}${fractionCardHtml(item.right)}<b>=</b>${fractionInputs("result","Numărător rezultat","Numitor rezultat")}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică răspunsul</button>'}</form>`;
+        }
+        if (item.mode === "mixed") {
+            return `<form class="training-common-denominator-form interactive-form"><p class="interactive-instruction">Calculează și scrie rezultatul ca număr mixt ireductibil.</p><div class="fraction-operation-row">${fractionCardHtml(item.left)}<b>${item.operation}</b>${fractionCardHtml(item.right)}<b>=</b><span class="mixed-number">${lessonField(question,"whole","Partea întreagă",solved)}${fractionInputs("mixed","Numărătorul părții fracționare","Numitorul părții fracționare")}</span></div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică numărul mixt</button>'}</form>`;
+        }
+        if (item.mode === "order_steps") {
+            const chosen = String(question.answerValues.order || "").split(",").filter(value => value !== "").map(Number);
+            const card = (index, placed) => `<button type="button" data-fraction-step="${index}" class="fraction-step-card${placed ? " is-placed" : ""}"${solved ? " disabled" : ""}><b>${placed ? chosen.indexOf(index) + 1 : "•"}</b><span>${escapeHtml(item.steps[index])}</span></button>`;
+            const pool = item.display_order.filter(index => !chosen.includes(index)).map(index => card(index,false)).join("");
+            const result = chosen.map(index => card(index,true)).join("");
+            return `<form class="training-common-denominator-form interactive-form"><p class="interactive-instruction">Apasă pașii în ordinea în care trebuie efectuat calculul. Un pas așezat poate fi retras.</p><div class="fraction-step-pool">${pool || "Toți pașii au fost așezați."}</div><div class="fraction-step-result">${result || "Ordinea construită va apărea aici."}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică ordinea</button>'}</form>`;
+        }
+        if (item.mode === "match") {
+            const options = item.result_order.map(index => `<option value="${index}">${escapeHtml(item.pairs[index].result)}</option>`).join("");
+            const rows = item.pairs.map((pair,index) => `<label class="fraction-match-row"><strong>${escapeHtml(pair.operation)}</strong><span>→</span><select data-lesson-key="match_${index}" aria-label="Rezultatul calculului ${index + 1}"${solved ? " disabled" : ""}><option value="">Alege rezultatul</option>${item.result_order.map(resultIndex => `<option value="${resultIndex}"${String(question.answerValues[`match_${index}`] ?? "") === String(resultIndex) ? " selected" : ""}>${escapeHtml(item.pairs[resultIndex].result)}</option>`).join("")}</select></label>`).join("");
+            return `<form class="training-common-denominator-form interactive-form"><p class="interactive-instruction">Potrivește fiecare calcul cu rezultatul lui ireductibil.</p><div class="fraction-match-board">${rows}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică potrivirile</button>'}</form>`;
+        }
+        if (item.mode === "missing") {
+            const missing = lessonField(question, "missing", item.missing_position === "numerator" ? "Numărător lipsă" : "Numitor lipsă", solved);
+            const result = item.missing_position === "numerator"
+                ? `<span class="fraction-card">${missing}<i></i><b>${item.known_value}</b></span>`
+                : `<span class="fraction-card"><b>${item.known_value}</b><i></i>${missing}</span>`;
+            return `<form class="training-common-denominator-form interactive-form"><p class="interactive-instruction">Completează valoarea lipsă astfel încât fracțiile să fie echivalente.</p><div class="common-denominator-side">${fractionCardHtml(item.left)}<span>=</span>${result}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică valoarea</button>'}</form>`;
+        }
+        if (item.mode === "error") {
+            const selected = String(question.answerValues.error_index ?? "");
+            const steps = item.steps.map((step,index) => `<button type="button" data-common-error="${index}" class="common-error-step${selected === String(index) ? " is-selected" : ""}"${solved ? " disabled" : ""}><b>${index + 1}</b><span>${escapeHtml(step)}</span></button>`).join("");
+            return `<form class="training-common-denominator-form interactive-form"><p class="interactive-instruction">Apasă primul pas greșit.</p><div class="common-error-steps">${steps}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică pasul</button>'}</form>`;
+        }
         const transformed = (side, label) => `<div class="common-denominator-side"><span class="fraction-card"><b>${item[side][0]}</b><i></i><b>${item[side][1]}</b></span><span>×</span>${lessonField(question,`${side}_factor`,`Factor pentru ${label}`,solved)}<span>=</span><span class="fraction-card">${lessonField(question,`${side}_numerator`,`Numărător ${label}`,solved)}<i></i>${lessonField(question,"common_denominator",`Numitor comun`,solved)}</span></div>`;
         return `<form class="training-common-denominator-form interactive-form"><p class="interactive-instruction">Găsește cel mai mic numitor comun și amplifică fiecare fracție cu factorul potrivit.</p><div class="common-denominator-board">${transformed("left","prima fracție")}${transformed("right","a doua fracție")}</div>${item.mode === "compare" ? `<label class="common-relation-label">Semnul dintre fracțiile transformate${lessonField(question,"relation","Semnul corect",solved)}</label>` : ""}${solved ? "" : '<button type="submit" class="btn btn-press">Verifică transformările</button>'}</form>`;
+    }
+
+    function fractionProductHtml(question) {
+        const item = question.interactive, solved = isSolved(question);
+        if (!question.answerValues) question.answerValues = {};
+        if (solved) Object.entries(item.answers).forEach(([key,value]) => question.answerValues[key] = String(value));
+        const inputs = (prefix, numeratorLabel = "Numărător", denominatorLabel = "Numitor") => `<span class="fraction-card">${lessonField(question,`${prefix}_numerator`,numeratorLabel,solved)}<i></i>${lessonField(question,`${prefix}_denominator`,denominatorLabel,solved)}</span>`;
+        const product = `${fractionCardHtml(item.left)}<b>·</b>${fractionCardHtml(item.right)}`;
+        if (item.mode === "build") {
+            return `<form class="training-fraction-product-form interactive-form"><p class="interactive-instruction">Înmulțește numărătorii și numitorii, apoi simplifică produsul.</p><div class="fraction-product-row">${product}<b>=</b>${inputs("raw","Numărător înainte de simplificare","Numitor înainte de simplificare")}<b>=</b>${inputs("result","Numărător final","Numitor final")}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică produsul</button>'}</form>`;
+        }
+        if (item.mode === "cross_cancel") {
+            const rows = item.cancellations.map((entry,index) => `<div class="product-cancel-row"><span>${entry.first}</span><span>și</span><span>${entry.second}</span><span>se simplifică prin</span>${lessonField(question,`${index}:factor`,`Factorul simplificării ${index + 1}`,solved)}<span>→</span>${lessonField(question,`${index}:first_result`,`Primul număr simplificat`,solved)}<span>și</span>${lessonField(question,`${index}:second_result`,`Al doilea număr simplificat`,solved)}</div>`).join("");
+            return `<form class="training-fraction-product-form interactive-form"><p class="interactive-instruction">Simplifică în cruce înainte să înmulțești.</p><div class="fraction-product-row">${product}</div><div class="product-cancel-board">${rows}</div><div class="fraction-product-row"><span>Produsul ireductibil:</span>${inputs("result","Numărător final","Numitor final")}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică simplificările</button>'}</form>`;
+        }
+        if (item.mode === "visual") {
+            const selected = new Set(String(question.answerValues.selected || "").split(",").filter(Boolean).map(Number));
+            const cells = Array.from({length:item.rows * item.columns}, (_,index) => {
+                const row = Math.floor(index / item.columns), column = index % item.columns;
+                const first = column < item.first_columns, second = row < item.second_rows;
+                return `<button type="button" data-product-cell="${index}" class="product-visual-cell${first ? " is-first" : ""}${second ? " is-second" : ""}${selected.has(index) ? " is-selected" : ""}" aria-label="Căsuța ${index + 1}"${solved ? " disabled" : ""}></button>`;
+            }).join("");
+            return `<form class="training-fraction-product-form interactive-form"><p class="interactive-instruction">Zonele hașurate arată cei doi factori. Apasă căsuțele din suprapunerea lor.</p><div class="product-visual-grid" style="--product-columns:${item.columns}">${cells}</div><div class="product-visual-legend"><span>Primul factor</span><span>Al doilea factor</span><span>Produsul</span></div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică suprapunerea</button>'}</form>`;
+        }
+        if (item.mode === "missing" || item.mode === "inverse") {
+            const missingNumerator = item.editable === "denominator" ? `<b>${item.missing[0]}</b>` : lessonField(question,"missing_numerator","Numărător lipsă",solved);
+            const missingDenominator = item.editable === "numerator" ? `<b>${item.missing[1]}</b>` : lessonField(question,"missing_denominator","Numitor lipsă",solved);
+            const missing = `<span class="fraction-card">${missingNumerator}<i></i>${missingDenominator}</span>`;
+            const left = item.missing_side === "left" ? missing : fractionCardHtml(item.left), right = item.missing_side === "right" ? missing : fractionCardHtml(item.right);
+            return `<form class="training-fraction-product-form interactive-form"><p class="interactive-instruction">Completează factorul lipsă.</p><div class="fraction-product-row">${left}<b>·</b>${right}<b>=</b>${fractionCardHtml(item.result)}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică factorul</button>'}</form>`;
+        }
+        if (item.mode === "cancel_select") {
+            const selected = new Set(String(question.answerValues.selected || "").split(",").filter(Boolean));
+            const choices = item.candidates.map(candidate => `<button type="button" data-product-cancel="${escapeHtml(candidate.id)}" class="product-cancel-choice${selected.has(candidate.id) ? " is-selected" : ""}"${solved ? " disabled" : ""}>${escapeHtml(candidate.label)}</button>`).join("");
+            return `<form class="training-fraction-product-form interactive-form"><p class="interactive-instruction">Selectează toate simplificările în cruce permise înainte de înmulțire.</p><div class="fraction-product-row">${product}</div><div class="product-cancel-choices">${choices}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică alegerile</button>'}</form>`;
+        }
+        if (item.mode === "error") {
+            const selected = String(question.answerValues.error_index ?? "");
+            const steps = item.steps.map((step,index) => `<button type="button" data-product-error="${index}" class="common-error-step${selected === String(index) ? " is-selected" : ""}"${solved ? " disabled" : ""}><b>${index + 1}</b><span>${escapeHtml(step)}</span></button>`).join("");
+            return `<form class="training-fraction-product-form interactive-form"><p class="interactive-instruction">Apasă primul pas greșit.</p><div class="common-error-steps">${steps}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică pasul</button>'}</form>`;
+        }
+        if (item.mode === "order_steps") {
+            const chosen = String(question.answerValues.order || "").split(",").filter(value => value !== "").map(Number);
+            const card = (index, placed) => `<button type="button" data-product-step="${index}" class="fraction-step-card${placed ? " is-placed" : ""}"${solved ? " disabled" : ""}><b>${placed ? chosen.indexOf(index) + 1 : "•"}</b><span>${escapeHtml(item.steps[index])}</span></button>`;
+            const pool = item.display_order.filter(index => !chosen.includes(index)).map(index => card(index,false)).join("");
+            return `<form class="training-fraction-product-form interactive-form"><p class="interactive-instruction">Apasă pașii în ordinea corectă.</p><div class="fraction-step-pool">${pool || "Toți pașii au fost așezați."}</div><div class="fraction-step-result">${chosen.map(index => card(index,true)).join("") || "Ordinea construită va apărea aici."}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică ordinea</button>'}</form>`;
+        }
+        if (item.mode === "match") {
+            const rows = item.pairs.map((pair,index) => `<label class="fraction-match-row"><strong>${escapeHtml(pair.operation)}</strong><span>→</span><select data-lesson-key="match_${index}" aria-label="Rezultatul produsului ${index + 1}"${solved ? " disabled" : ""}><option value="">Alege rezultatul</option>${item.result_order.map(resultIndex => `<option value="${resultIndex}"${String(question.answerValues[`match_${index}`] ?? "") === String(resultIndex) ? " selected" : ""}>${escapeHtml(item.pairs[resultIndex].result)}</option>`).join("")}</select></label>`).join("");
+            return `<form class="training-fraction-product-form interactive-form"><p class="interactive-instruction">Potrivește fiecare înmulțire cu rezultatul ei ireductibil.</p><div class="fraction-match-board">${rows}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică potrivirile</button>'}</form>`;
+        }
+        if (item.mode === "mixed") {
+            return `<form class="training-fraction-product-form interactive-form"><p class="interactive-instruction">Transformă numerele mixte, înmulțește și scrie rezultatul ca număr mixt ireductibil.</p><div class="fraction-product-row"><strong>${escapeHtml(item.left_label)}</strong><b>·</b><strong>${escapeHtml(item.right_label)}</strong><b>=</b><span class="mixed-number">${lessonField(question,"whole","Partea întreagă",solved)}${inputs("mixed","Numărător fracționar","Numitor fracționar")}</span></div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică rezultatul</button>'}</form>`;
+        }
+        return `<form class="training-fraction-product-form interactive-form"><p class="interactive-instruction">Calculează fracția cerută de problemă și simplifică rezultatul.</p><div class="fraction-product-row">${product}<b>=</b>${inputs("result","Numărător rezultat","Numitor rezultat")}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică răspunsul</button>'}</form>`;
+    }
+
+    function fractionDivisionHtml(question) {
+        const item = question.interactive, solved = isSolved(question);
+        if (!question.answerValues) question.answerValues = {};
+        if (solved) Object.entries(item.answers).forEach(([key,value]) => question.answerValues[key] = String(value));
+        const inputs = (prefix, numeratorLabel = "Numărător", denominatorLabel = "Numitor") => `<span class="fraction-card">${lessonField(question,`${prefix}_numerator`,numeratorLabel,solved)}<i></i>${lessonField(question,`${prefix}_denominator`,denominatorLabel,solved)}</span>`;
+        const division = `${fractionCardHtml(item.left)}<b>:</b>${fractionCardHtml(item.right)}`;
+        if (item.mode === "reciprocal") {
+            return `<form class="training-fraction-division-form interactive-form"><p class="interactive-instruction">Schimbă între ele numărătorul și numitorul.</p><div class="fraction-product-row"><span>Inversa lui</span>${fractionCardHtml(item.right)}<b>este</b>${inputs("inverse","Numărătorul inversei","Numitorul inversei")}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică inversa</button>'}</form>`;
+        }
+        if (item.mode === "build") {
+            return `<form class="training-fraction-division-form interactive-form"><p class="interactive-instruction">Înlocuiește împărțirea cu înmulțirea prin inversa celei de-a doua fracții, apoi calculează.</p><div class="fraction-product-row">${division}<b>=</b>${fractionCardHtml(item.left)}<b>·</b>${inputs("inverse","Numărătorul inversei","Numitorul inversei")}<b>=</b>${inputs("result","Numărător final","Numitor final")}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică împărțirea</button>'}</form>`;
+        }
+        if (item.mode === "cross_cancel") {
+            const rows = item.cancellations.map((entry,index) => `<div class="product-cancel-row"><span>${entry.first}</span><span>și</span><span>${entry.second}</span><span>se simplifică prin</span>${lessonField(question,`${index}:factor`,`Factorul simplificării ${index + 1}`,solved)}<span>→</span>${lessonField(question,`${index}:first_result`,`Primul număr simplificat`,solved)}<span>și</span>${lessonField(question,`${index}:second_result`,`Al doilea număr simplificat`,solved)}</div>`).join("");
+            return `<form class="training-fraction-division-form interactive-form"><p class="interactive-instruction">Inversează a doua fracție, apoi simplifică în cruce.</p><div class="fraction-product-row">${division}<b>=</b>${fractionCardHtml(item.left)}<b>·</b>${fractionCardHtml(item.multiplier)}</div><div class="product-cancel-board">${rows}</div><div class="fraction-product-row"><span>Câtul ireductibil:</span>${inputs("result","Numărător final","Numitor final")}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică simplificările</button>'}</form>`;
+        }
+        if (item.mode === "visual") {
+            const selected = String(question.answerValues.groups ?? "");
+            const groups = item.candidates.map(value => `<button type="button" data-division-groups="${value}" class="division-group-choice${selected === String(value) ? " is-selected" : ""}"${solved ? " disabled" : ""}>${value}</button>`).join("");
+            const pieces = Array.from({length:item.piece_count}, (_,index) => `<span${index < item.filled_pieces ? ' class="is-filled"' : ""}></span>`).join("");
+            return `<form class="training-fraction-division-form interactive-form"><p class="interactive-instruction">Privește bara și alege câte grupuri complete de mărimea indicată încap.</p><div class="division-visual-info"><strong>${escapeHtml(item.dividend_label)}</strong><span>împărțit în grupuri de</span><strong>${escapeHtml(item.divisor_label)}</strong></div><div class="division-visual-strip">${pieces}</div><div class="division-group-choices">${groups}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică numărul de grupuri</button>'}</form>`;
+        }
+        if (item.mode === "missing" || item.mode === "inverse") {
+            const missingNumerator = item.editable === "denominator" ? `<b>${item.missing[0]}</b>` : lessonField(question,"missing_numerator","Numărător lipsă",solved);
+            const missingDenominator = item.editable === "numerator" ? `<b>${item.missing[1]}</b>` : lessonField(question,"missing_denominator","Numitor lipsă",solved);
+            const missing = `<span class="fraction-card">${missingNumerator}<i></i>${missingDenominator}</span>`;
+            const left = item.missing_side === "left" ? missing : fractionCardHtml(item.left), right = item.missing_side === "right" ? missing : fractionCardHtml(item.right);
+            return `<form class="training-fraction-division-form interactive-form"><p class="interactive-instruction">Completează fracția lipsă.</p><div class="fraction-product-row">${left}<b>:</b>${right}<b>=</b>${fractionCardHtml(item.result)}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică fracția</button>'}</form>`;
+        }
+        if (item.mode === "cancel_select") {
+            const selected = new Set(String(question.answerValues.selected || "").split(",").filter(Boolean));
+            const choices = item.candidates.map(candidate => `<button type="button" data-product-cancel="${escapeHtml(candidate.id)}" class="product-cancel-choice${selected.has(candidate.id) ? " is-selected" : ""}"${solved ? " disabled" : ""}>${escapeHtml(candidate.label)}</button>`).join("");
+            return `<form class="training-fraction-division-form interactive-form"><p class="interactive-instruction">După inversarea celei de-a doua fracții, selectează simplificările permise.</p><div class="fraction-product-row">${fractionCardHtml(item.left)}<b>·</b>${fractionCardHtml(item.multiplier)}</div><div class="product-cancel-choices">${choices}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică alegerile</button>'}</form>`;
+        }
+        if (item.mode === "error") {
+            const selected = String(question.answerValues.error_index ?? "");
+            const steps = item.steps.map((step,index) => `<button type="button" data-product-error="${index}" class="common-error-step${selected === String(index) ? " is-selected" : ""}"${solved ? " disabled" : ""}><b>${index + 1}</b><span>${escapeHtml(step)}</span></button>`).join("");
+            return `<form class="training-fraction-division-form interactive-form"><p class="interactive-instruction">Apasă primul pas greșit.</p><div class="common-error-steps">${steps}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică pasul</button>'}</form>`;
+        }
+        if (item.mode === "order_steps") {
+            const chosen = String(question.answerValues.order || "").split(",").filter(value => value !== "").map(Number);
+            const card = (index, placed) => `<button type="button" data-product-step="${index}" class="fraction-step-card${placed ? " is-placed" : ""}"${solved ? " disabled" : ""}><b>${placed ? chosen.indexOf(index) + 1 : "•"}</b><span>${escapeHtml(item.steps[index])}</span></button>`;
+            const pool = item.display_order.filter(index => !chosen.includes(index)).map(index => card(index,false)).join("");
+            return `<form class="training-fraction-division-form interactive-form"><p class="interactive-instruction">Apasă pașii în ordinea corectă.</p><div class="fraction-step-pool">${pool || "Toți pașii au fost așezați."}</div><div class="fraction-step-result">${chosen.map(index => card(index,true)).join("") || "Ordinea construită va apărea aici."}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică ordinea</button>'}</form>`;
+        }
+        if (item.mode === "match") {
+            const rows = item.pairs.map((pair,index) => `<label class="fraction-match-row"><strong>${escapeHtml(pair.operation)}</strong><span>→</span><select data-lesson-key="match_${index}" aria-label="Rezultatul împărțirii ${index + 1}"${solved ? " disabled" : ""}><option value="">Alege rezultatul</option>${item.result_order.map(resultIndex => `<option value="${resultIndex}"${String(question.answerValues[`match_${index}`] ?? "") === String(resultIndex) ? " selected" : ""}>${escapeHtml(item.pairs[resultIndex].result)}</option>`).join("")}</select></label>`).join("");
+            return `<form class="training-fraction-division-form interactive-form"><p class="interactive-instruction">Potrivește fiecare împărțire cu rezultatul ei ireductibil.</p><div class="fraction-match-board">${rows}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică potrivirile</button>'}</form>`;
+        }
+        if (item.mode === "mixed") {
+            return `<form class="training-fraction-division-form interactive-form"><p class="interactive-instruction">Transformă numerele mixte în fracții, calculează și scrie rezultatul ca număr mixt.</p><div class="fraction-product-row"><strong>${escapeHtml(item.left_label)}</strong><b>:</b><strong>${escapeHtml(item.right_label)}</strong><b>=</b><span class="mixed-number">${lessonField(question,"whole","Partea întreagă",solved)}${inputs("mixed","Numărător fracționar","Numitor fracționar")}</span></div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică rezultatul</button>'}</form>`;
+        }
+        return `<form class="training-fraction-division-form interactive-form"><p class="interactive-instruction">Transformă împărțirea în înmulțire și scrie rezultatul ireductibil.</p><div class="fraction-product-row">${division}<b>=</b>${inputs("result","Numărător rezultat","Numitor rezultat")}</div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică răspunsul</button>'}</form>`;
+    }
+
+    function fractionPowerHtml(question) {
+        const item = question.interactive, solved = isSolved(question);
+        if (!question.answerValues) question.answerValues = {};
+        if (solved) Object.entries(item.answers).forEach(([key,value]) => question.answerValues[key] = String(value));
+        const field = (key,label) => lessonField(question,key,label,solved);
+        const fraction = value => fractionCardHtml(value);
+        const power = (value, exponent) => `<span class="fraction-power-expression">${fraction(value)}<sup>${escapeHtml(exponent)}</sup></span>`;
+        const form = body => `<form class="training-fraction-power-form interactive-form">${body}${solved ? "" : '<button type="submit" class="btn btn-press">Verifică răspunsul</button>'}</form>`;
+        if (item.mode === "build") {
+            return form(`<p class="interactive-instruction">Ridică separat numărătorul și numitorul la putere, apoi calculează.</p><div class="fraction-power-line">${power(item.base,item.exponent)}<b>=</b><span class="fraction-card"><span>${item.base[0]}<sup>${item.exponent}</sup> = ${field("numerator_power","Puterea numărătorului")}</span><i></i><span>${item.base[1]}<sup>${item.exponent}</sup> = ${field("denominator_power","Puterea numitorului")}</span></span><b>=</b><span class="fraction-card">${field("result_numerator","Numărător rezultat")}<i></i>${field("result_denominator","Numitor rezultat")}</span></div>`);
+        }
+        if (item.mode === "expand") {
+            return form(`<p class="interactive-instruction">Scrie factorii identici care formează puterea.</p><div class="fraction-power-line">${power(item.base,item.exponent)}<b>=</b><span class="power-factor-slots">${Array.from({length:item.exponent},(_,i)=>field(`factor_${i+1}`,`Factorul ${i+1}`)).join(" · ")}</span></div><small>Scrie fiecare factor ca fracție, de exemplu 2/3.</small>`);
+        }
+        if (item.mode === "compress") {
+            return form(`<p class="interactive-instruction">Transformă produsul de factori identici într-o singură putere.</p><div class="fraction-power-line"><strong>${escapeHtml(item.product)}</strong><b>=</b><span>(</span>${field("base","Baza puterii")}<span>)</span><sup>${field("exponent","Exponentul puterii")}</sup></div><small>Scrie baza ca fracție, de exemplu 3/5.</small>`);
+        }
+        if (item.mode === "missing" || item.mode === "given_base" || item.mode === "given_exponent") {
+            return form(`<p class="interactive-instruction">Completează valoarea lipsă.</p><div class="fraction-power-given">${escapeHtml(item.expression)}</div><div class="fraction-power-fields">${item.fields.map(entry=>`<label><span>${escapeHtml(entry.label)}</span>${field(entry.key,entry.label)}</label>`).join("")}</div>`);
+        }
+        if (item.mode === "rule" || item.mode === "exponent_rule") {
+            const selected = String(question.answerValues[item.answer_key] || "");
+            const choices = item.choices.map(choice=>`<button type="button" data-power-choice-key="${escapeHtml(item.answer_key)}" data-power-choice-value="${escapeHtml(choice.value)}" class="fraction-power-choice${selected === String(choice.value) ? " is-selected" : ""}"${solved ? " disabled" : ""}>${escapeHtml(choice.label)}</button>`).join("");
+            const extra = (item.fields || []).map(entry=>`<label><span>${escapeHtml(entry.label)}</span>${field(entry.key,entry.label)}</label>`).join("");
+            return form(`<p class="interactive-instruction">${escapeHtml(item.instruction)}</p><div class="fraction-power-given">${escapeHtml(item.expression)}</div><div class="fraction-power-choices">${choices}</div><div class="fraction-power-fields">${extra}</div>`);
+        }
+        if (item.mode === "error") {
+            const selected = String(question.answerValues.error_index ?? "");
+            return form(`<p class="interactive-instruction">Apasă primul pas greșit.</p><div class="common-error-steps">${item.steps.map((step,index)=>`<button type="button" data-fraction-power-error="${index}" class="common-error-step${selected === String(index) ? " is-selected" : ""}"${solved ? " disabled" : ""}><b>${index+1}</b><span>${escapeHtml(step)}</span></button>`).join("")}</div>`);
+        }
+        if (item.mode === "order_steps") {
+            const chosen = String(question.answerValues.order || "").split(",").filter(Boolean).map(Number);
+            const card = (index,placed)=>`<button type="button" data-fraction-power-step="${index}" class="fraction-step-card${placed ? " is-placed" : ""}"${solved ? " disabled" : ""}><b>${placed ? chosen.indexOf(index)+1 : "•"}</b><span>${escapeHtml(item.steps[index])}</span></button>`;
+            return form(`<p class="interactive-instruction">Apasă pașii în ordinea corectă.</p><div class="fraction-step-pool">${item.display_order.filter(index=>!chosen.includes(index)).map(index=>card(index,false)).join("") || "Toți pașii au fost așezați."}</div><div class="fraction-step-result">${chosen.map(index=>card(index,true)).join("") || "Ordinea construită va apărea aici."}</div>`);
+        }
+        if (item.mode === "match") {
+            return form(`<p class="interactive-instruction">Potrivește fiecare expresie cu forma ei echivalentă.</p><div class="fraction-match-board">${item.pairs.map((pair,index)=>`<label class="fraction-match-row"><strong>${escapeHtml(pair.left)}</strong><span>→</span><select data-lesson-key="match_${index}" aria-label="Potrivirea ${index+1}"${solved ? " disabled" : ""}><option value="">Alege</option>${item.result_order.map(resultIndex=>`<option value="${resultIndex}"${String(question.answerValues[`match_${index}`] ?? "") === String(resultIndex) ? " selected" : ""}>${escapeHtml(item.pairs[resultIndex].right)}</option>`).join("")}</select></label>`).join("")}</div>`);
+        }
+        if (item.mode === "visual") {
+            const selected = String(question.answerValues.selected || "");
+            return form(`<p class="interactive-instruction">Fiecare etapă împarte din nou partea aleasă. Selectează fracția finală.</p><div class="fraction-power-visual"><div class="fraction-power-grid" style="--power-cells:${item.cell_count}">${Array.from({length:item.cell_count},(_,i)=>`<span${i < item.filled_cells ? ' class="is-filled"' : ""}></span>`).join("")}</div><strong>${escapeHtml(item.caption)}</strong></div><div class="fraction-power-choices">${item.choices.map(choice=>`<button type="button" data-power-choice-key="selected" data-power-choice-value="${escapeHtml(choice)}" class="fraction-power-choice${selected === String(choice) ? " is-selected" : ""}"${solved ? " disabled" : ""}>${escapeHtml(choice)}</button>`).join("")}</div>`);
+        }
+        return form(`<p class="interactive-instruction">Rezolvă problema și scrie fracția ireductibilă.</p><div class="fraction-power-line">${power(item.base,item.exponent)}<b>=</b><span class="fraction-card">${field("result_numerator","Numărător rezultat")}<i></i>${field("result_denominator","Numitor rezultat")}</span></div>`);
+    }
+
+    function fractionPercentHtml(question) {
+        const item = question.interactive, solved = isSolved(question);
+        if (!question.answerValues) question.answerValues = {};
+        if (solved) Object.entries(item.answers).forEach(([key,value]) => question.answerValues[key] = String(value));
+        const field = entry => `<label><span>${escapeHtml(entry.label)}</span>${lessonField(question,entry.key,entry.label,solved,true)}</label>`;
+        const form = body => `<form class="training-fraction-percent-form interactive-form">${body}${solved ? "" : '<button type="submit" class="btn btn-press">Verifică răspunsul</button>'}</form>`;
+        if (["natural","fraction","unit_path","missing","convert","price","problem"].includes(item.mode)) {
+            const path = item.path ? `<div class="percent-unit-path">${item.path.map((node,index)=>`<span><b>${escapeHtml(node.top)}</b><small>${escapeHtml(node.bottom)}</small></span>${index < item.path.length-1 ? "<i>→</i>" : ""}`).join("")}</div>` : "";
+            const machine = item.mode === "price" ? `<div class="percent-price-machine"><span>Preț inițial<strong>${escapeHtml(item.initial)}</strong></span><i>→</i><span>${escapeHtml(item.change_label)}</span><i>→</i><span>Preț final</span></div>` : "";
+            return form(`<p class="interactive-instruction">${escapeHtml(item.instruction)}</p><div class="fraction-power-given">${escapeHtml(item.expression)}</div>${path}${machine}<div class="fraction-power-fields">${item.fields.map(field).join("")}</div>`);
+        }
+        if (item.mode === "grid") {
+            const selected = Number(question.answerValues.selected || 0);
+            const cells = Array.from({length:100},(_,index)=>`<button type="button" data-percent-grid="${index+1}" class="percent-hundred-cell${index < selected ? " is-filled" : ""}" aria-label="${index+1}%"${solved ? " disabled" : ""}></button>`).join("");
+            return form(`<p class="interactive-instruction">Apasă pătrățelul corespunzător procentului; vor fi colorate toate pătrățelele până la el.</p><div class="percent-hundred-grid">${cells}</div><div class="percent-grid-readout"><strong>${selected}%</strong><span>= ${selected}/100</span></div>`);
+        }
+        if (item.mode === "slider") {
+            const value = Number(question.answerValues.percent ?? item.initial ?? 0);
+            return form(`<p class="interactive-instruction">Mută cursorul la procentul cerut.</p><div class="percent-slider-card"><strong data-percent-value>${value}%</strong><input type="range" min="0" max="100" step="${item.step || 1}" value="${value}" data-percent-slider${solved ? " disabled" : ""}><div><span>0%</span><span>50%</span><span>100%</span></div></div>`);
+        }
+        if (item.mode === "table") {
+            return form(`<p class="interactive-instruction">Completează valorile; suma lor trebuie să refacă totalul.</p><div class="percent-table-wrap"><table class="percent-table"><thead><tr><th>Categorie</th><th>Procent</th><th>Valoare</th></tr></thead><tbody>${item.rows.map((row,index)=>`<tr><th>${escapeHtml(row.label)}</th><td>${row.percent}%</td><td>${lessonField(question,`value_${index}`,`Valoarea pentru ${row.label}`,solved,true)}</td></tr>`).join("")}</tbody><tfoot><tr><th>Total</th><td>100%</td><td>${escapeHtml(item.total)}</td></tr></tfoot></table></div>`);
+        }
+        if (item.mode === "error") {
+            const selected = String(question.answerValues.error_index ?? "");
+            return form(`<p class="interactive-instruction">Apasă primul pas greșit.</p><div class="common-error-steps">${item.steps.map((step,index)=>`<button type="button" data-percent-error="${index}" class="common-error-step${selected === String(index) ? " is-selected" : ""}"${solved ? " disabled" : ""}><b>${index+1}</b><span>${escapeHtml(step)}</span></button>`).join("")}</div>`);
+        }
+        if (item.mode === "order_steps") {
+            const chosen = String(question.answerValues.order || "").split(",").filter(Boolean).map(Number);
+            const card = (index,placed)=>`<button type="button" data-percent-step="${index}" class="fraction-step-card${placed ? " is-placed" : ""}"${solved ? " disabled" : ""}><b>${placed ? chosen.indexOf(index)+1 : "•"}</b><span>${escapeHtml(item.steps[index])}</span></button>`;
+            return form(`<p class="interactive-instruction">Apasă pașii în ordinea corectă.</p><div class="fraction-step-pool">${item.display_order.filter(index=>!chosen.includes(index)).map(index=>card(index,false)).join("") || "Toți pașii au fost așezați."}</div><div class="fraction-step-result">${chosen.map(index=>card(index,true)).join("") || "Ordinea construită va apărea aici."}</div>`);
+        }
+        if (item.mode === "match") {
+            return form(`<p class="interactive-instruction">Potrivește fiecare situație cu schema sau răspunsul corect.</p><div class="fraction-match-board">${item.pairs.map((pair,index)=>`<label class="fraction-match-row"><strong>${escapeHtml(pair.left)}</strong><span>→</span><select data-lesson-key="match_${index}" aria-label="Potrivirea ${index+1}"${solved ? " disabled" : ""}><option value="">Alege</option>${item.result_order.map(resultIndex=>`<option value="${resultIndex}"${String(question.answerValues[`match_${index}`] ?? "") === String(resultIndex) ? " selected" : ""}>${escapeHtml(item.pairs[resultIndex].right)}</option>`).join("")}</select></label>`).join("")}</div>`);
+        }
+        return form("");
     }
 
     function answerHtml(question, selectedOptionId, showWrongSelection) {
@@ -1450,6 +2037,8 @@
                 return reverseMethodHtml(question);
             case "false_hypothesis_method":
                 return falseHypothesisHtml(question);
+            case "geometry_canvas":
+                return geometryCanvasHtml(question);
             case "operation_sequence":
                 return operationSequenceHtml(question);
             case "operation_workbench":
@@ -1468,6 +2057,10 @@
                 return primeWorkbenchHtml(question);
             case "decimal_workbench":
                 return decimalWorkbenchHtml(question);
+            case "statistics_chart":
+                return statisticsChartHtml(question);
+            case "algebra_workbench":
+                return algebraWorkbenchHtml(question);
             case "fraction_visual":
                 return fractionVisualHtml(question);
             case "fraction_domino":
@@ -1486,6 +2079,14 @@
                 return lcmWorkbenchHtml(question);
             case "common_denominator":
                 return commonDenominatorHtml(question);
+            case "fraction_product":
+                return fractionProductHtml(question);
+            case "fraction_division":
+                return fractionDivisionHtml(question);
+            case "fraction_power":
+                return fractionPowerHtml(question);
+            case "fraction_percent":
+                return fractionPercentHtml(question);
             default:
                 return optionsHtml(question, selectedOptionId, showWrongSelection);
         }
@@ -1612,8 +2213,9 @@
         } else if (["column_addition", "column_multiplication", "column_subtraction"].includes(question.type)) {
             body.append("result_digits", answer.resultDigits);
             body.append("borrow_columns", JSON.stringify(answer.borrowColumns));
-        } else if (["missing_digits", "input_output", "factor_builder", "factor_match", "power_builder", "power_match", "power_table", "power_cycle", "power_square", "power_rule_chain", "base_values", "base_match", "binary_toggle", "unit_reduction", "comparison_method", "figurative_method", "reverse_method", "false_hypothesis_method", "operation_workbench", "divisibility_values", "prime_workbench", "decimal_workbench", "fraction_visual", "gcd_workbench", "fraction_scale", "fraction_reduce_path", "lcm_workbench", "common_denominator"].includes(question.type)) {
-            body.append("values", JSON.stringify(answer.values));
+        } else if (["missing_digits", "input_output", "factor_builder", "factor_match", "power_builder", "power_match", "power_table", "power_cycle", "power_square", "power_rule_chain", "base_values", "base_match", "binary_toggle", "unit_reduction", "comparison_method", "figurative_method", "reverse_method", "false_hypothesis_method", "geometry_canvas", "operation_workbench", "divisibility_values", "prime_workbench", "decimal_workbench", "statistics_chart", "algebra_workbench", "fraction_visual", "gcd_workbench", "fraction_scale", "fraction_reduce_path", "lcm_workbench", "common_denominator", "fraction_product", "fraction_division", "fraction_power", "fraction_percent"].includes(question.type)) {
+            const values = answer.values ?? question.answerValues ?? {};
+            body.append("values", JSON.stringify(values));
         } else if (question.type === "divisibility_select") {
             body.append("selected_ids", JSON.stringify(answer.selectedIds));
         } else if (question.type === "divisibility_sort") {
@@ -1743,6 +2345,8 @@
         if (reverseForm) { bindReverseForm(reverseForm); return; }
         const hypothesisForm = cardEl?.querySelector(".training-hypothesis-form");
         if (hypothesisForm) { bindHypothesisForm(hypothesisForm); return; }
+        const geometryForm = cardEl?.querySelector(".training-geometry-form");
+        if (geometryForm) { bindGeometryForm(geometryForm); return; }
         const operationSequenceForm = cardEl?.querySelector(".training-operation-sequence-form");
         if (operationSequenceForm) { bindOperationSequenceForm(operationSequenceForm); return; }
         const operationWorkbenchForm = cardEl?.querySelector(".training-operation-workbench-form");
@@ -1759,6 +2363,10 @@
         if (primeWorkbenchForm) { bindPrimeWorkbenchForm(primeWorkbenchForm); return; }
         const decimalWorkbenchForm = cardEl?.querySelector(".training-decimal-workbench-form");
         if (decimalWorkbenchForm) { bindDecimalWorkbenchForm(decimalWorkbenchForm); return; }
+        const statisticsForm = cardEl?.querySelector(".training-statistics-form");
+        if (statisticsForm) { bindStatisticsForm(statisticsForm); return; }
+        const algebraForm = cardEl?.querySelector(".training-algebra-form");
+        if (algebraForm) { bindAlgebraForm(algebraForm); return; }
         const fractionVisualForm = cardEl?.querySelector(".training-fraction-visual-form");
         if (fractionVisualForm) { bindFractionVisualForm(fractionVisualForm); return; }
         const fractionDominoForm = cardEl?.querySelector(".training-fraction-domino-form");
@@ -1777,6 +2385,14 @@
         if (lcmForm) { bindLessonValuesForm(lcmForm); return; }
         const commonDenominatorForm = cardEl?.querySelector(".training-common-denominator-form");
         if (commonDenominatorForm) { bindLessonValuesForm(commonDenominatorForm); return; }
+        const fractionProductForm = cardEl?.querySelector(".training-fraction-product-form");
+        if (fractionProductForm) { bindFractionProductForm(fractionProductForm); return; }
+        const fractionDivisionForm = cardEl?.querySelector(".training-fraction-division-form");
+        if (fractionDivisionForm) { bindFractionProductForm(fractionDivisionForm); return; }
+        const fractionPowerForm = cardEl?.querySelector(".training-fraction-power-form");
+        if (fractionPowerForm) { bindFractionPowerForm(fractionPowerForm); return; }
+        const fractionPercentForm = cardEl?.querySelector(".training-fraction-percent-form");
+        if (fractionPercentForm) { bindFractionPercentForm(fractionPercentForm); return; }
         const form = cardEl?.querySelector(".training-options-form");
         if (!form) {
             return;
@@ -1939,7 +2555,7 @@
         if (isSolved(question)) return;
         const quotient = form.querySelector(".division-quotient-input");
         const remainderInputs = [...form.querySelectorAll("[data-remainder-index]")];
-        quotient.addEventListener("input", () => { keepOnlyDigits(quotient); question.divisionAnswer.quotient = quotient.value; });
+        quotient.addEventListener("input", () => { quotient.value = quotient.value.replace(/[^0-9,.]/g, ""); question.divisionAnswer.quotient = quotient.value; });
         remainderInputs.forEach(input => input.addEventListener("input", () => { keepOnlyDigits(input); question.divisionAnswer.remainders[Number(input.dataset.remainderIndex)] = input.value; }));
         form.addEventListener("submit", async event => { event.preventDefault(); if (!quotient.value || remainderInputs.some(input => !input.value)) return; await submitInteractiveAnswer(question, question.divisionAnswer); });
     }
@@ -2134,6 +2750,83 @@
         form.querySelectorAll("[data-hypothesis-key]").forEach(input=>input.addEventListener("input",()=>{input.value=input.value.replace(/[^\d-]/g,"");question.answerValues[input.dataset.hypothesisKey]=input.value;}));
         form.querySelectorAll("[data-hypothesis-choice-key]").forEach(button=>button.addEventListener("click",()=>{question.answerValues[button.dataset.hypothesisChoiceKey]=button.dataset.hypothesisChoice;renderQuestion(null,false);}));
         form.addEventListener("submit",async event=>{event.preventDefault();const required=Object.keys(question.interactive.answers);if(required.some(key=>question.answerValues[key]===undefined||question.answerValues[key]===""))return;await submitInteractiveAnswer(question,{values:question.answerValues});});
+    }
+
+    function bindGeometryForm(form){
+        const question=data.questions[currentIndex];if(isSolved(question))return;
+        form.querySelectorAll("[data-geometry-key]").forEach(input=>input.addEventListener("input",()=>{question.answerValues[input.dataset.geometryKey]=input.value.trim();}));
+        form.querySelectorAll("[data-geometry-range]").forEach(input=>{
+            input.addEventListener("input",()=>{question.answerValues[input.dataset.geometryRange]=input.value;const output=form.querySelector(`[data-geometry-output="${input.dataset.geometryRange}"]`);if(output)output.textContent=input.value;});
+            input.addEventListener("change",()=>renderQuestion(null,false));
+        });
+        form.querySelectorAll("[data-geometry-choice-key]").forEach(button=>button.addEventListener("click",()=>{question.answerValues[button.dataset.geometryChoiceKey]=button.dataset.geometryChoice;renderQuestion(null,false);}));
+        form.querySelectorAll("[data-geometry-select]").forEach(select=>select.addEventListener("change",()=>{question.answerValues[select.dataset.geometrySelect]=select.value;}));
+        form.querySelectorAll("[data-geometry-multi]").forEach(button=>button.addEventListener("click",()=>{
+            const key=button.dataset.geometryMulti,value=button.dataset.geometryValue,current=new Set(String(question.answerValues[key]||"").split(",").filter(Boolean));
+            if(current.has(value))current.delete(value);else current.add(value);
+            question.answerValues[key]=[...current].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true})).join(",");renderQuestion(null,false);
+        }));
+        form.querySelectorAll("[data-geometry-condition]").forEach(button=>button.addEventListener("click",()=>{
+            const current=new Set(String(question.geometryConditions||"").split(",").filter(Boolean)),value=button.dataset.geometryCondition;
+            if(current.has(value))current.delete(value);else current.add(value);question.geometryConditions=[...current].sort().join(",");
+            if(current.size===question.interactive.conditions.length)question.answerValues.conditions=question.interactive.answers.conditions;else delete question.answerValues.conditions;renderQuestion(null,false);
+        }));
+        form.querySelectorAll("[data-geometry-pick-point]").forEach(point=>point.addEventListener("click",()=>{
+            const name=point.dataset.geometryPickPoint;
+            if(!question.answerValues.first||question.answerValues.second){question.answerValues.first=name;delete question.answerValues.second;}
+            else if(question.answerValues.first!==name)question.answerValues.second=name;
+            renderQuestion(null,false);
+        }));
+        form.querySelectorAll("[data-geometry-drag-value]").forEach(tile=>{
+            tile.addEventListener("click",()=>{question.geometryPalette=tile.dataset.geometryDragValue;renderQuestion(null,false);});
+            tile.addEventListener("dragstart",event=>{event.dataTransfer.setData("text/plain",tile.dataset.geometryDragValue);});
+        });
+        form.querySelectorAll("[data-geometry-drop-slot]").forEach(slot=>{
+            const place=value=>{if(!value)return;question.answerValues[slot.dataset.geometryDropSlot]=value;question.geometryPalette="";renderQuestion(null,false);};
+            slot.addEventListener("dragover",event=>event.preventDefault());
+            slot.addEventListener("drop",event=>{event.preventDefault();place(event.dataTransfer.getData("text/plain"));});
+            slot.addEventListener("click",()=>place(question.geometryPalette));
+        });
+        form.querySelectorAll("[data-geometry-edge-point]").forEach(point=>point.addEventListener("click",()=>{
+            const name=point.dataset.geometryEdgePoint;
+            if(!question.geometryEdgeStart){question.geometryEdgeStart=name;renderQuestion(null,false);return;}
+            if(question.geometryEdgeStart===name){question.geometryEdgeStart="";renderQuestion(null,false);return;}
+            const edge=[question.geometryEdgeStart,name].sort().join(""),edges=new Set(String(question.answerValues.edges||"").split(",").filter(Boolean));
+            if(edges.has(edge))edges.delete(edge);else edges.add(edge);
+            question.answerValues.edges=[...edges].sort().join(",");question.geometryEdgeStart="";renderQuestion(null,false);
+        }));
+        form.querySelectorAll("[data-geometry-point]").forEach(point=>{
+            point.addEventListener("pointerdown",event=>{
+                event.preventDefault();point.setPointerCapture(event.pointerId);point.classList.add("is-dragging");
+                const svg=point.closest("svg");
+                const move=moveEvent=>{const svgPoint=svg.createSVGPoint();svgPoint.x=moveEvent.clientX;svgPoint.y=moveEvent.clientY;const local=svgPoint.matrixTransform(svg.getScreenCTM().inverse()),cx=Math.max(15,Math.min(425,Math.round(local.x))),cy=Math.max(15,Math.min(165,Math.round(local.y)));point.setAttribute("transform",`translate(${cx} ${cy})`);question.answerValues[point.dataset.geometryPoint]=`${cx},${cy}`;};
+                const up=()=>{
+                    const mode=question.interactive.mode,target=(question.interactive.points||[]).find(candidate=>candidate.name===point.dataset.geometryPoint);
+                    if(["place_points","reconstruct_model","full_geometry_puzzle"].includes(mode)&&target){
+                        const [x,y]=String(question.answerValues[point.dataset.geometryPoint]).split(",").map(Number);
+                        if(Math.hypot(x-target.x,y-target.y)<=62){
+                            question.answerValues[point.dataset.geometryPoint]=`${target.x},${target.y}`;
+                            point.setAttribute("transform",`translate(${target.x} ${target.y})`);
+                            point.classList.add("is-snapped");
+                            setTimeout(()=>point.classList.remove("is-snapped"),350);
+                        }
+                    }else if(["point_on_line","repair_membership","move_to_collinear"].includes(mode)&&question.interactive.answers.membership==="on"){
+                        const [x,y]=String(question.answerValues[point.dataset.geometryPoint]).split(",").map(Number),line=question.interactive.line||{a:0,b:1,c:-90};
+                        const a=Number(line.a)||0,b=Number(line.b)||0,c=Number(line.c)||0,denominator=a*a+b*b||1,signed=(a*x+b*y+c)/denominator;
+                        if(Math.abs(a*x+b*y+c)/Math.sqrt(denominator)<=48){
+                            const px=Math.round(x-a*signed),py=Math.round(y-b*signed);
+                            question.answerValues[point.dataset.geometryPoint]=`${px},${py}`;
+                            point.setAttribute("transform",`translate(${px} ${py})`);
+                            point.classList.add("is-snapped");
+                            setTimeout(()=>point.classList.remove("is-snapped"),350);
+                        }
+                    }
+                    point.classList.remove("is-dragging");point.removeEventListener("pointermove",move);point.removeEventListener("pointerup",up);
+                };
+                point.addEventListener("pointermove",move);point.addEventListener("pointerup",up);
+            });
+        });
+        form.addEventListener("submit",async event=>{event.preventDefault();const required=Object.keys(question.interactive.answers);if(["place_noncollinear","place_collinear","coincidence","point_on_line","repair_membership","move_to_collinear","plane_points","min_lines","max_lines","arrange_line_count"].includes(question.interactive.mode)){const names=(question.interactive.points||[]).map(point=>point.name);if(names.some(key=>question.answerValues[key]===undefined))return;}else if(required.some(key=>question.answerValues[key]===undefined||question.answerValues[key]===""))return;await submitInteractiveAnswer(question,{values:question.answerValues});});
     }
 
     function bindSingleValueForm(form) {
@@ -2419,7 +3112,7 @@
         const question = data.questions[currentIndex], item = question.interactive;
         if (isSolved(question)) return;
         form.querySelectorAll("[data-decimal-key]").forEach(input => input.addEventListener("input", () => {
-            input.value = input.value.replace(/[^0-9,.]/g, "");
+            input.value = input.value.replace(/[^0-9,./]/g, "");
             question.answerValues[input.dataset.decimalKey] = input.value;
         }));
         form.querySelectorAll("[data-comma-place]").forEach(button => button.addEventListener("click", () => {
@@ -2430,9 +3123,98 @@
             question.answerValues.filled = button.dataset.vesselLevel;
             renderQuestion(null, false);
         }));
+        form.querySelectorAll("[data-decimal-class-key]").forEach(button => button.addEventListener("click", () => {
+            question.answerValues[button.dataset.decimalClassKey] = button.dataset.decimalClassValue;
+            form.querySelectorAll(`[data-decimal-class-key="${button.dataset.decimalClassKey}"]`).forEach(choice => choice.classList.toggle("is-selected", choice === button));
+        }));
+        form.querySelectorAll("[data-decimal-choice-key]").forEach(button => button.addEventListener("click", () => {
+            question.answerValues[button.dataset.decimalChoiceKey] = button.dataset.decimalChoiceValue;
+            form.querySelectorAll(`[data-decimal-choice-key="${button.dataset.decimalChoiceKey}"]`).forEach(choice => choice.classList.toggle("is-selected", choice === button));
+        }));
+        const averageRange = form.querySelector("[data-average-range]");
+        if (averageRange) averageRange.addEventListener("input", () => {
+            question.answerValues.missing = averageRange.value.replace(".", ",");
+            form.querySelector("[data-average-value]").textContent = question.answerValues.missing;
+        });
         form.addEventListener("submit", async event => {
             event.preventDefault();
             if (Object.keys(item.answers).some(key => question.answerValues[key] === undefined || String(question.answerValues[key]).trim() === "")) return;
+            await submitInteractiveAnswer(question, {values: question.answerValues});
+        });
+    }
+
+    function bindStatisticsForm(form) {
+        const question=data.questions[currentIndex], item=question.interactive; if(isSolved(question))return;
+        form.querySelectorAll("[data-stat-key]").forEach(input=>input.addEventListener("input",()=>{input.value=input.value.replace(/[^0-9,.]/g,"");question.answerValues[input.dataset.statKey]=input.value;}));
+        form.querySelectorAll("[data-stat-choice]").forEach(mark=>{const choose=()=>{question.answerValues.selected=mark.dataset.statChoice;renderQuestion(null,false);};mark.addEventListener("click",choose);mark.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();choose();}});});
+        form.querySelectorAll("[data-stat-range]").forEach(input=>input.addEventListener("input",()=>{question.answerValues[input.dataset.statRange]=input.value;renderQuestion(null,false);}));
+        form.addEventListener("submit",async event=>{event.preventDefault();const required=Object.keys(item.answers);if(required.some(key=>question.answerValues[key]===undefined||String(question.answerValues[key]).trim()===""))return;await submitInteractiveAnswer(question,{values:question.answerValues});});
+    }
+
+    function bindAlgebraForm(form) {
+        const question = data.questions[currentIndex], item = question.interactive;
+        if (isSolved(question)) return;
+        const controls = [...form.querySelectorAll("[data-algebra-key]")];
+        const rememberActive = control => {
+            question.algebraActiveKey = control.dataset.algebraKey;
+        };
+        controls.forEach(control => {
+            const update = () => { question.answerValues[control.dataset.algebraKey] = control.value; };
+            control.addEventListener(control.tagName === "SELECT" ? "change" : "input", update);
+            if (control.tagName === "INPUT") {
+                control.addEventListener("focus", () => rememberActive(control));
+                control.addEventListener("click", () => rememberActive(control));
+            }
+        });
+        const textControls = controls.filter(control => control.tagName === "INPUT");
+        const activeInput = () => textControls.find(control => control.dataset.algebraKey === question.algebraActiveKey) || textControls[0];
+        const updateFromKeyboard = (input, value, cursor) => {
+            input.value = value;
+            question.answerValues[input.dataset.algebraKey] = value;
+            question.algebraActiveKey = input.dataset.algebraKey;
+            input.focus({preventScroll: true});
+            input.setSelectionRange(cursor, cursor);
+        };
+        form.querySelectorAll("[data-math-key]").forEach(button => button.addEventListener("click", () => {
+            const input = activeInput();
+            if (!input) return;
+            const start = input.selectionStart ?? input.value.length, end = input.selectionEnd ?? start;
+            const symbol = button.dataset.mathKey;
+            updateFromKeyboard(input, input.value.slice(0, start) + symbol + input.value.slice(end), start + symbol.length);
+        }));
+        form.querySelectorAll("[data-math-action]").forEach(button => button.addEventListener("click", () => {
+            const input = activeInput();
+            if (!input) return;
+            const start = input.selectionStart ?? input.value.length, end = input.selectionEnd ?? start;
+            if (button.dataset.mathAction === "clear") return updateFromKeyboard(input, "", 0);
+            if (button.dataset.mathAction === "left") return updateFromKeyboard(input, input.value, Math.max(0, start - 1));
+            if (button.dataset.mathAction === "right") return updateFromKeyboard(input, input.value, Math.min(input.value.length, end + 1));
+            const from = start === end ? Math.max(0, start - 1) : start;
+            updateFromKeyboard(input, input.value.slice(0, from) + input.value.slice(end), from);
+        }));
+        form.querySelectorAll("[data-algebra-choice]").forEach(button => button.addEventListener("click", () => {
+            question.answerValues.choice = button.dataset.algebraChoice;
+            renderQuestion(null, false);
+        }));
+        form.querySelectorAll("[data-algebra-error]").forEach(button => button.addEventListener("click", () => {
+            question.answerValues.error = button.dataset.algebraError;
+            renderQuestion(null, false);
+        }));
+        form.querySelectorAll("[data-algebra-verdict]").forEach(button => button.addEventListener("click", () => {
+            question.answerValues.verdict = button.dataset.algebraVerdict;
+            renderQuestion(null, false);
+        }));
+        form.querySelectorAll("[data-algebra-piece]").forEach(button => button.addEventListener("click", () => {
+            const selected = String(question.answerValues.pieces || "").split(",").filter(Boolean).map(Number);
+            const index = Number(button.dataset.algebraPiece), position = selected.indexOf(index);
+            if (position >= 0) selected.splice(position, 1); else selected.push(index);
+            question.answerValues.pieces = selected.join(",");
+            renderQuestion(null, false);
+        }));
+        form.addEventListener("submit", async event => {
+            event.preventDefault();
+            const required = Object.keys(item.answers);
+            if (required.some(key => question.answerValues[key] === undefined || String(question.answerValues[key]).trim() === "")) return;
             await submitInteractiveAnswer(question, {values: question.answerValues});
         });
     }
@@ -2537,6 +3319,9 @@
             input.value = input.value.replace(/[^0-9, ]/g, "");
             question.answerValues[input.dataset.lessonKey] = input.value;
         }));
+        form.querySelectorAll("select[data-lesson-key]").forEach(select => select.addEventListener("change", () => {
+            question.answerValues[select.dataset.lessonKey] = select.value;
+        }));
         form.querySelectorAll("[data-gcd-choice]").forEach(button => button.addEventListener("click", () => {
             const selected = new Set(String(question.answerValues.common || "").split(",").filter(Boolean));
             const value = button.dataset.gcdChoice;
@@ -2551,10 +3336,143 @@
             question.answerValues.common = [...selected].map(Number).sort((a,b) => a-b).join(",");
             renderQuestion(null, false);
         }));
+        form.querySelectorAll("[data-common-error]").forEach(button => button.addEventListener("click", () => {
+            question.answerValues.error_index = button.dataset.commonError;
+            renderQuestion(null, false);
+        }));
+        form.querySelectorAll("[data-fraction-operation]").forEach(button => button.addEventListener("click", () => {
+            question.answerValues.operator = button.dataset.fractionOperation;
+            renderQuestion(null, false);
+        }));
+        form.querySelectorAll("[data-fraction-step]").forEach(button => button.addEventListener("click", () => {
+            const index = Number(button.dataset.fractionStep);
+            const order = String(question.answerValues.order || "").split(",").filter(value => value !== "").map(Number);
+            const position = order.indexOf(index);
+            if (position >= 0) order.splice(position, 1); else order.push(index);
+            question.answerValues.order = order.join(",");
+            renderQuestion(null, false);
+        }));
         form.addEventListener("submit", async event => {
             event.preventDefault();
             if ([...form.querySelectorAll("[data-lesson-key]")].some(input => !input.value)) return;
+            if (Object.keys(question.interactive.answers).some(key => question.answerValues[key] === undefined || String(question.answerValues[key]).trim() === "")) return;
             await submitInteractiveAnswer(question, {values: question.answerValues});
+        });
+    }
+
+    function bindFractionProductForm(form) {
+        const question = data.questions[currentIndex];
+        if (isSolved(question)) return;
+        form.querySelectorAll("[data-lesson-key]").forEach(input => {
+            const save = () => {
+                input.value = input.value.replace(/[^0-9, ]/g, "");
+                question.answerValues[input.dataset.lessonKey] = input.value;
+            };
+            input.addEventListener("input", save);
+            input.addEventListener("change", save);
+        });
+        form.querySelectorAll("[data-product-cell]").forEach(button => button.addEventListener("click", () => {
+            const index = Number(button.dataset.productCell);
+            const selected = String(question.answerValues.selected || "").split(",").filter(Boolean).map(Number);
+            const position = selected.indexOf(index);
+            if (position >= 0) selected.splice(position, 1); else selected.push(index);
+            question.answerValues.selected = selected.sort((a,b) => a-b).join(",");
+            renderQuestion(null, false);
+        }));
+        form.querySelectorAll("[data-product-cancel]").forEach(button => button.addEventListener("click", () => {
+            const id = button.dataset.productCancel;
+            const selected = String(question.answerValues.selected || "").split(",").filter(Boolean);
+            const position = selected.indexOf(id);
+            if (position >= 0) selected.splice(position, 1); else selected.push(id);
+            question.answerValues.selected = selected.sort().join(",");
+            renderQuestion(null, false);
+        }));
+        form.querySelectorAll("[data-division-groups]").forEach(button => button.addEventListener("click", () => {
+            question.answerValues.groups = button.dataset.divisionGroups;
+            renderQuestion(null, false);
+        }));
+        form.querySelectorAll("[data-product-error]").forEach(button => button.addEventListener("click", () => {
+            question.answerValues.error_index = button.dataset.productError;
+            renderQuestion(null, false);
+        }));
+        form.querySelectorAll("[data-product-step]").forEach(button => button.addEventListener("click", () => {
+            const index = Number(button.dataset.productStep);
+            const order = String(question.answerValues.order || "").split(",").filter(value => value !== "").map(Number);
+            const position = order.indexOf(index);
+            if (position >= 0) order.splice(position, 1); else order.push(index);
+            question.answerValues.order = order.join(",");
+            renderQuestion(null, false);
+        }));
+        form.addEventListener("submit", async event => {
+            event.preventDefault();
+            if ([...form.querySelectorAll("[data-lesson-key]")].some(input => !input.value)) return;
+            if (Object.keys(question.interactive.answers).some(key => question.answerValues[key] === undefined || String(question.answerValues[key]).trim() === "")) return;
+            await submitInteractiveAnswer(question, {values: question.answerValues});
+        });
+    }
+
+    function bindFractionPowerForm(form) {
+        const question = data.questions[currentIndex];
+        if (isSolved(question)) return;
+        form.querySelectorAll("[data-lesson-key]").forEach(input => {
+            const save = () => { question.answerValues[input.dataset.lessonKey] = input.value.trim(); };
+            input.addEventListener("input", save);
+            input.addEventListener("change", save);
+        });
+        form.querySelectorAll("[data-power-choice-key]").forEach(button => button.addEventListener("click", () => {
+            question.answerValues[button.dataset.powerChoiceKey] = button.dataset.powerChoiceValue;
+            renderQuestion(null, false);
+        }));
+        form.querySelectorAll("[data-fraction-power-error]").forEach(button => button.addEventListener("click", () => {
+            question.answerValues.error_index = button.dataset.fractionPowerError;
+            renderQuestion(null, false);
+        }));
+        form.querySelectorAll("[data-fraction-power-step]").forEach(button => button.addEventListener("click", () => {
+            const index = Number(button.dataset.fractionPowerStep);
+            const order = String(question.answerValues.order || "").split(",").filter(Boolean).map(Number);
+            const position = order.indexOf(index);
+            if (position >= 0) order.splice(position,1); else order.push(index);
+            question.answerValues.order = order.join(",");
+            renderQuestion(null,false);
+        }));
+        form.addEventListener("submit", async event => {
+            event.preventDefault();
+            if ([...form.querySelectorAll("[data-lesson-key]")].some(input => !input.value.trim())) return;
+            if (Object.keys(question.interactive.answers).some(key => question.answerValues[key] === undefined || String(question.answerValues[key]).trim() === "")) return;
+            await submitInteractiveAnswer(question,{values:question.answerValues});
+        });
+    }
+
+    function bindFractionPercentForm(form) {
+        const question = data.questions[currentIndex];
+        if (isSolved(question)) return;
+        form.querySelectorAll("[data-lesson-key]").forEach(input => {
+            const save = () => { question.answerValues[input.dataset.lessonKey] = input.value.trim(); };
+            input.addEventListener("input",save); input.addEventListener("change",save);
+        });
+        form.querySelectorAll("[data-percent-grid]").forEach(button => button.addEventListener("click",()=>{
+            question.answerValues.selected = button.dataset.percentGrid;
+            renderQuestion(null,false);
+        }));
+        const slider = form.querySelector("[data-percent-slider]");
+        if (slider) slider.addEventListener("input",()=>{
+            question.answerValues.percent = slider.value;
+            const display = form.querySelector("[data-percent-value]");
+            if (display) display.textContent = `${slider.value}%`;
+        });
+        form.querySelectorAll("[data-percent-error]").forEach(button=>button.addEventListener("click",()=>{
+            question.answerValues.error_index = button.dataset.percentError; renderQuestion(null,false);
+        }));
+        form.querySelectorAll("[data-percent-step]").forEach(button=>button.addEventListener("click",()=>{
+            const index=Number(button.dataset.percentStep), order=String(question.answerValues.order||"").split(",").filter(Boolean).map(Number), position=order.indexOf(index);
+            if(position>=0) order.splice(position,1); else order.push(index);
+            question.answerValues.order=order.join(","); renderQuestion(null,false);
+        }));
+        form.addEventListener("submit",async event=>{
+            event.preventDefault();
+            if([...form.querySelectorAll("[data-lesson-key]")].some(input=>!input.value.trim())) return;
+            if(Object.keys(question.interactive.answers).some(key=>question.answerValues[key]===undefined||String(question.answerValues[key]).trim()==="")) return;
+            await submitInteractiveAnswer(question,{values:question.answerValues});
         });
     }
 

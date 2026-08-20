@@ -1,6 +1,1565 @@
 {
   "title": "Probleme de organizare a datelor. Frecvență. Grafice cu bare. Grafice cu linii. Media unui set de date statistice",
   "description": "Clasa a 5-a · Fracții zecimale",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Citește graficul cu bare – setul 1. Apasă categoria cu valoarea cea mai mare.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Valoarea maximă aparține categoriei matematică.",
+      "interactive": {
+        "mode": "read_bar",
+        "labels": [
+          "literatură",
+          "matematică",
+          "științe",
+          "tehnică",
+          "altele"
+        ],
+        "values": [
+          20,
+          30,
+          10,
+          15,
+          5
+        ],
+        "max_value": 35,
+        "step": 5,
+        "answers": {
+          "selected": 1
+        }
+      }
+    },
+    {
+      "text": "Citește graficul cu bare – setul 2. Apasă categoria cu valoarea cea mai mare.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Valoarea maximă aparține categoriei Ștefan.",
+      "interactive": {
+        "mode": "read_bar",
+        "labels": [
+          "Andrei",
+          "Ștefan",
+          "Mădălina",
+          "Mihnea",
+          "Dana",
+          "Cătălin"
+        ],
+        "values": [
+          8,
+          10,
+          7,
+          6,
+          8,
+          6
+        ],
+        "max_value": 12,
+        "step": 5,
+        "answers": {
+          "selected": 1
+        }
+      }
+    },
+    {
+      "text": "Citește graficul cu bare – setul 3. Apasă categoria cu valoarea cea mai mare.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Valoarea maximă aparține categoriei S.",
+      "interactive": {
+        "mode": "read_bar",
+        "labels": [
+          "L",
+          "Ma",
+          "Mi",
+          "J",
+          "V",
+          "S",
+          "D"
+        ],
+        "values": [
+          30,
+          20,
+          40,
+          10,
+          30,
+          50,
+          10
+        ],
+        "max_value": 60,
+        "step": 5,
+        "answers": {
+          "selected": 5
+        }
+      }
+    },
+    {
+      "text": "Citește graficul cu bare – setul 4. Apasă categoria cu valoarea cea mai mare.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Valoarea maximă aparține categoriei nota 5.",
+      "interactive": {
+        "mode": "read_bar",
+        "labels": [
+          "nota 5",
+          "nota 6",
+          "nota 7",
+          "nota 8",
+          "nota 9",
+          "nota 10"
+        ],
+        "values": [
+          6,
+          4,
+          2,
+          4,
+          2,
+          2
+        ],
+        "max_value": 8,
+        "step": 5,
+        "answers": {
+          "selected": 0
+        }
+      }
+    },
+    {
+      "text": "Citește graficul cu bare – setul 5. Apasă categoria cu valoarea cea mai mare.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Valoarea maximă aparține categoriei fotbal.",
+      "interactive": {
+        "mode": "read_bar",
+        "labels": [
+          "fotbal",
+          "handbal",
+          "baschet"
+        ],
+        "values": [
+          14,
+          4,
+          7
+        ],
+        "max_value": 15,
+        "step": 5,
+        "answers": {
+          "selected": 0
+        }
+      }
+    },
+    {
+      "text": "Citește graficul cu bare – setul 6. Apasă categoria cu valoarea cea mai mare.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Valoarea maximă aparține categoriei a VII-a.",
+      "interactive": {
+        "mode": "read_bar",
+        "labels": [
+          "a V-a",
+          "a VI-a",
+          "a VII-a",
+          "a VIII-a"
+        ],
+        "values": [
+          25,
+          20,
+          30,
+          25
+        ],
+        "max_value": 35,
+        "step": 5,
+        "answers": {
+          "selected": 2
+        }
+      }
+    },
+    {
+      "text": "Construiește graficul cu bare din tabelul dat – setul 1.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Reglăm fiecare bară la frecvența din tabel.",
+      "interactive": {
+        "mode": "build_bar",
+        "labels": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "8",
+          "9",
+          "10"
+        ],
+        "values": [
+          2,
+          4,
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "max_value": 6,
+        "step": 1,
+        "answers": {
+          "value:0": 2,
+          "value:1": 4,
+          "value:2": 6,
+          "value:3": 5,
+          "value:4": 4,
+          "value:5": 3,
+          "value:6": 2
+        }
+      }
+    },
+    {
+      "text": "Construiește graficul cu bare din tabelul dat – setul 2.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Reglăm fiecare bară la frecvența din tabel.",
+      "interactive": {
+        "mode": "build_bar",
+        "labels": [
+          "fotbal",
+          "handbal",
+          "baschet"
+        ],
+        "values": [
+          14,
+          4,
+          7
+        ],
+        "max_value": 15,
+        "step": 1,
+        "answers": {
+          "value:0": 14,
+          "value:1": 4,
+          "value:2": 7
+        }
+      }
+    },
+    {
+      "text": "Construiește graficul cu bare din tabelul dat – setul 3.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Reglăm fiecare bară la frecvența din tabel.",
+      "interactive": {
+        "mode": "build_bar",
+        "labels": [
+          "L",
+          "Ma",
+          "Mi",
+          "J",
+          "V"
+        ],
+        "values": [
+          5,
+          15,
+          20,
+          15,
+          25
+        ],
+        "max_value": 25,
+        "step": 1,
+        "answers": {
+          "value:0": 5,
+          "value:1": 15,
+          "value:2": 20,
+          "value:3": 15,
+          "value:4": 25
+        }
+      }
+    },
+    {
+      "text": "Construiește graficul cu bare din tabelul dat – setul 4.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Reglăm fiecare bară la frecvența din tabel.",
+      "interactive": {
+        "mode": "build_bar",
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "values": [
+          8,
+          12,
+          6,
+          10
+        ],
+        "max_value": 12,
+        "step": 1,
+        "answers": {
+          "value:0": 8,
+          "value:1": 12,
+          "value:2": 6,
+          "value:3": 10
+        }
+      }
+    },
+    {
+      "text": "Construiește graficul cu bare din tabelul dat – setul 5.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Reglăm fiecare bară la frecvența din tabel.",
+      "interactive": {
+        "mode": "build_bar",
+        "labels": [
+          "ian",
+          "feb",
+          "mar",
+          "apr"
+        ],
+        "values": [
+          20,
+          30,
+          25,
+          40
+        ],
+        "max_value": 40,
+        "step": 1,
+        "answers": {
+          "value:0": 20,
+          "value:1": 30,
+          "value:2": 25,
+          "value:3": 40
+        }
+      }
+    },
+    {
+      "text": "Construiește graficul cu bare din tabelul dat – setul 6.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Reglăm fiecare bară la frecvența din tabel.",
+      "interactive": {
+        "mode": "build_bar",
+        "labels": [
+          "mere",
+          "pere",
+          "prune",
+          "nuci"
+        ],
+        "values": [
+          12,
+          8,
+          16,
+          4
+        ],
+        "max_value": 16,
+        "step": 1,
+        "answers": {
+          "value:0": 12,
+          "value:1": 8,
+          "value:2": 16,
+          "value:3": 4
+        }
+      }
+    },
+    {
+      "text": "Repară graficul: una dintre bare are înălțimea greșită – setul 1.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Graficul reparat trebuie să coincidă cu toate valorile tabelului.",
+      "interactive": {
+        "mode": "repair_bar",
+        "labels": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "8",
+          "9",
+          "10"
+        ],
+        "values": [
+          2,
+          4,
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "max_value": 6,
+        "step": 1,
+        "shown_values": [
+          2,
+          2,
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "answers": {
+          "value:0": 2,
+          "value:1": 4,
+          "value:2": 6,
+          "value:3": 5,
+          "value:4": 4,
+          "value:5": 3,
+          "value:6": 2
+        }
+      }
+    },
+    {
+      "text": "Repară graficul: una dintre bare are înălțimea greșită – setul 2.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Graficul reparat trebuie să coincidă cu toate valorile tabelului.",
+      "interactive": {
+        "mode": "repair_bar",
+        "labels": [
+          "fotbal",
+          "handbal",
+          "baschet"
+        ],
+        "values": [
+          14,
+          4,
+          7
+        ],
+        "max_value": 15,
+        "step": 1,
+        "shown_values": [
+          14,
+          4,
+          5
+        ],
+        "answers": {
+          "value:0": 14,
+          "value:1": 4,
+          "value:2": 7
+        }
+      }
+    },
+    {
+      "text": "Repară graficul: una dintre bare are înălțimea greșită – setul 3.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Graficul reparat trebuie să coincidă cu toate valorile tabelului.",
+      "interactive": {
+        "mode": "repair_bar",
+        "labels": [
+          "L",
+          "Ma",
+          "Mi",
+          "J",
+          "V"
+        ],
+        "values": [
+          5,
+          15,
+          20,
+          15,
+          25
+        ],
+        "max_value": 25,
+        "step": 1,
+        "shown_values": [
+          5,
+          15,
+          20,
+          13,
+          25
+        ],
+        "answers": {
+          "value:0": 5,
+          "value:1": 15,
+          "value:2": 20,
+          "value:3": 15,
+          "value:4": 25
+        }
+      }
+    },
+    {
+      "text": "Repară graficul: una dintre bare are înălțimea greșită – setul 4.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Graficul reparat trebuie să coincidă cu toate valorile tabelului.",
+      "interactive": {
+        "mode": "repair_bar",
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "values": [
+          8,
+          12,
+          6,
+          10
+        ],
+        "max_value": 12,
+        "step": 1,
+        "shown_values": [
+          6,
+          12,
+          6,
+          10
+        ],
+        "answers": {
+          "value:0": 8,
+          "value:1": 12,
+          "value:2": 6,
+          "value:3": 10
+        }
+      }
+    },
+    {
+      "text": "Citește graficul cu linii – setul 1. Apasă punctul maxim.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Punctul maxim este la vineri.",
+      "interactive": {
+        "mode": "read_line",
+        "labels": [
+          "luni",
+          "marți",
+          "miercuri",
+          "joi",
+          "vineri"
+        ],
+        "values": [
+          5,
+          15,
+          20,
+          15,
+          25
+        ],
+        "max_value": 30,
+        "step": 5,
+        "answers": {
+          "selected": 4
+        }
+      }
+    },
+    {
+      "text": "Citește graficul cu linii – setul 2. Apasă punctul maxim.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Punctul maxim este la D.",
+      "interactive": {
+        "mode": "read_line",
+        "labels": [
+          "L",
+          "Ma",
+          "Mi",
+          "J",
+          "V",
+          "S",
+          "D"
+        ],
+        "values": [
+          20,
+          30,
+          10,
+          20,
+          20,
+          40,
+          50
+        ],
+        "max_value": 60,
+        "step": 5,
+        "answers": {
+          "selected": 6
+        }
+      }
+    },
+    {
+      "text": "Citește graficul cu linii – setul 3. Apasă punctul maxim.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Punctul maxim este la ora 12.",
+      "interactive": {
+        "mode": "read_line",
+        "labels": [
+          "ora 8",
+          "ora 10",
+          "ora 12",
+          "ora 14",
+          "ora 16"
+        ],
+        "values": [
+          8,
+          12,
+          18,
+          16,
+          10
+        ],
+        "max_value": 20,
+        "step": 5,
+        "answers": {
+          "selected": 2
+        }
+      }
+    },
+    {
+      "text": "Citește graficul cu linii – setul 4. Apasă punctul maxim.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Punctul maxim este la apr.",
+      "interactive": {
+        "mode": "read_line",
+        "labels": [
+          "ian",
+          "feb",
+          "mar",
+          "apr",
+          "mai"
+        ],
+        "values": [
+          12,
+          18,
+          16,
+          24,
+          20
+        ],
+        "max_value": 25,
+        "step": 5,
+        "answers": {
+          "selected": 3
+        }
+      }
+    },
+    {
+      "text": "Citește graficul cu linii – setul 5. Apasă punctul maxim.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Punctul maxim este la 4.",
+      "interactive": {
+        "mode": "read_line",
+        "labels": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "values": [
+          4,
+          9,
+          7,
+          13,
+          11
+        ],
+        "max_value": 15,
+        "step": 5,
+        "answers": {
+          "selected": 3
+        }
+      }
+    },
+    {
+      "text": "Construiește graficul cu linii – setul 1.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Așezăm fiecare punct la valoarea din tabel; segmentele se desenează automat.",
+      "interactive": {
+        "mode": "build_line",
+        "labels": [
+          "luni",
+          "marți",
+          "miercuri",
+          "joi",
+          "vineri"
+        ],
+        "values": [
+          5,
+          15,
+          20,
+          15,
+          25
+        ],
+        "max_value": 30,
+        "step": 1,
+        "answers": {
+          "value:0": 5,
+          "value:1": 15,
+          "value:2": 20,
+          "value:3": 15,
+          "value:4": 25
+        }
+      }
+    },
+    {
+      "text": "Construiește graficul cu linii – setul 2.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Așezăm fiecare punct la valoarea din tabel; segmentele se desenează automat.",
+      "interactive": {
+        "mode": "build_line",
+        "labels": [
+          "L",
+          "Ma",
+          "Mi",
+          "J",
+          "V",
+          "S",
+          "D"
+        ],
+        "values": [
+          20,
+          30,
+          10,
+          20,
+          20,
+          40,
+          50
+        ],
+        "max_value": 60,
+        "step": 1,
+        "answers": {
+          "value:0": 20,
+          "value:1": 30,
+          "value:2": 10,
+          "value:3": 20,
+          "value:4": 20,
+          "value:5": 40,
+          "value:6": 50
+        }
+      }
+    },
+    {
+      "text": "Construiește graficul cu linii – setul 3.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Așezăm fiecare punct la valoarea din tabel; segmentele se desenează automat.",
+      "interactive": {
+        "mode": "build_line",
+        "labels": [
+          "ora 8",
+          "ora 10",
+          "ora 12",
+          "ora 14",
+          "ora 16"
+        ],
+        "values": [
+          8,
+          12,
+          18,
+          16,
+          10
+        ],
+        "max_value": 20,
+        "step": 1,
+        "answers": {
+          "value:0": 8,
+          "value:1": 12,
+          "value:2": 18,
+          "value:3": 16,
+          "value:4": 10
+        }
+      }
+    },
+    {
+      "text": "Construiește graficul cu linii – setul 4.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Așezăm fiecare punct la valoarea din tabel; segmentele se desenează automat.",
+      "interactive": {
+        "mode": "build_line",
+        "labels": [
+          "ian",
+          "feb",
+          "mar",
+          "apr",
+          "mai"
+        ],
+        "values": [
+          12,
+          18,
+          16,
+          24,
+          20
+        ],
+        "max_value": 25,
+        "step": 1,
+        "answers": {
+          "value:0": 12,
+          "value:1": 18,
+          "value:2": 16,
+          "value:3": 24,
+          "value:4": 20
+        }
+      }
+    },
+    {
+      "text": "Completează frecvențele sporturilor preferate.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărăm fiecare apariție; frecvența relativă este frecvența împărțită la total și exprimată procentual.",
+      "interactive": {
+        "mode": "frequency_table",
+        "raw_values": [
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "handbal",
+          "handbal",
+          "handbal",
+          "handbal",
+          "baschet",
+          "baschet",
+          "baschet",
+          "baschet",
+          "baschet"
+        ],
+        "categories": [
+          "fotbal",
+          "handbal",
+          "baschet"
+        ],
+        "answers": {
+          "frequency:0": 7,
+          "frequency:1": 4,
+          "frequency:2": 5
+        }
+      }
+    },
+    {
+      "text": "Completează tabelul notelor.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărăm fiecare apariție; frecvența relativă este frecvența împărțită la total și exprimată procentual.",
+      "interactive": {
+        "mode": "frequency_table",
+        "raw_values": [
+          5,
+          6,
+          5,
+          7,
+          8,
+          6,
+          5,
+          9,
+          7,
+          8,
+          5,
+          10
+        ],
+        "categories": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "answers": {
+          "frequency:0": 4,
+          "frequency:1": 2,
+          "frequency:2": 2,
+          "frequency:3": 2,
+          "frequency:4": 1,
+          "frequency:5": 1
+        }
+      }
+    },
+    {
+      "text": "Numără mijloacele de transport.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărăm fiecare apariție; frecvența relativă este frecvența împărțită la total și exprimată procentual.",
+      "interactive": {
+        "mode": "frequency_table",
+        "raw_values": [
+          "mers",
+          "mers",
+          "mers",
+          "mers",
+          "mers",
+          "autobuz",
+          "autobuz",
+          "autobuz",
+          "autobuz",
+          "autobuz",
+          "autobuz",
+          "autobuz",
+          "bicicletă",
+          "bicicletă",
+          "bicicletă"
+        ],
+        "categories": [
+          "mers",
+          "autobuz",
+          "bicicletă"
+        ],
+        "answers": {
+          "frequency:0": 5,
+          "frequency:1": 7,
+          "frequency:2": 3
+        }
+      }
+    },
+    {
+      "text": "Completează frecvențele culorilor.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărăm fiecare apariție; frecvența relativă este frecvența împărțită la total și exprimată procentual.",
+      "interactive": {
+        "mode": "frequency_table",
+        "raw_values": [
+          "roșu",
+          "albastru",
+          "roșu",
+          "verde",
+          "albastru",
+          "roșu",
+          "verde",
+          "roșu"
+        ],
+        "categories": [
+          "roșu",
+          "albastru",
+          "verde"
+        ],
+        "answers": {
+          "frequency:0": 4,
+          "frequency:1": 2,
+          "frequency:2": 2
+        }
+      }
+    },
+    {
+      "text": "Completează tabelul numărului de cărți citite.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărăm fiecare apariție; frecvența relativă este frecvența împărțită la total și exprimată procentual.",
+      "interactive": {
+        "mode": "frequency_table",
+        "raw_values": [
+          1,
+          2,
+          2,
+          3,
+          1,
+          4,
+          2,
+          3,
+          2,
+          1
+        ],
+        "categories": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "answers": {
+          "frequency:0": 3,
+          "frequency:1": 4,
+          "frequency:2": 2,
+          "frequency:3": 1
+        }
+      }
+    },
+    {
+      "text": "Completează tabelul fructelor alese.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărăm fiecare apariție; frecvența relativă este frecvența împărțită la total și exprimată procentual.",
+      "interactive": {
+        "mode": "frequency_table",
+        "raw_values": [
+          "mere",
+          "pere",
+          "mere",
+          "prune",
+          "mere",
+          "pere",
+          "mere",
+          "prune",
+          "pere"
+        ],
+        "categories": [
+          "mere",
+          "pere",
+          "prune"
+        ],
+        "answers": {
+          "frequency:0": 4,
+          "frequency:1": 3,
+          "frequency:2": 2
+        }
+      }
+    },
+    {
+      "text": "Completează frecvența zilelor cu temperaturi date.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărăm fiecare apariție; frecvența relativă este frecvența împărțită la total și exprimată procentual.",
+      "interactive": {
+        "mode": "frequency_table",
+        "raw_values": [
+          18,
+          20,
+          18,
+          22,
+          20,
+          18,
+          24,
+          22,
+          20,
+          18
+        ],
+        "categories": [
+          18,
+          20,
+          22,
+          24
+        ],
+        "answers": {
+          "frequency:0": 4,
+          "frequency:1": 3,
+          "frequency:2": 2,
+          "frequency:3": 1
+        }
+      }
+    },
+    {
+      "text": "Completează frecvențele și procentele sporturilor.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărăm fiecare apariție; frecvența relativă este frecvența împărțită la total și exprimată procentual.",
+      "interactive": {
+        "mode": "relative_frequency",
+        "raw_values": [
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "fotbal",
+          "handbal",
+          "handbal",
+          "handbal",
+          "handbal",
+          "baschet",
+          "baschet",
+          "baschet",
+          "baschet",
+          "baschet",
+          "baschet",
+          "baschet"
+        ],
+        "categories": [
+          "fotbal",
+          "handbal",
+          "baschet"
+        ],
+        "answers": {
+          "frequency:0": 14,
+          "percent:0": "56",
+          "frequency:1": 4,
+          "percent:1": "16",
+          "frequency:2": 7,
+          "percent:2": "28"
+        }
+      }
+    },
+    {
+      "text": "Completează frecvențele relative pentru 20 de elevi.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărăm fiecare apariție; frecvența relativă este frecvența împărțită la total și exprimată procentual.",
+      "interactive": {
+        "mode": "relative_frequency",
+        "raw_values": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "C",
+          "C",
+          "C",
+          "C",
+          "D",
+          "D"
+        ],
+        "categories": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "answers": {
+          "frequency:0": 8,
+          "percent:0": "40",
+          "frequency:1": 6,
+          "percent:1": "30",
+          "frequency:2": 4,
+          "percent:2": "20",
+          "frequency:3": 2,
+          "percent:3": "10"
+        }
+      }
+    },
+    {
+      "text": "Transformă frecvențele culorilor în procente.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărăm fiecare apariție; frecvența relativă este frecvența împărțită la total și exprimată procentual.",
+      "interactive": {
+        "mode": "relative_frequency",
+        "raw_values": [
+          "roșu",
+          "roșu",
+          "roșu",
+          "roșu",
+          "roșu",
+          "albastru",
+          "albastru",
+          "albastru",
+          "verde",
+          "verde"
+        ],
+        "categories": [
+          "roșu",
+          "albastru",
+          "verde"
+        ],
+        "answers": {
+          "frequency:0": 5,
+          "percent:0": "50",
+          "frequency:1": 3,
+          "percent:1": "30",
+          "frequency:2": 2,
+          "percent:2": "20"
+        }
+      }
+    },
+    {
+      "text": "Completează procentele mijloacelor de transport.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărăm fiecare apariție; frecvența relativă este frecvența împărțită la total și exprimată procentual.",
+      "interactive": {
+        "mode": "relative_frequency",
+        "raw_values": [
+          "mers",
+          "mers",
+          "mers",
+          "mers",
+          "mers",
+          "mers",
+          "autobuz",
+          "autobuz",
+          "autobuz",
+          "autobuz",
+          "autobuz",
+          "autobuz",
+          "autobuz",
+          "autobuz",
+          "autobuz",
+          "bicicletă",
+          "bicicletă",
+          "bicicletă",
+          "bicicletă",
+          "bicicletă"
+        ],
+        "categories": [
+          "mers",
+          "autobuz",
+          "bicicletă"
+        ],
+        "answers": {
+          "frequency:0": 6,
+          "percent:0": "30",
+          "frequency:1": 9,
+          "percent:1": "45",
+          "frequency:2": 5,
+          "percent:2": "25"
+        }
+      }
+    },
+    {
+      "text": "Completează frecvențele relative ale notelor.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărăm fiecare apariție; frecvența relativă este frecvența împărțită la total și exprimată procentual.",
+      "interactive": {
+        "mode": "relative_frequency",
+        "raw_values": [
+          "5",
+          "5",
+          "6",
+          "6",
+          "6",
+          "6",
+          "7",
+          "7",
+          "7",
+          "7",
+          "7",
+          "7",
+          "8",
+          "8",
+          "8",
+          "8",
+          "9",
+          "9",
+          "9",
+          "10"
+        ],
+        "categories": [
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "answers": {
+          "frequency:0": 2,
+          "percent:0": "10",
+          "frequency:1": 4,
+          "percent:1": "20",
+          "frequency:2": 6,
+          "percent:2": "30",
+          "frequency:3": 4,
+          "percent:3": "20",
+          "frequency:4": 3,
+          "percent:4": "15",
+          "frequency:5": 1,
+          "percent:5": "5"
+        }
+      }
+    },
+    {
+      "text": "Calculează media numărului de vizitatori.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma este 1540, sunt 7 valori, iar media este 220.",
+      "interactive": {
+        "mode": "mean",
+        "dataset": [
+          100,
+          150,
+          200,
+          270,
+          250,
+          300,
+          270
+        ],
+        "fields": [
+          {
+            "key": "sum",
+            "label": "Suma datelor"
+          },
+          {
+            "key": "count",
+            "label": "Numărul datelor"
+          },
+          {
+            "key": "mean",
+            "label": "Media"
+          }
+        ],
+        "answers": {
+          "sum": 1540,
+          "count": 7,
+          "mean": "220"
+        }
+      }
+    },
+    {
+      "text": "Calculează media albumelor vândute.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma este 80, sunt 5 valori, iar media este 16.",
+      "interactive": {
+        "mode": "mean",
+        "dataset": [
+          5,
+          15,
+          20,
+          15,
+          25
+        ],
+        "fields": [
+          {
+            "key": "sum",
+            "label": "Suma datelor"
+          },
+          {
+            "key": "count",
+            "label": "Numărul datelor"
+          },
+          {
+            "key": "mean",
+            "label": "Media"
+          }
+        ],
+        "answers": {
+          "sum": 80,
+          "count": 5,
+          "mean": "16"
+        }
+      }
+    },
+    {
+      "text": "Calculează media notelor.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma este 64, sunt 8 valori, iar media este 8.",
+      "interactive": {
+        "mode": "mean",
+        "dataset": [
+          8,
+          9,
+          7,
+          10,
+          6,
+          8,
+          9,
+          7
+        ],
+        "fields": [
+          {
+            "key": "sum",
+            "label": "Suma datelor"
+          },
+          {
+            "key": "count",
+            "label": "Numărul datelor"
+          },
+          {
+            "key": "mean",
+            "label": "Media"
+          }
+        ],
+        "answers": {
+          "sum": 64,
+          "count": 8,
+          "mean": "8"
+        }
+      }
+    },
+    {
+      "text": "Calculează media temperaturilor.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma este 100, sunt 5 valori, iar media este 20.",
+      "interactive": {
+        "mode": "mean",
+        "dataset": [
+          18,
+          20,
+          22,
+          19,
+          21
+        ],
+        "fields": [
+          {
+            "key": "sum",
+            "label": "Suma datelor"
+          },
+          {
+            "key": "count",
+            "label": "Numărul datelor"
+          },
+          {
+            "key": "mean",
+            "label": "Media"
+          }
+        ],
+        "answers": {
+          "sum": 100,
+          "count": 5,
+          "mean": "20"
+        }
+      }
+    },
+    {
+      "text": "Calculează media intrărilor în parcare.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma este 190, sunt 7 valori, iar media este 27,14.",
+      "interactive": {
+        "mode": "mean",
+        "dataset": [
+          30,
+          20,
+          40,
+          10,
+          30,
+          50,
+          10
+        ],
+        "fields": [
+          {
+            "key": "sum",
+            "label": "Suma datelor"
+          },
+          {
+            "key": "count",
+            "label": "Numărul datelor"
+          },
+          {
+            "key": "mean",
+            "label": "Media"
+          }
+        ],
+        "answers": {
+          "sum": 190,
+          "count": 7,
+          "mean": "27,14"
+        }
+      }
+    },
+    {
+      "text": "Calculează media punctajelor.",
+      "type": "statistics_chart",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma este 45, sunt 6 valori, iar media este 7,5.",
+      "interactive": {
+        "mode": "mean",
+        "dataset": [
+          8,
+          10,
+          7,
+          6,
+          8,
+          6
+        ],
+        "fields": [
+          {
+            "key": "sum",
+            "label": "Suma datelor"
+          },
+          {
+            "key": "count",
+            "label": "Numărul datelor"
+          },
+          {
+            "key": "mean",
+            "label": "Media"
+          }
+        ],
+        "answers": {
+          "sum": 45,
+          "count": 6,
+          "mean": "7,5"
+        }
+      }
+    },
+    {
+      "text": "Frecvența absolută arată:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numărăm de câte ori apare categoria.",
+      "options": [
+        {
+          "text": "media datelor",
+          "is_correct": false
+        },
+        {
+          "text": "procentul fără total",
+          "is_correct": false
+        },
+        {
+          "text": "numărul de apariții",
+          "is_correct": true
+        },
+        {
+          "text": "valoarea maximă",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Un grafic cu linii este potrivit în special pentru:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punctele unite evidențiază creșterile și scăderile.",
+      "options": [
+        {
+          "text": "o singură valoare",
+          "is_correct": false
+        },
+        {
+          "text": "scrierea fracțiilor",
+          "is_correct": false
+        },
+        {
+          "text": "evoluția în timp",
+          "is_correct": true
+        },
+        {
+          "text": "desenarea unei figuri",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
 }

@@ -2,5 +2,1305 @@
   "title": "Împărțirea fracțiilor ordinare",
   "description": "Clasa a 5-a · Fracții ordinare",
   "difficulty": "easy",
-  "questions": []
+  "questions": [
+    {
+      "text": "Inversa fracției 3/7 este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Schimbăm între ele numărătorul și numitorul.",
+      "options": [
+        {
+          "text": "4/8",
+          "is_correct": false
+        },
+        {
+          "text": "7/3",
+          "is_correct": true
+        },
+        {
+          "text": "7/4",
+          "is_correct": false
+        },
+        {
+          "text": "3/7",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Rezultatul lui 5/6 : 10/21 este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "5/6 : 10/21 = 5/6 · 21/10 = 7/4.",
+      "options": [
+        {
+          "text": "4/7",
+          "is_correct": false
+        },
+        {
+          "text": "7/4",
+          "is_correct": true
+        },
+        {
+          "text": "25/63",
+          "is_correct": false
+        },
+        {
+          "text": "50/126",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculează 4 : 2/3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "4/1 · 3/2 = 12/2 = 6.",
+      "options": [
+        {
+          "text": "2/3",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "8/3",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Rezultatul lui 2 1/4 : 3/5 este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "9/4 · 5/3 = 45/12 = 15/4 = 3 3/4.",
+      "options": [
+        {
+          "text": "5/12",
+          "is_correct": false
+        },
+        {
+          "text": "3 3/4",
+          "is_correct": true
+        },
+        {
+          "text": "2 2/5",
+          "is_correct": false
+        },
+        {
+          "text": "1 7/20",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Din 4 1/2 metri de material se taie bucăți de 3/4 metru. Câte bucăți se obțin?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "9/2 : 3/4 = 9/2 · 4/3 = 6.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Pentru a împărți două fracții, înmulțim prima fracție cu inversa celei de-a doua.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Aceasta este regula împărțirii fracțiilor.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "La o împărțire de fracții trebuie inversată prima fracție.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Se inversează numai a doua fracție, adică împărțitorul.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Produsul dintre o fracție nenulă și inversa ei este 1.",
+      "type": "multiple_choice",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "a/b · b/a = 1 pentru a și b nenule.",
+      "options": [
+        {
+          "text": "Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Scrie inversa numărului 3/7.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Schimbăm numărătorul cu numitorul și obținem 7/3.",
+      "interactive": {
+        "mode": "reciprocal",
+        "left": [
+          1,
+          1
+        ],
+        "right": [
+          3,
+          7
+        ],
+        "answers": {
+          "inverse_numerator": 7,
+          "inverse_denominator": 3
+        }
+      }
+    },
+    {
+      "text": "Scrie inversa numărului 5.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Schimbăm numărătorul cu numitorul și obținem 1/5.",
+      "interactive": {
+        "mode": "reciprocal",
+        "left": [
+          1,
+          1
+        ],
+        "right": [
+          5,
+          1
+        ],
+        "answers": {
+          "inverse_numerator": 1,
+          "inverse_denominator": 5
+        }
+      }
+    },
+    {
+      "text": "Scrie inversa numărului 2 1/4.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Schimbăm numărătorul cu numitorul și obținem 4/9.",
+      "interactive": {
+        "mode": "reciprocal",
+        "left": [
+          1,
+          1
+        ],
+        "right": [
+          9,
+          4
+        ],
+        "answers": {
+          "inverse_numerator": 4,
+          "inverse_denominator": 9
+        }
+      }
+    },
+    {
+      "text": "Calculează 3/4 : 2/5.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim 3/4 cu inversa 5/2 și obținem 15/8.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          3,
+          4
+        ],
+        "right": [
+          2,
+          5
+        ],
+        "answers": {
+          "inverse_numerator": 5,
+          "inverse_denominator": 2,
+          "result_numerator": 15,
+          "result_denominator": 8
+        }
+      }
+    },
+    {
+      "text": "Calculează 5/6 : 10/21.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim 5/6 cu inversa 21/10 și obținem 7/4.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          5,
+          6
+        ],
+        "right": [
+          10,
+          21
+        ],
+        "answers": {
+          "inverse_numerator": 21,
+          "inverse_denominator": 10,
+          "result_numerator": 7,
+          "result_denominator": 4
+        }
+      }
+    },
+    {
+      "text": "Calculează 16/27 : 8/9.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim 16/27 cu inversa 9/8 și obținem 2/3.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          16,
+          27
+        ],
+        "right": [
+          8,
+          9
+        ],
+        "answers": {
+          "inverse_numerator": 9,
+          "inverse_denominator": 8,
+          "result_numerator": 2,
+          "result_denominator": 3
+        }
+      }
+    },
+    {
+      "text": "Calculează 7/12 : 14/15.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim 7/12 cu inversa 15/14 și obținem 5/8.",
+      "interactive": {
+        "mode": "build",
+        "left": [
+          7,
+          12
+        ],
+        "right": [
+          14,
+          15
+        ],
+        "answers": {
+          "inverse_numerator": 15,
+          "inverse_denominator": 14,
+          "result_numerator": 5,
+          "result_denominator": 8
+        }
+      }
+    },
+    {
+      "text": "Inversează a doua fracție, simplifică și calculează 5/6 : 10/21.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "După inversare și simplificare obținem 7/4.",
+      "interactive": {
+        "mode": "cross_cancel",
+        "left": [
+          5,
+          6
+        ],
+        "right": [
+          10,
+          21
+        ],
+        "multiplier": [
+          21,
+          10
+        ],
+        "cancellations": [
+          {
+            "first": 5,
+            "second": 10,
+            "factor": 5,
+            "first_result": 1,
+            "second_result": 2
+          },
+          {
+            "first": 21,
+            "second": 6,
+            "factor": 3,
+            "first_result": 7,
+            "second_result": 2
+          }
+        ],
+        "answers": {
+          "result_numerator": 7,
+          "result_denominator": 4,
+          "0:factor": 5,
+          "0:first_result": 1,
+          "0:second_result": 2,
+          "1:factor": 3,
+          "1:first_result": 7,
+          "1:second_result": 2
+        }
+      }
+    },
+    {
+      "text": "Inversează a doua fracție, simplifică și calculează 16/27 : 8/9.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "După inversare și simplificare obținem 2/3.",
+      "interactive": {
+        "mode": "cross_cancel",
+        "left": [
+          16,
+          27
+        ],
+        "right": [
+          8,
+          9
+        ],
+        "multiplier": [
+          9,
+          8
+        ],
+        "cancellations": [
+          {
+            "first": 16,
+            "second": 8,
+            "factor": 8,
+            "first_result": 2,
+            "second_result": 1
+          },
+          {
+            "first": 9,
+            "second": 27,
+            "factor": 9,
+            "first_result": 1,
+            "second_result": 3
+          }
+        ],
+        "answers": {
+          "result_numerator": 2,
+          "result_denominator": 3,
+          "0:factor": 8,
+          "0:first_result": 2,
+          "0:second_result": 1,
+          "1:factor": 9,
+          "1:first_result": 1,
+          "1:second_result": 3
+        }
+      }
+    },
+    {
+      "text": "Inversează a doua fracție, simplifică și calculează 14/25 : 7/15.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "După inversare și simplificare obținem 6/5.",
+      "interactive": {
+        "mode": "cross_cancel",
+        "left": [
+          14,
+          25
+        ],
+        "right": [
+          7,
+          15
+        ],
+        "multiplier": [
+          15,
+          7
+        ],
+        "cancellations": [
+          {
+            "first": 14,
+            "second": 7,
+            "factor": 7,
+            "first_result": 2,
+            "second_result": 1
+          },
+          {
+            "first": 15,
+            "second": 25,
+            "factor": 5,
+            "first_result": 3,
+            "second_result": 5
+          }
+        ],
+        "answers": {
+          "result_numerator": 6,
+          "result_denominator": 5,
+          "0:factor": 7,
+          "0:first_result": 2,
+          "0:second_result": 1,
+          "1:factor": 5,
+          "1:first_result": 3,
+          "1:second_result": 5
+        }
+      }
+    },
+    {
+      "text": "Folosește bara pentru a calcula 3/4 : 1/4.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "În partea colorată încap 3 grupuri complete de mărimea 1/4.",
+      "interactive": {
+        "mode": "visual",
+        "left": [
+          3,
+          4
+        ],
+        "right": [
+          1,
+          4
+        ],
+        "dividend_label": "3/4",
+        "divisor_label": "1/4",
+        "piece_count": 4,
+        "filled_pieces": 3,
+        "candidates": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "answers": {
+          "groups": 3
+        }
+      }
+    },
+    {
+      "text": "Folosește bara pentru a calcula 5/6 : 1/6.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "În partea colorată încap 5 grupuri complete de mărimea 1/6.",
+      "interactive": {
+        "mode": "visual",
+        "left": [
+          5,
+          6
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "dividend_label": "5/6",
+        "divisor_label": "1/6",
+        "piece_count": 6,
+        "filled_pieces": 5,
+        "candidates": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "answers": {
+          "groups": 5
+        }
+      }
+    },
+    {
+      "text": "Folosește bara pentru a calcula 4/5 : 2/5.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "În partea colorată încap 2 grupuri complete de mărimea 2/5.",
+      "interactive": {
+        "mode": "visual",
+        "left": [
+          4,
+          5
+        ],
+        "right": [
+          2,
+          5
+        ],
+        "dividend_label": "4/5",
+        "divisor_label": "2/5",
+        "piece_count": 5,
+        "filled_pieces": 4,
+        "candidates": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "answers": {
+          "groups": 2
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea 3/5 : □/□ = 4/5.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția lipsă este 3/4.",
+      "interactive": {
+        "mode": "missing",
+        "left": [
+          3,
+          5
+        ],
+        "right": [
+          3,
+          4
+        ],
+        "result": [
+          4,
+          5
+        ],
+        "missing": [
+          3,
+          4
+        ],
+        "missing_side": "right",
+        "editable": "fraction",
+        "answers": {
+          "missing_numerator": 3,
+          "missing_denominator": 4
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea 4/7 : 2/□ = 6/7.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția lipsă este 2/3.",
+      "interactive": {
+        "mode": "missing",
+        "left": [
+          4,
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "result": [
+          6,
+          7
+        ],
+        "missing": [
+          2,
+          3
+        ],
+        "missing_side": "right",
+        "editable": "denominator",
+        "answers": {
+          "missing_denominator": 3
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea □/□ : 5/6 = 9/10.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția lipsă este 3/4.",
+      "interactive": {
+        "mode": "missing",
+        "left": [
+          3,
+          4
+        ],
+        "right": [
+          5,
+          6
+        ],
+        "result": [
+          9,
+          10
+        ],
+        "missing": [
+          3,
+          4
+        ],
+        "missing_side": "left",
+        "editable": "fraction",
+        "answers": {
+          "missing_numerator": 3,
+          "missing_denominator": 4
+        }
+      }
+    },
+    {
+      "text": "După inversare, alege simplificările permise pentru 5/6 : 10/21.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "După inversare, simplificăm numai un numărător cu un numitor.",
+      "interactive": {
+        "mode": "cancel_select",
+        "left": [
+          5,
+          6
+        ],
+        "right": [
+          10,
+          21
+        ],
+        "multiplier": [
+          21,
+          10
+        ],
+        "candidates": [
+          {
+            "id": "a",
+            "label": "5 cu 10"
+          },
+          {
+            "id": "b",
+            "label": "21 cu 6"
+          },
+          {
+            "id": "c",
+            "label": "5 cu 6"
+          },
+          {
+            "id": "d",
+            "label": "21 cu 10"
+          }
+        ],
+        "answers": {
+          "selected": "a,b"
+        }
+      }
+    },
+    {
+      "text": "După inversare, alege simplificările permise pentru 16/27 : 8/9.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "După inversare, simplificăm numai un numărător cu un numitor.",
+      "interactive": {
+        "mode": "cancel_select",
+        "left": [
+          16,
+          27
+        ],
+        "right": [
+          8,
+          9
+        ],
+        "multiplier": [
+          9,
+          8
+        ],
+        "candidates": [
+          {
+            "id": "a",
+            "label": "16 cu 8"
+          },
+          {
+            "id": "b",
+            "label": "9 cu 27"
+          },
+          {
+            "id": "c",
+            "label": "16 cu 27"
+          },
+          {
+            "id": "d",
+            "label": "9 cu 8"
+          }
+        ],
+        "answers": {
+          "selected": "a,b"
+        }
+      }
+    },
+    {
+      "text": "Identifică primul pas greșit în calculul 3/4 : 2/5.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Trebuie inversată a doua fracție: inversa lui 2/5 este 5/2.",
+      "interactive": {
+        "mode": "error",
+        "left": [
+          3,
+          4
+        ],
+        "right": [
+          2,
+          5
+        ],
+        "steps": [
+          "Păstrăm fracția 3/4.",
+          "Inversăm 3/4 și obținem 4/3.",
+          "Înmulțim fracțiile obținute."
+        ],
+        "answers": {
+          "error_index": 1
+        }
+      }
+    },
+    {
+      "text": "Apasă prima transformare greșită pentru 1 1/2 : 3/4.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "1 1/2 se transformă în 3/2, nu în 2/2.",
+      "interactive": {
+        "mode": "error",
+        "left": [
+          3,
+          2
+        ],
+        "right": [
+          3,
+          4
+        ],
+        "steps": [
+          "1 1/2 = 2/2.",
+          "Inversa lui 3/4 este 4/3.",
+          "Înmulțim prima fracție cu 4/3."
+        ],
+        "answers": {
+          "error_index": 0
+        }
+      }
+    },
+    {
+      "text": "Alege primul pas incorect în calculul 8/15 : 4/9.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "8 și 4 simplificate prin 4 devin 2 și 1.",
+      "interactive": {
+        "mode": "error",
+        "left": [
+          8,
+          15
+        ],
+        "right": [
+          4,
+          9
+        ],
+        "steps": [
+          "Inversa lui 4/9 este 9/4.",
+          "Scriem 8/15 · 9/4.",
+          "Simplificăm 8 cu 4 și obținem 4 și 1.",
+          "Simplificăm 9 cu 15 prin 3."
+        ],
+        "answers": {
+          "error_index": 2
+        }
+      }
+    },
+    {
+      "text": "Așază pașii calculului 5/6 : 10/21.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Inversăm împărțitorul înainte de simplificare și înmulțire.",
+      "interactive": {
+        "mode": "order_steps",
+        "left": [
+          5,
+          6
+        ],
+        "right": [
+          10,
+          21
+        ],
+        "steps": [
+          "Inversăm 10/21 și obținem 21/10.",
+          "Scriem 5/6 · 21/10.",
+          "Simplificăm 5 cu 10 și 21 cu 6.",
+          "Înmulțim 1/2 · 7/2 = 7/4."
+        ],
+        "display_order": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "answers": {
+          "order": "0,1,2,3"
+        }
+      }
+    },
+    {
+      "text": "Construiește rezolvarea lui 2 1/4 : 3/5.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Introducem întregii, inversăm a doua fracție, calculăm și scoatem întregii.",
+      "interactive": {
+        "mode": "order_steps",
+        "left": [
+          9,
+          4
+        ],
+        "right": [
+          3,
+          5
+        ],
+        "steps": [
+          "Transformăm 2 1/4 în 9/4.",
+          "Inversăm 3/5 și obținem 5/3.",
+          "Calculăm 9/4 · 5/3 = 15/4.",
+          "Scriem 15/4 = 3 3/4."
+        ],
+        "display_order": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "answers": {
+          "order": "0,1,2,3"
+        }
+      }
+    },
+    {
+      "text": "Ordonează pașii calculului 6 : 9/10.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul natural se scrie cu numitorul 1, apoi aplicăm regula împărțirii.",
+      "interactive": {
+        "mode": "order_steps",
+        "left": [
+          6,
+          1
+        ],
+        "right": [
+          9,
+          10
+        ],
+        "steps": [
+          "Scriem 6 ca 6/1.",
+          "Inversăm 9/10 și obținem 10/9.",
+          "Simplificăm 6 cu 9 prin 3.",
+          "Calculăm 2/1 · 10/3 = 20/3."
+        ],
+        "display_order": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "answers": {
+          "order": "0,1,2,3"
+        }
+      }
+    },
+    {
+      "text": "Potrivește fiecare împărțire cu rezultatul ei.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim prima fracție cu inversa celei de-a doua și simplificăm.",
+      "interactive": {
+        "mode": "match",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "pairs": [
+          {
+            "operation": "3/4 : 2/5",
+            "result": "15/8"
+          },
+          {
+            "operation": "5/6 : 10/9",
+            "result": "3/4"
+          },
+          {
+            "operation": "7/8 : 7/12",
+            "result": "3/2"
+          }
+        ],
+        "result_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "match_0": 0,
+          "match_1": 1,
+          "match_2": 2
+        }
+      }
+    },
+    {
+      "text": "Leagă fiecare calcul de valoarea corectă.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim prima fracție cu inversa celei de-a doua și simplificăm.",
+      "interactive": {
+        "mode": "match",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "pairs": [
+          {
+            "operation": "4 : 2/3",
+            "result": "6"
+          },
+          {
+            "operation": "3/5 : 9/10",
+            "result": "2/3"
+          },
+          {
+            "operation": "11/12 : 11/18",
+            "result": "3/2"
+          }
+        ],
+        "result_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "match_0": 0,
+          "match_1": 1,
+          "match_2": 2
+        }
+      }
+    },
+    {
+      "text": "Alege câtul potrivit pentru fiecare calcul.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Înmulțim prima fracție cu inversa celei de-a doua și simplificăm.",
+      "interactive": {
+        "mode": "match",
+        "left": [
+          1,
+          2
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "pairs": [
+          {
+            "operation": "1 1/2 : 3/4",
+            "result": "2"
+          },
+          {
+            "operation": "2 1/4 : 3/5",
+            "result": "15/4"
+          },
+          {
+            "operation": "3 1/3 : 5/6",
+            "result": "4"
+          }
+        ],
+        "result_order": [
+          2,
+          0,
+          1
+        ],
+        "answers": {
+          "match_0": 0,
+          "match_1": 1,
+          "match_2": 2
+        }
+      }
+    },
+    {
+      "text": "Din 4 1/2 metri de material se taie bucăți de câte 3/4 metru. Câte bucăți se pot obține?",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Calculăm 9/2 : 3/4 = 6/1.",
+      "interactive": {
+        "mode": "problem",
+        "left": [
+          9,
+          2
+        ],
+        "right": [
+          3,
+          4
+        ],
+        "answers": {
+          "result_numerator": 6,
+          "result_denominator": 1
+        }
+      }
+    },
+    {
+      "text": "Într-un sac sunt 8 2/3 kg de cafea. Câte pungi de câte 2/3 kg se pot umple?",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Calculăm 26/3 : 2/3 = 13/1.",
+      "interactive": {
+        "mode": "problem",
+        "left": [
+          26,
+          3
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "answers": {
+          "result_numerator": 13,
+          "result_denominator": 1
+        }
+      }
+    },
+    {
+      "text": "Un cablu de 2 3/10 metri este tăiat în bucăți de câte 3/5 metru. Câte asemenea lungimi conține cablul?",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Calculăm 23/10 : 3/5 = 23/6.",
+      "interactive": {
+        "mode": "problem",
+        "left": [
+          23,
+          10
+        ],
+        "right": [
+          3,
+          5
+        ],
+        "answers": {
+          "result_numerator": 23,
+          "result_denominator": 6
+        }
+      }
+    },
+    {
+      "text": "Calculează 4 1/2 : 2/3 și scrie rezultatul ca număr mixt.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul este 27/4, adică 6 3/4.",
+      "interactive": {
+        "mode": "mixed",
+        "left": [
+          9,
+          2
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "left_label": "4 1/2",
+        "right_label": "2/3",
+        "answers": {
+          "whole": 6,
+          "mixed_numerator": 3,
+          "mixed_denominator": 4
+        }
+      }
+    },
+    {
+      "text": "Calculează 8 1/5 : 3/10 și scrie rezultatul ca număr mixt.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul este 82/3, adică 27 1/3.",
+      "interactive": {
+        "mode": "mixed",
+        "left": [
+          41,
+          5
+        ],
+        "right": [
+          3,
+          10
+        ],
+        "left_label": "8 1/5",
+        "right_label": "3/10",
+        "answers": {
+          "whole": 27,
+          "mixed_numerator": 1,
+          "mixed_denominator": 3
+        }
+      }
+    },
+    {
+      "text": "Calculează 2 1/6 : 1 3/4 și scrie rezultatul ca număr mixt.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Câtul este 26/21, adică 1 5/21.",
+      "interactive": {
+        "mode": "mixed",
+        "left": [
+          13,
+          6
+        ],
+        "right": [
+          7,
+          4
+        ],
+        "left_label": "2 1/6",
+        "right_label": "1 3/4",
+        "answers": {
+          "whole": 1,
+          "mixed_numerator": 5,
+          "mixed_denominator": 21
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea □/□ : 4/9 = 3/2.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția lipsă este 2/3.",
+      "interactive": {
+        "mode": "inverse",
+        "left": [
+          2,
+          3
+        ],
+        "right": [
+          4,
+          9
+        ],
+        "result": [
+          3,
+          2
+        ],
+        "missing": [
+          2,
+          3
+        ],
+        "missing_side": "left",
+        "editable": "fraction",
+        "answers": {
+          "missing_numerator": 2,
+          "missing_denominator": 3
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea 5/6 : □/□ = 25/18.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția lipsă este 3/5.",
+      "interactive": {
+        "mode": "inverse",
+        "left": [
+          5,
+          6
+        ],
+        "right": [
+          3,
+          5
+        ],
+        "result": [
+          25,
+          18
+        ],
+        "missing": [
+          3,
+          5
+        ],
+        "missing_side": "right",
+        "editable": "fraction",
+        "answers": {
+          "missing_numerator": 3,
+          "missing_denominator": 5
+        }
+      }
+    },
+    {
+      "text": "Completează egalitatea □/□ : 7/8 = 6/7.",
+      "type": "fraction_division",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Fracția lipsă este 3/4.",
+      "interactive": {
+        "mode": "inverse",
+        "left": [
+          3,
+          4
+        ],
+        "right": [
+          7,
+          8
+        ],
+        "result": [
+          6,
+          7
+        ],
+        "missing": [
+          3,
+          4
+        ],
+        "missing_side": "left",
+        "editable": "fraction",
+        "answers": {
+          "missing_numerator": 3,
+          "missing_denominator": 4
+        }
+      }
+    }
+  ]
 }
