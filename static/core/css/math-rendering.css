@@ -12,6 +12,14 @@
     font-size: 1.08em;
     line-height: 1.35;
     text-align: left;
+    text-shadow: none;
+}
+
+/* Counter the site's universal font rule without overriding KaTeX's own
+   specific font classes (Math italic, bold, AMS symbols, etc.). */
+:where(.fm-formula .katex) * {
+    font-family: inherit;
+    text-shadow: none;
 }
 
 .fm-formula .katex-display {
