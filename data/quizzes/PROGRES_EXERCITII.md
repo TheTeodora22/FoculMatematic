@@ -9,8 +9,8 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 | Clasa | Lecții cu exerciții | Total exerciții | Grilă | Adevărat/Fals | Interactive |
 |---|---:|---:|---:|---:|---:|
 | Clasa a V-a | 42 | 2.101 | 589 | 93 | 1.419 |
-| Clasa a IX-a | 3 | 416 | 366 | 4 | 46 |
-| **Total** | **45** | **2.517** | **955** | **97** | **1.465** |
+| Clasa a IX-a | 3 | 496 | 446 | 4 | 46 |
+| **Total** | **45** | **2.597** | **1.035** | **97** | **1.465** |
 
 ## Clasa a V-a
 
@@ -94,17 +94,25 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 
 | Lecție | Total | Grilă | A/F | Interactive |
 |---|---:|---:|---:|---:|
-| Mulțimea numerelor reale. Operații algebrice, puteri și radicali | 136 | 86 | 4 | 46 |
+| Mulțimea numerelor reale. Operații algebrice, puteri și radicali | 216 | 166 | 4 | 46 |
 | Propoziții, predicate și cuantificatori | 95 | 95 | 0 | 0 |
 | Operații logice elementare și legi de calcul | 185 | 185 | 0 | 0 |
 
-**Subtotal clasa a IX-a: 3 lecții și 416 de exerciții.**
+**Subtotal clasa a IX-a: 3 lecții și 496 de exerciții.**
 
 Lotul 01 din catalogul Burtea a fost prezentat inițial cu câte 5 grile pentru tipurile 1–2. La cererea utilizatorului, selecția finală păstrează câte 3: întrebările 1, 4, 5, 6, 9 și 10 din `docs/clasa_9/lot_01_verificare.md`.
 
 Lotul 02: 75 de grile, câte 3 pentru tipurile 3–27 din subcapitolul 1.1. Operații algebrice cu numere reale. Acoperire cumulată: 27/27 de tipuri, **81 de grile din catalog**, plus cele 55 de exerciții preexistente (inclusiv 5 grile, 4 A/F și 46 interactive). Nu s-au adăugat interactive noi. Fiecare grilă nouă păstrează în JSON metadatele `catalog` (secțiune, număr și nume de tip, origine). Sunt enunțuri noi după tipologiile catalogului, nu transcrieri validate din scanare. Metadatele catalogului nu se importă în modelul întrebării din baza de date; se păstrează în fișierul sursă.
 
-Următorul subcapitol din catalog: **1.2. Ordonarea numerelor reale**, 22 de tipuri, încă neacoperite de aceste loturi.
+### Subcapitolul 1.2 — Ordonarea numerelor reale — finalizat
+
+Adăugate **80 de grile**, fără interactive sau A/F noi, pentru **22/22 de tipuri** din catalogul A1, p. 14–17. Tipurile 1–14 au câte 4 grile, iar tipurile 15–22 au câte 3. Fiecare întrebare are patru variante, un răspuns corect și explicația metodei, inclusiv condițiile de existență și cazul de egalitate unde este relevant.
+
+Grilele sunt incluse în `clasa_9/clasa_9_u01_l01_multimea_numerelor_reale_operatii_ordonare_modul_si_aproximari.json`, prin modulul `generators/gen_clasa_9_ordonare.py` apelat de generatorul lecției. Metadatele JSON folosesc `catalog.section = A1.1.2` și identifică tipul și varianta. Enunțurile sunt noi după tipologiile catalogului, nu transcrieri validate din scanare. Cele 136 de exerciții existente în lecție sunt păstrate identic.
+
+Verificări: acoperirea celor 22 de tipuri și numărul de grile, unicitatea enunțurilor și a opțiunilor, exact un răspuns corect, verificarea independentă a răspunsurilor, a extremelor și cazurilor de egalitate; validatorul aplicației și `manage.py check`; import țintit în baza locală.
+
+Următorul subcapitol din catalog: **1.3. Modulul unui număr real**, 24 de tipuri, încă neacoperite de aceste loturi.
 
 ### Secțiunea 2 — Propoziție. Predicat. Cuantificatori — finalizată
 
