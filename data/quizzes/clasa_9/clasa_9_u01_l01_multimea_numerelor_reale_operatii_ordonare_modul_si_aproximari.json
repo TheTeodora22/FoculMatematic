@@ -6394,6 +6394,2566 @@
         "variant": 3,
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
+    },
+    {
+      "text": "Calculați |−3|+|2−7|.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "|−3|=3 și |2−7|=|−5|=5, deci suma este 8.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "-8",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 1,
+        "type_name": "Calcul numeric al modulelor",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați ||−5|−8|.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi |−5|=5. Apoi |5−8|=|−3|=3.",
+      "options": [
+        {
+          "text": "-3",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 1,
+        "type_name": "Calcul numeric al modulelor",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați |2−√5|+|√5−3|.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2<√5<3. Suma este (√5−2)+(3−√5)=1.",
+      "options": [
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 1,
+        "type_name": "Calcul numeric al modulelor",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați |√2−2|−|√2+2|.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "√2<2, deci primul modul este 2−√2; al doilea este √2+2. Diferența este −2√2.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2√2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "−2√2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 1,
+        "type_name": "Calcul numeric al modulelor",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este mulțimea soluțiilor reale ale ecuației |3x−1|=5?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3x−1=5 sau 3x−1=−5, deci x=2 sau x=−4/3.",
+      "options": [
+        {
+          "text": "{−4/3; 2}",
+          "is_correct": true
+        },
+        {
+          "text": "{−2; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "{2}",
+          "is_correct": false
+        },
+        {
+          "text": "{−4/3}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 2,
+        "type_name": "Ecuația elementară cu modul",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este mulțimea soluțiilor reale ale ecuației |2x+3|=1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2x+3=1 sau 2x+3=−1, deci x=−1 sau x=−2.",
+      "options": [
+        {
+          "text": "{−1; 1}",
+          "is_correct": false
+        },
+        {
+          "text": "{−2; −1}",
+          "is_correct": true
+        },
+        {
+          "text": "{−2}",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 2}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 2,
+        "type_name": "Ecuația elementară cu modul",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este mulțimea soluțiilor reale ale ecuației |x−4|=0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un modul este zero numai când expresia din interior este zero: x=4.",
+      "options": [
+        {
+          "text": "{−4; 4}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{4}",
+          "is_correct": true
+        },
+        {
+          "text": "R",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 2,
+        "type_name": "Ecuația elementară cu modul",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este mulțimea soluțiilor reale ale ecuației |5x−2|=−3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un modul este nenegativ, deci nu poate fi egal cu −3.",
+      "options": [
+        {
+          "text": "{−1/5; 1}",
+          "is_correct": false
+        },
+        {
+          "text": "{−1/5}",
+          "is_correct": false
+        },
+        {
+          "text": "R",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 2,
+        "type_name": "Ecuația elementară cu modul",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația |x²−1|+|2x−2|=0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambii termeni trebuie să fie zero. Prima condiție dă x=±1, iar a doua x=1. Intersecția este {1}.",
+      "options": [
+        {
+          "text": "{1}",
+          "is_correct": true
+        },
+        {
+          "text": "{−1; 1}",
+          "is_correct": false
+        },
+        {
+          "text": "{−1}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 3,
+        "type_name": "Sumă de module nulă",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația |x−2|+|x+2|=0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ar trebui să avem simultan x=2 și x=−2, ceea ce este imposibil.",
+      "options": [
+        {
+          "text": "{−2; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": true
+        },
+        {
+          "text": "{0}",
+          "is_correct": false
+        },
+        {
+          "text": "R",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 3,
+        "type_name": "Sumă de module nulă",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația |(x−3)(x+1)|+|x+1|=0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Al doilea modul impune x=−1. Această valoare anulează și primul modul, deci este unica soluție.",
+      "options": [
+        {
+          "text": "{−1; 3}",
+          "is_correct": false
+        },
+        {
+          "text": "{3}",
+          "is_correct": false
+        },
+        {
+          "text": "{−1}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 3,
+        "type_name": "Sumă de module nulă",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația |x²−9|+|x−3|=0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima condiție dă x=±3, iar a doua x=3; rămâne numai x=3.",
+      "options": [
+        {
+          "text": "{−3; 3}",
+          "is_correct": false
+        },
+        {
+          "text": "{−3}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{3}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 3,
+        "type_name": "Sumă de module nulă",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați mulțimea soluțiilor întregi ale ecuației |2x−1|=3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În R obținem x=−1 sau x=2. Ambele valori sunt întregi.",
+      "options": [
+        {
+          "text": "{−1; 2}",
+          "is_correct": true
+        },
+        {
+          "text": "{−2; 1}",
+          "is_correct": false
+        },
+        {
+          "text": "{2}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 4,
+        "type_name": "Ecuații cu modul în mulțimi discrete",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați mulțimea soluțiilor întregi ale ecuației |3x+1|=2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Soluțiile reale sunt −1 și 1/3. Intersecția cu Z păstrează numai −1.",
+      "options": [
+        {
+          "text": "{−1; 1/3}",
+          "is_correct": false
+        },
+        {
+          "text": "{−1}",
+          "is_correct": true
+        },
+        {
+          "text": "{1/3}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 4,
+        "type_name": "Ecuații cu modul în mulțimi discrete",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați mulțimea soluțiilor întregi ale ecuației |2x+1|=2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Soluțiile reale sunt −3/2 și 1/2. Niciuna nu este întreagă.",
+      "options": [
+        {
+          "text": "{−3/2; 1/2}",
+          "is_correct": false
+        },
+        {
+          "text": "{−1; 1}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": true
+        },
+        {
+          "text": "{0}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 4,
+        "type_name": "Ecuații cu modul în mulțimi discrete",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați mulțimea soluțiilor întregi ale ecuației (|x|+1)/(|x|−2)=2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul cere |x|≠2. Notăm t=|x|: t+1=2t−4, deci t=5. Rezultă x=±5, ambele admise.",
+      "options": [
+        {
+          "text": "{−2; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "{5}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{−5; 5}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 4,
+        "type_name": "Ecuații cu modul în mulțimi discrete",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R inecuația |3x−4|<0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Nicio valoare absolută nu este strict negativă.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": true
+        },
+        {
+          "text": "R",
+          "is_correct": false
+        },
+        {
+          "text": "{4/3}",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 4/3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 5,
+        "type_name": "Inecuații imposibile sau automate",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R inecuația |x+2|≥0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Modulul oricărui număr real este nenegativ, deci toate valorile reale sunt admise.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "R",
+          "is_correct": true
+        },
+        {
+          "text": "{−2}",
+          "is_correct": false
+        },
+        {
+          "text": "[−2; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 5,
+        "type_name": "Inecuații imposibile sau automate",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R inecuația |2x−1|>−3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru orice x real, |2x−1|≥0>−3.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{1/2}",
+          "is_correct": false
+        },
+        {
+          "text": "R",
+          "is_correct": true
+        },
+        {
+          "text": "(1/2; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 5,
+        "type_name": "Inecuații imposibile sau automate",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R inecuația |x−3|≤0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un modul este cel mult zero exact când este zero: x−3=0.",
+      "options": [
+        {
+          "text": "R",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "{3}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 5,
+        "type_name": "Inecuații imposibile sau automate",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este mulțimea soluțiilor reale ale inecuației |2x+8|<2?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−2<2x+8<2, deci −10<2x<−6 și −5<x<−3.",
+      "options": [
+        {
+          "text": "(−5; −3)",
+          "is_correct": true
+        },
+        {
+          "text": "[−5; −3]",
+          "is_correct": false
+        },
+        {
+          "text": "(−3; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −5) ∪ (−3; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 6,
+        "type_name": "Inecuația dublă cu modul",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este mulțimea soluțiilor reale ale inecuației |3x−6|≤9?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−9≤3x−6≤9, deci −3≤3x≤15 și −1≤x≤5.",
+      "options": [
+        {
+          "text": "(−1; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "[−1; 5]",
+          "is_correct": true
+        },
+        {
+          "text": "[1; 5]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −1] ∪ [5; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 6,
+        "type_name": "Inecuația dublă cu modul",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este mulțimea soluțiilor reale ale inecuației |x+1|<4?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−4<x+1<4, deci −5<x<3.",
+      "options": [
+        {
+          "text": "[−5; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(−3; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(−5; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; −5) ∪ (3; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 6,
+        "type_name": "Inecuația dublă cu modul",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este mulțimea soluțiilor reale ale inecuației |2x−1|≤3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−3≤2x−1≤3, deci −2≤2x≤4 și −1≤x≤2.",
+      "options": [
+        {
+          "text": "(−1; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "[−2; 1]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −1] ∪ [2; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "[−1; 2]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 6,
+        "type_name": "Inecuația dublă cu modul",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R inecuația |2x−5|>1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2x−5<−1 sau 2x−5>1; rezultă x<2 sau x>3.",
+      "options": [
+        {
+          "text": "(−∞; 2) ∪ (3; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 2] ∪ [3; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −3) ∪ (−2; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 7,
+        "type_name": "Exteriorul unui interval prin modul",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R inecuația |3x+3|≥6.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3x+3≤−6 sau 3x+3≥6, deci x≤−3 sau x≥1.",
+      "options": [
+        {
+          "text": "[−3; 1]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −3] ∪ [1; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; −3) ∪ (1; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −1] ∪ [3; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 7,
+        "type_name": "Exteriorul unui interval prin modul",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R inecuația |x−2|>4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x−2<−4 sau x−2>4, adică x<−2 sau x>6.",
+      "options": [
+        {
+          "text": "(−2; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −2] ∪ [6; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −2) ∪ (6; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; −6) ∪ (2; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 7,
+        "type_name": "Exteriorul unui interval prin modul",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R inecuația |2x+4|≥2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2x+4≤−2 sau 2x+4≥2, deci x≤−3 sau x≥−1.",
+      "options": [
+        {
+          "text": "[−3; −1]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −3) ∪ (−1; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 1] ∪ [3; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −3] ∪ [−1; +∞)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 7,
+        "type_name": "Exteriorul unui interval prin modul",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În convenția N={0,1,2,…}, determinați soluțiile naturale ale inecuației |n−3|<2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1<n<5. Numerele naturale din acest interval sunt 2, 3 și 4.",
+      "options": [
+        {
+          "text": "{2; 3; 4}",
+          "is_correct": true
+        },
+        {
+          "text": "{1; 2; 3; 4; 5}",
+          "is_correct": false
+        },
+        {
+          "text": "{0; 1; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "{3}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 8,
+        "type_name": "Inecuații cu restricții naturale",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În convenția N={0,1,2,…}, determinați soluțiile naturale ale inecuației |2n−5|≤3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−3≤2n−5≤3 conduce la 1≤n≤4.",
+      "options": [
+        {
+          "text": "{2; 3}",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 2; 3; 4}",
+          "is_correct": true
+        },
+        {
+          "text": "{0; 1; 2; 3; 4}",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 4}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 8,
+        "type_name": "Inecuații cu restricții naturale",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În convenția N={0,1,2,…}, determinați soluțiile naturale ale inecuației |n+1|<3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−4<n<2. Intersecția cu N={0,1,2,…} este {0; 1}.",
+      "options": [
+        {
+          "text": "{1; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "{0; 1; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "{0; 1}",
+          "is_correct": true
+        },
+        {
+          "text": "{0}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 8,
+        "type_name": "Inecuații cu restricții naturale",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În convenția N={0,1,2,…}, determinați soluțiile naturale ale inecuației |3n−2|>4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3n−2<−4 sau 3n−2>4, adică n<−2/3 sau n>2. În N rămân toate numerele cel puțin 3.",
+      "options": [
+        {
+          "text": "{0; 1; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "{2; 3; 4; …}",
+          "is_correct": false
+        },
+        {
+          "text": "{0; 3; 4; 5; …}",
+          "is_correct": false
+        },
+        {
+          "text": "{3; 4; 5; …}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 8,
+        "type_name": "Inecuații cu restricții naturale",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația 3|x+1|−5=7.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3|x+1|=12, deci |x+1|=4 și x=−5 sau x=3.",
+      "options": [
+        {
+          "text": "{−5; 3}",
+          "is_correct": true
+        },
+        {
+          "text": "{−3; 5}",
+          "is_correct": false
+        },
+        {
+          "text": "{3}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 9,
+        "type_name": "Ecuații liniare în modul",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația 2|x−2|+1=9.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2|x−2|=8, deci |x−2|=4 și x=−2 sau x=6.",
+      "options": [
+        {
+          "text": "{−6; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "{−2; 6}",
+          "is_correct": true
+        },
+        {
+          "text": "{2; 6}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 9,
+        "type_name": "Ecuații liniare în modul",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația 5|x+3|+2=−3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ar rezulta |x+3|=−1, imposibil deoarece modulul este nenegativ.",
+      "options": [
+        {
+          "text": "{−4; −2}",
+          "is_correct": false
+        },
+        {
+          "text": "{−3}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": true
+        },
+        {
+          "text": "R",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 9,
+        "type_name": "Ecuații liniare în modul",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați mulțimea soluțiilor reale ale ecuației |x−1|²−3|x−1|+2=0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu t=|x−1|≥0, (t−1)(t−2)=0. Din t=1 obținem x=0,2; din t=2, x=−1,3.",
+      "options": [
+        {
+          "text": "{1; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "{0; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "{−1; 3}",
+          "is_correct": false
+        },
+        {
+          "text": "{−1; 0; 2; 3}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 10,
+        "type_name": "Ecuații pătratice în modul",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați mulțimea soluțiilor reale ale ecuației |x+2|²+|x+2|−2=0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu t=|x+2|≥0 avem (t+2)(t−1)=0. Respingem t=−2, păstrăm t=1, deci x=−3 sau x=−1.",
+      "options": [
+        {
+          "text": "{−3; −1}",
+          "is_correct": true
+        },
+        {
+          "text": "{−4; −3; −1; 0}",
+          "is_correct": false
+        },
+        {
+          "text": "{−2; 1}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 10,
+        "type_name": "Ecuații pătratice în modul",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați mulțimea soluțiilor reale ale ecuației 2|x|²−5|x|+2=0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu t=|x|≥0, (2t−1)(t−2)=0. Ambele rădăcini t=1/2 și t=2 sunt admise, fiecare dând două valori opuse ale lui x.",
+      "options": [
+        {
+          "text": "{1/2; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "{−2; −1/2; 1/2; 2}",
+          "is_correct": true
+        },
+        {
+          "text": "{−2; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "{−1; 1}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 10,
+        "type_name": "Ecuații pătratice în modul",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R inecuația |x|(|x−1|−2)<0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru un produs strict negativ, |x| trebuie să fie pozitiv și |x−1|−2<0. Avem −1<x<3 și excludem x=0.",
+      "options": [
+        {
+          "text": "(−1; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "[−1; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(−1; 0) ∪ (0; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; −1) ∪ (3; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 11,
+        "type_name": "Produse de factori cu modul",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R inecuația |x−5|(|x|−3)≤0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x≠5, primul factor este pozitiv și cerem |x|≤3. La x=5 produsul este zero, deci adăugăm și această soluție izolată.",
+      "options": [
+        {
+          "text": "[−3; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(−3; 3) ∪ {5}",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −3] ∪ [3; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "[−3; 3] ∪ {5}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 11,
+        "type_name": "Produse de factori cu modul",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R inecuația |x+1|(|x|−2)>0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Primul factor este nenegativ. Produsul este pozitiv când |x|>2; pe aceste semidrepte x≠−1 automat.",
+      "options": [
+        {
+          "text": "(−∞; −2) ∪ (2; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "[−2; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −2] ∪ [2; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−2; 2)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 11,
+        "type_name": "Produse de factori cu modul",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Cu respectarea domeniului de definiție, rezolvați în R inecuația (|x|−1)/(|x|−3)<0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul exclude |x|=3. Pentru t=|x|≥0, (t−1)/(t−3)<0 exact când 1<t<3.",
+      "options": [
+        {
+          "text": "[−3; −1] ∪ [1; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(−3; −1) ∪ (1; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "(−1; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −3) ∪ (3; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 12,
+        "type_name": "Fracții cu modul",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Cu respectarea domeniului de definiție, rezolvați în R inecuația (|x|−2)/(|x|−1)≥0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul exclude |x|=1. Cu t=|x|≥0, raportul este nenegativ pentru 0≤t<1 sau t≥2; traducem cele două condiții în x.",
+      "options": [
+        {
+          "text": "(−2; −1) ∪ (1; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −2] ∪ [−1; 1] ∪ [2; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −2] ∪ (−1; 1) ∪ [2; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; −1) ∪ (1; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 12,
+        "type_name": "Fracții cu modul",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Cu respectarea domeniului de definiție, rezolvați în R inecuația 1/(2−|x|)>0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numărătorul este pozitiv, deci cerem numitor strict pozitiv: 2−|x|>0. Rezultă |x|<2; capetele sunt excluse din domeniu.",
+      "options": [
+        {
+          "text": "[−2; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −2) ∪ (2; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "R",
+          "is_correct": false
+        },
+        {
+          "text": "(−2; 2)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 12,
+        "type_name": "Fracții cu modul",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte perechi (x,n)∈N² verifică x+|x−4|+2ⁿ=36, dacă N={0,1,2,…}?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru 0≤x≤4, x+|x−4|=4; pentru x>4, expresia este 2x−4. În ambele cazuri 2ⁿ≤36. Verificarea puterilor admise dă exact perechile (0; 5), (1; 5), (2; 5), (3; 5), (4; 5), (12; 4), (16; 3), (18; 2), (19; 1), în total 9.",
+      "options": [
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 13,
+        "type_name": "Modul și puteri ale lui 2",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte perechi (x,n)∈N² verifică x+|x−2|+2ⁿ=18, dacă N={0,1,2,…}?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru 0≤x≤2, x+|x−2|=2; pentru x>2, expresia este 2x−2. În ambele cazuri 2ⁿ≤18. Verificarea puterilor admise dă exact perechile (0; 4), (1; 4), (2; 4), (6; 3), (8; 2), (9; 1), în total 6.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 13,
+        "type_name": "Modul și puteri ale lui 2",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte perechi (x,n)∈N² verifică x+|x−1|+2ⁿ=9, dacă N={0,1,2,…}?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru 0≤x≤1, x+|x−1|=1; pentru x>1, expresia este 2x−1. În ambele cazuri 2ⁿ≤9. Verificarea puterilor admise dă exact perechile (0; 3), (1; 3), (3; 2), (4; 1), în total 4.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 13,
+        "type_name": "Modul și puteri ale lui 2",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Simplificați √(a²)+√(b²), știind că a≥0>b.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "√(a²)+√(b²)=|a|+|b|. |a|=a și |b|=−b, deci suma este a−b.",
+      "options": [
+        {
+          "text": "a+b",
+          "is_correct": false
+        },
+        {
+          "text": "b−a",
+          "is_correct": false
+        },
+        {
+          "text": "−a−b",
+          "is_correct": false
+        },
+        {
+          "text": "a−b",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 14,
+        "type_name": "Radicali pătrați și ipoteze de semn",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Simplificați √(a²)+√(b²), știind că a<0≤b.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "√(a²)+√(b²)=|a|+|b|. |a|=−a și |b|=b, deci suma este b−a.",
+      "options": [
+        {
+          "text": "b−a",
+          "is_correct": true
+        },
+        {
+          "text": "a+b",
+          "is_correct": false
+        },
+        {
+          "text": "a−b",
+          "is_correct": false
+        },
+        {
+          "text": "−a−b",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 14,
+        "type_name": "Radicali pătrați și ipoteze de semn",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Simplificați √(a²)+√(b²), știind că a≤0 și b≤0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "√(a²)+√(b²)=|a|+|b|. Ambele numere sunt nepozitive: |a|=−a și |b|=−b.",
+      "options": [
+        {
+          "text": "a+b",
+          "is_correct": false
+        },
+        {
+          "text": "−a−b",
+          "is_correct": true
+        },
+        {
+          "text": "a−b",
+          "is_correct": false
+        },
+        {
+          "text": "b−a",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 14,
+        "type_name": "Radicali pătrați și ipoteze de semn",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru −2≤b≤−1, rezolvați în x ecuația x+√((b−3)²)=5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "b−3<0, deci radicalul este 3−b. Ecuația devine x+3−b=5, de unde x=b+2.",
+      "options": [
+        {
+          "text": "x=8−b",
+          "is_correct": false
+        },
+        {
+          "text": "x=b−2",
+          "is_correct": false
+        },
+        {
+          "text": "x=b+2",
+          "is_correct": true
+        },
+        {
+          "text": "x=2−b",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 15,
+        "type_name": "Ecuații cu parametru încadrat",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru 1≤a≤2, care este mulțimea soluțiilor reale ale ecuației |x|=√((a−4)²)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a−4<0, deci radicalul este 4−a>0. Ecuația |x|=4−a are soluțiile x=±(4−a).",
+      "options": [
+        {
+          "text": "{4−a}",
+          "is_correct": false
+        },
+        {
+          "text": "{a−4}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{a−4; 4−a}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 15,
+        "type_name": "Ecuații cu parametru încadrat",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru −3≤t≤−2, rezolvați în x ecuația 2x+√((t+1)²)=3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "t+1<0, deci radicalul este −t−1. Obținem 2x−t−1=3 și x=(t+4)/2.",
+      "options": [
+        {
+          "text": "x=(t+4)/2",
+          "is_correct": true
+        },
+        {
+          "text": "x=(2−t)/2",
+          "is_correct": false
+        },
+        {
+          "text": "x=(t+2)/2",
+          "is_correct": false
+        },
+        {
+          "text": "x=−t/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 15,
+        "type_name": "Ecuații cu parametru încadrat",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați √(x²)+2x=−6, sub condiția x<0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<0, √(x²)=−x. Ecuația devine x=−6, iar valoarea verifică ipoteza și ecuația inițială.",
+      "options": [
+        {
+          "text": "{−2}",
+          "is_correct": false
+        },
+        {
+          "text": "{−6}",
+          "is_correct": true
+        },
+        {
+          "text": "{6}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 16,
+        "type_name": "Ecuații sub condiție de semn a necunoscutei",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați toate soluțiile ecuației |x−1|+x=1 care verifică x<0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<0, x−1<0 și |x−1|=1−x. Ecuația se reduce la identitatea 1=1, deci orice x<0 este soluție.",
+      "options": [
+        {
+          "text": "{0}",
+          "is_correct": false
+        },
+        {
+          "text": "{−1}",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 0)",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 16,
+        "type_name": "Ecuații sub condiție de semn a necunoscutei",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați √((x+2)²)=−x, sub condiția x<0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația este |x+2|=−x. Pentru −2≤x<0 obținem x+2=−x, deci x=−1. Pentru x<−2 obținem −x−2=−x, imposibil.",
+      "options": [
+        {
+          "text": "{−2}",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −2)",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{−1}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 16,
+        "type_name": "Ecuații sub condiție de semn a necunoscutei",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y sunt reale, |x−(1)|≤2 și |y−(4)|≤1. Care este mulțimea tuturor valorilor posibile ale lui y−x?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x∈[-1; 3], y∈[3; 5]. Minimul este (3)−(3)=0, iar maximul (5)−(-1)=6. Intervalele sunt independente; toate valorile intermediare se ating.",
+      "options": [
+        {
+          "text": "[0; 6]",
+          "is_correct": true
+        },
+        {
+          "text": "(0; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "[1; 5]",
+          "is_correct": false
+        },
+        {
+          "text": "[-1; 7]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 17,
+        "type_name": "Încadrarea unei combinații liniare",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y sunt reale, |x−(-2)|≤1 și |y−(3)|≤2. Care este mulțimea tuturor valorilor posibile ale lui y−x?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x∈[-3; -1], y∈[1; 5]. Minimul este (1)−(-1)=2, iar maximul (5)−(-3)=8. Intervalele sunt independente; toate valorile intermediare se ating.",
+      "options": [
+        {
+          "text": "(2; 8)",
+          "is_correct": false
+        },
+        {
+          "text": "[2; 8]",
+          "is_correct": true
+        },
+        {
+          "text": "[3; 7]",
+          "is_correct": false
+        },
+        {
+          "text": "[1; 9]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 17,
+        "type_name": "Încadrarea unei combinații liniare",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y sunt reale, |x−(0)|≤3 și |y−(-1)|≤2. Care este mulțimea tuturor valorilor posibile ale lui y−x?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x∈[-3; 3], y∈[-3; 1]. Minimul este (-3)−(3)=-6, iar maximul (1)−(-3)=4. Intervalele sunt independente; toate valorile intermediare se ating.",
+      "options": [
+        {
+          "text": "(-6; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "[-5; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "[-6; 4]",
+          "is_correct": true
+        },
+        {
+          "text": "[-7; 5]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 17,
+        "type_name": "Încadrarea unei combinații liniare",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă (2x−1)²+(y−2)²+(3z−1)²=9, care este mulțimea valorilor posibile ale lui x?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(2x−1)²≤9 dă −3≤2x−1≤3, adică −1≤x≤2. Pentru orice astfel de x putem lua z=1/3 și (y−2)²=9−(2x−1)²≥0, deci întregul interval se realizează.",
+      "options": [
+        {
+          "text": "(−1; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "[−3; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "[−2; 1]",
+          "is_correct": false
+        },
+        {
+          "text": "[−1; 2]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 18,
+        "type_name": "Extreme dintr-o ecuație de elipsoid",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă (x+2)²+4(y−1)²+z²=16, care este mulțimea valorilor posibile ale lui x?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(x+2)²≤16, deci −6≤x≤2. Pentru orice astfel de x, alegem y=1 și z²=16−(x+2)²≥0; toate valorile sunt posibile.",
+      "options": [
+        {
+          "text": "[−6; 2]",
+          "is_correct": true
+        },
+        {
+          "text": "[−4; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "(−6; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "[−2; 6]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 18,
+        "type_name": "Extreme dintr-o ecuație de elipsoid",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă 9(x−1)²+(y+3)²+4z²=36, care este mulțimea valorilor posibile ale lui y?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(y+3)²≤36 dă −9≤y≤3. Pentru orice astfel de y, alegem x=1 și 4z²=36−(y+3)²≥0, deci intervalul este complet.",
+      "options": [
+        {
+          "text": "[−3; 9]",
+          "is_correct": false
+        },
+        {
+          "text": "[−9; 3]",
+          "is_correct": true
+        },
+        {
+          "text": "[−6; 6]",
+          "is_correct": false
+        },
+        {
+          "text": "(−9; 3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 18,
+        "type_name": "Extreme dintr-o ecuație de elipsoid",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă |x|≤2 și |y|≤1, care este maximul lui |2x−3y|?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Triunghiulara dă |2x−3y|≤2|x|+3|y|≤7. Egalitatea se atinge la x=2, y=−1.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 19,
+        "type_name": "Inegalitatea triunghiulară ponderată",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă |x|≤1 și |y|≤4, care este maximul lui |3x+2y|?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "|3x+2y|≤3|x|+2|y|≤11, iar x=1, y=4 realizează valoarea 11.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 19,
+        "type_name": "Inegalitatea triunghiulară ponderată",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă |x|≤2, |y|≤1 și |z|≤2, care este maximul lui |x−2y+3z|?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "|x−2y+3z|≤|x|+2|y|+3|z|≤10. Valoarea se atinge pentru x=2, y=−1, z=2.",
+      "options": [
+        {
+          "text": "10",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 19,
+        "type_name": "Inegalitatea triunghiulară ponderată",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b sunt reale și a²+b²=10. Care este maximul lui |a+b|·|a−b|?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este |a²−b²|≤a²+b²=10. Egalitatea se atinge, de exemplu, pentru a=√10, b=0.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": true
+        },
+        {
+          "text": "20",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 20,
+        "type_name": "Produse de module",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b sunt reale, |a+b|≤3 și |a−b|≤2. Care este maximul lui |a+b|·|a−b|?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este cel mult 3·2=6. Se atinge când a+b=3 și a−b=2, adică a=5/2, b=1/2.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 20,
+        "type_name": "Produse de module",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care expresie este identică cu |a+b+c|·|a−b+c| pentru orice a,b,c reale?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Folosim |u||v|=|uv| și diferența de pătrate pentru u=(a+c)+b, v=(a+c)−b.",
+      "options": [
+        {
+          "text": "(a+c)²−b²",
+          "is_correct": false
+        },
+        {
+          "text": "|(a+c)²+b²|",
+          "is_correct": false
+        },
+        {
+          "text": "|a+c|−|b|",
+          "is_correct": false
+        },
+        {
+          "text": "|(a+c)²−b²|",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 20,
+        "type_name": "Produse de module",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b sunt reale nenule. Care este minimul lui (|a|+|b|)(1/|a|+1/|b|)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u=|a|>0 și v=|b|>0, produsul este 2+u/v+v/u≥4. Egalitatea se atinge când |a|=|b|.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 21,
+        "type_name": "Inegalități cu inverse și module",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x real nenul, care este minimul lui |x|+9/|x|?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu t=|x|>0, t+9/t≥2√9=6. Egalitatea se atinge pentru |x|=3, adică x=±3.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 21,
+        "type_name": "Inegalități cu inverse și module",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b sunt reale nenule și |a|+|b|=4. Care este minimul lui 1/|a|+1/|b|?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm u=|a|, v=|b|. Avem u+v=4 și uv≤4, deci 1/u+1/v=4/(uv)≥1. Egalitate pentru u=v=2.",
+      "options": [
+        {
+          "text": "1/2",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 21,
+        "type_name": "Inegalități cu inverse și module",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este mulțimea soluțiilor reale ale sistemului |x|<1 și |x−3|<1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă ambele inegalități ar fi adevărate, am avea 3=|x−(x−3)|≤|x|+|x−3|<2, contradicție.",
+      "options": [
+        {
+          "text": "(0; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "{3/2}",
+          "is_correct": false
+        },
+        {
+          "text": "R",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 22,
+        "type_name": "Incompatibilitate prin triunghiulară",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R inecuația |x−1|+|x−5|<4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din triunghiulară, |x−1|+|x−5|≥|(x−1)−(x−5)|=4. Inecuația strictă este imposibilă.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": true
+        },
+        {
+          "text": "(1; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "[1; 5]",
+          "is_correct": false
+        },
+        {
+          "text": "R",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 22,
+        "type_name": "Incompatibilitate prin triunghiulară",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care afirmație descrie sistemul |a|<1, |b|<2, |a+b|≥3, cu a,b reale?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Primele două condiții implică |a+b|≤|a|+|b|<3, în contradicție cu ultima condiție.",
+      "options": [
+        {
+          "text": "Orice a,b cu a+b=3 sunt soluții.",
+          "is_correct": false
+        },
+        {
+          "text": "Sistemul nu are soluții reale.",
+          "is_correct": true
+        },
+        {
+          "text": "Sistemul are doar soluția (a,b)=(1,2).",
+          "is_correct": false
+        },
+        {
+          "text": "Sistemul are soluția (a,b)=(0,0).",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 22,
+        "type_name": "Incompatibilitate prin triunghiulară",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă |x|<1 și |y|<1, care este mulțimea tuturor valorilor posibile ale fracției (x+y)/(1+xy)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1+xy>0 și 1−[(x+y)/(1+xy)]²=(1−x²)(1−y²)/(1+xy)²>0. Rezultă modul strict sub 1. Orice t∈(−1,1) se obține pentru x=t, y=0.",
+      "options": [
+        {
+          "text": "[−1; 1]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −1) ∪ (1; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−1; 1)",
+          "is_correct": true
+        },
+        {
+          "text": "R",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 23,
+        "type_name": "Stabilitatea unei fracții în interval",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă |x|<1 și |y|<1, ce se poate afirma despre numitorul 1+xy?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "|xy|<1, deci −1<xy<1 și 0<1+xy<2. În particular, fracția cu acest numitor este definită.",
+      "options": [
+        {
+          "text": "Este strict negativ.",
+          "is_correct": false
+        },
+        {
+          "text": "Este întotdeauna zero.",
+          "is_correct": false
+        },
+        {
+          "text": "Poate fi pozitiv, zero sau negativ.",
+          "is_correct": false
+        },
+        {
+          "text": "Este strict pozitiv.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 23,
+        "type_name": "Stabilitatea unei fracții în interval",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă |x|<1/2 și |y|<1/2, care este mulțimea tuturor valorilor posibile ale lui (x+y)/(1+4xy)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=2x, v=2y, cu |u|,|v|<1. Fracția este (1/2)(u+v)/(1+uv), deci are modul sub 1/2. Orice t din interval se realizează la x=t, y=0.",
+      "options": [
+        {
+          "text": "(−1/2; 1/2)",
+          "is_correct": true
+        },
+        {
+          "text": "[−1/2; 1/2]",
+          "is_correct": false
+        },
+        {
+          "text": "(−1; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "R",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 23,
+        "type_name": "Stabilitatea unei fracții în interval",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați |x−2|+|x−4|=2, sub condiția x∈[2; 4].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe intervalul dat, suma este (x−2)+(4−x)=2. Orice punct al segmentului verifică ecuația.",
+      "options": [
+        {
+          "text": "{2; 4}",
+          "is_correct": false
+        },
+        {
+          "text": "[2; 4]",
+          "is_correct": true
+        },
+        {
+          "text": "{3}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 24,
+        "type_name": "Module cu interval impus",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați |x−1|−|x−5|=0, sub condiția x∈[2; 4].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe [2,4], modulele sunt x−1 și 5−x. Ecuația devine 2x−6=0, deci x=3, care aparține segmentului.",
+      "options": [
+        {
+          "text": "[2; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "{2; 4}",
+          "is_correct": false
+        },
+        {
+          "text": "{3}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 24,
+        "type_name": "Module cu interval impus",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați |x+1|+|x−2|=4, sub condiția x∈[−1; 2].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe segmentul dat, suma este (x+1)+(2−x)=3, deci nu poate fi 4.",
+      "options": [
+        {
+          "text": "[−1; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "{−1; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "{1/2}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.3",
+        "type": 24,
+        "type_name": "Module cu interval impus",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
     }
   ]
 }

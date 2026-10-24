@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 from gen_clasa_9_burtea_operatii import build_catalog_extension
 from gen_clasa_9_ordonare import build_ordering_questions
+from gen_clasa_9_modul import build_absolute_value_questions
 
 
 def alg(text, mode, data, answers, explanation):
@@ -207,6 +208,7 @@ def build_questions():
     q += catalog_grids()
     q += build_catalog_extension()
     q += build_ordering_questions()
+    q += build_absolute_value_questions()
 
     totals = {}
     for question in q:
@@ -218,8 +220,8 @@ def build_questions():
             occurrences[base] = occurrences.get(base, 0) + 1
             question["text"] = f"{base.rstrip('.')} — varianta {occurrences[base]}."
 
-    assert len(q) == 216, len(q)
-    assert len({question["text"] for question in q}) == 216
+    assert len(q) == 296, len(q)
+    assert len({question["text"] for question in q}) == 296
     return q
 
 

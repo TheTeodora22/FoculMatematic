@@ -9,8 +9,8 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 | Clasa | Lecții cu exerciții | Total exerciții | Grilă | Adevărat/Fals | Interactive |
 |---|---:|---:|---:|---:|---:|
 | Clasa a V-a | 42 | 2.101 | 589 | 93 | 1.419 |
-| Clasa a IX-a | 4 | 811 | 761 | 4 | 46 |
-| **Total** | **46** | **2.912** | **1.350** | **97** | **1.465** |
+| Clasa a IX-a | 4 | 891 | 841 | 4 | 46 |
+| **Total** | **46** | **2.992** | **1.430** | **97** | **1.465** |
 
 ## Clasa a V-a
 
@@ -94,12 +94,12 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 
 | Lecție | Total | Grilă | A/F | Interactive |
 |---|---:|---:|---:|---:|
-| Mulțimea numerelor reale. Operații algebrice, puteri și radicali | 216 | 166 | 4 | 46 |
+| Mulțimea numerelor reale. Operații algebrice, puteri și radicali | 296 | 246 | 4 | 46 |
 | Propoziții, predicate și cuantificatori | 95 | 95 | 0 | 0 |
 | Operații logice elementare și legi de calcul | 185 | 185 | 0 | 0 |
 | Raționamente logice. Inducția matematică și probleme de numărare | 315 | 315 | 0 | 0 |
 
-**Subtotal clasa a IX-a: 4 lecții și 811 de exerciții.**
+**Subtotal clasa a IX-a: 4 lecții și 891 de exerciții.**
 
 Lotul 01 din catalogul Burtea a fost prezentat inițial cu câte 5 grile pentru tipurile 1–2. La cererea utilizatorului, selecția finală păstrează câte 3: întrebările 1, 4, 5, 6, 9 și 10 din `docs/clasa_9/lot_01_verificare.md`.
 
@@ -113,7 +113,15 @@ Grilele sunt incluse în `clasa_9/clasa_9_u01_l01_multimea_numerelor_reale_opera
 
 Verificări: acoperirea celor 22 de tipuri și numărul de grile, unicitatea enunțurilor și a opțiunilor, exact un răspuns corect, verificarea independentă a răspunsurilor, a extremelor și cazurilor de egalitate; validatorul aplicației și `manage.py check`; import țintit în baza locală.
 
-Următorul subcapitol din catalog: **1.3. Modulul unui număr real**, 24 de tipuri, încă neacoperite de aceste loturi.
+### Subcapitolul 1.3 — Modulul unui număr real — finalizat
+
+Adăugate și încărcate local **80 de grile**, pentru **24/24 de tipuri** din catalogul A1, p. 18–22: câte 4 pentru tipurile 1–8 și câte 3 pentru tipurile 9–24. Nu s-au adăugat interactive sau A/F. Fiecare grilă are patru variante, exact una corectă și explicație. Sunt precizate universul soluțiilor (R, Z sau N={0,1,2,…}), restricțiile parametrilor și domeniul fracțiilor.
+
+Grilele sunt incluse în `clasa_9/clasa_9_u01_l01_multimea_numerelor_reale_operatii_ordonare_modul_si_aproximari.json`. Modulul reproductibil `generators/gen_clasa_9_modul.py` este apelat de generatorul lecției și folosește metadatele `catalog.section = A1.1.3`, tipul și varianta. Enunțurile sunt noi după tipologiile catalogului, nu transcrieri validate din scanare. Cele 216 de exerciții anterioare sunt păstrate identic.
+
+Verificări: `scripts/verify_clasa_9_modul.py` confirmă acoperirea tipurilor, numărul de grile, opțiunile și reproducerea JSON-ului. Pentru 46 de ecuații/inecuații compară soluțiile și distractorii cu predicatele inițiale pe o rețea de valori raționale, incluzând explicit rădăcinile propuse, capetele intervalelor, vecinătățile lor și polii fracțiilor. Verifică separat perechile naturale, parametrii, valori de extrem și stabilitatea fracțiilor. Explicațiile includ justificările algebrice; verificarea prin eșantionare nu înlocuiește aceste justificări. Validatorul aplicației, `manage.py check` și importul țintit au trecut.
+
+Următorul subcapitol: **1.4. Aproximări prin lipsă sau prin adaos**, 8 tipuri, încă neacoperite de aceste loturi.
 
 ### Secțiunea 2 — Propoziție. Predicat. Cuantificatori — finalizată
 
