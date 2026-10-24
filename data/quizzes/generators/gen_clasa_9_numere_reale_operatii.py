@@ -5,6 +5,8 @@ from gen_clasa_9_burtea_operatii import build_catalog_extension
 from gen_clasa_9_ordonare import build_ordering_questions
 from gen_clasa_9_modul import build_absolute_value_questions
 from gen_clasa_9_aproximari import build_approximation_questions
+from gen_clasa_9_parte_intreaga import build_floor_questions
+from gen_clasa_9_intervale import build_interval_questions
 from clasa_9_real_lessons import LESSONS, configure_manifest
 
 
@@ -212,6 +214,8 @@ def build_questions():
     q += build_ordering_questions()
     q += build_absolute_value_questions()
     q += build_approximation_questions()
+    q += build_floor_questions()
+    q += build_interval_questions()
 
     totals = {}
     for question in q:
@@ -223,8 +227,8 @@ def build_questions():
             occurrences[base] = occurrences.get(base, 0) + 1
             question["text"] = f"{base.rstrip('.')} — varianta {occurrences[base]}."
 
-    assert len(q) == 336, len(q)
-    assert len({question["text"] for question in q}) == 336
+    assert len(q) == 496, len(q)
+    assert len({question["text"] for question in q}) == 496
     return q
 
 

@@ -2,5 +2,2566 @@
   "title": "1.6. Operații cu intervale de numere reale",
   "description": "Clasa a 9-a · Mulțimea numerelor reale",
   "difficulty": "medium",
-  "questions": []
+  "questions": [
+    {
+      "text": "Care dintre numerele de mai jos aparține intervalului (−5; 5)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0 este strict între −5 și 5. Ambele capete sunt excluse.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "−5",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 1,
+        "type_name": "Apartenență la interval",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care dintre numerele de mai jos aparține intervalului [−2; 3)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Capătul −2 este inclus, iar capătul 3 este exclus.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "−2",
+          "is_correct": true
+        },
+        {
+          "text": "−3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 1,
+        "type_name": "Apartenență la interval",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care dintre numerele de mai jos aparține intervalului (1; 4]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Capătul 4 este inclus. 1 este exclus, iar 0 și 5 sunt în afara intervalului.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 1,
+        "type_name": "Apartenență la interval",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care dintre numerele de mai jos aparține intervalului (−∞; 2)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Intervalul conține exact numerele strict mai mici decât 2.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "−3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 1,
+        "type_name": "Apartenență la interval",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Scrieți condiția x∈[−2; 3) prin inegalități.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Paranteza pătrată include −2, iar cea rotundă exclude 3.",
+      "options": [
+        {
+          "text": "−2≤x<3",
+          "is_correct": true
+        },
+        {
+          "text": "−2<x≤3",
+          "is_correct": false
+        },
+        {
+          "text": "−2<x<3",
+          "is_correct": false
+        },
+        {
+          "text": "−2≤x≤3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 2,
+        "type_name": "Traducerea intervalului în inegalități",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Scrieți condiția x∈(−1; 4] prin inegalități.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Capătul −1 este exclus și capătul 4 este inclus.",
+      "options": [
+        {
+          "text": "−1≤x<4",
+          "is_correct": false
+        },
+        {
+          "text": "−1<x≤4",
+          "is_correct": true
+        },
+        {
+          "text": "−1<x<4",
+          "is_correct": false
+        },
+        {
+          "text": "−1≤x≤4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 2,
+        "type_name": "Traducerea intervalului în inegalități",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Scrieți condiția x∈(−∞; 5] prin inegalități.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sunt admise toate numerele cel mult egale cu 5.",
+      "options": [
+        {
+          "text": "x<5",
+          "is_correct": false
+        },
+        {
+          "text": "x≥5",
+          "is_correct": false
+        },
+        {
+          "text": "x≤5",
+          "is_correct": true
+        },
+        {
+          "text": "x>5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 2,
+        "type_name": "Traducerea intervalului în inegalități",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Scrieți condiția x∈[2; +∞) prin inegalități.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sunt admise toate numerele mai mari sau egale cu 2.",
+      "options": [
+        {
+          "text": "x>2",
+          "is_correct": false
+        },
+        {
+          "text": "x≤2",
+          "is_correct": false
+        },
+        {
+          "text": "x<2",
+          "is_correct": false
+        },
+        {
+          "text": "x≥2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 2,
+        "type_name": "Traducerea intervalului în inegalități",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați reuniunea [−2; 3] ∪ (1; 5).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Intervalele se suprapun. −2 este inclus, iar 5 nu aparține niciunuia.",
+      "options": [
+        {
+          "text": "[−2; 5)",
+          "is_correct": true
+        },
+        {
+          "text": "(−2; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "[−2; 5]",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 3]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 3,
+        "type_name": "Reuniuni de intervale",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați reuniunea (−2; 0) ∪ (0; 3).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0 lipsește din ambele intervale, deci reuniunea nu poate fi contopită într-un singur interval.",
+      "options": [
+        {
+          "text": "(−2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(−2; 0) ∪ (0; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "[−2; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "{0}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 3,
+        "type_name": "Reuniuni de intervale",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați reuniunea [−1; 2) ∪ [2; 4].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punctul 2 este inclus în al doilea interval. Nu rămâne niciun gol între −1 și 4.",
+      "options": [
+        {
+          "text": "[−1; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(−1; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "[−1; 4]",
+          "is_correct": true
+        },
+        {
+          "text": "[−1; 2) ∪ (2; 4]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 3,
+        "type_name": "Reuniuni de intervale",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați reuniunea (−∞; −1] ∪ (−1; +∞).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Primul interval conține și −1; al doilea conține toate numerele mai mari. Împreună acoperă R.",
+      "options": [
+        {
+          "text": "R∖{−1}",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −1)",
+          "is_correct": false
+        },
+        {
+          "text": "{−1}",
+          "is_correct": false
+        },
+        {
+          "text": "R",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 3,
+        "type_name": "Reuniuni de intervale",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați intersecția [−2; 3] ∩ (1; 5).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punctele comune verifică x>1 și x≤3. 1 este exclus, 3 este inclus.",
+      "options": [
+        {
+          "text": "(1; 3]",
+          "is_correct": true
+        },
+        {
+          "text": "[1; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "[−2; 5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 4,
+        "type_name": "Intersecții de intervale",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați intersecția [−1; 2] ∩ [2; 4].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Singurul punct comun este 2, inclus în ambele intervale.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{2}",
+          "is_correct": true
+        },
+        {
+          "text": "[−1; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "(−1; 4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 4,
+        "type_name": "Intersecții de intervale",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați intersecția (−1; 2) ∩ [2; 4].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Primul interval cere x<2, iar al doilea x≥2; condițiile sunt incompatibile.",
+      "options": [
+        {
+          "text": "{2}",
+          "is_correct": false
+        },
+        {
+          "text": "(−1; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": true
+        },
+        {
+          "text": "[2; 4]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 4,
+        "type_name": "Intersecții de intervale",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați intersecția (−∞; 3] ∩ [−2; +∞).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Trebuie îndeplinite simultan x≤3 și x≥−2.",
+      "options": [
+        {
+          "text": "(−2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "R",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "[−2; 3]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 4,
+        "type_name": "Intersecții de intervale",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte numere întregi se află în intervalul (−√10; 5/2]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−4<−√10<−3 și 2<5/2<3. Întregii admiși sunt −3,−2,−1,0,1,2, în total 6.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 5,
+        "type_name": "Întregi într-un interval",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte numere întregi se află în intervalul [−2; 3)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Întregii sunt −2,−1,0,1,2. Capătul 3 este exclus.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 5,
+        "type_name": "Întregi într-un interval",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte numere întregi se află în intervalul (−1; 1)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Singurul întreg strict între −1 și 1 este 0.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 5,
+        "type_name": "Întregi într-un interval",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte numere întregi se află în intervalul [1/3; 10/3]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Întregii sunt 1,2,3; nici 0, nici 4 nu se află în interval.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 5,
+        "type_name": "Întregi într-un interval",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Știind că x<0<y și [x; 0]∪[0; y]=[-3; 4], determinați perechea (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două intervale se ating în 0. Reuniunea este [x;y], deci compararea extremităților dă x=-3, y=4.",
+      "options": [
+        {
+          "text": "(-3; 4)",
+          "is_correct": true
+        },
+        {
+          "text": "(-2; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2; 3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 6,
+        "type_name": "Reconstrucție din reuniune",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Știind că x<1<y și [x; 1]∪[1; y]=[-2; 5], determinați perechea (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două intervale se ating în 1. Reuniunea este [x;y], deci compararea extremităților dă x=-2, y=5.",
+      "options": [
+        {
+          "text": "(-1; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2; 5)",
+          "is_correct": true
+        },
+        {
+          "text": "(-2; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 6,
+        "type_name": "Reconstrucție din reuniune",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Știind că x<2<y și [x; 2]∪[2; y]=[-1; 6], determinați perechea (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două intervale se ating în 2. Reuniunea este [x;y], deci compararea extremităților dă x=-1, y=6.",
+      "options": [
+        {
+          "text": "(0; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 6)",
+          "is_correct": true
+        },
+        {
+          "text": "(0; 5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 6,
+        "type_name": "Reconstrucție din reuniune",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Știind că x<-1<y și [x; -1]∪[-1; y]=[-4; 3], determinați perechea (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două intervale se ating în -1. Reuniunea este [x;y], deci compararea extremităților dă x=-4, y=3.",
+      "options": [
+        {
+          "text": "(-3; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4; 3)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 6,
+        "type_name": "Reconstrucție din reuniune",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Intervalele [x; 4] și [-3; y] sunt nevide și au intersecția [1; 2]. Determinați (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Capătul stâng este max(x,-3)=1, deci x=1. Capătul drept este min(4,y)=2, deci y=2.",
+      "options": [
+        {
+          "text": "(1; 2)",
+          "is_correct": true
+        },
+        {
+          "text": "(-3; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 7,
+        "type_name": "Reconstrucție din intersecție",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Intervalele [x; 5] și [-2; y] sunt nevide și au intersecția [2; 3]. Determinați (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Capătul stâng este max(x,-2)=2, deci x=2. Capătul drept este min(5,y)=3, deci y=3.",
+      "options": [
+        {
+          "text": "(-2; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "(3; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 7,
+        "type_name": "Reconstrucție din intersecție",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Intervalele [x; 2] și [-5; y] sunt nevide și au intersecția [-1; 0]. Determinați (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Capătul stâng este max(x,-5)=-1, deci x=-1. Capătul drept este min(2,y)=0, deci y=0.",
+      "options": [
+        {
+          "text": "(-5; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; -1)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 0)",
+          "is_correct": true
+        },
+        {
+          "text": "(-2; 1)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 7,
+        "type_name": "Reconstrucție din intersecție",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Intervalele [x; 7] și [0; y] sunt nevide și au intersecția [4; 5]. Determinați (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Capătul stâng este max(x,0)=4, deci x=4. Capătul drept este min(7,y)=5, deci y=5.",
+      "options": [
+        {
+          "text": "(0; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 5)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 7,
+        "type_name": "Reconstrucție din intersecție",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați diferența de mulțimi [−2; 5]∖(0; 3].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Eliminăm punctele 0<x≤3. Punctul 0 rămâne, iar 3 este eliminat.",
+      "options": [
+        {
+          "text": "[−2; 0] ∪ (3; 5]",
+          "is_correct": true
+        },
+        {
+          "text": "[−2; 0) ∪ [3; 5]",
+          "is_correct": false
+        },
+        {
+          "text": "[−2; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 3]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 8,
+        "type_name": "Diferență de intervale",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați diferența de mulțimi (0; 4)∖[1; 3].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punctele 1 și 3 sunt eliminate împreună cu segmentul dintre ele; 0 și 4 erau deja excluse.",
+      "options": [
+        {
+          "text": "(0; 1] ∪ [3; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 1) ∪ (3; 4)",
+          "is_correct": true
+        },
+        {
+          "text": "[0; 1) ∪ (3; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "[1; 3]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 8,
+        "type_name": "Diferență de intervale",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați diferența de mulțimi [−1; 2]∖[−1; 2].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența unei mulțimi cu ea însăși este vidă.",
+      "options": [
+        {
+          "text": "{−1; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "[−1; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": true
+        },
+        {
+          "text": "R",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 8,
+        "type_name": "Diferență de intervale",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați diferența de mulțimi R∖(−1; 1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Eliminăm exact punctele strict între −1 și 1. Cele două capete rămân.",
+      "options": [
+        {
+          "text": "(−∞; −1) ∪ (1; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "[−1; 1]",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −1] ∪ [1; +∞)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 8,
+        "type_name": "Diferență de intervale",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U=[−3; 4], calculați complementul relativ U∖A pentru A=(0; 2].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din universul [−3,4] eliminăm 0<x≤2; nu includem puncte din afara universului.",
+      "options": [
+        {
+          "text": "[−3; 0] ∪ (2; 4]",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; 0] ∪ (2; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "[−3; 0) ∪ [2; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 2]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 9,
+        "type_name": "Complement relativ",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U=(−2; 5), calculați complementul relativ U∖A pentru A=[−1; 3).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−1 este eliminat, iar 3 rămâne. Capetele universului −2 și 5 rămân excluse.",
+      "options": [
+        {
+          "text": "(−2; −1] ∪ (3; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(−2; −1) ∪ [3; 5)",
+          "is_correct": true
+        },
+        {
+          "text": "[−2; −1) ∪ [3; 5]",
+          "is_correct": false
+        },
+        {
+          "text": "[−1; 3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 9,
+        "type_name": "Complement relativ",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U=[0; 2], calculați complementul relativ U∖A pentru A={1}.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Eliminăm numai punctul 1; toate celelalte puncte din [0,2] rămân.",
+      "options": [
+        {
+          "text": "[0; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 1) ∪ (1; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 1) ∪ (1; 2]",
+          "is_correct": true
+        },
+        {
+          "text": "{0; 2}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 9,
+        "type_name": "Complement relativ",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U=[1; 3], calculați complementul relativ U∖A pentru A=[1; 3).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Submulțimea eliminată conține toate punctele universului, mai puțin 3.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{1}",
+          "is_correct": false
+        },
+        {
+          "text": "[1; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "{3}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 9,
+        "type_name": "Complement relativ",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A=[−2; 2], B=[0; 4]. Folosind legile lui De Morgan, determinați complementul în R al reuniunii A∪B.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A∪B=[−2,4]. Complementul este C(A)∩C(B), cu −2 și 4 excluse.",
+      "options": [
+        {
+          "text": "(−∞; −2) ∪ (4; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "[−2; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 0) ∪ (2; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; −2] ∪ [4; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 10,
+        "type_name": "Legile lui De Morgan pe intervale",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A=[−2; 2], B=[0; 4]. Folosind legile lui De Morgan, determinați complementul în R al intersecției A∩B.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A∩B=[0,2]. Complementul este C(A)∪C(B), cu 0 și 2 excluse.",
+      "options": [
+        {
+          "text": "[0; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 0) ∪ (2; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; −2) ∪ (4; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 0] ∪ [2; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 10,
+        "type_name": "Legile lui De Morgan pe intervale",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A=(−∞; 1), B=(2; +∞). Folosind legile lui De Morgan, determinați complementul în R al reuniunii A∪B.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "C(A)=[1,+∞), C(B)=(−∞,2]. Intersecția lor este [1,2].",
+      "options": [
+        {
+          "text": "(1; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 1] ∪ [2; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "[1; 2]",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 10,
+        "type_name": "Legile lui De Morgan pe intervale",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A=(−∞; 1], B=[1; +∞). Folosind legile lui De Morgan, determinați complementul în R al intersecției A∩B.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A∩B={1}, deci complementul este R fără 1, egal cu C(A)∪C(B).",
+      "options": [
+        {
+          "text": "R",
+          "is_correct": false
+        },
+        {
+          "text": "{1}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 1) ∪ (1; +∞)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 10,
+        "type_name": "Legile lui De Morgan pe intervale",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie I=[0;a], J=[a−1;a+1]. Pentru a=0, calculați I∩J.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "I={0} și J=[−1,1], deci intersecția este {0}.",
+      "options": [
+        {
+          "text": "{0}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "[−1; 1]",
+          "is_correct": false
+        },
+        {
+          "text": "{1}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 11,
+        "type_name": "Operații cu parametru",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie I=[0;a], J=[a−1;a+1]. Pentru 0<a<1, calculați I∩J.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a−1<0 și a<a+1, deci I este inclus în J.",
+      "options": [
+        {
+          "text": "[a−1; a]",
+          "is_correct": false
+        },
+        {
+          "text": "[0; a]",
+          "is_correct": true
+        },
+        {
+          "text": "[0; a+1]",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 11,
+        "type_name": "Operații cu parametru",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie I=[0;a], J=[a−1;a+1]. Pentru a=1, calculați I∩J.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "I=[0,1], J=[0,2], deci partea comună este [0,1].",
+      "options": [
+        {
+          "text": "{1}",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 1]",
+          "is_correct": true
+        },
+        {
+          "text": "[0; 2]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 11,
+        "type_name": "Operații cu parametru",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie I=[0;a], J=[a−1;a+1]. Pentru a>1, calculați I∩J.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a−1>0. Capătul stâng comun este a−1, iar cel drept este a.",
+      "options": [
+        {
+          "text": "[0; a]",
+          "is_correct": false
+        },
+        {
+          "text": "[a; a+1]",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "[a−1; a]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 11,
+        "type_name": "Operații cu parametru",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a,b>0, notăm H=2ab/(a+b), G=√(ab), A=(a+b)/2, I=[H;G], J=[G;A]. Dacă a≠b, calculați I∩J.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din H<G<A, intervalele se ating doar în capătul comun G, inclus în ambele.",
+      "options": [
+        {
+          "text": "{G}",
+          "is_correct": true
+        },
+        {
+          "text": "[H; A]",
+          "is_correct": false
+        },
+        {
+          "text": "[H; G)",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 12,
+        "type_name": "Capete date de medii",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a,b>0, notăm H=2ab/(a+b), G=√(ab), A=(a+b)/2, I=[H;G], J=[G;A]. Dacă a≠b, calculați I∪J.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "H<G<A, iar G aparține ambelor intervale, deci reuniunea este întregul segment [H,A].",
+      "options": [
+        {
+          "text": "(H; A)",
+          "is_correct": false
+        },
+        {
+          "text": "[H; A]",
+          "is_correct": true
+        },
+        {
+          "text": "{G}",
+          "is_correct": false
+        },
+        {
+          "text": "[H; G) ∪ (G; A]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 12,
+        "type_name": "Capete date de medii",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a,b>0, notăm H=2ab/(a+b), G=√(ab), A=(a+b)/2, I=[H;G], J=[G;A]. Dacă a≠b, calculați I∖J.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "G este inclus în J și se elimină din I; H rămâne.",
+      "options": [
+        {
+          "text": "[H; G]",
+          "is_correct": false
+        },
+        {
+          "text": "(G; A]",
+          "is_correct": false
+        },
+        {
+          "text": "[H; G)",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 12,
+        "type_name": "Capete date de medii",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a,b>0, notăm H=2ab/(a+b), G=√(ab), A=(a+b)/2, I=[H;G], J=[G;A]. Dacă a=b=2, calculați I∪J.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În cazul egalității, H=G=A=2. Ambele intervale se reduc la {2}.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "{2}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 12,
+        "type_name": "Capete date de medii",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie Iₙ=[n/(n+1); (n+2)/(n+1)] pentru n∈N*. Determinați I₂.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim n=2: capetele sunt 2/3 și 4/3, ambele incluse.",
+      "options": [
+        {
+          "text": "[2/3; 4/3]",
+          "is_correct": true
+        },
+        {
+          "text": "[1/2; 3/2]",
+          "is_correct": false
+        },
+        {
+          "text": "[2; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "(2/3; 4/3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 13,
+        "type_name": "Familii de intervale indexate",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie Iₙ=[n/(n+1); (n+2)/(n+1)] pentru n∈N*. Determinați Iₙ∩Z.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0<n/(n+1)<1<(n+2)/(n+1)≤3/2<2. Singurul întreg admis este 1.",
+      "options": [
+        {
+          "text": "{0; 1}",
+          "is_correct": false
+        },
+        {
+          "text": "{1}",
+          "is_correct": true
+        },
+        {
+          "text": "{1; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 13,
+        "type_name": "Familii de intervale indexate",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie Iₙ=[n/(n+1); (n+2)/(n+1)] pentru n∈N*. Determinați intersecția tuturor intervalelor Iₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Toate intervalele îl conțin pe 1. Capetele sunt 1±1/(n+1); orice punct diferit de 1 este exclus pentru n suficient de mare.",
+      "options": [
+        {
+          "text": "[1/2; 3/2]",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{1}",
+          "is_correct": true
+        },
+        {
+          "text": "(0; 2)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 13,
+        "type_name": "Familii de intervale indexate",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie Iₙ=[n/(n+1); (n+2)/(n+1)] pentru n∈N*. Determinați reuniunea tuturor intervalelor Iₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Intervalele sunt incluse succesiv unul în altul: Iₙ₊₁⊂Iₙ. Cel mai mare este I₁=[1/2,3/2], deci el este reuniunea.",
+      "options": [
+        {
+          "text": "(1/2; 3/2)",
+          "is_correct": false
+        },
+        {
+          "text": "{1}",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "[1/2; 3/2]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 13,
+        "type_name": "Familii de intervale indexate",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În convenția N={0,1,2,…}, determinați mulțimea parametrilor a≥0 pentru care [a;a+1)∩N={3}.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Intervalul semiînchis de lungime 1 conține exact un întreg. Pentru ca acesta să fie 3, cerem a≤3<a+1, adică 2<a≤3.",
+      "options": [
+        {
+          "text": "(2; 3]",
+          "is_correct": true
+        },
+        {
+          "text": "[2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "[2; 3]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 14,
+        "type_name": "Un singur natural în interval",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În convenția N={0,1,2,…}, determinați mulțimea parametrilor a≥0 pentru care (a;a+1]∩N={3}.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este a<3≤a+1, adică 2≤a<3.",
+      "options": [
+        {
+          "text": "(2; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "[2; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "[2; 3]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 14,
+        "type_name": "Un singur natural în interval",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În convenția N={0,1,2,…}, determinați mulțimea parametrilor a≥0 pentru care [a;a+1]∩N={3}.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru a∈[2,3], punctul 3 este inclus. La a=2 apare și 2, iar la a=3 apare și 4. Excludem ambele capete.",
+      "options": [
+        {
+          "text": "[2; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "[2; 3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 14,
+        "type_name": "Un singur natural în interval",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În convenția N={0,1,2,…}, determinați mulțimea parametrilor a≥0 pentru care (a;a²]∩N={3}.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru a-l include pe 3 trebuie a<3≤a². Ca să excludem 2, trebuie a≥2; ca să excludem 4, trebuie a²<4, deci a<2 deoarece a≥0. Contradicție.",
+      "options": [
+        {
+          "text": "[√3; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "[2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "{2}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 14,
+        "type_name": "Un singur natural în interval",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă 0<a<b<1, determinați [a;b]∩[1/b;1/a].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Primul interval este strict sub 1; al doilea este strict deasupra lui 1.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": true
+        },
+        {
+          "text": "[a; b]",
+          "is_correct": false
+        },
+        {
+          "text": "[1/b; 1/a]",
+          "is_correct": false
+        },
+        {
+          "text": "{1}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 15,
+        "type_name": "Comparații cu inverse pozitive",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă 1<a<b, determinați [a;b]∩[1/b;1/a].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Primul interval este strict peste 1, iar cel al inverselor strict sub 1.",
+      "options": [
+        {
+          "text": "[a; b]",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": true
+        },
+        {
+          "text": "[1/b; 1/a]",
+          "is_correct": false
+        },
+        {
+          "text": "{1}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 15,
+        "type_name": "Comparații cu inverse pozitive",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă 0<a<1<b și ab=1, determinați [a;b]∩[1/b;1/a].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din ab=1 rezultă 1/b=a și 1/a=b. Cele două intervale coincid.",
+      "options": [
+        {
+          "text": "{1}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "[a; b]",
+          "is_correct": true
+        },
+        {
+          "text": "(a; b)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 15,
+        "type_name": "Comparații cu inverse pozitive",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă 0<a<1<b și ab>1, determinați [a;b]∩[1/b;1/a].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "ab>1 implică 1/b<a și 1/a<b. Așadar maximul capetelor stângi este a, iar minimul celor drepte este 1/a; a<1<1/a.",
+      "options": [
+        {
+          "text": "[1/b; b]",
+          "is_correct": false
+        },
+        {
+          "text": "[a; b]",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "[a; 1/a]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 15,
+        "type_name": "Comparații cu inverse pozitive",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Intervalul [x;y] verifică [x;y]∖[1;3]=[-2;1)∪(3;5]. Determinați (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența conține ambele bucăți exterioare, deci extremitățile intervalului inițial sunt x=-2 și y=5. Eliminarea segmentului central verifică egalitatea.",
+      "options": [
+        {
+          "text": "(-2; 5)",
+          "is_correct": true
+        },
+        {
+          "text": "(1; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2; 4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 16,
+        "type_name": "Operații inverse combinate",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Intervalul [x;y] verifică [x;y]∖[2;4]=[-1;2)∪(4;6]. Determinați (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența conține ambele bucăți exterioare, deci extremitățile intervalului inițial sunt x=-1 și y=6. Eliminarea segmentului central verifică egalitatea.",
+      "options": [
+        {
+          "text": "(2; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 6)",
+          "is_correct": true
+        },
+        {
+          "text": "(0; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 16,
+        "type_name": "Operații inverse combinate",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Intervalul [x;y] verifică [x;y]∖[0;2]=[-3;0)∪(2;4]. Determinați (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența conține ambele bucăți exterioare, deci extremitățile intervalului inițial sunt x=-3 și y=4. Eliminarea segmentului central verifică egalitatea.",
+      "options": [
+        {
+          "text": "(0; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3; 4)",
+          "is_correct": true
+        },
+        {
+          "text": "(-3; 3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 16,
+        "type_name": "Operații inverse combinate",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Intervalul [x;y] verifică [x;y]∖[4;6]=[1;4)∪(6;8]. Determinați (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența conține ambele bucăți exterioare, deci extremitățile intervalului inițial sunt x=1 și y=8. Eliminarea segmentului central verifică egalitatea.",
+      "options": [
+        {
+          "text": "(4; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 8)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 16,
+        "type_name": "Operații inverse combinate",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru 0<x<1, determinați intersecția intervalelor [−x;x] și [−x²;x²].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0<x²<x; intervalul cu raza x² este inclus în cel cu raza x.",
+      "options": [
+        {
+          "text": "[−x²; x²]",
+          "is_correct": true
+        },
+        {
+          "text": "[−x; x]",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{0}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 17,
+        "type_name": "Capete cu puteri",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=1, determinați intersecția intervalelor [−x;x] și [−x²;x²].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două intervale coincid cu [−1,1].",
+      "options": [
+        {
+          "text": "{−1; 1}",
+          "is_correct": false
+        },
+        {
+          "text": "[−1; 1]",
+          "is_correct": true
+        },
+        {
+          "text": "{0}",
+          "is_correct": false
+        },
+        {
+          "text": "(−1; 1)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 17,
+        "type_name": "Capete cu puteri",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x>1, determinați intersecția intervalelor [−x;x] și [−x²;x²].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0<x<x²; intervalul cu raza x este cel mai mic.",
+      "options": [
+        {
+          "text": "[−x²; x²]",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "[−x; x]",
+          "is_correct": true
+        },
+        {
+          "text": "{0}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 17,
+        "type_name": "Capete cu puteri",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru 0<x<1, determinați reuniunea intervalelor [−x;x] și [−x²;x²].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Intervalele sunt concentrice și cel cu raza x îl conține pe cel cu raza x².",
+      "options": [
+        {
+          "text": "[−x²; x²]",
+          "is_correct": false
+        },
+        {
+          "text": "[−x; −x²] ∪ [x²; x]",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "[−x; x]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 17,
+        "type_name": "Capete cu puteri",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x>1, notăm r=(x+1)/(x−1). Determinați [0;r]∩[0;1].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x−1>0 și r=1+2/(x−1)>1. Intervalul [0,1] este inclus în [0,r].",
+      "options": [
+        {
+          "text": "[0; 1]",
+          "is_correct": true
+        },
+        {
+          "text": "[0; r]",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{1}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 18,
+        "type_name": "Capete raționale cu parametru",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x<−1, notăm r=(x+1)/(x−1). Determinați [0;r]∩[0;1].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numărătorul și numitorul sunt negative, deci r>0. Din r=1+2/(x−1) și x−1<−2 rezultă r<1; primul interval este inclus în al doilea.",
+      "options": [
+        {
+          "text": "[0; 1]",
+          "is_correct": false
+        },
+        {
+          "text": "[0; r]",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{0}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 18,
+        "type_name": "Capete raționale cu parametru",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru 0<x<1, notăm r=(x+1)/(x−1). Determinați [r;0]∩[−1;1].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorul este negativ. Din r+1=2x/(x−1)<0 rezultă r<−1. Partea comună este [−1,0].",
+      "options": [
+        {
+          "text": "[r; 0]",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 1]",
+          "is_correct": false
+        },
+        {
+          "text": "[−1; 0]",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 18,
+        "type_name": "Capete raționale cu parametru",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie I={x∈R:|x|≤2}, J={x∈R:|x+1|≥3}; calculați I∩J.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "I=[−2,2], iar J=(−∞,−4]∪[2,+∞). Punctul comun este numai 2.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "[−2; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "{−2; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "{2}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 19,
+        "type_name": "Mulțimi definite prin module",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie I={x∈R:|x−1|<2}, J={x∈R:|x|>1}; calculați I∩J.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "I=(−1,3), iar J=(−∞,−1)∪(1,+∞). Partea comună este (1,3).",
+      "options": [
+        {
+          "text": "(1; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "[1; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(−1; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(−1; 1)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 19,
+        "type_name": "Mulțimi definite prin module",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie I={x∈R:|x|≤3}, J={x∈R:|x−1|<1}; calculați I∖J.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "I=[−3,3], J=(0,2). Eliminarea intervalului deschis păstrează capetele 0 și 2.",
+      "options": [
+        {
+          "text": "[−3; 0) ∪ (2; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "[−3; 0] ∪ [2; 3]",
+          "is_correct": true
+        },
+        {
+          "text": "(0; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "[−3; 3]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 19,
+        "type_name": "Mulțimi definite prin module",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a≤b și (a−(1/4))²+(b−(3/4))²=0. Determinați I=[a;b] și intersecția sa cu Z.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambii pătrați trebuie să fie zero, deci a=1/4 și b=3/4. Segmentul se află strict între doi întregi consecutivi, deci nu conține întregi.",
+      "options": [
+        {
+          "text": "I=[1/4; 3/4], I∩Z={0}",
+          "is_correct": false
+        },
+        {
+          "text": "I=[1/4; 3/4], I∩Z={1}",
+          "is_correct": false
+        },
+        {
+          "text": "I=[1/4; 3/4], I∩Z=∅",
+          "is_correct": true
+        },
+        {
+          "text": "I=∅, I∩Z=∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 20,
+        "type_name": "Intervale reconstruite din egalități algebrice",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a≤b și (a−(5/4))²+(b−(7/4))²=0. Determinați I=[a;b] și intersecția sa cu Z.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambii pătrați trebuie să fie zero, deci a=5/4 și b=7/4. Segmentul se află strict între doi întregi consecutivi, deci nu conține întregi.",
+      "options": [
+        {
+          "text": "I=[5/4; 7/4], I∩Z={0}",
+          "is_correct": false
+        },
+        {
+          "text": "I=[5/4; 7/4], I∩Z={1}",
+          "is_correct": false
+        },
+        {
+          "text": "I=∅, I∩Z=∅",
+          "is_correct": false
+        },
+        {
+          "text": "I=[5/4; 7/4], I∩Z=∅",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 20,
+        "type_name": "Intervale reconstruite din egalități algebrice",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a≤b și (a−(-3/4))²+(b−(-1/4))²=0. Determinați I=[a;b] și intersecția sa cu Z.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambii pătrați trebuie să fie zero, deci a=-3/4 și b=-1/4. Segmentul se află strict între doi întregi consecutivi, deci nu conține întregi.",
+      "options": [
+        {
+          "text": "I=[−3/4; −1/4], I∩Z=∅",
+          "is_correct": true
+        },
+        {
+          "text": "I=[−3/4; −1/4], I∩Z={0}",
+          "is_correct": false
+        },
+        {
+          "text": "I=[−3/4; −1/4], I∩Z={1}",
+          "is_correct": false
+        },
+        {
+          "text": "I=∅, I∩Z=∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 20,
+        "type_name": "Intervale reconstruite din egalități algebrice",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a∈[0;7], I(a)=[a;a+3], J=[0;10]. Pentru ce valori ale lui a mulțimea I(a)∩J∩Z are exact 4 elemente?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "I(a) este inclus în J. Un segment închis de lungime 3 conține 4 întregi dacă a este întreg; altfel conține 3. Rezultă exact cele opt valori întregi din [0,7].",
+      "options": [
+        {
+          "text": "a∈[0;7]∖Z",
+          "is_correct": false
+        },
+        {
+          "text": "a∈{0;1;2;3;4;5;6;7}",
+          "is_correct": true
+        },
+        {
+          "text": "a∈[0;7]",
+          "is_correct": false
+        },
+        {
+          "text": "a=7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 21,
+        "type_name": "Cardinal prescris pentru intersecția cu Z",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a∈[0;7], I(a)=(a;a+3), J=[0;10]. Pentru ce valori ale lui a mulțimea I(a)∩J∩Z are exact 3 elemente?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "I(a) este inclus în J. Dacă a este întreg, capetele deschise lasă doar a+1 și a+2. Dacă a nu este întreg, între a și a+3 sunt exact 3 întregi.",
+      "options": [
+        {
+          "text": "a∈{0;1;2;3;4;5;6;7}",
+          "is_correct": false
+        },
+        {
+          "text": "a∈[0;7]",
+          "is_correct": false
+        },
+        {
+          "text": "a∈[0;7]∖Z",
+          "is_correct": true
+        },
+        {
+          "text": "Nu există valori.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 21,
+        "type_name": "Cardinal prescris pentru intersecția cu Z",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a≥1, determinați mulțimea valorilor lui a pentru care [0;a]∩[1;10]∩Z are exact 3 elemente.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Primii trei întregi sunt 1,2,3. Ca să fie incluși și 4 să fie exclus, trebuie 3≤a<4. Pentru a≥10 ar fi incluși zece întregi, deci nu apar alte soluții.",
+      "options": [
+        {
+          "text": "(3; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "{3}",
+          "is_correct": false
+        },
+        {
+          "text": "[2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "[3; 4)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.6",
+        "type": 21,
+        "type_name": "Cardinal prescris pentru intersecția cu Z",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    }
+  ]
 }

@@ -9,8 +9,8 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 | Clasa | Lecții cu exerciții | Total exerciții | Grilă | Adevărat/Fals | Interactive |
 |---|---:|---:|---:|---:|---:|
 | Clasa a V-a | 42 | 2.101 | 589 | 93 | 1.419 |
-| Clasa a IX-a | 7 | 931 | 881 | 4 | 46 |
-| **Total** | **49** | **3.032** | **1.470** | **97** | **1.465** |
+| Clasa a IX-a | 9 | 1.091 | 1.041 | 4 | 46 |
+| **Total** | **51** | **3.192** | **1.630** | **97** | **1.465** |
 
 ## Clasa a V-a
 
@@ -98,6 +98,8 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 | 1.2. Ordonarea numerelor reale | 84 | 80 | 0 | 4 |
 | 1.3. Modulul unui număr real | 81 | 80 | 1 | 0 |
 | 1.4. Aproximări prin lipsă sau prin adaos | 40 | 40 | 0 | 0 |
+| 1.5. Parte întreagă. Parte fracționară | 80 | 80 | 0 | 0 |
+| 1.6. Operații cu intervale de numere reale | 80 | 80 | 0 | 0 |
 
 ### Mulțimi și logică matematică
 
@@ -107,9 +109,9 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 | Operații logice elementare și legi de calcul | 185 | 185 | 0 | 0 |
 | Raționamente logice. Inducția matematică și probleme de numărare | 315 | 315 | 0 | 0 |
 
-**Subtotal clasa a IX-a: 7 lecții și 931 de exerciții.**
+**Subtotal clasa a IX-a: 9 lecții și 1.091 de exerciții.**
 
-Structura a fost corectată după cuprinsul culegerii: în aplicație, capitolul **Mulțimea numerelor reale** conține șase lecții separate, 1.1–1.6. **1.5. Parte întreagă. Parte fracționară** și **1.6. Operații cu intervale de numere reale** sunt pregătite în manifest și JSON, încă fără exerciții; nu sunt incluse în numărul lecțiilor completate. Cele 336 de exerciții au fost redistribuite fără schimbarea enunțurilor, opțiunilor sau identificatorilor întrebărilor în baza locală. Din cele 55 de exerciții vechi, cele patru comparații au fost mutate la 1.2, iar afirmația despre √(a²) la 1.3; celelalte 50 sunt la 1.1. Celelalte lecții de logică rămân în capitolul lor.
+Structura a fost corectată după cuprinsul culegerii: în aplicație, capitolul **Mulțimea numerelor reale** conține șase lecții separate, 1.1–1.6. Toate cele șase lecții sunt acum populate. 1.5 și 1.6 au câte 80 de grile noi, astfel capitolul conține **496 de exerciții** în total. Cele 336 de exerciții au fost redistribuite fără schimbarea enunțurilor, opțiunilor sau identificatorilor întrebărilor în baza locală. Din cele 55 de exerciții vechi, cele patru comparații au fost mutate la 1.2, iar afirmația despre √(a²) la 1.3; celelalte 50 sunt la 1.1. Celelalte lecții de logică rămân în capitolul lor.
 
 Fiecare subcapitol are propriul JSON; generatorul principal le scrie separat. Importul `seed_quizzes` mută automat întrebările din lecția veche în noile lecții, păstrând progresul elevilor. Operația este tranzacțională și repetabilă; o întrebare nemapată oprește reorganizarea fără ștergeri. Totalul exercițiilor nu s-a modificat.
 
@@ -143,7 +145,21 @@ Sursa JSON rămâne `clasa_9/clasa_9_numere_reale_1_4_aproximari.json`. Generato
 
 Verificări: calcule raționale exacte, comparație independentă cu rotunjirile Decimal (floor, ceiling, down, half-up), erori exacte și formulele transformărilor; acoperire 8/8 tipuri, opțiuni distincte, generator reproductibil; validatorul aplicației, `manage.py check` și încărcare țintită.
 
-Următorul subcapitol: **1.5. Parte întreagă. Parte fracționară**, 23 de tipuri, încă neacoperite de aceste loturi.
+### Subcapitolul 1.5 — Parte întreagă. Parte fracționară — finalizat
+
+Adăugate și încărcate local **80 de grile**, pentru **23/23 de tipuri** din catalogul A1, p. 25–29. Tipurile 1–11 au câte 4 grile, celelalte câte 3. Fiecare întrebare are patru variante, una corectă și explicație. Sunt acoperite definițiile pentru numere negative, radicali, sume, produse, ecuații și condiții universale, inclusiv relația lui Hermite. Definițiile [u]=⌊u⌋ și {u}=u−⌊u⌋ sunt precizate în enunțuri.
+
+Sursa: `clasa_9/clasa_9_numere_reale_1_5_parte_intreaga_fractionara.json`. Generator: `generators/gen_clasa_9_parte_intreaga.py`, apelat de generatorul principal. Metadate: `catalog.section = A1.1.5`, tip și variantă. Enunțuri noi după tipologiile catalogului, nu transcrieri validate din scanare. Nu s-au adăugat interactive sau A/F.
+
+### Subcapitolul 1.6 — Operații cu intervale de numere reale — finalizat
+
+Adăugate și încărcate local **80 de grile**, pentru **21/21 de tipuri** din catalogul A1, p. 30–33. Tipurile 1–17 au câte 4 grile, ultimele patru câte 3. Sunt incluse apartenența, reuniunea, intersecția, diferența, complementele, De Morgan, reconstrucția intervalelor, familii indexate, parametri, capete cu medii și inverse, module și cardinalități prescrise.
+
+Sursa: `clasa_9/clasa_9_numere_reale_1_6_intervale.json`. Generator: `generators/gen_clasa_9_intervale.py`, apelat de generatorul principal. Metadate: `catalog.section = A1.1.6`, tip și variantă. Patru opțiuni, un singur răspuns corect și explicație; fără interactive sau A/F noi. Enunțurile sunt noi după tipologiile catalogului.
+
+Verificări pentru 1.5 și 1.6: `scripts/verify_clasa_9_parti_intervale.py` confirmă toate cele 160 de grile, distribuția pe tipuri și reproducerea JSON-urilor. Calcule independente cu fracții exacte, radicali la precizie mare, sume finite și identitatea lui Hermite; ecuații comparate cu mulțimile de soluții pe valori raționale și capete; operații de intervale comparate prin apartenență, inclusiv punctele de graniță și cazuri parametrice. Explicațiile furnizează justificările algebrice; verificarea pe eșantioane nu ține locul lor. `manage.py check` și ambele importuri țintite au trecut. Primele patru subcapitole au rămas identice.
+
+**Mulțimea numerelor reale: 6/6 subcapitole populate, 125/125 de tipuri catalogate acoperite; 496 de exerciții în total.**
 
 ### Secțiunea 2 — Propoziție. Predicat. Cuantificatori — finalizată
 
@@ -172,7 +188,7 @@ Sursa JSON: `clasa_9/clasa_9_u01_l03_propozitii_predicate_si_cuantificatori.json
 | 17. Cuantificare pe intervale | 5 |
 | 18. Propoziții aritmetice universale | 5 |
 | 19. Predicate cu trei variabile geometrice | 5 |
-| **Total** | **95** |
+| **Total** | **51** | **3.192** | **1.630** | **97** | **1.465** |
 
 Enunțurile sunt noi, formulate după tipologiile catalogului; nu sunt transcrieri verificate din scanare. Metadatele `catalog` păstrează secțiunea `A1.2`, tipul, denumirea, dificultatea estimată și originea în JSON; aceste metadate nu sunt importate în modelul bazei de date.
 
@@ -189,7 +205,7 @@ Adăugate și încărcate în baza locală la 24 octombrie 2026: **185 de grile,
 | 3.1. Operații logice cu propoziții. Formule de calcul propozițional, p. 41–44 | 12/12 | 60 |
 | 3.2. Operații logice cu predicate. Operații și relații cu mulțimi, p. 44–48 | 15/15 | 75 |
 | 3.3. Negarea propozițiilor universale și existențiale. Condiții necesare și suficiente, p. 48–51 | 10/10 | 50 |
-| **Total** | **37/37** | **185** |
+| **Total** | **51** | **3.192** | **1.630** | **97** | **1.465** |
 
 3.1 acoperă: negație, conjuncție/disjuncție, implicație, echivalență, formule cu trei propoziții, tautologii, inferențe, reconstrucția valorilor de adevăr, legi de calcul, De Morgan, logică și drepte în plan, cuantificatori în formule compuse.
 
@@ -211,7 +227,7 @@ Adăugate și încărcate în baza locală la 24 octombrie 2026: **315 grile, c�
 |---|---:|---:|
 | 4.1. Metoda inducției matematice, p. 52–58 | 30/30 | 150 |
 | 4.2. Probleme de numărare, p. 59–62 | 33/33 | 165 |
-| **Total** | **63/63** | **315** |
+| **Total** | **51** | **3.192** | **1.630** | **97** | **1.465** |
 
 4.1 cuprinde formule de sume și produse, pasul inductiv, estimări și praguri minime, Bernoulli, divizibilitate, recurențe, sume simetrice, exponenți primi, reprezentări cu semne, reconstrucția din sume parțiale, monede și construcții geometrice. Sunt păstrate explicit condițiile de nenegativitate, pragurile și cazurile de bază. Pentru familiile de construcții și cele olimpice, grilele verifică pași sau consecințe ale metodei; nu înlocuiesc demonstrațiile problemelor integrale din culegere. La condiția universală cu parte întreagă, varianta corectă este justificată pentru toți indicii, iar fiecare variantă falsă are un contraexemplu explicit; verificarea unui număr finit de indici nu este prezentată ca demonstrație.
 

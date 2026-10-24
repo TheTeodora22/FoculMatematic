@@ -106,7 +106,7 @@ Capitolul are șase lecții distincte în ordinea cuprinsului Burtea:
 1.1. Operații algebrice, 1.2. Ordonare, 1.3. Modul, 1.4. Aproximări,
 1.5. Parte întreagă și fracționară, 1.6. Operații cu intervale.
 Fiecare are propriul JSON `clasa_9/clasa_9_numere_reale_1_*.json`.
-Ultimele două lecții sunt deocamdată fără exerciții.
+Toate cele șase lecții au exerciții; 1.5 și 1.6 au câte 80 de grile.
 
 `generators/gen_clasa_9_numere_reale_operatii.py` reproduce cele șase fișiere
 și actualizează manifestul. Generatorul de structură păstrează aceeași împărțire.

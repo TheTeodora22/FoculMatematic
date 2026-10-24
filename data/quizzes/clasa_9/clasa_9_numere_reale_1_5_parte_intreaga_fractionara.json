@@ -2,5 +2,2566 @@
   "title": "1.5. Parte întreagă. Parte fracționară",
   "description": "Clasa a 9-a · Mulțimea numerelor reale",
   "difficulty": "medium",
-  "questions": []
+  "questions": [
+    {
+      "text": "Pentru x=−3,28, determinați perechea ([x]; {x}). Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem -4≤x<-3, deci [x]=-4. Partea fracționară este x−[x]=18/25, în intervalul [0,1).",
+      "options": [
+        {
+          "text": "(-4; 18/25)",
+          "is_correct": true
+        },
+        {
+          "text": "(-3; 18/25)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4; 43/25)",
+          "is_correct": false
+        },
+        {
+          "text": "(-5; 18/25)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 1,
+        "type_name": "Parte întreagă și fracționară numerică",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=2,75, determinați perechea ([x]; {x}). Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem 2≤x<3, deci [x]=2. Partea fracționară este x−[x]=3/4, în intervalul [0,1).",
+      "options": [
+        {
+          "text": "(3; 3/4)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 3/4)",
+          "is_correct": true
+        },
+        {
+          "text": "(2; 7/4)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 3/4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 1,
+        "type_name": "Parte întreagă și fracționară numerică",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=−0,04, determinați perechea ([x]; {x}). Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem -1≤x<0, deci [x]=-1. Partea fracționară este x−[x]=24/25, în intervalul [0,1).",
+      "options": [
+        {
+          "text": "(0; 24/25)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 49/25)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 24/25)",
+          "is_correct": true
+        },
+        {
+          "text": "(-2; 24/25)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 1,
+        "type_name": "Parte întreagă și fracționară numerică",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=5, determinați perechea ([x]; {x}). Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem 5≤x<6, deci [x]=5. Partea fracționară este x−[x]=0, în intervalul [0,1).",
+      "options": [
+        {
+          "text": "(6; 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 0)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 1,
+        "type_name": "Parte întreagă și fracționară numerică",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă [x]=2 și {x}=3/4, calculați [5x]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x=[x]+{x}=11/4. Atunci 5x=55/4 și partea întreagă este 13.",
+      "options": [
+        {
+          "text": "13",
+          "is_correct": true
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 2,
+        "type_name": "Părți întregi ale multiplilor",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă [x]=-2 și {x}=1/3, calculați [4x]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x=[x]+{x}=-5/3. Atunci 4x=-20/3 și partea întreagă este -7.",
+      "options": [
+        {
+          "text": "-8",
+          "is_correct": false
+        },
+        {
+          "text": "-7",
+          "is_correct": true
+        },
+        {
+          "text": "-6",
+          "is_correct": false
+        },
+        {
+          "text": "-5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 2,
+        "type_name": "Părți întregi ale multiplilor",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă [x]=0 și {x}=9/10, calculați [3x]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x=[x]+{x}=9/10. Atunci 3x=27/10 și partea întreagă este 2.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 2,
+        "type_name": "Părți întregi ale multiplilor",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă [x]=3 și {x}=1/5, calculați [5x]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x=[x]+{x}=16/5. Atunci 5x=16 și partea întreagă este 16.",
+      "options": [
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 2,
+        "type_name": "Părți întregi ale multiplilor",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n=1, calculați [√(n²+n)]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "n²<n²+n<(n+1)² pentru n>0. Prin urmare n<√(n²+n)<n+1 și partea întreagă este 1.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 3,
+        "type_name": "Radicali vecini de întregi",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n=3, calculați [√(n²+n)]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "n²<n²+n<(n+1)² pentru n>0. Prin urmare n<√(n²+n)<n+1 și partea întreagă este 3.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 3,
+        "type_name": "Radicali vecini de întregi",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n=5, calculați [√(n²+n)]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "n²<n²+n<(n+1)² pentru n>0. Prin urmare n<√(n²+n)<n+1 și partea întreagă este 5.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 3,
+        "type_name": "Radicali vecini de întregi",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n=10, calculați [√(n²+n)]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "n²<n²+n<(n+1)² pentru n>0. Prin urmare n<√(n²+n)<n+1 și partea întreagă este 10.",
+      "options": [
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 3,
+        "type_name": "Radicali vecini de întregi",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie S=Σ[k=1,…,2] 1/[k(k+1)]. Calculați partea fracționară {S}; parantezele din numitor grupează factorii. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1/[k(k+1)]=1/k−1/(k+1), deci S=1−1/3=2/3. Avem 0<S<1, astfel [S]=0 și {S}=S.",
+      "options": [
+        {
+          "text": "2/3",
+          "is_correct": true
+        },
+        {
+          "text": "-1/3",
+          "is_correct": false
+        },
+        {
+          "text": "5/3",
+          "is_correct": false
+        },
+        {
+          "text": "8/3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 4,
+        "type_name": "Sume telescopice și parte fracționară",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie S=Σ[k=1,…,4] 1/[k(k+1)]. Calculați partea fracționară {S}; parantezele din numitor grupează factorii. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1/[k(k+1)]=1/k−1/(k+1), deci S=1−1/5=4/5. Avem 0<S<1, astfel [S]=0 și {S}=S.",
+      "options": [
+        {
+          "text": "-1/5",
+          "is_correct": false
+        },
+        {
+          "text": "4/5",
+          "is_correct": true
+        },
+        {
+          "text": "9/5",
+          "is_correct": false
+        },
+        {
+          "text": "14/5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 4,
+        "type_name": "Sume telescopice și parte fracționară",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie S=Σ[k=1,…,7] 1/[k(k+1)]. Calculați partea fracționară {S}; parantezele din numitor grupează factorii. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1/[k(k+1)]=1/k−1/(k+1), deci S=1−1/8=7/8. Avem 0<S<1, astfel [S]=0 și {S}=S.",
+      "options": [
+        {
+          "text": "-1/8",
+          "is_correct": false
+        },
+        {
+          "text": "15/8",
+          "is_correct": false
+        },
+        {
+          "text": "7/8",
+          "is_correct": true
+        },
+        {
+          "text": "23/8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 4,
+        "type_name": "Sume telescopice și parte fracționară",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie S=Σ[k=1,…,9] 1/[k(k+1)]. Calculați partea fracționară {S}; parantezele din numitor grupează factorii. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1/[k(k+1)]=1/k−1/(k+1), deci S=1−1/10=9/10. Avem 0<S<1, astfel [S]=0 și {S}=S.",
+      "options": [
+        {
+          "text": "-1/10",
+          "is_correct": false
+        },
+        {
+          "text": "19/10",
+          "is_correct": false
+        },
+        {
+          "text": "29/10",
+          "is_correct": false
+        },
+        {
+          "text": "9/10",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 4,
+        "type_name": "Sume telescopice și parte fracționară",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați [√2+√3] fără aproximări zecimale. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul sumei este 5+2√6. Comparând termenul cu radical prin pătrare, obținem 9<(√2+√3)²<16. Suma este pozitivă, deci 3<√2+√3<4; partea întreagă este 3.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 5,
+        "type_name": "Încadrarea radicalilor combinați",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați [√5+√7] fără aproximări zecimale. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul sumei este 12+2√35. Comparând termenul cu radical prin pătrare, obținem 16<(√5+√7)²<25. Suma este pozitivă, deci 4<√5+√7<5; partea întreagă este 4.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 5,
+        "type_name": "Încadrarea radicalilor combinați",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați [√8+√10] fără aproximări zecimale. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul sumei este 18+2√80. Comparând termenul cu radical prin pătrare, obținem 25<(√8+√10)²<36. Suma este pozitivă, deci 5<√8+√10<6; partea întreagă este 5.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 5,
+        "type_name": "Încadrarea radicalilor combinați",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați [√13+√17] fără aproximări zecimale. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul sumei este 30+2√221. Comparând termenul cu radical prin pătrare, obținem 49<(√13+√17)²<64. Suma este pozitivă, deci 7<√13+√17<8; partea întreagă este 7.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 5,
+        "type_name": "Încadrarea radicalilor combinați",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați Σ[k=1,…,8] [√k]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru j²≤k<(j+1)², [√k]=j. Gruparea în blocuri dă 1·3+2·5=13.",
+      "options": [
+        {
+          "text": "13",
+          "is_correct": true
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 6,
+        "type_name": "Sume de părți întregi",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați Σ[k=1,…,15] [√k]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru j²≤k<(j+1)², [√k]=j. Gruparea în blocuri dă 1·3+2·5+3·7=34.",
+      "options": [
+        {
+          "text": "33",
+          "is_correct": false
+        },
+        {
+          "text": "34",
+          "is_correct": true
+        },
+        {
+          "text": "35",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 6,
+        "type_name": "Sume de părți întregi",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați Σ[k=1,…,24] [√k]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru j²≤k<(j+1)², [√k]=j. Gruparea în blocuri dă 1·3+2·5+3·7+4·9=70.",
+      "options": [
+        {
+          "text": "69",
+          "is_correct": false
+        },
+        {
+          "text": "71",
+          "is_correct": false
+        },
+        {
+          "text": "70",
+          "is_correct": true
+        },
+        {
+          "text": "72",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 6,
+        "type_name": "Sume de părți întregi",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați Σ[k=1,…,35] [√k]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru j²≤k<(j+1)², [√k]=j. Gruparea în blocuri dă 1·3+2·5+3·7+4·9+5·11=125.",
+      "options": [
+        {
+          "text": "124",
+          "is_correct": false
+        },
+        {
+          "text": "126",
+          "is_correct": false
+        },
+        {
+          "text": "127",
+          "is_correct": false
+        },
+        {
+          "text": "125",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 6,
+        "type_name": "Sume de părți întregi",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A=1/(√3−√2)−√2. Calculați [2A]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Raționalizarea dă 1/(√3−√2)=√3+√2, deci A=√3. Cum 3²≤12<4², rezultă [2A]=3.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 7,
+        "type_name": "Părți întregi după simplificare algebrică",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A=1/(√6−√5)−√5. Calculați [3A]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Raționalizarea dă 1/(√6−√5)=√6+√5, deci A=√6. Cum 7²≤54<8², rezultă [3A]=7.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 7,
+        "type_name": "Părți întregi după simplificare algebrică",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A=1/(√7−√6)−√6. Calculați [2A]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Raționalizarea dă 1/(√7−√6)=√7+√6, deci A=√7. Cum 5²≤28<6², rezultă [2A]=5.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 7,
+        "type_name": "Părți întregi după simplificare algebrică",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A=1/(√11−√10)−√10. Calculați [3A]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Raționalizarea dă 1/(√11−√10)=√11+√10, deci A=√11. Cum 9²≤99<10², rezultă [3A]=9.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 7,
+        "type_name": "Părți întregi după simplificare algebrică",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y sunt reale, x+y=5, [x]=2 și {y}=1/4. Determinați xy. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este întreagă și 0<{y}<1, deci {x}=1−{y}=3/4. Astfel x=11/4, y=9/4, iar xy=99/16.",
+      "options": [
+        {
+          "text": "99/16",
+          "is_correct": true
+        },
+        {
+          "text": "83/16",
+          "is_correct": false
+        },
+        {
+          "text": "115/16",
+          "is_correct": false
+        },
+        {
+          "text": "131/16",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 8,
+        "type_name": "Reconstrucție din parte întreagă și sumă",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y sunt reale, x+y=3, [x]=-1 și {y}=1/3. Determinați xy. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este întreagă și 0<{y}<1, deci {x}=1−{y}=2/3. Astfel x=-1/3, y=10/3, iar xy=-10/9.",
+      "options": [
+        {
+          "text": "-19/9",
+          "is_correct": false
+        },
+        {
+          "text": "-10/9",
+          "is_correct": true
+        },
+        {
+          "text": "-1/9",
+          "is_correct": false
+        },
+        {
+          "text": "8/9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 8,
+        "type_name": "Reconstrucție din parte întreagă și sumă",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y sunt reale, x+y=0, [x]=-2 și {y}=2/5. Determinați xy. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este întreagă și 0<{y}<1, deci {x}=1−{y}=3/5. Astfel x=-7/5, y=7/5, iar xy=-49/25.",
+      "options": [
+        {
+          "text": "-74/25",
+          "is_correct": false
+        },
+        {
+          "text": "-24/25",
+          "is_correct": false
+        },
+        {
+          "text": "-49/25",
+          "is_correct": true
+        },
+        {
+          "text": "1/25",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 8,
+        "type_name": "Reconstrucție din parte întreagă și sumă",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y sunt reale, x+y=8, [x]=3 și {y}=3/4. Determinați xy. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este întreagă și 0<{y}<1, deci {x}=1−{y}=1/4. Astfel x=13/4, y=19/4, iar xy=247/16.",
+      "options": [
+        {
+          "text": "231/16",
+          "is_correct": false
+        },
+        {
+          "text": "263/16",
+          "is_correct": false
+        },
+        {
+          "text": "279/16",
+          "is_correct": false
+        },
+        {
+          "text": "247/16",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 8,
+        "type_name": "Reconstrucție din parte întreagă și sumă",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă {x}=1/5 și {y}=3/10, calculați [x+y]−[x]−[y]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este [{x}+{y}]=[1/2]=0. Ea este 0 sau 1, în funcție de depășirea pragului 1.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 9,
+        "type_name": "Partea întreagă a unei sume",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă {x}=7/10 și {y}=3/5, calculați [x+y]−[x]−[y]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este [{x}+{y}]=[13/10]=1. Ea este 0 sau 1, în funcție de depășirea pragului 1.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 9,
+        "type_name": "Partea întreagă a unei sume",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă {x}=2/5 și {y}=3/5, calculați [x+y]−[x]−[y]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este [{x}+{y}]=[1]=1. Ea este 0 sau 1, în funcție de depășirea pragului 1.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 9,
+        "type_name": "Partea întreagă a unei sume",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă {x}=0 și {y}=9/10, calculați [x+y]−[x]−[y]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este [{x}+{y}]=[9/10]=0. Ea este 0 sau 1, în funcție de depășirea pragului 1.",
+      "options": [
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 9,
+        "type_name": "Partea întreagă a unei sume",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care comparație este valabilă pentru toate x,y≥0? Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x≥[x]≥0 și y≥[y]≥0, deci xy≥[x][y]. Ultimul produs este întreg, astfel [xy]≥[x][y]. Egalitatea și inegalitatea strictă pot apărea în exemple diferite.",
+      "options": [
+        {
+          "text": "[xy]≥[x][y]",
+          "is_correct": true
+        },
+        {
+          "text": "[xy]<[x][y]",
+          "is_correct": false
+        },
+        {
+          "text": "[xy]>[x][y]",
+          "is_correct": false
+        },
+        {
+          "text": "[xy]=[x][y]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 10,
+        "type_name": "Partea întreagă a produsului",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=1,8 și y=2,4, calculați [xy]−[x][y]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "xy=4,32, deci [xy]=4. Avem [x]=1 și [y]=2, astfel diferența este 4−2=2.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 10,
+        "type_name": "Partea întreagă a produsului",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=y=−1/2, care este comparația dintre [xy] și [x][y]? Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "xy=1/4 și [xy]=0, dar [x]=[y]=−1, deci [x][y]=1. Ipotezele de semn contează în inegalitatea pentru produs.",
+      "options": [
+        {
+          "text": "[xy]=[x][y]",
+          "is_correct": false
+        },
+        {
+          "text": "[xy]>[x][y]",
+          "is_correct": false
+        },
+        {
+          "text": "[xy]<[x][y]",
+          "is_correct": true
+        },
+        {
+          "text": "[xy] și [x][y] nu sunt definite.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 10,
+        "type_name": "Partea întreagă a produsului",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă x∈[2;3) și y∈[3;4), care este valoarea maximă a lui [xy]? Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "6≤xy<12, deci [xy]≤11. Valoarea 11 se atinge, de exemplu, la x=2,9 și y=3,9, când xy=11,31.",
+      "options": [
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 10,
+        "type_name": "Partea întreagă a produsului",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru 2 numere reale x₁,…,x2, care este maximul lui [x₁+…+x2]−([x₁]+…+[x2])? Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este partea întreagă a sumei celor 2 părți fracționare, fiecare în [0,1). Suma este sub 2, deci maximul este 1; alegând fiecare parte fracționară 1−1/4, maximul se atinge.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 11,
+        "type_name": "Sume cu n variabile",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru 3 numere reale x₁,…,x3, care este maximul lui [x₁+…+x3]−([x₁]+…+[x3])? Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este partea întreagă a sumei celor 3 părți fracționare, fiecare în [0,1). Suma este sub 3, deci maximul este 2; alegând fiecare parte fracționară 1−1/6, maximul se atinge.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 11,
+        "type_name": "Sume cu n variabile",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru 4 numere reale x₁,…,x4, care este maximul lui [x₁+…+x4]−([x₁]+…+[x4])? Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este partea întreagă a sumei celor 4 părți fracționare, fiecare în [0,1). Suma este sub 4, deci maximul este 3; alegând fiecare parte fracționară 1−1/8, maximul se atinge.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 11,
+        "type_name": "Sume cu n variabile",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru 5 numere reale x₁,…,x5, care este maximul lui [x₁+…+x5]−([x₁]+…+[x5])? Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este partea întreagă a sumei celor 5 părți fracționare, fiecare în [0,1). Suma este sub 5, deci maximul este 4; alegând fiecare parte fracționară 1−1/10, maximul se atinge.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 11,
+        "type_name": "Sume cu n variabile",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x real, care este valoarea maximă a lui [3x]−3[x]? Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este [3{x}]. Din 0≤{x}<1 rezultă valori între 0 și 2; ultima se atinge pentru {x}=1−1/6.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 12,
+        "type_name": "Multiplii unui număr real",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x real, care este valoarea maximă a lui [5x]−5[x]? Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este [5{x}]. Din 0≤{x}<1 rezultă valori între 0 și 4; ultima se atinge pentru {x}=1−1/10.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 12,
+        "type_name": "Multiplii unui număr real",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x real, care este valoarea maximă a lui [8x]−8[x]? Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este [8{x}]. Din 0≤{x}<1 rezultă valori între 0 și 7; ultima se atinge pentru {x}=1−1/16.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 12,
+        "type_name": "Multiplii unui număr real",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x neîntreg, care formulă este corectă? Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem x=k+r cu k întreg și 0<r<1. Atunci −x=−k−r∈(−k−1,−k), deci [−x]=−k−1.",
+      "options": [
+        {
+          "text": "[−x]=−[x]",
+          "is_correct": false
+        },
+        {
+          "text": "[−x]=[x]−1",
+          "is_correct": false
+        },
+        {
+          "text": "[−x]=1−[x]",
+          "is_correct": false
+        },
+        {
+          "text": "[−x]=−[x]−1",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 13,
+        "type_name": "Opusul și partea fracționară",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă {x}=2/7, calculați {−x}. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x nu este întreg. Formula {−x}=1−{x} dă 1−2/7=5/7.",
+      "options": [
+        {
+          "text": "5/7",
+          "is_correct": true
+        },
+        {
+          "text": "-2/7",
+          "is_correct": false
+        },
+        {
+          "text": "12/7",
+          "is_correct": false
+        },
+        {
+          "text": "19/7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 13,
+        "type_name": "Opusul și partea fracționară",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă x este întreg, calculați [x]+[−x]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x întreg, ambele părți întregi sunt numerele însele: x+(−x)=0.",
+      "options": [
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 13,
+        "type_name": "Opusul și partea fracționară",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Ce condiție este echivalentă cu {x}=0? Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "{x}=0 înseamnă x=[x], deci x este întreg; orice întreg are partea fracționară zero.",
+      "options": [
+        {
+          "text": "x∈R∖Z",
+          "is_correct": false
+        },
+        {
+          "text": "x>0",
+          "is_correct": false
+        },
+        {
+          "text": "x∈Z",
+          "is_correct": true
+        },
+        {
+          "text": "x≥0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 14,
+        "type_name": "Caracterizări ale integrității",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Ce condiție este echivalentă cu [x]+[−x]=−1? Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x întreg suma este 0; pentru x neîntreg avem [−x]=−[x]−1, deci suma este −1.",
+      "options": [
+        {
+          "text": "x∈Z",
+          "is_correct": false
+        },
+        {
+          "text": "x>0",
+          "is_correct": false
+        },
+        {
+          "text": "x<0",
+          "is_correct": false
+        },
+        {
+          "text": "x∈R∖Z",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 14,
+        "type_name": "Caracterizări ale integrității",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Ce condiție este echivalentă cu {x}+{−x}=0? Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Părțile fracționare sunt nenegative; suma lor este zero doar când ambele sunt zero. Pentru x neîntreg, suma este 1.",
+      "options": [
+        {
+          "text": "x∈Z",
+          "is_correct": true
+        },
+        {
+          "text": "x∈R∖Z",
+          "is_correct": false
+        },
+        {
+          "text": "x=1/2",
+          "is_correct": false
+        },
+        {
+          "text": "x≤0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 14,
+        "type_name": "Caracterizări ale integrității",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația [3x−6]=7. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "7≤3x−6<8, deci 13≤3x<14 și 13/3≤x<14/3.",
+      "options": [
+        {
+          "text": "(13/3; 14/3]",
+          "is_correct": false
+        },
+        {
+          "text": "[13/3; 14/3)",
+          "is_correct": true
+        },
+        {
+          "text": "[7/3; 8/3)",
+          "is_correct": false
+        },
+        {
+          "text": "{13/3}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 15,
+        "type_name": "Ecuații elementare cu parte întreagă",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația [2x+1]=−2. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−2≤2x+1<−1, deci −3≤2x<−2 și −3/2≤x<−1.",
+      "options": [
+        {
+          "text": "(−3/2; −1]",
+          "is_correct": false
+        },
+        {
+          "text": "[−1; −1/2)",
+          "is_correct": false
+        },
+        {
+          "text": "[−3/2; −1)",
+          "is_correct": true
+        },
+        {
+          "text": "{−1}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 15,
+        "type_name": "Ecuații elementare cu parte întreagă",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația [−2x+3]=1. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1≤−2x+3<2. Împărțirea la −2 inversează sensurile: 1/2<x≤1.",
+      "options": [
+        {
+          "text": "[1/2; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "[1; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "{1}",
+          "is_correct": false
+        },
+        {
+          "text": "(1/2; 1]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 15,
+        "type_name": "Ecuații elementare cu parte întreagă",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația [2x]=x+(1). Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm k=x+(1)=[2x]∈Z, deci x=k−(1). Ecuația dă k=2k+[−2·(1)], astfel k=⌈2·(1)⌉=2. Rezultă x=1, care verifică ecuația.",
+      "options": [
+        {
+          "text": "{1}",
+          "is_correct": true
+        },
+        {
+          "text": "{2}",
+          "is_correct": false
+        },
+        {
+          "text": "{0}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 16,
+        "type_name": "Ecuații cu parte întreagă și termen liber real",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația [2x]=x+(1/2). Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm k=x+(1/2)=[2x]∈Z, deci x=k−(1/2). Ecuația dă k=2k+[−2·(1/2)], astfel k=⌈2·(1/2)⌉=1. Rezultă x=1/2, care verifică ecuația.",
+      "options": [
+        {
+          "text": "{3/2}",
+          "is_correct": false
+        },
+        {
+          "text": "{1/2}",
+          "is_correct": true
+        },
+        {
+          "text": "{−1/2}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 16,
+        "type_name": "Ecuații cu parte întreagă și termen liber real",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația [2x]=x+(-1/3). Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm k=x+(-1/3)=[2x]∈Z, deci x=k−(-1/3). Ecuația dă k=2k+[−2·(-1/3)], astfel k=⌈2·(-1/3)⌉=0. Rezultă x=1/3, care verifică ecuația.",
+      "options": [
+        {
+          "text": "{4/3}",
+          "is_correct": false
+        },
+        {
+          "text": "{−2/3}",
+          "is_correct": false
+        },
+        {
+          "text": "{1/3}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 16,
+        "type_name": "Ecuații cu parte întreagă și termen liber real",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați soluțiile reale ale ecuației 7[x]²−8[x]+1=0. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu k=[x]∈Z, (7k−1)(k−1)=0. Respingem k=1/7, păstrăm k=1, deci x∈[1,2).",
+      "options": [
+        {
+          "text": "[1/7; 8/7)",
+          "is_correct": false
+        },
+        {
+          "text": "[1/7; 8/7) ∪ [1; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "{1}",
+          "is_correct": false
+        },
+        {
+          "text": "[1; 2)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 17,
+        "type_name": "Ecuații polinomiale în [x]",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați soluțiile reale ale ecuației [x]²−[x]−2=0. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu k=[x], (k−2)(k+1)=0. Pentru k=−1 avem [−1,0), iar pentru k=2 avem [2,3).",
+      "options": [
+        {
+          "text": "[−1; 0) ∪ [2; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "{−1; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "[−1; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(−1; 0] ∪ (2; 3]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 17,
+        "type_name": "Ecuații polinomiale în [x]",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați soluțiile reale ale ecuației ([x]−3)²=0. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "[x]=3 este echivalent cu 3≤x<4.",
+      "options": [
+        {
+          "text": "{3}",
+          "is_correct": false
+        },
+        {
+          "text": "[3; 4)",
+          "is_correct": true
+        },
+        {
+          "text": "(3; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "[−3; −2)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 17,
+        "type_name": "Ecuații polinomiale în [x]",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația x²=[x]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem k=[x]=x²≥0, deci x≥0 și x=√k. Condiția k≤√k<k+1 admite k=0 sau k=1; pentru k≥2, √k<k. Rezultă x=0 sau 1.",
+      "options": [
+        {
+          "text": "{−1; 0; 1}",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 1]",
+          "is_correct": false
+        },
+        {
+          "text": "{0; 1}",
+          "is_correct": true
+        },
+        {
+          "text": "{1}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 18,
+        "type_name": "Ecuații mixte polinom–parte întreagă",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația 4x⁴−4[x²]+1=0. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu t=x² și k=[t]≤t, membrul stâng este ≥4t²−4t+1=(2t−1)². Ca să fie zero trebuie simultan t=1/2 și k=t, imposibil deoarece k este întreg.",
+      "options": [
+        {
+          "text": "{−1/2; 1/2}",
+          "is_correct": false
+        },
+        {
+          "text": "{0}",
+          "is_correct": false
+        },
+        {
+          "text": "{−1; 1}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 18,
+        "type_name": "Ecuații mixte polinom–parte întreagă",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația x²+[x²]=2. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu t=x² și k=[t], t=2−k. Din k≤2−k<k+1 rezultă 2k≤2<2k+1, deci k=1 și t=1. Soluțiile sunt x=±1.",
+      "options": [
+        {
+          "text": "{−1; 1}",
+          "is_correct": true
+        },
+        {
+          "text": "{0; 1}",
+          "is_correct": false
+        },
+        {
+          "text": "{−2; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 18,
+        "type_name": "Ecuații mixte polinom–parte întreagă",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația [x−5]=[−x−1]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem u=x−2: ecuația devine [u−3]=[−u−3], deci [u]=[−u]. Aceasta impune u=0, deci x=2.",
+      "options": [
+        {
+          "text": "[1; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "{2}",
+          "is_correct": true
+        },
+        {
+          "text": "{−2}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 19,
+        "type_name": "Egalitatea părților opuse",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația [x²−x−6]=[−x²+x−2]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u=x²−x−2, avem [u−4]=[−u−4]. Egalitatea [u]=[−u] impune u=0, deci (x−2)(x+1)=0.",
+      "options": [
+        {
+          "text": "{−2; 1}",
+          "is_correct": false
+        },
+        {
+          "text": "[−1; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "{−1; 2}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 19,
+        "type_name": "Egalitatea părților opuse",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația [(x−1)²−2]=[−(x−1)²−4]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u=(x−1)²+1, ecuația este [u−3]=[−u−3], deci ar cere u=0. Dar u≥1. În general [u]=[−u] este posibil doar pentru u=0.",
+      "options": [
+        {
+          "text": "{1}",
+          "is_correct": false
+        },
+        {
+          "text": "{0; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "R",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 19,
+        "type_name": "Egalitatea părților opuse",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați S=Σ[k=1,…,7] [(k+1)/2] și identificați pătratul perfect obținut. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Valorile 1,…,3 apar de două ori, iar 4 apare o dată. S=2(1+…+3)+4=4²=16.",
+      "options": [
+        {
+          "text": "16",
+          "is_correct": true
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 20,
+        "type_name": "Pătrate perfecte din sume cu parte întreagă",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați S=Σ[k=1,…,11] [(k+1)/2] și identificați pătratul perfect obținut. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Valorile 1,…,5 apar de două ori, iar 6 apare o dată. S=2(1+…+5)+6=6²=36.",
+      "options": [
+        {
+          "text": "35",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": true
+        },
+        {
+          "text": "37",
+          "is_correct": false
+        },
+        {
+          "text": "38",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 20,
+        "type_name": "Pătrate perfecte din sume cu parte întreagă",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați S=Σ[k=1,…,19] [(k+1)/2] și identificați pătratul perfect obținut. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Valorile 1,…,9 apar de două ori, iar 10 apare o dată. S=2(1+…+9)+10=10²=100.",
+      "options": [
+        {
+          "text": "99",
+          "is_correct": false
+        },
+        {
+          "text": "101",
+          "is_correct": false
+        },
+        {
+          "text": "100",
+          "is_correct": true
+        },
+        {
+          "text": "102",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 20,
+        "type_name": "Pătrate perfecte din sume cu parte întreagă",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n=8, calculați Σ[j=0,…,2] [(n+j)/3]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem n=3q+r, cu 0≤r<3. Dintre cei 3 termeni, r sunt q+1 și ceilalți q. Suma este 3q+r=n=8, inclusiv când n este negativ.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 21,
+        "type_name": "Identități cu divizori fixați",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n=-3, calculați Σ[j=0,…,3] [(n+j)/4]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem n=4q+r, cu 0≤r<4. Dintre cei 4 termeni, r sunt q+1 și ceilalți q. Suma este 4q+r=n=-3, inclusiv când n este negativ.",
+      "options": [
+        {
+          "text": "-3",
+          "is_correct": true
+        },
+        {
+          "text": "-4",
+          "is_correct": false
+        },
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 21,
+        "type_name": "Identități cu divizori fixați",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n=12, calculați Σ[j=0,…,4] [(n+j)/5]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem n=5q+r, cu 0≤r<5. Dintre cei 5 termeni, r sunt q+1 și ceilalți q. Suma este 5q+r=n=12, inclusiv când n este negativ.",
+      "options": [
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 21,
+        "type_name": "Identități cu divizori fixați",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați toate valorile reale p pentru care [x+p]=[x]+p pentru orice x real. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La x=0 obținem [p]=p, deci p este întreg. Reciproc, adăugarea unui întreg deplasează partea întreagă cu acel întreg.",
+      "options": [
+        {
+          "text": "p≥0",
+          "is_correct": false
+        },
+        {
+          "text": "0≤p<1",
+          "is_correct": false
+        },
+        {
+          "text": "p∈Z",
+          "is_correct": true
+        },
+        {
+          "text": "p∈R",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 22,
+        "type_name": "Parametri cu proprietate universală",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați x real astfel încât [nx]=n pentru orice n∈N*. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția echivalează cu 1≤x<1+1/n pentru orice n pozitiv. Intersecția acestor intervale este {1}; această valoare verifică toate egalitățile.",
+      "options": [
+        {
+          "text": "1≤x<2",
+          "is_correct": false
+        },
+        {
+          "text": "x=0",
+          "is_correct": false
+        },
+        {
+          "text": "x=2",
+          "is_correct": false
+        },
+        {
+          "text": "x=1",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 22,
+        "type_name": "Parametri cu proprietate universală",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați p>0 astfel încât [n/p]=n pentru orice n∈N*. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punând x=1/p, condiția devine [nx]=n pentru orice n pozitiv, ceea ce impune x=1. Rezultă p=1, valoare suficientă.",
+      "options": [
+        {
+          "text": "p=1",
+          "is_correct": true
+        },
+        {
+          "text": "0<p≤1",
+          "is_correct": false
+        },
+        {
+          "text": "p=2",
+          "is_correct": false
+        },
+        {
+          "text": "p≥1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 22,
+        "type_name": "Parametri cu proprietate universală",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=7/10, calculați Σ[k=0,…,2] [x+k/3]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația lui Hermite dă suma egală cu [3x]=[21/10]=2. Identitatea rezultă prin împărțirea lui {x} în cele 3 intervale de lungime 1/3.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 23,
+        "type_name": "Relația lui Hermite",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=-1/5, calculați Σ[k=0,…,3] [x+k/4]. Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația lui Hermite dă suma egală cu [4x]=[-4/5]=-1. Identitatea rezultă prin împărțirea lui {x} în cele 4 intervale de lungime 1/4.",
+      "options": [
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 23,
+        "type_name": "Relația lui Hermite",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este forma corectă a relației lui Hermite pentru x real și n∈N*? Notație: [u] este cel mai mare întreg ≤u, iar {u}=u−[u].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem x=m+r, 0≤r<1, și j=[nr]. Dintre cei n termeni [r+k/n], exact j sunt 1, restul 0. Suma este nm+j=[nx].",
+      "options": [
+        {
+          "text": "Σ[k=0,…,n−1] [x+k/n]=n[x]",
+          "is_correct": false
+        },
+        {
+          "text": "Σ[k=0,…,n−1] [x+k/n]=[nx]+1",
+          "is_correct": false
+        },
+        {
+          "text": "Σ[k=0,…,n−1] [x+k/n]=[x/n]",
+          "is_correct": false
+        },
+        {
+          "text": "Σ[k=0,…,n−1] [x+k/n]=[nx]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.5",
+        "type": 23,
+        "type_name": "Relația lui Hermite",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    }
+  ]
 }
