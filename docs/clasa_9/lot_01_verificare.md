@@ -1,6 +1,6 @@
 # Clasa a IX-a — lotul 01 pentru verificare
 
-Data: 24 octombrie 2026. Statut: lot acceptat pentru introducere; cele 10 grile sunt incluse în sursa JSON a primei lecții și în generatorul ei, pe ramura `codex/clasa-a-9-a`.
+Data: 24 octombrie 2026. Lotul inițial de verificare avea 10 grile. După cererea de reducere la circa 80 de grile pe subcapitol, selecția finală din JSON păstrează întrebările 1, 4, 5, 6, 9 și 10 de mai jos (câte 3 pe tip). Documentul păstrează lotul inițial pentru referință. Ramura: `codex/clasa-a-9-a`.
 
 Capitol: Mulțimi și elemente de logică matematică → Mulțimea numerelor reale → 1.1. Operații algebrice cu numere reale.
 

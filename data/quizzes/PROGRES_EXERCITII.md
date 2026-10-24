@@ -9,8 +9,8 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 | Clasa | Lecții cu exerciții | Total exerciții | Grilă | Adevărat/Fals | Interactive |
 |---|---:|---:|---:|---:|---:|
 | Clasa a V-a | 42 | 2.101 | 589 | 93 | 1.419 |
-| Clasa a IX-a | 1 | 65 | 15 | 4 | 46 |
-| **Total** | **43** | **2.166** | **604** | **97** | **1.465** |
+| Clasa a IX-a | 1 | 136 | 86 | 4 | 46 |
+| **Total** | **43** | **2.237** | **675** | **97** | **1.465** |
 
 ## Clasa a V-a
 
@@ -94,11 +94,15 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 
 | Lecție | Total | Grilă | A/F | Interactive |
 |---|---:|---:|---:|---:|
-| Mulțimea numerelor reale. Operații algebrice, puteri și radicali | 65 | 15 | 4 | 46 |
+| Mulțimea numerelor reale. Operații algebrice, puteri și radicali | 136 | 86 | 4 | 46 |
 
-**Subtotal clasa a IX-a: 1 lecție și 65 de exerciții.**
+**Subtotal clasa a IX-a: 1 lecție și 136 de exerciții.**
 
-Lotul 01 din catalogul Burtea: 5 grile pentru calcule cu zecimale finite și 5 pentru fracții și zecimale periodice, în subcapitolul 1.1. Operații algebrice cu numere reale. Nu au fost adăugate exerciții interactive. Documentul de referință: `docs/clasa_9/lot_01_verificare.md`.
+Lotul 01 din catalogul Burtea a fost prezentat inițial cu câte 5 grile pentru tipurile 1–2. La cererea utilizatorului, selecția finală păstrează câte 3: întrebările 1, 4, 5, 6, 9 și 10 din `docs/clasa_9/lot_01_verificare.md`.
+
+Lotul 02: 75 de grile, câte 3 pentru tipurile 3–27 din subcapitolul 1.1. Operații algebrice cu numere reale. Acoperire cumulată: 27/27 de tipuri, **81 de grile din catalog**, plus cele 55 de exerciții preexistente (inclusiv 5 grile, 4 A/F și 46 interactive). Nu s-au adăugat interactive noi. Fiecare grilă nouă păstrează în JSON metadatele `catalog` (secțiune, număr și nume de tip, origine). Sunt enunțuri noi după tipologiile catalogului, nu transcrieri validate din scanare. Metadatele catalogului nu se importă în modelul întrebării din baza de date; se păstrează în fișierul sursă.
+
+Următorul subcapitol din catalog: **1.2. Ordonarea numerelor reale**, 22 de tipuri, încă neacoperite de aceste loturi.
 
 ## Regula de actualizare
 

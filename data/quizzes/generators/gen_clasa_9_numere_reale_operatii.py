@@ -1,6 +1,7 @@
 """Generează prima lecție de algebră, inclusiv grilele din catalogul Burtea."""
 import json
 from pathlib import Path
+from gen_clasa_9_burtea_operatii import build_catalog_extension
 
 
 def alg(text, mode, data, answers, explanation):
@@ -11,7 +12,7 @@ def alg(text, mode, data, answers, explanation):
 
 
 def catalog_grids():
-    """Lotul 01: câte cinci grile pentru tipurile 1 și 2 din A1, §1.1.
+    """Selecția finală: câte trei grile pentru tipurile 1 și 2 din A1, §1.1.
 
     Enunțuri formulate după tipologiile catalogului, fără transcriere literală.
     Ordinea variantelor corespunde lotului prezentat pentru verificare.
@@ -52,12 +53,18 @@ def catalog_grids():
         {
             "text": text, "type": "multiple_choice", "format": "grid", "points": 10,
             "explanation": explanation,
+            "catalog": {
+                "section": "A1.1.1", "type": row_index // 5 + 1,
+                "type_name": "Calcul cu zecimale finite" if row_index < 5 else "Calcul cu fracții și zecimale periodice",
+                "origin": "Exercițiu nou după tipologia catalogului Burtea IX",
+            },
             "options": [
                 {"text": value, "is_correct": index == correct}
                 for index, value in enumerate(values)
             ],
         }
-        for text, values, correct, explanation in rows
+        for row_index, (text, values, correct, explanation) in enumerate(rows)
+        if row_index in (0, 3, 4, 5, 8, 9)
     ]
 
 
@@ -197,6 +204,7 @@ def build_questions():
 
     # Catalog A1, §1.1: tipul 1 (zecimale finite) și tipul 2 (periodice).
     q += catalog_grids()
+    q += build_catalog_extension()
 
     totals = {}
     for question in q:
@@ -208,8 +216,8 @@ def build_questions():
             occurrences[base] = occurrences.get(base, 0) + 1
             question["text"] = f"{base.rstrip('.')} — varianta {occurrences[base]}."
 
-    assert len(q) == 65, len(q)
-    assert len({question["text"] for question in q}) == 65
+    assert len(q) == 136, len(q)
+    assert len({question["text"] for question in q}) == 136
     return q
 
 
