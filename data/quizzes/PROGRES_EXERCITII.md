@@ -9,8 +9,8 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 | Clasa | Lecții cu exerciții | Total exerciții | Grilă | Adevărat/Fals | Interactive |
 |---|---:|---:|---:|---:|---:|
 | Clasa a V-a | 42 | 2.101 | 589 | 93 | 1.419 |
-| Clasa a IX-a | 1 | 136 | 86 | 4 | 46 |
-| **Total** | **43** | **2.237** | **675** | **97** | **1.465** |
+| Clasa a IX-a | 2 | 231 | 181 | 4 | 46 |
+| **Total** | **44** | **2.332** | **770** | **97** | **1.465** |
 
 ## Clasa a V-a
 
@@ -95,14 +95,50 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 | Lecție | Total | Grilă | A/F | Interactive |
 |---|---:|---:|---:|---:|
 | Mulțimea numerelor reale. Operații algebrice, puteri și radicali | 136 | 86 | 4 | 46 |
+| Propoziții, predicate și cuantificatori | 95 | 95 | 0 | 0 |
 
-**Subtotal clasa a IX-a: 1 lecție și 136 de exerciții.**
+**Subtotal clasa a IX-a: 2 lecții și 231 de exerciții.**
 
 Lotul 01 din catalogul Burtea a fost prezentat inițial cu câte 5 grile pentru tipurile 1–2. La cererea utilizatorului, selecția finală păstrează câte 3: întrebările 1, 4, 5, 6, 9 și 10 din `docs/clasa_9/lot_01_verificare.md`.
 
 Lotul 02: 75 de grile, câte 3 pentru tipurile 3–27 din subcapitolul 1.1. Operații algebrice cu numere reale. Acoperire cumulată: 27/27 de tipuri, **81 de grile din catalog**, plus cele 55 de exerciții preexistente (inclusiv 5 grile, 4 A/F și 46 interactive). Nu s-au adăugat interactive noi. Fiecare grilă nouă păstrează în JSON metadatele `catalog` (secțiune, număr și nume de tip, origine). Sunt enunțuri noi după tipologiile catalogului, nu transcrieri validate din scanare. Metadatele catalogului nu se importă în modelul întrebării din baza de date; se păstrează în fișierul sursă.
 
 Următorul subcapitol din catalog: **1.2. Ordonarea numerelor reale**, 22 de tipuri, încă neacoperite de aceste loturi.
+
+### Secțiunea 2 — Propoziție. Predicat. Cuantificatori — finalizată
+
+Adăugate și încărcate în baza locală la 24 octombrie 2026: **95 de grile, câte 5 pentru fiecare dintre cele 19 tipuri catalogate**, fără A/F și fără interactive. Fiecare are patru variante, un singur răspuns corect și explicație. Lecția din aplicație: **Propoziții, predicate și cuantificatori**.
+
+Sursa JSON: `clasa_9/clasa_9_u01_l03_propozitii_predicate_si_cuantificatori.json`. Generator independent și reproductibil: `generators/gen_clasa_9_logica_propozitii.py`. Acesta modifică numai această lecție; nu modifică exercițiile despre mulțimi.
+
+| Tip din catalogul A1, §2, p. 34–40 | Grile |
+|---|---:|
+| 1. Recunoașterea propozițiilor | 5 |
+| 2. Adevărul unor afirmații numerice | 5 |
+| 3. Adevărul unor afirmații geometrice | 5 |
+| 4. Propoziții despre zecimale periodice | 5 |
+| 5. Mulțimea de adevăr a unei ecuații | 5 |
+| 6. Universul unui predicat rațional | 5 |
+| 7. Predicate cu modul | 5 |
+| 8. Predicate cu parte întreagă | 5 |
+| 9. Predicate aritmetice de integritate | 5 |
+| 10. Predicate binare diofantice | 5 |
+| 11. Predicate binare prin pătrate | 5 |
+| 12. Predicate cu iraționali independenți | 5 |
+| 13. Particularizarea unui predicat | 5 |
+| 14. Cuantificatorul universal | 5 |
+| 15. Cuantificatorul existențial | 5 |
+| 16. Ordinea cuantificatorilor | 5 |
+| 17. Cuantificare pe intervale | 5 |
+| 18. Propoziții aritmetice universale | 5 |
+| 19. Predicate cu trei variabile geometrice | 5 |
+| **Total** | **95** |
+
+Enunțurile sunt noi, formulate după tipologiile catalogului; nu sunt transcrieri verificate din scanare. Metadatele `catalog` păstrează secțiunea `A1.2`, tipul, denumirea, dificultatea estimată și originea în JSON; aceste metadate nu sunt importate în modelul bazei de date.
+
+Verificări: validatorul aplicației, numărul de grile și acoperirea tuturor tipurilor, unicitatea enunțurilor/opțiunilor, o singură opțiune marcată corect, calcule independente pentru proporționalitate, zecimale periodice, integritate, perechi diofantice și unghiuri; `manage.py check`; încărcare țintită prin `seed_quizzes --file`.
+
+Secțiunea 3 (operații logice elementare și legi de calcul) nu este inclusă în aceste 95 de grile.
 
 ## Regula de actualizare
 

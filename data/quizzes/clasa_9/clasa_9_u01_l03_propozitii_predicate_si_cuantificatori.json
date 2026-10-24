@@ -1,6 +1,3047 @@
 {
   "title": "Propoziții, predicate și cuantificatori",
   "description": "Clasa a 9-a · Mulțimi și logică matematică",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Care enunț este o propoziție matematică? Setul 1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Propoziția este un enunț declarativ cu valoare de adevăr determinată, chiar dacă este fals. Ordinul și întrebarea nu sunt propoziții; enunțul cu x liber este un predicat.",
+      "options": [
+        {
+          "text": "7 este număr prim.",
+          "is_correct": true
+        },
+        {
+          "text": "Calculați suma numerelor 2 și 5!",
+          "is_correct": false
+        },
+        {
+          "text": "Cât este 3²?",
+          "is_correct": false
+        },
+        {
+          "text": "x + 1 = 4, cu x liber în ℝ.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 1,
+        "type_name": "Recunoașterea propozițiilor",
+        "difficulty": "easy",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care enunț este o propoziție matematică? Setul 2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Propoziția este un enunț declarativ cu valoare de adevăr determinată, chiar dacă este fals. Ordinul și întrebarea nu sunt propoziții; enunțul cu x liber este un predicat.",
+      "options": [
+        {
+          "text": "Calculați suma numerelor 2 și 5!",
+          "is_correct": false
+        },
+        {
+          "text": "9 este număr par.",
+          "is_correct": true
+        },
+        {
+          "text": "Cât este 3²?",
+          "is_correct": false
+        },
+        {
+          "text": "x + 1 = 4, cu x liber în ℝ.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 1,
+        "type_name": "Recunoașterea propozițiilor",
+        "difficulty": "easy",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care enunț este o propoziție matematică? Setul 3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Propoziția este un enunț declarativ cu valoare de adevăr determinată, chiar dacă este fals. Ordinul și întrebarea nu sunt propoziții; enunțul cu x liber este un predicat.",
+      "options": [
+        {
+          "text": "Calculați suma numerelor 2 și 5!",
+          "is_correct": false
+        },
+        {
+          "text": "Cât este 3²?",
+          "is_correct": false
+        },
+        {
+          "text": "√2 este număr irațional.",
+          "is_correct": true
+        },
+        {
+          "text": "x + 1 = 4, cu x liber în ℝ.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 1,
+        "type_name": "Recunoașterea propozițiilor",
+        "difficulty": "easy",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care enunț este o propoziție matematică? Setul 4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Propoziția este un enunț declarativ cu valoare de adevăr determinată, chiar dacă este fals. Ordinul și întrebarea nu sunt propoziții; enunțul cu x liber este un predicat.",
+      "options": [
+        {
+          "text": "Calculați suma numerelor 2 și 5!",
+          "is_correct": false
+        },
+        {
+          "text": "Cât este 3²?",
+          "is_correct": false
+        },
+        {
+          "text": "x + 1 = 4, cu x liber în ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "3 + 4 = 8.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 1,
+        "type_name": "Recunoașterea propozițiilor",
+        "difficulty": "easy",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care enunț este o propoziție matematică? Setul 5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Propoziția este un enunț declarativ cu valoare de adevăr determinată, chiar dacă este fals. Ordinul și întrebarea nu sunt propoziții; enunțul cu x liber este un predicat.",
+      "options": [
+        {
+          "text": "Orice pătrat este dreptunghi.",
+          "is_correct": true
+        },
+        {
+          "text": "Calculați suma numerelor 2 și 5!",
+          "is_correct": false
+        },
+        {
+          "text": "Cât este 3²?",
+          "is_correct": false
+        },
+        {
+          "text": "x + 1 = 4, cu x liber în ℝ.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 1,
+        "type_name": "Recunoașterea propozițiilor",
+        "difficulty": "easy",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Mărimile pozitive x și y sunt invers proporționale. Pentru x = 2, y = 12. Care afirmație este adevărată pentru x = 4?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul xy este constant, egal cu 24. Dublarea lui x înjumătățește valoarea lui y.",
+      "options": [
+        {
+          "text": "y = 24",
+          "is_correct": false
+        },
+        {
+          "text": "y = 6",
+          "is_correct": true
+        },
+        {
+          "text": "y = 12",
+          "is_correct": false
+        },
+        {
+          "text": "y = 0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 2,
+        "type_name": "Adevărul unor afirmații numerice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Mărimile pozitive x și y sunt invers proporționale. Pentru x = 3, y = 15. Care afirmație este adevărată pentru x = 6?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul xy este constant, egal cu 45. Dublarea lui x înjumătățește valoarea lui y.",
+      "options": [
+        {
+          "text": "y = 30",
+          "is_correct": false
+        },
+        {
+          "text": "y = 15",
+          "is_correct": false
+        },
+        {
+          "text": "y = 15/2",
+          "is_correct": true
+        },
+        {
+          "text": "y = 0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 2,
+        "type_name": "Adevărul unor afirmații numerice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Mărimile pozitive x și y sunt invers proporționale. Pentru x = 4, y = 10. Care afirmație este adevărată pentru x = 8?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul xy este constant, egal cu 40. Dublarea lui x înjumătățește valoarea lui y.",
+      "options": [
+        {
+          "text": "y = 20",
+          "is_correct": false
+        },
+        {
+          "text": "y = 10",
+          "is_correct": false
+        },
+        {
+          "text": "y = 0",
+          "is_correct": false
+        },
+        {
+          "text": "y = 5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 2,
+        "type_name": "Adevărul unor afirmații numerice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Mărimile pozitive x și y sunt invers proporționale. Pentru x = 5, y = 18. Care afirmație este adevărată pentru x = 10?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul xy este constant, egal cu 90. Dublarea lui x înjumătățește valoarea lui y.",
+      "options": [
+        {
+          "text": "y = 9",
+          "is_correct": true
+        },
+        {
+          "text": "y = 36",
+          "is_correct": false
+        },
+        {
+          "text": "y = 18",
+          "is_correct": false
+        },
+        {
+          "text": "y = 0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 2,
+        "type_name": "Adevărul unor afirmații numerice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Mărimile pozitive x și y sunt invers proporționale. Pentru x = 6, y = 14. Care afirmație este adevărată pentru x = 12?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul xy este constant, egal cu 84. Dublarea lui x înjumătățește valoarea lui y.",
+      "options": [
+        {
+          "text": "y = 28",
+          "is_correct": false
+        },
+        {
+          "text": "y = 7",
+          "is_correct": true
+        },
+        {
+          "text": "y = 14",
+          "is_correct": false
+        },
+        {
+          "text": "y = 0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 2,
+        "type_name": "Adevărul unor afirmații numerice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care afirmație despre dreptunghiuri este adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diagonalele unui dreptunghi sunt egale. Un dreptunghi cu laturi 2 și 3 infirmă primele două proprietăți suplimentare; unghiurile sale sunt de 90°.",
+      "options": [
+        {
+          "text": "Diagonalele oricărui dreptunghi sunt perpendiculare.",
+          "is_correct": false
+        },
+        {
+          "text": "Orice dreptunghi are toate laturile egale.",
+          "is_correct": false
+        },
+        {
+          "text": "Diagonalele oricărui dreptunghi sunt egale.",
+          "is_correct": true
+        },
+        {
+          "text": "Orice dreptunghi are un unghi de 60°.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 3,
+        "type_name": "Adevărul unor afirmații geometrice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care afirmație despre romburi este adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diagonalele rombului sunt perpendiculare. Un romb cu un unghi de 60° infirmă celelalte trei afirmații.",
+      "options": [
+        {
+          "text": "Diagonalele oricărui romb sunt egale.",
+          "is_correct": false
+        },
+        {
+          "text": "Orice romb este pătrat.",
+          "is_correct": false
+        },
+        {
+          "text": "Orice romb are un unghi drept.",
+          "is_correct": false
+        },
+        {
+          "text": "Diagonalele oricărui romb sunt perpendiculare.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 3,
+        "type_name": "Adevărul unor afirmații geometrice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care afirmație despre triunghiurile euclidiene este adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma unghiurilor este 180°. Triunghiurile echilaterale nu au unghi drept; un triunghi cu unghiuri 40°, 70°, 70° este isoscel și nu este echilateral.",
+      "options": [
+        {
+          "text": "Suma unghiurilor interioare este 180°.",
+          "is_correct": true
+        },
+        {
+          "text": "Orice triunghi are un unghi drept.",
+          "is_correct": false
+        },
+        {
+          "text": "Orice triunghi isoscel este echilateral.",
+          "is_correct": false
+        },
+        {
+          "text": "Un triunghi poate avea două unghiuri obtuze.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 3,
+        "type_name": "Adevărul unor afirmații geometrice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care afirmație despre paralelograme este adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În orice paralelogram, diagonalele au același mijloc. Egalitatea diagonalelor sau perpendicularitatea lor impun condiții suplimentare.",
+      "options": [
+        {
+          "text": "Diagonalele sunt întotdeauna egale.",
+          "is_correct": false
+        },
+        {
+          "text": "Diagonalele se înjumătățesc reciproc.",
+          "is_correct": true
+        },
+        {
+          "text": "Diagonalele sunt întotdeauna perpendiculare.",
+          "is_correct": false
+        },
+        {
+          "text": "Toate unghiurile sunt întotdeauna drepte.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 3,
+        "type_name": "Adevărul unor afirmații geometrice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care afirmație despre pătrate este adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul are diagonale egale, perpendiculare și cu același mijloc. Diagonala este latura înmulțită cu √2, iar suma unghiurilor este 360°.",
+      "options": [
+        {
+          "text": "Diagonala are aceeași lungime ca latura.",
+          "is_correct": false
+        },
+        {
+          "text": "Suma unghiurilor interioare este 180°.",
+          "is_correct": false
+        },
+        {
+          "text": "Diagonalele sunt egale și perpendiculare.",
+          "is_correct": true
+        },
+        {
+          "text": "Diagonalele nu se înjumătățesc reciproc.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 3,
+        "type_name": "Adevărul unor afirmații geometrice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "În scrierea zecimală 0,(142857), care este a 500-a cifră după virgulă? Cifrele din paranteze formează perioada.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Perioada are 6 cifre. Poziția în perioadă este ((500 − 1) mod 6) + 1 = 2; cifra este 4.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 4,
+        "type_name": "Propoziții despre zecimale periodice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "În scrierea zecimală 0,(27), care este a 101-a cifră după virgulă? Cifrele din paranteze formează perioada.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Perioada are 2 cifre. Poziția în perioadă este ((101 − 1) mod 2) + 1 = 1; cifra este 2.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 4,
+        "type_name": "Propoziții despre zecimale periodice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "În scrierea zecimală 0,(123), care este a 2026-a cifră după virgulă? Cifrele din paranteze formează perioada.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Perioada are 3 cifre. Poziția în perioadă este ((2026 − 1) mod 3) + 1 = 1; cifra este 1.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 4,
+        "type_name": "Propoziții despre zecimale periodice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "În scrierea zecimală 0,(081), care este a 100-a cifră după virgulă? Cifrele din paranteze formează perioada.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Perioada are 3 cifre. Poziția în perioadă este ((100 − 1) mod 3) + 1 = 1; cifra este 0.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 4,
+        "type_name": "Propoziții despre zecimale periodice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "În scrierea zecimală 0,(36), care este a 2024-a cifră după virgulă? Cifrele din paranteze formează perioada.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Perioada are 2 cifre. Poziția în perioadă este ((2024 − 1) mod 2) + 1 = 2; cifra este 6.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 4,
+        "type_name": "Propoziții despre zecimale periodice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Determinați mulțimea de adevăr a predicatului (x − (2))(x − (3)) = 0, cu x ∈ ℝ. Folosim ℕ = {0, 1, 2, …}.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este zero dacă x = 2 sau x = 3. Păstrăm numai rădăcinile din ℝ: {2; 3}.",
+      "options": [
+        {
+          "text": "{2; 3}",
+          "is_correct": true
+        },
+        {
+          "text": "{2}",
+          "is_correct": false
+        },
+        {
+          "text": "{3}",
+          "is_correct": false
+        },
+        {
+          "text": "ℝ",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 5,
+        "type_name": "Mulțimea de adevăr a unei ecuații",
+        "difficulty": "easy",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Determinați mulțimea de adevăr a predicatului (x − (-3))(x − (4)) = 0, cu x ∈ ℤ. Folosim ℕ = {0, 1, 2, …}.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este zero dacă x = -3 sau x = 4. Păstrăm numai rădăcinile din ℤ: {-3; 4}.",
+      "options": [
+        {
+          "text": "{-3}",
+          "is_correct": false
+        },
+        {
+          "text": "{-3; 4}",
+          "is_correct": true
+        },
+        {
+          "text": "{4}",
+          "is_correct": false
+        },
+        {
+          "text": "ℝ",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 5,
+        "type_name": "Mulțimea de adevăr a unei ecuații",
+        "difficulty": "easy",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Determinați mulțimea de adevăr a predicatului (x − (0))(x − (5)) = 0, cu x ∈ ℚ. Folosim ℕ = {0, 1, 2, …}.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este zero dacă x = 0 sau x = 5. Păstrăm numai rădăcinile din ℚ: {0; 5}.",
+      "options": [
+        {
+          "text": "{0}",
+          "is_correct": false
+        },
+        {
+          "text": "{5}",
+          "is_correct": false
+        },
+        {
+          "text": "{0; 5}",
+          "is_correct": true
+        },
+        {
+          "text": "ℝ",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 5,
+        "type_name": "Mulțimea de adevăr a unei ecuații",
+        "difficulty": "easy",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Determinați mulțimea de adevăr a predicatului (x − (-2))(x − (6)) = 0, cu x ∈ ℕ. Folosim ℕ = {0, 1, 2, …}.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este zero dacă x = -2 sau x = 6. Păstrăm numai rădăcinile din ℕ: {6}.",
+      "options": [
+        {
+          "text": "{-2; 6}",
+          "is_correct": false
+        },
+        {
+          "text": "{-2}",
+          "is_correct": false
+        },
+        {
+          "text": "ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "{6}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 5,
+        "type_name": "Mulțimea de adevăr a unei ecuații",
+        "difficulty": "easy",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Determinați mulțimea de adevăr a predicatului (x − (-4))(x − (-1)) = 0, cu x ∈ ℕ. Folosim ℕ = {0, 1, 2, …}.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este zero dacă x = -4 sau x = -1. Păstrăm numai rădăcinile din ℕ: ∅.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": true
+        },
+        {
+          "text": "{-4; -1}",
+          "is_correct": false
+        },
+        {
+          "text": "{-4}",
+          "is_correct": false
+        },
+        {
+          "text": "{-1}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 5,
+        "type_name": "Mulțimea de adevăr a unei ecuații",
+        "difficulty": "easy",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Pentru predicatul (x² − (7)x + (10))/(x − (2)) = 0, care sunt domeniul real maxim D și mulțimea de adevăr A?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorul impune x ≠ 2. Numărătorul este (x − (2))(x − (5)); după excluderea valorii 2, rămâne x = 5.",
+      "options": [
+        {
+          "text": "D = ℝ; A = {2; 5}",
+          "is_correct": false
+        },
+        {
+          "text": "D = ℝ ∖ {2}; A = {5}",
+          "is_correct": true
+        },
+        {
+          "text": "D = ℝ ∖ {2}; A = {2; 5}",
+          "is_correct": false
+        },
+        {
+          "text": "D = ℝ ∖ {2}; A = ∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 6,
+        "type_name": "Universul unui predicat rațional",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Pentru predicatul (x² − (2)x + (-3))/(x − (-1)) = 0, care sunt domeniul real maxim D și mulțimea de adevăr A?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorul impune x ≠ -1. Numărătorul este (x − (-1))(x − (3)); după excluderea valorii -1, rămâne x = 3.",
+      "options": [
+        {
+          "text": "D = ℝ; A = {-1; 3}",
+          "is_correct": false
+        },
+        {
+          "text": "D = ℝ ∖ {-1}; A = {-1; 3}",
+          "is_correct": false
+        },
+        {
+          "text": "D = ℝ ∖ {-1}; A = {3}",
+          "is_correct": true
+        },
+        {
+          "text": "D = ℝ ∖ {-1}; A = ∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 6,
+        "type_name": "Universul unui predicat rațional",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Pentru predicatul (x² − (2)x + (-8))/(x − (4)) = 0, care sunt domeniul real maxim D și mulțimea de adevăr A?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorul impune x ≠ 4. Numărătorul este (x − (4))(x − (-2)); după excluderea valorii 4, rămâne x = -2.",
+      "options": [
+        {
+          "text": "D = ℝ; A = {-2; 4}",
+          "is_correct": false
+        },
+        {
+          "text": "D = ℝ ∖ {4}; A = {-2; 4}",
+          "is_correct": false
+        },
+        {
+          "text": "D = ℝ ∖ {4}; A = ∅",
+          "is_correct": false
+        },
+        {
+          "text": "D = ℝ ∖ {4}; A = {-2}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 6,
+        "type_name": "Universul unui predicat rațional",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Pentru predicatul (x² − (7)x + (0))/(x − (0)) = 0, care sunt domeniul real maxim D și mulțimea de adevăr A?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorul impune x ≠ 0. Numărătorul este (x − (0))(x − (7)); după excluderea valorii 0, rămâne x = 7.",
+      "options": [
+        {
+          "text": "D = ℝ ∖ {0}; A = {7}",
+          "is_correct": true
+        },
+        {
+          "text": "D = ℝ; A = {0; 7}",
+          "is_correct": false
+        },
+        {
+          "text": "D = ℝ ∖ {0}; A = {0; 7}",
+          "is_correct": false
+        },
+        {
+          "text": "D = ℝ ∖ {0}; A = ∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 6,
+        "type_name": "Universul unui predicat rațional",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Pentru predicatul (x² − (-4)x + (3))/(x − (-3)) = 0, care sunt domeniul real maxim D și mulțimea de adevăr A?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorul impune x ≠ -3. Numărătorul este (x − (-3))(x − (-1)); după excluderea valorii -3, rămâne x = -1.",
+      "options": [
+        {
+          "text": "D = ℝ; A = {-3; -1}",
+          "is_correct": false
+        },
+        {
+          "text": "D = ℝ ∖ {-3}; A = {-1}",
+          "is_correct": true
+        },
+        {
+          "text": "D = ℝ ∖ {-3}; A = {-3; -1}",
+          "is_correct": false
+        },
+        {
+          "text": "D = ℝ ∖ {-3}; A = ∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 6,
+        "type_name": "Universul unui predicat rațional",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care este mulțimea de adevăr în ℝ a predicatului |x − (2)| ≤ 3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Inegalitatea este echivalentă cu −3 ≤ x − (2) ≤ 3, deci -1 ≤ x ≤ 5.",
+      "options": [
+        {
+          "text": "(-1; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "{-1; 5}",
+          "is_correct": false
+        },
+        {
+          "text": "[-1; 5]",
+          "is_correct": true
+        },
+        {
+          "text": "[2; 5]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 7,
+        "type_name": "Predicate cu modul",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care este mulțimea de adevăr în ℝ a predicatului |x − (-1)| ≤ 4?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Inegalitatea este echivalentă cu −4 ≤ x − (-1) ≤ 4, deci -5 ≤ x ≤ 3.",
+      "options": [
+        {
+          "text": "(-5; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "{-5; 3}",
+          "is_correct": false
+        },
+        {
+          "text": "[-1; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "[-5; 3]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 7,
+        "type_name": "Predicate cu modul",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care este mulțimea de adevăr în ℝ a predicatului |x − (5)| ≤ 2?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Inegalitatea este echivalentă cu −2 ≤ x − (5) ≤ 2, deci 3 ≤ x ≤ 7.",
+      "options": [
+        {
+          "text": "[3; 7]",
+          "is_correct": true
+        },
+        {
+          "text": "(3; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "{3; 7}",
+          "is_correct": false
+        },
+        {
+          "text": "[5; 7]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 7,
+        "type_name": "Predicate cu modul",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care este mulțimea de adevăr în ℝ a predicatului |x − (0)| ≤ 6?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Inegalitatea este echivalentă cu −6 ≤ x − (0) ≤ 6, deci -6 ≤ x ≤ 6.",
+      "options": [
+        {
+          "text": "(-6; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "[-6; 6]",
+          "is_correct": true
+        },
+        {
+          "text": "{-6; 6}",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 6]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 7,
+        "type_name": "Predicate cu modul",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care este mulțimea de adevăr în ℝ a predicatului |x − (-4)| ≤ 1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Inegalitatea este echivalentă cu −1 ≤ x − (-4) ≤ 1, deci -5 ≤ x ≤ -3.",
+      "options": [
+        {
+          "text": "(-5; -3)",
+          "is_correct": false
+        },
+        {
+          "text": "{-5; -3}",
+          "is_correct": false
+        },
+        {
+          "text": "[-5; -3]",
+          "is_correct": true
+        },
+        {
+          "text": "[-4; -3]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 7,
+        "type_name": "Predicate cu modul",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Determinați mulțimea de adevăr în ℝ a predicatului ⌊2x⌋ = 3. ⌊t⌋ este cel mai mare întreg mai mic sau egal cu t.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Definiția părții întregi dă 3 ≤ 2x < 4. Împărțim prin 2 > 0; capătul 3/2 este inclus, iar 2 este exclus.",
+      "options": [
+        {
+          "text": "(3/2; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "[3/2; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "(3/2; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "[3/2; 2)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 8,
+        "type_name": "Predicate cu parte întreagă",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Determinați mulțimea de adevăr în ℝ a predicatului ⌊3x⌋ = -2. ⌊t⌋ este cel mai mare întreg mai mic sau egal cu t.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Definiția părții întregi dă -2 ≤ 3x < -1. Împărțim prin 3 > 0; capătul -2/3 este inclus, iar -1/3 este exclus.",
+      "options": [
+        {
+          "text": "[-2/3; -1/3)",
+          "is_correct": true
+        },
+        {
+          "text": "(-2/3; -1/3]",
+          "is_correct": false
+        },
+        {
+          "text": "[-2/3; -1/3]",
+          "is_correct": false
+        },
+        {
+          "text": "(-2/3; -1/3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 8,
+        "type_name": "Predicate cu parte întreagă",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Determinați mulțimea de adevăr în ℝ a predicatului ⌊4x⌋ = 1. ⌊t⌋ este cel mai mare întreg mai mic sau egal cu t.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Definiția părții întregi dă 1 ≤ 4x < 2. Împărțim prin 4 > 0; capătul 1/4 este inclus, iar 1/2 este exclus.",
+      "options": [
+        {
+          "text": "(1/4; 1/2]",
+          "is_correct": false
+        },
+        {
+          "text": "[1/4; 1/2)",
+          "is_correct": true
+        },
+        {
+          "text": "[1/4; 1/2]",
+          "is_correct": false
+        },
+        {
+          "text": "(1/4; 1/2)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 8,
+        "type_name": "Predicate cu parte întreagă",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Determinați mulțimea de adevăr în ℝ a predicatului ⌊5x⌋ = 0. ⌊t⌋ este cel mai mare întreg mai mic sau egal cu t.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Definiția părții întregi dă 0 ≤ 5x < 1. Împărțim prin 5 > 0; capătul 0 este inclus, iar 1/5 este exclus.",
+      "options": [
+        {
+          "text": "(0; 1/5]",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 1/5]",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 1/5)",
+          "is_correct": true
+        },
+        {
+          "text": "(0; 1/5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 8,
+        "type_name": "Predicate cu parte întreagă",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Determinați mulțimea de adevăr în ℝ a predicatului ⌊2x⌋ = -3. ⌊t⌋ este cel mai mare întreg mai mic sau egal cu t.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Definiția părții întregi dă -3 ≤ 2x < -2. Împărțim prin 2 > 0; capătul -3/2 este inclus, iar -1 este exclus.",
+      "options": [
+        {
+          "text": "(-3/2; -1]",
+          "is_correct": false
+        },
+        {
+          "text": "[-3/2; -1]",
+          "is_correct": false
+        },
+        {
+          "text": "(-3/2; -1)",
+          "is_correct": false
+        },
+        {
+          "text": "[-3/2; -1)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 8,
+        "type_name": "Predicate cu parte întreagă",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Pentru care n ∈ ℕ este (n + 1)/3 număr întreg? Folosim ℕ = {0, 1, 2, …}.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Este necesar și suficient ca 3 să dividă n + 1, adică n ≡ 2 (mod 3). Cum 0 ≤ 2 < 3, toate soluțiile naturale sunt n = 3k + 2.",
+      "options": [
+        {
+          "text": "n = 3k + 2, k ∈ ℕ",
+          "is_correct": true
+        },
+        {
+          "text": "n = 3k + 0, k ∈ ℕ",
+          "is_correct": false
+        },
+        {
+          "text": "n = 3k, k ∈ ℕ",
+          "is_correct": false
+        },
+        {
+          "text": "Pentru orice n ∈ ℕ",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 9,
+        "type_name": "Predicate aritmetice de integritate",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Pentru care n ∈ ℕ este (n + 1)/4 număr întreg? Folosim ℕ = {0, 1, 2, …}.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Este necesar și suficient ca 4 să dividă n + 1, adică n ≡ 3 (mod 4). Cum 0 ≤ 3 < 4, toate soluțiile naturale sunt n = 4k + 3.",
+      "options": [
+        {
+          "text": "n = 4k + 0, k ∈ ℕ",
+          "is_correct": false
+        },
+        {
+          "text": "n = 4k + 3, k ∈ ℕ",
+          "is_correct": true
+        },
+        {
+          "text": "n = 4k, k ∈ ℕ",
+          "is_correct": false
+        },
+        {
+          "text": "Pentru orice n ∈ ℕ",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 9,
+        "type_name": "Predicate aritmetice de integritate",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Pentru care n ∈ ℕ este (n + 2)/5 număr întreg? Folosim ℕ = {0, 1, 2, …}.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Este necesar și suficient ca 5 să dividă n + 2, adică n ≡ 3 (mod 5). Cum 0 ≤ 3 < 5, toate soluțiile naturale sunt n = 5k + 3.",
+      "options": [
+        {
+          "text": "n = 5k + 4, k ∈ ℕ",
+          "is_correct": false
+        },
+        {
+          "text": "n = 5k, k ∈ ℕ",
+          "is_correct": false
+        },
+        {
+          "text": "n = 5k + 3, k ∈ ℕ",
+          "is_correct": true
+        },
+        {
+          "text": "Pentru orice n ∈ ℕ",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 9,
+        "type_name": "Predicate aritmetice de integritate",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Pentru care n ∈ ℕ este (n + 1)/6 număr întreg? Folosim ℕ = {0, 1, 2, …}.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Este necesar și suficient ca 6 să dividă n + 1, adică n ≡ 5 (mod 6). Cum 0 ≤ 5 < 6, toate soluțiile naturale sunt n = 6k + 5.",
+      "options": [
+        {
+          "text": "n = 6k + 0, k ∈ ℕ",
+          "is_correct": false
+        },
+        {
+          "text": "n = 6k, k ∈ ℕ",
+          "is_correct": false
+        },
+        {
+          "text": "Pentru orice n ∈ ℕ",
+          "is_correct": false
+        },
+        {
+          "text": "n = 6k + 5, k ∈ ℕ",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 9,
+        "type_name": "Predicate aritmetice de integritate",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Pentru care n ∈ ℕ este (n + 3)/7 număr întreg? Folosim ℕ = {0, 1, 2, …}.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Este necesar și suficient ca 7 să dividă n + 3, adică n ≡ 4 (mod 7). Cum 0 ≤ 4 < 7, toate soluțiile naturale sunt n = 7k + 4.",
+      "options": [
+        {
+          "text": "n = 7k + 4, k ∈ ℕ",
+          "is_correct": true
+        },
+        {
+          "text": "n = 7k + 5, k ∈ ℕ",
+          "is_correct": false
+        },
+        {
+          "text": "n = 7k, k ∈ ℕ",
+          "is_correct": false
+        },
+        {
+          "text": "Pentru orice n ∈ ℕ",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 9,
+        "type_name": "Predicate aritmetice de integritate",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Câte perechi ordonate (x, y) ∈ ℤ² verifică (x − (1))(y − (2)) = 6?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u = x − (1), v = y − (2). Fiecare divizor întreg nenul u al lui 6 determină exact un v = 6/u. Numărul divizorilor cu ambele semne este 8; schimbarea variabilelor este bijectivă.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 10,
+        "type_name": "Predicate binare diofantice",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Câte perechi ordonate (x, y) ∈ ℤ² verifică (x − (3))(y − (-1)) = 8?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u = x − (3), v = y − (-1). Fiecare divizor întreg nenul u al lui 8 determină exact un v = 8/u. Numărul divizorilor cu ambele semne este 8; schimbarea variabilelor este bijectivă.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 10,
+        "type_name": "Predicate binare diofantice",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Câte perechi ordonate (x, y) ∈ ℤ² verifică (x − (-2))(y − (4)) = 10?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u = x − (-2), v = y − (4). Fiecare divizor întreg nenul u al lui 10 determină exact un v = 10/u. Numărul divizorilor cu ambele semne este 8; schimbarea variabilelor este bijectivă.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 10,
+        "type_name": "Predicate binare diofantice",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Câte perechi ordonate (x, y) ∈ ℤ² verifică (x − (0))(y − (3)) = 12?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u = x − (0), v = y − (3). Fiecare divizor întreg nenul u al lui 12 determină exact un v = 12/u. Numărul divizorilor cu ambele semne este 12; schimbarea variabilelor este bijectivă.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 10,
+        "type_name": "Predicate binare diofantice",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Câte perechi ordonate (x, y) ∈ ℤ² verifică (x − (2))(y − (5)) = 9?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u = x − (2), v = y − (5). Fiecare divizor întreg nenul u al lui 9 determină exact un v = 9/u. Numărul divizorilor cu ambele semne este 6; schimbarea variabilelor este bijectivă.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 10,
+        "type_name": "Predicate binare diofantice",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care este mulțimea perechilor reale (x, y) pentru care (x − (2))² + (y − (3))² ≤ 0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele pătrate sunt nenegative. Suma lor poate fi ≤ 0 numai dacă ambele sunt zero, deci x = 2 și y = 3.",
+      "options": [
+        {
+          "text": "{(3; 3)}",
+          "is_correct": false
+        },
+        {
+          "text": "ℝ²",
+          "is_correct": false
+        },
+        {
+          "text": "{(2; 3)}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 11,
+        "type_name": "Predicate binare prin pătrate",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care este mulțimea perechilor reale (x, y) pentru care (x − (-1))² + (y − (4))² ≤ 0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele pătrate sunt nenegative. Suma lor poate fi ≤ 0 numai dacă ambele sunt zero, deci x = -1 și y = 4.",
+      "options": [
+        {
+          "text": "{(0; 4)}",
+          "is_correct": false
+        },
+        {
+          "text": "ℝ²",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{(-1; 4)}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 11,
+        "type_name": "Predicate binare prin pătrate",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care este mulțimea perechilor reale (x, y) pentru care (x − (0))² + (y − (-2))² ≤ 0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele pătrate sunt nenegative. Suma lor poate fi ≤ 0 numai dacă ambele sunt zero, deci x = 0 și y = -2.",
+      "options": [
+        {
+          "text": "{(0; -2)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(1; -2)}",
+          "is_correct": false
+        },
+        {
+          "text": "ℝ²",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 11,
+        "type_name": "Predicate binare prin pătrate",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care este mulțimea perechilor reale (x, y) pentru care (x − (5))² + (y − (1))² ≤ 0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele pătrate sunt nenegative. Suma lor poate fi ≤ 0 numai dacă ambele sunt zero, deci x = 5 și y = 1.",
+      "options": [
+        {
+          "text": "{(6; 1)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(5; 1)}",
+          "is_correct": true
+        },
+        {
+          "text": "ℝ²",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 11,
+        "type_name": "Predicate binare prin pătrate",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care este mulțimea perechilor reale (x, y) pentru care (x − (-3))² + (y − (-4))² ≤ 0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele pătrate sunt nenegative. Suma lor poate fi ≤ 0 numai dacă ambele sunt zero, deci x = -3 și y = -4.",
+      "options": [
+        {
+          "text": "{(-2; -4)}",
+          "is_correct": false
+        },
+        {
+          "text": "ℝ²",
+          "is_correct": false
+        },
+        {
+          "text": "{(-3; -4)}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 11,
+        "type_name": "Predicate binare prin pătrate",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Determinați (x, y) ∈ ℚ² dacă (x − (1))√2 + y − (3) = 0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x ≠ 1, egalitatea ar exprima √2 ca raport de numere raționale, imposibil. Așadar x = 1, apoi y = 3.",
+      "options": [
+        {
+          "text": "(2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "Nu există soluții raționale.",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 3)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 12,
+        "type_name": "Predicate cu iraționali independenți",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Determinați (x, y) ∈ ℚ² dacă (x − (-2))√2 + y − (4) = 0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x ≠ -2, egalitatea ar exprima √2 ca raport de numere raționale, imposibil. Așadar x = -2, apoi y = 4.",
+      "options": [
+        {
+          "text": "(-2; 4)",
+          "is_correct": true
+        },
+        {
+          "text": "(-1; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "Nu există soluții raționale.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 12,
+        "type_name": "Predicate cu iraționali independenți",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Determinați (x, y) ∈ ℚ² dacă (x − (3))√2 + y − (-1) = 0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x ≠ 3, egalitatea ar exprima √2 ca raport de numere raționale, imposibil. Așadar x = 3, apoi y = -1.",
+      "options": [
+        {
+          "text": "(4; -1)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; -1)",
+          "is_correct": true
+        },
+        {
+          "text": "(3; 0)",
+          "is_correct": false
+        },
+        {
+          "text": "Nu există soluții raționale.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 12,
+        "type_name": "Predicate cu iraționali independenți",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Determinați (x, y) ∈ ℚ² dacă (x − (0))√2 + y − (5) = 0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x ≠ 0, egalitatea ar exprima √2 ca raport de numere raționale, imposibil. Așadar x = 0, apoi y = 5.",
+      "options": [
+        {
+          "text": "(1; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 5)",
+          "is_correct": true
+        },
+        {
+          "text": "Nu există soluții raționale.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 12,
+        "type_name": "Predicate cu iraționali independenți",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Determinați (x, y) ∈ ℚ² dacă (x − (-4))√2 + y − (-2) = 0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x ≠ -4, egalitatea ar exprima √2 ca raport de numere raționale, imposibil. Așadar x = -4, apoi y = -2.",
+      "options": [
+        {
+          "text": "(-3; -2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4; -1)",
+          "is_correct": false
+        },
+        {
+          "text": "Nu există soluții raționale.",
+          "is_correct": false
+        },
+        {
+          "text": "(-4; -2)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 12,
+        "type_name": "Predicate cu iraționali independenți",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Fie p(x): x² ≤ 1, cu x ∈ ℝ. Care sunt, în ordine, valorile de adevăr ale lui p(1), p(-1), p(2)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Primele două pătrate sunt 1, deci satisfac inegalitatea. Ultimul este 4 > 1.",
+      "options": [
+        {
+          "text": "Adevărat, adevărat, fals",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat, fals, fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals, adevărat, adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat, adevărat, adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 13,
+        "type_name": "Particularizarea unui predicat",
+        "difficulty": "easy",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Fie p(x): x² ≤ 4, cu x ∈ ℝ. Care sunt, în ordine, valorile de adevăr ale lui p(2), p(-2), p(3)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Primele două pătrate sunt 4, deci satisfac inegalitatea. Ultimul este 9 > 4.",
+      "options": [
+        {
+          "text": "Adevărat, fals, fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat, adevărat, fals",
+          "is_correct": true
+        },
+        {
+          "text": "Fals, adevărat, adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat, adevărat, adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 13,
+        "type_name": "Particularizarea unui predicat",
+        "difficulty": "easy",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Fie p(x): x² ≤ 9, cu x ∈ ℝ. Care sunt, în ordine, valorile de adevăr ale lui p(3), p(-3), p(4)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Primele două pătrate sunt 9, deci satisfac inegalitatea. Ultimul este 16 > 9.",
+      "options": [
+        {
+          "text": "Adevărat, fals, fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals, adevărat, adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat, adevărat, fals",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat, adevărat, adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 13,
+        "type_name": "Particularizarea unui predicat",
+        "difficulty": "easy",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Fie p(x): x² ≤ 16, cu x ∈ ℝ. Care sunt, în ordine, valorile de adevăr ale lui p(4), p(-4), p(5)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Primele două pătrate sunt 16, deci satisfac inegalitatea. Ultimul este 25 > 16.",
+      "options": [
+        {
+          "text": "Adevărat, fals, fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals, adevărat, adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat, adevărat, adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat, adevărat, fals",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 13,
+        "type_name": "Particularizarea unui predicat",
+        "difficulty": "easy",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Fie p(x): x² ≤ 25, cu x ∈ ℝ. Care sunt, în ordine, valorile de adevăr ale lui p(5), p(-5), p(6)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Primele două pătrate sunt 25, deci satisfac inegalitatea. Ultimul este 36 > 25.",
+      "options": [
+        {
+          "text": "Adevărat, adevărat, fals",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat, fals, fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals, adevărat, adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat, adevărat, adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 13,
+        "type_name": "Particularizarea unui predicat",
+        "difficulty": "easy",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care propoziție universală este adevărată? În acest set, a = 1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul unui număr real este nenegativ. Prima afirmație falsă are contraexemplul x = a; a doua, x = a − 1; a treia, x = 0, deoarece a > 0.",
+      "options": [
+        {
+          "text": "Pentru orice x ∈ ℝ, (x − a)² > 0.",
+          "is_correct": false
+        },
+        {
+          "text": "Pentru orice x ∈ ℝ, (x − a)² ≥ 0.",
+          "is_correct": true
+        },
+        {
+          "text": "Pentru orice x ∈ ℝ, x > a.",
+          "is_correct": false
+        },
+        {
+          "text": "Pentru orice x ∈ ℝ, x² = a².",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 14,
+        "type_name": "Cuantificatorul universal",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care propoziție universală este adevărată? În acest set, a = 2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul unui număr real este nenegativ. Prima afirmație falsă are contraexemplul x = a; a doua, x = a − 1; a treia, x = 0, deoarece a > 0.",
+      "options": [
+        {
+          "text": "Pentru orice x ∈ ℝ, (x − a)² > 0.",
+          "is_correct": false
+        },
+        {
+          "text": "Pentru orice x ∈ ℝ, x > a.",
+          "is_correct": false
+        },
+        {
+          "text": "Pentru orice x ∈ ℝ, (x − a)² ≥ 0.",
+          "is_correct": true
+        },
+        {
+          "text": "Pentru orice x ∈ ℝ, x² = a².",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 14,
+        "type_name": "Cuantificatorul universal",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care propoziție universală este adevărată? În acest set, a = 3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul unui număr real este nenegativ. Prima afirmație falsă are contraexemplul x = a; a doua, x = a − 1; a treia, x = 0, deoarece a > 0.",
+      "options": [
+        {
+          "text": "Pentru orice x ∈ ℝ, (x − a)² > 0.",
+          "is_correct": false
+        },
+        {
+          "text": "Pentru orice x ∈ ℝ, x > a.",
+          "is_correct": false
+        },
+        {
+          "text": "Pentru orice x ∈ ℝ, x² = a².",
+          "is_correct": false
+        },
+        {
+          "text": "Pentru orice x ∈ ℝ, (x − a)² ≥ 0.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 14,
+        "type_name": "Cuantificatorul universal",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care propoziție universală este adevărată? În acest set, a = 4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul unui număr real este nenegativ. Prima afirmație falsă are contraexemplul x = a; a doua, x = a − 1; a treia, x = 0, deoarece a > 0.",
+      "options": [
+        {
+          "text": "Pentru orice x ∈ ℝ, (x − a)² ≥ 0.",
+          "is_correct": true
+        },
+        {
+          "text": "Pentru orice x ∈ ℝ, (x − a)² > 0.",
+          "is_correct": false
+        },
+        {
+          "text": "Pentru orice x ∈ ℝ, x > a.",
+          "is_correct": false
+        },
+        {
+          "text": "Pentru orice x ∈ ℝ, x² = a².",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 14,
+        "type_name": "Cuantificatorul universal",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care propoziție universală este adevărată? În acest set, a = 5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul unui număr real este nenegativ. Prima afirmație falsă are contraexemplul x = a; a doua, x = a − 1; a treia, x = 0, deoarece a > 0.",
+      "options": [
+        {
+          "text": "Pentru orice x ∈ ℝ, (x − a)² > 0.",
+          "is_correct": false
+        },
+        {
+          "text": "Pentru orice x ∈ ℝ, (x − a)² ≥ 0.",
+          "is_correct": true
+        },
+        {
+          "text": "Pentru orice x ∈ ℝ, x > a.",
+          "is_correct": false
+        },
+        {
+          "text": "Pentru orice x ∈ ℝ, x² = a².",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 14,
+        "type_name": "Cuantificatorul universal",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care valoare este un martor pentru propoziția ∃x ∈ ℤ: x² = 4?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un martor este o valoare din univers care verifică predicatul. Pentru x = 2, x² = 4; celelalte valori propuse au pătrate diferite. Și −2 este martor, dar nu apare între variante.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 15,
+        "type_name": "Cuantificatorul existențial",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care valoare este un martor pentru propoziția ∃x ∈ ℤ: x² = 9?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un martor este o valoare din univers care verifică predicatul. Pentru x = 3, x² = 9; celelalte valori propuse au pătrate diferite. Și −3 este martor, dar nu apare între variante.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 15,
+        "type_name": "Cuantificatorul existențial",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care valoare este un martor pentru propoziția ∃x ∈ ℤ: x² = 16?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un martor este o valoare din univers care verifică predicatul. Pentru x = 4, x² = 16; celelalte valori propuse au pătrate diferite. Și −4 este martor, dar nu apare între variante.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 15,
+        "type_name": "Cuantificatorul existențial",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care valoare este un martor pentru propoziția ∃x ∈ ℤ: x² = 25?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un martor este o valoare din univers care verifică predicatul. Pentru x = 5, x² = 25; celelalte valori propuse au pătrate diferite. Și −5 este martor, dar nu apare între variante.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 15,
+        "type_name": "Cuantificatorul existențial",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care valoare este un martor pentru propoziția ∃x ∈ ℤ: x² = 36?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un martor este o valoare din univers care verifică predicatul. Pentru x = 6, x² = 36; celelalte valori propuse au pătrate diferite. Și −6 este martor, dar nu apare între variante.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 15,
+        "type_name": "Cuantificatorul existențial",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "În ℝ, fie P: ∀x ∃y, y = x + 1, și Q: ∃y ∀x, y = x + 1. Care este evaluarea corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "P este adevărată: pentru fiecare x alegem y = x + 1. Q este falsă: x = 0 ar impune y = 1, iar x = 1 ar impune y = 2. Nu există un singur y care să funcționeze pentru toate valorile lui x.",
+      "options": [
+        {
+          "text": "P falsă; Q adevărată",
+          "is_correct": false
+        },
+        {
+          "text": "P și Q adevărate",
+          "is_correct": false
+        },
+        {
+          "text": "P și Q false",
+          "is_correct": false
+        },
+        {
+          "text": "P adevărată; Q falsă",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 16,
+        "type_name": "Ordinea cuantificatorilor",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "În ℝ, fie P: ∀x ∃y, y = x + 2, și Q: ∃y ∀x, y = x + 2. Care este evaluarea corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "P este adevărată: pentru fiecare x alegem y = x + 2. Q este falsă: x = 0 ar impune y = 2, iar x = 1 ar impune y = 3. Nu există un singur y care să funcționeze pentru toate valorile lui x.",
+      "options": [
+        {
+          "text": "P adevărată; Q falsă",
+          "is_correct": true
+        },
+        {
+          "text": "P falsă; Q adevărată",
+          "is_correct": false
+        },
+        {
+          "text": "P și Q adevărate",
+          "is_correct": false
+        },
+        {
+          "text": "P și Q false",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 16,
+        "type_name": "Ordinea cuantificatorilor",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "În ℝ, fie P: ∀x ∃y, y = x + 3, și Q: ∃y ∀x, y = x + 3. Care este evaluarea corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "P este adevărată: pentru fiecare x alegem y = x + 3. Q este falsă: x = 0 ar impune y = 3, iar x = 1 ar impune y = 4. Nu există un singur y care să funcționeze pentru toate valorile lui x.",
+      "options": [
+        {
+          "text": "P falsă; Q adevărată",
+          "is_correct": false
+        },
+        {
+          "text": "P adevărată; Q falsă",
+          "is_correct": true
+        },
+        {
+          "text": "P și Q adevărate",
+          "is_correct": false
+        },
+        {
+          "text": "P și Q false",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 16,
+        "type_name": "Ordinea cuantificatorilor",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "În ℝ, fie P: ∀x ∃y, y = x + 4, și Q: ∃y ∀x, y = x + 4. Care este evaluarea corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "P este adevărată: pentru fiecare x alegem y = x + 4. Q este falsă: x = 0 ar impune y = 4, iar x = 1 ar impune y = 5. Nu există un singur y care să funcționeze pentru toate valorile lui x.",
+      "options": [
+        {
+          "text": "P falsă; Q adevărată",
+          "is_correct": false
+        },
+        {
+          "text": "P și Q adevărate",
+          "is_correct": false
+        },
+        {
+          "text": "P adevărată; Q falsă",
+          "is_correct": true
+        },
+        {
+          "text": "P și Q false",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 16,
+        "type_name": "Ordinea cuantificatorilor",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "În ℝ, fie P: ∀x ∃y, y = x + 5, și Q: ∃y ∀x, y = x + 5. Care este evaluarea corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "P este adevărată: pentru fiecare x alegem y = x + 5. Q este falsă: x = 0 ar impune y = 5, iar x = 1 ar impune y = 6. Nu există un singur y care să funcționeze pentru toate valorile lui x.",
+      "options": [
+        {
+          "text": "P falsă; Q adevărată",
+          "is_correct": false
+        },
+        {
+          "text": "P și Q adevărate",
+          "is_correct": false
+        },
+        {
+          "text": "P și Q false",
+          "is_correct": false
+        },
+        {
+          "text": "P adevărată; Q falsă",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 16,
+        "type_name": "Ordinea cuantificatorilor",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Pentru a ∈ (-2; 5) și b ∈ (-3; 4), care este cea mai mică valoare reală M pentru care propoziția ∀a ∀b, a + b < M este adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem a < 5 și b < 4, deci a + b < 9. Suma se poate apropia oricât de mult de 9 din stânga, astfel încât nicio valoare mai mică a lui M nu este suficientă.",
+      "options": [
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "-5",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 17,
+        "type_name": "Cuantificare pe intervale",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Pentru a ∈ (0; 2) și b ∈ (1; 3), care este cea mai mică valoare reală M pentru care propoziția ∀a ∀b, a + b < M este adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem a < 2 și b < 3, deci a + b < 5. Suma se poate apropia oricât de mult de 5 din stânga, astfel încât nicio valoare mai mică a lui M nu este suficientă.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 17,
+        "type_name": "Cuantificare pe intervale",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Pentru a ∈ (-4; -1) și b ∈ (2; 6), care este cea mai mică valoare reală M pentru care propoziția ∀a ∀b, a + b < M este adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem a < -1 și b < 6, deci a + b < 5. Suma se poate apropia oricât de mult de 5 din stânga, astfel încât nicio valoare mai mică a lui M nu este suficientă.",
+      "options": [
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 17,
+        "type_name": "Cuantificare pe intervale",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Pentru a ∈ (1; 4) și b ∈ (-5; -2), care este cea mai mică valoare reală M pentru care propoziția ∀a ∀b, a + b < M este adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem a < 4 și b < -2, deci a + b < 2. Suma se poate apropia oricât de mult de 2 din stânga, astfel încât nicio valoare mai mică a lui M nu este suficientă.",
+      "options": [
+        {
+          "text": "-4",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 17,
+        "type_name": "Cuantificare pe intervale",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Pentru a ∈ (-3; 3) și b ∈ (-2; 2), care este cea mai mică valoare reală M pentru care propoziția ∀a ∀b, a + b < M este adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem a < 3 și b < 2, deci a + b < 5. Suma se poate apropia oricât de mult de 5 din stânga, astfel încât nicio valoare mai mică a lui M nu este suficientă.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "-5",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 17,
+        "type_name": "Cuantificare pe intervale",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care propoziție este adevărată pentru orice n ∈ ℤ? Setul 1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dintre doi întregi consecutivi unul este par. Contraexemple pentru celelalte afirmații: n = 0, n = 1, respectiv n = 0.",
+      "options": [
+        {
+          "text": "n² + 1 este divizibil cu 2.",
+          "is_correct": false
+        },
+        {
+          "text": "n(n + 1) este divizibil cu 2.",
+          "is_correct": true
+        },
+        {
+          "text": "n(n + 1) este divizibil cu 3.",
+          "is_correct": false
+        },
+        {
+          "text": "n² este impar.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 18,
+        "type_name": "Propoziții aritmetice universale",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care propoziție este adevărată pentru orice n ∈ ℤ? Setul 2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Trei întregi consecutivi conțin un multiplu de 3 și un număr par. Celelalte afirmații sunt infirmate de n = 1, n = 0, respectiv n = 0.",
+      "options": [
+        {
+          "text": "n(n + 1)(n + 2) este divizibil cu 12.",
+          "is_correct": false
+        },
+        {
+          "text": "n² + 2 este divizibil cu 3.",
+          "is_correct": false
+        },
+        {
+          "text": "n(n + 1)(n + 2) este divizibil cu 6.",
+          "is_correct": true
+        },
+        {
+          "text": "n + 1 este par.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 18,
+        "type_name": "Propoziții aritmetice universale",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care propoziție este adevărată pentru orice n ∈ ℤ? Setul 3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "n² − n = n(n − 1) este produsul a doi întregi consecutivi. Contraexemple: n = 0 pentru primele două afirmații false și n = 2 pentru ultima.",
+      "options": [
+        {
+          "text": "n² − n este impar.",
+          "is_correct": false
+        },
+        {
+          "text": "n² + n + 1 este par.",
+          "is_correct": false
+        },
+        {
+          "text": "n² − n este divizibil cu 4.",
+          "is_correct": false
+        },
+        {
+          "text": "n² − n este par.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 18,
+        "type_name": "Propoziții aritmetice universale",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care propoziție este adevărată pentru orice n ∈ ℤ? Setul 4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(2n + 1)² − 1 = 4n(n + 1), iar n(n + 1) este par. Contraexemple: n = 0, n = 1, respectiv n = 4.",
+      "options": [
+        {
+          "text": "(2n + 1)² − 1 este divizibil cu 8.",
+          "is_correct": true
+        },
+        {
+          "text": "(2n + 1)² este par.",
+          "is_correct": false
+        },
+        {
+          "text": "(2n + 1)² − 1 este divizibil cu 16.",
+          "is_correct": false
+        },
+        {
+          "text": "2n + 1 este număr prim.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 18,
+        "type_name": "Propoziții aritmetice universale",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Care propoziție este adevărată pentru orice n ∈ ℕ, cu ℕ = {0, 1, 2, …}? Setul 5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "n² + 2n + 1 = (n + 1)². Pentru n = 1, celelalte expresii sunt 2, 3, respectiv 3, care nu sunt pătrate perfecte.",
+      "options": [
+        {
+          "text": "n² + 1 este pătrat perfect.",
+          "is_correct": false
+        },
+        {
+          "text": "n² + 2n + 1 este pătrat perfect.",
+          "is_correct": true
+        },
+        {
+          "text": "n² + 2n este pătrat perfect.",
+          "is_correct": false
+        },
+        {
+          "text": "2n + 1 este pătrat perfect.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 18,
+        "type_name": "Propoziții aritmetice universale",
+        "difficulty": "hard",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Unghiurile α, β, γ ale unui triunghi sunt direct proporționale, în această ordine, cu 1, 2, 3. Care este tripletul (α; β; γ)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem unghiurile 1k, 2k, 3k. Suma lor este 180°, deci k = 180/6 = 30°. Rezultă (30°; 60°; 90°).",
+      "options": [
+        {
+          "text": "(40°; 50°; 90°)",
+          "is_correct": false
+        },
+        {
+          "text": "(30°; 70°; 90°)",
+          "is_correct": false
+        },
+        {
+          "text": "(30°; 60°; 90°)",
+          "is_correct": true
+        },
+        {
+          "text": "(1°; 2°; 3°)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 19,
+        "type_name": "Predicate cu trei variabile geometrice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Unghiurile α, β, γ ale unui triunghi sunt direct proporționale, în această ordine, cu 2, 3, 4. Care este tripletul (α; β; γ)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem unghiurile 2k, 3k, 4k. Suma lor este 180°, deci k = 180/9 = 20°. Rezultă (40°; 60°; 80°).",
+      "options": [
+        {
+          "text": "(50°; 50°; 80°)",
+          "is_correct": false
+        },
+        {
+          "text": "(40°; 70°; 80°)",
+          "is_correct": false
+        },
+        {
+          "text": "(2°; 3°; 4°)",
+          "is_correct": false
+        },
+        {
+          "text": "(40°; 60°; 80°)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 19,
+        "type_name": "Predicate cu trei variabile geometrice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Unghiurile α, β, γ ale unui triunghi sunt direct proporționale, în această ordine, cu 2, 5, 5. Care este tripletul (α; β; γ)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem unghiurile 2k, 5k, 5k. Suma lor este 180°, deci k = 180/12 = 15°. Rezultă (30°; 75°; 75°).",
+      "options": [
+        {
+          "text": "(30°; 75°; 75°)",
+          "is_correct": true
+        },
+        {
+          "text": "(40°; 65°; 75°)",
+          "is_correct": false
+        },
+        {
+          "text": "(30°; 85°; 75°)",
+          "is_correct": false
+        },
+        {
+          "text": "(2°; 5°; 5°)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 19,
+        "type_name": "Predicate cu trei variabile geometrice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Unghiurile α, β, γ ale unui triunghi sunt direct proporționale, în această ordine, cu 1, 3, 5. Care este tripletul (α; β; γ)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem unghiurile 1k, 3k, 5k. Suma lor este 180°, deci k = 180/9 = 20°. Rezultă (20°; 60°; 100°).",
+      "options": [
+        {
+          "text": "(30°; 50°; 100°)",
+          "is_correct": false
+        },
+        {
+          "text": "(20°; 60°; 100°)",
+          "is_correct": true
+        },
+        {
+          "text": "(20°; 70°; 100°)",
+          "is_correct": false
+        },
+        {
+          "text": "(1°; 3°; 5°)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 19,
+        "type_name": "Predicate cu trei variabile geometrice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    },
+    {
+      "text": "Unghiurile α, β, γ ale unui triunghi sunt direct proporționale, în această ordine, cu 3, 4, 5. Care este tripletul (α; β; γ)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem unghiurile 3k, 4k, 5k. Suma lor este 180°, deci k = 180/12 = 15°. Rezultă (45°; 60°; 75°).",
+      "options": [
+        {
+          "text": "(55°; 50°; 75°)",
+          "is_correct": false
+        },
+        {
+          "text": "(45°; 70°; 75°)",
+          "is_correct": false
+        },
+        {
+          "text": "(45°; 60°; 75°)",
+          "is_correct": true
+        },
+        {
+          "text": "(3°; 4°; 5°)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.2",
+        "type": 19,
+        "type_name": "Predicate cu trei variabile geometrice",
+        "difficulty": "medium",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX, §2"
+      }
+    }
+  ]
 }
