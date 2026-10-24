@@ -201,7 +201,7 @@ Adăugate și încărcate în baza locală la 24 octombrie 2026: **315 grile, c�
 | 4.2. Probleme de numărare, p. 59–62 | 33/33 | 165 |
 | **Total** | **63/63** | **315** |
 
-4.1 cuprinde formule de sume și produse, pasul inductiv, estimări și praguri minime, Bernoulli, divizibilitate, recurențe, sume simetrice, exponenți primi, reprezentări cu semne, reconstrucția din sume parțiale, monede și construcții geometrice. Sunt păstrate explicit condițiile de nenegativitate, pragurile și cazurile de bază. Pentru familiile de construcții și cele olimpice, grilele verifică pași sau consecințe ale metodei; nu înlocuiesc demonstrațiile problemelor integrale din culegere. Condiția universală cu parte întreagă are explicație generală; verificarea unui număr finit de indici nu este prezentată ca demonstrație.
+4.1 cuprinde formule de sume și produse, pasul inductiv, estimări și praguri minime, Bernoulli, divizibilitate, recurențe, sume simetrice, exponenți primi, reprezentări cu semne, reconstrucția din sume parțiale, monede și construcții geometrice. Sunt păstrate explicit condițiile de nenegativitate, pragurile și cazurile de bază. Pentru familiile de construcții și cele olimpice, grilele verifică pași sau consecințe ale metodei; nu înlocuiesc demonstrațiile problemelor integrale din culegere. La condiția universală cu parte întreagă, varianta corectă este justificată pentru toți indicii, iar fiecare variantă falsă are un contraexemplu explicit; verificarea unui număr finit de indici nu este prezentată ca demonstrație.
 
 4.2 cuprinde incluziune–excluziune, submulțimi, divizibilitate și coprimalitate, alegeri de cifre, extrageri, repartizări, colorări, concatenare și paginare, factoriale, factorizări coprime, diagonale, regiuni, subdiviziuni, radicali raționali, complementarea submulțimilor, divizori și ecuații diofantice. Enunțurile precizează dacă ordinea contează, dacă repetarea este permisă, dacă obiectele sunt distincte, dacă se admit beneficiari fără obiecte și dacă zero este soluție admisă.
 
@@ -210,6 +210,22 @@ Lecția din aplicație: **Raționamente logice. Inducția matematică și proble
 Enunțurile sunt originale, formulate după tipologiile catalogului, nu transcrieri verificate din scanare. Metadatele `catalog` păstrează secțiunile `A1.4.1` / `A1.4.2`, numărul și numele tipului, precum și originea în JSON.
 
 Verificări: calcule exacte cu fracții, sume și produse directe comparate cu formulele; enumerare pentru multipli, coprimalitate, triplete, repartizări, divizori și ecuații diofantice; factoriale directe comparate cu exponenții primi și zerourile terminale; cifrele concatenării comparate cu șirul construit; audit independent al pragurilor minime, reprezentărilor cu semne, identității a două pătrate, paginării și conservării ariei la rafinarea pătratului; acoperire 63×5, unicitatea enunțurilor și variantelor, validatorul aplicației, reproductibilitatea generatorului, `manage.py check` și încărcare țintită prin `seed_quizzes --file`.
+
+### Revizia secțiunii 4 — 24 octombrie 2026
+
+Recitite cele 63 de familii de exerciții și revizuite **67 de grile în conținut**: 47 au variante schimbate, 47 au enunțuri schimbate, 42 au explicații schimbate (categoriile se suprapun). Totalul rămâne 315.
+
+Principalele îmbunătățiri:
+
+- La partea întreagă, toate variantele trec acum testul n=1; variantele false sunt eliminate cu indici expliciți. Explicația folosește argumente accesibile pentru variantele propuse, în locul unei demonstrații prin convergența șirurilor.
+- La sumele de puteri, cele cinci grile tratează puterile 1–5, în locul a cinci multipli ai aceleiași sume de pătrate. Pasul inductiv este certificat prin identități polinomiale exacte.
+- Produsul de sume de două pătrate cere două aplicații succesive ale identității, iar două grile cu semne verifică extinderea unei reprezentări printr-un bloc de patru pătrate. Explicația blocului include baze pentru toate resturile modulo 4.
+- Partiționarea pătratului pornește de la construcțiile 6, 7 și 8 și pasul +3, care acoperă toate ordinele ≥6. Partițiile în poligoane folosesc atât baze pare, cât și impare; ipotezele despre simetrie, intersecții și coliniaritate sunt explicite.
+- La cifre cu/fără repetare se cer ambele numărări. Repartizările cu trei destinatari au variante bazate pe greșeli de metodă. Toate opțiunile care pretind a fi cifre sunt acum în intervalul 0–9; vechiul șablon putea propune 10.
+
+Verificator separat de generator: `scripts/verify_clasa_9_inductie_numarare.py`. Citește enunțurile și toate opțiunile, recalculează răspunsurile fără a importa cheia sau formulele din generator și confirmă un singur răspuns corect pentru **315/315 grile, 1.260/1.260 opțiuni, 63/63 tipuri**. Include aritmetică exactă, identități polinomiale pentru toate valorile indicelui, enumerări de cazuri concrete, construcții efective ale bazelor 6/7/8 cu verificarea ariei și lipsei suprapunerilor, precum și exemple de tăieturi simetrice fără coliniarități.
+
+În JSON, `catalog.task_scope` distinge aplicațiile numerice, formulele generale, cazurile particulare și construcțiile ghidate. Acoperirea celor 63 de tipuri este **tipologică**, nu o certificare că toate grilele au dificultatea sau cerința integrală a problemelor din scanare. Revizia este internă; nu reprezintă o confruntare individuală cu PDF-ul sau o evaluare făcută de un profesor extern. Raportul este în `docs/clasa_9/revizie_sectiunea_4.md`.
 
 ## Regula de actualizare
 

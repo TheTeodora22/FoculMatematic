@@ -6,6 +6,8 @@
 
 La familiile olimpice și de construcții, unele grile verifică pași ai metodei sau consecințe ale unei construcții explicite, în locul demonstrației integrale a problemei sursă.
 
+Revizie internă efectuată la 24 octombrie 2026: 67 de grile îmbunătățite; toate cele 315 grile și cele 1.260 de variante verificate printr-un script separat de generator. Detalii în [raportul de revizie](revizie_sectiunea_4.md). Coloana „Grile” indică acoperire după tipologie, nu echivalența integrală cu cerințele din scanare. Metadatele `catalog.task_scope` precizează scopul fiecărei sarcini în JSON.
+
 ## 4.1
 
 | Tip | Denumire | Grile |

@@ -71,6 +71,14 @@ def build_questions():
             "explanation": explanation,
             "options": [{"text": value, "is_correct": i == position} for i, value in enumerate(values)],
             "catalog": {"section": f"A1.{section}", "type": kind, "type_name": NAMES[section][kind-1],
+                        "task_scope": (
+                            "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă"
+                            if section == "4.1" and kind in {25,26,30} else
+                            "Caz particular sau pas al metodei; nu demonstrația integrală din sursă"
+                            if section == "4.1" and kind in {1,11,12,13,14,16,17,18,21,23,24} else
+                            "Formulă generală și justificarea inducției"
+                            if section == "4.1" and kind in {2,10,15,20} else
+                            "Aplicarea numerică a metodei"),
                         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"},
         })
 
@@ -88,26 +96,36 @@ def build_questions():
     def induction(kind, *args, **kwargs): return numeric("4.1", kind, *args, **kwargs)
     def counting(kind, *args, **kwargs): return numeric("4.2", kind, *args, **kwargs)
 
-    # 4.1.1: condiția universală este esențială; un test finit nu este o demonstrație.
-    square_proof = (
-        "Condiția pentru toți n impune x = m², m întreg nenegativ. Pentru x > 0 punem α = √x și "
-        "bₙ² = ⌊n²x⌋, bₙ întreg nenegativ. Avem 0 ≤ nα−bₙ < 1/(nα+bₙ), deci această diferență tinde la 0. "
-        "Prin scăderea relațiilor consecutive, întregii bₙ₊₁−bₙ tind la α; un șir convergent de întregi este "
-        "eventual constant, deci α este întreg. Cazul x = 0 se verifică direct. Reciproc, pentru x = m², "
-        "⌊n²x⌋ = (nm)² pentru orice n. Nu este suficientă verificarea câtorva indici."
-    )
-    for m, wrong in zip(range(5), [[2,3,5],[2,6,7],[3,5,6],[6,10,11],[12,17,18]]):
+    # Toate opțiunile trec testul n=1; cele false au contraexemple explicite.
+    # Pentru opțiunea corectă demonstrăm condiția pentru toți indicii.
+    for m in range(5):
+        wrong = [F(m*m)+delta for delta in [F(1,4),F(1,2),F(3,4)]]
+        witnesses = []
+        for candidate in wrong:
+            index = next(n for n in range(2,101) if isqrt((n*n*candidate).__floor__())**2 != (n*n*candidate).__floor__())
+            floor_value = (index*index*candidate).__floor__()
+            witnesses.append(f"x={number(candidate)} este exclus prin n={index}, deoarece ⌊n²x⌋={floor_value}, care nu este pătrat perfect")
+        square_proof = (
+            f"Pentru x={m*m}={m}², avem ⌊n²x⌋=({m}n)² pentru orice întreg n≥1. "
+            + "; ".join(witnesses) + ". Toate opțiunile au partea întreagă egală cu "
+            f"{m*m} la n=1, astfel încât acel test singur nu le distinge. "
+            "Un singur contraexemplu infirmă condiția universală; verificarea unui număr finit de indici nu o demonstrează."
+        )
         induction(1, f"Fie x ≥ 0 astfel încât ⌊n²x⌋ este pătrat perfect pentru orice întreg n ≥ 1. "
                   f"Care dintre următoarele valori poate fi x? Setul {m+1}. ⌊t⌋ este partea întreagă a lui t.",
                   m*m, square_proof, wrong)
 
-    for c in range(1,6):
-        add("4.1",2,f"Ce formulă se demonstrează prin inducție pentru Sₙ = ∑ₖ₌₁ⁿ {c}k², n ≥ 1?",
-            f"Sₙ = {c}n(n+1)(2n+1)/6",
-            [f"Sₙ = {c}n(n+1)/2",f"Sₙ = {c}n²(n+1)²/4",f"Sₙ = {c}n(n+1)(2n−1)/6"],
-            f"La n = 1 rezultă {c}. În pasul inductiv adăugăm {c}(n+1)²: "
-            f"{c}n(n+1)(2n+1)/6 + {c}(n+1)² = {c}(n+1)(n+2)(2n+3)/6. "
-            "Aceasta este formula la n+1. Celelalte formule nu coincid pentru toți n.")
+    sum_formulas = [
+        "n(n+1)/2", "n(n+1)(2n+1)/6", "n²(n+1)²/4",
+        "n(n+1)(2n+1)(3n²+3n−1)/30", "n²(n+1)²(2n²+2n−1)/12",
+    ]
+    for power, formula in enumerate(sum_formulas,1):
+        wrong = ["Sₙ = "+other for other in sum_formulas if other != formula][:3]
+        add("4.1",2,f"Ce formulă se demonstrează prin inducție pentru Sₙ = ∑ₖ₌₁ⁿ k^{power}, n ≥ 1?",
+            "Sₙ = "+formula, wrong,
+            f"Punem F(n)={formula}. Baza este F(1)=1. Dezvoltând expresiile, "
+            f"F(n+1)−F(n)=(n+1)^{power}, exact termenul adăugat sumei. "
+            "Astfel Sₙ=F(n) implică Sₙ₊₁=F(n)+(n+1)^"+str(power)+"=F(n+1).")
 
     for n in range(4,9):
         answer=sum((-1)**(k+1)*k*k for k in range(1,n+1))
@@ -147,7 +165,8 @@ def build_questions():
     for a,n in [(2,1),(2,2),(3,1),(3,2),(4,1)]:
         answer=prod(1+a**(2**k) for k in range(n+1))
         assert (a-1)*answer==a**(2**(n+1))-1
-        induction(9,f"Calculați (1+{a})(1+{a}²)⋯(1+{a}^(2^{n})), cu indicii k=0,…,{n}.",answer,
+        factors = "·".join(f"(1+{a}^{2**k})" for k in range(n+1))
+        induction(9,f"Calculați produsul {factors}.",answer,
                   f"Înmulțind produsul cu {a}−1 și aplicând repetat diferența de pătrate obținem "
                   f"{a}^(2^({n}+1))−1. Așadar produsul este ({a}^(2^({n}+1))−1)/({a}−1) = {answer}.")
 
@@ -208,7 +227,7 @@ def build_questions():
         assert all(gcd(a,b)==1 for a,b in combinations(divisors,2))
         answer=prod(divisors)
         induction(17,f"Numărul întreg N este divizibil cu fiecare dintre {divisors[0]}, {divisors[1]}, {divisors[2]}. "
-                  "Care este cel mai mare întreg pozitiv a cărui divizibilitate în N este garantată doar de aceste condiții?",
+                  "Care este cel mai mare întreg pozitiv D despre care aceste condiții garantează că divide N?",
                   answer,f"Divizorii sunt primi între ei două câte două. Lema lui Euclid, aplicată succesiv, "
                   f"arată că produsul {answer} divide N. Nu se poate garanta mai mult, deoarece N poate fi chiar {answer}.")
 
@@ -246,16 +265,19 @@ def build_questions():
                   f"v₂({n}!)+v₂({n+1}!)={answer}. Inductiv, noul factor (n+1)(n+2) adaugă exact v₂(n+1)+v₂(n+2).")
 
     for a in range(1,6):
-        u,v=2*a-1,a+2
+        first_u,first_v=2*a-1,a+2
+        u,v=first_u-2*first_v,2*first_u+first_v
         fmt=lambda x,y:f"({x}; {y})"
-        assert u*u+v*v==(a*a+1)*5
+        assert u*u+v*v==(a*a+1)*25
         add("4.1",23,f"Identitatea (a²+b²)(c²+d²)=(ac−bd)²+(ad+bc)² se folosește inductiv pentru produse de sume de pătrate. "
-            f"Ce pereche (ac−bd; ad+bc) obțineți pentru a={a}, b=1, c=2, d=1?",fmt(u,v),
+            f"Aplicăm identitatea succesiv produsului ({a}²+1²)(2²+1²)(1²+2²), păstrând ordinea factorilor. "
+            "Ce pereche de baze ale pătratelor obținem? La fiecare pas folosim exact (ac−bd; ad+bc).",fmt(u,v),
             [fmt(u+1,v),fmt(u,v+1),fmt(u+1,v+1)],
-            f"ac−bd={u}, ad+bc={v}; pătratele lor au suma {(a*a+1)*5}. "
-            "Identitatea permite adăugarea unui nou factor, păstrând reprezentarea ca sumă de două pătrate.")
+            f"După primii doi factori obținem ({first_u}; {first_v}). La adăugarea factorului 1²+2², "
+            f"noua pereche este ({first_u}−2·{first_v}; 2·{first_u}+{first_v})=({u}; {v}). "
+            f"Suma pătratelor este {(a*a+1)*25}. Acesta este pasul iterabil pentru oricâți factori.")
 
-    for n in range(3,8):
+    for n in range(3,6):
         target=sum(k*k for k in range(1,n))-n*n
         def signed(signs): return " ".join(("+" if s>0 else "−")+f"{k}²" for k,s in enumerate(signs,1))
         correct=[1]*(n-1)+[-1]
@@ -271,18 +293,46 @@ def build_questions():
             f"Schimbarea semnului lui {n}² scade suma cu {2*n*n}, rezultând {target}. "
             "Acest tip de modificare controlată este pasul constructiv folosit în reprezentări cu semne.")
 
-    for r in range(1,6):
-        induction(25,f"Pornim de la un pătrat. La fiecare pas alegem exact o piesă pătrată și o împărțim în patru pătrate egale. "
-                  f"Câte piese avem după {r} pași? Nu se împart simultan toate piesele.",1+3*r,
-                  f"O piesă este înlocuită cu patru, deci numărul crește cu 3: Nᵣ₊₁=Nᵣ+3, N₀=1. "
-                  f"Prin inducție Nᵣ=1+3r, deci N_{r}={1+3*r}. Piesele pot avea dimensiuni diferite.")
+    for n in [6,7]:
+        def block(signs):
+            return " ".join(("+" if sign>0 else "−")+f"{n+i}²" for i,sign in enumerate(signs,1))
+        correct=[1,-1,-1,1]
+        wrong=[]
+        for signs in product([1,-1],repeat=4):
+            if sum(sign*(n+i)**2 for i,sign in enumerate(signs,1))!=4:
+                wrong.append(block(signs))
+            if len(wrong)==3: break
+        add("4.1",24,f"Avem o reprezentare a unui întreg k folosind exact pătratele 1²,…,{n}² cu semne ±. "
+            f"Ce bloc adăugat produce o reprezentare a lui k+4, folosind exact pătratele 1²,…,{n+4}²?",
+            block(correct),wrong,
+            "Identitatea (n+1)²−(n+2)²−(n+3)²+(n+4)²=4 rezultă prin dezvoltare. "
+            "Blocul extinde reprezentarea și crește valoarea cu 4. Baze pentru toate resturile modulo 4: "
+            "0=1²+2²−3²+4²−5²−6²+7²; 1=1²; 2=−1²−2²−3²+4²; "
+            "3=−1²+2²−3²−4²+5². Repetând pasul obținem orice întreg nenegativ; "
+            "inversarea tuturor semnelor dă și întregii negativi.")
+
+    for target,base in [(9,6),(10,7),(11,8),(17,8),(23,8)]:
+        steps=(target-base)//3
+        add("4.1",25,f"Avem construcții inițiale ale unui pătrat în 6, 7 sau 8 pătrate, posibil de mărimi diferite. "
+            "Un rafinament înlocuiește o singură piesă cu patru pătrate egale. "
+            f"Ce pereche (număr inițial de piese; număr de rafinamente) produce exact {target} pătrate?",
+            f"({base}; {steps})",[f"({base}; {steps+1})",f"({base-1}; {steps})",f"({base+1}; {steps})"],
+            "Baza 6: împărțim un pătrat de latură 3 într-un pătrat 2×2 și cinci pătrate 1×1. "
+            "Baza 7: rafinăm o piesă din partiția în patru sferturi. Baza 8: într-un pătrat de latură 4, "
+            "luăm un pătrat 3×3 și șapte pătrate 1×1. Fiecare rafinament crește numărul cu 3. "
+            f"Aici {base}+3·{steps}={target}. Cele trei baze acoperă toate resturile modulo 3, deci metoda construiește orice ordin ≥6.")
+
+    for r,corner in [(1,True),(1,False),(2,True),(2,False),(3,True)]:
+        endpoints = "două vârfuri opuse" if corner else "mijloacele a două laturi opuse"
+        outer = 2 if corner else 3
         induction(26,f"O linie frântă simplă, invariantă la rotația de 180° în jurul centrului pătratului, "
-                  f"unește mijloacele a două laturi opuse și are {2*r} vârfuri intermediare strict în interior. "
+                  f"unește {endpoints} și are {2*r} vârfuri intermediare strict în interior. "
                   "Nu există trei vârfuri consecutive coliniare și nu atinge altfel conturul. "
-                  "Câte laturi are fiecare dintre cele două poligoane congruente obținute?",2*r+4,
-                  f"Fiecare contur folosește trei segmente ale marginii pătratului și {2*r+1} segmente ale tăieturii, "
-                  f"în total {2*r+4}. Rotația de 180° schimbă cele două piese între ele; inserarea unei noi perechi "
-                  "de vârfuri simetrice mărește numărul laturilor fiecărei piese cu 2.")
+                  "Câte laturi are fiecare dintre cele două poligoane congruente obținute?",2*r+1+outer,
+                  f"Fiecare contur folosește {outer} segmente ale marginii pătratului și {2*r+1} segmente ale tăieturii, "
+                  f"în total {2*r+1+outer}. Rotația de 180° schimbă cele două piese între ele; inserarea unei noi perechi "
+                  "de vârfuri simetrice mărește numărul laturilor fiecărei piese cu 2. Plecând de la diagonală "
+                  "obținem ordine impare, iar plecând de la segmentul dintre mijloace, ordine pare.")
 
     for c,n in zip(range(1,6),range(2,7)):
         answer=c*c*(2*n-1)**2
@@ -305,14 +355,20 @@ def build_questions():
                   f"Rândurile conțin 1,3,…,2n−1 triunghiuri. Suma este n², dovedită inductiv prin adăugarea "
                   f"unui rând cu 2n+1 piese. Pentru n={n}, rezultă {n*n}. Numărăm numai piesele mici ale partiției.")
 
-    for r in range(1,6):
-        induction(30,f"Un triunghi echilateral este împărțit în trei patrulatere congruente unind centrul cu mijloacele laturilor. "
+    for r,corner in [(1,True),(1,False),(2,True),(2,False),(3,True)]:
+        base=3 if corner else 4
+        endpoints="vârfurile" if corner else "mijloacele laturilor"
+        shape="triunghiuri" if corner else "patrulatere"
+        outer=1 if corner else 2
+        induction(30,f"Un triunghi echilateral este împărțit în trei {shape} congruente unind centrul cu {endpoints}. "
                   f"Înlocuim fiecare dintre cele trei frontiere interioare cu o linie frântă cu {r} vârfuri intermediare. "
                   "Cele trei linii se obțin prin rotații de 120°, nu se intersectează în puncte noi și nu produc laturi consecutive coliniare. "
-                  "Câte laturi are fiecare piesă nouă?",4+2*r,
-                  f"Fiecare piesă are două laturi pe conturul triunghiului și două frontiere interioare. Fiecare frontieră "
-                  f"are acum {r+1} segmente, deci numărul laturilor este 2+2·{r+1}={4+2*r}. "
-                  "Simetria de rotație păstrează congruența celor trei piese; o etapă suplimentară adaugă două laturi fiecărei piese.")
+                  "Câte laturi are fiecare piesă nouă?",base+2*r,
+                  f"Fiecare piesă are {outer} laturi pe conturul triunghiului și două frontiere interioare. Fiecare frontieră "
+                  f"are acum {r+1} segmente, deci numărul laturilor este {outer}+2·{r+1}={base+2*r}. "
+                  "Simetria de rotație păstrează congruența; o etapă suplimentară adaugă două laturi fiecărei piese. "
+                  "Baza cu trei triunghiuri produce ordine impare, iar baza cu trei patrulatere, ordine pare. "
+                  "Îndoiturile pot fi alese suficient de mici în vecinătăți disjuncte ale frontierelor, pentru a păstra o partiție simplă.")
 
     # 4.2. Numărări exacte; convențiile de ordine, repetiție și distinctibilitate sunt explicite.
     for i in range(5):
@@ -342,7 +398,7 @@ def build_questions():
         answer=right//d-(left-1)//d
         assert answer==sum(x%d==0 for x in range(left,right+1))
         counting(5,f"Câți întregi din intervalul închis [{left}; {right}] sunt divizibili cu {d}?",answer,
-                 f"Numărul multiplilor este ⌊{right}/{d}⌋−⌊{left-1}/{d}⌋={answer}. Folosim left−1 pentru a include capătul stâng.")
+                 f"Numărul multiplilor este ⌊{right}/{d}⌋−⌊{left-1}/{d}⌋={answer}. Scădem multiplii până la {left-1}, pentru a include capătul stâng {left}.")
     for n,a,b in [(100,4,6),(300,6,8),(500,9,12),(1000,10,15),(750,14,21)]:
         common=lcm(a,b); answer=n//common
         assert answer==sum(x%a==x%b==0 for x in range(1,n+1))
@@ -379,9 +435,12 @@ def build_questions():
                  "Repetarea cifrelor este permisă.",10**(length-2),
                  f"Prima și ultima poziție sunt fixate. Fiecare dintre cele {length-2} poziții interioare are 10 alegeri independente: 10^{length-2}.")
     for m in range(3,8):
-        counting(12,f"Din cifrele 1,…,{m} formăm numere de trei cifre distincte. Câte numere obținem?",m*(m-1)*(m-2),
-                 f"Alegerile succesive sunt {m}, {m-1}, {m-2}. Produsul este {m*(m-1)*(m-2)}. "
-                 f"Cu repetiție permisă ar fi {m**3}, dar aici toate cifrele trebuie să fie distincte.")
+        repeated=m**3; distinct=m*(m-1)*(m-2)
+        add("4.2",12,f"Din cifrele 1,…,{m} formăm numere de trei cifre. Câte obținem dacă repetarea este permisă și, "
+            "respectiv, dacă toate cele trei cifre trebuie să fie distincte?",
+            f"({repeated}; {distinct})",[f"({distinct}; {repeated})",f"({repeated}; {repeated})",f"({repeated}; {comb(m,3)})"],
+            f"Cu repetare avem {m} alegeri la fiecare poziție: {repeated}. Fără repetare, alegerile succesive "
+            f"sunt {m}, {m-1}, {m-2}: {distinct}. C({m},3) ar număra selecții fără ordine; pozițiile cifrelor contează.")
     for white,black,red in [(2,3,4),(3,4,5),(4,2,6),(5,3,2),(6,4,3)]:
         counting(13,f"O urnă conține {white} bile albe, {black} negre și {red} roșii, toate etichetate distinct. "
                  "Extragem succesiv trei bile fără reintroducere, în ordinea albă–neagră–roșie. Câte rezultate ordonate sunt posibile?",
@@ -403,7 +462,8 @@ def build_questions():
         counting(16,f"Distribuim {n} obiecte distincte la trei persoane distincte, fiecare obiect unei singure persoane. "
                  "Fiecare persoană trebuie să primească cel puțin un obiect. Câte repartizări există?",answer,
                  f"Incluziune–excluziune pe persoanele care nu primesc nimic: 3^{n}−3·2^{n}+3·1^{n}={answer}. "
-                 "Repartizarea tuturor obiectelor la zero persoane nu este posibilă, deoarece n>0.")
+                 "Repartizarea tuturor obiectelor la zero persoane nu este posibilă, deoarece n>0.",
+                 wrong=[3**n,3**n-3*2**n,comb(n-1,2)])
     for colors,positions in [(2,3),(3,4),(4,3),(5,3),(3,5)]:
         counting(17,f"Avem {positions} panouri distincte și {colors} culori. Fiecare panou se colorează cu o singură culoare, "
                  "iar culorile se pot repeta. Câte colorări există?",colors**positions,
@@ -416,10 +476,12 @@ def build_questions():
         containing=block_start+(remaining-1)//width; offset=(remaining-1)%width
         answer=int(str(containing)[offset])
         assert answer==int(concatenation[rank-1])
+        digit_candidates=[int(concatenation[rank-2]),int(concatenation[rank]),*range(10)]
+        wrong=list(dict.fromkeys(d for d in digit_candidates if d!=answer))[:3]
         counting(18,f"În șirul de cifre 123456789101112… obținut concatenând întregii pozitivi, "
                  f"care este cifra de pe poziția {rank}? Prima cifră are poziția 1.",answer,
                  f"Eliminăm blocurile complete de numere cu mai puține cifre. Rămâne poziția {remaining} în blocul "
-                 f"numerelor de {width} cifre. Numărul este {containing}, iar cifra cerută este a {offset+1}-a din el: {answer}.")
+                 f"numerelor de {width} cifre. Numărul este {containing}, iar cifra cerută este a {offset+1}-a din el: {answer}.",wrong=wrong)
     for pages in [85,120,250,500,1000]:
         digits=sum(len(str(k)) for k in range(1,pages+1))
         counting(19,f"Numerotând toate paginile unei cărți de la 1 până la ultima pagină, fără zerouri inițiale, "
@@ -494,7 +556,9 @@ def build_questions():
                  f"fără suprapuneri; total {answer}.")
     for size in range(1,6):
         a=set(range(1,size+1)); b=set(range(1,size+4)); answer=2**size
-        counting(32,f"Fie A={{1,…,{size}}} și B={{1,…,{size+3}}}. Câte mulțimi X satisfac A∪X=B?",answer,
+        a_text="{"+"; ".join(map(str,sorted(a)))+"}"
+        b_text="{"+"; ".join(map(str,sorted(b)))+"}"
+        counting(32,f"Fie A={a_text} și B={b_text}. Câte mulțimi X satisfac A∪X=B?",answer,
                  f"Toate elementele din B∖A sunt obligatorii în X, niciun element din afara lui B nu este permis, "
                  f"iar fiecare dintre cele {size} elemente din A poate fi ales independent. Sunt 2^{size}={answer} soluții.")
     for total in [23,31,41,53,73]:

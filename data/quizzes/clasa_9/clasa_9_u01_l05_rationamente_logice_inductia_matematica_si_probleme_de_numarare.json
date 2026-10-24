@@ -8,22 +8,22 @@
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Condiția pentru toți n impune x = m², m întreg nenegativ. Pentru x > 0 punem α = √x și bₙ² = ⌊n²x⌋, bₙ întreg nenegativ. Avem 0 ≤ nα−bₙ < 1/(nα+bₙ), deci această diferență tinde la 0. Prin scăderea relațiilor consecutive, întregii bₙ₊₁−bₙ tind la α; un șir convergent de întregi este eventual constant, deci α este întreg. Cazul x = 0 se verifică direct. Reciproc, pentru x = m², ⌊n²x⌋ = (nm)² pentru orice n. Nu este suficientă verificarea câtorva indici.",
+      "explanation": "Pentru x=0=0², avem ⌊n²x⌋=(0n)² pentru orice întreg n≥1. x=1/4 este exclus prin n=3, deoarece ⌊n²x⌋=2, care nu este pătrat perfect; x=1/2 este exclus prin n=2, deoarece ⌊n²x⌋=2, care nu este pătrat perfect; x=3/4 este exclus prin n=2, deoarece ⌊n²x⌋=3, care nu este pătrat perfect. Toate opțiunile au partea întreagă egală cu 0 la n=1, astfel încât acel test singur nu le distinge. Un singur contraexemplu infirmă condiția universală; verificarea unui număr finit de indici nu o demonstrează.",
       "options": [
         {
           "text": "0",
           "is_correct": true
         },
         {
-          "text": "2",
+          "text": "1/4",
           "is_correct": false
         },
         {
-          "text": "3",
+          "text": "1/2",
           "is_correct": false
         },
         {
-          "text": "5",
+          "text": "3/4",
           "is_correct": false
         }
       ],
@@ -31,6 +31,7 @@
         "section": "A1.4.1",
         "type": 1,
         "type_name": "Pătrat perfect din condiție universală cu parte întreagă",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -39,10 +40,10 @@
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Condiția pentru toți n impune x = m², m întreg nenegativ. Pentru x > 0 punem α = √x și bₙ² = ⌊n²x⌋, bₙ întreg nenegativ. Avem 0 ≤ nα−bₙ < 1/(nα+bₙ), deci această diferență tinde la 0. Prin scăderea relațiilor consecutive, întregii bₙ₊₁−bₙ tind la α; un șir convergent de întregi este eventual constant, deci α este întreg. Cazul x = 0 se verifică direct. Reciproc, pentru x = m², ⌊n²x⌋ = (nm)² pentru orice n. Nu este suficientă verificarea câtorva indici.",
+      "explanation": "Pentru x=1=1², avem ⌊n²x⌋=(1n)² pentru orice întreg n≥1. x=5/4 este exclus prin n=2, deoarece ⌊n²x⌋=5, care nu este pătrat perfect; x=3/2 este exclus prin n=2, deoarece ⌊n²x⌋=6, care nu este pătrat perfect; x=7/4 este exclus prin n=2, deoarece ⌊n²x⌋=7, care nu este pătrat perfect. Toate opțiunile au partea întreagă egală cu 1 la n=1, astfel încât acel test singur nu le distinge. Un singur contraexemplu infirmă condiția universală; verificarea unui număr finit de indici nu o demonstrează.",
       "options": [
         {
-          "text": "2",
+          "text": "5/4",
           "is_correct": false
         },
         {
@@ -50,11 +51,11 @@
           "is_correct": true
         },
         {
-          "text": "6",
+          "text": "3/2",
           "is_correct": false
         },
         {
-          "text": "7",
+          "text": "7/4",
           "is_correct": false
         }
       ],
@@ -62,6 +63,7 @@
         "section": "A1.4.1",
         "type": 1,
         "type_name": "Pătrat perfect din condiție universală cu parte întreagă",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -70,14 +72,14 @@
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Condiția pentru toți n impune x = m², m întreg nenegativ. Pentru x > 0 punem α = √x și bₙ² = ⌊n²x⌋, bₙ întreg nenegativ. Avem 0 ≤ nα−bₙ < 1/(nα+bₙ), deci această diferență tinde la 0. Prin scăderea relațiilor consecutive, întregii bₙ₊₁−bₙ tind la α; un șir convergent de întregi este eventual constant, deci α este întreg. Cazul x = 0 se verifică direct. Reciproc, pentru x = m², ⌊n²x⌋ = (nm)² pentru orice n. Nu este suficientă verificarea câtorva indici.",
+      "explanation": "Pentru x=4=2², avem ⌊n²x⌋=(2n)² pentru orice întreg n≥1. x=17/4 este exclus prin n=2, deoarece ⌊n²x⌋=17, care nu este pătrat perfect; x=9/2 este exclus prin n=2, deoarece ⌊n²x⌋=18, care nu este pătrat perfect; x=19/4 este exclus prin n=2, deoarece ⌊n²x⌋=19, care nu este pătrat perfect. Toate opțiunile au partea întreagă egală cu 4 la n=1, astfel încât acel test singur nu le distinge. Un singur contraexemplu infirmă condiția universală; verificarea unui număr finit de indici nu o demonstrează.",
       "options": [
         {
-          "text": "3",
+          "text": "17/4",
           "is_correct": false
         },
         {
-          "text": "5",
+          "text": "9/2",
           "is_correct": false
         },
         {
@@ -85,7 +87,7 @@
           "is_correct": true
         },
         {
-          "text": "6",
+          "text": "19/4",
           "is_correct": false
         }
       ],
@@ -93,6 +95,7 @@
         "section": "A1.4.1",
         "type": 1,
         "type_name": "Pătrat perfect din condiție universală cu parte întreagă",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -101,18 +104,18 @@
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Condiția pentru toți n impune x = m², m întreg nenegativ. Pentru x > 0 punem α = √x și bₙ² = ⌊n²x⌋, bₙ întreg nenegativ. Avem 0 ≤ nα−bₙ < 1/(nα+bₙ), deci această diferență tinde la 0. Prin scăderea relațiilor consecutive, întregii bₙ₊₁−bₙ tind la α; un șir convergent de întregi este eventual constant, deci α este întreg. Cazul x = 0 se verifică direct. Reciproc, pentru x = m², ⌊n²x⌋ = (nm)² pentru orice n. Nu este suficientă verificarea câtorva indici.",
+      "explanation": "Pentru x=9=3², avem ⌊n²x⌋=(3n)² pentru orice întreg n≥1. x=37/4 este exclus prin n=2, deoarece ⌊n²x⌋=37, care nu este pătrat perfect; x=19/2 este exclus prin n=2, deoarece ⌊n²x⌋=38, care nu este pătrat perfect; x=39/4 este exclus prin n=2, deoarece ⌊n²x⌋=39, care nu este pătrat perfect. Toate opțiunile au partea întreagă egală cu 9 la n=1, astfel încât acel test singur nu le distinge. Un singur contraexemplu infirmă condiția universală; verificarea unui număr finit de indici nu o demonstrează.",
       "options": [
         {
-          "text": "6",
+          "text": "37/4",
           "is_correct": false
         },
         {
-          "text": "10",
+          "text": "19/2",
           "is_correct": false
         },
         {
-          "text": "11",
+          "text": "39/4",
           "is_correct": false
         },
         {
@@ -124,6 +127,7 @@
         "section": "A1.4.1",
         "type": 1,
         "type_name": "Pătrat perfect din condiție universală cu parte întreagă",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -132,22 +136,22 @@
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Condiția pentru toți n impune x = m², m întreg nenegativ. Pentru x > 0 punem α = √x și bₙ² = ⌊n²x⌋, bₙ întreg nenegativ. Avem 0 ≤ nα−bₙ < 1/(nα+bₙ), deci această diferență tinde la 0. Prin scăderea relațiilor consecutive, întregii bₙ₊₁−bₙ tind la α; un șir convergent de întregi este eventual constant, deci α este întreg. Cazul x = 0 se verifică direct. Reciproc, pentru x = m², ⌊n²x⌋ = (nm)² pentru orice n. Nu este suficientă verificarea câtorva indici.",
+      "explanation": "Pentru x=16=4², avem ⌊n²x⌋=(4n)² pentru orice întreg n≥1. x=65/4 este exclus prin n=2, deoarece ⌊n²x⌋=65, care nu este pătrat perfect; x=33/2 este exclus prin n=2, deoarece ⌊n²x⌋=66, care nu este pătrat perfect; x=67/4 este exclus prin n=2, deoarece ⌊n²x⌋=67, care nu este pătrat perfect. Toate opțiunile au partea întreagă egală cu 16 la n=1, astfel încât acel test singur nu le distinge. Un singur contraexemplu infirmă condiția universală; verificarea unui număr finit de indici nu o demonstrează.",
       "options": [
         {
           "text": "16",
           "is_correct": true
         },
         {
-          "text": "12",
+          "text": "65/4",
           "is_correct": false
         },
         {
-          "text": "17",
+          "text": "33/2",
           "is_correct": false
         },
         {
-          "text": "18",
+          "text": "67/4",
           "is_correct": false
         }
       ],
@@ -155,30 +159,31 @@
         "section": "A1.4.1",
         "type": 1,
         "type_name": "Pătrat perfect din condiție universală cu parte întreagă",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Ce formulă se demonstrează prin inducție pentru Sₙ = ∑ₖ₌₁ⁿ 1k², n ≥ 1?",
+      "text": "Ce formulă se demonstrează prin inducție pentru Sₙ = ∑ₖ₌₁ⁿ k^1, n ≥ 1?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "La n = 1 rezultă 1. În pasul inductiv adăugăm 1(n+1)²: 1n(n+1)(2n+1)/6 + 1(n+1)² = 1(n+1)(n+2)(2n+3)/6. Aceasta este formula la n+1. Celelalte formule nu coincid pentru toți n.",
+      "explanation": "Punem F(n)=n(n+1)/2. Baza este F(1)=1. Dezvoltând expresiile, F(n+1)−F(n)=(n+1)^1, exact termenul adăugat sumei. Astfel Sₙ=F(n) implică Sₙ₊₁=F(n)+(n+1)^1=F(n+1).",
       "options": [
         {
-          "text": "Sₙ = 1n(n+1)/2",
+          "text": "Sₙ = n(n+1)(2n+1)/6",
           "is_correct": false
         },
         {
-          "text": "Sₙ = 1n(n+1)(2n+1)/6",
+          "text": "Sₙ = n(n+1)/2",
           "is_correct": true
         },
         {
-          "text": "Sₙ = 1n²(n+1)²/4",
+          "text": "Sₙ = n²(n+1)²/4",
           "is_correct": false
         },
         {
-          "text": "Sₙ = 1n(n+1)(2n−1)/6",
+          "text": "Sₙ = n(n+1)(2n+1)(3n²+3n−1)/30",
           "is_correct": false
         }
       ],
@@ -186,30 +191,31 @@
         "section": "A1.4.1",
         "type": 2,
         "type_name": "Inducție pentru sume de puteri",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Ce formulă se demonstrează prin inducție pentru Sₙ = ∑ₖ₌₁ⁿ 2k², n ≥ 1?",
+      "text": "Ce formulă se demonstrează prin inducție pentru Sₙ = ∑ₖ₌₁ⁿ k^2, n ≥ 1?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "La n = 1 rezultă 2. În pasul inductiv adăugăm 2(n+1)²: 2n(n+1)(2n+1)/6 + 2(n+1)² = 2(n+1)(n+2)(2n+3)/6. Aceasta este formula la n+1. Celelalte formule nu coincid pentru toți n.",
+      "explanation": "Punem F(n)=n(n+1)(2n+1)/6. Baza este F(1)=1. Dezvoltând expresiile, F(n+1)−F(n)=(n+1)^2, exact termenul adăugat sumei. Astfel Sₙ=F(n) implică Sₙ₊₁=F(n)+(n+1)^2=F(n+1).",
       "options": [
         {
-          "text": "Sₙ = 2n(n+1)/2",
+          "text": "Sₙ = n(n+1)/2",
           "is_correct": false
         },
         {
-          "text": "Sₙ = 2n²(n+1)²/4",
+          "text": "Sₙ = n²(n+1)²/4",
           "is_correct": false
         },
         {
-          "text": "Sₙ = 2n(n+1)(2n+1)/6",
+          "text": "Sₙ = n(n+1)(2n+1)/6",
           "is_correct": true
         },
         {
-          "text": "Sₙ = 2n(n+1)(2n−1)/6",
+          "text": "Sₙ = n(n+1)(2n+1)(3n²+3n−1)/30",
           "is_correct": false
         }
       ],
@@ -217,30 +223,31 @@
         "section": "A1.4.1",
         "type": 2,
         "type_name": "Inducție pentru sume de puteri",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Ce formulă se demonstrează prin inducție pentru Sₙ = ∑ₖ₌₁ⁿ 3k², n ≥ 1?",
+      "text": "Ce formulă se demonstrează prin inducție pentru Sₙ = ∑ₖ₌₁ⁿ k^3, n ≥ 1?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "La n = 1 rezultă 3. În pasul inductiv adăugăm 3(n+1)²: 3n(n+1)(2n+1)/6 + 3(n+1)² = 3(n+1)(n+2)(2n+3)/6. Aceasta este formula la n+1. Celelalte formule nu coincid pentru toți n.",
+      "explanation": "Punem F(n)=n²(n+1)²/4. Baza este F(1)=1. Dezvoltând expresiile, F(n+1)−F(n)=(n+1)^3, exact termenul adăugat sumei. Astfel Sₙ=F(n) implică Sₙ₊₁=F(n)+(n+1)^3=F(n+1).",
       "options": [
         {
-          "text": "Sₙ = 3n(n+1)/2",
+          "text": "Sₙ = n(n+1)/2",
           "is_correct": false
         },
         {
-          "text": "Sₙ = 3n²(n+1)²/4",
+          "text": "Sₙ = n(n+1)(2n+1)/6",
           "is_correct": false
         },
         {
-          "text": "Sₙ = 3n(n+1)(2n−1)/6",
+          "text": "Sₙ = n(n+1)(2n+1)(3n²+3n−1)/30",
           "is_correct": false
         },
         {
-          "text": "Sₙ = 3n(n+1)(2n+1)/6",
+          "text": "Sₙ = n²(n+1)²/4",
           "is_correct": true
         }
       ],
@@ -248,30 +255,31 @@
         "section": "A1.4.1",
         "type": 2,
         "type_name": "Inducție pentru sume de puteri",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Ce formulă se demonstrează prin inducție pentru Sₙ = ∑ₖ₌₁ⁿ 4k², n ≥ 1?",
+      "text": "Ce formulă se demonstrează prin inducție pentru Sₙ = ∑ₖ₌₁ⁿ k^4, n ≥ 1?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "La n = 1 rezultă 4. În pasul inductiv adăugăm 4(n+1)²: 4n(n+1)(2n+1)/6 + 4(n+1)² = 4(n+1)(n+2)(2n+3)/6. Aceasta este formula la n+1. Celelalte formule nu coincid pentru toți n.",
+      "explanation": "Punem F(n)=n(n+1)(2n+1)(3n²+3n−1)/30. Baza este F(1)=1. Dezvoltând expresiile, F(n+1)−F(n)=(n+1)^4, exact termenul adăugat sumei. Astfel Sₙ=F(n) implică Sₙ₊₁=F(n)+(n+1)^4=F(n+1).",
       "options": [
         {
-          "text": "Sₙ = 4n(n+1)(2n+1)/6",
+          "text": "Sₙ = n(n+1)(2n+1)(3n²+3n−1)/30",
           "is_correct": true
         },
         {
-          "text": "Sₙ = 4n(n+1)/2",
+          "text": "Sₙ = n(n+1)/2",
           "is_correct": false
         },
         {
-          "text": "Sₙ = 4n²(n+1)²/4",
+          "text": "Sₙ = n(n+1)(2n+1)/6",
           "is_correct": false
         },
         {
-          "text": "Sₙ = 4n(n+1)(2n−1)/6",
+          "text": "Sₙ = n²(n+1)²/4",
           "is_correct": false
         }
       ],
@@ -279,30 +287,31 @@
         "section": "A1.4.1",
         "type": 2,
         "type_name": "Inducție pentru sume de puteri",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Ce formulă se demonstrează prin inducție pentru Sₙ = ∑ₖ₌₁ⁿ 5k², n ≥ 1?",
+      "text": "Ce formulă se demonstrează prin inducție pentru Sₙ = ∑ₖ₌₁ⁿ k^5, n ≥ 1?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "La n = 1 rezultă 5. În pasul inductiv adăugăm 5(n+1)²: 5n(n+1)(2n+1)/6 + 5(n+1)² = 5(n+1)(n+2)(2n+3)/6. Aceasta este formula la n+1. Celelalte formule nu coincid pentru toți n.",
+      "explanation": "Punem F(n)=n²(n+1)²(2n²+2n−1)/12. Baza este F(1)=1. Dezvoltând expresiile, F(n+1)−F(n)=(n+1)^5, exact termenul adăugat sumei. Astfel Sₙ=F(n) implică Sₙ₊₁=F(n)+(n+1)^5=F(n+1).",
       "options": [
         {
-          "text": "Sₙ = 5n(n+1)/2",
+          "text": "Sₙ = n(n+1)/2",
           "is_correct": false
         },
         {
-          "text": "Sₙ = 5n(n+1)(2n+1)/6",
+          "text": "Sₙ = n²(n+1)²(2n²+2n−1)/12",
           "is_correct": true
         },
         {
-          "text": "Sₙ = 5n²(n+1)²/4",
+          "text": "Sₙ = n(n+1)(2n+1)/6",
           "is_correct": false
         },
         {
-          "text": "Sₙ = 5n(n+1)(2n−1)/6",
+          "text": "Sₙ = n²(n+1)²/4",
           "is_correct": false
         }
       ],
@@ -310,6 +319,7 @@
         "section": "A1.4.1",
         "type": 2,
         "type_name": "Inducție pentru sume de puteri",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -341,6 +351,7 @@
         "section": "A1.4.1",
         "type": 3,
         "type_name": "Sume alternante",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -372,6 +383,7 @@
         "section": "A1.4.1",
         "type": 4,
         "type_name": "Sume de sume",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -403,6 +415,7 @@
         "section": "A1.4.1",
         "type": 3,
         "type_name": "Sume alternante",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -434,6 +447,7 @@
         "section": "A1.4.1",
         "type": 4,
         "type_name": "Sume de sume",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -465,6 +479,7 @@
         "section": "A1.4.1",
         "type": 3,
         "type_name": "Sume alternante",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -496,6 +511,7 @@
         "section": "A1.4.1",
         "type": 4,
         "type_name": "Sume de sume",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -527,6 +543,7 @@
         "section": "A1.4.1",
         "type": 3,
         "type_name": "Sume alternante",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -558,6 +575,7 @@
         "section": "A1.4.1",
         "type": 4,
         "type_name": "Sume de sume",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -589,6 +607,7 @@
         "section": "A1.4.1",
         "type": 3,
         "type_name": "Sume alternante",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -620,6 +639,7 @@
         "section": "A1.4.1",
         "type": 4,
         "type_name": "Sume de sume",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -651,6 +671,7 @@
         "section": "A1.4.1",
         "type": 5,
         "type_name": "Sume ponderate de polinoame",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -682,6 +703,7 @@
         "section": "A1.4.1",
         "type": 5,
         "type_name": "Sume ponderate de polinoame",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -713,6 +735,7 @@
         "section": "A1.4.1",
         "type": 5,
         "type_name": "Sume ponderate de polinoame",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -744,6 +767,7 @@
         "section": "A1.4.1",
         "type": 5,
         "type_name": "Sume ponderate de polinoame",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -775,6 +799,7 @@
         "section": "A1.4.1",
         "type": 5,
         "type_name": "Sume ponderate de polinoame",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -806,6 +831,7 @@
         "section": "A1.4.1",
         "type": 6,
         "type_name": "Sume de fracții telescopice",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -837,6 +863,7 @@
         "section": "A1.4.1",
         "type": 7,
         "type_name": "Sume cu mai mulți factori consecutivi",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -868,6 +895,7 @@
         "section": "A1.4.1",
         "type": 8,
         "type_name": "Produse telescopice",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -899,6 +927,7 @@
         "section": "A1.4.1",
         "type": 6,
         "type_name": "Sume de fracții telescopice",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -930,6 +959,7 @@
         "section": "A1.4.1",
         "type": 7,
         "type_name": "Sume cu mai mulți factori consecutivi",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -961,6 +991,7 @@
         "section": "A1.4.1",
         "type": 8,
         "type_name": "Produse telescopice",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -992,6 +1023,7 @@
         "section": "A1.4.1",
         "type": 6,
         "type_name": "Sume de fracții telescopice",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1023,6 +1055,7 @@
         "section": "A1.4.1",
         "type": 7,
         "type_name": "Sume cu mai mulți factori consecutivi",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1054,6 +1087,7 @@
         "section": "A1.4.1",
         "type": 8,
         "type_name": "Produse telescopice",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1085,6 +1119,7 @@
         "section": "A1.4.1",
         "type": 6,
         "type_name": "Sume de fracții telescopice",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1116,6 +1151,7 @@
         "section": "A1.4.1",
         "type": 7,
         "type_name": "Sume cu mai mulți factori consecutivi",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1147,6 +1183,7 @@
         "section": "A1.4.1",
         "type": 8,
         "type_name": "Produse telescopice",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1178,6 +1215,7 @@
         "section": "A1.4.1",
         "type": 6,
         "type_name": "Sume de fracții telescopice",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1209,6 +1247,7 @@
         "section": "A1.4.1",
         "type": 7,
         "type_name": "Sume cu mai mulți factori consecutivi",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1240,11 +1279,12 @@
         "section": "A1.4.1",
         "type": 8,
         "type_name": "Produse telescopice",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Calculați (1+2)(1+2²)⋯(1+2^(2^1)), cu indicii k=0,…,1.",
+      "text": "Calculați produsul (1+2^1)·(1+2^2).",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -1271,11 +1311,12 @@
         "section": "A1.4.1",
         "type": 9,
         "type_name": "Produse exponențiale",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Calculați (1+2)(1+2²)⋯(1+2^(2^2)), cu indicii k=0,…,2.",
+      "text": "Calculați produsul (1+2^1)·(1+2^2)·(1+2^4).",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -1302,11 +1343,12 @@
         "section": "A1.4.1",
         "type": 9,
         "type_name": "Produse exponențiale",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Calculați (1+3)(1+3²)⋯(1+3^(2^1)), cu indicii k=0,…,1.",
+      "text": "Calculați produsul (1+3^1)·(1+3^2).",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -1333,11 +1375,12 @@
         "section": "A1.4.1",
         "type": 9,
         "type_name": "Produse exponențiale",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Calculați (1+3)(1+3²)⋯(1+3^(2^2)), cu indicii k=0,…,2.",
+      "text": "Calculați produsul (1+3^1)·(1+3^2)·(1+3^4).",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -1364,11 +1407,12 @@
         "section": "A1.4.1",
         "type": 9,
         "type_name": "Produse exponențiale",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Calculați (1+4)(1+4²)⋯(1+4^(2^1)), cu indicii k=0,…,1.",
+      "text": "Calculați produsul (1+4^1)·(1+4^2).",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -1395,6 +1439,7 @@
         "section": "A1.4.1",
         "type": 9,
         "type_name": "Produse exponențiale",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1426,6 +1471,7 @@
         "section": "A1.4.1",
         "type": 10,
         "type_name": "Dominarea puterilor de către exponențiale",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1457,6 +1503,7 @@
         "section": "A1.4.1",
         "type": 10,
         "type_name": "Dominarea puterilor de către exponențiale",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1488,6 +1535,7 @@
         "section": "A1.4.1",
         "type": 10,
         "type_name": "Dominarea puterilor de către exponențiale",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1519,6 +1567,7 @@
         "section": "A1.4.1",
         "type": 10,
         "type_name": "Dominarea puterilor de către exponențiale",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1550,6 +1599,7 @@
         "section": "A1.4.1",
         "type": 10,
         "type_name": "Dominarea puterilor de către exponențiale",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1581,6 +1631,7 @@
         "section": "A1.4.1",
         "type": 11,
         "type_name": "Estimarea sumelor prin inducție",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1612,6 +1663,7 @@
         "section": "A1.4.1",
         "type": 11,
         "type_name": "Estimarea sumelor prin inducție",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1643,6 +1695,7 @@
         "section": "A1.4.1",
         "type": 11,
         "type_name": "Estimarea sumelor prin inducție",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1674,6 +1727,7 @@
         "section": "A1.4.1",
         "type": 11,
         "type_name": "Estimarea sumelor prin inducție",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1705,6 +1759,7 @@
         "section": "A1.4.1",
         "type": 11,
         "type_name": "Estimarea sumelor prin inducție",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1736,6 +1791,7 @@
         "section": "A1.4.1",
         "type": 12,
         "type_name": "Inegalități cu radicali",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1767,6 +1823,7 @@
         "section": "A1.4.1",
         "type": 12,
         "type_name": "Inegalități cu radicali",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1798,6 +1855,7 @@
         "section": "A1.4.1",
         "type": 12,
         "type_name": "Inegalități cu radicali",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1829,6 +1887,7 @@
         "section": "A1.4.1",
         "type": 12,
         "type_name": "Inegalități cu radicali",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1860,6 +1919,7 @@
         "section": "A1.4.1",
         "type": 12,
         "type_name": "Inegalități cu radicali",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1891,6 +1951,7 @@
         "section": "A1.4.1",
         "type": 13,
         "type_name": "Inegalități cu variabile ordonate",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1922,6 +1983,7 @@
         "section": "A1.4.1",
         "type": 13,
         "type_name": "Inegalități cu variabile ordonate",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1953,6 +2015,7 @@
         "section": "A1.4.1",
         "type": 13,
         "type_name": "Inegalități cu variabile ordonate",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -1984,6 +2047,7 @@
         "section": "A1.4.1",
         "type": 13,
         "type_name": "Inegalități cu variabile ordonate",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2015,6 +2079,7 @@
         "section": "A1.4.1",
         "type": 13,
         "type_name": "Inegalități cu variabile ordonate",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2046,6 +2111,7 @@
         "section": "A1.4.1",
         "type": 14,
         "type_name": "Inegalitatea lui Bernoulli",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2077,6 +2143,7 @@
         "section": "A1.4.1",
         "type": 14,
         "type_name": "Inegalitatea lui Bernoulli",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2108,6 +2175,7 @@
         "section": "A1.4.1",
         "type": 14,
         "type_name": "Inegalitatea lui Bernoulli",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2139,6 +2207,7 @@
         "section": "A1.4.1",
         "type": 14,
         "type_name": "Inegalitatea lui Bernoulli",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2170,6 +2239,7 @@
         "section": "A1.4.1",
         "type": 14,
         "type_name": "Inegalitatea lui Bernoulli",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2201,6 +2271,7 @@
         "section": "A1.4.1",
         "type": 15,
         "type_name": "Divizibilitate polinomială",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2232,6 +2303,7 @@
         "section": "A1.4.1",
         "type": 15,
         "type_name": "Divizibilitate polinomială",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2263,6 +2335,7 @@
         "section": "A1.4.1",
         "type": 15,
         "type_name": "Divizibilitate polinomială",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2294,6 +2367,7 @@
         "section": "A1.4.1",
         "type": 15,
         "type_name": "Divizibilitate polinomială",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2325,6 +2399,7 @@
         "section": "A1.4.1",
         "type": 15,
         "type_name": "Divizibilitate polinomială",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2356,6 +2431,7 @@
         "section": "A1.4.1",
         "type": 16,
         "type_name": "Divizibilitate exponențială",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2387,6 +2463,7 @@
         "section": "A1.4.1",
         "type": 16,
         "type_name": "Divizibilitate exponențială",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2418,6 +2495,7 @@
         "section": "A1.4.1",
         "type": 16,
         "type_name": "Divizibilitate exponențială",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2449,6 +2527,7 @@
         "section": "A1.4.1",
         "type": 16,
         "type_name": "Divizibilitate exponențială",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2480,11 +2559,12 @@
         "section": "A1.4.1",
         "type": 16,
         "type_name": "Divizibilitate exponențială",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Numărul întreg N este divizibil cu fiecare dintre 2, 3, 5. Care este cel mai mare întreg pozitiv a cărui divizibilitate în N este garantată doar de aceste condiții?",
+      "text": "Numărul întreg N este divizibil cu fiecare dintre 2, 3, 5. Care este cel mai mare întreg pozitiv D despre care aceste condiții garantează că divide N?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -2511,11 +2591,12 @@
         "section": "A1.4.1",
         "type": 17,
         "type_name": "Divizibilitate și coprimalitate a produselor",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Numărul întreg N este divizibil cu fiecare dintre 3, 4, 5. Care este cel mai mare întreg pozitiv a cărui divizibilitate în N este garantată doar de aceste condiții?",
+      "text": "Numărul întreg N este divizibil cu fiecare dintre 3, 4, 5. Care este cel mai mare întreg pozitiv D despre care aceste condiții garantează că divide N?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -2542,11 +2623,12 @@
         "section": "A1.4.1",
         "type": 17,
         "type_name": "Divizibilitate și coprimalitate a produselor",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Numărul întreg N este divizibil cu fiecare dintre 4, 5, 7. Care este cel mai mare întreg pozitiv a cărui divizibilitate în N este garantată doar de aceste condiții?",
+      "text": "Numărul întreg N este divizibil cu fiecare dintre 4, 5, 7. Care este cel mai mare întreg pozitiv D despre care aceste condiții garantează că divide N?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -2573,11 +2655,12 @@
         "section": "A1.4.1",
         "type": 17,
         "type_name": "Divizibilitate și coprimalitate a produselor",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Numărul întreg N este divizibil cu fiecare dintre 5, 7, 9. Care este cel mai mare întreg pozitiv a cărui divizibilitate în N este garantată doar de aceste condiții?",
+      "text": "Numărul întreg N este divizibil cu fiecare dintre 5, 7, 9. Care este cel mai mare întreg pozitiv D despre care aceste condiții garantează că divide N?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -2604,11 +2687,12 @@
         "section": "A1.4.1",
         "type": 17,
         "type_name": "Divizibilitate și coprimalitate a produselor",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Numărul întreg N este divizibil cu fiecare dintre 7, 8, 9. Care este cel mai mare întreg pozitiv a cărui divizibilitate în N este garantată doar de aceste condiții?",
+      "text": "Numărul întreg N este divizibil cu fiecare dintre 7, 8, 9. Care este cel mai mare întreg pozitiv D despre care aceste condiții garantează că divide N?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -2635,6 +2719,7 @@
         "section": "A1.4.1",
         "type": 17,
         "type_name": "Divizibilitate și coprimalitate a produselor",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2666,6 +2751,7 @@
         "section": "A1.4.1",
         "type": 18,
         "type_name": "Radicali imbricați finiți",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2697,6 +2783,7 @@
         "section": "A1.4.1",
         "type": 18,
         "type_name": "Radicali imbricați finiți",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2728,6 +2815,7 @@
         "section": "A1.4.1",
         "type": 18,
         "type_name": "Radicali imbricați finiți",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2759,6 +2847,7 @@
         "section": "A1.4.1",
         "type": 18,
         "type_name": "Radicali imbricați finiți",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2790,6 +2879,7 @@
         "section": "A1.4.1",
         "type": 18,
         "type_name": "Radicali imbricați finiți",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2821,6 +2911,7 @@
         "section": "A1.4.1",
         "type": 19,
         "type_name": "Integritatea puterilor simetrice",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2852,6 +2943,7 @@
         "section": "A1.4.1",
         "type": 19,
         "type_name": "Integritatea puterilor simetrice",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2883,6 +2975,7 @@
         "section": "A1.4.1",
         "type": 19,
         "type_name": "Integritatea puterilor simetrice",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2914,6 +3007,7 @@
         "section": "A1.4.1",
         "type": 19,
         "type_name": "Integritatea puterilor simetrice",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2945,6 +3039,7 @@
         "section": "A1.4.1",
         "type": 19,
         "type_name": "Integritatea puterilor simetrice",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -2976,6 +3071,7 @@
         "section": "A1.4.1",
         "type": 20,
         "type_name": "Verificarea formulei unui șir recurent",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3007,6 +3103,7 @@
         "section": "A1.4.1",
         "type": 20,
         "type_name": "Verificarea formulei unui șir recurent",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3038,6 +3135,7 @@
         "section": "A1.4.1",
         "type": 20,
         "type_name": "Verificarea formulei unui șir recurent",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3069,6 +3167,7 @@
         "section": "A1.4.1",
         "type": 20,
         "type_name": "Verificarea formulei unui șir recurent",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3100,6 +3199,7 @@
         "section": "A1.4.1",
         "type": 20,
         "type_name": "Verificarea formulei unui șir recurent",
+        "task_scope": "Formulă generală și justificarea inducției",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3131,6 +3231,7 @@
         "section": "A1.4.1",
         "type": 21,
         "type_name": "Mărginirea unui șir recurent",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3162,6 +3263,7 @@
         "section": "A1.4.1",
         "type": 21,
         "type_name": "Mărginirea unui șir recurent",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3193,6 +3295,7 @@
         "section": "A1.4.1",
         "type": 21,
         "type_name": "Mărginirea unui șir recurent",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3224,6 +3327,7 @@
         "section": "A1.4.1",
         "type": 21,
         "type_name": "Mărginirea unui șir recurent",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3255,6 +3359,7 @@
         "section": "A1.4.1",
         "type": 21,
         "type_name": "Mărginirea unui șir recurent",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3286,6 +3391,7 @@
         "section": "A1.4.1",
         "type": 22,
         "type_name": "Exponentul unui factor prim",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3317,6 +3423,7 @@
         "section": "A1.4.1",
         "type": 22,
         "type_name": "Exponentul unui factor prim",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3348,6 +3455,7 @@
         "section": "A1.4.1",
         "type": 22,
         "type_name": "Exponentul unui factor prim",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3379,6 +3487,7 @@
         "section": "A1.4.1",
         "type": 22,
         "type_name": "Exponentul unui factor prim",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3410,30 +3519,31 @@
         "section": "A1.4.1",
         "type": 22,
         "type_name": "Exponentul unui factor prim",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Identitatea (a²+b²)(c²+d²)=(ac−bd)²+(ad+bc)² se folosește inductiv pentru produse de sume de pătrate. Ce pereche (ac−bd; ad+bc) obțineți pentru a=1, b=1, c=2, d=1?",
+      "text": "Identitatea (a²+b²)(c²+d²)=(ac−bd)²+(ad+bc)² se folosește inductiv pentru produse de sume de pătrate. Aplicăm identitatea succesiv produsului (1²+1²)(2²+1²)(1²+2²), păstrând ordinea factorilor. Ce pereche de baze ale pătratelor obținem? La fiecare pas folosim exact (ac−bd; ad+bc).",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "ac−bd=1, ad+bc=3; pătratele lor au suma 10. Identitatea permite adăugarea unui nou factor, păstrând reprezentarea ca sumă de două pătrate.",
+      "explanation": "După primii doi factori obținem (1; 3). La adăugarea factorului 1²+2², noua pereche este (1−2·3; 2·1+3)=(-5; 5). Suma pătratelor este 50. Acesta este pasul iterabil pentru oricâți factori.",
       "options": [
         {
-          "text": "(2; 3)",
+          "text": "(-4; 5)",
           "is_correct": false
         },
         {
-          "text": "(1; 4)",
+          "text": "(-5; 6)",
           "is_correct": false
         },
         {
-          "text": "(1; 3)",
+          "text": "(-5; 5)",
           "is_correct": true
         },
         {
-          "text": "(2; 4)",
+          "text": "(-4; 6)",
           "is_correct": false
         }
       ],
@@ -3441,30 +3551,31 @@
         "section": "A1.4.1",
         "type": 23,
         "type_name": "Produs de sume de două pătrate",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Identitatea (a²+b²)(c²+d²)=(ac−bd)²+(ad+bc)² se folosește inductiv pentru produse de sume de pătrate. Ce pereche (ac−bd; ad+bc) obțineți pentru a=2, b=1, c=2, d=1?",
+      "text": "Identitatea (a²+b²)(c²+d²)=(ac−bd)²+(ad+bc)² se folosește inductiv pentru produse de sume de pătrate. Aplicăm identitatea succesiv produsului (2²+1²)(2²+1²)(1²+2²), păstrând ordinea factorilor. Ce pereche de baze ale pătratelor obținem? La fiecare pas folosim exact (ac−bd; ad+bc).",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "ac−bd=3, ad+bc=4; pătratele lor au suma 25. Identitatea permite adăugarea unui nou factor, păstrând reprezentarea ca sumă de două pătrate.",
+      "explanation": "După primii doi factori obținem (3; 4). La adăugarea factorului 1²+2², noua pereche este (3−2·4; 2·3+4)=(-5; 10). Suma pătratelor este 125. Acesta este pasul iterabil pentru oricâți factori.",
       "options": [
         {
-          "text": "(4; 4)",
+          "text": "(-4; 10)",
           "is_correct": false
         },
         {
-          "text": "(3; 5)",
+          "text": "(-5; 11)",
           "is_correct": false
         },
         {
-          "text": "(4; 5)",
+          "text": "(-4; 11)",
           "is_correct": false
         },
         {
-          "text": "(3; 4)",
+          "text": "(-5; 10)",
           "is_correct": true
         }
       ],
@@ -3472,30 +3583,31 @@
         "section": "A1.4.1",
         "type": 23,
         "type_name": "Produs de sume de două pătrate",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Identitatea (a²+b²)(c²+d²)=(ac−bd)²+(ad+bc)² se folosește inductiv pentru produse de sume de pătrate. Ce pereche (ac−bd; ad+bc) obțineți pentru a=3, b=1, c=2, d=1?",
+      "text": "Identitatea (a²+b²)(c²+d²)=(ac−bd)²+(ad+bc)² se folosește inductiv pentru produse de sume de pătrate. Aplicăm identitatea succesiv produsului (3²+1²)(2²+1²)(1²+2²), păstrând ordinea factorilor. Ce pereche de baze ale pătratelor obținem? La fiecare pas folosim exact (ac−bd; ad+bc).",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "ac−bd=5, ad+bc=5; pătratele lor au suma 50. Identitatea permite adăugarea unui nou factor, păstrând reprezentarea ca sumă de două pătrate.",
+      "explanation": "După primii doi factori obținem (5; 5). La adăugarea factorului 1²+2², noua pereche este (5−2·5; 2·5+5)=(-5; 15). Suma pătratelor este 250. Acesta este pasul iterabil pentru oricâți factori.",
       "options": [
         {
-          "text": "(5; 5)",
+          "text": "(-5; 15)",
           "is_correct": true
         },
         {
-          "text": "(6; 5)",
+          "text": "(-4; 15)",
           "is_correct": false
         },
         {
-          "text": "(5; 6)",
+          "text": "(-5; 16)",
           "is_correct": false
         },
         {
-          "text": "(6; 6)",
+          "text": "(-4; 16)",
           "is_correct": false
         }
       ],
@@ -3503,30 +3615,31 @@
         "section": "A1.4.1",
         "type": 23,
         "type_name": "Produs de sume de două pătrate",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Identitatea (a²+b²)(c²+d²)=(ac−bd)²+(ad+bc)² se folosește inductiv pentru produse de sume de pătrate. Ce pereche (ac−bd; ad+bc) obțineți pentru a=4, b=1, c=2, d=1?",
+      "text": "Identitatea (a²+b²)(c²+d²)=(ac−bd)²+(ad+bc)² se folosește inductiv pentru produse de sume de pătrate. Aplicăm identitatea succesiv produsului (4²+1²)(2²+1²)(1²+2²), păstrând ordinea factorilor. Ce pereche de baze ale pătratelor obținem? La fiecare pas folosim exact (ac−bd; ad+bc).",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "ac−bd=7, ad+bc=6; pătratele lor au suma 85. Identitatea permite adăugarea unui nou factor, păstrând reprezentarea ca sumă de două pătrate.",
+      "explanation": "După primii doi factori obținem (7; 6). La adăugarea factorului 1²+2², noua pereche este (7−2·6; 2·7+6)=(-5; 20). Suma pătratelor este 425. Acesta este pasul iterabil pentru oricâți factori.",
       "options": [
         {
-          "text": "(8; 6)",
+          "text": "(-4; 20)",
           "is_correct": false
         },
         {
-          "text": "(7; 6)",
+          "text": "(-5; 20)",
           "is_correct": true
         },
         {
-          "text": "(7; 7)",
+          "text": "(-5; 21)",
           "is_correct": false
         },
         {
-          "text": "(8; 7)",
+          "text": "(-4; 21)",
           "is_correct": false
         }
       ],
@@ -3534,30 +3647,31 @@
         "section": "A1.4.1",
         "type": 23,
         "type_name": "Produs de sume de două pătrate",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Identitatea (a²+b²)(c²+d²)=(ac−bd)²+(ad+bc)² se folosește inductiv pentru produse de sume de pătrate. Ce pereche (ac−bd; ad+bc) obțineți pentru a=5, b=1, c=2, d=1?",
+      "text": "Identitatea (a²+b²)(c²+d²)=(ac−bd)²+(ad+bc)² se folosește inductiv pentru produse de sume de pătrate. Aplicăm identitatea succesiv produsului (5²+1²)(2²+1²)(1²+2²), păstrând ordinea factorilor. Ce pereche de baze ale pătratelor obținem? La fiecare pas folosim exact (ac−bd; ad+bc).",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "ac−bd=9, ad+bc=7; pătratele lor au suma 130. Identitatea permite adăugarea unui nou factor, păstrând reprezentarea ca sumă de două pătrate.",
+      "explanation": "După primii doi factori obținem (9; 7). La adăugarea factorului 1²+2², noua pereche este (9−2·7; 2·9+7)=(-5; 25). Suma pătratelor este 650. Acesta este pasul iterabil pentru oricâți factori.",
       "options": [
         {
-          "text": "(10; 7)",
+          "text": "(-4; 25)",
           "is_correct": false
         },
         {
-          "text": "(9; 8)",
+          "text": "(-5; 26)",
           "is_correct": false
         },
         {
-          "text": "(9; 7)",
+          "text": "(-5; 25)",
           "is_correct": true
         },
         {
-          "text": "(10; 8)",
+          "text": "(-4; 26)",
           "is_correct": false
         }
       ],
@@ -3565,6 +3679,7 @@
         "section": "A1.4.1",
         "type": 23,
         "type_name": "Produs de sume de două pătrate",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3596,6 +3711,7 @@
         "section": "A1.4.1",
         "type": 24,
         "type_name": "Reprezentări cu semne ale întregilor",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3627,6 +3743,7 @@
         "section": "A1.4.1",
         "type": 24,
         "type_name": "Reprezentări cu semne ale întregilor",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3658,30 +3775,31 @@
         "section": "A1.4.1",
         "type": 24,
         "type_name": "Reprezentări cu semne ale întregilor",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Care alegere a semnelor reprezintă întregul 19 folosind exact pătratele 1²,…,6², o singură dată fiecare?",
+      "text": "Avem o reprezentare a unui întreg k folosind exact pătratele 1²,…,6² cu semne ±. Ce bloc adăugat produce o reprezentare a lui k+4, folosind exact pătratele 1²,…,10²?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Pornim de la suma tuturor pătratelor pozitive, 91. Schimbarea semnului lui 6² scade suma cu 72, rezultând 19. Acest tip de modificare controlată este pasul constructiv folosit în reprezentări cu semne.",
+      "explanation": "Identitatea (n+1)²−(n+2)²−(n+3)²+(n+4)²=4 rezultă prin dezvoltare. Blocul extinde reprezentarea și crește valoarea cu 4. Baze pentru toate resturile modulo 4: 0=1²+2²−3²+4²−5²−6²+7²; 1=1²; 2=−1²−2²−3²+4²; 3=−1²+2²−3²−4²+5². Repetând pasul obținem orice întreg nenegativ; inversarea tuturor semnelor dă și întregii negativi.",
       "options": [
         {
-          "text": "+1² +2² +3² +4² +5² +6²",
+          "text": "+7² +8² +9² +10²",
           "is_correct": false
         },
         {
-          "text": "+1² +2² +3² +4² −5² +6²",
+          "text": "+7² +8² +9² −10²",
           "is_correct": false
         },
         {
-          "text": "+1² +2² +3² +4² +5² −6²",
+          "text": "+7² −8² −9² +10²",
           "is_correct": true
         },
         {
-          "text": "+1² +2² +3² +4² −5² −6²",
+          "text": "+7² +8² −9² +10²",
           "is_correct": false
         }
       ],
@@ -3689,30 +3807,31 @@
         "section": "A1.4.1",
         "type": 24,
         "type_name": "Reprezentări cu semne ale întregilor",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Care alegere a semnelor reprezintă întregul 42 folosind exact pătratele 1²,…,7², o singură dată fiecare?",
+      "text": "Avem o reprezentare a unui întreg k folosind exact pătratele 1²,…,7² cu semne ±. Ce bloc adăugat produce o reprezentare a lui k+4, folosind exact pătratele 1²,…,11²?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Pornim de la suma tuturor pătratelor pozitive, 140. Schimbarea semnului lui 7² scade suma cu 98, rezultând 42. Acest tip de modificare controlată este pasul constructiv folosit în reprezentări cu semne.",
+      "explanation": "Identitatea (n+1)²−(n+2)²−(n+3)²+(n+4)²=4 rezultă prin dezvoltare. Blocul extinde reprezentarea și crește valoarea cu 4. Baze pentru toate resturile modulo 4: 0=1²+2²−3²+4²−5²−6²+7²; 1=1²; 2=−1²−2²−3²+4²; 3=−1²+2²−3²−4²+5². Repetând pasul obținem orice întreg nenegativ; inversarea tuturor semnelor dă și întregii negativi.",
       "options": [
         {
-          "text": "+1² +2² +3² +4² +5² +6² +7²",
+          "text": "+8² +9² +10² +11²",
           "is_correct": false
         },
         {
-          "text": "+1² +2² +3² +4² +5² −6² +7²",
+          "text": "+8² +9² +10² −11²",
           "is_correct": false
         },
         {
-          "text": "+1² +2² +3² +4² +5² −6² −7²",
+          "text": "+8² +9² −10² +11²",
           "is_correct": false
         },
         {
-          "text": "+1² +2² +3² +4² +5² +6² −7²",
+          "text": "+8² −9² −10² +11²",
           "is_correct": true
         }
       ],
@@ -3720,30 +3839,31 @@
         "section": "A1.4.1",
         "type": 24,
         "type_name": "Reprezentări cu semne ale întregilor",
+        "task_scope": "Caz particular sau pas al metodei; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Pornim de la un pătrat. La fiecare pas alegem exact o piesă pătrată și o împărțim în patru pătrate egale. Câte piese avem după 1 pași? Nu se împart simultan toate piesele.",
+      "text": "Avem construcții inițiale ale unui pătrat în 6, 7 sau 8 pătrate, posibil de mărimi diferite. Un rafinament înlocuiește o singură piesă cu patru pătrate egale. Ce pereche (număr inițial de piese; număr de rafinamente) produce exact 9 pătrate?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "O piesă este înlocuită cu patru, deci numărul crește cu 3: Nᵣ₊₁=Nᵣ+3, N₀=1. Prin inducție Nᵣ=1+3r, deci N_1=4. Piesele pot avea dimensiuni diferite.",
+      "explanation": "Baza 6: împărțim un pătrat de latură 3 într-un pătrat 2×2 și cinci pătrate 1×1. Baza 7: rafinăm o piesă din partiția în patru sferturi. Baza 8: într-un pătrat de latură 4, luăm un pătrat 3×3 și șapte pătrate 1×1. Fiecare rafinament crește numărul cu 3. Aici 6+3·1=9. Cele trei baze acoperă toate resturile modulo 3, deci metoda construiește orice ordin ≥6.",
       "options": [
         {
-          "text": "4",
+          "text": "(6; 1)",
           "is_correct": true
         },
         {
-          "text": "5",
+          "text": "(6; 2)",
           "is_correct": false
         },
         {
-          "text": "3",
+          "text": "(5; 1)",
           "is_correct": false
         },
         {
-          "text": "8",
+          "text": "(7; 1)",
           "is_correct": false
         }
       ],
@@ -3751,6 +3871,167 @@
         "section": "A1.4.1",
         "type": 25,
         "type_name": "Partiționarea pătratului în pătrate",
+        "task_scope": "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Avem construcții inițiale ale unui pătrat în 6, 7 sau 8 pătrate, posibil de mărimi diferite. Un rafinament înlocuiește o singură piesă cu patru pătrate egale. Ce pereche (număr inițial de piese; număr de rafinamente) produce exact 10 pătrate?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Baza 6: împărțim un pătrat de latură 3 într-un pătrat 2×2 și cinci pătrate 1×1. Baza 7: rafinăm o piesă din partiția în patru sferturi. Baza 8: într-un pătrat de latură 4, luăm un pătrat 3×3 și șapte pătrate 1×1. Fiecare rafinament crește numărul cu 3. Aici 7+3·1=10. Cele trei baze acoperă toate resturile modulo 3, deci metoda construiește orice ordin ≥6.",
+      "options": [
+        {
+          "text": "(7; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(7; 1)",
+          "is_correct": true
+        },
+        {
+          "text": "(6; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(8; 1)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.4.1",
+        "type": 25,
+        "type_name": "Partiționarea pătratului în pătrate",
+        "task_scope": "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Avem construcții inițiale ale unui pătrat în 6, 7 sau 8 pătrate, posibil de mărimi diferite. Un rafinament înlocuiește o singură piesă cu patru pătrate egale. Ce pereche (număr inițial de piese; număr de rafinamente) produce exact 11 pătrate?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Baza 6: împărțim un pătrat de latură 3 într-un pătrat 2×2 și cinci pătrate 1×1. Baza 7: rafinăm o piesă din partiția în patru sferturi. Baza 8: într-un pătrat de latură 4, luăm un pătrat 3×3 și șapte pătrate 1×1. Fiecare rafinament crește numărul cu 3. Aici 8+3·1=11. Cele trei baze acoperă toate resturile modulo 3, deci metoda construiește orice ordin ≥6.",
+      "options": [
+        {
+          "text": "(8; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(7; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(8; 1)",
+          "is_correct": true
+        },
+        {
+          "text": "(9; 1)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.4.1",
+        "type": 25,
+        "type_name": "Partiționarea pătratului în pătrate",
+        "task_scope": "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Avem construcții inițiale ale unui pătrat în 6, 7 sau 8 pătrate, posibil de mărimi diferite. Un rafinament înlocuiește o singură piesă cu patru pătrate egale. Ce pereche (număr inițial de piese; număr de rafinamente) produce exact 17 pătrate?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Baza 6: împărțim un pătrat de latură 3 într-un pătrat 2×2 și cinci pătrate 1×1. Baza 7: rafinăm o piesă din partiția în patru sferturi. Baza 8: într-un pătrat de latură 4, luăm un pătrat 3×3 și șapte pătrate 1×1. Fiecare rafinament crește numărul cu 3. Aici 8+3·3=17. Cele trei baze acoperă toate resturile modulo 3, deci metoda construiește orice ordin ≥6.",
+      "options": [
+        {
+          "text": "(8; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(7; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(9; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(8; 3)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.4.1",
+        "type": 25,
+        "type_name": "Partiționarea pătratului în pătrate",
+        "task_scope": "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Avem construcții inițiale ale unui pătrat în 6, 7 sau 8 pătrate, posibil de mărimi diferite. Un rafinament înlocuiește o singură piesă cu patru pătrate egale. Ce pereche (număr inițial de piese; număr de rafinamente) produce exact 23 pătrate?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Baza 6: împărțim un pătrat de latură 3 într-un pătrat 2×2 și cinci pătrate 1×1. Baza 7: rafinăm o piesă din partiția în patru sferturi. Baza 8: într-un pătrat de latură 4, luăm un pătrat 3×3 și șapte pătrate 1×1. Fiecare rafinament crește numărul cu 3. Aici 8+3·5=23. Cele trei baze acoperă toate resturile modulo 3, deci metoda construiește orice ordin ≥6.",
+      "options": [
+        {
+          "text": "(8; 5)",
+          "is_correct": true
+        },
+        {
+          "text": "(8; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(7; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(9; 5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.4.1",
+        "type": 25,
+        "type_name": "Partiționarea pătratului în pătrate",
+        "task_scope": "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O linie frântă simplă, invariantă la rotația de 180° în jurul centrului pătratului, unește două vârfuri opuse și are 2 vârfuri intermediare strict în interior. Nu există trei vârfuri consecutive coliniare și nu atinge altfel conturul. Câte laturi are fiecare dintre cele două poligoane congruente obținute?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare contur folosește 2 segmente ale marginii pătratului și 3 segmente ale tăieturii, în total 5. Rotația de 180° schimbă cele două piese între ele; inserarea unei noi perechi de vârfuri simetrice mărește numărul laturilor fiecărei piese cu 2. Plecând de la diagonală obținem ordine impare, iar plecând de la segmentul dintre mijloace, ordine pare.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.4.1",
+        "type": 26,
+        "type_name": "Partiții în poligoane congruente",
+        "task_scope": "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3759,19 +4040,19 @@
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Fiecare contur folosește trei segmente ale marginii pătratului și 3 segmente ale tăieturii, în total 6. Rotația de 180° schimbă cele două piese între ele; inserarea unei noi perechi de vârfuri simetrice mărește numărul laturilor fiecărei piese cu 2.",
+      "explanation": "Fiecare contur folosește 3 segmente ale marginii pătratului și 3 segmente ale tăieturii, în total 6. Rotația de 180° schimbă cele două piese între ele; inserarea unei noi perechi de vârfuri simetrice mărește numărul laturilor fiecărei piese cu 2. Plecând de la diagonală obținem ordine impare, iar plecând de la segmentul dintre mijloace, ordine pare.",
       "options": [
         {
           "text": "7",
           "is_correct": false
         },
         {
-          "text": "6",
-          "is_correct": true
-        },
-        {
           "text": "5",
           "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
         },
         {
           "text": "12",
@@ -3782,15 +4063,16 @@
         "section": "A1.4.1",
         "type": 26,
         "type_name": "Partiții în poligoane congruente",
+        "task_scope": "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Pornim de la un pătrat. La fiecare pas alegem exact o piesă pătrată și o împărțim în patru pătrate egale. Câte piese avem după 2 pași? Nu se împart simultan toate piesele.",
+      "text": "O linie frântă simplă, invariantă la rotația de 180° în jurul centrului pătratului, unește două vârfuri opuse și are 4 vârfuri intermediare strict în interior. Nu există trei vârfuri consecutive coliniare și nu atinge altfel conturul. Câte laturi are fiecare dintre cele două poligoane congruente obținute?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "O piesă este înlocuită cu patru, deci numărul crește cu 3: Nᵣ₊₁=Nᵣ+3, N₀=1. Prin inducție Nᵣ=1+3r, deci N_2=7. Piesele pot avea dimensiuni diferite.",
+      "explanation": "Fiecare contur folosește 2 segmente ale marginii pătratului și 5 segmente ale tăieturii, în total 7. Rotația de 180° schimbă cele două piese între ele; inserarea unei noi perechi de vârfuri simetrice mărește numărul laturilor fiecărei piese cu 2. Plecând de la diagonală obținem ordine impare, iar plecând de la segmentul dintre mijloace, ordine pare.",
       "options": [
         {
           "text": "8",
@@ -3801,18 +4083,19 @@
           "is_correct": false
         },
         {
-          "text": "7",
-          "is_correct": true
-        },
-        {
           "text": "14",
           "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
         }
       ],
       "catalog": {
         "section": "A1.4.1",
-        "type": 25,
-        "type_name": "Partiționarea pătratului în pătrate",
+        "type": 26,
+        "type_name": "Partiții în poligoane congruente",
+        "task_scope": "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -3821,8 +4104,12 @@
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Fiecare contur folosește trei segmente ale marginii pătratului și 5 segmente ale tăieturii, în total 8. Rotația de 180° schimbă cele două piese între ele; inserarea unei noi perechi de vârfuri simetrice mărește numărul laturilor fiecărei piese cu 2.",
+      "explanation": "Fiecare contur folosește 3 segmente ale marginii pătratului și 5 segmente ale tăieturii, în total 8. Rotația de 180° schimbă cele două piese între ele; inserarea unei noi perechi de vârfuri simetrice mărește numărul laturilor fiecărei piese cu 2. Plecând de la diagonală obținem ordine impare, iar plecând de la segmentul dintre mijloace, ordine pare.",
       "options": [
+        {
+          "text": "8",
+          "is_correct": true
+        },
         {
           "text": "9",
           "is_correct": false
@@ -3834,71 +4121,37 @@
         {
           "text": "16",
           "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.4.1",
+        "type": 26,
+        "type_name": "Partiții în poligoane congruente",
+        "task_scope": "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O linie frântă simplă, invariantă la rotația de 180° în jurul centrului pătratului, unește două vârfuri opuse și are 6 vârfuri intermediare strict în interior. Nu există trei vârfuri consecutive coliniare și nu atinge altfel conturul. Câte laturi are fiecare dintre cele două poligoane congruente obținute?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare contur folosește 2 segmente ale marginii pătratului și 7 segmente ale tăieturii, în total 9. Rotația de 180° schimbă cele două piese între ele; inserarea unei noi perechi de vârfuri simetrice mărește numărul laturilor fiecărei piese cu 2. Plecând de la diagonală obținem ordine impare, iar plecând de la segmentul dintre mijloace, ordine pare.",
+      "options": [
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
         },
         {
           "text": "8",
-          "is_correct": true
-        }
-      ],
-      "catalog": {
-        "section": "A1.4.1",
-        "type": 26,
-        "type_name": "Partiții în poligoane congruente",
-        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
-      }
-    },
-    {
-      "text": "Pornim de la un pătrat. La fiecare pas alegem exact o piesă pătrată și o împărțim în patru pătrate egale. Câte piese avem după 3 pași? Nu se împart simultan toate piesele.",
-      "type": "multiple_choice",
-      "format": "grid",
-      "points": 10,
-      "explanation": "O piesă este înlocuită cu patru, deci numărul crește cu 3: Nᵣ₊₁=Nᵣ+3, N₀=1. Prin inducție Nᵣ=1+3r, deci N_3=10. Piesele pot avea dimensiuni diferite.",
-      "options": [
-        {
-          "text": "10",
-          "is_correct": true
-        },
-        {
-          "text": "11",
           "is_correct": false
         },
         {
-          "text": "9",
-          "is_correct": false
-        },
-        {
-          "text": "20",
-          "is_correct": false
-        }
-      ],
-      "catalog": {
-        "section": "A1.4.1",
-        "type": 25,
-        "type_name": "Partiționarea pătratului în pătrate",
-        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
-      }
-    },
-    {
-      "text": "O linie frântă simplă, invariantă la rotația de 180° în jurul centrului pătratului, unește mijloacele a două laturi opuse și are 6 vârfuri intermediare strict în interior. Nu există trei vârfuri consecutive coliniare și nu atinge altfel conturul. Câte laturi are fiecare dintre cele două poligoane congruente obținute?",
-      "type": "multiple_choice",
-      "format": "grid",
-      "points": 10,
-      "explanation": "Fiecare contur folosește trei segmente ale marginii pătratului și 7 segmente ale tăieturii, în total 10. Rotația de 180° schimbă cele două piese între ele; inserarea unei noi perechi de vârfuri simetrice mărește numărul laturilor fiecărei piese cu 2.",
-      "options": [
-        {
-          "text": "11",
-          "is_correct": false
-        },
-        {
-          "text": "10",
-          "is_correct": true
-        },
-        {
-          "text": "9",
-          "is_correct": false
-        },
-        {
-          "text": "20",
+          "text": "18",
           "is_correct": false
         }
       ],
@@ -3906,130 +4159,7 @@
         "section": "A1.4.1",
         "type": 26,
         "type_name": "Partiții în poligoane congruente",
-        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
-      }
-    },
-    {
-      "text": "Pornim de la un pătrat. La fiecare pas alegem exact o piesă pătrată și o împărțim în patru pătrate egale. Câte piese avem după 4 pași? Nu se împart simultan toate piesele.",
-      "type": "multiple_choice",
-      "format": "grid",
-      "points": 10,
-      "explanation": "O piesă este înlocuită cu patru, deci numărul crește cu 3: Nᵣ₊₁=Nᵣ+3, N₀=1. Prin inducție Nᵣ=1+3r, deci N_4=13. Piesele pot avea dimensiuni diferite.",
-      "options": [
-        {
-          "text": "14",
-          "is_correct": false
-        },
-        {
-          "text": "12",
-          "is_correct": false
-        },
-        {
-          "text": "13",
-          "is_correct": true
-        },
-        {
-          "text": "26",
-          "is_correct": false
-        }
-      ],
-      "catalog": {
-        "section": "A1.4.1",
-        "type": 25,
-        "type_name": "Partiționarea pătratului în pătrate",
-        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
-      }
-    },
-    {
-      "text": "O linie frântă simplă, invariantă la rotația de 180° în jurul centrului pătratului, unește mijloacele a două laturi opuse și are 8 vârfuri intermediare strict în interior. Nu există trei vârfuri consecutive coliniare și nu atinge altfel conturul. Câte laturi are fiecare dintre cele două poligoane congruente obținute?",
-      "type": "multiple_choice",
-      "format": "grid",
-      "points": 10,
-      "explanation": "Fiecare contur folosește trei segmente ale marginii pătratului și 9 segmente ale tăieturii, în total 12. Rotația de 180° schimbă cele două piese între ele; inserarea unei noi perechi de vârfuri simetrice mărește numărul laturilor fiecărei piese cu 2.",
-      "options": [
-        {
-          "text": "13",
-          "is_correct": false
-        },
-        {
-          "text": "11",
-          "is_correct": false
-        },
-        {
-          "text": "24",
-          "is_correct": false
-        },
-        {
-          "text": "12",
-          "is_correct": true
-        }
-      ],
-      "catalog": {
-        "section": "A1.4.1",
-        "type": 26,
-        "type_name": "Partiții în poligoane congruente",
-        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
-      }
-    },
-    {
-      "text": "Pornim de la un pătrat. La fiecare pas alegem exact o piesă pătrată și o împărțim în patru pătrate egale. Câte piese avem după 5 pași? Nu se împart simultan toate piesele.",
-      "type": "multiple_choice",
-      "format": "grid",
-      "points": 10,
-      "explanation": "O piesă este înlocuită cu patru, deci numărul crește cu 3: Nᵣ₊₁=Nᵣ+3, N₀=1. Prin inducție Nᵣ=1+3r, deci N_5=16. Piesele pot avea dimensiuni diferite.",
-      "options": [
-        {
-          "text": "16",
-          "is_correct": true
-        },
-        {
-          "text": "17",
-          "is_correct": false
-        },
-        {
-          "text": "15",
-          "is_correct": false
-        },
-        {
-          "text": "32",
-          "is_correct": false
-        }
-      ],
-      "catalog": {
-        "section": "A1.4.1",
-        "type": 25,
-        "type_name": "Partiționarea pătratului în pătrate",
-        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
-      }
-    },
-    {
-      "text": "O linie frântă simplă, invariantă la rotația de 180° în jurul centrului pătratului, unește mijloacele a două laturi opuse și are 10 vârfuri intermediare strict în interior. Nu există trei vârfuri consecutive coliniare și nu atinge altfel conturul. Câte laturi are fiecare dintre cele două poligoane congruente obținute?",
-      "type": "multiple_choice",
-      "format": "grid",
-      "points": 10,
-      "explanation": "Fiecare contur folosește trei segmente ale marginii pătratului și 11 segmente ale tăieturii, în total 14. Rotația de 180° schimbă cele două piese între ele; inserarea unei noi perechi de vârfuri simetrice mărește numărul laturilor fiecărei piese cu 2.",
-      "options": [
-        {
-          "text": "15",
-          "is_correct": false
-        },
-        {
-          "text": "14",
-          "is_correct": true
-        },
-        {
-          "text": "13",
-          "is_correct": false
-        },
-        {
-          "text": "28",
-          "is_correct": false
-        }
-      ],
-      "catalog": {
-        "section": "A1.4.1",
-        "type": 26,
-        "type_name": "Partiții în poligoane congruente",
+        "task_scope": "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4061,6 +4191,7 @@
         "section": "A1.4.1",
         "type": 27,
         "type_name": "Reconstrucție din sume parțiale",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4092,6 +4223,7 @@
         "section": "A1.4.1",
         "type": 27,
         "type_name": "Reconstrucție din sume parțiale",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4123,6 +4255,7 @@
         "section": "A1.4.1",
         "type": 27,
         "type_name": "Reconstrucție din sume parțiale",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4154,6 +4287,7 @@
         "section": "A1.4.1",
         "type": 27,
         "type_name": "Reconstrucție din sume parțiale",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4185,6 +4319,7 @@
         "section": "A1.4.1",
         "type": 27,
         "type_name": "Reconstrucție din sume parțiale",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4216,6 +4351,7 @@
         "section": "A1.4.1",
         "type": 28,
         "type_name": "Reprezentarea sumelor de bani",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4247,6 +4383,7 @@
         "section": "A1.4.1",
         "type": 28,
         "type_name": "Reprezentarea sumelor de bani",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4278,6 +4415,7 @@
         "section": "A1.4.1",
         "type": 28,
         "type_name": "Reprezentarea sumelor de bani",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4309,6 +4447,7 @@
         "section": "A1.4.1",
         "type": 28,
         "type_name": "Reprezentarea sumelor de bani",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4340,6 +4479,7 @@
         "section": "A1.4.1",
         "type": 28,
         "type_name": "Reprezentarea sumelor de bani",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4371,6 +4511,7 @@
         "section": "A1.4.1",
         "type": 29,
         "type_name": "Partiționarea triunghiului echilateral",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4402,6 +4543,7 @@
         "section": "A1.4.1",
         "type": 29,
         "type_name": "Partiționarea triunghiului echilateral",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4433,6 +4575,7 @@
         "section": "A1.4.1",
         "type": 29,
         "type_name": "Partiționarea triunghiului echilateral",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4464,6 +4607,7 @@
         "section": "A1.4.1",
         "type": 29,
         "type_name": "Partiționarea triunghiului echilateral",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4495,6 +4639,39 @@
         "section": "A1.4.1",
         "type": 29,
         "type_name": "Partiționarea triunghiului echilateral",
+        "task_scope": "Aplicarea numerică a metodei",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Un triunghi echilateral este împărțit în trei triunghiuri congruente unind centrul cu vârfurile. Înlocuim fiecare dintre cele trei frontiere interioare cu o linie frântă cu 1 vârfuri intermediare. Cele trei linii se obțin prin rotații de 120°, nu se intersectează în puncte noi și nu produc laturi consecutive coliniare. Câte laturi are fiecare piesă nouă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare piesă are 1 laturi pe conturul triunghiului și două frontiere interioare. Fiecare frontieră are acum 2 segmente, deci numărul laturilor este 1+2·2=5. Simetria de rotație păstrează congruența; o etapă suplimentară adaugă două laturi fiecărei piese. Baza cu trei triunghiuri produce ordine impare, iar baza cu trei patrulatere, ordine pare. Îndoiturile pot fi alese suficient de mici în vecinătăți disjuncte ale frontierelor, pentru a păstra o partiție simplă.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.4.1",
+        "type": 30,
+        "type_name": "Partiții în trei poligoane congruente",
+        "task_scope": "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4503,19 +4680,19 @@
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Fiecare piesă are două laturi pe conturul triunghiului și două frontiere interioare. Fiecare frontieră are acum 2 segmente, deci numărul laturilor este 2+2·2=6. Simetria de rotație păstrează congruența celor trei piese; o etapă suplimentară adaugă două laturi fiecărei piese.",
+      "explanation": "Fiecare piesă are 2 laturi pe conturul triunghiului și două frontiere interioare. Fiecare frontieră are acum 2 segmente, deci numărul laturilor este 2+2·2=6. Simetria de rotație păstrează congruența; o etapă suplimentară adaugă două laturi fiecărei piese. Baza cu trei triunghiuri produce ordine impare, iar baza cu trei patrulatere, ordine pare. Îndoiturile pot fi alese suficient de mici în vecinătăți disjuncte ale frontierelor, pentru a păstra o partiție simplă.",
       "options": [
         {
           "text": "7",
           "is_correct": false
         },
         {
-          "text": "6",
-          "is_correct": true
-        },
-        {
           "text": "5",
           "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
         },
         {
           "text": "12",
@@ -4526,6 +4703,39 @@
         "section": "A1.4.1",
         "type": 30,
         "type_name": "Partiții în trei poligoane congruente",
+        "task_scope": "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Un triunghi echilateral este împărțit în trei triunghiuri congruente unind centrul cu vârfurile. Înlocuim fiecare dintre cele trei frontiere interioare cu o linie frântă cu 2 vârfuri intermediare. Cele trei linii se obțin prin rotații de 120°, nu se intersectează în puncte noi și nu produc laturi consecutive coliniare. Câte laturi are fiecare piesă nouă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare piesă are 1 laturi pe conturul triunghiului și două frontiere interioare. Fiecare frontieră are acum 3 segmente, deci numărul laturilor este 1+2·3=7. Simetria de rotație păstrează congruența; o etapă suplimentară adaugă două laturi fiecărei piese. Baza cu trei triunghiuri produce ordine impare, iar baza cu trei patrulatere, ordine pare. Îndoiturile pot fi alese suficient de mici în vecinătăți disjuncte ale frontierelor, pentru a păstra o partiție simplă.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.4.1",
+        "type": 30,
+        "type_name": "Partiții în trei poligoane congruente",
+        "task_scope": "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4534,8 +4744,12 @@
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Fiecare piesă are două laturi pe conturul triunghiului și două frontiere interioare. Fiecare frontieră are acum 3 segmente, deci numărul laturilor este 2+2·3=8. Simetria de rotație păstrează congruența celor trei piese; o etapă suplimentară adaugă două laturi fiecărei piese.",
+      "explanation": "Fiecare piesă are 2 laturi pe conturul triunghiului și două frontiere interioare. Fiecare frontieră are acum 3 segmente, deci numărul laturilor este 2+2·3=8. Simetria de rotație păstrează congruența; o etapă suplimentară adaugă două laturi fiecărei piese. Baza cu trei triunghiuri produce ordine impare, iar baza cu trei patrulatere, ordine pare. Îndoiturile pot fi alese suficient de mici în vecinătăți disjuncte ale frontierelor, pentru a păstra o partiție simplă.",
       "options": [
+        {
+          "text": "8",
+          "is_correct": true
+        },
         {
           "text": "9",
           "is_correct": false
@@ -4543,10 +4757,6 @@
         {
           "text": "7",
           "is_correct": false
-        },
-        {
-          "text": "8",
-          "is_correct": true
         },
         {
           "text": "16",
@@ -4557,61 +4767,31 @@
         "section": "A1.4.1",
         "type": 30,
         "type_name": "Partiții în trei poligoane congruente",
+        "task_scope": "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Un triunghi echilateral este împărțit în trei patrulatere congruente unind centrul cu mijloacele laturilor. Înlocuim fiecare dintre cele trei frontiere interioare cu o linie frântă cu 3 vârfuri intermediare. Cele trei linii se obțin prin rotații de 120°, nu se intersectează în puncte noi și nu produc laturi consecutive coliniare. Câte laturi are fiecare piesă nouă?",
+      "text": "Un triunghi echilateral este împărțit în trei triunghiuri congruente unind centrul cu vârfurile. Înlocuim fiecare dintre cele trei frontiere interioare cu o linie frântă cu 3 vârfuri intermediare. Cele trei linii se obțin prin rotații de 120°, nu se intersectează în puncte noi și nu produc laturi consecutive coliniare. Câte laturi are fiecare piesă nouă?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Fiecare piesă are două laturi pe conturul triunghiului și două frontiere interioare. Fiecare frontieră are acum 4 segmente, deci numărul laturilor este 2+2·4=10. Simetria de rotație păstrează congruența celor trei piese; o etapă suplimentară adaugă două laturi fiecărei piese.",
+      "explanation": "Fiecare piesă are 1 laturi pe conturul triunghiului și două frontiere interioare. Fiecare frontieră are acum 4 segmente, deci numărul laturilor este 1+2·4=9. Simetria de rotație păstrează congruența; o etapă suplimentară adaugă două laturi fiecărei piese. Baza cu trei triunghiuri produce ordine impare, iar baza cu trei patrulatere, ordine pare. Îndoiturile pot fi alese suficient de mici în vecinătăți disjuncte ale frontierelor, pentru a păstra o partiție simplă.",
       "options": [
         {
-          "text": "11",
+          "text": "10",
           "is_correct": false
         },
         {
           "text": "9",
-          "is_correct": false
-        },
-        {
-          "text": "20",
-          "is_correct": false
-        },
-        {
-          "text": "10",
-          "is_correct": true
-        }
-      ],
-      "catalog": {
-        "section": "A1.4.1",
-        "type": 30,
-        "type_name": "Partiții în trei poligoane congruente",
-        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
-      }
-    },
-    {
-      "text": "Un triunghi echilateral este împărțit în trei patrulatere congruente unind centrul cu mijloacele laturilor. Înlocuim fiecare dintre cele trei frontiere interioare cu o linie frântă cu 4 vârfuri intermediare. Cele trei linii se obțin prin rotații de 120°, nu se intersectează în puncte noi și nu produc laturi consecutive coliniare. Câte laturi are fiecare piesă nouă?",
-      "type": "multiple_choice",
-      "format": "grid",
-      "points": 10,
-      "explanation": "Fiecare piesă are două laturi pe conturul triunghiului și două frontiere interioare. Fiecare frontieră are acum 5 segmente, deci numărul laturilor este 2+2·5=12. Simetria de rotație păstrează congruența celor trei piese; o etapă suplimentară adaugă două laturi fiecărei piese.",
-      "options": [
-        {
-          "text": "12",
           "is_correct": true
         },
         {
-          "text": "13",
+          "text": "8",
           "is_correct": false
         },
         {
-          "text": "11",
-          "is_correct": false
-        },
-        {
-          "text": "24",
+          "text": "18",
           "is_correct": false
         }
       ],
@@ -4619,37 +4799,7 @@
         "section": "A1.4.1",
         "type": 30,
         "type_name": "Partiții în trei poligoane congruente",
-        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
-      }
-    },
-    {
-      "text": "Un triunghi echilateral este împărțit în trei patrulatere congruente unind centrul cu mijloacele laturilor. Înlocuim fiecare dintre cele trei frontiere interioare cu o linie frântă cu 5 vârfuri intermediare. Cele trei linii se obțin prin rotații de 120°, nu se intersectează în puncte noi și nu produc laturi consecutive coliniare. Câte laturi are fiecare piesă nouă?",
-      "type": "multiple_choice",
-      "format": "grid",
-      "points": 10,
-      "explanation": "Fiecare piesă are două laturi pe conturul triunghiului și două frontiere interioare. Fiecare frontieră are acum 6 segmente, deci numărul laturilor este 2+2·6=14. Simetria de rotație păstrează congruența celor trei piese; o etapă suplimentară adaugă două laturi fiecărei piese.",
-      "options": [
-        {
-          "text": "15",
-          "is_correct": false
-        },
-        {
-          "text": "14",
-          "is_correct": true
-        },
-        {
-          "text": "13",
-          "is_correct": false
-        },
-        {
-          "text": "28",
-          "is_correct": false
-        }
-      ],
-      "catalog": {
-        "section": "A1.4.1",
-        "type": 30,
-        "type_name": "Partiții în trei poligoane congruente",
+        "task_scope": "Construcție ghidată și pas inductiv; nu demonstrația integrală din sursă",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4681,6 +4831,7 @@
         "section": "A1.4.2",
         "type": 1,
         "type_name": "Cardinalul reuniunii a două mulțimi",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4712,6 +4863,7 @@
         "section": "A1.4.2",
         "type": 1,
         "type_name": "Cardinalul reuniunii a două mulțimi",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4743,6 +4895,7 @@
         "section": "A1.4.2",
         "type": 1,
         "type_name": "Cardinalul reuniunii a două mulțimi",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4774,6 +4927,7 @@
         "section": "A1.4.2",
         "type": 1,
         "type_name": "Cardinalul reuniunii a două mulțimi",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4805,6 +4959,7 @@
         "section": "A1.4.2",
         "type": 1,
         "type_name": "Cardinalul reuniunii a două mulțimi",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4836,6 +4991,7 @@
         "section": "A1.4.2",
         "type": 2,
         "type_name": "Numărul submulțimilor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4867,6 +5023,7 @@
         "section": "A1.4.2",
         "type": 2,
         "type_name": "Numărul submulțimilor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4898,6 +5055,7 @@
         "section": "A1.4.2",
         "type": 2,
         "type_name": "Numărul submulțimilor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4929,6 +5087,7 @@
         "section": "A1.4.2",
         "type": 2,
         "type_name": "Numărul submulțimilor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4960,6 +5119,7 @@
         "section": "A1.4.2",
         "type": 2,
         "type_name": "Numărul submulțimilor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -4991,6 +5151,7 @@
         "section": "A1.4.2",
         "type": 3,
         "type_name": "Probleme cu două activități",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5022,6 +5183,7 @@
         "section": "A1.4.2",
         "type": 3,
         "type_name": "Probleme cu două activități",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5053,6 +5215,7 @@
         "section": "A1.4.2",
         "type": 3,
         "type_name": "Probleme cu două activități",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5084,6 +5247,7 @@
         "section": "A1.4.2",
         "type": 3,
         "type_name": "Probleme cu două activități",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5115,6 +5279,7 @@
         "section": "A1.4.2",
         "type": 3,
         "type_name": "Probleme cu două activități",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5146,6 +5311,7 @@
         "section": "A1.4.2",
         "type": 4,
         "type_name": "Probleme cu trei activități sau culori",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5177,6 +5343,7 @@
         "section": "A1.4.2",
         "type": 4,
         "type_name": "Probleme cu trei activități sau culori",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5208,6 +5375,7 @@
         "section": "A1.4.2",
         "type": 4,
         "type_name": "Probleme cu trei activități sau culori",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5239,6 +5407,7 @@
         "section": "A1.4.2",
         "type": 4,
         "type_name": "Probleme cu trei activități sau culori",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5270,6 +5439,7 @@
         "section": "A1.4.2",
         "type": 4,
         "type_name": "Probleme cu trei activități sau culori",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5278,7 +5448,7 @@
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Numărul multiplilor este ⌊100/7⌋−⌊9/7⌋=13. Folosim left−1 pentru a include capătul stâng.",
+      "explanation": "Numărul multiplilor este ⌊100/7⌋−⌊9/7⌋=13. Scădem multiplii până la 9, pentru a include capătul stâng 10.",
       "options": [
         {
           "text": "14",
@@ -5301,6 +5471,7 @@
         "section": "A1.4.2",
         "type": 5,
         "type_name": "Multipli într-un interval",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5309,7 +5480,7 @@
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Numărul multiplilor este ⌊250/9⌋−⌊24/9⌋=25. Folosim left−1 pentru a include capătul stâng.",
+      "explanation": "Numărul multiplilor este ⌊250/9⌋−⌊24/9⌋=25. Scădem multiplii până la 24, pentru a include capătul stâng 25.",
       "options": [
         {
           "text": "26",
@@ -5332,6 +5503,7 @@
         "section": "A1.4.2",
         "type": 5,
         "type_name": "Multipli într-un interval",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5340,7 +5512,7 @@
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Numărul multiplilor este ⌊999/13⌋−⌊99/13⌋=69. Folosim left−1 pentru a include capătul stâng.",
+      "explanation": "Numărul multiplilor este ⌊999/13⌋−⌊99/13⌋=69. Scădem multiplii până la 99, pentru a include capătul stâng 100.",
       "options": [
         {
           "text": "69",
@@ -5363,6 +5535,7 @@
         "section": "A1.4.2",
         "type": 5,
         "type_name": "Multipli într-un interval",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5371,7 +5544,7 @@
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Numărul multiplilor este ⌊500/11⌋−⌊0/11⌋=45. Folosim left−1 pentru a include capătul stâng.",
+      "explanation": "Numărul multiplilor este ⌊500/11⌋−⌊0/11⌋=45. Scădem multiplii până la 0, pentru a include capătul stâng 1.",
       "options": [
         {
           "text": "46",
@@ -5394,6 +5567,7 @@
         "section": "A1.4.2",
         "type": 5,
         "type_name": "Multipli într-un interval",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5402,7 +5576,7 @@
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Numărul multiplilor este ⌊600/17⌋−⌊49/17⌋=33. Folosim left−1 pentru a include capătul stâng.",
+      "explanation": "Numărul multiplilor este ⌊600/17⌋−⌊49/17⌋=33. Scădem multiplii până la 49, pentru a include capătul stâng 50.",
       "options": [
         {
           "text": "34",
@@ -5425,6 +5599,7 @@
         "section": "A1.4.2",
         "type": 5,
         "type_name": "Multipli într-un interval",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5456,6 +5631,7 @@
         "section": "A1.4.2",
         "type": 6,
         "type_name": "Divizibilitate simultană",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5487,6 +5663,7 @@
         "section": "A1.4.2",
         "type": 6,
         "type_name": "Divizibilitate simultană",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5518,6 +5695,7 @@
         "section": "A1.4.2",
         "type": 6,
         "type_name": "Divizibilitate simultană",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5549,6 +5727,7 @@
         "section": "A1.4.2",
         "type": 6,
         "type_name": "Divizibilitate simultană",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5580,6 +5759,7 @@
         "section": "A1.4.2",
         "type": 6,
         "type_name": "Divizibilitate simultană",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5611,6 +5791,7 @@
         "section": "A1.4.2",
         "type": 7,
         "type_name": "Divizibilitate alternativă",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5642,6 +5823,7 @@
         "section": "A1.4.2",
         "type": 7,
         "type_name": "Divizibilitate alternativă",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5673,6 +5855,7 @@
         "section": "A1.4.2",
         "type": 7,
         "type_name": "Divizibilitate alternativă",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5704,6 +5887,7 @@
         "section": "A1.4.2",
         "type": 7,
         "type_name": "Divizibilitate alternativă",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5735,6 +5919,7 @@
         "section": "A1.4.2",
         "type": 7,
         "type_name": "Divizibilitate alternativă",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5766,6 +5951,7 @@
         "section": "A1.4.2",
         "type": 8,
         "type_name": "Numere prime cu un întreg dat",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5797,6 +5983,7 @@
         "section": "A1.4.2",
         "type": 8,
         "type_name": "Numere prime cu un întreg dat",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5828,6 +6015,7 @@
         "section": "A1.4.2",
         "type": 8,
         "type_name": "Numere prime cu un întreg dat",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5859,6 +6047,7 @@
         "section": "A1.4.2",
         "type": 8,
         "type_name": "Numere prime cu un întreg dat",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5890,6 +6079,7 @@
         "section": "A1.4.2",
         "type": 8,
         "type_name": "Numere prime cu un întreg dat",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5921,6 +6111,7 @@
         "section": "A1.4.2",
         "type": 9,
         "type_name": "Perechi neordonate și perechi ordonate",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5952,6 +6143,7 @@
         "section": "A1.4.2",
         "type": 9,
         "type_name": "Perechi neordonate și perechi ordonate",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -5983,6 +6175,7 @@
         "section": "A1.4.2",
         "type": 9,
         "type_name": "Perechi neordonate și perechi ordonate",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6014,6 +6207,7 @@
         "section": "A1.4.2",
         "type": 9,
         "type_name": "Perechi neordonate și perechi ordonate",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6045,6 +6239,7 @@
         "section": "A1.4.2",
         "type": 9,
         "type_name": "Perechi neordonate și perechi ordonate",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6076,6 +6271,7 @@
         "section": "A1.4.2",
         "type": 10,
         "type_name": "Numărarea valorilor unei formule",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6107,6 +6303,7 @@
         "section": "A1.4.2",
         "type": 10,
         "type_name": "Numărarea valorilor unei formule",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6138,6 +6335,7 @@
         "section": "A1.4.2",
         "type": 10,
         "type_name": "Numărarea valorilor unei formule",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6169,6 +6367,7 @@
         "section": "A1.4.2",
         "type": 10,
         "type_name": "Numărarea valorilor unei formule",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6200,6 +6399,7 @@
         "section": "A1.4.2",
         "type": 10,
         "type_name": "Numărarea valorilor unei formule",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6231,6 +6431,7 @@
         "section": "A1.4.2",
         "type": 11,
         "type_name": "Principiul multiplicării pentru cifre",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6262,6 +6463,7 @@
         "section": "A1.4.2",
         "type": 11,
         "type_name": "Principiul multiplicării pentru cifre",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6293,6 +6495,7 @@
         "section": "A1.4.2",
         "type": 11,
         "type_name": "Principiul multiplicării pentru cifre",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6324,6 +6527,7 @@
         "section": "A1.4.2",
         "type": 11,
         "type_name": "Principiul multiplicării pentru cifre",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6355,30 +6559,31 @@
         "section": "A1.4.2",
         "type": 11,
         "type_name": "Principiul multiplicării pentru cifre",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Din cifrele 1,…,3 formăm numere de trei cifre distincte. Câte numere obținem?",
+      "text": "Din cifrele 1,…,3 formăm numere de trei cifre. Câte obținem dacă repetarea este permisă și, respectiv, dacă toate cele trei cifre trebuie să fie distincte?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Alegerile succesive sunt 3, 2, 1. Produsul este 6. Cu repetiție permisă ar fi 27, dar aici toate cifrele trebuie să fie distincte.",
+      "explanation": "Cu repetare avem 3 alegeri la fiecare poziție: 27. Fără repetare, alegerile succesive sunt 3, 2, 1: 6. C(3,3) ar număra selecții fără ordine; pozițiile cifrelor contează.",
       "options": [
         {
-          "text": "7",
+          "text": "(6; 27)",
           "is_correct": false
         },
         {
-          "text": "6",
+          "text": "(27; 6)",
           "is_correct": true
         },
         {
-          "text": "5",
+          "text": "(27; 27)",
           "is_correct": false
         },
         {
-          "text": "12",
+          "text": "(27; 1)",
           "is_correct": false
         }
       ],
@@ -6386,30 +6591,31 @@
         "section": "A1.4.2",
         "type": 12,
         "type_name": "Numere cu sau fără repetarea cifrelor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Din cifrele 1,…,4 formăm numere de trei cifre distincte. Câte numere obținem?",
+      "text": "Din cifrele 1,…,4 formăm numere de trei cifre. Câte obținem dacă repetarea este permisă și, respectiv, dacă toate cele trei cifre trebuie să fie distincte?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Alegerile succesive sunt 4, 3, 2. Produsul este 24. Cu repetiție permisă ar fi 64, dar aici toate cifrele trebuie să fie distincte.",
+      "explanation": "Cu repetare avem 4 alegeri la fiecare poziție: 64. Fără repetare, alegerile succesive sunt 4, 3, 2: 24. C(4,3) ar număra selecții fără ordine; pozițiile cifrelor contează.",
       "options": [
         {
-          "text": "25",
+          "text": "(24; 64)",
           "is_correct": false
         },
         {
-          "text": "23",
+          "text": "(64; 64)",
           "is_correct": false
         },
         {
-          "text": "24",
+          "text": "(64; 24)",
           "is_correct": true
         },
         {
-          "text": "48",
+          "text": "(64; 4)",
           "is_correct": false
         }
       ],
@@ -6417,30 +6623,31 @@
         "section": "A1.4.2",
         "type": 12,
         "type_name": "Numere cu sau fără repetarea cifrelor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Din cifrele 1,…,5 formăm numere de trei cifre distincte. Câte numere obținem?",
+      "text": "Din cifrele 1,…,5 formăm numere de trei cifre. Câte obținem dacă repetarea este permisă și, respectiv, dacă toate cele trei cifre trebuie să fie distincte?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Alegerile succesive sunt 5, 4, 3. Produsul este 60. Cu repetiție permisă ar fi 125, dar aici toate cifrele trebuie să fie distincte.",
+      "explanation": "Cu repetare avem 5 alegeri la fiecare poziție: 125. Fără repetare, alegerile succesive sunt 5, 4, 3: 60. C(5,3) ar număra selecții fără ordine; pozițiile cifrelor contează.",
       "options": [
         {
-          "text": "61",
+          "text": "(60; 125)",
           "is_correct": false
         },
         {
-          "text": "59",
+          "text": "(125; 125)",
           "is_correct": false
         },
         {
-          "text": "120",
+          "text": "(125; 10)",
           "is_correct": false
         },
         {
-          "text": "60",
+          "text": "(125; 60)",
           "is_correct": true
         }
       ],
@@ -6448,30 +6655,31 @@
         "section": "A1.4.2",
         "type": 12,
         "type_name": "Numere cu sau fără repetarea cifrelor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Din cifrele 1,…,6 formăm numere de trei cifre distincte. Câte numere obținem?",
+      "text": "Din cifrele 1,…,6 formăm numere de trei cifre. Câte obținem dacă repetarea este permisă și, respectiv, dacă toate cele trei cifre trebuie să fie distincte?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Alegerile succesive sunt 6, 5, 4. Produsul este 120. Cu repetiție permisă ar fi 216, dar aici toate cifrele trebuie să fie distincte.",
+      "explanation": "Cu repetare avem 6 alegeri la fiecare poziție: 216. Fără repetare, alegerile succesive sunt 6, 5, 4: 120. C(6,3) ar număra selecții fără ordine; pozițiile cifrelor contează.",
       "options": [
         {
-          "text": "120",
+          "text": "(216; 120)",
           "is_correct": true
         },
         {
-          "text": "121",
+          "text": "(120; 216)",
           "is_correct": false
         },
         {
-          "text": "119",
+          "text": "(216; 216)",
           "is_correct": false
         },
         {
-          "text": "240",
+          "text": "(216; 20)",
           "is_correct": false
         }
       ],
@@ -6479,30 +6687,31 @@
         "section": "A1.4.2",
         "type": 12,
         "type_name": "Numere cu sau fără repetarea cifrelor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Din cifrele 1,…,7 formăm numere de trei cifre distincte. Câte numere obținem?",
+      "text": "Din cifrele 1,…,7 formăm numere de trei cifre. Câte obținem dacă repetarea este permisă și, respectiv, dacă toate cele trei cifre trebuie să fie distincte?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Alegerile succesive sunt 7, 6, 5. Produsul este 210. Cu repetiție permisă ar fi 343, dar aici toate cifrele trebuie să fie distincte.",
+      "explanation": "Cu repetare avem 7 alegeri la fiecare poziție: 343. Fără repetare, alegerile succesive sunt 7, 6, 5: 210. C(7,3) ar număra selecții fără ordine; pozițiile cifrelor contează.",
       "options": [
         {
-          "text": "211",
+          "text": "(210; 343)",
           "is_correct": false
         },
         {
-          "text": "210",
+          "text": "(343; 210)",
           "is_correct": true
         },
         {
-          "text": "209",
+          "text": "(343; 343)",
           "is_correct": false
         },
         {
-          "text": "420",
+          "text": "(343; 35)",
           "is_correct": false
         }
       ],
@@ -6510,6 +6719,7 @@
         "section": "A1.4.2",
         "type": 12,
         "type_name": "Numere cu sau fără repetarea cifrelor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6541,6 +6751,7 @@
         "section": "A1.4.2",
         "type": 13,
         "type_name": "Extrageri succesive cu culori impuse",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6572,6 +6783,7 @@
         "section": "A1.4.2",
         "type": 13,
         "type_name": "Extrageri succesive cu culori impuse",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6603,6 +6815,7 @@
         "section": "A1.4.2",
         "type": 13,
         "type_name": "Extrageri succesive cu culori impuse",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6634,6 +6847,7 @@
         "section": "A1.4.2",
         "type": 13,
         "type_name": "Extrageri succesive cu culori impuse",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6665,6 +6879,7 @@
         "section": "A1.4.2",
         "type": 13,
         "type_name": "Extrageri succesive cu culori impuse",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6696,6 +6911,7 @@
         "section": "A1.4.2",
         "type": 14,
         "type_name": "Triplete fără reintroducere",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6727,6 +6943,7 @@
         "section": "A1.4.2",
         "type": 14,
         "type_name": "Triplete fără reintroducere",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6758,6 +6975,7 @@
         "section": "A1.4.2",
         "type": 14,
         "type_name": "Triplete fără reintroducere",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6789,6 +7007,7 @@
         "section": "A1.4.2",
         "type": 14,
         "type_name": "Triplete fără reintroducere",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6820,6 +7039,7 @@
         "section": "A1.4.2",
         "type": 14,
         "type_name": "Triplete fără reintroducere",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6851,6 +7071,7 @@
         "section": "A1.4.2",
         "type": 15,
         "type_name": "Repartizarea obiectelor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6882,6 +7103,7 @@
         "section": "A1.4.2",
         "type": 15,
         "type_name": "Repartizarea obiectelor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6913,6 +7135,7 @@
         "section": "A1.4.2",
         "type": 15,
         "type_name": "Repartizarea obiectelor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6944,6 +7167,7 @@
         "section": "A1.4.2",
         "type": 15,
         "type_name": "Repartizarea obiectelor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6975,6 +7199,7 @@
         "section": "A1.4.2",
         "type": 15,
         "type_name": "Repartizarea obiectelor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -6986,7 +7211,7 @@
       "explanation": "Incluziune–excluziune pe persoanele care nu primesc nimic: 3^3−3·2^3+3·1^3=6. Repartizarea tuturor obiectelor la zero persoane nu este posibilă, deoarece n>0.",
       "options": [
         {
-          "text": "7",
+          "text": "27",
           "is_correct": false
         },
         {
@@ -6994,11 +7219,11 @@
           "is_correct": true
         },
         {
-          "text": "5",
+          "text": "3",
           "is_correct": false
         },
         {
-          "text": "12",
+          "text": "1",
           "is_correct": false
         }
       ],
@@ -7006,6 +7231,7 @@
         "section": "A1.4.2",
         "type": 16,
         "type_name": "Repartizări cu beneficiari nevidați",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7017,11 +7243,11 @@
       "explanation": "Incluziune–excluziune pe persoanele care nu primesc nimic: 3^4−3·2^4+3·1^4=36. Repartizarea tuturor obiectelor la zero persoane nu este posibilă, deoarece n>0.",
       "options": [
         {
-          "text": "37",
+          "text": "81",
           "is_correct": false
         },
         {
-          "text": "35",
+          "text": "33",
           "is_correct": false
         },
         {
@@ -7029,7 +7255,7 @@
           "is_correct": true
         },
         {
-          "text": "72",
+          "text": "3",
           "is_correct": false
         }
       ],
@@ -7037,6 +7263,7 @@
         "section": "A1.4.2",
         "type": 16,
         "type_name": "Repartizări cu beneficiari nevidați",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7048,15 +7275,15 @@
       "explanation": "Incluziune–excluziune pe persoanele care nu primesc nimic: 3^5−3·2^5+3·1^5=150. Repartizarea tuturor obiectelor la zero persoane nu este posibilă, deoarece n>0.",
       "options": [
         {
-          "text": "151",
+          "text": "243",
           "is_correct": false
         },
         {
-          "text": "149",
+          "text": "147",
           "is_correct": false
         },
         {
-          "text": "300",
+          "text": "6",
           "is_correct": false
         },
         {
@@ -7068,6 +7295,7 @@
         "section": "A1.4.2",
         "type": 16,
         "type_name": "Repartizări cu beneficiari nevidați",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7083,15 +7311,15 @@
           "is_correct": true
         },
         {
-          "text": "541",
+          "text": "729",
           "is_correct": false
         },
         {
-          "text": "539",
+          "text": "537",
           "is_correct": false
         },
         {
-          "text": "1080",
+          "text": "10",
           "is_correct": false
         }
       ],
@@ -7099,6 +7327,7 @@
         "section": "A1.4.2",
         "type": 16,
         "type_name": "Repartizări cu beneficiari nevidați",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7110,7 +7339,7 @@
       "explanation": "Incluziune–excluziune pe persoanele care nu primesc nimic: 3^7−3·2^7+3·1^7=1806. Repartizarea tuturor obiectelor la zero persoane nu este posibilă, deoarece n>0.",
       "options": [
         {
-          "text": "1807",
+          "text": "2187",
           "is_correct": false
         },
         {
@@ -7118,11 +7347,11 @@
           "is_correct": true
         },
         {
-          "text": "1805",
+          "text": "1803",
           "is_correct": false
         },
         {
-          "text": "3612",
+          "text": "15",
           "is_correct": false
         }
       ],
@@ -7130,6 +7359,7 @@
         "section": "A1.4.2",
         "type": 16,
         "type_name": "Repartizări cu beneficiari nevidați",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7161,6 +7391,7 @@
         "section": "A1.4.2",
         "type": 17,
         "type_name": "Colorări independente",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7192,6 +7423,7 @@
         "section": "A1.4.2",
         "type": 17,
         "type_name": "Colorări independente",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7223,6 +7455,7 @@
         "section": "A1.4.2",
         "type": 17,
         "type_name": "Colorări independente",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7254,6 +7487,7 @@
         "section": "A1.4.2",
         "type": 17,
         "type_name": "Colorări independente",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7285,6 +7519,7 @@
         "section": "A1.4.2",
         "type": 17,
         "type_name": "Colorări independente",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7296,15 +7531,15 @@
       "explanation": "Eliminăm blocurile complete de numere cu mai puține cifre. Rămâne poziția 6 în blocul numerelor de 2 cifre. Numărul este 12, iar cifra cerută este a 2-a din el: 2.",
       "options": [
         {
-          "text": "3",
-          "is_correct": false
-        },
-        {
           "text": "1",
           "is_correct": false
         },
         {
-          "text": "4",
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "3",
           "is_correct": false
         },
         {
@@ -7316,6 +7551,7 @@
         "section": "A1.4.2",
         "type": 18,
         "type_name": "Poziția unei cifre într-o concatenare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7331,15 +7567,15 @@
           "is_correct": true
         },
         {
-          "text": "6",
-          "is_correct": false
-        },
-        {
           "text": "4",
           "is_correct": false
         },
         {
-          "text": "10",
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
           "is_correct": false
         }
       ],
@@ -7347,6 +7583,7 @@
         "section": "A1.4.2",
         "type": 18,
         "type_name": "Poziția unei cifre într-o concatenare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7358,7 +7595,7 @@
       "explanation": "Eliminăm blocurile complete de numere cu mai puține cifre. Rămâne poziția 1 în blocul numerelor de 3 cifre. Numărul este 100, iar cifra cerută este a 1-a din el: 1.",
       "options": [
         {
-          "text": "2",
+          "text": "9",
           "is_correct": false
         },
         {
@@ -7370,7 +7607,7 @@
           "is_correct": false
         },
         {
-          "text": "3",
+          "text": "2",
           "is_correct": false
         }
       ],
@@ -7378,6 +7615,7 @@
         "section": "A1.4.2",
         "type": 18,
         "type_name": "Poziția unei cifre într-o concatenare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7389,11 +7627,11 @@
       "explanation": "Eliminăm blocurile complete de numere cu mai puține cifre. Rămâne poziția 311 în blocul numerelor de 3 cifre. Numărul este 203, iar cifra cerută este a 2-a din el: 0.",
       "options": [
         {
-          "text": "1",
+          "text": "2",
           "is_correct": false
         },
         {
-          "text": "2",
+          "text": "3",
           "is_correct": false
         },
         {
@@ -7401,7 +7639,7 @@
           "is_correct": true
         },
         {
-          "text": "3",
+          "text": "1",
           "is_correct": false
         }
       ],
@@ -7409,6 +7647,7 @@
         "section": "A1.4.2",
         "type": 18,
         "type_name": "Poziția unei cifre într-o concatenare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7420,15 +7659,15 @@
       "explanation": "Eliminăm blocurile complete de numere cu mai puține cifre. Rămâne poziția 1837 în blocul numerelor de 3 cifre. Numărul este 712, iar cifra cerută este a 1-a din el: 7.",
       "options": [
         {
-          "text": "8",
+          "text": "1",
           "is_correct": false
         },
         {
-          "text": "6",
+          "text": "0",
           "is_correct": false
         },
         {
-          "text": "14",
+          "text": "2",
           "is_correct": false
         },
         {
@@ -7440,6 +7679,7 @@
         "section": "A1.4.2",
         "type": 18,
         "type_name": "Poziția unei cifre într-o concatenare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7471,6 +7711,7 @@
         "section": "A1.4.2",
         "type": 19,
         "type_name": "Numărarea cifrelor de paginare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7502,6 +7743,7 @@
         "section": "A1.4.2",
         "type": 19,
         "type_name": "Numărarea cifrelor de paginare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7533,6 +7775,7 @@
         "section": "A1.4.2",
         "type": 19,
         "type_name": "Numărarea cifrelor de paginare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7564,6 +7807,7 @@
         "section": "A1.4.2",
         "type": 19,
         "type_name": "Numărarea cifrelor de paginare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7595,6 +7839,7 @@
         "section": "A1.4.2",
         "type": 19,
         "type_name": "Numărarea cifrelor de paginare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7626,6 +7871,7 @@
         "section": "A1.4.2",
         "type": 20,
         "type_name": "Exponenți primi în factorial",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7657,6 +7903,7 @@
         "section": "A1.4.2",
         "type": 20,
         "type_name": "Exponenți primi în factorial",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7688,6 +7935,7 @@
         "section": "A1.4.2",
         "type": 20,
         "type_name": "Exponenți primi în factorial",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7719,6 +7967,7 @@
         "section": "A1.4.2",
         "type": 20,
         "type_name": "Exponenți primi în factorial",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7750,6 +7999,7 @@
         "section": "A1.4.2",
         "type": 20,
         "type_name": "Exponenți primi în factorial",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7781,6 +8031,7 @@
         "section": "A1.4.2",
         "type": 21,
         "type_name": "Zerouri terminale ale factorialului",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7812,6 +8063,7 @@
         "section": "A1.4.2",
         "type": 21,
         "type_name": "Zerouri terminale ale factorialului",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7843,6 +8095,7 @@
         "section": "A1.4.2",
         "type": 21,
         "type_name": "Zerouri terminale ale factorialului",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7874,6 +8127,7 @@
         "section": "A1.4.2",
         "type": 21,
         "type_name": "Zerouri terminale ale factorialului",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7905,6 +8159,7 @@
         "section": "A1.4.2",
         "type": 21,
         "type_name": "Zerouri terminale ale factorialului",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7936,6 +8191,7 @@
         "section": "A1.4.2",
         "type": 22,
         "type_name": "Factorizări coprime",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7967,6 +8223,7 @@
         "section": "A1.4.2",
         "type": 22,
         "type_name": "Factorizări coprime",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -7998,6 +8255,7 @@
         "section": "A1.4.2",
         "type": 22,
         "type_name": "Factorizări coprime",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8029,6 +8287,7 @@
         "section": "A1.4.2",
         "type": 22,
         "type_name": "Factorizări coprime",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8060,6 +8319,7 @@
         "section": "A1.4.2",
         "type": 22,
         "type_name": "Factorizări coprime",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8091,6 +8351,7 @@
         "section": "A1.4.2",
         "type": 23,
         "type_name": "Diagonale ale poligoanelor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8122,6 +8383,7 @@
         "section": "A1.4.2",
         "type": 23,
         "type_name": "Diagonale ale poligoanelor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8153,6 +8415,7 @@
         "section": "A1.4.2",
         "type": 23,
         "type_name": "Diagonale ale poligoanelor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8184,6 +8447,7 @@
         "section": "A1.4.2",
         "type": 23,
         "type_name": "Diagonale ale poligoanelor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8215,6 +8479,7 @@
         "section": "A1.4.2",
         "type": 23,
         "type_name": "Diagonale ale poligoanelor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8246,6 +8511,7 @@
         "section": "A1.4.2",
         "type": 24,
         "type_name": "Diagonale ale unei prisme",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8277,6 +8543,7 @@
         "section": "A1.4.2",
         "type": 24,
         "type_name": "Diagonale ale unei prisme",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8308,6 +8575,7 @@
         "section": "A1.4.2",
         "type": 24,
         "type_name": "Diagonale ale unei prisme",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8339,6 +8607,7 @@
         "section": "A1.4.2",
         "type": 24,
         "type_name": "Diagonale ale unei prisme",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8370,6 +8639,7 @@
         "section": "A1.4.2",
         "type": 24,
         "type_name": "Diagonale ale unei prisme",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8401,6 +8671,7 @@
         "section": "A1.4.2",
         "type": 25,
         "type_name": "Regiuni determinate de drepte concurente",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8432,6 +8703,7 @@
         "section": "A1.4.2",
         "type": 25,
         "type_name": "Regiuni determinate de drepte concurente",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8463,6 +8735,7 @@
         "section": "A1.4.2",
         "type": 25,
         "type_name": "Regiuni determinate de drepte concurente",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8494,6 +8767,7 @@
         "section": "A1.4.2",
         "type": 25,
         "type_name": "Regiuni determinate de drepte concurente",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8525,6 +8799,7 @@
         "section": "A1.4.2",
         "type": 25,
         "type_name": "Regiuni determinate de drepte concurente",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8556,6 +8831,7 @@
         "section": "A1.4.2",
         "type": 26,
         "type_name": "Drepte determinate de puncte fără trei coliniare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8587,6 +8863,7 @@
         "section": "A1.4.2",
         "type": 26,
         "type_name": "Drepte determinate de puncte fără trei coliniare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8618,6 +8895,7 @@
         "section": "A1.4.2",
         "type": 26,
         "type_name": "Drepte determinate de puncte fără trei coliniare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8649,6 +8927,7 @@
         "section": "A1.4.2",
         "type": 26,
         "type_name": "Drepte determinate de puncte fără trei coliniare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8680,6 +8959,7 @@
         "section": "A1.4.2",
         "type": 26,
         "type_name": "Drepte determinate de puncte fără trei coliniare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8711,6 +8991,7 @@
         "section": "A1.4.2",
         "type": 27,
         "type_name": "Numărare prin subdiviziune repetată",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8742,6 +9023,7 @@
         "section": "A1.4.2",
         "type": 27,
         "type_name": "Numărare prin subdiviziune repetată",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8773,6 +9055,7 @@
         "section": "A1.4.2",
         "type": 27,
         "type_name": "Numărare prin subdiviziune repetată",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8804,6 +9087,7 @@
         "section": "A1.4.2",
         "type": 27,
         "type_name": "Numărare prin subdiviziune repetată",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8835,6 +9119,7 @@
         "section": "A1.4.2",
         "type": 27,
         "type_name": "Numărare prin subdiviziune repetată",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8866,6 +9151,7 @@
         "section": "A1.4.2",
         "type": 28,
         "type_name": "Numărul radicalilor raționali",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8897,6 +9183,7 @@
         "section": "A1.4.2",
         "type": 28,
         "type_name": "Numărul radicalilor raționali",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8928,6 +9215,7 @@
         "section": "A1.4.2",
         "type": 28,
         "type_name": "Numărul radicalilor raționali",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8959,6 +9247,7 @@
         "section": "A1.4.2",
         "type": 28,
         "type_name": "Numărul radicalilor raționali",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -8990,6 +9279,7 @@
         "section": "A1.4.2",
         "type": 28,
         "type_name": "Numărul radicalilor raționali",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9021,6 +9311,7 @@
         "section": "A1.4.2",
         "type": 29,
         "type_name": "Bijeția prin complementarea submulțimilor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9052,6 +9343,7 @@
         "section": "A1.4.2",
         "type": 29,
         "type_name": "Bijeția prin complementarea submulțimilor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9083,6 +9375,7 @@
         "section": "A1.4.2",
         "type": 29,
         "type_name": "Bijeția prin complementarea submulțimilor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9114,6 +9407,7 @@
         "section": "A1.4.2",
         "type": 29,
         "type_name": "Bijeția prin complementarea submulțimilor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9145,6 +9439,7 @@
         "section": "A1.4.2",
         "type": 29,
         "type_name": "Bijeția prin complementarea submulțimilor",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9176,6 +9471,7 @@
         "section": "A1.4.2",
         "type": 30,
         "type_name": "Numărul divizorilor din factorizare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9207,6 +9503,7 @@
         "section": "A1.4.2",
         "type": 30,
         "type_name": "Numărul divizorilor din factorizare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9238,6 +9535,7 @@
         "section": "A1.4.2",
         "type": 30,
         "type_name": "Numărul divizorilor din factorizare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9269,6 +9567,7 @@
         "section": "A1.4.2",
         "type": 30,
         "type_name": "Numărul divizorilor din factorizare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9300,6 +9599,7 @@
         "section": "A1.4.2",
         "type": 30,
         "type_name": "Numărul divizorilor din factorizare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9331,6 +9631,7 @@
         "section": "A1.4.2",
         "type": 31,
         "type_name": "Numere cu exact patru divizori",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9362,6 +9663,7 @@
         "section": "A1.4.2",
         "type": 31,
         "type_name": "Numere cu exact patru divizori",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9393,6 +9695,7 @@
         "section": "A1.4.2",
         "type": 31,
         "type_name": "Numere cu exact patru divizori",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9424,6 +9727,7 @@
         "section": "A1.4.2",
         "type": 31,
         "type_name": "Numere cu exact patru divizori",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9455,11 +9759,12 @@
         "section": "A1.4.2",
         "type": 31,
         "type_name": "Numere cu exact patru divizori",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Fie A={1,…,1} și B={1,…,4}. Câte mulțimi X satisfac A∪X=B?",
+      "text": "Fie A={1} și B={1; 2; 3; 4}. Câte mulțimi X satisfac A∪X=B?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -9486,11 +9791,12 @@
         "section": "A1.4.2",
         "type": 32,
         "type_name": "Mulțime necunoscută într-o egalitate de reuniuni",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Fie A={1,…,2} și B={1,…,5}. Câte mulțimi X satisfac A∪X=B?",
+      "text": "Fie A={1; 2} și B={1; 2; 3; 4; 5}. Câte mulțimi X satisfac A∪X=B?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -9517,11 +9823,12 @@
         "section": "A1.4.2",
         "type": 32,
         "type_name": "Mulțime necunoscută într-o egalitate de reuniuni",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Fie A={1,…,3} și B={1,…,6}. Câte mulțimi X satisfac A∪X=B?",
+      "text": "Fie A={1; 2; 3} și B={1; 2; 3; 4; 5; 6}. Câte mulțimi X satisfac A∪X=B?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -9548,11 +9855,12 @@
         "section": "A1.4.2",
         "type": 32,
         "type_name": "Mulțime necunoscută într-o egalitate de reuniuni",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Fie A={1,…,4} și B={1,…,7}. Câte mulțimi X satisfac A∪X=B?",
+      "text": "Fie A={1; 2; 3; 4} și B={1; 2; 3; 4; 5; 6; 7}. Câte mulțimi X satisfac A∪X=B?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -9579,11 +9887,12 @@
         "section": "A1.4.2",
         "type": 32,
         "type_name": "Mulțime necunoscută într-o egalitate de reuniuni",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
     {
-      "text": "Fie A={1,…,5} și B={1,…,8}. Câte mulțimi X satisfac A∪X=B?",
+      "text": "Fie A={1; 2; 3; 4; 5} și B={1; 2; 3; 4; 5; 6; 7; 8}. Câte mulțimi X satisfac A∪X=B?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -9610,6 +9919,7 @@
         "section": "A1.4.2",
         "type": 32,
         "type_name": "Mulțime necunoscută într-o egalitate de reuniuni",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9641,6 +9951,7 @@
         "section": "A1.4.2",
         "type": 33,
         "type_name": "Numărarea soluțiilor unei ecuații diofantice liniare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9672,6 +9983,7 @@
         "section": "A1.4.2",
         "type": 33,
         "type_name": "Numărarea soluțiilor unei ecuații diofantice liniare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9703,6 +10015,7 @@
         "section": "A1.4.2",
         "type": 33,
         "type_name": "Numărarea soluțiilor unei ecuații diofantice liniare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9734,6 +10047,7 @@
         "section": "A1.4.2",
         "type": 33,
         "type_name": "Numărarea soluțiilor unei ecuații diofantice liniare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     },
@@ -9765,6 +10079,7 @@
         "section": "A1.4.2",
         "type": 33,
         "type_name": "Numărarea soluțiilor unei ecuații diofantice liniare",
+        "task_scope": "Aplicarea numerică a metodei",
         "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
       }
     }
