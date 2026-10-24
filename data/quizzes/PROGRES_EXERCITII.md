@@ -9,8 +9,8 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 | Clasa | Lecții cu exerciții | Total exerciții | Grilă | Adevărat/Fals | Interactive |
 |---|---:|---:|---:|---:|---:|
 | Clasa a V-a | 42 | 2.101 | 589 | 93 | 1.419 |
-| Clasa a IX-a | 3 | 496 | 446 | 4 | 46 |
-| **Total** | **45** | **2.597** | **1.035** | **97** | **1.465** |
+| Clasa a IX-a | 4 | 811 | 761 | 4 | 46 |
+| **Total** | **46** | **2.912** | **1.350** | **97** | **1.465** |
 
 ## Clasa a V-a
 
@@ -97,8 +97,9 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 | Mulțimea numerelor reale. Operații algebrice, puteri și radicali | 216 | 166 | 4 | 46 |
 | Propoziții, predicate și cuantificatori | 95 | 95 | 0 | 0 |
 | Operații logice elementare și legi de calcul | 185 | 185 | 0 | 0 |
+| Raționamente logice. Inducția matematică și probleme de numărare | 315 | 315 | 0 | 0 |
 
-**Subtotal clasa a IX-a: 3 lecții și 496 de exerciții.**
+**Subtotal clasa a IX-a: 4 lecții și 811 de exerciții.**
 
 Lotul 01 din catalogul Burtea a fost prezentat inițial cu câte 5 grile pentru tipurile 1–2. La cererea utilizatorului, selecția finală păstrează câte 3: întrebările 1, 4, 5, 6, 9 și 10 din `docs/clasa_9/lot_01_verificare.md`.
 
@@ -170,7 +171,27 @@ Lecția din aplicație: **Operații logice elementare și legi de calcul**. Surs
 
 Verificări: tabele complete de adevăr pentru echivalențe și tautologii, toate evaluările compatibile pentru inferențe, toate cele opt cazuri de apartenență pentru identități de mulțimi, enumerarea tuturor predicatelor binare și ternare pe un univers cu două elemente pentru negarea cuantificatorilor, acoperire 37×5 și unicitatea enunțurilor/variantelor, validatorul aplicației, reproductibilitatea generatorului, `manage.py check` și încărcare țintită prin `seed_quizzes --file`.
 
-Următoarea secțiune de logică din catalog: **4. Tipuri de raționamente logice** — 4.1. Metoda inducției matematice (30 de tipuri) și 4.2. Probleme de numărare (33 de tipuri).
+Secțiunea 4, care urmează secțiunii 3 în catalog, este finalizată mai jos.
+
+### Secțiunea 4 — Tipuri de raționamente logice — finalizată
+
+Adăugate și încărcate în baza locală la 24 octombrie 2026: **315 grile, câte 5 pentru fiecare dintre cele 63 de tipuri catalogate**, fără interactive noi și fără format A/F. Toate au patru variante, un singur răspuns corect și explicație.
+
+| Subcapitol din catalogul A1 | Tipuri acoperite | Grile |
+|---|---:|---:|
+| 4.1. Metoda inducției matematice, p. 52–58 | 30/30 | 150 |
+| 4.2. Probleme de numărare, p. 59–62 | 33/33 | 165 |
+| **Total** | **63/63** | **315** |
+
+4.1 cuprinde formule de sume și produse, pasul inductiv, estimări și praguri minime, Bernoulli, divizibilitate, recurențe, sume simetrice, exponenți primi, reprezentări cu semne, reconstrucția din sume parțiale, monede și construcții geometrice. Sunt păstrate explicit condițiile de nenegativitate, pragurile și cazurile de bază. Pentru familiile de construcții și cele olimpice, grilele verifică pași sau consecințe ale metodei; nu înlocuiesc demonstrațiile problemelor integrale din culegere. Condiția universală cu parte întreagă are explicație generală; verificarea unui număr finit de indici nu este prezentată ca demonstrație.
+
+4.2 cuprinde incluziune–excluziune, submulțimi, divizibilitate și coprimalitate, alegeri de cifre, extrageri, repartizări, colorări, concatenare și paginare, factoriale, factorizări coprime, diagonale, regiuni, subdiviziuni, radicali raționali, complementarea submulțimilor, divizori și ecuații diofantice. Enunțurile precizează dacă ordinea contează, dacă repetarea este permisă, dacă obiectele sunt distincte, dacă se admit beneficiari fără obiecte și dacă zero este soluție admisă.
+
+Lecția din aplicație: **Raționamente logice. Inducția matematică și probleme de numărare**. Sursa JSON: `clasa_9/clasa_9_u01_l05_rationamente_logice_inductia_matematica_si_probleme_de_numarare.json`. Generator independent: `generators/gen_clasa_9_inductie_numarare.py`. Inventarul celor 63 de tipuri este în `docs/clasa_9/sectiunea_4_acoperire.md`.
+
+Enunțurile sunt originale, formulate după tipologiile catalogului, nu transcrieri verificate din scanare. Metadatele `catalog` păstrează secțiunile `A1.4.1` / `A1.4.2`, numărul și numele tipului, precum și originea în JSON.
+
+Verificări: calcule exacte cu fracții, sume și produse directe comparate cu formulele; enumerare pentru multipli, coprimalitate, triplete, repartizări, divizori și ecuații diofantice; factoriale directe comparate cu exponenții primi și zerourile terminale; cifrele concatenării comparate cu șirul construit; audit independent al pragurilor minime, reprezentărilor cu semne, identității a două pătrate, paginării și conservării ariei la rafinarea pătratului; acoperire 63×5, unicitatea enunțurilor și variantelor, validatorul aplicației, reproductibilitatea generatorului, `manage.py check` și încărcare țintită prin `seed_quizzes --file`.
 
 ## Regula de actualizare
 
