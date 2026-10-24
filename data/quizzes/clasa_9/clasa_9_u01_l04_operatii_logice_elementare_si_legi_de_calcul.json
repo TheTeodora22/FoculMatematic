@@ -1,6 +1,5742 @@
 {
   "title": "Operații logice elementare și legi de calcul",
   "description": "Clasa a 9-a · Mulțimi și logică matematică",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Se dau p = Adevărat, q = Fals. Evaluați ¬(p) și ¬(q). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem ¬(p) = Fals și ¬(q) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 1,
+        "type_name": "Evaluarea negației",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Fals, q = Adevărat. Evaluați ¬(¬(p)) și ¬(q). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem ¬(¬(p)) = Fals și ¬(q) = Fals. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 1,
+        "type_name": "Evaluarea negației",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Adevărat, q = Adevărat. Evaluați ¬(p) și ¬(¬(q)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem ¬(p) = Fals și ¬(¬(q)) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 1,
+        "type_name": "Evaluarea negației",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Fals, q = Fals. Evaluați ¬(¬(¬(p))) și ¬(q). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem ¬(¬(¬(p))) = Adevărat și ¬(q) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 1,
+        "type_name": "Evaluarea negației",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Adevărat, q = Fals. Evaluați ¬(p) și ¬(¬(¬(q))). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem ¬(p) = Fals și ¬(¬(¬(q))) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 1,
+        "type_name": "Evaluarea negației",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Adevărat, q = Fals. Evaluați (p ∧ q) și (p ∨ q). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem (p ∧ q) = Fals și (p ∨ q) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 2,
+        "type_name": "Evaluarea disjuncției și conjuncției",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Fals, q = Adevărat. Evaluați (p ∨ q) și (p ∧ ¬(q)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem (p ∨ q) = Adevărat și (p ∧ ¬(q)) = Fals. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 2,
+        "type_name": "Evaluarea disjuncției și conjuncției",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Adevărat, q = Adevărat. Evaluați (¬(p) ∧ q) și (¬(p) ∨ q). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem (¬(p) ∧ q) = Fals și (¬(p) ∨ q) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 2,
+        "type_name": "Evaluarea disjuncției și conjuncției",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Fals, q = Fals. Evaluați (p ∧ ¬(q)) și (p ∨ ¬(q)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem (p ∧ ¬(q)) = Fals și (p ∨ ¬(q)) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 2,
+        "type_name": "Evaluarea disjuncției și conjuncției",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Adevărat, q = Fals. Evaluați (¬(p) ∧ ¬(q)) și (¬(p) ∨ ¬(q)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem (¬(p) ∧ ¬(q)) = Fals și (¬(p) ∨ ¬(q)) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 2,
+        "type_name": "Evaluarea disjuncției și conjuncției",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Adevărat, q = Fals. Evaluați (p ⇒ q) și (q ⇒ p). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem (p ⇒ q) = Fals și (q ⇒ p) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 3,
+        "type_name": "Evaluarea implicației",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Fals, q = Adevărat. Evaluați (¬(p) ⇒ q) și (p ⇒ ¬(q)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem (¬(p) ⇒ q) = Adevărat și (p ⇒ ¬(q)) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 3,
+        "type_name": "Evaluarea implicației",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Adevărat, q = Adevărat. Evaluați (p ⇒ ¬(q)) și (¬(q) ⇒ p). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem (p ⇒ ¬(q)) = Fals și (¬(q) ⇒ p) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 3,
+        "type_name": "Evaluarea implicației",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Fals, q = Fals. Evaluați (¬(p) ⇒ ¬(q)) și (q ⇒ p). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem (¬(p) ⇒ ¬(q)) = Adevărat și (q ⇒ p) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 3,
+        "type_name": "Evaluarea implicației",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Adevărat, q = Fals. Evaluați (q ⇒ ¬(p)) și (p ⇒ q). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem (q ⇒ ¬(p)) = Adevărat și (p ⇒ q) = Fals. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 3,
+        "type_name": "Evaluarea implicației",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Adevărat, q = Fals. Evaluați (p ⇔ q) și (p ⇔ ¬(q)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem (p ⇔ q) = Fals și (p ⇔ ¬(q)) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 4,
+        "type_name": "Evaluarea echivalenței",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Fals, q = Adevărat. Evaluați (¬(p) ⇔ q) și (¬(p) ⇔ ¬(q)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem (¬(p) ⇔ q) = Adevărat și (¬(p) ⇔ ¬(q)) = Fals. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 4,
+        "type_name": "Evaluarea echivalenței",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Adevărat, q = Adevărat. Evaluați (p ⇔ ¬(q)) și (q ⇔ ¬(p)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem (p ⇔ ¬(q)) = Fals și (q ⇔ ¬(p)) = Fals. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 4,
+        "type_name": "Evaluarea echivalenței",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Fals, q = Fals. Evaluați (¬(p) ⇔ ¬(q)) și (p ⇔ q). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem (¬(p) ⇔ ¬(q)) = Adevărat și (p ⇔ q) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 4,
+        "type_name": "Evaluarea echivalenței",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Adevărat, q = Fals. Evaluați (¬(¬(p)) ⇔ q) și (p ⇔ ¬(q)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem (¬(¬(p)) ⇔ q) = Fals și (p ⇔ ¬(q)) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 4,
+        "type_name": "Evaluarea echivalenței",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Adevărat, q = Fals, r = Adevărat. Evaluați ((p ∨ q) ∧ (p ∨ r)) și ((p ∧ q) ∨ r). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem ((p ∨ q) ∧ (p ∨ r)) = Adevărat și ((p ∧ q) ∨ r) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 5,
+        "type_name": "Formule cu trei propoziții",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Fals, q = Adevărat, r = Fals. Evaluați ((p ∧ q) ⇒ r) și (p ⇔ (q ∨ r)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem ((p ∧ q) ⇒ r) = Adevărat și (p ⇔ (q ∨ r)) = Fals. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 5,
+        "type_name": "Formule cu trei propoziții",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Adevărat, q = Adevărat, r = Fals. Evaluați ¬((p ∨ (q ∧ r))) și (¬(p) ∧ (q ∨ r)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem ¬((p ∨ (q ∧ r))) = Fals și (¬(p) ∧ (q ∨ r)) = Fals. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 5,
+        "type_name": "Formule cu trei propoziții",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Fals, q = Fals, r = Adevărat. Evaluați ((p ⇒ q) ⇔ r) și (p ⇒ (q ∧ r)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem ((p ⇒ q) ⇔ r) = Adevărat și (p ⇒ (q ∧ r)) = Adevărat. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 5,
+        "type_name": "Formule cu trei propoziții",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se dau p = Adevărat, q = Fals, r = Fals. Evaluați ((p ∧ ¬(q)) ∨ r) și ((p ⇒ q) ∧ ¬(r)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicând tabelele operatorilor din interior spre exterior, obținem ((p ∧ ¬(q)) ∨ r) = Adevărat și ((p ⇒ q) ∧ ¬(r)) = Fals. ¬ inversează valoarea; ∧ cere ambele valori adevărate; ∨ cere cel puțin una; ⇒ este falsă numai pentru A⇒F; ⇔ este adevărată când valorile coincid.",
+      "options": [
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 5,
+        "type_name": "Formule cu trei propoziții",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care formulă este o tautologie? Setul 1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(p ∨ ¬(p)) este adevărată în toate cele opt evaluări ale lui p, q, r. Celelalte formule admit evaluări false; o tautologie este adevărată indiferent de valorile propozițiilor.",
+      "options": [
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "(p ∨ ¬(p))",
+          "is_correct": true
+        },
+        {
+          "text": "¬(p)",
+          "is_correct": false
+        },
+        {
+          "text": "(p ∧ q)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 6,
+        "type_name": "Tautologii fundamentale",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care formulă este o tautologie? Setul 2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "¬((p ∧ ¬(p))) este adevărată în toate cele opt evaluări ale lui p, q, r. Celelalte formule admit evaluări false; o tautologie este adevărată indiferent de valorile propozițiilor.",
+      "options": [
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "¬(p)",
+          "is_correct": false
+        },
+        {
+          "text": "¬((p ∧ ¬(p)))",
+          "is_correct": true
+        },
+        {
+          "text": "(p ∧ q)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 6,
+        "type_name": "Tautologii fundamentale",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care formulă este o tautologie? Setul 3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(p ⇒ p) este adevărată în toate cele opt evaluări ale lui p, q, r. Celelalte formule admit evaluări false; o tautologie este adevărată indiferent de valorile propozițiilor.",
+      "options": [
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "¬(p)",
+          "is_correct": false
+        },
+        {
+          "text": "(p ∧ q)",
+          "is_correct": false
+        },
+        {
+          "text": "(p ⇒ p)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 6,
+        "type_name": "Tautologii fundamentale",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care formulă este o tautologie? Setul 4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(¬(¬(p)) ⇔ p) este adevărată în toate cele opt evaluări ale lui p, q, r. Celelalte formule admit evaluări false; o tautologie este adevărată indiferent de valorile propozițiilor.",
+      "options": [
+        {
+          "text": "(¬(¬(p)) ⇔ p)",
+          "is_correct": true
+        },
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "¬(p)",
+          "is_correct": false
+        },
+        {
+          "text": "(p ∧ q)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 6,
+        "type_name": "Tautologii fundamentale",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care formulă este o tautologie? Setul 5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "((p ∧ q) ⇒ p) este adevărată în toate cele opt evaluări ale lui p, q, r. Celelalte formule admit evaluări false; o tautologie este adevărată indiferent de valorile propozițiilor.",
+      "options": [
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "((p ∧ q) ⇒ p)",
+          "is_correct": true
+        },
+        {
+          "text": "¬(p)",
+          "is_correct": false
+        },
+        {
+          "text": "(p ∧ q)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 6,
+        "type_name": "Tautologii fundamentale",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Știind că ((p ⇒ q) ∧ p) este adevărată, care concluzie este obligatoriu adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Modus ponens: din ipoteza ((p ⇒ q) ∧ p) rezultă q. Verificarea tuturor evaluărilor în care ipoteza este adevărată confirmă concluzia; fiecare altă variantă are un contraexemplu.",
+      "options": [
+        {
+          "text": "r",
+          "is_correct": false
+        },
+        {
+          "text": "¬(p)",
+          "is_correct": false
+        },
+        {
+          "text": "q",
+          "is_correct": true
+        },
+        {
+          "text": "¬(q)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 7,
+        "type_name": "Reguli de inferență",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Știind că ((p ⇒ q) ∧ ¬(q)) este adevărată, care concluzie este obligatoriu adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Modus tollens: din ipoteza ((p ⇒ q) ∧ ¬(q)) rezultă ¬(p). Verificarea tuturor evaluărilor în care ipoteza este adevărată confirmă concluzia; fiecare altă variantă are un contraexemplu.",
+      "options": [
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "q",
+          "is_correct": false
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        },
+        {
+          "text": "¬(p)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 7,
+        "type_name": "Reguli de inferență",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Știind că ((p ⇒ q) ∧ (q ⇒ r)) este adevărată, care concluzie este obligatoriu adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tranzitivitatea implicației: din ipoteza ((p ⇒ q) ∧ (q ⇒ r)) rezultă (p ⇒ r). Verificarea tuturor evaluărilor în care ipoteza este adevărată confirmă concluzia; fiecare altă variantă are un contraexemplu.",
+      "options": [
+        {
+          "text": "(p ⇒ r)",
+          "is_correct": true
+        },
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "q",
+          "is_correct": false
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 7,
+        "type_name": "Reguli de inferență",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Știind că ((p ∨ q) ∧ ¬(p)) este adevărată, care concluzie este obligatoriu adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Silogism disjunctiv: din ipoteza ((p ∨ q) ∧ ¬(p)) rezultă q. Verificarea tuturor evaluărilor în care ipoteza este adevărată confirmă concluzia; fiecare altă variantă are un contraexemplu.",
+      "options": [
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "q",
+          "is_correct": true
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        },
+        {
+          "text": "¬(q)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 7,
+        "type_name": "Reguli de inferență",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Știind că (p ∧ q) este adevărată, care concluzie este obligatoriu adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Eliminarea conjuncției: din ipoteza (p ∧ q) rezultă p. Verificarea tuturor evaluărilor în care ipoteza este adevărată confirmă concluzia; fiecare altă variantă are un contraexemplu.",
+      "options": [
+        {
+          "text": "r",
+          "is_correct": false
+        },
+        {
+          "text": "¬(p)",
+          "is_correct": false
+        },
+        {
+          "text": "p",
+          "is_correct": true
+        },
+        {
+          "text": "¬(q)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 7,
+        "type_name": "Reguli de inferență",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă (p ∨ q) este fals, ce valori au p și q? Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Singura pereche compatibilă cu tabelul de adevăr este p = Fals, q = Fals.",
+      "options": [
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 8,
+        "type_name": "Reconstrucția valorilor de adevăr",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă (p ∧ q) este adevărat, ce valori au p și q? Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Singura pereche compatibilă cu tabelul de adevăr este p = Adevărat, q = Adevărat.",
+      "options": [
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 8,
+        "type_name": "Reconstrucția valorilor de adevăr",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă (p ⇒ q) este fals, ce valori au p și q? Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Singura pereche compatibilă cu tabelul de adevăr este p = Adevărat, q = Fals.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 8,
+        "type_name": "Reconstrucția valorilor de adevăr",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă (¬(p) ∧ q) este adevărat, ce valori au p și q? Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Singura pereche compatibilă cu tabelul de adevăr este p = Fals, q = Adevărat.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 8,
+        "type_name": "Reconstrucția valorilor de adevăr",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă (p ∧ ¬(q)) este adevărat, ce valori au p și q? Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Singura pereche compatibilă cu tabelul de adevăr este p = Adevărat, q = Fals.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 8,
+        "type_name": "Reconstrucția valorilor de adevăr",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care formulă este echivalentă logic cu (p ∨ (q ∧ r))?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Legea de calcul dă (p ∨ (q ∧ r)) ⇔ ((p ∨ q) ∧ (p ∨ r)). Cele două coloane coincid în toate evaluările.",
+      "options": [
+        {
+          "text": "((p ∨ q) ∧ (p ∨ r))",
+          "is_correct": true
+        },
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "q",
+          "is_correct": false
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 9,
+        "type_name": "Legile de calcul propozițional",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care formulă este echivalentă logic cu (p ∧ (q ∨ r))?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Legea de calcul dă (p ∧ (q ∨ r)) ⇔ ((p ∧ q) ∨ (p ∧ r)). Cele două coloane coincid în toate evaluările.",
+      "options": [
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "((p ∧ q) ∨ (p ∧ r))",
+          "is_correct": true
+        },
+        {
+          "text": "q",
+          "is_correct": false
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 9,
+        "type_name": "Legile de calcul propozițional",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care formulă este echivalentă logic cu (p ⇒ q)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Legea de calcul dă (p ⇒ q) ⇔ (¬(p) ∨ q). Cele două coloane coincid în toate evaluările.",
+      "options": [
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "q",
+          "is_correct": false
+        },
+        {
+          "text": "(¬(p) ∨ q)",
+          "is_correct": true
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 9,
+        "type_name": "Legile de calcul propozițional",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care formulă este echivalentă logic cu (p ⇔ q)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Legea de calcul dă (p ⇔ q) ⇔ ((p ⇒ q) ∧ (q ⇒ p)). Cele două coloane coincid în toate evaluările.",
+      "options": [
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "q",
+          "is_correct": false
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        },
+        {
+          "text": "((p ⇒ q) ∧ (q ⇒ p))",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 9,
+        "type_name": "Legile de calcul propozițional",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care formulă este echivalentă logic cu (p ∨ (p ∧ q))?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Legea de calcul dă (p ∨ (p ∧ q)) ⇔ p. Cele două coloane coincid în toate evaluările.",
+      "options": [
+        {
+          "text": "p",
+          "is_correct": true
+        },
+        {
+          "text": "q",
+          "is_correct": false
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        },
+        {
+          "text": "¬(p)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 9,
+        "type_name": "Legile de calcul propozițional",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aplicând legile lui De Morgan, cu ce este echivalentă ¬((p ∧ q))?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negația schimbă ∧ în ∨ și ∨ în ∧ și neagă fiecare operand. Rezultatul este (¬(p) ∨ ¬(q)); echivalența este verificată pe toate evaluările.",
+      "options": [
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "(¬(p) ∨ ¬(q))",
+          "is_correct": true
+        },
+        {
+          "text": "q",
+          "is_correct": false
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 10,
+        "type_name": "Legile lui De Morgan",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aplicând legile lui De Morgan, cu ce este echivalentă ¬((p ∨ q))?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negația schimbă ∧ în ∨ și ∨ în ∧ și neagă fiecare operand. Rezultatul este (¬(p) ∧ ¬(q)); echivalența este verificată pe toate evaluările.",
+      "options": [
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "q",
+          "is_correct": false
+        },
+        {
+          "text": "(¬(p) ∧ ¬(q))",
+          "is_correct": true
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 10,
+        "type_name": "Legile lui De Morgan",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aplicând legile lui De Morgan, cu ce este echivalentă ¬(((p ∨ q) ∨ r))?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negația schimbă ∧ în ∨ și ∨ în ∧ și neagă fiecare operand. Rezultatul este ((¬(p) ∧ ¬(q)) ∧ ¬(r)); echivalența este verificată pe toate evaluările.",
+      "options": [
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "q",
+          "is_correct": false
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        },
+        {
+          "text": "((¬(p) ∧ ¬(q)) ∧ ¬(r))",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 10,
+        "type_name": "Legile lui De Morgan",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aplicând legile lui De Morgan, cu ce este echivalentă ¬(((p ∧ q) ∧ r))?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negația schimbă ∧ în ∨ și ∨ în ∧ și neagă fiecare operand. Rezultatul este ((¬(p) ∨ ¬(q)) ∨ ¬(r)); echivalența este verificată pe toate evaluările.",
+      "options": [
+        {
+          "text": "((¬(p) ∨ ¬(q)) ∨ ¬(r))",
+          "is_correct": true
+        },
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "q",
+          "is_correct": false
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 10,
+        "type_name": "Legile lui De Morgan",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aplicând legile lui De Morgan, cu ce este echivalentă ¬((p ∧ (q ∨ r)))?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negația schimbă ∧ în ∨ și ∨ în ∧ și neagă fiecare operand. Rezultatul este (¬(p) ∨ (¬(q) ∧ ¬(r))); echivalența este verificată pe toate evaluările.",
+      "options": [
+        {
+          "text": "p",
+          "is_correct": false
+        },
+        {
+          "text": "(¬(p) ∨ (¬(q) ∧ ¬(r)))",
+          "is_correct": true
+        },
+        {
+          "text": "q",
+          "is_correct": false
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 10,
+        "type_name": "Legile lui De Morgan",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dreptele d₁: y = 2x + (1) și d₂: y = 2x + (3). Fie p: «dreptele sunt paralele distincte» și q: «se intersectează într-un singur punct cu abscisa 0». Evaluați p ∨ q și p ⇒ q. Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pantele sunt 2 și 2; termenii liberi sunt 1 și 3. La x = 0, ordonatele sunt 1 și 3. Rezultă p = Adevărat, q = Fals, apoi aplicăm tabelele pentru ∨ și ⇒.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 11,
+        "type_name": "Logică și geometrie analitică",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dreptele d₁: y = 1x + (0) și d₂: y = -1x + (2). Fie p: «dreptele sunt paralele distincte» și q: «se intersectează într-un singur punct cu abscisa 1». Evaluați p ∨ q și p ⇒ q. Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pantele sunt 1 și -1; termenii liberi sunt 0 și 2. La x = 1, ordonatele sunt 1 și 1. Rezultă p = Fals, q = Adevărat, apoi aplicăm tabelele pentru ∨ și ⇒.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 11,
+        "type_name": "Logică și geometrie analitică",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dreptele d₁: y = 3x + (-2) și d₂: y = 1x + (0). Fie p: «dreptele sunt paralele distincte» și q: «se intersectează într-un singur punct cu abscisa 0». Evaluați p ∨ q și p ⇒ q. Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pantele sunt 3 și 1; termenii liberi sunt -2 și 0. La x = 0, ordonatele sunt -2 și 0. Rezultă p = Fals, q = Fals, apoi aplicăm tabelele pentru ∨ și ⇒.",
+      "options": [
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 11,
+        "type_name": "Logică și geometrie analitică",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dreptele d₁: y = -2x + (4) și d₂: y = -2x + (1). Fie p: «dreptele sunt paralele distincte» și q: «se intersectează într-un singur punct cu abscisa 2». Evaluați p ∨ q și p ⇒ q. Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pantele sunt -2 și -2; termenii liberi sunt 4 și 1. La x = 2, ordonatele sunt 0 și -3. Rezultă p = Adevărat, q = Fals, apoi aplicăm tabelele pentru ∨ și ⇒.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 11,
+        "type_name": "Logică și geometrie analitică",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dreptele d₁: y = 0x + (1) și d₂: y = 2x + (-1). Fie p: «dreptele sunt paralele distincte» și q: «se intersectează într-un singur punct cu abscisa 1». Evaluați p ∨ q și p ⇒ q. Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pantele sunt 0 și 2; termenii liberi sunt 1 și -1. La x = 1, ordonatele sunt 1 și 1. Rezultă p = Fals, q = Adevărat, apoi aplicăm tabelele pentru ∨ și ⇒.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 11,
+        "type_name": "Logică și geometrie analitică",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℝ, fie P: ∀x ∃y, 1x + 2y = 3, și Q: ∃x ∀y, 1x + 2y = 3. Evaluați P și Q. Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În P, dacă coeficientul lui y este nenul, putem alege y în funcție de x; dacă este zero, egalitatea trebuie să fie identică în x. În Q, egalitatea pentru orice y impune coeficientul lui y zero, apoi trebuie să existe x. Rezultă P = Adevărat și Q = Fals.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 12,
+        "type_name": "Cuantificatori în formule compuse",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℝ, fie P: ∀x ∃y, 2x + 0y = 4, și Q: ∃x ∀y, 2x + 0y = 4. Evaluați P și Q. Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În P, dacă coeficientul lui y este nenul, putem alege y în funcție de x; dacă este zero, egalitatea trebuie să fie identică în x. În Q, egalitatea pentru orice y impune coeficientul lui y zero, apoi trebuie să existe x. Rezultă P = Fals și Q = Adevărat.",
+      "options": [
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 12,
+        "type_name": "Cuantificatori în formule compuse",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℝ, fie P: ∀x ∃y, 0x + 3y = 6, și Q: ∃x ∀y, 0x + 3y = 6. Evaluați P și Q. Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În P, dacă coeficientul lui y este nenul, putem alege y în funcție de x; dacă este zero, egalitatea trebuie să fie identică în x. În Q, egalitatea pentru orice y impune coeficientul lui y zero, apoi trebuie să existe x. Rezultă P = Adevărat și Q = Fals.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 12,
+        "type_name": "Cuantificatori în formule compuse",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℝ, fie P: ∀x ∃y, 0x + 0y = 0, și Q: ∃x ∀y, 0x + 0y = 0. Evaluați P și Q. Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În P, dacă coeficientul lui y este nenul, putem alege y în funcție de x; dacă este zero, egalitatea trebuie să fie identică în x. În Q, egalitatea pentru orice y impune coeficientul lui y zero, apoi trebuie să existe x. Rezultă P = Adevărat și Q = Adevărat.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 12,
+        "type_name": "Cuantificatori în formule compuse",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℝ, fie P: ∀x ∃y, 0x + 0y = 1, și Q: ∃x ∀y, 0x + 0y = 1. Evaluați P și Q. Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În P, dacă coeficientul lui y este nenul, putem alege y în funcție de x; dacă este zero, egalitatea trebuie să fie identică în x. În Q, egalitatea pentru orice y impune coeficientul lui y zero, apoi trebuie să existe x. Rezultă P = Fals și Q = Fals.",
+      "options": [
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.1",
+        "type": 12,
+        "type_name": "Cuantificatori în formule compuse",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U = {0; 1; 2; 3; 4; 5; 6}, mulțimile de adevăr ale lui p și q sunt A = {0; 2; 4}, B = {2; 3; 5}. Care este mulțimea de adevăr a lui ¬p(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula corespunde operației complementul U ∖ A; rezultă {1; 3; 5; 6}.",
+      "options": [
+        {
+          "text": "{1; 3; 5; 6}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{0; 1; 2; 3; 4; 5; 6}",
+          "is_correct": false
+        },
+        {
+          "text": "{0; 2; 4}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 1,
+        "type_name": "Negația ca mulțime complementară",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U = {0; 1; 2; 3; 4; 5; 6}, mulțimile de adevăr ale lui p și q sunt A = {0; 2; 4}, B = {2; 3; 5}. Care este mulțimea de adevăr a lui p(x) ∨ q(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula corespunde operației reuniunea A ∪ B; rezultă {0; 2; 3; 4; 5}.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{0; 2; 3; 4; 5}",
+          "is_correct": true
+        },
+        {
+          "text": "{0; 1; 2; 3; 4; 5; 6}",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 6}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 2,
+        "type_name": "Disjuncția ca reuniune",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U = {0; 1; 2; 3; 4; 5; 6}, mulțimile de adevăr ale lui p și q sunt A = {0; 2; 4}, B = {2; 3; 5}. Care este mulțimea de adevăr a lui p(x) ∧ q(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula corespunde operației intersecția A ∩ B; rezultă {2}.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{0; 1; 2; 3; 4; 5; 6}",
+          "is_correct": false
+        },
+        {
+          "text": "{2}",
+          "is_correct": true
+        },
+        {
+          "text": "{0; 1; 3; 4; 5; 6}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 3,
+        "type_name": "Conjuncția ca intersecție",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În U = {0; 1; 2; 3; 4; 5; 6}, p are mulțimea de adevăr {0; 2}, iar q are mulțimea de adevăr {0; 2; 4}. Evaluați ∀x∈U (p(x)⇒q(x)) și ∀x∈U (q(x)⇒p(x)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima mulțime este inclusă în a doua. Reciproca este falsă pentru x = 4, care verifică q, dar nu p.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 4,
+        "type_name": "Implicația și incluziunea",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U = {1; 2; 3; 4; 5; 6; 7}, mulțimile de adevăr ale lui p și q sunt A = {1; 3; 5}, B = {3; 4; 6}. Care este mulțimea de adevăr a lui ¬p(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula corespunde operației complementul U ∖ A; rezultă {2; 4; 6; 7}.",
+      "options": [
+        {
+          "text": "{2; 4; 6; 7}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 2; 3; 4; 5; 6; 7}",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 3; 5}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 1,
+        "type_name": "Negația ca mulțime complementară",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U = {1; 2; 3; 4; 5; 6; 7}, mulțimile de adevăr ale lui p și q sunt A = {1; 3; 5}, B = {3; 4; 6}. Care este mulțimea de adevăr a lui p(x) ∨ q(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula corespunde operației reuniunea A ∪ B; rezultă {1; 3; 4; 5; 6}.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 3; 4; 5; 6}",
+          "is_correct": true
+        },
+        {
+          "text": "{1; 2; 3; 4; 5; 6; 7}",
+          "is_correct": false
+        },
+        {
+          "text": "{2; 7}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 2,
+        "type_name": "Disjuncția ca reuniune",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U = {1; 2; 3; 4; 5; 6; 7}, mulțimile de adevăr ale lui p și q sunt A = {1; 3; 5}, B = {3; 4; 6}. Care este mulțimea de adevăr a lui p(x) ∧ q(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula corespunde operației intersecția A ∩ B; rezultă {3}.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 2; 3; 4; 5; 6; 7}",
+          "is_correct": false
+        },
+        {
+          "text": "{3}",
+          "is_correct": true
+        },
+        {
+          "text": "{1; 2; 4; 5; 6; 7}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 3,
+        "type_name": "Conjuncția ca intersecție",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În U = {1; 2; 3; 4; 5; 6; 7}, p are mulțimea de adevăr {1; 3}, iar q are mulțimea de adevăr {1; 3; 5}. Evaluați ∀x∈U (p(x)⇒q(x)) și ∀x∈U (q(x)⇒p(x)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima mulțime este inclusă în a doua. Reciproca este falsă pentru x = 5, care verifică q, dar nu p.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 4,
+        "type_name": "Implicația și incluziunea",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U = {2; 3; 4; 5; 6; 7; 8}, mulțimile de adevăr ale lui p și q sunt A = {2; 4; 6}, B = {4; 5; 7}. Care este mulțimea de adevăr a lui ¬p(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula corespunde operației complementul U ∖ A; rezultă {3; 5; 7; 8}.",
+      "options": [
+        {
+          "text": "{3; 5; 7; 8}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{2; 3; 4; 5; 6; 7; 8}",
+          "is_correct": false
+        },
+        {
+          "text": "{2; 4; 6}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 1,
+        "type_name": "Negația ca mulțime complementară",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U = {2; 3; 4; 5; 6; 7; 8}, mulțimile de adevăr ale lui p și q sunt A = {2; 4; 6}, B = {4; 5; 7}. Care este mulțimea de adevăr a lui p(x) ∨ q(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula corespunde operației reuniunea A ∪ B; rezultă {2; 4; 5; 6; 7}.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{2; 4; 5; 6; 7}",
+          "is_correct": true
+        },
+        {
+          "text": "{2; 3; 4; 5; 6; 7; 8}",
+          "is_correct": false
+        },
+        {
+          "text": "{3; 8}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 2,
+        "type_name": "Disjuncția ca reuniune",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U = {2; 3; 4; 5; 6; 7; 8}, mulțimile de adevăr ale lui p și q sunt A = {2; 4; 6}, B = {4; 5; 7}. Care este mulțimea de adevăr a lui p(x) ∧ q(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula corespunde operației intersecția A ∩ B; rezultă {4}.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{2; 3; 4; 5; 6; 7; 8}",
+          "is_correct": false
+        },
+        {
+          "text": "{4}",
+          "is_correct": true
+        },
+        {
+          "text": "{2; 3; 5; 6; 7; 8}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 3,
+        "type_name": "Conjuncția ca intersecție",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În U = {2; 3; 4; 5; 6; 7; 8}, p are mulțimea de adevăr {2; 4}, iar q are mulțimea de adevăr {2; 4; 6}. Evaluați ∀x∈U (p(x)⇒q(x)) și ∀x∈U (q(x)⇒p(x)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima mulțime este inclusă în a doua. Reciproca este falsă pentru x = 6, care verifică q, dar nu p.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 4,
+        "type_name": "Implicația și incluziunea",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U = {3; 4; 5; 6; 7; 8; 9}, mulțimile de adevăr ale lui p și q sunt A = {3; 5; 7}, B = {5; 6; 8}. Care este mulțimea de adevăr a lui ¬p(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula corespunde operației complementul U ∖ A; rezultă {4; 6; 8; 9}.",
+      "options": [
+        {
+          "text": "{4; 6; 8; 9}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{3; 4; 5; 6; 7; 8; 9}",
+          "is_correct": false
+        },
+        {
+          "text": "{3; 5; 7}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 1,
+        "type_name": "Negația ca mulțime complementară",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U = {3; 4; 5; 6; 7; 8; 9}, mulțimile de adevăr ale lui p și q sunt A = {3; 5; 7}, B = {5; 6; 8}. Care este mulțimea de adevăr a lui p(x) ∨ q(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula corespunde operației reuniunea A ∪ B; rezultă {3; 5; 6; 7; 8}.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{3; 5; 6; 7; 8}",
+          "is_correct": true
+        },
+        {
+          "text": "{3; 4; 5; 6; 7; 8; 9}",
+          "is_correct": false
+        },
+        {
+          "text": "{4; 9}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 2,
+        "type_name": "Disjuncția ca reuniune",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U = {3; 4; 5; 6; 7; 8; 9}, mulțimile de adevăr ale lui p și q sunt A = {3; 5; 7}, B = {5; 6; 8}. Care este mulțimea de adevăr a lui p(x) ∧ q(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula corespunde operației intersecția A ∩ B; rezultă {5}.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{3; 4; 5; 6; 7; 8; 9}",
+          "is_correct": false
+        },
+        {
+          "text": "{5}",
+          "is_correct": true
+        },
+        {
+          "text": "{3; 4; 6; 7; 8; 9}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 3,
+        "type_name": "Conjuncția ca intersecție",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În U = {3; 4; 5; 6; 7; 8; 9}, p are mulțimea de adevăr {3; 5}, iar q are mulțimea de adevăr {3; 5; 7}. Evaluați ∀x∈U (p(x)⇒q(x)) și ∀x∈U (q(x)⇒p(x)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima mulțime este inclusă în a doua. Reciproca este falsă pentru x = 7, care verifică q, dar nu p.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 4,
+        "type_name": "Implicația și incluziunea",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U = {4; 5; 6; 7; 8; 9; 10}, mulțimile de adevăr ale lui p și q sunt A = {4; 6; 8}, B = {6; 7; 9}. Care este mulțimea de adevăr a lui ¬p(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula corespunde operației complementul U ∖ A; rezultă {5; 7; 9; 10}.",
+      "options": [
+        {
+          "text": "{5; 7; 9; 10}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{4; 5; 6; 7; 8; 9; 10}",
+          "is_correct": false
+        },
+        {
+          "text": "{4; 6; 8}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 1,
+        "type_name": "Negația ca mulțime complementară",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U = {4; 5; 6; 7; 8; 9; 10}, mulțimile de adevăr ale lui p și q sunt A = {4; 6; 8}, B = {6; 7; 9}. Care este mulțimea de adevăr a lui p(x) ∨ q(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula corespunde operației reuniunea A ∪ B; rezultă {4; 6; 7; 8; 9}.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{4; 6; 7; 8; 9}",
+          "is_correct": true
+        },
+        {
+          "text": "{4; 5; 6; 7; 8; 9; 10}",
+          "is_correct": false
+        },
+        {
+          "text": "{5; 10}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 2,
+        "type_name": "Disjuncția ca reuniune",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În universul U = {4; 5; 6; 7; 8; 9; 10}, mulțimile de adevăr ale lui p și q sunt A = {4; 6; 8}, B = {6; 7; 9}. Care este mulțimea de adevăr a lui p(x) ∧ q(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula corespunde operației intersecția A ∩ B; rezultă {6}.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{4; 5; 6; 7; 8; 9; 10}",
+          "is_correct": false
+        },
+        {
+          "text": "{6}",
+          "is_correct": true
+        },
+        {
+          "text": "{4; 5; 7; 8; 9; 10}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 3,
+        "type_name": "Conjuncția ca intersecție",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În U = {4; 5; 6; 7; 8; 9; 10}, p are mulțimea de adevăr {4; 6}, iar q are mulțimea de adevăr {4; 6; 8}. Evaluați ∀x∈U (p(x)⇒q(x)) și ∀x∈U (q(x)⇒p(x)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima mulțime este inclusă în a doua. Reciproca este falsă pentru x = 8, care verifică q, dar nu p.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 4,
+        "type_name": "Implicația și incluziunea",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℝ, p(x): x² = 1. Care predicat q(x) are exact aceeași mulțime de adevăr?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x² = 1 ⇔ (x − 1)(x + 1) = 0 ⇔ x = 1 sau x = -1. Egalitatea mulțimilor de adevăr exprimă echivalența predicatelor.",
+      "options": [
+        {
+          "text": "x = 1 sau x = -1",
+          "is_correct": true
+        },
+        {
+          "text": "x = 1",
+          "is_correct": false
+        },
+        {
+          "text": "x > 1",
+          "is_correct": false
+        },
+        {
+          "text": "x² = -1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 5,
+        "type_name": "Echivalență și egalitate de mulțimi",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℝ, p(x): x² = 4. Care predicat q(x) are exact aceeași mulțime de adevăr?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x² = 4 ⇔ (x − 2)(x + 2) = 0 ⇔ x = 2 sau x = -2. Egalitatea mulțimilor de adevăr exprimă echivalența predicatelor.",
+      "options": [
+        {
+          "text": "x = 2",
+          "is_correct": false
+        },
+        {
+          "text": "x = 2 sau x = -2",
+          "is_correct": true
+        },
+        {
+          "text": "x > 2",
+          "is_correct": false
+        },
+        {
+          "text": "x² = -4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 5,
+        "type_name": "Echivalență și egalitate de mulțimi",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℝ, p(x): x² = 9. Care predicat q(x) are exact aceeași mulțime de adevăr?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x² = 9 ⇔ (x − 3)(x + 3) = 0 ⇔ x = 3 sau x = -3. Egalitatea mulțimilor de adevăr exprimă echivalența predicatelor.",
+      "options": [
+        {
+          "text": "x = 3",
+          "is_correct": false
+        },
+        {
+          "text": "x > 3",
+          "is_correct": false
+        },
+        {
+          "text": "x = 3 sau x = -3",
+          "is_correct": true
+        },
+        {
+          "text": "x² = -9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 5,
+        "type_name": "Echivalență și egalitate de mulțimi",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℝ, p(x): x² = 16. Care predicat q(x) are exact aceeași mulțime de adevăr?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x² = 16 ⇔ (x − 4)(x + 4) = 0 ⇔ x = 4 sau x = -4. Egalitatea mulțimilor de adevăr exprimă echivalența predicatelor.",
+      "options": [
+        {
+          "text": "x = 4",
+          "is_correct": false
+        },
+        {
+          "text": "x > 4",
+          "is_correct": false
+        },
+        {
+          "text": "x² = -16",
+          "is_correct": false
+        },
+        {
+          "text": "x = 4 sau x = -4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 5,
+        "type_name": "Echivalență și egalitate de mulțimi",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℝ, p(x): x² = 25. Care predicat q(x) are exact aceeași mulțime de adevăr?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x² = 25 ⇔ (x − 5)(x + 5) = 0 ⇔ x = 5 sau x = -5. Egalitatea mulțimilor de adevăr exprimă echivalența predicatelor.",
+      "options": [
+        {
+          "text": "x = 5 sau x = -5",
+          "is_correct": true
+        },
+        {
+          "text": "x = 5",
+          "is_correct": false
+        },
+        {
+          "text": "x > 5",
+          "is_correct": false
+        },
+        {
+          "text": "x² = -25",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 5,
+        "type_name": "Echivalență și egalitate de mulțimi",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe E = {0; 1; 2}, fie p(x,y): x + y = 2, q(x,y): x < y. Care este mulțimea de adevăr a lui p ∧ q în E×E?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Enumerăm perechile cu sumă 2 și păstrăm numai perechile cu prima componentă mai mică: {(0; 2)}.",
+      "options": [
+        {
+          "text": "{(2; 0)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(0; 2)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(0; 2); (1; 1); (2; 0)}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 6,
+        "type_name": "Operații pe predicate binare finite",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe E = {0; 1; 2; 3}, fie p(x,y): x + y = 3, q(x,y): x < y. Care este mulțimea de adevăr a lui p ∧ q în E×E?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Enumerăm perechile cu sumă 3 și păstrăm numai perechile cu prima componentă mai mică: {(0; 3); (1; 2)}.",
+      "options": [
+        {
+          "text": "{(2; 1); (3; 0)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(0; 3); (1; 2); (2; 1); (3; 0)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(0; 3); (1; 2)}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 6,
+        "type_name": "Operații pe predicate binare finite",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe E = {0; 1; 2; 3; 4}, fie p(x,y): x + y = 4, q(x,y): x < y. Care este mulțimea de adevăr a lui p ∧ q în E×E?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Enumerăm perechile cu sumă 4 și păstrăm numai perechile cu prima componentă mai mică: {(0; 4); (1; 3)}.",
+      "options": [
+        {
+          "text": "{(3; 1); (4; 0)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(0; 4); (1; 3); (2; 2); (3; 1); (4; 0)}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{(0; 4); (1; 3)}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 6,
+        "type_name": "Operații pe predicate binare finite",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe E = {0; 1; 2; 3; 4; 5}, fie p(x,y): x + y = 5, q(x,y): x < y. Care este mulțimea de adevăr a lui p ∧ q în E×E?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Enumerăm perechile cu sumă 5 și păstrăm numai perechile cu prima componentă mai mică: {(0; 5); (1; 4); (2; 3)}.",
+      "options": [
+        {
+          "text": "{(0; 5); (1; 4); (2; 3)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(3; 2); (4; 1); (5; 0)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(0; 5); (1; 4); (2; 3); (3; 2); (4; 1); (5; 0)}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 6,
+        "type_name": "Operații pe predicate binare finite",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe E = {0; 1; 2; 3; 4; 5; 6}, fie p(x,y): x + y = 6, q(x,y): x < y. Care este mulțimea de adevăr a lui p ∧ q în E×E?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Enumerăm perechile cu sumă 6 și păstrăm numai perechile cu prima componentă mai mică: {(0; 6); (1; 5); (2; 4)}.",
+      "options": [
+        {
+          "text": "{(4; 2); (5; 1); (6; 0)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(0; 6); (1; 5); (2; 4)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(0; 6); (1; 5); (2; 4); (3; 3); (4; 2); (5; 1); (6; 0)}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 6,
+        "type_name": "Operații pe predicate binare finite",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, fie p(n): 4 divide n, q(n): 2 divide n. Evaluați ∀n (p(n)⇒q(n)) și ∀n (q(n)⇒p(n)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă n = 4k, atunci n = 2·(2k). Reciproca este infirmată de n = 2, divizibil cu 2, dar nu cu 4.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 7,
+        "type_name": "Consecință aritmetică într-un singur sens",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, fie p(n): 9 divide n, q(n): 3 divide n. Evaluați ∀n (p(n)⇒q(n)) și ∀n (q(n)⇒p(n)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă n = 9k, atunci n = 3·(3k). Reciproca este infirmată de n = 3, divizibil cu 3, dar nu cu 9.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 7,
+        "type_name": "Consecință aritmetică într-un singur sens",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, fie p(n): 16 divide n, q(n): 4 divide n. Evaluați ∀n (p(n)⇒q(n)) și ∀n (q(n)⇒p(n)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă n = 16k, atunci n = 4·(4k). Reciproca este infirmată de n = 4, divizibil cu 4, dar nu cu 16.",
+      "options": [
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 7,
+        "type_name": "Consecință aritmetică într-un singur sens",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, fie p(n): 25 divide n, q(n): 5 divide n. Evaluați ∀n (p(n)⇒q(n)) și ∀n (q(n)⇒p(n)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă n = 25k, atunci n = 5·(5k). Reciproca este infirmată de n = 5, divizibil cu 5, dar nu cu 25.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 7,
+        "type_name": "Consecință aritmetică într-un singur sens",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, fie p(n): 36 divide n, q(n): 6 divide n. Evaluați ∀n (p(n)⇒q(n)) și ∀n (q(n)⇒p(n)). Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă n = 36k, atunci n = 6·(6k). Reciproca este infirmată de n = 6, divizibil cu 6, dar nu cu 36.",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 7,
+        "type_name": "Consecință aritmetică într-un singur sens",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℤ, A este mulțimea multiplilor lui 2, B a multiplilor lui 3; p(x): x∈A, q(x): x∈B. Ce condiție descrie apartenența la A ∪ B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Apartenența la ∪ se traduce prin «sau» inclusiv. Condiția este p(x) ∨ q(x). Valorile divizibile cu unul singur dintre 2, 3 disting operațiile.",
+      "options": [
+        {
+          "text": "p(x) ∧ q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "¬p(x) ∧ ¬q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "p(x) ∧ ¬q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "p(x) ∨ q(x)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 8,
+        "type_name": "Traducerea reuniunii în predicate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℤ, A este mulțimea multiplilor lui 2, B a multiplilor lui 3; p(x): x∈A, q(x): x∈B. Ce condiție descrie apartenența la A ∩ B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Apartenența la ∩ se traduce prin «și». Condiția este p(x) ∧ q(x). Valorile divizibile cu unul singur dintre 2, 3 disting operațiile.",
+      "options": [
+        {
+          "text": "p(x) ∧ q(x)",
+          "is_correct": true
+        },
+        {
+          "text": "p(x) ∨ q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "¬p(x) ∧ ¬q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "p(x) ∧ ¬q(x)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 9,
+        "type_name": "Traducerea intersecției în predicate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℤ, A este mulțimea multiplilor lui 3, B a multiplilor lui 5; p(x): x∈A, q(x): x∈B. Ce condiție descrie apartenența la A ∪ B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Apartenența la ∪ se traduce prin «sau» inclusiv. Condiția este p(x) ∨ q(x). Valorile divizibile cu unul singur dintre 3, 5 disting operațiile.",
+      "options": [
+        {
+          "text": "p(x) ∧ q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "p(x) ∨ q(x)",
+          "is_correct": true
+        },
+        {
+          "text": "¬p(x) ∧ ¬q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "p(x) ∧ ¬q(x)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 8,
+        "type_name": "Traducerea reuniunii în predicate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℤ, A este mulțimea multiplilor lui 3, B a multiplilor lui 5; p(x): x∈A, q(x): x∈B. Ce condiție descrie apartenența la A ∩ B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Apartenența la ∩ se traduce prin «și». Condiția este p(x) ∧ q(x). Valorile divizibile cu unul singur dintre 3, 5 disting operațiile.",
+      "options": [
+        {
+          "text": "p(x) ∨ q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "¬p(x) ∧ ¬q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "p(x) ∧ q(x)",
+          "is_correct": true
+        },
+        {
+          "text": "p(x) ∧ ¬q(x)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 9,
+        "type_name": "Traducerea intersecției în predicate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℤ, A este mulțimea multiplilor lui 4, B a multiplilor lui 7; p(x): x∈A, q(x): x∈B. Ce condiție descrie apartenența la A ∪ B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Apartenența la ∪ se traduce prin «sau» inclusiv. Condiția este p(x) ∨ q(x). Valorile divizibile cu unul singur dintre 4, 7 disting operațiile.",
+      "options": [
+        {
+          "text": "p(x) ∧ q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "¬p(x) ∧ ¬q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "p(x) ∧ ¬q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "p(x) ∨ q(x)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 8,
+        "type_name": "Traducerea reuniunii în predicate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℤ, A este mulțimea multiplilor lui 4, B a multiplilor lui 7; p(x): x∈A, q(x): x∈B. Ce condiție descrie apartenența la A ∩ B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Apartenența la ∩ se traduce prin «și». Condiția este p(x) ∧ q(x). Valorile divizibile cu unul singur dintre 4, 7 disting operațiile.",
+      "options": [
+        {
+          "text": "p(x) ∧ q(x)",
+          "is_correct": true
+        },
+        {
+          "text": "p(x) ∨ q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "¬p(x) ∧ ¬q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "p(x) ∧ ¬q(x)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 9,
+        "type_name": "Traducerea intersecției în predicate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℤ, A este mulțimea multiplilor lui 5, B a multiplilor lui 6; p(x): x∈A, q(x): x∈B. Ce condiție descrie apartenența la A ∪ B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Apartenența la ∪ se traduce prin «sau» inclusiv. Condiția este p(x) ∨ q(x). Valorile divizibile cu unul singur dintre 5, 6 disting operațiile.",
+      "options": [
+        {
+          "text": "p(x) ∧ q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "p(x) ∨ q(x)",
+          "is_correct": true
+        },
+        {
+          "text": "¬p(x) ∧ ¬q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "p(x) ∧ ¬q(x)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 8,
+        "type_name": "Traducerea reuniunii în predicate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℤ, A este mulțimea multiplilor lui 5, B a multiplilor lui 6; p(x): x∈A, q(x): x∈B. Ce condiție descrie apartenența la A ∩ B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Apartenența la ∩ se traduce prin «și». Condiția este p(x) ∧ q(x). Valorile divizibile cu unul singur dintre 5, 6 disting operațiile.",
+      "options": [
+        {
+          "text": "p(x) ∨ q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "¬p(x) ∧ ¬q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "p(x) ∧ q(x)",
+          "is_correct": true
+        },
+        {
+          "text": "p(x) ∧ ¬q(x)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 9,
+        "type_name": "Traducerea intersecției în predicate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℤ, A este mulțimea multiplilor lui 6, B a multiplilor lui 7; p(x): x∈A, q(x): x∈B. Ce condiție descrie apartenența la A ∪ B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Apartenența la ∪ se traduce prin «sau» inclusiv. Condiția este p(x) ∨ q(x). Valorile divizibile cu unul singur dintre 6, 7 disting operațiile.",
+      "options": [
+        {
+          "text": "p(x) ∧ q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "¬p(x) ∧ ¬q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "p(x) ∧ ¬q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "p(x) ∨ q(x)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 8,
+        "type_name": "Traducerea reuniunii în predicate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În ℤ, A este mulțimea multiplilor lui 6, B a multiplilor lui 7; p(x): x∈A, q(x): x∈B. Ce condiție descrie apartenența la A ∩ B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Apartenența la ∩ se traduce prin «și». Condiția este p(x) ∧ q(x). Valorile divizibile cu unul singur dintre 6, 7 disting operațiile.",
+      "options": [
+        {
+          "text": "p(x) ∧ q(x)",
+          "is_correct": true
+        },
+        {
+          "text": "p(x) ∨ q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "¬p(x) ∧ ¬q(x)",
+          "is_correct": false
+        },
+        {
+          "text": "p(x) ∧ ¬q(x)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 9,
+        "type_name": "Traducerea intersecției în predicate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În U = {0; 1; 2; 3; 4; 5; 6; 7}, p are mulțimea de adevăr A = {0; 1; 3}, iar q are B = {1; 2; 3; 5}. Ce mulțime de adevăr are q(x) ∧ ¬p(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "q ∧ ¬p înseamnă apartenență la B și neapartenență la A, deci B ∖ A = {2; 5}.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{2; 5}",
+          "is_correct": true
+        },
+        {
+          "text": "{0; 1; 2; 3; 4; 5; 6; 7}",
+          "is_correct": false
+        },
+        {
+          "text": "{0; 1; 3; 4; 6; 7}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 10,
+        "type_name": "Complementul relativ și predicatele",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În U = {1; 2; 3; 4; 5; 6; 7; 8}, p are mulțimea de adevăr A = {1; 2; 4}, iar q are B = {2; 3; 4; 6}. Ce mulțime de adevăr are q(x) ∧ ¬p(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "q ∧ ¬p înseamnă apartenență la B și neapartenență la A, deci B ∖ A = {3; 6}.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 2; 3; 4; 5; 6; 7; 8}",
+          "is_correct": false
+        },
+        {
+          "text": "{3; 6}",
+          "is_correct": true
+        },
+        {
+          "text": "{1; 2; 4; 5; 7; 8}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 10,
+        "type_name": "Complementul relativ și predicatele",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În U = {2; 3; 4; 5; 6; 7; 8; 9}, p are mulțimea de adevăr A = {2; 3; 5}, iar q are B = {3; 4; 5; 7}. Ce mulțime de adevăr are q(x) ∧ ¬p(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "q ∧ ¬p înseamnă apartenență la B și neapartenență la A, deci B ∖ A = {4; 7}.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{2; 3; 4; 5; 6; 7; 8; 9}",
+          "is_correct": false
+        },
+        {
+          "text": "{2; 3; 5; 6; 8; 9}",
+          "is_correct": false
+        },
+        {
+          "text": "{4; 7}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 10,
+        "type_name": "Complementul relativ și predicatele",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În U = {3; 4; 5; 6; 7; 8; 9; 10}, p are mulțimea de adevăr A = {3; 4; 6}, iar q are B = {4; 5; 6; 8}. Ce mulțime de adevăr are q(x) ∧ ¬p(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "q ∧ ¬p înseamnă apartenență la B și neapartenență la A, deci B ∖ A = {5; 8}.",
+      "options": [
+        {
+          "text": "{5; 8}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{3; 4; 5; 6; 7; 8; 9; 10}",
+          "is_correct": false
+        },
+        {
+          "text": "{3; 4; 6; 7; 9; 10}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 10,
+        "type_name": "Complementul relativ și predicatele",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În U = {4; 5; 6; 7; 8; 9; 10; 11}, p are mulțimea de adevăr A = {4; 5; 7}, iar q are B = {5; 6; 7; 9}. Ce mulțime de adevăr are q(x) ∧ ¬p(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "q ∧ ¬p înseamnă apartenență la B și neapartenență la A, deci B ∖ A = {6; 9}.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{6; 9}",
+          "is_correct": true
+        },
+        {
+          "text": "{4; 5; 6; 7; 8; 9; 10; 11}",
+          "is_correct": false
+        },
+        {
+          "text": "{4; 5; 7; 8; 10; 11}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 10,
+        "type_name": "Complementul relativ și predicatele",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie E = {-3; -2; -1; 0; 1; 2; 3} și p(x): «x² ≤ 9 și x este par». Care este cardinalul mulțimii de adevăr a lui p pe E?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Elementele care verifică ambele condiții sunt {-2; 0; 2}; sunt 3 elemente.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 11,
+        "type_name": "Cardinalul unei mulțimi de adevăr",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie E = {-4; -3; -2; -1; 0; 1; 2; 3; 4} și p(x): «x² ≤ 16 și x este par». Care este cardinalul mulțimii de adevăr a lui p pe E?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Elementele care verifică ambele condiții sunt {-4; -2; 0; 2; 4}; sunt 5 elemente.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 11,
+        "type_name": "Cardinalul unei mulțimi de adevăr",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie E = {-5; -4; -3; -2; -1; 0; 1; 2; 3; 4; 5} și p(x): «x² ≤ 25 și x este par». Care este cardinalul mulțimii de adevăr a lui p pe E?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Elementele care verifică ambele condiții sunt {-4; -2; 0; 2; 4}; sunt 5 elemente.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 11,
+        "type_name": "Cardinalul unei mulțimi de adevăr",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie E = {-6; -5; -4; -3; -2; -1; 0; 1; 2; 3; 4; 5; 6} și p(x): «x² ≤ 36 și x este par». Care este cardinalul mulțimii de adevăr a lui p pe E?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Elementele care verifică ambele condiții sunt {-6; -4; -2; 0; 2; 4; 6}; sunt 7 elemente.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 11,
+        "type_name": "Cardinalul unei mulțimi de adevăr",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie E = {-7; -6; -5; -4; -3; -2; -1; 0; 1; 2; 3; 4; 5; 6; 7} și p(x): «x² ≤ 49 și x este par». Care este cardinalul mulțimii de adevăr a lui p pe E?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Elementele care verifică ambele condiții sunt {-6; -4; -2; 0; 2; 4; 6}; sunt 7 elemente.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 11,
+        "type_name": "Cardinalul unei mulțimi de adevăr",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie t ∈ ℝ, t ≥ 0, A = [0; t] și B = [-1; 3]. Pentru care t este adevărată implicația ∀x∈ℝ (x∈A ⇒ x∈B)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Implicația este adevărată exact când A ⊆ B. Capătul stâng 0 aparține deja lui B; capătul drept trebuie să satisfacă t ≤ 3. Împreună cu t ≥ 0, rezultă intervalul închis indicat.",
+      "options": [
+        {
+          "text": "t ∈ (0; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "t ∈ [0; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "t ∈ [3; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "t ∈ [0; 3]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 12,
+        "type_name": "Incluziuni cu parametri",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie t ∈ ℝ, t ≥ 1, A = [1; t] și B = [0; 5]. Pentru care t este adevărată implicația ∀x∈ℝ (x∈A ⇒ x∈B)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Implicația este adevărată exact când A ⊆ B. Capătul stâng 1 aparține deja lui B; capătul drept trebuie să satisfacă t ≤ 5. Împreună cu t ≥ 1, rezultă intervalul închis indicat.",
+      "options": [
+        {
+          "text": "t ∈ [1; 5]",
+          "is_correct": true
+        },
+        {
+          "text": "t ∈ (1; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "t ∈ [1; 6]",
+          "is_correct": false
+        },
+        {
+          "text": "t ∈ [5; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 12,
+        "type_name": "Incluziuni cu parametri",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie t ∈ ℝ, t ≥ -2, A = [-2; t] și B = [-3; 2]. Pentru care t este adevărată implicația ∀x∈ℝ (x∈A ⇒ x∈B)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Implicația este adevărată exact când A ⊆ B. Capătul stâng -2 aparține deja lui B; capătul drept trebuie să satisfacă t ≤ 2. Împreună cu t ≥ -2, rezultă intervalul închis indicat.",
+      "options": [
+        {
+          "text": "t ∈ (-2; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "t ∈ [-2; 2]",
+          "is_correct": true
+        },
+        {
+          "text": "t ∈ [-2; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "t ∈ [2; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 12,
+        "type_name": "Incluziuni cu parametri",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie t ∈ ℝ, t ≥ 2, A = [2; t] și B = [1; 7]. Pentru care t este adevărată implicația ∀x∈ℝ (x∈A ⇒ x∈B)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Implicația este adevărată exact când A ⊆ B. Capătul stâng 2 aparține deja lui B; capătul drept trebuie să satisfacă t ≤ 7. Împreună cu t ≥ 2, rezultă intervalul închis indicat.",
+      "options": [
+        {
+          "text": "t ∈ (2; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "t ∈ [2; 8]",
+          "is_correct": false
+        },
+        {
+          "text": "t ∈ [2; 7]",
+          "is_correct": true
+        },
+        {
+          "text": "t ∈ [7; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 12,
+        "type_name": "Incluziuni cu parametri",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie t ∈ ℝ, t ≥ -3, A = [-3; t] și B = [-4; 1]. Pentru care t este adevărată implicația ∀x∈ℝ (x∈A ⇒ x∈B)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Implicația este adevărată exact când A ⊆ B. Capătul stâng -3 aparține deja lui B; capătul drept trebuie să satisfacă t ≤ 1. Împreună cu t ≥ -3, rezultă intervalul închis indicat.",
+      "options": [
+        {
+          "text": "t ∈ (-3; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "t ∈ [-3; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "t ∈ [1; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "t ∈ [-3; 1]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 12,
+        "type_name": "Incluziuni cu parametri",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru mulțimi arbitrare A, B, C, care expresie este întotdeauna egală cu A ∪ (B ∖ A)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Elementele deja în A și cele din B care nu sunt în A alcătuiesc A ∪ B. Identitatea este verificată pentru toate cele opt cazuri de apartenență la A, B, C.",
+      "options": [
+        {
+          "text": "A ∪ B",
+          "is_correct": true
+        },
+        {
+          "text": "A",
+          "is_correct": false
+        },
+        {
+          "text": "B",
+          "is_correct": false
+        },
+        {
+          "text": "C",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 13,
+        "type_name": "Egalități de mulțimi prin logică",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru mulțimi arbitrare A, B, C, care expresie este întotdeauna egală cu A ∩ (B ∪ C)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm distributivitatea intersecției față de reuniune. Identitatea este verificată pentru toate cele opt cazuri de apartenență la A, B, C.",
+      "options": [
+        {
+          "text": "A",
+          "is_correct": false
+        },
+        {
+          "text": "(A ∩ B) ∪ (A ∩ C)",
+          "is_correct": true
+        },
+        {
+          "text": "B",
+          "is_correct": false
+        },
+        {
+          "text": "C",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 13,
+        "type_name": "Egalități de mulțimi prin logică",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru mulțimi arbitrare A, B, C, care expresie este întotdeauna egală cu A ∪ (B ∩ C)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm distributivitatea reuniunii față de intersecție. Identitatea este verificată pentru toate cele opt cazuri de apartenență la A, B, C.",
+      "options": [
+        {
+          "text": "A",
+          "is_correct": false
+        },
+        {
+          "text": "B",
+          "is_correct": false
+        },
+        {
+          "text": "(A ∪ B) ∩ (A ∪ C)",
+          "is_correct": true
+        },
+        {
+          "text": "C",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 13,
+        "type_name": "Egalități de mulțimi prin logică",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru mulțimi arbitrare A, B, C, care expresie este întotdeauna egală cu (A ∖ B) ∪ (A ∩ B)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Separăm elementele lui A după apartenența sau neapartenența la B. Identitatea este verificată pentru toate cele opt cazuri de apartenență la A, B, C.",
+      "options": [
+        {
+          "text": "B",
+          "is_correct": false
+        },
+        {
+          "text": "C",
+          "is_correct": false
+        },
+        {
+          "text": "A ∩ B",
+          "is_correct": false
+        },
+        {
+          "text": "A",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 13,
+        "type_name": "Egalități de mulțimi prin logică",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru mulțimi arbitrare A, B, C, care expresie este întotdeauna egală cu A ∩ (A ∪ B)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Legea absorbției păstrează exact elementele lui A. Identitatea este verificată pentru toate cele opt cazuri de apartenență la A, B, C.",
+      "options": [
+        {
+          "text": "A",
+          "is_correct": true
+        },
+        {
+          "text": "B",
+          "is_correct": false
+        },
+        {
+          "text": "C",
+          "is_correct": false
+        },
+        {
+          "text": "A ∩ B",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 13,
+        "type_name": "Egalități de mulțimi prin logică",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se cunosc A = {0; 1; 2}, A∪B = {0; 1; 2; 3; 4} și A∩B = {1}. Care este mulțimea B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "B = (A∩B) ∪ ((A∪B) ∖ A) = {1; 3; 4}. Datele fixează atât elementele din A, cât și pe cele din afara lui A.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 3; 4}",
+          "is_correct": true
+        },
+        {
+          "text": "{0; 1; 2; 3; 4}",
+          "is_correct": false
+        },
+        {
+          "text": "{0; 2}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 14,
+        "type_name": "Recuperarea unei mulțimi din operațiile ei",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se cunosc A = {1; 2; 3}, A∪B = {1; 2; 3; 4; 5} și A∩B = {2}. Care este mulțimea B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "B = (A∩B) ∪ ((A∪B) ∖ A) = {2; 4; 5}. Datele fixează atât elementele din A, cât și pe cele din afara lui A.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 2; 3; 4; 5}",
+          "is_correct": false
+        },
+        {
+          "text": "{2; 4; 5}",
+          "is_correct": true
+        },
+        {
+          "text": "{1; 3}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 14,
+        "type_name": "Recuperarea unei mulțimi din operațiile ei",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se cunosc A = {2; 3; 4}, A∪B = {2; 3; 4; 5; 6} și A∩B = {3}. Care este mulțimea B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "B = (A∩B) ∪ ((A∪B) ∖ A) = {3; 5; 6}. Datele fixează atât elementele din A, cât și pe cele din afara lui A.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{2; 3; 4; 5; 6}",
+          "is_correct": false
+        },
+        {
+          "text": "{2; 4}",
+          "is_correct": false
+        },
+        {
+          "text": "{3; 5; 6}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 14,
+        "type_name": "Recuperarea unei mulțimi din operațiile ei",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se cunosc A = {3; 4; 5}, A∪B = {3; 4; 5; 6; 7} și A∩B = {4}. Care este mulțimea B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "B = (A∩B) ∪ ((A∪B) ∖ A) = {4; 6; 7}. Datele fixează atât elementele din A, cât și pe cele din afara lui A.",
+      "options": [
+        {
+          "text": "{4; 6; 7}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{3; 4; 5; 6; 7}",
+          "is_correct": false
+        },
+        {
+          "text": "{3; 5}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 14,
+        "type_name": "Recuperarea unei mulțimi din operațiile ei",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Se cunosc A = {4; 5; 6}, A∪B = {4; 5; 6; 7; 8} și A∩B = {5}. Care este mulțimea B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "B = (A∩B) ∪ ((A∪B) ∖ A) = {5; 7; 8}. Datele fixează atât elementele din A, cât și pe cele din afara lui A.",
+      "options": [
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{5; 7; 8}",
+          "is_correct": true
+        },
+        {
+          "text": "{4; 5; 6; 7; 8}",
+          "is_correct": false
+        },
+        {
+          "text": "{4; 6}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 14,
+        "type_name": "Recuperarea unei mulțimi din operațiile ei",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru mulțimi arbitrare A, B, C, care expresie este întotdeauna egală cu (A ∖ B) ∖ C?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Excludem atât elementele din B, cât și pe cele din C. Identitatea este verificată pentru toate cele opt cazuri de apartenență la A, B, C.",
+      "options": [
+        {
+          "text": "A",
+          "is_correct": false
+        },
+        {
+          "text": "B",
+          "is_correct": false
+        },
+        {
+          "text": "A ∖ (B ∪ C)",
+          "is_correct": true
+        },
+        {
+          "text": "C",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 15,
+        "type_name": "Identități cu diferențe succesive",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru mulțimi arbitrare A, B, C, care expresie este întotdeauna egală cu A ∖ (B ∖ C)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negăm condiția «în B și nu în C», apoi aplicăm distributivitatea. Identitatea este verificată pentru toate cele opt cazuri de apartenență la A, B, C.",
+      "options": [
+        {
+          "text": "A",
+          "is_correct": false
+        },
+        {
+          "text": "B",
+          "is_correct": false
+        },
+        {
+          "text": "C",
+          "is_correct": false
+        },
+        {
+          "text": "(A ∖ B) ∪ (A ∩ C)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 15,
+        "type_name": "Identități cu diferențe succesive",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru mulțimi arbitrare A, B, C, care expresie este întotdeauna egală cu (A ∖ C) ∖ (B ∖ C)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "După excluderea lui C, eliminarea lui B∖C elimină exact elementele rămase din B. Identitatea este verificată pentru toate cele opt cazuri de apartenență la A, B, C.",
+      "options": [
+        {
+          "text": "A ∖ (B ∪ C)",
+          "is_correct": true
+        },
+        {
+          "text": "A",
+          "is_correct": false
+        },
+        {
+          "text": "B",
+          "is_correct": false
+        },
+        {
+          "text": "C",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 15,
+        "type_name": "Identități cu diferențe succesive",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru mulțimi arbitrare A, B, C, care expresie este întotdeauna egală cu (A ∪ B) ∖ C?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența față de C se distribuie peste reuniune. Identitatea este verificată pentru toate cele opt cazuri de apartenență la A, B, C.",
+      "options": [
+        {
+          "text": "A",
+          "is_correct": false
+        },
+        {
+          "text": "(A ∖ C) ∪ (B ∖ C)",
+          "is_correct": true
+        },
+        {
+          "text": "B",
+          "is_correct": false
+        },
+        {
+          "text": "C",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 15,
+        "type_name": "Identități cu diferențe succesive",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru mulțimi arbitrare A, B, C, care expresie este întotdeauna egală cu A ∖ (B ∩ C)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Legea lui De Morgan transformă neapartenența la B∩C în neapartenență la cel puțin una dintre mulțimi. Identitatea este verificată pentru toate cele opt cazuri de apartenență la A, B, C.",
+      "options": [
+        {
+          "text": "A",
+          "is_correct": false
+        },
+        {
+          "text": "B",
+          "is_correct": false
+        },
+        {
+          "text": "(A ∖ B) ∪ (A ∖ C)",
+          "is_correct": true
+        },
+        {
+          "text": "C",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.2",
+        "type": 15,
+        "type_name": "Identități cu diferențe succesive",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f: ℝ→ℝ o funcție arbitrară. Care este negarea propoziției ∀x∈ℝ, f(x) > 1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negarea lui «pentru orice» este «există», iar negarea inegalității stricte > este ≤. Funcția constantă egală cu pragul arată de ce nu putem înlocui ≤ cu <.",
+      "options": [
+        {
+          "text": "∀x∈ℝ, f(x) ≤ 1",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈ℝ, f(x) < 1",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈ℝ, f(x) > 1",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈ℝ, f(x) ≤ 1",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 1,
+        "type_name": "Negarea universalului",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f: ℝ→ℝ o funcție arbitrară. Care este negarea propoziției ∃x∈ℝ, f(x) = 1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negarea unei existențe afirmă că niciun argument nu verifică egalitatea: pentru orice x, f(x) este diferit de valoarea indicată.",
+      "options": [
+        {
+          "text": "∀x∈ℝ, f(x) ≠ 1",
+          "is_correct": true
+        },
+        {
+          "text": "∃x∈ℝ, f(x) ≠ 1",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈ℝ, f(x) = 1",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈ℝ, f(x) < 1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 2,
+        "type_name": "Negarea existențialului",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f: ℝ→ℝ o funcție arbitrară. Care este negarea propoziției ∀x∈ℝ, f(x) > 2?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negarea lui «pentru orice» este «există», iar negarea inegalității stricte > este ≤. Funcția constantă egală cu pragul arată de ce nu putem înlocui ≤ cu <.",
+      "options": [
+        {
+          "text": "∀x∈ℝ, f(x) ≤ 2",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈ℝ, f(x) ≤ 2",
+          "is_correct": true
+        },
+        {
+          "text": "∃x∈ℝ, f(x) < 2",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈ℝ, f(x) > 2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 1,
+        "type_name": "Negarea universalului",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f: ℝ→ℝ o funcție arbitrară. Care este negarea propoziției ∃x∈ℝ, f(x) = 2?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negarea unei existențe afirmă că niciun argument nu verifică egalitatea: pentru orice x, f(x) este diferit de valoarea indicată.",
+      "options": [
+        {
+          "text": "∃x∈ℝ, f(x) ≠ 2",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈ℝ, f(x) = 2",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈ℝ, f(x) ≠ 2",
+          "is_correct": true
+        },
+        {
+          "text": "∃x∈ℝ, f(x) < 2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 2,
+        "type_name": "Negarea existențialului",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f: ℝ→ℝ o funcție arbitrară. Care este negarea propoziției ∀x∈ℝ, f(x) > 3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negarea lui «pentru orice» este «există», iar negarea inegalității stricte > este ≤. Funcția constantă egală cu pragul arată de ce nu putem înlocui ≤ cu <.",
+      "options": [
+        {
+          "text": "∀x∈ℝ, f(x) ≤ 3",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈ℝ, f(x) < 3",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈ℝ, f(x) > 3",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈ℝ, f(x) ≤ 3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 1,
+        "type_name": "Negarea universalului",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f: ℝ→ℝ o funcție arbitrară. Care este negarea propoziției ∃x∈ℝ, f(x) = 3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negarea unei existențe afirmă că niciun argument nu verifică egalitatea: pentru orice x, f(x) este diferit de valoarea indicată.",
+      "options": [
+        {
+          "text": "∀x∈ℝ, f(x) ≠ 3",
+          "is_correct": true
+        },
+        {
+          "text": "∃x∈ℝ, f(x) ≠ 3",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈ℝ, f(x) = 3",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈ℝ, f(x) < 3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 2,
+        "type_name": "Negarea existențialului",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f: ℝ→ℝ o funcție arbitrară. Care este negarea propoziției ∀x∈ℝ, f(x) > 4?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negarea lui «pentru orice» este «există», iar negarea inegalității stricte > este ≤. Funcția constantă egală cu pragul arată de ce nu putem înlocui ≤ cu <.",
+      "options": [
+        {
+          "text": "∀x∈ℝ, f(x) ≤ 4",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈ℝ, f(x) ≤ 4",
+          "is_correct": true
+        },
+        {
+          "text": "∃x∈ℝ, f(x) < 4",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈ℝ, f(x) > 4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 1,
+        "type_name": "Negarea universalului",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f: ℝ→ℝ o funcție arbitrară. Care este negarea propoziției ∃x∈ℝ, f(x) = 4?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negarea unei existențe afirmă că niciun argument nu verifică egalitatea: pentru orice x, f(x) este diferit de valoarea indicată.",
+      "options": [
+        {
+          "text": "∃x∈ℝ, f(x) ≠ 4",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈ℝ, f(x) = 4",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈ℝ, f(x) ≠ 4",
+          "is_correct": true
+        },
+        {
+          "text": "∃x∈ℝ, f(x) < 4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 2,
+        "type_name": "Negarea existențialului",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f: ℝ→ℝ o funcție arbitrară. Care este negarea propoziției ∀x∈ℝ, f(x) > 5?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negarea lui «pentru orice» este «există», iar negarea inegalității stricte > este ≤. Funcția constantă egală cu pragul arată de ce nu putem înlocui ≤ cu <.",
+      "options": [
+        {
+          "text": "∀x∈ℝ, f(x) ≤ 5",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈ℝ, f(x) < 5",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈ℝ, f(x) > 5",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈ℝ, f(x) ≤ 5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 1,
+        "type_name": "Negarea universalului",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f: ℝ→ℝ o funcție arbitrară. Care este negarea propoziției ∃x∈ℝ, f(x) = 5?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Negarea unei existențe afirmă că niciun argument nu verifică egalitatea: pentru orice x, f(x) este diferit de valoarea indicată.",
+      "options": [
+        {
+          "text": "∀x∈ℝ, f(x) ≠ 5",
+          "is_correct": true
+        },
+        {
+          "text": "∃x∈ℝ, f(x) ≠ 5",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈ℝ, f(x) = 5",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈ℝ, f(x) < 5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 2,
+        "type_name": "Negarea existențialului",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este negarea afirmației «Ecuația f(x) = 0 are cel puțin 2 soluții întregi distincte»?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Afirmația inițială cere existența a 2 întregi distincți care sunt soluții. Negarea exclude un asemenea grup: numărul soluțiilor este mai mic decât 2, adică cel mult 1; poate fi și zero.",
+      "options": [
+        {
+          "text": "Ecuația are exact 1 soluții întregi distincte.",
+          "is_correct": false
+        },
+        {
+          "text": "Ecuația are cel mult 1 soluții întregi distincte.",
+          "is_correct": true
+        },
+        {
+          "text": "Ecuația are cel puțin 3 soluții întregi distincte.",
+          "is_correct": false
+        },
+        {
+          "text": "Ecuația are cel mult 0 soluții întregi distincte.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 3,
+        "type_name": "Formalizarea enunțurilor despre numărul soluțiilor",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este negarea afirmației «Ecuația f(x) = 0 are cel puțin 3 soluții întregi distincte»?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Afirmația inițială cere existența a 3 întregi distincți care sunt soluții. Negarea exclude un asemenea grup: numărul soluțiilor este mai mic decât 3, adică cel mult 2; poate fi și zero.",
+      "options": [
+        {
+          "text": "Ecuația are exact 2 soluții întregi distincte.",
+          "is_correct": false
+        },
+        {
+          "text": "Ecuația are cel puțin 4 soluții întregi distincte.",
+          "is_correct": false
+        },
+        {
+          "text": "Ecuația are cel mult 2 soluții întregi distincte.",
+          "is_correct": true
+        },
+        {
+          "text": "Ecuația are cel mult 1 soluții întregi distincte.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 3,
+        "type_name": "Formalizarea enunțurilor despre numărul soluțiilor",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este negarea afirmației «Ecuația f(x) = 0 are cel puțin 4 soluții întregi distincte»?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Afirmația inițială cere existența a 4 întregi distincți care sunt soluții. Negarea exclude un asemenea grup: numărul soluțiilor este mai mic decât 4, adică cel mult 3; poate fi și zero.",
+      "options": [
+        {
+          "text": "Ecuația are exact 3 soluții întregi distincte.",
+          "is_correct": false
+        },
+        {
+          "text": "Ecuația are cel puțin 5 soluții întregi distincte.",
+          "is_correct": false
+        },
+        {
+          "text": "Ecuația are cel mult 2 soluții întregi distincte.",
+          "is_correct": false
+        },
+        {
+          "text": "Ecuația are cel mult 3 soluții întregi distincte.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 3,
+        "type_name": "Formalizarea enunțurilor despre numărul soluțiilor",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este negarea afirmației «Ecuația f(x) = 0 are cel puțin 5 soluții întregi distincte»?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Afirmația inițială cere existența a 5 întregi distincți care sunt soluții. Negarea exclude un asemenea grup: numărul soluțiilor este mai mic decât 5, adică cel mult 4; poate fi și zero.",
+      "options": [
+        {
+          "text": "Ecuația are cel mult 4 soluții întregi distincte.",
+          "is_correct": true
+        },
+        {
+          "text": "Ecuația are exact 4 soluții întregi distincte.",
+          "is_correct": false
+        },
+        {
+          "text": "Ecuația are cel puțin 6 soluții întregi distincte.",
+          "is_correct": false
+        },
+        {
+          "text": "Ecuația are cel mult 3 soluții întregi distincte.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 3,
+        "type_name": "Formalizarea enunțurilor despre numărul soluțiilor",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este negarea afirmației «Ecuația f(x) = 0 are cel puțin 6 soluții întregi distincte»?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Afirmația inițială cere existența a 6 întregi distincți care sunt soluții. Negarea exclude un asemenea grup: numărul soluțiilor este mai mic decât 6, adică cel mult 5; poate fi și zero.",
+      "options": [
+        {
+          "text": "Ecuația are exact 5 soluții întregi distincte.",
+          "is_correct": false
+        },
+        {
+          "text": "Ecuația are cel mult 5 soluții întregi distincte.",
+          "is_correct": true
+        },
+        {
+          "text": "Ecuația are cel puțin 7 soluții întregi distincte.",
+          "is_correct": false
+        },
+        {
+          "text": "Ecuația are cel mult 4 soluții întregi distincte.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 3,
+        "type_name": "Formalizarea enunțurilor despre numărul soluțiilor",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru un predicat arbitrar P pe o mulțime nevidă E, care este negarea lui ∀x∈E ∃y∈E, P(x,y)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Păstrăm ordinea variabilelor, schimbăm fiecare ∀ în ∃ și fiecare ∃ în ∀, apoi negăm predicatul. Schimbarea ordinii cuantificatorilor nu este permisă în general.",
+      "options": [
+        {
+          "text": "∀x∈E ∃y∈E, ¬P(x,y)",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈E ∀y∈E, ¬P(x,y)",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈E ∀y∈E, ¬P(x,y)",
+          "is_correct": true
+        },
+        {
+          "text": "∃x∈E ∀y∈E, P(x,y)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 4,
+        "type_name": "Negarea cuantificatorilor alternați",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru un predicat arbitrar P pe o mulțime nevidă E, care este negarea lui ∃x∈E ∀y∈E, P(x,y)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Păstrăm ordinea variabilelor, schimbăm fiecare ∀ în ∃ și fiecare ∃ în ∀, apoi negăm predicatul. Schimbarea ordinii cuantificatorilor nu este permisă în general.",
+      "options": [
+        {
+          "text": "∃x∈E ∀y∈E, ¬P(x,y)",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈E ∀y∈E, ¬P(x,y)",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈E ∃y∈E, P(x,y)",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈E ∃y∈E, ¬P(x,y)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 4,
+        "type_name": "Negarea cuantificatorilor alternați",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru un predicat arbitrar P pe o mulțime nevidă E, care este negarea lui ∀x∈E ∀y∈E, P(x,y)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Păstrăm ordinea variabilelor, schimbăm fiecare ∀ în ∃ și fiecare ∃ în ∀, apoi negăm predicatul. Schimbarea ordinii cuantificatorilor nu este permisă în general.",
+      "options": [
+        {
+          "text": "∃x∈E ∃y∈E, ¬P(x,y)",
+          "is_correct": true
+        },
+        {
+          "text": "∀x∈E ∀y∈E, ¬P(x,y)",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈E ∀y∈E, ¬P(x,y)",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈E ∃y∈E, P(x,y)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 4,
+        "type_name": "Negarea cuantificatorilor alternați",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru un predicat arbitrar P pe o mulțime nevidă E, care este negarea lui ∃x∈E ∃y∈E, P(x,y)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Păstrăm ordinea variabilelor, schimbăm fiecare ∀ în ∃ și fiecare ∃ în ∀, apoi negăm predicatul. Schimbarea ordinii cuantificatorilor nu este permisă în general.",
+      "options": [
+        {
+          "text": "∃x∈E ∃y∈E, ¬P(x,y)",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈E ∀y∈E, ¬P(x,y)",
+          "is_correct": true
+        },
+        {
+          "text": "∀x∈E ∃y∈E, ¬P(x,y)",
+          "is_correct": false
+        },
+        {
+          "text": "∀x∈E ∀y∈E, P(x,y)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 4,
+        "type_name": "Negarea cuantificatorilor alternați",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru un predicat arbitrar P pe o mulțime nevidă E, care este negarea lui ∀x∈E ∃y∈E ∀z∈E, P(x,y,z)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Păstrăm ordinea variabilelor, schimbăm fiecare ∀ în ∃ și fiecare ∃ în ∀, apoi negăm predicatul. Schimbarea ordinii cuantificatorilor nu este permisă în general.",
+      "options": [
+        {
+          "text": "∀x∈E ∃y∈E ∀z∈E, ¬P(x,y,z)",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈E ∃y∈E ∃z∈E, ¬P(x,y,z)",
+          "is_correct": false
+        },
+        {
+          "text": "∃x∈E ∀y∈E ∃z∈E, ¬P(x,y,z)",
+          "is_correct": true
+        },
+        {
+          "text": "∃x∈E ∀y∈E ∃z∈E, P(x,y,z)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 4,
+        "type_name": "Negarea cuantificatorilor alternați",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie E = {0; 1; 2}. Evaluați P: ∀x∈E ∃y∈E, x+y=2, și Q: ∃y∈E ∀x∈E, x+y=2. Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru P, martorul necesar este y = 2 − x. El aparține lui E pentru fiecare x din E. Pentru Q, un singur y trebuie să funcționeze pentru toate valorile lui x; într-o mulțime cu cel puțin două valori distincte ale lui x, acest lucru este imposibil. ",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 5,
+        "type_name": "Valoarea de adevăr pe mulțimi finite",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie E = {0; 1; 2}. Evaluați P: ∀x∈E ∃y∈E, x+y=1, și Q: ∃y∈E ∀x∈E, x+y=1. Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru P, martorul necesar este y = 1 − x. Pentru x = 2, acest martor nu aparține lui E. Pentru Q, un singur y trebuie să funcționeze pentru toate valorile lui x; într-o mulțime cu cel puțin două valori distincte ale lui x, acest lucru este imposibil. ",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 5,
+        "type_name": "Valoarea de adevăr pe mulțimi finite",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie E = {-2; -1; 0; 1; 2}. Evaluați P: ∀x∈E ∃y∈E, x+y=0, și Q: ∃y∈E ∀x∈E, x+y=0. Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru P, martorul necesar este y = 0 − x. El aparține lui E pentru fiecare x din E. Pentru Q, un singur y trebuie să funcționeze pentru toate valorile lui x; într-o mulțime cu cel puțin două valori distincte ale lui x, acest lucru este imposibil. ",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 5,
+        "type_name": "Valoarea de adevăr pe mulțimi finite",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie E = {1; 2; 3}. Evaluați P: ∀x∈E ∃y∈E, x+y=0, și Q: ∃y∈E ∀x∈E, x+y=0. Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru P, martorul necesar este y = 0 − x. Pentru x = 1, acest martor nu aparține lui E. Pentru Q, un singur y trebuie să funcționeze pentru toate valorile lui x; într-o mulțime cu cel puțin două valori distincte ale lui x, acest lucru este imposibil. ",
+      "options": [
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Fals",
+          "is_correct": true
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 5,
+        "type_name": "Valoarea de adevăr pe mulțimi finite",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie E = {2}. Evaluați P: ∀x∈E ∃y∈E, x+y=4, și Q: ∃y∈E ∀x∈E, x+y=4. Alegeți valorile în ordinea indicată.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru P, martorul necesar este y = 4 − x. El aparține lui E pentru fiecare x din E. Mulțimea are un singur element; alegerea x = y = 2 verifică suma 4. ",
+      "options": [
+        {
+          "text": "Fals; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Fals; Adevărat",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Fals",
+          "is_correct": false
+        },
+        {
+          "text": "Adevărat; Adevărat",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 5,
+        "type_name": "Valoarea de adevăr pe mulțimi finite",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, care condiție este suficientă pentru ca n să fie divizibil cu 3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă n = 9k, atunci n = 3·(3k), deci 3 divide n. Celelalte valori propuse nu sunt divizibile cu 3.",
+      "options": [
+        {
+          "text": "n este divizibil cu 9.",
+          "is_correct": true
+        },
+        {
+          "text": "n = 4.",
+          "is_correct": false
+        },
+        {
+          "text": "n = 2.",
+          "is_correct": false
+        },
+        {
+          "text": "n = 1.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 6,
+        "type_name": "Condiție suficientă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, care condiție este necesară pentru ca n să fie divizibil cu 9?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Orice multiplu al lui 9 este multiplu al lui 3. Divizibilitatea cu 27 nu este necesară (n = 9); nici imparitatea (n = 18), nici pozitivitatea (n = 0).",
+      "options": [
+        {
+          "text": "n este divizibil cu 27.",
+          "is_correct": false
+        },
+        {
+          "text": "n este divizibil cu 3.",
+          "is_correct": true
+        },
+        {
+          "text": "n este impar.",
+          "is_correct": false
+        },
+        {
+          "text": "n > 0.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 7,
+        "type_name": "Condiție necesară",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, care condiție este suficientă pentru ca n să fie divizibil cu 4?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă n = 16k, atunci n = 4·(4k), deci 4 divide n. Celelalte valori propuse nu sunt divizibile cu 4.",
+      "options": [
+        {
+          "text": "n = 5.",
+          "is_correct": false
+        },
+        {
+          "text": "n = 3.",
+          "is_correct": false
+        },
+        {
+          "text": "n este divizibil cu 16.",
+          "is_correct": true
+        },
+        {
+          "text": "n = 1.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 6,
+        "type_name": "Condiție suficientă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, care condiție este necesară pentru ca n să fie divizibil cu 16?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Orice multiplu al lui 16 este multiplu al lui 4. Divizibilitatea cu 64 nu este necesară (n = 16); nici imparitatea (n = 32), nici pozitivitatea (n = 0).",
+      "options": [
+        {
+          "text": "n este divizibil cu 64.",
+          "is_correct": false
+        },
+        {
+          "text": "n este impar.",
+          "is_correct": false
+        },
+        {
+          "text": "n > 0.",
+          "is_correct": false
+        },
+        {
+          "text": "n este divizibil cu 4.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 7,
+        "type_name": "Condiție necesară",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, care condiție este suficientă pentru ca n să fie divizibil cu 5?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă n = 25k, atunci n = 5·(5k), deci 5 divide n. Celelalte valori propuse nu sunt divizibile cu 5.",
+      "options": [
+        {
+          "text": "n este divizibil cu 25.",
+          "is_correct": true
+        },
+        {
+          "text": "n = 6.",
+          "is_correct": false
+        },
+        {
+          "text": "n = 4.",
+          "is_correct": false
+        },
+        {
+          "text": "n = 1.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 6,
+        "type_name": "Condiție suficientă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, care condiție este necesară pentru ca n să fie divizibil cu 25?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Orice multiplu al lui 25 este multiplu al lui 5. Divizibilitatea cu 125 nu este necesară (n = 25); nici imparitatea (n = 50), nici pozitivitatea (n = 0).",
+      "options": [
+        {
+          "text": "n este divizibil cu 125.",
+          "is_correct": false
+        },
+        {
+          "text": "n este divizibil cu 5.",
+          "is_correct": true
+        },
+        {
+          "text": "n este impar.",
+          "is_correct": false
+        },
+        {
+          "text": "n > 0.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 7,
+        "type_name": "Condiție necesară",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, care condiție este suficientă pentru ca n să fie divizibil cu 6?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă n = 36k, atunci n = 6·(6k), deci 6 divide n. Celelalte valori propuse nu sunt divizibile cu 6.",
+      "options": [
+        {
+          "text": "n = 7.",
+          "is_correct": false
+        },
+        {
+          "text": "n = 5.",
+          "is_correct": false
+        },
+        {
+          "text": "n este divizibil cu 36.",
+          "is_correct": true
+        },
+        {
+          "text": "n = 1.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 6,
+        "type_name": "Condiție suficientă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, care condiție este necesară pentru ca n să fie divizibil cu 36?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Orice multiplu al lui 36 este multiplu al lui 6. Divizibilitatea cu 216 nu este necesară (n = 36); nici imparitatea (n = 72), nici pozitivitatea (n = 0).",
+      "options": [
+        {
+          "text": "n este divizibil cu 216.",
+          "is_correct": false
+        },
+        {
+          "text": "n este impar.",
+          "is_correct": false
+        },
+        {
+          "text": "n > 0.",
+          "is_correct": false
+        },
+        {
+          "text": "n este divizibil cu 6.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 7,
+        "type_name": "Condiție necesară",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, care condiție este suficientă pentru ca n să fie divizibil cu 7?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă n = 49k, atunci n = 7·(7k), deci 7 divide n. Celelalte valori propuse nu sunt divizibile cu 7.",
+      "options": [
+        {
+          "text": "n este divizibil cu 49.",
+          "is_correct": true
+        },
+        {
+          "text": "n = 8.",
+          "is_correct": false
+        },
+        {
+          "text": "n = 6.",
+          "is_correct": false
+        },
+        {
+          "text": "n = 1.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 6,
+        "type_name": "Condiție suficientă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, care condiție este necesară pentru ca n să fie divizibil cu 49?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Orice multiplu al lui 49 este multiplu al lui 7. Divizibilitatea cu 343 nu este necesară (n = 49); nici imparitatea (n = 98), nici pozitivitatea (n = 0).",
+      "options": [
+        {
+          "text": "n este divizibil cu 343.",
+          "is_correct": false
+        },
+        {
+          "text": "n este divizibil cu 7.",
+          "is_correct": true
+        },
+        {
+          "text": "n este impar.",
+          "is_correct": false
+        },
+        {
+          "text": "n > 0.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 7,
+        "type_name": "Condiție necesară",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x ∈ ℝ, care condiție este necesară și suficientă pentru |x − (0)| = 2?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "|x − (0)| = 2 ⇔ x − (0) = 2 sau x − (0) = -2. Rezultă exact x ∈ {-2; 2}; ambele implicații sunt valabile.",
+      "options": [
+        {
+          "text": "x = 2",
+          "is_correct": false
+        },
+        {
+          "text": "x ∈ (-2; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "x ∈ {-2; 2}",
+          "is_correct": true
+        },
+        {
+          "text": "x < -2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 8,
+        "type_name": "Condiție necesară și suficientă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x ∈ ℝ, care condiție este necesară și suficientă pentru |x − (1)| = 3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "|x − (1)| = 3 ⇔ x − (1) = 3 sau x − (1) = -3. Rezultă exact x ∈ {-2; 4}; ambele implicații sunt valabile.",
+      "options": [
+        {
+          "text": "x = 4",
+          "is_correct": false
+        },
+        {
+          "text": "x ∈ (-2; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "x < -2",
+          "is_correct": false
+        },
+        {
+          "text": "x ∈ {-2; 4}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 8,
+        "type_name": "Condiție necesară și suficientă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x ∈ ℝ, care condiție este necesară și suficientă pentru |x − (-2)| = 4?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "|x − (-2)| = 4 ⇔ x − (-2) = 4 sau x − (-2) = -4. Rezultă exact x ∈ {-6; 2}; ambele implicații sunt valabile.",
+      "options": [
+        {
+          "text": "x ∈ {-6; 2}",
+          "is_correct": true
+        },
+        {
+          "text": "x = 2",
+          "is_correct": false
+        },
+        {
+          "text": "x ∈ (-6; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "x < -6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 8,
+        "type_name": "Condiție necesară și suficientă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x ∈ ℝ, care condiție este necesară și suficientă pentru |x − (3)| = 1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "|x − (3)| = 1 ⇔ x − (3) = 1 sau x − (3) = -1. Rezultă exact x ∈ {2; 4}; ambele implicații sunt valabile.",
+      "options": [
+        {
+          "text": "x = 4",
+          "is_correct": false
+        },
+        {
+          "text": "x ∈ {2; 4}",
+          "is_correct": true
+        },
+        {
+          "text": "x ∈ (2; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "x < 2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 8,
+        "type_name": "Condiție necesară și suficientă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x ∈ ℝ, care condiție este necesară și suficientă pentru |x − (-1)| = 5?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "|x − (-1)| = 5 ⇔ x − (-1) = 5 sau x − (-1) = -5. Rezultă exact x ∈ {-6; 4}; ambele implicații sunt valabile.",
+      "options": [
+        {
+          "text": "x = 4",
+          "is_correct": false
+        },
+        {
+          "text": "x ∈ (-6; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "x ∈ {-6; 4}",
+          "is_correct": true
+        },
+        {
+          "text": "x < -6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 8,
+        "type_name": "Condiție necesară și suficientă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, ce relație are condiția «4 divide n» cu proprietatea «2 divide n»?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima condiție implică proprietatea, deci este suficientă. Nu este necesară: n = 2 verifică proprietatea, dar nu este divizibil cu 4.",
+      "options": [
+        {
+          "text": "Necesară, dar nu suficientă.",
+          "is_correct": false
+        },
+        {
+          "text": "Necesară și suficientă.",
+          "is_correct": false
+        },
+        {
+          "text": "Nici necesară, nici suficientă.",
+          "is_correct": false
+        },
+        {
+          "text": "Suficientă, dar nu necesară.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 9,
+        "type_name": "Suficiență fără necesitate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, ce relație are condiția «9 divide n» cu proprietatea «3 divide n»?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima condiție implică proprietatea, deci este suficientă. Nu este necesară: n = 3 verifică proprietatea, dar nu este divizibil cu 9.",
+      "options": [
+        {
+          "text": "Suficientă, dar nu necesară.",
+          "is_correct": true
+        },
+        {
+          "text": "Necesară, dar nu suficientă.",
+          "is_correct": false
+        },
+        {
+          "text": "Necesară și suficientă.",
+          "is_correct": false
+        },
+        {
+          "text": "Nici necesară, nici suficientă.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 9,
+        "type_name": "Suficiență fără necesitate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, ce relație are condiția «16 divide n» cu proprietatea «4 divide n»?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima condiție implică proprietatea, deci este suficientă. Nu este necesară: n = 4 verifică proprietatea, dar nu este divizibil cu 16.",
+      "options": [
+        {
+          "text": "Necesară, dar nu suficientă.",
+          "is_correct": false
+        },
+        {
+          "text": "Suficientă, dar nu necesară.",
+          "is_correct": true
+        },
+        {
+          "text": "Necesară și suficientă.",
+          "is_correct": false
+        },
+        {
+          "text": "Nici necesară, nici suficientă.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 9,
+        "type_name": "Suficiență fără necesitate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, ce relație are condiția «25 divide n» cu proprietatea «5 divide n»?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima condiție implică proprietatea, deci este suficientă. Nu este necesară: n = 5 verifică proprietatea, dar nu este divizibil cu 25.",
+      "options": [
+        {
+          "text": "Necesară, dar nu suficientă.",
+          "is_correct": false
+        },
+        {
+          "text": "Necesară și suficientă.",
+          "is_correct": false
+        },
+        {
+          "text": "Suficientă, dar nu necesară.",
+          "is_correct": true
+        },
+        {
+          "text": "Nici necesară, nici suficientă.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 9,
+        "type_name": "Suficiență fără necesitate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n ∈ ℤ, ce relație are condiția «36 divide n» cu proprietatea «6 divide n»?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima condiție implică proprietatea, deci este suficientă. Nu este necesară: n = 6 verifică proprietatea, dar nu este divizibil cu 36.",
+      "options": [
+        {
+          "text": "Necesară, dar nu suficientă.",
+          "is_correct": false
+        },
+        {
+          "text": "Necesară și suficientă.",
+          "is_correct": false
+        },
+        {
+          "text": "Nici necesară, nici suficientă.",
+          "is_correct": false
+        },
+        {
+          "text": "Suficientă, dar nu necesară.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 9,
+        "type_name": "Suficiență fără necesitate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru mulțimi arbitrare A, B, C din același univers, care este negarea incluziunii A ⊆ B ∖ C?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O incluziune este falsă exact dacă există un element al mulțimii din stânga care nu aparține celei din dreapta. Aplicând regulile pentru reuniune, intersecție și diferență, condiția martorului este: x∈A și (x∉B sau x∈C).",
+      "options": [
+        {
+          "text": "Există x pentru care x∈A și (x∉B sau x∈C).",
+          "is_correct": true
+        },
+        {
+          "text": "Există x pentru care x∈A și x∈B.",
+          "is_correct": false
+        },
+        {
+          "text": "Există x pentru care x∉A și x∈B.",
+          "is_correct": false
+        },
+        {
+          "text": "Există x pentru care x∈C.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 10,
+        "type_name": "Negarea unei incluziuni",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru mulțimi arbitrare A, B, C din același univers, care este negarea incluziunii A ⊆ B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O incluziune este falsă exact dacă există un element al mulțimii din stânga care nu aparține celei din dreapta. Aplicând regulile pentru reuniune, intersecție și diferență, condiția martorului este: x∈A și x∉B.",
+      "options": [
+        {
+          "text": "Există x pentru care x∈A și x∈B.",
+          "is_correct": false
+        },
+        {
+          "text": "Există x pentru care x∈A și x∉B.",
+          "is_correct": true
+        },
+        {
+          "text": "Există x pentru care x∉A și x∈B.",
+          "is_correct": false
+        },
+        {
+          "text": "Există x pentru care x∈C.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 10,
+        "type_name": "Negarea unei incluziuni",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru mulțimi arbitrare A, B, C din același univers, care este negarea incluziunii A∩B ⊆ C?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O incluziune este falsă exact dacă există un element al mulțimii din stânga care nu aparține celei din dreapta. Aplicând regulile pentru reuniune, intersecție și diferență, condiția martorului este: x∈A și x∈B și x∉C.",
+      "options": [
+        {
+          "text": "Există x pentru care x∈A și x∈B.",
+          "is_correct": false
+        },
+        {
+          "text": "Există x pentru care x∉A și x∈B.",
+          "is_correct": false
+        },
+        {
+          "text": "Există x pentru care x∈A și x∈B și x∉C.",
+          "is_correct": true
+        },
+        {
+          "text": "Există x pentru care x∈C.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 10,
+        "type_name": "Negarea unei incluziuni",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru mulțimi arbitrare A, B, C din același univers, care este negarea incluziunii A ⊆ B∪C?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O incluziune este falsă exact dacă există un element al mulțimii din stânga care nu aparține celei din dreapta. Aplicând regulile pentru reuniune, intersecție și diferență, condiția martorului este: x∈A și x∉B și x∉C.",
+      "options": [
+        {
+          "text": "Există x pentru care x∈A și x∈B.",
+          "is_correct": false
+        },
+        {
+          "text": "Există x pentru care x∉A și x∈B.",
+          "is_correct": false
+        },
+        {
+          "text": "Există x pentru care x∈C.",
+          "is_correct": false
+        },
+        {
+          "text": "Există x pentru care x∈A și x∉B și x∉C.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 10,
+        "type_name": "Negarea unei incluziuni",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru mulțimi arbitrare A, B, C din același univers, care este negarea incluziunii A∖B ⊆ C?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O incluziune este falsă exact dacă există un element al mulțimii din stânga care nu aparține celei din dreapta. Aplicând regulile pentru reuniune, intersecție și diferență, condiția martorului este: x∈A și x∉B și x∉C.",
+      "options": [
+        {
+          "text": "Există x pentru care x∈A și x∉B și x∉C.",
+          "is_correct": true
+        },
+        {
+          "text": "Există x pentru care x∈A și x∈B.",
+          "is_correct": false
+        },
+        {
+          "text": "Există x pentru care x∉A și x∈B.",
+          "is_correct": false
+        },
+        {
+          "text": "Există x pentru care x∈C.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.3.3",
+        "type": 10,
+        "type_name": "Negarea unei incluziuni",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    }
+  ]
 }

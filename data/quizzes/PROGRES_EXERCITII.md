@@ -9,8 +9,8 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 | Clasa | Lecții cu exerciții | Total exerciții | Grilă | Adevărat/Fals | Interactive |
 |---|---:|---:|---:|---:|---:|
 | Clasa a V-a | 42 | 2.101 | 589 | 93 | 1.419 |
-| Clasa a IX-a | 2 | 231 | 181 | 4 | 46 |
-| **Total** | **44** | **2.332** | **770** | **97** | **1.465** |
+| Clasa a IX-a | 3 | 416 | 366 | 4 | 46 |
+| **Total** | **45** | **2.517** | **955** | **97** | **1.465** |
 
 ## Clasa a V-a
 
@@ -96,8 +96,9 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 |---|---:|---:|---:|---:|
 | Mulțimea numerelor reale. Operații algebrice, puteri și radicali | 136 | 86 | 4 | 46 |
 | Propoziții, predicate și cuantificatori | 95 | 95 | 0 | 0 |
+| Operații logice elementare și legi de calcul | 185 | 185 | 0 | 0 |
 
-**Subtotal clasa a IX-a: 2 lecții și 231 de exerciții.**
+**Subtotal clasa a IX-a: 3 lecții și 416 de exerciții.**
 
 Lotul 01 din catalogul Burtea a fost prezentat inițial cu câte 5 grile pentru tipurile 1–2. La cererea utilizatorului, selecția finală păstrează câte 3: întrebările 1, 4, 5, 6, 9 și 10 din `docs/clasa_9/lot_01_verificare.md`.
 
@@ -139,6 +140,29 @@ Enunțurile sunt noi, formulate după tipologiile catalogului; nu sunt transcrie
 Verificări: validatorul aplicației, numărul de grile și acoperirea tuturor tipurilor, unicitatea enunțurilor/opțiunilor, o singură opțiune marcată corect, calcule independente pentru proporționalitate, zecimale periodice, integritate, perechi diofantice și unghiuri; `manage.py check`; încărcare țintită prin `seed_quizzes --file`.
 
 Secțiunea 3 (operații logice elementare și legi de calcul) nu este inclusă în aceste 95 de grile.
+
+### Secțiunea 3 — Operații logice elementare — finalizată
+
+Adăugate și încărcate în baza locală la 24 octombrie 2026: **185 de grile, câte 5 pentru toate cele 37 de tipuri catalogate** din subcapitolele 3.1–3.3. Fiecare are patru variante, un singur răspuns corect și explicație. Nu s-au adăugat exerciții interactive sau întrebări în format A/F; întrebările despre valori de adevăr au patru variante de perechi de valori.
+
+| Subcapitol din catalogul A1 | Tipuri acoperite | Grile |
+|---|---:|---:|
+| 3.1. Operații logice cu propoziții. Formule de calcul propozițional, p. 41–44 | 12/12 | 60 |
+| 3.2. Operații logice cu predicate. Operații și relații cu mulțimi, p. 44–48 | 15/15 | 75 |
+| 3.3. Negarea propozițiilor universale și existențiale. Condiții necesare și suficiente, p. 48–51 | 10/10 | 50 |
+| **Total** | **37/37** | **185** |
+
+3.1 acoperă: negație, conjuncție/disjuncție, implicație, echivalență, formule cu trei propoziții, tautologii, inferențe, reconstrucția valorilor de adevăr, legi de calcul, De Morgan, logică și drepte în plan, cuantificatori în formule compuse.
+
+3.2 acoperă: complement/reuniune/intersecție ca operații pe predicate, implicație și incluziune, echivalență și egalitate, predicate binare finite, consecință aritmetică, traducerea reuniunii/intersecției în predicate, diferență relativă, cardinal, incluziuni cu parametri, identități de mulțimi, recuperarea unei mulțimi, diferențe succesive. Exercițiile de mulțimi din acest lot sunt aplicații ale logicii din secțiunea 3.2; generatorul nu modifică lecția despre numere reale sau alte fișiere de exerciții.
+
+3.3 acoperă: negarea universalului/existențialului, numărul soluțiilor distincte, cuantificatori alternați, evaluări pe mulțimi finite, suficiență, necesitate, echivalență, suficiență fără necesitate și negarea incluziunilor.
+
+Lecția din aplicație: **Operații logice elementare și legi de calcul**. Sursa JSON: `clasa_9/clasa_9_u01_l04_operatii_logice_elementare_si_legi_de_calcul.json`. Generator independent: `generators/gen_clasa_9_operatii_logice.py`. Enunțurile sunt noi după tipologiile catalogului, nu transcrieri validate din scanare. Metadatele `catalog` păstrează secțiunea (`A1.3.1`, `A1.3.2`, `A1.3.3`), tipul, denumirea și originea în JSON.
+
+Verificări: tabele complete de adevăr pentru echivalențe și tautologii, toate evaluările compatibile pentru inferențe, toate cele opt cazuri de apartenență pentru identități de mulțimi, enumerarea tuturor predicatelor binare și ternare pe un univers cu două elemente pentru negarea cuantificatorilor, acoperire 37×5 și unicitatea enunțurilor/variantelor, validatorul aplicației, reproductibilitatea generatorului, `manage.py check` și încărcare țintită prin `seed_quizzes --file`.
+
+Următoarea secțiune de logică din catalog: **4. Tipuri de raționamente logice** — 4.1. Metoda inducției matematice (30 de tipuri) și 4.2. Probleme de numărare (33 de tipuri).
 
 ## Regula de actualizare
 
