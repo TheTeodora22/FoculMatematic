@@ -29,7 +29,7 @@
                     Răspunsul tău: <span data-math-content>{{ item.selected_option.text }}</span>
                 </p>
                 {% if item.question.explanation %}
-                    <p data-math-content style="margin:0;">{{ item.question.explanation }}</p>
+                    <p class="math-explanation" data-math-content style="margin:0;">{{ item.question.explanation }}</p>
                 {% else %}
                     <p class="muted" style="margin:0;">Nu există explicație pentru această întrebare.</p>
                 {% endif %}

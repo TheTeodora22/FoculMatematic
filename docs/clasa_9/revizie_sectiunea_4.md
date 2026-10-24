@@ -43,6 +43,12 @@ Pentru geometrie verifică explicit tilingurile de bază 6/7/8: toate piesele su
 
 La pragurile exponențiale, verificarea pragului și a eșecului anterior este completată de inegalitatea raporturilor care închide inducția pentru toți indicii ulteriori. Un test finit nu este folosit drept demonstrație universală. Pentru sumele de puteri și blocul de patru pătrate, egalitățile sunt certificate prin operații exacte asupra coeficienților polinoamelor, nu numai prin valori de probă.
 
+## Revizia justificărilor inducției — 24 octombrie 2026
+
+Toate cele 150 de explicații din 4.1 au fost reformulate. Pentru 137, demonstrația separă proprietatea urmărită, baza, ipoteza de inducție, folosirea ei în pas și concluzia. Pentru 13 cerințe se păstrează verificarea directă, contraexemplul sau scăderea relațiilor consecutive. Nu se impune artificial baza P(1): sunt indicate bazele domeniului, două baze la recurențele de ordinul doi și bazele care acoperă resturile pentru pașii +2, +3 și +4.
+
+Această revizie nu schimbă enunțurile, variantele, cheia sau grilele din 4.2. Auditul independent al celor 315 răspunsuri și verificarea randării a 2.222 de fragmente trec. Auditul automat certifică răspunsurile și identitățile acoperite de script, nu fiecare frază a demonstrațiilor. În Antrenare a fost verificată vizual explicația sumei pătratelor, cu formulele și etapele pe paragrafe separate.
+
 ## Limitele concluziei
 
 Aceasta este o revizie internă a grilelor create și a încadrării lor în catalog. Nu este o evaluare de către un profesor extern și nu certifică transcrierea sau dificultatea fiecărei probleme din scanare. Nu include o verificare vizuală a ecranelor aplicației.

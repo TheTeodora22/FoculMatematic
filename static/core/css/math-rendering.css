@@ -33,3 +33,8 @@
 .training-option > [data-math-content] {
     flex: 1;
 }
+
+.training-explanation,
+.math-explanation {
+    white-space: pre-line;
+}

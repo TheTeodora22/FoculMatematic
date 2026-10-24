@@ -261,6 +261,12 @@ Versiunea web folosește acum KaTeX local pentru enunțuri, variante și explica
 
 Etichetele „Setul 1”, „Setul 2” etc. au fost eliminate din cele trei lecții create aici: Propoziții/predicate (95), Operații logice (185), Inducție/numărare (315). În locul numerelor artificiale, enunțurile disting datele, expresiile sau propozițiile concrete analizate. La prima familie din 4.1 apare intervalul matematic al lui x. Totalurile lecțiilor nu s-au schimbat. Sursele și generatoarele sunt sincronizate, iar lecțiile au fost reîncărcate local.
 
+### Justificările inducției — 24 octombrie 2026
+
+Revizuite toate cele **150 de explicații din 4.1**. Cele 137 care folosesc inducția precizează proprietatea, verificarea inițială, ipoteza, pasul inductiv și concluzia. Celelalte 13 păstrează metoda directă potrivită cerinței. Bazele sunt adaptate domeniului: 0, 1, 2 sau pragul cerut; recurențele de ordinul doi și pașii +2, +3, +4 includ bazele necesare. Metoda este consemnată în `catalog.proof_method`.
+
+Enunțurile, opțiunile și cele 165 de grile din 4.2 sunt neschimbate. Auditul matematic trece pentru 315/315 grile; randarea trece pentru 2.222 de fragmente matematice. Explicația cu etapele separate a fost verificată și în pagina de Antrenare. Generatorul și JSON-ul sunt sincronizate, iar lecția a fost reîncărcată local.
+
 ## Regula de actualizare a registrului
 
 După fiecare lecție nouă sau după modificarea numărului de exerciții:
