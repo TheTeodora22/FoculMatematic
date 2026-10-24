@@ -1,0 +1,3745 @@
+{
+  "title": "1.1. Operații algebrice cu numere reale",
+  "description": "Clasa a 9-a · Mulțimea numerelor reale",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Simplifică expresia și scrie rezultatul final.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Dezvoltăm cele două pătrate și reducem termenii asemenea: 4x²−12x+9−x²+6x−9=3x²−6x.",
+      "interactive": {
+        "mode": "simplify",
+        "expression": "(2x − 3)² − (x − 3)²",
+        "fields": [
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "result": "3x²−6x"
+        }
+      }
+    },
+    {
+      "text": "Simplifică folosind formula diferenței de pătrate.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Aplicăm (u−v)(u+v)=u²−v²: (2√2)²−(3a)²=8−9a².",
+      "interactive": {
+        "mode": "simplify",
+        "expression": "(2√2 − 3a)(2√2 + 3a)",
+        "fields": [
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "result": "8−9a²"
+        }
+      }
+    },
+    {
+      "text": "Simplifică puterile, pentru a ≠ 0.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Adunăm exponenții la înmulțire și îl scădem la împărțire: a^(5+2−3)=a⁴.",
+      "interactive": {
+        "mode": "simplify",
+        "expression": "a⁵ · a² : a³",
+        "fields": [
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "result": "a⁴"
+        }
+      }
+    },
+    {
+      "text": "Calculează puterea monomului.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ridicăm la cub atât coeficientul, cât și litera: (−2)³a³=−8a³.",
+      "interactive": {
+        "mode": "simplify",
+        "expression": "(−2a)³",
+        "fields": [
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "result": "−8a³"
+        }
+      }
+    },
+    {
+      "text": "Simplifică expresia cu radicali.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "√50=5√2 și 2√8=4√2, deci diferența este √2.",
+      "interactive": {
+        "mode": "simplify",
+        "expression": "√50 − 2√8",
+        "fields": [
+          {
+            "key": "result",
+            "label": "Rezultat"
+          }
+        ],
+        "answers": {
+          "result": "√2"
+        }
+      }
+    },
+    {
+      "text": "Completează formula pătratului unei sume.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Termenul din mijloc este dublul produsului: 2ab.",
+      "interactive": {
+        "mode": "complete_rule",
+        "expression": "(a + b)² = a² + □ + b²",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Termenul lipsă"
+          }
+        ],
+        "answers": {
+          "missing": "2ab"
+        }
+      }
+    },
+    {
+      "text": "Completează regula puterilor cu aceeași bază.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La înmulțirea puterilor cu aceeași bază, exponenții se adună.",
+      "interactive": {
+        "mode": "complete_rule",
+        "expression": "aᵐ · aⁿ = a□",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Exponentul rezultat"
+          }
+        ],
+        "answers": {
+          "missing": "m+n"
+        }
+      }
+    },
+    {
+      "text": "Completează regula împărțirii puterilor, a ≠ 0.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La împărțire, exponenții se scad.",
+      "interactive": {
+        "mode": "complete_rule",
+        "expression": "aᵐ : aⁿ = a□",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Exponentul rezultat"
+          }
+        ],
+        "answers": {
+          "missing": "m−n"
+        }
+      }
+    },
+    {
+      "text": "Completează proprietatea elementului neutru.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul 1 este element neutru pentru înmulțire.",
+      "interactive": {
+        "mode": "complete_rule",
+        "expression": "a · □ = a",
+        "fields": [
+          {
+            "key": "missing",
+            "label": "Numărul lipsă"
+          }
+        ],
+        "answers": {
+          "missing": "1"
+        }
+      }
+    },
+    {
+      "text": "Decide dacă afirmația este adevărată sau falsă — varianta 2.",
+      "type": "algebra_workbench",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Aceasta este regula produsului radicalilor pentru numere nenegative.",
+      "interactive": {
+        "mode": "true_false",
+        "expression": "Pentru a,b ≥ 0, √a · √b = √(ab).",
+        "choices": [
+          "Adevărat",
+          "Fals"
+        ],
+        "answers": {
+          "choice": 0
+        }
+      }
+    },
+    {
+      "text": "Decide dacă afirmația este adevărată sau falsă — varianta 3.",
+      "type": "algebra_workbench",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Lipsește termenul 2ab; formula corectă este a²+2ab+b².",
+      "interactive": {
+        "mode": "true_false",
+        "expression": "(a + b)² = a² + b² pentru orice a,b reale.",
+        "choices": [
+          "Adevărat",
+          "Fals"
+        ],
+        "answers": {
+          "choice": 1
+        }
+      }
+    },
+    {
+      "text": "Decide dacă afirmația este adevărată sau falsă — varianta 4.",
+      "type": "algebra_workbench",
+      "format": "true_false",
+      "points": 10,
+      "explanation": "Mulțimea numerelor raționale este inclusă în mulțimea numerelor reale.",
+      "interactive": {
+        "mode": "true_false",
+        "expression": "Orice număr rațional este număr real.",
+        "choices": [
+          "Adevărat",
+          "Fals"
+        ],
+        "answers": {
+          "choice": 0
+        }
+      }
+    },
+    {
+      "text": "Potrivește fiecare expresie cu forma sa simplificată.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Folosim cele trei identități remarcabile fundamentale.",
+      "interactive": {
+        "mode": "match",
+        "pairs": [
+          {
+            "left": "(a+b)²",
+            "right": "a²+2ab+b²"
+          },
+          {
+            "left": "(a−b)²",
+            "right": "a²−2ab+b²"
+          },
+          {
+            "left": "(a−b)(a+b)",
+            "right": "a²−b²"
+          }
+        ],
+        "options": [
+          "a²−b²",
+          "a²+2ab+b²",
+          "a²−2ab+b²"
+        ],
+        "answers": {
+          "match:0": 1,
+          "match:1": 2,
+          "match:2": 0
+        }
+      }
+    },
+    {
+      "text": "Potrivește fiecare putere cu rezultatul corect.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La produs adunăm exponenții, la cât îi scădem, iar la puterea unei puteri îi înmulțim.",
+      "interactive": {
+        "mode": "match",
+        "pairs": [
+          {
+            "left": "2³·2⁴",
+            "right": "2⁷"
+          },
+          {
+            "left": "5⁶:5²",
+            "right": "5⁴"
+          },
+          {
+            "left": "(3²)⁴",
+            "right": "3⁸"
+          }
+        ],
+        "options": [
+          "3⁸",
+          "2⁷",
+          "5⁴"
+        ],
+        "answers": {
+          "match:0": 1,
+          "match:1": 2,
+          "match:2": 0
+        }
+      }
+    },
+    {
+      "text": "Potrivește radicalii cu formele simplificate.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Scoatem de sub radical cel mai mare factor pătrat perfect.",
+      "interactive": {
+        "mode": "match",
+        "pairs": [
+          {
+            "left": "√12",
+            "right": "2√3"
+          },
+          {
+            "left": "√45",
+            "right": "3√5"
+          },
+          {
+            "left": "√72",
+            "right": "6√2"
+          }
+        ],
+        "options": [
+          "6√2",
+          "2√3",
+          "3√5"
+        ],
+        "answers": {
+          "match:0": 1,
+          "match:1": 2,
+          "match:2": 0
+        }
+      }
+    },
+    {
+      "text": "Găsește primul pas greșit în dezvoltare.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "La pătratul sumei termenul din mijloc este 2·a·3=6a; pasul 2 este primul greșit.",
+      "interactive": {
+        "mode": "error",
+        "steps": [
+          "(a+3)²",
+          "= a²+3a+9",
+          "= a²+6a+9"
+        ],
+        "answers": {
+          "error": 1
+        }
+      }
+    },
+    {
+      "text": "Găsește primul pas greșit în calculul puterilor.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "a⁸:a²=a⁶, nu a⁴.",
+      "interactive": {
+        "mode": "error",
+        "steps": [
+          "a⁵·a³:a²",
+          "= a⁸:a²",
+          "= a⁴"
+        ],
+        "answers": {
+          "error": 2
+        }
+      }
+    },
+    {
+      "text": "Găsește primul pas greșit în simplificarea radicalului.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "√16=4, deci primul pas greșit este 16√3.",
+      "interactive": {
+        "mode": "error",
+        "steps": [
+          "√48",
+          "= √(16·3)",
+          "= 16√3",
+          "= 4√3"
+        ],
+        "answers": {
+          "error": 2
+        }
+      }
+    },
+    {
+      "text": "Găsește primul pas greșit în regula semnelor.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Minusul din fața parantezei schimbă semnul fiecărui termen.",
+      "interactive": {
+        "mode": "error",
+        "steps": [
+          "−(2a−5)",
+          "= −2a−5",
+          "Forma corectă este −2a+5"
+        ],
+        "answers": {
+          "error": 1
+        }
+      }
+    },
+    {
+      "text": "Construiește membrul drept al identității — varianta 1.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pătratul unei sume este a²+2ab+b².",
+      "interactive": {
+        "mode": "identity_builder",
+        "target": "(a+b)² = ?",
+        "pieces": [
+          "a²",
+          "+2ab",
+          "+b²",
+          "−2ab"
+        ],
+        "answers": {
+          "pieces": "0,1,2"
+        }
+      }
+    },
+    {
+      "text": "Construiește membrul drept al identității — varianta 2.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Pătratul diferenței este x²−2xy+y².",
+      "interactive": {
+        "mode": "identity_builder",
+        "target": "(x−y)² = ?",
+        "pieces": [
+          "x²",
+          "−2xy",
+          "+y²",
+          "+2xy"
+        ],
+        "answers": {
+          "pieces": "0,1,2"
+        }
+      }
+    },
+    {
+      "text": "Construiește membrul drept al identității — varianta 3.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Produsul sumei și diferenței este diferența pătratelor.",
+      "interactive": {
+        "mode": "identity_builder",
+        "target": "(m−n)(m+n) = ?",
+        "pieces": [
+          "m²",
+          "−n²",
+          "+n²",
+          "−2mn"
+        ],
+        "answers": {
+          "pieces": "0,1"
+        }
+      }
+    },
+    {
+      "text": "Alege parantezarea care produce rezultatul 49.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "(10−3)·(2+5)=7·7=49.",
+      "interactive": {
+        "mode": "parentheses",
+        "expression": "10 − 3 · 2 + 5",
+        "choices": [
+          "(10−3)·(2+5)",
+          "10−(3·2)+5",
+          "(10−3·2)+5",
+          "10−3·(2+5)"
+        ],
+        "answers": {
+          "choice": 0
+        }
+      }
+    },
+    {
+      "text": "Alege parantezarea care produce rezultatul 64.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "(12−4)·(3+5)=8·8=64.",
+      "interactive": {
+        "mode": "parentheses",
+        "expression": "12 − 4 · 3 + 5",
+        "choices": [
+          "(12−4)·(3+5)",
+          "12−(4·3)+5",
+          "(12−4·3)+5",
+          "12−4·(3+5)"
+        ],
+        "answers": {
+          "choice": 0
+        }
+      }
+    },
+    {
+      "text": "Alege ordinea corectă a operațiilor.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Se calculează întâi paranteza, apoi puterea, înmulțirea și la final adunarea.",
+      "interactive": {
+        "mode": "parentheses",
+        "expression": "3 + 2·(5−1)²",
+        "choices": [
+          "paranteză, putere, înmulțire, adunare",
+          "putere, paranteză, adunare, înmulțire",
+          "adunare, paranteză, putere, înmulțire",
+          "înmulțire, putere, paranteză, adunare"
+        ],
+        "answers": {
+          "choice": 0
+        }
+      }
+    },
+    {
+      "text": "Simplifică radicalul completând etapele — varianta 1.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "75=25·3, deci √75=5√3.",
+      "interactive": {
+        "mode": "radical_steps",
+        "expression": "√75",
+        "stages": [
+          "Descompune 75 ca produs între un pătrat perfect și alt factor.",
+          "Scoate pătratul perfect de sub radical."
+        ],
+        "fields": [
+          {
+            "key": "decomposition",
+            "label": "Descompunere"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat final"
+          }
+        ],
+        "answers": {
+          "decomposition": "25·3",
+          "result": "5√3"
+        }
+      }
+    },
+    {
+      "text": "Simplifică radicalul completând etapele — varianta 2.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "98=49·2, deci √98=7√2.",
+      "interactive": {
+        "mode": "radical_steps",
+        "expression": "√98",
+        "stages": [
+          "Identifică factorul pătrat perfect.",
+          "Simplifică."
+        ],
+        "fields": [
+          {
+            "key": "decomposition",
+            "label": "Descompunere"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat final"
+          }
+        ],
+        "answers": {
+          "decomposition": "49·2",
+          "result": "7√2"
+        }
+      }
+    },
+    {
+      "text": "Introdu factorul sub radical, pentru x≥0.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "3√5=√(3²·5)=√45.",
+      "interactive": {
+        "mode": "radical_steps",
+        "expression": "3√5",
+        "stages": [
+          "Ridică factorul exterior la pătrat.",
+          "Înmulțește sub radical."
+        ],
+        "fields": [
+          {
+            "key": "square",
+            "label": "Pătratul factorului"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat final"
+          }
+        ],
+        "answers": {
+          "square": "9",
+          "result": "√45"
+        }
+      }
+    },
+    {
+      "text": "Calculează produsul radicalilor.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "√6·√24=√144=12.",
+      "interactive": {
+        "mode": "radical_steps",
+        "expression": "√6 · √24",
+        "stages": [
+          "Unește radicalii.",
+          "Extrage rădăcina."
+        ],
+        "fields": [
+          {
+            "key": "product",
+            "label": "Radicalul obținut"
+          },
+          {
+            "key": "result",
+            "label": "Rezultat final"
+          }
+        ],
+        "answers": {
+          "product": "√144",
+          "result": "12"
+        }
+      }
+    },
+    {
+      "text": "Determină numărul real pozitiv x.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Numărul pozitiv al cărui pătrat este 81 este 9.",
+      "interactive": {
+        "mode": "unknown",
+        "expression": "x² = 81, x>0",
+        "fields": [
+          {
+            "key": "x",
+            "label": "x"
+          }
+        ],
+        "answers": {
+          "x": "9"
+        }
+      }
+    },
+    {
+      "text": "Determină x.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ridicăm la pătrat: x=49.",
+      "interactive": {
+        "mode": "unknown",
+        "expression": "√x = 7",
+        "fields": [
+          {
+            "key": "x",
+            "label": "x"
+          }
+        ],
+        "answers": {
+          "x": "49"
+        }
+      }
+    },
+    {
+      "text": "Determină x, știind că x ≠ 0.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "x³=27, deci x=3.",
+      "interactive": {
+        "mode": "unknown",
+        "expression": "x⁵ : x² = 27",
+        "fields": [
+          {
+            "key": "x",
+            "label": "x"
+          }
+        ],
+        "answers": {
+          "x": "3"
+        }
+      }
+    },
+    {
+      "text": "Determină suma a+b.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Din (a+b)²=121 și condiția de pozitivitate rezultă a+b=11.",
+      "interactive": {
+        "mode": "unknown",
+        "expression": "(a+b)²=121 și a+b>0",
+        "fields": [
+          {
+            "key": "sum",
+            "label": "a+b"
+          }
+        ],
+        "answers": {
+          "sum": "11"
+        }
+      }
+    },
+    {
+      "text": "Calculează ambii membri și verifică identitatea — varianta 1.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ambii membri sunt egali cu 25, deci identitatea se verifică.",
+      "interactive": {
+        "mode": "verify_identity",
+        "identity": "(a+b)² = a²+2ab+b²",
+        "values": [
+          "a=2",
+          "b=3"
+        ],
+        "fields": [
+          {
+            "key": "left",
+            "label": "Membrul stâng"
+          },
+          {
+            "key": "right",
+            "label": "Membrul drept"
+          }
+        ],
+        "answers": {
+          "left": "25",
+          "right": "25",
+          "verdict": 0
+        }
+      }
+    },
+    {
+      "text": "Calculează ambii membri și verifică egalitatea propusă.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "9≠21; egalitatea propusă nu este o identitate.",
+      "interactive": {
+        "mode": "verify_identity",
+        "identity": "(a−b)² = a²−b²",
+        "values": [
+          "a=5",
+          "b=2"
+        ],
+        "fields": [
+          {
+            "key": "left",
+            "label": "Membrul stâng"
+          },
+          {
+            "key": "right",
+            "label": "Membrul drept"
+          }
+        ],
+        "answers": {
+          "left": "9",
+          "right": "21",
+          "verdict": 1
+        }
+      }
+    },
+    {
+      "text": "Calculează ambii membri și verifică identitatea — varianta 2.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "(7−4)(7+4)=3·11=33 și 49−16=33.",
+      "interactive": {
+        "mode": "verify_identity",
+        "identity": "(a−b)(a+b)=a²−b²",
+        "values": [
+          "a=7",
+          "b=4"
+        ],
+        "fields": [
+          {
+            "key": "left",
+            "label": "Membrul stâng"
+          },
+          {
+            "key": "right",
+            "label": "Membrul drept"
+          }
+        ],
+        "answers": {
+          "left": "33",
+          "right": "33",
+          "verdict": 0
+        }
+      }
+    },
+    {
+      "text": "Încadrează fiecare număr în cea mai mică mulțime indicată — varianta 1.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "7 este natural, −4 este întreg, 2/3 este rațional, iar √2 este irațional.",
+      "interactive": {
+        "mode": "classify",
+        "pairs": [
+          {
+            "left": "7",
+            "right": "N"
+          },
+          {
+            "left": "−4",
+            "right": "Z"
+          },
+          {
+            "left": "2/3",
+            "right": "Q"
+          },
+          {
+            "left": "√2",
+            "right": "R\\Q"
+          }
+        ],
+        "options": [
+          "N",
+          "Z",
+          "Q",
+          "R\\Q"
+        ],
+        "answers": {
+          "match:0": 0,
+          "match:1": 1,
+          "match:2": 2,
+          "match:3": 3
+        }
+      }
+    },
+    {
+      "text": "Încadrează expresiile după tip.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Recunoaștem forma dominantă a fiecărei expresii.",
+      "interactive": {
+        "mode": "classify",
+        "pairs": [
+          {
+            "left": "a⁵",
+            "right": "putere"
+          },
+          {
+            "left": "√13",
+            "right": "radical"
+          },
+          {
+            "left": "(a+b)²",
+            "right": "expresie algebrică"
+          }
+        ],
+        "options": [
+          "putere",
+          "radical",
+          "expresie algebrică"
+        ],
+        "answers": {
+          "match:0": 0,
+          "match:1": 1,
+          "match:2": 2
+        }
+      }
+    },
+    {
+      "text": "Încadrează fiecare număr în cea mai mică mulțime indicată — varianta 2.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "0 este natural în convenția lecției; zecimala periodică este rațională, iar π este irațional.",
+      "interactive": {
+        "mode": "classify",
+        "pairs": [
+          {
+            "left": "0",
+            "right": "N"
+          },
+          {
+            "left": "−11",
+            "right": "Z"
+          },
+          {
+            "left": "0,(3)",
+            "right": "Q"
+          },
+          {
+            "left": "π",
+            "right": "R\\Q"
+          }
+        ],
+        "options": [
+          "N",
+          "Z",
+          "Q",
+          "R\\Q"
+        ],
+        "answers": {
+          "match:0": 0,
+          "match:1": 1,
+          "match:2": 2,
+          "match:3": 3
+        }
+      }
+    },
+    {
+      "text": "Calculează media aritmetică a numerelor.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Media este 27:3=9.",
+      "interactive": {
+        "mode": "average",
+        "expression": "6, 9, 12",
+        "fields": [
+          {
+            "key": "sum",
+            "label": "Suma"
+          },
+          {
+            "key": "count",
+            "label": "Numărul valorilor"
+          },
+          {
+            "key": "mean",
+            "label": "Media"
+          }
+        ],
+        "answers": {
+          "sum": "27",
+          "count": "3",
+          "mean": "9"
+        }
+      }
+    },
+    {
+      "text": "Determină numărul lipsă folosind media aritmetică.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Suma trebuie să fie 3·11=33, deci x=33−8−14=11.",
+      "interactive": {
+        "mode": "average",
+        "expression": "Media numerelor 8, x și 14 este 11.",
+        "fields": [
+          {
+            "key": "total",
+            "label": "Suma celor trei numere"
+          },
+          {
+            "key": "x",
+            "label": "x"
+          }
+        ],
+        "answers": {
+          "total": "33",
+          "x": "11"
+        }
+      }
+    },
+    {
+      "text": "Calculează media aritmetică.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Valorile sunt 2,3,5; suma este 10, deci media este 10/3.",
+      "interactive": {
+        "mode": "average",
+        "expression": "√4, √9, √25",
+        "fields": [
+          {
+            "key": "values",
+            "label": "Valorile obținute"
+          },
+          {
+            "key": "mean",
+            "label": "Media"
+          }
+        ],
+        "answers": {
+          "values": "2,3,5",
+          "mean": "10/3"
+        }
+      }
+    },
+    {
+      "text": "Alege transformarea corectă la fiecare pas — varianta 1.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Dezvoltăm pătratul sumei, apoi reducem termenii x².",
+      "interactive": {
+        "mode": "transform_chain",
+        "expression": "(x+2)²−x²",
+        "steps": [
+          {
+            "options": [
+              "x²+4x+4−x²",
+              "x²+2x+4−x²",
+              "2x²+4"
+            ]
+          },
+          {
+            "options": [
+              "4x+4",
+              "2x+4",
+              "x²+4"
+            ]
+          }
+        ],
+        "answers": {
+          "step:0": 0,
+          "step:1": 0
+        }
+      }
+    },
+    {
+      "text": "Alege transformarea corectă la fiecare pas — varianta 2.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "108=36·3, iar √36=6.",
+      "interactive": {
+        "mode": "transform_chain",
+        "expression": "√108",
+        "steps": [
+          {
+            "options": [
+              "√(36·3)",
+              "√(18·6)",
+              "√(9·9)"
+            ]
+          },
+          {
+            "options": [
+              "6√3",
+              "3√12",
+              "18√3"
+            ]
+          }
+        ],
+        "answers": {
+          "step:0": 0,
+          "step:1": 0
+        }
+      }
+    },
+    {
+      "text": "Alege transformarea corectă la fiecare pas — varianta 3.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Întâi a⁷:a²=a⁵, apoi a⁵·a=a⁶.",
+      "interactive": {
+        "mode": "transform_chain",
+        "expression": "a⁷:a²·a",
+        "steps": [
+          {
+            "options": [
+              "a⁵·a",
+              "a⁹·a",
+              "a⁵:a"
+            ]
+          },
+          {
+            "options": [
+              "a⁶",
+              "a⁵",
+              "a⁴"
+            ]
+          }
+        ],
+        "answers": {
+          "step:0": 0,
+          "step:1": 0
+        }
+      }
+    },
+    {
+      "text": "Elementul neutru al adunării în R este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru orice a real, a+0=a.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "nu există",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "−1",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Inversul numărului real nenul a este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a·(1/a)=1 pentru a≠0.",
+      "options": [
+        {
+          "text": "−a",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1/a",
+          "is_correct": true
+        },
+        {
+          "text": "a",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Rezultatul lui (2³)⁴ este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La puterea unei puteri înmulțim exponenții: 3·4=12.",
+      "options": [
+        {
+          "text": "2⁷",
+          "is_correct": false
+        },
+        {
+          "text": "8⁴",
+          "is_correct": false
+        },
+        {
+          "text": "2¹²",
+          "is_correct": true
+        },
+        {
+          "text": "2⁸",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Forma simplificată a lui √32 este:",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "√32=√(16·2)=4√2.",
+      "options": [
+        {
+          "text": "16√2",
+          "is_correct": false
+        },
+        {
+          "text": "8√2",
+          "is_correct": false
+        },
+        {
+          "text": "4√2",
+          "is_correct": true
+        },
+        {
+          "text": "2√8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care număr este irațional?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "√7 nu poate fi scris ca raport al două numere întregi.",
+      "options": [
+        {
+          "text": "0,25",
+          "is_correct": false
+        },
+        {
+          "text": "2/9",
+          "is_correct": false
+        },
+        {
+          "text": "√7",
+          "is_correct": true
+        },
+        {
+          "text": "−3",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 0,64 + 0,078.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem 0,640 + 0,078 = 0,718, aliniind ordinele zecimale.",
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 1,
+        "type_name": "Calcul cu zecimale finite",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "options": [
+        {
+          "text": "0,142",
+          "is_correct": false
+        },
+        {
+          "text": "0,718",
+          "is_correct": true
+        },
+        {
+          "text": "1,42",
+          "is_correct": false
+        },
+        {
+          "text": "0,648",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 0,756 : 0,12.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim deîmpărțitul și împărțitorul cu 100: 75,6 : 12 = 6,3.",
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 1,
+        "type_name": "Calcul cu zecimale finite",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "options": [
+        {
+          "text": "0,63",
+          "is_correct": false
+        },
+        {
+          "text": "63",
+          "is_correct": false
+        },
+        {
+          "text": "6,3",
+          "is_correct": true
+        },
+        {
+          "text": "0,063",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați [1,8 − (0,24 : 0,6)] · 0,5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi 0,24 : 0,6 = 0,4. Apoi (1,8 − 0,4) · 0,5 = 1,4 · 0,5 = 0,7.",
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 1,
+        "type_name": "Calcul cu zecimale finite",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "options": [
+        {
+          "text": "0,5",
+          "is_correct": false
+        },
+        {
+          "text": "0,7",
+          "is_correct": true
+        },
+        {
+          "text": "1,6",
+          "is_correct": false
+        },
+        {
+          "text": "1,4",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 0,(6) − 1/4. Cifrele dintre paranteze se repetă la nesfârșit.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0,(6) = 6/9 = 2/3. Prin urmare 2/3 − 1/4 = 8/12 − 3/12 = 5/12.",
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 2,
+        "type_name": "Calcul cu fracții și zecimale periodice",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "options": [
+        {
+          "text": "1/2",
+          "is_correct": false
+        },
+        {
+          "text": "1/6",
+          "is_correct": false
+        },
+        {
+          "text": "5/12",
+          "is_correct": true
+        },
+        {
+          "text": "2/3",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 1,2(3) − 0,8(3). Cifrele dintre paranteze se repetă la nesfârșit.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1,2(3) = (123 − 12)/90 = 37/30, iar 0,8(3) = (83 − 8)/90 = 5/6. Diferența este 37/30 − 25/30 = 2/5.",
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 2,
+        "type_name": "Calcul cu fracții și zecimale periodice",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "options": [
+        {
+          "text": "4/9",
+          "is_correct": false
+        },
+        {
+          "text": "2/5",
+          "is_correct": true
+        },
+        {
+          "text": "1/3",
+          "is_correct": false
+        },
+        {
+          "text": "1/2",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați [0,(6) + 0,1(6)] : 0,(3). Cifrele dintre paranteze se repetă la nesfârșit.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia devine (2/3 + 1/6) : (1/3) = (5/6) · 3 = 5/2.",
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 2,
+        "type_name": "Calcul cu fracții și zecimale periodice",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "options": [
+        {
+          "text": "5/18",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": true
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Care este inversul numărului 3+2√2?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul conjugatelor este 3²−2²·2=1, deci inversul este 3−2√2.",
+      "options": [
+        {
+          "text": "3−2√2",
+          "is_correct": true
+        },
+        {
+          "text": "−3−2√2",
+          "is_correct": false
+        },
+        {
+          "text": "3+2√2",
+          "is_correct": false
+        },
+        {
+          "text": "−3+2√2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 3,
+        "type_name": "Verificarea inverselor",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este inversul numărului 5+2√6?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul conjugatelor este 5²−2²·6=1, deci inversul este 5−2√6.",
+      "options": [
+        {
+          "text": "−5−2√6",
+          "is_correct": false
+        },
+        {
+          "text": "5+2√6",
+          "is_correct": false
+        },
+        {
+          "text": "5−2√6",
+          "is_correct": true
+        },
+        {
+          "text": "−5+2√6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 3,
+        "type_name": "Verificarea inverselor",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este inversul numărului 9+4√5?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul conjugatelor este 9²−4²·5=1, deci inversul este 9−4√5.",
+      "options": [
+        {
+          "text": "9−4√5",
+          "is_correct": true
+        },
+        {
+          "text": "−9−4√5",
+          "is_correct": false
+        },
+        {
+          "text": "9+4√5",
+          "is_correct": false
+        },
+        {
+          "text": "−9+4√5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 3,
+        "type_name": "Verificarea inverselor",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A=3+2√2 și B=3−2√2. Calculați 1/A + 1/B.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A+B=6, AB=1, deci 1/A+1/B=(A+B)/(AB)=6.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "-6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 4,
+        "type_name": "Opuse și inverse ale unor expresii",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A=5+2√6 și B=5−2√6. Calculați 1/A + 1/B.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A+B=10, AB=1, deci 1/A+1/B=(A+B)/(AB)=10.",
+      "options": [
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "-10",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 4,
+        "type_name": "Opuse și inverse ale unor expresii",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A=9+4√5 și B=9−4√5. Calculați 1/A + 1/B.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A+B=18, AB=1, deci 1/A+1/B=(A+B)/(AB)=18.",
+      "options": [
+        {
+          "text": "17",
+          "is_correct": false
+        },
+        {
+          "text": "18",
+          "is_correct": true
+        },
+        {
+          "text": "19",
+          "is_correct": false
+        },
+        {
+          "text": "-18",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 4,
+        "type_name": "Opuse și inverse ale unor expresii",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Numerele reale a,b verifică a/3+b/8=5. Calculați 16a+6b.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim relația dată cu 48: expresia cerută este 48·(5)=240.",
+      "options": [
+        {
+          "text": "-240",
+          "is_correct": false
+        },
+        {
+          "text": "241",
+          "is_correct": false
+        },
+        {
+          "text": "240",
+          "is_correct": true
+        },
+        {
+          "text": "239",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 5,
+        "type_name": "Calcul prin relații liniare cunoscute",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Numerele reale a,b verifică a/4+b/3=2. Calculați 6a+8b.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim relația dată cu 24: expresia cerută este 24·(2)=48.",
+      "options": [
+        {
+          "text": "48",
+          "is_correct": true
+        },
+        {
+          "text": "-48",
+          "is_correct": false
+        },
+        {
+          "text": "49",
+          "is_correct": false
+        },
+        {
+          "text": "47",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 5,
+        "type_name": "Calcul prin relații liniare cunoscute",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Numerele reale a,b verifică a/3+b/5=-2. Calculați 20a+12b.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim relația dată cu 60: expresia cerută este 60·(-2)=-120.",
+      "options": [
+        {
+          "text": "120",
+          "is_correct": false
+        },
+        {
+          "text": "-119",
+          "is_correct": false
+        },
+        {
+          "text": "-120",
+          "is_correct": true
+        },
+        {
+          "text": "-121",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 5,
+        "type_name": "Calcul prin relații liniare cunoscute",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a,b reale, (a−(1))²+(b−(2))²=0. Calculați a³+b³.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele pătrate sunt nenegative, deci fiecare este zero: a=1, b=2. Rezultă a³+b³=9.",
+      "options": [
+        {
+          "text": "-9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 6,
+        "type_name": "Determinare prin sumă de pătrate nulă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a,b reale, (a−(-1))²+(b−(2))²=0. Calculați a³+b³.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele pătrate sunt nenegative, deci fiecare este zero: a=-1, b=2. Rezultă a³+b³=7.",
+      "options": [
+        {
+          "text": "-7",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 6,
+        "type_name": "Determinare prin sumă de pătrate nulă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a,b reale, (a−(-2))²+(b−(-3))²=0. Calculați a³+b³.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele pătrate sunt nenegative, deci fiecare este zero: a=-2, b=-3. Rezultă a³+b³=-35.",
+      "options": [
+        {
+          "text": "35",
+          "is_correct": false
+        },
+        {
+          "text": "-34",
+          "is_correct": false
+        },
+        {
+          "text": "-36",
+          "is_correct": false
+        },
+        {
+          "text": "-35",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 6,
+        "type_name": "Determinare prin sumă de pătrate nulă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "u,v sunt reale, u+v=7 și u²+v²=29. Determinați uv.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2uv=(u+v)²−(u²+v²)=(7)²−29=20, deci uv=10.",
+      "options": [
+        {
+          "text": "10",
+          "is_correct": true
+        },
+        {
+          "text": "-10",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 7,
+        "type_name": "Recuperare din sumă și sumă de pătrate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "u,v sunt reale, u+v=4 și u²+v²=40. Determinați uv.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2uv=(u+v)²−(u²+v²)=(4)²−40=-24, deci uv=-12.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "-11",
+          "is_correct": false
+        },
+        {
+          "text": "-12",
+          "is_correct": true
+        },
+        {
+          "text": "-13",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 7,
+        "type_name": "Recuperare din sumă și sumă de pătrate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "u,v sunt reale, u+v=9 și u²+v²=65. Determinați uv.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2uv=(u+v)²−(u²+v²)=(9)²−65=16, deci uv=8.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "-8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 7,
+        "type_name": "Recuperare din sumă și sumă de pătrate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b sunt reale, a+b=3 și ab=2. Calculați a^3+b^3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm S₀=2, S₁=3. Relația Sₖ=3Sₖ₋₁−2Sₖ₋₂ dă succesiv S2=5, S3=9.",
+      "options": [
+        {
+          "text": "-9",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 8,
+        "type_name": "Puteri simetrice din sumă și produs",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b sunt reale, a+b=4 și ab=3. Calculați a^5+b^5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm S₀=2, S₁=4. Relația Sₖ=4Sₖ₋₁−3Sₖ₋₂ dă succesiv S2=10, S3=28, S4=82, S5=244.",
+      "options": [
+        {
+          "text": "-244",
+          "is_correct": false
+        },
+        {
+          "text": "245",
+          "is_correct": false
+        },
+        {
+          "text": "243",
+          "is_correct": false
+        },
+        {
+          "text": "244",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 8,
+        "type_name": "Puteri simetrice din sumă și produs",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b sunt reale, a+b=3 și ab=2. Calculați a^7+b^7.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm S₀=2, S₁=3. Relația Sₖ=3Sₖ₋₁−2Sₖ₋₂ dă succesiv S2=5, S3=9, S4=17, S5=33, S6=65, S7=129.",
+      "options": [
+        {
+          "text": "-129",
+          "is_correct": false
+        },
+        {
+          "text": "129",
+          "is_correct": true
+        },
+        {
+          "text": "130",
+          "is_correct": false
+        },
+        {
+          "text": "128",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 8,
+        "type_name": "Puteri simetrice din sumă și produs",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Scrieți (3+2√2)/(3−2√2) ca o singură putere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Conjugatele au produsul 1. Împărțirea la 3−2√2 înseamnă înmulțire cu (3+2√2), deci obținem (3+2√2)^2.",
+      "options": [
+        {
+          "text": "(3+2√2)^1",
+          "is_correct": false
+        },
+        {
+          "text": "(3+2√2)^3",
+          "is_correct": false
+        },
+        {
+          "text": "(3+2√2)^2",
+          "is_correct": true
+        },
+        {
+          "text": "(3+2√2)^4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 9,
+        "type_name": "Raport pătrat sau cub",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Scrieți (5+2√6)/(5−2√6) ca o singură putere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Conjugatele au produsul 1. Împărțirea la 5−2√6 înseamnă înmulțire cu (5+2√6), deci obținem (5+2√6)^2.",
+      "options": [
+        {
+          "text": "(5+2√6)^2",
+          "is_correct": true
+        },
+        {
+          "text": "(5+2√6)^1",
+          "is_correct": false
+        },
+        {
+          "text": "(5+2√6)^3",
+          "is_correct": false
+        },
+        {
+          "text": "(5+2√6)^4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 9,
+        "type_name": "Raport pătrat sau cub",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Scrieți (9+4√5)²/(9−4√5) ca o singură putere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Conjugatele au produsul 1. Împărțirea la 9−4√5 înseamnă înmulțire cu (9+4√5), deci obținem (9+4√5)^3.",
+      "options": [
+        {
+          "text": "(9+4√5)^1",
+          "is_correct": false
+        },
+        {
+          "text": "(9+4√5)^2",
+          "is_correct": false
+        },
+        {
+          "text": "(9+4√5)^3",
+          "is_correct": true
+        },
+        {
+          "text": "(9+4√5)^4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 9,
+        "type_name": "Raport pătrat sau cub",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care expresie este identică cu (a+b)³−a³−b³, pentru orice a,b,c reale?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltarea cubului sumei lasă 3a²b+3ab²=3ab(a+b).",
+      "options": [
+        {
+          "text": "3ab(a−b)",
+          "is_correct": false
+        },
+        {
+          "text": "ab(a+b)",
+          "is_correct": false
+        },
+        {
+          "text": "3a²b²",
+          "is_correct": false
+        },
+        {
+          "text": "3ab(a+b)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 10,
+        "type_name": "Verificarea identităților polinomiale",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care expresie este identică cu (a+b)(a²−ab+b²), pentru orice a,b,c reale?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm formula sumei cuburilor: a³+b³=(a+b)(a²−ab+b²).",
+      "options": [
+        {
+          "text": "a³−b³",
+          "is_correct": false
+        },
+        {
+          "text": "a³+b³",
+          "is_correct": true
+        },
+        {
+          "text": "a²+b²",
+          "is_correct": false
+        },
+        {
+          "text": "a³+b³+2ab",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 10,
+        "type_name": "Verificarea identităților polinomiale",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care expresie este identică cu a³+b³+c³−3abc, pentru orice a,b,c reale?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm produsul: termenii a²b, ab² etc. se reduc și rămân cuburile și −3abc.",
+      "options": [
+        {
+          "text": "(a+b+c)(a²+b²+c²)",
+          "is_correct": false
+        },
+        {
+          "text": "(a+b+c)³",
+          "is_correct": false
+        },
+        {
+          "text": "(a−b)(b−c)(c−a)",
+          "is_correct": false
+        },
+        {
+          "text": "(a+b+c)(a²+b²+c²−ab−bc−ca)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 10,
+        "type_name": "Verificarea identităților polinomiale",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați 2⁻³ + 2⁻².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2⁻³=1/8 și 2⁻²=1/4, deci suma este 3/8.",
+      "options": [
+        {
+          "text": "3/8",
+          "is_correct": true
+        },
+        {
+          "text": "-3/8",
+          "is_correct": false
+        },
+        {
+          "text": "11/8",
+          "is_correct": false
+        },
+        {
+          "text": "-5/8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 11,
+        "type_name": "Puteri cu exponent întreg",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați (2/3)⁻².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Exponentul negativ inversează fracția: (3/2)²=9/4.",
+      "options": [
+        {
+          "text": "-9/4",
+          "is_correct": false
+        },
+        {
+          "text": "13/4",
+          "is_correct": false
+        },
+        {
+          "text": "9/4",
+          "is_correct": true
+        },
+        {
+          "text": "5/4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 11,
+        "type_name": "Puteri cu exponent întreg",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Simplificați (a⁻³)² · a⁵, pentru a real nenul.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(a⁻³)²=a⁻⁶, deci produsul este a^(−6+5)=a⁻¹=1/a.",
+      "options": [
+        {
+          "text": "1/a",
+          "is_correct": true
+        },
+        {
+          "text": "a",
+          "is_correct": false
+        },
+        {
+          "text": "a¹¹",
+          "is_correct": false
+        },
+        {
+          "text": "1/a¹¹",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 11,
+        "type_name": "Puteri cu exponent întreg",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru t=2, calculați (1−t)(1+t)(1+t²)(1+t⁴).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm repetat diferența de pătrate: produsul este (1−t²)(1+t²)(1+t⁴)=1−t⁸=-255.",
+      "options": [
+        {
+          "text": "255",
+          "is_correct": false
+        },
+        {
+          "text": "-255",
+          "is_correct": true
+        },
+        {
+          "text": "-254",
+          "is_correct": false
+        },
+        {
+          "text": "-256",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 12,
+        "type_name": "Simplificare prin produs remarcabil",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru t=-2, calculați (1−t)(1+t)(1+t²)(1+t⁴).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm repetat diferența de pătrate: produsul este (1−t²)(1+t²)(1+t⁴)=1−t⁸=-255.",
+      "options": [
+        {
+          "text": "255",
+          "is_correct": false
+        },
+        {
+          "text": "-254",
+          "is_correct": false
+        },
+        {
+          "text": "-256",
+          "is_correct": false
+        },
+        {
+          "text": "-255",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 12,
+        "type_name": "Simplificare prin produs remarcabil",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru t=-1/2, calculați (1−t)(1+t)(1+t²)(1+t⁴).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm repetat diferența de pătrate: produsul este (1−t²)(1+t²)(1+t⁴)=1−t⁸=255/256.",
+      "options": [
+        {
+          "text": "-255/256",
+          "is_correct": false
+        },
+        {
+          "text": "255/256",
+          "is_correct": true
+        },
+        {
+          "text": "511/256",
+          "is_correct": false
+        },
+        {
+          "text": "-1/256",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 12,
+        "type_name": "Simplificare prin produs remarcabil",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "m,n sunt numere naturale. Care este mulțimea tuturor valorilor lui 1(−1)ᵐ+2(−1)ⁿ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare putere a lui −1 este 1 sau −1, independent de cealaltă. Cele patru combinații dau {-3; -1; 1; 3}.",
+      "options": [
+        {
+          "text": "{-3; 3}",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 3}",
+          "is_correct": false
+        },
+        {
+          "text": "{-3; -1; 1; 3}",
+          "is_correct": true
+        },
+        {
+          "text": "{-2; 0; 2; 4}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 13,
+        "type_name": "Valori determinate de paritate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "m,n sunt numere naturale. Care este mulțimea tuturor valorilor lui 2(−1)ᵐ+3(−1)ⁿ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare putere a lui −1 este 1 sau −1, independent de cealaltă. Cele patru combinații dau {-5; -1; 1; 5}.",
+      "options": [
+        {
+          "text": "{-5; -1; 1; 5}",
+          "is_correct": true
+        },
+        {
+          "text": "{-5; 5}",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 5}",
+          "is_correct": false
+        },
+        {
+          "text": "{-4; 0; 2; 6}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 13,
+        "type_name": "Valori determinate de paritate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "m,n sunt numere naturale. Care este mulțimea tuturor valorilor lui 3(−1)ᵐ+4(−1)ⁿ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare putere a lui −1 este 1 sau −1, independent de cealaltă. Cele patru combinații dau {-7; -1; 1; 7}.",
+      "options": [
+        {
+          "text": "{-7; 7}",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 7}",
+          "is_correct": false
+        },
+        {
+          "text": "{-7; -1; 1; 7}",
+          "is_correct": true
+        },
+        {
+          "text": "{-6; 0; 2; 8}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 13,
+        "type_name": "Valori determinate de paritate",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b sunt reale și (a−(2))²+(b−(1))²=0. Calculați (a−b)^2026.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma pătratelor este zero numai când a=2, b=1. Atunci a−b=1, deci puterea cerută este 1.",
+      "options": [
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 14,
+        "type_name": "Potențe mari sub o condiție rigidă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b sunt reale și (a−(3))²+(b−(3))²=0. Calculați (a−b)^2026.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma pătratelor este zero numai când a=3, b=3. Atunci a−b=0, deci puterea cerută este 0.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 14,
+        "type_name": "Potențe mari sub o condiție rigidă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b sunt reale și (a−(0))²+(b−(1))²=0. Calculați (a−b)^2027.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma pătratelor este zero numai când a=0, b=1. Atunci a−b=-1, deci puterea cerută este -1.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 14,
+        "type_name": "Potențe mari sub o condiție rigidă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați √50+√8.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "√50=5√2 și √8=2√2, deci suma este 7√2.",
+      "options": [
+        {
+          "text": "7√2",
+          "is_correct": true
+        },
+        {
+          "text": "√58",
+          "is_correct": false
+        },
+        {
+          "text": "9√2",
+          "is_correct": false
+        },
+        {
+          "text": "3√2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 15,
+        "type_name": "Operații cu radicali simpli",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați (√5−1)².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Folosim (u−v)²=u²−2uv+v²: 5−2√5+1=6−2√5.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6+2√5",
+          "is_correct": false
+        },
+        {
+          "text": "6−2√5",
+          "is_correct": true
+        },
+        {
+          "text": "5−2√5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 15,
+        "type_name": "Operații cu radicali simpli",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați (√7+√3)(√7−√3).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența de pătrate este (√7)²−(√3)²=7−3=4.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "2√21",
+          "is_correct": false
+        },
+        {
+          "text": "−4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 15,
+        "type_name": "Operații cu radicali simpli",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați media aritmetică a numerelor pozitive 3−1√5 și 3+1√5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma numerelor este 6, iar produsul este 4. Media aritmetică este 6/2=3.",
+      "options": [
+        {
+          "text": "-3",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 16,
+        "type_name": "Medii ale numerelor cu radicali",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați media armonică a numerelor pozitive 3−1√5 și 3+1√5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma numerelor este 6, iar produsul este 4. Media armonică este 2·4/6=4/3.",
+      "options": [
+        {
+          "text": "-4/3",
+          "is_correct": false
+        },
+        {
+          "text": "7/3",
+          "is_correct": false
+        },
+        {
+          "text": "1/3",
+          "is_correct": false
+        },
+        {
+          "text": "4/3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 16,
+        "type_name": "Medii ale numerelor cu radicali",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați media armonică a numerelor pozitive 7−4√3 și 7+4√3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma numerelor este 14, iar produsul este 1. Media armonică este 2·1/14=1/7.",
+      "options": [
+        {
+          "text": "-1/7",
+          "is_correct": false
+        },
+        {
+          "text": "1/7",
+          "is_correct": true
+        },
+        {
+          "text": "8/7",
+          "is_correct": false
+        },
+        {
+          "text": "-6/7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 16,
+        "type_name": "Medii ale numerelor cu radicali",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați √(17+12√2)+√(17−12√2).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Radicalii sunt 3+2√2 și 3−2√2, ambele pozitive. Suma este 6.",
+      "options": [
+        {
+          "text": "-6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 17,
+        "type_name": "Raționalitate ascunsă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați √(49+20√6)+√(49−20√6).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Radicalii sunt 5+2√6 și 5−2√6, ambele pozitive. Suma este 10.",
+      "options": [
+        {
+          "text": "10",
+          "is_correct": true
+        },
+        {
+          "text": "-10",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 17,
+        "type_name": "Raționalitate ascunsă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați √(161+72√5)+√(161−72√5).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Radicalii sunt 9+4√5 și 9−4√5, ambele pozitive. Suma este 18.",
+      "options": [
+        {
+          "text": "-18",
+          "is_correct": false
+        },
+        {
+          "text": "19",
+          "is_correct": false
+        },
+        {
+          "text": "18",
+          "is_correct": true
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 17,
+        "type_name": "Raționalitate ascunsă",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Simplificați √((x−(4))²), știind că x≤3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "√((x−(4))²)=|x−(4)|. Din condiția dată, x−(4) este negativ, deci rezultatul este 4−x.",
+      "options": [
+        {
+          "text": "x−(4)",
+          "is_correct": false
+        },
+        {
+          "text": "x²−16",
+          "is_correct": false
+        },
+        {
+          "text": "x²+16",
+          "is_correct": false
+        },
+        {
+          "text": "4−x",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 18,
+        "type_name": "Radicali de pătrate și semn cunoscut",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Simplificați √((x−(-3))²), știind că x≤-4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "√((x−(-3))²)=|x−(-3)|. Din condiția dată, x−(-3) este negativ, deci rezultatul este -3−x.",
+      "options": [
+        {
+          "text": "x−(-3)",
+          "is_correct": false
+        },
+        {
+          "text": "-3−x",
+          "is_correct": true
+        },
+        {
+          "text": "x²−9",
+          "is_correct": false
+        },
+        {
+          "text": "x²+9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 18,
+        "type_name": "Radicali de pătrate și semn cunoscut",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Simplificați √((x−(7))²), știind că x≤6.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "√((x−(7))²)=|x−(7)|. Din condiția dată, x−(7) este negativ, deci rezultatul este 7−x.",
+      "options": [
+        {
+          "text": "x−(7)",
+          "is_correct": false
+        },
+        {
+          "text": "x²−49",
+          "is_correct": false
+        },
+        {
+          "text": "x²+49",
+          "is_correct": false
+        },
+        {
+          "text": "7−x",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 18,
+        "type_name": "Radicali de pătrate și semn cunoscut",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Descompuneți radicalul √(7+4√3).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Radicandul este (2+1√3)². Deoarece 2>1√3, expresia 2+1√3 este pozitivă; radicalul este 2+1√3.",
+      "options": [
+        {
+          "text": "2+1√3",
+          "is_correct": true
+        },
+        {
+          "text": "2−1√3",
+          "is_correct": false
+        },
+        {
+          "text": "1+2√3",
+          "is_correct": false
+        },
+        {
+          "text": "7+4√3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 19,
+        "type_name": "Descompunerea radicalilor dubli",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Descompuneți radicalul √(23+8√7).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Radicandul este (4+1√7)². Deoarece 4>1√7, expresia 4+1√7 este pozitivă; radicalul este 4+1√7.",
+      "options": [
+        {
+          "text": "4−1√7",
+          "is_correct": false
+        },
+        {
+          "text": "1+4√7",
+          "is_correct": false
+        },
+        {
+          "text": "4+1√7",
+          "is_correct": true
+        },
+        {
+          "text": "23+8√7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 19,
+        "type_name": "Descompunerea radicalilor dubli",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Descompuneți radicalul √(49+20√6).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Radicandul este (5+2√6)². Deoarece 5>2√6, expresia 5+2√6 este pozitivă; radicalul este 5+2√6.",
+      "options": [
+        {
+          "text": "5+2√6",
+          "is_correct": true
+        },
+        {
+          "text": "5−2√6",
+          "is_correct": false
+        },
+        {
+          "text": "2+5√6",
+          "is_correct": false
+        },
+        {
+          "text": "49+20√6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 19,
+        "type_name": "Descompunerea radicalilor dubli",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați 25% din numărul (√5+√2)²+(√5−√2)².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Termenii cu radicali se reduc în sumă: numărul este 2·(5+2)=14. Procentul cerut este 25/100·14=7/2.",
+      "options": [
+        {
+          "text": "-7/2",
+          "is_correct": false
+        },
+        {
+          "text": "7/2",
+          "is_correct": true
+        },
+        {
+          "text": "9/2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 20,
+        "type_name": "Calcul procentual cu radicali",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați 50% din numărul (√11+√2)²+(√11−√2)².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Termenii cu radicali se reduc în sumă: numărul este 2·(11+2)=26. Procentul cerut este 50/100·26=13.",
+      "options": [
+        {
+          "text": "-13",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 20,
+        "type_name": "Calcul procentual cu radicali",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați 75% din numărul (√6+√2)²+(√6−√2)².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Termenii cu radicali se reduc în sumă: numărul este 2·(6+2)=16. Procentul cerut este 75/100·16=12.",
+      "options": [
+        {
+          "text": "-12",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 20,
+        "type_name": "Calcul procentual cu radicali",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Raționalizați numitorul fracției 1/(√3+√2).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Amplificăm cu conjugata √3−√2. Numitorul devine 3−2=1, deci rezultatul este √3−√2.",
+      "options": [
+        {
+          "text": "√3+√2",
+          "is_correct": false
+        },
+        {
+          "text": "√2−√3",
+          "is_correct": false
+        },
+        {
+          "text": "√3−√2",
+          "is_correct": true
+        },
+        {
+          "text": "(√3−√2)/5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 21,
+        "type_name": "Raționalizarea numitorului",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Raționalizați numitorul fracției 1/(√7+√6).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Amplificăm cu conjugata √7−√6. Numitorul devine 7−6=1, deci rezultatul este √7−√6.",
+      "options": [
+        {
+          "text": "√7−√6",
+          "is_correct": true
+        },
+        {
+          "text": "√7+√6",
+          "is_correct": false
+        },
+        {
+          "text": "√6−√7",
+          "is_correct": false
+        },
+        {
+          "text": "(√7−√6)/13",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 21,
+        "type_name": "Raționalizarea numitorului",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Raționalizați numitorul fracției 1/(√14+√13).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Amplificăm cu conjugata √14−√13. Numitorul devine 14−13=1, deci rezultatul este √14−√13.",
+      "options": [
+        {
+          "text": "√14+√13",
+          "is_correct": false
+        },
+        {
+          "text": "√13−√14",
+          "is_correct": false
+        },
+        {
+          "text": "√14−√13",
+          "is_correct": true
+        },
+        {
+          "text": "(√14−√13)/27",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 21,
+        "type_name": "Raționalizarea numitorului",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Simplificați √(17+12√2)/√(17−12√2).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Radicalii sunt 3±2√2, iar conjugatele au produsul 1. Raportul este (3+2√2)²=17+12√2.",
+      "options": [
+        {
+          "text": "17−12√2",
+          "is_correct": false
+        },
+        {
+          "text": "3+2√2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "17+12√2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 22,
+        "type_name": "Fracții cu radicali imbricați",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Simplificați √(49+20√6)/√(49−20√6).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Radicalii sunt 5±2√6, iar conjugatele au produsul 1. Raportul este (5+2√6)²=49+20√6.",
+      "options": [
+        {
+          "text": "49−20√6",
+          "is_correct": false
+        },
+        {
+          "text": "49+20√6",
+          "is_correct": true
+        },
+        {
+          "text": "5+2√6",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 22,
+        "type_name": "Fracții cu radicali imbricați",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Simplificați √(161+72√5)/√(161−72√5).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Radicalii sunt 9±4√5, iar conjugatele au produsul 1. Raportul este (9+4√5)²=161+72√5.",
+      "options": [
+        {
+          "text": "161−72√5",
+          "is_correct": false
+        },
+        {
+          "text": "9+4√5",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "161+72√5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 22,
+        "type_name": "Fracții cu radicali imbricați",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați suma Σ[k=1,…,3] 1/(√(k+1)+√k).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare termen este √(k+1)−√k. Suma se telescopează la √4−1=1.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 23,
+        "type_name": "Sume telescopice de radicali",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați suma Σ[k=1,…,15] 1/(√(k+1)+√k).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare termen este √(k+1)−√k. Suma se telescopează la √16−1=3.",
+      "options": [
+        {
+          "text": "-3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 23,
+        "type_name": "Sume telescopice de radicali",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați suma Σ[k=1,…,35] 1/(√(k+1)+√k).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare termen este √(k+1)−√k. Suma se telescopează la √36−1=5.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "-5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 23,
+        "type_name": "Sume telescopice de radicali",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația x · (Σ[k=1,…,3] 1/(√(k+1)+√k)) = 3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma se reduce la √4−1=1. Ecuația devine 1x=3, deci x=3.",
+      "options": [
+        {
+          "text": "-3",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 24,
+        "type_name": "Ecuații construite din sume",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația x · (Σ[k=1,…,15] 1/(√(k+1)+√k)) = 15.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma se reduce la √16−1=3. Ecuația devine 3x=15, deci x=5.",
+      "options": [
+        {
+          "text": "-5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 24,
+        "type_name": "Ecuații construite din sume",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rezolvați în R ecuația x · (Σ[k=1,…,35] 1/(√(k+1)+√k)) = 10.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma se reduce la √36−1=5. Ecuația devine 5x=10, deci x=2.",
+      "options": [
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 24,
+        "type_name": "Ecuații construite din sume",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați toate numerele întregi n≠1 pentru care (2n+(0))/(n−(1)) este întreg.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fracția este 2+2/(n−(1)). Numărul 2 este prim, deci n−(1) trebuie să fie unul dintre −2, −1, 1, 2. Obținem {-1; 0; 2; 3}.",
+      "options": [
+        {
+          "text": "{0; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "{-1; 3}",
+          "is_correct": false
+        },
+        {
+          "text": "{-1; 0; 2; 3}",
+          "is_correct": true
+        },
+        {
+          "text": "{0; 1; 3; 4}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 25,
+        "type_name": "Valori întregi ale expresiilor raționale",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați toate numerele întregi n≠3 pentru care (2n+(-1))/(n−(3)) este întreg.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fracția este 2+5/(n−(3)). Numărul 5 este prim, deci n−(3) trebuie să fie unul dintre −5, −1, 1, 5. Obținem {-2; 2; 4; 8}.",
+      "options": [
+        {
+          "text": "{-2; 2; 4; 8}",
+          "is_correct": true
+        },
+        {
+          "text": "{2; 4}",
+          "is_correct": false
+        },
+        {
+          "text": "{-2; 8}",
+          "is_correct": false
+        },
+        {
+          "text": "{-1; 3; 5; 9}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 25,
+        "type_name": "Valori întregi ale expresiilor raționale",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați toate numerele întregi n≠-2 pentru care (2n+(15))/(n−(-2)) este întreg.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fracția este 2+11/(n−(-2)). Numărul 11 este prim, deci n−(-2) trebuie să fie unul dintre −11, −1, 1, 11. Obținem {-13; -3; -1; 9}.",
+      "options": [
+        {
+          "text": "{-3; -1}",
+          "is_correct": false
+        },
+        {
+          "text": "{-13; 9}",
+          "is_correct": false
+        },
+        {
+          "text": "{-13; -3; -1; 9}",
+          "is_correct": true
+        },
+        {
+          "text": "{-12; -2; 0; 10}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 25,
+        "type_name": "Valori întregi ale expresiilor raționale",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Simplificați √[(x²+x)²+2(x²+x)+1], pentru x real.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm t=x²+x. Radicandul este (t+1)². Cum t≥−1/4 și 1≥1, t+1>0, deci radicalul este x²+x+1.",
+      "options": [
+        {
+          "text": "x²+x−1",
+          "is_correct": false
+        },
+        {
+          "text": "x²−x+1",
+          "is_correct": false
+        },
+        {
+          "text": "x²+1",
+          "is_correct": false
+        },
+        {
+          "text": "x²+x+1",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 26,
+        "type_name": "Pătrat perfect prin substituție",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Simplificați √[(x²+x)²+6(x²+x)+9], pentru x real.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm t=x²+x. Radicandul este (t+3)². Cum t≥−1/4 și 3≥1, t+3>0, deci radicalul este x²+x+3.",
+      "options": [
+        {
+          "text": "x²+x−3",
+          "is_correct": false
+        },
+        {
+          "text": "x²+x+3",
+          "is_correct": true
+        },
+        {
+          "text": "x²−x+3",
+          "is_correct": false
+        },
+        {
+          "text": "x²+3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 26,
+        "type_name": "Pătrat perfect prin substituție",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Simplificați √[(x²+x)²+10(x²+x)+25], pentru x real.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm t=x²+x. Radicandul este (t+5)². Cum t≥−1/4 și 5≥1, t+5>0, deci radicalul este x²+x+5.",
+      "options": [
+        {
+          "text": "x²+x−5",
+          "is_correct": false
+        },
+        {
+          "text": "x²−x+5",
+          "is_correct": false
+        },
+        {
+          "text": "x²+5",
+          "is_correct": false
+        },
+        {
+          "text": "x²+x+5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 26,
+        "type_name": "Pătrat perfect prin substituție",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y,z sunt reale, x²+y²+z²=xy+yz+zx și x+y+z=3. Calculați x^2+y^2+z^2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(x−y)²+(y−z)²+(z−x)²=2(x²+y²+z²−xy−yz−zx)=0. Rezultă x=y=z, iar suma lor dă x=y=z=1. Valoarea cerută este 3.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "-3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 27,
+        "type_name": "Egalitate forțată între trei numere",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y,z sunt reale, x²+y²+z²=xy+yz+zx și x+y+z=9. Calculați x^3+y^3+z^3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(x−y)²+(y−z)²+(z−x)²=2(x²+y²+z²−xy−yz−zx)=0. Rezultă x=y=z, iar suma lor dă x=y=z=3. Valoarea cerută este 81.",
+      "options": [
+        {
+          "text": "-81",
+          "is_correct": false
+        },
+        {
+          "text": "82",
+          "is_correct": false
+        },
+        {
+          "text": "81",
+          "is_correct": true
+        },
+        {
+          "text": "80",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 27,
+        "type_name": "Egalitate forțată între trei numere",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y,z sunt reale, x²+y²+z²=xy+yz+zx și x+y+z=-6. Calculați x^2+y^2+z^2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(x−y)²+(y−z)²+(z−x)²=2(x²+y²+z²−xy−yz−zx)=0. Rezultă x=y=z, iar suma lor dă x=y=z=-2. Valoarea cerută este 12.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "-12",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.1",
+        "type": 27,
+        "type_name": "Egalitate forțată între trei numere",
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    }
+  ]
+}

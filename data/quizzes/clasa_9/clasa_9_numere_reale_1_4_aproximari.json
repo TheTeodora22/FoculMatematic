@@ -1,0 +1,1287 @@
+{
+  "title": "1.4. Aproximări prin lipsă sau prin adaos",
+  "description": "Clasa a 9-a · Mulțimea numerelor reale",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Aproximați prin lipsă x=3,141592 la 2 zecimale: alegeți cel mai mare multiplu de 10^(−2) care este ≤x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3,14≤x<3,15. Alegem capătul din stânga: 3,14.",
+      "options": [
+        {
+          "text": "3,14",
+          "is_correct": true
+        },
+        {
+          "text": "3,13",
+          "is_correct": false
+        },
+        {
+          "text": "3,15",
+          "is_correct": false
+        },
+        {
+          "text": "3,16",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 1,
+        "type_name": "Aproximare zecimală prin lipsă",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aproximați prin lipsă x=−2,413256 la 3 zecimale: alegeți cel mai mare multiplu de 10^(−3) care este ≤x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−2,414≤x<−2,413. Alegem capătul din stânga: −2,414.",
+      "options": [
+        {
+          "text": "−2,415",
+          "is_correct": false
+        },
+        {
+          "text": "−2,414",
+          "is_correct": true
+        },
+        {
+          "text": "−2,413",
+          "is_correct": false
+        },
+        {
+          "text": "−2,412",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 1,
+        "type_name": "Aproximare zecimală prin lipsă",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aproximați prin lipsă x=0,00987 la 3 zecimale: alegeți cel mai mare multiplu de 10^(−3) care este ≤x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0,009≤x<0,010. Alegem capătul din stânga: 0,009.",
+      "options": [
+        {
+          "text": "0,008",
+          "is_correct": false
+        },
+        {
+          "text": "0,010",
+          "is_correct": false
+        },
+        {
+          "text": "0,009",
+          "is_correct": true
+        },
+        {
+          "text": "0,011",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 1,
+        "type_name": "Aproximare zecimală prin lipsă",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aproximați prin lipsă x=−0,00041 la 4 zecimale: alegeți cel mai mare multiplu de 10^(−4) care este ≤x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−0,0005≤x<−0,0004. Alegem capătul din stânga: −0,0005.",
+      "options": [
+        {
+          "text": "−0,0006",
+          "is_correct": false
+        },
+        {
+          "text": "−0,0004",
+          "is_correct": false
+        },
+        {
+          "text": "−0,0003",
+          "is_correct": false
+        },
+        {
+          "text": "−0,0005",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 1,
+        "type_name": "Aproximare zecimală prin lipsă",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aproximați prin lipsă x=12,999 la 1 zecimale: alegeți cel mai mare multiplu de 10^(−1) care este ≤x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "12,9≤x<13,0. Alegem capătul din stânga: 12,9.",
+      "options": [
+        {
+          "text": "12,9",
+          "is_correct": true
+        },
+        {
+          "text": "12,8",
+          "is_correct": false
+        },
+        {
+          "text": "13,0",
+          "is_correct": false
+        },
+        {
+          "text": "13,1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 1,
+        "type_name": "Aproximare zecimală prin lipsă",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aproximați prin adaos x=√5 la 3 zecimale: alegeți cel mai mic multiplu de 10^(−3) care este ≥x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2,236<x≤2,237. Alegem cel mai mic element al grilei care este ≥x, anume 2,237.",
+      "options": [
+        {
+          "text": "2,236",
+          "is_correct": false
+        },
+        {
+          "text": "2,237",
+          "is_correct": true
+        },
+        {
+          "text": "2,238",
+          "is_correct": false
+        },
+        {
+          "text": "2,239",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 2,
+        "type_name": "Aproximare zecimală prin adaos",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aproximați prin adaos x=−√2 la 2 zecimale: alegeți cel mai mic multiplu de 10^(−2) care este ≥x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−1,42<x≤−1,41. Alegem cel mai mic element al grilei care este ≥x, anume −1,41.",
+      "options": [
+        {
+          "text": "−1,42",
+          "is_correct": false
+        },
+        {
+          "text": "−1,40",
+          "is_correct": false
+        },
+        {
+          "text": "−1,41",
+          "is_correct": true
+        },
+        {
+          "text": "−1,39",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 2,
+        "type_name": "Aproximare zecimală prin adaos",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aproximați prin adaos x=−3,141592 la 3 zecimale: alegeți cel mai mic multiplu de 10^(−3) care este ≥x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−3,142<x≤−3,141. Alegem cel mai mic element al grilei care este ≥x, anume −3,141.",
+      "options": [
+        {
+          "text": "−3,142",
+          "is_correct": false
+        },
+        {
+          "text": "−3,140",
+          "is_correct": false
+        },
+        {
+          "text": "−3,139",
+          "is_correct": false
+        },
+        {
+          "text": "−3,141",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 2,
+        "type_name": "Aproximare zecimală prin adaos",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aproximați prin adaos x=0,00481 la 3 zecimale: alegeți cel mai mic multiplu de 10^(−3) care este ≥x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0,004<x≤0,005. Alegem cel mai mic element al grilei care este ≥x, anume 0,005.",
+      "options": [
+        {
+          "text": "0,005",
+          "is_correct": true
+        },
+        {
+          "text": "0,004",
+          "is_correct": false
+        },
+        {
+          "text": "0,006",
+          "is_correct": false
+        },
+        {
+          "text": "0,007",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 2,
+        "type_name": "Aproximare zecimală prin adaos",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aproximați prin adaos x=2,5 la 1 zecimale: alegeți cel mai mic multiplu de 10^(−1) care este ≥x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numărul aparține deja grilei cu 1 zecimale. Cel mai mic element al grilei care este ≥x este chiar 2,5; eroarea este zero.",
+      "options": [
+        {
+          "text": "2,4",
+          "is_correct": false
+        },
+        {
+          "text": "2,5",
+          "is_correct": true
+        },
+        {
+          "text": "2,6",
+          "is_correct": false
+        },
+        {
+          "text": "2,7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 2,
+        "type_name": "Aproximare zecimală prin adaos",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Trunchiați −6,465248 la 3 zecimale, prin eliminarea cifrelor următoare (spre zero).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Eliminăm cifrele de după a 3-a zecimală și păstrăm semnul. Trunchierea este spre zero, deci obținem −6,465.",
+      "options": [
+        {
+          "text": "−6,466",
+          "is_correct": false
+        },
+        {
+          "text": "−6,464",
+          "is_correct": false
+        },
+        {
+          "text": "−6,465",
+          "is_correct": true
+        },
+        {
+          "text": "−6,463",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 3,
+        "type_name": "Trunchiere de ordin dat",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Trunchiați 2,718281 la 2 zecimale, prin eliminarea cifrelor următoare (spre zero).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Eliminăm cifrele de după a 2-a zecimală și păstrăm semnul. Trunchierea este spre zero, deci obținem 2,71.",
+      "options": [
+        {
+          "text": "2,70",
+          "is_correct": false
+        },
+        {
+          "text": "2,72",
+          "is_correct": false
+        },
+        {
+          "text": "2,73",
+          "is_correct": false
+        },
+        {
+          "text": "2,71",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 3,
+        "type_name": "Trunchiere de ordin dat",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Trunchiați −0,00987 la 3 zecimale, prin eliminarea cifrelor următoare (spre zero).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Eliminăm cifrele de după a 3-a zecimală și păstrăm semnul. Trunchierea este spre zero, deci obținem −0,009.",
+      "options": [
+        {
+          "text": "−0,009",
+          "is_correct": true
+        },
+        {
+          "text": "−0,010",
+          "is_correct": false
+        },
+        {
+          "text": "−0,008",
+          "is_correct": false
+        },
+        {
+          "text": "−0,007",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 3,
+        "type_name": "Trunchiere de ordin dat",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Trunchiați 0,99999 la 2 zecimale, prin eliminarea cifrelor următoare (spre zero).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Eliminăm cifrele de după a 2-a zecimală și păstrăm semnul. Trunchierea este spre zero, deci obținem 0,99.",
+      "options": [
+        {
+          "text": "0,98",
+          "is_correct": false
+        },
+        {
+          "text": "0,99",
+          "is_correct": true
+        },
+        {
+          "text": "1,00",
+          "is_correct": false
+        },
+        {
+          "text": "1,01",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 3,
+        "type_name": "Trunchiere de ordin dat",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Trunchiați −12,3409 la 2 zecimale, prin eliminarea cifrelor următoare (spre zero).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Eliminăm cifrele de după a 2-a zecimală și păstrăm semnul. Trunchierea este spre zero, deci obținem −12,34.",
+      "options": [
+        {
+          "text": "−12,35",
+          "is_correct": false
+        },
+        {
+          "text": "−12,33",
+          "is_correct": false
+        },
+        {
+          "text": "−12,34",
+          "is_correct": true
+        },
+        {
+          "text": "−12,32",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 3,
+        "type_name": "Trunchiere de ordin dat",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rotunjiți 4,245982 la 3 zecimale. La egalitate de distanțe, alegeți valoarea cu modul mai mare.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe grila cu 3 zecimale alegem valoarea cea mai apropiată. La distanțe egale alegem modulul mai mare. Rezultatul este 4,246.",
+      "options": [
+        {
+          "text": "4,245",
+          "is_correct": false
+        },
+        {
+          "text": "4,247",
+          "is_correct": false
+        },
+        {
+          "text": "4,248",
+          "is_correct": false
+        },
+        {
+          "text": "4,246",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 4,
+        "type_name": "Rotunjire la o zecimală dată",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rotunjiți −2,718281 la 3 zecimale. La egalitate de distanțe, alegeți valoarea cu modul mai mare.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe grila cu 3 zecimale alegem valoarea cea mai apropiată. La distanțe egale alegem modulul mai mare. Rezultatul este −2,718.",
+      "options": [
+        {
+          "text": "−2,718",
+          "is_correct": true
+        },
+        {
+          "text": "−2,719",
+          "is_correct": false
+        },
+        {
+          "text": "−2,717",
+          "is_correct": false
+        },
+        {
+          "text": "−2,716",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 4,
+        "type_name": "Rotunjire la o zecimală dată",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rotunjiți 9,995 la 2 zecimale. La egalitate de distanțe, alegeți valoarea cu modul mai mare.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe grila cu 2 zecimale alegem valoarea cea mai apropiată. La distanțe egale alegem modulul mai mare. Rezultatul este 10,00.",
+      "options": [
+        {
+          "text": "9,99",
+          "is_correct": false
+        },
+        {
+          "text": "10,00",
+          "is_correct": true
+        },
+        {
+          "text": "10,01",
+          "is_correct": false
+        },
+        {
+          "text": "10,02",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 4,
+        "type_name": "Rotunjire la o zecimală dată",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rotunjiți −1,245 la 2 zecimale. La egalitate de distanțe, alegeți valoarea cu modul mai mare.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe grila cu 2 zecimale alegem valoarea cea mai apropiată. La distanțe egale alegem modulul mai mare. Rezultatul este −1,25.",
+      "options": [
+        {
+          "text": "−1,26",
+          "is_correct": false
+        },
+        {
+          "text": "−1,24",
+          "is_correct": false
+        },
+        {
+          "text": "−1,25",
+          "is_correct": true
+        },
+        {
+          "text": "−1,23",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 4,
+        "type_name": "Rotunjire la o zecimală dată",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Rotunjiți 0,00045 la 4 zecimale. La egalitate de distanțe, alegeți valoarea cu modul mai mare.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe grila cu 4 zecimale alegem valoarea cea mai apropiată. La distanțe egale alegem modulul mai mare. Rezultatul este 0,0005.",
+      "options": [
+        {
+          "text": "0,0004",
+          "is_correct": false
+        },
+        {
+          "text": "0,0006",
+          "is_correct": false
+        },
+        {
+          "text": "0,0007",
+          "is_correct": false
+        },
+        {
+          "text": "0,0005",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 4,
+        "type_name": "Rotunjire la o zecimală dată",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=√2=1,414213…, care este cvadruplul (aproximare prin lipsă; aproximare prin adaos; trunchiere spre zero; rotunjire la cea mai apropiată valoare), toate la 2 zecimale?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Încadrarea pe grilă dă 1,41<x<1,42. Trunchierea se face spre zero; rotunjirea ține cont de prima cifră eliminată. Cvadruplul este (1,41; 1,42; 1,41; 1,41).",
+      "options": [
+        {
+          "text": "(1,41; 1,42; 1,41; 1,41)",
+          "is_correct": true
+        },
+        {
+          "text": "(1,42; 1,41; 1,41; 1,41)",
+          "is_correct": false
+        },
+        {
+          "text": "(1,41; 1,42; 1,42; 1,41)",
+          "is_correct": false
+        },
+        {
+          "text": "(1,41; 1,42; 1,41; 1,42)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 5,
+        "type_name": "Comparația procedeelor de aproximare",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=−√2=−1,414213…, care este cvadruplul (aproximare prin lipsă; aproximare prin adaos; trunchiere spre zero; rotunjire la cea mai apropiată valoare), toate la 2 zecimale?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Încadrarea pe grilă dă −1,42<x<−1,41. Trunchierea se face spre zero; rotunjirea ține cont de prima cifră eliminată. Cvadruplul este (−1,42; −1,41; −1,41; −1,41).",
+      "options": [
+        {
+          "text": "(−1,41; −1,42; −1,41; −1,41)",
+          "is_correct": false
+        },
+        {
+          "text": "(−1,42; −1,41; −1,41; −1,41)",
+          "is_correct": true
+        },
+        {
+          "text": "(−1,42; −1,41; −1,42; −1,41)",
+          "is_correct": false
+        },
+        {
+          "text": "(−1,42; −1,41; −1,41; −1,42)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 5,
+        "type_name": "Comparația procedeelor de aproximare",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=φ=(1+√5)/2=1,618033…, care este cvadruplul (aproximare prin lipsă; aproximare prin adaos; trunchiere spre zero; rotunjire la cea mai apropiată valoare), toate la 3 zecimale?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Încadrarea pe grilă dă 1,618<x<1,619. Trunchierea se face spre zero; rotunjirea ține cont de prima cifră eliminată. Cvadruplul este (1,618; 1,619; 1,618; 1,618).",
+      "options": [
+        {
+          "text": "(1,619; 1,618; 1,618; 1,618)",
+          "is_correct": false
+        },
+        {
+          "text": "(1,618; 1,619; 1,619; 1,618)",
+          "is_correct": false
+        },
+        {
+          "text": "(1,618; 1,619; 1,618; 1,618)",
+          "is_correct": true
+        },
+        {
+          "text": "(1,618; 1,619; 1,618; 1,619)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 5,
+        "type_name": "Comparația procedeelor de aproximare",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=√3=1,732050…, care este cvadruplul (aproximare prin lipsă; aproximare prin adaos; trunchiere spre zero; rotunjire la cea mai apropiată valoare), toate la 3 zecimale?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Încadrarea pe grilă dă 1,732<x<1,733. Trunchierea se face spre zero; rotunjirea ține cont de prima cifră eliminată. Cvadruplul este (1,732; 1,733; 1,732; 1,732).",
+      "options": [
+        {
+          "text": "(1,733; 1,732; 1,732; 1,732)",
+          "is_correct": false
+        },
+        {
+          "text": "(1,732; 1,733; 1,733; 1,732)",
+          "is_correct": false
+        },
+        {
+          "text": "(1,732; 1,733; 1,732; 1,733)",
+          "is_correct": false
+        },
+        {
+          "text": "(1,732; 1,733; 1,732; 1,732)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 5,
+        "type_name": "Comparația procedeelor de aproximare",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=−√5=−2,236067…, care este cvadruplul (aproximare prin lipsă; aproximare prin adaos; trunchiere spre zero; rotunjire la cea mai apropiată valoare), toate la 2 zecimale?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Încadrarea pe grilă dă −2,24<x<−2,23. Trunchierea se face spre zero; rotunjirea ține cont de prima cifră eliminată. Cvadruplul este (−2,24; −2,23; −2,23; −2,24).",
+      "options": [
+        {
+          "text": "(−2,24; −2,23; −2,23; −2,24)",
+          "is_correct": true
+        },
+        {
+          "text": "(−2,23; −2,24; −2,23; −2,24)",
+          "is_correct": false
+        },
+        {
+          "text": "(−2,24; −2,23; −2,24; −2,24)",
+          "is_correct": false
+        },
+        {
+          "text": "(−2,24; −2,23; −2,23; −2,23)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 5,
+        "type_name": "Comparația procedeelor de aproximare",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=10501/105, a=100 și ε=1/100, caracterizați aproximația a după sens și după eroarea absolută |x−a|. O eroare egală cu ε nu este strict sub toleranță.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem a<x, deci aproximarea este prin lipsă. Eroarea exactă este |x−a|=1/105, < ε=1/100.",
+      "options": [
+        {
+          "text": "Prin lipsă, cu eroare mai mare sau egală cu ε.",
+          "is_correct": false
+        },
+        {
+          "text": "Prin lipsă, cu eroare strict mai mică decât ε.",
+          "is_correct": true
+        },
+        {
+          "text": "Prin adaos, cu eroare strict mai mică decât ε.",
+          "is_correct": false
+        },
+        {
+          "text": "Prin adaos, cu eroare mai mare sau egală cu ε.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 6,
+        "type_name": "Verificarea unei erori declarate",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=99/70, a=7/5 și ε=1/100, caracterizați aproximația a după sens și după eroarea absolută |x−a|. O eroare egală cu ε nu este strict sub toleranță.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem a<x, deci aproximarea este prin lipsă. Eroarea exactă este |x−a|=1/70, ≥ ε=1/100.",
+      "options": [
+        {
+          "text": "Prin lipsă, cu eroare strict mai mică decât ε.",
+          "is_correct": false
+        },
+        {
+          "text": "Prin adaos, cu eroare strict mai mică decât ε.",
+          "is_correct": false
+        },
+        {
+          "text": "Prin lipsă, cu eroare mai mare sau egală cu ε.",
+          "is_correct": true
+        },
+        {
+          "text": "Prin adaos, cu eroare mai mare sau egală cu ε.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 6,
+        "type_name": "Verificarea unei erori declarate",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=1413/1000, a=71/50 și ε=1/100, caracterizați aproximația a după sens și după eroarea absolută |x−a|. O eroare egală cu ε nu este strict sub toleranță.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem a>x, deci aproximarea este prin adaos. Eroarea exactă este |x−a|=7/1000, < ε=1/100.",
+      "options": [
+        {
+          "text": "Prin lipsă, cu eroare strict mai mică decât ε.",
+          "is_correct": false
+        },
+        {
+          "text": "Prin lipsă, cu eroare mai mare sau egală cu ε.",
+          "is_correct": false
+        },
+        {
+          "text": "Prin adaos, cu eroare mai mare sau egală cu ε.",
+          "is_correct": false
+        },
+        {
+          "text": "Prin adaos, cu eroare strict mai mică decât ε.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 6,
+        "type_name": "Verificarea unei erori declarate",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=251/100, a=5/2 și ε=1/100, caracterizați aproximația a după sens și după eroarea absolută |x−a|. O eroare egală cu ε nu este strict sub toleranță.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem a<x, deci aproximarea este prin lipsă. Eroarea exactă este |x−a|=1/100, ≥ ε=1/100.",
+      "options": [
+        {
+          "text": "Prin lipsă, cu eroare mai mare sau egală cu ε.",
+          "is_correct": true
+        },
+        {
+          "text": "Prin lipsă, cu eroare strict mai mică decât ε.",
+          "is_correct": false
+        },
+        {
+          "text": "Prin adaos, cu eroare strict mai mică decât ε.",
+          "is_correct": false
+        },
+        {
+          "text": "Prin adaos, cu eroare mai mare sau egală cu ε.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 6,
+        "type_name": "Verificarea unei erori declarate",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x=-2413/1000, a=-121/50 și ε=1/100, caracterizați aproximația a după sens și după eroarea absolută |x−a|. O eroare egală cu ε nu este strict sub toleranță.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem a<x, deci aproximarea este prin lipsă. Eroarea exactă este |x−a|=7/1000, < ε=1/100.",
+      "options": [
+        {
+          "text": "Prin lipsă, cu eroare mai mare sau egală cu ε.",
+          "is_correct": false
+        },
+        {
+          "text": "Prin lipsă, cu eroare strict mai mică decât ε.",
+          "is_correct": true
+        },
+        {
+          "text": "Prin adaos, cu eroare strict mai mică decât ε.",
+          "is_correct": false
+        },
+        {
+          "text": "Prin adaos, cu eroare mai mare sau egală cu ε.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 6,
+        "type_name": "Verificarea unei erori declarate",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru aproximarea lui √2, folosim T(a)=(a+2)/(a+1). Calculați T(3/2).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "T(3/2)=[3/2+2]/[3/2+1]=(7/2)/(5/2)=7/5. Deoarece (7/5)²<2<(3/2)², noua valoare este de cealaltă parte a radicalului.",
+      "options": [
+        {
+          "text": "5/7",
+          "is_correct": false
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "7/5",
+          "is_correct": true
+        },
+        {
+          "text": "3/5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 7,
+        "type_name": "Îmbunătățirea rațională a aproximării",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru aproximarea lui √3, folosim T(a)=(a+3)/(a+1). Calculați T(2).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "T(2)=(2+3)/(2+1)=5/3. Eroarea se reduce: pentru r=√3, |T(a)−r|/|a−r|=(r−1)/(a+1)<1 la a=2.",
+      "options": [
+        {
+          "text": "3/5",
+          "is_correct": false
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "5/3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 7,
+        "type_name": "Îmbunătățirea rațională a aproximării",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie d>1, r=√d, a>r și T(a)=(a+d)/(a+1). Care identitate exprimă corect eroarea cu semn T(a)−r?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Folosind d=r², numărătorul diferenței este a+r²−r(a+1)=(1−r)(a−r). Împărțim la a+1>0.",
+      "options": [
+        {
+          "text": "T(a)−r=(1−r)(a−r)/(a+1)",
+          "is_correct": true
+        },
+        {
+          "text": "T(a)−r=(1+r)(a−r)/(a+1)",
+          "is_correct": false
+        },
+        {
+          "text": "T(a)−r=(a−r)/(a+1)",
+          "is_correct": false
+        },
+        {
+          "text": "T(a)−r=(1−r)(a+r)/(a+1)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 7,
+        "type_name": "Îmbunătățirea rațională a aproximării",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a>√2 și T(a)=(a+2)/(a+1). Care este ordinea strictă a celor trei numere?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "T(a)−√2=(1−√2)(a−√2)/(a+1)<0. În plus, raportul erorilor absolute este (√2−1)/(a+1)<1, deci noua aproximație este mai apropiată.",
+      "options": [
+        {
+          "text": "√2<T(a)<a",
+          "is_correct": false
+        },
+        {
+          "text": "T(a)<√2<a",
+          "is_correct": true
+        },
+        {
+          "text": "a<T(a)<√2",
+          "is_correct": false
+        },
+        {
+          "text": "T(a)<a<√2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 7,
+        "type_name": "Îmbunătățirea rațională a aproximării",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a=7/5 și T(a)=(a+2)/(a+1)=17/12. Care afirmație despre aproximațiile lui √2 este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(7/5)²=49/25<2, iar (17/12)²=289/144>2. Raportul erorilor este (√2−1)/(12/5)<1; valoarea 17/12 este deasupra radicalului și mai apropiată.",
+      "options": [
+        {
+          "text": "17/12 este prin lipsă și are eroare mai mică decât 7/5.",
+          "is_correct": false
+        },
+        {
+          "text": "17/12 este prin adaos și are eroare mai mare decât 7/5.",
+          "is_correct": false
+        },
+        {
+          "text": "17/12 este prin adaos și are eroare mai mică decât 7/5.",
+          "is_correct": true
+        },
+        {
+          "text": "Cele două erori sunt egale.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 7,
+        "type_name": "Îmbunătățirea rațională a aproximării",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a₀=2 și aₙ₊₁=(aₙ+2/aₙ)/2, calculați a₁.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim în recurență: a₁=(2+1)/2=3/2.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "3/2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 8,
+        "type_name": "Iterația mediei pentru radical",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a₀=2 și aₙ₊₁=(aₙ+3/aₙ)/2, calculați a₁.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim în recurență: a₁=(2+3/2)/2=7/4.",
+      "options": [
+        {
+          "text": "7/4",
+          "is_correct": true
+        },
+        {
+          "text": "9/4",
+          "is_correct": false
+        },
+        {
+          "text": "5/4",
+          "is_correct": false
+        },
+        {
+          "text": "7/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 8,
+        "type_name": "Iterația mediei pentru radical",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a₀=2 și aₙ₊₁=(aₙ+2/aₙ)/2, calculați a₂.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₁=(2+1)/2=3/2, apoi a₂=(3/2+4/3)/2=(17/6)/2=17/12.",
+      "options": [
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "17/12",
+          "is_correct": true
+        },
+        {
+          "text": "7/5",
+          "is_correct": false
+        },
+        {
+          "text": "25/12",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 8,
+        "type_name": "Iterația mediei pentru radical",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie d>0, a₀>√d și aₙ₊₁=(aₙ+d/aₙ)/2. Care descriere este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă a>√d, atunci (a+d/a)/2−√d=(a−√d)²/(2a)>0 și (a+d/a)/2−a=(d−a²)/(2a)<0. Șirul este descrescător și mărginit; limita pozitivă L satisface L=(L+d/L)/2, deci L=√d.",
+      "options": [
+        {
+          "text": "Șirul este strict crescător și converge la √d.",
+          "is_correct": false
+        },
+        {
+          "text": "Termenii alternează strict sub și deasupra lui √d.",
+          "is_correct": false
+        },
+        {
+          "text": "Șirul este strict descrescător, rămâne deasupra lui √d și converge la √d.",
+          "is_correct": true
+        },
+        {
+          "text": "Șirul este constant pentru orice a₀>√d.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 8,
+        "type_name": "Iterația mediei pentru radical",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie d>0, r=√d, a>0 și b=(a+d/a)/2. Care este identitatea exactă pentru noua eroare b−r?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "b−r=(a²+d−2ar)/(2a). Folosind d=r², numărătorul este (a−r)²; eroarea este nenegativă și se anulează numai pentru a=r.",
+      "options": [
+        {
+          "text": "b−r=(a−r)/(2a)",
+          "is_correct": false
+        },
+        {
+          "text": "b−r=−(a−r)²/(2a)",
+          "is_correct": false
+        },
+        {
+          "text": "b−r=(a+r)²/(2a)",
+          "is_correct": false
+        },
+        {
+          "text": "b−r=(a−r)²/(2a)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.4",
+        "type": 8,
+        "type_name": "Iterația mediei pentru radical",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    }
+  ]
+}

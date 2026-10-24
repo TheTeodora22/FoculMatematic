@@ -5,6 +5,7 @@ from gen_clasa_9_burtea_operatii import build_catalog_extension
 from gen_clasa_9_ordonare import build_ordering_questions
 from gen_clasa_9_modul import build_absolute_value_questions
 from gen_clasa_9_aproximari import build_approximation_questions
+from clasa_9_real_lessons import LESSONS, configure_manifest
 
 
 def alg(text, mode, data, answers, explanation):
@@ -227,16 +228,34 @@ def build_questions():
     return q
 
 
-def main():
-    output = Path(__file__).resolve().parents[1] / "clasa_9" / "clasa_9_u01_l01_multimea_numerelor_reale_operatii_ordonare_modul_si_aproximari.json"
-    payload = {
-        "title": "Mulțimea numerelor reale. Operații algebrice, puteri și radicali",
-        "description": "Clasa a 9-a · Mulțimi și elemente de logică matematică",
-        "difficulty": "medium",
-        "questions": build_questions(),
+def build_lessons():
+    grouped = {section: [] for section,_,_ in LESSONS}
+    for index,question in enumerate(build_questions()):
+        section = question.get("catalog", {}).get("section")
+        if section:
+            section = section.removeprefix("A1.")
+        else:
+            # Exercițiile vechi despre comparații și √(a²) merg la tema potrivită.
+            section = "1.3" if index == 9 else "1.2" if index in (30,31,32,33) else "1.1"
+        grouped[section].append(question)
+    return {
+        filename: {
+            "title": f"{section}. {title}",
+            "description": "Clasa a 9-a · Mulțimea numerelor reale",
+            "difficulty": "medium", "questions": grouped[section],
+        }
+        for section,title,filename in LESSONS
     }
-    output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Scrise {len(payload['questions'])} exerciții în {output.name}")
+
+
+def main():
+    root = Path(__file__).resolve().parents[1]
+    for filename,payload in build_lessons().items():
+        (root / "clasa_9" / filename).write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+        print(f"{payload['title']}: {len(payload['questions'])} exerciții")
+    manifest = root / "chapters.json"
+    data = configure_manifest(json.loads(manifest.read_text(encoding="utf-8")))
+    manifest.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 
 
 if __name__ == "__main__":

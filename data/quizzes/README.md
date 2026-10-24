@@ -84,6 +84,21 @@ Pentru lecția despre factor comun există și:
 
 ## Încărcare în baza de date
 
+### Clasa a IX-a: Mulțimea numerelor reale
+
+Capitolul are șase lecții distincte în ordinea cuprinsului Burtea:
+1.1. Operații algebrice, 1.2. Ordonare, 1.3. Modul, 1.4. Aproximări,
+1.5. Parte întreagă și fracționară, 1.6. Operații cu intervale.
+Fiecare are propriul JSON `clasa_9/clasa_9_numere_reale_1_*.json`.
+Ultimele două lecții sunt deocamdată fără exerciții.
+
+`generators/gen_clasa_9_numere_reale_operatii.py` reproduce cele șase fișiere
+și actualizează manifestul. Generatorul de structură păstrează aceeași împărțire.
+La primul import într-o bază cu vechea lecție reunită, `seed_quizzes` mută
+întrebările în noile lecții, păstrând ID-urile, opțiunile și progresul elevilor.
+Reorganizarea este tranzacțională și idempotentă. O întrebare veche fără
+destinație oprește importul, fără să fie ștearsă.
+
 ```bash
 python manage.py seed_quizzes
 ```

@@ -13,7 +13,7 @@ from fractions import Fraction as F
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PATH = ROOT / "data/quizzes/clasa_9/clasa_9_u01_l01_multimea_numerelor_reale_operatii_ordonare_modul_si_aproximari.json"
+PATH = ROOT / "data/quizzes/clasa_9/clasa_9_numere_reale_1_3_modul.json"
 
 
 def correct(question):
@@ -129,8 +129,8 @@ def main():
         u,v = x/2,y/2
         assert 1+4*u*v>0 and abs((u+v)/(1+4*u*v))<.5
     sys.path.insert(0,str(ROOT / "data/quizzes/generators"))
-    from gen_clasa_9_numere_reale_operatii import build_questions
-    assert build_questions() == payload["questions"]
+    from gen_clasa_9_numere_reale_operatii import build_lessons
+    assert build_lessons()[PATH.name] == payload
     print(f"80 grile / 24 tipuri. {checked} ecuații/inecuații verificate pe valori raționale, capete și poli; distractori verificați. Generator sincronizat.")
 
 

@@ -361,12 +361,24 @@
   },
   {
     "class_level": 9,
-    "slug": "multimi-logica-matematica",
-    "title": "Mulțimi și logică matematică",
+    "slug": "multimea-numerelor-reale",
+    "title": "Mulțimea numerelor reale",
     "order": 1,
     "topics": [
-      "clasa_9/clasa_9_u01_l01_multimea_numerelor_reale_operatii_ordonare_modul_si_aproximari.json",
-      "clasa_9/clasa_9_u01_l02_puteri_radicali_si_operatii_cu_intervale_de_numere_reale.json",
+      "clasa_9/clasa_9_numere_reale_1_1_operatii_algebrice.json",
+      "clasa_9/clasa_9_numere_reale_1_2_ordonare.json",
+      "clasa_9/clasa_9_numere_reale_1_3_modul.json",
+      "clasa_9/clasa_9_numere_reale_1_4_aproximari.json",
+      "clasa_9/clasa_9_numere_reale_1_5_parte_intreaga_fractionara.json",
+      "clasa_9/clasa_9_numere_reale_1_6_intervale.json"
+    ]
+  },
+  {
+    "class_level": 9,
+    "slug": "multimi-logica-matematica",
+    "title": "Mulțimi și logică matematică",
+    "order": 2,
+    "topics": [
       "clasa_9/clasa_9_u01_l03_propozitii_predicate_si_cuantificatori.json",
       "clasa_9/clasa_9_u01_l04_operatii_logice_elementare_si_legi_de_calcul.json",
       "clasa_9/clasa_9_u01_l05_rationamente_logice_inductia_matematica_si_probleme_de_numarare.json"
@@ -376,7 +388,7 @@
     "class_level": 9,
     "slug": "functii",
     "title": "Funcții",
-    "order": 2,
+    "order": 3,
     "topics": [
       "clasa_9/clasa_9_u02_l01_siruri_de_numere_reale_notatia_si_termenul_general.json",
       "clasa_9/clasa_9_u02_l02_progresii_aritmetice_si_geometrice_aplicatii.json",
@@ -391,7 +403,7 @@
     "class_level": 9,
     "slug": "functia-gradul-intai",
     "title": "Funcția de gradul I",
-    "order": 3,
+    "order": 4,
     "topics": [
       "clasa_9/clasa_9_u03_l01_functia_de_gradul_i_definitie_si_reprezentare_grafica.json",
       "clasa_9/clasa_9_u03_l02_interpretarea_grafica_a_proprietatilor_algebrice_monotonie_si_semn.json",
@@ -404,7 +416,7 @@
     "class_level": 9,
     "slug": "functia-gradul-doi",
     "title": "Funcția de gradul al II-lea",
-    "order": 4,
+    "order": 5,
     "topics": [
       "clasa_9/clasa_9_u04_l01_functia_de_gradul_al_ii_lea_forma_canonica_maximul_si_minimul.json",
       "clasa_9/clasa_9_u04_l02_graficul_functiei_de_gradul_al_ii_lea_simetrie_si_intersectii_cu_axele.json",
@@ -419,7 +431,7 @@
     "class_level": 9,
     "slug": "vectori-plan",
     "title": "Vectori în plan",
-    "order": 5,
+    "order": 6,
     "topics": [
       "clasa_9/clasa_9_u05_l01_segmente_orientate_relatia_de_echipolenta.json",
       "clasa_9/clasa_9_u05_l02_vectorul_de_pozitie_al_unui_punct_vectorul_lui_thales.json",
@@ -431,7 +443,7 @@
     "class_level": 9,
     "slug": "coliniaritate-concurenta-paralelism",
     "title": "Coliniaritate, concurență și paralelism",
-    "order": 6,
+    "order": 7,
     "topics": [
       "clasa_9/clasa_9_u06_l01_vectorul_de_pozitie_al_unui_punct_in_plan.json",
       "clasa_9/clasa_9_u06_l02_teorema_lui_thales.json",
@@ -444,7 +456,7 @@
     "class_level": 9,
     "slug": "trigonometrie",
     "title": "Elemente de trigonometrie",
-    "order": 7,
+    "order": 8,
     "topics": [
       "clasa_9/clasa_9_u07_l01_unghiuri_si_arce_masura_unghiurilor_si_arcelor.json",
       "clasa_9/clasa_9_u07_l02_generalizarea_notiunii_de_unghi.json",
@@ -461,7 +473,7 @@
     "class_level": 9,
     "slug": "aplicatii-trigonometrie-geometrie",
     "title": "Aplicații ale trigonometriei în geometrie",
-    "order": 8,
+    "order": 9,
     "topics": [
       "clasa_9/clasa_9_u08_l01_produsul_scalar_a_doi_vectori_unghiul_a_doi_vectori_si_teorema_cosinus.json",
       "clasa_9/clasa_9_u08_l02_aplicatii_vectoriale_in_geometria_plana_coliniaritate_si_relatia_lui_l.json",

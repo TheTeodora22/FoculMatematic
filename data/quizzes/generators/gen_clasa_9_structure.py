@@ -4,6 +4,7 @@ import json
 import re
 import unicodedata
 from pathlib import Path
+from clasa_9_real_lessons import LESSONS, configure_manifest
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -120,6 +121,8 @@ def main() -> None:
     for chapter_order, (chapter_slug, chapter_title, lessons) in enumerate(CHAPTERS, 1):
         filenames = []
         for lesson_order, lesson_title in enumerate(lessons, 1):
+            if chapter_order == 1 and lesson_order in (1, 2):
+                continue
             filename = f"clasa_9_u{chapter_order:02d}_l{lesson_order:02d}_{slugify(lesson_title)}.json"
             filenames.append(f"clasa_9/{filename}")
             path = CLASS_DIR / filename
@@ -145,6 +148,12 @@ def main() -> None:
             }
         )
 
+    for section,title,filename in LESSONS:
+        path = CLASS_DIR / filename
+        if not path.exists():
+            payload = {"title": f"{section}. {title}", "description": "Clasa a 9-a · Mulțimea numerelor reale", "difficulty": "medium", "questions": []}
+            path.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    manifest = configure_manifest(manifest)
     MANIFEST.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",

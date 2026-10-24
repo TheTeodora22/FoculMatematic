@@ -1642,6 +1642,8 @@ def load_all_quizzes(
         return []
 
     file_to_chapter = load_chapters_manifest(directory)
+    from quizzes.catalog_reorganization import prepare_real_number_lessons
+    prepare_real_number_lessons(directory, file_to_chapter, _validate_quiz_payload, SeedValidationError)
     if only_file:
         paths = [_resolve_quiz_path(directory, only_file)]
     else:

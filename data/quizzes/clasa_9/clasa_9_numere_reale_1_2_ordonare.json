@@ -1,0 +1,2643 @@
+{
+  "title": "1.2. Ordonarea numerelor reale",
+  "description": "Clasa a 9-a · Mulțimea numerelor reale",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Compară cele două numere — varianta 1.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Deoarece 50>49, rezultă √50>√49=7.",
+      "interactive": {
+        "mode": "compare",
+        "expression": "√50  □  7",
+        "choices": [
+          "<",
+          "=",
+          ">"
+        ],
+        "answers": {
+          "choice": 2
+        }
+      }
+    },
+    {
+      "text": "Compară cele două numere — varianta 2.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "√18=√(9·2)=3√2.",
+      "interactive": {
+        "mode": "compare",
+        "expression": "3√2  □  √18",
+        "choices": [
+          "<",
+          "=",
+          ">"
+        ],
+        "answers": {
+          "choice": 1
+        }
+      }
+    },
+    {
+      "text": "Compară puterile.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "4³=(2²)³=2⁶.",
+      "interactive": {
+        "mode": "compare",
+        "expression": "2⁶  □  4³",
+        "choices": [
+          "<",
+          "=",
+          ">"
+        ],
+        "answers": {
+          "choice": 1
+        }
+      }
+    },
+    {
+      "text": "Compară numerele reale.",
+      "type": "algebra_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "−√9=−3, iar −3<−2.",
+      "interactive": {
+        "mode": "compare",
+        "expression": "−√9  □  −2",
+        "choices": [
+          "<",
+          "=",
+          ">"
+        ],
+        "answers": {
+          "choice": 0
+        }
+      }
+    },
+    {
+      "text": "a,b sunt pozitive și a+b=10. Care este valoarea maximă a lui ab?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din (a−b)²≥0 rezultă 4ab≤(a+b)²=100. Maximul 25 se atinge pentru a=b=5.",
+      "options": [
+        {
+          "text": "25",
+          "is_correct": true
+        },
+        {
+          "text": "25/2",
+          "is_correct": false
+        },
+        {
+          "text": "50",
+          "is_correct": false
+        },
+        {
+          "text": "26",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 1,
+        "type_name": "Inegalitatea mediilor pentru două numere",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b sunt reale și a+b=8. Care este valoarea minimă a lui a²+b²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a²+b²≥(a+b)²/2=32. Egalitatea se atinge pentru a=b=4.",
+      "options": [
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "32",
+          "is_correct": true
+        },
+        {
+          "text": "64",
+          "is_correct": false
+        },
+        {
+          "text": "33",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 1,
+        "type_name": "Inegalitatea mediilor pentru două numere",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x>0, care este valoarea minimă a lui x+9/x?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Media aritmetică este cel puțin media geometrică: x+9/x≥2√9=6. Egalitatea se atinge la x=3.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 1,
+        "type_name": "Inegalitatea mediilor pentru două numere",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a,b>0, când are loc egalitatea (a+b)/2=√(ab)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Egalitatea este echivalentă cu (a−b)²=0, deci cu a=b.",
+      "options": [
+        {
+          "text": "a+b=1",
+          "is_correct": false
+        },
+        {
+          "text": "ab=1",
+          "is_correct": false
+        },
+        {
+          "text": "a=2b",
+          "is_correct": false
+        },
+        {
+          "text": "a=b",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 1,
+        "type_name": "Inegalitatea mediilor pentru două numere",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b>0 și a+b=2. Care este valoarea minimă a lui 1/a+1/b?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1/a+1/b=(a+b)/(ab). Din ab≤2²/4 rezultă minimul 4/2=2, atins la a=b=1.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 2,
+        "type_name": "Inegalități cu inverse",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b>0 și a+b=4. Care este valoarea minimă a lui 1/a+1/b?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1/a+1/b=(a+b)/(ab). Din ab≤4²/4 rezultă minimul 4/4=1, atins la a=b=2.",
+      "options": [
+        {
+          "text": "1/2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 2,
+        "type_name": "Inegalități cu inverse",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b>0 și a+b=6. Care este valoarea minimă a lui 1/a+1/b?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1/a+1/b=(a+b)/(ab). Din ab≤6²/4 rezultă minimul 4/6=2/3, atins la a=b=3.",
+      "options": [
+        {
+          "text": "1/3",
+          "is_correct": false
+        },
+        {
+          "text": "4/3",
+          "is_correct": false
+        },
+        {
+          "text": "2/3",
+          "is_correct": true
+        },
+        {
+          "text": "5/3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 2,
+        "type_name": "Inegalități cu inverse",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b>0 și a+b=10. Care este valoarea minimă a lui 1/a+1/b?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1/a+1/b=(a+b)/(ab). Din ab≤10²/4 rezultă minimul 4/10=2/5, atins la a=b=5.",
+      "options": [
+        {
+          "text": "1/5",
+          "is_correct": false
+        },
+        {
+          "text": "4/5",
+          "is_correct": false
+        },
+        {
+          "text": "7/5",
+          "is_correct": false
+        },
+        {
+          "text": "2/5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 2,
+        "type_name": "Inegalități cu inverse",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și abc=1. Care este minimul lui (a+b)(b+c)(c+a)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim a+b≥2√(ab), b+c≥2√(bc), c+a≥2√(ca): produsul este ≥8abc=8. Egalitate la a=b=c=1.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 3,
+        "type_name": "Produse de sume",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și abc=8. Care este minimul lui (a+b)(b+c)(c+a)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este ≥8abc=64. Valoarea se atinge pentru a=b=c=2.",
+      "options": [
+        {
+          "text": "32",
+          "is_correct": false
+        },
+        {
+          "text": "64",
+          "is_correct": true
+        },
+        {
+          "text": "128",
+          "is_correct": false
+        },
+        {
+          "text": "65",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 3,
+        "type_name": "Produse de sume",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a,b,c>0, când are loc egalitatea (a+b)(b+c)(c+a)=8abc?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Egalitatea în toate cele trei inegalități ale mediilor cere a=b, b=c și c=a.",
+      "options": [
+        {
+          "text": "a=b, fără condiție asupra lui c",
+          "is_correct": false
+        },
+        {
+          "text": "abc=1, fără alte condiții",
+          "is_correct": false
+        },
+        {
+          "text": "a=b=c",
+          "is_correct": true
+        },
+        {
+          "text": "a+b=c",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 3,
+        "type_name": "Produse de sume",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a,b,c>0, care este minimul raportului (a+b)(b+c)(c+a)/(abc)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul de la numărător este ≥8abc. Împărțim la abc>0; egalitatea se atinge la a=b=c.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 3,
+        "type_name": "Produse de sume",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și abc=1. Determinați minimul lui a(b²+c²)+b(c²+a²)+c(a²+b²).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din b²+c²≥2bc rezultă a(b²+c²)≥2abc; analog pentru ceilalți doi termeni. Suma este ≥6abc=6. Egalitatea se atinge când a=b=c=∛1.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 4,
+        "type_name": "Inegalități ciclice cubice",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și abc=2. Determinați minimul lui a(b²+c²)+b(c²+a²)+c(a²+b²).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din b²+c²≥2bc rezultă a(b²+c²)≥2abc; analog pentru ceilalți doi termeni. Suma este ≥6abc=12. Egalitatea se atinge când a=b=c=∛2.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 4,
+        "type_name": "Inegalități ciclice cubice",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și abc=4. Determinați minimul lui a(b²+c²)+b(c²+a²)+c(a²+b²).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din b²+c²≥2bc rezultă a(b²+c²)≥2abc; analog pentru ceilalți doi termeni. Suma este ≥6abc=24. Egalitatea se atinge când a=b=c=∛4.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "48",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": true
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 4,
+        "type_name": "Inegalități ciclice cubice",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și abc=9. Determinați minimul lui a(b²+c²)+b(c²+a²)+c(a²+b²).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din b²+c²≥2bc rezultă a(b²+c²)≥2abc; analog pentru ceilalți doi termeni. Suma este ≥6abc=54. Egalitatea se atinge când a=b=c=∛9.",
+      "options": [
+        {
+          "text": "27",
+          "is_correct": false
+        },
+        {
+          "text": "108",
+          "is_correct": false
+        },
+        {
+          "text": "55",
+          "is_correct": false
+        },
+        {
+          "text": "54",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 4,
+        "type_name": "Inegalități ciclice cubice",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c sunt reale și a+b+c=3. Care este minimul lui a²+b²+c²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3(a²+b²+c²)−(a+b+c)²=(a−b)²+(b−c)²+(c−a)²≥0. Minimul este 3²/3=3, la a=b=c=1.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 5,
+        "type_name": "Inegalități prin diferențe pătrate",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c sunt reale și a+b+c=6. Care este minimul lui a²+b²+c²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3(a²+b²+c²)−(a+b+c)²=(a−b)²+(b−c)²+(c−a)²≥0. Minimul este 6²/3=12, la a=b=c=2.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 5,
+        "type_name": "Inegalități prin diferențe pătrate",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c sunt reale și a+b+c=9. Care este minimul lui a²+b²+c²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3(a²+b²+c²)−(a+b+c)²=(a−b)²+(b−c)²+(c−a)²≥0. Minimul este 9²/3=27, la a=b=c=3.",
+      "options": [
+        {
+          "text": "27/2",
+          "is_correct": false
+        },
+        {
+          "text": "54",
+          "is_correct": false
+        },
+        {
+          "text": "27",
+          "is_correct": true
+        },
+        {
+          "text": "28",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 5,
+        "type_name": "Inegalități prin diferențe pătrate",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c sunt reale și a+b+c=12. Care este minimul lui a²+b²+c²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "3(a²+b²+c²)−(a+b+c)²=(a−b)²+(b−c)²+(c−a)²≥0. Minimul este 12²/3=48, la a=b=c=4.",
+      "options": [
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "96",
+          "is_correct": false
+        },
+        {
+          "text": "49",
+          "is_correct": false
+        },
+        {
+          "text": "48",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 5,
+        "type_name": "Inegalități prin diferențe pătrate",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și abc=1. Care este minimul lui a³+b³+c³?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a³+b³+c³−3abc=(a+b+c)[(a−b)²+(b−c)²+(c−a)²]/2≥0. Rezultă minimul 3, atins la a=b=c=∛1.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 6,
+        "type_name": "Inegalități cubice prin factorizare",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și abc=2. Care este minimul lui a³+b³+c³?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a³+b³+c³−3abc=(a+b+c)[(a−b)²+(b−c)²+(c−a)²]/2≥0. Rezultă minimul 6, atins la a=b=c=∛2.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 6,
+        "type_name": "Inegalități cubice prin factorizare",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și abc=5. Care este minimul lui a³+b³+c³?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a³+b³+c³−3abc=(a+b+c)[(a−b)²+(b−c)²+(c−a)²]/2≥0. Rezultă minimul 15, atins la a=b=c=∛5.",
+      "options": [
+        {
+          "text": "15/2",
+          "is_correct": false
+        },
+        {
+          "text": "30",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": true
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 6,
+        "type_name": "Inegalități cubice prin factorizare",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și abc=8. Care este minimul lui a³+b³+c³?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a³+b³+c³−3abc=(a+b+c)[(a−b)²+(b−c)²+(c−a)²]/2≥0. Rezultă minimul 24, atins la a=b=c=∛8.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "48",
+          "is_correct": false
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 6,
+        "type_name": "Inegalități cubice prin factorizare",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x,y reale, determinați minimul expresiei x⁴+1y⁴−2x²y²+2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia este (x²−1y²)²+2≥2. Egalitatea se atinge, de exemplu, la x=y=0.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 7,
+        "type_name": "Inegalități de grad mai mare",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x,y reale, determinați minimul expresiei x⁴+4y⁴−4x²y²+3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia este (x²−2y²)²+3≥3. Egalitatea se atinge, de exemplu, la x=y=0.",
+      "options": [
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 7,
+        "type_name": "Inegalități de grad mai mare",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x,y reale, determinați minimul expresiei x⁴+9y⁴−6x²y²+1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia este (x²−3y²)²+1≥1. Egalitatea se atinge, de exemplu, la x=y=0.",
+      "options": [
+        {
+          "text": "1/2",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 7,
+        "type_name": "Inegalități de grad mai mare",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x,y reale, determinați minimul expresiei x⁴+16y⁴−8x²y²+5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia este (x²−4y²)²+5≥5. Egalitatea se atinge, de exemplu, la x=y=0.",
+      "options": [
+        {
+          "text": "5/2",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 7,
+        "type_name": "Inegalități de grad mai mare",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a₁,…,a3 sunt pozitive. Care este minimul lui (a₁+…+a3)(1/a₁+…+1/a3)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din Cauchy, produsul este ≥(√(a₁/a₁)+…+√(a3/a3))²=3²=9. Egalitatea se atinge când toate numerele sunt egale.",
+      "options": [
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "9/2",
+          "is_correct": false
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 8,
+        "type_name": "Sume cu număr arbitrar de termeni",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a₁,…,a4 sunt pozitive. Care este minimul lui (a₁+…+a4)(1/a₁+…+1/a4)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din Cauchy, produsul este ≥(√(a₁/a₁)+…+√(a4/a4))²=4²=16. Egalitatea se atinge când toate numerele sunt egale.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": true
+        },
+        {
+          "text": "32",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 8,
+        "type_name": "Sume cu număr arbitrar de termeni",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a₁,…,a5 sunt pozitive. Care este minimul lui (a₁+…+a5)(1/a₁+…+1/a5)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din Cauchy, produsul este ≥(√(a₁/a₁)+…+√(a5/a5))²=5²=25. Egalitatea se atinge când toate numerele sunt egale.",
+      "options": [
+        {
+          "text": "25/2",
+          "is_correct": false
+        },
+        {
+          "text": "50",
+          "is_correct": false
+        },
+        {
+          "text": "25",
+          "is_correct": true
+        },
+        {
+          "text": "26",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 8,
+        "type_name": "Sume cu număr arbitrar de termeni",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a₁,…,a6 sunt pozitive. Care este minimul lui (a₁+…+a6)(1/a₁+…+1/a6)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din Cauchy, produsul este ≥(√(a₁/a₁)+…+√(a6/a6))²=6²=36. Egalitatea se atinge când toate numerele sunt egale.",
+      "options": [
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "72",
+          "is_correct": false
+        },
+        {
+          "text": "37",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 8,
+        "type_name": "Sume cu număr arbitrar de termeni",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Un triunghi are laturile b=c=2. Care este mulțimea tuturor valorilor posibile ale celei de-a treia laturi a?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Inegalitățile triunghiului cer |b−c|<a<b+c, deci 0<a<4. Capetele nu formează triunghiuri nedegenerate.",
+      "options": [
+        {
+          "text": "(0; 4)",
+          "is_correct": true
+        },
+        {
+          "text": "[2; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "[4; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 9,
+        "type_name": "Inegalități între laturile triunghiului",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Un triunghi are laturile b=c=3. Care este mulțimea tuturor valorilor posibile ale celei de-a treia laturi a?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Inegalitățile triunghiului cer |b−c|<a<b+c, deci 0<a<6. Capetele nu formează triunghiuri nedegenerate.",
+      "options": [
+        {
+          "text": "[3; 6]",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 6)",
+          "is_correct": true
+        },
+        {
+          "text": "(0; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "[6; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 9,
+        "type_name": "Inegalități între laturile triunghiului",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care relație este adevărată pentru laturile oricărui triunghi nedegenerat?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a<b+c, deci a²<(b+c)²≤2(b²+c²). Ultima relație rezultă din (b−c)²≥0.",
+      "options": [
+        {
+          "text": "a²≥2(b²+c²)",
+          "is_correct": false
+        },
+        {
+          "text": "a≥b+c",
+          "is_correct": false
+        },
+        {
+          "text": "a²<2(b²+c²)",
+          "is_correct": true
+        },
+        {
+          "text": "a²=b²+c² pentru orice triunghi",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 9,
+        "type_name": "Inegalități între laturile triunghiului",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este cea mai mică constantă reală C pentru care a²<C(b²+c²) în orice triunghi nedegenerat?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "C=2 funcționează deoarece a²<(b+c)²≤2(b²+c²). Pentru b=c=1 și a apropiat de 2, raportul a²/(b²+c²) se apropie de 2; nicio constantă mai mică nu funcționează.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 9,
+        "type_name": "Inegalități între laturile triunghiului",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați minimul pe R al expresiei x²+(-4)x+(7).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Completăm pătratul: expresia este (x−(2))²+(3). Minimul 3 se atinge pentru x=2.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 10,
+        "type_name": "Inegalități universale prin pătrat complet",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați minimul pe R al expresiei x²+(6)x+(11).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Completăm pătratul: expresia este (x−(-3))²+(2). Minimul 2 se atinge pentru x=-3.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 10,
+        "type_name": "Inegalități universale prin pătrat complet",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați minimul pe R al expresiei x²+(-8)x+(15).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Completăm pătratul: expresia este (x−(4))²+(-1). Minimul -1 se atinge pentru x=4.",
+      "options": [
+        {
+          "text": "-1/2",
+          "is_correct": false
+        },
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 10,
+        "type_name": "Inegalități universale prin pătrat complet",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați minimul pe R al expresiei x²+(2)x+(6).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Completăm pătratul: expresia este (x−(-1))²+(5). Minimul 5 se atinge pentru x=-1.",
+      "options": [
+        {
+          "text": "5/2",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 10,
+        "type_name": "Inegalități universale prin pătrat complet",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și a+b+c=1. Care este minimul lui 1/a+1/b+1/c?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cauchy dă (a+b+c)(1/a+1/b+1/c)≥9. Minimul este 9/1=9, atins la a=b=c=1/3.",
+      "options": [
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "9/2",
+          "is_correct": false
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 11,
+        "type_name": "Sumă fixată și inverse",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și a+b+c=3. Care este minimul lui 1/a+1/b+1/c?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cauchy dă (a+b+c)(1/a+1/b+1/c)≥9. Minimul este 9/3=3, atins la a=b=c=1.",
+      "options": [
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 11,
+        "type_name": "Sumă fixată și inverse",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și a+b+c=6. Care este minimul lui 1/a+1/b+1/c?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cauchy dă (a+b+c)(1/a+1/b+1/c)≥9. Minimul este 9/6=3/2, atins la a=b=c=2.",
+      "options": [
+        {
+          "text": "3/4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "3/2",
+          "is_correct": true
+        },
+        {
+          "text": "5/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 11,
+        "type_name": "Sumă fixată și inverse",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și a+b+c=9. Care este minimul lui 1/a+1/b+1/c?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cauchy dă (a+b+c)(1/a+1/b+1/c)≥9. Minimul este 9/9=1, atins la a=b=c=3.",
+      "options": [
+        {
+          "text": "1/2",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 11,
+        "type_name": "Sumă fixată și inverse",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și a+b+c=3. Care este valoarea maximă a lui abc?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Media aritmetică–geometrică dă abc≤[(3)/3]³=1. Egalitate la a=b=c=1.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "1/2",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 12,
+        "type_name": "Sumă fixată și produs maxim",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și a+b+c=6. Care este valoarea maximă a lui abc?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Media aritmetică–geometrică dă abc≤[(6)/3]³=8. Egalitate la a=b=c=2.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 12,
+        "type_name": "Sumă fixată și produs maxim",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și a+b+c=9. Care este valoarea maximă a lui abc?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Media aritmetică–geometrică dă abc≤[(9)/3]³=27. Egalitate la a=b=c=3.",
+      "options": [
+        {
+          "text": "27/2",
+          "is_correct": false
+        },
+        {
+          "text": "54",
+          "is_correct": false
+        },
+        {
+          "text": "27",
+          "is_correct": true
+        },
+        {
+          "text": "28",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 12,
+        "type_name": "Sumă fixată și produs maxim",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și a+b+c=12. Care este valoarea maximă a lui abc?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Media aritmetică–geometrică dă abc≤[(12)/3]³=64. Egalitate la a=b=c=4.",
+      "options": [
+        {
+          "text": "32",
+          "is_correct": false
+        },
+        {
+          "text": "128",
+          "is_correct": false
+        },
+        {
+          "text": "65",
+          "is_correct": false
+        },
+        {
+          "text": "64",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 12,
+        "type_name": "Sumă fixată și produs maxim",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și abc=1. Care este valoarea minimă a lui a+b+c?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a+b+c≥3∛(abc)=3·1=3. Egalitatea se atinge pentru a=b=c=1.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 13,
+        "type_name": "Produs fixat",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și abc=8. Care este valoarea minimă a lui a+b+c?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a+b+c≥3∛(abc)=3·2=6. Egalitatea se atinge pentru a=b=c=2.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 13,
+        "type_name": "Produs fixat",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și abc=27. Care este valoarea minimă a lui a+b+c?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a+b+c≥3∛(abc)=3·3=9. Egalitatea se atinge pentru a=b=c=3.",
+      "options": [
+        {
+          "text": "9/2",
+          "is_correct": false
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 13,
+        "type_name": "Produs fixat",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a,b,c>0 și abc=64. Care este valoarea minimă a lui a+b+c?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a+b+c≥3∛(abc)=3·4=12. Egalitatea se atinge pentru a=b=c=4.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 13,
+        "type_name": "Produs fixat",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y,z>0 și x+y+z=xyz. Ce relație obținem prin împărțirea egalității la xyz?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Împărțim fiecare termen la xyz: x/(xyz)=1/(yz), y/(xyz)=1/(xz), z/(xyz)=1/(xy).",
+      "options": [
+        {
+          "text": "1/(yz)+1/(xz)+1/(xy)=1",
+          "is_correct": true
+        },
+        {
+          "text": "1/x+1/y+1/z=1",
+          "is_correct": false
+        },
+        {
+          "text": "xy+yz+zx=1",
+          "is_correct": false
+        },
+        {
+          "text": "1/(xyz)=1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 14,
+        "type_name": "Normalizarea unei condiții neliniare",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y,z>0 și x+y+z=xyz. Care este minimul lui xy+yz+zx?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm a=1/(yz), b=1/(xz), c=1/(xy); avem a+b+c=1. Atunci xy+yz+zx=1/a+1/b+1/c≥9. Egalitate la x=y=z=√3.",
+      "options": [
+        {
+          "text": "9/2",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 14,
+        "type_name": "Normalizarea unei condiții neliniare",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y,z>0 și x+y+z=xyz. Care este minimul lui (x+y+z)²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm S=x+y+z=xyz>0. Din S³≥27xyz=27S rezultă S²≥27. Egalitatea se atinge la x=y=z=√3.",
+      "options": [
+        {
+          "text": "27/2",
+          "is_correct": false
+        },
+        {
+          "text": "54",
+          "is_correct": false
+        },
+        {
+          "text": "27",
+          "is_correct": true
+        },
+        {
+          "text": "28",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 14,
+        "type_name": "Normalizarea unei condiții neliniare",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y,z>0, x+y+z=xyz și (x+y+z)²=27. Care sunt valorile lui x,y,z?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Valoarea 27 realizează egalitatea în (x+y+z)³≥27xyz. Deci x=y=z=t>0; condiția 3t=t³ dă t=√3.",
+      "options": [
+        {
+          "text": "x=y=z=1",
+          "is_correct": false
+        },
+        {
+          "text": "x=y=z=3",
+          "is_correct": false
+        },
+        {
+          "text": "x=y=z=1/√3",
+          "is_correct": false
+        },
+        {
+          "text": "x=y=z=√3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 14,
+        "type_name": "Normalizarea unei condiții neliniare",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y,z>0 și x+y+z=3. Determinați maximul lui x(y+1)+y(z+1)+z(x+1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia este xy+yz+zx+3. Din xy+yz+zx≤(x+y+z)²/3 rezultă maximul 3+3=6, atins la x=y=z=1.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 15,
+        "type_name": "Estimarea produselor cu termeni adunați",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y,z>0 și x+y+z=6. Determinați maximul lui x(y+1)+y(z+1)+z(x+1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia este xy+yz+zx+6. Din xy+yz+zx≤(x+y+z)²/3 rezultă maximul 12+6=18, atins la x=y=z=2.",
+      "options": [
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "18",
+          "is_correct": true
+        },
+        {
+          "text": "36",
+          "is_correct": false
+        },
+        {
+          "text": "19",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 15,
+        "type_name": "Estimarea produselor cu termeni adunați",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "x,y,z>0 și x+y+z=9. Determinați maximul lui x(y+1)+y(z+1)+z(x+1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia este xy+yz+zx+9. Din xy+yz+zx≤(x+y+z)²/3 rezultă maximul 27+9=36, atins la x=y=z=3.",
+      "options": [
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "72",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": true
+        },
+        {
+          "text": "37",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 15,
+        "type_name": "Estimarea produselor cu termeni adunați",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie S=Σ[k=2,…,3] 1/k² și M=Σ[k=2,…,3] 1/[k(k−1)]. Din 1/k²<1/[k(k−1)] rezultă S<M. Calculați suma majorantă M.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1/[k(k−1)]=1/(k−1)−1/k. Prin telescopare M=1−1/3=2/3; astfel S<2/3.",
+      "options": [
+        {
+          "text": "1/3",
+          "is_correct": false
+        },
+        {
+          "text": "4/3",
+          "is_correct": false
+        },
+        {
+          "text": "5/3",
+          "is_correct": false
+        },
+        {
+          "text": "2/3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 16,
+        "type_name": "Încadrare prin comparații telescopice",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie S=Σ[k=2,…,5] 1/k² și M=Σ[k=2,…,5] 1/[k(k−1)]. Din 1/k²<1/[k(k−1)] rezultă S<M. Calculați suma majorantă M.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1/[k(k−1)]=1/(k−1)−1/k. Prin telescopare M=1−1/5=4/5; astfel S<4/5.",
+      "options": [
+        {
+          "text": "4/5",
+          "is_correct": true
+        },
+        {
+          "text": "2/5",
+          "is_correct": false
+        },
+        {
+          "text": "8/5",
+          "is_correct": false
+        },
+        {
+          "text": "9/5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 16,
+        "type_name": "Încadrare prin comparații telescopice",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie S=Σ[k=2,…,10] 1/k² și M=Σ[k=2,…,10] 1/[k(k−1)]. Din 1/k²<1/[k(k−1)] rezultă S<M. Calculați suma majorantă M.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1/[k(k−1)]=1/(k−1)−1/k. Prin telescopare M=1−1/10=9/10; astfel S<9/10.",
+      "options": [
+        {
+          "text": "9/20",
+          "is_correct": false
+        },
+        {
+          "text": "9/10",
+          "is_correct": true
+        },
+        {
+          "text": "9/5",
+          "is_correct": false
+        },
+        {
+          "text": "19/10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 16,
+        "type_name": "Încadrare prin comparații telescopice",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a₁,…,a3>0 și a₁·…·a3=1. Care este minimul produsului (1+a₁)·…·(1+a3)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim 1+aᵢ≥2√aᵢ. Produsul este ≥2^3√(a₁·…·a3)=8, cu egalitate când toate aᵢ sunt 1.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 17,
+        "type_name": "Produs de factori cu produsul variabilelor fixat",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a₁,…,a4>0 și a₁·…·a4=1. Care este minimul produsului (1+a₁)·…·(1+a4)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim 1+aᵢ≥2√aᵢ. Produsul este ≥2^4√(a₁·…·a4)=16, cu egalitate când toate aᵢ sunt 1.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "32",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 17,
+        "type_name": "Produs de factori cu produsul variabilelor fixat",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "a₁,…,a5>0 și a₁·…·a5=1. Care este minimul produsului (1+a₁)·…·(1+a5)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim 1+aᵢ≥2√aᵢ. Produsul este ≥2^5√(a₁·…·a5)=32, cu egalitate când toate aᵢ sunt 1.",
+      "options": [
+        {
+          "text": "32",
+          "is_correct": true
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "64",
+          "is_correct": false
+        },
+        {
+          "text": "33",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 17,
+        "type_name": "Produs de factori cu produsul variabilelor fixat",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Între ce doi întregi consecutivi se află S=√5+√3, demonstrând astfel că S nu este întreg?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem √5>2 și √3>1, deci S>3. Totodată S²=8+2√15<16, deci S<4. Încadrarea strictă exclude integritatea.",
+      "options": [
+        {
+          "text": "2<S<3",
+          "is_correct": false
+        },
+        {
+          "text": "3<S<4",
+          "is_correct": true
+        },
+        {
+          "text": "4<S<5",
+          "is_correct": false
+        },
+        {
+          "text": "5<S<6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 18,
+        "type_name": "Excluderea integrității prin încadrare",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Între ce doi întregi consecutivi se află S=√10+√8, demonstrând astfel că S nu este întreg?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem √10>3 și √8>2, deci S>5. Totodată S²=18+2√80<36, deci S<6. Încadrarea strictă exclude integritatea.",
+      "options": [
+        {
+          "text": "4<S<5",
+          "is_correct": false
+        },
+        {
+          "text": "6<S<7",
+          "is_correct": false
+        },
+        {
+          "text": "5<S<6",
+          "is_correct": true
+        },
+        {
+          "text": "7<S<8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 18,
+        "type_name": "Excluderea integrității prin încadrare",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Între ce doi întregi consecutivi se află S=√17+√15, demonstrând astfel că S nu este întreg?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem √17>4 și √15>3, deci S>7. Totodată S²=32+2√255<64, deci S<8. Încadrarea strictă exclude integritatea.",
+      "options": [
+        {
+          "text": "6<S<7",
+          "is_correct": false
+        },
+        {
+          "text": "8<S<9",
+          "is_correct": false
+        },
+        {
+          "text": "9<S<10",
+          "is_correct": false
+        },
+        {
+          "text": "7<S<8",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 18,
+        "type_name": "Excluderea integrității prin încadrare",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x<1, ordonați crescător numerele A=2, B=3x−1 și C=x+1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "B−C=2(x−1)<0 și C−A=x−1<0. Prin urmare B<C<A.",
+      "options": [
+        {
+          "text": "B<C<A",
+          "is_correct": true
+        },
+        {
+          "text": "A<C<B",
+          "is_correct": false
+        },
+        {
+          "text": "C<B<A",
+          "is_correct": false
+        },
+        {
+          "text": "B<A<C",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 19,
+        "type_name": "Comparare cu parametru",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x>1, ordonați crescător numerele A=2, B=3x−1 și C=x+1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "C−A=x−1>0 și B−C=2(x−1)>0. Rezultă A<C<B.",
+      "options": [
+        {
+          "text": "B<C<A",
+          "is_correct": false
+        },
+        {
+          "text": "A<C<B",
+          "is_correct": true
+        },
+        {
+          "text": "C<A<B",
+          "is_correct": false
+        },
+        {
+          "text": "A<B<C",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 19,
+        "type_name": "Comparare cu parametru",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce valoare reală a lui x sunt egale toate cele trei numere 2, 3x−1 și x+1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din x+1=2 rezultă x=1. Atunci și 3x−1=2, deci condiția este satisfăcută.",
+      "options": [
+        {
+          "text": "1/2",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 19,
+        "type_name": "Comparare cu parametru",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați toate perechile de numere întregi x,y≥2 pentru care xy≤x+y.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Inegalitatea este (x−1)(y−1)≤1. Cei doi factori sunt întregi cel puțin 1, deci sunt amândoi 1: x=y=2.",
+      "options": [
+        {
+          "text": "Doar (2; 3) și (3; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "Toate perechile cu x=y≥2",
+          "is_correct": false
+        },
+        {
+          "text": "Nu există perechi",
+          "is_correct": false
+        },
+        {
+          "text": "Doar (2; 2)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 20,
+        "type_name": "Diofantice prin inegalități",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați toate perechile de numere întregi pozitive x,y pentru care xy<x+y.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(x−1)(y−1)<1. Produsul este întreg nenegativ, deci este zero: x=1 sau y=1. Orice astfel de pereche verifică inegalitatea.",
+      "options": [
+        {
+          "text": "x=1 sau y=1",
+          "is_correct": true
+        },
+        {
+          "text": "Doar x=y=1",
+          "is_correct": false
+        },
+        {
+          "text": "x≥2 și y≥2",
+          "is_correct": false
+        },
+        {
+          "text": "Doar x=y=2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 20,
+        "type_name": "Diofantice prin inegalități",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați toate tripletele de numere întregi x,y,z≥3 pentru care xyz≤xy+xz+yz.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Împărțim la xyz>0: 1≤1/x+1/y+1/z≤1. Egalitatea în limita superioară impune x=y=z=3; acest triplet verifică relația.",
+      "options": [
+        {
+          "text": "Doar (3; 3; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "Doar (3; 3; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "Toate tripletele cu x=y=z≥3",
+          "is_correct": false
+        },
+        {
+          "text": "Nu există triplete",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 20,
+        "type_name": "Diofantice prin inegalități",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Laturile unui triunghi au perimetrul 9 și verifică a²+b²+c²=ab+bc+ca. Care este tripletul (a; b; c)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(a−b)²+(b−c)²+(c−a)²=0, deci a=b=c. Din perimetru rezultă a=b=c=3; triunghiul este echilateral, cu unghiurile de 60°.",
+      "options": [
+        {
+          "text": "(2; 3; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 4; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 3; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "(3; 2; 4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 21,
+        "type_name": "Rigiditate geometrică din egalitate",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Laturile unui triunghi au perimetrul 12 și verifică a²+b²+c²=ab+bc+ca. Care este tripletul (a; b; c)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(a−b)²+(b−c)²+(c−a)²=0, deci a=b=c. Din perimetru rezultă a=b=c=4; triunghiul este echilateral, cu unghiurile de 60°.",
+      "options": [
+        {
+          "text": "(3; 4; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 5; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 3; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 4; 4)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 21,
+        "type_name": "Rigiditate geometrică din egalitate",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Laturile unui triunghi au perimetrul 18 și verifică a²+b²+c²=ab+bc+ca. Care este tripletul (a; b; c)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(a−b)²+(b−c)²+(c−a)²=0, deci a=b=c. Din perimetru rezultă a=b=c=6; triunghiul este echilateral, cu unghiurile de 60°.",
+      "options": [
+        {
+          "text": "(6; 6; 6)",
+          "is_correct": true
+        },
+        {
+          "text": "(5; 6; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 7; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(6; 5; 7)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 21,
+        "type_name": "Rigiditate geometrică din egalitate",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați minimul pe R² al expresiei x²−4xy+5y²+(2)x+(-6)y+(5).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia se scrie [x−(1)−2(y−(1))]²+[y−(1)]²+(3). Cei doi pătrați sunt nenegativi și se anulează simultan la (x,y)=(1,1). Minimul este 3.",
+      "options": [
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 22,
+        "type_name": "Minimul unei forme pătratice cu două variabile",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați minimul pe R² al expresiei x²−4xy+5y²+(-8)x+(18)y+(17).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia se scrie [x−(2)−2(y−(-1))]²+[y−(-1)]²+(0). Cei doi pătrați sunt nenegativi și se anulează simultan la (x,y)=(2,-1). Minimul este 0.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 22,
+        "type_name": "Minimul unei forme pătratice cu două variabile",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați minimul pe R² al expresiei x²−4xy+5y²+(10)x+(-24)y+(27).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia se scrie [x−(-1)−2(y−(2))]²+[y−(2)]²+(-2). Cei doi pătrați sunt nenegativi și se anulează simultan la (x,y)=(-1,2). Minimul este -2.",
+      "options": [
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "-4",
+          "is_correct": false
+        },
+        {
+          "text": "-3",
+          "is_correct": false
+        },
+        {
+          "text": "-2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A1.1.2",
+        "type": 22,
+        "type_name": "Minimul unei forme pătratice cu două variabile",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    }
+  ]
+}
