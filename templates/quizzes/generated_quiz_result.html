@@ -24,12 +24,12 @@
         <h2>Explicații — răspunsuri greșite</h2>
         {% for item in wrong_items %}
             <article class="card">
-                <p style="margin:0 0 0.5rem;"><strong>{{ item.question.text }}</strong></p>
+                <p style="margin:0 0 0.5rem;"><strong data-math-content>{{ item.question.text }}</strong></p>
                 <p class="muted" style="margin:0 0 0.5rem;">
-                    Răspunsul tău: {{ item.selected_option.text }}
+                    Răspunsul tău: <span data-math-content>{{ item.selected_option.text }}</span>
                 </p>
                 {% if item.question.explanation %}
-                    <p style="margin:0;">{{ item.question.explanation }}</p>
+                    <p data-math-content style="margin:0;">{{ item.question.explanation }}</p>
                 {% else %}
                     <p class="muted" style="margin:0;">Nu există explicație pentru această întrebare.</p>
                 {% endif %}

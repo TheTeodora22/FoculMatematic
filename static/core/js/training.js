@@ -182,7 +182,7 @@
         if (!isSolved(question) || !question.explanation) {
             return "";
         }
-        return `<p class="training-explanation" style="margin:0 0 1rem;">${escapeHtml(question.explanation)}</p>`;
+        return `<p class="training-explanation" data-math-content style="margin:0 0 1rem;">${escapeHtml(question.explanation)}</p>`;
     }
 
     function optionsHtml(question, selectedOptionId, showWrongSelection) {
@@ -211,7 +211,7 @@
                 return (
                     `<label class="${classes}">` +
                     `<input type="radio" name="option_id" value="${option.id}"${checked}${disabled}${required}>` +
-                    `<span>${escapeHtml(option.text)}</span>` +
+                    `<span data-math-content>${escapeHtml(option.text)}</span>` +
                     "</label>"
                 );
             })
@@ -2106,7 +2106,7 @@
         const formatTag = question.format || (question.type === "multiple_choice" ? "grid" : "interactive");
         cardEl.innerHTML =
             `<span class="question-format-badge question-format-badge--${escapeHtml(formatTag)}">${escapeHtml(formatLabels[formatTag] || "Exercițiu")}</span>` +
-            `<h2 style="margin:0 0 1rem;">${escapeHtml(question.text)}</h2>` +
+            `<h2 data-math-content style="margin:0 0 1rem;">${escapeHtml(question.text)}</h2>` +
             (showWrongSelection
                 ? question.status === "wrong"
                     ? '<p class="training-feedback" style="margin:0 0 0.75rem;"><span class="training-feedback--wrong">Greșit. Încearcă alt răspuns.</span></p>'

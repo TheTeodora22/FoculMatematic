@@ -11,6 +11,22 @@ păstrate separat în `generators/`.
 
 ## Format
 
+### Afișarea formulelor în versiunea web
+
+Enunțurile, opțiunile și explicațiile acceptă LaTeX delimitat prin `\(...\)` pentru formule în text și `\[...\]` pentru formule pe rând separat. În JSON, barele inverse se dublează:
+
+```json
+{"text": "Calculați \\(\\sum_{k=1}^{n} \\frac{1}{k(k+1)}\\)."}
+```
+
+KaTeX 0.19.0 și fonturile sunt servite local din `static/vendor/katex-0.19.0/`, cu licența inclusă. Nu se folosește un CDN la afișare. Delimitatorul `$` nu este activat.
+
+Pentru banca existentă, stratul de afișare recunoaște și notațiile Unicode uzuale pentru sume, produse, fracții, radicali, puteri și indici. Le transformă în LaTeX numai la afișare; sursa întrebării și cheia de corectare rămân textul original. Fragmentele incomplete sau nerecunoscute rămân text simplu. Formulele noi complexe trebuie scrise explicit în LaTeX.
+
+În paginile HTML, conținutul matematic este marcat prin `data-math-content`. Randarea acoperă Antrenare (inclusiv navigare și explicații încărcate dinamic), chestionarul clasic, chestionarul generat și paginile de rezultat. Nu se randează câmpurile de introducere sau datele JSON ale exercițiilor interactive. Această integrare este pentru web; aplicația React Native nu este modificată.
+
+Verificare: `node scripts/verify_math_rendering.cjs` testează gruparea operatorilor și randarea fragmentelor matematice din cele 315 grile ale secțiunii 4. Testul matematic al răspunsurilor rămâne `scripts/verify_clasa_9_inductie_numarare.py`.
+
 Un fișier = un chestionar. Exemplu: `clasa_8/algebra_clasa_8.json`
 
 ```json

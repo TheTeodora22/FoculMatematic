@@ -19,14 +19,14 @@
         {% for question in questions %}
             <fieldset class="card" style="margin-top:1rem;">
                 <legend style="font-weight:600;padding:0 0.25rem;">Întrebarea {{ forloop.counter }}</legend>
-                <p style="margin:0.5rem 0 0;">{{ question.text }}</p>
+                <p data-math-content style="margin:0.5rem 0 0;">{{ question.text }}</p>
                 <p class="muted" style="margin:0.25rem 0 0;">{{ question.points }} puncte</p>
                 <ul class="options">
                     {% for option in question.options.all %}
                         <li>
                             <label>
                                 <input type="radio" name="q_{{ question.id }}" value="{{ option.id }}" required>
-                                {{ option.text }}
+                                <span data-math-content>{{ option.text }}</span>
                             </label>
                         </li>
                     {% empty %}

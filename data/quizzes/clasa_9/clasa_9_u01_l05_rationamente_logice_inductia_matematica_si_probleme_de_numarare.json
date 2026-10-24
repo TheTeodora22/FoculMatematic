@@ -4,7 +4,7 @@
   "difficulty": "hard",
   "questions": [
     {
-      "text": "Fie x ≥ 0 astfel încât ⌊n²x⌋ este pătrat perfect pentru orice întreg n ≥ 1. Care dintre următoarele valori poate fi x? Setul 1. ⌊t⌋ este partea întreagă a lui t.",
+      "text": "Fie x ∈ [0; 1) astfel încât ⌊n²x⌋ este pătrat perfect pentru orice întreg n ≥ 1. Care dintre următoarele valori poate fi x? ⌊t⌋ este partea întreagă a lui t.",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -36,7 +36,7 @@
       }
     },
     {
-      "text": "Fie x ≥ 0 astfel încât ⌊n²x⌋ este pătrat perfect pentru orice întreg n ≥ 1. Care dintre următoarele valori poate fi x? Setul 2. ⌊t⌋ este partea întreagă a lui t.",
+      "text": "Fie x ∈ [1; 2) astfel încât ⌊n²x⌋ este pătrat perfect pentru orice întreg n ≥ 1. Care dintre următoarele valori poate fi x? ⌊t⌋ este partea întreagă a lui t.",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -68,7 +68,7 @@
       }
     },
     {
-      "text": "Fie x ≥ 0 astfel încât ⌊n²x⌋ este pătrat perfect pentru orice întreg n ≥ 1. Care dintre următoarele valori poate fi x? Setul 3. ⌊t⌋ este partea întreagă a lui t.",
+      "text": "Fie x ∈ [4; 5) astfel încât ⌊n²x⌋ este pătrat perfect pentru orice întreg n ≥ 1. Care dintre următoarele valori poate fi x? ⌊t⌋ este partea întreagă a lui t.",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -100,7 +100,7 @@
       }
     },
     {
-      "text": "Fie x ≥ 0 astfel încât ⌊n²x⌋ este pătrat perfect pentru orice întreg n ≥ 1. Care dintre următoarele valori poate fi x? Setul 4. ⌊t⌋ este partea întreagă a lui t.",
+      "text": "Fie x ∈ [9; 10) astfel încât ⌊n²x⌋ este pătrat perfect pentru orice întreg n ≥ 1. Care dintre următoarele valori poate fi x? ⌊t⌋ este partea întreagă a lui t.",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -132,7 +132,7 @@
       }
     },
     {
-      "text": "Fie x ≥ 0 astfel încât ⌊n²x⌋ este pătrat perfect pentru orice întreg n ≥ 1. Care dintre următoarele valori poate fi x? Setul 5. ⌊t⌋ este partea întreagă a lui t.",
+      "text": "Fie x ∈ [16; 17) astfel încât ⌊n²x⌋ este pătrat perfect pentru orice întreg n ≥ 1. Care dintre următoarele valori poate fi x? ⌊t⌋ este partea întreagă a lui t.",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,

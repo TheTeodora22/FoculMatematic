@@ -111,8 +111,8 @@ def build_questions():
             f"{m*m} la n=1, astfel încât acel test singur nu le distinge. "
             "Un singur contraexemplu infirmă condiția universală; verificarea unui număr finit de indici nu o demonstrează."
         )
-        induction(1, f"Fie x ≥ 0 astfel încât ⌊n²x⌋ este pătrat perfect pentru orice întreg n ≥ 1. "
-                  f"Care dintre următoarele valori poate fi x? Setul {m+1}. ⌊t⌋ este partea întreagă a lui t.",
+        induction(1, f"Fie x ∈ [{m*m}; {m*m+1}) astfel încât ⌊n²x⌋ este pătrat perfect pentru orice întreg n ≥ 1. "
+                  "Care dintre următoarele valori poate fi x? ⌊t⌋ este partea întreagă a lui t.",
                   m*m, square_proof, wrong)
 
     sum_formulas = [

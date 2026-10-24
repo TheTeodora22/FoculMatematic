@@ -1,0 +1,27 @@
+.fm-formula {
+    display: inline-block;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    vertical-align: middle;
+    padding: .3em .1em;
+    box-sizing: border-box;
+}
+
+.fm-formula .katex {
+    font-size: 1.08em;
+    line-height: 1.35;
+    text-align: left;
+}
+
+.fm-formula .katex-display {
+    margin: .35em 0;
+}
+
+[data-math-content] {
+    min-width: 0;
+}
+
+.training-option > [data-math-content] {
+    flex: 1;
+}

@@ -55,13 +55,16 @@ def build_questions():
         })
 
     # 1. Inclusiv propoziții false: adevărul nu este criteriul de recunoaștere.
-    for i, statement in enumerate(["7 este număr prim.", "9 este număr par.",
-                                    "√2 este număr irațional.", "3 + 4 = 8.",
-                                    "Orice pătrat este dreptunghi."], 1):
-        add(1, f"Care enunț este o propoziție matematică? Setul {i}.", statement,
-            ["Calculați suma numerelor 2 și 5!", "Cât este 3²?", "x + 1 = 4, cu x liber în ℝ."],
-            "Propoziția este un enunț declarativ cu valoare de adevăr determinată, chiar dacă este fals. "
-            "Ordinul și întrebarea nu sunt propoziții; enunțul cu x liber este un predicat.", "easy")
+    for statement, value in [("7 este număr prim.",True), ("9 este număr par.",False),
+                             ("√2 este număr irațional.",True), ("3 + 4 = 8.",False),
+                             ("Orice pătrat este dreptunghi.",True)]:
+        correct = "Propoziție adevărată." if value else "Propoziție falsă."
+        labels = ["Propoziție adevărată.","Propoziție falsă.","Predicat cu o variabilă liberă.","Ordin de efectuare a unui calcul."]
+        add(1, f"Cum se clasifică enunțul «{statement}»?", correct,
+            [label for label in labels if label!=correct],
+            "Enunțul este declarativ și are o valoare de adevăr determinată, deci este o propoziție. "
+            f"În acest caz este {'adevărat' if value else 'fals'}. O propoziție falsă rămâne propoziție; "
+            "nu are variabile libere și nu este un ordin.", "easy")
 
     # 2. Un produs constant caracterizează proporționalitatea inversă.
     for a, b in [(2, 12), (3, 15), (4, 10), (5, 18), (6, 14)]:
@@ -196,19 +199,19 @@ def build_questions():
             f"oricât de mult de {r+t} din stânga, astfel încât nicio valoare mai mică a lui M nu este suficientă.", "hard")
 
     arithmetic = [
-        ("Care propoziție este adevărată pentru orice n ∈ ℤ? Setul 1.", "n(n + 1) este divizibil cu 2.",
+        ("Care propoziție despre produsele de întregi consecutivi este adevărată pentru orice n ∈ ℤ?", "n(n + 1) este divizibil cu 2.",
          ["n² + 1 este divizibil cu 2.", "n(n + 1) este divizibil cu 3.", "n² este impar."],
          "Dintre doi întregi consecutivi unul este par. Contraexemple pentru celelalte afirmații: n = 0, n = 1, respectiv n = 0."),
-        ("Care propoziție este adevărată pentru orice n ∈ ℤ? Setul 2.", "n(n + 1)(n + 2) este divizibil cu 6.",
+        ("Care propoziție despre produsul a trei întregi consecutivi este adevărată pentru orice n ∈ ℤ?", "n(n + 1)(n + 2) este divizibil cu 6.",
          ["n(n + 1)(n + 2) este divizibil cu 12.", "n² + 2 este divizibil cu 3.", "n + 1 este par."],
          "Trei întregi consecutivi conțin un multiplu de 3 și un număr par. Celelalte afirmații sunt infirmate de n = 1, n = 0, respectiv n = 0."),
-        ("Care propoziție este adevărată pentru orice n ∈ ℤ? Setul 3.", "n² − n este par.",
+        ("Care proprietate aritmetică a expresiei n² − n este valabilă pentru orice n ∈ ℤ?", "n² − n este par.",
          ["n² − n este impar.", "n² + n + 1 este par.", "n² − n este divizibil cu 4."],
          "n² − n = n(n − 1) este produsul a doi întregi consecutivi. Contraexemple: n = 0 pentru primele două afirmații false și n = 2 pentru ultima."),
-        ("Care propoziție este adevărată pentru orice n ∈ ℤ? Setul 4.", "(2n + 1)² − 1 este divizibil cu 8.",
+        ("Care proprietate a pătratelor numerelor impare este valabilă pentru orice n ∈ ℤ?", "(2n + 1)² − 1 este divizibil cu 8.",
          ["(2n + 1)² este par.", "(2n + 1)² − 1 este divizibil cu 16.", "2n + 1 este număr prim."],
          "(2n + 1)² − 1 = 4n(n + 1), iar n(n + 1) este par. Contraexemple: n = 0, n = 1, respectiv n = 4."),
-        ("Care propoziție este adevărată pentru orice n ∈ ℕ, cu ℕ = {0, 1, 2, …}? Setul 5.", "n² + 2n + 1 este pătrat perfect.",
+        ("Care afirmație despre pătrate perfecte este adevărată pentru orice n ∈ ℕ, cu ℕ = {0, 1, 2, …}?", "n² + 2n + 1 este pătrat perfect.",
          ["n² + 1 este pătrat perfect.", "n² + 2n este pătrat perfect.", "2n + 1 este pătrat perfect."],
          "n² + 2n + 1 = (n + 1)². Pentru n = 1, celelalte expresii sunt 2, 3, respectiv 3, care nu sunt pătrate perfecte."),
     ]

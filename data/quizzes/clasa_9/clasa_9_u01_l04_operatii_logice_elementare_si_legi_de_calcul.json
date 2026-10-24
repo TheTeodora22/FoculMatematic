@@ -779,26 +779,26 @@
       }
     },
     {
-      "text": "Care formulă este o tautologie? Setul 1.",
+      "text": "Cum se clasifică formula (p ∨ ¬(p))?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "(p ∨ ¬(p)) este adevărată în toate cele opt evaluări ale lui p, q, r. Celelalte formule admit evaluări false; o tautologie este adevărată indiferent de valorile propozițiilor.",
+      "explanation": "(p ∨ ¬(p)) este adevărată în toate cele opt evaluări ale lui p, q, r. Este o tautologie: adevărul său nu depinde de valorile propozițiilor și nu impune condițiile din celelalte variante.",
       "options": [
         {
-          "text": "p",
+          "text": "Contradicție: falsă pentru orice evaluare.",
           "is_correct": false
         },
         {
-          "text": "(p ∨ ¬(p))",
+          "text": "Tautologie: adevărată pentru orice evaluare.",
           "is_correct": true
         },
         {
-          "text": "¬(p)",
+          "text": "Adevărată numai dacă p și q sunt adevărate.",
           "is_correct": false
         },
         {
-          "text": "(p ∧ q)",
+          "text": "Adevărată numai dacă p este falsă.",
           "is_correct": false
         }
       ],
@@ -810,26 +810,26 @@
       }
     },
     {
-      "text": "Care formulă este o tautologie? Setul 2.",
+      "text": "Cum se clasifică formula ¬((p ∧ ¬(p)))?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "¬((p ∧ ¬(p))) este adevărată în toate cele opt evaluări ale lui p, q, r. Celelalte formule admit evaluări false; o tautologie este adevărată indiferent de valorile propozițiilor.",
+      "explanation": "¬((p ∧ ¬(p))) este adevărată în toate cele opt evaluări ale lui p, q, r. Este o tautologie: adevărul său nu depinde de valorile propozițiilor și nu impune condițiile din celelalte variante.",
       "options": [
         {
-          "text": "p",
+          "text": "Contradicție: falsă pentru orice evaluare.",
           "is_correct": false
         },
         {
-          "text": "¬(p)",
+          "text": "Adevărată numai dacă p și q sunt adevărate.",
           "is_correct": false
         },
         {
-          "text": "¬((p ∧ ¬(p)))",
+          "text": "Tautologie: adevărată pentru orice evaluare.",
           "is_correct": true
         },
         {
-          "text": "(p ∧ q)",
+          "text": "Adevărată numai dacă p este falsă.",
           "is_correct": false
         }
       ],
@@ -841,26 +841,26 @@
       }
     },
     {
-      "text": "Care formulă este o tautologie? Setul 3.",
+      "text": "Cum se clasifică formula (p ⇒ p)?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "(p ⇒ p) este adevărată în toate cele opt evaluări ale lui p, q, r. Celelalte formule admit evaluări false; o tautologie este adevărată indiferent de valorile propozițiilor.",
+      "explanation": "(p ⇒ p) este adevărată în toate cele opt evaluări ale lui p, q, r. Este o tautologie: adevărul său nu depinde de valorile propozițiilor și nu impune condițiile din celelalte variante.",
       "options": [
         {
-          "text": "p",
+          "text": "Contradicție: falsă pentru orice evaluare.",
           "is_correct": false
         },
         {
-          "text": "¬(p)",
+          "text": "Adevărată numai dacă p și q sunt adevărate.",
           "is_correct": false
         },
         {
-          "text": "(p ∧ q)",
+          "text": "Adevărată numai dacă p este falsă.",
           "is_correct": false
         },
         {
-          "text": "(p ⇒ p)",
+          "text": "Tautologie: adevărată pentru orice evaluare.",
           "is_correct": true
         }
       ],
@@ -872,26 +872,26 @@
       }
     },
     {
-      "text": "Care formulă este o tautologie? Setul 4.",
+      "text": "Cum se clasifică formula (¬(¬(p)) ⇔ p)?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "(¬(¬(p)) ⇔ p) este adevărată în toate cele opt evaluări ale lui p, q, r. Celelalte formule admit evaluări false; o tautologie este adevărată indiferent de valorile propozițiilor.",
+      "explanation": "(¬(¬(p)) ⇔ p) este adevărată în toate cele opt evaluări ale lui p, q, r. Este o tautologie: adevărul său nu depinde de valorile propozițiilor și nu impune condițiile din celelalte variante.",
       "options": [
         {
-          "text": "(¬(¬(p)) ⇔ p)",
+          "text": "Tautologie: adevărată pentru orice evaluare.",
           "is_correct": true
         },
         {
-          "text": "p",
+          "text": "Contradicție: falsă pentru orice evaluare.",
           "is_correct": false
         },
         {
-          "text": "¬(p)",
+          "text": "Adevărată numai dacă p și q sunt adevărate.",
           "is_correct": false
         },
         {
-          "text": "(p ∧ q)",
+          "text": "Adevărată numai dacă p este falsă.",
           "is_correct": false
         }
       ],
@@ -903,26 +903,26 @@
       }
     },
     {
-      "text": "Care formulă este o tautologie? Setul 5.",
+      "text": "Cum se clasifică formula ((p ∧ q) ⇒ p)?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "((p ∧ q) ⇒ p) este adevărată în toate cele opt evaluări ale lui p, q, r. Celelalte formule admit evaluări false; o tautologie este adevărată indiferent de valorile propozițiilor.",
+      "explanation": "((p ∧ q) ⇒ p) este adevărată în toate cele opt evaluări ale lui p, q, r. Este o tautologie: adevărul său nu depinde de valorile propozițiilor și nu impune condițiile din celelalte variante.",
       "options": [
         {
-          "text": "p",
+          "text": "Contradicție: falsă pentru orice evaluare.",
           "is_correct": false
         },
         {
-          "text": "((p ∧ q) ⇒ p)",
+          "text": "Tautologie: adevărată pentru orice evaluare.",
           "is_correct": true
         },
         {
-          "text": "¬(p)",
+          "text": "Adevărată numai dacă p și q sunt adevărate.",
           "is_correct": false
         },
         {
-          "text": "(p ∧ q)",
+          "text": "Adevărată numai dacă p este falsă.",
           "is_correct": false
         }
       ],

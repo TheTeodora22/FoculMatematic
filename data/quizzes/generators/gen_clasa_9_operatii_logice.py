@@ -136,12 +136,13 @@ def build_questions():
 
     tautologies = [disj(P,neg(P)),neg(conj(P,neg(P))),imp(P,P),
                    iff(neg(neg(P)),P),imp(conj(P,Q),P)]
-    for i,f in enumerate(tautologies,1):
+    for f in tautologies:
         assert all(signature(f))
-        wrong = [g for g in [P,neg(P),conj(P,Q),iff(P,Q)] if not all(signature(g))][:3]
-        add("3.1",6,f"Care formulă este o tautologie? Setul {i}.",display(f),[display(g) for g in wrong],
+        add("3.1",6,f"Cum se clasifică formula {display(f)}?",
+            "Tautologie: adevărată pentru orice evaluare.",
+            ["Contradicție: falsă pentru orice evaluare.","Adevărată numai dacă p și q sunt adevărate.","Adevărată numai dacă p este falsă."],
             f"{display(f)} este adevărată în toate cele opt evaluări ale lui p, q, r. "
-            "Celelalte formule admit evaluări false; o tautologie este adevărată indiferent de valorile propozițiilor.")
+            "Este o tautologie: adevărul său nu depinde de valorile propozițiilor și nu impune condițiile din celelalte variante.")
 
     inference = [(conj(imp(P,Q),P),Q,"Modus ponens"),
                  (conj(imp(P,Q),neg(Q)),neg(P),"Modus tollens"),

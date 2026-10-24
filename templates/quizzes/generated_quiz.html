@@ -13,7 +13,7 @@
     <p class="muted">Întrebarea {{ question_number }} din {{ total_count }}</p>
 
     <article class="card">
-        <h2 style="margin:0 0 1rem;">{{ item.question.text }}</h2>
+        <h2 data-math-content style="margin:0 0 1rem;">{{ item.question.text }}</h2>
         <form method="post">
             {% csrf_token %}
             <input type="hidden" name="item_id" value="{{ item.pk }}">
@@ -21,7 +21,7 @@
                 {% for option in item.question.options.all %}
                     <label class="quiz-option" style="display:block;margin-bottom:0.75rem;cursor:pointer;">
                         <input type="radio" name="option_id" value="{{ option.pk }}" required>
-                        {{ option.text }}
+                        <span data-math-content>{{ option.text }}</span>
                     </label>
                 {% endfor %}
             </fieldset>

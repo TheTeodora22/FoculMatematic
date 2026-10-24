@@ -33,8 +33,8 @@
 <h2>Revizuire răspunsuri</h2>
 {% for answer in attempt.answers.all %}
     <div class="card answer-card {% if answer.is_correct %}correct{% else %}incorrect{% endif %}">
-        <p style="margin:0 0 0.5rem;"><strong>{{ forloop.counter }}.</strong> {{ answer.question.text }}</p>
-        <p class="muted" style="margin:0;">Răspunsul tău: <strong>{{ answer.selected_option.text }}</strong></p>
+        <p style="margin:0 0 0.5rem;"><strong>{{ forloop.counter }}.</strong> <span data-math-content>{{ answer.question.text }}</span></p>
+        <p class="muted" style="margin:0;">Răspunsul tău: <strong data-math-content>{{ answer.selected_option.text }}</strong></p>
         {% if answer.is_correct %}
             <p class="answer-status correct">Corect — +{{ answer.question.points }} puncte</p>
         {% else %}
@@ -42,7 +42,7 @@
             <p class="muted" style="margin:0.35rem 0 0;">
                 Răspuns corect:
                 {% for opt in answer.question.options.all %}
-                    {% if opt.is_correct %}<strong>{{ opt.text }}</strong>{% endif %}
+                    {% if opt.is_correct %}<strong data-math-content>{{ opt.text }}</strong>{% endif %}
                 {% endfor %}
             </p>
         {% endif %}

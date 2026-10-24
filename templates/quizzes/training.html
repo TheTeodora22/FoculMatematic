@@ -62,7 +62,7 @@
             {% csrf_token %}
             <article class="card training-card">
                 <div id="training-question">
-                    <h2 style="margin:0 0 1rem;">{{ current.text }}</h2>
+                    <h2 data-math-content style="margin:0 0 1rem;">{{ current.text }}</h2>
 
                     {% if feedback %}
                         <p class="training-feedback" style="margin:0 0 0.75rem;">
@@ -79,7 +79,7 @@
                     {% endif %}
 
                     {% if training_solved and current.explanation %}
-                        <p class="training-explanation" style="margin:0 0 1rem;">{{ current.explanation }}</p>
+                        <p class="training-explanation" data-math-content style="margin:0 0 1rem;">{{ current.explanation }}</p>
                     {% endif %}
 
                     <form method="post" class="training-options-form" action="{% url 'training_index' topic.pk index %}">
@@ -96,7 +96,7 @@
                                         {% if selected_option_id == option.pk and feedback and not feedback.is_correct %}checked{% endif %}
                                         {% if not training_solved %}required{% endif %}
                                     >
-                                    <span>{{ option.text }}</span>
+                                    <span data-math-content>{{ option.text }}</span>
                                 </label>
                             {% endfor %}
                         </fieldset>
@@ -133,5 +133,5 @@
 {% endblock %}
 
 {% block extra_js %}
-<script src="{% static 'core/js/training.js' %}?v=20260821-algebra-keyboard-centered"></script>
+<script src="{% static 'core/js/training.js' %}?v=20261024-math-rendering"></script>
 {% endblock %}

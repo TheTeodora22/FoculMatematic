@@ -4,26 +4,26 @@
   "difficulty": "medium",
   "questions": [
     {
-      "text": "Care enunț este o propoziție matematică? Setul 1.",
+      "text": "Cum se clasifică enunțul «7 este număr prim.»?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Propoziția este un enunț declarativ cu valoare de adevăr determinată, chiar dacă este fals. Ordinul și întrebarea nu sunt propoziții; enunțul cu x liber este un predicat.",
+      "explanation": "Enunțul este declarativ și are o valoare de adevăr determinată, deci este o propoziție. În acest caz este adevărat. O propoziție falsă rămâne propoziție; nu are variabile libere și nu este un ordin.",
       "options": [
         {
-          "text": "7 este număr prim.",
+          "text": "Propoziție adevărată.",
           "is_correct": true
         },
         {
-          "text": "Calculați suma numerelor 2 și 5!",
+          "text": "Propoziție falsă.",
           "is_correct": false
         },
         {
-          "text": "Cât este 3²?",
+          "text": "Predicat cu o variabilă liberă.",
           "is_correct": false
         },
         {
-          "text": "x + 1 = 4, cu x liber în ℝ.",
+          "text": "Ordin de efectuare a unui calcul.",
           "is_correct": false
         }
       ],
@@ -36,26 +36,26 @@
       }
     },
     {
-      "text": "Care enunț este o propoziție matematică? Setul 2.",
+      "text": "Cum se clasifică enunțul «9 este număr par.»?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Propoziția este un enunț declarativ cu valoare de adevăr determinată, chiar dacă este fals. Ordinul și întrebarea nu sunt propoziții; enunțul cu x liber este un predicat.",
+      "explanation": "Enunțul este declarativ și are o valoare de adevăr determinată, deci este o propoziție. În acest caz este fals. O propoziție falsă rămâne propoziție; nu are variabile libere și nu este un ordin.",
       "options": [
         {
-          "text": "Calculați suma numerelor 2 și 5!",
+          "text": "Propoziție adevărată.",
           "is_correct": false
         },
         {
-          "text": "9 este număr par.",
+          "text": "Propoziție falsă.",
           "is_correct": true
         },
         {
-          "text": "Cât este 3²?",
+          "text": "Predicat cu o variabilă liberă.",
           "is_correct": false
         },
         {
-          "text": "x + 1 = 4, cu x liber în ℝ.",
+          "text": "Ordin de efectuare a unui calcul.",
           "is_correct": false
         }
       ],
@@ -68,26 +68,26 @@
       }
     },
     {
-      "text": "Care enunț este o propoziție matematică? Setul 3.",
+      "text": "Cum se clasifică enunțul «√2 este număr irațional.»?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Propoziția este un enunț declarativ cu valoare de adevăr determinată, chiar dacă este fals. Ordinul și întrebarea nu sunt propoziții; enunțul cu x liber este un predicat.",
+      "explanation": "Enunțul este declarativ și are o valoare de adevăr determinată, deci este o propoziție. În acest caz este adevărat. O propoziție falsă rămâne propoziție; nu are variabile libere și nu este un ordin.",
       "options": [
         {
-          "text": "Calculați suma numerelor 2 și 5!",
+          "text": "Propoziție falsă.",
           "is_correct": false
         },
         {
-          "text": "Cât este 3²?",
+          "text": "Predicat cu o variabilă liberă.",
           "is_correct": false
         },
         {
-          "text": "√2 este număr irațional.",
+          "text": "Propoziție adevărată.",
           "is_correct": true
         },
         {
-          "text": "x + 1 = 4, cu x liber în ℝ.",
+          "text": "Ordin de efectuare a unui calcul.",
           "is_correct": false
         }
       ],
@@ -100,26 +100,26 @@
       }
     },
     {
-      "text": "Care enunț este o propoziție matematică? Setul 4.",
+      "text": "Cum se clasifică enunțul «3 + 4 = 8.»?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Propoziția este un enunț declarativ cu valoare de adevăr determinată, chiar dacă este fals. Ordinul și întrebarea nu sunt propoziții; enunțul cu x liber este un predicat.",
+      "explanation": "Enunțul este declarativ și are o valoare de adevăr determinată, deci este o propoziție. În acest caz este fals. O propoziție falsă rămâne propoziție; nu are variabile libere și nu este un ordin.",
       "options": [
         {
-          "text": "Calculați suma numerelor 2 și 5!",
+          "text": "Propoziție adevărată.",
           "is_correct": false
         },
         {
-          "text": "Cât este 3²?",
+          "text": "Predicat cu o variabilă liberă.",
           "is_correct": false
         },
         {
-          "text": "x + 1 = 4, cu x liber în ℝ.",
+          "text": "Ordin de efectuare a unui calcul.",
           "is_correct": false
         },
         {
-          "text": "3 + 4 = 8.",
+          "text": "Propoziție falsă.",
           "is_correct": true
         }
       ],
@@ -132,26 +132,26 @@
       }
     },
     {
-      "text": "Care enunț este o propoziție matematică? Setul 5.",
+      "text": "Cum se clasifică enunțul «Orice pătrat este dreptunghi.»?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
-      "explanation": "Propoziția este un enunț declarativ cu valoare de adevăr determinată, chiar dacă este fals. Ordinul și întrebarea nu sunt propoziții; enunțul cu x liber este un predicat.",
+      "explanation": "Enunțul este declarativ și are o valoare de adevăr determinată, deci este o propoziție. În acest caz este adevărat. O propoziție falsă rămâne propoziție; nu are variabile libere și nu este un ordin.",
       "options": [
         {
-          "text": "Orice pătrat este dreptunghi.",
+          "text": "Propoziție adevărată.",
           "is_correct": true
         },
         {
-          "text": "Calculați suma numerelor 2 și 5!",
+          "text": "Propoziție falsă.",
           "is_correct": false
         },
         {
-          "text": "Cât este 3²?",
+          "text": "Predicat cu o variabilă liberă.",
           "is_correct": false
         },
         {
-          "text": "x + 1 = 4, cu x liber în ℝ.",
+          "text": "Ordin de efectuare a unui calcul.",
           "is_correct": false
         }
       ],
@@ -2724,7 +2724,7 @@
       }
     },
     {
-      "text": "Care propoziție este adevărată pentru orice n ∈ ℤ? Setul 1.",
+      "text": "Care propoziție despre produsele de întregi consecutivi este adevărată pentru orice n ∈ ℤ?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -2756,7 +2756,7 @@
       }
     },
     {
-      "text": "Care propoziție este adevărată pentru orice n ∈ ℤ? Setul 2.",
+      "text": "Care propoziție despre produsul a trei întregi consecutivi este adevărată pentru orice n ∈ ℤ?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -2788,7 +2788,7 @@
       }
     },
     {
-      "text": "Care propoziție este adevărată pentru orice n ∈ ℤ? Setul 3.",
+      "text": "Care proprietate aritmetică a expresiei n² − n este valabilă pentru orice n ∈ ℤ?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -2820,7 +2820,7 @@
       }
     },
     {
-      "text": "Care propoziție este adevărată pentru orice n ∈ ℤ? Setul 4.",
+      "text": "Care proprietate a pătratelor numerelor impare este valabilă pentru orice n ∈ ℤ?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,
@@ -2852,7 +2852,7 @@
       }
     },
     {
-      "text": "Care propoziție este adevărată pentru orice n ∈ ℕ, cu ℕ = {0, 1, 2, …}? Setul 5.",
+      "text": "Care afirmație despre pătrate perfecte este adevărată pentru orice n ∈ ℕ, cu ℕ = {0, 1, 2, …}?",
       "type": "multiple_choice",
       "format": "grid",
       "points": 10,

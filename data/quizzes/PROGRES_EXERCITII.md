@@ -239,7 +239,13 @@ Verificator separat de generator: `scripts/verify_clasa_9_inductie_numarare.py`.
 
 În JSON, `catalog.task_scope` distinge aplicațiile numerice, formulele generale, cazurile particulare și construcțiile ghidate. Acoperirea celor 63 de tipuri este **tipologică**, nu o certificare că toate grilele au dificultatea sau cerința integrală a problemelor din scanare. Revizia este internă; nu reprezintă o confruntare individuală cu PDF-ul sau o evaluare făcută de un profesor extern. Raportul este în `docs/clasa_9/revizie_sectiunea_4.md`.
 
-## Regula de actualizare
+### Afișare matematică și eliminarea etichetelor de lucru — 24 octombrie 2026
+
+Versiunea web folosește acum KaTeX local pentru enunțuri, variante și explicații. Sumele, produsele, fracțiile, radicalii, exponenții și indicii din notația existentă sunt formatați la afișare; este acceptat și LaTeX explicit. Au fost verificate gruparea operatorilor, randarea a 1.385 de fragmente din lotul de 315 grile, navigarea dinamică în Antrenare și explicația după răspuns. Cheia matematică rămâne neschimbată.
+
+Etichetele „Setul 1”, „Setul 2” etc. au fost eliminate din cele trei lecții create aici: Propoziții/predicate (95), Operații logice (185), Inducție/numărare (315). În locul numerelor artificiale, enunțurile disting datele, expresiile sau propozițiile concrete analizate. La prima familie din 4.1 apare intervalul matematic al lui x. Totalurile lecțiilor nu s-au schimbat. Sursele și generatoarele sunt sincronizate, iar lecțiile au fost reîncărcate local.
+
+## Regula de actualizare a registrului
 
 După fiecare lecție nouă sau după modificarea numărului de exerciții:
 
