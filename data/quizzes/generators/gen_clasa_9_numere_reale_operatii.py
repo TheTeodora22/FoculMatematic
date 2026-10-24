@@ -1,4 +1,4 @@
-"""Generează prima lecție interactivă de algebră pentru clasa a IX-a."""
+"""Generează prima lecție de algebră, inclusiv grilele din catalogul Burtea."""
 import json
 from pathlib import Path
 
@@ -8,6 +8,57 @@ def alg(text, mode, data, answers, explanation):
         "text": text, "type": "algebra_workbench", "format": "interactive", "points": 10,
         "explanation": explanation, "interactive": {"mode": mode, **data, "answers": answers},
     }
+
+
+def catalog_grids():
+    """Lotul 01: câte cinci grile pentru tipurile 1 și 2 din A1, §1.1.
+
+    Enunțuri formulate după tipologiile catalogului, fără transcriere literală.
+    Ordinea variantelor corespunde lotului prezentat pentru verificare.
+    """
+    rows = [
+        ("Calculați 0,64 + 0,078.",
+         ["0,142", "0,718", "1,42", "0,648"], 1,
+         "Scriem 0,640 + 0,078 = 0,718, aliniind ordinele zecimale."),
+        ("Calculați 3,2 − 0,475.",
+         ["3,675", "2,835", "3,153", "2,725"], 3,
+         "Scriem 3,200 − 0,475 = 2,725."),
+        ("Calculați (−1,25) · 0,08.",
+         ["−0,1", "−1", "0,1", "−0,01"], 0,
+         "Produsul are semn negativ, iar 1,25 · 0,08 = 0,100. Rezultatul este −0,1."),
+        ("Calculați 0,756 : 0,12.",
+         ["0,63", "63", "6,3", "0,063"], 2,
+         "Înmulțim deîmpărțitul și împărțitorul cu 100: 75,6 : 12 = 6,3."),
+        ("Calculați [1,8 − (0,24 : 0,6)] · 0,5.",
+         ["0,5", "0,7", "1,6", "1,4"], 1,
+         "Mai întâi 0,24 : 0,6 = 0,4. Apoi (1,8 − 0,4) · 0,5 = 1,4 · 0,5 = 0,7."),
+        ("Calculați 0,(6) − 1/4. Cifrele dintre paranteze se repetă la nesfârșit.",
+         ["1/2", "1/6", "5/12", "2/3"], 2,
+         "0,(6) = 6/9 = 2/3. Prin urmare 2/3 − 1/4 = 8/12 − 3/12 = 5/12."),
+        ("Calculați 0,(27) + 2/11. Cifrele dintre paranteze se repetă la nesfârșit.",
+         ["5/11", "29/110", "3/11", "1/2"], 0,
+         "0,(27) = 27/99 = 3/11. Suma este 3/11 + 2/11 = 5/11."),
+        ("Calculați 0,1(6) + 0,25. Cifrele dintre paranteze se repetă la nesfârșit.",
+         ["41/100", "1/3", "2/5", "5/12"], 3,
+         "0,1(6) = (16 − 1)/90 = 1/6, iar 0,25 = 1/4. Suma este 2/12 + 3/12 = 5/12."),
+        ("Calculați 1,2(3) − 0,8(3). Cifrele dintre paranteze se repetă la nesfârșit.",
+         ["4/9", "2/5", "1/3", "1/2"], 1,
+         "1,2(3) = (123 − 12)/90 = 37/30, iar 0,8(3) = (83 − 8)/90 = 5/6. Diferența este 37/30 − 25/30 = 2/5."),
+        ("Calculați [0,(6) + 0,1(6)] : 0,(3). Cifrele dintre paranteze se repetă la nesfârșit.",
+         ["5/18", "2", "5/2", "3/2"], 2,
+         "Expresia devine (2/3 + 1/6) : (1/3) = (5/6) · 3 = 5/2."),
+    ]
+    return [
+        {
+            "text": text, "type": "multiple_choice", "format": "grid", "points": 10,
+            "explanation": explanation,
+            "options": [
+                {"text": value, "is_correct": index == correct}
+                for index, value in enumerate(values)
+            ],
+        }
+        for text, values, correct, explanation in rows
+    ]
 
 
 def field(key, label):
@@ -144,6 +195,9 @@ def build_questions():
         grid("Care număr este irațional?", "√7", ["0,25", "−3", "2/9"], "√7 nu poate fi scris ca raport al două numere întregi."),
     ]
 
+    # Catalog A1, §1.1: tipul 1 (zecimale finite) și tipul 2 (periodice).
+    q += catalog_grids()
+
     totals = {}
     for question in q:
         totals[question["text"]] = totals.get(question["text"], 0) + 1
@@ -154,8 +208,8 @@ def build_questions():
             occurrences[base] = occurrences.get(base, 0) + 1
             question["text"] = f"{base.rstrip('.')} — varianta {occurrences[base]}."
 
-    assert len(q) == 55, len(q)
-    assert len({question["text"] for question in q}) == 55
+    assert len(q) == 65, len(q)
+    assert len({question["text"] for question in q}) == 65
     return q
 
 

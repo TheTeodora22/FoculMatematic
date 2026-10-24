@@ -9,8 +9,8 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 | Clasa | Lecții cu exerciții | Total exerciții | Grilă | Adevărat/Fals | Interactive |
 |---|---:|---:|---:|---:|---:|
 | Clasa a V-a | 42 | 2.101 | 589 | 93 | 1.419 |
-| Clasa a IX-a | 1 | 55 | 5 | 4 | 46 |
-| **Total** | **43** | **2.156** | **594** | **97** | **1.465** |
+| Clasa a IX-a | 1 | 65 | 15 | 4 | 46 |
+| **Total** | **43** | **2.166** | **604** | **97** | **1.465** |
 
 ## Clasa a V-a
 
@@ -94,9 +94,11 @@ Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. 
 
 | Lecție | Total | Grilă | A/F | Interactive |
 |---|---:|---:|---:|---:|
-| Mulțimea numerelor reale. Operații algebrice, puteri și radicali | 55 | 5 | 4 | 46 |
+| Mulțimea numerelor reale. Operații algebrice, puteri și radicali | 65 | 15 | 4 | 46 |
 
-**Subtotal clasa a IX-a: 1 lecție și 55 de exerciții.**
+**Subtotal clasa a IX-a: 1 lecție și 65 de exerciții.**
+
+Lotul 01 din catalogul Burtea: 5 grile pentru calcule cu zecimale finite și 5 pentru fracții și zecimale periodice, în subcapitolul 1.1. Operații algebrice cu numere reale. Nu au fost adăugate exerciții interactive. Documentul de referință: `docs/clasa_9/lot_01_verificare.md`.
 
 ## Regula de actualizare
 

@@ -1323,6 +1323,256 @@
           "is_correct": false
         }
       ]
+    },
+    {
+      "text": "Calculați 0,64 + 0,078.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem 0,640 + 0,078 = 0,718, aliniind ordinele zecimale.",
+      "options": [
+        {
+          "text": "0,142",
+          "is_correct": false
+        },
+        {
+          "text": "0,718",
+          "is_correct": true
+        },
+        {
+          "text": "1,42",
+          "is_correct": false
+        },
+        {
+          "text": "0,648",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 3,2 − 0,475.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem 3,200 − 0,475 = 2,725.",
+      "options": [
+        {
+          "text": "3,675",
+          "is_correct": false
+        },
+        {
+          "text": "2,835",
+          "is_correct": false
+        },
+        {
+          "text": "3,153",
+          "is_correct": false
+        },
+        {
+          "text": "2,725",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Calculați (−1,25) · 0,08.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul are semn negativ, iar 1,25 · 0,08 = 0,100. Rezultatul este −0,1.",
+      "options": [
+        {
+          "text": "−0,1",
+          "is_correct": true
+        },
+        {
+          "text": "−1",
+          "is_correct": false
+        },
+        {
+          "text": "0,1",
+          "is_correct": false
+        },
+        {
+          "text": "−0,01",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 0,756 : 0,12.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim deîmpărțitul și împărțitorul cu 100: 75,6 : 12 = 6,3.",
+      "options": [
+        {
+          "text": "0,63",
+          "is_correct": false
+        },
+        {
+          "text": "63",
+          "is_correct": false
+        },
+        {
+          "text": "6,3",
+          "is_correct": true
+        },
+        {
+          "text": "0,063",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați [1,8 − (0,24 : 0,6)] · 0,5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi 0,24 : 0,6 = 0,4. Apoi (1,8 − 0,4) · 0,5 = 1,4 · 0,5 = 0,7.",
+      "options": [
+        {
+          "text": "0,5",
+          "is_correct": false
+        },
+        {
+          "text": "0,7",
+          "is_correct": true
+        },
+        {
+          "text": "1,6",
+          "is_correct": false
+        },
+        {
+          "text": "1,4",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 0,(6) − 1/4. Cifrele dintre paranteze se repetă la nesfârșit.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0,(6) = 6/9 = 2/3. Prin urmare 2/3 − 1/4 = 8/12 − 3/12 = 5/12.",
+      "options": [
+        {
+          "text": "1/2",
+          "is_correct": false
+        },
+        {
+          "text": "1/6",
+          "is_correct": false
+        },
+        {
+          "text": "5/12",
+          "is_correct": true
+        },
+        {
+          "text": "2/3",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 0,(27) + 2/11. Cifrele dintre paranteze se repetă la nesfârșit.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0,(27) = 27/99 = 3/11. Suma este 3/11 + 2/11 = 5/11.",
+      "options": [
+        {
+          "text": "5/11",
+          "is_correct": true
+        },
+        {
+          "text": "29/110",
+          "is_correct": false
+        },
+        {
+          "text": "3/11",
+          "is_correct": false
+        },
+        {
+          "text": "1/2",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați 0,1(6) + 0,25. Cifrele dintre paranteze se repetă la nesfârșit.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0,1(6) = (16 − 1)/90 = 1/6, iar 0,25 = 1/4. Suma este 2/12 + 3/12 = 5/12.",
+      "options": [
+        {
+          "text": "41/100",
+          "is_correct": false
+        },
+        {
+          "text": "1/3",
+          "is_correct": false
+        },
+        {
+          "text": "2/5",
+          "is_correct": false
+        },
+        {
+          "text": "5/12",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "text": "Calculați 1,2(3) − 0,8(3). Cifrele dintre paranteze se repetă la nesfârșit.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "1,2(3) = (123 − 12)/90 = 37/30, iar 0,8(3) = (83 − 8)/90 = 5/6. Diferența este 37/30 − 25/30 = 2/5.",
+      "options": [
+        {
+          "text": "4/9",
+          "is_correct": false
+        },
+        {
+          "text": "2/5",
+          "is_correct": true
+        },
+        {
+          "text": "1/3",
+          "is_correct": false
+        },
+        {
+          "text": "1/2",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "text": "Calculați [0,(6) + 0,1(6)] : 0,(3). Cifrele dintre paranteze se repetă la nesfârșit.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia devine (2/3 + 1/6) : (1/3) = (5/6) · 3 = 5/2.",
+      "options": [
+        {
+          "text": "5/18",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": true
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        }
+      ]
     }
   ]
 }
