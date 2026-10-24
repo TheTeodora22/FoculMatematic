@@ -137,7 +137,7 @@ def build_questions():
 
 
 def main():
-    output = Path(__file__).resolve().parent.parent / "clasa_5_fractii_zecimale.json"
+    output = Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_fractii_zecimale.json"
     payload = {"title": "Fracții zecimale; scrierea fracțiilor ordinare cu numitorul puteri ale lui 10 sub formă de fracții zecimale; transformarea unei fracții zecimale cu un număr finit de zecimale nenule în fracție ordinară", "description": "Clasa a 5-a · Fracții zecimale", "difficulty": "medium", "questions": build_questions()}
     output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Scrise {len(payload['questions'])} exerciții în {output.name}")

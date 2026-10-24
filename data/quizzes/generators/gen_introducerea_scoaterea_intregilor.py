@@ -71,7 +71,7 @@ def build_questions():
 
 
 def main():
-    target = Path(__file__).resolve().parents[1] / "clasa_5_fractii_ordinare_introducerea_si_scoaterea_intregilor.json"
+    target = Path(__file__).resolve().parents[1] / "clasa_5" / "clasa_5_fractii_ordinare_introducerea_si_scoaterea_intregilor.json"
     payload = {"title": "Introducerea și scoaterea întregilor dintr-o fracție",
                "description": "Clasa a 5-a · Fracții ordinare", "difficulty": "easy",
                "questions": build_questions()}

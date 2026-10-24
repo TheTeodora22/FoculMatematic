@@ -167,7 +167,7 @@ def build_questions():
 
 
 def main():
-    target = Path(__file__).resolve().parents[1] / "clasa_5_fractii_si_procente_dintr_un_numar.json"
+    target = Path(__file__).resolve().parents[1] / "clasa_5" / "clasa_5_fractii_si_procente_dintr_un_numar.json"
     payload = {"title": "Fracții/procente dintr-un număr natural sau dintr-o fracție ordinară",
                "description": "Clasa a 5-a · Fracții ordinare", "difficulty": "easy",
                "questions": build_questions()}

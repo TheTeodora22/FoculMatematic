@@ -311,7 +311,7 @@ def build_questions():
 
 
 def main():
-    target = Path(__file__).resolve().parents[1] / "clasa_5_fractii_ordinare_adunarea_si_scaderea.json"
+    target = Path(__file__).resolve().parents[1] / "clasa_5" / "clasa_5_fractii_ordinare_adunarea_si_scaderea.json"
     payload = {
         "title": "Adunarea și scăderea fracțiilor",
         "description": "Clasa a 5-a · Fracții ordinare",

@@ -111,14 +111,14 @@ def build_amplification_questions():
 
 
 def main():
-    target = Path(__file__).resolve().parents[1] / "clasa_5_fractii_ordinare.json"
+    target = Path(__file__).resolve().parents[1] / "clasa_5" / "clasa_5_fractii_ordinare.json"
     payload = {"title": "Fracții ordinare. Fracții echivalente. Procente",
                "description": "Clasa a 5-a · Fracții ordinare", "difficulty": "medium",
                "questions": build_questions()}
     target.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Am scris {len(payload['questions'])} întrebări în {target}.")
 
-    amplification_target = Path(__file__).resolve().parents[1] / "clasa_5_fractii_ordinare_cmmdc_amplificarea_si_simplificarea.json"
+    amplification_target = Path(__file__).resolve().parents[1] / "clasa_5" / "clasa_5_fractii_ordinare_cmmdc_amplificarea_si_simplificarea.json"
     amplification_payload = {
         "title": "Cel mai mare divizor comun a două numere naturale. Amplificarea și simplificarea fracțiilor. Fracții ireductibile",
         "description": "Clasa a 5-a · Fracții ordinare",

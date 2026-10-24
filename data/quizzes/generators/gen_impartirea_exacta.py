@@ -147,7 +147,7 @@ def build_questions():
 
 
 def main():
-    output = Path(__file__).resolve().parent.parent / "clasa_5_operatii_impartirea_cu_rest.json"
+    output = Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_operatii_impartirea_cu_rest.json"
     payload = {"title": "Împărțirea numerelor naturale cu rest 0", "description": "Clasa a 5-a · Operații cu numere naturale", "difficulty": "easy", "questions": build_questions()}
     output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Scrise {len(payload['questions'])} exercitii in {output.name}")

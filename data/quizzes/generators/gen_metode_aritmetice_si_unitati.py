@@ -190,7 +190,7 @@ def build_questions():
 
 
 def main():
-    output = Path(__file__).resolve().parents[1] / "clasa_5_metode_aritmetice_si_unitati_de_masura.json"
+    output = Path(__file__).resolve().parents[1] / "clasa_5" / "clasa_5_metode_aritmetice_si_unitati_de_masura.json"
     payload = {"title": "Metode aritmetice pentru rezolvarea problemelor cu fracții în care intervin și unități de măsură pentru lungime, arie, volum, capacitate, masă, timp și unități monetare",
                "description": "Clasa a 5-a · Fracții zecimale", "difficulty": "medium",
                "questions": build_questions()}

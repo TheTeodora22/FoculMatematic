@@ -269,7 +269,7 @@ def build_questions():
 
 
 def main():
-    out = Path(__file__).resolve().parent.parent / "clasa_5_operatii_scrierea_si_citirea_numerelor_naturale.json"
+    out = Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_operatii_scrierea_si_citirea_numerelor_naturale.json"
     questions = build_questions()
     payload = {
         "title": "Scrierea și citirea numerelor naturale",

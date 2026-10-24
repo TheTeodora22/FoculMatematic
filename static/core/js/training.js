@@ -1524,8 +1524,8 @@
         const letters = [...new Set((source.match(/[a-zA-Z]/g) || []).map(letter => letter.toLowerCase()))].slice(0, 8);
         const numericOnly = ["average", "verify_identity"].includes(item.mode);
         const symbols = numericOnly
-            ? ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", ",", "/", "+", "−", "·", "(", ")"]
-            : ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", ...letters, "+", "−", "·", "/", "(", ")", "=", "√", "²", "³", "ⁿ"];
+            ? [",", "/", "+", "−", "·", "(", ")"]
+            : [...letters, "+", "−", "·", "/", "(", ")", "=", "√", "²", "³", "ⁿ"];
         const unique = [...new Set(symbols)];
         return `<section class="algebra-keyboard" aria-label="Tastatură matematică"><div class="algebra-keyboard-head"><strong>Tastatură matematică</strong><span>Apasă întâi căsuța în care vrei să scrii.</span></div><div class="algebra-keyboard-keys">${unique.map(symbol => `<button type="button" data-math-key="${escapeHtml(symbol)}" aria-label="Inserează ${escapeHtml(symbol)}">${escapeHtml(symbol)}</button>`).join("")}<button type="button" data-math-action="left" aria-label="Mută cursorul la stânga">←</button><button type="button" data-math-action="right" aria-label="Mută cursorul la dreapta">→</button><button type="button" data-math-action="backspace" aria-label="Șterge ultimul simbol">⌫</button><button type="button" data-math-action="clear" class="is-clear" aria-label="Golește căsuța">C</button></div></section>`;
     }

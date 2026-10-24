@@ -154,7 +154,7 @@ def build_questions():
 
 
 def main():
-    output = Path(__file__).resolve().parent.parent / "clasa_5_metode_aritmetice_de_rezolvare_a_problemelor.json"
+    output = Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_metode_aritmetice_de_rezolvare_a_problemelor.json"
     payload = {
         "title": "Metoda reducerii la unitate",
         "description": "Clasa a 5-a · Metode aritmetice de rezolvare a problemelor",

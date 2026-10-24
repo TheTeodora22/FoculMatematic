@@ -119,7 +119,7 @@ def build_questions():
 
 
 def main():
-    output=Path(__file__).resolve().parent.parent/"clasa_5_geometrie_pozitii_relative_punct_dreapta.json"
+    output=Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_geometrie_pozitii_relative_punct_dreapta.json"
     payload={"title":"Pozițiile relative ale unui punct față de o dreaptă. Puncte coliniare. Pozițiile relative a două drepte: drepte concurente, drepte paralele","description":"Clasa a 5-a · Elemente de geometrie și unități de măsură","difficulty":"easy","questions":build_questions()}
     output.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Scrise {len(payload['questions'])} exercitii in {output.name}")

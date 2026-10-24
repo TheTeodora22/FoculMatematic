@@ -160,7 +160,7 @@ def build_questions():
 
 
 def main():
-    output = Path(__file__).resolve().parents[1] / "clasa_9_u01_l01_multimea_numerelor_reale_operatii_ordonare_modul_si_aproximari.json"
+    output = Path(__file__).resolve().parents[1] / "clasa_9" / "clasa_9_u01_l01_multimea_numerelor_reale_operatii_ordonare_modul_si_aproximari.json"
     payload = {
         "title": "Mulțimea numerelor reale. Operații algebrice, puteri și radicali",
         "description": "Clasa a 9-a · Mulțimi și elemente de logică matematică",

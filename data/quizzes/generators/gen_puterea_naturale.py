@@ -195,7 +195,7 @@ def build_questions():
 
 
 def main():
-    target = Path(__file__).resolve().parents[1] / "clasa_5_operatii_puterea_cu_exponent_natural.json"
+    target = Path(__file__).resolve().parents[1] / "clasa_5" / "clasa_5_operatii_puterea_cu_exponent_natural.json"
     payload = {
         "title": "Puterea cu exponent natural a unui număr natural. Pătratul unui număr natural",
         "description": "Clasa a 5-a · Operații cu numere naturale",

@@ -74,7 +74,7 @@ def build_questions():
 
 
 def main():
-    target = Path(__file__).resolve().parents[1] / "clasa_5_operatii_compararea_puterilor.json"
+    target = Path(__file__).resolve().parents[1] / "clasa_5" / "clasa_5_operatii_compararea_puterilor.json"
     payload = {"title": "Compararea puterilor", "description": "Clasa a 5-a · Operații cu numere naturale",
                "difficulty": "easy", "questions": build_questions()}
     target.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

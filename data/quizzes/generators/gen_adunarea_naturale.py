@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 
-OUTPUT = Path(__file__).resolve().parent.parent / "clasa_5_operatii_adunarea_numerelor_naturale.json"
+OUTPUT = Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_operatii_adunarea_numerelor_naturale.json"
 
 KEEP_MC_NUMBERS = {
     1, 3, 5, 7,

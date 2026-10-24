@@ -220,7 +220,7 @@ def build_questions():
 
 
 def main():
-    target = Path(__file__).resolve().parents[1] / "clasa_5_fractii_ordinare_impartirea.json"
+    target = Path(__file__).resolve().parents[1] / "clasa_5" / "clasa_5_fractii_ordinare_impartirea.json"
     payload = {
         "title": "Împărțirea fracțiilor ordinare",
         "description": "Clasa a 5-a · Fracții ordinare",

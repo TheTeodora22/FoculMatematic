@@ -1611,6 +1611,27 @@ def load_quiz_file(
     )
 
 
+def _resolve_quiz_path(directory: Path, filename: str) -> Path:
+    """Resolve a manifest/CLI filename from the root or a class subfolder."""
+    direct_path = directory / filename
+    if direct_path.exists():
+        return direct_path
+
+    matches = sorted(
+        path
+        for path in directory.rglob(Path(filename).name)
+        if path.is_file() and path.name != CHAPTERS_MANIFEST
+    )
+    if len(matches) > 1:
+        relative_matches = ", ".join(
+            path.relative_to(directory).as_posix() for path in matches
+        )
+        raise SeedValidationError(
+            f"Fișierul '{filename}' este ambiguu. Potriviri: {relative_matches}."
+        )
+    return matches[0] if matches else direct_path
+
+
 @transaction.atomic
 def load_all_quizzes(
     data_dir: Path | None = None,
@@ -1622,13 +1643,16 @@ def load_all_quizzes(
 
     file_to_chapter = load_chapters_manifest(directory)
     if only_file:
-        paths = [directory / only_file]
+        paths = [_resolve_quiz_path(directory, only_file)]
     else:
         if file_to_chapter:
-            paths = [directory / name for name in sorted(file_to_chapter.keys())]
+            paths = [
+                _resolve_quiz_path(directory, name)
+                for name in sorted(file_to_chapter.keys())
+            ]
         else:
             paths = sorted(
-                p for p in directory.glob("*.json") if p.name != CHAPTERS_MANIFEST
+                p for p in directory.rglob("*.json") if p.name != CHAPTERS_MANIFEST
             )
 
     results = []
@@ -1637,8 +1661,13 @@ def load_all_quizzes(
             continue
         if path.name.startswith("_") or path.name == CHAPTERS_MANIFEST:
             continue
-        chapter_info = file_to_chapter.get(path.name)
+        relative_name = path.relative_to(directory).as_posix()
+        chapter_info = file_to_chapter.get(relative_name) or file_to_chapter.get(
+            path.name
+        )
         chapter, topic_order = chapter_info if chapter_info else (None, 0)
         quiz, created = load_quiz_file(path, chapter=chapter, order=topic_order)
-        results.append((quiz, created, path.name))
+        results.append(
+            (quiz, created, relative_name)
+        )
     return results

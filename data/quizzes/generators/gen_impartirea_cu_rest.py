@@ -176,7 +176,7 @@ def build_questions():
 
 
 def main():
-    output = Path(__file__).resolve().parent.parent / "clasa_5_operatii_impartirea_numerelor_naturale.json"
+    output = Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_operatii_impartirea_numerelor_naturale.json"
     payload = {
         "title": "Împărțirea cu rest a numerelor naturale",
         "description": "Clasa a 5-a · Operații cu numere naturale",

@@ -71,7 +71,7 @@ def build_questions():
 
 
 def main():
-    output=Path(__file__).resolve().parent.parent/"clasa_5_metoda_falsei_ipoteze.json"
+    output=Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_metoda_falsei_ipoteze.json"
     payload={"title":"Metoda falsei ipoteze","description":"Clasa a 5-a · Metode aritmetice de rezolvare a problemelor","difficulty":"medium","questions":build_questions()}
     output.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Scrise {len(payload['questions'])} exerciții în {output.name}")

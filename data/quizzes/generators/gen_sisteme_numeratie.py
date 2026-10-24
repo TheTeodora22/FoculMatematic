@@ -235,7 +235,7 @@ def build_questions():
 
 
 def main():
-    output = Path(__file__).resolve().parent.parent / "clasa_5_operatii_sisteme_de_numeratie.json"
+    output = Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_operatii_sisteme_de_numeratie.json"
     payload = {
         "title": "Scrierea în baza 10. Scrierea în baza 2",
         "description": "Clasa a 5-a · Operații cu numere naturale",

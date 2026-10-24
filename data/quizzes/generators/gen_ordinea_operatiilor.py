@@ -122,7 +122,7 @@ def build_questions():
 
 
 def main():
-    target = Path(__file__).resolve().parents[1] / "clasa_5_operatii_cu_numere_naturale.json"
+    target = Path(__file__).resolve().parents[1] / "clasa_5" / "clasa_5_operatii_cu_numere_naturale.json"
     payload = {"title": "Ordinea efectuării operațiilor; utilizarea parantezelor: rotunde, pătrate și acolade",
                "description": "Clasa a 5-a · Operații cu numere naturale", "difficulty": "medium",
                "questions": build_questions()}

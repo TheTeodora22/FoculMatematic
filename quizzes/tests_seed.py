@@ -14,8 +14,13 @@ class SeedQuizzesTests(TestCase):
         self.data_dir.mkdir(parents=True, exist_ok=True)
 
     def tearDown(self):
-        for f in self.data_dir.glob("*.json"):
+        for f in self.data_dir.rglob("*.json"):
             f.unlink()
+        for directory in sorted(
+            (path for path in self.data_dir.rglob("*") if path.is_dir()),
+            reverse=True,
+        ):
+            directory.rmdir()
         if self.data_dir.exists():
             self.data_dir.rmdir()
 
@@ -47,6 +52,32 @@ class SeedQuizzesTests(TestCase):
         quiz = Quiz.objects.get(title="Test Seed")
         self.assertEqual(quiz.questions.count(), 1)
         self.assertEqual(AnswerOption.objects.filter(question__quiz=quiz).count(), 2)
+
+    def test_loads_quizzes_recursively_from_class_folders(self):
+        class_dir = self.data_dir / "clasa_5"
+        class_dir.mkdir()
+        payload = {
+            "title": "Test organizat pe clasă",
+            "difficulty": "easy",
+            "questions": [
+                {
+                    "text": "2 + 2?",
+                    "options": [
+                        {"text": "4", "is_correct": True},
+                        {"text": "5", "is_correct": False},
+                    ],
+                }
+            ],
+        }
+        (class_dir / "lectie.json").write_text(
+            json.dumps(payload, ensure_ascii=False), encoding="utf-8"
+        )
+
+        results = load_all_quizzes(self.data_dir)
+
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0][2], "clasa_5/lectie.json")
+        self.assertTrue(Quiz.objects.filter(title=payload["title"]).exists())
 
     def test_rerun_updates_without_duplicates(self):
         payload = {

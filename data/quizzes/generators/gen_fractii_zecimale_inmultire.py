@@ -140,7 +140,7 @@ def build_questions():
 
 
 def main():
-    output = Path(__file__).resolve().parent.parent / "clasa_5_fractii_zecimale_inmultirea.json"
+    output = Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_fractii_zecimale_inmultirea.json"
     payload = {
         "title": "Înmulțirea fracțiilor zecimale cu un număr finit de zecimale nenule",
         "description": "Clasa a 5-a · Fracții zecimale",

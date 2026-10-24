@@ -191,7 +191,7 @@ def build_questions():
 
 
 def main():
-    output = Path(__file__).resolve().parent.parent / "clasa_5_operatii_factor_comun.json"
+    output = Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_operatii_factor_comun.json"
     payload = {
         "title": "Factor comun",
         "description": "Clasa a 5-a · Operații cu numere naturale",

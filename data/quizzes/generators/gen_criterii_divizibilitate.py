@@ -270,7 +270,7 @@ def build_questions():
 
 
 def main():
-    output = Path(__file__).resolve().parent.parent / "clasa_5_criterii_de_divizibilitate.json"
+    output = Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_criterii_de_divizibilitate.json"
     payload = {
         "title": "Criterii de divizibilitate",
         "description": "Clasa a 5-a · Criteriile de divizibilitate cu 2, 3, 5, 9, 10 și puterile lui 10",

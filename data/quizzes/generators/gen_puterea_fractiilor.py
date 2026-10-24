@@ -157,7 +157,7 @@ def build_questions():
 
 
 def main():
-    target = Path(__file__).resolve().parents[1] / "clasa_5_fractii_ordinare_puterea.json"
+    target = Path(__file__).resolve().parents[1] / "clasa_5" / "clasa_5_fractii_ordinare_puterea.json"
     payload = {
         "title": "Puterea cu exponent natural a unei fracții ordinare",
         "description": "Clasa a 5-a · Fracții ordinare",

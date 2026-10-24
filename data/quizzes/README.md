@@ -1,11 +1,17 @@
 # Chestionare (sursă de adevăr)
 
-Fișierele JSON din acest folder sunt **sursa principală** a întrebărilor.
+Fișierele JSON din subdirectoarele `clasa_5`, `clasa_6`, ..., `clasa_12`
+sunt **sursa principală** a întrebărilor.
 Rămân în Git — nu se pierd la modificări de cod sau la `migrate`.
+
+`chapters.json` rămâne în rădăcina acestui director, iar generatoarele sunt
+păstrate separat în `generators/`.
+În manifest, fiecare subiect folosește calea relativă completă, de exemplu
+`clasa_5/clasa_5_operatii_adunarea_numerelor_naturale.json`.
 
 ## Format
 
-Un fișier = un chestionar. Exemplu: `algebra_clasa_8.json`
+Un fișier = un chestionar. Exemplu: `clasa_8/algebra_clasa_8.json`
 
 ```json
 {
@@ -85,8 +91,11 @@ python manage.py seed_quizzes
 Un singur fișier:
 
 ```bash
-python manage.py seed_quizzes --file algebra_clasa_8.json
+python manage.py seed_quizzes --file clasa_8/algebra_clasa_8.json
 ```
+
+Pentru compatibilitate, `--file algebra_clasa_8.json` caută automat fișierul
+și în subdirectoarele claselor, dacă numele este unic.
 
 Comanda este **idempotentă**: o poți rula după fiecare `migrate`, reset DB sau deploy.
 Actualizează quiz-urile existente (după `title`) și șterge întrebări/opțiuni care nu mai apar în JSON.

@@ -233,7 +233,7 @@ def build_questions():
 
 
 def main():
-    output = Path(__file__).resolve().parent.parent / "clasa_5_numere_prime_numere_compuse.json"
+    output = Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_numere_prime_numere_compuse.json"
     payload = {"title": "Numere prime. Numere compuse", "description": "Clasa a 5-a · Recunoașterea numerelor prime și compuse", "difficulty": "medium", "questions": build_questions()}
     output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Scrise {len(payload['questions'])} exerciții în {output.name}")

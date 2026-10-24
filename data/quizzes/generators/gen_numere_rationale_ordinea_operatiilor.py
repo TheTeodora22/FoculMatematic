@@ -221,7 +221,7 @@ def build_questions():
 
 
 def main():
-    target = Path(__file__).resolve().parents[1] / "clasa_5_numere_rationale_pozitive_ordinea_operatiilor.json"
+    target = Path(__file__).resolve().parents[1] / "clasa_5" / "clasa_5_numere_rationale_pozitive_ordinea_operatiilor.json"
     payload = {"title": "Număr rațional pozitiv; ordinea efectuării operațiilor cu numere raționale pozitive",
                "description": "Clasa a 5-a · Fracții zecimale", "difficulty": "medium",
                "questions": build_questions()}

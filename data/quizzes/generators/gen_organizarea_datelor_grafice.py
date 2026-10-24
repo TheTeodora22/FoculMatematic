@@ -109,7 +109,7 @@ def build_questions():
 
 
 def main():
-    out=Path(__file__).resolve().parents[1]/"clasa_5_organizarea_datelor_frecventa_grafice.json"
+    out=Path(__file__).resolve().parents[1] / "clasa_5" / "clasa_5_organizarea_datelor_frecventa_grafice.json"
     payload={"title":"Probleme de organizare a datelor. Frecvență. Grafice cu bare. Grafice cu linii. Media unui set de date statistice","description":"Clasa a 5-a · Fracții zecimale","difficulty":"medium","questions":build_questions()}
     out.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Scrise {len(payload['questions'])} exerciții în {out.name}")

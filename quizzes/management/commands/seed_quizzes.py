@@ -5,14 +5,17 @@ from quizzes.seed_loader import SeedValidationError, load_all_quizzes, quizzes_d
 
 class Command(BaseCommand):
     help = (
-        "Încarcă chestionare din data/quizzes/*.json. "
+        "Încarcă recursiv chestionare din data/quizzes/**/*.json. "
         "Sigur de rulat repetat după migrate sau reset DB."
     )
 
     def add_arguments(self, parser):
         parser.add_argument(
             "--file",
-            help="Încarcă un singur fișier JSON (ex: algebra_clasa_8.json).",
+            help=(
+                "Încarcă un singur fișier JSON, după nume sau cale relativă "
+                "(ex: clasa_5/lectie.json)."
+            ),
         )
 
     def handle(self, *args, **options):

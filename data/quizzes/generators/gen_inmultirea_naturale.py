@@ -195,7 +195,7 @@ def build_questions():
 
 
 def main():
-    output = Path(__file__).resolve().parent.parent / "clasa_5_operatii_inmultirea_numerelor_naturale.json"
+    output = Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_operatii_inmultirea_numerelor_naturale.json"
     payload = {
         "title": "Înmulțirea numerelor naturale, proprietăți",
         "description": "Clasa a 5-a · Operații cu numere naturale",

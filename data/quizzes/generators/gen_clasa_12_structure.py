@@ -7,6 +7,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
+CLASS_DIR = ROOT / "clasa_12"
 MANIFEST = ROOT / "chapters.json"
 
 CHAPTERS = [
@@ -115,8 +116,8 @@ def main() -> None:
         filenames = []
         for lesson_order, lesson_title in enumerate(lessons, 1):
             filename = f"clasa_12_u{chapter_order:02d}_l{lesson_order:02d}_{slugify(lesson_title)}.json"
-            filenames.append(filename)
-            path = ROOT / filename
+            filenames.append(f"clasa_12/{filename}")
+            path = CLASS_DIR / filename
             if not path.exists():
                 payload = {
                     "title": lesson_title,

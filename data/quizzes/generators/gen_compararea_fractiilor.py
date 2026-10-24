@@ -117,7 +117,7 @@ def build_questions():
 
 
 def main():
-    target = Path(__file__).resolve().parents[1] / "clasa_5_fractii_ordinare_compararea_si_reprezentarea_pe_axa.json"
+    target = Path(__file__).resolve().parents[1] / "clasa_5" / "clasa_5_fractii_ordinare_compararea_si_reprezentarea_pe_axa.json"
     payload = {
         "title": "Compararea fracțiilor cu același numitor/numărător. Reprezentarea fracțiilor ordinare pe axa numerelor",
         "description": "Clasa a 5-a · Fracții ordinare", "difficulty": "easy",

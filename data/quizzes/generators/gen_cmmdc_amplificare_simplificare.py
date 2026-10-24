@@ -59,7 +59,7 @@ def build_questions():
     assert len(q)==40
     return q
 def main():
-    target=Path(__file__).resolve().parents[1]/"clasa_5_fractii_ordinare_cmmdc_amplificarea_si_simplificarea.json"
+    target=Path(__file__).resolve().parents[1] / "clasa_5" / "clasa_5_fractii_ordinare_cmmdc_amplificarea_si_simplificarea.json"
     payload={"title":"Cel mai mare divizor comun a două numere naturale. Amplificarea și simplificarea fracțiilor. Fracții ireductibile","description":"Clasa a 5-a · Fracții ordinare","difficulty":"easy","questions":build_questions()}
     target.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");print(f"Am scris {len(payload['questions'])} întrebări în {target}.")
 if __name__=="__main__": main()

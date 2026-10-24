@@ -403,8 +403,7 @@ def build_questions():
 
 def main():
     output = (
-        Path(__file__).resolve().parent.parent
-        / "clasa_5_operatii_scaderea_numerelor_naturale.json"
+        Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_operatii_scaderea_numerelor_naturale.json"
     )
     payload = {
         "title": "Scăderea numerelor naturale",

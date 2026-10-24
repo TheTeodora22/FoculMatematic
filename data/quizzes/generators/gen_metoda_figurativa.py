@@ -80,7 +80,7 @@ def build_questions():
 
 
 def main():
-    output = Path(__file__).resolve().parent.parent / "clasa_5_metoda_figurativa.json"
+    output = Path(__file__).resolve().parent.parent / "clasa_5" / "clasa_5_metoda_figurativa.json"
     payload = {"title":"Metoda figurativă", "description":"Clasa a 5-a · Metode aritmetice de rezolvare a problemelor",
                "difficulty":"medium", "questions":build_questions()}
     output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
