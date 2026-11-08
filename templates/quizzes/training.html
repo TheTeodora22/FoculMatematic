@@ -1,10 +1,14 @@
 {% extends "base.html" %}
+{% block math_assets %}{% include "includes/math_assets.html" %}{% endblock %}
 {% load static lesson_tags %}
 
 {% block title %}Antrenare — {{ topic.title }}{% endblock %}
 
+{% block exercise_styles %}<link rel="stylesheet" href="{% static 'core/css/training-exercises.css' %}?v=20261101-phase10-1">{% endblock %}
+
 {% block extra_head %}
-<script>document.documentElement.classList.add("fm-js");</script>
+<link rel="stylesheet" href="{% static 'core/css/vector-workbench.css' %}?v=20261030-vectors-2">
+<script src="{% static 'core/js/training-boot.js' %}?v=20261030-recovery"></script>
 <style>
 .fm-js .training-page--loading .training-layout {
     visibility: hidden;
@@ -26,6 +30,8 @@
 
 .training-loader--error {
     color: #e8a0a0;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 </style>
 {% endblock %}
@@ -38,15 +44,18 @@
             <div class="training-header__center">
                 {% render_lesson_tags topic %}
                 <h1>Antrenare</h1>
-                <p class="muted" id="training-progress">Întrebarea {{ index|add:1 }} din {{ questions|length }}</p>
-                <p class="training-save-error" id="training-save-error" hidden></p>
+                <p class="muted" id="training-progress" role="status" aria-live="polite" aria-atomic="true">Întrebarea {{ index|add:1 }} din {{ questions|length }}</p>
+                <p class="training-save-status" id="training-save-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                <div class="ui-state ui-state--error training-save-error" id="training-save-error" role="alert" aria-atomic="true" hidden></div>
             </div>
             <a class="btn btn-press training-back" href="{% url 'topic_detail' topic.pk %}">Înapoi la lecție</a>
         </div>
         <span class="training-header__spacer" aria-hidden="true"></span>
     </div>
 
+    <div class="training-content-shell">
     <div class="training-loader" id="training-loader" aria-live="polite">
+        <span class="ui-loading-indicator" aria-hidden="true"></span>
         <p>Se încarcă întrebările...</p>
     </div>
 
@@ -55,7 +64,7 @@
             class="training-arrow training-arrow--prev{% if not has_prev %} training-arrow--placeholder{% endif %}"
             href="{% if has_prev %}{% url 'training_index' topic.pk prev_index %}{% else %}#{% endif %}"
             aria-label="Întrebarea anterioară"
-            {% if not has_prev %}aria-hidden="true"{% endif %}
+            {% if not has_prev %}aria-hidden="true" tabindex="-1"{% endif %}
         ></a>
 
         <div class="training-main">
@@ -85,6 +94,7 @@
                     <form method="post" class="training-options-form" action="{% url 'training_index' topic.pk index %}">
                         {% csrf_token %}
                         <fieldset style="border:none;padding:0;margin:0;">
+<legend class="visually-hidden">Variante de răspuns</legend>
                             {% for option in current.options.all %}
                                 <label class="training-option{% if training_solved and option.is_correct %} training-option--correct{% elif selected_option_id == option.pk and feedback and not feedback.is_correct %} training-option--wrong{% endif %}">
                                     <input
@@ -114,8 +124,9 @@
                         class="training-cell training-cell--{{ state.status }}"
                         data-training-index="{{ forloop.counter0 }}"
                         title="Întrebarea {{ forloop.counter }}"
+                        aria-label="Întrebarea {{ forloop.counter }}"
                         {% if forloop.counter0 == index %}aria-current="true"{% endif %}
-                    ></a>
+                    >{{ forloop.counter }}</a>
                 {% endfor %}
             </div>
         </div>
@@ -124,8 +135,9 @@
             class="training-arrow training-arrow--next{% if not has_next %} training-arrow--placeholder{% endif %}"
             href="{% if has_next %}{% url 'training_index' topic.pk next_index %}{% else %}#{% endif %}"
             aria-label="Întrebarea următoare"
-            {% if not has_next %}aria-hidden="true"{% endif %}
+            {% if not has_next %}aria-hidden="true" tabindex="-1"{% endif %}
         ></a>
+    </div>
     </div>
 </div>
 
@@ -133,5 +145,6 @@
 {% endblock %}
 
 {% block extra_js %}
-<script src="{% static 'core/js/training.js' %}?v=20261024-math-rendering"></script>
+<script src="{% static 'core/js/vector-workbench.js' %}?v=20261030-vectors-2"></script>
+<script data-training-script src="{% static 'core/js/training.js' %}?v=20261031-phase9-2"></script>
 {% endblock %}
