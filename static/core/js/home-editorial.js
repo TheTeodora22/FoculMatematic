@@ -21,7 +21,12 @@
         return button;
     });
     const footer = document.querySelector('.footer');
-    if (footer) sections[3].appendChild(footer);
+    if (footer) {
+        const closingContent = document.createElement('div');
+        closingContent.className = 'math-closing-content';
+        while (sections[3].firstChild) closingContent.appendChild(sections[3].firstChild);
+        sections[3].append(closingContent, footer);
+    }
     home.classList.add('snap-pages');
     home.appendChild(nav);
     function mark(index) {

@@ -193,5 +193,22 @@ body:has(.math-home.snap-pages) { overflow: hidden; }
 }
 @media (prefers-reduced-motion: reduce) { .math-slide-nav button::after { transition: none; } }
 
-.snap-pages .math-closing .footer { width: 100%; margin-top: 2rem; padding: 1rem 0 0; background: transparent; }
-.snap-pages .math-closing .footer .smalllogo { max-width: 15rem; }
+/* The last screen ends with the normal, full-width footer. */
+.snap-pages .math-closing { padding: 0; justify-content: flex-start; }
+.math-closing-content {
+    flex: 1 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+}
+.math-closing-content > span { font: 4rem Georgia, serif; color: #5d5561; margin-bottom: 1.2rem; }
+.snap-pages .math-closing .footer {
+    flex: 0 0 auto;
+    width: 100%;
+    margin: auto 0 0;
+    border-radius: 0;
+    background: var(--fm-surface);
+}
