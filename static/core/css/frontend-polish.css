@@ -310,14 +310,12 @@ body {
 
 /* Fire-colored footer content; separators keep their existing neutral borders. */
 .footer .footer-feedback-link,
-.footer .socialmedia .fa,
-.footer .copyright p {
+.footer .socialmedia .fa {
     color: var(--fm-text-heading);
 }
 @supports ((background-clip: text) or (-webkit-background-clip: text)) {
     .footer .footer-feedback-link,
-    .footer .socialmedia .fa,
-    .footer .copyright p {
+    .footer .socialmedia .fa {
         background-image: linear-gradient(110deg, #e25822 0%, #ff9a62 50%, #e25822 80%, #b22222 100%);
         -webkit-background-clip: text;
         background-clip: text;
@@ -327,8 +325,7 @@ body {
 }
 @media (forced-colors: active) {
     .footer .footer-feedback-link,
-    .footer .socialmedia .fa,
-    .footer .copyright p {
+    .footer .socialmedia .fa {
         background-image: none;
         color: CanvasText;
         -webkit-text-fill-color: CanvasText;
