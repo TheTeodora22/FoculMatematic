@@ -304,6 +304,6 @@ body {
 .buton, .buton::after { color: var(--fm-text); }
 .buton a, .sidebar .has-submenu:has(.sidebar-submenu li:hover) > .submenu-toggle { color: var(--fm-text) !important; }
 
-/* Neutral headings keep lavender reserved for small emphasis accents. */
+/* Neutral headings keep orange reserved for small emphasis accents. */
 .site-main :is(h1, h2, h3, h4, h5, h6) { color: var(--fm-text); }
 .home-hero h1 strong { color: var(--fm-text-heading); }
