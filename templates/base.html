@@ -4,37 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if request.GET.frontend_perf == '1' %}<script src="{% static 'core/js/performance-probe.js' %}?v=20261101-phase10-2"></script>{% endif %}
     <title>{% block title %}Focul Matematic{% endblock %}</title>
     <meta name="description" content="Exersează matematica cu chestionare interactive pentru gimnaziu și liceu.">
     <link rel="icon" type="image/png" href="{% static 'core/img/FMImage.png' %}">
     <link rel="apple-touch-icon" href="{% static 'core/img/FMImage.png' %}">
-    <link rel="stylesheet" href="{% static 'core/css/FMStyle.css' %}">
-    <link rel="stylesheet" href="{% static 'core/css/fm-app.css' %}?v=20260821-algebra-keyboard-centered">
-    <link rel="stylesheet" href="{% static 'vendor/katex-0.19.0/katex.min.css' %}">
-    <link rel="stylesheet" href="{% static 'core/css/math-rendering.css' %}?v=20261024-3">
-    <script defer src="{% static 'vendor/katex-0.19.0/katex.min.js' %}"></script>
-    <script defer src="{% static 'core/js/math-rendering.js' %}?v=20261024-1"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="{% static 'core/css/design-tokens.css' %}?v=20261031-phase6-1">
+    <link rel="stylesheet" href="{% static 'core/css/motion.css' %}?v=20261031-phase4-3">
+    <link rel="stylesheet" href="{% static 'core/css/FMStyle.css' %}?v=20261031-phase5-4">
+    <link rel="stylesheet" href="{% static 'core/css/fm-app.css' %}?v=20261101-phase10-1">
+    {% block exercise_styles %}{% endblock %}
+    <link rel="stylesheet" href="{% static 'core/css/frontend-polish.css' %}?v=20261101-phase10-1">
+    <link rel="stylesheet" href="{% static 'core/css/ui-components.css' %}?v=20261101-header-gradient-1">
+    <link rel="stylesheet" href="{% static 'core/css/ui-states.css' %}?v=20261031-phase7-2">
+    {% block page_styles %}{% endblock %}
+    {% block math_assets %}{% endblock %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     {% block extra_head %}{% endblock %}
     {% block extra_css %}{% endblock %}
 </head>
 <body>
-    <header>
-        <a href="{% url 'index' %}">
-            <img class="logo" src="{% static 'core/img/Focul-Matematic.png' %}" alt="Focul Matematic">
+    <a class="skip-link" href="#main-content">Sari la conținut</a>
+    <div class="site-header-shell">
+    <header class="site-header">
+        <a class="site-brand" href="{% url 'index' %}">
+            <img class="logo" width="706" height="72" decoding="async" src="{% static 'core/img/Focul-Matematic.png' %}" alt="Focul Matematic">
         </a>
 
-        <nav>
+        <nav aria-label="Navigare principală">
+            <dialog class="sidebar-dialog" id="mobile-navigation" aria-label="Meniu principal">
             <ul class="sidebar">
-                <li onclick="closeSidebar()">
-                    <a href="#" aria-label="Închide meniul">
+                <li class="sidebar-close-row">
+                    <button type="button" class="nav-icon-button sidebar-close" aria-label="Închide meniul">
                         <img src="{% static 'core/img/closesimple.svg' %}" alt="" width="24" height="24">
-                    </a>
+                    </button>
                 </li>
                 <li><a href="{% url 'index' %}">Acasă</a></li>
                 <li class="has-submenu">
-                    <a href="#" class="submenu-toggle" aria-expanded="false" aria-controls="submenu-clase" aria-haspopup="true">Clase</a>
-                    <ul class="submenu sidebar-submenu" id="submenu-clase">
+                    <button type="button" class="submenu-toggle" aria-expanded="false" aria-controls="submenu-clase">Clase</button>
+                    <ul class="submenu sidebar-submenu" id="submenu-clase" inert aria-hidden="true">
                         <li><a href="{% url 'class_chapters' 5 %}">Clasa a 5-a</a></li>
                         <li><a href="{% url 'class_chapters' 6 %}">Clasa a 6-a</a></li>
                         <li><a href="{% url 'class_chapters' 7 %}">Clasa a 7-a</a></li>
@@ -46,8 +57,8 @@
                     </ul>
                 </li>
                 <li class="has-submenu">
-                    <a href="#" class="submenu-toggle" aria-expanded="false" aria-controls="submenu-examene" aria-haspopup="true">Examene</a>
-                    <ul class="submenu sidebar-submenu" id="submenu-examene">
+                    <button type="button" class="submenu-toggle" aria-expanded="false" aria-controls="submenu-examene">Examene</button>
+                    <ul class="submenu sidebar-submenu" id="submenu-examene" inert aria-hidden="true">
                         <li><a href="{% url 'exam_detail' 'evaluare-nationala' %}">Evaluarea Națională</a></li>
                         <li><a href="{% url 'exam_detail' 'bacalaureat' %}">Bacalaureat</a></li>
                     </ul>
@@ -62,13 +73,14 @@
                     <li><a href="{% url 'login' %}">Conectare</a></li>
                 {% endif %}
             </ul>
+            </dialog>
 
             <ul class="nav__link">
                 <li class="hideOnMobile"><a href="{% url 'index' %}">Acasă</a></li>
 
                 <li class="hideOnMobile has-submenu">
-                    <a href="#">Clase</a>
-                    <ul class="submenu">
+                    <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="desktop-clase">Clase <span aria-hidden="true">⌄</span></button>
+                    <ul class="submenu" id="desktop-clase">
                         <li><a href="{% url 'class_chapters' 5 %}">Clasa a 5-a</a></li>
                         <li><a href="{% url 'class_chapters' 6 %}">Clasa a 6-a</a></li>
                         <li><a href="{% url 'class_chapters' 7 %}">Clasa a 7-a</a></li>
@@ -81,8 +93,8 @@
                 </li>
 
                 <li class="hideOnMobile has-submenu">
-                    <a href="#">Examene</a>
-                    <ul class="submenu">
+                    <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="desktop-examene">Examene <span aria-hidden="true">⌄</span></button>
+                    <ul class="submenu" id="desktop-examene">
                         <li><a href="{% url 'exam_detail' 'evaluare-nationala' %}">Evaluarea Națională</a></li>
                         <li><a href="{% url 'exam_detail' 'bacalaureat' %}">Bacalaureat</a></li>
                     </ul>
@@ -101,29 +113,35 @@
                     </li>
                 {% endif %}
 
-                <li onclick="showSidebar()" class="hideOnDesktop">
-                    <a href="#" aria-label="Deschide meniul">
+                <li class="hideOnDesktop">
+                    <button type="button" class="nav-icon-button sidebar-open" aria-label="Deschide meniul" aria-expanded="false" aria-controls="mobile-navigation">
                         <img src="{% static 'core/img/menusimple.svg' %}" alt="" width="26" height="26">
-                    </a>
+                    </button>
                 </li>
             </ul>
         </nav>
     </header>
+    </div>
 
     <div class="container">
+    <main class="site-main" id="main-content" tabindex="-1">
         {% if messages %}
             <div class="page-content" style="padding-bottom:0;">
                 <ul class="messages">
                     {% for message in messages %}
-                        <li class="message message--{{ message.tags }}">{{ message }}</li>
+                        <li class="message message--{{ message.tags }} fm-motion-fade-in" data-dismissible role="{% if 'error' in message.tags %}alert{% else %}status{% endif %}" aria-atomic="true">
+                            <span>{{ message }}</span>
+                            <button type="button" class="message-dismiss" aria-label="Închide mesajul">×</button>
+                        </li>
                     {% endfor %}
                 </ul>
             </div>
         {% endif %}
         {% block content %}{% endblock %}
+    </main>
 
         <footer class="footer">
-            <img class="smalllogo" src="{% static 'core/img/Focul-Matematic.png' %}" alt="Focul Matematic">
+            <img class="smalllogo" width="706" height="72" loading="lazy" decoding="async" src="{% static 'core/img/Focul-Matematic.png' %}" alt="Focul Matematic">
             <p class="footer-report">
                 <a href="{{ feedback_report_url }}?from={{ request.path }}" class="footer-feedback-link">Raportează o problemă</a>
             </p>
@@ -139,7 +157,10 @@
         </footer>
     </div>
 
-    <script src="{% static 'core/js/FMJava.js' %}"></script>
+    <script src="{% static 'core/js/FMJava.js' %}?v=20261031-phase6-1"></script>
+    <script src="{% static 'core/js/ui-components.js' %}?v=20261031-phase7-2"></script>
+    <script src="{% static 'core/js/responsive.js' %}?v=20261101-phase10-1"></script>
+    <script src="{% static 'core/js/accessibility.js' %}?v=20261101-context-1"></script>
     {% block extra_js %}{% endblock %}
 </body>
 </html>
