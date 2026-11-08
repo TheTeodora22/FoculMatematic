@@ -212,3 +212,45 @@ body:has(.math-home.snap-pages) { overflow: hidden; }
     border-radius: 0;
     background: var(--fm-surface);
 }
+
+/* A tighter editorial composition, with the title behind the sculpture. */
+@media (min-width: 641px) {
+    .snap-pages > section:not(.math-closing) {
+        padding-inline: max(2.5rem, calc((100vw - 1180px) / 2));
+    }
+    .snap-pages .math-intro-grid {
+        grid-template-columns: 1fr 1.35fr .8fr;
+        gap: 1.5rem;
+        padding-top: 3rem;
+        z-index: 1;
+    }
+    .snap-pages .math-word {
+        top: 22%;
+        left: 50%;
+        right: auto;
+        width: min(90%, 1280px);
+        transform: translateX(-50%);
+        font-size: clamp(5rem, 10vw, 9.5rem);
+        opacity: .48;
+        z-index: 0;
+    }
+    .snap-pages .math-sculpture svg { max-height: min(58svh, 490px); }
+    .snap-pages h1 { font-size: clamp(2.4rem, 3vw, 3.25rem); }
+    .snap-pages h2 { font-size: clamp(2.3rem, 3.5vw, 3.5rem); }
+    .snap-pages .math-section-head { margin-bottom: 1.5rem; gap: 1.5rem; }
+    .snap-pages .class-choices { gap: 0 1.25rem; }
+    .snap-pages .class-choice { min-height: 90px; padding-block: 1rem; }
+    .snap-pages .math-steps { gap: 2rem; }
+    .snap-pages .math-step-symbol { height: 110px; font-size: 3rem; }
+    .snap-pages .math-note-index { font-size: 3rem; margin-bottom: 1rem; }
+    .snap-pages .math-equation { margin-top: 1.25rem; padding-top: 1rem; }
+    .snap-pages .math-closing h2 { font-size: clamp(2.5rem, 4vw, 4rem); }
+    .math-closing-content > span { font-size: 3rem; margin-bottom: .7rem; }
+    .math-closing-content .math-action { margin-top: 1.2rem; }
+}
+@media (max-width: 640px) {
+    .snap-pages .math-word { top: 12%; opacity: .45; z-index: 0; }
+    .snap-pages .math-intro-grid { z-index: 1; padding-top: 1.5rem; }
+    .snap-pages .math-section-head { gap: .6rem; }
+    .snap-pages .class-choice { min-height: 76px; }
+}
