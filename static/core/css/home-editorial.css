@@ -254,3 +254,40 @@ body:has(.math-home.snap-pages) { overflow: hidden; }
     .snap-pages .math-section-head { gap: .6rem; }
     .snap-pages .class-choice { min-height: 76px; }
 }
+
+/* Give the large title its own band; only the central sculpture crosses it. */
+@media (min-width: 641px) {
+    .snap-pages .math-word { top: 10%; }
+    .snap-pages .math-intro-grid {
+        grid-template-columns: 1fr 1.7fr .9fr;
+        padding-top: 7rem;
+        isolation: isolate;
+    }
+    .snap-pages .math-intro-copy { grid-column: 1; }
+    .snap-pages .math-note { grid-column: 3; }
+    .snap-pages .math-sculpture {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: min(54vw, 660px);
+        transform: translateX(-50%);
+        pointer-events: none;
+    }
+    .snap-pages .math-sculpture svg {
+        width: 100%;
+        height: min(72svh, 660px);
+        max-height: none;
+    }
+    .snap-pages .math-intro-copy, .snap-pages .math-note { padding-top: 4rem; }
+}
+@media (min-width: 641px) and (max-height: 740px) {
+    .snap-pages .math-word { top: 8%; font-size: 8vw; }
+    .snap-pages .math-intro-grid { padding-top: 4rem; }
+    .snap-pages .math-sculpture { top: -.5rem; width: min(48vw, 560px); }
+    .snap-pages .math-sculpture svg { height: 65svh; }
+    .snap-pages .math-intro-copy, .snap-pages .math-note { padding-top: 2.5rem; }
+}
+@media (max-width: 640px) {
+    .snap-pages .math-word { top: 3.5rem; }
+    .snap-pages .math-sculpture svg { max-height: 32svh; }
+}
