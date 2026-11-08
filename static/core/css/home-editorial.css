@@ -300,3 +300,22 @@ html:has(.math-home.snap-pages) {
 }
 .snap-pages > section { scrollbar-width: none; }
 .snap-pages > section::-webkit-scrollbar { display: none; }
+
+@media (max-width: 640px) {
+    .snap-pages .math-intro-copy {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-inline: .25rem;
+    }
+    .snap-pages .math-intro-copy > p:not(.math-kicker) {
+        max-width: 35ch;
+        margin-inline: auto;
+    }
+    .snap-pages .math-intro-copy .math-kicker { text-align: center; }
+    .snap-pages .math-intro-copy .math-action { align-self: center; }
+}
+@media (max-width: 640px) {
+    .snap-pages .math-intro { padding-inline: 1.5rem; }
+}
