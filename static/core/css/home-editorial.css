@@ -291,3 +291,12 @@ body:has(.math-home.snap-pages) { overflow: hidden; }
     .snap-pages .math-word { top: 3.5rem; }
     .snap-pages .math-sculpture svg { max-height: 32svh; }
 }
+
+/* The fixed homepage deck needs no reserved document-scrollbar gutter. */
+html:has(.math-home.snap-pages) {
+    scrollbar-gutter: auto;
+    overflow: hidden;
+    background: #101119;
+}
+.snap-pages > section { scrollbar-width: none; }
+.snap-pages > section::-webkit-scrollbar { display: none; }
