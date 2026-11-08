@@ -260,7 +260,7 @@ body {
 .training-cell { min-height: 30px; border-radius: var(--fm-radius-sm); display: grid; place-items: center; font-size: var(--fm-text-xs); font-weight: var(--fm-weight-heading); line-height: 1; color: var(--fm-ink); }
 .training-cell[aria-current="true"] { outline: 3px solid var(--fm-focus); outline-offset: 1px; box-shadow: inset 0 0 0 2px var(--fm-surface); }
 .footer { box-shadow: none; border-top: 1px solid var(--fm-border-subtle); padding: 1.5rem 1rem 1rem; }
-.footer .smalllogo { opacity: .85; filter: brightness(0) invert(1); }
+.footer .smalllogo { opacity: 1; filter: brightness(0); }
 .footer .copyright p { color: var(--fm-text-muted); font-weight: 400; }
 .footer .footer-feedback-link { color: var(--fm-link); }
 .footer .socialmedia a { color: var(--fm-link); }
@@ -307,3 +307,30 @@ body {
 /* Neutral headings keep orange reserved for small emphasis accents. */
 .site-main :is(h1, h2, h3, h4, h5, h6) { color: var(--fm-text); }
 .home-hero h1 strong { color: var(--fm-text-heading); }
+
+/* Fire-colored footer content; separators keep their existing neutral borders. */
+.footer .footer-feedback-link,
+.footer .socialmedia .fa,
+.footer .copyright p {
+    color: var(--fm-text-heading);
+}
+@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+    .footer .footer-feedback-link,
+    .footer .socialmedia .fa,
+    .footer .copyright p {
+        background-image: linear-gradient(110deg, #e25822 0%, #ff9a62 50%, #e25822 80%, #b22222 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+}
+@media (forced-colors: active) {
+    .footer .footer-feedback-link,
+    .footer .socialmedia .fa,
+    .footer .copyright p {
+        background-image: none;
+        color: CanvasText;
+        -webkit-text-fill-color: CanvasText;
+    }
+}
