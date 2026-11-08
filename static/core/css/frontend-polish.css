@@ -53,7 +53,7 @@ body {
     filter: brightness(0);
 }
 .site-header nav { flex: 0 0 auto; min-width: 0; margin: 0; }
-.site-header .nav__link { gap: .2rem; }
+.site-header .nav__link { gap: clamp(.35rem, .6vw, .75rem); }
 .site-header .nav__link li, .site-header .nav__link li a { font-size: 1rem; }
 .site-header .nav__link a { color: var(--fm-ink); border-radius: var(--fm-radius-control); }
 .site-header .nav__link a:hover { color: var(--fm-ink); background: rgba(0,0,0,.16); }
