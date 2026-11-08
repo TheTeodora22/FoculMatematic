@@ -335,3 +335,19 @@ body {
 /* Header labels stay clean on hover and when their dropdown is open. */
 .site-header .nav-dropdown-toggle:hover,
 .site-header .nav-dropdown-toggle[aria-expanded="true"] { background: transparent; }
+
+/* Font-independent, fine chevrons for the two desktop dropdowns. */
+.site-header .nav-dropdown-toggle { gap: .6rem; }
+.site-header .nav-dropdown-toggle .nav-chevron {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 7px;
+    height: 7px;
+    margin-top: -3px;
+    border: solid currentColor;
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+}
+.site-header .nav-dropdown-toggle[aria-expanded="true"] .nav-chevron {
+    transform: translateY(3px) rotate(225deg);
+}
