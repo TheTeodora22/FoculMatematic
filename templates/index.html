@@ -3,7 +3,7 @@
 {% block title %}Focul Matematic | Acasă{% endblock %}
 {% block page_styles %}
 {% include "includes/page_styles.html" %}
-<link rel="stylesheet" href="{% static 'core/css/home-editorial.css' %}?v=20261108-notebook-2">
+<link rel="stylesheet" href="{% static 'core/css/home-editorial.css' %}?v=20261108-section-motion-1">
 {% endblock %}
 {% block content %}
 <div class="math-home">
@@ -87,4 +87,8 @@
 </section>
 <section class="math-closing" aria-labelledby="closing-title"><span aria-hidden="true">∞</span><p class="math-kicker">O ÎNTREBARE BUNĂ POATE SCHIMBA TOTUL.</p><h2 id="closing-title">Aprinde-ți <em>gândirea.</em></h2><a class="math-action" href="#home-classes">Alege primul pas <span aria-hidden="true">↗</span></a></section>
 </div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'core/js/home-editorial.js' %}?v=20261108-1" defer></script>
 {% endblock %}

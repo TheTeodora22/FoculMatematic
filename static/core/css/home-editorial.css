@@ -97,3 +97,24 @@
     .math-steps p { max-width: 45ch; }
     .math-closing { padding-inline: 0; }
 }
+
+/* Give every chapter of the homepage its own space in the viewport. */
+.math-path, .math-method {
+    min-height: max(760px, calc(100svh - var(--fm-header-height)));
+    padding-block: clamp(7rem, 12vw, 12rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.math-closing {
+    min-height: 75svh;
+    padding-block: clamp(7rem, 12vw, 12rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 640px) {
+    .math-path, .math-method { min-height: 100svh; padding-block: 6rem; }
+    .math-closing { min-height: 85svh; padding-block: 6rem; }
+}
