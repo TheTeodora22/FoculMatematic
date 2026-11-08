@@ -79,7 +79,7 @@
                 <li class="hideOnMobile"><a href="{% url 'index' %}">Acasă</a></li>
 
                 <li class="hideOnMobile has-submenu">
-                    <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="desktop-clase">Clase <span aria-hidden="true">⌄</span></button>
+                    <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="desktop-clase">Clase {% include "includes/icons/chevron-down.svg" %}</button>
                     <ul class="submenu" id="desktop-clase">
                         <li><a href="{% url 'class_chapters' 5 %}">Clasa a 5-a</a></li>
                         <li><a href="{% url 'class_chapters' 6 %}">Clasa a 6-a</a></li>
@@ -93,7 +93,7 @@
                 </li>
 
                 <li class="hideOnMobile has-submenu">
-                    <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="desktop-examene">Examene <span aria-hidden="true">⌄</span></button>
+                    <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-controls="desktop-examene">Examene {% include "includes/icons/chevron-down.svg" %}</button>
                     <ul class="submenu" id="desktop-examene">
                         <li><a href="{% url 'exam_detail' 'evaluare-nationala' %}">Evaluarea Națională</a></li>
                         <li><a href="{% url 'exam_detail' 'bacalaureat' %}">Bacalaureat</a></li>
