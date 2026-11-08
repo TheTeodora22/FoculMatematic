@@ -26,7 +26,17 @@ body {
     gap: var(--fm-space-4);
     padding: 1.1rem 5%;
     background: var(--fm-header-gradient);
-    border-bottom: 1px solid rgba(255,255,255,.12);
+    border-bottom: 1px solid rgba(255,255,255,.28);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.20), 0 8px 28px rgba(0,0,0,.14);
+}
+/* Keep an opaque fire gradient on browsers without backdrop filtering. */
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    html .site-header, html .site-header.is-compact {
+        background: var(--fm-header-glass);
+        -webkit-backdrop-filter: blur(var(--fm-header-blur)) saturate(135%);
+        backdrop-filter: blur(var(--fm-header-blur)) saturate(135%);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.20), 0 8px 28px rgba(0,0,0,.14);
+    }
 }
 .site-header > .site-brand {
     flex: 0 1 auto;
@@ -168,9 +178,9 @@ body {
     padding: clamp(2.5rem,6vw,5rem) clamp(1rem,5vw,3rem);
 }
 .home-hero .herotext { width: 100%; height: auto; max-width: 44rem; }
-.home-hero h1 { font-size: var(--fm-text-display); line-height: 1.16; text-shadow: none; letter-spacing: -.025em; }
+.home-hero h1 { color: var(--fm-text); font-size: var(--fm-text-display); line-height: 1.16; text-shadow: none; letter-spacing: -.025em; }
 .home-hero h1 strong { color: var(--fm-accent-light); font-weight: 650; }
-.home-hero p { padding-block: 1.4rem 1.8rem; font-size: clamp(1rem,1.6vw,1.2rem); line-height: 1.65; text-shadow: none; max-width: 38rem; }
+.home-hero p { color: var(--fm-text-muted); padding-block: 1.4rem 1.8rem; font-size: clamp(1rem,1.6vw,1.2rem); line-height: 1.65; text-shadow: none; max-width: 38rem; }
 .hero-actions { display: flex; gap: .85rem; flex-wrap: wrap; }
 .hero-actions .btn { margin: 0; }
 .hero-visual { display: block; width: 100%; max-width: 25rem; justify-self: center; }
@@ -289,3 +299,7 @@ body {
     .unit-basket-items span, .unit-faucet-row span { animation: none; }
     .btn.btn-press:active { transform: none; }
 }
+
+/* Legacy controls share the neutral text palette. */
+.buton, .buton::after { color: var(--fm-text); }
+.buton a, .sidebar .has-submenu:has(.sidebar-submenu li:hover) > .submenu-toggle { color: var(--fm-text) !important; }
