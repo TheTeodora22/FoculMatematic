@@ -1,0 +1,9 @@
+<div class="class-choices">
+    {% for level in class_levels %}
+    <a class="class-choice" href="{% url 'class_chapters' level %}" aria-label="Clasa a {{ level }}-a — vezi capitolele">
+        <span class="class-choice__level" aria-hidden="true">{{ level }}</span>
+        <span><strong>Clasa a {{ level }}-a</strong><span class="class-choice__stage">{% if level < 9 %}Gimnaziu{% else %}Liceu{% endif %}</span></span>
+        <span class="class-choice__arrow" aria-hidden="true">→</span>
+    </a>
+    {% endfor %}
+</div>
