@@ -8,11 +8,11 @@
     overflow: clip;
     /* Squared notebook paper, in the site's dark palette. */
     background-image:
-        linear-gradient(90deg, transparent 0, transparent calc(clamp(1.25rem, 6vw, 7rem) - 12px), rgba(232,121,73,.22) calc(clamp(1.25rem, 6vw, 7rem) - 12px), rgba(232,121,73,.22) calc(clamp(1.25rem, 6vw, 7rem) - 11px), transparent calc(clamp(1.25rem, 6vw, 7rem) - 11px)),
-        linear-gradient(rgba(142,164,198,.10) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(142,164,198,.10) 1px, transparent 1px),
-        linear-gradient(rgba(142,164,198,.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(142,164,198,.05) 1px, transparent 1px);
+        linear-gradient(90deg, transparent 0, transparent calc(clamp(1.25rem, 6vw, 7rem) - 12px), rgba(232,121,73,.07) calc(clamp(1.25rem, 6vw, 7rem) - 12px), rgba(232,121,73,.07) calc(clamp(1.25rem, 6vw, 7rem) - 11px), transparent calc(clamp(1.25rem, 6vw, 7rem) - 11px)),
+        linear-gradient(rgba(142,164,198,.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(142,164,198,.03) 1px, transparent 1px),
+        linear-gradient(rgba(142,164,198,.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(142,164,198,.015) 1px, transparent 1px);
     background-size: 100% 100%, 24px 24px, 24px 24px, 120px 120px, 120px 120px;
 }
 .math-home :is(h1,h2,h3,p,figure) { margin: 0; }
