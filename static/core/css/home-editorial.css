@@ -2,6 +2,8 @@
     --home-bg: #101119;
     --home-line: rgba(201,203,220,.15);
     --home-muted: #a3a4b2;
+    --home-cta: #ff6b3d;
+    --home-cta-hover: #ff845e;
     background: var(--home-bg);
     color: #f4f4f5;
     padding-inline: clamp(1.25rem, 6vw, 7rem);
@@ -28,8 +30,8 @@
 .math-intro-copy { z-index: 1; padding-block: 3rem; }
 .math-home h1 { font-size: clamp(2.5rem, 3.5vw, 4rem); line-height: 1.08; margin: 1.2rem 0; }
 .math-intro-copy > p:not(.math-kicker) { color: var(--home-muted); font-size: .84rem; line-height: 1.85; max-width: 30ch; }
-.math-home .math-action { display: inline-flex; align-items: center; justify-content: space-between; gap: 2rem; margin-top: 1.8rem; padding: .85rem 1.2rem; border: 1px solid #a47054; border-radius: 2rem; color: #ffb087; font-size: .8rem; transition: background .18s, border-color .18s; }
-.math-home .math-action:hover { background: rgba(232,121,73,.1); border-color: #ff9a62; }
+.math-home .math-action { display: inline-flex; align-items: center; justify-content: space-between; gap: 2rem; margin-top: 1.8rem; padding: .85rem 1.2rem; border: 1px solid var(--home-cta); border-radius: 2rem; color: var(--home-cta); font-size: .8rem; transition: background .18s, border-color .18s; }
+.math-home .math-action:hover { background: rgba(255,107,61,.12); border-color: var(--home-cta-hover); color: var(--home-cta-hover); }
 .math-action span { font-size: 1.1rem; }
 .math-sculpture { position: relative; align-self: center; z-index: 1; }
 .math-sculpture svg { display: block; width: 100%; height: auto; filter: drop-shadow(0 20px 30px rgba(0,0,0,.3)); }
@@ -55,8 +57,8 @@
 .math-home .class-choice__stage { font-size: .66rem; color: var(--home-muted); }
 .math-home .class-choice__arrow { color: #858391; font-size: 1rem; margin-left: auto; }
 .math-method { border-top: 1px solid var(--home-line); }
-.math-home .math-text-link { color: #d4d1dc; border-bottom: 1px solid #746458; padding-bottom: .5rem; font-size: .75rem; }
-.math-text-link span { margin-left: 1.5rem; color: #ff9a62; }
+.math-home .math-text-link { color: #d4d1dc; border-bottom: 1px solid var(--home-cta); padding-bottom: .5rem; font-size: .75rem; }
+.math-text-link span { margin-left: 1.5rem; color: var(--home-cta); }
 .math-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; list-style: none; padding: 0; margin: 0; }
 .math-steps li { position: relative; padding-top: 1rem; border-top: 1px solid var(--home-line); }
 .math-step-number { font-size: .65rem; color: #ff9a62; }
