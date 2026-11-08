@@ -2,28 +2,45 @@
 {% load static %}
 
 {% block title %}Focul Matematic | Acasă{% endblock %}
+{% block page_styles %}{% include "includes/page_styles.html" %}{% endblock %}
 
 {% block content %}
-<div class="hero">
+<section class="hero home-hero home-hero--compact" aria-labelledby="home-title">
     <div class="herotext">
-        <h1>Exersează matematica cu <strong>chestionare interactive</strong></h1>
+        <h1 id="home-title">Matematica se învață <strong>exersând.</strong></h1>
         <p>
-            Rezolvă exerciții pentru gimnaziu și liceu, câștigă XP și deblochează recompense
-            în Battle Pass pe măsură ce avansezi!
+            Alege clasa și lecția. Exersează în ritmul tău, verifică răspunsurile și revino la ce ai de consolidat.
         </p>
-        <button class="buton">
-            <a href="{% url 'quiz_list' %}">Vezi chestionarele</a>
-        </button>
+        <div class="hero-actions">
+        <a class="btn btn-press" href="#home-classes">Alege clasa</a>
         {% if not user.is_authenticated %}
-            <button class="buton">
-                <a href="{% url 'register' %}">Creează cont gratuit</a>
-            </button>
+            <a class="btn btn--secondary" href="{% url 'register' %}">Creează cont gratuit</a>
         {% else %}
-            <button class="buton">
-                <a href="{% url 'battlepass' %}">Battle Pass</a>
-            </button>
+            <a class="btn btn--secondary" href="{% url 'profile' %}">Continuă din profil</a>
         {% endif %}
+        </div>
     </div>
-    <img class="piramida" src="{% static 'core/img/5-cell-ezgif.com-instagif.gif' %}" alt="Focul Matematic">
-</div>
+    <div class="hero-artwork">
+        <div class="hero-visual" data-motion-trigger tabindex="0" role="group" aria-label="Animație decorativă" aria-describedby="hero-motion-help" aria-haspopup="menu" aria-controls="hero-motion-menu" aria-expanded="false">
+            <video class="piramida" aria-hidden="true" data-motion-media data-animated-src="{% static 'core/img/5-cell.webm' %}" poster="{% static 'core/img/FMImage.png' %}" preload="none" muted loop playsinline width="252" height="252"></video>
+        </div>
+        <span class="visually-hidden" id="hero-motion-help">Opțiuni: click dreapta pe animație sau Shift+F10 din tastatură.</span>
+        <div class="motion-context-menu" id="hero-motion-menu" role="menu" aria-label="Opțiunile animației" data-motion-menu hidden>
+            <button type="button" class="motion-toggle" role="menuitem" data-motion-toggle hidden>Oprește animația</button>
+        </div>
+        <span class="visually-hidden" id="hero-motion-status" role="status" aria-live="polite"></span>
+    </div>
+</section>
+<section class="home-section" id="home-classes" aria-labelledby="classes-title">
+    <div class="section-heading"><p class="learning-eyebrow">Parcursul tău</p><h2 id="classes-title">De unde începem?</h2><p class="muted">Alege clasa pentru a vedea capitolele și lecțiile.</p></div>
+    {% include "includes/class_choices.html" %}
+</section>
+<section class="home-section home-method" aria-labelledby="method-title">
+    <div class="section-heading"><h2 id="method-title">Un pas pe rând</h2><p class="muted">Un parcurs simplu, de la primul exercițiu la recapitulare.</p></div>
+    <ol class="learning-steps">
+        <li><span class="learning-steps__number" aria-hidden="true">01</span><h3>Alege o lecție</h3><p>Găsește tema pe care o studiezi sau pe care vrei să o recapitulezi.</p></li>
+        <li><span class="learning-steps__number" aria-hidden="true">02</span><h3>Exersează și verifică</h3><p>Lucrează în Antrenare sau încearcă un chestionar. Vezi ce ai rezolvat corect.</p></li>
+        <li><span class="learning-steps__number" aria-hidden="true">03</span><h3>Revino la ce contează</h3><p>Urmărește progresul din profil și reia greșelile pentru recapitulare.</p></li>
+    </ol>
+</section>
 {% endblock %}
