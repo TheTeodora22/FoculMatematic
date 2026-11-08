@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     {% block extra_head %}{% endblock %}
     {% block extra_css %}{% endblock %}
+    <link rel="stylesheet" href="{% static 'core/css/header-experiment.css' %}?v=20261108-mission-1">
 </head>
 <body>
     <a class="skip-link" href="#main-content">Sari la conținut</a>
@@ -103,14 +104,6 @@
                 <li class="hideOnMobile"><a href="{% url 'quiz_list' %}">Chestionare</a></li>
                 {% if user.is_authenticated %}
                     <li class="hideOnMobile"><a href="{% url 'battlepass' %}">Battle Pass</a></li>
-                    <li class="hideOnMobile"><a href="{% url 'profile' %}">Profil</a></li>
-                    <li class="hideOnMobile"><a href="{% url 'logout' %}">Deconectare</a></li>
-                {% else %}
-                    <li class="hideOnMobile nav-auth">
-                        <a href="{% url 'register' %}">Înregistrare</a>
-                        <span class="nav-auth-sep">/</span>
-                        <a href="{% url 'login' %}">Conectare</a>
-                    </li>
                 {% endif %}
 
                 <li class="hideOnDesktop">
@@ -120,6 +113,15 @@
                 </li>
             </ul>
         </nav>
+        <div class="header-actions">
+            {% if user.is_authenticated %}
+                <a class="header-account-link" href="{% url 'logout' %}">Deconectare</a>
+                <a class="header-primary-action" href="{% url 'profile' %}">Profilul meu {% include "includes/icons/arrow-up-right.svg" %}</a>
+            {% else %}
+                <a class="header-account-link" href="{% url 'login' %}">Conectare</a>
+                <a class="header-primary-action" href="{% url 'register' %}">Începe gratuit {% include "includes/icons/arrow-up-right.svg" %}</a>
+            {% endif %}
+        </div>
     </header>
     </div>
 

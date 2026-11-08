@@ -1,0 +1,88 @@
+/* Header study: centered navigation and a distinct action, inspired by Mission Zero. */
+:root { --fm-header-height: 80px; --fm-header-compact-height: 72px; }
+html .site-header,
+html .site-header.is-compact {
+    display: grid;
+    grid-template-columns: minmax(220px, 1fr) auto minmax(220px, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 max(2rem, calc((100% - 1440px) / 2));
+    background: #050506;
+    border-bottom: 1px solid rgba(255,255,255,.06);
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}
+.site-header > .site-brand {
+    width: clamp(13rem, 15vw, 17rem);
+    max-width: 100%;
+    min-width: 0;
+    justify-self: start;
+}
+.site-header .logo { filter: brightness(0) invert(1); }
+.site-header nav { justify-self: center; }
+.site-header .nav__link { gap: .6rem; }
+.site-header .nav__link > li { height: auto; padding: 0; }
+.site-header .nav__link > li > a,
+.site-header .nav-dropdown-toggle {
+    min-height: 44px;
+    padding: .5rem .55rem;
+    color: #f4f4f5;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+.site-header .nav__link > li > a:hover,
+.site-header .nav-dropdown-toggle:hover,
+.site-header .nav-dropdown-toggle[aria-expanded="true"] {
+    background: transparent;
+    color: #ff845e;
+}
+.site-header .nav__link a[aria-current="page"] {
+    color: #f4f4f5;
+    text-decoration: none;
+}
+.site-header .nav-dropdown-toggle .fm-icon--chevron { width: 14px; height: 14px; }
+.header-actions { display: flex; align-items: center; justify-content: end; gap: 1.2rem; }
+.site-header .header-account-link {
+    font-size: .75rem;
+    font-weight: 400;
+    color: #b8b8c0;
+    padding-block: .75rem;
+    white-space: nowrap;
+}
+.site-header .header-account-link:hover { color: #fff; }
+.site-header .header-primary-action {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: .65rem;
+    min-height: 44px;
+    padding: .65rem 1.1rem;
+    border-radius: 999px;
+    background: #ff6b3d;
+    color: #161014;
+    font-size: .85rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: background-color var(--fm-duration-fast) var(--fm-ease-standard);
+}
+.site-header .header-primary-action:hover { background: #ff845e; }
+.site-header .header-primary-action .fm-icon { width: 16px; height: 16px; }
+.site-header .nav-icon-button { color: #f4f4f5; }
+.site-header .nav__link .submenu { background: #141419; border-color: #333139; }
+.site-header .nav__link .submenu a { background: transparent; color: #f4f4f5; }
+.site-header .nav__link .submenu a:hover { background: #252129; color: #ff845e; }
+@media (max-width: 1280px) {
+    html .site-header, html .site-header.is-compact {
+        grid-template-columns: 1fr auto;
+        padding-inline: clamp(1.25rem, 4vw, 3rem);
+    }
+    .site-header nav { justify-self: end; }
+    .header-actions { display: none; }
+}
+@media (max-width: 640px) {
+    :root { --fm-header-height: 72px; --fm-header-compact-height: 64px; }
+    .site-header > .site-brand { width: min(65vw, 16rem); }
+}
