@@ -40,7 +40,7 @@ body {
     min-width: 0;
     max-width: 100%;
     height: auto;
-    filter: brightness(0);
+    filter: brightness(0) invert(1);
 }
 .site-header nav { flex: 0 0 auto; min-width: 0; margin: 0; }
 .site-header .nav__link { gap: .2rem; }
@@ -69,10 +69,10 @@ body {
     border: 0;
     border-radius: 0;
     background: transparent;
-    color: var(--fm-ink);
+    color: var(--fm-on-action);
 }
 .site-header .nav-icon-button:hover { background: transparent; }
-.site-header .nav-icon-button img { filter: brightness(0); }
+.site-header .nav-icon-button img { filter: brightness(0) invert(1); }
 .sidebar-dialog .sidebar-close img { filter: brightness(0) invert(1); }
 
 .sidebar-dialog {
@@ -199,6 +199,7 @@ body {
 .learning-card__main h2 { max-width: 52ch; }
 .learning-card > .btn { flex-shrink: 0; margin: 0; }
 .learning-progress { max-width: 38rem; }
+.learning-progress__fill, .profile-xp-fill { background: linear-gradient(90deg, var(--fm-accent), var(--fm-accent-light)); }
 .profile-hero {
     background: var(--fm-profile-gradient);
     border-color: var(--fm-border-overlay);
@@ -227,7 +228,7 @@ body {
 .btn.btn-press { box-shadow: var(--fm-shadow-button); }
 .btn.btn-press:hover:not(:disabled) { transform: none; box-shadow: var(--fm-shadow-button-hover); }
 .btn.btn-press:active:not(:disabled) { transform: translateY(1px); box-shadow: var(--fm-shadow-button-active); }
-.btn.btn--secondary { background: var(--fm-surface-raised); border-color: var(--fm-border-secondary); }
+.btn.btn--secondary { background: transparent; border-color: var(--fm-border-secondary); }
 .btn.btn--secondary:hover:not(:disabled) { background: var(--fm-surface-hover); border-color: var(--fm-border-secondary-hover); }
 .btn:disabled { background: var(--fm-disabled-bg); box-shadow: none; }
 
@@ -236,7 +237,7 @@ body {
 .training-option:hover:not(:has(input:disabled)) { border-color: var(--fm-accent-light); background: var(--fm-surface-raised); }
 .training-option:has(input:checked):not(.training-option--correct):not(.training-option--wrong) { border-color: var(--fm-selected-border); background: var(--fm-selected-bg); }
 .training-option:focus-within { outline: 2px solid var(--fm-focus); outline-offset: 3px; }
-.training-option input { width: 18px; height: 18px; accent-color: var(--fm-primary); }
+.training-option input { width: 18px; height: 18px; accent-color: var(--fm-accent); }
 .training-option > span { min-width: 0; }
 .training-option--correct { border-color: var(--fm-success); background: var(--fm-success-bg); }
 .training-option--wrong { border-color: var(--fm-error); background: var(--fm-error-bg); }
