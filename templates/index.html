@@ -1,46 +1,90 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block title %}Focul Matematic | Acasă{% endblock %}
-{% block page_styles %}{% include "includes/page_styles.html" %}{% endblock %}
-
+{% block page_styles %}
+{% include "includes/page_styles.html" %}
+<link rel="stylesheet" href="{% static 'core/css/home-editorial.css' %}?v=20261108-1">
+{% endblock %}
 {% block content %}
-<section class="hero home-hero home-hero--compact" aria-labelledby="home-title">
-    <div class="herotext">
-        <h1 id="home-title">Matematica se învață <strong>exersând.</strong></h1>
-        <p>
-            Alege clasa și lecția. Exersează în ritmul tău, verifică răspunsurile și revino la ce ai de consolidat.
-        </p>
-        <div class="hero-actions">
-        <a class="btn btn-press" href="#home-classes">Alege clasa</a>
-        {% if not user.is_authenticated %}
-            <a class="btn btn--secondary" href="{% url 'register' %}">Creează cont gratuit</a>
-        {% else %}
-            <a class="btn btn--secondary" href="{% url 'profile' %}">Continuă din profil</a>
-        {% endif %}
+<div class="math-home">
+<section class="math-intro" aria-labelledby="home-title">
+    <div class="math-topline"><span>GÂNDIRE CLARĂ. POSIBILITĂȚI INFINITE.</span><span>PENTRU MINȚI CURIOASE</span></div>
+    <div class="math-word" aria-hidden="true">MATEMATICA</div>
+    <div class="math-intro-grid">
+        <div class="math-intro-copy">
+            <p class="math-kicker">01 / SCÂNTEIA CUNOAȘTERII</p>
+            <h1 id="home-title">Totul începe<br>cu un <em>de ce.</em></h1>
+            <p>Dintr-o întrebare se naște o idee. Din exercițiu, înțelegerea. Descoperă matematica, un pas pe rând.</p>
+            <a class="math-action" href="#home-classes">Începe să exersezi <span aria-hidden="true">↗</span></a>
         </div>
+        <figure class="math-sculpture">
+            <svg viewBox="0 0 520 560" role="img" aria-labelledby="sculpture-title">
+                <title id="sculpture-title">Poliedru cu fețe de obsidian și nucleu incandescent</title>
+                <defs>
+                    <linearGradient id="stone-a" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#b2b6bd"/><stop offset=".38" stop-color="#555961"/><stop offset="1" stop-color="#15171e"/></linearGradient>
+                    <linearGradient id="stone-b"><stop stop-color="#15171d"/><stop offset="1" stop-color="#65616a"/></linearGradient>
+                    <linearGradient id="stone-c" x1="0%" y1="0%" x2="80%" y2="100%"><stop stop-color="#5d616c"/><stop offset="1" stop-color="#14151c"/></linearGradient>
+                    <radialGradient id="ember"><stop stop-color="#fff3d3"/><stop offset=".2" stop-color="#ffca74"/><stop offset=".55" stop-color="#f27a29"/><stop offset="1" stop-color="#891b0d"/></radialGradient>
+                    <radialGradient id="halo"><stop stop-color="#d85c22" stop-opacity=".22"/><stop offset="1" stop-color="#d85c22" stop-opacity="0"/></radialGradient>
+                    <linearGradient id="plinth" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#64616a"/><stop offset=".3" stop-color="#24252d"/><stop offset="1" stop-color="#090b11"/></linearGradient>
+                    <filter id="glow"><feGaussianBlur stdDeviation="9"/></filter>
+                </defs>
+                <ellipse cx="260" cy="487" rx="165" ry="21" fill="#000" opacity=".45"/>
+                <circle cx="260" cy="260" r="210" fill="url(#halo)"/>
+                <g fill="none" stroke="#797a88" stroke-width=".7" opacity=".34">
+                    <ellipse cx="260" cy="268" rx="218" ry="65" transform="rotate(-26 260 268)"/>
+                    <ellipse cx="260" cy="268" rx="218" ry="65" transform="rotate(58 260 268)"/>
+                    <circle cx="260" cy="268" r="192" stroke-dasharray="2 9"/>
+                </g>
+                <path d="M156 458 L260 421 364 458 364 478 260 516 156 478Z" fill="url(#plinth)" stroke="#787780" stroke-opacity=".2"/>
+                <path d="M156 458 L260 421 364 458 260 495Z" fill="#373740"/>
+                <path d="M225 440 L260 425 295 440 260 455Z" fill="#0e1018"/>
+                <g stroke="#c3c6cc" stroke-opacity=".27" stroke-linejoin="round">
+                    <path d="M260 65 386 180 354 343 260 431 145 338 128 187Z" fill="#11131a"/>
+                    <path d="M260 65 128 187 232 209Z" fill="url(#stone-a)"/>
+                    <path d="M260 65 232 209 303 179 386 180Z" fill="url(#stone-c)"/>
+                    <path d="M260 65 386 180 325 151Z" fill="#7c7b82"/>
+                    <path d="M128 187 145 338 211 288 232 209Z" fill="url(#stone-b)"/>
+                    <path d="M128 187 211 288 171 239Z" fill="#6b6c75"/>
+                    <path d="M386 180 303 179 320 232 296 301 354 343Z" fill="url(#stone-a)"/>
+                    <path d="M386 180 354 343 349 257Z" fill="#24232c"/>
+                    <path d="M145 338 211 288 244 338 260 431Z" fill="url(#stone-c)"/>
+                    <path d="M260 431 244 338 296 301 354 343Z" fill="url(#stone-b)"/>
+                </g>
+                <path d="M232 209 303 179 320 232 296 301 244 338 211 288Z" fill="#f87926" opacity=".5" filter="url(#glow)"/>
+                <g stroke="#ffb667" stroke-width="1.2" stroke-linejoin="round">
+                    <path d="M243 214 286 198 309 238 288 291 250 317 225 278Z" fill="url(#ember)"/>
+                    <path d="M243 214 266 258 286 198M266 258 309 238M266 258 288 291 250 317 266 258 225 278 243 214" fill="none"/>
+                    <path d="M243 214 266 258 225 278Z" fill="#ffd39a" opacity=".65"/>
+                    <path d="M266 258 309 238 288 291Z" fill="#b3420f" opacity=".7"/>
+                </g>
+                <g fill="#ff9a62"><circle cx="75" cy="354" r="3"/><circle cx="427" cy="160" r="2.5"/></g>
+                <path d="M213 118 247 87M155 196 196 205M311 353 278 396" fill="none" stroke="#e0e0e5" opacity=".24"/>
+            </svg>
+            <figcaption>GÂNDIRE ÎN MAI MULTE DIMENSIUNI <span aria-hidden="true">↗</span></figcaption>
+        </figure>
+        <aside class="math-note">
+            <span class="math-note-index" aria-hidden="true">∞</span>
+            <p class="math-kicker">FRUMUSEȚEA DIN LOGICĂ</p>
+            <p>Nu doar formule.<br>Un alt mod de a vedea lumea.</p>
+            <div class="math-equation" aria-label="Identitatea lui Euler">e<sup>iπ</sup> + 1 = 0</div>
+            <span class="math-note-foot">CINCI CONSTANTE. O SINGURĂ IDEE.</span>
+        </aside>
     </div>
-    <div class="hero-artwork">
-        <div class="hero-visual" data-motion-trigger tabindex="0" role="group" aria-label="Animație decorativă" aria-describedby="hero-motion-help" aria-haspopup="menu" aria-controls="hero-motion-menu" aria-expanded="false">
-            <video class="piramida" aria-hidden="true" data-motion-media data-animated-src="{% static 'core/img/5-cell.webm' %}" poster="{% static 'core/img/FMImage.png' %}" preload="none" muted loop playsinline width="252" height="252"></video>
-        </div>
-        <span class="visually-hidden" id="hero-motion-help">Opțiuni: click dreapta pe animație sau Shift+F10 din tastatură.</span>
-        <div class="motion-context-menu" id="hero-motion-menu" role="menu" aria-label="Opțiunile animației" data-motion-menu hidden>
-            <button type="button" class="motion-toggle" role="menuitem" data-motion-toggle hidden>Oprește animația</button>
-        </div>
-        <span class="visually-hidden" id="hero-motion-status" role="status" aria-live="polite"></span>
-    </div>
+    <div class="math-hero-bottom"><span>ALGEBRĂ · GEOMETRIE · ANALIZĂ</span><a href="#home-classes">DESCOPERĂ PARCURSUL <span aria-hidden="true">↓</span></a></div>
 </section>
-<section class="home-section" id="home-classes" aria-labelledby="classes-title">
-    <div class="section-heading"><p class="learning-eyebrow">Parcursul tău</p><h2 id="classes-title">De unde începem?</h2><p class="muted">Alege clasa pentru a vedea capitolele și lecțiile.</p></div>
+<section class="math-path" id="home-classes" aria-labelledby="classes-title">
+    <div class="math-section-head"><div><p class="math-kicker">02 / ALEGE DIRECȚIA</p><h2 id="classes-title">Fiecare minte are<br>propriul <em>parcurs.</em></h2></div><p>De la primele idei la demonstrații.<br>Alege clasa și găsește următoarea provocare.</p></div>
     {% include "includes/class_choices.html" %}
 </section>
-<section class="home-section home-method" aria-labelledby="method-title">
-    <div class="section-heading"><h2 id="method-title">Un pas pe rând</h2><p class="muted">Un parcurs simplu, de la primul exercițiu la recapitulare.</p></div>
-    <ol class="learning-steps">
-        <li><span class="learning-steps__number" aria-hidden="true">01</span><h3>Alege o lecție</h3><p>Găsește tema pe care o studiezi sau pe care vrei să o recapitulezi.</p></li>
-        <li><span class="learning-steps__number" aria-hidden="true">02</span><h3>Exersează și verifică</h3><p>Lucrează în Antrenare sau încearcă un chestionar. Vezi ce ai rezolvat corect.</p></li>
-        <li><span class="learning-steps__number" aria-hidden="true">03</span><h3>Revino la ce contează</h3><p>Urmărește progresul din profil și reia greșelile pentru recapitulare.</p></li>
+<section class="math-method" aria-labelledby="method-title">
+    <div class="math-section-head"><div><p class="math-kicker">03 / DIN CURIOZITATE, ÎNȚELEGERE</p><h2 id="method-title">Matematica se învață<br><em>exersând.</em></h2></div><a class="math-text-link" href="{% url 'quiz_list' %}">Explorează chestionarele <span aria-hidden="true">↗</span></a></div>
+    <ol class="math-steps">
+        <li><span class="math-step-number">01</span><div class="math-step-symbol" aria-hidden="true">x² + y²</div><h3>Găsește scânteia.</h3><p>Alege o lecție. Pornește de la ce te intrigă sau revino la ce vrei să înțelegi mai bine.</p></li>
+        <li><span class="math-step-number">02</span><div class="math-step-symbol math-symbol-geometry" aria-hidden="true">△</div><h3>Pune ideile în mișcare.</h3><p>Rezolvă exerciții, verifică răspunsurile și descoperă logica din spatele fiecărui pas.</p></li>
+        <li><span class="math-step-number">03</span><div class="math-step-symbol" aria-hidden="true">∫ f(x) dx</div><h3>Construiește mai departe.</h3><p>Urmărește progresul din profil. Reia greșelile și transformă-le în lucruri pe care le stăpânești.</p></li>
     </ol>
 </section>
+<section class="math-closing" aria-labelledby="closing-title"><span aria-hidden="true">∞</span><p class="math-kicker">O ÎNTREBARE BUNĂ POATE SCHIMBA TOTUL.</p><h2 id="closing-title">Aprinde-ți <em>gândirea.</em></h2><a class="math-action" href="#home-classes">Alege primul pas <span aria-hidden="true">↗</span></a></section>
+</div>
 {% endblock %}
