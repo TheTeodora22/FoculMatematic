@@ -118,3 +118,80 @@
     .math-path, .math-method { min-height: 100svh; padding-block: 6rem; }
     .math-closing { min-height: 85svh; padding-block: 6rem; }
 }
+
+/* The homepage is a viewport-sized deck; native snapping also supports touch. */
+.math-home.snap-pages {
+    position: fixed;
+    inset: var(--fm-header-height) 0 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    overscroll-behavior-y: contain;
+    scrollbar-width: none;
+}
+.math-home.snap-pages::-webkit-scrollbar { display: none; }
+body:has(.math-home.snap-pages) { overflow: hidden; }
+.snap-pages > section {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 100%;
+    max-width: none;
+    margin: 0;
+    padding: clamp(2rem, 5vh, 4rem) clamp(1.5rem, 7vw, 8rem);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-margin: 0;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+.snap-pages .math-intro { display: flex; flex-direction: column; }
+.snap-pages .math-word { top: 3.5rem; left: 5%; right: 5%; font-size: clamp(4rem, 11.5vw, 11rem); }
+.snap-pages .math-intro-grid { flex: 1; min-height: 0; padding-top: 6rem; }
+.snap-pages .math-sculpture svg { max-height: calc(100svh - var(--fm-header-height) - 210px); }
+.snap-pages .math-intro-copy { padding-block: 1rem; }
+.snap-pages .math-hero-bottom { flex-shrink: 0; padding-block: 1rem; }
+.snap-pages .math-path, .snap-pages .math-method, .snap-pages .math-closing { justify-content: center; }
+.snap-pages .math-section-head { margin-bottom: 2rem; }
+.snap-pages .math-note { padding-top: 1rem; }
+.math-slide-nav { position: fixed; right: clamp(.5rem, 2vw, 2rem); top: 50%; display: flex; flex-direction: column; z-index: 5; }
+.math-slide-nav button { display: grid; place-items: center; width: 32px; height: 36px; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.math-slide-nav button::after { content: ''; width: 6px; height: 6px; border: 1px solid #a3a4b2; border-radius: 50%; transition: background .2s, transform .2s; }
+.math-slide-nav button[aria-current]::after { background: #ff9a62; border-color: #ff9a62; transform: scale(1.5); }
+@media (max-height: 740px) and (min-width: 641px) {
+    .snap-pages > section { padding-block: 1.5rem; }
+    .snap-pages .math-word { font-size: 9vw; top: 2.5rem; }
+    .snap-pages .math-intro-grid { padding-top: 4.5rem; }
+    .snap-pages h1 { font-size: 2.6rem; }
+    .snap-pages .math-note-index { font-size: 2.8rem; margin-bottom: .6rem; }
+    .snap-pages .math-step-symbol { height: 100px; }
+    .snap-pages .math-section-head { margin-bottom: 1.5rem; }
+}
+@media (max-width: 640px) {
+    .snap-pages > section { padding: 1.5rem 2rem 1.5rem 1.25rem; }
+    .snap-pages .math-intro-grid { display: flex; flex-direction: column; padding-top: 3rem; gap: 0; }
+    .snap-pages .math-word { font-size: 13vw; top: 3.5rem; }
+    .snap-pages .math-sculpture { order: -1; width: 100%; }
+    .snap-pages .math-sculpture svg { max-height: 25svh; }
+    .snap-pages .math-sculpture figcaption { display: none; }
+    .snap-pages .math-intro-copy { width: 100%; padding-top: 1rem; }
+    .snap-pages h1 { font-size: 2.25rem; margin-block: .6rem; }
+    .snap-pages h2 { font-size: 2.1rem; }
+    .snap-pages .math-intro-copy > p:not(.math-kicker) { font-size: .75rem; line-height: 1.65; }
+    .snap-pages .math-action { margin-top: 1rem; }
+    .snap-pages .math-hero-bottom { display: none; }
+    .snap-pages .math-path, .snap-pages .math-method { justify-content: safe center; }
+    .snap-pages .math-section-head { gap: .8rem; margin-bottom: 1rem; }
+    .snap-pages .class-choice { min-height: 82px; padding-block: .6rem; }
+    .snap-pages .math-steps { gap: 1rem; }
+    .snap-pages .math-step-symbol { display: none; }
+    .snap-pages .math-steps li { padding-top: .6rem; }
+    .snap-pages .math-steps h3 { margin-block: .35rem; font-size: .85rem; }
+    .snap-pages .math-steps p { font-size: .73rem; line-height: 1.6; }
+    .math-slide-nav { right: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .math-slide-nav button::after { transition: none; } }
+
+.snap-pages .math-closing .footer { width: 100%; margin-top: 2rem; padding: 1rem 0 0; background: transparent; }
+.snap-pages .math-closing .footer .smalllogo { max-width: 15rem; }
