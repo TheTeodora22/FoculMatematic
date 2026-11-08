@@ -336,18 +336,17 @@ body {
 .site-header .nav-dropdown-toggle:hover,
 .site-header .nav-dropdown-toggle[aria-expanded="true"] { background: transparent; }
 
-/* Font-independent, fine chevrons for the two desktop dropdowns. */
-.site-header .nav-dropdown-toggle { gap: .6rem; }
-.site-header .nav-dropdown-toggle .nav-chevron {
-    display: inline-block;
-    flex: 0 0 auto;
-    width: 7px;
-    height: 7px;
-    margin-top: -3px;
-    border: solid currentColor;
-    border-width: 0 1.5px 1.5px 0;
-    transform: rotate(45deg);
+/* Local Lucide SVGs share the same proportions and 1.5px strokes. */
+.fm-icon { display: inline-block; width: 20px; height: 20px; flex: 0 0 auto; vertical-align: middle; }
+.site-header .nav-dropdown-toggle { gap: .45rem; }
+.site-header .nav-dropdown-toggle .fm-icon--chevron {
+    width: 16px;
+    height: 16px;
+    transition: transform var(--fm-duration-fast) var(--fm-ease-standard);
 }
-.site-header .nav-dropdown-toggle[aria-expanded="true"] .nav-chevron {
-    transform: translateY(3px) rotate(225deg);
+.site-header .nav-dropdown-toggle[aria-expanded="true"] .fm-icon--chevron { transform: rotate(180deg); }
+.nav-icon-button .fm-icon { width: 24px; height: 24px; }
+.class-choice__arrow { display: inline-flex; align-items: center; }
+@media (prefers-reduced-motion: reduce) {
+    .site-header .nav-dropdown-toggle .fm-icon--chevron { transition: none; }
 }

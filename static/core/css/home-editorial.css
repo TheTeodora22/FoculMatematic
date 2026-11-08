@@ -321,3 +321,9 @@ html:has(.math-home.snap-pages) {
 @media (max-width: 640px) {
     .snap-pages .math-intro { padding-inline: 1.5rem; }
 }
+
+.math-home .math-action .fm-icon { width: 18px; height: 18px; }
+.math-home .math-text-link { display: inline-flex; align-items: center; gap: 1.25rem; }
+.math-home .math-text-link .fm-icon { width: 18px; height: 18px; color: var(--home-cta); }
+.math-home .math-hero-bottom a { display: inline-flex; align-items: center; gap: 1.5rem; }
+.math-home .math-hero-bottom .fm-icon { width: 16px; height: 16px; }

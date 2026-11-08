@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{% static 'core/css/FMStyle.css' %}?v=20261108-header-chevron-1">
     <link rel="stylesheet" href="{% static 'core/css/fm-app.css' %}?v=20261108-header-chevron-1">
     {% block exercise_styles %}{% endblock %}
-    <link rel="stylesheet" href="{% static 'core/css/frontend-polish.css' %}?v=20261108-header-chevron-1">
+    <link rel="stylesheet" href="{% static 'core/css/frontend-polish.css' %}?v=20261108-lucide-1">
     <link rel="stylesheet" href="{% static 'core/css/ui-components.css' %}?v=20261108-header-chevron-1">
     <link rel="stylesheet" href="{% static 'core/css/ui-states.css' %}?v=20261031-phase7-2">
     {% block page_styles %}{% endblock %}
@@ -39,7 +39,7 @@
             <ul class="sidebar">
                 <li class="sidebar-close-row">
                     <button type="button" class="nav-icon-button sidebar-close" aria-label="Închide meniul">
-                        <img src="{% static 'core/img/closesimple.svg' %}" alt="" width="24" height="24">
+                        {% include "includes/icons/x.svg" %}
                     </button>
                 </li>
                 <li><a href="{% url 'index' %}">Acasă</a></li>
@@ -115,7 +115,7 @@
 
                 <li class="hideOnDesktop">
                     <button type="button" class="nav-icon-button sidebar-open" aria-label="Deschide meniul" aria-expanded="false" aria-controls="mobile-navigation">
-                        <img src="{% static 'core/img/menusimple.svg' %}" alt="" width="26" height="26">
+                        {% include "includes/icons/menu.svg" %}
                     </button>
                 </li>
             </ul>
