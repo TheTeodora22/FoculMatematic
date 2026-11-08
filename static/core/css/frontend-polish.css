@@ -56,7 +56,7 @@ body {
 .site-header .nav__link { gap: clamp(.35rem, .6vw, .75rem); }
 .site-header .nav__link li, .site-header .nav__link li a { font-size: 1rem; }
 .site-header .nav__link a { color: var(--fm-ink); border-radius: var(--fm-radius-control); }
-.site-header .nav__link a:hover { color: var(--fm-ink); background: rgba(0,0,0,.16); }
+.site-header .nav__link a:hover { color: var(--fm-ink); background: transparent; }
 .site-header .nav__link .nav-auth a { color: var(--fm-ink) !important; }
 .site-header .nav-auth-sep, .site-header .nav-dropdown-toggle { color: var(--fm-ink); }
 .site-header .nav__link .submenu a { background: var(--fm-surface); color: var(--fm-text); border-color: var(--fm-border); }
@@ -331,3 +331,7 @@ body {
         -webkit-text-fill-color: CanvasText;
     }
 }
+
+/* Header labels stay clean on hover and when their dropdown is open. */
+.site-header .nav-dropdown-toggle:hover,
+.site-header .nav-dropdown-toggle[aria-expanded="true"] { background: transparent; }
