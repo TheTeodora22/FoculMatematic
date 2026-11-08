@@ -33,7 +33,7 @@
     --fm-on-action: #f4f4f5;
     --fm-accent: #e87949;
     --fm-accent-light: #ffb18b;
-    --fm-link: #edc1ad;
+    --fm-link: #f4f4f5;
     --fm-border: #665864;
     --fm-border-subtle: #584b57;
     --fm-border-control: #8f7c8d;
@@ -55,10 +55,10 @@
     --fm-ink: #000;
     --fm-white: #fff;
     --fm-border-overlay: rgba(255,255,255,.14);
-    --fm-header-gradient: linear-gradient(115deg, #b86b78 0%, #c65e65 38%, #d45d43 76%, #e87949 100%);
-    --fm-header-glass: linear-gradient(115deg, rgba(184,107,120,.80) 0%, rgba(198,94,101,.78) 38%, rgba(212,93,67,.78) 76%, rgba(232,121,73,.82) 100%);
-    --fm-header-compact-tint: rgba(184,107,120,.80);
-    --fm-header-compact-fallback: #b86b78;
+    --fm-header-gradient: linear-gradient(115deg, #85414e 0%, #963d45 38%, #ae452f 76%, #c45d31 100%);
+    --fm-header-glass: linear-gradient(115deg, rgba(133,65,78,.86) 0%, rgba(150,61,69,.84) 38%, rgba(174,69,47,.84) 76%, rgba(196,93,49,.86) 100%);
+    --fm-header-compact-tint: rgba(133,65,78,.86);
+    --fm-header-compact-fallback: #85414e;
     --fm-header-blur: 20px;
     --fm-profile-gradient: linear-gradient(135deg, #312c32, #501a20 60%, #7c0a02);
     --fm-drawer-bg: rgba(49,44,50,.9);

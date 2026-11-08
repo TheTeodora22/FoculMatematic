@@ -1,4 +1,4 @@
-.math-demo { max-width: 960px; margin: 2rem auto; padding: 1rem; color: #dcd4c5; }
+.math-demo { max-width: 960px; margin: 2rem auto; padding: 1rem; color: var(--fm-text); }
 .math-demo section { margin: 1.5rem 0; padding: 1.25rem; border: 1px solid #8895a366; border-radius: 16px; }
 .math-demo .jxgbox { width: 100%; aspect-ratio: 4 / 3; min-height: 280px; background: #fff; color: #172334; }
 .math-demo .coefficients { display: flex; gap: 1rem; flex-wrap: wrap; }

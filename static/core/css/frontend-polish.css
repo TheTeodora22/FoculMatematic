@@ -179,7 +179,7 @@ body {
 }
 .home-hero .herotext { width: 100%; height: auto; max-width: 44rem; }
 .home-hero h1 { color: var(--fm-text); font-size: var(--fm-text-display); line-height: 1.16; text-shadow: none; letter-spacing: -.025em; }
-.home-hero h1 strong { color: var(--fm-accent-light); font-weight: 650; }
+.home-hero h1 strong { color: var(--fm-text); font-weight: 650; }
 .home-hero p { color: var(--fm-text-muted); padding-block: 1.4rem 1.8rem; font-size: clamp(1rem,1.6vw,1.2rem); line-height: 1.65; text-shadow: none; max-width: 38rem; }
 .hero-actions { display: flex; gap: .85rem; flex-wrap: wrap; }
 .hero-actions .btn { margin: 0; }

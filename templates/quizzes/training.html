@@ -4,10 +4,10 @@
 
 {% block title %}Antrenare — {{ topic.title }}{% endblock %}
 
-{% block exercise_styles %}<link rel="stylesheet" href="{% static 'core/css/training-exercises.css' %}?v=20261101-phase10-1">{% endblock %}
+{% block exercise_styles %}<link rel="stylesheet" href="{% static 'core/css/training-exercises.css' %}?v=20261108-neutral-glass-3">{% endblock %}
 
 {% block extra_head %}
-<link rel="stylesheet" href="{% static 'core/css/vector-workbench.css' %}?v=20261030-vectors-2">
+<link rel="stylesheet" href="{% static 'core/css/vector-workbench.css' %}?v=20261108-neutral-glass-3">
 <script src="{% static 'core/js/training-boot.js' %}?v=20261030-recovery"></script>
 <style>
 .fm-js .training-page--loading .training-layout {
@@ -24,7 +24,7 @@
     justify-content: center;
     min-height: 12rem;
     margin: 2rem 0;
-    color: #c9bfb3;
+    color: var(--fm-text-muted);
     font-family: "Montserrat", serif;
 }
 

@@ -97,7 +97,7 @@ body { overflow-x: clip; overflow-y: visible; }
 .page-content .form-error-summary { color: var(--fm-error); background: var(--fm-error-bg); border-radius: var(--fm-radius-control); padding: var(--fm-space-3); margin-bottom: var(--fm-space-5); }
 .page-content .form-success { color: var(--fm-success); }
 .password-toggle { width: 44px; height: 44px; right: 0; color: var(--fm-text-muted); border-radius: var(--fm-radius-control); }
-.password-toggle[aria-pressed="true"] { color: var(--fm-accent-light); }
+.password-toggle[aria-pressed="true"] { color: var(--fm-text); }
 .password-input-wrap input { padding-right: 3rem; }
 .password-criteria { margin: calc(-1 * var(--fm-space-3)) 0 var(--fm-space-5); }
 .profile-edit-form { max-width: 42rem; }

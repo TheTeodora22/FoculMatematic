@@ -148,7 +148,7 @@
 }
 
 .muted {
-    color: var(--fm-text-muted, #c1b5ac) !important;
+    color: var(--fm-text-muted, #b8b8c0) !important;
     font-size: var(--fm-text-sm);
 }
 
@@ -238,7 +238,7 @@
     height: 2rem;
     background: none;
     border: none;
-    color: #a89f94;
+    color: var(--fm-text-muted);
     cursor: pointer;
     padding: 0;
     font-size: 1rem;
@@ -281,7 +281,7 @@
     position: relative;
     width: fit-content;
     padding-left: 0.75rem;
-    color: #a89f94;
+    color: var(--fm-text-muted);
     margin: 0;
     transition: color var(--fm-duration-fast) var(--fm-ease-standard);
 }
@@ -293,7 +293,7 @@
     top: 0.15em;
     font-size: 0.45rem;
     line-height: 1;
-    color: #a89f94;
+    color: var(--fm-text-muted);
     transition: color var(--fm-duration-fast) var(--fm-ease-standard);
 }
 
@@ -405,7 +405,7 @@
 }
 
 .auth-link {
-    color: #a89f94;
+    color: var(--fm-text-muted);
     font-family: var(--fm-font);
     text-decoration: none;
     transition: color var(--fm-duration-fast) var(--fm-ease-standard);
@@ -455,7 +455,7 @@
 }
 
 .footer-feedback-link {
-    color: #a89e94;
+    color: var(--fm-text-muted);
     text-decoration: none;
 }
 
@@ -482,7 +482,7 @@
     position: relative;
     z-index: 0;
     border-radius: var(--fm-radius-button);
-    color: var(--fm-on-action, #fff1e8) !important;
+    color: var(--fm-on-action, #f4f4f5) !important;
     font-family: var(--fm-font);
     font-size: var(--fm-text-base);
     font-weight: var(--fm-weight-label);
@@ -531,7 +531,7 @@
 }
 
 .buton a {
-    color: #dcd4c5 !important;
+    color: var(--fm-text) !important;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -603,7 +603,7 @@ input[type="radio"] {
 }
 
 header .logo-text:hover {
-    color: #ffd4c5;
+    color: var(--fm-text);
 }
 
 header .hideOnDesktop img {
@@ -818,7 +818,7 @@ ul.options label {
 }
 
 .footer .copyright p {
-    color: #a89e94;
+    color: var(--fm-text-muted);
 }
 
 .sidebar {
@@ -852,7 +852,7 @@ ul.options label {
 }
 
 .sidebar .has-submenu:has(.sidebar-submenu li:hover) > .submenu-toggle {
-    color: #dcd4c5 !important;
+    color: var(--fm-text) !important;
 }
 
 .sidebar .has-submenu > .submenu-toggle {
@@ -948,7 +948,7 @@ ul.options label {
     max-height: 50px;
     padding: 0 30px;
     font-size: 18px;
-    color: #9a9085;
+    color: var(--fm-text-muted);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1205,13 +1205,13 @@ ul.options label {
 }
 
 .lesson-tag--class {
-    color: #c9bfb3;
+    color: var(--fm-text-muted);
     background: rgba(49, 44, 50, 0.55);
     border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .lesson-tag--exam {
-    color: #f0d8c8;
+    color: var(--fm-text);
     background: rgba(178, 34, 34, 0.22);
     border: 1px solid rgba(178, 34, 34, 0.45);
 }
@@ -1722,7 +1722,7 @@ ul.options label {
 }
 
 .profile-activity-table th {
-    color: #c9bfb3;
+    color: var(--fm-text-muted);
     font-weight: 500;
     font-size: 0.78rem;
     text-transform: uppercase;
@@ -1858,7 +1858,7 @@ ul.options label {
 }
 
 .learning-stat__label {
-    color: #a89f94;
+    color: var(--fm-text-muted);
     font-size: 0.82rem;
     margin-top: 0.2rem;
 }
@@ -2065,7 +2065,7 @@ ul.options label {
 }
 
 .analytics-table th {
-    color: #c9bfb3;
+    color: var(--fm-text-muted);
     font-weight: 500;
 }
 

@@ -20,7 +20,7 @@
 .vw-answer line { stroke-width:3.5; }
 .vw-point { color:#d4c6d0; }
 .vw-point circle { fill:currentColor; }
-.vw-handle { cursor:grab; color:#fff0df; touch-action:none; }
+.vw-handle { cursor:grab; color: var(--fm-text); touch-action:none; }
 .vw-handle:active { cursor:grabbing; }
 .vw-hit { fill:transparent; }
 .vw-knob { fill:rgba(226,88,34,.1); stroke:#fff0df; stroke-width:2; }
@@ -31,10 +31,10 @@
 .vw-controls legend { padding:0 .4rem; font-weight:700; }
 .vw-fields { display:flex; flex-wrap:wrap; gap:1rem; }
 .vw-fields label { display:grid; gap:.35rem; flex:1 1 80px; }
-.vw-fields input { width:100%; min-width:0; min-height:44px; border:1px solid #9b9099; border-radius:8px; padding:.5rem; font:inherit; background:#2c2730; color:#fff0df; box-sizing:border-box; }
+.vw-fields input { width:100%; min-width:0; min-height:44px; border:1px solid #9b9099; border-radius:8px; padding:.5rem; font:inherit; background:#2c2730; color: var(--fm-text); box-sizing:border-box; }
 .vw-fields input:focus-visible,.vw-move button:focus-visible,.vw-option input:focus-visible { outline:3px solid #ffe3a0; outline-offset:3px; }
 .vw-move { display:flex; gap:.4rem; margin-top:.8rem; }
-.vw-move button { min-width:44px; min-height:44px; border:1px solid #b09584; background:#40303a; color:#fff0df; border-radius:8px; font-size:1.35rem; cursor:pointer; }
+.vw-move button { min-width:44px; min-height:44px; border:1px solid #b09584; background:#40303a; color: var(--fm-text); border-radius:8px; font-size:1.35rem; cursor:pointer; }
 .vw-option { display:flex; align-items:center; gap:.7rem; min-height:44px; cursor:pointer; }
 .vw-option input { width:20px; height:20px; accent-color:#e25822; }
 .vw-form [data-vector-error] { color:#ffb4ac; }
