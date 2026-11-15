@@ -1,6 +1,3567 @@
 {
   "title": "Relațiile lui Viète",
   "description": "Clasa a 9-a · Funcția de gradul al II-lea",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "hard",
+  "questions": [
+    {
+      "text": "Numărul 1 este rădăcină a ecuației x²−4x+m=0. Determinați perechea (m; cealaltă rădăcină).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuirea rădăcinii cunoscute determină m. Prin Viète, suma rădăcinilor este coeficientul opus al lui x, deci cealaltă rădăcină se obține prin scădere. Rezultatul cerut este \\(\\left( 3, \\  3\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 3, \\  3\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 4, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 5, \\  3\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 1,
+        "type_name": "Rădăcină cunoscută și ecuație parametrizată",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "known_root",
+        "sum": 4,
+        "known": 1,
+        "option_values": [
+          "(3, 3)",
+          "(4, 3)",
+          "(2, 3)",
+          "(5, 3)"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației \\(x^{2} - 4 x + 3 = 0\\) sunt x₁,x₂. Calculați x₁²+x₂² fără a folosi formula radicalilor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din Viète avem S=−b/a și P=c/a. Identitatea x₁²+x₂²=S²−2P dă rezultatul, după verificarea Δ≥0. Rezultatul cerut este \\(10\\).",
+      "options": [
+        {
+          "text": "\\(11\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(10\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(12\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 2,
+        "type_name": "Expresii simetrice ale rădăcinilor",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_expression",
+        "f": "x**2 - 4*x + 3",
+        "expression": "t**2",
+        "combine": "sum",
+        "option_values": [
+          "11",
+          "10",
+          "9",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației \\(x^{2} - 4 x + 3 = 0\\) sunt x₁,x₂. Calculați 1/(x₁+1)+1/(x₂+1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorii sunt nenuli: rădăcinile sunt pozitive. După aducerea la numitor comun, expresia este (S+2)/(P+S+1), cu S și P date de Viète. Rezultatul cerut este \\(\\frac{3}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{7}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{3}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{11}{4}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 3,
+        "type_name": "Fracții simetrice ale rădăcinilor",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_expression",
+        "f": "x**2 - 4*x + 3",
+        "expression": "1/(t+1)",
+        "combine": "sum",
+        "option_values": [
+          "7/4",
+          "-1/4",
+          "3/4",
+          "11/4"
+        ]
+      }
+    },
+    {
+      "text": "Ecuația x²−4x+m=0 are rădăcini reale x₁,x₂ cu x₁²+x₂²=10. Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Viète și S²−2P dau S²−2m egal cu valoarea prescrisă. Soluția trebuie validată prin Δ=S²−4m≥0; aici Δ=4>0. Rezultatul cerut este \\(3\\).",
+      "options": [
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 4,
+        "type_name": "Parametru din relația dintre rădăcini",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "viete_square_parameter",
+        "sum": 4,
+        "squares": 10,
+        "option_values": [
+          "4",
+          "2",
+          "5",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Pentru valorile lui m cu rădăcini reale, S și P sunt suma și produsul rădăcinilor ecuației \\(- m x + m + x^{2} = 0\\). Determinați expresia P în funcție de S, fără m. În opțiuni, t reprezintă suma S.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Viète dă S=m și P=(1)m. Eliminăm m, obținând P=(1)S. În opțiuni variabila t reprezintă suma S. Rezultatul cerut este \\(t\\).",
+      "options": [
+        {
+          "text": "\\(t\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(t + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(t - 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(t + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 5,
+        "type_name": "Eliminarea parametrului dintre rădăcini",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Relația independentă este redată ca polinom în t, unde t=S."
+      },
+      "verification": {
+        "task": "viete_eliminate",
+        "f": "-m*x + m + x**2",
+        "parameter": "m",
+        "option_values": [
+          "t",
+          "t + 1",
+          "t - 1",
+          "t + 2"
+        ]
+      }
+    },
+    {
+      "text": "Ecuația monică x²+bx+c=0 are rădăcinile 1 și 3. Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru o ecuație monică, b este opusul sumei rădăcinilor și c este produsul lor. Nu există ambiguitate de factor de scalare. Rezultatul cerut este \\(\\left( -4, \\  3\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -3, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -4, \\  3\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -5, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -2, \\  3\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 6,
+        "type_name": "Relații între coeficienți și rădăcini",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "coeff_from_roots",
+        "roots": [
+          1,
+          3
+        ],
+        "option_values": [
+          "(-3, 3)",
+          "(-4, 3)",
+          "(-5, 3)",
+          "(-2, 3)"
+        ]
+      }
+    },
+    {
+      "text": "Determinați rădăcina reală comună ecuațiilor \\(x^{2} - 4 x + 3 = 0\\) și \\(x^{2} + 3 x - 4 = 0\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem ecuațiile pentru a obține o ecuație liniară, apoi înlocuim candidatul în ambele ecuații. Celălalt factor al fiecărei ecuații are rădăcini diferite. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 7,
+        "type_name": "Două ecuații cu rădăcină comună",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_root",
+        "first": "x**2 - 4*x + 3",
+        "second": "x**2 + 3*x - 4",
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Construiți polinomul monic cu rădăcinile 1−√2 și 1+√2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma rădăcinilor conjugate este 2(1), iar produsul este (1)²−2. Polinomul monic este x²−Sx+P, cu coeficientul principal 1. Rezultatul cerut este \\(x^{2} - 2 x - 1\\).",
+      "options": [
+        {
+          "text": "\\(x \\left(x - 2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - 2 x - 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - 2 x + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - 2 x - 1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 8,
+        "type_name": "Ecuația din rădăcini date",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "polynomial_roots",
+        "roots": [
+          "1 - sqrt(2)",
+          "1 + sqrt(2)"
+        ],
+        "option_values": [
+          "x*(x - 2)",
+          "x**2 - 2*x - 2",
+          "x**2 - 2*x + 1",
+          "x**2 - 2*x - 1"
+        ]
+      }
+    },
+    {
+      "text": "Pentru \\(x^{2} \\left(m - 1\\right) + x + 1 = 0\\), câte rădăcini reale distincte există la m=1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La parametrul dat coeficientul lui x² se anulează. Ecuația devine x+1=0, deci are o soluție reală, însă nu mai este de gradul al doilea. Formula discriminantului nu poate înlocui această separare de caz. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 9,
+        "type_name": "Natura și semnul rădăcinilor",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "partial_case",
+        "adaptation": "Discuția după parametru este adaptată în cazul degenerat explicit."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x + 1",
+        "domain": "Reals",
+        "option_values": [
+          "1",
+          "2",
+          "0",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației x²−4x+m=0 sunt termenii extremi ai progresiei aritmetice cu termenul central 2 și rația 1. Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cei trei termeni sunt (1), (1)+1, (1)+2, deci rădăcinile sunt (1) și (1)+2. Viète fixează produsul m. Aceasta este o adaptare la progresia rădăcinilor, fără condiția suplimentară asupra tuturor coeficienților. Rezultatul cerut este \\(3\\).",
+      "options": [
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 10,
+        "type_name": "Coeficienți și rădăcini în PA",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "partial_case",
+        "adaptation": "Caz simplificat de rădăcini în PA; nu reproduce condiția a,x₁,b,x₂,c în PA."
+      },
+      "verification": {
+        "task": "known_root",
+        "sum": 4,
+        "known": 1,
+        "output": "product",
+        "option_values": [
+          "4",
+          "3",
+          "2",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "Fără a rezolva \\(x^{2} + x - 2 = 0\\), care este semnul produsului x₁x₂? Răspundeți −1,0 sau 1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul c/a este strict negativ, iar Δ=b²−4ac>0. Rădăcinile sunt reale, nenule și de semne opuse, deci produsul are semnul −1. Rezultatul cerut este \\(-1\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 11,
+        "type_name": "Semnul rădăcinilor fără rezolvare",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_product_sign",
+        "f": "x**2 + x - 2",
+        "option_values": [
+          "0",
+          "-2",
+          "-1",
+          "1"
+        ]
+      }
+    },
+    {
+      "text": "Dacă x₁,x₂ sunt rădăcinile lui \\(x^{2} - 4 x + 3 = 0\\), determinați polinomul monic cu rădăcinile 1/x₁ și 1/x₂.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul P este nenul. Noile rădăcini au suma S/P și produsul 1/P, deci polinomul monic este x²−(S/P)x+1/P. Rezultatul cerut este \\(x^{2} - \\frac{4 x}{3} + \\frac{1}{3}\\).",
+      "options": [
+        {
+          "text": "\\(x^{2} - \\frac{4 x}{3} + \\frac{4}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - \\frac{4 x}{3} - \\frac{2}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - \\frac{4 x}{3} + \\frac{7}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - \\frac{4 x}{3} + \\frac{1}{3}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 12,
+        "type_name": "Ecuații cu rădăcini transformate",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "transformed_roots",
+        "f": "x**2 - 4*x + 3",
+        "transform": "1/t",
+        "option_values": [
+          "x**2 - 4*x/3 + 4/3",
+          "x**2 - 4*x/3 - 2/3",
+          "x**2 - 4*x/3 + 7/3",
+          "x**2 - 4*x/3 + 1/3"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m ecuația x²−4x+m=0 are rădăcini reale x₁<2<x₂?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O parabolă cu coeficient principal pozitiv are un prag strict între rădăcini exact când valoarea în prag este negativă. Aici f(prag)=m−prag², deci m<prag²; această condiție asigură și Δ>0. Rezultatul cerut este \\(\\left(-\\infty, 4\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left(-\\infty, 4\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 13,
+        "type_name": "Poziționare față de un prag",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "between_parameter",
+        "sum": 4,
+        "threshold": 2,
+        "option_values": [
+          "Interval.open(-oo, 4)",
+          "Reals",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Câte rădăcini distincte ale ecuației \\(x^{2} - 4 x + 3 = 0\\) aparțin intervalului \\(\\left(1, 4\\right)\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Factorizarea dă rădăcinile (1) și (1)+2. Capătul (1) este exclus, iar (1)+2 este interior; rezultă exact o rădăcină admisă. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 14,
+        "type_name": "Cardinalul rădăcinilor într-un interval",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "partial_case",
+        "adaptation": "Cardinal într-un interval pentru un caz explicit, cu capete validate."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x**2 - 4*x + 3",
+        "domain": "Interval.open(1, 4)",
+        "option_values": [
+          "2",
+          "1",
+          "0",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației \\(x^{2} - 4 x + 3 = 0\\) sunt x₁,x₂. Calculați S3=x₁^3+x₂^3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare rădăcină verifică xᵢ²=Sxᵢ−P. Înmulțind și însumând obținem Sₙ₊₂=S·Sₙ₊₁−P·Sₙ, cu S₀=2, S₁=S. Recurența produce exact valoarea cerută. Rezultatul cerut este \\(28\\).",
+      "options": [
+        {
+          "text": "\\(29\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(27\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(28\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(30\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 15,
+        "type_name": "Recurența sumelor de puteri",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_expression",
+        "f": "x**2 - 4*x + 3",
+        "expression": "t**3",
+        "combine": "sum",
+        "option_values": [
+          "29",
+          "27",
+          "28",
+          "30"
+        ]
+      }
+    },
+    {
+      "text": "Numărul 2 este rădăcină a ecuației x²−6x+m=0. Determinați perechea (m; cealaltă rădăcină).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuirea rădăcinii cunoscute determină m. Prin Viète, suma rădăcinilor este coeficientul opus al lui x, deci cealaltă rădăcină se obține prin scădere. Rezultatul cerut este \\(\\left( 8, \\  4\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 9, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 7, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 10, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 8, \\  4\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 1,
+        "type_name": "Rădăcină cunoscută și ecuație parametrizată",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "known_root",
+        "sum": 6,
+        "known": 2,
+        "option_values": [
+          "(9, 4)",
+          "(7, 4)",
+          "(10, 4)",
+          "(8, 4)"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației \\(x^{2} - 6 x + 8 = 0\\) sunt x₁,x₂. Calculați x₁²+x₂² fără a folosi formula radicalilor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din Viète avem S=−b/a și P=c/a. Identitatea x₁²+x₂²=S²−2P dă rezultatul, după verificarea Δ≥0. Rezultatul cerut este \\(20\\).",
+      "options": [
+        {
+          "text": "\\(20\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(21\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(19\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(22\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 2,
+        "type_name": "Expresii simetrice ale rădăcinilor",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_expression",
+        "f": "x**2 - 6*x + 8",
+        "expression": "t**2",
+        "combine": "sum",
+        "option_values": [
+          "20",
+          "21",
+          "19",
+          "22"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației \\(x^{2} - 6 x + 8 = 0\\) sunt x₁,x₂. Calculați 1/(x₁+1)+1/(x₂+1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorii sunt nenuli: rădăcinile sunt pozitive. După aducerea la numitor comun, expresia este (S+2)/(P+S+1), cu S și P date de Viète. Rezultatul cerut este \\(\\frac{8}{15}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{23}{15}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{8}{15}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{7}{15}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{38}{15}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 3,
+        "type_name": "Fracții simetrice ale rădăcinilor",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_expression",
+        "f": "x**2 - 6*x + 8",
+        "expression": "1/(t+1)",
+        "combine": "sum",
+        "option_values": [
+          "23/15",
+          "8/15",
+          "-7/15",
+          "38/15"
+        ]
+      }
+    },
+    {
+      "text": "Ecuația x²−6x+m=0 are rădăcini reale x₁,x₂ cu x₁²+x₂²=20. Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Viète și S²−2P dau S²−2m egal cu valoarea prescrisă. Soluția trebuie validată prin Δ=S²−4m≥0; aici Δ=4>0. Rezultatul cerut este \\(8\\).",
+      "options": [
+        {
+          "text": "\\(9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(7\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(8\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(10\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 4,
+        "type_name": "Parametru din relația dintre rădăcini",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "viete_square_parameter",
+        "sum": 6,
+        "squares": 20,
+        "option_values": [
+          "9",
+          "7",
+          "8",
+          "10"
+        ]
+      }
+    },
+    {
+      "text": "Pentru valorile lui m cu rădăcini reale, S și P sunt suma și produsul rădăcinilor ecuației \\(- m x + 2 m + x^{2} = 0\\). Determinați expresia P în funcție de S, fără m. În opțiuni, t reprezintă suma S.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Viète dă S=m și P=(2)m. Eliminăm m, obținând P=(2)S. În opțiuni variabila t reprezintă suma S. Rezultatul cerut este \\(2 t\\).",
+      "options": [
+        {
+          "text": "\\(2 t + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 t - 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 t + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 t\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 5,
+        "type_name": "Eliminarea parametrului dintre rădăcini",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Relația independentă este redată ca polinom în t, unde t=S."
+      },
+      "verification": {
+        "task": "viete_eliminate",
+        "f": "-m*x + 2*m + x**2",
+        "parameter": "m",
+        "option_values": [
+          "2*t + 1",
+          "2*t - 1",
+          "2*t + 2",
+          "2*t"
+        ]
+      }
+    },
+    {
+      "text": "Ecuația monică x²+bx+c=0 are rădăcinile 2 și 4. Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru o ecuație monică, b este opusul sumei rădăcinilor și c este produsul lor. Nu există ambiguitate de factor de scalare. Rezultatul cerut este \\(\\left( -6, \\  8\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -6, \\  8\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -5, \\  8\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -7, \\  8\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -4, \\  8\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 6,
+        "type_name": "Relații între coeficienți și rădăcini",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "coeff_from_roots",
+        "roots": [
+          2,
+          4
+        ],
+        "option_values": [
+          "(-6, 8)",
+          "(-5, 8)",
+          "(-7, 8)",
+          "(-4, 8)"
+        ]
+      }
+    },
+    {
+      "text": "Determinați rădăcina reală comună ecuațiilor \\(x^{2} - 6 x + 8 = 0\\) și \\(x^{2} + 3 x - 10 = 0\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem ecuațiile pentru a obține o ecuație liniară, apoi înlocuim candidatul în ambele ecuații. Celălalt factor al fiecărei ecuații are rădăcini diferite. Rezultatul cerut este \\(2\\).",
+      "options": [
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 7,
+        "type_name": "Două ecuații cu rădăcină comună",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_root",
+        "first": "x**2 - 6*x + 8",
+        "second": "x**2 + 3*x - 10",
+        "option_values": [
+          "3",
+          "2",
+          "1",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "Construiți polinomul monic cu rădăcinile 2−√2 și 2+√2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma rădăcinilor conjugate este 2(2), iar produsul este (2)²−2. Polinomul monic este x²−Sx+P, cu coeficientul principal 1. Rezultatul cerut este \\(x^{2} - 4 x + 2\\).",
+      "options": [
+        {
+          "text": "\\(x^{2} - 4 x + 3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - 4 x + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - 4 x + 2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(x^{2} - 4 x + 4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 8,
+        "type_name": "Ecuația din rădăcini date",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "polynomial_roots",
+        "roots": [
+          "2 - sqrt(2)",
+          "sqrt(2) + 2"
+        ],
+        "option_values": [
+          "x**2 - 4*x + 3",
+          "x**2 - 4*x + 1",
+          "x**2 - 4*x + 2",
+          "x**2 - 4*x + 4"
+        ]
+      }
+    },
+    {
+      "text": "Pentru \\(x^{2} \\left(m - 2\\right) + x + 1 = 0\\), câte rădăcini reale distincte există la m=2?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La parametrul dat coeficientul lui x² se anulează. Ecuația devine x+1=0, deci are o soluție reală, însă nu mai este de gradul al doilea. Formula discriminantului nu poate înlocui această separare de caz. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 9,
+        "type_name": "Natura și semnul rădăcinilor",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "partial_case",
+        "adaptation": "Discuția după parametru este adaptată în cazul degenerat explicit."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x + 1",
+        "domain": "Reals",
+        "option_values": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației x²−6x+m=0 sunt termenii extremi ai progresiei aritmetice cu termenul central 3 și rația 1. Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cei trei termeni sunt (2), (2)+1, (2)+2, deci rădăcinile sunt (2) și (2)+2. Viète fixează produsul m. Aceasta este o adaptare la progresia rădăcinilor, fără condiția suplimentară asupra tuturor coeficienților. Rezultatul cerut este \\(8\\).",
+      "options": [
+        {
+          "text": "\\(8\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(7\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(10\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 10,
+        "type_name": "Coeficienți și rădăcini în PA",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "partial_case",
+        "adaptation": "Caz simplificat de rădăcini în PA; nu reproduce condiția a,x₁,b,x₂,c în PA."
+      },
+      "verification": {
+        "task": "known_root",
+        "sum": 6,
+        "known": 2,
+        "output": "product",
+        "option_values": [
+          "8",
+          "9",
+          "7",
+          "10"
+        ]
+      }
+    },
+    {
+      "text": "Fără a rezolva \\(x^{2} + 2 x - 3 = 0\\), care este semnul produsului x₁x₂? Răspundeți −1,0 sau 1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul c/a este strict negativ, iar Δ=b²−4ac>0. Rădăcinile sunt reale, nenule și de semne opuse, deci produsul are semnul −1. Rezultatul cerut este \\(-1\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 11,
+        "type_name": "Semnul rădăcinilor fără rezolvare",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_product_sign",
+        "f": "x**2 + 2*x - 3",
+        "option_values": [
+          "0",
+          "-1",
+          "-2",
+          "1"
+        ]
+      }
+    },
+    {
+      "text": "Dacă x₁,x₂ sunt rădăcinile lui \\(x^{2} - 6 x + 8 = 0\\), determinați polinomul monic cu rădăcinile 1/x₁ și 1/x₂.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul P este nenul. Noile rădăcini au suma S/P și produsul 1/P, deci polinomul monic este x²−(S/P)x+1/P. Rezultatul cerut este \\(x^{2} - \\frac{3 x}{4} + \\frac{1}{8}\\).",
+      "options": [
+        {
+          "text": "\\(x^{2} - \\frac{3 x}{4} + \\frac{9}{8}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - \\frac{3 x}{4} - \\frac{7}{8}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - \\frac{3 x}{4} + \\frac{1}{8}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(x^{2} - \\frac{3 x}{4} + \\frac{17}{8}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 12,
+        "type_name": "Ecuații cu rădăcini transformate",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "transformed_roots",
+        "f": "x**2 - 6*x + 8",
+        "transform": "1/t",
+        "option_values": [
+          "x**2 - 3*x/4 + 9/8",
+          "x**2 - 3*x/4 - 7/8",
+          "x**2 - 3*x/4 + 1/8",
+          "x**2 - 3*x/4 + 17/8"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m ecuația x²−6x+m=0 are rădăcini reale x₁<3<x₂?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O parabolă cu coeficient principal pozitiv are un prag strict între rădăcini exact când valoarea în prag este negativă. Aici f(prag)=m−prag², deci m<prag²; această condiție asigură și Δ>0. Rezultatul cerut este \\(\\left(-\\infty, 9\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(-\\infty, 9\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 13,
+        "type_name": "Poziționare față de un prag",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "between_parameter",
+        "sum": 6,
+        "threshold": 3,
+        "option_values": [
+          "Reals",
+          "{0}",
+          "EmptySet",
+          "Interval.open(-oo, 9)"
+        ]
+      }
+    },
+    {
+      "text": "Câte rădăcini distincte ale ecuației \\(x^{2} - 6 x + 8 = 0\\) aparțin intervalului \\(\\left(2, 5\\right)\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Factorizarea dă rădăcinile (2) și (2)+2. Capătul (2) este exclus, iar (2)+2 este interior; rezultă exact o rădăcină admisă. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 14,
+        "type_name": "Cardinalul rădăcinilor într-un interval",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "partial_case",
+        "adaptation": "Cardinal într-un interval pentru un caz explicit, cu capete validate."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x**2 - 6*x + 8",
+        "domain": "Interval.open(2, 5)",
+        "option_values": [
+          "1",
+          "2",
+          "0",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației \\(x^{2} - 6 x + 8 = 0\\) sunt x₁,x₂. Calculați S4=x₁^4+x₂^4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare rădăcină verifică xᵢ²=Sxᵢ−P. Înmulțind și însumând obținem Sₙ₊₂=S·Sₙ₊₁−P·Sₙ, cu S₀=2, S₁=S. Recurența produce exact valoarea cerută. Rezultatul cerut este \\(272\\).",
+      "options": [
+        {
+          "text": "\\(273\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(272\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(271\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(274\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 15,
+        "type_name": "Recurența sumelor de puteri",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_expression",
+        "f": "x**2 - 6*x + 8",
+        "expression": "t**4",
+        "combine": "sum",
+        "option_values": [
+          "273",
+          "272",
+          "271",
+          "274"
+        ]
+      }
+    },
+    {
+      "text": "Numărul 3 este rădăcină a ecuației x²−8x+m=0. Determinați perechea (m; cealaltă rădăcină).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuirea rădăcinii cunoscute determină m. Prin Viète, suma rădăcinilor este coeficientul opus al lui x, deci cealaltă rădăcină se obține prin scădere. Rezultatul cerut este \\(\\left( 15, \\  5\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 16, \\  5\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 14, \\  5\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 15, \\  5\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 17, \\  5\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 1,
+        "type_name": "Rădăcină cunoscută și ecuație parametrizată",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "known_root",
+        "sum": 8,
+        "known": 3,
+        "option_values": [
+          "(16, 5)",
+          "(14, 5)",
+          "(15, 5)",
+          "(17, 5)"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației \\(x^{2} - 8 x + 15 = 0\\) sunt x₁,x₂. Calculați x₁²+x₂² fără a folosi formula radicalilor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din Viète avem S=−b/a și P=c/a. Identitatea x₁²+x₂²=S²−2P dă rezultatul, după verificarea Δ≥0. Rezultatul cerut este \\(34\\).",
+      "options": [
+        {
+          "text": "\\(35\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(33\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(36\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(34\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 2,
+        "type_name": "Expresii simetrice ale rădăcinilor",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_expression",
+        "f": "x**2 - 8*x + 15",
+        "expression": "t**2",
+        "combine": "sum",
+        "option_values": [
+          "35",
+          "33",
+          "36",
+          "34"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației \\(x^{2} - 8 x + 15 = 0\\) sunt x₁,x₂. Calculați 1/(x₁+1)+1/(x₂+1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorii sunt nenuli: rădăcinile sunt pozitive. După aducerea la numitor comun, expresia este (S+2)/(P+S+1), cu S și P date de Viète. Rezultatul cerut este \\(\\frac{5}{12}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{5}{12}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{17}{12}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{7}{12}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{29}{12}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 3,
+        "type_name": "Fracții simetrice ale rădăcinilor",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_expression",
+        "f": "x**2 - 8*x + 15",
+        "expression": "1/(t+1)",
+        "combine": "sum",
+        "option_values": [
+          "5/12",
+          "17/12",
+          "-7/12",
+          "29/12"
+        ]
+      }
+    },
+    {
+      "text": "Ecuația x²−8x+m=0 are rădăcini reale x₁,x₂ cu x₁²+x₂²=34. Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Viète și S²−2P dau S²−2m egal cu valoarea prescrisă. Soluția trebuie validată prin Δ=S²−4m≥0; aici Δ=4>0. Rezultatul cerut este \\(15\\).",
+      "options": [
+        {
+          "text": "\\(16\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(15\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(14\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(17\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 4,
+        "type_name": "Parametru din relația dintre rădăcini",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "viete_square_parameter",
+        "sum": 8,
+        "squares": 34,
+        "option_values": [
+          "16",
+          "15",
+          "14",
+          "17"
+        ]
+      }
+    },
+    {
+      "text": "Pentru valorile lui m cu rădăcini reale, S și P sunt suma și produsul rădăcinilor ecuației \\(- m x + 3 m + x^{2} = 0\\). Determinați expresia P în funcție de S, fără m. În opțiuni, t reprezintă suma S.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Viète dă S=m și P=(3)m. Eliminăm m, obținând P=(3)S. În opțiuni variabila t reprezintă suma S. Rezultatul cerut este \\(3 t\\).",
+      "options": [
+        {
+          "text": "\\(3 t + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3 t - 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3 t\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3 t + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 5,
+        "type_name": "Eliminarea parametrului dintre rădăcini",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Relația independentă este redată ca polinom în t, unde t=S."
+      },
+      "verification": {
+        "task": "viete_eliminate",
+        "f": "-m*x + 3*m + x**2",
+        "parameter": "m",
+        "option_values": [
+          "3*t + 1",
+          "3*t - 1",
+          "3*t",
+          "3*t + 2"
+        ]
+      }
+    },
+    {
+      "text": "Ecuația monică x²+bx+c=0 are rădăcinile 3 și 5. Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru o ecuație monică, b este opusul sumei rădăcinilor și c este produsul lor. Nu există ambiguitate de factor de scalare. Rezultatul cerut este \\(\\left( -8, \\  15\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -7, \\  15\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -9, \\  15\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -6, \\  15\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -8, \\  15\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 6,
+        "type_name": "Relații între coeficienți și rădăcini",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "coeff_from_roots",
+        "roots": [
+          3,
+          5
+        ],
+        "option_values": [
+          "(-7, 15)",
+          "(-9, 15)",
+          "(-6, 15)",
+          "(-8, 15)"
+        ]
+      }
+    },
+    {
+      "text": "Determinați rădăcina reală comună ecuațiilor \\(x^{2} - 8 x + 15 = 0\\) și \\(x^{2} + 3 x - 18 = 0\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem ecuațiile pentru a obține o ecuație liniară, apoi înlocuim candidatul în ambele ecuații. Celălalt factor al fiecărei ecuații are rădăcini diferite. Rezultatul cerut este \\(3\\).",
+      "options": [
+        {
+          "text": "\\(3\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 7,
+        "type_name": "Două ecuații cu rădăcină comună",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_root",
+        "first": "x**2 - 8*x + 15",
+        "second": "x**2 + 3*x - 18",
+        "option_values": [
+          "3",
+          "4",
+          "2",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "Construiți polinomul monic cu rădăcinile 3−√2 și 3+√2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma rădăcinilor conjugate este 2(3), iar produsul este (3)²−2. Polinomul monic este x²−Sx+P, cu coeficientul principal 1. Rezultatul cerut este \\(x^{2} - 6 x + 7\\).",
+      "options": [
+        {
+          "text": "\\(x^{2} - 6 x + 8\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - 6 x + 7\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(x^{2} - 6 x + 6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - 6 x + 9\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 8,
+        "type_name": "Ecuația din rădăcini date",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "polynomial_roots",
+        "roots": [
+          "3 - sqrt(2)",
+          "sqrt(2) + 3"
+        ],
+        "option_values": [
+          "x**2 - 6*x + 8",
+          "x**2 - 6*x + 7",
+          "x**2 - 6*x + 6",
+          "x**2 - 6*x + 9"
+        ]
+      }
+    },
+    {
+      "text": "Pentru \\(x^{2} \\left(m - 3\\right) + x + 1 = 0\\), câte rădăcini reale distincte există la m=3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La parametrul dat coeficientul lui x² se anulează. Ecuația devine x+1=0, deci are o soluție reală, însă nu mai este de gradul al doilea. Formula discriminantului nu poate înlocui această separare de caz. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 9,
+        "type_name": "Natura și semnul rădăcinilor",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "partial_case",
+        "adaptation": "Discuția după parametru este adaptată în cazul degenerat explicit."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x + 1",
+        "domain": "Reals",
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației x²−8x+m=0 sunt termenii extremi ai progresiei aritmetice cu termenul central 4 și rația 1. Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cei trei termeni sunt (3), (3)+1, (3)+2, deci rădăcinile sunt (3) și (3)+2. Viète fixează produsul m. Aceasta este o adaptare la progresia rădăcinilor, fără condiția suplimentară asupra tuturor coeficienților. Rezultatul cerut este \\(15\\).",
+      "options": [
+        {
+          "text": "\\(16\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(14\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(17\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(15\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 10,
+        "type_name": "Coeficienți și rădăcini în PA",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "partial_case",
+        "adaptation": "Caz simplificat de rădăcini în PA; nu reproduce condiția a,x₁,b,x₂,c în PA."
+      },
+      "verification": {
+        "task": "known_root",
+        "sum": 8,
+        "known": 3,
+        "output": "product",
+        "option_values": [
+          "16",
+          "14",
+          "17",
+          "15"
+        ]
+      }
+    },
+    {
+      "text": "Fără a rezolva \\(x^{2} + 3 x - 4 = 0\\), care este semnul produsului x₁x₂? Răspundeți −1,0 sau 1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul c/a este strict negativ, iar Δ=b²−4ac>0. Rădăcinile sunt reale, nenule și de semne opuse, deci produsul are semnul −1. Rezultatul cerut este \\(-1\\).",
+      "options": [
+        {
+          "text": "\\(-1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 11,
+        "type_name": "Semnul rădăcinilor fără rezolvare",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_product_sign",
+        "f": "x**2 + 3*x - 4",
+        "option_values": [
+          "-1",
+          "0",
+          "-2",
+          "1"
+        ]
+      }
+    },
+    {
+      "text": "Dacă x₁,x₂ sunt rădăcinile lui \\(x^{2} - 8 x + 15 = 0\\), determinați polinomul monic cu rădăcinile 1/x₁ și 1/x₂.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul P este nenul. Noile rădăcini au suma S/P și produsul 1/P, deci polinomul monic este x²−(S/P)x+1/P. Rezultatul cerut este \\(x^{2} - \\frac{8 x}{15} + \\frac{1}{15}\\).",
+      "options": [
+        {
+          "text": "\\(x^{2} - \\frac{8 x}{15} + \\frac{16}{15}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - \\frac{8 x}{15} + \\frac{1}{15}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(x^{2} - \\frac{8 x}{15} - \\frac{14}{15}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - \\frac{8 x}{15} + \\frac{31}{15}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 12,
+        "type_name": "Ecuații cu rădăcini transformate",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "transformed_roots",
+        "f": "x**2 - 8*x + 15",
+        "transform": "1/t",
+        "option_values": [
+          "x**2 - 8*x/15 + 16/15",
+          "x**2 - 8*x/15 + 1/15",
+          "x**2 - 8*x/15 - 14/15",
+          "x**2 - 8*x/15 + 31/15"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m ecuația x²−8x+m=0 are rădăcini reale x₁<4<x₂?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O parabolă cu coeficient principal pozitiv are un prag strict între rădăcini exact când valoarea în prag este negativă. Aici f(prag)=m−prag², deci m<prag²; această condiție asigură și Δ>0. Rezultatul cerut este \\(\\left(-\\infty, 16\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(-\\infty, 16\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 13,
+        "type_name": "Poziționare față de un prag",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "between_parameter",
+        "sum": 8,
+        "threshold": 4,
+        "option_values": [
+          "Reals",
+          "{0}",
+          "Interval.open(-oo, 16)",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Câte rădăcini distincte ale ecuației \\(x^{2} - 8 x + 15 = 0\\) aparțin intervalului \\(\\left(3, 6\\right)\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Factorizarea dă rădăcinile (3) și (3)+2. Capătul (3) este exclus, iar (3)+2 este interior; rezultă exact o rădăcină admisă. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 14,
+        "type_name": "Cardinalul rădăcinilor într-un interval",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "partial_case",
+        "adaptation": "Cardinal într-un interval pentru un caz explicit, cu capete validate."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x**2 - 8*x + 15",
+        "domain": "Interval.open(3, 6)",
+        "option_values": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației \\(x^{2} - 8 x + 15 = 0\\) sunt x₁,x₂. Calculați S5=x₁^5+x₂^5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare rădăcină verifică xᵢ²=Sxᵢ−P. Înmulțind și însumând obținem Sₙ₊₂=S·Sₙ₊₁−P·Sₙ, cu S₀=2, S₁=S. Recurența produce exact valoarea cerută. Rezultatul cerut este \\(3368\\).",
+      "options": [
+        {
+          "text": "\\(3368\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3369\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3367\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3370\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 15,
+        "type_name": "Recurența sumelor de puteri",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_expression",
+        "f": "x**2 - 8*x + 15",
+        "expression": "t**5",
+        "combine": "sum",
+        "option_values": [
+          "3368",
+          "3369",
+          "3367",
+          "3370"
+        ]
+      }
+    },
+    {
+      "text": "Numărul 4 este rădăcină a ecuației x²−10x+m=0. Determinați perechea (m; cealaltă rădăcină).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuirea rădăcinii cunoscute determină m. Prin Viète, suma rădăcinilor este coeficientul opus al lui x, deci cealaltă rădăcină se obține prin scădere. Rezultatul cerut este \\(\\left( 24, \\  6\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 25, \\  6\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 24, \\  6\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 23, \\  6\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 26, \\  6\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 1,
+        "type_name": "Rădăcină cunoscută și ecuație parametrizată",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "known_root",
+        "sum": 10,
+        "known": 4,
+        "option_values": [
+          "(25, 6)",
+          "(24, 6)",
+          "(23, 6)",
+          "(26, 6)"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației \\(x^{2} - 10 x + 24 = 0\\) sunt x₁,x₂. Calculați x₁²+x₂² fără a folosi formula radicalilor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din Viète avem S=−b/a și P=c/a. Identitatea x₁²+x₂²=S²−2P dă rezultatul, după verificarea Δ≥0. Rezultatul cerut este \\(52\\).",
+      "options": [
+        {
+          "text": "\\(53\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(51\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(52\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(54\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 2,
+        "type_name": "Expresii simetrice ale rădăcinilor",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_expression",
+        "f": "x**2 - 10*x + 24",
+        "expression": "t**2",
+        "combine": "sum",
+        "option_values": [
+          "53",
+          "51",
+          "52",
+          "54"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației \\(x^{2} - 10 x + 24 = 0\\) sunt x₁,x₂. Calculați 1/(x₁+1)+1/(x₂+1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorii sunt nenuli: rădăcinile sunt pozitive. După aducerea la numitor comun, expresia este (S+2)/(P+S+1), cu S și P date de Viète. Rezultatul cerut este \\(\\frac{12}{35}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{47}{35}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{23}{35}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{82}{35}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{12}{35}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 3,
+        "type_name": "Fracții simetrice ale rădăcinilor",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_expression",
+        "f": "x**2 - 10*x + 24",
+        "expression": "1/(t+1)",
+        "combine": "sum",
+        "option_values": [
+          "47/35",
+          "-23/35",
+          "82/35",
+          "12/35"
+        ]
+      }
+    },
+    {
+      "text": "Ecuația x²−10x+m=0 are rădăcini reale x₁,x₂ cu x₁²+x₂²=52. Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Viète și S²−2P dau S²−2m egal cu valoarea prescrisă. Soluția trebuie validată prin Δ=S²−4m≥0; aici Δ=4>0. Rezultatul cerut este \\(24\\).",
+      "options": [
+        {
+          "text": "\\(24\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(25\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(23\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(26\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 4,
+        "type_name": "Parametru din relația dintre rădăcini",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "viete_square_parameter",
+        "sum": 10,
+        "squares": 52,
+        "option_values": [
+          "24",
+          "25",
+          "23",
+          "26"
+        ]
+      }
+    },
+    {
+      "text": "Pentru valorile lui m cu rădăcini reale, S și P sunt suma și produsul rădăcinilor ecuației \\(- m x + 4 m + x^{2} = 0\\). Determinați expresia P în funcție de S, fără m. În opțiuni, t reprezintă suma S.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Viète dă S=m și P=(4)m. Eliminăm m, obținând P=(4)S. În opțiuni variabila t reprezintă suma S. Rezultatul cerut este \\(4 t\\).",
+      "options": [
+        {
+          "text": "\\(4 t + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 t\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4 t - 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 t + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 5,
+        "type_name": "Eliminarea parametrului dintre rădăcini",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Relația independentă este redată ca polinom în t, unde t=S."
+      },
+      "verification": {
+        "task": "viete_eliminate",
+        "f": "-m*x + 4*m + x**2",
+        "parameter": "m",
+        "option_values": [
+          "4*t + 1",
+          "4*t",
+          "4*t - 1",
+          "4*t + 2"
+        ]
+      }
+    },
+    {
+      "text": "Ecuația monică x²+bx+c=0 are rădăcinile 4 și 6. Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru o ecuație monică, b este opusul sumei rădăcinilor și c este produsul lor. Nu există ambiguitate de factor de scalare. Rezultatul cerut este \\(\\left( -10, \\  24\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -9, \\  24\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -11, \\  24\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -10, \\  24\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -8, \\  24\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 6,
+        "type_name": "Relații între coeficienți și rădăcini",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "coeff_from_roots",
+        "roots": [
+          4,
+          6
+        ],
+        "option_values": [
+          "(-9, 24)",
+          "(-11, 24)",
+          "(-10, 24)",
+          "(-8, 24)"
+        ]
+      }
+    },
+    {
+      "text": "Determinați rădăcina reală comună ecuațiilor \\(x^{2} - 10 x + 24 = 0\\) și \\(x^{2} + 3 x - 28 = 0\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem ecuațiile pentru a obține o ecuație liniară, apoi înlocuim candidatul în ambele ecuații. Celălalt factor al fiecărei ecuații are rădăcini diferite. Rezultatul cerut este \\(4\\).",
+      "options": [
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 7,
+        "type_name": "Două ecuații cu rădăcină comună",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_root",
+        "first": "x**2 - 10*x + 24",
+        "second": "x**2 + 3*x - 28",
+        "option_values": [
+          "5",
+          "3",
+          "6",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "Construiți polinomul monic cu rădăcinile 4−√2 și 4+√2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma rădăcinilor conjugate este 2(4), iar produsul este (4)²−2. Polinomul monic este x²−Sx+P, cu coeficientul principal 1. Rezultatul cerut este \\(x^{2} - 8 x + 14\\).",
+      "options": [
+        {
+          "text": "\\(x^{2} - 8 x + 14\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(x^{2} - 8 x + 15\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - 8 x + 13\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - 8 x + 16\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 8,
+        "type_name": "Ecuația din rădăcini date",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "polynomial_roots",
+        "roots": [
+          "4 - sqrt(2)",
+          "sqrt(2) + 4"
+        ],
+        "option_values": [
+          "x**2 - 8*x + 14",
+          "x**2 - 8*x + 15",
+          "x**2 - 8*x + 13",
+          "x**2 - 8*x + 16"
+        ]
+      }
+    },
+    {
+      "text": "Pentru \\(x^{2} \\left(m - 4\\right) + x + 1 = 0\\), câte rădăcini reale distincte există la m=4?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La parametrul dat coeficientul lui x² se anulează. Ecuația devine x+1=0, deci are o soluție reală, însă nu mai este de gradul al doilea. Formula discriminantului nu poate înlocui această separare de caz. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 9,
+        "type_name": "Natura și semnul rădăcinilor",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "partial_case",
+        "adaptation": "Discuția după parametru este adaptată în cazul degenerat explicit."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x + 1",
+        "domain": "Reals",
+        "option_values": [
+          "2",
+          "1",
+          "0",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației x²−10x+m=0 sunt termenii extremi ai progresiei aritmetice cu termenul central 5 și rația 1. Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cei trei termeni sunt (4), (4)+1, (4)+2, deci rădăcinile sunt (4) și (4)+2. Viète fixează produsul m. Aceasta este o adaptare la progresia rădăcinilor, fără condiția suplimentară asupra tuturor coeficienților. Rezultatul cerut este \\(24\\).",
+      "options": [
+        {
+          "text": "\\(25\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(23\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(24\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(26\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 10,
+        "type_name": "Coeficienți și rădăcini în PA",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "partial_case",
+        "adaptation": "Caz simplificat de rădăcini în PA; nu reproduce condiția a,x₁,b,x₂,c în PA."
+      },
+      "verification": {
+        "task": "known_root",
+        "sum": 10,
+        "known": 4,
+        "output": "product",
+        "option_values": [
+          "25",
+          "23",
+          "24",
+          "26"
+        ]
+      }
+    },
+    {
+      "text": "Fără a rezolva \\(x^{2} + 4 x - 5 = 0\\), care este semnul produsului x₁x₂? Răspundeți −1,0 sau 1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul c/a este strict negativ, iar Δ=b²−4ac>0. Rădăcinile sunt reale, nenule și de semne opuse, deci produsul are semnul −1. Rezultatul cerut este \\(-1\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 11,
+        "type_name": "Semnul rădăcinilor fără rezolvare",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_product_sign",
+        "f": "x**2 + 4*x - 5",
+        "option_values": [
+          "0",
+          "-2",
+          "1",
+          "-1"
+        ]
+      }
+    },
+    {
+      "text": "Dacă x₁,x₂ sunt rădăcinile lui \\(x^{2} - 10 x + 24 = 0\\), determinați polinomul monic cu rădăcinile 1/x₁ și 1/x₂.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul P este nenul. Noile rădăcini au suma S/P și produsul 1/P, deci polinomul monic este x²−(S/P)x+1/P. Rezultatul cerut este \\(x^{2} - \\frac{5 x}{12} + \\frac{1}{24}\\).",
+      "options": [
+        {
+          "text": "\\(x^{2} - \\frac{5 x}{12} + \\frac{1}{24}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(x^{2} - \\frac{5 x}{12} + \\frac{25}{24}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - \\frac{5 x}{12} - \\frac{23}{24}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - \\frac{5 x}{12} + \\frac{49}{24}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 12,
+        "type_name": "Ecuații cu rădăcini transformate",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "transformed_roots",
+        "f": "x**2 - 10*x + 24",
+        "transform": "1/t",
+        "option_values": [
+          "x**2 - 5*x/12 + 1/24",
+          "x**2 - 5*x/12 + 25/24",
+          "x**2 - 5*x/12 - 23/24",
+          "x**2 - 5*x/12 + 49/24"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m ecuația x²−10x+m=0 are rădăcini reale x₁<5<x₂?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O parabolă cu coeficient principal pozitiv are un prag strict între rădăcini exact când valoarea în prag este negativă. Aici f(prag)=m−prag², deci m<prag²; această condiție asigură și Δ>0. Rezultatul cerut este \\(\\left(-\\infty, 25\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(-\\infty, 25\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 13,
+        "type_name": "Poziționare față de un prag",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "between_parameter",
+        "sum": 10,
+        "threshold": 5,
+        "option_values": [
+          "Reals",
+          "Interval.open(-oo, 25)",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Câte rădăcini distincte ale ecuației \\(x^{2} - 10 x + 24 = 0\\) aparțin intervalului \\(\\left(4, 7\\right)\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Factorizarea dă rădăcinile (4) și (4)+2. Capătul (4) este exclus, iar (4)+2 este interior; rezultă exact o rădăcină admisă. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 14,
+        "type_name": "Cardinalul rădăcinilor într-un interval",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "partial_case",
+        "adaptation": "Cardinal într-un interval pentru un caz explicit, cu capete validate."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x**2 - 10*x + 24",
+        "domain": "Interval.open(4, 7)",
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației \\(x^{2} - 10 x + 24 = 0\\) sunt x₁,x₂. Calculați S6=x₁^6+x₂^6.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare rădăcină verifică xᵢ²=Sxᵢ−P. Înmulțind și însumând obținem Sₙ₊₂=S·Sₙ₊₁−P·Sₙ, cu S₀=2, S₁=S. Recurența produce exact valoarea cerută. Rezultatul cerut este \\(50752\\).",
+      "options": [
+        {
+          "text": "\\(50753\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(50751\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(50754\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(50752\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 15,
+        "type_name": "Recurența sumelor de puteri",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_expression",
+        "f": "x**2 - 10*x + 24",
+        "expression": "t**6",
+        "combine": "sum",
+        "option_values": [
+          "50753",
+          "50751",
+          "50754",
+          "50752"
+        ]
+      }
+    },
+    {
+      "text": "Numărul 5 este rădăcină a ecuației x²−12x+m=0. Determinați perechea (m; cealaltă rădăcină).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuirea rădăcinii cunoscute determină m. Prin Viète, suma rădăcinilor este coeficientul opus al lui x, deci cealaltă rădăcină se obține prin scădere. Rezultatul cerut este \\(\\left( 35, \\  7\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 35, \\  7\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 36, \\  7\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 34, \\  7\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 37, \\  7\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 1,
+        "type_name": "Rădăcină cunoscută și ecuație parametrizată",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "known_root",
+        "sum": 12,
+        "known": 5,
+        "option_values": [
+          "(35, 7)",
+          "(36, 7)",
+          "(34, 7)",
+          "(37, 7)"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației \\(x^{2} - 12 x + 35 = 0\\) sunt x₁,x₂. Calculați x₁²+x₂² fără a folosi formula radicalilor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din Viète avem S=−b/a și P=c/a. Identitatea x₁²+x₂²=S²−2P dă rezultatul, după verificarea Δ≥0. Rezultatul cerut este \\(74\\).",
+      "options": [
+        {
+          "text": "\\(75\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(74\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(73\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(76\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 2,
+        "type_name": "Expresii simetrice ale rădăcinilor",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_expression",
+        "f": "x**2 - 12*x + 35",
+        "expression": "t**2",
+        "combine": "sum",
+        "option_values": [
+          "75",
+          "74",
+          "73",
+          "76"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației \\(x^{2} - 12 x + 35 = 0\\) sunt x₁,x₂. Calculați 1/(x₁+1)+1/(x₂+1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorii sunt nenuli: rădăcinile sunt pozitive. După aducerea la numitor comun, expresia este (S+2)/(P+S+1), cu S și P date de Viète. Rezultatul cerut este \\(\\frac{7}{24}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{31}{24}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{17}{24}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{7}{24}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{55}{24}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 3,
+        "type_name": "Fracții simetrice ale rădăcinilor",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_expression",
+        "f": "x**2 - 12*x + 35",
+        "expression": "1/(t+1)",
+        "combine": "sum",
+        "option_values": [
+          "31/24",
+          "-17/24",
+          "7/24",
+          "55/24"
+        ]
+      }
+    },
+    {
+      "text": "Ecuația x²−12x+m=0 are rădăcini reale x₁,x₂ cu x₁²+x₂²=74. Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Viète și S²−2P dau S²−2m egal cu valoarea prescrisă. Soluția trebuie validată prin Δ=S²−4m≥0; aici Δ=4>0. Rezultatul cerut este \\(35\\).",
+      "options": [
+        {
+          "text": "\\(36\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(34\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(37\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(35\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 4,
+        "type_name": "Parametru din relația dintre rădăcini",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "viete_square_parameter",
+        "sum": 12,
+        "squares": 74,
+        "option_values": [
+          "36",
+          "34",
+          "37",
+          "35"
+        ]
+      }
+    },
+    {
+      "text": "Pentru valorile lui m cu rădăcini reale, S și P sunt suma și produsul rădăcinilor ecuației \\(- m x + 5 m + x^{2} = 0\\). Determinați expresia P în funcție de S, fără m. În opțiuni, t reprezintă suma S.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Viète dă S=m și P=(5)m. Eliminăm m, obținând P=(5)S. În opțiuni variabila t reprezintă suma S. Rezultatul cerut este \\(5 t\\).",
+      "options": [
+        {
+          "text": "\\(5 t\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(5 t + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5 t - 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5 t + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 5,
+        "type_name": "Eliminarea parametrului dintre rădăcini",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Relația independentă este redată ca polinom în t, unde t=S."
+      },
+      "verification": {
+        "task": "viete_eliminate",
+        "f": "-m*x + 5*m + x**2",
+        "parameter": "m",
+        "option_values": [
+          "5*t",
+          "5*t + 1",
+          "5*t - 1",
+          "5*t + 2"
+        ]
+      }
+    },
+    {
+      "text": "Ecuația monică x²+bx+c=0 are rădăcinile 5 și 7. Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru o ecuație monică, b este opusul sumei rădăcinilor și c este produsul lor. Nu există ambiguitate de factor de scalare. Rezultatul cerut este \\(\\left( -12, \\  35\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -11, \\  35\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -12, \\  35\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -13, \\  35\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -10, \\  35\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 6,
+        "type_name": "Relații între coeficienți și rădăcini",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "coeff_from_roots",
+        "roots": [
+          5,
+          7
+        ],
+        "option_values": [
+          "(-11, 35)",
+          "(-12, 35)",
+          "(-13, 35)",
+          "(-10, 35)"
+        ]
+      }
+    },
+    {
+      "text": "Determinați rădăcina reală comună ecuațiilor \\(x^{2} - 12 x + 35 = 0\\) și \\(x^{2} + 3 x - 40 = 0\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem ecuațiile pentru a obține o ecuație liniară, apoi înlocuim candidatul în ambele ecuații. Celălalt factor al fiecărei ecuații are rădăcini diferite. Rezultatul cerut este \\(5\\).",
+      "options": [
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(7\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 7,
+        "type_name": "Două ecuații cu rădăcină comună",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_root",
+        "first": "x**2 - 12*x + 35",
+        "second": "x**2 + 3*x - 40",
+        "option_values": [
+          "6",
+          "4",
+          "5",
+          "7"
+        ]
+      }
+    },
+    {
+      "text": "Construiți polinomul monic cu rădăcinile 5−√2 și 5+√2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma rădăcinilor conjugate este 2(5), iar produsul este (5)²−2. Polinomul monic este x²−Sx+P, cu coeficientul principal 1. Rezultatul cerut este \\(x^{2} - 10 x + 23\\).",
+      "options": [
+        {
+          "text": "\\(x^{2} - 10 x + 24\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - 10 x + 22\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - 10 x + 25\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - 10 x + 23\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 8,
+        "type_name": "Ecuația din rădăcini date",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "polynomial_roots",
+        "roots": [
+          "5 - sqrt(2)",
+          "sqrt(2) + 5"
+        ],
+        "option_values": [
+          "x**2 - 10*x + 24",
+          "x**2 - 10*x + 22",
+          "x**2 - 10*x + 25",
+          "x**2 - 10*x + 23"
+        ]
+      }
+    },
+    {
+      "text": "Pentru \\(x^{2} \\left(m - 5\\right) + x + 1 = 0\\), câte rădăcini reale distincte există la m=5?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La parametrul dat coeficientul lui x² se anulează. Ecuația devine x+1=0, deci are o soluție reală, însă nu mai este de gradul al doilea. Formula discriminantului nu poate înlocui această separare de caz. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 9,
+        "type_name": "Natura și semnul rădăcinilor",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "partial_case",
+        "adaptation": "Discuția după parametru este adaptată în cazul degenerat explicit."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x + 1",
+        "domain": "Reals",
+        "option_values": [
+          "1",
+          "2",
+          "0",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației x²−12x+m=0 sunt termenii extremi ai progresiei aritmetice cu termenul central 6 și rația 1. Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cei trei termeni sunt (5), (5)+1, (5)+2, deci rădăcinile sunt (5) și (5)+2. Viète fixează produsul m. Aceasta este o adaptare la progresia rădăcinilor, fără condiția suplimentară asupra tuturor coeficienților. Rezultatul cerut este \\(35\\).",
+      "options": [
+        {
+          "text": "\\(36\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(35\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(34\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(37\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 10,
+        "type_name": "Coeficienți și rădăcini în PA",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "partial_case",
+        "adaptation": "Caz simplificat de rădăcini în PA; nu reproduce condiția a,x₁,b,x₂,c în PA."
+      },
+      "verification": {
+        "task": "known_root",
+        "sum": 12,
+        "known": 5,
+        "output": "product",
+        "option_values": [
+          "36",
+          "35",
+          "34",
+          "37"
+        ]
+      }
+    },
+    {
+      "text": "Fără a rezolva \\(x^{2} + 5 x - 6 = 0\\), care este semnul produsului x₁x₂? Răspundeți −1,0 sau 1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul c/a este strict negativ, iar Δ=b²−4ac>0. Rădăcinile sunt reale, nenule și de semne opuse, deci produsul are semnul −1. Rezultatul cerut este \\(-1\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 11,
+        "type_name": "Semnul rădăcinilor fără rezolvare",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_product_sign",
+        "f": "x**2 + 5*x - 6",
+        "option_values": [
+          "0",
+          "-2",
+          "-1",
+          "1"
+        ]
+      }
+    },
+    {
+      "text": "Dacă x₁,x₂ sunt rădăcinile lui \\(x^{2} - 12 x + 35 = 0\\), determinați polinomul monic cu rădăcinile 1/x₁ și 1/x₂.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul P este nenul. Noile rădăcini au suma S/P și produsul 1/P, deci polinomul monic este x²−(S/P)x+1/P. Rezultatul cerut este \\(x^{2} - \\frac{12 x}{35} + \\frac{1}{35}\\).",
+      "options": [
+        {
+          "text": "\\(x^{2} - \\frac{12 x}{35} + \\frac{36}{35}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - \\frac{12 x}{35} - \\frac{34}{35}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - \\frac{12 x}{35} + \\frac{71}{35}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} - \\frac{12 x}{35} + \\frac{1}{35}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 12,
+        "type_name": "Ecuații cu rădăcini transformate",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "transformed_roots",
+        "f": "x**2 - 12*x + 35",
+        "transform": "1/t",
+        "option_values": [
+          "x**2 - 12*x/35 + 36/35",
+          "x**2 - 12*x/35 - 34/35",
+          "x**2 - 12*x/35 + 71/35",
+          "x**2 - 12*x/35 + 1/35"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m ecuația x²−12x+m=0 are rădăcini reale x₁<6<x₂?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O parabolă cu coeficient principal pozitiv are un prag strict între rădăcini exact când valoarea în prag este negativă. Aici f(prag)=m−prag², deci m<prag²; această condiție asigură și Δ>0. Rezultatul cerut este \\(\\left(-\\infty, 36\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left(-\\infty, 36\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 13,
+        "type_name": "Poziționare față de un prag",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "between_parameter",
+        "sum": 12,
+        "threshold": 6,
+        "option_values": [
+          "Interval.open(-oo, 36)",
+          "Reals",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Câte rădăcini distincte ale ecuației \\(x^{2} - 12 x + 35 = 0\\) aparțin intervalului \\(\\left(5, 8\\right)\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Factorizarea dă rădăcinile (5) și (5)+2. Capătul (5) este exclus, iar (5)+2 este interior; rezultă exact o rădăcină admisă. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 14,
+        "type_name": "Cardinalul rădăcinilor într-un interval",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "partial_case",
+        "adaptation": "Cardinal într-un interval pentru un caz explicit, cu capete validate."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x**2 - 12*x + 35",
+        "domain": "Interval.open(5, 8)",
+        "option_values": [
+          "2",
+          "1",
+          "0",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Rădăcinile ecuației \\(x^{2} - 12 x + 35 = 0\\) sunt x₁,x₂. Calculați S7=x₁^7+x₂^7.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare rădăcină verifică xᵢ²=Sxᵢ−P. Înmulțind și însumând obținem Sₙ₊₂=S·Sₙ₊₁−P·Sₙ, cu S₀=2, S₁=S. Recurența produce exact valoarea cerută. Rezultatul cerut este \\(901668\\).",
+      "options": [
+        {
+          "text": "\\(901669\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(901667\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(901668\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(901670\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 15,
+        "type_name": "Recurența sumelor de puteri",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "root_expression",
+        "f": "x**2 - 12*x + 35",
+        "expression": "t**7",
+        "combine": "sum",
+        "option_values": [
+          "901669",
+          "901667",
+          "901668",
+          "901670"
+        ]
+      }
+    }
+  ]
 }

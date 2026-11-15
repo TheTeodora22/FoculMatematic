@@ -1,6 +1,2567 @@
 {
   "title": "Șiruri de numere reale. Notația și termenul general",
   "description": "Clasa a 9-a · Funcții",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Fie aₙ=n(n+1), n≥1. Calculați a_3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim n=3: a_3=3·(3+1)=12.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 1,
+        "type_name": "Termeni din formulă explicită",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă xₙ₊₁=2xₙ+1, n≥1, și x₁=1, calculați x₄.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x₂=3, x₃=7, x₄=15. Aplicăm relația de trei ori.",
+      "options": [
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": true
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 2,
+        "type_name": "Termeni din recurență",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Al n-lea termen este numărul cu exact n cifre, toate egale cu 1, n≥1. Care este formula lui aₙ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ=1(1+10+⋯+10ⁿ⁻¹). Suma geometrică este (10ⁿ−1)/9. Descrierea prin cifre fixează regula pentru orice n.",
+      "options": [
+        {
+          "text": "\\(110^n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1(10^n+1)/9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1(10^n-1)/9\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1(10^{n-1}-1)/9\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 3,
+        "type_name": "Formula unui șir descris prin termeni",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru aₙ=n(n+1), n≥1, determinați rangul termenului egal cu 12.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația n²+1n−12=0 are rădăcinile 3 și -4. Numai 3 este indice natural pozitiv.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 4,
+        "type_name": "Apartenența la un șir",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₖ=(k+1)/(k+2), k≥1. Determinați \\(b_n=\\prod_{k=1}^n a_k\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este (2/3)·(3/4)·⋯·((n+1)/(n+2)). Se reduc factorii intermediari și rămâne 2/(n+2).",
+      "options": [
+        {
+          "text": "\\(2/(n+2)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1/(n+2)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((n+2)/2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2/(n+1)\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 5,
+        "type_name": "Șir produs cumulativ",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₖ=k²+1, k≥1. Calculați \\(\\sum_{k=1}^{3}(a_{k+1}-a_k)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₖ₊₁−aₖ=2k+1. Suma telescopică este a_4−a₁=(16+1)−(1+1)=15.",
+      "options": [
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": true
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 6,
+        "type_name": "Șirul diferențelor consecutive",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₁=1, aₙ₊₁=aₙ+2n, n≥1. Care este termenul general?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Însumăm aₖ₊₁−aₖ=2k pentru k=1,…,n−1: aₙ−1=2·n(n−1)/2=n(n−1). Formula este valabilă și la n=1.",
+      "options": [
+        {
+          "text": "\\(a_n=1+n(n+1)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=1+2n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=1+n(n-1)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(a_n=1+n^2\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 7,
+        "type_name": "Recurență aditivă cu indice",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₀=2, a₁=3, aₙ₊₂=3aₙ₊₁−2aₙ, n≥0. Care formulă este corectă pentru orice n≥0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La n=0 obținem 2, iar la n=1 obținem 3. Dacă formula este adevărată la n și n+1, recurența dă (3)(2ⁿ⁺¹+1)−2(2ⁿ+1)=2ⁿ⁺²+1. Inducția cu două baze demonstrează formula.",
+      "options": [
+        {
+          "text": "\\(a_n=2^n-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2^n+n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2\\cdot 2^n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2^n+1\\)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 8,
+        "type_name": "Recurență liniară de ordin doi",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₁=1, a₂=2, aₙ₊₂=aₙ+2, n≥1. Calculați a_7.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Indicii impari formează șirul a₂ᵣ₊₁=1+2r, deoarece fiecare salt de două ranguri adaugă 2. Pentru r=3, rezultatul este 7.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 9,
+        "type_name": "Recurență pe indici din două în două",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₁=1, (n+1)aₙ₊₁=naₙ pentru n≥1. Determinați aₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ₊₁/aₙ=n/(n+1). Înmulțind rapoartele de la 1 la n−1, obținem aₙ/a₁=1/n. Deci aₙ=1/n, inclusiv pentru n=1.",
+      "options": [
+        {
+          "text": "\\(a_n=1n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=1/n\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(a_n=1/(n+1)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=1(n+1)\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 10,
+        "type_name": "Recurență multiplicativă cu coeficient de rang",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Suma primilor n termeni este Sₙ=n²+1n, n≥1. Determinați aₙ pentru orice n≥1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru n≥2, aₙ=Sₙ−Sₙ₋₁=n²−(n−1)²+1=2n+0. La n=1, a₁=S₁=2, în acord cu formula.",
+      "options": [
+        {
+          "text": "\\(a_n=2n+1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=n+1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2n+0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(a_n=2n+2\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 11,
+        "type_name": "Recuperarea termenului din suma parțială",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie x₁=3, xₙ₊₁=1/xₙ, n≥1. Calculați x_5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Termenii sunt nenuli, iar xₙ₊₂=1/(1/xₙ)=xₙ. Toți termenii de rang impar sunt x₁=3; rangul 5 este impar.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 12,
+        "type_name": "Periodicitate recurentă",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f₀=0, f₁=1 și fₙ₊₂=fₙ₊₁+fₙ pentru n≥0. Calculați \\(\\sum_{k=1}^{3} f_k\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "fₖ=fₖ₊₂−fₖ₊₁. Suma se reduce la f_5−f₂=5−1=4.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 13,
+        "type_name": "Sume ale numerelor Fibonacci",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f₀=0, f₁=1 și fₙ₊₂=fₙ₊₁+fₙ pentru n≥0. Calculați \\(\\sum_{k=1}^{3} f_k^2\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Identitatea este Σfₖ²=fₙfₙ₊₁: la n=1 este 1=1·1; adăugarea lui fₙ₊₁² transformă fₙfₙ₊₁ în fₙ₊₁(fₙ+fₙ₊₁)=fₙ₊₁fₙ₊₂. Aici rezultă 2·3=6.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 14,
+        "type_name": "Pătrate și produse Fibonacci",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f₀=0, f₁=1 și fₙ₊₂=fₙ₊₁+fₙ pentru n≥0. Calculați \\(\\sum_{k=1}^{3}f_{2k-1}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f₂ₖ₋₁=f₂ₖ−f₂ₖ₋₂. Prin telescopare suma este f_6−f₀=8.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 15,
+        "type_name": "Subșiruri și identități Fibonacci",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Un șir pozitiv satisface \\(\\prod_{k=1}^n x_k=(n+1)/1\\) pentru orice n≥1. Determinați xₙ pentru n≥2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm produsul cu Pₙ. Pentru n≥2, xₙ=Pₙ/Pₙ₋₁=((n+1)/1)/((n+0)/1)=(n+1)/(n+0). Numitorul este pozitiv. Separat, x₁=(2)/1.",
+      "options": [
+        {
+          "text": "\\(x_n=(n+0)/(n+1)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x_n=1/1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x_n=(n+1)/1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x_n=(n+1)/(n+0)\\)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 16,
+        "type_name": "Șir determinat de identități de produse",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₙ=n(n+2), n≥1. Calculați a_4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim n=4: a_4=4·(4+2)=24.",
+      "options": [
+        {
+          "text": "24",
+          "is_correct": true
+        },
+        {
+          "text": "23",
+          "is_correct": false
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        },
+        {
+          "text": "26",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 1,
+        "type_name": "Termeni din formulă explicită",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă xₙ₊₁=3xₙ+2, n≥1, și x₁=1, calculați x₄.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x₂=5, x₃=17, x₄=53. Aplicăm relația de trei ori.",
+      "options": [
+        {
+          "text": "52",
+          "is_correct": false
+        },
+        {
+          "text": "53",
+          "is_correct": true
+        },
+        {
+          "text": "54",
+          "is_correct": false
+        },
+        {
+          "text": "55",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 2,
+        "type_name": "Termeni din recurență",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Al n-lea termen este numărul cu exact n cifre, toate egale cu 2, n≥1. Care este formula lui aₙ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ=2(1+10+⋯+10ⁿ⁻¹). Suma geometrică este (10ⁿ−1)/9. Descrierea prin cifre fixează regula pentru orice n.",
+      "options": [
+        {
+          "text": "\\(210^n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2(10^n+1)/9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2(10^n-1)/9\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2(10^{n-1}-1)/9\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 3,
+        "type_name": "Formula unui șir descris prin termeni",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru aₙ=n(n+2), n≥1, determinați rangul termenului egal cu 24.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația n²+2n−24=0 are rădăcinile 4 și -6. Numai 4 este indice natural pozitiv.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 4,
+        "type_name": "Apartenența la un șir",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₖ=(k+2)/(k+3), k≥1. Determinați \\(b_n=\\prod_{k=1}^n a_k\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este (3/4)·(4/5)·⋯·((n+2)/(n+3)). Se reduc factorii intermediari și rămâne 3/(n+3).",
+      "options": [
+        {
+          "text": "\\(3/(n+3)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1/(n+3)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((n+3)/3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3/(n+2)\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 5,
+        "type_name": "Șir produs cumulativ",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₖ=k²+2, k≥1. Calculați \\(\\sum_{k=1}^{4}(a_{k+1}-a_k)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₖ₊₁−aₖ=2k+1. Suma telescopică este a_5−a₁=(25+2)−(1+2)=24.",
+      "options": [
+        {
+          "text": "23",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": true
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        },
+        {
+          "text": "26",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 6,
+        "type_name": "Șirul diferențelor consecutive",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₁=2, aₙ₊₁=aₙ+2n, n≥1. Care este termenul general?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Însumăm aₖ₊₁−aₖ=2k pentru k=1,…,n−1: aₙ−2=2·n(n−1)/2=n(n−1). Formula este valabilă și la n=1.",
+      "options": [
+        {
+          "text": "\\(a_n=2+n(n+1)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2+2n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2+n(n-1)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(a_n=2+n^2\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 7,
+        "type_name": "Recurență aditivă cu indice",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₀=2, a₁=4, aₙ₊₂=4aₙ₊₁−3aₙ, n≥0. Care formulă este corectă pentru orice n≥0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La n=0 obținem 2, iar la n=1 obținem 4. Dacă formula este adevărată la n și n+1, recurența dă (4)(3ⁿ⁺¹+1)−3(3ⁿ+1)=3ⁿ⁺²+1. Inducția cu două baze demonstrează formula.",
+      "options": [
+        {
+          "text": "\\(a_n=3^n-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=3^n+n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2\\cdot 3^n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=3^n+1\\)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 8,
+        "type_name": "Recurență liniară de ordin doi",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₁=2, a₂=3, aₙ₊₂=aₙ+3, n≥1. Calculați a_9.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Indicii impari formează șirul a₂ᵣ₊₁=2+3r, deoarece fiecare salt de două ranguri adaugă 3. Pentru r=4, rezultatul este 14.",
+      "options": [
+        {
+          "text": "14",
+          "is_correct": true
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 9,
+        "type_name": "Recurență pe indici din două în două",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₁=2, (n+1)aₙ₊₁=naₙ pentru n≥1. Determinați aₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ₊₁/aₙ=n/(n+1). Înmulțind rapoartele de la 1 la n−1, obținem aₙ/a₁=1/n. Deci aₙ=2/n, inclusiv pentru n=1.",
+      "options": [
+        {
+          "text": "\\(a_n=2n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2/n\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(a_n=2/(n+1)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2(n+1)\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 10,
+        "type_name": "Recurență multiplicativă cu coeficient de rang",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Suma primilor n termeni este Sₙ=n²+2n, n≥1. Determinați aₙ pentru orice n≥1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru n≥2, aₙ=Sₙ−Sₙ₋₁=n²−(n−1)²+2=2n+1. La n=1, a₁=S₁=3, în acord cu formula.",
+      "options": [
+        {
+          "text": "\\(a_n=2n+2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=n+2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2n+1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(a_n=2n+3\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 11,
+        "type_name": "Recuperarea termenului din suma parțială",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie x₁=4, xₙ₊₁=1/xₙ, n≥1. Calculați x_7.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Termenii sunt nenuli, iar xₙ₊₂=1/(1/xₙ)=xₙ. Toți termenii de rang impar sunt x₁=4; rangul 7 este impar.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 12,
+        "type_name": "Periodicitate recurentă",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f₀=0, f₁=1 și fₙ₊₂=fₙ₊₁+fₙ pentru n≥0. Calculați \\(\\sum_{k=1}^{4} f_k\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "fₖ=fₖ₊₂−fₖ₊₁. Suma se reduce la f_6−f₂=8−1=7.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 13,
+        "type_name": "Sume ale numerelor Fibonacci",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f₀=0, f₁=1 și fₙ₊₂=fₙ₊₁+fₙ pentru n≥0. Calculați \\(\\sum_{k=1}^{4} f_k^2\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Identitatea este Σfₖ²=fₙfₙ₊₁: la n=1 este 1=1·1; adăugarea lui fₙ₊₁² transformă fₙfₙ₊₁ în fₙ₊₁(fₙ+fₙ₊₁)=fₙ₊₁fₙ₊₂. Aici rezultă 3·5=15.",
+      "options": [
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": true
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 14,
+        "type_name": "Pătrate și produse Fibonacci",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f₀=0, f₁=1 și fₙ₊₂=fₙ₊₁+fₙ pentru n≥0. Calculați \\(\\sum_{k=1}^{4}f_{2k-1}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f₂ₖ₋₁=f₂ₖ−f₂ₖ₋₂. Prin telescopare suma este f_8−f₀=21.",
+      "options": [
+        {
+          "text": "20",
+          "is_correct": false
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        },
+        {
+          "text": "21",
+          "is_correct": true
+        },
+        {
+          "text": "23",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 15,
+        "type_name": "Subșiruri și identități Fibonacci",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Un șir pozitiv satisface \\(\\prod_{k=1}^n x_k=(n+2)/2\\) pentru orice n≥1. Determinați xₙ pentru n≥2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm produsul cu Pₙ. Pentru n≥2, xₙ=Pₙ/Pₙ₋₁=((n+2)/2)/((n+1)/2)=(n+2)/(n+1). Numitorul este pozitiv. Separat, x₁=(3)/2.",
+      "options": [
+        {
+          "text": "\\(x_n=(n+1)/(n+2)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x_n=1/2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x_n=(n+2)/2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x_n=(n+2)/(n+1)\\)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 16,
+        "type_name": "Șir determinat de identități de produse",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₙ=n(n+3), n≥1. Calculați a_5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim n=5: a_5=5·(5+3)=40.",
+      "options": [
+        {
+          "text": "40",
+          "is_correct": true
+        },
+        {
+          "text": "39",
+          "is_correct": false
+        },
+        {
+          "text": "41",
+          "is_correct": false
+        },
+        {
+          "text": "42",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 1,
+        "type_name": "Termeni din formulă explicită",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă xₙ₊₁=4xₙ+3, n≥1, și x₁=1, calculați x₄.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x₂=7, x₃=31, x₄=127. Aplicăm relația de trei ori.",
+      "options": [
+        {
+          "text": "126",
+          "is_correct": false
+        },
+        {
+          "text": "127",
+          "is_correct": true
+        },
+        {
+          "text": "128",
+          "is_correct": false
+        },
+        {
+          "text": "129",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 2,
+        "type_name": "Termeni din recurență",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Al n-lea termen este numărul cu exact n cifre, toate egale cu 3, n≥1. Care este formula lui aₙ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ=3(1+10+⋯+10ⁿ⁻¹). Suma geometrică este (10ⁿ−1)/9. Descrierea prin cifre fixează regula pentru orice n.",
+      "options": [
+        {
+          "text": "\\(310^n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3(10^n+1)/9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3(10^n-1)/9\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3(10^{n-1}-1)/9\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 3,
+        "type_name": "Formula unui șir descris prin termeni",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru aₙ=n(n+3), n≥1, determinați rangul termenului egal cu 40.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația n²+3n−40=0 are rădăcinile 5 și -8. Numai 5 este indice natural pozitiv.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 4,
+        "type_name": "Apartenența la un șir",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₖ=(k+3)/(k+4), k≥1. Determinați \\(b_n=\\prod_{k=1}^n a_k\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este (4/5)·(5/6)·⋯·((n+3)/(n+4)). Se reduc factorii intermediari și rămâne 4/(n+4).",
+      "options": [
+        {
+          "text": "\\(4/(n+4)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1/(n+4)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((n+4)/4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4/(n+3)\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 5,
+        "type_name": "Șir produs cumulativ",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₖ=k²+3, k≥1. Calculați \\(\\sum_{k=1}^{5}(a_{k+1}-a_k)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₖ₊₁−aₖ=2k+1. Suma telescopică este a_6−a₁=(36+3)−(1+3)=35.",
+      "options": [
+        {
+          "text": "34",
+          "is_correct": false
+        },
+        {
+          "text": "35",
+          "is_correct": true
+        },
+        {
+          "text": "36",
+          "is_correct": false
+        },
+        {
+          "text": "37",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 6,
+        "type_name": "Șirul diferențelor consecutive",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₁=3, aₙ₊₁=aₙ+2n, n≥1. Care este termenul general?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Însumăm aₖ₊₁−aₖ=2k pentru k=1,…,n−1: aₙ−3=2·n(n−1)/2=n(n−1). Formula este valabilă și la n=1.",
+      "options": [
+        {
+          "text": "\\(a_n=3+n(n+1)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=3+2n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=3+n(n-1)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(a_n=3+n^2\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 7,
+        "type_name": "Recurență aditivă cu indice",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₀=2, a₁=5, aₙ₊₂=5aₙ₊₁−4aₙ, n≥0. Care formulă este corectă pentru orice n≥0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La n=0 obținem 2, iar la n=1 obținem 5. Dacă formula este adevărată la n și n+1, recurența dă (5)(4ⁿ⁺¹+1)−4(4ⁿ+1)=4ⁿ⁺²+1. Inducția cu două baze demonstrează formula.",
+      "options": [
+        {
+          "text": "\\(a_n=4^n-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=4^n+n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2\\cdot 4^n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=4^n+1\\)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 8,
+        "type_name": "Recurență liniară de ordin doi",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₁=3, a₂=4, aₙ₊₂=aₙ+4, n≥1. Calculați a_11.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Indicii impari formează șirul a₂ᵣ₊₁=3+4r, deoarece fiecare salt de două ranguri adaugă 4. Pentru r=5, rezultatul este 23.",
+      "options": [
+        {
+          "text": "23",
+          "is_correct": true
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 9,
+        "type_name": "Recurență pe indici din două în două",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₁=3, (n+1)aₙ₊₁=naₙ pentru n≥1. Determinați aₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ₊₁/aₙ=n/(n+1). Înmulțind rapoartele de la 1 la n−1, obținem aₙ/a₁=1/n. Deci aₙ=3/n, inclusiv pentru n=1.",
+      "options": [
+        {
+          "text": "\\(a_n=3n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=3/n\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(a_n=3/(n+1)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=3(n+1)\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 10,
+        "type_name": "Recurență multiplicativă cu coeficient de rang",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Suma primilor n termeni este Sₙ=n²+3n, n≥1. Determinați aₙ pentru orice n≥1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru n≥2, aₙ=Sₙ−Sₙ₋₁=n²−(n−1)²+3=2n+2. La n=1, a₁=S₁=4, în acord cu formula.",
+      "options": [
+        {
+          "text": "\\(a_n=2n+3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=n+3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2n+2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(a_n=2n+4\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 11,
+        "type_name": "Recuperarea termenului din suma parțială",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie x₁=5, xₙ₊₁=1/xₙ, n≥1. Calculați x_9.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Termenii sunt nenuli, iar xₙ₊₂=1/(1/xₙ)=xₙ. Toți termenii de rang impar sunt x₁=5; rangul 9 este impar.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 12,
+        "type_name": "Periodicitate recurentă",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f₀=0, f₁=1 și fₙ₊₂=fₙ₊₁+fₙ pentru n≥0. Calculați \\(\\sum_{k=1}^{5} f_k\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "fₖ=fₖ₊₂−fₖ₊₁. Suma se reduce la f_7−f₂=13−1=12.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 13,
+        "type_name": "Sume ale numerelor Fibonacci",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f₀=0, f₁=1 și fₙ₊₂=fₙ₊₁+fₙ pentru n≥0. Calculați \\(\\sum_{k=1}^{5} f_k^2\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Identitatea este Σfₖ²=fₙfₙ₊₁: la n=1 este 1=1·1; adăugarea lui fₙ₊₁² transformă fₙfₙ₊₁ în fₙ₊₁(fₙ+fₙ₊₁)=fₙ₊₁fₙ₊₂. Aici rezultă 5·8=40.",
+      "options": [
+        {
+          "text": "39",
+          "is_correct": false
+        },
+        {
+          "text": "40",
+          "is_correct": true
+        },
+        {
+          "text": "41",
+          "is_correct": false
+        },
+        {
+          "text": "42",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 14,
+        "type_name": "Pătrate și produse Fibonacci",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f₀=0, f₁=1 și fₙ₊₂=fₙ₊₁+fₙ pentru n≥0. Calculați \\(\\sum_{k=1}^{5}f_{2k-1}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f₂ₖ₋₁=f₂ₖ−f₂ₖ₋₂. Prin telescopare suma este f_10−f₀=55.",
+      "options": [
+        {
+          "text": "54",
+          "is_correct": false
+        },
+        {
+          "text": "56",
+          "is_correct": false
+        },
+        {
+          "text": "55",
+          "is_correct": true
+        },
+        {
+          "text": "57",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 15,
+        "type_name": "Subșiruri și identități Fibonacci",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Un șir pozitiv satisface \\(\\prod_{k=1}^n x_k=(n+3)/3\\) pentru orice n≥1. Determinați xₙ pentru n≥2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm produsul cu Pₙ. Pentru n≥2, xₙ=Pₙ/Pₙ₋₁=((n+3)/3)/((n+2)/3)=(n+3)/(n+2). Numitorul este pozitiv. Separat, x₁=(4)/3.",
+      "options": [
+        {
+          "text": "\\(x_n=(n+2)/(n+3)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x_n=1/3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x_n=(n+3)/3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x_n=(n+3)/(n+2)\\)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 16,
+        "type_name": "Șir determinat de identități de produse",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₙ=n(n+4), n≥1. Calculați a_6.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim n=6: a_6=6·(6+4)=60.",
+      "options": [
+        {
+          "text": "60",
+          "is_correct": true
+        },
+        {
+          "text": "59",
+          "is_correct": false
+        },
+        {
+          "text": "61",
+          "is_correct": false
+        },
+        {
+          "text": "62",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 1,
+        "type_name": "Termeni din formulă explicită",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă xₙ₊₁=5xₙ+4, n≥1, și x₁=1, calculați x₄.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x₂=9, x₃=49, x₄=249. Aplicăm relația de trei ori.",
+      "options": [
+        {
+          "text": "248",
+          "is_correct": false
+        },
+        {
+          "text": "249",
+          "is_correct": true
+        },
+        {
+          "text": "250",
+          "is_correct": false
+        },
+        {
+          "text": "251",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 2,
+        "type_name": "Termeni din recurență",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Al n-lea termen este numărul cu exact n cifre, toate egale cu 4, n≥1. Care este formula lui aₙ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ=4(1+10+⋯+10ⁿ⁻¹). Suma geometrică este (10ⁿ−1)/9. Descrierea prin cifre fixează regula pentru orice n.",
+      "options": [
+        {
+          "text": "\\(410^n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4(10^n+1)/9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4(10^n-1)/9\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4(10^{n-1}-1)/9\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 3,
+        "type_name": "Formula unui șir descris prin termeni",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru aₙ=n(n+4), n≥1, determinați rangul termenului egal cu 60.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația n²+4n−60=0 are rădăcinile 6 și -10. Numai 6 este indice natural pozitiv.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 4,
+        "type_name": "Apartenența la un șir",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₖ=(k+4)/(k+5), k≥1. Determinați \\(b_n=\\prod_{k=1}^n a_k\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este (5/6)·(6/7)·⋯·((n+4)/(n+5)). Se reduc factorii intermediari și rămâne 5/(n+5).",
+      "options": [
+        {
+          "text": "\\(5/(n+5)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1/(n+5)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((n+5)/5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5/(n+4)\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 5,
+        "type_name": "Șir produs cumulativ",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₖ=k²+4, k≥1. Calculați \\(\\sum_{k=1}^{6}(a_{k+1}-a_k)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₖ₊₁−aₖ=2k+1. Suma telescopică este a_7−a₁=(49+4)−(1+4)=48.",
+      "options": [
+        {
+          "text": "47",
+          "is_correct": false
+        },
+        {
+          "text": "48",
+          "is_correct": true
+        },
+        {
+          "text": "49",
+          "is_correct": false
+        },
+        {
+          "text": "50",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 6,
+        "type_name": "Șirul diferențelor consecutive",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₁=4, aₙ₊₁=aₙ+2n, n≥1. Care este termenul general?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Însumăm aₖ₊₁−aₖ=2k pentru k=1,…,n−1: aₙ−4=2·n(n−1)/2=n(n−1). Formula este valabilă și la n=1.",
+      "options": [
+        {
+          "text": "\\(a_n=4+n(n+1)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=4+2n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=4+n(n-1)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(a_n=4+n^2\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 7,
+        "type_name": "Recurență aditivă cu indice",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₀=2, a₁=6, aₙ₊₂=6aₙ₊₁−5aₙ, n≥0. Care formulă este corectă pentru orice n≥0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La n=0 obținem 2, iar la n=1 obținem 6. Dacă formula este adevărată la n și n+1, recurența dă (6)(5ⁿ⁺¹+1)−5(5ⁿ+1)=5ⁿ⁺²+1. Inducția cu două baze demonstrează formula.",
+      "options": [
+        {
+          "text": "\\(a_n=5^n-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=5^n+n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2\\cdot 5^n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=5^n+1\\)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 8,
+        "type_name": "Recurență liniară de ordin doi",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₁=4, a₂=5, aₙ₊₂=aₙ+5, n≥1. Calculați a_13.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Indicii impari formează șirul a₂ᵣ₊₁=4+5r, deoarece fiecare salt de două ranguri adaugă 5. Pentru r=6, rezultatul este 34.",
+      "options": [
+        {
+          "text": "34",
+          "is_correct": true
+        },
+        {
+          "text": "33",
+          "is_correct": false
+        },
+        {
+          "text": "35",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 9,
+        "type_name": "Recurență pe indici din două în două",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₁=4, (n+1)aₙ₊₁=naₙ pentru n≥1. Determinați aₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ₊₁/aₙ=n/(n+1). Înmulțind rapoartele de la 1 la n−1, obținem aₙ/a₁=1/n. Deci aₙ=4/n, inclusiv pentru n=1.",
+      "options": [
+        {
+          "text": "\\(a_n=4n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=4/n\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(a_n=4/(n+1)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=4(n+1)\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 10,
+        "type_name": "Recurență multiplicativă cu coeficient de rang",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Suma primilor n termeni este Sₙ=n²+4n, n≥1. Determinați aₙ pentru orice n≥1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru n≥2, aₙ=Sₙ−Sₙ₋₁=n²−(n−1)²+4=2n+3. La n=1, a₁=S₁=5, în acord cu formula.",
+      "options": [
+        {
+          "text": "\\(a_n=2n+4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=n+4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2n+3\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(a_n=2n+5\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 11,
+        "type_name": "Recuperarea termenului din suma parțială",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie x₁=6, xₙ₊₁=1/xₙ, n≥1. Calculați x_11.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Termenii sunt nenuli, iar xₙ₊₂=1/(1/xₙ)=xₙ. Toți termenii de rang impar sunt x₁=6; rangul 11 este impar.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 12,
+        "type_name": "Periodicitate recurentă",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f₀=0, f₁=1 și fₙ₊₂=fₙ₊₁+fₙ pentru n≥0. Calculați \\(\\sum_{k=1}^{6} f_k\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "fₖ=fₖ₊₂−fₖ₊₁. Suma se reduce la f_8−f₂=21−1=20.",
+      "options": [
+        {
+          "text": "20",
+          "is_correct": true
+        },
+        {
+          "text": "19",
+          "is_correct": false
+        },
+        {
+          "text": "21",
+          "is_correct": false
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 13,
+        "type_name": "Sume ale numerelor Fibonacci",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f₀=0, f₁=1 și fₙ₊₂=fₙ₊₁+fₙ pentru n≥0. Calculați \\(\\sum_{k=1}^{6} f_k^2\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Identitatea este Σfₖ²=fₙfₙ₊₁: la n=1 este 1=1·1; adăugarea lui fₙ₊₁² transformă fₙfₙ₊₁ în fₙ₊₁(fₙ+fₙ₊₁)=fₙ₊₁fₙ₊₂. Aici rezultă 8·13=104.",
+      "options": [
+        {
+          "text": "103",
+          "is_correct": false
+        },
+        {
+          "text": "104",
+          "is_correct": true
+        },
+        {
+          "text": "105",
+          "is_correct": false
+        },
+        {
+          "text": "106",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 14,
+        "type_name": "Pătrate și produse Fibonacci",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f₀=0, f₁=1 și fₙ₊₂=fₙ₊₁+fₙ pentru n≥0. Calculați \\(\\sum_{k=1}^{6}f_{2k-1}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f₂ₖ₋₁=f₂ₖ−f₂ₖ₋₂. Prin telescopare suma este f_12−f₀=144.",
+      "options": [
+        {
+          "text": "143",
+          "is_correct": false
+        },
+        {
+          "text": "145",
+          "is_correct": false
+        },
+        {
+          "text": "144",
+          "is_correct": true
+        },
+        {
+          "text": "146",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 15,
+        "type_name": "Subșiruri și identități Fibonacci",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Un șir pozitiv satisface \\(\\prod_{k=1}^n x_k=(n+4)/4\\) pentru orice n≥1. Determinați xₙ pentru n≥2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm produsul cu Pₙ. Pentru n≥2, xₙ=Pₙ/Pₙ₋₁=((n+4)/4)/((n+3)/4)=(n+4)/(n+3). Numitorul este pozitiv. Separat, x₁=(5)/4.",
+      "options": [
+        {
+          "text": "\\(x_n=(n+3)/(n+4)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x_n=1/4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x_n=(n+4)/4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x_n=(n+4)/(n+3)\\)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 16,
+        "type_name": "Șir determinat de identități de produse",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₙ=n(n+5), n≥1. Calculați a_7.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim n=7: a_7=7·(7+5)=84.",
+      "options": [
+        {
+          "text": "84",
+          "is_correct": true
+        },
+        {
+          "text": "83",
+          "is_correct": false
+        },
+        {
+          "text": "85",
+          "is_correct": false
+        },
+        {
+          "text": "86",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 1,
+        "type_name": "Termeni din formulă explicită",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă xₙ₊₁=6xₙ+5, n≥1, și x₁=1, calculați x₄.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x₂=11, x₃=71, x₄=431. Aplicăm relația de trei ori.",
+      "options": [
+        {
+          "text": "430",
+          "is_correct": false
+        },
+        {
+          "text": "431",
+          "is_correct": true
+        },
+        {
+          "text": "432",
+          "is_correct": false
+        },
+        {
+          "text": "433",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 2,
+        "type_name": "Termeni din recurență",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Al n-lea termen este numărul cu exact n cifre, toate egale cu 5, n≥1. Care este formula lui aₙ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ=5(1+10+⋯+10ⁿ⁻¹). Suma geometrică este (10ⁿ−1)/9. Descrierea prin cifre fixează regula pentru orice n.",
+      "options": [
+        {
+          "text": "\\(510^n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5(10^n+1)/9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5(10^n-1)/9\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(5(10^{n-1}-1)/9\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 3,
+        "type_name": "Formula unui șir descris prin termeni",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru aₙ=n(n+5), n≥1, determinați rangul termenului egal cu 84.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația n²+5n−84=0 are rădăcinile 7 și -12. Numai 7 este indice natural pozitiv.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 4,
+        "type_name": "Apartenența la un șir",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₖ=(k+5)/(k+6), k≥1. Determinați \\(b_n=\\prod_{k=1}^n a_k\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este (6/7)·(7/8)·⋯·((n+5)/(n+6)). Se reduc factorii intermediari și rămâne 6/(n+6).",
+      "options": [
+        {
+          "text": "\\(6/(n+6)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1/(n+6)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((n+6)/6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6/(n+5)\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 5,
+        "type_name": "Șir produs cumulativ",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₖ=k²+5, k≥1. Calculați \\(\\sum_{k=1}^{7}(a_{k+1}-a_k)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₖ₊₁−aₖ=2k+1. Suma telescopică este a_8−a₁=(64+5)−(1+5)=63.",
+      "options": [
+        {
+          "text": "62",
+          "is_correct": false
+        },
+        {
+          "text": "63",
+          "is_correct": true
+        },
+        {
+          "text": "64",
+          "is_correct": false
+        },
+        {
+          "text": "65",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 6,
+        "type_name": "Șirul diferențelor consecutive",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₁=5, aₙ₊₁=aₙ+2n, n≥1. Care este termenul general?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Însumăm aₖ₊₁−aₖ=2k pentru k=1,…,n−1: aₙ−5=2·n(n−1)/2=n(n−1). Formula este valabilă și la n=1.",
+      "options": [
+        {
+          "text": "\\(a_n=5+n(n+1)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=5+2n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=5+n(n-1)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(a_n=5+n^2\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 7,
+        "type_name": "Recurență aditivă cu indice",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₀=2, a₁=7, aₙ₊₂=7aₙ₊₁−6aₙ, n≥0. Care formulă este corectă pentru orice n≥0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La n=0 obținem 2, iar la n=1 obținem 7. Dacă formula este adevărată la n și n+1, recurența dă (7)(6ⁿ⁺¹+1)−6(6ⁿ+1)=6ⁿ⁺²+1. Inducția cu două baze demonstrează formula.",
+      "options": [
+        {
+          "text": "\\(a_n=6^n-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=6^n+n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2\\cdot 6^n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=6^n+1\\)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 8,
+        "type_name": "Recurență liniară de ordin doi",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₁=5, a₂=6, aₙ₊₂=aₙ+6, n≥1. Calculați a_15.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Indicii impari formează șirul a₂ᵣ₊₁=5+6r, deoarece fiecare salt de două ranguri adaugă 6. Pentru r=7, rezultatul este 47.",
+      "options": [
+        {
+          "text": "47",
+          "is_correct": true
+        },
+        {
+          "text": "46",
+          "is_correct": false
+        },
+        {
+          "text": "48",
+          "is_correct": false
+        },
+        {
+          "text": "49",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 9,
+        "type_name": "Recurență pe indici din două în două",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a₁=5, (n+1)aₙ₊₁=naₙ pentru n≥1. Determinați aₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ₊₁/aₙ=n/(n+1). Înmulțind rapoartele de la 1 la n−1, obținem aₙ/a₁=1/n. Deci aₙ=5/n, inclusiv pentru n=1.",
+      "options": [
+        {
+          "text": "\\(a_n=5n\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=5/n\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(a_n=5/(n+1)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=5(n+1)\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 10,
+        "type_name": "Recurență multiplicativă cu coeficient de rang",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Suma primilor n termeni este Sₙ=n²+5n, n≥1. Determinați aₙ pentru orice n≥1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru n≥2, aₙ=Sₙ−Sₙ₋₁=n²−(n−1)²+5=2n+4. La n=1, a₁=S₁=6, în acord cu formula.",
+      "options": [
+        {
+          "text": "\\(a_n=2n+5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=n+5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(a_n=2n+4\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(a_n=2n+6\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 11,
+        "type_name": "Recuperarea termenului din suma parțială",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie x₁=7, xₙ₊₁=1/xₙ, n≥1. Calculați x_13.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Termenii sunt nenuli, iar xₙ₊₂=1/(1/xₙ)=xₙ. Toți termenii de rang impar sunt x₁=7; rangul 13 este impar.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 12,
+        "type_name": "Periodicitate recurentă",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f₀=0, f₁=1 și fₙ₊₂=fₙ₊₁+fₙ pentru n≥0. Calculați \\(\\sum_{k=1}^{7} f_k\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "fₖ=fₖ₊₂−fₖ₊₁. Suma se reduce la f_9−f₂=34−1=33.",
+      "options": [
+        {
+          "text": "33",
+          "is_correct": true
+        },
+        {
+          "text": "32",
+          "is_correct": false
+        },
+        {
+          "text": "34",
+          "is_correct": false
+        },
+        {
+          "text": "35",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 13,
+        "type_name": "Sume ale numerelor Fibonacci",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f₀=0, f₁=1 și fₙ₊₂=fₙ₊₁+fₙ pentru n≥0. Calculați \\(\\sum_{k=1}^{7} f_k^2\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Identitatea este Σfₖ²=fₙfₙ₊₁: la n=1 este 1=1·1; adăugarea lui fₙ₊₁² transformă fₙfₙ₊₁ în fₙ₊₁(fₙ+fₙ₊₁)=fₙ₊₁fₙ₊₂. Aici rezultă 13·21=273.",
+      "options": [
+        {
+          "text": "272",
+          "is_correct": false
+        },
+        {
+          "text": "273",
+          "is_correct": true
+        },
+        {
+          "text": "274",
+          "is_correct": false
+        },
+        {
+          "text": "275",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 14,
+        "type_name": "Pătrate și produse Fibonacci",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f₀=0, f₁=1 și fₙ₊₂=fₙ₊₁+fₙ pentru n≥0. Calculați \\(\\sum_{k=1}^{7}f_{2k-1}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f₂ₖ₋₁=f₂ₖ−f₂ₖ₋₂. Prin telescopare suma este f_14−f₀=377.",
+      "options": [
+        {
+          "text": "376",
+          "is_correct": false
+        },
+        {
+          "text": "378",
+          "is_correct": false
+        },
+        {
+          "text": "377",
+          "is_correct": true
+        },
+        {
+          "text": "379",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 15,
+        "type_name": "Subșiruri și identități Fibonacci",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Un șir pozitiv satisface \\(\\prod_{k=1}^n x_k=(n+5)/5\\) pentru orice n≥1. Determinați xₙ pentru n≥2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm produsul cu Pₙ. Pentru n≥2, xₙ=Pₙ/Pₙ₋₁=((n+5)/5)/((n+4)/5)=(n+5)/(n+4). Numitorul este pozitiv. Separat, x₁=(6)/5.",
+      "options": [
+        {
+          "text": "\\(x_n=(n+4)/(n+5)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x_n=1/5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x_n=(n+5)/5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x_n=(n+5)/(n+4)\\)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.1.1",
+        "type": 16,
+        "type_name": "Șir determinat de identități de produse",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    }
+  ]
 }

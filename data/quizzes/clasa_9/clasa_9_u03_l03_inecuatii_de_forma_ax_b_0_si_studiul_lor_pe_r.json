@@ -1,6 +1,3017 @@
 {
   "title": "Inecuații de forma ax + b ≤ 0 și studiul lor pe R",
   "description": "Clasa a 9-a · Funcția de gradul I",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Pentru ce x este f(x)=−2x+2 strict pozitivă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−2x+2>0 echivalează cu x<1, deoarece împărțirea la −2 inversează sensul. La x=1 valoarea este zero, deci capătul este exclus.",
+      "options": [
+        {
+          "text": "(−∞; 1)",
+          "is_correct": true
+        },
+        {
+          "text": "(1; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 1]",
+          "is_correct": false
+        },
+        {
+          "text": "[1; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 1,
+        "type_name": "Tabelul de semn al funcției afine",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 1,
+        "variant": 1,
+        "candidates": [
+          "(−∞; 1)",
+          "(1; +∞)",
+          "(−∞; 1]",
+          "[1; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați \\((x-1)/(x-3)\\geq0\\), în ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul exclude x=3. Raportul este pozitiv în exteriorul rădăcinii 1 și polului 3, negativ între ele. Numărătorul se anulează la 1, care se include; polul nu se include.",
+      "options": [
+        {
+          "text": "[1; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 1] ∪ (3; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; 1) ∪ (3; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 1] ∪ [3; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 2,
+        "type_name": "Semnul produselor și rapoartelor",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 2,
+        "variant": 1,
+        "candidates": [
+          "[1; 3)",
+          "(−∞; 1] ∪ (3; +∞)",
+          "(−∞; 1) ∪ (3; +∞)",
+          "(−∞; 1] ∪ [3; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Fie h(x)=sign(x−1)+2x·sign(1−x), cu sign(0)=0. Care este scrierea pe ramuri?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<1, semnele sunt −1 și +1, deci h=−1+2x. La x=1 ambii factori sign sunt zero. Pentru x>1, semnele devin +1 și −1, deci h=1−2x.",
+      "options": [
+        {
+          "text": "1−2x pentru x<1; 0 la x=1; 2x−1 pentru x>1.",
+          "is_correct": false
+        },
+        {
+          "text": "2x−1 pentru x≤1; 1−2x pentru x>1.",
+          "is_correct": false
+        },
+        {
+          "text": "2x−1 pentru x<1; 0 la x=1; 1−2x pentru x>1.",
+          "is_correct": true
+        },
+        {
+          "text": "−1 pentru x<1; 0 la x=1; 1 pentru x>1.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 3,
+        "type_name": "Funcții cu sign",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 3,
+        "variant": 1,
+        "candidates": [
+          "1−2x pentru x<1; 0 la x=1; 2x−1 pentru x>1.",
+          "2x−1 pentru x≤1; 1−2x pentru x>1.",
+          "2x−1 pentru x<1; 0 la x=1; 1−2x pentru x>1.",
+          "−1 pentru x<1; 0 la x=1; 1 pentru x>1."
+        ]
+      }
+    },
+    {
+      "text": "Scrieți pe ramuri f(x)=x+|x−1|.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x≤1, modulul este 1−x și suma devine 1. Dacă x>1, modulul este x−1, deci suma este 2x−1. La prag ambele expresii coincid.",
+      "options": [
+        {
+          "text": "2x−1 pentru x≤1; 1 pentru x>1.",
+          "is_correct": false
+        },
+        {
+          "text": "−1 pentru x≤1; 2x+1 pentru x>1.",
+          "is_correct": false
+        },
+        {
+          "text": "x−1 pentru orice x.",
+          "is_correct": false
+        },
+        {
+          "text": "1 pentru x≤1; 2x−1 pentru x>1.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 4,
+        "type_name": "Funcții cu module de expresii afine",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 4,
+        "variant": 1,
+        "candidates": [
+          "2x−1 pentru x≤1; 1 pentru x>1.",
+          "−1 pentru x≤1; 2x+1 pentru x>1.",
+          "x−1 pentru orice x.",
+          "1 pentru x≤1; 2x−1 pentru x>1."
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția f(x)=(m−1)x−2 este pozitivă exact pe intervalul (2; +∞)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pozitivitatea în dreapta impune m−1>0. Rădăcina trebuie să fie 2, deci 2/(m−1)=2. Rezultă m−1=1 și m=2.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 5,
+        "type_name": "Parametru din intervalul exact de pozitivitate",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 5,
+        "variant": 1,
+        "candidates": [
+          "2",
+          "1",
+          "3",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "Pentru f(x)=m(m−1)x+1, notați a=m(m−1). Care este mulțimea unde f(x)>0, în toate cazurile?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a>0 pentru m<0 sau m>1: împărțim fără schimbarea sensului. a<0 pentru 0<m<1: sensul se inversează. La m=0 sau 1, funcția este constanta 1>0, pozitivă pe ℝ. Inegalitatea fiind strictă, rădăcina se exclude.",
+      "options": [
+        {
+          "text": "a>0: x<−1/a; a<0: x>−1/a; a=0: ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "a>0: x>−1/a; a<0: x<−1/a; a=0: ℝ.",
+          "is_correct": true
+        },
+        {
+          "text": "a>0: x>−1/a; a<0: x<−1/a; a=0: ∅.",
+          "is_correct": false
+        },
+        {
+          "text": "a>0: x≥−1/a; a<0: x≤−1/a; a=0: ℝ.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 6,
+        "type_name": "Semnul funcției cu parametru",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 6,
+        "variant": 1,
+        "candidates": [
+          "a>0: x<−1/a; a<0: x>−1/a; a=0: ℝ.",
+          "a>0: x>−1/a; a<0: x<−1/a; a=0: ℝ.",
+          "a>0: x>−1/a; a<0: x<−1/a; a=0: ∅.",
+          "a>0: x≥−1/a; a<0: x≤−1/a; a=0: ℝ."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați 2x−1≥−x+2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aducem termenii în aceeași parte: (2+1)x≥2+1=3. Împărțim la 3>0 și obținem x≥1.",
+      "options": [
+        {
+          "text": "(1; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 1]",
+          "is_correct": false
+        },
+        {
+          "text": "[1; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "[-1; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 7,
+        "type_name": "Inecuații liniare după reducere",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 7,
+        "variant": 1,
+        "candidates": [
+          "(1; +∞)",
+          "(−∞; 1]",
+          "[1; +∞)",
+          "[-1; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați \\(1/(x-1)\\geq1/(x-2)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Excludem 1 și 2. Diferența este −1/((x−1)(x−2)), nenegativă exact când produsul numitorului este negativ. Aceasta se întâmplă numai între cele două praguri, fără capete.",
+      "options": [
+        {
+          "text": "[1; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 1) ∪ (2; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "[1; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 2)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 8,
+        "type_name": "Inecuații raționale reductibile",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 8,
+        "variant": 1,
+        "candidates": [
+          "[1; 2]",
+          "(−∞; 1) ∪ (2; +∞)",
+          "[1; 2)",
+          "(1; 2)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția \\(f(x)=\\frac{m-1}{m+1}x+1\\) este strict crescătoare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia nu este definită pentru m=−1. Panta este pozitivă dacă numărătorul și numitorul au același semn, adică m<−1 sau m>1. La m=1, panta este 0, deci funcția este constantă.",
+      "options": [
+        {
+          "text": "(−∞; -1) ∪ (1; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(-1; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; -1) ∪ [1; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; -1] ∪ (1; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 9,
+        "type_name": "Panta exprimată prin fracție",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 9,
+        "variant": 1,
+        "candidates": [
+          "(−∞; -1) ∪ (1; +∞)",
+          "(-1; 1)",
+          "(−∞; -1) ∪ [1; +∞)",
+          "(−∞; -1] ∪ (1; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Care este descrierea graficului lui h(x)=max(2x−1, 1)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două expresii sunt egale când 2x−1=1, adică x=1. În stânga acestui punct dreapta este sub constanta 1, deci maximul este constanta. În dreapta, maximul este dreapta; la prag coincid.",
+      "options": [
+        {
+          "text": "h(x)=2x−1 pentru x≤1; h(x)=1 pentru x>1.",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=1 pentru x≤1; h(x)=2x−1 pentru x>1.",
+          "is_correct": true
+        },
+        {
+          "text": "h(x)=1 pentru orice x.",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=2x−1 pentru orice x.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 10,
+        "type_name": "Grafice de maxime și minime",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 10,
+        "variant": 1,
+        "candidates": [
+          "h(x)=2x−1 pentru x≤1; h(x)=1 pentru x>1.",
+          "h(x)=1 pentru x≤1; h(x)=2x−1 pentru x>1.",
+          "h(x)=1 pentru orice x.",
+          "h(x)=2x−1 pentru orice x."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați |x−1|+|x−3|≤4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Între 1 și 3, suma distanțelor este 2≤4. Pentru x<1, suma este 4−2x≤4, deci x≥0. Pentru x>3, suma este 2x−4≤4, deci x≤4. Reunind ramurile, obținem intervalul închis [0;4].",
+      "options": [
+        {
+          "text": "[1; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 4]",
+          "is_correct": true
+        },
+        {
+          "text": "[-1; 5]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 11,
+        "type_name": "Inecuații cu sumă de module",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 11,
+        "variant": 1,
+        "candidates": [
+          "[1; 3]",
+          "(0; 4)",
+          "[0; 4]",
+          "[-1; 5]"
+        ]
+      }
+    },
+    {
+      "text": "Discutați după m inecuația (m−1)x≤2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Când m−1>0 împărțim fără schimbarea sensului; când este negativ inversăm sensul. Când m=1, inecuația devine 0≤2, adevărată pentru orice x.",
+      "options": [
+        {
+          "text": "m>1: x≥2/(m−1); m<1: x≤2/(m−1); m=1: ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "m>1: x≤2/(m−1); m<1: x≥2/(m−1); m=1: ∅.",
+          "is_correct": false
+        },
+        {
+          "text": "m≠1: x≤2/(m−1); m=1: ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "m>1: x≤2/(m−1); m<1: x≥2/(m−1); m=1: ℝ.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 12,
+        "type_name": "Inecuații liniare cu parametru",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 12,
+        "variant": 1,
+        "candidates": [
+          "m>1: x≥2/(m−1); m<1: x≤2/(m−1); m=1: ℝ.",
+          "m>1: x≤2/(m−1); m<1: x≥2/(m−1); m=1: ∅.",
+          "m≠1: x≤2/(m−1); m=1: ℝ.",
+          "m>1: x≤2/(m−1); m<1: x≥2/(m−1); m=1: ℝ."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(t)=t pentru t<0 și f(t)=t−1 pentru t≥0, iar \\(g(x)=(x-1)/(x-2)\\). Rezolvați f(g(x))>0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul exclude x=2. Pe ramura t<0 avem f(t)=t<0; pe t≥0 avem f(t)>0 exact pentru t>1. Așadar cerem g(x)>1. Dar g(x)−1=1/(x−2), pozitiv exact pentru x>2.",
+      "options": [
+        {
+          "text": "(2; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 13,
+        "type_name": "Semnul unei compuneri pe ramuri",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 13,
+        "variant": 1,
+        "candidates": [
+          "(2; +∞)",
+          "(−∞; 1)",
+          "(1; 2)",
+          "(1; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m avem mx+1>0 pentru orice x∈[−1;1]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O funcție afină este pozitivă pe întreg segmentul exact când este pozitivă la ambele capete. Condițiile sunt −m+1>0 și m+1>0, adică −1<m<1. La egalitate unul dintre capete ar avea valoarea 0.",
+      "options": [
+        {
+          "text": "[-1; 1]",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 1)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 14,
+        "type_name": "Semn uniform pe semidreaptă sau segment",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 14,
+        "variant": 1,
+        "candidates": [
+          "[-1; 1]",
+          "(-1; 1)",
+          "(−∞; 1)",
+          "(-1; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce x este f(x)=−3x+6 strict pozitivă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−3x+6>0 echivalează cu x<2, deoarece împărțirea la −3 inversează sensul. La x=2 valoarea este zero, deci capătul este exclus.",
+      "options": [
+        {
+          "text": "(2; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 2)",
+          "is_correct": true
+        },
+        {
+          "text": "[2; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 1,
+        "type_name": "Tabelul de semn al funcției afine",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 1,
+        "variant": 2,
+        "candidates": [
+          "(2; +∞)",
+          "(−∞; 2]",
+          "(−∞; 2)",
+          "[2; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați \\((x-2)/(x-4)\\geq0\\), în ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul exclude x=4. Raportul este pozitiv în exteriorul rădăcinii 2 și polului 4, negativ între ele. Numărătorul se anulează la 2, care se include; polul nu se include.",
+      "options": [
+        {
+          "text": "[2; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 2) ∪ (4; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 2] ∪ [4; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 2] ∪ (4; +∞)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 2,
+        "type_name": "Semnul produselor și rapoartelor",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 2,
+        "variant": 2,
+        "candidates": [
+          "[2; 4)",
+          "(−∞; 2) ∪ (4; +∞)",
+          "(−∞; 2] ∪ [4; +∞)",
+          "(−∞; 2] ∪ (4; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Fie h(x)=sign(x−2)+2x·sign(2−x), cu sign(0)=0. Care este scrierea pe ramuri?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<2, semnele sunt −1 și +1, deci h=−1+2x. La x=2 ambii factori sign sunt zero. Pentru x>2, semnele devin +1 și −1, deci h=1−2x.",
+      "options": [
+        {
+          "text": "2x−1 pentru x<2; 0 la x=2; 1−2x pentru x>2.",
+          "is_correct": true
+        },
+        {
+          "text": "1−2x pentru x<2; 0 la x=2; 2x−1 pentru x>2.",
+          "is_correct": false
+        },
+        {
+          "text": "2x−1 pentru x≤2; 1−2x pentru x>2.",
+          "is_correct": false
+        },
+        {
+          "text": "−1 pentru x<2; 0 la x=2; 1 pentru x>2.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 3,
+        "type_name": "Funcții cu sign",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 3,
+        "variant": 2,
+        "candidates": [
+          "2x−1 pentru x<2; 0 la x=2; 1−2x pentru x>2.",
+          "1−2x pentru x<2; 0 la x=2; 2x−1 pentru x>2.",
+          "2x−1 pentru x≤2; 1−2x pentru x>2.",
+          "−1 pentru x<2; 0 la x=2; 1 pentru x>2."
+        ]
+      }
+    },
+    {
+      "text": "Scrieți pe ramuri f(x)=x+|x−2|.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x≤2, modulul este 2−x și suma devine 2. Dacă x>2, modulul este x−2, deci suma este 2x−2. La prag ambele expresii coincid.",
+      "options": [
+        {
+          "text": "2x−2 pentru x≤2; 2 pentru x>2.",
+          "is_correct": false
+        },
+        {
+          "text": "2 pentru x≤2; 2x−2 pentru x>2.",
+          "is_correct": true
+        },
+        {
+          "text": "−2 pentru x≤2; 2x+2 pentru x>2.",
+          "is_correct": false
+        },
+        {
+          "text": "x−2 pentru orice x.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 4,
+        "type_name": "Funcții cu module de expresii afine",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 4,
+        "variant": 2,
+        "candidates": [
+          "2x−2 pentru x≤2; 2 pentru x>2.",
+          "2 pentru x≤2; 2x−2 pentru x>2.",
+          "−2 pentru x≤2; 2x+2 pentru x>2.",
+          "x−2 pentru orice x."
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția f(x)=(m−2)x−3 este pozitivă exact pe intervalul (3; +∞)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pozitivitatea în dreapta impune m−2>0. Rădăcina trebuie să fie 3, deci 3/(m−2)=3. Rezultă m−2=1 și m=3.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 5,
+        "type_name": "Parametru din intervalul exact de pozitivitate",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 5,
+        "variant": 2,
+        "candidates": [
+          "2",
+          "4",
+          "3",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "Pentru f(x)=m(m−1)x+2, notați a=m(m−1). Care este mulțimea unde f(x)>0, în toate cazurile?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a>0 pentru m<0 sau m>1: împărțim fără schimbarea sensului. a<0 pentru 0<m<1: sensul se inversează. La m=0 sau 1, funcția este constanta 2>0, pozitivă pe ℝ. Inegalitatea fiind strictă, rădăcina se exclude.",
+      "options": [
+        {
+          "text": "a>0: x<−2/a; a<0: x>−2/a; a=0: ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "a>0: x>−2/a; a<0: x<−2/a; a=0: ∅.",
+          "is_correct": false
+        },
+        {
+          "text": "a>0: x≥−2/a; a<0: x≤−2/a; a=0: ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "a>0: x>−2/a; a<0: x<−2/a; a=0: ℝ.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 6,
+        "type_name": "Semnul funcției cu parametru",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 6,
+        "variant": 2,
+        "candidates": [
+          "a>0: x<−2/a; a<0: x>−2/a; a=0: ℝ.",
+          "a>0: x>−2/a; a<0: x<−2/a; a=0: ∅.",
+          "a>0: x≥−2/a; a<0: x≤−2/a; a=0: ℝ.",
+          "a>0: x>−2/a; a<0: x<−2/a; a=0: ℝ."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați 3x−2≥−x+6.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aducem termenii în aceeași parte: (3+1)x≥6+2=8. Împărțim la 4>0 și obținem x≥2.",
+      "options": [
+        {
+          "text": "[2; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(2; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "[-2; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 7,
+        "type_name": "Inecuații liniare după reducere",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 7,
+        "variant": 2,
+        "candidates": [
+          "[2; +∞)",
+          "(2; +∞)",
+          "(−∞; 2]",
+          "[-2; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați \\(1/(x-2)\\geq1/(x-3)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Excludem 2 și 3. Diferența este −1/((x−2)(x−3)), nenegativă exact când produsul numitorului este negativ. Aceasta se întâmplă numai între cele două praguri, fără capete.",
+      "options": [
+        {
+          "text": "[2; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; 2) ∪ (3; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "[2; 3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 8,
+        "type_name": "Inecuații raționale reductibile",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 8,
+        "variant": 2,
+        "candidates": [
+          "[2; 3]",
+          "(2; 3)",
+          "(−∞; 2) ∪ (3; +∞)",
+          "[2; 3)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția \\(f(x)=\\frac{m-2}{m+2}x+1\\) este strict crescătoare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia nu este definită pentru m=−2. Panta este pozitivă dacă numărătorul și numitorul au același semn, adică m<−2 sau m>2. La m=2, panta este 0, deci funcția este constantă.",
+      "options": [
+        {
+          "text": "(-2; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; -2) ∪ [2; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; -2) ∪ (2; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; -2] ∪ (2; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 9,
+        "type_name": "Panta exprimată prin fracție",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 9,
+        "variant": 2,
+        "candidates": [
+          "(-2; 2)",
+          "(−∞; -2) ∪ [2; +∞)",
+          "(−∞; -2) ∪ (2; +∞)",
+          "(−∞; -2] ∪ (2; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Care este descrierea graficului lui h(x)=max(3x−2, 2)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două expresii sunt egale când 3x−2=2, adică x=4/3. În stânga acestui punct dreapta este sub constanta 2, deci maximul este constanta. În dreapta, maximul este dreapta; la prag coincid.",
+      "options": [
+        {
+          "text": "h(x)=3x−2 pentru x≤4/3; h(x)=2 pentru x>4/3.",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=2 pentru orice x.",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=3x−2 pentru orice x.",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=2 pentru x≤4/3; h(x)=3x−2 pentru x>4/3.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 10,
+        "type_name": "Grafice de maxime și minime",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 10,
+        "variant": 2,
+        "candidates": [
+          "h(x)=3x−2 pentru x≤4/3; h(x)=2 pentru x>4/3.",
+          "h(x)=2 pentru orice x.",
+          "h(x)=3x−2 pentru orice x.",
+          "h(x)=2 pentru x≤4/3; h(x)=3x−2 pentru x>4/3."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați |x−2|+|x−4|≤4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Între 2 și 4, suma distanțelor este 2≤4. Pentru x<2, suma este 6−2x≤4, deci x≥1. Pentru x>4, suma este 2x−6≤4, deci x≤5. Reunind ramurile, obținem intervalul închis [1;5].",
+      "options": [
+        {
+          "text": "[1; 5]",
+          "is_correct": true
+        },
+        {
+          "text": "[2; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 6]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 11,
+        "type_name": "Inecuații cu sumă de module",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 11,
+        "variant": 2,
+        "candidates": [
+          "[1; 5]",
+          "[2; 4]",
+          "(1; 5)",
+          "[0; 6]"
+        ]
+      }
+    },
+    {
+      "text": "Discutați după m inecuația (m−2)x≤3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Când m−2>0 împărțim fără schimbarea sensului; când este negativ inversăm sensul. Când m=2, inecuația devine 0≤3, adevărată pentru orice x.",
+      "options": [
+        {
+          "text": "m>2: x≥3/(m−2); m<2: x≤3/(m−2); m=2: ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "m>2: x≤3/(m−2); m<2: x≥3/(m−2); m=2: ℝ.",
+          "is_correct": true
+        },
+        {
+          "text": "m>2: x≤3/(m−2); m<2: x≥3/(m−2); m=2: ∅.",
+          "is_correct": false
+        },
+        {
+          "text": "m≠2: x≤3/(m−2); m=2: ℝ.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 12,
+        "type_name": "Inecuații liniare cu parametru",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 12,
+        "variant": 2,
+        "candidates": [
+          "m>2: x≥3/(m−2); m<2: x≤3/(m−2); m=2: ℝ.",
+          "m>2: x≤3/(m−2); m<2: x≥3/(m−2); m=2: ℝ.",
+          "m>2: x≤3/(m−2); m<2: x≥3/(m−2); m=2: ∅.",
+          "m≠2: x≤3/(m−2); m=2: ℝ."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(t)=t pentru t<0 și f(t)=t−1 pentru t≥0, iar \\(g(x)=(x-2)/(x-3)\\). Rezolvați f(g(x))>0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul exclude x=3. Pe ramura t<0 avem f(t)=t<0; pe t≥0 avem f(t)>0 exact pentru t>1. Așadar cerem g(x)>1. Dar g(x)−1=1/(x−3), pozitiv exact pentru x>3.",
+      "options": [
+        {
+          "text": "(−∞; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(2; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 13,
+        "type_name": "Semnul unei compuneri pe ramuri",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 13,
+        "variant": 2,
+        "candidates": [
+          "(−∞; 2)",
+          "(2; 3)",
+          "(3; +∞)",
+          "(2; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m avem mx+2>0 pentru orice x∈[−1;1]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O funcție afină este pozitivă pe întreg segmentul exact când este pozitivă la ambele capete. Condițiile sunt −m+2>0 și m+2>0, adică −2<m<2. La egalitate unul dintre capete ar avea valoarea 0.",
+      "options": [
+        {
+          "text": "[-2; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2; 2)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 14,
+        "type_name": "Semn uniform pe semidreaptă sau segment",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 14,
+        "variant": 2,
+        "candidates": [
+          "[-2; 2]",
+          "(−∞; 2)",
+          "(-2; +∞)",
+          "(-2; 2)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce x este f(x)=−4x+12 strict pozitivă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−4x+12>0 echivalează cu x<3, deoarece împărțirea la −4 inversează sensul. La x=3 valoarea este zero, deci capătul este exclus.",
+      "options": [
+        {
+          "text": "(−∞; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "(3; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "[3; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 1,
+        "type_name": "Tabelul de semn al funcției afine",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 1,
+        "variant": 3,
+        "candidates": [
+          "(−∞; 3)",
+          "(3; +∞)",
+          "(−∞; 3]",
+          "[3; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați \\((x-3)/(x-5)\\geq0\\), în ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul exclude x=5. Raportul este pozitiv în exteriorul rădăcinii 3 și polului 5, negativ între ele. Numărătorul se anulează la 3, care se include; polul nu se include.",
+      "options": [
+        {
+          "text": "[3; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 3] ∪ (5; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; 3) ∪ (5; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 3] ∪ [5; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 2,
+        "type_name": "Semnul produselor și rapoartelor",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 2,
+        "variant": 3,
+        "candidates": [
+          "[3; 5)",
+          "(−∞; 3] ∪ (5; +∞)",
+          "(−∞; 3) ∪ (5; +∞)",
+          "(−∞; 3] ∪ [5; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Fie h(x)=sign(x−3)+2x·sign(3−x), cu sign(0)=0. Care este scrierea pe ramuri?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<3, semnele sunt −1 și +1, deci h=−1+2x. La x=3 ambii factori sign sunt zero. Pentru x>3, semnele devin +1 și −1, deci h=1−2x.",
+      "options": [
+        {
+          "text": "1−2x pentru x<3; 0 la x=3; 2x−1 pentru x>3.",
+          "is_correct": false
+        },
+        {
+          "text": "2x−1 pentru x≤3; 1−2x pentru x>3.",
+          "is_correct": false
+        },
+        {
+          "text": "2x−1 pentru x<3; 0 la x=3; 1−2x pentru x>3.",
+          "is_correct": true
+        },
+        {
+          "text": "−1 pentru x<3; 0 la x=3; 1 pentru x>3.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 3,
+        "type_name": "Funcții cu sign",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 3,
+        "variant": 3,
+        "candidates": [
+          "1−2x pentru x<3; 0 la x=3; 2x−1 pentru x>3.",
+          "2x−1 pentru x≤3; 1−2x pentru x>3.",
+          "2x−1 pentru x<3; 0 la x=3; 1−2x pentru x>3.",
+          "−1 pentru x<3; 0 la x=3; 1 pentru x>3."
+        ]
+      }
+    },
+    {
+      "text": "Scrieți pe ramuri f(x)=x+|x−3|.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x≤3, modulul este 3−x și suma devine 3. Dacă x>3, modulul este x−3, deci suma este 2x−3. La prag ambele expresii coincid.",
+      "options": [
+        {
+          "text": "2x−3 pentru x≤3; 3 pentru x>3.",
+          "is_correct": false
+        },
+        {
+          "text": "−3 pentru x≤3; 2x+3 pentru x>3.",
+          "is_correct": false
+        },
+        {
+          "text": "x−3 pentru orice x.",
+          "is_correct": false
+        },
+        {
+          "text": "3 pentru x≤3; 2x−3 pentru x>3.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 4,
+        "type_name": "Funcții cu module de expresii afine",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 4,
+        "variant": 3,
+        "candidates": [
+          "2x−3 pentru x≤3; 3 pentru x>3.",
+          "−3 pentru x≤3; 2x+3 pentru x>3.",
+          "x−3 pentru orice x.",
+          "3 pentru x≤3; 2x−3 pentru x>3."
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția f(x)=(m−3)x−4 este pozitivă exact pe intervalul (4; +∞)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pozitivitatea în dreapta impune m−3>0. Rădăcina trebuie să fie 4, deci 4/(m−3)=4. Rezultă m−3=1 și m=4.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 5,
+        "type_name": "Parametru din intervalul exact de pozitivitate",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 5,
+        "variant": 3,
+        "candidates": [
+          "4",
+          "3",
+          "5",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "Pentru f(x)=m(m−1)x+3, notați a=m(m−1). Care este mulțimea unde f(x)>0, în toate cazurile?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a>0 pentru m<0 sau m>1: împărțim fără schimbarea sensului. a<0 pentru 0<m<1: sensul se inversează. La m=0 sau 1, funcția este constanta 3>0, pozitivă pe ℝ. Inegalitatea fiind strictă, rădăcina se exclude.",
+      "options": [
+        {
+          "text": "a>0: x<−3/a; a<0: x>−3/a; a=0: ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "a>0: x>−3/a; a<0: x<−3/a; a=0: ℝ.",
+          "is_correct": true
+        },
+        {
+          "text": "a>0: x>−3/a; a<0: x<−3/a; a=0: ∅.",
+          "is_correct": false
+        },
+        {
+          "text": "a>0: x≥−3/a; a<0: x≤−3/a; a=0: ℝ.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 6,
+        "type_name": "Semnul funcției cu parametru",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 6,
+        "variant": 3,
+        "candidates": [
+          "a>0: x<−3/a; a<0: x>−3/a; a=0: ℝ.",
+          "a>0: x>−3/a; a<0: x<−3/a; a=0: ℝ.",
+          "a>0: x>−3/a; a<0: x<−3/a; a=0: ∅.",
+          "a>0: x≥−3/a; a<0: x≤−3/a; a=0: ℝ."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați 4x−3≥−x+12.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aducem termenii în aceeași parte: (4+1)x≥12+3=15. Împărțim la 5>0 și obținem x≥3.",
+      "options": [
+        {
+          "text": "(3; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "[3; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "[-3; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 7,
+        "type_name": "Inecuații liniare după reducere",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 7,
+        "variant": 3,
+        "candidates": [
+          "(3; +∞)",
+          "(−∞; 3]",
+          "[3; +∞)",
+          "[-3; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați \\(1/(x-3)\\geq1/(x-4)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Excludem 3 și 4. Diferența este −1/((x−3)(x−4)), nenegativă exact când produsul numitorului este negativ. Aceasta se întâmplă numai între cele două praguri, fără capete.",
+      "options": [
+        {
+          "text": "[3; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 3) ∪ (4; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "[3; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 4)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 8,
+        "type_name": "Inecuații raționale reductibile",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 8,
+        "variant": 3,
+        "candidates": [
+          "[3; 4]",
+          "(−∞; 3) ∪ (4; +∞)",
+          "[3; 4)",
+          "(3; 4)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția \\(f(x)=\\frac{m-3}{m+3}x+1\\) este strict crescătoare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia nu este definită pentru m=−3. Panta este pozitivă dacă numărătorul și numitorul au același semn, adică m<−3 sau m>3. La m=3, panta este 0, deci funcția este constantă.",
+      "options": [
+        {
+          "text": "(−∞; -3) ∪ (3; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(-3; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; -3) ∪ [3; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; -3] ∪ (3; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 9,
+        "type_name": "Panta exprimată prin fracție",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 9,
+        "variant": 3,
+        "candidates": [
+          "(−∞; -3) ∪ (3; +∞)",
+          "(-3; 3)",
+          "(−∞; -3) ∪ [3; +∞)",
+          "(−∞; -3] ∪ (3; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Care este descrierea graficului lui h(x)=max(4x−3, 3)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două expresii sunt egale când 4x−3=3, adică x=3/2. În stânga acestui punct dreapta este sub constanta 3, deci maximul este constanta. În dreapta, maximul este dreapta; la prag coincid.",
+      "options": [
+        {
+          "text": "h(x)=4x−3 pentru x≤3/2; h(x)=3 pentru x>3/2.",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=3 pentru x≤3/2; h(x)=4x−3 pentru x>3/2.",
+          "is_correct": true
+        },
+        {
+          "text": "h(x)=3 pentru orice x.",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=4x−3 pentru orice x.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 10,
+        "type_name": "Grafice de maxime și minime",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 10,
+        "variant": 3,
+        "candidates": [
+          "h(x)=4x−3 pentru x≤3/2; h(x)=3 pentru x>3/2.",
+          "h(x)=3 pentru x≤3/2; h(x)=4x−3 pentru x>3/2.",
+          "h(x)=3 pentru orice x.",
+          "h(x)=4x−3 pentru orice x."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați |x−3|+|x−5|≤4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Între 3 și 5, suma distanțelor este 2≤4. Pentru x<3, suma este 8−2x≤4, deci x≥2. Pentru x>5, suma este 2x−8≤4, deci x≤6. Reunind ramurile, obținem intervalul închis [2;6].",
+      "options": [
+        {
+          "text": "[3; 5]",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "[2; 6]",
+          "is_correct": true
+        },
+        {
+          "text": "[1; 7]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 11,
+        "type_name": "Inecuații cu sumă de module",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 11,
+        "variant": 3,
+        "candidates": [
+          "[3; 5]",
+          "(2; 6)",
+          "[2; 6]",
+          "[1; 7]"
+        ]
+      }
+    },
+    {
+      "text": "Discutați după m inecuația (m−3)x≤4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Când m−3>0 împărțim fără schimbarea sensului; când este negativ inversăm sensul. Când m=3, inecuația devine 0≤4, adevărată pentru orice x.",
+      "options": [
+        {
+          "text": "m>3: x≥4/(m−3); m<3: x≤4/(m−3); m=3: ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "m>3: x≤4/(m−3); m<3: x≥4/(m−3); m=3: ∅.",
+          "is_correct": false
+        },
+        {
+          "text": "m≠3: x≤4/(m−3); m=3: ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "m>3: x≤4/(m−3); m<3: x≥4/(m−3); m=3: ℝ.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 12,
+        "type_name": "Inecuații liniare cu parametru",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 12,
+        "variant": 3,
+        "candidates": [
+          "m>3: x≥4/(m−3); m<3: x≤4/(m−3); m=3: ℝ.",
+          "m>3: x≤4/(m−3); m<3: x≥4/(m−3); m=3: ∅.",
+          "m≠3: x≤4/(m−3); m=3: ℝ.",
+          "m>3: x≤4/(m−3); m<3: x≥4/(m−3); m=3: ℝ."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(t)=t pentru t<0 și f(t)=t−1 pentru t≥0, iar \\(g(x)=(x-3)/(x-4)\\). Rezolvați f(g(x))>0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul exclude x=4. Pe ramura t<0 avem f(t)=t<0; pe t≥0 avem f(t)>0 exact pentru t>1. Așadar cerem g(x)>1. Dar g(x)−1=1/(x−4), pozitiv exact pentru x>4.",
+      "options": [
+        {
+          "text": "(4; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 13,
+        "type_name": "Semnul unei compuneri pe ramuri",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 13,
+        "variant": 3,
+        "candidates": [
+          "(4; +∞)",
+          "(−∞; 3)",
+          "(3; 4)",
+          "(3; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m avem mx+3>0 pentru orice x∈[−1;1]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O funcție afină este pozitivă pe întreg segmentul exact când este pozitivă la ambele capete. Condițiile sunt −m+3>0 și m+3>0, adică −3<m<3. La egalitate unul dintre capete ar avea valoarea 0.",
+      "options": [
+        {
+          "text": "[-3; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(-3; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 14,
+        "type_name": "Semn uniform pe semidreaptă sau segment",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 14,
+        "variant": 3,
+        "candidates": [
+          "[-3; 3]",
+          "(-3; 3)",
+          "(−∞; 3)",
+          "(-3; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce x este f(x)=−5x+20 strict pozitivă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−5x+20>0 echivalează cu x<4, deoarece împărțirea la −5 inversează sensul. La x=4 valoarea este zero, deci capătul este exclus.",
+      "options": [
+        {
+          "text": "(4; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 4)",
+          "is_correct": true
+        },
+        {
+          "text": "[4; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 1,
+        "type_name": "Tabelul de semn al funcției afine",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 1,
+        "variant": 4,
+        "candidates": [
+          "(4; +∞)",
+          "(−∞; 4]",
+          "(−∞; 4)",
+          "[4; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați \\((x-4)/(x-6)\\geq0\\), în ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul exclude x=6. Raportul este pozitiv în exteriorul rădăcinii 4 și polului 6, negativ între ele. Numărătorul se anulează la 4, care se include; polul nu se include.",
+      "options": [
+        {
+          "text": "[4; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 4) ∪ (6; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 4] ∪ [6; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 4] ∪ (6; +∞)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 2,
+        "type_name": "Semnul produselor și rapoartelor",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 2,
+        "variant": 4,
+        "candidates": [
+          "[4; 6)",
+          "(−∞; 4) ∪ (6; +∞)",
+          "(−∞; 4] ∪ [6; +∞)",
+          "(−∞; 4] ∪ (6; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Fie h(x)=sign(x−4)+2x·sign(4−x), cu sign(0)=0. Care este scrierea pe ramuri?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<4, semnele sunt −1 și +1, deci h=−1+2x. La x=4 ambii factori sign sunt zero. Pentru x>4, semnele devin +1 și −1, deci h=1−2x.",
+      "options": [
+        {
+          "text": "2x−1 pentru x<4; 0 la x=4; 1−2x pentru x>4.",
+          "is_correct": true
+        },
+        {
+          "text": "1−2x pentru x<4; 0 la x=4; 2x−1 pentru x>4.",
+          "is_correct": false
+        },
+        {
+          "text": "2x−1 pentru x≤4; 1−2x pentru x>4.",
+          "is_correct": false
+        },
+        {
+          "text": "−1 pentru x<4; 0 la x=4; 1 pentru x>4.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 3,
+        "type_name": "Funcții cu sign",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 3,
+        "variant": 4,
+        "candidates": [
+          "2x−1 pentru x<4; 0 la x=4; 1−2x pentru x>4.",
+          "1−2x pentru x<4; 0 la x=4; 2x−1 pentru x>4.",
+          "2x−1 pentru x≤4; 1−2x pentru x>4.",
+          "−1 pentru x<4; 0 la x=4; 1 pentru x>4."
+        ]
+      }
+    },
+    {
+      "text": "Scrieți pe ramuri f(x)=x+|x−4|.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x≤4, modulul este 4−x și suma devine 4. Dacă x>4, modulul este x−4, deci suma este 2x−4. La prag ambele expresii coincid.",
+      "options": [
+        {
+          "text": "2x−4 pentru x≤4; 4 pentru x>4.",
+          "is_correct": false
+        },
+        {
+          "text": "4 pentru x≤4; 2x−4 pentru x>4.",
+          "is_correct": true
+        },
+        {
+          "text": "−4 pentru x≤4; 2x+4 pentru x>4.",
+          "is_correct": false
+        },
+        {
+          "text": "x−4 pentru orice x.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 4,
+        "type_name": "Funcții cu module de expresii afine",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 4,
+        "variant": 4,
+        "candidates": [
+          "2x−4 pentru x≤4; 4 pentru x>4.",
+          "4 pentru x≤4; 2x−4 pentru x>4.",
+          "−4 pentru x≤4; 2x+4 pentru x>4.",
+          "x−4 pentru orice x."
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția f(x)=(m−4)x−5 este pozitivă exact pe intervalul (5; +∞)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pozitivitatea în dreapta impune m−4>0. Rădăcina trebuie să fie 5, deci 5/(m−4)=5. Rezultă m−4=1 și m=5.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 5,
+        "type_name": "Parametru din intervalul exact de pozitivitate",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 5,
+        "variant": 4,
+        "candidates": [
+          "4",
+          "6",
+          "5",
+          "7"
+        ]
+      }
+    },
+    {
+      "text": "Pentru f(x)=m(m−1)x+4, notați a=m(m−1). Care este mulțimea unde f(x)>0, în toate cazurile?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a>0 pentru m<0 sau m>1: împărțim fără schimbarea sensului. a<0 pentru 0<m<1: sensul se inversează. La m=0 sau 1, funcția este constanta 4>0, pozitivă pe ℝ. Inegalitatea fiind strictă, rădăcina se exclude.",
+      "options": [
+        {
+          "text": "a>0: x<−4/a; a<0: x>−4/a; a=0: ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "a>0: x>−4/a; a<0: x<−4/a; a=0: ∅.",
+          "is_correct": false
+        },
+        {
+          "text": "a>0: x≥−4/a; a<0: x≤−4/a; a=0: ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "a>0: x>−4/a; a<0: x<−4/a; a=0: ℝ.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 6,
+        "type_name": "Semnul funcției cu parametru",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 6,
+        "variant": 4,
+        "candidates": [
+          "a>0: x<−4/a; a<0: x>−4/a; a=0: ℝ.",
+          "a>0: x>−4/a; a<0: x<−4/a; a=0: ∅.",
+          "a>0: x≥−4/a; a<0: x≤−4/a; a=0: ℝ.",
+          "a>0: x>−4/a; a<0: x<−4/a; a=0: ℝ."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați 5x−4≥−x+20.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aducem termenii în aceeași parte: (5+1)x≥20+4=24. Împărțim la 6>0 și obținem x≥4.",
+      "options": [
+        {
+          "text": "[4; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(4; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "[-4; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 7,
+        "type_name": "Inecuații liniare după reducere",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 7,
+        "variant": 4,
+        "candidates": [
+          "[4; +∞)",
+          "(4; +∞)",
+          "(−∞; 4]",
+          "[-4; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați \\(1/(x-4)\\geq1/(x-5)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Excludem 4 și 5. Diferența este −1/((x−4)(x−5)), nenegativă exact când produsul numitorului este negativ. Aceasta se întâmplă numai între cele două praguri, fără capete.",
+      "options": [
+        {
+          "text": "[4; 5]",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 5)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; 4) ∪ (5; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "[4; 5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 8,
+        "type_name": "Inecuații raționale reductibile",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 8,
+        "variant": 4,
+        "candidates": [
+          "[4; 5]",
+          "(4; 5)",
+          "(−∞; 4) ∪ (5; +∞)",
+          "[4; 5)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția \\(f(x)=\\frac{m-4}{m+4}x+1\\) este strict crescătoare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia nu este definită pentru m=−4. Panta este pozitivă dacă numărătorul și numitorul au același semn, adică m<−4 sau m>4. La m=4, panta este 0, deci funcția este constantă.",
+      "options": [
+        {
+          "text": "(-4; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; -4) ∪ [4; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; -4) ∪ (4; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; -4] ∪ (4; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 9,
+        "type_name": "Panta exprimată prin fracție",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 9,
+        "variant": 4,
+        "candidates": [
+          "(-4; 4)",
+          "(−∞; -4) ∪ [4; +∞)",
+          "(−∞; -4) ∪ (4; +∞)",
+          "(−∞; -4] ∪ (4; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Care este descrierea graficului lui h(x)=max(5x−4, 4)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două expresii sunt egale când 5x−4=4, adică x=8/5. În stânga acestui punct dreapta este sub constanta 4, deci maximul este constanta. În dreapta, maximul este dreapta; la prag coincid.",
+      "options": [
+        {
+          "text": "h(x)=5x−4 pentru x≤8/5; h(x)=4 pentru x>8/5.",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=4 pentru orice x.",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=5x−4 pentru orice x.",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=4 pentru x≤8/5; h(x)=5x−4 pentru x>8/5.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 10,
+        "type_name": "Grafice de maxime și minime",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 10,
+        "variant": 4,
+        "candidates": [
+          "h(x)=5x−4 pentru x≤8/5; h(x)=4 pentru x>8/5.",
+          "h(x)=4 pentru orice x.",
+          "h(x)=5x−4 pentru orice x.",
+          "h(x)=4 pentru x≤8/5; h(x)=5x−4 pentru x>8/5."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați |x−4|+|x−6|≤4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Între 4 și 6, suma distanțelor este 2≤4. Pentru x<4, suma este 10−2x≤4, deci x≥3. Pentru x>6, suma este 2x−10≤4, deci x≤7. Reunind ramurile, obținem intervalul închis [3;7].",
+      "options": [
+        {
+          "text": "[3; 7]",
+          "is_correct": true
+        },
+        {
+          "text": "[4; 6]",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "[2; 8]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 11,
+        "type_name": "Inecuații cu sumă de module",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 11,
+        "variant": 4,
+        "candidates": [
+          "[3; 7]",
+          "[4; 6]",
+          "(3; 7)",
+          "[2; 8]"
+        ]
+      }
+    },
+    {
+      "text": "Discutați după m inecuația (m−4)x≤5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Când m−4>0 împărțim fără schimbarea sensului; când este negativ inversăm sensul. Când m=4, inecuația devine 0≤5, adevărată pentru orice x.",
+      "options": [
+        {
+          "text": "m>4: x≥5/(m−4); m<4: x≤5/(m−4); m=4: ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "m>4: x≤5/(m−4); m<4: x≥5/(m−4); m=4: ℝ.",
+          "is_correct": true
+        },
+        {
+          "text": "m>4: x≤5/(m−4); m<4: x≥5/(m−4); m=4: ∅.",
+          "is_correct": false
+        },
+        {
+          "text": "m≠4: x≤5/(m−4); m=4: ℝ.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 12,
+        "type_name": "Inecuații liniare cu parametru",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 12,
+        "variant": 4,
+        "candidates": [
+          "m>4: x≥5/(m−4); m<4: x≤5/(m−4); m=4: ℝ.",
+          "m>4: x≤5/(m−4); m<4: x≥5/(m−4); m=4: ℝ.",
+          "m>4: x≤5/(m−4); m<4: x≥5/(m−4); m=4: ∅.",
+          "m≠4: x≤5/(m−4); m=4: ℝ."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(t)=t pentru t<0 și f(t)=t−1 pentru t≥0, iar \\(g(x)=(x-4)/(x-5)\\). Rezolvați f(g(x))>0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul exclude x=5. Pe ramura t<0 avem f(t)=t<0; pe t≥0 avem f(t)>0 exact pentru t>1. Așadar cerem g(x)>1. Dar g(x)−1=1/(x−5), pozitiv exact pentru x>5.",
+      "options": [
+        {
+          "text": "(−∞; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(4; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 13,
+        "type_name": "Semnul unei compuneri pe ramuri",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 13,
+        "variant": 4,
+        "candidates": [
+          "(−∞; 4)",
+          "(4; 5)",
+          "(5; +∞)",
+          "(4; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m avem mx+4>0 pentru orice x∈[−1;1]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O funcție afină este pozitivă pe întreg segmentul exact când este pozitivă la ambele capete. Condițiile sunt −m+4>0 și m+4>0, adică −4<m<4. La egalitate unul dintre capete ar avea valoarea 0.",
+      "options": [
+        {
+          "text": "[-4; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4; 4)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 14,
+        "type_name": "Semn uniform pe semidreaptă sau segment",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 14,
+        "variant": 4,
+        "candidates": [
+          "[-4; 4]",
+          "(−∞; 4)",
+          "(-4; +∞)",
+          "(-4; 4)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce x este f(x)=−6x+30 strict pozitivă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "−6x+30>0 echivalează cu x<5, deoarece împărțirea la −6 inversează sensul. La x=5 valoarea este zero, deci capătul este exclus.",
+      "options": [
+        {
+          "text": "(−∞; 5)",
+          "is_correct": true
+        },
+        {
+          "text": "(5; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 5]",
+          "is_correct": false
+        },
+        {
+          "text": "[5; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 1,
+        "type_name": "Tabelul de semn al funcției afine",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 1,
+        "variant": 5,
+        "candidates": [
+          "(−∞; 5)",
+          "(5; +∞)",
+          "(−∞; 5]",
+          "[5; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați \\((x-5)/(x-7)\\geq0\\), în ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul exclude x=7. Raportul este pozitiv în exteriorul rădăcinii 5 și polului 7, negativ între ele. Numărătorul se anulează la 5, care se include; polul nu se include.",
+      "options": [
+        {
+          "text": "[5; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 5] ∪ (7; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; 5) ∪ (7; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 5] ∪ [7; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 2,
+        "type_name": "Semnul produselor și rapoartelor",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 2,
+        "variant": 5,
+        "candidates": [
+          "[5; 7)",
+          "(−∞; 5] ∪ (7; +∞)",
+          "(−∞; 5) ∪ (7; +∞)",
+          "(−∞; 5] ∪ [7; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Fie h(x)=sign(x−5)+2x·sign(5−x), cu sign(0)=0. Care este scrierea pe ramuri?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<5, semnele sunt −1 și +1, deci h=−1+2x. La x=5 ambii factori sign sunt zero. Pentru x>5, semnele devin +1 și −1, deci h=1−2x.",
+      "options": [
+        {
+          "text": "1−2x pentru x<5; 0 la x=5; 2x−1 pentru x>5.",
+          "is_correct": false
+        },
+        {
+          "text": "2x−1 pentru x≤5; 1−2x pentru x>5.",
+          "is_correct": false
+        },
+        {
+          "text": "2x−1 pentru x<5; 0 la x=5; 1−2x pentru x>5.",
+          "is_correct": true
+        },
+        {
+          "text": "−1 pentru x<5; 0 la x=5; 1 pentru x>5.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 3,
+        "type_name": "Funcții cu sign",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 3,
+        "variant": 5,
+        "candidates": [
+          "1−2x pentru x<5; 0 la x=5; 2x−1 pentru x>5.",
+          "2x−1 pentru x≤5; 1−2x pentru x>5.",
+          "2x−1 pentru x<5; 0 la x=5; 1−2x pentru x>5.",
+          "−1 pentru x<5; 0 la x=5; 1 pentru x>5."
+        ]
+      }
+    },
+    {
+      "text": "Scrieți pe ramuri f(x)=x+|x−5|.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x≤5, modulul este 5−x și suma devine 5. Dacă x>5, modulul este x−5, deci suma este 2x−5. La prag ambele expresii coincid.",
+      "options": [
+        {
+          "text": "2x−5 pentru x≤5; 5 pentru x>5.",
+          "is_correct": false
+        },
+        {
+          "text": "−5 pentru x≤5; 2x+5 pentru x>5.",
+          "is_correct": false
+        },
+        {
+          "text": "x−5 pentru orice x.",
+          "is_correct": false
+        },
+        {
+          "text": "5 pentru x≤5; 2x−5 pentru x>5.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 4,
+        "type_name": "Funcții cu module de expresii afine",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 4,
+        "variant": 5,
+        "candidates": [
+          "2x−5 pentru x≤5; 5 pentru x>5.",
+          "−5 pentru x≤5; 2x+5 pentru x>5.",
+          "x−5 pentru orice x.",
+          "5 pentru x≤5; 2x−5 pentru x>5."
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția f(x)=(m−5)x−6 este pozitivă exact pe intervalul (6; +∞)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pozitivitatea în dreapta impune m−5>0. Rădăcina trebuie să fie 6, deci 6/(m−5)=6. Rezultă m−5=1 și m=6.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 5,
+        "type_name": "Parametru din intervalul exact de pozitivitate",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 5,
+        "variant": 5,
+        "candidates": [
+          "6",
+          "5",
+          "7",
+          "8"
+        ]
+      }
+    },
+    {
+      "text": "Pentru f(x)=m(m−1)x+5, notați a=m(m−1). Care este mulțimea unde f(x)>0, în toate cazurile?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a>0 pentru m<0 sau m>1: împărțim fără schimbarea sensului. a<0 pentru 0<m<1: sensul se inversează. La m=0 sau 1, funcția este constanta 5>0, pozitivă pe ℝ. Inegalitatea fiind strictă, rădăcina se exclude.",
+      "options": [
+        {
+          "text": "a>0: x<−5/a; a<0: x>−5/a; a=0: ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "a>0: x>−5/a; a<0: x<−5/a; a=0: ℝ.",
+          "is_correct": true
+        },
+        {
+          "text": "a>0: x>−5/a; a<0: x<−5/a; a=0: ∅.",
+          "is_correct": false
+        },
+        {
+          "text": "a>0: x≥−5/a; a<0: x≤−5/a; a=0: ℝ.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 6,
+        "type_name": "Semnul funcției cu parametru",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 6,
+        "variant": 5,
+        "candidates": [
+          "a>0: x<−5/a; a<0: x>−5/a; a=0: ℝ.",
+          "a>0: x>−5/a; a<0: x<−5/a; a=0: ℝ.",
+          "a>0: x>−5/a; a<0: x<−5/a; a=0: ∅.",
+          "a>0: x≥−5/a; a<0: x≤−5/a; a=0: ℝ."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați 6x−5≥−x+30.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aducem termenii în aceeași parte: (6+1)x≥30+5=35. Împărțim la 7>0 și obținem x≥5.",
+      "options": [
+        {
+          "text": "(5; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 5]",
+          "is_correct": false
+        },
+        {
+          "text": "[5; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "[-5; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 7,
+        "type_name": "Inecuații liniare după reducere",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 7,
+        "variant": 5,
+        "candidates": [
+          "(5; +∞)",
+          "(−∞; 5]",
+          "[5; +∞)",
+          "[-5; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați \\(1/(x-5)\\geq1/(x-6)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Excludem 5 și 6. Diferența este −1/((x−5)(x−6)), nenegativă exact când produsul numitorului este negativ. Aceasta se întâmplă numai între cele două praguri, fără capete.",
+      "options": [
+        {
+          "text": "[5; 6]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 5) ∪ (6; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "[5; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 6)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 8,
+        "type_name": "Inecuații raționale reductibile",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 8,
+        "variant": 5,
+        "candidates": [
+          "[5; 6]",
+          "(−∞; 5) ∪ (6; +∞)",
+          "[5; 6)",
+          "(5; 6)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția \\(f(x)=\\frac{m-5}{m+5}x+1\\) este strict crescătoare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia nu este definită pentru m=−5. Panta este pozitivă dacă numărătorul și numitorul au același semn, adică m<−5 sau m>5. La m=5, panta este 0, deci funcția este constantă.",
+      "options": [
+        {
+          "text": "(−∞; -5) ∪ (5; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(-5; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; -5) ∪ [5; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; -5] ∪ (5; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 9,
+        "type_name": "Panta exprimată prin fracție",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 9,
+        "variant": 5,
+        "candidates": [
+          "(−∞; -5) ∪ (5; +∞)",
+          "(-5; 5)",
+          "(−∞; -5) ∪ [5; +∞)",
+          "(−∞; -5] ∪ (5; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Care este descrierea graficului lui h(x)=max(6x−5, 5)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două expresii sunt egale când 6x−5=5, adică x=5/3. În stânga acestui punct dreapta este sub constanta 5, deci maximul este constanta. În dreapta, maximul este dreapta; la prag coincid.",
+      "options": [
+        {
+          "text": "h(x)=6x−5 pentru x≤5/3; h(x)=5 pentru x>5/3.",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=5 pentru x≤5/3; h(x)=6x−5 pentru x>5/3.",
+          "is_correct": true
+        },
+        {
+          "text": "h(x)=5 pentru orice x.",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=6x−5 pentru orice x.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 10,
+        "type_name": "Grafice de maxime și minime",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 10,
+        "variant": 5,
+        "candidates": [
+          "h(x)=6x−5 pentru x≤5/3; h(x)=5 pentru x>5/3.",
+          "h(x)=5 pentru x≤5/3; h(x)=6x−5 pentru x>5/3.",
+          "h(x)=5 pentru orice x.",
+          "h(x)=6x−5 pentru orice x."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați |x−5|+|x−7|≤4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Între 5 și 7, suma distanțelor este 2≤4. Pentru x<5, suma este 12−2x≤4, deci x≥4. Pentru x>7, suma este 2x−12≤4, deci x≤8. Reunind ramurile, obținem intervalul închis [4;8].",
+      "options": [
+        {
+          "text": "[5; 7]",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 8)",
+          "is_correct": false
+        },
+        {
+          "text": "[4; 8]",
+          "is_correct": true
+        },
+        {
+          "text": "[3; 9]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 11,
+        "type_name": "Inecuații cu sumă de module",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 11,
+        "variant": 5,
+        "candidates": [
+          "[5; 7]",
+          "(4; 8)",
+          "[4; 8]",
+          "[3; 9]"
+        ]
+      }
+    },
+    {
+      "text": "Discutați după m inecuația (m−5)x≤6.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Când m−5>0 împărțim fără schimbarea sensului; când este negativ inversăm sensul. Când m=5, inecuația devine 0≤6, adevărată pentru orice x.",
+      "options": [
+        {
+          "text": "m>5: x≥6/(m−5); m<5: x≤6/(m−5); m=5: ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "m>5: x≤6/(m−5); m<5: x≥6/(m−5); m=5: ∅.",
+          "is_correct": false
+        },
+        {
+          "text": "m≠5: x≤6/(m−5); m=5: ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "m>5: x≤6/(m−5); m<5: x≥6/(m−5); m=5: ℝ.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 12,
+        "type_name": "Inecuații liniare cu parametru",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 12,
+        "variant": 5,
+        "candidates": [
+          "m>5: x≥6/(m−5); m<5: x≤6/(m−5); m=5: ℝ.",
+          "m>5: x≤6/(m−5); m<5: x≥6/(m−5); m=5: ∅.",
+          "m≠5: x≤6/(m−5); m=5: ℝ.",
+          "m>5: x≤6/(m−5); m<5: x≥6/(m−5); m=5: ℝ."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(t)=t pentru t<0 și f(t)=t−1 pentru t≥0, iar \\(g(x)=(x-5)/(x-6)\\). Rezolvați f(g(x))>0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul exclude x=6. Pe ramura t<0 avem f(t)=t<0; pe t≥0 avem f(t)>0 exact pentru t>1. Așadar cerem g(x)>1. Dar g(x)−1=1/(x−6), pozitiv exact pentru x>6.",
+      "options": [
+        {
+          "text": "(6; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 13,
+        "type_name": "Semnul unei compuneri pe ramuri",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 13,
+        "variant": 5,
+        "candidates": [
+          "(6; +∞)",
+          "(−∞; 5)",
+          "(5; 6)",
+          "(5; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m avem mx+5>0 pentru orice x∈[−1;1]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O funcție afină este pozitivă pe întreg segmentul exact când este pozitivă la ambele capete. Condițiile sunt −m+5>0 și m+5>0, adică −5<m<5. La egalitate unul dintre capete ar avea valoarea 0.",
+      "options": [
+        {
+          "text": "[-5; 5]",
+          "is_correct": false
+        },
+        {
+          "text": "(-5; 5)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(-5; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.3",
+        "type": 14,
+        "type_name": "Semn uniform pe semidreaptă sau segment",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 3,
+        "type": 14,
+        "variant": 5,
+        "candidates": [
+          "[-5; 5]",
+          "(-5; 5)",
+          "(−∞; 5)",
+          "(-5; +∞)"
+        ]
+      }
+    }
+  ]
 }

@@ -1,6 +1,1378 @@
 {
   "title": "Descompunerea unui vector după doi vectori necoliniari",
   "description": "Clasa a 9-a · Vectori în plan",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Ajustează a și b astfel încât w=au+bv, cu u=(2,0), v=(1,2), w=(5,6).",
+      "type": "vector_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Ecuația au+bv=w devine (2a+b,2b)=(5,6). Din 2b=6 obținem b=3, apoi 2a+3=5, deci a=1. Determinantul bazei este 4, nenul: descompunerea este unică.",
+      "interactive": {
+        "mode": "basis_decomposition",
+        "v": [
+          1,
+          2
+        ],
+        "w": [
+          5,
+          6
+        ],
+        "u": [
+          2,
+          0
+        ]
+      },
+      "workshop": {
+        "id": "V10",
+        "origin": "Exercițiu original; lot interactiv introductiv",
+        "reference": "Exercițiu pregătitor pentru G1.3; nu este un tip catalogat distinct"
+      }
+    },
+    {
+      "text": "În triunghiul ABC, AB=(4,0), AC=(0,6). Descompune mediana AM după AB și AC.",
+      "type": "vector_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "Deoarece M este mijlocul lui BC, AM=(AB+AC)/2=(2,3). Coeficienții după AB și AC sunt amândoi 1/2. Aceștia sunt coeficienți în baza laturilor, nu lungimi de proiecții ortogonale.",
+      "interactive": {
+        "mode": "basis_decomposition",
+        "v": [
+          0,
+          6
+        ],
+        "w": [
+          2,
+          3
+        ],
+        "u": [
+          4,
+          0
+        ]
+      },
+      "workshop": {
+        "id": "V11",
+        "origin": "Exercițiu original; lot interactiv introductiv",
+        "reference": "G1.3 tip 1"
+      }
+    },
+    {
+      "text": "În pătratul ABCD cu A(0,0), B(6,0), C(6,6), D(0,6), M este mijlocul BC, N mijlocul CD. Scrie AB=a·AM+b·AN.",
+      "type": "vector_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "M=(6,3) și N=(3,6), deci AM=(6,3), AN=(3,6). Sistemul 6a+3b=6, 3a+6b=0 dă a=4/3 și b=−2/3. Verificare: (4/3)(6,3)−(2/3)(3,6)=(6,0)=AB; determinantul bazei este 27, nenul.",
+      "interactive": {
+        "mode": "basis_decomposition",
+        "v": [
+          3,
+          6
+        ],
+        "w": [
+          6,
+          0
+        ],
+        "u": [
+          6,
+          3
+        ]
+      },
+      "workshop": {
+        "id": "V12",
+        "origin": "Exercițiu original; lot interactiv introductiv",
+        "reference": "G1.3 tip 4"
+      }
+    },
+    {
+      "text": "În triunghiul necoliniar ABC, M este mijlocul lui BC. În baza u=AB, v=AC, ce coeficienți (α; β) are vectorul -3·AM=αu+βv?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din formula mijlocului, AM=(AB+AC)/2=(u+v)/2. Înmulțind cu -3, obținem coeficienții (-3/2; -3/2). Baza este formată din doi vectori necoliniari, deci acești coeficienți sunt unici.",
+      "options": [
+        {
+          "text": "(-3/2; -3/2)",
+          "is_correct": true
+        },
+        {
+          "text": "(-1/2; -3/2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3/2; -1/2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-5/2; -5/2)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 1,
+        "family_name": "Descompunere pe laturile triunghiului",
+        "variant": 1,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "median",
+        "k": -3,
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În triunghiul necoliniar ABC, M este mijlocul lui BC. În baza u=AB, v=AC, ce coeficienți (α; β) are vectorul -1·AM=αu+βv?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din formula mijlocului, AM=(AB+AC)/2=(u+v)/2. Înmulțind cu -1, obținem coeficienții (-1/2; -1/2). Baza este formată din doi vectori necoliniari, deci acești coeficienți sunt unici.",
+      "options": [
+        {
+          "text": "(1/2; -1/2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1/2; -1/2)",
+          "is_correct": true
+        },
+        {
+          "text": "(-1/2; 1/2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3/2; -3/2)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 1,
+        "family_name": "Descompunere pe laturile triunghiului",
+        "variant": 2,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "median",
+        "k": -1,
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În triunghiul necoliniar ABC, M este mijlocul lui BC. În baza u=AB, v=AC, ce coeficienți (α; β) are vectorul 1·AM=αu+βv?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din formula mijlocului, AM=(AB+AC)/2=(u+v)/2. Înmulțind cu 1, obținem coeficienții (1/2; 1/2). Baza este formată din doi vectori necoliniari, deci acești coeficienți sunt unici.",
+      "options": [
+        {
+          "text": "(3/2; 1/2)",
+          "is_correct": false
+        },
+        {
+          "text": "(1/2; 3/2)",
+          "is_correct": false
+        },
+        {
+          "text": "(1/2; 1/2)",
+          "is_correct": true
+        },
+        {
+          "text": "(-1/2; -1/2)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 1,
+        "family_name": "Descompunere pe laturile triunghiului",
+        "variant": 3,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "median",
+        "k": 1,
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În triunghiul necoliniar ABC, M este mijlocul lui BC. În baza u=AB, v=AC, ce coeficienți (α; β) are vectorul 2·AM=αu+βv?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din formula mijlocului, AM=(AB+AC)/2=(u+v)/2. Înmulțind cu 2, obținem coeficienții (1; 1). Baza este formată din doi vectori necoliniari, deci acești coeficienți sunt unici.",
+      "options": [
+        {
+          "text": "(2; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 1)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 1,
+        "family_name": "Descompunere pe laturile triunghiului",
+        "variant": 4,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "median",
+        "k": 2,
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În triunghiul necoliniar ABC, M este mijlocul lui BC. În baza u=AB, v=AC, ce coeficienți (α; β) are vectorul 5·AM=αu+βv?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din formula mijlocului, AM=(AB+AC)/2=(u+v)/2. Înmulțind cu 5, obținem coeficienții (5/2; 5/2). Baza este formată din doi vectori necoliniari, deci acești coeficienți sunt unici.",
+      "options": [
+        {
+          "text": "(5/2; 5/2)",
+          "is_correct": true
+        },
+        {
+          "text": "(7/2; 5/2)",
+          "is_correct": false
+        },
+        {
+          "text": "(5/2; 7/2)",
+          "is_correct": false
+        },
+        {
+          "text": "(3/2; 3/2)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 1,
+        "family_name": "Descompunere pe laturile triunghiului",
+        "variant": 5,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "median",
+        "k": 5,
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În triunghiul necoliniar ABC, M, N și P sunt mijloacele lui BC, CA și AB. Determinați (α; β) astfel încât 1·AM+(-2)·AB=α·BN+β·CP.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În baza u=AB, v=AC avem AM=(u+v)/2, BN=−u+v/2 și CP=u/2−v. Vectorul cerut are coeficienții (-3/2; 1/2). Egalarea coeficienților dă −α+β/2=-3/2 și α/2−β=1/2. Determinantul sistemului este 3/4, nenul. Soluția este α=5/3, β=1/3; înlocuirea în cele două ecuații confirmă descompunerea.",
+      "options": [
+        {
+          "text": "(8/3; 1/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(5/3; 1/3)",
+          "is_correct": true
+        },
+        {
+          "text": "(5/3; 4/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(2/3; -2/3)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 2,
+        "family_name": "Schimbarea bazei folosind mediane",
+        "variant": 1,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "median_basis",
+        "k": 1,
+        "t": -2,
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În triunghiul necoliniar ABC, M, N și P sunt mijloacele lui BC, CA și AB. Determinați (α; β) astfel încât 2·AM+(-1)·AB=α·BN+β·CP.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În baza u=AB, v=AC avem AM=(u+v)/2, BN=−u+v/2 și CP=u/2−v. Vectorul cerut are coeficienții (0; 1). Egalarea coeficienților dă −α+β/2=0 și α/2−β=1. Determinantul sistemului este 3/4, nenul. Soluția este α=-2/3, β=-4/3; înlocuirea în cele două ecuații confirmă descompunerea.",
+      "options": [
+        {
+          "text": "(1/3; -4/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2/3; -1/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2/3; -4/3)",
+          "is_correct": true
+        },
+        {
+          "text": "(-5/3; -7/3)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 2,
+        "family_name": "Schimbarea bazei folosind mediane",
+        "variant": 2,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "median_basis",
+        "k": 2,
+        "t": -1,
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În triunghiul necoliniar ABC, M, N și P sunt mijloacele lui BC, CA și AB. Determinați (α; β) astfel încât 3·AM+(0)·AB=α·BN+β·CP.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În baza u=AB, v=AC avem AM=(u+v)/2, BN=−u+v/2 și CP=u/2−v. Vectorul cerut are coeficienții (3/2; 3/2). Egalarea coeficienților dă −α+β/2=3/2 și α/2−β=3/2. Determinantul sistemului este 3/4, nenul. Soluția este α=-3, β=-3; înlocuirea în cele două ecuații confirmă descompunerea.",
+      "options": [
+        {
+          "text": "(-2; -3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3; -2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4; -4)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3; -3)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 2,
+        "family_name": "Schimbarea bazei folosind mediane",
+        "variant": 3,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "median_basis",
+        "k": 3,
+        "t": 0,
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În triunghiul necoliniar ABC, M, N și P sunt mijloacele lui BC, CA și AB. Determinați (α; β) astfel încât 4·AM+(1)·AB=α·BN+β·CP.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În baza u=AB, v=AC avem AM=(u+v)/2, BN=−u+v/2 și CP=u/2−v. Vectorul cerut are coeficienții (3; 2). Egalarea coeficienților dă −α+β/2=3 și α/2−β=2. Determinantul sistemului este 3/4, nenul. Soluția este α=-16/3, β=-14/3; înlocuirea în cele două ecuații confirmă descompunerea.",
+      "options": [
+        {
+          "text": "(-16/3; -14/3)",
+          "is_correct": true
+        },
+        {
+          "text": "(-13/3; -14/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-16/3; -11/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-19/3; -17/3)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 2,
+        "family_name": "Schimbarea bazei folosind mediane",
+        "variant": 4,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "median_basis",
+        "k": 4,
+        "t": 1,
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În triunghiul necoliniar ABC, M, N și P sunt mijloacele lui BC, CA și AB. Determinați (α; β) astfel încât 5·AM+(2)·AB=α·BN+β·CP.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În baza u=AB, v=AC avem AM=(u+v)/2, BN=−u+v/2 și CP=u/2−v. Vectorul cerut are coeficienții (9/2; 5/2). Egalarea coeficienților dă −α+β/2=9/2 și α/2−β=5/2. Determinantul sistemului este 3/4, nenul. Soluția este α=-23/3, β=-19/3; înlocuirea în cele două ecuații confirmă descompunerea.",
+      "options": [
+        {
+          "text": "(-20/3; -19/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-23/3; -19/3)",
+          "is_correct": true
+        },
+        {
+          "text": "(-23/3; -16/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-26/3; -22/3)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 2,
+        "family_name": "Schimbarea bazei folosind mediane",
+        "variant": 5,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "median_basis",
+        "k": 5,
+        "t": 2,
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În triunghiul ABC, AB=3, AC=7, iar D este interior segmentului BC. Se scrie AD=α·AB+β·AC, cu α,β>0 și α+β=1. Dacă vectorii componenți α·AB și β·AC au module egale, cât este raportul BD/DC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "D∈BC implică BD/DC=β/α. Egalitatea modulelor este α·3=β·7, nu α=β. Prin urmare β/α=3/7=3/7. Coeficienții sunt α=7/10, β=3/10, ambii pozitivi. Componentele formează un romb, iar AD are direcția bisectoarei interioare. Lungimile AB și AC sunt diferite, deci D nu este mijlocul lui BC.",
+      "options": [
+        {
+          "text": "10/7",
+          "is_correct": false
+        },
+        {
+          "text": "-4/7",
+          "is_correct": false
+        },
+        {
+          "text": "3/7",
+          "is_correct": true
+        },
+        {
+          "text": "17/7",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 3,
+        "family_name": "Componente egale în modul",
+        "variant": 1,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "equal_components",
+        "AB": 3,
+        "AC": 7,
+        "answer_kind": "number"
+      }
+    },
+    {
+      "text": "În triunghiul ABC, AB=4, AC=9, iar D este interior segmentului BC. Se scrie AD=α·AB+β·AC, cu α,β>0 și α+β=1. Dacă vectorii componenți α·AB și β·AC au module egale, cât este raportul BD/DC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "D∈BC implică BD/DC=β/α. Egalitatea modulelor este α·4=β·9, nu α=β. Prin urmare β/α=4/9=4/9. Coeficienții sunt α=9/13, β=4/13, ambii pozitivi. Componentele formează un romb, iar AD are direcția bisectoarei interioare. Lungimile AB și AC sunt diferite, deci D nu este mijlocul lui BC.",
+      "options": [
+        {
+          "text": "13/9",
+          "is_correct": false
+        },
+        {
+          "text": "-5/9",
+          "is_correct": false
+        },
+        {
+          "text": "22/9",
+          "is_correct": false
+        },
+        {
+          "text": "4/9",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 3,
+        "family_name": "Componente egale în modul",
+        "variant": 2,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "equal_components",
+        "AB": 4,
+        "AC": 9,
+        "answer_kind": "number"
+      }
+    },
+    {
+      "text": "În triunghiul ABC, AB=5, AC=11, iar D este interior segmentului BC. Se scrie AD=α·AB+β·AC, cu α,β>0 și α+β=1. Dacă vectorii componenți α·AB și β·AC au module egale, cât este raportul BD/DC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "D∈BC implică BD/DC=β/α. Egalitatea modulelor este α·5=β·11, nu α=β. Prin urmare β/α=5/11=5/11. Coeficienții sunt α=11/16, β=5/16, ambii pozitivi. Componentele formează un romb, iar AD are direcția bisectoarei interioare. Lungimile AB și AC sunt diferite, deci D nu este mijlocul lui BC.",
+      "options": [
+        {
+          "text": "5/11",
+          "is_correct": true
+        },
+        {
+          "text": "16/11",
+          "is_correct": false
+        },
+        {
+          "text": "-6/11",
+          "is_correct": false
+        },
+        {
+          "text": "27/11",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 3,
+        "family_name": "Componente egale în modul",
+        "variant": 3,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "equal_components",
+        "AB": 5,
+        "AC": 11,
+        "answer_kind": "number"
+      }
+    },
+    {
+      "text": "În triunghiul ABC, AB=6, AC=13, iar D este interior segmentului BC. Se scrie AD=α·AB+β·AC, cu α,β>0 și α+β=1. Dacă vectorii componenți α·AB și β·AC au module egale, cât este raportul BD/DC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "D∈BC implică BD/DC=β/α. Egalitatea modulelor este α·6=β·13, nu α=β. Prin urmare β/α=6/13=6/13. Coeficienții sunt α=13/19, β=6/19, ambii pozitivi. Componentele formează un romb, iar AD are direcția bisectoarei interioare. Lungimile AB și AC sunt diferite, deci D nu este mijlocul lui BC.",
+      "options": [
+        {
+          "text": "19/13",
+          "is_correct": false
+        },
+        {
+          "text": "6/13",
+          "is_correct": true
+        },
+        {
+          "text": "-7/13",
+          "is_correct": false
+        },
+        {
+          "text": "32/13",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 3,
+        "family_name": "Componente egale în modul",
+        "variant": 4,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "equal_components",
+        "AB": 6,
+        "AC": 13,
+        "answer_kind": "number"
+      }
+    },
+    {
+      "text": "În triunghiul ABC, AB=7, AC=15, iar D este interior segmentului BC. Se scrie AD=α·AB+β·AC, cu α,β>0 și α+β=1. Dacă vectorii componenți α·AB și β·AC au module egale, cât este raportul BD/DC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "D∈BC implică BD/DC=β/α. Egalitatea modulelor este α·7=β·15, nu α=β. Prin urmare β/α=7/15=7/15. Coeficienții sunt α=15/22, β=7/22, ambii pozitivi. Componentele formează un romb, iar AD are direcția bisectoarei interioare. Lungimile AB și AC sunt diferite, deci D nu este mijlocul lui BC.",
+      "options": [
+        {
+          "text": "22/15",
+          "is_correct": false
+        },
+        {
+          "text": "-8/15",
+          "is_correct": false
+        },
+        {
+          "text": "7/15",
+          "is_correct": true
+        },
+        {
+          "text": "37/15",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 3,
+        "family_name": "Componente egale în modul",
+        "variant": 5,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "equal_components",
+        "AB": 7,
+        "AC": 15,
+        "answer_kind": "number"
+      }
+    },
+    {
+      "text": "În pătratul ABCD, M∈BC și N∈DC sunt interioare laturilor și BM:MC=1:1, DN:NC=1:1. Determinați (α; β) din AB=α·AM+β·AN.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În baza u=AB, v=AD avem AM=u+(1/2)v și AN=(1/2)u+v. Relația cerută devine α+(1/2)β=1, (1/2)α+β=0. Determinantul este 1−(1/2)·(1/2)=3/4≠0, deci AM și AN sunt necoliniari. Rezultă α=4/3, β=-2/3; substituția reconstituie u.",
+      "options": [
+        {
+          "text": "(7/3; -2/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(4/3; 1/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(1/3; -5/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(4/3; -2/3)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 4,
+        "family_name": "Descompunere după două ceviene",
+        "variant": 1,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "cevians",
+        "BM_MC": [
+          1,
+          1
+        ],
+        "DN_NC": [
+          1,
+          1
+        ],
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În pătratul ABCD, M∈BC și N∈DC sunt interioare laturilor și BM:MC=2:1, DN:NC=1:2. Determinați (α; β) din AB=α·AM+β·AN.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În baza u=AB, v=AD avem AM=u+(2/3)v și AN=(1/3)u+v. Relația cerută devine α+(1/3)β=1, (2/3)α+β=0. Determinantul este 1−(2/3)·(1/3)=7/9≠0, deci AM și AN sunt necoliniari. Rezultă α=9/7, β=-6/7; substituția reconstituie u.",
+      "options": [
+        {
+          "text": "(9/7; -6/7)",
+          "is_correct": true
+        },
+        {
+          "text": "(16/7; -6/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(9/7; 1/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(2/7; -13/7)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 4,
+        "family_name": "Descompunere după două ceviene",
+        "variant": 2,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "cevians",
+        "BM_MC": [
+          2,
+          1
+        ],
+        "DN_NC": [
+          1,
+          2
+        ],
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În pătratul ABCD, M∈BC și N∈DC sunt interioare laturilor și BM:MC=3:1, DN:NC=1:3. Determinați (α; β) din AB=α·AM+β·AN.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În baza u=AB, v=AD avem AM=u+(3/4)v și AN=(1/4)u+v. Relația cerută devine α+(1/4)β=1, (3/4)α+β=0. Determinantul este 1−(3/4)·(1/4)=13/16≠0, deci AM și AN sunt necoliniari. Rezultă α=16/13, β=-12/13; substituția reconstituie u.",
+      "options": [
+        {
+          "text": "(29/13; -12/13)",
+          "is_correct": false
+        },
+        {
+          "text": "(16/13; -12/13)",
+          "is_correct": true
+        },
+        {
+          "text": "(16/13; 1/13)",
+          "is_correct": false
+        },
+        {
+          "text": "(3/13; -25/13)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 4,
+        "family_name": "Descompunere după două ceviene",
+        "variant": 3,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "cevians",
+        "BM_MC": [
+          3,
+          1
+        ],
+        "DN_NC": [
+          1,
+          3
+        ],
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În pătratul ABCD, M∈BC și N∈DC sunt interioare laturilor și BM:MC=4:1, DN:NC=1:4. Determinați (α; β) din AB=α·AM+β·AN.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În baza u=AB, v=AD avem AM=u+(4/5)v și AN=(1/5)u+v. Relația cerută devine α+(1/5)β=1, (4/5)α+β=0. Determinantul este 1−(4/5)·(1/5)=21/25≠0, deci AM și AN sunt necoliniari. Rezultă α=25/21, β=-20/21; substituția reconstituie u.",
+      "options": [
+        {
+          "text": "(46/21; -20/21)",
+          "is_correct": false
+        },
+        {
+          "text": "(25/21; 1/21)",
+          "is_correct": false
+        },
+        {
+          "text": "(25/21; -20/21)",
+          "is_correct": true
+        },
+        {
+          "text": "(4/21; -41/21)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 4,
+        "family_name": "Descompunere după două ceviene",
+        "variant": 4,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "cevians",
+        "BM_MC": [
+          4,
+          1
+        ],
+        "DN_NC": [
+          1,
+          4
+        ],
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În pătratul ABCD, M∈BC și N∈DC sunt interioare laturilor și BM:MC=5:1, DN:NC=1:5. Determinați (α; β) din AB=α·AM+β·AN.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În baza u=AB, v=AD avem AM=u+(5/6)v și AN=(1/6)u+v. Relația cerută devine α+(1/6)β=1, (5/6)α+β=0. Determinantul este 1−(5/6)·(1/6)=31/36≠0, deci AM și AN sunt necoliniari. Rezultă α=36/31, β=-30/31; substituția reconstituie u.",
+      "options": [
+        {
+          "text": "(67/31; -30/31)",
+          "is_correct": false
+        },
+        {
+          "text": "(36/31; 1/31)",
+          "is_correct": false
+        },
+        {
+          "text": "(5/31; -61/31)",
+          "is_correct": false
+        },
+        {
+          "text": "(36/31; -30/31)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 4,
+        "family_name": "Descompunere după două ceviene",
+        "variant": 5,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "cevians",
+        "BM_MC": [
+          5,
+          1
+        ],
+        "DN_NC": [
+          1,
+          5
+        ],
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În triunghiul necoliniar ABC, punctul D este interior lui BC și BD:DC=2:4. Care sunt coeficienții (α; β) în AD=α·AB+β·AC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "D=B+(1/3)(C−B). Scăzând A, obținem AD=(2/3)AB+(1/3)AC. Coeficienții (2/3; 1/3) sunt pozitivi și au suma 1; raportul β/α=2/4 reproduce BD/DC. Coeficientul extremității B este ponderea opusă, q/(p+q).",
+      "options": [
+        {
+          "text": "(2/3; 1/3)",
+          "is_correct": true
+        },
+        {
+          "text": "(5/3; 1/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(2/3; 4/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1/3; -2/3)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 5,
+        "family_name": "Descompunere cu raport de împărțire",
+        "variant": 1,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "division",
+        "BD_DC": [
+          2,
+          4
+        ],
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În triunghiul necoliniar ABC, punctul D este interior lui BC și BD:DC=3:5. Care sunt coeficienții (α; β) în AD=α·AB+β·AC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "D=B+(3/8)(C−B). Scăzând A, obținem AD=(5/8)AB+(3/8)AC. Coeficienții (5/8; 3/8) sunt pozitivi și au suma 1; raportul β/α=3/5 reproduce BD/DC. Coeficientul extremității B este ponderea opusă, q/(p+q).",
+      "options": [
+        {
+          "text": "(13/8; 3/8)",
+          "is_correct": false
+        },
+        {
+          "text": "(5/8; 3/8)",
+          "is_correct": true
+        },
+        {
+          "text": "(5/8; 11/8)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3/8; -5/8)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 5,
+        "family_name": "Descompunere cu raport de împărțire",
+        "variant": 2,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "division",
+        "BD_DC": [
+          3,
+          5
+        ],
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În triunghiul necoliniar ABC, punctul D este interior lui BC și BD:DC=4:6. Care sunt coeficienții (α; β) în AD=α·AB+β·AC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "D=B+(2/5)(C−B). Scăzând A, obținem AD=(3/5)AB+(2/5)AC. Coeficienții (3/5; 2/5) sunt pozitivi și au suma 1; raportul β/α=4/6 reproduce BD/DC. Coeficientul extremității B este ponderea opusă, q/(p+q).",
+      "options": [
+        {
+          "text": "(8/5; 2/5)",
+          "is_correct": false
+        },
+        {
+          "text": "(3/5; 7/5)",
+          "is_correct": false
+        },
+        {
+          "text": "(3/5; 2/5)",
+          "is_correct": true
+        },
+        {
+          "text": "(-2/5; -3/5)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 5,
+        "family_name": "Descompunere cu raport de împărțire",
+        "variant": 3,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "division",
+        "BD_DC": [
+          4,
+          6
+        ],
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În triunghiul necoliniar ABC, punctul D este interior lui BC și BD:DC=5:7. Care sunt coeficienții (α; β) în AD=α·AB+β·AC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "D=B+(5/12)(C−B). Scăzând A, obținem AD=(7/12)AB+(5/12)AC. Coeficienții (7/12; 5/12) sunt pozitivi și au suma 1; raportul β/α=5/7 reproduce BD/DC. Coeficientul extremității B este ponderea opusă, q/(p+q).",
+      "options": [
+        {
+          "text": "(19/12; 5/12)",
+          "is_correct": false
+        },
+        {
+          "text": "(7/12; 17/12)",
+          "is_correct": false
+        },
+        {
+          "text": "(-5/12; -7/12)",
+          "is_correct": false
+        },
+        {
+          "text": "(7/12; 5/12)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 5,
+        "family_name": "Descompunere cu raport de împărțire",
+        "variant": 4,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "division",
+        "BD_DC": [
+          5,
+          7
+        ],
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "În triunghiul necoliniar ABC, punctul D este interior lui BC și BD:DC=6:8. Care sunt coeficienții (α; β) în AD=α·AB+β·AC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "D=B+(3/7)(C−B). Scăzând A, obținem AD=(4/7)AB+(3/7)AC. Coeficienții (4/7; 3/7) sunt pozitivi și au suma 1; raportul β/α=6/8 reproduce BD/DC. Coeficientul extremității B este ponderea opusă, q/(p+q).",
+      "options": [
+        {
+          "text": "(4/7; 3/7)",
+          "is_correct": true
+        },
+        {
+          "text": "(11/7; 3/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(4/7; 10/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3/7; -4/7)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 5,
+        "family_name": "Descompunere cu raport de împărțire",
+        "variant": 5,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "division",
+        "BD_DC": [
+          6,
+          8
+        ],
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "ABCDEF este un hexagon regulat cu vârfurile în această ordine. În baza u=AC, v=AE, determinați (α; β) din AB=αu+βv.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm e=AB și f=AF, vectori necoliniari. Simetria hexagonului și regula poligonului dau BC=e+f, AC=2e+f, AD=2e+2f și AE=e+2f. Astfel AB are coeficienții (1; 0) în baza (e,f). Egalând coeficienții în α(2e+f)+β(e+2f), obținem 2α+β=1, α+2β=0. Determinantul este 3, nenul; soluția este (2/3; -1/3). Aceasta justifică și necoliniaritatea bazei (AC,AE).",
+      "options": [
+        {
+          "text": "(5/3; -1/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(2/3; -1/3)",
+          "is_correct": true
+        },
+        {
+          "text": "(2/3; 2/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1/3; -4/3)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 6,
+        "family_name": "Descompunere în patrulatere și hexagoane",
+        "variant": 1,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "hexagon",
+        "target": "AB",
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "ABCDEF este un hexagon regulat cu vârfurile în această ordine. În baza u=AC, v=AE, determinați (α; β) din AD=αu+βv.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm e=AB și f=AF, vectori necoliniari. Simetria hexagonului și regula poligonului dau BC=e+f, AC=2e+f, AD=2e+2f și AE=e+2f. Astfel AD are coeficienții (2; 2) în baza (e,f). Egalând coeficienții în α(2e+f)+β(e+2f), obținem 2α+β=2, α+2β=2. Determinantul este 3, nenul; soluția este (2/3; 2/3). Aceasta justifică și necoliniaritatea bazei (AC,AE).",
+      "options": [
+        {
+          "text": "(5/3; 2/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(2/3; 5/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(2/3; 2/3)",
+          "is_correct": true
+        },
+        {
+          "text": "(-1/3; -1/3)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 6,
+        "family_name": "Descompunere în patrulatere și hexagoane",
+        "variant": 2,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "hexagon",
+        "target": "AD",
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "ABCDEF este un hexagon regulat cu vârfurile în această ordine. În baza u=AC, v=AE, determinați (α; β) din AF=αu+βv.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm e=AB și f=AF, vectori necoliniari. Simetria hexagonului și regula poligonului dau BC=e+f, AC=2e+f, AD=2e+2f și AE=e+2f. Astfel AF are coeficienții (0; 1) în baza (e,f). Egalând coeficienții în α(2e+f)+β(e+2f), obținem 2α+β=0, α+2β=1. Determinantul este 3, nenul; soluția este (-1/3; 2/3). Aceasta justifică și necoliniaritatea bazei (AC,AE).",
+      "options": [
+        {
+          "text": "(2/3; 2/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1/3; 5/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4/3; -1/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1/3; 2/3)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 6,
+        "family_name": "Descompunere în patrulatere și hexagoane",
+        "variant": 3,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "hexagon",
+        "target": "AF",
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "ABCDEF este un hexagon regulat cu vârfurile în această ordine. În baza u=AC, v=AE, determinați (α; β) din BC=αu+βv.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm e=AB și f=AF, vectori necoliniari. Simetria hexagonului și regula poligonului dau BC=e+f, AC=2e+f, AD=2e+2f și AE=e+2f. Astfel BC are coeficienții (1; 1) în baza (e,f). Egalând coeficienții în α(2e+f)+β(e+2f), obținem 2α+β=1, α+2β=1. Determinantul este 3, nenul; soluția este (1/3; 1/3). Aceasta justifică și necoliniaritatea bazei (AC,AE).",
+      "options": [
+        {
+          "text": "(1/3; 1/3)",
+          "is_correct": true
+        },
+        {
+          "text": "(4/3; 1/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(1/3; 4/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2/3; -2/3)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 6,
+        "family_name": "Descompunere în patrulatere și hexagoane",
+        "variant": 4,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "hexagon",
+        "target": "BC",
+        "answer_kind": "pair"
+      }
+    },
+    {
+      "text": "ABCDEF este un hexagon regulat cu vârfurile în această ordine. În baza u=AC, v=AE, determinați (α; β) din CE=αu+βv.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm e=AB și f=AF, vectori necoliniari. Simetria hexagonului și regula poligonului dau BC=e+f, AC=2e+f, AD=2e+2f și AE=e+2f. Astfel CE are coeficienții (-1; 1) în baza (e,f). Egalând coeficienții în α(2e+f)+β(e+2f), obținem 2α+β=-1, α+2β=1. Determinantul este 3, nenul; soluția este (-1; 1). Aceasta justifică și necoliniaritatea bazei (AC,AE).",
+      "options": [
+        {
+          "text": "(0; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 1)",
+          "is_correct": true
+        },
+        {
+          "text": "(-1; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2; 0)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 4,
+        "catalog": "G1_catalog.md",
+        "section": "3",
+        "family": 6,
+        "family_name": "Descompunere în patrulatere și hexagoane",
+        "variant": 5,
+        "pages": "176",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "hexagon",
+        "target": "CE",
+        "answer_kind": "pair"
+      }
+    }
+  ]
 }

@@ -1,6 +1,4162 @@
 {
   "title": "Funcții trigonometrice. Sinus, cosinus, tangentă și cotangentă",
   "description": "Clasa a 9-a · Elemente de trigonometrie",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Un triunghi dreptunghic are cateta opusă unghiului ascuțit α egală cu a, cateta alăturată b și ipotenuza c. Calculați sinusul lui α. Date: a=\\(3\\), b=\\(4\\), c=\\(5\\). Calculați \\(\\frac{a}{c}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin definiție, sinusul unui unghi ascuțit este cateta opusă împărțită la ipotenuză. Datele satisfac a²+b²=c² și toate lungimile sunt pozitive. Rezultatul cerut este \\(\\frac{3}{5}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{3}{5}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{8}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{2}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{13}{5}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 1,
+        "type_name": "Raporturi trigonometrice din triunghi",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a/c",
+        "expression_latex": "\\frac{a}{c}",
+        "givens": {
+          "a": "3",
+          "b": "4",
+          "c": "5"
+        },
+        "option_values": [
+          "3/5",
+          "8/5",
+          "-2/5",
+          "13/5"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi isoscel are laturile egale a și baza 2b. Calculați sinusul unui unghi de la bază. Date: a=\\(5\\), b=\\(3\\). Calculați \\(\\frac{\\sqrt{a^{2} - b^{2}}}{a}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înălțimea din vârf înjumătățește baza și are lungimea √(a²−b²). În triunghiul dreptunghic obținut, sinusul unghiului de la bază este înălțimea împărțită la latura egală. Rezultatul cerut este \\(\\frac{4}{5}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{9}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{4}{5}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{1}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{14}{5}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 2,
+        "type_name": "Triunghi isoscel descompus",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sqrt(a**2-b**2)/a",
+        "expression_latex": "\\frac{\\sqrt{a^{2} - b^{2}}}{a}",
+        "givens": {
+          "a": "5",
+          "b": "3"
+        },
+        "option_values": [
+          "9/5",
+          "4/5",
+          "-1/5",
+          "14/5"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Într-un triunghi dreptunghic, ipotenuza este a și sinusul unui unghi ascuțit este b. Aflați cateta alăturată acestui unghi. Date: a=\\(10\\), b=\\(\\frac{3}{5}\\). Calculați \\(a \\sqrt{1 - b^{2}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cosinusul este rădăcina pozitivă a lui 1−sin²α deoarece unghiul este ascuțit. Înmulțirea cu ipotenuza dă cateta alăturată. Rezultatul cerut este \\(8\\).",
+      "options": [
+        {
+          "text": "\\(9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(7\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(8\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(10\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 3,
+        "type_name": "Elemente dintr-un raport trigonometric",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*sqrt(1-b**2)",
+        "expression_latex": "a \\sqrt{1 - b^{2}}",
+        "givens": {
+          "a": "10",
+          "b": "3/5"
+        },
+        "option_values": [
+          "9",
+          "7",
+          "8",
+          "10"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un paralelogram are laturile a,b și unghiul cuprins x, în radiani. Calculați aria. Date: a=\\(4\\), b=\\(5\\), x=\\(\\frac{\\pi}{6}\\). Calculați \\(a b \\sin{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înălțimea pe latura a este b sin x, deci aria este ab sin x. Acesta este un caz explicit de arie prin date trigonometrice, fără condiția suplimentară de diagonală a exemplului din catalog. Rezultatul cerut este \\(10\\).",
+      "options": [
+        {
+          "text": "\\(11\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(12\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(10\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 4,
+        "type_name": "Aria din date trigonometrice",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*b*sin(x)",
+        "expression_latex": "a b \\sin{\\left(x \\right)}",
+        "givens": {
+          "a": "4",
+          "b": "5",
+          "x": "pi/6"
+        },
+        "option_values": [
+          "11",
+          "9",
+          "12",
+          "10"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Triunghiul isoscel are laturile egale a și unghiul de la vârf x, în radiani. Aflați înălțimea pe bază. Date: a=\\(6\\), x=\\(\\frac{\\pi}{3}\\). Calculați \\(a \\cos{\\left(\\frac{x}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înălțimea bisectează unghiul de la vârf. În unul dintre cele două triunghiuri dreptunghice, raportul înălțime/latură egală este cos(x/2); x/2 este ascuțit. Rezultatul cerut este \\(3 \\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(3 \\sqrt{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + 3 \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + 3 \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + 3 \\sqrt{3}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 5,
+        "type_name": "Înălțimi din unghi și bază",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*cos(x/2)",
+        "expression_latex": "a \\cos{\\left(\\frac{x}{2} \\right)}",
+        "givens": {
+          "a": "6",
+          "x": "pi/3"
+        },
+        "option_values": [
+          "3*sqrt(3)",
+          "1 + 3*sqrt(3)",
+          "-1 + 3*sqrt(3)",
+          "2 + 3*sqrt(3)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru unghiul ascuțit x, în radiani, verificați numeric expresia fundamentală. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\tan^{2}{\\left(x \\right)} + 1\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pitagora împărțit la pătratul catetei alăturate dă 1+tan²x=1/cos²x. Cosinusul este nenul pe domeniul ascuțit. Varianta cere valoarea numerică a membrului stâng. Rezultatul cerut este \\(\\frac{4}{3}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{7}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{4}{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{1}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{10}{3}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 6,
+        "type_name": "Relații fundamentale în unghi ascuțit",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "1+tan(x)**2",
+        "expression_latex": "\\tan^{2}{\\left(x \\right)} + 1",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "7/3",
+          "4/3",
+          "1/3",
+          "10/3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiul x este ascuțit, în radiani. Calculați raportul dintre tangenta complementului și cotangenta unghiului. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\frac{\\tan{\\left(- x + \\frac{\\pi}{2} \\right)}}{\\cot{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Unghiurile complementare inversează rolul catetelor: tan(π/2−x)=cot x. Pentru x ascuțit cot x este definită și strict pozitivă, deci raportul este 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 7,
+        "type_name": "Identități cu unghiuri complementare",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(pi/2-x)/cot(x)",
+        "expression_latex": "\\frac{\\tan{\\left(- x + \\frac{\\pi}{2} \\right)}}{\\cot{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru unghiul ascuțit x, în radiani, calculați fracția. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\frac{1 - \\cos{\\left(x \\right)}}{\\sin{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțind cu conjugata 1+cos x, obținem sin x/(1+cos x). Numitorii sunt nenuli pentru unghiurile ascuțite, iar identitatea sin²x=1−cos²x justifică reducerea. Rezultatul cerut este \\(2 - \\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(3 - \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1 - \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 - \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 - \\sqrt{3}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 8,
+        "type_name": "Raționalizare trigonometrică",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(1-cos(x))/sin(x)",
+        "expression_latex": "\\frac{1 - \\cos{\\left(x \\right)}}{\\sin{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "3 - sqrt(3)",
+          "1 - sqrt(3)",
+          "4 - sqrt(3)",
+          "2 - sqrt(3)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "În pătratul ABCD de latură a, M este pe AB, cu AM=b. Calculați cosinusul unghiului AMC. Date: a=\\(4\\), b=\\(2\\). Calculați \\(\\frac{- a + b}{\\sqrt{a^{2} + \\left(a - b\\right)^{2}}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Alegem A=(0,0), B=(a,0), C=(a,a), M=(b,0). Vectorii MA=(−b,0), MC=(a−b,a). Produsul lor scalar este −b(a−b), iar b>0 se simplifică din normele produsului. Semnul negativ indică unghiul obtuz. Rezultatul cerut este \\(- \\frac{\\sqrt{5}}{5}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{\\sqrt{5}}{5}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 - \\frac{\\sqrt{5}}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 - \\frac{\\sqrt{5}}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 - \\frac{\\sqrt{5}}{5}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 9,
+        "type_name": "Unghiuri între segmente în pătrat",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "-(a-b)/sqrt((a-b)**2+a**2)",
+        "expression_latex": "\\frac{- a + b}{\\sqrt{a^{2} + \\left(a - b\\right)^{2}}}",
+        "givens": {
+          "a": "4",
+          "b": "2"
+        },
+        "option_values": [
+          "-sqrt(5)/5",
+          "1 - sqrt(5)/5",
+          "-1 - sqrt(5)/5",
+          "2 - sqrt(5)/5"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Într-un triunghi, a=BC,b=CA,c=AB. Unghiurile B,C satisfac cos B=x și cos C=y. Calculați proiecția totală pe BC. Date: a=\\(5\\), b=\\(4\\), c=\\(3\\), x=\\(\\frac{3}{5}\\), y=\\(\\frac{4}{5}\\). Calculați \\(b y + c x\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema proiecțiilor este BC=AB cos B+AC cos C. În datele alese triunghiul este dreptunghic în A, iar proiecțiile sunt pozitive; suma este latura BC. Rezultatul cerut este \\(5\\).",
+      "options": [
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(7\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 10,
+        "type_name": "Teorema proiecțiilor",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "c*x+b*y",
+        "expression_latex": "b y + c x",
+        "givens": {
+          "a": "5",
+          "b": "4",
+          "c": "3",
+          "x": "3/5",
+          "y": "4/5"
+        },
+        "option_values": [
+          "6",
+          "5",
+          "4",
+          "7"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un romb are latura a și unghiul A=x, în radiani. Calculați lungimea diagonalei AC. Date: a=\\(3\\), x=\\(\\frac{\\pi}{3}\\). Calculați \\(2 a \\cos{\\left(\\frac{x}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diagonalele se înjumătățesc și bisectează unghiurile rombului. Jumătate din AC este a cos(A/2). Deoarece 0<A<π, cos(A/2)>0. Rezultatul cerut este \\(3 \\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(1 + 3 \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + 3 \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3 \\sqrt{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 + 3 \\sqrt{3}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 11,
+        "type_name": "Elementele rombului din unghi",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "2*a*cos(x/2)",
+        "expression_latex": "2 a \\cos{\\left(\\frac{x}{2} \\right)}",
+        "givens": {
+          "a": "3",
+          "x": "pi/3"
+        },
+        "option_values": [
+          "1 + 3*sqrt(3)",
+          "-1 + 3*sqrt(3)",
+          "3*sqrt(3)",
+          "2 + 3*sqrt(3)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi are înălțimea pe BC egală cu a și unghiurile la bază x,y ascuțite, în radiani. Aflați BC. Date: a=\\(4\\), x=\\(\\frac{\\pi}{3}\\), y=\\(\\frac{\\pi}{4}\\). Calculați \\(\\frac{a}{\\cot{\\left(- y + \\frac{\\pi}{2} \\right)}} + \\frac{a}{\\cot{\\left(- x + \\frac{\\pi}{2} \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Piciorul înălțimii este interior deoarece ambele unghiuri la bază sunt ascuțite. Cele două proiecții pe BC sunt a cot x și a cot y; deoarece cot(π/2−x)=tan x, expresia cerută le însumează. Rezultatul cerut este \\(\\frac{4 \\sqrt{3}}{3} + 4\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{4 \\sqrt{3}}{3} + 5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{4 \\sqrt{3}}{3} + 3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{4 \\sqrt{3}}{3} + 6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{4 \\sqrt{3}}{3} + 4\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 12,
+        "type_name": "Triunghi oblic din înălțime și două unghiuri",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a/cot(pi/2-x)+a/cot(pi/2-y)",
+        "expression_latex": "\\frac{a}{\\cot{\\left(- y + \\frac{\\pi}{2} \\right)}} + \\frac{a}{\\cot{\\left(- x + \\frac{\\pi}{2} \\right)}}",
+        "givens": {
+          "a": "4",
+          "x": "pi/3",
+          "y": "pi/4"
+        },
+        "option_values": [
+          "4*sqrt(3)/3 + 5",
+          "4*sqrt(3)/3 + 3",
+          "4*sqrt(3)/3 + 6",
+          "4*sqrt(3)/3 + 4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Trapezul dreptunghic ABCD are AB=a, CD=b, AD=c, AB∥CD și AD⊥AB. Aflați latura oblică BC. Date: a=\\(8\\), b=\\(3\\), c=\\(4\\). Calculați \\(\\sqrt{c^{2} + \\left(a - b\\right)^{2}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Proiecția orizontală a lui BC este diferența pozitivă a bazelor, iar cea verticală este înălțimea. Pitagora dă BC²=(a−b)²+c²; luăm rădăcina pozitivă. Rezultatul cerut este \\(\\sqrt{41}\\).",
+      "options": [
+        {
+          "text": "\\(\\sqrt{41}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + \\sqrt{41}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\sqrt{41}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\sqrt{41}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 13,
+        "type_name": "Trapez cu proiecții prescrise",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sqrt((a-b)**2+c**2)",
+        "expression_latex": "\\sqrt{c^{2} + \\left(a - b\\right)^{2}}",
+        "givens": {
+          "a": "8",
+          "b": "3",
+          "c": "4"
+        },
+        "option_values": [
+          "sqrt(41)",
+          "1 + sqrt(41)",
+          "-1 + sqrt(41)",
+          "2 + sqrt(41)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi dreptunghic are catetele a,b. Aflați ipotenuza. Date: a=\\(6\\), b=\\(8\\). Calculați \\(\\sqrt{a^{2} + b^{2}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pitagora determină pătratul ipotenuzei. Deoarece o lungime este pozitivă, se selectează rădăcina pozitivă; celelalte elemente se pot recupera prin rapoartele catetelor. Rezultatul cerut este \\(10\\).",
+      "options": [
+        {
+          "text": "\\(11\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(10\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(12\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 14,
+        "type_name": "Rezolvarea triunghiului dreptunghic din două date",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sqrt(a**2+b**2)",
+        "expression_latex": "\\sqrt{a^{2} + b^{2}}",
+        "givens": {
+          "a": "6",
+          "b": "8"
+        },
+        "option_values": [
+          "11",
+          "10",
+          "9",
+          "12"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiurile x,y sunt ascuțite, în radiani. Evaluați identitatea numerică. Date: x=\\(\\frac{\\pi}{6}\\), y=\\(\\frac{\\pi}{12}\\). Calculați \\(\\left(\\tan{\\left(x \\right)} + \\tan{\\left(y \\right)}\\right) \\cos{\\left(x \\right)} \\cos{\\left(y \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuind tangentele prin sin/cos și distribuind, expresia devine sin x cos y+cos x sin y=sin(x+y). Ambii cosinuși sunt nenuli. Rezultatul cerut este \\(\\frac{\\sqrt{2}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 15,
+        "type_name": "Identități în două unghiuri ascuțite",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(tan(x)+tan(y))*cos(x)*cos(y)",
+        "expression_latex": "\\left(\\tan{\\left(x \\right)} + \\tan{\\left(y \\right)}\\right) \\cos{\\left(x \\right)} \\cos{\\left(y \\right)}",
+        "givens": {
+          "x": "pi/6",
+          "y": "pi/12"
+        },
+        "option_values": [
+          "sqrt(2)/2 + 1",
+          "-1 + sqrt(2)/2",
+          "sqrt(2)/2",
+          "sqrt(2)/2 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "ABC este dreptunghic în A și are ipotenuza 4. Dacă sin B+sin C=√2, aflați unghiul B în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "C=90°−B, deci sin B+sin C=sin B+cos B≤√2. Egalitatea impune sin B=cos B>0, astfel B=C=45°. Triunghiul este isoscel dreptunghic, iar ipotenuza pozitivă fixează scara. Rezultatul cerut este \\(45\\).",
+      "options": [
+        {
+          "text": "\\(46\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(44\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(47\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(45\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 16,
+        "type_name": "Caracterizarea isosceliei prin sumă trigonometrică",
+        "variant": 1,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "right_isosceles_equality",
+        "hypotenuse": 4,
+        "option_values": [
+          "46",
+          "44",
+          "47",
+          "45"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi dreptunghic are cateta opusă unghiului ascuțit α egală cu a, cateta alăturată b și ipotenuza c. Calculați sinusul lui α. Date: a=\\(5\\), b=\\(12\\), c=\\(13\\). Calculați \\(\\frac{a}{c}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin definiție, sinusul unui unghi ascuțit este cateta opusă împărțită la ipotenuză. Datele satisfac a²+b²=c² și toate lungimile sunt pozitive. Rezultatul cerut este \\(\\frac{5}{13}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{5}{13}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{18}{13}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{8}{13}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{31}{13}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 1,
+        "type_name": "Raporturi trigonometrice din triunghi",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a/c",
+        "expression_latex": "\\frac{a}{c}",
+        "givens": {
+          "a": "5",
+          "b": "12",
+          "c": "13"
+        },
+        "option_values": [
+          "5/13",
+          "18/13",
+          "-8/13",
+          "31/13"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi isoscel are laturile egale a și baza 2b. Calculați sinusul unui unghi de la bază. Date: a=\\(13\\), b=\\(5\\). Calculați \\(\\frac{\\sqrt{a^{2} - b^{2}}}{a}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înălțimea din vârf înjumătățește baza și are lungimea √(a²−b²). În triunghiul dreptunghic obținut, sinusul unghiului de la bază este înălțimea împărțită la latura egală. Rezultatul cerut este \\(\\frac{12}{13}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{25}{13}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{12}{13}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{1}{13}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{38}{13}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 2,
+        "type_name": "Triunghi isoscel descompus",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sqrt(a**2-b**2)/a",
+        "expression_latex": "\\frac{\\sqrt{a^{2} - b^{2}}}{a}",
+        "givens": {
+          "a": "13",
+          "b": "5"
+        },
+        "option_values": [
+          "25/13",
+          "12/13",
+          "-1/13",
+          "38/13"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Într-un triunghi dreptunghic, ipotenuza este a și sinusul unui unghi ascuțit este b. Aflați cateta alăturată acestui unghi. Date: a=\\(26\\), b=\\(\\frac{5}{13}\\). Calculați \\(a \\sqrt{1 - b^{2}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cosinusul este rădăcina pozitivă a lui 1−sin²α deoarece unghiul este ascuțit. Înmulțirea cu ipotenuza dă cateta alăturată. Rezultatul cerut este \\(24\\).",
+      "options": [
+        {
+          "text": "\\(25\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(23\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(24\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(26\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 3,
+        "type_name": "Elemente dintr-un raport trigonometric",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*sqrt(1-b**2)",
+        "expression_latex": "a \\sqrt{1 - b^{2}}",
+        "givens": {
+          "a": "26",
+          "b": "5/13"
+        },
+        "option_values": [
+          "25",
+          "23",
+          "24",
+          "26"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un paralelogram are laturile a,b și unghiul cuprins x, în radiani. Calculați aria. Date: a=\\(5\\), b=\\(6\\), x=\\(\\frac{\\pi}{6}\\). Calculați \\(a b \\sin{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înălțimea pe latura a este b sin x, deci aria este ab sin x. Acesta este un caz explicit de arie prin date trigonometrice, fără condiția suplimentară de diagonală a exemplului din catalog. Rezultatul cerut este \\(15\\).",
+      "options": [
+        {
+          "text": "\\(16\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(14\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(17\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(15\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 4,
+        "type_name": "Aria din date trigonometrice",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*b*sin(x)",
+        "expression_latex": "a b \\sin{\\left(x \\right)}",
+        "givens": {
+          "a": "5",
+          "b": "6",
+          "x": "pi/6"
+        },
+        "option_values": [
+          "16",
+          "14",
+          "17",
+          "15"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Triunghiul isoscel are laturile egale a și unghiul de la vârf x, în radiani. Aflați înălțimea pe bază. Date: a=\\(8\\), x=\\(\\frac{\\pi}{2}\\). Calculați \\(a \\cos{\\left(\\frac{x}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înălțimea bisectează unghiul de la vârf. În unul dintre cele două triunghiuri dreptunghice, raportul înălțime/latură egală este cos(x/2); x/2 este ascuțit. Rezultatul cerut este \\(4 \\sqrt{2}\\).",
+      "options": [
+        {
+          "text": "\\(4 \\sqrt{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + 4 \\sqrt{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + 4 \\sqrt{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + 4 \\sqrt{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 5,
+        "type_name": "Înălțimi din unghi și bază",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*cos(x/2)",
+        "expression_latex": "a \\cos{\\left(\\frac{x}{2} \\right)}",
+        "givens": {
+          "a": "8",
+          "x": "pi/2"
+        },
+        "option_values": [
+          "4*sqrt(2)",
+          "1 + 4*sqrt(2)",
+          "-1 + 4*sqrt(2)",
+          "2 + 4*sqrt(2)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru unghiul ascuțit x, în radiani, verificați numeric expresia fundamentală. Date: x=\\(\\frac{\\pi}{4}\\). Calculați \\(\\tan^{2}{\\left(x \\right)} + 1\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pitagora împărțit la pătratul catetei alăturate dă 1+tan²x=1/cos²x. Cosinusul este nenul pe domeniul ascuțit. Varianta cere valoarea numerică a membrului stâng. Rezultatul cerut este \\(2\\).",
+      "options": [
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 6,
+        "type_name": "Relații fundamentale în unghi ascuțit",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "1+tan(x)**2",
+        "expression_latex": "\\tan^{2}{\\left(x \\right)} + 1",
+        "givens": {
+          "x": "pi/4"
+        },
+        "option_values": [
+          "3",
+          "2",
+          "1",
+          "4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiul x este ascuțit, în radiani. Calculați raportul dintre tangenta complementului și cotangenta unghiului. Date: x=\\(\\frac{\\pi}{4}\\). Calculați \\(\\frac{\\tan{\\left(- x + \\frac{\\pi}{2} \\right)}}{\\cot{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Unghiurile complementare inversează rolul catetelor: tan(π/2−x)=cot x. Pentru x ascuțit cot x este definită și strict pozitivă, deci raportul este 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 7,
+        "type_name": "Identități cu unghiuri complementare",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(pi/2-x)/cot(x)",
+        "expression_latex": "\\frac{\\tan{\\left(- x + \\frac{\\pi}{2} \\right)}}{\\cot{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/4"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru unghiul ascuțit x, în radiani, calculați fracția. Date: x=\\(\\frac{\\pi}{4}\\). Calculați \\(\\frac{1 - \\cos{\\left(x \\right)}}{\\sin{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțind cu conjugata 1+cos x, obținem sin x/(1+cos x). Numitorii sunt nenuli pentru unghiurile ascuțite, iar identitatea sin²x=1−cos²x justifică reducerea. Rezultatul cerut este \\(-1 + \\sqrt{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\sqrt{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-2 + \\sqrt{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1 + \\sqrt{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\sqrt{2}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 8,
+        "type_name": "Raționalizare trigonometrică",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(1-cos(x))/sin(x)",
+        "expression_latex": "\\frac{1 - \\cos{\\left(x \\right)}}{\\sin{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/4"
+        },
+        "option_values": [
+          "sqrt(2)",
+          "-2 + sqrt(2)",
+          "1 + sqrt(2)",
+          "-1 + sqrt(2)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "În pătratul ABCD de latură a, M este pe AB, cu AM=b. Calculați cosinusul unghiului AMC. Date: a=\\(5\\), b=\\(3\\). Calculați \\(\\frac{- a + b}{\\sqrt{a^{2} + \\left(a - b\\right)^{2}}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Alegem A=(0,0), B=(a,0), C=(a,a), M=(b,0). Vectorii MA=(−b,0), MC=(a−b,a). Produsul lor scalar este −b(a−b), iar b>0 se simplifică din normele produsului. Semnul negativ indică unghiul obtuz. Rezultatul cerut este \\(- \\frac{2 \\sqrt{29}}{29}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{2 \\sqrt{29}}{29}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 - \\frac{2 \\sqrt{29}}{29}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 - \\frac{2 \\sqrt{29}}{29}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 - \\frac{2 \\sqrt{29}}{29}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 9,
+        "type_name": "Unghiuri între segmente în pătrat",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "-(a-b)/sqrt((a-b)**2+a**2)",
+        "expression_latex": "\\frac{- a + b}{\\sqrt{a^{2} + \\left(a - b\\right)^{2}}}",
+        "givens": {
+          "a": "5",
+          "b": "3"
+        },
+        "option_values": [
+          "-2*sqrt(29)/29",
+          "1 - 2*sqrt(29)/29",
+          "-1 - 2*sqrt(29)/29",
+          "2 - 2*sqrt(29)/29"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Într-un triunghi, a=BC,b=CA,c=AB. Unghiurile B,C satisfac cos B=x și cos C=y. Calculați proiecția totală pe BC. Date: a=\\(10\\), b=\\(8\\), c=\\(6\\), x=\\(\\frac{3}{5}\\), y=\\(\\frac{4}{5}\\). Calculați \\(b y + c x\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema proiecțiilor este BC=AB cos B+AC cos C. În datele alese triunghiul este dreptunghic în A, iar proiecțiile sunt pozitive; suma este latura BC. Rezultatul cerut este \\(10\\).",
+      "options": [
+        {
+          "text": "\\(11\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(10\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(12\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 10,
+        "type_name": "Teorema proiecțiilor",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "c*x+b*y",
+        "expression_latex": "b y + c x",
+        "givens": {
+          "a": "10",
+          "b": "8",
+          "c": "6",
+          "x": "3/5",
+          "y": "4/5"
+        },
+        "option_values": [
+          "11",
+          "10",
+          "9",
+          "12"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un romb are latura a și unghiul A=x, în radiani. Calculați lungimea diagonalei AC. Date: a=\\(4\\), x=\\(\\frac{\\pi}{2}\\). Calculați \\(2 a \\cos{\\left(\\frac{x}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diagonalele se înjumătățesc și bisectează unghiurile rombului. Jumătate din AC este a cos(A/2). Deoarece 0<A<π, cos(A/2)>0. Rezultatul cerut este \\(4 \\sqrt{2}\\).",
+      "options": [
+        {
+          "text": "\\(1 + 4 \\sqrt{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + 4 \\sqrt{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 \\sqrt{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 + 4 \\sqrt{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 11,
+        "type_name": "Elementele rombului din unghi",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "2*a*cos(x/2)",
+        "expression_latex": "2 a \\cos{\\left(\\frac{x}{2} \\right)}",
+        "givens": {
+          "a": "4",
+          "x": "pi/2"
+        },
+        "option_values": [
+          "1 + 4*sqrt(2)",
+          "-1 + 4*sqrt(2)",
+          "4*sqrt(2)",
+          "2 + 4*sqrt(2)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi are înălțimea pe BC egală cu a și unghiurile la bază x,y ascuțite, în radiani. Aflați BC. Date: a=\\(5\\), x=\\(\\frac{\\pi}{3}\\), y=\\(\\frac{\\pi}{4}\\). Calculați \\(\\frac{a}{\\cot{\\left(- y + \\frac{\\pi}{2} \\right)}} + \\frac{a}{\\cot{\\left(- x + \\frac{\\pi}{2} \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Piciorul înălțimii este interior deoarece ambele unghiuri la bază sunt ascuțite. Cele două proiecții pe BC sunt a cot x și a cot y; deoarece cot(π/2−x)=tan x, expresia cerută le însumează. Rezultatul cerut este \\(\\frac{5 \\sqrt{3}}{3} + 5\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{5 \\sqrt{3}}{3} + 6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5 \\sqrt{3}}{3} + 4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5 \\sqrt{3}}{3} + 7\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5 \\sqrt{3}}{3} + 5\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 12,
+        "type_name": "Triunghi oblic din înălțime și două unghiuri",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a/cot(pi/2-x)+a/cot(pi/2-y)",
+        "expression_latex": "\\frac{a}{\\cot{\\left(- y + \\frac{\\pi}{2} \\right)}} + \\frac{a}{\\cot{\\left(- x + \\frac{\\pi}{2} \\right)}}",
+        "givens": {
+          "a": "5",
+          "x": "pi/3",
+          "y": "pi/4"
+        },
+        "option_values": [
+          "5*sqrt(3)/3 + 6",
+          "5*sqrt(3)/3 + 4",
+          "5*sqrt(3)/3 + 7",
+          "5*sqrt(3)/3 + 5"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Trapezul dreptunghic ABCD are AB=a, CD=b, AD=c, AB∥CD și AD⊥AB. Aflați latura oblică BC. Date: a=\\(11\\), b=\\(4\\), c=\\(5\\). Calculați \\(\\sqrt{c^{2} + \\left(a - b\\right)^{2}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Proiecția orizontală a lui BC este diferența pozitivă a bazelor, iar cea verticală este înălțimea. Pitagora dă BC²=(a−b)²+c²; luăm rădăcina pozitivă. Rezultatul cerut este \\(\\sqrt{74}\\).",
+      "options": [
+        {
+          "text": "\\(\\sqrt{74}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + \\sqrt{74}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\sqrt{74}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\sqrt{74}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 13,
+        "type_name": "Trapez cu proiecții prescrise",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sqrt((a-b)**2+c**2)",
+        "expression_latex": "\\sqrt{c^{2} + \\left(a - b\\right)^{2}}",
+        "givens": {
+          "a": "11",
+          "b": "4",
+          "c": "5"
+        },
+        "option_values": [
+          "sqrt(74)",
+          "1 + sqrt(74)",
+          "-1 + sqrt(74)",
+          "2 + sqrt(74)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi dreptunghic are catetele a,b. Aflați ipotenuza. Date: a=\\(15\\), b=\\(36\\). Calculați \\(\\sqrt{a^{2} + b^{2}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pitagora determină pătratul ipotenuzei. Deoarece o lungime este pozitivă, se selectează rădăcina pozitivă; celelalte elemente se pot recupera prin rapoartele catetelor. Rezultatul cerut este \\(39\\).",
+      "options": [
+        {
+          "text": "\\(40\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(39\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(38\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(41\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 14,
+        "type_name": "Rezolvarea triunghiului dreptunghic din două date",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sqrt(a**2+b**2)",
+        "expression_latex": "\\sqrt{a^{2} + b^{2}}",
+        "givens": {
+          "a": "15",
+          "b": "36"
+        },
+        "option_values": [
+          "40",
+          "39",
+          "38",
+          "41"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiurile x,y sunt ascuțite, în radiani. Evaluați identitatea numerică. Date: x=\\(\\frac{\\pi}{6}\\), y=\\(\\frac{\\pi}{6}\\). Calculați \\(\\left(\\tan{\\left(x \\right)} + \\tan{\\left(y \\right)}\\right) \\cos{\\left(x \\right)} \\cos{\\left(y \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuind tangentele prin sin/cos și distribuind, expresia devine sin x cos y+cos x sin y=sin(x+y). Ambii cosinuși sunt nenuli. Rezultatul cerut este \\(\\frac{\\sqrt{3}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 15,
+        "type_name": "Identități în două unghiuri ascuțite",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(tan(x)+tan(y))*cos(x)*cos(y)",
+        "expression_latex": "\\left(\\tan{\\left(x \\right)} + \\tan{\\left(y \\right)}\\right) \\cos{\\left(x \\right)} \\cos{\\left(y \\right)}",
+        "givens": {
+          "x": "pi/6",
+          "y": "pi/6"
+        },
+        "option_values": [
+          "sqrt(3)/2 + 1",
+          "-1 + sqrt(3)/2",
+          "sqrt(3)/2",
+          "sqrt(3)/2 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "ABC este dreptunghic în A și are ipotenuza 6. Dacă sin B+sin C=√2, aflați unghiul B în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "C=90°−B, deci sin B+sin C=sin B+cos B≤√2. Egalitatea impune sin B=cos B>0, astfel B=C=45°. Triunghiul este isoscel dreptunghic, iar ipotenuza pozitivă fixează scara. Rezultatul cerut este \\(45\\).",
+      "options": [
+        {
+          "text": "\\(46\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(44\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(47\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(45\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 16,
+        "type_name": "Caracterizarea isosceliei prin sumă trigonometrică",
+        "variant": 2,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "right_isosceles_equality",
+        "hypotenuse": 6,
+        "option_values": [
+          "46",
+          "44",
+          "47",
+          "45"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi dreptunghic are cateta opusă unghiului ascuțit α egală cu a, cateta alăturată b și ipotenuza c. Calculați sinusul lui α. Date: a=\\(8\\), b=\\(15\\), c=\\(17\\). Calculați \\(\\frac{a}{c}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin definiție, sinusul unui unghi ascuțit este cateta opusă împărțită la ipotenuză. Datele satisfac a²+b²=c² și toate lungimile sunt pozitive. Rezultatul cerut este \\(\\frac{8}{17}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{8}{17}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{25}{17}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{9}{17}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{42}{17}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 1,
+        "type_name": "Raporturi trigonometrice din triunghi",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a/c",
+        "expression_latex": "\\frac{a}{c}",
+        "givens": {
+          "a": "8",
+          "b": "15",
+          "c": "17"
+        },
+        "option_values": [
+          "8/17",
+          "25/17",
+          "-9/17",
+          "42/17"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi isoscel are laturile egale a și baza 2b. Calculați sinusul unui unghi de la bază. Date: a=\\(17\\), b=\\(8\\). Calculați \\(\\frac{\\sqrt{a^{2} - b^{2}}}{a}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înălțimea din vârf înjumătățește baza și are lungimea √(a²−b²). În triunghiul dreptunghic obținut, sinusul unghiului de la bază este înălțimea împărțită la latura egală. Rezultatul cerut este \\(\\frac{15}{17}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{32}{17}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{15}{17}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{2}{17}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{49}{17}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 2,
+        "type_name": "Triunghi isoscel descompus",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sqrt(a**2-b**2)/a",
+        "expression_latex": "\\frac{\\sqrt{a^{2} - b^{2}}}{a}",
+        "givens": {
+          "a": "17",
+          "b": "8"
+        },
+        "option_values": [
+          "32/17",
+          "15/17",
+          "-2/17",
+          "49/17"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Într-un triunghi dreptunghic, ipotenuza este a și sinusul unui unghi ascuțit este b. Aflați cateta alăturată acestui unghi. Date: a=\\(34\\), b=\\(\\frac{8}{17}\\). Calculați \\(a \\sqrt{1 - b^{2}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cosinusul este rădăcina pozitivă a lui 1−sin²α deoarece unghiul este ascuțit. Înmulțirea cu ipotenuza dă cateta alăturată. Rezultatul cerut este \\(30\\).",
+      "options": [
+        {
+          "text": "\\(31\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(29\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(30\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(32\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 3,
+        "type_name": "Elemente dintr-un raport trigonometric",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*sqrt(1-b**2)",
+        "expression_latex": "a \\sqrt{1 - b^{2}}",
+        "givens": {
+          "a": "34",
+          "b": "8/17"
+        },
+        "option_values": [
+          "31",
+          "29",
+          "30",
+          "32"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un paralelogram are laturile a,b și unghiul cuprins x, în radiani. Calculați aria. Date: a=\\(6\\), b=\\(7\\), x=\\(\\frac{\\pi}{6}\\). Calculați \\(a b \\sin{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înălțimea pe latura a este b sin x, deci aria este ab sin x. Acesta este un caz explicit de arie prin date trigonometrice, fără condiția suplimentară de diagonală a exemplului din catalog. Rezultatul cerut este \\(21\\).",
+      "options": [
+        {
+          "text": "\\(22\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(20\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(23\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(21\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 4,
+        "type_name": "Aria din date trigonometrice",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*b*sin(x)",
+        "expression_latex": "a b \\sin{\\left(x \\right)}",
+        "givens": {
+          "a": "6",
+          "b": "7",
+          "x": "pi/6"
+        },
+        "option_values": [
+          "22",
+          "20",
+          "23",
+          "21"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Triunghiul isoscel are laturile egale a și unghiul de la vârf x, în radiani. Aflați înălțimea pe bază. Date: a=\\(10\\), x=\\(\\frac{2 \\pi}{3}\\). Calculați \\(a \\cos{\\left(\\frac{x}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înălțimea bisectează unghiul de la vârf. În unul dintre cele două triunghiuri dreptunghice, raportul înălțime/latură egală este cos(x/2); x/2 este ascuțit. Rezultatul cerut este \\(5\\).",
+      "options": [
+        {
+          "text": "\\(5\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(7\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 5,
+        "type_name": "Înălțimi din unghi și bază",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*cos(x/2)",
+        "expression_latex": "a \\cos{\\left(\\frac{x}{2} \\right)}",
+        "givens": {
+          "a": "10",
+          "x": "2*pi/3"
+        },
+        "option_values": [
+          "5",
+          "6",
+          "4",
+          "7"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru unghiul ascuțit x, în radiani, verificați numeric expresia fundamentală. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\tan^{2}{\\left(x \\right)} + 1\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pitagora împărțit la pătratul catetei alăturate dă 1+tan²x=1/cos²x. Cosinusul este nenul pe domeniul ascuțit. Varianta cere valoarea numerică a membrului stâng. Rezultatul cerut este \\(4\\).",
+      "options": [
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 6,
+        "type_name": "Relații fundamentale în unghi ascuțit",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "1+tan(x)**2",
+        "expression_latex": "\\tan^{2}{\\left(x \\right)} + 1",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "5",
+          "4",
+          "3",
+          "6"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiul x este ascuțit, în radiani. Calculați raportul dintre tangenta complementului și cotangenta unghiului. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\frac{\\tan{\\left(- x + \\frac{\\pi}{2} \\right)}}{\\cot{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Unghiurile complementare inversează rolul catetelor: tan(π/2−x)=cot x. Pentru x ascuțit cot x este definită și strict pozitivă, deci raportul este 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 7,
+        "type_name": "Identități cu unghiuri complementare",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(pi/2-x)/cot(x)",
+        "expression_latex": "\\frac{\\tan{\\left(- x + \\frac{\\pi}{2} \\right)}}{\\cot{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru unghiul ascuțit x, în radiani, calculați fracția. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\frac{1 - \\cos{\\left(x \\right)}}{\\sin{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțind cu conjugata 1+cos x, obținem sin x/(1+cos x). Numitorii sunt nenuli pentru unghiurile ascuțite, iar identitatea sin²x=1−cos²x justifică reducerea. Rezultatul cerut este \\(\\frac{\\sqrt{3}}{3}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 8,
+        "type_name": "Raționalizare trigonometrică",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(1-cos(x))/sin(x)",
+        "expression_latex": "\\frac{1 - \\cos{\\left(x \\right)}}{\\sin{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "sqrt(3)/3 + 1",
+          "-1 + sqrt(3)/3",
+          "sqrt(3)/3 + 2",
+          "sqrt(3)/3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "În pătratul ABCD de latură a, M este pe AB, cu AM=b. Calculați cosinusul unghiului AMC. Date: a=\\(6\\), b=\\(4\\). Calculați \\(\\frac{- a + b}{\\sqrt{a^{2} + \\left(a - b\\right)^{2}}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Alegem A=(0,0), B=(a,0), C=(a,a), M=(b,0). Vectorii MA=(−b,0), MC=(a−b,a). Produsul lor scalar este −b(a−b), iar b>0 se simplifică din normele produsului. Semnul negativ indică unghiul obtuz. Rezultatul cerut este \\(- \\frac{\\sqrt{10}}{10}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{\\sqrt{10}}{10}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 - \\frac{\\sqrt{10}}{10}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 - \\frac{\\sqrt{10}}{10}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 - \\frac{\\sqrt{10}}{10}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 9,
+        "type_name": "Unghiuri între segmente în pătrat",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "-(a-b)/sqrt((a-b)**2+a**2)",
+        "expression_latex": "\\frac{- a + b}{\\sqrt{a^{2} + \\left(a - b\\right)^{2}}}",
+        "givens": {
+          "a": "6",
+          "b": "4"
+        },
+        "option_values": [
+          "-sqrt(10)/10",
+          "1 - sqrt(10)/10",
+          "-1 - sqrt(10)/10",
+          "2 - sqrt(10)/10"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Într-un triunghi, a=BC,b=CA,c=AB. Unghiurile B,C satisfac cos B=x și cos C=y. Calculați proiecția totală pe BC. Date: a=\\(15\\), b=\\(12\\), c=\\(9\\), x=\\(\\frac{3}{5}\\), y=\\(\\frac{4}{5}\\). Calculați \\(b y + c x\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema proiecțiilor este BC=AB cos B+AC cos C. În datele alese triunghiul este dreptunghic în A, iar proiecțiile sunt pozitive; suma este latura BC. Rezultatul cerut este \\(15\\).",
+      "options": [
+        {
+          "text": "\\(16\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(15\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(14\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(17\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 10,
+        "type_name": "Teorema proiecțiilor",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "c*x+b*y",
+        "expression_latex": "b y + c x",
+        "givens": {
+          "a": "15",
+          "b": "12",
+          "c": "9",
+          "x": "3/5",
+          "y": "4/5"
+        },
+        "option_values": [
+          "16",
+          "15",
+          "14",
+          "17"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un romb are latura a și unghiul A=x, în radiani. Calculați lungimea diagonalei AC. Date: a=\\(5\\), x=\\(\\frac{2 \\pi}{3}\\). Calculați \\(2 a \\cos{\\left(\\frac{x}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diagonalele se înjumătățesc și bisectează unghiurile rombului. Jumătate din AC este a cos(A/2). Deoarece 0<A<π, cos(A/2)>0. Rezultatul cerut este \\(5\\).",
+      "options": [
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(7\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 11,
+        "type_name": "Elementele rombului din unghi",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "2*a*cos(x/2)",
+        "expression_latex": "2 a \\cos{\\left(\\frac{x}{2} \\right)}",
+        "givens": {
+          "a": "5",
+          "x": "2*pi/3"
+        },
+        "option_values": [
+          "6",
+          "4",
+          "5",
+          "7"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi are înălțimea pe BC egală cu a și unghiurile la bază x,y ascuțite, în radiani. Aflați BC. Date: a=\\(6\\), x=\\(\\frac{\\pi}{3}\\), y=\\(\\frac{\\pi}{4}\\). Calculați \\(\\frac{a}{\\cot{\\left(- y + \\frac{\\pi}{2} \\right)}} + \\frac{a}{\\cot{\\left(- x + \\frac{\\pi}{2} \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Piciorul înălțimii este interior deoarece ambele unghiuri la bază sunt ascuțite. Cele două proiecții pe BC sunt a cot x și a cot y; deoarece cot(π/2−x)=tan x, expresia cerută le însumează. Rezultatul cerut este \\(2 \\sqrt{3} + 6\\).",
+      "options": [
+        {
+          "text": "\\(2 \\sqrt{3} + 7\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 \\sqrt{3} + 5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 \\sqrt{3} + 8\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 \\sqrt{3} + 6\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 12,
+        "type_name": "Triunghi oblic din înălțime și două unghiuri",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a/cot(pi/2-x)+a/cot(pi/2-y)",
+        "expression_latex": "\\frac{a}{\\cot{\\left(- y + \\frac{\\pi}{2} \\right)}} + \\frac{a}{\\cot{\\left(- x + \\frac{\\pi}{2} \\right)}}",
+        "givens": {
+          "a": "6",
+          "x": "pi/3",
+          "y": "pi/4"
+        },
+        "option_values": [
+          "2*sqrt(3) + 7",
+          "2*sqrt(3) + 5",
+          "2*sqrt(3) + 8",
+          "2*sqrt(3) + 6"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Trapezul dreptunghic ABCD are AB=a, CD=b, AD=c, AB∥CD și AD⊥AB. Aflați latura oblică BC. Date: a=\\(14\\), b=\\(5\\), c=\\(6\\). Calculați \\(\\sqrt{c^{2} + \\left(a - b\\right)^{2}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Proiecția orizontală a lui BC este diferența pozitivă a bazelor, iar cea verticală este înălțimea. Pitagora dă BC²=(a−b)²+c²; luăm rădăcina pozitivă. Rezultatul cerut este \\(3 \\sqrt{13}\\).",
+      "options": [
+        {
+          "text": "\\(3 \\sqrt{13}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + 3 \\sqrt{13}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + 3 \\sqrt{13}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + 3 \\sqrt{13}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 13,
+        "type_name": "Trapez cu proiecții prescrise",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sqrt((a-b)**2+c**2)",
+        "expression_latex": "\\sqrt{c^{2} + \\left(a - b\\right)^{2}}",
+        "givens": {
+          "a": "14",
+          "b": "5",
+          "c": "6"
+        },
+        "option_values": [
+          "3*sqrt(13)",
+          "1 + 3*sqrt(13)",
+          "-1 + 3*sqrt(13)",
+          "2 + 3*sqrt(13)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi dreptunghic are catetele a,b. Aflați ipotenuza. Date: a=\\(32\\), b=\\(60\\). Calculați \\(\\sqrt{a^{2} + b^{2}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pitagora determină pătratul ipotenuzei. Deoarece o lungime este pozitivă, se selectează rădăcina pozitivă; celelalte elemente se pot recupera prin rapoartele catetelor. Rezultatul cerut este \\(68\\).",
+      "options": [
+        {
+          "text": "\\(69\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(68\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(67\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(70\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 14,
+        "type_name": "Rezolvarea triunghiului dreptunghic din două date",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sqrt(a**2+b**2)",
+        "expression_latex": "\\sqrt{a^{2} + b^{2}}",
+        "givens": {
+          "a": "32",
+          "b": "60"
+        },
+        "option_values": [
+          "69",
+          "68",
+          "67",
+          "70"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiurile x,y sunt ascuțite, în radiani. Evaluați identitatea numerică. Date: x=\\(\\frac{\\pi}{6}\\), y=\\(\\frac{\\pi}{4}\\). Calculați \\(\\left(\\tan{\\left(x \\right)} + \\tan{\\left(y \\right)}\\right) \\cos{\\left(x \\right)} \\cos{\\left(y \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuind tangentele prin sin/cos și distribuind, expresia devine sin x cos y+cos x sin y=sin(x+y). Ambii cosinuși sunt nenuli. Rezultatul cerut este \\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 15,
+        "type_name": "Identități în două unghiuri ascuțite",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(tan(x)+tan(y))*cos(x)*cos(y)",
+        "expression_latex": "\\left(\\tan{\\left(x \\right)} + \\tan{\\left(y \\right)}\\right) \\cos{\\left(x \\right)} \\cos{\\left(y \\right)}",
+        "givens": {
+          "x": "pi/6",
+          "y": "pi/4"
+        },
+        "option_values": [
+          "sqrt(2)/4 + sqrt(6)/4 + 1",
+          "-1 + sqrt(2)/4 + sqrt(6)/4",
+          "sqrt(2)/4 + sqrt(6)/4",
+          "sqrt(2)/4 + sqrt(6)/4 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "ABC este dreptunghic în A și are ipotenuza 8. Dacă sin B+sin C=√2, aflați unghiul B în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "C=90°−B, deci sin B+sin C=sin B+cos B≤√2. Egalitatea impune sin B=cos B>0, astfel B=C=45°. Triunghiul este isoscel dreptunghic, iar ipotenuza pozitivă fixează scara. Rezultatul cerut este \\(45\\).",
+      "options": [
+        {
+          "text": "\\(46\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(44\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(47\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(45\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 16,
+        "type_name": "Caracterizarea isosceliei prin sumă trigonometrică",
+        "variant": 3,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "right_isosceles_equality",
+        "hypotenuse": 8,
+        "option_values": [
+          "46",
+          "44",
+          "47",
+          "45"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi dreptunghic are cateta opusă unghiului ascuțit α egală cu a, cateta alăturată b și ipotenuza c. Calculați sinusul lui α. Date: a=\\(7\\), b=\\(24\\), c=\\(25\\). Calculați \\(\\frac{a}{c}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin definiție, sinusul unui unghi ascuțit este cateta opusă împărțită la ipotenuză. Datele satisfac a²+b²=c² și toate lungimile sunt pozitive. Rezultatul cerut este \\(\\frac{7}{25}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{7}{25}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{32}{25}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{18}{25}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{57}{25}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 1,
+        "type_name": "Raporturi trigonometrice din triunghi",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a/c",
+        "expression_latex": "\\frac{a}{c}",
+        "givens": {
+          "a": "7",
+          "b": "24",
+          "c": "25"
+        },
+        "option_values": [
+          "7/25",
+          "32/25",
+          "-18/25",
+          "57/25"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi isoscel are laturile egale a și baza 2b. Calculați sinusul unui unghi de la bază. Date: a=\\(25\\), b=\\(7\\). Calculați \\(\\frac{\\sqrt{a^{2} - b^{2}}}{a}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înălțimea din vârf înjumătățește baza și are lungimea √(a²−b²). În triunghiul dreptunghic obținut, sinusul unghiului de la bază este înălțimea împărțită la latura egală. Rezultatul cerut este \\(\\frac{24}{25}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{49}{25}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{24}{25}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{1}{25}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{74}{25}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 2,
+        "type_name": "Triunghi isoscel descompus",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sqrt(a**2-b**2)/a",
+        "expression_latex": "\\frac{\\sqrt{a^{2} - b^{2}}}{a}",
+        "givens": {
+          "a": "25",
+          "b": "7"
+        },
+        "option_values": [
+          "49/25",
+          "24/25",
+          "-1/25",
+          "74/25"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Într-un triunghi dreptunghic, ipotenuza este a și sinusul unui unghi ascuțit este b. Aflați cateta alăturată acestui unghi. Date: a=\\(50\\), b=\\(\\frac{7}{25}\\). Calculați \\(a \\sqrt{1 - b^{2}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cosinusul este rădăcina pozitivă a lui 1−sin²α deoarece unghiul este ascuțit. Înmulțirea cu ipotenuza dă cateta alăturată. Rezultatul cerut este \\(48\\).",
+      "options": [
+        {
+          "text": "\\(49\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(47\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(48\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(50\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 3,
+        "type_name": "Elemente dintr-un raport trigonometric",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*sqrt(1-b**2)",
+        "expression_latex": "a \\sqrt{1 - b^{2}}",
+        "givens": {
+          "a": "50",
+          "b": "7/25"
+        },
+        "option_values": [
+          "49",
+          "47",
+          "48",
+          "50"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un paralelogram are laturile a,b și unghiul cuprins x, în radiani. Calculați aria. Date: a=\\(7\\), b=\\(8\\), x=\\(\\frac{\\pi}{6}\\). Calculați \\(a b \\sin{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înălțimea pe latura a este b sin x, deci aria este ab sin x. Acesta este un caz explicit de arie prin date trigonometrice, fără condiția suplimentară de diagonală a exemplului din catalog. Rezultatul cerut este \\(28\\).",
+      "options": [
+        {
+          "text": "\\(29\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(27\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(30\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(28\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 4,
+        "type_name": "Aria din date trigonometrice",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*b*sin(x)",
+        "expression_latex": "a b \\sin{\\left(x \\right)}",
+        "givens": {
+          "a": "7",
+          "b": "8",
+          "x": "pi/6"
+        },
+        "option_values": [
+          "29",
+          "27",
+          "30",
+          "28"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Triunghiul isoscel are laturile egale a și unghiul de la vârf x, în radiani. Aflați înălțimea pe bază. Date: a=\\(12\\), x=\\(\\frac{\\pi}{6}\\). Calculați \\(a \\cos{\\left(\\frac{x}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înălțimea bisectează unghiul de la vârf. În unul dintre cele două triunghiuri dreptunghice, raportul înălțime/latură egală este cos(x/2); x/2 este ascuțit. Rezultatul cerut este \\(3 \\sqrt{2} + 3 \\sqrt{6}\\).",
+      "options": [
+        {
+          "text": "\\(3 \\sqrt{2} + 3 \\sqrt{6}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + 3 \\sqrt{2} + 3 \\sqrt{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + 3 \\sqrt{2} + 3 \\sqrt{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + 3 \\sqrt{2} + 3 \\sqrt{6}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 5,
+        "type_name": "Înălțimi din unghi și bază",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*cos(x/2)",
+        "expression_latex": "a \\cos{\\left(\\frac{x}{2} \\right)}",
+        "givens": {
+          "a": "12",
+          "x": "pi/6"
+        },
+        "option_values": [
+          "3*sqrt(2) + 3*sqrt(6)",
+          "1 + 3*sqrt(2) + 3*sqrt(6)",
+          "-1 + 3*sqrt(2) + 3*sqrt(6)",
+          "2 + 3*sqrt(2) + 3*sqrt(6)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru unghiul ascuțit x, în radiani, verificați numeric expresia fundamentală. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\tan^{2}{\\left(x \\right)} + 1\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pitagora împărțit la pătratul catetei alăturate dă 1+tan²x=1/cos²x. Cosinusul este nenul pe domeniul ascuțit. Varianta cere valoarea numerică a membrului stâng. Rezultatul cerut este \\(8 - 4 \\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(9 - 4 \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(8 - 4 \\sqrt{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(7 - 4 \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(10 - 4 \\sqrt{3}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 6,
+        "type_name": "Relații fundamentale în unghi ascuțit",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "1+tan(x)**2",
+        "expression_latex": "\\tan^{2}{\\left(x \\right)} + 1",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "9 - 4*sqrt(3)",
+          "8 - 4*sqrt(3)",
+          "7 - 4*sqrt(3)",
+          "10 - 4*sqrt(3)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiul x este ascuțit, în radiani. Calculați raportul dintre tangenta complementului și cotangenta unghiului. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\frac{\\tan{\\left(- x + \\frac{\\pi}{2} \\right)}}{\\cot{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Unghiurile complementare inversează rolul catetelor: tan(π/2−x)=cot x. Pentru x ascuțit cot x este definită și strict pozitivă, deci raportul este 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 7,
+        "type_name": "Identități cu unghiuri complementare",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(pi/2-x)/cot(x)",
+        "expression_latex": "\\frac{\\tan{\\left(- x + \\frac{\\pi}{2} \\right)}}{\\cot{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru unghiul ascuțit x, în radiani, calculați fracția. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\frac{1 - \\cos{\\left(x \\right)}}{\\sin{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțind cu conjugata 1+cos x, obținem sin x/(1+cos x). Numitorii sunt nenuli pentru unghiurile ascuțite, iar identitatea sin²x=1−cos²x justifică reducerea. Rezultatul cerut este \\(-2 - \\sqrt{3} + \\sqrt{2} + \\sqrt{6}\\).",
+      "options": [
+        {
+          "text": "\\(- \\sqrt{3} - 1 + \\sqrt{2} + \\sqrt{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-3 - \\sqrt{3} + \\sqrt{2} + \\sqrt{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\sqrt{3} + \\sqrt{2} + \\sqrt{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-2 - \\sqrt{3} + \\sqrt{2} + \\sqrt{6}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 8,
+        "type_name": "Raționalizare trigonometrică",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(1-cos(x))/sin(x)",
+        "expression_latex": "\\frac{1 - \\cos{\\left(x \\right)}}{\\sin{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "-sqrt(3) - 1 + sqrt(2) + sqrt(6)",
+          "-3 - sqrt(3) + sqrt(2) + sqrt(6)",
+          "-sqrt(3) + sqrt(2) + sqrt(6)",
+          "-2 - sqrt(3) + sqrt(2) + sqrt(6)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "În pătratul ABCD de latură a, M este pe AB, cu AM=b. Calculați cosinusul unghiului AMC. Date: a=\\(7\\), b=\\(5\\). Calculați \\(\\frac{- a + b}{\\sqrt{a^{2} + \\left(a - b\\right)^{2}}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Alegem A=(0,0), B=(a,0), C=(a,a), M=(b,0). Vectorii MA=(−b,0), MC=(a−b,a). Produsul lor scalar este −b(a−b), iar b>0 se simplifică din normele produsului. Semnul negativ indică unghiul obtuz. Rezultatul cerut este \\(- \\frac{2 \\sqrt{53}}{53}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{2 \\sqrt{53}}{53}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 - \\frac{2 \\sqrt{53}}{53}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 - \\frac{2 \\sqrt{53}}{53}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 - \\frac{2 \\sqrt{53}}{53}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 9,
+        "type_name": "Unghiuri între segmente în pătrat",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "-(a-b)/sqrt((a-b)**2+a**2)",
+        "expression_latex": "\\frac{- a + b}{\\sqrt{a^{2} + \\left(a - b\\right)^{2}}}",
+        "givens": {
+          "a": "7",
+          "b": "5"
+        },
+        "option_values": [
+          "-2*sqrt(53)/53",
+          "1 - 2*sqrt(53)/53",
+          "-1 - 2*sqrt(53)/53",
+          "2 - 2*sqrt(53)/53"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Într-un triunghi, a=BC,b=CA,c=AB. Unghiurile B,C satisfac cos B=x și cos C=y. Calculați proiecția totală pe BC. Date: a=\\(20\\), b=\\(16\\), c=\\(12\\), x=\\(\\frac{3}{5}\\), y=\\(\\frac{4}{5}\\). Calculați \\(b y + c x\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema proiecțiilor este BC=AB cos B+AC cos C. În datele alese triunghiul este dreptunghic în A, iar proiecțiile sunt pozitive; suma este latura BC. Rezultatul cerut este \\(20\\).",
+      "options": [
+        {
+          "text": "\\(21\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(20\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(19\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(22\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 10,
+        "type_name": "Teorema proiecțiilor",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "c*x+b*y",
+        "expression_latex": "b y + c x",
+        "givens": {
+          "a": "20",
+          "b": "16",
+          "c": "12",
+          "x": "3/5",
+          "y": "4/5"
+        },
+        "option_values": [
+          "21",
+          "20",
+          "19",
+          "22"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un romb are latura a și unghiul A=x, în radiani. Calculați lungimea diagonalei AC. Date: a=\\(6\\), x=\\(\\frac{\\pi}{6}\\). Calculați \\(2 a \\cos{\\left(\\frac{x}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diagonalele se înjumătățesc și bisectează unghiurile rombului. Jumătate din AC este a cos(A/2). Deoarece 0<A<π, cos(A/2)>0. Rezultatul cerut este \\(3 \\sqrt{2} + 3 \\sqrt{6}\\).",
+      "options": [
+        {
+          "text": "\\(1 + 3 \\sqrt{2} + 3 \\sqrt{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + 3 \\sqrt{2} + 3 \\sqrt{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3 \\sqrt{2} + 3 \\sqrt{6}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 + 3 \\sqrt{2} + 3 \\sqrt{6}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 11,
+        "type_name": "Elementele rombului din unghi",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "2*a*cos(x/2)",
+        "expression_latex": "2 a \\cos{\\left(\\frac{x}{2} \\right)}",
+        "givens": {
+          "a": "6",
+          "x": "pi/6"
+        },
+        "option_values": [
+          "1 + 3*sqrt(2) + 3*sqrt(6)",
+          "-1 + 3*sqrt(2) + 3*sqrt(6)",
+          "3*sqrt(2) + 3*sqrt(6)",
+          "2 + 3*sqrt(2) + 3*sqrt(6)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi are înălțimea pe BC egală cu a și unghiurile la bază x,y ascuțite, în radiani. Aflați BC. Date: a=\\(7\\), x=\\(\\frac{\\pi}{3}\\), y=\\(\\frac{\\pi}{4}\\). Calculați \\(\\frac{a}{\\cot{\\left(- y + \\frac{\\pi}{2} \\right)}} + \\frac{a}{\\cot{\\left(- x + \\frac{\\pi}{2} \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Piciorul înălțimii este interior deoarece ambele unghiuri la bază sunt ascuțite. Cele două proiecții pe BC sunt a cot x și a cot y; deoarece cot(π/2−x)=tan x, expresia cerută le însumează. Rezultatul cerut este \\(\\frac{7 \\sqrt{3}}{3} + 7\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{7 \\sqrt{3}}{3} + 8\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{7 \\sqrt{3}}{3} + 6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{7 \\sqrt{3}}{3} + 9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{7 \\sqrt{3}}{3} + 7\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 12,
+        "type_name": "Triunghi oblic din înălțime și două unghiuri",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a/cot(pi/2-x)+a/cot(pi/2-y)",
+        "expression_latex": "\\frac{a}{\\cot{\\left(- y + \\frac{\\pi}{2} \\right)}} + \\frac{a}{\\cot{\\left(- x + \\frac{\\pi}{2} \\right)}}",
+        "givens": {
+          "a": "7",
+          "x": "pi/3",
+          "y": "pi/4"
+        },
+        "option_values": [
+          "7*sqrt(3)/3 + 8",
+          "7*sqrt(3)/3 + 6",
+          "7*sqrt(3)/3 + 9",
+          "7*sqrt(3)/3 + 7"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Trapezul dreptunghic ABCD are AB=a, CD=b, AD=c, AB∥CD și AD⊥AB. Aflați latura oblică BC. Date: a=\\(17\\), b=\\(6\\), c=\\(7\\). Calculați \\(\\sqrt{c^{2} + \\left(a - b\\right)^{2}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Proiecția orizontală a lui BC este diferența pozitivă a bazelor, iar cea verticală este înălțimea. Pitagora dă BC²=(a−b)²+c²; luăm rădăcina pozitivă. Rezultatul cerut este \\(\\sqrt{170}\\).",
+      "options": [
+        {
+          "text": "\\(\\sqrt{170}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + \\sqrt{170}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\sqrt{170}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\sqrt{170}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 13,
+        "type_name": "Trapez cu proiecții prescrise",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sqrt((a-b)**2+c**2)",
+        "expression_latex": "\\sqrt{c^{2} + \\left(a - b\\right)^{2}}",
+        "givens": {
+          "a": "17",
+          "b": "6",
+          "c": "7"
+        },
+        "option_values": [
+          "sqrt(170)",
+          "1 + sqrt(170)",
+          "-1 + sqrt(170)",
+          "2 + sqrt(170)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi dreptunghic are catetele a,b. Aflați ipotenuza. Date: a=\\(35\\), b=\\(120\\). Calculați \\(\\sqrt{a^{2} + b^{2}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pitagora determină pătratul ipotenuzei. Deoarece o lungime este pozitivă, se selectează rădăcina pozitivă; celelalte elemente se pot recupera prin rapoartele catetelor. Rezultatul cerut este \\(125\\).",
+      "options": [
+        {
+          "text": "\\(126\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(125\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(124\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(127\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 14,
+        "type_name": "Rezolvarea triunghiului dreptunghic din două date",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sqrt(a**2+b**2)",
+        "expression_latex": "\\sqrt{a^{2} + b^{2}}",
+        "givens": {
+          "a": "35",
+          "b": "120"
+        },
+        "option_values": [
+          "126",
+          "125",
+          "124",
+          "127"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiurile x,y sunt ascuțite, în radiani. Evaluați identitatea numerică. Date: x=\\(\\frac{\\pi}{6}\\), y=\\(\\frac{\\pi}{3}\\). Calculați \\(\\left(\\tan{\\left(x \\right)} + \\tan{\\left(y \\right)}\\right) \\cos{\\left(x \\right)} \\cos{\\left(y \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuind tangentele prin sin/cos și distribuind, expresia devine sin x cos y+cos x sin y=sin(x+y). Ambii cosinuși sunt nenuli. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 15,
+        "type_name": "Identități în două unghiuri ascuțite",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(tan(x)+tan(y))*cos(x)*cos(y)",
+        "expression_latex": "\\left(\\tan{\\left(x \\right)} + \\tan{\\left(y \\right)}\\right) \\cos{\\left(x \\right)} \\cos{\\left(y \\right)}",
+        "givens": {
+          "x": "pi/6",
+          "y": "pi/3"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "ABC este dreptunghic în A și are ipotenuza 10. Dacă sin B+sin C=√2, aflați unghiul B în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "C=90°−B, deci sin B+sin C=sin B+cos B≤√2. Egalitatea impune sin B=cos B>0, astfel B=C=45°. Triunghiul este isoscel dreptunghic, iar ipotenuza pozitivă fixează scara. Rezultatul cerut este \\(45\\).",
+      "options": [
+        {
+          "text": "\\(46\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(44\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(47\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(45\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 16,
+        "type_name": "Caracterizarea isosceliei prin sumă trigonometrică",
+        "variant": 4,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "right_isosceles_equality",
+        "hypotenuse": 10,
+        "option_values": [
+          "46",
+          "44",
+          "47",
+          "45"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi dreptunghic are cateta opusă unghiului ascuțit α egală cu a, cateta alăturată b și ipotenuza c. Calculați sinusul lui α. Date: a=\\(20\\), b=\\(21\\), c=\\(29\\). Calculați \\(\\frac{a}{c}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin definiție, sinusul unui unghi ascuțit este cateta opusă împărțită la ipotenuză. Datele satisfac a²+b²=c² și toate lungimile sunt pozitive. Rezultatul cerut este \\(\\frac{20}{29}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{20}{29}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{49}{29}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{9}{29}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{78}{29}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 1,
+        "type_name": "Raporturi trigonometrice din triunghi",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a/c",
+        "expression_latex": "\\frac{a}{c}",
+        "givens": {
+          "a": "20",
+          "b": "21",
+          "c": "29"
+        },
+        "option_values": [
+          "20/29",
+          "49/29",
+          "-9/29",
+          "78/29"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi isoscel are laturile egale a și baza 2b. Calculați sinusul unui unghi de la bază. Date: a=\\(29\\), b=\\(20\\). Calculați \\(\\frac{\\sqrt{a^{2} - b^{2}}}{a}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înălțimea din vârf înjumătățește baza și are lungimea √(a²−b²). În triunghiul dreptunghic obținut, sinusul unghiului de la bază este înălțimea împărțită la latura egală. Rezultatul cerut este \\(\\frac{21}{29}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{50}{29}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{21}{29}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{8}{29}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{79}{29}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 2,
+        "type_name": "Triunghi isoscel descompus",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sqrt(a**2-b**2)/a",
+        "expression_latex": "\\frac{\\sqrt{a^{2} - b^{2}}}{a}",
+        "givens": {
+          "a": "29",
+          "b": "20"
+        },
+        "option_values": [
+          "50/29",
+          "21/29",
+          "-8/29",
+          "79/29"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Într-un triunghi dreptunghic, ipotenuza este a și sinusul unui unghi ascuțit este b. Aflați cateta alăturată acestui unghi. Date: a=\\(58\\), b=\\(\\frac{20}{29}\\). Calculați \\(a \\sqrt{1 - b^{2}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cosinusul este rădăcina pozitivă a lui 1−sin²α deoarece unghiul este ascuțit. Înmulțirea cu ipotenuza dă cateta alăturată. Rezultatul cerut este \\(42\\).",
+      "options": [
+        {
+          "text": "\\(43\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(41\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(42\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(44\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 3,
+        "type_name": "Elemente dintr-un raport trigonometric",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*sqrt(1-b**2)",
+        "expression_latex": "a \\sqrt{1 - b^{2}}",
+        "givens": {
+          "a": "58",
+          "b": "20/29"
+        },
+        "option_values": [
+          "43",
+          "41",
+          "42",
+          "44"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un paralelogram are laturile a,b și unghiul cuprins x, în radiani. Calculați aria. Date: a=\\(8\\), b=\\(9\\), x=\\(\\frac{\\pi}{6}\\). Calculați \\(a b \\sin{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înălțimea pe latura a este b sin x, deci aria este ab sin x. Acesta este un caz explicit de arie prin date trigonometrice, fără condiția suplimentară de diagonală a exemplului din catalog. Rezultatul cerut este \\(36\\).",
+      "options": [
+        {
+          "text": "\\(37\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(35\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(38\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(36\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 4,
+        "type_name": "Aria din date trigonometrice",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*b*sin(x)",
+        "expression_latex": "a b \\sin{\\left(x \\right)}",
+        "givens": {
+          "a": "8",
+          "b": "9",
+          "x": "pi/6"
+        },
+        "option_values": [
+          "37",
+          "35",
+          "38",
+          "36"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Triunghiul isoscel are laturile egale a și unghiul de la vârf x, în radiani. Aflați înălțimea pe bază. Date: a=\\(14\\), x=\\(\\frac{5 \\pi}{6}\\). Calculați \\(a \\cos{\\left(\\frac{x}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înălțimea bisectează unghiul de la vârf. În unul dintre cele două triunghiuri dreptunghice, raportul înălțime/latură egală este cos(x/2); x/2 este ascuțit. Rezultatul cerut este \\(- \\frac{7 \\sqrt{2}}{2} + \\frac{7 \\sqrt{6}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{7 \\sqrt{2}}{2} + \\frac{7 \\sqrt{6}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{7 \\sqrt{2}}{2} + 1 + \\frac{7 \\sqrt{6}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{7 \\sqrt{2}}{2} - 1 + \\frac{7 \\sqrt{6}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{7 \\sqrt{2}}{2} + 2 + \\frac{7 \\sqrt{6}}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 5,
+        "type_name": "Înălțimi din unghi și bază",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*cos(x/2)",
+        "expression_latex": "a \\cos{\\left(\\frac{x}{2} \\right)}",
+        "givens": {
+          "a": "14",
+          "x": "5*pi/6"
+        },
+        "option_values": [
+          "-7*sqrt(2)/2 + 7*sqrt(6)/2",
+          "-7*sqrt(2)/2 + 1 + 7*sqrt(6)/2",
+          "-7*sqrt(2)/2 - 1 + 7*sqrt(6)/2",
+          "-7*sqrt(2)/2 + 2 + 7*sqrt(6)/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru unghiul ascuțit x, în radiani, verificați numeric expresia fundamentală. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\tan^{2}{\\left(x \\right)} + 1\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pitagora împărțit la pătratul catetei alăturate dă 1+tan²x=1/cos²x. Cosinusul este nenul pe domeniul ascuțit. Varianta cere valoarea numerică a membrului stâng. Rezultatul cerut este \\(4 \\sqrt{3} + 8\\).",
+      "options": [
+        {
+          "text": "\\(4 \\sqrt{3} + 9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 \\sqrt{3} + 8\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4 \\sqrt{3} + 7\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 \\sqrt{3} + 10\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 6,
+        "type_name": "Relații fundamentale în unghi ascuțit",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "1+tan(x)**2",
+        "expression_latex": "\\tan^{2}{\\left(x \\right)} + 1",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "4*sqrt(3) + 9",
+          "4*sqrt(3) + 8",
+          "4*sqrt(3) + 7",
+          "4*sqrt(3) + 10"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiul x este ascuțit, în radiani. Calculați raportul dintre tangenta complementului și cotangenta unghiului. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\frac{\\tan{\\left(- x + \\frac{\\pi}{2} \\right)}}{\\cot{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Unghiurile complementare inversează rolul catetelor: tan(π/2−x)=cot x. Pentru x ascuțit cot x este definită și strict pozitivă, deci raportul este 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 7,
+        "type_name": "Identități cu unghiuri complementare",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(pi/2-x)/cot(x)",
+        "expression_latex": "\\frac{\\tan{\\left(- x + \\frac{\\pi}{2} \\right)}}{\\cot{\\left(x \\right)}}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru unghiul ascuțit x, în radiani, calculați fracția. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\frac{1 - \\cos{\\left(x \\right)}}{\\sin{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțind cu conjugata 1+cos x, obținem sin x/(1+cos x). Numitorii sunt nenuli pentru unghiurile ascuțite, iar identitatea sin²x=1−cos²x justifică reducerea. Rezultatul cerut este \\(-2 - \\sqrt{2} + \\sqrt{3} + \\sqrt{6}\\).",
+      "options": [
+        {
+          "text": "\\(- \\sqrt{2} - 1 + \\sqrt{3} + \\sqrt{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-3 - \\sqrt{2} + \\sqrt{3} + \\sqrt{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\sqrt{2} + \\sqrt{3} + \\sqrt{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-2 - \\sqrt{2} + \\sqrt{3} + \\sqrt{6}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 8,
+        "type_name": "Raționalizare trigonometrică",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(1-cos(x))/sin(x)",
+        "expression_latex": "\\frac{1 - \\cos{\\left(x \\right)}}{\\sin{\\left(x \\right)}}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "-sqrt(2) - 1 + sqrt(3) + sqrt(6)",
+          "-3 - sqrt(2) + sqrt(3) + sqrt(6)",
+          "-sqrt(2) + sqrt(3) + sqrt(6)",
+          "-2 - sqrt(2) + sqrt(3) + sqrt(6)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "În pătratul ABCD de latură a, M este pe AB, cu AM=b. Calculați cosinusul unghiului AMC. Date: a=\\(8\\), b=\\(6\\). Calculați \\(\\frac{- a + b}{\\sqrt{a^{2} + \\left(a - b\\right)^{2}}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Alegem A=(0,0), B=(a,0), C=(a,a), M=(b,0). Vectorii MA=(−b,0), MC=(a−b,a). Produsul lor scalar este −b(a−b), iar b>0 se simplifică din normele produsului. Semnul negativ indică unghiul obtuz. Rezultatul cerut este \\(- \\frac{\\sqrt{17}}{17}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{\\sqrt{17}}{17}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 - \\frac{\\sqrt{17}}{17}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 - \\frac{\\sqrt{17}}{17}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 - \\frac{\\sqrt{17}}{17}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 9,
+        "type_name": "Unghiuri între segmente în pătrat",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "-(a-b)/sqrt((a-b)**2+a**2)",
+        "expression_latex": "\\frac{- a + b}{\\sqrt{a^{2} + \\left(a - b\\right)^{2}}}",
+        "givens": {
+          "a": "8",
+          "b": "6"
+        },
+        "option_values": [
+          "-sqrt(17)/17",
+          "1 - sqrt(17)/17",
+          "-1 - sqrt(17)/17",
+          "2 - sqrt(17)/17"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Într-un triunghi, a=BC,b=CA,c=AB. Unghiurile B,C satisfac cos B=x și cos C=y. Calculați proiecția totală pe BC. Date: a=\\(25\\), b=\\(20\\), c=\\(15\\), x=\\(\\frac{3}{5}\\), y=\\(\\frac{4}{5}\\). Calculați \\(b y + c x\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema proiecțiilor este BC=AB cos B+AC cos C. În datele alese triunghiul este dreptunghic în A, iar proiecțiile sunt pozitive; suma este latura BC. Rezultatul cerut este \\(25\\).",
+      "options": [
+        {
+          "text": "\\(26\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(25\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(24\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(27\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 10,
+        "type_name": "Teorema proiecțiilor",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "c*x+b*y",
+        "expression_latex": "b y + c x",
+        "givens": {
+          "a": "25",
+          "b": "20",
+          "c": "15",
+          "x": "3/5",
+          "y": "4/5"
+        },
+        "option_values": [
+          "26",
+          "25",
+          "24",
+          "27"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un romb are latura a și unghiul A=x, în radiani. Calculați lungimea diagonalei AC. Date: a=\\(7\\), x=\\(\\frac{5 \\pi}{6}\\). Calculați \\(2 a \\cos{\\left(\\frac{x}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diagonalele se înjumătățesc și bisectează unghiurile rombului. Jumătate din AC este a cos(A/2). Deoarece 0<A<π, cos(A/2)>0. Rezultatul cerut este \\(- \\frac{7 \\sqrt{2}}{2} + \\frac{7 \\sqrt{6}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{7 \\sqrt{2}}{2} + 1 + \\frac{7 \\sqrt{6}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{7 \\sqrt{2}}{2} - 1 + \\frac{7 \\sqrt{6}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{7 \\sqrt{2}}{2} + \\frac{7 \\sqrt{6}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{7 \\sqrt{2}}{2} + 2 + \\frac{7 \\sqrt{6}}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 11,
+        "type_name": "Elementele rombului din unghi",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "2*a*cos(x/2)",
+        "expression_latex": "2 a \\cos{\\left(\\frac{x}{2} \\right)}",
+        "givens": {
+          "a": "7",
+          "x": "5*pi/6"
+        },
+        "option_values": [
+          "-7*sqrt(2)/2 + 1 + 7*sqrt(6)/2",
+          "-7*sqrt(2)/2 - 1 + 7*sqrt(6)/2",
+          "-7*sqrt(2)/2 + 7*sqrt(6)/2",
+          "-7*sqrt(2)/2 + 2 + 7*sqrt(6)/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi are înălțimea pe BC egală cu a și unghiurile la bază x,y ascuțite, în radiani. Aflați BC. Date: a=\\(8\\), x=\\(\\frac{\\pi}{3}\\), y=\\(\\frac{\\pi}{4}\\). Calculați \\(\\frac{a}{\\cot{\\left(- y + \\frac{\\pi}{2} \\right)}} + \\frac{a}{\\cot{\\left(- x + \\frac{\\pi}{2} \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Piciorul înălțimii este interior deoarece ambele unghiuri la bază sunt ascuțite. Cele două proiecții pe BC sunt a cot x și a cot y; deoarece cot(π/2−x)=tan x, expresia cerută le însumează. Rezultatul cerut este \\(\\frac{8 \\sqrt{3}}{3} + 8\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{8 \\sqrt{3}}{3} + 9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{8 \\sqrt{3}}{3} + 7\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{8 \\sqrt{3}}{3} + 10\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{8 \\sqrt{3}}{3} + 8\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 12,
+        "type_name": "Triunghi oblic din înălțime și două unghiuri",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a/cot(pi/2-x)+a/cot(pi/2-y)",
+        "expression_latex": "\\frac{a}{\\cot{\\left(- y + \\frac{\\pi}{2} \\right)}} + \\frac{a}{\\cot{\\left(- x + \\frac{\\pi}{2} \\right)}}",
+        "givens": {
+          "a": "8",
+          "x": "pi/3",
+          "y": "pi/4"
+        },
+        "option_values": [
+          "8*sqrt(3)/3 + 9",
+          "8*sqrt(3)/3 + 7",
+          "8*sqrt(3)/3 + 10",
+          "8*sqrt(3)/3 + 8"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Trapezul dreptunghic ABCD are AB=a, CD=b, AD=c, AB∥CD și AD⊥AB. Aflați latura oblică BC. Date: a=\\(20\\), b=\\(7\\), c=\\(8\\). Calculați \\(\\sqrt{c^{2} + \\left(a - b\\right)^{2}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Proiecția orizontală a lui BC este diferența pozitivă a bazelor, iar cea verticală este înălțimea. Pitagora dă BC²=(a−b)²+c²; luăm rădăcina pozitivă. Rezultatul cerut este \\(\\sqrt{233}\\).",
+      "options": [
+        {
+          "text": "\\(\\sqrt{233}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + \\sqrt{233}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\sqrt{233}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\sqrt{233}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 13,
+        "type_name": "Trapez cu proiecții prescrise",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sqrt((a-b)**2+c**2)",
+        "expression_latex": "\\sqrt{c^{2} + \\left(a - b\\right)^{2}}",
+        "givens": {
+          "a": "20",
+          "b": "7",
+          "c": "8"
+        },
+        "option_values": [
+          "sqrt(233)",
+          "1 + sqrt(233)",
+          "-1 + sqrt(233)",
+          "2 + sqrt(233)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi dreptunghic are catetele a,b. Aflați ipotenuza. Date: a=\\(120\\), b=\\(126\\). Calculați \\(\\sqrt{a^{2} + b^{2}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pitagora determină pătratul ipotenuzei. Deoarece o lungime este pozitivă, se selectează rădăcina pozitivă; celelalte elemente se pot recupera prin rapoartele catetelor. Rezultatul cerut este \\(174\\).",
+      "options": [
+        {
+          "text": "\\(175\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(174\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(173\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(176\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 14,
+        "type_name": "Rezolvarea triunghiului dreptunghic din două date",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sqrt(a**2+b**2)",
+        "expression_latex": "\\sqrt{a^{2} + b^{2}}",
+        "givens": {
+          "a": "120",
+          "b": "126"
+        },
+        "option_values": [
+          "175",
+          "174",
+          "173",
+          "176"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiurile x,y sunt ascuțite, în radiani. Evaluați identitatea numerică. Date: x=\\(\\frac{\\pi}{6}\\), y=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\left(\\tan{\\left(x \\right)} + \\tan{\\left(y \\right)}\\right) \\cos{\\left(x \\right)} \\cos{\\left(y \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuind tangentele prin sin/cos și distribuind, expresia devine sin x cos y+cos x sin y=sin(x+y). Ambii cosinuși sunt nenuli. Rezultatul cerut este \\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 15,
+        "type_name": "Identități în două unghiuri ascuțite",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(tan(x)+tan(y))*cos(x)*cos(y)",
+        "expression_latex": "\\left(\\tan{\\left(x \\right)} + \\tan{\\left(y \\right)}\\right) \\cos{\\left(x \\right)} \\cos{\\left(y \\right)}",
+        "givens": {
+          "x": "pi/6",
+          "y": "5*pi/12"
+        },
+        "option_values": [
+          "sqrt(2)/4 + sqrt(6)/4 + 1",
+          "-1 + sqrt(2)/4 + sqrt(6)/4",
+          "sqrt(2)/4 + sqrt(6)/4",
+          "sqrt(2)/4 + sqrt(6)/4 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "ABC este dreptunghic în A și are ipotenuza 12. Dacă sin B+sin C=√2, aflați unghiul B în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "C=90°−B, deci sin B+sin C=sin B+cos B≤√2. Egalitatea impune sin B=cos B>0, astfel B=C=45°. Triunghiul este isoscel dreptunghic, iar ipotenuza pozitivă fixează scara. Rezultatul cerut este \\(45\\).",
+      "options": [
+        {
+          "text": "\\(46\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(44\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(47\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(45\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.1",
+        "type": 16,
+        "type_name": "Caracterizarea isosceliei prin sumă trigonometrică",
+        "variant": 5,
+        "reference_pages": "206–209",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "right_isosceles_equality",
+        "hypotenuse": 12,
+        "option_values": [
+          "46",
+          "44",
+          "47",
+          "45"
+        ],
+        "answer_kind": "math"
+      }
+    }
+  ]
 }

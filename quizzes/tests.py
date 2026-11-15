@@ -268,6 +268,8 @@ class TrainingTests(TopicModeTestMixin, TestCase):
         self.assertContains(response, "training-loader")
         self.assertContains(response, "training.js")
         self.assertContains(response, '"questions"')
+        self.assertContains(response, 'id="training-progress" role="status" aria-live="polite" aria-atomic="true"')
+        self.assertContains(response, 'id="training-save-error" role="alert" aria-atomic="true"')
 
     def test_training_submit_json_correct(self):
         self.client.login(username="trainuser", password="testpass123")

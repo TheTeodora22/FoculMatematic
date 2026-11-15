@@ -5,6 +5,7 @@ import re
 import unicodedata
 from pathlib import Path
 from clasa_9_real_lessons import LESSONS, configure_manifest
+from clasa_9_property_lessons import LESSONS as PROPERTY_LESSONS
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -30,7 +31,7 @@ CHAPTERS = [
             "Șiruri de numere reale. Notația și termenul general",
             "Progresii aritmetice și geometrice. Aplicații",
             "Funcții. Reper cartezian, produs cartezian și reprezentare grafică",
-            "Noțiunea, imaginea și preimaginea unei funcții",
+            "Imaginea și preimaginea unei funcții",
             "Graficul, restricțiile și prelungirile unei funcții. Funcții numerice",
             "Proprietăți generale ale funcțiilor: mărginire, paritate, periodicitate și monotonie",
             "Compunerea funcțiilor",
@@ -121,9 +122,32 @@ def main() -> None:
     for chapter_order, (chapter_slug, chapter_title, lessons) in enumerate(CHAPTERS, 1):
         filenames = []
         for lesson_order, lesson_title in enumerate(lessons, 1):
+            if chapter_slug == "functii" and lesson_order == 6:
+                for filename, title in PROPERTY_LESSONS:
+                    filenames.append(f"clasa_9/{filename}")
+                    path = CLASS_DIR / filename
+                    if not path.exists():
+                        path.write_text(json.dumps({"title": title,
+                            "description": "Clasa a 9-a · Funcții", "difficulty": "easy",
+                            "questions": []}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                continue
+            if chapter_slug == "functii" and lesson_order == 2:
+                for suffix, title in [("a_progresii_aritmetice", "Progresii aritmetice"),
+                                      ("b_progresii_geometrice", "Progresii geometrice"),
+                                      ("c_aplicatii_progresii", "Aplicații")]:
+                    filename = f"clasa_9_u02_l02{suffix}.json"
+                    filenames.append(f"clasa_9/{filename}")
+                    path = CLASS_DIR / filename
+                    if not path.exists():
+                        path.write_text(json.dumps({"title": title,
+                            "description": "Clasa a 9-a · Funcții", "difficulty": "medium",
+                            "questions": []}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                continue
             if chapter_order == 1 and lesson_order in (1, 2):
                 continue
             filename = f"clasa_9_u{chapter_order:02d}_l{lesson_order:02d}_{slugify(lesson_title)}.json"
+            if chapter_slug == "functii" and lesson_order == 4:
+                filename = "clasa_9_u02_l04_notiunea_imaginea_si_preimaginea_unei_functii.json"
             filenames.append(f"clasa_9/{filename}")
             path = CLASS_DIR / filename
             if not path.exists():

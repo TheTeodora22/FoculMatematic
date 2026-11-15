@@ -52,6 +52,7 @@ QUESTION_TYPES = {
     "reverse_method",
     "false_hypothesis_method",
     "geometry_canvas",
+    "vector_workbench",
     "operation_sequence",
     "operation_workbench",
     "divisibility_values",
@@ -895,6 +896,13 @@ def _validate_quiz_payload(data: dict, source: str) -> None:
             if "high_count" in answers and expected_total != scenario["total"]:
                 raise SeedValidationError(f"{source}: întrebarea {i} are o soluție incompatibilă cu datele.")
             continue
+        if question_type == "vector_workbench":
+            from quizzes.vector_workbench import VectorValidationError, validate_config
+            try:
+                validate_config(question.get("interactive"))
+            except VectorValidationError as exc:
+                raise SeedValidationError(f"{source}: întrebarea {i}: {exc}") from exc
+            continue
         if question_type == "geometry_canvas":
             interactive = question.get("interactive", {})
             mode, answers = interactive.get("mode"), interactive.get("answers")
@@ -1642,8 +1650,9 @@ def load_all_quizzes(
         return []
 
     file_to_chapter = load_chapters_manifest(directory)
-    from quizzes.catalog_reorganization import prepare_real_number_lessons
+    from quizzes.catalog_reorganization import prepare_real_number_lessons, prepare_progression_lessons
     prepare_real_number_lessons(directory, file_to_chapter, _validate_quiz_payload, SeedValidationError)
+    prepare_progression_lessons(directory, file_to_chapter, _validate_quiz_payload, SeedValidationError)
     if only_file:
         paths = [_resolve_quiz_path(directory, only_file)]
     else:

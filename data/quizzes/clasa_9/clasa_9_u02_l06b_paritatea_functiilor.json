@@ -1,0 +1,2727 @@
+{
+  "description": "Clasa a 9-a · Funcții",
+  "difficulty": "hard",
+  "questions": [
+    {
+      "text": "Clasificați paritatea lui f:ℝ→ℝ, f(x)=x³+1x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul este simetric și f(−x)=−x³−1x=−f(x). Funcția nu este nulă, de exemplu f(1)=2, deci nu este și pară.",
+      "options": [
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 1,
+        "type_name": "Paritatea pe domeniu simetric",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f:[−1,2]→ℝ, f(x)=x², folosind definiția care cere un domeniu simetric.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul nu este simetric: 2 aparține, dar −2 nu aparține. Astfel funcția nu este nici pară, nici impară în sensul definiției, chiar dacă formula x² este pară pe ℝ.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": true
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 2,
+        "type_name": "Domeniu nesimetric",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați paritatea lui \\(f(x)=\\begin{cases}x^2,&|x|\\le 1\\\\1,&|x|>1\\end{cases}\\), cu domeniul ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuirea lui x cu −x păstrează condiția fiecărei ramuri. Pe prima ramură (−x)²=x², iar pe a doua valoarea este constantă; deci f(−x)=f(x). Funcția este nenulă și nu poate fi simultan impară.",
+      "options": [
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": true
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 3,
+        "type_name": "Paritatea funcțiilor pe ramuri",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a funcția f(x)=x²+(a−1)x+1, x∈ℝ, este pară?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(x)−f(−x)=2(a−1)x. Aceasta se anulează pentru orice x exact când a=1; termenii rămași sunt pari.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 4,
+        "type_name": "Parametri pentru paritate",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f:ℝ→ℝ, f(x)=max(2x,0)−max(−2x,0).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x≥0 expresia este 2x; pentru x<0 este tot 2x. Funcția liniară nenulă 2x este impară și nu este pară.",
+      "options": [
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 5,
+        "type_name": "Paritatea funcțiilor max și min",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x³+1x²+2, x∈ℝ. Care este partea pară g din descompunerea f=g+h, cu g pară și h impară?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "g(x)=(f(x)+f(−x))/2=1x²+2. Partea impară este h(x)=(f(x)−f(−x))/2=x³. Suma celor două este f.",
+      "options": [
+        {
+          "text": "g(x)=x³",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=1x²+2",
+          "is_correct": true
+        },
+        {
+          "text": "g(x)=x³+1x²",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=1x²",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 6,
+        "type_name": "Descompunere în parte pară și impară",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Graficul lui f(x)=(x−1)²+2, x∈ℝ, are axa verticală x=a. Aflați a.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(2·1−x)=(1−x)²+2=f(x). Domeniul ℝ este stabil la reflexie. Vârful parabolei are abscisa 1, deci aceasta este unica axă verticală.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 7,
+        "type_name": "Verificarea axei verticale de simetrie",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce m graficul lui f(x)=x²+mx+2 are axa verticală x=1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Axa parabolei x²+mx+2 este x=−m/2, prin completarea pătratului. Egalitatea −m/2=1 dă m=−2.",
+      "options": [
+        {
+          "text": "-3",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "-2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 8,
+        "type_name": "Parametru pentru axă prescrisă",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O funcție f:ℝ→ℝ satisface f(2−x)=f(x) pentru orice x. Ce abscisă are axa verticală garantată de relație?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Argumentele x și 2−x sunt simetrice față de semisuma lor 1. Relația arată că punctele reflectate au aceeași ordonată, deci x=1 este axă. Nu se afirmă că ar fi singura axă.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 9,
+        "type_name": "Recuperarea axei din ecuație funcțională",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este centrul de simetrie al graficului lui f(x)=(x−1)³+2, x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În coordonatele u=x−1, v=y−2, graficul este v=u³, impar. Echivalent, f(2·1−x)+f(x)=2·2; centrul este (1,2).",
+      "options": [
+        {
+          "text": "(-1;2)",
+          "is_correct": false
+        },
+        {
+          "text": "(1;2)",
+          "is_correct": true
+        },
+        {
+          "text": "(1;-2)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;2)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 10,
+        "type_name": "Verificarea centrului de simetrie",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru c>0, familia f_c(x)=2+c/(x−1), x≠1, are un centru comun. Care este acesta?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul ℝ∖{1} este simetric față de 1. Avem f_c(2·1−x)+f_c(x)=2·2, deoarece fracțiile au numitori opuși. Centrul (1,2) nu depinde de c.",
+      "options": [
+        {
+          "text": "(1;0)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;2)",
+          "is_correct": false
+        },
+        {
+          "text": "(1;2)",
+          "is_correct": true
+        },
+        {
+          "text": "(-1;-2)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 11,
+        "type_name": "Centru comun unei familii",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=⌊x⌋+1, definită pe ℝ∖ℤ. Ce ordonată are centrul de simetrie cu abscisa 0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x∉ℤ, ⌊x⌋+⌊−x⌋=−1. Astfel f(x)+f(−x)=1=2b, deci b=1/2. Excluderea întregilor este esențială pentru această identitate.",
+      "options": [
+        {
+          "text": "-1/2",
+          "is_correct": false
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": false
+        },
+        {
+          "text": "1/2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 12,
+        "type_name": "Centru pentru funcția parte întreagă",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aflați centrul de simetrie al graficului lui f(x)=2x+1/(x−1), x≠1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem x=1+u: f(x)=2·1+2u+1/u. Expresia 2u+1/u este impară pe ℝ∖{0}, deci centrul este (1,2). Un centru trebuie să păstreze și punctul exclus din domeniu, ceea ce impune abscisa 1.",
+      "options": [
+        {
+          "text": "(1;2)",
+          "is_correct": true
+        },
+        {
+          "text": "(1;1)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1;-2)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 13,
+        "type_name": "Determinarea centrului necunoscut",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru f(x)=cos(2πx/2), x∈ℝ, care familie este alcătuită numai din axe verticale de simetrie?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru a=k·2/2, f(2a−x)=cos(2kπ−2πx/2)=f(x). Valorile întregi ale lui k dau infinit de multe axe. Pentru celelalte familii, deja primul membru nu satisface identitatea la x=0.",
+      "options": [
+        {
+          "text": "\\(x=2/4+k\\,2/2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x=k\\,2/2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(x=2/8+k\\,2/2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x=2/3+k\\,2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 14,
+        "type_name": "Infinit de multe axe",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este cea mai mare submulțime simetrică față de 0 a intervalului [−1,3], pe care poate fi restrânsă f(x)=x² pentru a fi pară?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul restricției trebuie să conțină −x ori de câte ori conține x. Intersecția D∩(−D)=[−1,1] este cea mai mare mulțime cu această proprietate; x² este pară pe ea. Intervalul deschis este mai mic și nu este maximal.",
+      "options": [
+        {
+          "text": "[−1,3]",
+          "is_correct": false
+        },
+        {
+          "text": "[0,1]",
+          "is_correct": false
+        },
+        {
+          "text": "[−1,1]",
+          "is_correct": true
+        },
+        {
+          "text": "(−1,1)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 15,
+        "type_name": "Restrângerea domeniului pentru simetrie",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x pe D=ℝ∖{1;3}. Care este unicul centru al graficului?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un centru (a,b) al dreptei restrânse trebuie să aibă b=a și să păstreze mulțimea celor două abscise excluse. Reflexia le schimbă între ele, deci a=(1+3)/2=2. Acest centru păstrează domeniul și graficul; este unic.",
+      "options": [
+        {
+          "text": "(1;1)",
+          "is_correct": false
+        },
+        {
+          "text": "(3;3)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;0)",
+          "is_correct": false
+        },
+        {
+          "text": "(2;2)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 16,
+        "type_name": "Număr prescris de centre de simetrie",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O funcție nenulă f:ℝ→ℝ satisface f(x+y)=f(x)+f(y) pentru orice x,y și f(1)=1. Ce paritate are?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La x=y=0 rezultă f(0)=0. Pentru y=−x, 0=f(x)+f(−x), deci f este impară. Deoarece f(1)=1≠0, nu poate fi și pară.",
+      "options": [
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 17,
+        "type_name": "Paritate dedusă din ecuație funcțională",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați paritatea lui f:ℝ→ℝ, f(x)=x³+2x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul este simetric și f(−x)=−x³−2x=−f(x). Funcția nu este nulă, de exemplu f(1)=3, deci nu este și pară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 1,
+        "type_name": "Paritatea pe domeniu simetric",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f:[−2,3]→ℝ, f(x)=x², folosind definiția care cere un domeniu simetric.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul nu este simetric: 3 aparține, dar −3 nu aparține. Astfel funcția nu este nici pară, nici impară în sensul definiției, chiar dacă formula x² este pară pe ℝ.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": true
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 2,
+        "type_name": "Domeniu nesimetric",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați paritatea lui \\(f(x)=\\begin{cases}x^2,&|x|\\le 2\\\\2,&|x|>2\\end{cases}\\), cu domeniul ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuirea lui x cu −x păstrează condiția fiecărei ramuri. Pe prima ramură (−x)²=x², iar pe a doua valoarea este constantă; deci f(−x)=f(x). Funcția este nenulă și nu poate fi simultan impară.",
+      "options": [
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 3,
+        "type_name": "Paritatea funcțiilor pe ramuri",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a funcția f(x)=x²+(a−2)x+1, x∈ℝ, este pară?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(x)−f(−x)=2(a−2)x. Aceasta se anulează pentru orice x exact când a=2; termenii rămași sunt pari.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 4,
+        "type_name": "Parametri pentru paritate",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f:ℝ→ℝ, f(x)=max(3x,0)−max(−3x,0).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x≥0 expresia este 3x; pentru x<0 este tot 3x. Funcția liniară nenulă 3x este impară și nu este pară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 5,
+        "type_name": "Paritatea funcțiilor max și min",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x³+2x²+3, x∈ℝ. Care este partea pară g din descompunerea f=g+h, cu g pară și h impară?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "g(x)=(f(x)+f(−x))/2=2x²+3. Partea impară este h(x)=(f(x)−f(−x))/2=x³. Suma celor două este f.",
+      "options": [
+        {
+          "text": "g(x)=x³",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=x³+2x²",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=2x²+3",
+          "is_correct": true
+        },
+        {
+          "text": "g(x)=2x²",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 6,
+        "type_name": "Descompunere în parte pară și impară",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Graficul lui f(x)=(x−2)²+3, x∈ℝ, are axa verticală x=a. Aflați a.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(2·2−x)=(2−x)²+3=f(x). Domeniul ℝ este stabil la reflexie. Vârful parabolei are abscisa 2, deci aceasta este unica axă verticală.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 7,
+        "type_name": "Verificarea axei verticale de simetrie",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce m graficul lui f(x)=x²+mx+3 are axa verticală x=2?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Axa parabolei x²+mx+3 este x=−m/2, prin completarea pătratului. Egalitatea −m/2=2 dă m=−4.",
+      "options": [
+        {
+          "text": "-4",
+          "is_correct": true
+        },
+        {
+          "text": "-5",
+          "is_correct": false
+        },
+        {
+          "text": "-3",
+          "is_correct": false
+        },
+        {
+          "text": "-2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 8,
+        "type_name": "Parametru pentru axă prescrisă",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O funcție f:ℝ→ℝ satisface f(4−x)=f(x) pentru orice x. Ce abscisă are axa verticală garantată de relație?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Argumentele x și 4−x sunt simetrice față de semisuma lor 2. Relația arată că punctele reflectate au aceeași ordonată, deci x=2 este axă. Nu se afirmă că ar fi singura axă.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 9,
+        "type_name": "Recuperarea axei din ecuație funcțională",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este centrul de simetrie al graficului lui f(x)=(x−2)³+3, x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În coordonatele u=x−2, v=y−3, graficul este v=u³, impar. Echivalent, f(2·2−x)+f(x)=2·3; centrul este (2,3).",
+      "options": [
+        {
+          "text": "(-2;3)",
+          "is_correct": false
+        },
+        {
+          "text": "(2;-3)",
+          "is_correct": false
+        },
+        {
+          "text": "(2;3)",
+          "is_correct": true
+        },
+        {
+          "text": "(0;3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 10,
+        "type_name": "Verificarea centrului de simetrie",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru c>0, familia f_c(x)=3+c/(x−2), x≠2, are un centru comun. Care este acesta?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul ℝ∖{2} este simetric față de 2. Avem f_c(2·2−x)+f_c(x)=2·3, deoarece fracțiile au numitori opuși. Centrul (2,3) nu depinde de c.",
+      "options": [
+        {
+          "text": "(2;0)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2;-3)",
+          "is_correct": false
+        },
+        {
+          "text": "(2;3)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 11,
+        "type_name": "Centru comun unei familii",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=⌊x⌋+2, definită pe ℝ∖ℤ. Ce ordonată are centrul de simetrie cu abscisa 0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x∉ℤ, ⌊x⌋+⌊−x⌋=−1. Astfel f(x)+f(−x)=3=2b, deci b=3/2. Excluderea întregilor este esențială pentru această identitate.",
+      "options": [
+        {
+          "text": "3/2",
+          "is_correct": true
+        },
+        {
+          "text": "1/2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": false
+        },
+        {
+          "text": "7/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 12,
+        "type_name": "Centru pentru funcția parte întreagă",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aflați centrul de simetrie al graficului lui f(x)=2x+1/(x−2), x≠2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem x=2+u: f(x)=2·2+2u+1/u. Expresia 2u+1/u este impară pe ℝ∖{0}, deci centrul este (2,4). Un centru trebuie să păstreze și punctul exclus din domeniu, ceea ce impune abscisa 2.",
+      "options": [
+        {
+          "text": "(2;2)",
+          "is_correct": false
+        },
+        {
+          "text": "(2;4)",
+          "is_correct": true
+        },
+        {
+          "text": "(0;4)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2;-4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 13,
+        "type_name": "Determinarea centrului necunoscut",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru f(x)=cos(2πx/3), x∈ℝ, care familie este alcătuită numai din axe verticale de simetrie?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru a=k·3/2, f(2a−x)=cos(2kπ−2πx/3)=f(x). Valorile întregi ale lui k dau infinit de multe axe. Pentru celelalte familii, deja primul membru nu satisface identitatea la x=0.",
+      "options": [
+        {
+          "text": "\\(x=3/4+k\\,3/2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x=3/8+k\\,3/2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x=k\\,3/2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(x=3/3+k\\,3,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 14,
+        "type_name": "Infinit de multe axe",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este cea mai mare submulțime simetrică față de 0 a intervalului [−2,4], pe care poate fi restrânsă f(x)=x² pentru a fi pară?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul restricției trebuie să conțină −x ori de câte ori conține x. Intersecția D∩(−D)=[−2,2] este cea mai mare mulțime cu această proprietate; x² este pară pe ea. Intervalul deschis este mai mic și nu este maximal.",
+      "options": [
+        {
+          "text": "[−2,4]",
+          "is_correct": false
+        },
+        {
+          "text": "[0,2]",
+          "is_correct": false
+        },
+        {
+          "text": "(−2,2)",
+          "is_correct": false
+        },
+        {
+          "text": "[−2,2]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 15,
+        "type_name": "Restrângerea domeniului pentru simetrie",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x pe D=ℝ∖{2;4}. Care este unicul centru al graficului?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un centru (a,b) al dreptei restrânse trebuie să aibă b=a și să păstreze mulțimea celor două abscise excluse. Reflexia le schimbă între ele, deci a=(2+4)/2=3. Acest centru păstrează domeniul și graficul; este unic.",
+      "options": [
+        {
+          "text": "(3;3)",
+          "is_correct": true
+        },
+        {
+          "text": "(2;2)",
+          "is_correct": false
+        },
+        {
+          "text": "(4;4)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;0)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 16,
+        "type_name": "Număr prescris de centre de simetrie",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O funcție nenulă f:ℝ→ℝ satisface f(x+y)=f(x)+f(y) pentru orice x,y și f(1)=2. Ce paritate are?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La x=y=0 rezultă f(0)=0. Pentru y=−x, 0=f(x)+f(−x), deci f este impară. Deoarece f(1)=2≠0, nu poate fi și pară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 17,
+        "type_name": "Paritate dedusă din ecuație funcțională",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați paritatea lui f:ℝ→ℝ, f(x)=x³+3x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul este simetric și f(−x)=−x³−3x=−f(x). Funcția nu este nulă, de exemplu f(1)=4, deci nu este și pară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 1,
+        "type_name": "Paritatea pe domeniu simetric",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f:[−3,4]→ℝ, f(x)=x², folosind definiția care cere un domeniu simetric.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul nu este simetric: 4 aparține, dar −4 nu aparține. Astfel funcția nu este nici pară, nici impară în sensul definiției, chiar dacă formula x² este pară pe ℝ.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 2,
+        "type_name": "Domeniu nesimetric",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați paritatea lui \\(f(x)=\\begin{cases}x^2,&|x|\\le 3\\\\3,&|x|>3\\end{cases}\\), cu domeniul ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuirea lui x cu −x păstrează condiția fiecărei ramuri. Pe prima ramură (−x)²=x², iar pe a doua valoarea este constantă; deci f(−x)=f(x). Funcția este nenulă și nu poate fi simultan impară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": true
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 3,
+        "type_name": "Paritatea funcțiilor pe ramuri",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a funcția f(x)=x²+(a−3)x+1, x∈ℝ, este pară?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(x)−f(−x)=2(a−3)x. Aceasta se anulează pentru orice x exact când a=3; termenii rămași sunt pari.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 4,
+        "type_name": "Parametri pentru paritate",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f:ℝ→ℝ, f(x)=max(4x,0)−max(−4x,0).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x≥0 expresia este 4x; pentru x<0 este tot 4x. Funcția liniară nenulă 4x este impară și nu este pară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 5,
+        "type_name": "Paritatea funcțiilor max și min",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x³+3x²+4, x∈ℝ. Care este partea pară g din descompunerea f=g+h, cu g pară și h impară?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "g(x)=(f(x)+f(−x))/2=3x²+4. Partea impară este h(x)=(f(x)−f(−x))/2=x³. Suma celor două este f.",
+      "options": [
+        {
+          "text": "g(x)=x³",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=x³+3x²",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=3x²",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=3x²+4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 6,
+        "type_name": "Descompunere în parte pară și impară",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Graficul lui f(x)=(x−3)²+4, x∈ℝ, are axa verticală x=a. Aflați a.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(2·3−x)=(3−x)²+4=f(x). Domeniul ℝ este stabil la reflexie. Vârful parabolei are abscisa 3, deci aceasta este unica axă verticală.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 7,
+        "type_name": "Verificarea axei verticale de simetrie",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce m graficul lui f(x)=x²+mx+4 are axa verticală x=3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Axa parabolei x²+mx+4 este x=−m/2, prin completarea pătratului. Egalitatea −m/2=3 dă m=−6.",
+      "options": [
+        {
+          "text": "-7",
+          "is_correct": false
+        },
+        {
+          "text": "-6",
+          "is_correct": true
+        },
+        {
+          "text": "-5",
+          "is_correct": false
+        },
+        {
+          "text": "-4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 8,
+        "type_name": "Parametru pentru axă prescrisă",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O funcție f:ℝ→ℝ satisface f(6−x)=f(x) pentru orice x. Ce abscisă are axa verticală garantată de relație?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Argumentele x și 6−x sunt simetrice față de semisuma lor 3. Relația arată că punctele reflectate au aceeași ordonată, deci x=3 este axă. Nu se afirmă că ar fi singura axă.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 9,
+        "type_name": "Recuperarea axei din ecuație funcțională",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este centrul de simetrie al graficului lui f(x)=(x−3)³+4, x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În coordonatele u=x−3, v=y−4, graficul este v=u³, impar. Echivalent, f(2·3−x)+f(x)=2·4; centrul este (3,4).",
+      "options": [
+        {
+          "text": "(-3;4)",
+          "is_correct": false
+        },
+        {
+          "text": "(3;-4)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;4)",
+          "is_correct": false
+        },
+        {
+          "text": "(3;4)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 10,
+        "type_name": "Verificarea centrului de simetrie",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru c>0, familia f_c(x)=4+c/(x−3), x≠3, are un centru comun. Care este acesta?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul ℝ∖{3} este simetric față de 3. Avem f_c(2·3−x)+f_c(x)=2·4, deoarece fracțiile au numitori opuși. Centrul (3,4) nu depinde de c.",
+      "options": [
+        {
+          "text": "(3;4)",
+          "is_correct": true
+        },
+        {
+          "text": "(3;0)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;4)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3;-4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 11,
+        "type_name": "Centru comun unei familii",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=⌊x⌋+3, definită pe ℝ∖ℤ. Ce ordonată are centrul de simetrie cu abscisa 0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x∉ℤ, ⌊x⌋+⌊−x⌋=−1. Astfel f(x)+f(−x)=5=2b, deci b=5/2. Excluderea întregilor este esențială pentru această identitate.",
+      "options": [
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": true
+        },
+        {
+          "text": "7/2",
+          "is_correct": false
+        },
+        {
+          "text": "9/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 12,
+        "type_name": "Centru pentru funcția parte întreagă",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aflați centrul de simetrie al graficului lui f(x)=2x+1/(x−3), x≠3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem x=3+u: f(x)=2·3+2u+1/u. Expresia 2u+1/u este impară pe ℝ∖{0}, deci centrul este (3,6). Un centru trebuie să păstreze și punctul exclus din domeniu, ceea ce impune abscisa 3.",
+      "options": [
+        {
+          "text": "(3;3)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;6)",
+          "is_correct": false
+        },
+        {
+          "text": "(3;6)",
+          "is_correct": true
+        },
+        {
+          "text": "(-3;-6)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 13,
+        "type_name": "Determinarea centrului necunoscut",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru f(x)=cos(2πx/4), x∈ℝ, care familie este alcătuită numai din axe verticale de simetrie?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru a=k·4/2, f(2a−x)=cos(2kπ−2πx/4)=f(x). Valorile întregi ale lui k dau infinit de multe axe. Pentru celelalte familii, deja primul membru nu satisface identitatea la x=0.",
+      "options": [
+        {
+          "text": "\\(x=4/4+k\\,4/2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x=4/8+k\\,4/2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x=4/3+k\\,4,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x=k\\,4/2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 14,
+        "type_name": "Infinit de multe axe",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este cea mai mare submulțime simetrică față de 0 a intervalului [−3,5], pe care poate fi restrânsă f(x)=x² pentru a fi pară?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul restricției trebuie să conțină −x ori de câte ori conține x. Intersecția D∩(−D)=[−3,3] este cea mai mare mulțime cu această proprietate; x² este pară pe ea. Intervalul deschis este mai mic și nu este maximal.",
+      "options": [
+        {
+          "text": "[−3,3]",
+          "is_correct": true
+        },
+        {
+          "text": "[−3,5]",
+          "is_correct": false
+        },
+        {
+          "text": "[0,3]",
+          "is_correct": false
+        },
+        {
+          "text": "(−3,3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 15,
+        "type_name": "Restrângerea domeniului pentru simetrie",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x pe D=ℝ∖{3;5}. Care este unicul centru al graficului?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un centru (a,b) al dreptei restrânse trebuie să aibă b=a și să păstreze mulțimea celor două abscise excluse. Reflexia le schimbă între ele, deci a=(3+5)/2=4. Acest centru păstrează domeniul și graficul; este unic.",
+      "options": [
+        {
+          "text": "(3;3)",
+          "is_correct": false
+        },
+        {
+          "text": "(4;4)",
+          "is_correct": true
+        },
+        {
+          "text": "(5;5)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;0)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 16,
+        "type_name": "Număr prescris de centre de simetrie",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O funcție nenulă f:ℝ→ℝ satisface f(x+y)=f(x)+f(y) pentru orice x,y și f(1)=3. Ce paritate are?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La x=y=0 rezultă f(0)=0. Pentru y=−x, 0=f(x)+f(−x), deci f este impară. Deoarece f(1)=3≠0, nu poate fi și pară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 17,
+        "type_name": "Paritate dedusă din ecuație funcțională",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați paritatea lui f:ℝ→ℝ, f(x)=x³+4x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul este simetric și f(−x)=−x³−4x=−f(x). Funcția nu este nulă, de exemplu f(1)=5, deci nu este și pară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 1,
+        "type_name": "Paritatea pe domeniu simetric",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f:[−4,5]→ℝ, f(x)=x², folosind definiția care cere un domeniu simetric.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul nu este simetric: 5 aparține, dar −5 nu aparține. Astfel funcția nu este nici pară, nici impară în sensul definiției, chiar dacă formula x² este pară pe ℝ.",
+      "options": [
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": true
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 2,
+        "type_name": "Domeniu nesimetric",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați paritatea lui \\(f(x)=\\begin{cases}x^2,&|x|\\le 4\\\\4,&|x|>4\\end{cases}\\), cu domeniul ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuirea lui x cu −x păstrează condiția fiecărei ramuri. Pe prima ramură (−x)²=x², iar pe a doua valoarea este constantă; deci f(−x)=f(x). Funcția este nenulă și nu poate fi simultan impară.",
+      "options": [
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": true
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 3,
+        "type_name": "Paritatea funcțiilor pe ramuri",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a funcția f(x)=x²+(a−4)x+1, x∈ℝ, este pară?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(x)−f(−x)=2(a−4)x. Aceasta se anulează pentru orice x exact când a=4; termenii rămași sunt pari.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 4,
+        "type_name": "Parametri pentru paritate",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f:ℝ→ℝ, f(x)=max(5x,0)−max(−5x,0).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x≥0 expresia este 5x; pentru x<0 este tot 5x. Funcția liniară nenulă 5x este impară și nu este pară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 5,
+        "type_name": "Paritatea funcțiilor max și min",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x³+4x²+5, x∈ℝ. Care este partea pară g din descompunerea f=g+h, cu g pară și h impară?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "g(x)=(f(x)+f(−x))/2=4x²+5. Partea impară este h(x)=(f(x)−f(−x))/2=x³. Suma celor două este f.",
+      "options": [
+        {
+          "text": "g(x)=4x²+5",
+          "is_correct": true
+        },
+        {
+          "text": "g(x)=x³",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=x³+4x²",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=4x²",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 6,
+        "type_name": "Descompunere în parte pară și impară",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Graficul lui f(x)=(x−4)²+5, x∈ℝ, are axa verticală x=a. Aflați a.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(2·4−x)=(4−x)²+5=f(x). Domeniul ℝ este stabil la reflexie. Vârful parabolei are abscisa 4, deci aceasta este unica axă verticală.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 7,
+        "type_name": "Verificarea axei verticale de simetrie",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce m graficul lui f(x)=x²+mx+5 are axa verticală x=4?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Axa parabolei x²+mx+5 este x=−m/2, prin completarea pătratului. Egalitatea −m/2=4 dă m=−8.",
+      "options": [
+        {
+          "text": "-9",
+          "is_correct": false
+        },
+        {
+          "text": "-7",
+          "is_correct": false
+        },
+        {
+          "text": "-8",
+          "is_correct": true
+        },
+        {
+          "text": "-6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 8,
+        "type_name": "Parametru pentru axă prescrisă",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O funcție f:ℝ→ℝ satisface f(8−x)=f(x) pentru orice x. Ce abscisă are axa verticală garantată de relație?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Argumentele x și 8−x sunt simetrice față de semisuma lor 4. Relația arată că punctele reflectate au aceeași ordonată, deci x=4 este axă. Nu se afirmă că ar fi singura axă.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 9,
+        "type_name": "Recuperarea axei din ecuație funcțională",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este centrul de simetrie al graficului lui f(x)=(x−4)³+5, x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În coordonatele u=x−4, v=y−5, graficul este v=u³, impar. Echivalent, f(2·4−x)+f(x)=2·5; centrul este (4,5).",
+      "options": [
+        {
+          "text": "(4;5)",
+          "is_correct": true
+        },
+        {
+          "text": "(-4;5)",
+          "is_correct": false
+        },
+        {
+          "text": "(4;-5)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 10,
+        "type_name": "Verificarea centrului de simetrie",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru c>0, familia f_c(x)=5+c/(x−4), x≠4, are un centru comun. Care este acesta?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul ℝ∖{4} este simetric față de 4. Avem f_c(2·4−x)+f_c(x)=2·5, deoarece fracțiile au numitori opuși. Centrul (4,5) nu depinde de c.",
+      "options": [
+        {
+          "text": "(4;0)",
+          "is_correct": false
+        },
+        {
+          "text": "(4;5)",
+          "is_correct": true
+        },
+        {
+          "text": "(0;5)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4;-5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 11,
+        "type_name": "Centru comun unei familii",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=⌊x⌋+4, definită pe ℝ∖ℤ. Ce ordonată are centrul de simetrie cu abscisa 0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x∉ℤ, ⌊x⌋+⌊−x⌋=−1. Astfel f(x)+f(−x)=7=2b, deci b=7/2. Excluderea întregilor este esențială pentru această identitate.",
+      "options": [
+        {
+          "text": "5/2",
+          "is_correct": false
+        },
+        {
+          "text": "9/2",
+          "is_correct": false
+        },
+        {
+          "text": "7/2",
+          "is_correct": true
+        },
+        {
+          "text": "11/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 12,
+        "type_name": "Centru pentru funcția parte întreagă",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aflați centrul de simetrie al graficului lui f(x)=2x+1/(x−4), x≠4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem x=4+u: f(x)=2·4+2u+1/u. Expresia 2u+1/u este impară pe ℝ∖{0}, deci centrul este (4,8). Un centru trebuie să păstreze și punctul exclus din domeniu, ceea ce impune abscisa 4.",
+      "options": [
+        {
+          "text": "(4;4)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;8)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4;-8)",
+          "is_correct": false
+        },
+        {
+          "text": "(4;8)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 13,
+        "type_name": "Determinarea centrului necunoscut",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru f(x)=cos(2πx/5), x∈ℝ, care familie este alcătuită numai din axe verticale de simetrie?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru a=k·5/2, f(2a−x)=cos(2kπ−2πx/5)=f(x). Valorile întregi ale lui k dau infinit de multe axe. Pentru celelalte familii, deja primul membru nu satisface identitatea la x=0.",
+      "options": [
+        {
+          "text": "\\(x=k\\,5/2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(x=5/4+k\\,5/2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x=5/8+k\\,5/2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x=5/3+k\\,5,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 14,
+        "type_name": "Infinit de multe axe",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este cea mai mare submulțime simetrică față de 0 a intervalului [−4,6], pe care poate fi restrânsă f(x)=x² pentru a fi pară?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul restricției trebuie să conțină −x ori de câte ori conține x. Intersecția D∩(−D)=[−4,4] este cea mai mare mulțime cu această proprietate; x² este pară pe ea. Intervalul deschis este mai mic și nu este maximal.",
+      "options": [
+        {
+          "text": "[−4,6]",
+          "is_correct": false
+        },
+        {
+          "text": "[−4,4]",
+          "is_correct": true
+        },
+        {
+          "text": "[0,4]",
+          "is_correct": false
+        },
+        {
+          "text": "(−4,4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 15,
+        "type_name": "Restrângerea domeniului pentru simetrie",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x pe D=ℝ∖{4;6}. Care este unicul centru al graficului?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un centru (a,b) al dreptei restrânse trebuie să aibă b=a și să păstreze mulțimea celor două abscise excluse. Reflexia le schimbă între ele, deci a=(4+6)/2=5. Acest centru păstrează domeniul și graficul; este unic.",
+      "options": [
+        {
+          "text": "(4;4)",
+          "is_correct": false
+        },
+        {
+          "text": "(6;6)",
+          "is_correct": false
+        },
+        {
+          "text": "(5;5)",
+          "is_correct": true
+        },
+        {
+          "text": "(0;0)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 16,
+        "type_name": "Număr prescris de centre de simetrie",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O funcție nenulă f:ℝ→ℝ satisface f(x+y)=f(x)+f(y) pentru orice x,y și f(1)=4. Ce paritate are?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La x=y=0 rezultă f(0)=0. Pentru y=−x, 0=f(x)+f(−x), deci f este impară. Deoarece f(1)=4≠0, nu poate fi și pară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 17,
+        "type_name": "Paritate dedusă din ecuație funcțională",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați paritatea lui f:ℝ→ℝ, f(x)=x³+5x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul este simetric și f(−x)=−x³−5x=−f(x). Funcția nu este nulă, de exemplu f(1)=6, deci nu este și pară.",
+      "options": [
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 1,
+        "type_name": "Paritatea pe domeniu simetric",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f:[−5,6]→ℝ, f(x)=x², folosind definiția care cere un domeniu simetric.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul nu este simetric: 6 aparține, dar −6 nu aparține. Astfel funcția nu este nici pară, nici impară în sensul definiției, chiar dacă formula x² este pară pe ℝ.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": true
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 2,
+        "type_name": "Domeniu nesimetric",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați paritatea lui \\(f(x)=\\begin{cases}x^2,&|x|\\le 5\\\\5,&|x|>5\\end{cases}\\), cu domeniul ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuirea lui x cu −x păstrează condiția fiecărei ramuri. Pe prima ramură (−x)²=x², iar pe a doua valoarea este constantă; deci f(−x)=f(x). Funcția este nenulă și nu poate fi simultan impară.",
+      "options": [
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": true
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 3,
+        "type_name": "Paritatea funcțiilor pe ramuri",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a funcția f(x)=x²+(a−5)x+1, x∈ℝ, este pară?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(x)−f(−x)=2(a−5)x. Aceasta se anulează pentru orice x exact când a=5; termenii rămași sunt pari.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 4,
+        "type_name": "Parametri pentru paritate",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f:ℝ→ℝ, f(x)=max(6x,0)−max(−6x,0).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x≥0 expresia este 6x; pentru x<0 este tot 6x. Funcția liniară nenulă 6x este impară și nu este pară.",
+      "options": [
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 5,
+        "type_name": "Paritatea funcțiilor max și min",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x³+5x²+6, x∈ℝ. Care este partea pară g din descompunerea f=g+h, cu g pară și h impară?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "g(x)=(f(x)+f(−x))/2=5x²+6. Partea impară este h(x)=(f(x)−f(−x))/2=x³. Suma celor două este f.",
+      "options": [
+        {
+          "text": "g(x)=x³",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=5x²+6",
+          "is_correct": true
+        },
+        {
+          "text": "g(x)=x³+5x²",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=5x²",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 6,
+        "type_name": "Descompunere în parte pară și impară",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Graficul lui f(x)=(x−5)²+6, x∈ℝ, are axa verticală x=a. Aflați a.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(2·5−x)=(5−x)²+6=f(x). Domeniul ℝ este stabil la reflexie. Vârful parabolei are abscisa 5, deci aceasta este unica axă verticală.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 7,
+        "type_name": "Verificarea axei verticale de simetrie",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce m graficul lui f(x)=x²+mx+6 are axa verticală x=5?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Axa parabolei x²+mx+6 este x=−m/2, prin completarea pătratului. Egalitatea −m/2=5 dă m=−10.",
+      "options": [
+        {
+          "text": "-11",
+          "is_correct": false
+        },
+        {
+          "text": "-9",
+          "is_correct": false
+        },
+        {
+          "text": "-8",
+          "is_correct": false
+        },
+        {
+          "text": "-10",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 8,
+        "type_name": "Parametru pentru axă prescrisă",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O funcție f:ℝ→ℝ satisface f(10−x)=f(x) pentru orice x. Ce abscisă are axa verticală garantată de relație?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Argumentele x și 10−x sunt simetrice față de semisuma lor 5. Relația arată că punctele reflectate au aceeași ordonată, deci x=5 este axă. Nu se afirmă că ar fi singura axă.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 9,
+        "type_name": "Recuperarea axei din ecuație funcțională",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este centrul de simetrie al graficului lui f(x)=(x−5)³+6, x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În coordonatele u=x−5, v=y−6, graficul este v=u³, impar. Echivalent, f(2·5−x)+f(x)=2·6; centrul este (5,6).",
+      "options": [
+        {
+          "text": "(-5;6)",
+          "is_correct": false
+        },
+        {
+          "text": "(5;6)",
+          "is_correct": true
+        },
+        {
+          "text": "(5;-6)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;6)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 10,
+        "type_name": "Verificarea centrului de simetrie",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru c>0, familia f_c(x)=6+c/(x−5), x≠5, are un centru comun. Care este acesta?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul ℝ∖{5} este simetric față de 5. Avem f_c(2·5−x)+f_c(x)=2·6, deoarece fracțiile au numitori opuși. Centrul (5,6) nu depinde de c.",
+      "options": [
+        {
+          "text": "(5;0)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;6)",
+          "is_correct": false
+        },
+        {
+          "text": "(5;6)",
+          "is_correct": true
+        },
+        {
+          "text": "(-5;-6)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 11,
+        "type_name": "Centru comun unei familii",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=⌊x⌋+5, definită pe ℝ∖ℤ. Ce ordonată are centrul de simetrie cu abscisa 0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x∉ℤ, ⌊x⌋+⌊−x⌋=−1. Astfel f(x)+f(−x)=9=2b, deci b=9/2. Excluderea întregilor este esențială pentru această identitate.",
+      "options": [
+        {
+          "text": "7/2",
+          "is_correct": false
+        },
+        {
+          "text": "11/2",
+          "is_correct": false
+        },
+        {
+          "text": "13/2",
+          "is_correct": false
+        },
+        {
+          "text": "9/2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 12,
+        "type_name": "Centru pentru funcția parte întreagă",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Aflați centrul de simetrie al graficului lui f(x)=2x+1/(x−5), x≠5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem x=5+u: f(x)=2·5+2u+1/u. Expresia 2u+1/u este impară pe ℝ∖{0}, deci centrul este (5,10). Un centru trebuie să păstreze și punctul exclus din domeniu, ceea ce impune abscisa 5.",
+      "options": [
+        {
+          "text": "(5;10)",
+          "is_correct": true
+        },
+        {
+          "text": "(5;5)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;10)",
+          "is_correct": false
+        },
+        {
+          "text": "(-5;-10)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 13,
+        "type_name": "Determinarea centrului necunoscut",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru f(x)=cos(2πx/6), x∈ℝ, care familie este alcătuită numai din axe verticale de simetrie?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru a=k·6/2, f(2a−x)=cos(2kπ−2πx/6)=f(x). Valorile întregi ale lui k dau infinit de multe axe. Pentru celelalte familii, deja primul membru nu satisface identitatea la x=0.",
+      "options": [
+        {
+          "text": "\\(x=6/4+k\\,6/2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x=k\\,6/2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(x=6/8+k\\,6/2,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x=6/3+k\\,6,\\quad k\\in\\mathbb{Z}\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 14,
+        "type_name": "Infinit de multe axe",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este cea mai mare submulțime simetrică față de 0 a intervalului [−5,7], pe care poate fi restrânsă f(x)=x² pentru a fi pară?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul restricției trebuie să conțină −x ori de câte ori conține x. Intersecția D∩(−D)=[−5,5] este cea mai mare mulțime cu această proprietate; x² este pară pe ea. Intervalul deschis este mai mic și nu este maximal.",
+      "options": [
+        {
+          "text": "[−5,7]",
+          "is_correct": false
+        },
+        {
+          "text": "[0,5]",
+          "is_correct": false
+        },
+        {
+          "text": "[−5,5]",
+          "is_correct": true
+        },
+        {
+          "text": "(−5,5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 15,
+        "type_name": "Restrângerea domeniului pentru simetrie",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x pe D=ℝ∖{5;7}. Care este unicul centru al graficului?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un centru (a,b) al dreptei restrânse trebuie să aibă b=a și să păstreze mulțimea celor două abscise excluse. Reflexia le schimbă între ele, deci a=(5+7)/2=6. Acest centru păstrează domeniul și graficul; este unic.",
+      "options": [
+        {
+          "text": "(5;5)",
+          "is_correct": false
+        },
+        {
+          "text": "(7;7)",
+          "is_correct": false
+        },
+        {
+          "text": "(0;0)",
+          "is_correct": false
+        },
+        {
+          "text": "(6;6)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 16,
+        "type_name": "Număr prescris de centre de simetrie",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O funcție nenulă f:ℝ→ℝ satisface f(x+y)=f(x)+f(y) pentru orice x,y și f(1)=5. Ce paritate are?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La x=y=0 rezultă f(0)=0. Pentru y=−x, 0=f(x)+f(−x), deci f este impară. Deoarece f(1)=5≠0, nu poate fi și pară.",
+      "options": [
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.2",
+        "type": 17,
+        "type_name": "Paritate dedusă din ecuație funcțională",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    }
+  ],
+  "title": "Paritatea funcțiilor"
+}

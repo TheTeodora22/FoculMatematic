@@ -91,6 +91,7 @@ class Question(models.Model):
     TYPE_REVERSE_METHOD = "reverse_method"
     TYPE_FALSE_HYPOTHESIS_METHOD = "false_hypothesis_method"
     TYPE_GEOMETRY_CANVAS = "geometry_canvas"
+    TYPE_VECTOR_WORKBENCH = "vector_workbench"
     TYPE_OPERATION_SEQUENCE = "operation_sequence"
     TYPE_OPERATION_WORKBENCH = "operation_workbench"
     TYPE_DIVISIBILITY_VALUES = "divisibility_values"
@@ -151,6 +152,7 @@ class Question(models.Model):
         (TYPE_REVERSE_METHOD, "Metoda mersului invers"),
         (TYPE_FALSE_HYPOTHESIS_METHOD, "Metoda falsei ipoteze"),
         (TYPE_GEOMETRY_CANVAS, "Atelier geometric SVG"),
+        (TYPE_VECTOR_WORKBENCH, "Atelier de vectori în plan"),
         (TYPE_OPERATION_SEQUENCE, "Construiește ordinea operațiilor"),
         (TYPE_OPERATION_WORKBENCH, "Calculează expresia pe etape"),
         (TYPE_DIVISIBILITY_VALUES, "Completează divizori și multipli"),

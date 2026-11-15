@@ -1,6 +1,2601 @@
 {
   "title": "Segmente orientate. Relația de echipolență",
   "description": "Clasa a 9-a · Vectori în plan",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Selectează segmentele orientate echipolente cu AB.",
+      "type": "vector_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "AB deplasează 3 unități la dreapta și 2 în sus. CD=(1−(−2),3−1)=(3,2), deci este echipolent cu AB. DC și EF au deplasarea (−3,−2), opusă lui AB.",
+      "interactive": {
+        "candidates": [
+          [
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "C"
+          ],
+          [
+            "E",
+            "F"
+          ]
+        ],
+        "reference": [
+          "A",
+          "B"
+        ],
+        "mode": "same_displacement",
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            3,
+            2
+          ],
+          "C": [
+            -2,
+            1
+          ],
+          "D": [
+            1,
+            3
+          ],
+          "E": [
+            4,
+            4
+          ],
+          "F": [
+            1,
+            2
+          ]
+        }
+      },
+      "workshop": {
+        "id": "V01",
+        "origin": "Exercițiu original; lot interactiv introductiv",
+        "reference": "G1.1 tip 3"
+      }
+    },
+    {
+      "text": "Clasifică EF față de AB: egal, opus sau doar coliniar.",
+      "type": "vector_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "AB=(3,2), iar EF=(1−4,2−4)=(−3,−2)=−AB. Vectorii au același modul și aceeași direcție, dar sensuri opuse; nu sunt egali.",
+      "interactive": {
+        "mode": "classify_vector",
+        "reference": [
+          "A",
+          "B"
+        ],
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            3,
+            2
+          ],
+          "E": [
+            4,
+            4
+          ],
+          "F": [
+            1,
+            2
+          ]
+        },
+        "candidate": [
+          "E",
+          "F"
+        ]
+      },
+      "workshop": {
+        "id": "V02",
+        "origin": "Exercițiu original; lot interactiv introductiv",
+        "reference": "G1.1 tip 5"
+      }
+    },
+    {
+      "text": "Fixează D astfel încât CD să fie echipolent cu AB.",
+      "type": "vector_workbench",
+      "format": "interactive",
+      "points": 10,
+      "explanation": "AB=(4−1,3−1)=(3,2). Condiția CD=AB impune D=C+AB=(−2,0)+(3,2)=(1,2). Verificare: D−C=(3,2).",
+      "interactive": {
+        "mode": "translate_endpoint",
+        "reference": [
+          "A",
+          "B"
+        ],
+        "points": {
+          "A": [
+            1,
+            1
+          ],
+          "B": [
+            4,
+            3
+          ],
+          "C": [
+            -2,
+            0
+          ]
+        },
+        "anchor": "C"
+      },
+      "workshop": {
+        "id": "V03",
+        "origin": "Exercițiu original; lot interactiv introductiv",
+        "reference": "G1.1 tip 6"
+      }
+    },
+    {
+      "text": "Se dau punctele A(0; 0), B(4; 0), C(4; 2), D(0; 2). Câte direcții distincte au dreptele determinate de câte două puncte? Dreptele paralele au aceeași direcție.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Grupăm dreptele paralele. Pentru o dreaptă neverticală direcția este determinată de panta Δy/Δx; toate verticalele au aceeași direcție. Direcțiile distincte sunt: pantă -1/2, pantă 0, pantă 1/2, verticală. Rezultă 4 direcții, indiferent de sensul în care parcurgem dreapta.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 1,
+        "family_name": "Direcții determinate de puncte",
+        "variant": 1,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "directions",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "answer_kind": "number"
+      }
+    },
+    {
+      "text": "Se dau punctele A(0; 0), B(3; 0), C(1; 4). Câte direcții distincte au dreptele determinate de câte două puncte? Dreptele paralele au aceeași direcție.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Grupăm dreptele paralele. Pentru o dreaptă neverticală direcția este determinată de panta Δy/Δx; toate verticalele au aceeași direcție. Direcțiile distincte sunt: pantă -2, pantă 0, pantă 4. Rezultă 3 direcții, indiferent de sensul în care parcurgem dreapta.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 1,
+        "family_name": "Direcții determinate de puncte",
+        "variant": 2,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "directions",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "answer_kind": "number"
+      }
+    },
+    {
+      "text": "Se dau punctele A(-2; 1), B(0; 1), C(3; 1), D(7; 1). Câte direcții distincte au dreptele determinate de câte două puncte? Dreptele paralele au aceeași direcție.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Grupăm dreptele paralele. Pentru o dreaptă neverticală direcția este determinată de panta Δy/Δx; toate verticalele au aceeași direcție. Direcțiile distincte sunt: pantă 0. Rezultă 1 direcții, indiferent de sensul în care parcurgem dreapta.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 1,
+        "family_name": "Direcții determinate de puncte",
+        "variant": 3,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "directions",
+        "points": [
+          [
+            -2,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            7,
+            1
+          ]
+        ],
+        "answer_kind": "number"
+      }
+    },
+    {
+      "text": "Se dau punctele A(0; 0), B(3; 1), C(5; 4), D(2; 3). Câte direcții distincte au dreptele determinate de câte două puncte? Dreptele paralele au aceeași direcție.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Grupăm dreptele paralele. Pentru o dreaptă neverticală direcția este determinată de panta Δy/Δx; toate verticalele au aceeași direcție. Direcțiile distincte sunt: pantă -2, pantă 1/3, pantă 3/2, pantă 4/5. Rezultă 4 direcții, indiferent de sensul în care parcurgem dreapta.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 1,
+        "family_name": "Direcții determinate de puncte",
+        "variant": 4,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "directions",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "answer_kind": "number"
+      }
+    },
+    {
+      "text": "Se dau punctele A(-2; -2), B(2; -2), C(2; 2), D(-2; 2), E(0; 0). Câte direcții distincte au dreptele determinate de câte două puncte? Dreptele paralele au aceeași direcție.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Grupăm dreptele paralele. Pentru o dreaptă neverticală direcția este determinată de panta Δy/Δx; toate verticalele au aceeași direcție. Direcțiile distincte sunt: pantă -1, pantă 0, pantă 1, verticală. Rezultă 4 direcții, indiferent de sensul în care parcurgem dreapta.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 1,
+        "family_name": "Direcții determinate de puncte",
+        "variant": 5,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "directions",
+        "points": [
+          [
+            -2,
+            -2
+          ],
+          [
+            2,
+            -2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "answer_kind": "number"
+      }
+    },
+    {
+      "text": "Pentru A(1; -1), B(3; 1), C(-3; 4), D(-9; -2), comparați direcția și sensul semidreptelor [AB și [CD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Deplasările sunt AB=(2; 2) și CD=(-6; -6)=-3·AB. Ambele sunt nenule. Multiplicarea cu un număr negativ inversează sensul; proporționalitatea păstrează direcția. Originile diferite nu schimbă această clasificare.",
+      "options": [
+        {
+          "text": "Direcții diferite",
+          "is_correct": false
+        },
+        {
+          "text": "Aceeași direcție și sensuri opuse",
+          "is_correct": true
+        },
+        {
+          "text": "Semidrepte fără direcție",
+          "is_correct": false
+        },
+        {
+          "text": "Aceeași direcție și același sens",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 2,
+        "family_name": "Semidrepte cu același sens sau sens opus",
+        "variant": 1,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "rays",
+        "A": [
+          1,
+          -1
+        ],
+        "B": [
+          "3",
+          "1"
+        ],
+        "C": [
+          -3,
+          4
+        ],
+        "D": [
+          "-9",
+          "-2"
+        ],
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Pentru A(2; -2), B(5; 0), C(-4; 5), D(2; 9), comparați direcția și sensul semidreptelor [AB și [CD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Deplasările sunt AB=(3; 2) și CD=(6; 4)=2·AB. Ambele sunt nenule. Multiplicarea cu un număr pozitiv păstrează sensul; proporționalitatea păstrează direcția. Originile diferite nu schimbă această clasificare.",
+      "options": [
+        {
+          "text": "Direcții diferite",
+          "is_correct": false
+        },
+        {
+          "text": "Semidrepte fără direcție",
+          "is_correct": false
+        },
+        {
+          "text": "Aceeași direcție și același sens",
+          "is_correct": true
+        },
+        {
+          "text": "Aceeași direcție și sensuri opuse",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 2,
+        "family_name": "Semidrepte cu același sens sau sens opus",
+        "variant": 2,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "rays",
+        "A": [
+          2,
+          -2
+        ],
+        "B": [
+          "5",
+          "0"
+        ],
+        "C": [
+          -4,
+          5
+        ],
+        "D": [
+          "2",
+          "9"
+        ],
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Pentru A(3; -3), B(7; -1), C(-5; 6), D(-9; 4), comparați direcția și sensul semidreptelor [AB și [CD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Deplasările sunt AB=(4; 2) și CD=(-4; -2)=-1·AB. Ambele sunt nenule. Multiplicarea cu un număr negativ inversează sensul; proporționalitatea păstrează direcția. Originile diferite nu schimbă această clasificare.",
+      "options": [
+        {
+          "text": "Direcții diferite",
+          "is_correct": false
+        },
+        {
+          "text": "Semidrepte fără direcție",
+          "is_correct": false
+        },
+        {
+          "text": "Aceeași direcție și același sens",
+          "is_correct": false
+        },
+        {
+          "text": "Aceeași direcție și sensuri opuse",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 2,
+        "family_name": "Semidrepte cu același sens sau sens opus",
+        "variant": 3,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "rays",
+        "A": [
+          3,
+          -3
+        ],
+        "B": [
+          "7",
+          "-1"
+        ],
+        "C": [
+          -5,
+          6
+        ],
+        "D": [
+          "-9",
+          "4"
+        ],
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Pentru A(4; -4), B(9; -2), C(-6; 7), D(14; 15), comparați direcția și sensul semidreptelor [AB și [CD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Deplasările sunt AB=(5; 2) și CD=(20; 8)=4·AB. Ambele sunt nenule. Multiplicarea cu un număr pozitiv păstrează sensul; proporționalitatea păstrează direcția. Originile diferite nu schimbă această clasificare.",
+      "options": [
+        {
+          "text": "Aceeași direcție și același sens",
+          "is_correct": true
+        },
+        {
+          "text": "Direcții diferite",
+          "is_correct": false
+        },
+        {
+          "text": "Semidrepte fără direcție",
+          "is_correct": false
+        },
+        {
+          "text": "Aceeași direcție și sensuri opuse",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 2,
+        "family_name": "Semidrepte cu același sens sau sens opus",
+        "variant": 4,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "rays",
+        "A": [
+          4,
+          -4
+        ],
+        "B": [
+          "9",
+          "-2"
+        ],
+        "C": [
+          -6,
+          7
+        ],
+        "D": [
+          "14",
+          "15"
+        ],
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Pentru A(5; -5), B(11; -3), C(-7; 8), D(11; 14), comparați direcția și sensul semidreptelor [AB și [CD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Deplasările sunt AB=(6; 2) și CD=(18; 6)=3·AB. Ambele sunt nenule. Multiplicarea cu un număr pozitiv păstrează sensul; proporționalitatea păstrează direcția. Originile diferite nu schimbă această clasificare.",
+      "options": [
+        {
+          "text": "Direcții diferite",
+          "is_correct": false
+        },
+        {
+          "text": "Aceeași direcție și același sens",
+          "is_correct": true
+        },
+        {
+          "text": "Semidrepte fără direcție",
+          "is_correct": false
+        },
+        {
+          "text": "Aceeași direcție și sensuri opuse",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 2,
+        "family_name": "Semidrepte cu același sens sau sens opus",
+        "variant": 5,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "rays",
+        "A": [
+          5,
+          -5
+        ],
+        "B": [
+          "11",
+          "-3"
+        ],
+        "C": [
+          -7,
+          8
+        ],
+        "D": [
+          "11",
+          "14"
+        ],
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Pe o rețea se dau A(-1; 1), B(3; -2) și C(1; 2), D(5; -1); E(-3; 1), F(-7; 4); G(2; -1), H(10; -7); I(-4; 4), J(-7; 0). Care segment orientat este echipolent cu AB?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "AB=B−A=(4; -3). CD are exact aceeași deplasare (4; -3); EF are deplasarea opusă, GH are modul dublu, iar IJ are altă direcție. Echipolența cere simultan aceeași direcție, același sens și același modul.",
+      "options": [
+        {
+          "text": "EF",
+          "is_correct": false
+        },
+        {
+          "text": "GH",
+          "is_correct": false
+        },
+        {
+          "text": "CD",
+          "is_correct": true
+        },
+        {
+          "text": "IJ",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 3,
+        "family_name": "Echipolență pe rețea",
+        "variant": 1,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "equipollent",
+        "A": [
+          -1,
+          1
+        ],
+        "B": [
+          3,
+          -2
+        ],
+        "segments": {
+          "CD": [
+            [
+              1,
+              2
+            ],
+            [
+              "5",
+              "-1"
+            ]
+          ],
+          "EF": [
+            [
+              -3,
+              1
+            ],
+            [
+              "-7",
+              "4"
+            ]
+          ],
+          "GH": [
+            [
+              2,
+              -1
+            ],
+            [
+              "10",
+              "-7"
+            ]
+          ],
+          "IJ": [
+            [
+              -4,
+              4
+            ],
+            [
+              "-7",
+              "0"
+            ]
+          ]
+        },
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Pe o rețea se dau A(-2; 2), B(4; -2) și C(2; 2), D(8; -2); E(-3; 2), F(-9; 6); G(2; -2), H(14; -10); I(-5; 4), J(-9; -2). Care segment orientat este echipolent cu AB?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "AB=B−A=(6; -4). CD are exact aceeași deplasare (6; -4); EF are deplasarea opusă, GH are modul dublu, iar IJ are altă direcție. Echipolența cere simultan aceeași direcție, același sens și același modul.",
+      "options": [
+        {
+          "text": "EF",
+          "is_correct": false
+        },
+        {
+          "text": "GH",
+          "is_correct": false
+        },
+        {
+          "text": "IJ",
+          "is_correct": false
+        },
+        {
+          "text": "CD",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 3,
+        "family_name": "Echipolență pe rețea",
+        "variant": 2,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "equipollent",
+        "A": [
+          -2,
+          2
+        ],
+        "B": [
+          4,
+          -2
+        ],
+        "segments": {
+          "CD": [
+            [
+              2,
+              2
+            ],
+            [
+              "8",
+              "-2"
+            ]
+          ],
+          "EF": [
+            [
+              -3,
+              2
+            ],
+            [
+              "-9",
+              "6"
+            ]
+          ],
+          "GH": [
+            [
+              2,
+              -2
+            ],
+            [
+              "14",
+              "-10"
+            ]
+          ],
+          "IJ": [
+            [
+              -5,
+              4
+            ],
+            [
+              "-9",
+              "-2"
+            ]
+          ]
+        },
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Pe o rețea se dau A(-3; 3), B(5; -2) și C(3; 2), D(11; -3); E(-3; 3), F(-11; 8); G(2; -3), H(18; -13); I(-6; 4), J(-11; -4). Care segment orientat este echipolent cu AB?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "AB=B−A=(8; -5). CD are exact aceeași deplasare (8; -5); EF are deplasarea opusă, GH are modul dublu, iar IJ are altă direcție. Echipolența cere simultan aceeași direcție, același sens și același modul.",
+      "options": [
+        {
+          "text": "CD",
+          "is_correct": true
+        },
+        {
+          "text": "EF",
+          "is_correct": false
+        },
+        {
+          "text": "GH",
+          "is_correct": false
+        },
+        {
+          "text": "IJ",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 3,
+        "family_name": "Echipolență pe rețea",
+        "variant": 3,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "equipollent",
+        "A": [
+          -3,
+          3
+        ],
+        "B": [
+          5,
+          -2
+        ],
+        "segments": {
+          "CD": [
+            [
+              3,
+              2
+            ],
+            [
+              "11",
+              "-3"
+            ]
+          ],
+          "EF": [
+            [
+              -3,
+              3
+            ],
+            [
+              "-11",
+              "8"
+            ]
+          ],
+          "GH": [
+            [
+              2,
+              -3
+            ],
+            [
+              "18",
+              "-13"
+            ]
+          ],
+          "IJ": [
+            [
+              -6,
+              4
+            ],
+            [
+              "-11",
+              "-4"
+            ]
+          ]
+        },
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Pe o rețea se dau A(-4; 4), B(6; -2) și C(4; 2), D(14; -4); E(-3; 4), F(-13; 10); G(2; -4), H(22; -16); I(-7; 4), J(-13; -6). Care segment orientat este echipolent cu AB?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "AB=B−A=(10; -6). CD are exact aceeași deplasare (10; -6); EF are deplasarea opusă, GH are modul dublu, iar IJ are altă direcție. Echipolența cere simultan aceeași direcție, același sens și același modul.",
+      "options": [
+        {
+          "text": "EF",
+          "is_correct": false
+        },
+        {
+          "text": "CD",
+          "is_correct": true
+        },
+        {
+          "text": "GH",
+          "is_correct": false
+        },
+        {
+          "text": "IJ",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 3,
+        "family_name": "Echipolență pe rețea",
+        "variant": 4,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "equipollent",
+        "A": [
+          -4,
+          4
+        ],
+        "B": [
+          6,
+          -2
+        ],
+        "segments": {
+          "CD": [
+            [
+              4,
+              2
+            ],
+            [
+              "14",
+              "-4"
+            ]
+          ],
+          "EF": [
+            [
+              -3,
+              4
+            ],
+            [
+              "-13",
+              "10"
+            ]
+          ],
+          "GH": [
+            [
+              2,
+              -4
+            ],
+            [
+              "22",
+              "-16"
+            ]
+          ],
+          "IJ": [
+            [
+              -7,
+              4
+            ],
+            [
+              "-13",
+              "-6"
+            ]
+          ]
+        },
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Pe o rețea se dau A(-5; 5), B(7; -2) și C(5; 2), D(17; -5); E(-3; 5), F(-15; 12); G(2; -5), H(26; -19); I(-8; 4), J(-15; -8). Care segment orientat este echipolent cu AB?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "AB=B−A=(12; -7). CD are exact aceeași deplasare (12; -7); EF are deplasarea opusă, GH are modul dublu, iar IJ are altă direcție. Echipolența cere simultan aceeași direcție, același sens și același modul.",
+      "options": [
+        {
+          "text": "EF",
+          "is_correct": false
+        },
+        {
+          "text": "GH",
+          "is_correct": false
+        },
+        {
+          "text": "CD",
+          "is_correct": true
+        },
+        {
+          "text": "IJ",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 3,
+        "family_name": "Echipolență pe rețea",
+        "variant": 5,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "equipollent",
+        "A": [
+          -5,
+          5
+        ],
+        "B": [
+          7,
+          -2
+        ],
+        "segments": {
+          "CD": [
+            [
+              5,
+              2
+            ],
+            [
+              "17",
+              "-5"
+            ]
+          ],
+          "EF": [
+            [
+              -3,
+              5
+            ],
+            [
+              "-15",
+              "12"
+            ]
+          ],
+          "GH": [
+            [
+              2,
+              -5
+            ],
+            [
+              "26",
+              "-19"
+            ]
+          ],
+          "IJ": [
+            [
+              -8,
+              4
+            ],
+            [
+              "-15",
+              "-8"
+            ]
+          ]
+        },
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "În rețeaua finită formată din toate punctele întregi (x; y) cu 0≤x≤2 și 0≤y≤3, câte segmente orientate reprezintă vectorul liber (1; 1)? Ambele capete trebuie să aparțină rețelei.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru origine (x; y), vârful trebuie să fie (x+1; y+1). Astfel 0≤x≤1 și 0≤y≤2: sunt 2 alegeri pentru x și 3 pentru y, deci 6 reprezentanți. Enumerarea este completă deoarece deplasarea fixează unic vârful pentru fiecare origine admisă.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 4,
+        "family_name": "Reprezentanții unui vector liber",
+        "variant": 1,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "representatives",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "vector": [
+          1,
+          1
+        ],
+        "answer_kind": "number"
+      }
+    },
+    {
+      "text": "În rețeaua finită formată din toate punctele întregi (x; y) cu 0≤x≤3 și 0≤y≤4, câte segmente orientate reprezintă vectorul liber (1; 1)? Ambele capete trebuie să aparțină rețelei.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru origine (x; y), vârful trebuie să fie (x+1; y+1). Astfel 0≤x≤2 și 0≤y≤3: sunt 3 alegeri pentru x și 4 pentru y, deci 12 reprezentanți. Enumerarea este completă deoarece deplasarea fixează unic vârful pentru fiecare origine admisă.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 4,
+        "family_name": "Reprezentanții unui vector liber",
+        "variant": 2,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "representatives",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "vector": [
+          1,
+          1
+        ],
+        "answer_kind": "number"
+      }
+    },
+    {
+      "text": "În rețeaua finită formată din toate punctele întregi (x; y) cu 0≤x≤4 și 0≤y≤5, câte segmente orientate reprezintă vectorul liber (1; 1)? Ambele capete trebuie să aparțină rețelei.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru origine (x; y), vârful trebuie să fie (x+1; y+1). Astfel 0≤x≤3 și 0≤y≤4: sunt 4 alegeri pentru x și 5 pentru y, deci 20 reprezentanți. Enumerarea este completă deoarece deplasarea fixează unic vârful pentru fiecare origine admisă.",
+      "options": [
+        {
+          "text": "21",
+          "is_correct": false
+        },
+        {
+          "text": "20",
+          "is_correct": true
+        },
+        {
+          "text": "19",
+          "is_correct": false
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 4,
+        "family_name": "Reprezentanții unui vector liber",
+        "variant": 3,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "representatives",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "vector": [
+          1,
+          1
+        ],
+        "answer_kind": "number"
+      }
+    },
+    {
+      "text": "În rețeaua finită formată din toate punctele întregi (x; y) cu 0≤x≤5 și 0≤y≤6, câte segmente orientate reprezintă vectorul liber (1; 1)? Ambele capete trebuie să aparțină rețelei.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru origine (x; y), vârful trebuie să fie (x+1; y+1). Astfel 0≤x≤4 și 0≤y≤5: sunt 5 alegeri pentru x și 6 pentru y, deci 30 reprezentanți. Enumerarea este completă deoarece deplasarea fixează unic vârful pentru fiecare origine admisă.",
+      "options": [
+        {
+          "text": "31",
+          "is_correct": false
+        },
+        {
+          "text": "29",
+          "is_correct": false
+        },
+        {
+          "text": "30",
+          "is_correct": true
+        },
+        {
+          "text": "32",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 4,
+        "family_name": "Reprezentanții unui vector liber",
+        "variant": 4,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "representatives",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "vector": [
+          1,
+          1
+        ],
+        "answer_kind": "number"
+      }
+    },
+    {
+      "text": "În rețeaua finită formată din toate punctele întregi (x; y) cu 0≤x≤6 și 0≤y≤7, câte segmente orientate reprezintă vectorul liber (1; 1)? Ambele capete trebuie să aparțină rețelei.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru origine (x; y), vârful trebuie să fie (x+1; y+1). Astfel 0≤x≤5 și 0≤y≤6: sunt 6 alegeri pentru x și 7 pentru y, deci 42 reprezentanți. Enumerarea este completă deoarece deplasarea fixează unic vârful pentru fiecare origine admisă.",
+      "options": [
+        {
+          "text": "43",
+          "is_correct": false
+        },
+        {
+          "text": "41",
+          "is_correct": false
+        },
+        {
+          "text": "44",
+          "is_correct": false
+        },
+        {
+          "text": "42",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 4,
+        "family_name": "Reprezentanții unui vector liber",
+        "variant": 5,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "representatives",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "vector": [
+          1,
+          1
+        ],
+        "answer_kind": "number"
+      }
+    },
+    {
+      "text": "Vectorii considerați sunt u=(2; -3) și v=(-2; 3), w=(-4; 6), r=(6; -9), s=(-3; -2). Care vector este opusul lui u (nu doar un vector coliniar cu sens opus)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Opusul este −u=(-2; 3)=v. Vectorul w=−2u are sens opus, dar modul dublu, deci nu este opusul. Vectorul r=3u are același sens. Vectorul s are determinant nenul cu u, fiind perpendicular pe u. Doar v îndeplinește egalitatea v=−u.",
+      "options": [
+        {
+          "text": "v",
+          "is_correct": true
+        },
+        {
+          "text": "w",
+          "is_correct": false
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        },
+        {
+          "text": "s",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 5,
+        "family_name": "Vectori opuși și coliniari",
+        "variant": 1,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "opposite",
+        "u": [
+          2,
+          -3
+        ],
+        "candidates": {
+          "v": [
+            "-2",
+            "3"
+          ],
+          "w": [
+            "-4",
+            "6"
+          ],
+          "r": [
+            "6",
+            "-9"
+          ],
+          "s": [
+            -3,
+            -2
+          ]
+        },
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Vectorii considerați sunt u=(3; -4) și v=(-3; 4), w=(-6; 8), r=(9; -12), s=(-4; -3). Care vector este opusul lui u (nu doar un vector coliniar cu sens opus)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Opusul este −u=(-3; 4)=v. Vectorul w=−2u are sens opus, dar modul dublu, deci nu este opusul. Vectorul r=3u are același sens. Vectorul s are determinant nenul cu u, fiind perpendicular pe u. Doar v îndeplinește egalitatea v=−u.",
+      "options": [
+        {
+          "text": "w",
+          "is_correct": false
+        },
+        {
+          "text": "v",
+          "is_correct": true
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        },
+        {
+          "text": "s",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 5,
+        "family_name": "Vectori opuși și coliniari",
+        "variant": 2,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "opposite",
+        "u": [
+          3,
+          -4
+        ],
+        "candidates": {
+          "v": [
+            "-3",
+            "4"
+          ],
+          "w": [
+            "-6",
+            "8"
+          ],
+          "r": [
+            "9",
+            "-12"
+          ],
+          "s": [
+            -4,
+            -3
+          ]
+        },
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Vectorii considerați sunt u=(4; -5) și v=(-4; 5), w=(-8; 10), r=(12; -15), s=(-5; -4). Care vector este opusul lui u (nu doar un vector coliniar cu sens opus)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Opusul este −u=(-4; 5)=v. Vectorul w=−2u are sens opus, dar modul dublu, deci nu este opusul. Vectorul r=3u are același sens. Vectorul s are determinant nenul cu u, fiind perpendicular pe u. Doar v îndeplinește egalitatea v=−u.",
+      "options": [
+        {
+          "text": "w",
+          "is_correct": false
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        },
+        {
+          "text": "v",
+          "is_correct": true
+        },
+        {
+          "text": "s",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 5,
+        "family_name": "Vectori opuși și coliniari",
+        "variant": 3,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "opposite",
+        "u": [
+          4,
+          -5
+        ],
+        "candidates": {
+          "v": [
+            "-4",
+            "5"
+          ],
+          "w": [
+            "-8",
+            "10"
+          ],
+          "r": [
+            "12",
+            "-15"
+          ],
+          "s": [
+            -5,
+            -4
+          ]
+        },
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Vectorii considerați sunt u=(5; -6) și v=(-5; 6), w=(-10; 12), r=(15; -18), s=(-6; -5). Care vector este opusul lui u (nu doar un vector coliniar cu sens opus)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Opusul este −u=(-5; 6)=v. Vectorul w=−2u are sens opus, dar modul dublu, deci nu este opusul. Vectorul r=3u are același sens. Vectorul s are determinant nenul cu u, fiind perpendicular pe u. Doar v îndeplinește egalitatea v=−u.",
+      "options": [
+        {
+          "text": "w",
+          "is_correct": false
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        },
+        {
+          "text": "s",
+          "is_correct": false
+        },
+        {
+          "text": "v",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 5,
+        "family_name": "Vectori opuși și coliniari",
+        "variant": 4,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "opposite",
+        "u": [
+          5,
+          -6
+        ],
+        "candidates": {
+          "v": [
+            "-5",
+            "6"
+          ],
+          "w": [
+            "-10",
+            "12"
+          ],
+          "r": [
+            "15",
+            "-18"
+          ],
+          "s": [
+            -6,
+            -5
+          ]
+        },
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Vectorii considerați sunt u=(6; -7) și v=(-6; 7), w=(-12; 14), r=(18; -21), s=(-7; -6). Care vector este opusul lui u (nu doar un vector coliniar cu sens opus)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Opusul este −u=(-6; 7)=v. Vectorul w=−2u are sens opus, dar modul dublu, deci nu este opusul. Vectorul r=3u are același sens. Vectorul s are determinant nenul cu u, fiind perpendicular pe u. Doar v îndeplinește egalitatea v=−u.",
+      "options": [
+        {
+          "text": "v",
+          "is_correct": true
+        },
+        {
+          "text": "w",
+          "is_correct": false
+        },
+        {
+          "text": "r",
+          "is_correct": false
+        },
+        {
+          "text": "s",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 5,
+        "family_name": "Vectori opuși și coliniari",
+        "variant": 5,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "opposite",
+        "u": [
+          6,
+          -7
+        ],
+        "candidates": {
+          "v": [
+            "-6",
+            "7"
+          ],
+          "w": [
+            "-12",
+            "14"
+          ],
+          "r": [
+            "18",
+            "-21"
+          ],
+          "s": [
+            -7,
+            -6
+          ]
+        },
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Se dau A(1; -2), B(4; -2), D(1; 1). Se construiește C astfel încât segmentele orientate BC și AD să fie echipolente. Care este cea mai precisă clasificare a patrulaterului ABCD?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Echipolența BC=AD dă C=B+D−A=(4; 1), deci și DC=AB: ABCD este paralelogram. Vectorii laturilor alăturate sunt AB=(3; 0), AD=(0; 3) și sunt necoliniari. Pătratele lungimilor sunt AB²=9, AD²=9, BD²=18. Relația BD²=AB²+AD² și reciproca teoremei lui Pitagora dau AB⊥AD. Laturile au lungimi egale. Rezultă: pătrat.",
+      "options": [
+        {
+          "text": "Dreptunghi care nu este pătrat",
+          "is_correct": false
+        },
+        {
+          "text": "Pătrat",
+          "is_correct": true
+        },
+        {
+          "text": "Romb care nu este pătrat",
+          "is_correct": false
+        },
+        {
+          "text": "Paralelogram care nu este nici dreptunghi, nici romb",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 6,
+        "family_name": "Configurație construită prin echipolență",
+        "variant": 1,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "quadrilateral",
+        "A": [
+          1,
+          -2
+        ],
+        "B": [
+          "4",
+          "-2"
+        ],
+        "D": [
+          "1",
+          "1"
+        ],
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Se dau A(2; -4), B(6; -4), D(2; -2). Se construiește C astfel încât segmentele orientate BC și AD să fie echipolente. Care este cea mai precisă clasificare a patrulaterului ABCD?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Echipolența BC=AD dă C=B+D−A=(6; -2), deci și DC=AB: ABCD este paralelogram. Vectorii laturilor alăturate sunt AB=(4; 0), AD=(0; 2) și sunt necoliniari. Pătratele lungimilor sunt AB²=16, AD²=4, BD²=20. Relația BD²=AB²+AD² și reciproca teoremei lui Pitagora dau AB⊥AD. Laturile au lungimi diferite. Rezultă: dreptunghi care nu este pătrat.",
+      "options": [
+        {
+          "text": "Pătrat",
+          "is_correct": false
+        },
+        {
+          "text": "Romb care nu este pătrat",
+          "is_correct": false
+        },
+        {
+          "text": "Dreptunghi care nu este pătrat",
+          "is_correct": true
+        },
+        {
+          "text": "Paralelogram care nu este nici dreptunghi, nici romb",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 6,
+        "family_name": "Configurație construită prin echipolență",
+        "variant": 2,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "quadrilateral",
+        "A": [
+          2,
+          -4
+        ],
+        "B": [
+          "6",
+          "-4"
+        ],
+        "D": [
+          "2",
+          "-2"
+        ],
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Se dau A(3; -6), B(8; -6), D(6; -2). Se construiește C astfel încât segmentele orientate BC și AD să fie echipolente. Care este cea mai precisă clasificare a patrulaterului ABCD?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Echipolența BC=AD dă C=B+D−A=(11; -2), deci și DC=AB: ABCD este paralelogram. Vectorii laturilor alăturate sunt AB=(5; 0), AD=(3; 4) și sunt necoliniari. Pătratele lungimilor sunt AB²=25, AD²=25, BD²=20. Deoarece BD²≠AB²+AD², laturile alăturate nu sunt perpendiculare. Laturile au lungimi egale. Rezultă: romb care nu este pătrat.",
+      "options": [
+        {
+          "text": "Pătrat",
+          "is_correct": false
+        },
+        {
+          "text": "Dreptunghi care nu este pătrat",
+          "is_correct": false
+        },
+        {
+          "text": "Paralelogram care nu este nici dreptunghi, nici romb",
+          "is_correct": false
+        },
+        {
+          "text": "Romb care nu este pătrat",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 6,
+        "family_name": "Configurație construită prin echipolență",
+        "variant": 3,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "quadrilateral",
+        "A": [
+          3,
+          -6
+        ],
+        "B": [
+          "8",
+          "-6"
+        ],
+        "D": [
+          "6",
+          "-2"
+        ],
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Se dau A(4; -8), B(8; -8), D(5; -6). Se construiește C astfel încât segmentele orientate BC și AD să fie echipolente. Care este cea mai precisă clasificare a patrulaterului ABCD?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Echipolența BC=AD dă C=B+D−A=(9; -6), deci și DC=AB: ABCD este paralelogram. Vectorii laturilor alăturate sunt AB=(4; 0), AD=(1; 2) și sunt necoliniari. Pătratele lungimilor sunt AB²=16, AD²=5, BD²=13. Deoarece BD²≠AB²+AD², laturile alăturate nu sunt perpendiculare. Laturile au lungimi diferite. Rezultă: paralelogram care nu este nici dreptunghi, nici romb.",
+      "options": [
+        {
+          "text": "Paralelogram care nu este nici dreptunghi, nici romb",
+          "is_correct": true
+        },
+        {
+          "text": "Pătrat",
+          "is_correct": false
+        },
+        {
+          "text": "Dreptunghi care nu este pătrat",
+          "is_correct": false
+        },
+        {
+          "text": "Romb care nu este pătrat",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 6,
+        "family_name": "Configurație construită prin echipolență",
+        "variant": 4,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "quadrilateral",
+        "A": [
+          4,
+          -8
+        ],
+        "B": [
+          "8",
+          "-8"
+        ],
+        "D": [
+          "5",
+          "-6"
+        ],
+        "answer_kind": "text"
+      }
+    },
+    {
+      "text": "Se dau A(5; -10), B(7; -9), D(4; -8). Se construiește C astfel încât segmentele orientate BC și AD să fie echipolente. Care este cea mai precisă clasificare a patrulaterului ABCD?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Echipolența BC=AD dă C=B+D−A=(6; -7), deci și DC=AB: ABCD este paralelogram. Vectorii laturilor alăturate sunt AB=(2; 1), AD=(-1; 2) și sunt necoliniari. Pătratele lungimilor sunt AB²=5, AD²=5, BD²=10. Relația BD²=AB²+AD² și reciproca teoremei lui Pitagora dau AB⊥AD. Laturile au lungimi egale. Rezultă: pătrat.",
+      "options": [
+        {
+          "text": "Dreptunghi care nu este pătrat",
+          "is_correct": false
+        },
+        {
+          "text": "Pătrat",
+          "is_correct": true
+        },
+        {
+          "text": "Romb care nu este pătrat",
+          "is_correct": false
+        },
+        {
+          "text": "Paralelogram care nu este nici dreptunghi, nici romb",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "vectori_segmente_baze_v1",
+        "lesson": 1,
+        "catalog": "G1_catalog.md",
+        "section": "1",
+        "family": 6,
+        "family_name": "Configurație construită prin echipolență",
+        "variant": 5,
+        "pages": "162–163",
+        "adaptation": "Exercițiu original; tipul de construcție/demonstrație este adaptat în grilă cu justificare în explicație."
+      },
+      "verification": {
+        "mode": "quadrilateral",
+        "A": [
+          5,
+          -10
+        ],
+        "B": [
+          "7",
+          "-9"
+        ],
+        "D": [
+          "4",
+          "-8"
+        ],
+        "answer_kind": "text"
+      }
+    }
+  ]
 }

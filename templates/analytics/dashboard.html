@@ -7,11 +7,11 @@
     <h1>Analitice</h1>
     <p class="muted">Utilizatori activi și pagini accesate.</p>
 
-    <div style="margin:1rem 0;">
-        <a class="btn{% if days == 1 %} btn-press{% endif %}" href="?period=1">Azi</a>
-        <a class="btn{% if days == 7 %} btn-press{% endif %}" href="?period=7">7 zile</a>
-        <a class="btn{% if days == 30 %} btn-press{% endif %}" href="?period=30">30 zile</a>
-    </div>
+    <nav class="auth-actions-row" aria-label="Perioada statisticilor" style="margin:1rem 0;">
+        <a class="btn{% if days != 1 %} btn--secondary{% endif %}"{% if days == 1 %} aria-current="true"{% endif %} href="?period=1">Azi</a>
+        <a class="btn{% if days != 7 %} btn--secondary{% endif %}"{% if days == 7 %} aria-current="true"{% endif %} href="?period=7">7 zile</a>
+        <a class="btn{% if days != 30 %} btn--secondary{% endif %}"{% if days == 30 %} aria-current="true"{% endif %} href="?period=30">30 zile</a>
+    </nav>
 
     <div class="analytics-grid">
         <article class="card analytics-card">
@@ -37,13 +37,13 @@
 
     <h2 style="margin:2rem 0 1rem;">Pagini cele mai accesate</h2>
     {% if top_pages %}
-        <div class="card" style="overflow-x:auto;">
+        <div class="card analytics-table-wrap" style="overflow-x:auto;">
             <table class="analytics-table">
                 <thead>
                     <tr>
-                        <th>Pagină</th>
-                        <th>Vizualizări</th>
-                        <th>Sesiuni unice</th>
+                        <th scope="col">Pagină</th>
+                        <th scope="col">Vizualizări</th>
+                        <th scope="col">Sesiuni unice</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -58,18 +58,18 @@
             </table>
         </div>
     {% else %}
-        <p class="muted">Nu există date încă pentru această perioadă.</p>
+        {% include "includes/state_panel.html" with state_title="Nu există date pentru această perioadă" state_text="Datele vor apărea după primele accesări. Poți selecta și un interval mai larg din filtrele de mai sus." %}
     {% endif %}
 
     {% if daily %}
         <h2 style="margin:2rem 0 1rem;">Activitate zilnică</h2>
-        <div class="card" style="overflow-x:auto;">
+        <div class="card analytics-table-wrap" style="overflow-x:auto;">
             <table class="analytics-table">
                 <thead>
                     <tr>
-                        <th>Zi</th>
-                        <th>Sesiuni</th>
-                        <th>Utilizatori conectați</th>
+                        <th scope="col">Zi</th>
+                        <th scope="col">Sesiuni</th>
+                        <th scope="col">Utilizatori conectați</th>
                     </tr>
                 </thead>
                 <tbody>

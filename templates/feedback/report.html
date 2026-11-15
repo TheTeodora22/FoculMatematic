@@ -7,34 +7,24 @@
     <div class="auth-panel">
         <h1>Raportează o problemă</h1>
         {% if sent %}
-            <p class="muted">Raportul tău a fost înregistrat. Mulțumim pentru feedback!</p>
+            <p class="form-success" role="status">Raportul tău a fost înregistrat. Mulțumim pentru feedback!</p>
+            <a class="btn" href="{% url 'quiz_list' %}">Înapoi la chestionare</a>
         {% else %}
             <p class="muted">Descrie ce nu a funcționat. Dacă nu ești conectat, lasă un email ca să te putem contacta.</p>
             {% if form.errors %}
-                <p class="muted auth-error">Corectează erorile de mai jos.</p>
+                <p class="form-error-summary" role="alert">Corectează erorile de mai jos.</p>
             {% endif %}
-            <form method="post" class="auth-form" action="{% url 'report_error' %}">
+            <form method="post" class="auth-form" data-ui-form data-status-id="form-submit-status" data-busy-label="Se trimite raportul…" action="{% url 'report_error' %}">
                 {% csrf_token %}
                 {{ form.page_url }}
-                <p>
-                    {{ form.description }}
-                    {% for error in form.description.errors %}
-                        <span class="muted" style="color:#e63946;display:block;">{{ error }}</span>
-                    {% endfor %}
-                </p>
-                {% if form.email %}
-                    <p>
-                        {{ form.email }}
-                        {% for error in form.email.errors %}
-                            <span class="muted" style="color:#e63946;display:block;">{{ error }}</span>
-                        {% endfor %}
-                    </p>
-                {% endif %}
+                {% include "includes/form_field.html" with field=form.description %}
+                {% if form.email %}{% include "includes/form_field.html" with field=form.email %}{% endif %}
                 <div class="auth-actions">
                     <button type="submit" class="btn">Trimite raportul</button>
                     <a class="auth-link" href="{% url 'index' %}">Înapoi acasă</a>
                 </div>
             </form>
+{% include "includes/form_status.html" %}
         {% endif %}
     </div>
 </div>

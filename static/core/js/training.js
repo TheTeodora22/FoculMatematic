@@ -4,16 +4,6 @@
         return;
     }
 
-    let data;
-    try {
-        data = JSON.parse(dataEl.textContent);
-    } catch (_err) {
-        showBootError("Nu am putut citi datele antrenării.");
-        return;
-    }
-
-    let currentIndex = data.currentIndex;
-
     const pageEl = document.querySelector(".training-page");
     const loaderEl = document.getElementById("training-loader");
     const layoutEl = document.getElementById("training-layout");
@@ -23,6 +13,16 @@
     const prevArrow = document.querySelector(".training-arrow--prev");
     const nextArrow = document.querySelector(".training-arrow--next");
     const saveErrorEl = document.getElementById("training-save-error");
+    const saveStatusEl = document.getElementById("training-save-status");
+
+    let data;
+    try {
+        data = JSON.parse(dataEl.textContent);
+    } catch (_err) {
+        showBootError("Nu am putut citi datele antrenării.");
+        return;
+    }
+    let currentIndex = data.currentIndex;
 
     function escapeHtml(text) {
         const div = document.createElement("div");
@@ -55,6 +55,10 @@
     }
 
     function showBootError(message) {
+        if (window.fmTrainingBoot) {
+            window.fmTrainingBoot.fail(message);
+            return;
+        }
         if (loaderEl) {
             loaderEl.classList.add("training-loader--error");
             loaderEl.innerHTML = `<p>${escapeHtml(message)}</p>`;
@@ -64,6 +68,7 @@
     }
 
     function revealPage() {
+        window.fmTrainingBoot?.ready();
         pageEl?.classList.remove("training-page--loading");
         pageEl?.classList.add("training-page--ready");
         if (loaderEl) {
@@ -115,6 +120,7 @@
                 "reverse_method",
                 "false_hypothesis_method",
                 "geometry_canvas",
+                "vector_workbench",
                 "operation_sequence",
                 "operation_workbench",
                 "divisibility_values",
@@ -162,7 +168,7 @@
                     `<a href="${trainingUrl(index)}"` +
                     ` class="training-cell training-cell--${status}"` +
                     ` data-training-index="${index}"` +
-                    ` title="Întrebarea ${index + 1}"${currentAttr}></a>`
+                    ` aria-label="Întrebarea ${index + 1}" title="Întrebarea ${index + 1}"${currentAttr}>${index + 1}</a>`
                 );
             })
             .join("");
@@ -202,7 +208,7 @@
 
                 const checked =
                     (solved && option.id === question.correctOptionId) ||
-                    (showWrongSelection && selectedOptionId === option.id)
+                    (!solved && selectedOptionId === option.id)
                         ? " checked"
                         : "";
                 const disabled = solved ? " disabled" : "";
@@ -223,7 +229,7 @@
 
         return (
             `<form method="post" class="training-options-form" action="${escapeHtml(trainingUrl(currentIndex))}">` +
-            '<fieldset style="border:none;padding:0;margin:0;">' +
+            '<fieldset style="border:none;padding:0;margin:0;"><legend class="visually-hidden">Variante de răspuns</legend>' +
             options +
             "</fieldset>" +
             submitBtn +
@@ -1129,8 +1135,8 @@
             question.geometryInitialized=true;
         }
         const targets=exact?(item.points||[]).map(point=>`<g class="geo-target"><circle cx="${point.x}" cy="${point.y}" r="16"></circle><text x="${point.x}" y="${point.y+4}" text-anchor="middle">${escapeHtml(point.name)}</text></g>`).join(""):"";
-        const points=(item.points||[]).map(point=>{const [x,y]=String(question.answerValues[point.name]).split(",").map(Number);return `<g class="geo-draggable" data-geometry-point="${escapeHtml(point.name)}" transform="translate(${x} ${y})"${solved?" aria-disabled=\"true\"":""}><circle r="9"></circle><text x="12" y="-10">${escapeHtml(point.name)}</text></g>`;}).join("");
-        return `<svg class="geometry-canvas" viewBox="0 0 440 180"><defs><pattern id="geometry-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="1"></path></pattern></defs><rect width="440" height="180" fill="url(#geometry-grid)"></rect>${item.figures?.map(fig=>geometryEmbeddedShape(fig)).join("")||""}${targets}${points}</svg>`;
+        const points=(item.points||[]).map(point=>{const [x,y]=String(question.answerValues[point.name]).split(",").map(Number);return `<g class="geo-draggable" role="button" tabindex="${solved ? -1 : 0}" aria-label="Mută punctul ${escapeHtml(point.name)}" aria-describedby="geometry-point-instructions" data-geometry-point="${escapeHtml(point.name)}" transform="translate(${x} ${y})"${solved?" aria-disabled=\"true\"":""}><circle r="9"></circle><text x="12" y="-10">${escapeHtml(point.name)}</text></g>`;}).join("");
+        return `<p id="geometry-point-instructions" class="interactive-instruction">Selectează un punct cu Tab și mută-l cu săgețile. Shift + săgeată mută mai repede. Enter sau Spațiu fixează punctul lângă țintă.</p><svg class="geometry-canvas" viewBox="0 0 440 180"><defs><pattern id="geometry-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="1"></path></pattern></defs><rect width="440" height="180" fill="url(#geometry-grid)"></rect>${item.figures?.map(fig=>geometryEmbeddedShape(fig)).join("")||""}${targets}${points}</svg>`;
     }
 
     function geometryEmbeddedShape(figure){
@@ -1173,7 +1179,7 @@
             else if(tool==="ray")drawing=`<line x1="${a.x}" y1="${a.y}" x2="${a.x+ux*300}" y2="${a.y+uy*300}" class="geometry-drawn-line"></line><path d="M${a.x+ux*310} ${a.y+uy*310}l-16-9v18z" class="geo-arrow" transform="rotate(${Math.atan2(vy,vx)*180/Math.PI} ${a.x+ux*310} ${a.y+uy*310})"></path>`;
             else if(tool==="line")drawing=`<line x1="${a.x-ux*260}" y1="${a.y-uy*260}" x2="${a.x+ux*360}" y2="${a.y+uy*360}" class="geometry-drawn-line"></line>`;
         }
-        const pointSvg=points.map(point=>`<button></button><g class="geo-pickable${point.name===first||point.name===second?" is-selected":""}" data-geometry-pick-point="${escapeHtml(point.name)}"><circle cx="${point.x}" cy="${point.y}" r="10"></circle><text x="${point.x+14}" y="${point.y-10}">${escapeHtml(point.name)}</text></g>`).join("").replaceAll("<button></button>","");
+        const pointSvg=points.map(point=>`<g class="geo-pickable${point.name===first||point.name===second?" is-selected":""}" role="button" tabindex="${solved ? -1 : 0}" aria-label="Selectează punctul ${escapeHtml(point.name)}" aria-pressed="${point.name===first||point.name===second}"${solved?' aria-disabled="true"':''} data-geometry-pick-point="${escapeHtml(point.name)}"><circle cx="${point.x}" cy="${point.y}" r="10"></circle><text x="${point.x+14}" y="${point.y-10}">${escapeHtml(point.name)}</text></g>`).join("");
         return `<p class="interactive-instruction">Alege instrumentul, apoi apasă pe cele două puncte în ordinea cerută. Figura se desenează imediat.</p>${geometryChoices(question,"tool",item.tools,solved)}<svg class="geometry-canvas" viewBox="0 0 440 180"><defs><pattern id="geometry-construction-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="1"></path></pattern></defs><rect width="440" height="180" fill="url(#geometry-construction-grid)"></rect>${drawing}${pointSvg}</svg>`;
     }
 
@@ -1206,7 +1212,7 @@
         const item=question.interactive,points=item.points||[],selected=new Set(String(question.answerValues.edges||"").split(",").filter(Boolean));
         const byName=Object.fromEntries(points.map(point=>[point.name,point]));
         const lines=[...selected].map(edge=>{const a=byName[edge[0]],b=byName[edge[1]];return a&&b?`<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" class="geometry-drawn-line"></line>`:"";}).join("");
-        const nodes=points.map(point=>`<g class="geo-pickable${question.geometryEdgeStart===point.name?" is-selected":""}" data-geometry-edge-point="${escapeHtml(point.name)}"><circle cx="${point.x}" cy="${point.y}" r="10"></circle><text x="${point.x+14}" y="${point.y-10}">${escapeHtml(point.name)}</text></g>`).join("");
+        const nodes=points.map(point=>`<g class="geo-pickable${question.geometryEdgeStart===point.name?" is-selected":""}" role="button" tabindex="${solved ? -1 : 0}" aria-label="Selectează capătul ${escapeHtml(point.name)}" aria-pressed="${question.geometryEdgeStart===point.name}"${solved?' aria-disabled="true"':''} data-geometry-edge-point="${escapeHtml(point.name)}"><circle cx="${point.x}" cy="${point.y}" r="10"></circle><text x="${point.x+14}" y="${point.y-10}">${escapeHtml(point.name)}</text></g>`).join("");
         return `<p class="interactive-instruction">Unește punctele două câte două apăsând pe capetele fiecărui segment.</p><svg class="geometry-canvas" viewBox="0 0 440 180"><defs><pattern id="geometry-edge-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="1"></path></pattern></defs><rect width="440" height="180" fill="url(#geometry-edge-grid)"></rect>${lines}${nodes}</svg>`;
     }
 
@@ -1389,8 +1395,8 @@
         const solved = isSolved(question), item = question.interactive;
         if (!question.criteriaValues) question.criteriaValues = {};
         if (solved) Object.entries(item.answers).forEach(([key, value]) => { question.criteriaValues[key] = Boolean(value); });
-        const rows = item.divisors.map((divisor, row) => `<tr><th>divizibil cu ${escapeHtml(divisor)}</th>${item.numbers.map((number, column) => { const key = `${row}:${column}`, checked = Boolean(question.criteriaValues[key]); return `<td><button type="button" class="criteria-check${checked ? " is-checked" : ""}" data-criteria-key="${key}" aria-pressed="${checked}" aria-label="${number} divizibil cu ${divisor}"${solved ? " disabled" : ""}>${checked ? "✓" : "×"}</button></td>`; }).join("")}</tr>`).join("");
-        return `<form class="training-criteria-table-form interactive-form"><p class="interactive-instruction">Apasă fiecare căsuță pentru a alege ✓ sau ×.</p><div class="criteria-table-wrap"><table class="criteria-table"><thead><tr><th>Numărul</th>${item.numbers.map(number => `<th>${escapeHtml(number)}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică tabelul</button>'}</form>`;
+        const rows = item.divisors.map((divisor, row) => `<tr><th scope="row">divizibil cu ${escapeHtml(divisor)}</th>${item.numbers.map((number, column) => { const key = `${row}:${column}`, checked = Boolean(question.criteriaValues[key]); return `<td><button type="button" class="criteria-check${checked ? " is-checked" : ""}" data-criteria-key="${key}" aria-pressed="${checked}" aria-label="${number} divizibil cu ${divisor}"${solved ? " disabled" : ""}>${checked ? "✓" : "×"}</button></td>`; }).join("")}</tr>`).join("");
+        return `<form class="training-criteria-table-form interactive-form"><p class="interactive-instruction">Apasă fiecare căsuță pentru a alege ✓ sau ×.</p><div class="criteria-table-wrap"><table class="criteria-table"><thead><tr><th scope="col">Numărul</th>${item.numbers.map(number => `<th scope="col">${escapeHtml(number)}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>${solved ? "" : '<button type="submit" class="btn btn-press">Verifică tabelul</button>'}</form>`;
     }
 
     function primeField(question, key, label, solved) {
@@ -1477,8 +1483,10 @@
         return `<input class="decimal-input" data-stat-key="${escapeHtml(key)}" inputmode="decimal" aria-label="${escapeHtml(label)}" value="${escapeHtml(question.answerValues[key] || "")}"${solved ? " disabled" : ""}>`;
     }
 
-    function statisticsChartSvg(question, line = false) {
+    function statisticsChartSvg(question, line = false, wrapped = true) {
         const item = question.interactive, solved = isSolved(question), W = 620, H = 300, L = 52, T = 18, B = 46;
+        const selectable = !solved && ["read_bar", "read_line"].includes(item.mode);
+        const semantics = i => selectable ? `role="button" tabindex="0" aria-pressed="${String(question.answerValues?.selected) === String(i)}" data-stat-choice="${i}"` : '';
         const ph = H - T - B, pw = W - L - 18, max = item.max_value, step = item.step || Math.max(1, Math.ceil(max / 5));
         const current = item.values.map((value, i) => solved ? value : Number(question.answerValues?.[`value:${i}`] ?? (item.mode === "repair_bar" ? item.shown_values[i] : (["build_bar","build_line"].includes(item.mode) ? 0 : value))));
         const grid = Array.from({length: Math.floor(max / step) + 1}, (_, i) => { const v=i*step,y=T+ph-v/max*ph; return `<g><line x1="${L}" y1="${y}" x2="${L+pw}" y2="${y}" class="stat-grid-line"/><text x="${L-8}" y="${y+4}" text-anchor="end">${v}</text></g>`; }).join("");
@@ -1487,11 +1495,12 @@
         let marks;
         if (line) {
             const pts=current.map((v,i)=>[L+gap*(i+.5),T+ph-v/max*ph]);
-            marks=`<path d="${pts.map((p,i)=>`${i?'L':'M'}${p[0]},${p[1]}`).join(' ')}" class="stat-line-path"/>`+pts.map((p,i)=>`<circle cx="${p[0]}" cy="${p[1]}" r="9" role="button" tabindex="0" aria-label="${escapeHtml(item.labels[i])}: ${current[i]}" data-stat-choice="${i}" class="stat-point${String(question.answerValues?.selected)===String(i)?' is-selected':''}"/>`).join("");
+            marks=`<path d="${pts.map((p,i)=>`${i?'L':'M'}${p[0]},${p[1]}`).join(' ')}" class="stat-line-path"/>`+pts.map((p,i)=>`<circle cx="${p[0]}" cy="${p[1]}" r="9" ${semantics(i)} aria-label="${escapeHtml(item.labels[i])}: ${current[i]}" class="stat-point${String(question.answerValues?.selected)===String(i)?' is-selected':''}"/>`).join("");
         } else {
-            marks=current.map((v,i)=>{const h=v/max*ph,x=L+gap*i+gap*.18;return `<rect x="${x}" y="${T+ph-h}" width="${gap*.64}" height="${h}" rx="5" role="button" tabindex="0" aria-label="${escapeHtml(item.labels[i])}: ${v}" data-stat-choice="${i}" class="stat-bar${String(question.answerValues?.selected)===String(i)?' is-selected':''}"/>`;}).join("");
+            marks=current.map((v,i)=>{const h=v/max*ph,x=L+gap*i+gap*.18;return `<rect x="${x}" y="${T+ph-h}" width="${gap*.64}" height="${h}" rx="5" ${semantics(i)} aria-label="${escapeHtml(item.labels[i])}: ${v}" class="stat-bar${String(question.answerValues?.selected)===String(i)?' is-selected':''}"/>`;}).join("");
         }
-        return `<svg class="statistics-chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${line?'Grafic cu linii':'Grafic cu bare'}">${grid}<line x1="${L}" y1="${T}" x2="${L}" y2="${T+ph}" class="stat-axis"/><line x1="${L}" y1="${T+ph}" x2="${L+pw}" y2="${T+ph}" class="stat-axis"/>${marks}${labels}</svg>`;
+        const svg = `<svg class="statistics-chart" viewBox="0 0 ${W} ${H}" role="${selectable?'group':'img'}" aria-label="${line?'Grafic cu linii':'Grafic cu bare'}">${grid}<line x1="${L}" y1="${T}" x2="${L}" y2="${T+ph}" class="stat-axis"/><line x1="${L}" y1="${T+ph}" x2="${L+pw}" y2="${T+ph}" class="stat-axis"/>${marks}${labels}</svg>`;
+        return wrapped ? `<div class="statistics-chart-scroll" data-scroll-label="${line?'Grafic cu linii':'Grafic cu bare'}">${svg}</div>` : svg;
     }
 
     function statisticsChartHtml(question) {
@@ -1953,7 +1962,7 @@
         }
         if (item.mode === "slider") {
             const value = Number(question.answerValues.percent ?? item.initial ?? 0);
-            return form(`<p class="interactive-instruction">Mută cursorul la procentul cerut.</p><div class="percent-slider-card"><strong data-percent-value>${value}%</strong><input type="range" min="0" max="100" step="${item.step || 1}" value="${value}" data-percent-slider${solved ? " disabled" : ""}><div><span>0%</span><span>50%</span><span>100%</span></div></div>`);
+            return form(`<p class="interactive-instruction">Mută cursorul la procentul cerut.</p><div class="percent-slider-card"><label for="training-percent-slider">Procent ales</label><strong data-percent-value>${value}%</strong><input id="training-percent-slider" type="range" min="0" max="100" step="${item.step || 1}" value="${value}" aria-valuetext="${value}%" data-percent-slider${solved ? " disabled" : ""}><div><span>0%</span><span>50%</span><span>100%</span></div></div>`);
         }
         if (item.mode === "table") {
             return form(`<p class="interactive-instruction">Completează valorile; suma lor trebuie să refacă totalul.</p><div class="percent-table-wrap"><table class="percent-table"><thead><tr><th>Categorie</th><th>Procent</th><th>Valoare</th></tr></thead><tbody>${item.rows.map((row,index)=>`<tr><th>${escapeHtml(row.label)}</th><td>${row.percent}%</td><td>${lessonField(question,`value_${index}`,`Valoarea pentru ${row.label}`,solved,true)}</td></tr>`).join("")}</tbody><tfoot><tr><th>Total</th><td>100%</td><td>${escapeHtml(item.total)}</td></tr></tfoot></table></div>`);
@@ -2087,6 +2096,9 @@
                 return fractionPowerHtml(question);
             case "fraction_percent":
                 return fractionPercentHtml(question);
+            case "vector_workbench":
+                if (!window.fmVectorWorkbench) throw new Error("Atelierul de vectori nu s-a încărcat. Reîncarcă pagina.");
+                return window.fmVectorWorkbench.render(question);
             default:
                 return optionsHtml(question, selectedOptionId, showWrongSelection);
         }
@@ -2097,6 +2109,13 @@
         if (!cardEl || !question) {
             return;
         }
+        // Repainting a choice must not send keyboard users back to the document.
+        const active = typeof document !== "undefined" ? document.activeElement : null;
+        const preserveFocus = cardEl._renderedQuestionIndex === currentIndex && active && cardEl.contains?.(active);
+        const focusAttributes = preserveFocus ? Array.from(active.attributes).filter(attr =>
+            attr.name.startsWith("data-") || ["id", "name", "type", "value"].includes(attr.name)) : [];
+        cardEl._renderedQuestionIndex = currentIndex;
+        selectedOptionId ??= question.selectedOptionId ?? null;
 
         const formatLabels = {
             grid: "Grilă",
@@ -2106,7 +2125,7 @@
         const formatTag = question.format || (question.type === "multiple_choice" ? "grid" : "interactive");
         cardEl.innerHTML =
             `<span class="question-format-badge question-format-badge--${escapeHtml(formatTag)}">${escapeHtml(formatLabels[formatTag] || "Exercițiu")}</span>` +
-            `<h2 data-math-content style="margin:0 0 1rem;">${escapeHtml(question.text)}</h2>` +
+            `<h2 tabindex="-1" data-math-content style="margin:0 0 1rem;">${escapeHtml(question.text)}</h2>` +
             (showWrongSelection
                 ? question.status === "wrong"
                     ? '<p class="training-feedback" style="margin:0 0 0.75rem;"><span class="training-feedback--wrong">Greșit. Încearcă alt răspuns.</span></p>'
@@ -2116,9 +2135,25 @@
             answerHtml(question, selectedOptionId, showWrongSelection);
 
         bindForm();
+        if (question.saving) {
+            cardEl.querySelectorAll('form button, form input, form select, form textarea').forEach(control => control.disabled = true);
+            cardEl.querySelectorAll('[tabindex]').forEach(control => {
+                control.setAttribute('tabindex', '-1');
+                control.setAttribute('aria-disabled', 'true');
+            });
+        }
+        if (question.saveError) showSaveError(question.saveError);
+        updateSaveStatus(question);
         updateProgress();
         updateArrows();
         updateGridCurrent();
+        if (preserveFocus && (document.activeElement === document.body || !document.activeElement?.isConnected)) {
+            const matches = focusAttributes.length ? Array.from(cardEl.querySelectorAll('button, input, select, textarea, [tabindex]')).filter(control =>
+                control.tagName === active.tagName && !control.disabled && control.getAttribute('aria-disabled') !== 'true' &&
+                focusAttributes.every(attr => control.getAttribute(attr.name) === attr.value)) : [];
+            const target = matches.length === 1 ? matches[0] : cardEl.querySelector('h2');
+            target?.focus({preventScroll: true});
+        }
     }
 
     function updateProgress() {
@@ -2136,10 +2171,12 @@
                 prevArrow.href = trainingUrl(currentIndex - 1);
                 prevArrow.classList.remove("training-arrow--placeholder");
                 prevArrow.removeAttribute("aria-hidden");
+                prevArrow.removeAttribute("tabindex");
             } else {
                 prevArrow.href = trainingUrl(currentIndex);
                 prevArrow.classList.add("training-arrow--placeholder");
                 prevArrow.setAttribute("aria-hidden", "true");
+                prevArrow.setAttribute("tabindex", "-1");
             }
         }
 
@@ -2148,10 +2185,12 @@
                 nextArrow.href = trainingUrl(currentIndex + 1);
                 nextArrow.classList.remove("training-arrow--placeholder");
                 nextArrow.removeAttribute("aria-hidden");
+                nextArrow.removeAttribute("tabindex");
             } else {
                 nextArrow.href = trainingUrl(currentIndex);
                 nextArrow.classList.add("training-arrow--placeholder");
                 nextArrow.setAttribute("aria-hidden", "true");
+                nextArrow.setAttribute("tabindex", "-1");
             }
         }
     }
@@ -2186,15 +2225,31 @@
         });
     }
 
+    function updateSaveStatus(question) {
+        if (!saveStatusEl) return;
+        saveStatusEl.textContent = question.saving ? "Se salvează răspunsul…"
+            : question.saveError ? "Salvarea nu a fost confirmată."
+            : question.status === "correct" ? "Răspuns salvat. Corect!"
+            : question.status === "wrong" ? "Răspuns salvat. Mai încearcă o dată."
+            : "";
+    }
+
     function showSaveError(message) {
         if (!saveErrorEl) {
             return;
         }
         const reportHref = `/feedback/raporteaza/?from=${encodeURIComponent(window.location.pathname)}`;
         saveErrorEl.innerHTML =
-            `${escapeHtml(message || "Nu am putut salva progresul. Încearcă din nou.")} ` +
-            `<a href="${reportHref}" class="training-report-link">Raportează problema</a>`;
+            `<p>${escapeHtml(message || "Nu am putut salva progresul. Încearcă din nou.")}</p>` +
+            `<p>Răspunsul tău a rămas în formular. Îl poți modifica sau retrimite.</p>` +
+            `<div class="ui-state__actions"><button type="button" class="btn btn--secondary" data-training-retry>Reîncearcă salvarea</button>` +
+            `<a href="${reportHref}" class="training-report-link">Raportează problema</a></div>`;
         saveErrorEl.hidden = false;
+        const questionIndex = currentIndex;
+        saveErrorEl.querySelector('[data-training-retry]')?.addEventListener('click', () => {
+            if (currentIndex !== questionIndex || data.questions[currentIndex]?.saving) return;
+            cardEl?.querySelector('form')?.requestSubmit();
+        });
     }
 
     function hideSaveError() {
@@ -2213,7 +2268,7 @@
         } else if (["column_addition", "column_multiplication", "column_subtraction"].includes(question.type)) {
             body.append("result_digits", answer.resultDigits);
             body.append("borrow_columns", JSON.stringify(answer.borrowColumns));
-        } else if (["missing_digits", "input_output", "factor_builder", "factor_match", "power_builder", "power_match", "power_table", "power_cycle", "power_square", "power_rule_chain", "base_values", "base_match", "binary_toggle", "unit_reduction", "comparison_method", "figurative_method", "reverse_method", "false_hypothesis_method", "geometry_canvas", "operation_workbench", "divisibility_values", "prime_workbench", "decimal_workbench", "statistics_chart", "algebra_workbench", "fraction_visual", "gcd_workbench", "fraction_scale", "fraction_reduce_path", "lcm_workbench", "common_denominator", "fraction_product", "fraction_division", "fraction_power", "fraction_percent"].includes(question.type)) {
+        } else if (["missing_digits", "input_output", "factor_builder", "factor_match", "power_builder", "power_match", "power_table", "power_cycle", "power_square", "power_rule_chain", "base_values", "base_match", "binary_toggle", "unit_reduction", "comparison_method", "figurative_method", "reverse_method", "false_hypothesis_method", "geometry_canvas", "vector_workbench", "operation_workbench", "divisibility_values", "prime_workbench", "decimal_workbench", "statistics_chart", "algebra_workbench", "fraction_visual", "gcd_workbench", "fraction_scale", "fraction_reduce_path", "lcm_workbench", "common_denominator", "fraction_product", "fraction_division", "fraction_power", "fraction_percent"].includes(question.type)) {
             const values = answer.values ?? question.answerValues ?? {};
             body.append("values", JSON.stringify(values));
         } else if (question.type === "divisibility_select") {
@@ -2248,32 +2303,57 @@
             body.append("option_id", String(answer.optionId));
         }
 
-        const response = await fetch(data.submitUrl, {
-            method: "POST",
-            headers: {
-                "X-CSRFToken": getCsrfToken(),
-            },
-            body,
-            credentials: "same-origin",
-        });
+        const controller = new AbortController();
+        const timeout = window.setTimeout(() => controller.abort(), 20000);
+        try {
+            const response = await fetch(data.submitUrl, {
+                method: "POST",
+                headers: {
+                    "X-CSRFToken": getCsrfToken(),
+                },
+                body,
+                credentials: "same-origin",
+                signal: controller.signal,
+            });
 
-        if (!response.ok) {
-            let message = "Nu am putut salva progresul.";
-            try {
-                const payload = await response.json();
-                if (payload.error) {
-                    message = payload.error;
+            if (!response.ok) {
+                let message = "Nu am putut salva progresul.";
+                try {
+                    const payload = await response.json();
+                    if (payload.error) {
+                        message = payload.error;
+                    }
+                } catch (_err) {
+                    /* ignore */
                 }
-            } catch (_err) {
-                /* ignore */
+                throw new Error(message);
             }
-            throw new Error(message);
-        }
 
-        return response.json();
+            return await response.json();
+        } catch (error) {
+            if (controller.signal.aborted) {
+                throw new Error("Salvarea durează prea mult. Verifică conexiunea și încearcă din nou.");
+            }
+            if (error.name === "TypeError") {
+                throw new Error("Nu am putut confirma salvarea. Verifică accesul la internet și încearcă din nou.");
+            }
+            if (error.name === "SyntaxError") {
+                throw new Error("Serverul nu a confirmat salvarea. Verifică dacă mai ești conectat și încearcă din nou.");
+            }
+            throw error;
+        } finally {
+            window.clearTimeout(timeout);
+        }
     }
 
     function bindForm() {
+        const vectorForm = cardEl?.querySelector(".training-vector-form");
+        if (vectorForm) {
+            const question = data.questions[currentIndex];
+            window.fmVectorWorkbench.bind(vectorForm, question, answer => submitInteractiveAnswer(question, answer));
+            return;
+        }
+        if (data.questions[currentIndex]?.saving) return;
         const parenthesesForm = cardEl?.querySelector(".training-parentheses-form");
         if (parenthesesForm) {
             bindParenthesesForm(parenthesesForm);
@@ -2413,39 +2493,40 @@
             }
 
             const optionId = parseInt(selected.value, 10);
-            const isCorrect = optionId === question.correctOptionId;
-
-            question.status = isCorrect ? "correct" : "wrong";
-            updateGridCell(currentIndex, question.status);
-            renderQuestion(optionId, !isCorrect);
-
-            try {
-                const result = await persistAnswer(question, { optionId });
-                question.status = result.status;
-                if (result.is_correct && result.explanation) {
-                    question.explanation = result.explanation;
-                }
-                if (result.is_correct) {
-                    renderQuestion(optionId, false);
-                }
-            } catch (err) {
-                showSaveError(err.message);
-            }
+            question.selectedOptionId = optionId;
+            await submitInteractiveAnswer(question, { optionId }, optionId);
         });
     }
 
-    async function submitInteractiveAnswer(question, answer) {
-        hideSaveError();
+    async function submitInteractiveAnswer(question, answer, selectedOptionId = null) {
+        if (question.saving || isSolved(question)) return;
+        const questionIndex = data.questions.indexOf(question);
+        if (questionIndex < 0) return;
+        question.saving = true;
+        question.saveError = "";
+        if (currentIndex === questionIndex) {
+            hideSaveError();
+            renderQuestion(selectedOptionId, false);
+        }
+        let confirmedWrong = false;
         try {
             const result = await persistAnswer(question, answer);
+            if (!result || typeof result.is_correct !== "boolean" || !["correct", "wrong"].includes(result.status) || result.is_correct !== (result.status === "correct")) {
+                throw new Error("Serverul nu a confirmat salvarea. Încearcă din nou.");
+            }
             question.status = result.status;
-            updateGridCell(currentIndex, question.status);
+            updateGridCell(questionIndex, question.status);
             if (result.is_correct && result.explanation) {
                 question.explanation = result.explanation;
             }
-            renderQuestion(null, !result.is_correct);
+            confirmedWrong = !result.is_correct;
         } catch (err) {
-            showSaveError(err.message);
+            question.saveError = err.message || "Nu am putut salva progresul. Încearcă din nou.";
+        } finally {
+            question.saving = false;
+            if (currentIndex === questionIndex) {
+                renderQuestion(selectedOptionId, confirmedWrong);
+            }
         }
     }
 
@@ -2752,12 +2833,38 @@
         form.addEventListener("submit",async event=>{event.preventDefault();const required=Object.keys(question.interactive.answers);if(required.some(key=>question.answerValues[key]===undefined||question.answerValues[key]===""))return;await submitInteractiveAnswer(question,{values:question.answerValues});});
     }
 
+    function bindGeometryKeyboard(form, question) {
+        // SVG groups do not implement button keyboard behavior themselves.
+        form.querySelectorAll("[data-geometry-pick-point], [data-geometry-edge-point]").forEach(point => {
+            point.addEventListener("keydown", event => {
+                if (event.key !== "Enter" && event.key !== " ") return;
+                if (event.altKey || event.ctrlKey || event.metaKey || isSolved(question)) return;
+                event.preventDefault();
+                const attribute = point.hasAttribute("data-geometry-pick-point")
+                    ? "data-geometry-pick-point" : "data-geometry-edge-point";
+                const name = point.getAttribute(attribute);
+                point.dispatchEvent(new MouseEvent("click", {bubbles:true}));
+                // Choosing a point rebuilds the canvas. Keep the keyboard user on it.
+                const replacement = [...cardEl.querySelectorAll(`[${attribute}]`)]
+                    .find(candidate => candidate.getAttribute(attribute) === name);
+                replacement?.focus({preventScroll:true});
+            });
+        });
+    }
+
     function bindGeometryForm(form){
         const question=data.questions[currentIndex];if(isSolved(question))return;
+        bindGeometryKeyboard(form, question);
         form.querySelectorAll("[data-geometry-key]").forEach(input=>input.addEventListener("input",()=>{question.answerValues[input.dataset.geometryKey]=input.value.trim();}));
         form.querySelectorAll("[data-geometry-range]").forEach(input=>{
             input.addEventListener("input",()=>{question.answerValues[input.dataset.geometryRange]=input.value;const output=form.querySelector(`[data-geometry-output="${input.dataset.geometryRange}"]`);if(output)output.textContent=input.value;});
-            input.addEventListener("change",()=>renderQuestion(null,false));
+            input.addEventListener("change",()=>{
+                const key=input.dataset.geometryRange;
+                renderQuestion(null,false);
+                const replacement=[...cardEl.querySelectorAll("[data-geometry-range]")]
+                    .find(candidate=>candidate.dataset.geometryRange===key);
+                replacement?.focus({preventScroll:true});
+            });
         });
         form.querySelectorAll("[data-geometry-choice-key]").forEach(button=>button.addEventListener("click",()=>{question.answerValues[button.dataset.geometryChoiceKey]=button.dataset.geometryChoice;renderQuestion(null,false);}));
         form.querySelectorAll("[data-geometry-select]").forEach(select=>select.addEventListener("change",()=>{question.answerValues[select.dataset.geometrySelect]=select.value;}));
@@ -2796,31 +2903,43 @@
             question.answerValues.edges=[...edges].sort().join(",");question.geometryEdgeStart="";renderQuestion(null,false);
         }));
         form.querySelectorAll("[data-geometry-point]").forEach(point=>{
+            const settlePoint = () => {
+                const mode=question.interactive.mode,target=(question.interactive.points||[]).find(candidate=>candidate.name===point.dataset.geometryPoint);
+                let [x,y]=String(question.answerValues[point.dataset.geometryPoint]).split(",").map(Number);
+                const previousPosition=`${x},${y}`;
+                if(["place_points","reconstruct_model","full_geometry_puzzle"].includes(mode)&&target){
+                    if(Math.hypot(x-target.x,y-target.y)<=62){ x=target.x; y=target.y; }
+                }else if(["point_on_line","repair_membership","move_to_collinear"].includes(mode)&&question.interactive.answers.membership==="on"){
+                    const line=question.interactive.line||{a:0,b:1,c:-90};
+                    const a=Number(line.a)||0,b=Number(line.b)||0,c=Number(line.c)||0,denominator=a*a+b*b||1,signed=(a*x+b*y+c)/denominator;
+                    if(Math.abs(a*x+b*y+c)/Math.sqrt(denominator)<=48){ x=Math.round(x-a*signed); y=Math.round(y-b*signed); }
+                }
+                question.answerValues[point.dataset.geometryPoint]=`${x},${y}`;
+                point.setAttribute("transform",`translate(${x} ${y})`);
+                if(previousPosition!==`${x},${y}`){
+                    point.classList.add("is-snapped");
+                    setTimeout(()=>point.classList.remove("is-snapped"),350);
+                }
+            };
+            point.addEventListener("keydown",event=>{
+                if(event.altKey||event.ctrlKey||event.metaKey||isSolved(question))return;
+                if(event.key==="Enter"||event.key===" "){
+                    event.preventDefault();settlePoint();return;
+                }
+                const deltas={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,-1],ArrowDown:[0,1]};
+                const delta=deltas[event.key];if(!delta)return;
+                event.preventDefault();
+                const step=event.shiftKey?10:1,[x,y]=String(question.answerValues[point.dataset.geometryPoint]).split(",").map(Number);
+                const cx=Math.max(15,Math.min(425,x+delta[0]*step)),cy=Math.max(15,Math.min(165,y+delta[1]*step));
+                question.answerValues[point.dataset.geometryPoint]=`${cx},${cy}`;
+                point.setAttribute("transform",`translate(${cx} ${cy})`);
+            });
             point.addEventListener("pointerdown",event=>{
                 event.preventDefault();point.setPointerCapture(event.pointerId);point.classList.add("is-dragging");
                 const svg=point.closest("svg");
                 const move=moveEvent=>{const svgPoint=svg.createSVGPoint();svgPoint.x=moveEvent.clientX;svgPoint.y=moveEvent.clientY;const local=svgPoint.matrixTransform(svg.getScreenCTM().inverse()),cx=Math.max(15,Math.min(425,Math.round(local.x))),cy=Math.max(15,Math.min(165,Math.round(local.y)));point.setAttribute("transform",`translate(${cx} ${cy})`);question.answerValues[point.dataset.geometryPoint]=`${cx},${cy}`;};
                 const up=()=>{
-                    const mode=question.interactive.mode,target=(question.interactive.points||[]).find(candidate=>candidate.name===point.dataset.geometryPoint);
-                    if(["place_points","reconstruct_model","full_geometry_puzzle"].includes(mode)&&target){
-                        const [x,y]=String(question.answerValues[point.dataset.geometryPoint]).split(",").map(Number);
-                        if(Math.hypot(x-target.x,y-target.y)<=62){
-                            question.answerValues[point.dataset.geometryPoint]=`${target.x},${target.y}`;
-                            point.setAttribute("transform",`translate(${target.x} ${target.y})`);
-                            point.classList.add("is-snapped");
-                            setTimeout(()=>point.classList.remove("is-snapped"),350);
-                        }
-                    }else if(["point_on_line","repair_membership","move_to_collinear"].includes(mode)&&question.interactive.answers.membership==="on"){
-                        const [x,y]=String(question.answerValues[point.dataset.geometryPoint]).split(",").map(Number),line=question.interactive.line||{a:0,b:1,c:-90};
-                        const a=Number(line.a)||0,b=Number(line.b)||0,c=Number(line.c)||0,denominator=a*a+b*b||1,signed=(a*x+b*y+c)/denominator;
-                        if(Math.abs(a*x+b*y+c)/Math.sqrt(denominator)<=48){
-                            const px=Math.round(x-a*signed),py=Math.round(y-b*signed);
-                            question.answerValues[point.dataset.geometryPoint]=`${px},${py}`;
-                            point.setAttribute("transform",`translate(${px} ${py})`);
-                            point.classList.add("is-snapped");
-                            setTimeout(()=>point.classList.remove("is-snapped"),350);
-                        }
-                    }
+                    settlePoint();
                     point.classList.remove("is-dragging");point.removeEventListener("pointermove",move);point.removeEventListener("pointerup",up);
                 };
                 point.addEventListener("pointermove",move);point.addEventListener("pointerup",up);
@@ -3146,8 +3265,22 @@
     function bindStatisticsForm(form) {
         const question=data.questions[currentIndex], item=question.interactive; if(isSolved(question))return;
         form.querySelectorAll("[data-stat-key]").forEach(input=>input.addEventListener("input",()=>{input.value=input.value.replace(/[^0-9,.]/g,"");question.answerValues[input.dataset.statKey]=input.value;}));
-        form.querySelectorAll("[data-stat-choice]").forEach(mark=>{const choose=()=>{question.answerValues.selected=mark.dataset.statChoice;renderQuestion(null,false);};mark.addEventListener("click",choose);mark.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();choose();}});});
-        form.querySelectorAll("[data-stat-range]").forEach(input=>input.addEventListener("input",()=>{question.answerValues[input.dataset.statRange]=input.value;renderQuestion(null,false);}));
+        form.querySelectorAll("[data-stat-choice]").forEach(mark=>{const choose=()=>{
+            question.answerValues.selected=mark.dataset.statChoice;
+            form.querySelectorAll("[data-stat-choice]").forEach(target=>{
+                const selected=target.dataset.statChoice===question.answerValues.selected;
+                target.classList.toggle("is-selected",selected);
+                target.setAttribute("aria-pressed",String(selected));
+            });
+        };mark.addEventListener("click",choose);mark.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();choose();}});});
+        form.querySelectorAll("[data-stat-range]").forEach(input=>input.addEventListener("input",()=>{
+            question.answerValues[input.dataset.statRange]=input.value;
+            const valueLabel=input.closest("label").querySelector("b");
+            if(valueLabel)valueLabel.textContent=input.value;
+            const holder=document.createElement("div");
+            holder.innerHTML=statisticsChartSvg(question,item.mode.includes("line"),false);
+            form.querySelector(".statistics-chart").replaceWith(holder.firstElementChild);
+        }));
         form.addEventListener("submit",async event=>{event.preventDefault();const required=Object.keys(item.answers);if(required.some(key=>question.answerValues[key]===undefined||String(question.answerValues[key]).trim()===""))return;await submitInteractiveAnswer(question,{values:question.answerValues});});
     }
 
@@ -3457,6 +3590,7 @@
         const slider = form.querySelector("[data-percent-slider]");
         if (slider) slider.addEventListener("input",()=>{
             question.answerValues.percent = slider.value;
+            slider.setAttribute("aria-valuetext", `${slider.value}%`);
             const display = form.querySelector("[data-percent-value]");
             if (display) display.textContent = `${slider.value}%`;
         });
@@ -3613,6 +3747,25 @@
             history.pushState({ index }, "", trainingUrl(index));
         }
     }
+
+    document.addEventListener("keydown", (event) => {
+        if (
+            event.defaultPrevented || event.isComposing || event.repeat ||
+            event.altKey || event.ctrlKey || event.metaKey || event.shiftKey ||
+            (event.key !== "ArrowLeft" && event.key !== "ArrowRight")
+        ) {
+            return;
+        }
+        const target = event.target;
+        if (target instanceof Element && (
+            target.isContentEditable ||
+            target.closest("input:not([type='radio']):not([type='checkbox']):not([type='button']):not([type='submit']), textarea, select, [role='textbox'], [role='slider'], [role='spinbutton'], [role='tablist'], [role='listbox'], dialog, [role='dialog']")
+        )) {
+            return;
+        }
+        event.preventDefault();
+        navigateTo(currentIndex + (event.key === "ArrowRight" ? 1 : -1), true);
+    });
 
     if (prevArrow) {
         prevArrow.addEventListener("click", (event) => {

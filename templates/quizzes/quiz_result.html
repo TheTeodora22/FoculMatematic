@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% block math_assets %}{% include "includes/math_assets.html" %}{% endblock %}
 
 {% block title %}Rezultat — {{ quiz.title }}{% endblock %}
 
@@ -8,26 +9,31 @@
     .answer-card.correct { border-color: #2d6a4f; }
     .answer-card.incorrect { border-color: #9b2226; }
     .answer-status { font-weight: 600; margin: 0.5rem 0 0; }
-    .answer-status.correct { color: #52b788; }
-    .answer-status.incorrect { color: #e63946; }
+    .answer-status.correct { color: var(--fm-success); }
+    .answer-status.incorrect { color: var(--fm-error); }
     .summary { margin-bottom: 1.5rem; }
 </style>
 {% endblock %}
 
+{% block page_styles %}{% include "includes/page_styles.html" %}{% endblock %}
+
 {% block content %}
-<div class="page-content">
+<div class="page-content journey-page">
 <h1>Rezultat</h1>
-<div class="card summary">
+<div class="card summary result-summary">
     <p style="font-size:1.25rem;margin:0 0 0.5rem;">
         <strong>{{ quiz.title }}</strong>
     </p>
-    <p style="margin:0;">
-        Ai obținut <strong>{{ attempt.score }}</strong> din <strong>{{ attempt.max_score }}</strong> puncte.
-    </p>
+    <p class="result-score">{{ attempt.score }} / {{ attempt.max_score }}</p>
+    <p class="muted">Puncte obținute</p>
     {% if attempt.max_score > 0 %}
         {% widthratio attempt.score attempt.max_score 100 as pct %}
         <p class="muted" style="margin:0.5rem 0 0;">Procent: {{ pct }}%</p>
     {% endif %}
+</div>
+<div class="result-actions">
+    <a class="btn btn-press" href="{% url 'quiz_list' %}">Alege următoarea lecție</a>
+    {% if user.is_authenticated %}<a class="btn btn--secondary" href="{% url 'quiz_take' quiz.pk %}">Reîncearcă acest chestionar</a>{% endif %}
 </div>
 
 <h2>Revizuire răspunsuri</h2>

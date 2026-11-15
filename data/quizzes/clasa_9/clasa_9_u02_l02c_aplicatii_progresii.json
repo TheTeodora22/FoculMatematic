@@ -1,0 +1,3847 @@
+{
+  "title": "Aplicații",
+  "description": "Clasa a 9-a · Funcții",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Pentru ce x numerele x−1, x+1, 2x+1 sunt, în această ordine, în PA?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2(x+1)=(x−1)+(2x+1) dă x=2.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 1,
+        "type_name": "Condiția de PA pentru trei expresii",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x≥1, numerele |x−1|, x+1, 2x sunt în PA. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din domeniu, |x−1|=x−1. Condiția 2(x+1)=x−1+2x dă x=3, care respectă domeniul.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 2,
+        "type_name": "Condiția de PA cu module",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x>0, numerele 1/x, 3/x, 6/(x+1) sunt în PA. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este (2·3−1)/x=6/(x+1). Înmulțim cu x(x+1)>0: 5(x+1)=6x. Rezultă x=5.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 3,
+        "type_name": "Condiția de PA pentru fracții",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA are a₁=3, a₂+a₃=9 și Sₙ=25. Aflați numărul n de termeni.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₂+a₃=2a₁+3r dă r=1. Formula Sₙ=n(2a₁+(n−1)r)/2 dă n=5. Toți termenii sunt pozitivi, deci suma este strict crescătoare.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 4,
+        "type_name": "Numărul termenilor din date mixte",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În suma 3+4+5+⋯+x=25, termenii cresc cu 1. Aflați ultimul termen x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma primilor m termeni este m(2·3+(m−1)·1)/2. Ea este strict crescătoare; m=5 este soluția, deci x=7.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 5,
+        "type_name": "Ecuații cu sumă în PA",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Numerele 3, x, y, 6 sunt termeni consecutivi ai unei PA. Aflați (x; y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele trei diferențe sunt egale: r=(6−3)/3=1. Rezultă x=4, y=5.",
+      "options": [
+        {
+          "text": "(5; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 5)",
+          "is_correct": true
+        },
+        {
+          "text": "(4; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 6)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 6,
+        "type_name": "Patru termeni succesivi în PA",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie ⌊x⌋ cel mai mare întreg ≤x. Pentru x∈[1,2), numerele ⌊x⌋, x+1/2, ⌊x⌋+2 sunt în PA. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În intervalul dat, ⌊x⌋=1. Condiția PA este 2x+1=2·1+2; x=3/2 aparține intervalului.",
+      "options": [
+        {
+          "text": "1/2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": false
+        },
+        {
+          "text": "3/2",
+          "is_correct": true
+        },
+        {
+          "text": "7/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 7,
+        "type_name": "PA cu părți întregi",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pot numerele 1, 2, 1+√2 să aparțină aceleiași PA reale cu rație nenulă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă rangurile sunt p,q,s, raportul diferențelor (aₛ−aₚ)/(a_q−aₚ)=(s−p)/(q−p) este rațional. Aici raportul este √2, irațional: contradicție.",
+      "options": [
+        {
+          "text": "Da, cu rația 1",
+          "is_correct": false
+        },
+        {
+          "text": "Da, cu rația √2",
+          "is_correct": false
+        },
+        {
+          "text": "Da, cu rația 1/2",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, raportul diferențelor ar trebui să fie rațional",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 8,
+        "type_name": "Apartenență simultană la o PA",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Cele trei unghiuri ale unui triunghi sunt în PA, cu rația 5°. Aflați unghiul cel mai mic, în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem unghiurile u−5,u,u+5. Suma este 3u=180°, deci u=60° și minimul este 55°.",
+      "options": [
+        {
+          "text": "55",
+          "is_correct": true
+        },
+        {
+          "text": "54",
+          "is_correct": false
+        },
+        {
+          "text": "56",
+          "is_correct": false
+        },
+        {
+          "text": "57",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 9,
+        "type_name": "Unghiuri sau laturi în progresie",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O sală are 5 rânduri. Primul are 13 locuri și fiecare rând următor are cu 1 locuri mai mult. Câte locuri sunt în total?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Locurile formează PA: totalul este 5(2·13+4·1)/2=75.",
+      "options": [
+        {
+          "text": "74",
+          "is_correct": false
+        },
+        {
+          "text": "75",
+          "is_correct": true
+        },
+        {
+          "text": "76",
+          "is_correct": false
+        },
+        {
+          "text": "77",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 10,
+        "type_name": "Modele practice aritmetice",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Un triunghi are pătratele laturilor a²=10, b²=14, c²=18. Calculați m_a²+m_c²−2m_b², unde m_a,m_b,m_c sunt medianele corespunzătoare.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema medianei dă m_a²=(2b²+2c²−a²)/4 și formulele ciclice. Prin combinare, m_a²+m_c²−2m_b²=3(2b²−a²−c²)/4=0, deoarece pătratele laturilor sunt în PA.",
+      "options": [
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 11,
+        "type_name": "Progresii și mediane",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA (aₙ) are rația 1. Pentru cₙ=3aₙ−1, aflați rația lui (cₙ).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "cₙ₊₁−cₙ=3(aₙ₊₁−aₙ)=3·1=3.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 12,
+        "type_name": "Transformări care păstrează PA",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a=2, b=3, c=4, d=5, patru întregi consecutivi în PA. Calculați √((a−b)⁴+abcd).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru termenii t,t+r,t+2r,t+3r avem r⁴+t(t+r)(t+2r)(t+3r)=(t²+3tr+r²)². Aici t=2, r=1; expresia din paranteză este pozitivă și rădăcina este 11.",
+      "options": [
+        {
+          "text": "11",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 13,
+        "type_name": "Pătrat perfect din patru termeni în PA",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₖ=k+1. Calculați \\(\\sum_{k=1}^{5}a_ka_{k+1}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₖaₖ₊₁=k²+3k+2. Aplicăm Σk=n(n+1)/2 și Σk²=n(n+1)(2n+1)/6 pentru n=5.",
+      "options": [
+        {
+          "text": "109",
+          "is_correct": false
+        },
+        {
+          "text": "110",
+          "is_correct": true
+        },
+        {
+          "text": "111",
+          "is_correct": false
+        },
+        {
+          "text": "112",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 14,
+        "type_name": "Sume de produse ale termenilor PA",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați \\(\\sum_{k=1}^{5}\\frac1{(k+1)(k+2)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare fracție este 1/(k+1)−1/(k+2). Suma telescopică este 1/2−1/7=5/14; toți numitorii sunt pozitivi.",
+      "options": [
+        {
+          "text": "-9/14",
+          "is_correct": false
+        },
+        {
+          "text": "19/14",
+          "is_correct": false
+        },
+        {
+          "text": "5/14",
+          "is_correct": true
+        },
+        {
+          "text": "33/14",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 15,
+        "type_name": "Sume de inverse în PA",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x>0, numerele 3, x, 12 sunt în PG. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este x²=3·12=36. Din x>0 obținem x=6. Toți termenii sunt nenuli, deci condiția este suficientă.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 16,
+        "type_name": "Condiția de PG pentru expresii",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Inserați două numere pozitive între 3 și 24 astfel încât cele patru numere să fie în PG.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rația pozitivă satisface q³=8, deci q=2. Termenii intermediari sunt 6 și 12.",
+      "options": [
+        {
+          "text": "(6; 12)",
+          "is_correct": true
+        },
+        {
+          "text": "(7; 12)",
+          "is_correct": false
+        },
+        {
+          "text": "(6; 13)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 24)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 17,
+        "type_name": "Inserarea mediilor geometrice",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pot 1, 2, 3 să aparțină aceleiași PG reale cu termeni nenuli?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă rangurile distincte sunt p,s,t, raporturile față de primul dau qˢ⁻ᵖ=2 și qᵗ⁻ᵖ=3. Eliminând q rezultă 2ᵗ⁻ᵖ=3ˢ⁻ᵖ, imposibil pentru exponenți întregi nenuli prin unicitatea descompunerii în factori primi.",
+      "options": [
+        {
+          "text": "Da, cu rația 2",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, ar rezulta o egalitate imposibilă între puteri ale lui 2 și 3",
+          "is_correct": true
+        },
+        {
+          "text": "Da, cu rația 3",
+          "is_correct": false
+        },
+        {
+          "text": "Da, cu rația 3/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 18,
+        "type_name": "Excluderea apartenenței la PG",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Patru numere pozitive consecutive în PG au suma termenilor de rang impar 15 și suma termenilor de rang par 30. Aflați rația.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sumele sunt b₁(1+q²) și b₁q(1+q²). Raportul lor este q=2.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 19,
+        "type_name": "PG finite din sume de grupe",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Trei numere în PA sunt 3, x, 2x−3. Dacă mărim ultimul cu 3, obținem o PG pozitivă cu x>3. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția PG este x²=3(2x−3+3), deci (x−3)²=9. Din x>3, rezultă x=6.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 20,
+        "type_name": "PA și PG simultane sau după translații",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie R numărul cu exact 3 cifre, toate egale cu 9. Calculați √(R²+2R+1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "R=10^3−1. Avem R²+2R+1=(R+1)²; R+1>0, deci rădăcina este R+1=10^3=1000.",
+      "options": [
+        {
+          "text": "1000",
+          "is_correct": true
+        },
+        {
+          "text": "999",
+          "is_correct": false
+        },
+        {
+          "text": "1001",
+          "is_correct": false
+        },
+        {
+          "text": "1002",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 21,
+        "type_name": "Numere cu cifre repetate și pătrate perfecte",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați n≥1 dacă 1+2+2²+⋯+2ⁿ⁻¹=31.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este 2ⁿ−1. Rezultă 2ⁿ=32, deci n=5.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 22,
+        "type_name": "Ecuații în numărul de termeni ai PG",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a,b,c>0 cu a+c=5, care egalitate este echivalentă cu faptul că a,b,c sunt în PG?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru termeni pozitivi, rapoartele b/a și c/b sunt definite și egale exact când b²=ac. Celelalte relații nu caracterizează PG în această ordine.",
+      "options": [
+        {
+          "text": "2b=a+c",
+          "is_correct": false
+        },
+        {
+          "text": "a²=bc",
+          "is_correct": false
+        },
+        {
+          "text": "b²=ac",
+          "is_correct": true
+        },
+        {
+          "text": "c²=ab",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 23,
+        "type_name": "Caracterizări algebrice ale PG",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA infinită cu rația 1 are aₚ=9 pentru un rang p. Care este cel mai mic întreg pozitiv h pentru care aₚ₊ₕ=(3+1)²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₚ₊ₕ=9+h·1. Egalăm cu (3+1)²: h=2·3+1=7. Mai general, h=2·3t+1t² produce pătratul (3+1t)² pentru orice t≥1, deci infinit de mulți pătrați.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 24,
+        "type_name": "Infinit de mulți pătrați într-o PA",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce x numerele x−2, x+2, 2x+2 sunt, în această ordine, în PA?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2(x+2)=(x−2)+(2x+2) dă x=4.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 1,
+        "type_name": "Condiția de PA pentru trei expresii",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x≥2, numerele |x−2|, x+2, 2x sunt în PA. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din domeniu, |x−2|=x−2. Condiția 2(x+2)=x−2+2x dă x=6, care respectă domeniul.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 2,
+        "type_name": "Condiția de PA cu module",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x>0, numerele 1/x, 4/x, 8/(x+1) sunt în PA. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este (2·4−1)/x=8/(x+1). Înmulțim cu x(x+1)>0: 7(x+1)=8x. Rezultă x=7.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 3,
+        "type_name": "Condiția de PA pentru fracții",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA are a₁=4, a₂+a₃=14 și Sₙ=54. Aflați numărul n de termeni.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₂+a₃=2a₁+3r dă r=2. Formula Sₙ=n(2a₁+(n−1)r)/2 dă n=6. Toți termenii sunt pozitivi, deci suma este strict crescătoare.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 4,
+        "type_name": "Numărul termenilor din date mixte",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În suma 4+6+8+⋯+x=54, termenii cresc cu 2. Aflați ultimul termen x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma primilor m termeni este m(2·4+(m−1)·2)/2. Ea este strict crescătoare; m=6 este soluția, deci x=14.",
+      "options": [
+        {
+          "text": "14",
+          "is_correct": true
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 5,
+        "type_name": "Ecuații cu sumă în PA",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Numerele 4, x, y, 10 sunt termeni consecutivi ai unei PA. Aflați (x; y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele trei diferențe sunt egale: r=(10−4)/3=2. Rezultă x=6, y=8.",
+      "options": [
+        {
+          "text": "(7; 8)",
+          "is_correct": false
+        },
+        {
+          "text": "(6; 8)",
+          "is_correct": true
+        },
+        {
+          "text": "(6; 9)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 10)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 6,
+        "type_name": "Patru termeni succesivi în PA",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie ⌊x⌋ cel mai mare întreg ≤x. Pentru x∈[2,3), numerele ⌊x⌋, x+1/2, ⌊x⌋+2 sunt în PA. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În intervalul dat, ⌊x⌋=2. Condiția PA este 2x+1=2·2+2; x=5/2 aparține intervalului.",
+      "options": [
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "7/2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": true
+        },
+        {
+          "text": "9/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 7,
+        "type_name": "PA cu părți întregi",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pot numerele 2, 3, 2+√2 să aparțină aceleiași PA reale cu rație nenulă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă rangurile sunt p,q,s, raportul diferențelor (aₛ−aₚ)/(a_q−aₚ)=(s−p)/(q−p) este rațional. Aici raportul este √2, irațional: contradicție.",
+      "options": [
+        {
+          "text": "Da, cu rația 1",
+          "is_correct": false
+        },
+        {
+          "text": "Da, cu rația √2",
+          "is_correct": false
+        },
+        {
+          "text": "Da, cu rația 1/2",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, raportul diferențelor ar trebui să fie rațional",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 8,
+        "type_name": "Apartenență simultană la o PA",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Cele trei unghiuri ale unui triunghi sunt în PA, cu rația 10°. Aflați unghiul cel mai mic, în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem unghiurile u−10,u,u+10. Suma este 3u=180°, deci u=60° și minimul este 50°.",
+      "options": [
+        {
+          "text": "50",
+          "is_correct": true
+        },
+        {
+          "text": "49",
+          "is_correct": false
+        },
+        {
+          "text": "51",
+          "is_correct": false
+        },
+        {
+          "text": "52",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 9,
+        "type_name": "Unghiuri sau laturi în progresie",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O sală are 6 rânduri. Primul are 14 locuri și fiecare rând următor are cu 2 locuri mai mult. Câte locuri sunt în total?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Locurile formează PA: totalul este 6(2·14+5·2)/2=114.",
+      "options": [
+        {
+          "text": "113",
+          "is_correct": false
+        },
+        {
+          "text": "114",
+          "is_correct": true
+        },
+        {
+          "text": "115",
+          "is_correct": false
+        },
+        {
+          "text": "116",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 10,
+        "type_name": "Modele practice aritmetice",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Un triunghi are pătratele laturilor a²=11, b²=15, c²=19. Calculați m_a²+m_c²−2m_b², unde m_a,m_b,m_c sunt medianele corespunzătoare.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema medianei dă m_a²=(2b²+2c²−a²)/4 și formulele ciclice. Prin combinare, m_a²+m_c²−2m_b²=3(2b²−a²−c²)/4=0, deoarece pătratele laturilor sunt în PA.",
+      "options": [
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 11,
+        "type_name": "Progresii și mediane",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA (aₙ) are rația 2. Pentru cₙ=4aₙ−2, aflați rația lui (cₙ).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "cₙ₊₁−cₙ=4(aₙ₊₁−aₙ)=4·2=8.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 12,
+        "type_name": "Transformări care păstrează PA",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a=3, b=5, c=7, d=9, patru întregi consecutivi în PA. Calculați √((a−b)⁴+abcd).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru termenii t,t+r,t+2r,t+3r avem r⁴+t(t+r)(t+2r)(t+3r)=(t²+3tr+r²)². Aici t=3, r=2; expresia din paranteză este pozitivă și rădăcina este 31.",
+      "options": [
+        {
+          "text": "31",
+          "is_correct": true
+        },
+        {
+          "text": "30",
+          "is_correct": false
+        },
+        {
+          "text": "32",
+          "is_correct": false
+        },
+        {
+          "text": "33",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 13,
+        "type_name": "Pătrat perfect din patru termeni în PA",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₖ=k+2. Calculați \\(\\sum_{k=1}^{6}a_ka_{k+1}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₖaₖ₊₁=k²+5k+6. Aplicăm Σk=n(n+1)/2 și Σk²=n(n+1)(2n+1)/6 pentru n=6.",
+      "options": [
+        {
+          "text": "231",
+          "is_correct": false
+        },
+        {
+          "text": "232",
+          "is_correct": true
+        },
+        {
+          "text": "233",
+          "is_correct": false
+        },
+        {
+          "text": "234",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 14,
+        "type_name": "Sume de produse ale termenilor PA",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați \\(\\sum_{k=1}^{6}\\frac1{(k+2)(k+3)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare fracție este 1/(k+2)−1/(k+3). Suma telescopică este 1/3−1/9=2/9; toți numitorii sunt pozitivi.",
+      "options": [
+        {
+          "text": "-7/9",
+          "is_correct": false
+        },
+        {
+          "text": "11/9",
+          "is_correct": false
+        },
+        {
+          "text": "2/9",
+          "is_correct": true
+        },
+        {
+          "text": "20/9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 15,
+        "type_name": "Sume de inverse în PA",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x>0, numerele 4, x, 36 sunt în PG. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este x²=4·36=144. Din x>0 obținem x=12. Toți termenii sunt nenuli, deci condiția este suficientă.",
+      "options": [
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 16,
+        "type_name": "Condiția de PG pentru expresii",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Inserați două numere pozitive între 4 și 108 astfel încât cele patru numere să fie în PG.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rația pozitivă satisface q³=27, deci q=3. Termenii intermediari sunt 12 și 36.",
+      "options": [
+        {
+          "text": "(12; 36)",
+          "is_correct": true
+        },
+        {
+          "text": "(13; 36)",
+          "is_correct": false
+        },
+        {
+          "text": "(12; 37)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 108)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 17,
+        "type_name": "Inserarea mediilor geometrice",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pot 2, 4, 6 să aparțină aceleiași PG reale cu termeni nenuli?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă rangurile distincte sunt p,s,t, raporturile față de primul dau qˢ⁻ᵖ=2 și qᵗ⁻ᵖ=3. Eliminând q rezultă 2ᵗ⁻ᵖ=3ˢ⁻ᵖ, imposibil pentru exponenți întregi nenuli prin unicitatea descompunerii în factori primi.",
+      "options": [
+        {
+          "text": "Da, cu rația 2",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, ar rezulta o egalitate imposibilă între puteri ale lui 2 și 3",
+          "is_correct": true
+        },
+        {
+          "text": "Da, cu rația 3",
+          "is_correct": false
+        },
+        {
+          "text": "Da, cu rația 3/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 18,
+        "type_name": "Excluderea apartenenței la PG",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Patru numere pozitive consecutive în PG au suma termenilor de rang impar 40 și suma termenilor de rang par 120. Aflați rația.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sumele sunt b₁(1+q²) și b₁q(1+q²). Raportul lor este q=3.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 19,
+        "type_name": "PG finite din sume de grupe",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Trei numere în PA sunt 4, x, 2x−4. Dacă mărim ultimul cu 16, obținem o PG pozitivă cu x>4. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția PG este x²=4(2x−4+16), deci (x−4)²=64. Din x>4, rezultă x=12.",
+      "options": [
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 20,
+        "type_name": "PA și PG simultane sau după translații",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie R numărul cu exact 4 cifre, toate egale cu 9. Calculați √(R²+2R+1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "R=10^4−1. Avem R²+2R+1=(R+1)²; R+1>0, deci rădăcina este R+1=10^4=10000.",
+      "options": [
+        {
+          "text": "10000",
+          "is_correct": true
+        },
+        {
+          "text": "9999",
+          "is_correct": false
+        },
+        {
+          "text": "10001",
+          "is_correct": false
+        },
+        {
+          "text": "10002",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 21,
+        "type_name": "Numere cu cifre repetate și pătrate perfecte",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați n≥1 dacă 1+2+2²+⋯+2ⁿ⁻¹=63.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este 2ⁿ−1. Rezultă 2ⁿ=64, deci n=6.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 22,
+        "type_name": "Ecuații în numărul de termeni ai PG",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a,b,c>0 cu a+c=6, care egalitate este echivalentă cu faptul că a,b,c sunt în PG?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru termeni pozitivi, rapoartele b/a și c/b sunt definite și egale exact când b²=ac. Celelalte relații nu caracterizează PG în această ordine.",
+      "options": [
+        {
+          "text": "2b=a+c",
+          "is_correct": false
+        },
+        {
+          "text": "a²=bc",
+          "is_correct": false
+        },
+        {
+          "text": "b²=ac",
+          "is_correct": true
+        },
+        {
+          "text": "c²=ab",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 23,
+        "type_name": "Caracterizări algebrice ale PG",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA infinită cu rația 2 are aₚ=16 pentru un rang p. Care este cel mai mic întreg pozitiv h pentru care aₚ₊ₕ=(4+2)²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₚ₊ₕ=16+h·2. Egalăm cu (4+2)²: h=2·4+2=10. Mai general, h=2·4t+2t² produce pătratul (4+2t)² pentru orice t≥1, deci infinit de mulți pătrați.",
+      "options": [
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 24,
+        "type_name": "Infinit de mulți pătrați într-o PA",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce x numerele x−3, x+3, 2x+3 sunt, în această ordine, în PA?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2(x+3)=(x−3)+(2x+3) dă x=6.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 1,
+        "type_name": "Condiția de PA pentru trei expresii",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x≥3, numerele |x−3|, x+3, 2x sunt în PA. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din domeniu, |x−3|=x−3. Condiția 2(x+3)=x−3+2x dă x=9, care respectă domeniul.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 2,
+        "type_name": "Condiția de PA cu module",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x>0, numerele 1/x, 5/x, 10/(x+1) sunt în PA. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este (2·5−1)/x=10/(x+1). Înmulțim cu x(x+1)>0: 9(x+1)=10x. Rezultă x=9.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 3,
+        "type_name": "Condiția de PA pentru fracții",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA are a₁=5, a₂+a₃=19 și Sₙ=98. Aflați numărul n de termeni.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₂+a₃=2a₁+3r dă r=3. Formula Sₙ=n(2a₁+(n−1)r)/2 dă n=7. Toți termenii sunt pozitivi, deci suma este strict crescătoare.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 4,
+        "type_name": "Numărul termenilor din date mixte",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În suma 5+8+11+⋯+x=98, termenii cresc cu 3. Aflați ultimul termen x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma primilor m termeni este m(2·5+(m−1)·3)/2. Ea este strict crescătoare; m=7 este soluția, deci x=23.",
+      "options": [
+        {
+          "text": "23",
+          "is_correct": true
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 5,
+        "type_name": "Ecuații cu sumă în PA",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Numerele 5, x, y, 14 sunt termeni consecutivi ai unei PA. Aflați (x; y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele trei diferențe sunt egale: r=(14−5)/3=3. Rezultă x=8, y=11.",
+      "options": [
+        {
+          "text": "(9; 11)",
+          "is_correct": false
+        },
+        {
+          "text": "(8; 11)",
+          "is_correct": true
+        },
+        {
+          "text": "(8; 12)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 14)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 6,
+        "type_name": "Patru termeni succesivi în PA",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie ⌊x⌋ cel mai mare întreg ≤x. Pentru x∈[3,4), numerele ⌊x⌋, x+1/2, ⌊x⌋+2 sunt în PA. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În intervalul dat, ⌊x⌋=3. Condiția PA este 2x+1=2·3+2; x=7/2 aparține intervalului.",
+      "options": [
+        {
+          "text": "5/2",
+          "is_correct": false
+        },
+        {
+          "text": "9/2",
+          "is_correct": false
+        },
+        {
+          "text": "7/2",
+          "is_correct": true
+        },
+        {
+          "text": "11/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 7,
+        "type_name": "PA cu părți întregi",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pot numerele 3, 4, 3+√2 să aparțină aceleiași PA reale cu rație nenulă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă rangurile sunt p,q,s, raportul diferențelor (aₛ−aₚ)/(a_q−aₚ)=(s−p)/(q−p) este rațional. Aici raportul este √2, irațional: contradicție.",
+      "options": [
+        {
+          "text": "Da, cu rația 1",
+          "is_correct": false
+        },
+        {
+          "text": "Da, cu rația √2",
+          "is_correct": false
+        },
+        {
+          "text": "Da, cu rația 1/2",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, raportul diferențelor ar trebui să fie rațional",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 8,
+        "type_name": "Apartenență simultană la o PA",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Cele trei unghiuri ale unui triunghi sunt în PA, cu rația 15°. Aflați unghiul cel mai mic, în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem unghiurile u−15,u,u+15. Suma este 3u=180°, deci u=60° și minimul este 45°.",
+      "options": [
+        {
+          "text": "45",
+          "is_correct": true
+        },
+        {
+          "text": "44",
+          "is_correct": false
+        },
+        {
+          "text": "46",
+          "is_correct": false
+        },
+        {
+          "text": "47",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 9,
+        "type_name": "Unghiuri sau laturi în progresie",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O sală are 7 rânduri. Primul are 15 locuri și fiecare rând următor are cu 3 locuri mai mult. Câte locuri sunt în total?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Locurile formează PA: totalul este 7(2·15+6·3)/2=168.",
+      "options": [
+        {
+          "text": "167",
+          "is_correct": false
+        },
+        {
+          "text": "168",
+          "is_correct": true
+        },
+        {
+          "text": "169",
+          "is_correct": false
+        },
+        {
+          "text": "170",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 10,
+        "type_name": "Modele practice aritmetice",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Un triunghi are pătratele laturilor a²=12, b²=16, c²=20. Calculați m_a²+m_c²−2m_b², unde m_a,m_b,m_c sunt medianele corespunzătoare.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema medianei dă m_a²=(2b²+2c²−a²)/4 și formulele ciclice. Prin combinare, m_a²+m_c²−2m_b²=3(2b²−a²−c²)/4=0, deoarece pătratele laturilor sunt în PA.",
+      "options": [
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 11,
+        "type_name": "Progresii și mediane",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA (aₙ) are rația 3. Pentru cₙ=5aₙ−3, aflați rația lui (cₙ).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "cₙ₊₁−cₙ=5(aₙ₊₁−aₙ)=5·3=15.",
+      "options": [
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 12,
+        "type_name": "Transformări care păstrează PA",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a=4, b=7, c=10, d=13, patru întregi consecutivi în PA. Calculați √((a−b)⁴+abcd).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru termenii t,t+r,t+2r,t+3r avem r⁴+t(t+r)(t+2r)(t+3r)=(t²+3tr+r²)². Aici t=4, r=3; expresia din paranteză este pozitivă și rădăcina este 61.",
+      "options": [
+        {
+          "text": "61",
+          "is_correct": true
+        },
+        {
+          "text": "60",
+          "is_correct": false
+        },
+        {
+          "text": "62",
+          "is_correct": false
+        },
+        {
+          "text": "63",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 13,
+        "type_name": "Pătrat perfect din patru termeni în PA",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₖ=k+3. Calculați \\(\\sum_{k=1}^{7}a_ka_{k+1}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₖaₖ₊₁=k²+7k+12. Aplicăm Σk=n(n+1)/2 și Σk²=n(n+1)(2n+1)/6 pentru n=7.",
+      "options": [
+        {
+          "text": "419",
+          "is_correct": false
+        },
+        {
+          "text": "420",
+          "is_correct": true
+        },
+        {
+          "text": "421",
+          "is_correct": false
+        },
+        {
+          "text": "422",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 14,
+        "type_name": "Sume de produse ale termenilor PA",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați \\(\\sum_{k=1}^{7}\\frac1{(k+3)(k+4)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare fracție este 1/(k+3)−1/(k+4). Suma telescopică este 1/4−1/11=7/44; toți numitorii sunt pozitivi.",
+      "options": [
+        {
+          "text": "-37/44",
+          "is_correct": false
+        },
+        {
+          "text": "51/44",
+          "is_correct": false
+        },
+        {
+          "text": "7/44",
+          "is_correct": true
+        },
+        {
+          "text": "95/44",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 15,
+        "type_name": "Sume de inverse în PA",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x>0, numerele 5, x, 80 sunt în PG. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este x²=5·80=400. Din x>0 obținem x=20. Toți termenii sunt nenuli, deci condiția este suficientă.",
+      "options": [
+        {
+          "text": "19",
+          "is_correct": false
+        },
+        {
+          "text": "21",
+          "is_correct": false
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        },
+        {
+          "text": "20",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 16,
+        "type_name": "Condiția de PG pentru expresii",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Inserați două numere pozitive între 5 și 320 astfel încât cele patru numere să fie în PG.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rația pozitivă satisface q³=64, deci q=4. Termenii intermediari sunt 20 și 80.",
+      "options": [
+        {
+          "text": "(20; 80)",
+          "is_correct": true
+        },
+        {
+          "text": "(21; 80)",
+          "is_correct": false
+        },
+        {
+          "text": "(20; 81)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 320)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 17,
+        "type_name": "Inserarea mediilor geometrice",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pot 3, 6, 9 să aparțină aceleiași PG reale cu termeni nenuli?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă rangurile distincte sunt p,s,t, raporturile față de primul dau qˢ⁻ᵖ=2 și qᵗ⁻ᵖ=3. Eliminând q rezultă 2ᵗ⁻ᵖ=3ˢ⁻ᵖ, imposibil pentru exponenți întregi nenuli prin unicitatea descompunerii în factori primi.",
+      "options": [
+        {
+          "text": "Da, cu rația 2",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, ar rezulta o egalitate imposibilă între puteri ale lui 2 și 3",
+          "is_correct": true
+        },
+        {
+          "text": "Da, cu rația 3",
+          "is_correct": false
+        },
+        {
+          "text": "Da, cu rația 3/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 18,
+        "type_name": "Excluderea apartenenței la PG",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Patru numere pozitive consecutive în PG au suma termenilor de rang impar 85 și suma termenilor de rang par 340. Aflați rația.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sumele sunt b₁(1+q²) și b₁q(1+q²). Raportul lor este q=4.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 19,
+        "type_name": "PG finite din sume de grupe",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Trei numere în PA sunt 5, x, 2x−5. Dacă mărim ultimul cu 45, obținem o PG pozitivă cu x>5. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția PG este x²=5(2x−5+45), deci (x−5)²=225. Din x>5, rezultă x=20.",
+      "options": [
+        {
+          "text": "19",
+          "is_correct": false
+        },
+        {
+          "text": "21",
+          "is_correct": false
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        },
+        {
+          "text": "20",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 20,
+        "type_name": "PA și PG simultane sau după translații",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie R numărul cu exact 5 cifre, toate egale cu 9. Calculați √(R²+2R+1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "R=10^5−1. Avem R²+2R+1=(R+1)²; R+1>0, deci rădăcina este R+1=10^5=100000.",
+      "options": [
+        {
+          "text": "100000",
+          "is_correct": true
+        },
+        {
+          "text": "99999",
+          "is_correct": false
+        },
+        {
+          "text": "100001",
+          "is_correct": false
+        },
+        {
+          "text": "100002",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 21,
+        "type_name": "Numere cu cifre repetate și pătrate perfecte",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați n≥1 dacă 1+2+2²+⋯+2ⁿ⁻¹=127.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este 2ⁿ−1. Rezultă 2ⁿ=128, deci n=7.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 22,
+        "type_name": "Ecuații în numărul de termeni ai PG",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a,b,c>0 cu a+c=7, care egalitate este echivalentă cu faptul că a,b,c sunt în PG?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru termeni pozitivi, rapoartele b/a și c/b sunt definite și egale exact când b²=ac. Celelalte relații nu caracterizează PG în această ordine.",
+      "options": [
+        {
+          "text": "2b=a+c",
+          "is_correct": false
+        },
+        {
+          "text": "a²=bc",
+          "is_correct": false
+        },
+        {
+          "text": "b²=ac",
+          "is_correct": true
+        },
+        {
+          "text": "c²=ab",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 23,
+        "type_name": "Caracterizări algebrice ale PG",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA infinită cu rația 3 are aₚ=25 pentru un rang p. Care este cel mai mic întreg pozitiv h pentru care aₚ₊ₕ=(5+3)²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₚ₊ₕ=25+h·3. Egalăm cu (5+3)²: h=2·5+3=13. Mai general, h=2·5t+3t² produce pătratul (5+3t)² pentru orice t≥1, deci infinit de mulți pătrați.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 24,
+        "type_name": "Infinit de mulți pătrați într-o PA",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce x numerele x−4, x+4, 2x+4 sunt, în această ordine, în PA?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2(x+4)=(x−4)+(2x+4) dă x=8.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 1,
+        "type_name": "Condiția de PA pentru trei expresii",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x≥4, numerele |x−4|, x+4, 2x sunt în PA. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din domeniu, |x−4|=x−4. Condiția 2(x+4)=x−4+2x dă x=12, care respectă domeniul.",
+      "options": [
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 2,
+        "type_name": "Condiția de PA cu module",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x>0, numerele 1/x, 6/x, 12/(x+1) sunt în PA. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este (2·6−1)/x=12/(x+1). Înmulțim cu x(x+1)>0: 11(x+1)=12x. Rezultă x=11.",
+      "options": [
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": true
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 3,
+        "type_name": "Condiția de PA pentru fracții",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA are a₁=6, a₂+a₃=24 și Sₙ=160. Aflați numărul n de termeni.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₂+a₃=2a₁+3r dă r=4. Formula Sₙ=n(2a₁+(n−1)r)/2 dă n=8. Toți termenii sunt pozitivi, deci suma este strict crescătoare.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 4,
+        "type_name": "Numărul termenilor din date mixte",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În suma 6+10+14+⋯+x=160, termenii cresc cu 4. Aflați ultimul termen x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma primilor m termeni este m(2·6+(m−1)·4)/2. Ea este strict crescătoare; m=8 este soluția, deci x=34.",
+      "options": [
+        {
+          "text": "34",
+          "is_correct": true
+        },
+        {
+          "text": "33",
+          "is_correct": false
+        },
+        {
+          "text": "35",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 5,
+        "type_name": "Ecuații cu sumă în PA",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Numerele 6, x, y, 18 sunt termeni consecutivi ai unei PA. Aflați (x; y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele trei diferențe sunt egale: r=(18−6)/3=4. Rezultă x=10, y=14.",
+      "options": [
+        {
+          "text": "(11; 14)",
+          "is_correct": false
+        },
+        {
+          "text": "(10; 14)",
+          "is_correct": true
+        },
+        {
+          "text": "(10; 15)",
+          "is_correct": false
+        },
+        {
+          "text": "(6; 18)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 6,
+        "type_name": "Patru termeni succesivi în PA",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie ⌊x⌋ cel mai mare întreg ≤x. Pentru x∈[4,5), numerele ⌊x⌋, x+1/2, ⌊x⌋+2 sunt în PA. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În intervalul dat, ⌊x⌋=4. Condiția PA este 2x+1=2·4+2; x=9/2 aparține intervalului.",
+      "options": [
+        {
+          "text": "7/2",
+          "is_correct": false
+        },
+        {
+          "text": "11/2",
+          "is_correct": false
+        },
+        {
+          "text": "9/2",
+          "is_correct": true
+        },
+        {
+          "text": "13/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 7,
+        "type_name": "PA cu părți întregi",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pot numerele 4, 5, 4+√2 să aparțină aceleiași PA reale cu rație nenulă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă rangurile sunt p,q,s, raportul diferențelor (aₛ−aₚ)/(a_q−aₚ)=(s−p)/(q−p) este rațional. Aici raportul este √2, irațional: contradicție.",
+      "options": [
+        {
+          "text": "Da, cu rația 1",
+          "is_correct": false
+        },
+        {
+          "text": "Da, cu rația √2",
+          "is_correct": false
+        },
+        {
+          "text": "Da, cu rația 1/2",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, raportul diferențelor ar trebui să fie rațional",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 8,
+        "type_name": "Apartenență simultană la o PA",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Cele trei unghiuri ale unui triunghi sunt în PA, cu rația 20°. Aflați unghiul cel mai mic, în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem unghiurile u−20,u,u+20. Suma este 3u=180°, deci u=60° și minimul este 40°.",
+      "options": [
+        {
+          "text": "40",
+          "is_correct": true
+        },
+        {
+          "text": "39",
+          "is_correct": false
+        },
+        {
+          "text": "41",
+          "is_correct": false
+        },
+        {
+          "text": "42",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 9,
+        "type_name": "Unghiuri sau laturi în progresie",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O sală are 8 rânduri. Primul are 16 locuri și fiecare rând următor are cu 4 locuri mai mult. Câte locuri sunt în total?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Locurile formează PA: totalul este 8(2·16+7·4)/2=240.",
+      "options": [
+        {
+          "text": "239",
+          "is_correct": false
+        },
+        {
+          "text": "240",
+          "is_correct": true
+        },
+        {
+          "text": "241",
+          "is_correct": false
+        },
+        {
+          "text": "242",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 10,
+        "type_name": "Modele practice aritmetice",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Un triunghi are pătratele laturilor a²=13, b²=17, c²=21. Calculați m_a²+m_c²−2m_b², unde m_a,m_b,m_c sunt medianele corespunzătoare.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema medianei dă m_a²=(2b²+2c²−a²)/4 și formulele ciclice. Prin combinare, m_a²+m_c²−2m_b²=3(2b²−a²−c²)/4=0, deoarece pătratele laturilor sunt în PA.",
+      "options": [
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 11,
+        "type_name": "Progresii și mediane",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA (aₙ) are rația 4. Pentru cₙ=6aₙ−4, aflați rația lui (cₙ).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "cₙ₊₁−cₙ=6(aₙ₊₁−aₙ)=6·4=24.",
+      "options": [
+        {
+          "text": "23",
+          "is_correct": false
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        },
+        {
+          "text": "26",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 12,
+        "type_name": "Transformări care păstrează PA",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a=5, b=9, c=13, d=17, patru întregi consecutivi în PA. Calculați √((a−b)⁴+abcd).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru termenii t,t+r,t+2r,t+3r avem r⁴+t(t+r)(t+2r)(t+3r)=(t²+3tr+r²)². Aici t=5, r=4; expresia din paranteză este pozitivă și rădăcina este 101.",
+      "options": [
+        {
+          "text": "101",
+          "is_correct": true
+        },
+        {
+          "text": "100",
+          "is_correct": false
+        },
+        {
+          "text": "102",
+          "is_correct": false
+        },
+        {
+          "text": "103",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 13,
+        "type_name": "Pătrat perfect din patru termeni în PA",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₖ=k+4. Calculați \\(\\sum_{k=1}^{8}a_ka_{k+1}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₖaₖ₊₁=k²+9k+20. Aplicăm Σk=n(n+1)/2 și Σk²=n(n+1)(2n+1)/6 pentru n=8.",
+      "options": [
+        {
+          "text": "687",
+          "is_correct": false
+        },
+        {
+          "text": "688",
+          "is_correct": true
+        },
+        {
+          "text": "689",
+          "is_correct": false
+        },
+        {
+          "text": "690",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 14,
+        "type_name": "Sume de produse ale termenilor PA",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați \\(\\sum_{k=1}^{8}\\frac1{(k+4)(k+5)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare fracție este 1/(k+4)−1/(k+5). Suma telescopică este 1/5−1/13=8/65; toți numitorii sunt pozitivi.",
+      "options": [
+        {
+          "text": "-57/65",
+          "is_correct": false
+        },
+        {
+          "text": "73/65",
+          "is_correct": false
+        },
+        {
+          "text": "8/65",
+          "is_correct": true
+        },
+        {
+          "text": "138/65",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 15,
+        "type_name": "Sume de inverse în PA",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x>0, numerele 6, x, 150 sunt în PG. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este x²=6·150=900. Din x>0 obținem x=30. Toți termenii sunt nenuli, deci condiția este suficientă.",
+      "options": [
+        {
+          "text": "29",
+          "is_correct": false
+        },
+        {
+          "text": "31",
+          "is_correct": false
+        },
+        {
+          "text": "32",
+          "is_correct": false
+        },
+        {
+          "text": "30",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 16,
+        "type_name": "Condiția de PG pentru expresii",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Inserați două numere pozitive între 6 și 750 astfel încât cele patru numere să fie în PG.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rația pozitivă satisface q³=125, deci q=5. Termenii intermediari sunt 30 și 150.",
+      "options": [
+        {
+          "text": "(30; 150)",
+          "is_correct": true
+        },
+        {
+          "text": "(31; 150)",
+          "is_correct": false
+        },
+        {
+          "text": "(30; 151)",
+          "is_correct": false
+        },
+        {
+          "text": "(6; 750)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 17,
+        "type_name": "Inserarea mediilor geometrice",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pot 4, 8, 12 să aparțină aceleiași PG reale cu termeni nenuli?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă rangurile distincte sunt p,s,t, raporturile față de primul dau qˢ⁻ᵖ=2 și qᵗ⁻ᵖ=3. Eliminând q rezultă 2ᵗ⁻ᵖ=3ˢ⁻ᵖ, imposibil pentru exponenți întregi nenuli prin unicitatea descompunerii în factori primi.",
+      "options": [
+        {
+          "text": "Da, cu rația 2",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, ar rezulta o egalitate imposibilă între puteri ale lui 2 și 3",
+          "is_correct": true
+        },
+        {
+          "text": "Da, cu rația 3",
+          "is_correct": false
+        },
+        {
+          "text": "Da, cu rația 3/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 18,
+        "type_name": "Excluderea apartenenței la PG",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Patru numere pozitive consecutive în PG au suma termenilor de rang impar 156 și suma termenilor de rang par 780. Aflați rația.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sumele sunt b₁(1+q²) și b₁q(1+q²). Raportul lor este q=5.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 19,
+        "type_name": "PG finite din sume de grupe",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Trei numere în PA sunt 6, x, 2x−6. Dacă mărim ultimul cu 96, obținem o PG pozitivă cu x>6. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția PG este x²=6(2x−6+96), deci (x−6)²=576. Din x>6, rezultă x=30.",
+      "options": [
+        {
+          "text": "29",
+          "is_correct": false
+        },
+        {
+          "text": "31",
+          "is_correct": false
+        },
+        {
+          "text": "32",
+          "is_correct": false
+        },
+        {
+          "text": "30",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 20,
+        "type_name": "PA și PG simultane sau după translații",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie R numărul cu exact 6 cifre, toate egale cu 9. Calculați √(R²+2R+1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "R=10^6−1. Avem R²+2R+1=(R+1)²; R+1>0, deci rădăcina este R+1=10^6=1000000.",
+      "options": [
+        {
+          "text": "1000000",
+          "is_correct": true
+        },
+        {
+          "text": "999999",
+          "is_correct": false
+        },
+        {
+          "text": "1000001",
+          "is_correct": false
+        },
+        {
+          "text": "1000002",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 21,
+        "type_name": "Numere cu cifre repetate și pătrate perfecte",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați n≥1 dacă 1+2+2²+⋯+2ⁿ⁻¹=255.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este 2ⁿ−1. Rezultă 2ⁿ=256, deci n=8.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 22,
+        "type_name": "Ecuații în numărul de termeni ai PG",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a,b,c>0 cu a+c=8, care egalitate este echivalentă cu faptul că a,b,c sunt în PG?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru termeni pozitivi, rapoartele b/a și c/b sunt definite și egale exact când b²=ac. Celelalte relații nu caracterizează PG în această ordine.",
+      "options": [
+        {
+          "text": "2b=a+c",
+          "is_correct": false
+        },
+        {
+          "text": "a²=bc",
+          "is_correct": false
+        },
+        {
+          "text": "b²=ac",
+          "is_correct": true
+        },
+        {
+          "text": "c²=ab",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 23,
+        "type_name": "Caracterizări algebrice ale PG",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA infinită cu rația 4 are aₚ=36 pentru un rang p. Care este cel mai mic întreg pozitiv h pentru care aₚ₊ₕ=(6+4)²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₚ₊ₕ=36+h·4. Egalăm cu (6+4)²: h=2·6+4=16. Mai general, h=2·6t+4t² produce pătratul (6+4t)² pentru orice t≥1, deci infinit de mulți pătrați.",
+      "options": [
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 24,
+        "type_name": "Infinit de mulți pătrați într-o PA",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce x numerele x−5, x+5, 2x+5 sunt, în această ordine, în PA?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "2(x+5)=(x−5)+(2x+5) dă x=10.",
+      "options": [
+        {
+          "text": "10",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 1,
+        "type_name": "Condiția de PA pentru trei expresii",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x≥5, numerele |x−5|, x+5, 2x sunt în PA. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din domeniu, |x−5|=x−5. Condiția 2(x+5)=x−5+2x dă x=15, care respectă domeniul.",
+      "options": [
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": true
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 2,
+        "type_name": "Condiția de PA cu module",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x>0, numerele 1/x, 7/x, 14/(x+1) sunt în PA. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este (2·7−1)/x=14/(x+1). Înmulțim cu x(x+1)>0: 13(x+1)=14x. Rezultă x=13.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": true
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 3,
+        "type_name": "Condiția de PA pentru fracții",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA are a₁=7, a₂+a₃=29 și Sₙ=243. Aflați numărul n de termeni.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₂+a₃=2a₁+3r dă r=5. Formula Sₙ=n(2a₁+(n−1)r)/2 dă n=9. Toți termenii sunt pozitivi, deci suma este strict crescătoare.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 4,
+        "type_name": "Numărul termenilor din date mixte",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În suma 7+12+17+⋯+x=243, termenii cresc cu 5. Aflați ultimul termen x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma primilor m termeni este m(2·7+(m−1)·5)/2. Ea este strict crescătoare; m=9 este soluția, deci x=47.",
+      "options": [
+        {
+          "text": "47",
+          "is_correct": true
+        },
+        {
+          "text": "46",
+          "is_correct": false
+        },
+        {
+          "text": "48",
+          "is_correct": false
+        },
+        {
+          "text": "49",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 5,
+        "type_name": "Ecuații cu sumă în PA",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Numerele 7, x, y, 22 sunt termeni consecutivi ai unei PA. Aflați (x; y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele trei diferențe sunt egale: r=(22−7)/3=5. Rezultă x=12, y=17.",
+      "options": [
+        {
+          "text": "(13; 17)",
+          "is_correct": false
+        },
+        {
+          "text": "(12; 17)",
+          "is_correct": true
+        },
+        {
+          "text": "(12; 18)",
+          "is_correct": false
+        },
+        {
+          "text": "(7; 22)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 6,
+        "type_name": "Patru termeni succesivi în PA",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie ⌊x⌋ cel mai mare întreg ≤x. Pentru x∈[5,6), numerele ⌊x⌋, x+1/2, ⌊x⌋+2 sunt în PA. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În intervalul dat, ⌊x⌋=5. Condiția PA este 2x+1=2·5+2; x=11/2 aparține intervalului.",
+      "options": [
+        {
+          "text": "9/2",
+          "is_correct": false
+        },
+        {
+          "text": "13/2",
+          "is_correct": false
+        },
+        {
+          "text": "11/2",
+          "is_correct": true
+        },
+        {
+          "text": "15/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 7,
+        "type_name": "PA cu părți întregi",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pot numerele 5, 6, 5+√2 să aparțină aceleiași PA reale cu rație nenulă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă rangurile sunt p,q,s, raportul diferențelor (aₛ−aₚ)/(a_q−aₚ)=(s−p)/(q−p) este rațional. Aici raportul este √2, irațional: contradicție.",
+      "options": [
+        {
+          "text": "Da, cu rația 1",
+          "is_correct": false
+        },
+        {
+          "text": "Da, cu rația √2",
+          "is_correct": false
+        },
+        {
+          "text": "Da, cu rația 1/2",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, raportul diferențelor ar trebui să fie rațional",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 8,
+        "type_name": "Apartenență simultană la o PA",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Cele trei unghiuri ale unui triunghi sunt în PA, cu rația 25°. Aflați unghiul cel mai mic, în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem unghiurile u−25,u,u+25. Suma este 3u=180°, deci u=60° și minimul este 35°.",
+      "options": [
+        {
+          "text": "35",
+          "is_correct": true
+        },
+        {
+          "text": "34",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": false
+        },
+        {
+          "text": "37",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 9,
+        "type_name": "Unghiuri sau laturi în progresie",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O sală are 9 rânduri. Primul are 17 locuri și fiecare rând următor are cu 5 locuri mai mult. Câte locuri sunt în total?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Locurile formează PA: totalul este 9(2·17+8·5)/2=333.",
+      "options": [
+        {
+          "text": "332",
+          "is_correct": false
+        },
+        {
+          "text": "333",
+          "is_correct": true
+        },
+        {
+          "text": "334",
+          "is_correct": false
+        },
+        {
+          "text": "335",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 10,
+        "type_name": "Modele practice aritmetice",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Un triunghi are pătratele laturilor a²=14, b²=18, c²=22. Calculați m_a²+m_c²−2m_b², unde m_a,m_b,m_c sunt medianele corespunzătoare.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema medianei dă m_a²=(2b²+2c²−a²)/4 și formulele ciclice. Prin combinare, m_a²+m_c²−2m_b²=3(2b²−a²−c²)/4=0, deoarece pătratele laturilor sunt în PA.",
+      "options": [
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 11,
+        "type_name": "Progresii și mediane",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA (aₙ) are rația 5. Pentru cₙ=7aₙ−5, aflați rația lui (cₙ).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "cₙ₊₁−cₙ=7(aₙ₊₁−aₙ)=7·5=35.",
+      "options": [
+        {
+          "text": "34",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": false
+        },
+        {
+          "text": "37",
+          "is_correct": false
+        },
+        {
+          "text": "35",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 12,
+        "type_name": "Transformări care păstrează PA",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie a=6, b=11, c=16, d=21, patru întregi consecutivi în PA. Calculați √((a−b)⁴+abcd).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru termenii t,t+r,t+2r,t+3r avem r⁴+t(t+r)(t+2r)(t+3r)=(t²+3tr+r²)². Aici t=6, r=5; expresia din paranteză este pozitivă și rădăcina este 151.",
+      "options": [
+        {
+          "text": "151",
+          "is_correct": true
+        },
+        {
+          "text": "150",
+          "is_correct": false
+        },
+        {
+          "text": "152",
+          "is_correct": false
+        },
+        {
+          "text": "153",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 13,
+        "type_name": "Pătrat perfect din patru termeni în PA",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie aₖ=k+5. Calculați \\(\\sum_{k=1}^{9}a_ka_{k+1}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₖaₖ₊₁=k²+11k+30. Aplicăm Σk=n(n+1)/2 și Σk²=n(n+1)(2n+1)/6 pentru n=9.",
+      "options": [
+        {
+          "text": "1049",
+          "is_correct": false
+        },
+        {
+          "text": "1050",
+          "is_correct": true
+        },
+        {
+          "text": "1051",
+          "is_correct": false
+        },
+        {
+          "text": "1052",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 14,
+        "type_name": "Sume de produse ale termenilor PA",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați \\(\\sum_{k=1}^{9}\\frac1{(k+5)(k+6)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare fracție este 1/(k+5)−1/(k+6). Suma telescopică este 1/6−1/15=1/10; toți numitorii sunt pozitivi.",
+      "options": [
+        {
+          "text": "-9/10",
+          "is_correct": false
+        },
+        {
+          "text": "11/10",
+          "is_correct": false
+        },
+        {
+          "text": "1/10",
+          "is_correct": true
+        },
+        {
+          "text": "21/10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 15,
+        "type_name": "Sume de inverse în PA",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru x>0, numerele 7, x, 252 sunt în PG. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este x²=7·252=1764. Din x>0 obținem x=42. Toți termenii sunt nenuli, deci condiția este suficientă.",
+      "options": [
+        {
+          "text": "41",
+          "is_correct": false
+        },
+        {
+          "text": "43",
+          "is_correct": false
+        },
+        {
+          "text": "44",
+          "is_correct": false
+        },
+        {
+          "text": "42",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 16,
+        "type_name": "Condiția de PG pentru expresii",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Inserați două numere pozitive între 7 și 1512 astfel încât cele patru numere să fie în PG.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rația pozitivă satisface q³=216, deci q=6. Termenii intermediari sunt 42 și 252.",
+      "options": [
+        {
+          "text": "(42; 252)",
+          "is_correct": true
+        },
+        {
+          "text": "(43; 252)",
+          "is_correct": false
+        },
+        {
+          "text": "(42; 253)",
+          "is_correct": false
+        },
+        {
+          "text": "(7; 1512)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 17,
+        "type_name": "Inserarea mediilor geometrice",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pot 5, 10, 15 să aparțină aceleiași PG reale cu termeni nenuli?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă rangurile distincte sunt p,s,t, raporturile față de primul dau qˢ⁻ᵖ=2 și qᵗ⁻ᵖ=3. Eliminând q rezultă 2ᵗ⁻ᵖ=3ˢ⁻ᵖ, imposibil pentru exponenți întregi nenuli prin unicitatea descompunerii în factori primi.",
+      "options": [
+        {
+          "text": "Da, cu rația 2",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, ar rezulta o egalitate imposibilă între puteri ale lui 2 și 3",
+          "is_correct": true
+        },
+        {
+          "text": "Da, cu rația 3",
+          "is_correct": false
+        },
+        {
+          "text": "Da, cu rația 3/2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 18,
+        "type_name": "Excluderea apartenenței la PG",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Patru numere pozitive consecutive în PG au suma termenilor de rang impar 259 și suma termenilor de rang par 1554. Aflați rația.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sumele sunt b₁(1+q²) și b₁q(1+q²). Raportul lor este q=6.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 19,
+        "type_name": "PG finite din sume de grupe",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Trei numere în PA sunt 7, x, 2x−7. Dacă mărim ultimul cu 175, obținem o PG pozitivă cu x>7. Aflați x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția PG este x²=7(2x−7+175), deci (x−7)²=1225. Din x>7, rezultă x=42.",
+      "options": [
+        {
+          "text": "41",
+          "is_correct": false
+        },
+        {
+          "text": "43",
+          "is_correct": false
+        },
+        {
+          "text": "44",
+          "is_correct": false
+        },
+        {
+          "text": "42",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 20,
+        "type_name": "PA și PG simultane sau după translații",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie R numărul cu exact 7 cifre, toate egale cu 9. Calculați √(R²+2R+1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "R=10^7−1. Avem R²+2R+1=(R+1)²; R+1>0, deci rădăcina este R+1=10^7=10000000.",
+      "options": [
+        {
+          "text": "10000000",
+          "is_correct": true
+        },
+        {
+          "text": "9999999",
+          "is_correct": false
+        },
+        {
+          "text": "10000001",
+          "is_correct": false
+        },
+        {
+          "text": "10000002",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 21,
+        "type_name": "Numere cu cifre repetate și pătrate perfecte",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Determinați n≥1 dacă 1+2+2²+⋯+2ⁿ⁻¹=511.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este 2ⁿ−1. Rezultă 2ⁿ=512, deci n=9.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 22,
+        "type_name": "Ecuații în numărul de termeni ai PG",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru a,b,c>0 cu a+c=9, care egalitate este echivalentă cu faptul că a,b,c sunt în PG?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru termeni pozitivi, rapoartele b/a și c/b sunt definite și egale exact când b²=ac. Celelalte relații nu caracterizează PG în această ordine.",
+      "options": [
+        {
+          "text": "2b=a+c",
+          "is_correct": false
+        },
+        {
+          "text": "a²=bc",
+          "is_correct": false
+        },
+        {
+          "text": "b²=ac",
+          "is_correct": true
+        },
+        {
+          "text": "c²=ab",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 23,
+        "type_name": "Caracterizări algebrice ale PG",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA infinită cu rația 5 are aₚ=49 pentru un rang p. Care este cel mai mic întreg pozitiv h pentru care aₚ₊ₕ=(7+5)²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₚ₊ₕ=49+h·5. Egalăm cu (7+5)²: h=2·7+5=19. Mai general, h=2·7t+5t² produce pătratul (7+5t)² pentru orice t≥1, deci infinit de mulți pătrați.",
+      "options": [
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "20",
+          "is_correct": false
+        },
+        {
+          "text": "21",
+          "is_correct": false
+        },
+        {
+          "text": "19",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.3",
+        "type": 24,
+        "type_name": "Infinit de mulți pătrați într-o PA",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "exerciseCss": false,
+    "formulas": 0,
+    "math": false,
+    "overflow": false,
+    "path": "/",
+    "width": 320
+  },
+  {
+    "exerciseCss": false,
+    "formulas": 0,
+    "math": false,
+    "overflow": false,
+    "path": "/accounts/profile/",
+    "width": 320
+  },
+  {
+    "exerciseCss": false,
+    "formulas": 0,
+    "math": false,
+    "overflow": false,
+    "path": "/quizzes/",
+    "width": 320
+  },
+  {
+    "exerciseCss": true,
+    "formulas": 0,
+    "math": true,
+    "overflow": false,
+    "path": "/quizzes/subiect/57/antrenare/6/",
+    "width": 320
+  },
+  {
+    "exerciseCss": true,
+    "formulas": 0,
+    "math": true,
+    "overflow": false,
+    "path": "/quizzes/subiect/39/antrenare/0/",
+    "width": 320
+  },
+  {
+    "exerciseCss": true,
+    "formulas": 1,
+    "math": true,
+    "overflow": false,
+    "path": "/quizzes/subiect/213/antrenare/2/",
+    "width": 320
+  },
+  {
+    "exerciseCss": false,
+    "formulas": 2,
+    "math": true,
+    "overflow": false,
+    "path": "/laborator-matematic/",
+    "width": 320
+  },
+  {
+    "exerciseCss": false,
+    "formulas": 0,
+    "math": false,
+    "overflow": false,
+    "path": "/",
+    "width": 1366
+  },
+  {
+    "exerciseCss": false,
+    "formulas": 0,
+    "math": false,
+    "overflow": false,
+    "path": "/accounts/profile/",
+    "width": 1366
+  },
+  {
+    "exerciseCss": false,
+    "formulas": 0,
+    "math": false,
+    "overflow": false,
+    "path": "/quizzes/",
+    "width": 1366
+  },
+  {
+    "exerciseCss": true,
+    "formulas": 0,
+    "math": true,
+    "overflow": false,
+    "path": "/quizzes/subiect/57/antrenare/6/",
+    "width": 1366
+  },
+  {
+    "exerciseCss": true,
+    "formulas": 0,
+    "math": true,
+    "overflow": false,
+    "path": "/quizzes/subiect/39/antrenare/0/",
+    "width": 1366
+  },
+  {
+    "exerciseCss": true,
+    "formulas": 1,
+    "math": true,
+    "overflow": false,
+    "path": "/quizzes/subiect/213/antrenare/2/",
+    "width": 1366
+  },
+  {
+    "exerciseCss": false,
+    "formulas": 2,
+    "math": true,
+    "overflow": false,
+    "path": "/laborator-matematic/",
+    "width": 1366
+  }
+]

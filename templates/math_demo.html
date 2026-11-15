@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static accessible_forms %}
+{% block math_assets %}{% include "includes/math_assets.html" %}{% endblock %}
+{% block title %}Laborator matematic · Focul Matematic{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsxgraph@1.12.2/distrib/jsxgraph.css">
+<link rel="stylesheet" href="{% static 'core/css/math-demo.css' %}">
+<script src="{% static 'core/js/math-demo-boot.js' %}?v=20261031-phase7-2"></script>
+<script data-boards-script defer src="https://cdn.jsdelivr.net/npm/jsxgraph@1.12.2/distrib/jsxgraphcore.js"></script>
+<script data-boards-script defer src="{% static 'core/js/math-demo.js' %}?v=20261031-phase7-2"></script>
+{% endblock %}
+{% block content %}
+<div class="page-content math-demo">
+  <h1>Laborator matematic</h1>
+  <p class="boards-loading" role="status"><span class="ui-loading-indicator" aria-hidden="true"></span>Se încarcă graficele…</p>
+  <section aria-labelledby="equation-title">
+    <h2 id="equation-title">Ecuație de gradul al doilea</h2>
+    <p>Găsește cele două soluții întregi, în orice ordine.</p>
+    <p data-math-content>\[{{ equation }}\]</p>
+    <form method="post" data-ui-form data-status-id="math-check-status" data-busy-label="Se verifică soluțiile…">
+      {% csrf_token %}{{ form.exercise_id }}
+      <div role="alert">{{ form.non_field_errors }}</div>
+      {% for field in form.visible_fields %}
+      <div class="root-field"><label for="{{ field.id_for_label }}">{{ field.label }}</label>
+        {% accessible_field field False %}<div id="{{ field.id_for_label }}_errors" role="alert">{{ field.errors }}</div></div>
+      {% endfor %}
+      <button type="submit" class="btn">Verifică soluțiile</button>
+    </form>
+    {% include "includes/form_status.html" with status_id="math-check-status" %}
+    {% if feedback %}<p role="status">{{ feedback }}</p>{% endif %}
+    <form method="post" data-ui-form data-status-id="math-new-status" data-busy-label="Se pregătește ecuația…">{% csrf_token %}<button type="submit" class="btn btn--secondary" name="action" value="new">Altă ecuație</button></form>
+    {% include "includes/form_status.html" with status_id="math-new-status" %}
+  </section>
+  <section aria-labelledby="graph-title">
+    <h2 id="graph-title">Explorează funcția</h2>
+    <p data-math-content>\(f(x) = ax^2 + bx + c\)</p>
+    <div class="coefficients">
+    <label>a <input id="coef-a" type="number" min="-10" max="10" step="0.1" value="1"></label>
+    <label>b <input id="coef-b" type="number" min="-10" max="10" step="0.1" value="-4"></label>
+    <label>c <input id="coef-c" type="number" min="-10" max="10" step="0.1" value="3"></label>
+    </div>
+    <p id="graph-description" role="status"></p>
+    <div id="function-board" class="jxgbox" role="region" aria-label="Graficul funcției cu coeficienți modificabili"></div>
+  </section>
+  <section aria-labelledby="triangle-title">
+    <h2 id="triangle-title">Triunghi mobil</h2>
+    <p>Mută vârfurile A, B și C cu mouse-ul sau selectează un vârf și folosește săgețile tastaturii.</p>
+    <div id="triangle-board" class="jxgbox" role="region" aria-label="Triunghi cu vârfuri mobile"></div>
+  </section>
+  <div id="boards-error" class="ui-state ui-state--error" role="alert" hidden>
+    <p>Graficele nu au putut fi încărcate. Verifică accesul la internet. Ecuația de mai sus rămâne disponibilă.</p>
+    <button type="button" class="btn btn--secondary" data-reload-page>Reîncarcă pagina</button>
+  </div>
+  <noscript>Activează JavaScript pentru graficele interactive. Ecuația poate fi verificată și fără JavaScript.</noscript>
+</div>
+{% endblock %}

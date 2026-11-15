@@ -1,6 +1,3102 @@
 {
   "title": "Funcția de gradul al II-lea. Forma canonică, maximul și minimul",
   "description": "Clasa a 9-a · Funcția de gradul al II-lea",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "hard",
+  "questions": [
+    {
+      "text": "Determinați coeficienții (a;b;c) ai funcției \\(a x^{2} + b x + c\\) dacă f(-1)=3, f(0)=9, f(2)=33. Verificați a≠0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuirea celor trei abscise distincte produce un sistem liniar în a,b,c. Soluția sa este unică; primul coeficient este nenul, deci funcția are gradul al doilea. Rezultatul cerut este \\(\\left( 2, \\  8, \\  9\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 2, \\  8, \\  9\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 3, \\  8, \\  9\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 1, \\  8, \\  9\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  8, \\  9\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 1,
+        "type_name": "Funcție pătratică determinată din valori",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "a - b + c - 3",
+          "c - 9",
+          "4*a + 2*b + c - 33"
+        ],
+        "variables": [
+          "a",
+          "b",
+          "c"
+        ],
+        "option_values": [
+          "(2, 8, 9)",
+          "(3, 8, 9)",
+          "(1, 8, 9)",
+          "(4, 8, 9)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru \\(y = 2 x^{2} + 8 x + 9\\), determinați perechea (h;k) din forma canonică a(x−h)²+k.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Completăm pătratul: h=−b/(2a), iar k=f(h)=−Δ/(4a). Coeficientul principal este nenul. Rezultatul cerut este \\(\\left( -2, \\  1\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -1, \\  1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -2, \\  1\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -3, \\  1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  1\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 2,
+        "type_name": "Forma canonică",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex",
+        "f": "2*x**2 + 8*x + 9",
+        "option_values": [
+          "(-1, 1)",
+          "(-2, 1)",
+          "(-3, 1)",
+          "(0, 1)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru familia \\(y = 2 m^{2} - 4 m x + 2 x^{2} + 1\\), m∈ℝ, determinați coordonatele vârfului în funcție de m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Gruparea după pătratul x−m dă un coeficient principal pozitiv. Abscisa vârfului este m și ordonata este termenul independent al pătratului. Rezultatul cerut este \\(\\left( m, \\  1\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( m + 1, \\  1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( m - 1, \\  1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( m, \\  1\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( m + 2, \\  1\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 4,
+        "type_name": "Forma canonică cu parametri",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex",
+        "f": "2*m**2 - 4*m*x + 2*x**2 + 1",
+        "option_values": [
+          "(m + 1, 1)",
+          "(m - 1, 1)",
+          "(m, 1)",
+          "(m + 2, 1)"
+        ]
+      }
+    },
+    {
+      "text": "Parabola are vârful V(-2;1) și trece prin punctul (0;9). Determinați polinomul f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem f(x)=a(x−h)²+k. Punctul suplimentar are abscisa diferită de h, deci a=(y−k)/(x−h)² este determinat unic și nenul. Rezultatul cerut este \\(2 x^{2} + 8 x + 9\\).",
+      "options": [
+        {
+          "text": "\\(2 x^{2} + 8 x + 10\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x^{2} + 8 x + 8\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x^{2} + 8 x + 11\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x^{2} + 8 x + 9\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 5,
+        "type_name": "Parabola din vârf și punct",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_point",
+        "h": -2,
+        "k": 1,
+        "px": 0,
+        "py": "9",
+        "option_values": [
+          "2*x**2 + 8*x + 10",
+          "2*x**2 + 8*x + 8",
+          "2*x**2 + 8*x + 11",
+          "2*x**2 + 8*x + 9"
+        ]
+      }
+    },
+    {
+      "text": "Parabola este tangentă axei Ox în (-2;0) și trece prin (-1;2). Determinați f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tangența la Ox înseamnă rădăcină dublă h: f(x)=a(x−h)². Înlocuirea punctului suplimentar dă a nenul. Rezultatul cerut este \\(2 x^{2} + 8 x + 8\\).",
+      "options": [
+        {
+          "text": "\\(2 x^{2} + 8 x + 8\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 x^{2} + 8 x + 9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x^{2} + 8 x + 7\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x^{2} + 8 x + 10\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 6,
+        "type_name": "Tangență la Ox într-un punct dat",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_point",
+        "h": -2,
+        "k": 0,
+        "px": -1,
+        "py": 2,
+        "option_values": [
+          "2*x**2 + 8*x + 8",
+          "2*x**2 + 8*x + 9",
+          "2*x**2 + 8*x + 7",
+          "2*x**2 + 8*x + 10"
+        ]
+      }
+    },
+    {
+      "text": "Funcția f(x)=2x²+bx+c are vârful V(-2;1). Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția pentru abscisă este −b/(2a)=h. După aflarea lui b, condiția f(h)=k determină c. Rezultatul cerut este \\(\\left( 8, \\  9\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 9, \\  9\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 8, \\  9\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 7, \\  9\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 10, \\  9\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 7,
+        "type_name": "Parametri din vârful prescris",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "2 - b/4",
+          "-2*b + c + 7"
+        ],
+        "variables": [
+          "b",
+          "c"
+        ],
+        "option_values": [
+          "(9, 9)",
+          "(8, 9)",
+          "(7, 9)",
+          "(10, 9)"
+        ]
+      }
+    },
+    {
+      "text": "M(x;0), A(1;1), B(-1;2). Determinați maximul funcției MA²−2MB².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula distanței dă \\(- x^{2} - 6 x - 8\\). Coeficientul lui x² este negativ, deci valoarea din vârf este maximul pe ℝ. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 8,
+        "type_name": "Funcție din diferențe de distanțe pătrate",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "distance_extreme",
+        "points": [
+          [
+            1,
+            1
+          ],
+          [
+            -1,
+            2
+          ]
+        ],
+        "weights": [
+          1,
+          -2
+        ],
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Pentru m∈ℝ, aflați minimul pe ℝ al funcției \\(y = \\left(- m + x - 1\\right)^{2} + \\left(- m + x + 1\\right)^{2} + 1\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La dezvoltare, funcția devine 2(x−m)²+2(1)²+(1). Pătratul este minim zero pentru x=m; valoarea minimă nu depinde de m. Rezultatul cerut este \\(3\\).",
+      "options": [
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 9,
+        "type_name": "Extrem independent de parametru",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_value",
+        "f": "(-m + x - 1)**2 + (-m + x + 1)**2 + 1",
+        "option_values": [
+          "4",
+          "2",
+          "5",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "O funcție pătratică are minimul 1, axa x=-2 și f(-1)=3. Determinați f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul și axa fixează vârful (h,k). Din f(h+1)=a+k obținem a>0 și forma canonică, apoi dezvoltăm. Rezultatul cerut este \\(2 x^{2} + 8 x + 9\\).",
+      "options": [
+        {
+          "text": "\\(2 x^{2} + 8 x + 9\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 x^{2} + 8 x + 10\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x^{2} + 8 x + 8\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x^{2} + 8 x + 11\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 12,
+        "type_name": "Parabolă din extrem și axă",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_point",
+        "h": -2,
+        "k": 1,
+        "px": -1,
+        "py": 3,
+        "option_values": [
+          "2*x**2 + 8*x + 9",
+          "2*x**2 + 8*x + 10",
+          "2*x**2 + 8*x + 8",
+          "2*x**2 + 8*x + 11"
+        ]
+      }
+    },
+    {
+      "text": "Coeficienții a,b,c sunt în progresie aritmetică, a=1, iar axa parabolei este x=−1. Determinați (a;b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Axa impune b=2a. Din progresia aritmetică avem a+c=2b, deci c=3a. Valoarea a dată este pozitivă. Rezultatul cerut este \\(\\left( 1, \\  2, \\  3\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 2, \\  2, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 1, \\  2, \\  3\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 0, \\  2, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 3, \\  2, \\  3\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 13,
+        "type_name": "Coeficienți în progresie",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "a - 1",
+          "-2*a + b",
+          "a - 2*b + c"
+        ],
+        "variables": [
+          "a",
+          "b",
+          "c"
+        ],
+        "option_values": [
+          "(2, 2, 3)",
+          "(1, 2, 3)",
+          "(0, 2, 3)",
+          "(3, 2, 3)"
+        ]
+      }
+    },
+    {
+      "text": "M(t;0), A(1;2), B(5;−1). Pentru ce t suma MA²+MB² este minimă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este (t−(1))²+(t−(1)−4)²+5. La completarea pătratului rezultă 2(t−(1)−2)²+13. Minimul se atinge unic la mijlocul absciselor punctelor fixe. Rezultatul cerut este \\(3\\).",
+      "options": [
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 14,
+        "type_name": "Optimizare de distanțe pe axe",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "distance_argmin",
+        "points": [
+          [
+            1,
+            2
+          ],
+          [
+            5,
+            -1
+          ]
+        ],
+        "weights": [
+          1,
+          1
+        ],
+        "option_values": [
+          "4",
+          "2",
+          "3",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "f(x)=x²+ax și g(x)=−x²+bx au, respectiv, minimul atins la x=1 și maximul atins la x=2. Determinați (a;b).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Coeficienții principali +1 și −1 asigură existența minimului, respectiv maximului. Formula abscisei vârfului dă −a/2=(1) și b/2=(1)+1. Rezultatul cerut este \\(\\left( -2, \\  4\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -1, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -3, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -2, \\  4\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 24,
+        "type_name": "Două condiții de extrem pentru funcții legate",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "-a/2 - 1",
+          "b/2 - 2"
+        ],
+        "variables": [
+          "a",
+          "b"
+        ],
+        "option_values": [
+          "(-1, 4)",
+          "(-3, 4)",
+          "(0, 4)",
+          "(-2, 4)"
+        ]
+      }
+    },
+    {
+      "text": "Determinați coeficienții (a;b;c) ai funcției \\(a x^{2} + b x + c\\) dacă f(-1)=0, f(0)=-3, f(2)=-27. Verificați a≠0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuirea celor trei abscise distincte produce un sistem liniar în a,b,c. Soluția sa este unică; primul coeficient este nenul, deci funcția are gradul al doilea. Rezultatul cerut este \\(\\left( -3, \\  -6, \\  -3\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -3, \\  -6, \\  -3\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -2, \\  -6, \\  -3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -4, \\  -6, \\  -3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -1, \\  -6, \\  -3\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 1,
+        "type_name": "Funcție pătratică determinată din valori",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "a - b + c",
+          "c + 3",
+          "4*a + 2*b + c + 27"
+        ],
+        "variables": [
+          "a",
+          "b",
+          "c"
+        ],
+        "option_values": [
+          "(-3, -6, -3)",
+          "(-2, -6, -3)",
+          "(-4, -6, -3)",
+          "(-1, -6, -3)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru \\(y = - 3 x^{2} - 6 x - 3\\), determinați perechea (h;k) din forma canonică a(x−h)²+k.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Completăm pătratul: h=−b/(2a), iar k=f(h)=−Δ/(4a). Coeficientul principal este nenul. Rezultatul cerut este \\(\\left( -1, \\  0\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 0, \\  0\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -1, \\  0\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -2, \\  0\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 1, \\  0\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 2,
+        "type_name": "Forma canonică",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex",
+        "f": "-3*x**2 - 6*x - 3",
+        "option_values": [
+          "(0, 0)",
+          "(-1, 0)",
+          "(-2, 0)",
+          "(1, 0)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru familia \\(y = 3 m^{2} - 6 m x + 3 x^{2} + 2\\), m∈ℝ, determinați coordonatele vârfului în funcție de m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Gruparea după pătratul x−m dă un coeficient principal pozitiv. Abscisa vârfului este m și ordonata este termenul independent al pătratului. Rezultatul cerut este \\(\\left( m, \\  2\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( m + 1, \\  2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( m - 1, \\  2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( m, \\  2\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( m + 2, \\  2\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 4,
+        "type_name": "Forma canonică cu parametri",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex",
+        "f": "3*m**2 - 6*m*x + 3*x**2 + 2",
+        "option_values": [
+          "(m + 1, 2)",
+          "(m - 1, 2)",
+          "(m, 2)",
+          "(m + 2, 2)"
+        ]
+      }
+    },
+    {
+      "text": "Parabola are vârful V(-1;0) și trece prin punctul (1;-12). Determinați polinomul f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem f(x)=a(x−h)²+k. Punctul suplimentar are abscisa diferită de h, deci a=(y−k)/(x−h)² este determinat unic și nenul. Rezultatul cerut este \\(- 3 x^{2} - 6 x - 3\\).",
+      "options": [
+        {
+          "text": "\\(- 3 x^{2} - 6 x - 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- 3 x^{2} - 6 x - 4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- 3 x^{2} - 6 x - 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- 3 x^{2} - 6 x - 3\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 5,
+        "type_name": "Parabola din vârf și punct",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_point",
+        "h": -1,
+        "k": 0,
+        "px": 1,
+        "py": "-12",
+        "option_values": [
+          "-3*x**2 - 6*x - 2",
+          "-3*x**2 - 6*x - 4",
+          "-3*x**2 - 6*x - 1",
+          "-3*x**2 - 6*x - 3"
+        ]
+      }
+    },
+    {
+      "text": "Parabola este tangentă axei Ox în (-1;0) și trece prin (0;3). Determinați f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tangența la Ox înseamnă rădăcină dublă h: f(x)=a(x−h)². Înlocuirea punctului suplimentar dă a nenul. Rezultatul cerut este \\(3 x^{2} + 6 x + 3\\).",
+      "options": [
+        {
+          "text": "\\(3 x^{2} + 6 x + 3\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3 x^{2} + 6 x + 4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3 x^{2} + 6 x + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3 x^{2} + 6 x + 5\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 6,
+        "type_name": "Tangență la Ox într-un punct dat",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_point",
+        "h": -1,
+        "k": 0,
+        "px": 0,
+        "py": 3,
+        "option_values": [
+          "3*x**2 + 6*x + 3",
+          "3*x**2 + 6*x + 4",
+          "3*x**2 + 6*x + 2",
+          "3*x**2 + 6*x + 5"
+        ]
+      }
+    },
+    {
+      "text": "Funcția f(x)=3x²+bx+c are vârful V(-1;0). Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția pentru abscisă este −b/(2a)=h. După aflarea lui b, condiția f(h)=k determină c. Rezultatul cerut este \\(\\left( 6, \\  3\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 7, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 6, \\  3\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 5, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 8, \\  3\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 7,
+        "type_name": "Parametri din vârful prescris",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "1 - b/6",
+          "-b + c + 3"
+        ],
+        "variables": [
+          "b",
+          "c"
+        ],
+        "option_values": [
+          "(7, 3)",
+          "(6, 3)",
+          "(5, 3)",
+          "(8, 3)"
+        ]
+      }
+    },
+    {
+      "text": "M(x;0), A(2;1), B(-2;2). Determinați maximul funcției MA²−2MB².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula distanței dă \\(- x^{2} - 12 x - 11\\). Coeficientul lui x² este negativ, deci valoarea din vârf este maximul pe ℝ. Rezultatul cerut este \\(25\\).",
+      "options": [
+        {
+          "text": "\\(26\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(24\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(25\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(27\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 8,
+        "type_name": "Funcție din diferențe de distanțe pătrate",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "distance_extreme",
+        "points": [
+          [
+            2,
+            1
+          ],
+          [
+            -2,
+            2
+          ]
+        ],
+        "weights": [
+          1,
+          -2
+        ],
+        "option_values": [
+          "26",
+          "24",
+          "25",
+          "27"
+        ]
+      }
+    },
+    {
+      "text": "Pentru m∈ℝ, aflați minimul pe ℝ al funcției \\(y = \\left(- m + x - 2\\right)^{2} + \\left(- m + x + 2\\right)^{2} + 2\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La dezvoltare, funcția devine 2(x−m)²+2(2)²+(2). Pătratul este minim zero pentru x=m; valoarea minimă nu depinde de m. Rezultatul cerut este \\(10\\).",
+      "options": [
+        {
+          "text": "\\(11\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(12\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(10\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 9,
+        "type_name": "Extrem independent de parametru",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_value",
+        "f": "(-m + x - 2)**2 + (-m + x + 2)**2 + 2",
+        "option_values": [
+          "11",
+          "9",
+          "12",
+          "10"
+        ]
+      }
+    },
+    {
+      "text": "O funcție pătratică are minimul 0, axa x=-1 și f(0)=3. Determinați f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul și axa fixează vârful (h,k). Din f(h+1)=a+k obținem a>0 și forma canonică, apoi dezvoltăm. Rezultatul cerut este \\(3 x^{2} + 6 x + 3\\).",
+      "options": [
+        {
+          "text": "\\(3 x^{2} + 6 x + 3\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3 x^{2} + 6 x + 4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3 x^{2} + 6 x + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3 x^{2} + 6 x + 5\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 12,
+        "type_name": "Parabolă din extrem și axă",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_point",
+        "h": -1,
+        "k": 0,
+        "px": 0,
+        "py": 3,
+        "option_values": [
+          "3*x**2 + 6*x + 3",
+          "3*x**2 + 6*x + 4",
+          "3*x**2 + 6*x + 2",
+          "3*x**2 + 6*x + 5"
+        ]
+      }
+    },
+    {
+      "text": "Coeficienții a,b,c sunt în progresie aritmetică, a=2, iar axa parabolei este x=−1. Determinați (a;b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Axa impune b=2a. Din progresia aritmetică avem a+c=2b, deci c=3a. Valoarea a dată este pozitivă. Rezultatul cerut este \\(\\left( 2, \\  4, \\  6\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 3, \\  4, \\  6\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  4, \\  6\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 1, \\  4, \\  6\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  4, \\  6\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 13,
+        "type_name": "Coeficienți în progresie",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "a - 2",
+          "-2*a + b",
+          "a - 2*b + c"
+        ],
+        "variables": [
+          "a",
+          "b",
+          "c"
+        ],
+        "option_values": [
+          "(3, 4, 6)",
+          "(2, 4, 6)",
+          "(1, 4, 6)",
+          "(4, 4, 6)"
+        ]
+      }
+    },
+    {
+      "text": "M(t;0), A(2;2), B(6;−1). Pentru ce t suma MA²+MB² este minimă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este (t−(2))²+(t−(2)−4)²+5. La completarea pătratului rezultă 2(t−(2)−2)²+13. Minimul se atinge unic la mijlocul absciselor punctelor fixe. Rezultatul cerut este \\(4\\).",
+      "options": [
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 14,
+        "type_name": "Optimizare de distanțe pe axe",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "distance_argmin",
+        "points": [
+          [
+            2,
+            2
+          ],
+          [
+            6,
+            -1
+          ]
+        ],
+        "weights": [
+          1,
+          1
+        ],
+        "option_values": [
+          "5",
+          "3",
+          "4",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "f(x)=x²+ax și g(x)=−x²+bx au, respectiv, minimul atins la x=2 și maximul atins la x=3. Determinați (a;b).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Coeficienții principali +1 și −1 asigură existența minimului, respectiv maximului. Formula abscisei vârfului dă −a/2=(2) și b/2=(2)+1. Rezultatul cerut este \\(\\left( -4, \\  6\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -3, \\  6\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -5, \\  6\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -2, \\  6\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -4, \\  6\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 24,
+        "type_name": "Două condiții de extrem pentru funcții legate",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "-a/2 - 2",
+          "b/2 - 3"
+        ],
+        "variables": [
+          "a",
+          "b"
+        ],
+        "option_values": [
+          "(-3, 6)",
+          "(-5, 6)",
+          "(-2, 6)",
+          "(-4, 6)"
+        ]
+      }
+    },
+    {
+      "text": "Determinați coeficienții (a;b;c) ai funcției \\(a x^{2} + b x + c\\) dacă f(-1)=3, f(0)=-1, f(2)=15. Verificați a≠0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuirea celor trei abscise distincte produce un sistem liniar în a,b,c. Soluția sa este unică; primul coeficient este nenul, deci funcția are gradul al doilea. Rezultatul cerut este \\(\\left( 4, \\  0, \\  -1\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 4, \\  0, \\  -1\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 5, \\  0, \\  -1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 3, \\  0, \\  -1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 6, \\  0, \\  -1\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 1,
+        "type_name": "Funcție pătratică determinată din valori",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "a - b + c - 3",
+          "c + 1",
+          "4*a + 2*b + c - 15"
+        ],
+        "variables": [
+          "a",
+          "b",
+          "c"
+        ],
+        "option_values": [
+          "(4, 0, -1)",
+          "(5, 0, -1)",
+          "(3, 0, -1)",
+          "(6, 0, -1)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru \\(y = 4 x^{2} - 1\\), determinați perechea (h;k) din forma canonică a(x−h)²+k.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Completăm pătratul: h=−b/(2a), iar k=f(h)=−Δ/(4a). Coeficientul principal este nenul. Rezultatul cerut este \\(\\left( 0, \\  -1\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 1, \\  -1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  -1\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -1, \\  -1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  -1\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 2,
+        "type_name": "Forma canonică",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex",
+        "f": "4*x**2 - 1",
+        "option_values": [
+          "(1, -1)",
+          "(0, -1)",
+          "(-1, -1)",
+          "(2, -1)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru familia \\(y = 4 m^{2} - 8 m x + 4 x^{2} + 3\\), m∈ℝ, determinați coordonatele vârfului în funcție de m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Gruparea după pătratul x−m dă un coeficient principal pozitiv. Abscisa vârfului este m și ordonata este termenul independent al pătratului. Rezultatul cerut este \\(\\left( m, \\  3\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( m + 1, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( m - 1, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( m, \\  3\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( m + 2, \\  3\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 4,
+        "type_name": "Forma canonică cu parametri",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex",
+        "f": "4*m**2 - 8*m*x + 4*x**2 + 3",
+        "option_values": [
+          "(m + 1, 3)",
+          "(m - 1, 3)",
+          "(m, 3)",
+          "(m + 2, 3)"
+        ]
+      }
+    },
+    {
+      "text": "Parabola are vârful V(0;-1) și trece prin punctul (2;15). Determinați polinomul f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem f(x)=a(x−h)²+k. Punctul suplimentar are abscisa diferită de h, deci a=(y−k)/(x−h)² este determinat unic și nenul. Rezultatul cerut este \\(4 x^{2} - 1\\).",
+      "options": [
+        {
+          "text": "\\(4 x^{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x^{2} - 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x^{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x^{2} - 1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 5,
+        "type_name": "Parabola din vârf și punct",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_point",
+        "h": 0,
+        "k": -1,
+        "px": 2,
+        "py": "15",
+        "option_values": [
+          "4*x**2",
+          "4*x**2 - 2",
+          "4*x**2 + 1",
+          "4*x**2 - 1"
+        ]
+      }
+    },
+    {
+      "text": "Parabola este tangentă axei Ox în (0;0) și trece prin (1;4). Determinați f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tangența la Ox înseamnă rădăcină dublă h: f(x)=a(x−h)². Înlocuirea punctului suplimentar dă a nenul. Rezultatul cerut este \\(4 x^{2}\\).",
+      "options": [
+        {
+          "text": "\\(4 x^{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4 x^{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x^{2} - 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x^{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 6,
+        "type_name": "Tangență la Ox într-un punct dat",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_point",
+        "h": 0,
+        "k": 0,
+        "px": 1,
+        "py": 4,
+        "option_values": [
+          "4*x**2",
+          "4*x**2 + 1",
+          "4*x**2 - 1",
+          "4*x**2 + 2"
+        ]
+      }
+    },
+    {
+      "text": "Funcția f(x)=4x²+bx+c are vârful V(0;-1). Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția pentru abscisă este −b/(2a)=h. După aflarea lui b, condiția f(h)=k determină c. Rezultatul cerut este \\(\\left( 0, \\  -1\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 1, \\  -1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  -1\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -1, \\  -1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  -1\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 7,
+        "type_name": "Parametri din vârful prescris",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "-b/8",
+          "c + 1"
+        ],
+        "variables": [
+          "b",
+          "c"
+        ],
+        "option_values": [
+          "(1, -1)",
+          "(0, -1)",
+          "(-1, -1)",
+          "(2, -1)"
+        ]
+      }
+    },
+    {
+      "text": "M(x;0), A(3;1), B(-3;2). Determinați maximul funcției MA²−2MB².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula distanței dă \\(- x^{2} - 18 x - 16\\). Coeficientul lui x² este negativ, deci valoarea din vârf este maximul pe ℝ. Rezultatul cerut este \\(65\\).",
+      "options": [
+        {
+          "text": "\\(66\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(64\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(65\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(67\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 8,
+        "type_name": "Funcție din diferențe de distanțe pătrate",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "distance_extreme",
+        "points": [
+          [
+            3,
+            1
+          ],
+          [
+            -3,
+            2
+          ]
+        ],
+        "weights": [
+          1,
+          -2
+        ],
+        "option_values": [
+          "66",
+          "64",
+          "65",
+          "67"
+        ]
+      }
+    },
+    {
+      "text": "Pentru m∈ℝ, aflați minimul pe ℝ al funcției \\(y = \\left(- m + x - 3\\right)^{2} + \\left(- m + x + 3\\right)^{2} + 3\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La dezvoltare, funcția devine 2(x−m)²+2(3)²+(3). Pătratul este minim zero pentru x=m; valoarea minimă nu depinde de m. Rezultatul cerut este \\(21\\).",
+      "options": [
+        {
+          "text": "\\(22\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(20\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(23\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(21\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 9,
+        "type_name": "Extrem independent de parametru",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_value",
+        "f": "(-m + x - 3)**2 + (-m + x + 3)**2 + 3",
+        "option_values": [
+          "22",
+          "20",
+          "23",
+          "21"
+        ]
+      }
+    },
+    {
+      "text": "O funcție pătratică are minimul -1, axa x=0 și f(1)=3. Determinați f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul și axa fixează vârful (h,k). Din f(h+1)=a+k obținem a>0 și forma canonică, apoi dezvoltăm. Rezultatul cerut este \\(4 x^{2} - 1\\).",
+      "options": [
+        {
+          "text": "\\(4 x^{2} - 1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4 x^{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x^{2} - 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x^{2} + 1\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 12,
+        "type_name": "Parabolă din extrem și axă",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_point",
+        "h": 0,
+        "k": -1,
+        "px": 1,
+        "py": 3,
+        "option_values": [
+          "4*x**2 - 1",
+          "4*x**2",
+          "4*x**2 - 2",
+          "4*x**2 + 1"
+        ]
+      }
+    },
+    {
+      "text": "Coeficienții a,b,c sunt în progresie aritmetică, a=3, iar axa parabolei este x=−1. Determinați (a;b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Axa impune b=2a. Din progresia aritmetică avem a+c=2b, deci c=3a. Valoarea a dată este pozitivă. Rezultatul cerut este \\(\\left( 3, \\  6, \\  9\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 4, \\  6, \\  9\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 3, \\  6, \\  9\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 2, \\  6, \\  9\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 5, \\  6, \\  9\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 13,
+        "type_name": "Coeficienți în progresie",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "a - 3",
+          "-2*a + b",
+          "a - 2*b + c"
+        ],
+        "variables": [
+          "a",
+          "b",
+          "c"
+        ],
+        "option_values": [
+          "(4, 6, 9)",
+          "(3, 6, 9)",
+          "(2, 6, 9)",
+          "(5, 6, 9)"
+        ]
+      }
+    },
+    {
+      "text": "M(t;0), A(3;2), B(7;−1). Pentru ce t suma MA²+MB² este minimă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este (t−(3))²+(t−(3)−4)²+5. La completarea pătratului rezultă 2(t−(3)−2)²+13. Minimul se atinge unic la mijlocul absciselor punctelor fixe. Rezultatul cerut este \\(5\\).",
+      "options": [
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(7\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 14,
+        "type_name": "Optimizare de distanțe pe axe",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "distance_argmin",
+        "points": [
+          [
+            3,
+            2
+          ],
+          [
+            7,
+            -1
+          ]
+        ],
+        "weights": [
+          1,
+          1
+        ],
+        "option_values": [
+          "6",
+          "4",
+          "5",
+          "7"
+        ]
+      }
+    },
+    {
+      "text": "f(x)=x²+ax și g(x)=−x²+bx au, respectiv, minimul atins la x=3 și maximul atins la x=4. Determinați (a;b).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Coeficienții principali +1 și −1 asigură existența minimului, respectiv maximului. Formula abscisei vârfului dă −a/2=(3) și b/2=(3)+1. Rezultatul cerut este \\(\\left( -6, \\  8\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -5, \\  8\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -7, \\  8\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -4, \\  8\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -6, \\  8\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 24,
+        "type_name": "Două condiții de extrem pentru funcții legate",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "-a/2 - 3",
+          "b/2 - 4"
+        ],
+        "variables": [
+          "a",
+          "b"
+        ],
+        "option_values": [
+          "(-5, 8)",
+          "(-7, 8)",
+          "(-4, 8)",
+          "(-6, 8)"
+        ]
+      }
+    },
+    {
+      "text": "Determinați coeficienții (a;b;c) ai funcției \\(a x^{2} + b x + c\\) dacă f(-1)=-22, f(0)=-7, f(2)=-7. Verificați a≠0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuirea celor trei abscise distincte produce un sistem liniar în a,b,c. Soluția sa este unică; primul coeficient este nenul, deci funcția are gradul al doilea. Rezultatul cerut este \\(\\left( -5, \\  10, \\  -7\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -5, \\  10, \\  -7\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -4, \\  10, \\  -7\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -6, \\  10, \\  -7\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -3, \\  10, \\  -7\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 1,
+        "type_name": "Funcție pătratică determinată din valori",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "a - b + c + 22",
+          "c + 7",
+          "4*a + 2*b + c + 7"
+        ],
+        "variables": [
+          "a",
+          "b",
+          "c"
+        ],
+        "option_values": [
+          "(-5, 10, -7)",
+          "(-4, 10, -7)",
+          "(-6, 10, -7)",
+          "(-3, 10, -7)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru \\(y = - 5 x^{2} + 10 x - 7\\), determinați perechea (h;k) din forma canonică a(x−h)²+k.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Completăm pătratul: h=−b/(2a), iar k=f(h)=−Δ/(4a). Coeficientul principal este nenul. Rezultatul cerut este \\(\\left( 1, \\  -2\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 2, \\  -2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 1, \\  -2\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 0, \\  -2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 3, \\  -2\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 2,
+        "type_name": "Forma canonică",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex",
+        "f": "-5*x**2 + 10*x - 7",
+        "option_values": [
+          "(2, -2)",
+          "(1, -2)",
+          "(0, -2)",
+          "(3, -2)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru familia \\(y = 5 m^{2} - 10 m x + 5 x^{2} + 4\\), m∈ℝ, determinați coordonatele vârfului în funcție de m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Gruparea după pătratul x−m dă un coeficient principal pozitiv. Abscisa vârfului este m și ordonata este termenul independent al pătratului. Rezultatul cerut este \\(\\left( m, \\  4\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( m + 1, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( m - 1, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( m, \\  4\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( m + 2, \\  4\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 4,
+        "type_name": "Forma canonică cu parametri",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex",
+        "f": "5*m**2 - 10*m*x + 5*x**2 + 4",
+        "option_values": [
+          "(m + 1, 4)",
+          "(m - 1, 4)",
+          "(m, 4)",
+          "(m + 2, 4)"
+        ]
+      }
+    },
+    {
+      "text": "Parabola are vârful V(1;-2) și trece prin punctul (3;-22). Determinați polinomul f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem f(x)=a(x−h)²+k. Punctul suplimentar are abscisa diferită de h, deci a=(y−k)/(x−h)² este determinat unic și nenul. Rezultatul cerut este \\(- 5 x^{2} + 10 x - 7\\).",
+      "options": [
+        {
+          "text": "\\(- 5 x^{2} + 10 x - 6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- 5 x^{2} + 10 x - 8\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- 5 x^{2} + 10 x - 5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- 5 x^{2} + 10 x - 7\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 5,
+        "type_name": "Parabola din vârf și punct",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_point",
+        "h": 1,
+        "k": -2,
+        "px": 3,
+        "py": "-22",
+        "option_values": [
+          "-5*x**2 + 10*x - 6",
+          "-5*x**2 + 10*x - 8",
+          "-5*x**2 + 10*x - 5",
+          "-5*x**2 + 10*x - 7"
+        ]
+      }
+    },
+    {
+      "text": "Parabola este tangentă axei Ox în (1;0) și trece prin (2;5). Determinați f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tangența la Ox înseamnă rădăcină dublă h: f(x)=a(x−h)². Înlocuirea punctului suplimentar dă a nenul. Rezultatul cerut este \\(5 x^{2} - 10 x + 5\\).",
+      "options": [
+        {
+          "text": "\\(5 x^{2} - 10 x + 5\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(5 x^{2} - 10 x + 6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5 x^{2} - 10 x + 4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5 x^{2} - 10 x + 7\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 6,
+        "type_name": "Tangență la Ox într-un punct dat",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_point",
+        "h": 1,
+        "k": 0,
+        "px": 2,
+        "py": 5,
+        "option_values": [
+          "5*x**2 - 10*x + 5",
+          "5*x**2 - 10*x + 6",
+          "5*x**2 - 10*x + 4",
+          "5*x**2 - 10*x + 7"
+        ]
+      }
+    },
+    {
+      "text": "Funcția f(x)=5x²+bx+c are vârful V(1;-2). Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția pentru abscisă este −b/(2a)=h. După aflarea lui b, condiția f(h)=k determină c. Rezultatul cerut este \\(\\left( -10, \\  3\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -9, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -10, \\  3\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -11, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -8, \\  3\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 7,
+        "type_name": "Parametri din vârful prescris",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "-b/10 - 1",
+          "b + c + 7"
+        ],
+        "variables": [
+          "b",
+          "c"
+        ],
+        "option_values": [
+          "(-9, 3)",
+          "(-10, 3)",
+          "(-11, 3)",
+          "(-8, 3)"
+        ]
+      }
+    },
+    {
+      "text": "M(x;0), A(4;1), B(-4;2). Determinați maximul funcției MA²−2MB².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula distanței dă \\(- x^{2} - 24 x - 23\\). Coeficientul lui x² este negativ, deci valoarea din vârf este maximul pe ℝ. Rezultatul cerut este \\(121\\).",
+      "options": [
+        {
+          "text": "\\(122\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(120\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(121\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(123\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 8,
+        "type_name": "Funcție din diferențe de distanțe pătrate",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "distance_extreme",
+        "points": [
+          [
+            4,
+            1
+          ],
+          [
+            -4,
+            2
+          ]
+        ],
+        "weights": [
+          1,
+          -2
+        ],
+        "option_values": [
+          "122",
+          "120",
+          "121",
+          "123"
+        ]
+      }
+    },
+    {
+      "text": "Pentru m∈ℝ, aflați minimul pe ℝ al funcției \\(y = \\left(- m + x - 4\\right)^{2} + \\left(- m + x + 4\\right)^{2} + 4\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La dezvoltare, funcția devine 2(x−m)²+2(4)²+(4). Pătratul este minim zero pentru x=m; valoarea minimă nu depinde de m. Rezultatul cerut este \\(36\\).",
+      "options": [
+        {
+          "text": "\\(37\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(35\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(38\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(36\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 9,
+        "type_name": "Extrem independent de parametru",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_value",
+        "f": "(-m + x - 4)**2 + (-m + x + 4)**2 + 4",
+        "option_values": [
+          "37",
+          "35",
+          "38",
+          "36"
+        ]
+      }
+    },
+    {
+      "text": "O funcție pătratică are minimul -2, axa x=1 și f(2)=3. Determinați f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul și axa fixează vârful (h,k). Din f(h+1)=a+k obținem a>0 și forma canonică, apoi dezvoltăm. Rezultatul cerut este \\(5 x^{2} - 10 x + 3\\).",
+      "options": [
+        {
+          "text": "\\(5 x^{2} - 10 x + 3\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(5 x^{2} - 10 x + 4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5 x^{2} - 10 x + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5 x^{2} - 10 x + 5\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 12,
+        "type_name": "Parabolă din extrem și axă",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_point",
+        "h": 1,
+        "k": -2,
+        "px": 2,
+        "py": 3,
+        "option_values": [
+          "5*x**2 - 10*x + 3",
+          "5*x**2 - 10*x + 4",
+          "5*x**2 - 10*x + 2",
+          "5*x**2 - 10*x + 5"
+        ]
+      }
+    },
+    {
+      "text": "Coeficienții a,b,c sunt în progresie aritmetică, a=4, iar axa parabolei este x=−1. Determinați (a;b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Axa impune b=2a. Din progresia aritmetică avem a+c=2b, deci c=3a. Valoarea a dată este pozitivă. Rezultatul cerut este \\(\\left( 4, \\  8, \\  12\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 5, \\  8, \\  12\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  8, \\  12\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 3, \\  8, \\  12\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 6, \\  8, \\  12\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 13,
+        "type_name": "Coeficienți în progresie",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "a - 4",
+          "-2*a + b",
+          "a - 2*b + c"
+        ],
+        "variables": [
+          "a",
+          "b",
+          "c"
+        ],
+        "option_values": [
+          "(5, 8, 12)",
+          "(4, 8, 12)",
+          "(3, 8, 12)",
+          "(6, 8, 12)"
+        ]
+      }
+    },
+    {
+      "text": "M(t;0), A(4;2), B(8;−1). Pentru ce t suma MA²+MB² este minimă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este (t−(4))²+(t−(4)−4)²+5. La completarea pătratului rezultă 2(t−(4)−2)²+13. Minimul se atinge unic la mijlocul absciselor punctelor fixe. Rezultatul cerut este \\(6\\).",
+      "options": [
+        {
+          "text": "\\(7\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(8\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 14,
+        "type_name": "Optimizare de distanțe pe axe",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "distance_argmin",
+        "points": [
+          [
+            4,
+            2
+          ],
+          [
+            8,
+            -1
+          ]
+        ],
+        "weights": [
+          1,
+          1
+        ],
+        "option_values": [
+          "7",
+          "5",
+          "6",
+          "8"
+        ]
+      }
+    },
+    {
+      "text": "f(x)=x²+ax și g(x)=−x²+bx au, respectiv, minimul atins la x=4 și maximul atins la x=5. Determinați (a;b).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Coeficienții principali +1 și −1 asigură existența minimului, respectiv maximului. Formula abscisei vârfului dă −a/2=(4) și b/2=(4)+1. Rezultatul cerut este \\(\\left( -8, \\  10\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -7, \\  10\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -9, \\  10\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -6, \\  10\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -8, \\  10\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 24,
+        "type_name": "Două condiții de extrem pentru funcții legate",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "-a/2 - 4",
+          "b/2 - 5"
+        ],
+        "variables": [
+          "a",
+          "b"
+        ],
+        "option_values": [
+          "(-7, 10)",
+          "(-9, 10)",
+          "(-6, 10)",
+          "(-8, 10)"
+        ]
+      }
+    },
+    {
+      "text": "Determinați coeficienții (a;b;c) ai funcției \\(a x^{2} + b x + c\\) dacă f(-1)=51, f(0)=21, f(2)=-3. Verificați a≠0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuirea celor trei abscise distincte produce un sistem liniar în a,b,c. Soluția sa este unică; primul coeficient este nenul, deci funcția are gradul al doilea. Rezultatul cerut este \\(\\left( 6, \\  -24, \\  21\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 6, \\  -24, \\  21\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 7, \\  -24, \\  21\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 5, \\  -24, \\  21\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 8, \\  -24, \\  21\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 1,
+        "type_name": "Funcție pătratică determinată din valori",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "a - b + c - 51",
+          "c - 21",
+          "4*a + 2*b + c + 3"
+        ],
+        "variables": [
+          "a",
+          "b",
+          "c"
+        ],
+        "option_values": [
+          "(6, -24, 21)",
+          "(7, -24, 21)",
+          "(5, -24, 21)",
+          "(8, -24, 21)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru \\(y = 6 x^{2} - 24 x + 21\\), determinați perechea (h;k) din forma canonică a(x−h)²+k.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Completăm pătratul: h=−b/(2a), iar k=f(h)=−Δ/(4a). Coeficientul principal este nenul. Rezultatul cerut este \\(\\left( 2, \\  -3\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 3, \\  -3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  -3\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 1, \\  -3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  -3\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 2,
+        "type_name": "Forma canonică",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex",
+        "f": "6*x**2 - 24*x + 21",
+        "option_values": [
+          "(3, -3)",
+          "(2, -3)",
+          "(1, -3)",
+          "(4, -3)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru familia \\(y = 6 m^{2} - 12 m x + 6 x^{2} + 5\\), m∈ℝ, determinați coordonatele vârfului în funcție de m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Gruparea după pătratul x−m dă un coeficient principal pozitiv. Abscisa vârfului este m și ordonata este termenul independent al pătratului. Rezultatul cerut este \\(\\left( m, \\  5\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( m + 1, \\  5\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( m - 1, \\  5\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( m, \\  5\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( m + 2, \\  5\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 4,
+        "type_name": "Forma canonică cu parametri",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex",
+        "f": "6*m**2 - 12*m*x + 6*x**2 + 5",
+        "option_values": [
+          "(m + 1, 5)",
+          "(m - 1, 5)",
+          "(m, 5)",
+          "(m + 2, 5)"
+        ]
+      }
+    },
+    {
+      "text": "Parabola are vârful V(2;-3) și trece prin punctul (4;21). Determinați polinomul f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem f(x)=a(x−h)²+k. Punctul suplimentar are abscisa diferită de h, deci a=(y−k)/(x−h)² este determinat unic și nenul. Rezultatul cerut este \\(6 x^{2} - 24 x + 21\\).",
+      "options": [
+        {
+          "text": "\\(6 x^{2} - 24 x + 22\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 x^{2} - 24 x + 20\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 x^{2} - 24 x + 23\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 x^{2} - 24 x + 21\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 5,
+        "type_name": "Parabola din vârf și punct",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_point",
+        "h": 2,
+        "k": -3,
+        "px": 4,
+        "py": "21",
+        "option_values": [
+          "6*x**2 - 24*x + 22",
+          "6*x**2 - 24*x + 20",
+          "6*x**2 - 24*x + 23",
+          "6*x**2 - 24*x + 21"
+        ]
+      }
+    },
+    {
+      "text": "Parabola este tangentă axei Ox în (2;0) și trece prin (3;6). Determinați f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tangența la Ox înseamnă rădăcină dublă h: f(x)=a(x−h)². Înlocuirea punctului suplimentar dă a nenul. Rezultatul cerut este \\(6 x^{2} - 24 x + 24\\).",
+      "options": [
+        {
+          "text": "\\(6 x^{2} - 24 x + 24\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(6 x^{2} - 24 x + 25\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 x^{2} - 24 x + 23\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 x^{2} - 24 x + 26\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 6,
+        "type_name": "Tangență la Ox într-un punct dat",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_point",
+        "h": 2,
+        "k": 0,
+        "px": 3,
+        "py": 6,
+        "option_values": [
+          "6*x**2 - 24*x + 24",
+          "6*x**2 - 24*x + 25",
+          "6*x**2 - 24*x + 23",
+          "6*x**2 - 24*x + 26"
+        ]
+      }
+    },
+    {
+      "text": "Funcția f(x)=6x²+bx+c are vârful V(2;-3). Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția pentru abscisă este −b/(2a)=h. După aflarea lui b, condiția f(h)=k determină c. Rezultatul cerut este \\(\\left( -24, \\  21\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -23, \\  21\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -24, \\  21\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -25, \\  21\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -22, \\  21\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 7,
+        "type_name": "Parametri din vârful prescris",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "-b/12 - 2",
+          "2*b + c + 27"
+        ],
+        "variables": [
+          "b",
+          "c"
+        ],
+        "option_values": [
+          "(-23, 21)",
+          "(-24, 21)",
+          "(-25, 21)",
+          "(-22, 21)"
+        ]
+      }
+    },
+    {
+      "text": "M(x;0), A(5;1), B(-5;2). Determinați maximul funcției MA²−2MB².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula distanței dă \\(- x^{2} - 30 x - 32\\). Coeficientul lui x² este negativ, deci valoarea din vârf este maximul pe ℝ. Rezultatul cerut este \\(193\\).",
+      "options": [
+        {
+          "text": "\\(194\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(192\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(193\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(195\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 8,
+        "type_name": "Funcție din diferențe de distanțe pătrate",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "distance_extreme",
+        "points": [
+          [
+            5,
+            1
+          ],
+          [
+            -5,
+            2
+          ]
+        ],
+        "weights": [
+          1,
+          -2
+        ],
+        "option_values": [
+          "194",
+          "192",
+          "193",
+          "195"
+        ]
+      }
+    },
+    {
+      "text": "Pentru m∈ℝ, aflați minimul pe ℝ al funcției \\(y = \\left(- m + x - 5\\right)^{2} + \\left(- m + x + 5\\right)^{2} + 5\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La dezvoltare, funcția devine 2(x−m)²+2(5)²+(5). Pătratul este minim zero pentru x=m; valoarea minimă nu depinde de m. Rezultatul cerut este \\(55\\).",
+      "options": [
+        {
+          "text": "\\(56\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(54\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(57\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(55\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 9,
+        "type_name": "Extrem independent de parametru",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_value",
+        "f": "(-m + x - 5)**2 + (-m + x + 5)**2 + 5",
+        "option_values": [
+          "56",
+          "54",
+          "57",
+          "55"
+        ]
+      }
+    },
+    {
+      "text": "O funcție pătratică are minimul -3, axa x=2 și f(3)=3. Determinați f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul și axa fixează vârful (h,k). Din f(h+1)=a+k obținem a>0 și forma canonică, apoi dezvoltăm. Rezultatul cerut este \\(6 x^{2} - 24 x + 21\\).",
+      "options": [
+        {
+          "text": "\\(6 x^{2} - 24 x + 21\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(6 x^{2} - 24 x + 22\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 x^{2} - 24 x + 20\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 x^{2} - 24 x + 23\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 12,
+        "type_name": "Parabolă din extrem și axă",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_point",
+        "h": 2,
+        "k": -3,
+        "px": 3,
+        "py": 3,
+        "option_values": [
+          "6*x**2 - 24*x + 21",
+          "6*x**2 - 24*x + 22",
+          "6*x**2 - 24*x + 20",
+          "6*x**2 - 24*x + 23"
+        ]
+      }
+    },
+    {
+      "text": "Coeficienții a,b,c sunt în progresie aritmetică, a=5, iar axa parabolei este x=−1. Determinați (a;b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Axa impune b=2a. Din progresia aritmetică avem a+c=2b, deci c=3a. Valoarea a dată este pozitivă. Rezultatul cerut este \\(\\left( 5, \\  10, \\  15\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 6, \\  10, \\  15\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 5, \\  10, \\  15\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 4, \\  10, \\  15\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 7, \\  10, \\  15\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 13,
+        "type_name": "Coeficienți în progresie",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "a - 5",
+          "-2*a + b",
+          "a - 2*b + c"
+        ],
+        "variables": [
+          "a",
+          "b",
+          "c"
+        ],
+        "option_values": [
+          "(6, 10, 15)",
+          "(5, 10, 15)",
+          "(4, 10, 15)",
+          "(7, 10, 15)"
+        ]
+      }
+    },
+    {
+      "text": "M(t;0), A(5;2), B(9;−1). Pentru ce t suma MA²+MB² este minimă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este (t−(5))²+(t−(5)−4)²+5. La completarea pătratului rezultă 2(t−(5)−2)²+13. Minimul se atinge unic la mijlocul absciselor punctelor fixe. Rezultatul cerut este \\(7\\).",
+      "options": [
+        {
+          "text": "\\(8\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(7\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(9\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 14,
+        "type_name": "Optimizare de distanțe pe axe",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "distance_argmin",
+        "points": [
+          [
+            5,
+            2
+          ],
+          [
+            9,
+            -1
+          ]
+        ],
+        "weights": [
+          1,
+          1
+        ],
+        "option_values": [
+          "8",
+          "6",
+          "7",
+          "9"
+        ]
+      }
+    },
+    {
+      "text": "f(x)=x²+ax și g(x)=−x²+bx au, respectiv, minimul atins la x=5 și maximul atins la x=6. Determinați (a;b).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Coeficienții principali +1 și −1 asigură existența minimului, respectiv maximului. Formula abscisei vârfului dă −a/2=(5) și b/2=(5)+1. Rezultatul cerut este \\(\\left( -10, \\  12\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -9, \\  12\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -11, \\  12\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -8, \\  12\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -10, \\  12\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 24,
+        "type_name": "Două condiții de extrem pentru funcții legate",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "linear_tuple",
+        "equations": [
+          "-a/2 - 5",
+          "b/2 - 6"
+        ],
+        "variables": [
+          "a",
+          "b"
+        ],
+        "option_values": [
+          "(-9, 12)",
+          "(-11, 12)",
+          "(-8, 12)",
+          "(-10, 12)"
+        ]
+      }
+    }
+  ]
 }

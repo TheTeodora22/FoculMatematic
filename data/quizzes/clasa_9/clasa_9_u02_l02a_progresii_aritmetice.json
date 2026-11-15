@@ -1,0 +1,2887 @@
+{
+  "title": "Progresii aritmetice",
+  "description": "Clasa a 9-a · Funcții",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Într-o PA, a₁=3, r=1. Calculați a_5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ=a₁+(n−1)r; aici 3+4·1=7.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 1,
+        "type_name": "Termen de rang dat în PA",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a_5=7 și r=1. Aflați a₁.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₁=aₙ−(n−1)r=7−4·1=3.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 2,
+        "type_name": "Recuperarea primului termen",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA are a₂=4 și a₇=9. Aflați rația.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₇−a₂=5r, deci r=(9−4)/5=1.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 3,
+        "type_name": "Rația din doi termeni",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În PA cu a₁=3, r=1, ce rang are termenul 7?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rezolvăm 3+(k−1)·1=7: k=5, număr natural pozitiv.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 4,
+        "type_name": "Apartenența la PA",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a₂+a₈=14. Calculați suma primilor 9 termeni.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₂+a₈=2a₅, iar S₉=9a₅. Rezultă 9·7=63.",
+      "options": [
+        {
+          "text": "63",
+          "is_correct": true
+        },
+        {
+          "text": "62",
+          "is_correct": false
+        },
+        {
+          "text": "64",
+          "is_correct": false
+        },
+        {
+          "text": "65",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 5,
+        "type_name": "Sume din termeni egal depărtați",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a₁=3, a₅=7. Completați termenul a₃.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Între rangurile 1 și 5 sunt patru pași: r=(7−3)/4=1, deci a₃=5.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 6,
+        "type_name": "Completarea progresiei",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați S_5 pentru PA cu a₁=3 și r=1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sₙ=n(2a₁+(n−1)r)/2=5·(6+4)/2=25.",
+      "options": [
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "26",
+          "is_correct": false
+        },
+        {
+          "text": "25",
+          "is_correct": true
+        },
+        {
+          "text": "27",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 7,
+        "type_name": "Suma primilor n termeni",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA satisface a₁+a₃=8 și a₂+a₅=11. Aflați (a₁; r).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuațiile sunt 2a₁+2r=8 și 2a₁+5r=11. Scăderea dă 3r=3, apoi a₁=3.",
+      "options": [
+        {
+          "text": "(4; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 1)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 8,
+        "type_name": "Determinarea PA din relații liniare",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA strict crescătoare are a₁+a₃=6 și a₁a₃=8. Aflați r.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₁=3−r, a₃=3+r. Produsul dă 9−r²=8; r²=1. Creșterea impune r>0, deci r=1.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 9,
+        "type_name": "Determinarea PA din produse sau pătrate",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Suma unei PA este Sₙ=1n²+3n, n≥1. Aflați rația.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ=Sₙ−Sₙ₋₁=2n+2, inclusiv la n=1. Diferența aₙ₊₁−aₙ=2.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 10,
+        "type_name": "Recuperarea PA din Sₙ",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Trei numere strict crescătoare în PA au suma 9 și produsul 24. Aflați primul număr.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem 3−d,3,3+d. Produsul este 3(9−d²), deci d²=1. Din d>0 rezultă d=1; primul număr este 2.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 11,
+        "type_name": "Trei sau cinci termeni cu sumă și produs",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care șir este PA cu rația 1, pentru n≥1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru formula liniară, aₙ₊₁−aₙ=1. Celelalte diferențe depind de n.",
+      "options": [
+        {
+          "text": "aₙ=1n²+3",
+          "is_correct": false
+        },
+        {
+          "text": "aₙ=1n³+3",
+          "is_correct": false
+        },
+        {
+          "text": "aₙ=1/n+3",
+          "is_correct": false
+        },
+        {
+          "text": "aₙ=1n+3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 12,
+        "type_name": "Recunoașterea PA din termenul general",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n≥1, Sₙ=1n²+3n+c. Pentru ce c termenii recuperați formează o PA de la primul termen?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La n≥2, aₙ=2n+2, deci r=2. Primul termen trebuie să fie 4; S₁=4+c, ceea ce impune c=0.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 13,
+        "type_name": "Recunoașterea PA din suma parțială",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA pozitivă are a₁=3, r=1 și Sₙ=25. Aflați n.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sₙ=n(2·3+(n−1)·1)/2. Valoarea n=5 verifică ecuația. Cum toți termenii sunt pozitivi, Sₙ crește strict și rangul este unic.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 14,
+        "type_name": "Numărul termenilor unei PA",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați suma numerelor de la 1 la 30, inclusiv, care nu sunt divizibile cu 3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din suma 30·31/2 scădem suma multiplilor 3,2·3,…,10·3, egală cu 3·10·11/2. Rezultatul este 300.",
+      "options": [
+        {
+          "text": "299",
+          "is_correct": false
+        },
+        {
+          "text": "301",
+          "is_correct": false
+        },
+        {
+          "text": "300",
+          "is_correct": true
+        },
+        {
+          "text": "302",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 15,
+        "type_name": "Sume ale multiplilor și nemultiplilor",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA cu r=1, S_5=25. Calculați S_10.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "S₂ₙ=2Sₙ+n²r, prin formula sumei. Aici 2·25+25·1=75.",
+      "options": [
+        {
+          "text": "74",
+          "is_correct": false
+        },
+        {
+          "text": "76",
+          "is_correct": false
+        },
+        {
+          "text": "77",
+          "is_correct": false
+        },
+        {
+          "text": "75",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 16,
+        "type_name": "Relații între sume de lungimi multiple",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA cu r=1, definim bₙ=a₂ₙ₋₁+a₂ₙ. Aflați rația lui bₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "bₙ₊₁−bₙ=(a₂ₙ₊₁−a₂ₙ₋₁)+(a₂ₙ₊₂−a₂ₙ)=2r+2r=4r=4.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 17,
+        "type_name": "PA obținute prin grupare",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA cu r=1, bₙ=a_{1+2(n−1)}, n≥1. Aflați rația lui bₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rangurile consecutive diferă cu 2; diferența termenilor este 2r=2.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 18,
+        "type_name": "Subșir cu indici în PA",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a₁=4, r=2. Calculați a_6.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ=a₁+(n−1)r; aici 4+5·2=14.",
+      "options": [
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": true
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 1,
+        "type_name": "Termen de rang dat în PA",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a_6=14 și r=2. Aflați a₁.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₁=aₙ−(n−1)r=14−5·2=4.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 2,
+        "type_name": "Recuperarea primului termen",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA are a₂=6 și a₇=16. Aflați rația.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₇−a₂=5r, deci r=(16−6)/5=2.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 3,
+        "type_name": "Rația din doi termeni",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În PA cu a₁=4, r=2, ce rang are termenul 14?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rezolvăm 4+(k−1)·2=14: k=6, număr natural pozitiv.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 4,
+        "type_name": "Apartenența la PA",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a₂+a₈=24. Calculați suma primilor 9 termeni.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₂+a₈=2a₅, iar S₉=9a₅. Rezultă 9·12=108.",
+      "options": [
+        {
+          "text": "107",
+          "is_correct": false
+        },
+        {
+          "text": "109",
+          "is_correct": false
+        },
+        {
+          "text": "108",
+          "is_correct": true
+        },
+        {
+          "text": "110",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 5,
+        "type_name": "Sume din termeni egal depărtați",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a₁=4, a₅=12. Completați termenul a₃.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Între rangurile 1 și 5 sunt patru pași: r=(12−4)/4=2, deci a₃=8.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 6,
+        "type_name": "Completarea progresiei",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați S_6 pentru PA cu a₁=4 și r=2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sₙ=n(2a₁+(n−1)r)/2=6·(8+10)/2=54.",
+      "options": [
+        {
+          "text": "54",
+          "is_correct": true
+        },
+        {
+          "text": "53",
+          "is_correct": false
+        },
+        {
+          "text": "55",
+          "is_correct": false
+        },
+        {
+          "text": "56",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 7,
+        "type_name": "Suma primilor n termeni",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA satisface a₁+a₃=12 și a₂+a₅=18. Aflați (a₁; r).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuațiile sunt 2a₁+2r=12 și 2a₁+5r=18. Scăderea dă 3r=6, apoi a₁=4.",
+      "options": [
+        {
+          "text": "(5; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 2)",
+          "is_correct": true
+        },
+        {
+          "text": "(4; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 8,
+        "type_name": "Determinarea PA din relații liniare",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA strict crescătoare are a₁+a₃=8 și a₁a₃=12. Aflați r.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₁=4−r, a₃=4+r. Produsul dă 16−r²=12; r²=4. Creșterea impune r>0, deci r=2.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 9,
+        "type_name": "Determinarea PA din produse sau pătrate",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Suma unei PA este Sₙ=2n²+4n, n≥1. Aflați rația.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ=Sₙ−Sₙ₋₁=4n+2, inclusiv la n=1. Diferența aₙ₊₁−aₙ=4.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 10,
+        "type_name": "Recuperarea PA din Sₙ",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Trei numere strict crescătoare în PA au suma 12 și produsul 48. Aflați primul număr.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem 4−d,4,4+d. Produsul este 4(16−d²), deci d²=4. Din d>0 rezultă d=2; primul număr este 2.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 11,
+        "type_name": "Trei sau cinci termeni cu sumă și produs",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care șir este PA cu rația 2, pentru n≥1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru formula liniară, aₙ₊₁−aₙ=2. Celelalte diferențe depind de n.",
+      "options": [
+        {
+          "text": "aₙ=2n²+4",
+          "is_correct": false
+        },
+        {
+          "text": "aₙ=2n+4",
+          "is_correct": true
+        },
+        {
+          "text": "aₙ=2n³+4",
+          "is_correct": false
+        },
+        {
+          "text": "aₙ=2/n+4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 12,
+        "type_name": "Recunoașterea PA din termenul general",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n≥1, Sₙ=2n²+4n+c. Pentru ce c termenii recuperați formează o PA de la primul termen?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La n≥2, aₙ=4n+2, deci r=4. Primul termen trebuie să fie 6; S₁=6+c, ceea ce impune c=0.",
+      "options": [
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 13,
+        "type_name": "Recunoașterea PA din suma parțială",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA pozitivă are a₁=4, r=2 și Sₙ=54. Aflați n.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sₙ=n(2·4+(n−1)·2)/2. Valoarea n=6 verifică ecuația. Cum toți termenii sunt pozitivi, Sₙ crește strict și rangul este unic.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 14,
+        "type_name": "Numărul termenilor unei PA",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați suma numerelor de la 1 la 40, inclusiv, care nu sunt divizibile cu 4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din suma 40·41/2 scădem suma multiplilor 4,2·4,…,10·4, egală cu 4·10·11/2. Rezultatul este 600.",
+      "options": [
+        {
+          "text": "600",
+          "is_correct": true
+        },
+        {
+          "text": "599",
+          "is_correct": false
+        },
+        {
+          "text": "601",
+          "is_correct": false
+        },
+        {
+          "text": "602",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 15,
+        "type_name": "Sume ale multiplilor și nemultiplilor",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA cu r=2, S_6=54. Calculați S_12.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "S₂ₙ=2Sₙ+n²r, prin formula sumei. Aici 2·54+36·2=180.",
+      "options": [
+        {
+          "text": "179",
+          "is_correct": false
+        },
+        {
+          "text": "180",
+          "is_correct": true
+        },
+        {
+          "text": "181",
+          "is_correct": false
+        },
+        {
+          "text": "182",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 16,
+        "type_name": "Relații între sume de lungimi multiple",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA cu r=2, definim bₙ=a₂ₙ₋₁+a₂ₙ. Aflați rația lui bₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "bₙ₊₁−bₙ=(a₂ₙ₊₁−a₂ₙ₋₁)+(a₂ₙ₊₂−a₂ₙ)=2r+2r=4r=8.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 17,
+        "type_name": "PA obținute prin grupare",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA cu r=2, bₙ=a_{2+3(n−1)}, n≥1. Aflați rația lui bₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rangurile consecutive diferă cu 3; diferența termenilor este 3r=6.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 18,
+        "type_name": "Subșir cu indici în PA",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a₁=5, r=3. Calculați a_7.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ=a₁+(n−1)r; aici 5+6·3=23.",
+      "options": [
+        {
+          "text": "23",
+          "is_correct": true
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": false
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 1,
+        "type_name": "Termen de rang dat în PA",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a_7=23 și r=3. Aflați a₁.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₁=aₙ−(n−1)r=23−6·3=5.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 2,
+        "type_name": "Recuperarea primului termen",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA are a₂=8 și a₇=23. Aflați rația.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₇−a₂=5r, deci r=(23−8)/5=3.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 3,
+        "type_name": "Rația din doi termeni",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În PA cu a₁=5, r=3, ce rang are termenul 23?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rezolvăm 5+(k−1)·3=23: k=7, număr natural pozitiv.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 4,
+        "type_name": "Apartenența la PA",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a₂+a₈=34. Calculați suma primilor 9 termeni.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₂+a₈=2a₅, iar S₉=9a₅. Rezultă 9·17=153.",
+      "options": [
+        {
+          "text": "153",
+          "is_correct": true
+        },
+        {
+          "text": "152",
+          "is_correct": false
+        },
+        {
+          "text": "154",
+          "is_correct": false
+        },
+        {
+          "text": "155",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 5,
+        "type_name": "Sume din termeni egal depărtați",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a₁=5, a₅=17. Completați termenul a₃.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Între rangurile 1 și 5 sunt patru pași: r=(17−5)/4=3, deci a₃=11.",
+      "options": [
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": true
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 6,
+        "type_name": "Completarea progresiei",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați S_7 pentru PA cu a₁=5 și r=3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sₙ=n(2a₁+(n−1)r)/2=7·(10+18)/2=98.",
+      "options": [
+        {
+          "text": "97",
+          "is_correct": false
+        },
+        {
+          "text": "99",
+          "is_correct": false
+        },
+        {
+          "text": "98",
+          "is_correct": true
+        },
+        {
+          "text": "100",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 7,
+        "type_name": "Suma primilor n termeni",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA satisface a₁+a₃=16 și a₂+a₅=25. Aflați (a₁; r).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuațiile sunt 2a₁+2r=16 și 2a₁+5r=25. Scăderea dă 3r=9, apoi a₁=5.",
+      "options": [
+        {
+          "text": "(6; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 3)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 8,
+        "type_name": "Determinarea PA din relații liniare",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA strict crescătoare are a₁+a₃=10 și a₁a₃=16. Aflați r.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₁=5−r, a₃=5+r. Produsul dă 25−r²=16; r²=9. Creșterea impune r>0, deci r=3.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 9,
+        "type_name": "Determinarea PA din produse sau pătrate",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Suma unei PA este Sₙ=3n²+5n, n≥1. Aflați rația.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ=Sₙ−Sₙ₋₁=6n+2, inclusiv la n=1. Diferența aₙ₊₁−aₙ=6.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 10,
+        "type_name": "Recuperarea PA din Sₙ",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Trei numere strict crescătoare în PA au suma 15 și produsul 80. Aflați primul număr.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem 5−d,5,5+d. Produsul este 5(25−d²), deci d²=9. Din d>0 rezultă d=3; primul număr este 2.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 11,
+        "type_name": "Trei sau cinci termeni cu sumă și produs",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care șir este PA cu rația 3, pentru n≥1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru formula liniară, aₙ₊₁−aₙ=3. Celelalte diferențe depind de n.",
+      "options": [
+        {
+          "text": "aₙ=3n²+5",
+          "is_correct": false
+        },
+        {
+          "text": "aₙ=3n³+5",
+          "is_correct": false
+        },
+        {
+          "text": "aₙ=3/n+5",
+          "is_correct": false
+        },
+        {
+          "text": "aₙ=3n+5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 12,
+        "type_name": "Recunoașterea PA din termenul general",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n≥1, Sₙ=3n²+5n+c. Pentru ce c termenii recuperați formează o PA de la primul termen?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La n≥2, aₙ=6n+2, deci r=6. Primul termen trebuie să fie 8; S₁=8+c, ceea ce impune c=0.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 13,
+        "type_name": "Recunoașterea PA din suma parțială",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA pozitivă are a₁=5, r=3 și Sₙ=98. Aflați n.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sₙ=n(2·5+(n−1)·3)/2. Valoarea n=7 verifică ecuația. Cum toți termenii sunt pozitivi, Sₙ crește strict și rangul este unic.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 14,
+        "type_name": "Numărul termenilor unei PA",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați suma numerelor de la 1 la 50, inclusiv, care nu sunt divizibile cu 5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din suma 50·51/2 scădem suma multiplilor 5,2·5,…,10·5, egală cu 5·10·11/2. Rezultatul este 1000.",
+      "options": [
+        {
+          "text": "999",
+          "is_correct": false
+        },
+        {
+          "text": "1001",
+          "is_correct": false
+        },
+        {
+          "text": "1000",
+          "is_correct": true
+        },
+        {
+          "text": "1002",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 15,
+        "type_name": "Sume ale multiplilor și nemultiplilor",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA cu r=3, S_7=98. Calculați S_14.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "S₂ₙ=2Sₙ+n²r, prin formula sumei. Aici 2·98+49·3=343.",
+      "options": [
+        {
+          "text": "342",
+          "is_correct": false
+        },
+        {
+          "text": "344",
+          "is_correct": false
+        },
+        {
+          "text": "345",
+          "is_correct": false
+        },
+        {
+          "text": "343",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 16,
+        "type_name": "Relații între sume de lungimi multiple",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA cu r=3, definim bₙ=a₂ₙ₋₁+a₂ₙ. Aflați rația lui bₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "bₙ₊₁−bₙ=(a₂ₙ₊₁−a₂ₙ₋₁)+(a₂ₙ₊₂−a₂ₙ)=2r+2r=4r=12.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 17,
+        "type_name": "PA obținute prin grupare",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA cu r=3, bₙ=a_{3+4(n−1)}, n≥1. Aflați rația lui bₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rangurile consecutive diferă cu 4; diferența termenilor este 4r=12.",
+      "options": [
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 18,
+        "type_name": "Subșir cu indici în PA",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a₁=6, r=4. Calculați a_8.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ=a₁+(n−1)r; aici 6+7·4=34.",
+      "options": [
+        {
+          "text": "33",
+          "is_correct": false
+        },
+        {
+          "text": "35",
+          "is_correct": false
+        },
+        {
+          "text": "34",
+          "is_correct": true
+        },
+        {
+          "text": "36",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 1,
+        "type_name": "Termen de rang dat în PA",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a_8=34 și r=4. Aflați a₁.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₁=aₙ−(n−1)r=34−7·4=6.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 2,
+        "type_name": "Recuperarea primului termen",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA are a₂=10 și a₇=30. Aflați rația.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₇−a₂=5r, deci r=(30−10)/5=4.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 3,
+        "type_name": "Rația din doi termeni",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În PA cu a₁=6, r=4, ce rang are termenul 34?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rezolvăm 6+(k−1)·4=34: k=8, număr natural pozitiv.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 4,
+        "type_name": "Apartenența la PA",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a₂+a₈=44. Calculați suma primilor 9 termeni.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₂+a₈=2a₅, iar S₉=9a₅. Rezultă 9·22=198.",
+      "options": [
+        {
+          "text": "197",
+          "is_correct": false
+        },
+        {
+          "text": "199",
+          "is_correct": false
+        },
+        {
+          "text": "198",
+          "is_correct": true
+        },
+        {
+          "text": "200",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 5,
+        "type_name": "Sume din termeni egal depărtați",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a₁=6, a₅=22. Completați termenul a₃.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Între rangurile 1 și 5 sunt patru pași: r=(22−6)/4=4, deci a₃=14.",
+      "options": [
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 6,
+        "type_name": "Completarea progresiei",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați S_8 pentru PA cu a₁=6 și r=4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sₙ=n(2a₁+(n−1)r)/2=8·(12+28)/2=160.",
+      "options": [
+        {
+          "text": "160",
+          "is_correct": true
+        },
+        {
+          "text": "159",
+          "is_correct": false
+        },
+        {
+          "text": "161",
+          "is_correct": false
+        },
+        {
+          "text": "162",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 7,
+        "type_name": "Suma primilor n termeni",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA satisface a₁+a₃=20 și a₂+a₅=32. Aflați (a₁; r).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuațiile sunt 2a₁+2r=20 și 2a₁+5r=32. Scăderea dă 3r=12, apoi a₁=6.",
+      "options": [
+        {
+          "text": "(7; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(6; 4)",
+          "is_correct": true
+        },
+        {
+          "text": "(6; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 6)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 8,
+        "type_name": "Determinarea PA din relații liniare",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA strict crescătoare are a₁+a₃=12 și a₁a₃=20. Aflați r.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₁=6−r, a₃=6+r. Produsul dă 36−r²=20; r²=16. Creșterea impune r>0, deci r=4.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 9,
+        "type_name": "Determinarea PA din produse sau pătrate",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Suma unei PA este Sₙ=4n²+6n, n≥1. Aflați rația.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ=Sₙ−Sₙ₋₁=8n+2, inclusiv la n=1. Diferența aₙ₊₁−aₙ=8.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 10,
+        "type_name": "Recuperarea PA din Sₙ",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Trei numere strict crescătoare în PA au suma 18 și produsul 120. Aflați primul număr.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem 6−d,6,6+d. Produsul este 6(36−d²), deci d²=16. Din d>0 rezultă d=4; primul număr este 2.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 11,
+        "type_name": "Trei sau cinci termeni cu sumă și produs",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care șir este PA cu rația 4, pentru n≥1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru formula liniară, aₙ₊₁−aₙ=4. Celelalte diferențe depind de n.",
+      "options": [
+        {
+          "text": "aₙ=4n²+6",
+          "is_correct": false
+        },
+        {
+          "text": "aₙ=4n+6",
+          "is_correct": true
+        },
+        {
+          "text": "aₙ=4n³+6",
+          "is_correct": false
+        },
+        {
+          "text": "aₙ=4/n+6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 12,
+        "type_name": "Recunoașterea PA din termenul general",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n≥1, Sₙ=4n²+6n+c. Pentru ce c termenii recuperați formează o PA de la primul termen?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La n≥2, aₙ=8n+2, deci r=8. Primul termen trebuie să fie 10; S₁=10+c, ceea ce impune c=0.",
+      "options": [
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 13,
+        "type_name": "Recunoașterea PA din suma parțială",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA pozitivă are a₁=6, r=4 și Sₙ=160. Aflați n.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sₙ=n(2·6+(n−1)·4)/2. Valoarea n=8 verifică ecuația. Cum toți termenii sunt pozitivi, Sₙ crește strict și rangul este unic.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 14,
+        "type_name": "Numărul termenilor unei PA",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați suma numerelor de la 1 la 60, inclusiv, care nu sunt divizibile cu 6.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din suma 60·61/2 scădem suma multiplilor 6,2·6,…,10·6, egală cu 6·10·11/2. Rezultatul este 1500.",
+      "options": [
+        {
+          "text": "1500",
+          "is_correct": true
+        },
+        {
+          "text": "1499",
+          "is_correct": false
+        },
+        {
+          "text": "1501",
+          "is_correct": false
+        },
+        {
+          "text": "1502",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 15,
+        "type_name": "Sume ale multiplilor și nemultiplilor",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA cu r=4, S_8=160. Calculați S_16.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "S₂ₙ=2Sₙ+n²r, prin formula sumei. Aici 2·160+64·4=576.",
+      "options": [
+        {
+          "text": "575",
+          "is_correct": false
+        },
+        {
+          "text": "576",
+          "is_correct": true
+        },
+        {
+          "text": "577",
+          "is_correct": false
+        },
+        {
+          "text": "578",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 16,
+        "type_name": "Relații între sume de lungimi multiple",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA cu r=4, definim bₙ=a₂ₙ₋₁+a₂ₙ. Aflați rația lui bₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "bₙ₊₁−bₙ=(a₂ₙ₊₁−a₂ₙ₋₁)+(a₂ₙ₊₂−a₂ₙ)=2r+2r=4r=16.",
+      "options": [
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": true
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 17,
+        "type_name": "PA obținute prin grupare",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA cu r=4, bₙ=a_{4+5(n−1)}, n≥1. Aflați rația lui bₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rangurile consecutive diferă cu 5; diferența termenilor este 5r=20.",
+      "options": [
+        {
+          "text": "19",
+          "is_correct": false
+        },
+        {
+          "text": "21",
+          "is_correct": false
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        },
+        {
+          "text": "20",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 18,
+        "type_name": "Subșir cu indici în PA",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a₁=7, r=5. Calculați a_9.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ=a₁+(n−1)r; aici 7+8·5=47.",
+      "options": [
+        {
+          "text": "47",
+          "is_correct": true
+        },
+        {
+          "text": "46",
+          "is_correct": false
+        },
+        {
+          "text": "48",
+          "is_correct": false
+        },
+        {
+          "text": "49",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 1,
+        "type_name": "Termen de rang dat în PA",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a_9=47 și r=5. Aflați a₁.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₁=aₙ−(n−1)r=47−8·5=7.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 2,
+        "type_name": "Recuperarea primului termen",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA are a₂=12 și a₇=37. Aflați rația.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₇−a₂=5r, deci r=(37−12)/5=5.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 3,
+        "type_name": "Rația din doi termeni",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "În PA cu a₁=7, r=5, ce rang are termenul 47?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rezolvăm 7+(k−1)·5=47: k=9, număr natural pozitiv.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 4,
+        "type_name": "Apartenența la PA",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a₂+a₈=54. Calculați suma primilor 9 termeni.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₂+a₈=2a₅, iar S₉=9a₅. Rezultă 9·27=243.",
+      "options": [
+        {
+          "text": "243",
+          "is_correct": true
+        },
+        {
+          "text": "242",
+          "is_correct": false
+        },
+        {
+          "text": "244",
+          "is_correct": false
+        },
+        {
+          "text": "245",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 5,
+        "type_name": "Sume din termeni egal depărtați",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA, a₁=7, a₅=27. Completați termenul a₃.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Între rangurile 1 și 5 sunt patru pași: r=(27−7)/4=5, deci a₃=17.",
+      "options": [
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": true
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        },
+        {
+          "text": "19",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 6,
+        "type_name": "Completarea progresiei",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați S_9 pentru PA cu a₁=7 și r=5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sₙ=n(2a₁+(n−1)r)/2=9·(14+40)/2=243.",
+      "options": [
+        {
+          "text": "242",
+          "is_correct": false
+        },
+        {
+          "text": "244",
+          "is_correct": false
+        },
+        {
+          "text": "243",
+          "is_correct": true
+        },
+        {
+          "text": "245",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 7,
+        "type_name": "Suma primilor n termeni",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA satisface a₁+a₃=24 și a₂+a₅=39. Aflați (a₁; r).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuațiile sunt 2a₁+2r=24 și 2a₁+5r=39. Scăderea dă 3r=15, apoi a₁=7.",
+      "options": [
+        {
+          "text": "(8; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(7; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(6; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(7; 5)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 8,
+        "type_name": "Determinarea PA din relații liniare",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA strict crescătoare are a₁+a₃=14 și a₁a₃=24. Aflați r.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "a₁=7−r, a₃=7+r. Produsul dă 49−r²=24; r²=25. Creșterea impune r>0, deci r=5.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 9,
+        "type_name": "Determinarea PA din produse sau pătrate",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Suma unei PA este Sₙ=5n²+7n, n≥1. Aflați rația.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "aₙ=Sₙ−Sₙ₋₁=10n+2, inclusiv la n=1. Diferența aₙ₊₁−aₙ=10.",
+      "options": [
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": true
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 10,
+        "type_name": "Recuperarea PA din Sₙ",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Trei numere strict crescătoare în PA au suma 21 și produsul 168. Aflați primul număr.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem 7−d,7,7+d. Produsul este 7(49−d²), deci d²=25. Din d>0 rezultă d=5; primul număr este 2.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 11,
+        "type_name": "Trei sau cinci termeni cu sumă și produs",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care șir este PA cu rația 5, pentru n≥1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru formula liniară, aₙ₊₁−aₙ=5. Celelalte diferențe depind de n.",
+      "options": [
+        {
+          "text": "aₙ=5n²+7",
+          "is_correct": false
+        },
+        {
+          "text": "aₙ=5n³+7",
+          "is_correct": false
+        },
+        {
+          "text": "aₙ=5/n+7",
+          "is_correct": false
+        },
+        {
+          "text": "aₙ=5n+7",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 12,
+        "type_name": "Recunoașterea PA din termenul general",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n≥1, Sₙ=5n²+7n+c. Pentru ce c termenii recuperați formează o PA de la primul termen?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La n≥2, aₙ=10n+2, deci r=10. Primul termen trebuie să fie 12; S₁=12+c, ceea ce impune c=0.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 13,
+        "type_name": "Recunoașterea PA din suma parțială",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O PA pozitivă are a₁=7, r=5 și Sₙ=243. Aflați n.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sₙ=n(2·7+(n−1)·5)/2. Valoarea n=9 verifică ecuația. Cum toți termenii sunt pozitivi, Sₙ crește strict și rangul este unic.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 14,
+        "type_name": "Numărul termenilor unei PA",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Calculați suma numerelor de la 1 la 70, inclusiv, care nu sunt divizibile cu 7.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din suma 70·71/2 scădem suma multiplilor 7,2·7,…,10·7, egală cu 7·10·11/2. Rezultatul este 2100.",
+      "options": [
+        {
+          "text": "2099",
+          "is_correct": false
+        },
+        {
+          "text": "2101",
+          "is_correct": false
+        },
+        {
+          "text": "2100",
+          "is_correct": true
+        },
+        {
+          "text": "2102",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 15,
+        "type_name": "Sume ale multiplilor și nemultiplilor",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA cu r=5, S_9=243. Calculați S_18.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "S₂ₙ=2Sₙ+n²r, prin formula sumei. Aici 2·243+81·5=891.",
+      "options": [
+        {
+          "text": "890",
+          "is_correct": false
+        },
+        {
+          "text": "892",
+          "is_correct": false
+        },
+        {
+          "text": "893",
+          "is_correct": false
+        },
+        {
+          "text": "891",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 16,
+        "type_name": "Relații între sume de lungimi multiple",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA cu r=5, definim bₙ=a₂ₙ₋₁+a₂ₙ. Aflați rația lui bₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "bₙ₊₁−bₙ=(a₂ₙ₊₁−a₂ₙ₋₁)+(a₂ₙ₊₂−a₂ₙ)=2r+2r=4r=20.",
+      "options": [
+        {
+          "text": "20",
+          "is_correct": true
+        },
+        {
+          "text": "19",
+          "is_correct": false
+        },
+        {
+          "text": "21",
+          "is_correct": false
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 17,
+        "type_name": "PA obținute prin grupare",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Într-o PA cu r=5, bₙ=a_{5+6(n−1)}, n≥1. Aflați rația lui bₙ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rangurile consecutive diferă cu 6; diferența termenilor este 6r=30.",
+      "options": [
+        {
+          "text": "29",
+          "is_correct": false
+        },
+        {
+          "text": "30",
+          "is_correct": true
+        },
+        {
+          "text": "31",
+          "is_correct": false
+        },
+        {
+          "text": "32",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.2.1",
+        "type": 18,
+        "type_name": "Subșir cu indici în PA",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    }
+  ]
+}

@@ -1,0 +1,698 @@
+{
+  "home": {
+    "cls": 0,
+    "dclMs": 209,
+    "lcpMs": 264,
+    "loadMs": 247.30000001192093,
+    "longTasks": 0,
+    "maxInteractionMs": null,
+    "paints": [
+      {
+        "ms": 264,
+        "name": "first-paint"
+      },
+      {
+        "ms": 264,
+        "name": "first-contentful-paint"
+      }
+    ],
+    "resources": [
+      {
+        "bytes": 0,
+        "duration": 19.700000017881393,
+        "name": "/static/core/js/performance-probe.js",
+        "transfer": 300
+      },
+      {
+        "bytes": 9435,
+        "duration": 0,
+        "name": "/css2",
+        "transfer": 0
+      },
+      {
+        "bytes": 3640,
+        "duration": 0,
+        "name": "/static/core/css/design-tokens.css",
+        "transfer": 0
+      },
+      {
+        "bytes": 1865,
+        "duration": 0,
+        "name": "/static/core/css/motion.css",
+        "transfer": 0
+      },
+      {
+        "bytes": 8040,
+        "duration": 0,
+        "name": "/static/core/css/FMStyle.css",
+        "transfer": 0
+      },
+      {
+        "bytes": 0,
+        "duration": 0,
+        "name": "/static/core/css/fm-app.css",
+        "transfer": 0
+      },
+      {
+        "bytes": 0,
+        "duration": 0,
+        "name": "/static/core/css/frontend-polish.css",
+        "transfer": 0
+      },
+      {
+        "bytes": 0,
+        "duration": 27.80000001192093,
+        "name": "/static/core/css/ui-components.css",
+        "transfer": 300
+      },
+      {
+        "bytes": 2041,
+        "duration": 0,
+        "name": "/static/core/css/ui-states.css",
+        "transfer": 0
+      },
+      {
+        "bytes": 31000,
+        "duration": 0,
+        "name": "/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+        "transfer": 0
+      },
+      {
+        "bytes": 22529,
+        "duration": 29,
+        "name": "/static/core/img/FMImage.png",
+        "transfer": 0
+      },
+      {
+        "bytes": 14530,
+        "duration": 0,
+        "name": "/static/core/img/Focul-Matematic.png",
+        "transfer": 0
+      },
+      {
+        "bytes": 222,
+        "duration": 0,
+        "name": "/static/core/img/closesimple.svg",
+        "transfer": 0
+      },
+      {
+        "bytes": 193,
+        "duration": 0,
+        "name": "/static/core/img/menusimple.svg",
+        "transfer": 0
+      },
+      {
+        "bytes": 5288,
+        "duration": 0,
+        "name": "/static/core/js/FMJava.js",
+        "transfer": 0
+      },
+      {
+        "bytes": 8590,
+        "duration": 0,
+        "name": "/static/core/js/ui-components.js",
+        "transfer": 0
+      },
+      {
+        "bytes": 0,
+        "duration": 0,
+        "name": "/static/core/js/responsive.js",
+        "transfer": 0
+      },
+      {
+        "bytes": 0,
+        "duration": 0,
+        "name": "/static/core/js/accessibility.js",
+        "transfer": 0
+      },
+      {
+        "bytes": 70688,
+        "duration": 0,
+        "name": "/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
+        "transfer": 0
+      },
+      {
+        "bytes": 37956,
+        "duration": 0,
+        "name": "/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2",
+        "transfer": 0
+      },
+      {
+        "bytes": 77160,
+        "duration": 0,
+        "name": "/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2",
+        "transfer": 0
+      },
+      {
+        "bytes": 162381,
+        "duration": 29.599999994039536,
+        "name": "/static/core/img/5-cell.webm",
+        "transfer": 162681
+      }
+    ],
+    "shifts": []
+  },
+  "training": {
+    "cls": 0,
+    "dclMs": 693.4000000059605,
+    "lcpMs": 708,
+    "loadMs": 696.3000000119209,
+    "longTasks": 0,
+    "maxInteractionMs": 48,
+    "paints": [
+      {
+        "ms": 692,
+        "name": "first-paint"
+      },
+      {
+        "ms": 692,
+        "name": "first-contentful-paint"
+      }
+    ],
+    "resources": [
+      {
+        "bytes": 2731,
+        "duration": 328.5,
+        "name": "/static/core/js/performance-probe.js",
+        "transfer": 3031
+      },
+      {
+        "bytes": 9435,
+        "duration": 0,
+        "name": "/css2",
+        "transfer": 0
+      },
+      {
+        "bytes": 3640,
+        "duration": 0,
+        "name": "/static/core/css/design-tokens.css",
+        "transfer": 0
+      },
+      {
+        "bytes": 1865,
+        "duration": 0,
+        "name": "/static/core/css/motion.css",
+        "transfer": 0
+      },
+      {
+        "bytes": 8040,
+        "duration": 0,
+        "name": "/static/core/css/FMStyle.css",
+        "transfer": 0
+      },
+      {
+        "bytes": 0,
+        "duration": 37.599999994039536,
+        "name": "/static/core/css/fm-app.css",
+        "transfer": 300
+      },
+      {
+        "bytes": 0,
+        "duration": 51.79999998211861,
+        "name": "/static/core/css/training-exercises.css",
+        "transfer": 300
+      },
+      {
+        "bytes": 0,
+        "duration": 59.29999998211861,
+        "name": "/static/core/css/frontend-polish.css",
+        "transfer": 300
+      },
+      {
+        "bytes": 9278,
+        "duration": 339.69999998807907,
+        "name": "/static/core/css/ui-components.css",
+        "transfer": 9578
+      },
+      {
+        "bytes": 2041,
+        "duration": 0,
+        "name": "/static/core/css/ui-states.css",
+        "transfer": 0
+      },
+      {
+        "bytes": 24793,
+        "duration": 0,
+        "name": "/static/vendor/katex-0.19.0/katex.min.css",
+        "transfer": 0
+      },
+      {
+        "bytes": 755,
+        "duration": 0,
+        "name": "/static/core/css/math-rendering.css",
+        "transfer": 0
+      },
+      {
+        "bytes": 272868,
+        "duration": 0,
+        "name": "/static/vendor/katex-0.19.0/katex.min.js",
+        "transfer": 0
+      },
+      {
+        "bytes": 31000,
+        "duration": 0,
+        "name": "/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+        "transfer": 0
+      },
+      {
+        "bytes": 3145,
+        "duration": 0,
+        "name": "/static/core/css/vector-workbench.css",
+        "transfer": 0
+      },
+      {
+        "bytes": 0,
+        "duration": 335,
+        "name": "/static/core/js/math-rendering.js",
+        "transfer": 300
+      },
+      {
+        "bytes": 1622,
+        "duration": 0,
+        "name": "/static/core/js/training-boot.js",
+        "transfer": 0
+      },
+      {
+        "bytes": 14530,
+        "duration": 0,
+        "name": "/static/core/img/Focul-Matematic.png",
+        "transfer": 0
+      },
+      {
+        "bytes": 222,
+        "duration": 0,
+        "name": "/static/core/img/closesimple.svg",
+        "transfer": 0
+      },
+      {
+        "bytes": 193,
+        "duration": 0,
+        "name": "/static/core/img/menusimple.svg",
+        "transfer": 0
+      },
+      {
+        "bytes": 5288,
+        "duration": 0,
+        "name": "/static/core/js/FMJava.js",
+        "transfer": 0
+      },
+      {
+        "bytes": 8590,
+        "duration": 0,
+        "name": "/static/core/js/ui-components.js",
+        "transfer": 0
+      },
+      {
+        "bytes": 0,
+        "duration": 39.5,
+        "name": "/static/core/js/accessibility.js",
+        "transfer": 300
+      },
+      {
+        "bytes": 0,
+        "duration": 60.400000005960464,
+        "name": "/static/core/js/responsive.js",
+        "transfer": 300
+      },
+      {
+        "bytes": 26522,
+        "duration": 0,
+        "name": "/static/core/js/vector-workbench.js",
+        "transfer": 0
+      },
+      {
+        "bytes": 0,
+        "duration": 45.80000001192093,
+        "name": "/static/core/js/training.js",
+        "transfer": 300
+      },
+      {
+        "bytes": 70688,
+        "duration": 0,
+        "name": "/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
+        "transfer": 0
+      },
+      {
+        "bytes": 37956,
+        "duration": 0,
+        "name": "/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2",
+        "transfer": 0
+      },
+      {
+        "bytes": 77160,
+        "duration": 0,
+        "name": "/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2",
+        "transfer": 0
+      }
+    ],
+    "shifts": []
+  },
+  "investigation": {
+    "homeInitialAfter": {
+      "cls": 0.0028616635160243235,
+      "dclMs": 966,
+      "lcpMs": 960,
+      "loadMs": 1373,
+      "longTasks": 2,
+      "maxInteractionMs": 32,
+      "paints": [
+        {
+          "ms": 960,
+          "name": "first-paint"
+        },
+        {
+          "ms": 960,
+          "name": "first-contentful-paint"
+        }
+      ],
+      "resources": [
+        {
+          "bytes": 0,
+          "duration": 267.2000000178814,
+          "name": "/static/core/js/performance-probe.js",
+          "transfer": 300
+        },
+        {
+          "bytes": 9435,
+          "duration": 0,
+          "name": "/css2",
+          "transfer": 0
+        },
+        {
+          "bytes": 3640,
+          "duration": 0,
+          "name": "/static/core/css/design-tokens.css",
+          "transfer": 0
+        },
+        {
+          "bytes": 1865,
+          "duration": 0,
+          "name": "/static/core/css/motion.css",
+          "transfer": 0
+        },
+        {
+          "bytes": 8040,
+          "duration": 0,
+          "name": "/static/core/css/FMStyle.css",
+          "transfer": 0
+        },
+        {
+          "bytes": 42915,
+          "duration": 648.0999999940395,
+          "name": "/static/core/css/fm-app.css",
+          "transfer": 43215
+        },
+        {
+          "bytes": 13398,
+          "duration": 649.5,
+          "name": "/static/core/css/frontend-polish.css",
+          "transfer": 13698
+        },
+        {
+          "bytes": 9181,
+          "duration": 674.5999999940395,
+          "name": "/static/core/css/ui-components.css",
+          "transfer": 9481
+        },
+        {
+          "bytes": 2041,
+          "duration": 0,
+          "name": "/static/core/css/ui-states.css",
+          "transfer": 0
+        },
+        {
+          "bytes": 31000,
+          "duration": 0,
+          "name": "/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+          "transfer": 0
+        },
+        {
+          "bytes": 14530,
+          "duration": 0,
+          "name": "/static/core/img/Focul-Matematic.png",
+          "transfer": 0
+        },
+        {
+          "bytes": 222,
+          "duration": 0,
+          "name": "/static/core/img/closesimple.svg",
+          "transfer": 0
+        },
+        {
+          "bytes": 193,
+          "duration": 0,
+          "name": "/static/core/img/menusimple.svg",
+          "transfer": 0
+        },
+        {
+          "bytes": 22529,
+          "duration": 24,
+          "name": "/static/core/img/FMImage.png",
+          "transfer": 0
+        },
+        {
+          "bytes": 5288,
+          "duration": 0,
+          "name": "/static/core/js/FMJava.js",
+          "transfer": 0
+        },
+        {
+          "bytes": 8590,
+          "duration": 0,
+          "name": "/static/core/js/ui-components.js",
+          "transfer": 0
+        },
+        {
+          "bytes": 4745,
+          "duration": 648.3999999761581,
+          "name": "/static/core/js/responsive.js",
+          "transfer": 5045
+        },
+        {
+          "bytes": 1721,
+          "duration": 695.0999999940395,
+          "name": "/static/core/js/accessibility.js",
+          "transfer": 2021
+        },
+        {
+          "bytes": 70688,
+          "duration": 0,
+          "name": "/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
+          "transfer": 0
+        },
+        {
+          "bytes": 37956,
+          "duration": 0,
+          "name": "/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2",
+          "transfer": 0
+        },
+        {
+          "bytes": 77160,
+          "duration": 0,
+          "name": "/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2",
+          "transfer": 0
+        },
+        {
+          "bytes": 162381,
+          "duration": 4.5,
+          "name": "/static/core/img/5-cell.webm",
+          "transfer": 162681
+        }
+      ]
+    },
+    "trainingInitialAfter": {
+      "cls": 0.7399522065195376,
+      "dclMs": 404.09999999403954,
+      "lcpMs": 420,
+      "loadMs": 407,
+      "longTasks": 0,
+      "maxInteractionMs": 32,
+      "paints": [
+        {
+          "ms": 404,
+          "name": "first-paint"
+        },
+        {
+          "ms": 404,
+          "name": "first-contentful-paint"
+        }
+      ],
+      "resources": [
+        {
+          "bytes": 0,
+          "duration": 32.099999994039536,
+          "name": "/static/core/js/performance-probe.js",
+          "transfer": 300
+        },
+        {
+          "bytes": 9435,
+          "duration": 0,
+          "name": "/css2",
+          "transfer": 0
+        },
+        {
+          "bytes": 3640,
+          "duration": 0,
+          "name": "/static/core/css/design-tokens.css",
+          "transfer": 0
+        },
+        {
+          "bytes": 1865,
+          "duration": 0,
+          "name": "/static/core/css/motion.css",
+          "transfer": 0
+        },
+        {
+          "bytes": 8040,
+          "duration": 0,
+          "name": "/static/core/css/FMStyle.css",
+          "transfer": 0
+        },
+        {
+          "bytes": 0,
+          "duration": 31,
+          "name": "/static/core/css/fm-app.css",
+          "transfer": 300
+        },
+        {
+          "bytes": 91337,
+          "duration": 31.599999994039536,
+          "name": "/static/core/css/training-exercises.css",
+          "transfer": 91637
+        },
+        {
+          "bytes": 13398,
+          "duration": 0,
+          "name": "/static/core/css/frontend-polish.css",
+          "transfer": 0
+        },
+        {
+          "bytes": 9181,
+          "duration": 0,
+          "name": "/static/core/css/ui-components.css",
+          "transfer": 0
+        },
+        {
+          "bytes": 2041,
+          "duration": 0,
+          "name": "/static/core/css/ui-states.css",
+          "transfer": 0
+        },
+        {
+          "bytes": 24793,
+          "duration": 0,
+          "name": "/static/vendor/katex-0.19.0/katex.min.css",
+          "transfer": 0
+        },
+        {
+          "bytes": 755,
+          "duration": 0,
+          "name": "/static/core/css/math-rendering.css",
+          "transfer": 0
+        },
+        {
+          "bytes": 272868,
+          "duration": 0,
+          "name": "/static/vendor/katex-0.19.0/katex.min.js",
+          "transfer": 0
+        },
+        {
+          "bytes": 12729,
+          "duration": 81.69999998807907,
+          "name": "/static/core/js/math-rendering.js",
+          "transfer": 13029
+        },
+        {
+          "bytes": 31000,
+          "duration": 0,
+          "name": "/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+          "transfer": 0
+        },
+        {
+          "bytes": 3145,
+          "duration": 0,
+          "name": "/static/core/css/vector-workbench.css",
+          "transfer": 0
+        },
+        {
+          "bytes": 1622,
+          "duration": 0,
+          "name": "/static/core/js/training-boot.js",
+          "transfer": 0
+        },
+        {
+          "bytes": 14530,
+          "duration": 0,
+          "name": "/static/core/img/Focul-Matematic.png",
+          "transfer": 0
+        },
+        {
+          "bytes": 222,
+          "duration": 0,
+          "name": "/static/core/img/closesimple.svg",
+          "transfer": 0
+        },
+        {
+          "bytes": 193,
+          "duration": 0,
+          "name": "/static/core/img/menusimple.svg",
+          "transfer": 0
+        },
+        {
+          "bytes": 5288,
+          "duration": 0,
+          "name": "/static/core/js/FMJava.js",
+          "transfer": 0
+        },
+        {
+          "bytes": 8590,
+          "duration": 0,
+          "name": "/static/core/js/ui-components.js",
+          "transfer": 0
+        },
+        {
+          "bytes": 4745,
+          "duration": 0,
+          "name": "/static/core/js/responsive.js",
+          "transfer": 0
+        },
+        {
+          "bytes": 26522,
+          "duration": 0,
+          "name": "/static/core/js/vector-workbench.js",
+          "transfer": 0
+        },
+        {
+          "bytes": 0,
+          "duration": 30.400000005960464,
+          "name": "/static/core/js/accessibility.js",
+          "transfer": 300
+        },
+        {
+          "bytes": 0,
+          "duration": 30.5,
+          "name": "/static/core/js/training.js",
+          "transfer": 300
+        },
+        {
+          "bytes": 70688,
+          "duration": 0,
+          "name": "/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
+          "transfer": 0
+        },
+        {
+          "bytes": 37956,
+          "duration": 0,
+          "name": "/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2",
+          "transfer": 0
+        },
+        {
+          "bytes": 77160,
+          "duration": 0,
+          "name": "/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2",
+          "transfer": 0
+        }
+      ]
+    }
+  }
+}

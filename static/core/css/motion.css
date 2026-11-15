@@ -1,0 +1,51 @@
+/* Shared motion contract. Opt-in utilities never hide content pending JS/scroll. */
+:root {
+    --fm-duration-fast: 150ms;
+    --fm-duration-standard: 220ms;
+    --fm-duration-enter: 280ms;
+    --fm-duration-exit: 220ms;
+    --fm-duration-progress: 350ms;
+    --fm-ease-standard: cubic-bezier(.2,0,0,1);
+    --fm-ease-enter: cubic-bezier(.22,1,.36,1);
+    --fm-ease-exit: cubic-bezier(.4,0,1,1);
+    --fm-motion-distance: 6px;
+    --fm-motion-lift: -2px;
+}
+
+@keyframes fm-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fm-rise-in {
+    from { opacity: 0; transform: translateY(var(--fm-motion-distance)); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fm-scale-in {
+    from { opacity: 0; transform: scale(.98); }
+    to { opacity: 1; transform: scale(1); }
+}
+.fm-motion-fade-in { animation: fm-fade-in var(--fm-duration-standard) var(--fm-ease-enter) backwards; }
+.fm-motion-rise-in { animation: fm-rise-in var(--fm-duration-enter) var(--fm-ease-enter) backwards; }
+.fm-motion-scale-in { animation: fm-scale-in var(--fm-duration-enter) var(--fm-ease-enter) backwards; }
+
+/* Apply only to an actual link/button, never to a passive information card. */
+:is(a, button).fm-motion-hover-lift {
+    transition: transform var(--fm-duration-fast) var(--fm-ease-standard);
+}
+@media (hover: hover) and (pointer: fine) {
+    :is(a, button).fm-motion-hover-lift:hover:not(:disabled) {
+        transform: translateY(var(--fm-motion-lift));
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --fm-duration-fast: 0ms;
+        --fm-duration-standard: 0ms;
+        --fm-duration-enter: 0ms;
+        --fm-duration-exit: 0ms;
+        --fm-duration-progress: 0ms;
+        --fm-motion-distance: 0px;
+        --fm-motion-lift: 0px;
+    }
+    .fm-motion-fade-in, .fm-motion-rise-in, .fm-motion-scale-in { animation: none; }
+}

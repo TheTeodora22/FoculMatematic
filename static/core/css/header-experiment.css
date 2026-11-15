@@ -7,8 +7,8 @@ html .site-header.is-compact {
     align-items: center;
     gap: 1.5rem;
     padding: 0 max(2rem, calc((100% - 1440px) / 2));
-    background: #050506;
-    border-bottom: 1px solid rgba(255,255,255,.06);
+    background: #101119;
+    border-bottom: 1px solid transparent;
     box-shadow: none;
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
@@ -37,7 +37,11 @@ html .site-header.is-compact {
 .site-header .nav-dropdown-toggle:hover,
 .site-header .nav-dropdown-toggle[aria-expanded="true"] {
     background: transparent;
-    color: #ff845e;
+    color: #ff6b3d;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: .5em;
 }
 .site-header .nav__link a[aria-current="page"] {
     color: #f4f4f5;
@@ -52,7 +56,7 @@ html .site-header.is-compact {
     padding-block: .75rem;
     white-space: nowrap;
 }
-.site-header .header-account-link:hover { color: #fff; }
+.site-header .header-account-link:hover { color: #ff6b3d; text-decoration: underline; text-underline-offset: .5em; text-decoration-thickness: 1.5px; }
 .site-header .header-primary-action {
     display: inline-flex;
     justify-content: center;
@@ -73,7 +77,7 @@ html .site-header.is-compact {
 .site-header .nav-icon-button { color: #f4f4f5; }
 .site-header .nav__link .submenu { background: #141419; border-color: #333139; }
 .site-header .nav__link .submenu a { background: transparent; color: #f4f4f5; }
-.site-header .nav__link .submenu a:hover { background: #252129; color: #ff845e; }
+.site-header .nav__link .submenu a:hover { background: transparent; color: #ff6b3d; text-decoration: underline; text-underline-offset: .3em; }
 @media (max-width: 1280px) {
     html .site-header, html .site-header.is-compact {
         grid-template-columns: 1fr auto;
@@ -85,4 +89,14 @@ html .site-header.is-compact {
 @media (max-width: 640px) {
     :root { --fm-header-height: 72px; --fm-header-compact-height: 64px; }
     .site-header > .site-brand { width: min(65vw, 16rem); }
+}
+
+/* Keep hover emphasis on the current-page link as well. */
+.site-header .nav__link > li > a[aria-current="page"]:hover,
+.site-header .nav__link > li > a:focus-visible,
+.site-header .nav-dropdown-toggle:focus-visible {
+    color: #ff6b3d;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: .5em;
 }

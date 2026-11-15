@@ -1,6 +1,2247 @@
 {
   "title": "Funcții. Reper cartezian, produs cartezian și reprezentare grafică",
   "description": "Clasa a 9-a · Funcții",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Fie A={1; 2} și B={-1; 0; 1}. Care este A×B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A×B conține toate perechile ordonate cu prima coordonată în A și a doua în B. Fiecare dintre cele două elemente ale lui A se asociază cu fiecare dintre cele trei elemente ale lui B: șase perechi.",
+      "options": [
+        {
+          "text": "{(1, -1); (1, 0); (1, 1); (2, -1); (2, 0); (2, 1)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(-1, 1); (-1, 2); (0, 1); (0, 2); (1, 1); (1, 2)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(1, -1); (1, 1); (2, -1); (2, 1)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(1, -1); (1, 0); (1, 1)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 1,
+        "type_name": "Produs cartezian finit",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe o tablă de șah goală, coloanele și liniile sunt numerotate de la 1 la 8. Un cal se află în (1, 1). Câte destinații distincte poate atinge printr-o singură mutare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mutările au deplasări (±1,±2) sau (±2,±1). Păstrăm numai coordonatele din 1,…,8: {(2, 3); (3, 2)}. Sunt 2 destinații.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 2,
+        "type_name": "Poziții pe tabla de șah",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Știind că A×B={(1, 4); (1, 5); (2, 4); (2, 5)}, aflați A și B.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este nevid. Proiecția pe prima coordonată este A={1; 2}; proiecția pe a doua coordonată este B={4; 5}.",
+      "options": [
+        {
+          "text": "A={4; 5}, B={1; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "A={1}, B={4; 5}",
+          "is_correct": false
+        },
+        {
+          "text": "A={1; 2}, B={4; 5}",
+          "is_correct": true
+        },
+        {
+          "text": "A={1; 2}, B={4}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 3,
+        "type_name": "Recuperarea factorilor produsului",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1; 2}. Care sunt toate mulțimile B pentru care A×B=B×A?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă B=∅, ambele produse sunt vide. Dacă B este nevidă, și A este nevidă; egalitatea produselor impune egalitatea proiecțiilor pe prima coordonată, deci B=A. Reciproc, B=A verifică egalitatea.",
+      "options": [
+        {
+          "text": "Numai B={1; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "Numai B=∅",
+          "is_correct": false
+        },
+        {
+          "text": "Orice mulțime B",
+          "is_correct": false
+        },
+        {
+          "text": "B=∅ sau B={1; 2}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 4,
+        "type_name": "Comutativitatea condiționată a produsului",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care punct aparține regiunii [−1, 3)×(0, 2]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condițiile sunt −1≤x<3 și 0<y≤2. Punctul (-1,2) le îndeplinește. Celelalte încalcă, în ordine, capătul drept exclus, capătul inferior exclus și limita stângă.",
+      "options": [
+        {
+          "text": "(-1, 2)",
+          "is_correct": true
+        },
+        {
+          "text": "(3, 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(0, 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2, 1)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 5,
+        "type_name": "Produsul a două intervale",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Alegem uniform o pereche din A×B, unde A={1,…,6} și B={1,…,6}. Care este probabilitatea ca prima coordonată să fie pară și a doua divizibilă cu 3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sunt 36 perechi echiprobabile. Prima coordonată are 3 alegeri favorabile, a doua 2; probabilitatea este (3·2)/36=1/6.",
+      "options": [
+        {
+          "text": "-5/6",
+          "is_correct": false
+        },
+        {
+          "text": "1/6",
+          "is_correct": true
+        },
+        {
+          "text": "7/6",
+          "is_correct": false
+        },
+        {
+          "text": "13/6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 6,
+        "type_name": "Cardinal și probabilitate pe produs",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Ce mulțime de puncte reprezintă {1}×[−1, 2]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima coordonată este fixată la 1; a doua parcurge un interval închis și mărginit. Obținem segmentul vertical cu extremitățile (1,−1) și (1,2), incluse.",
+      "options": [
+        {
+          "text": "Segment orizontal: y=1, −1≤x≤2",
+          "is_correct": false
+        },
+        {
+          "text": "Dreapta verticală x=1",
+          "is_correct": false
+        },
+        {
+          "text": "Segment vertical: x=1, −1≤y≤2",
+          "is_correct": true
+        },
+        {
+          "text": "Dreapta orizontală y=1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 7,
+        "type_name": "Produse cu un singleton",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Ce dreaptă este descrisă în plan de ecuația 2x−6=0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Împărțim la 2≠0: x=3. Coordonata y este orice număr real, deci dreapta este verticală, paralelă cu Oy.",
+      "options": [
+        {
+          "text": "y=3, paralelă cu Ox",
+          "is_correct": false
+        },
+        {
+          "text": "x=-3, paralelă cu Oy",
+          "is_correct": false
+        },
+        {
+          "text": "y=-3, paralelă cu Ox",
+          "is_correct": false
+        },
+        {
+          "text": "x=3, paralelă cu Oy",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 8,
+        "type_name": "Drepte paralele cu axele",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Desenul schematic arată un dreptunghi hașurat cu toate cele patru laturi și vârfuri incluse. Etichetele indică abscisele și ordonatele extremelor. Scrieți regiunea ca produs cartezian. \\[\\begin{array}{r|ccc}3&\\bullet&\\rule{3em}{0.06em}&\\bullet\\\\&\\vert&\\text{hașurat}&\\vert\\\\1&\\bullet&\\rule{3em}{0.06em}&\\bullet\\\\\\hline y\\backslash x&-1&&2\\end{array}\\]",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Proiecția pe Ox este [−1,2], iar pe Oy este [1,3]. Frontiera este inclusă, așadar folosim paranteze pătrate la toate capetele. Interiorul și frontiera formează produsul acestor intervale.",
+      "options": [
+        {
+          "text": "[−1, 2]×[1, 3]",
+          "is_correct": true
+        },
+        {
+          "text": "(−1, 2)×(1, 3)",
+          "is_correct": false
+        },
+        {
+          "text": "[1, 3]×[−1, 2]",
+          "is_correct": false
+        },
+        {
+          "text": "[−1, 2]×(1, 3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 9,
+        "type_name": "Lectura unei regiuni desenate",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru A={1,…,3}, câte perechi are relația R={(x,y)∈A×A | x≤y}?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x=1 sunt 3 valori ale lui y, apoi 2,…,1. Totalul este 3·4/2=6.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 10,
+        "type_name": "Relații ca submulțimi ale produsului",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie C={1}, D={1; 2; 3}. Câte perechi ordonate de mulțimi (A,B) satisfac C×C⊆A×B⊆D×D?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cum C este nevidă, proiecțiile impun C⊆A⊆D și C⊆B⊆D. Fiecare factor conține obligatoriu 1; celelalte două elemente sunt opționale. Există 2²·2²=16 alegeri independente.",
+      "options": [
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": true
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 11,
+        "type_name": "Incluziuni între produse",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1,…,6}. Care submulțime M⊆A×A are proprietatea ad=bc pentru ORICARE două perechi (a,b),(c,d)∈M?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În mulțimea corectă fiecare pereche (a,b) are b=2a. Astfel ad=a·2c=2a·c=bc pentru oricare două perechi. În celelalte variante, cele două perechi au raporturi diferite ale coordonatelor și nu satisfac egalitatea.",
+      "options": [
+        {
+          "text": "{(1, 2); (2, 5)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(1, 2); (2, 2)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(1, 2); (2, 6)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(1, 2); (2, 4)}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 12,
+        "type_name": "Submulțimi stabile la o relație",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe A={1,…,3}, definim E={(x,y) | x=y}, L={(x,y) | x≤y} și S={(x,y) | x<y}. Care relație este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Orice pereche cu x≤y are exact una dintre proprietățile x=y și x<y. Așadar L este reuniunea disjunctă a lui E și S. E este nevidă, în timp ce intersecția E∩S este vidă.",
+      "options": [
+        {
+          "text": "L=E∪S și E∩S=∅",
+          "is_correct": true
+        },
+        {
+          "text": "E=L∪S",
+          "is_correct": false
+        },
+        {
+          "text": "S=E∪L",
+          "is_correct": false
+        },
+        {
+          "text": "E∩S=E",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 13,
+        "type_name": "Compararea relațiilor finite",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1,…,3}, B={2;4;6;8}, C={4;8;10}. Calculați card((A×B)∖(A×C)).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(A×B)∖(A×C)=A×(B∖C). B∖C={2;6}, deci cardinalul este 3·2=6.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 14,
+        "type_name": "Cardinale de produse și diferențe",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={2; 3} și B={-2; 0; 2}. Care este A×B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A×B conține toate perechile ordonate cu prima coordonată în A și a doua în B. Fiecare dintre cele două elemente ale lui A se asociază cu fiecare dintre cele trei elemente ale lui B: șase perechi.",
+      "options": [
+        {
+          "text": "{(-2, 2); (-2, 3); (0, 2); (0, 3); (2, 2); (2, 3)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(2, -2); (2, 2); (3, -2); (3, 2)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(2, -2); (2, 0); (2, 2); (3, -2); (3, 0); (3, 2)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(2, -2); (2, 0); (2, 2)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 1,
+        "type_name": "Produs cartezian finit",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe o tablă de șah goală, coloanele și liniile sunt numerotate de la 1 la 8. Un cal se află în (2, 2). Câte destinații distincte poate atinge printr-o singură mutare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mutările au deplasări (±1,±2) sau (±2,±1). Păstrăm numai coordonatele din 1,…,8: {(1, 4); (3, 4); (4, 1); (4, 3)}. Sunt 4 destinații.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 2,
+        "type_name": "Poziții pe tabla de șah",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Știind că A×B={(2, 5); (2, 6); (3, 5); (3, 6)}, aflați A și B.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este nevid. Proiecția pe prima coordonată este A={2; 3}; proiecția pe a doua coordonată este B={5; 6}.",
+      "options": [
+        {
+          "text": "A={2; 3}, B={5; 6}",
+          "is_correct": true
+        },
+        {
+          "text": "A={5; 6}, B={2; 3}",
+          "is_correct": false
+        },
+        {
+          "text": "A={2}, B={5; 6}",
+          "is_correct": false
+        },
+        {
+          "text": "A={2; 3}, B={5}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 3,
+        "type_name": "Recuperarea factorilor produsului",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={2; 3}. Care sunt toate mulțimile B pentru care A×B=B×A?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă B=∅, ambele produse sunt vide. Dacă B este nevidă, și A este nevidă; egalitatea produselor impune egalitatea proiecțiilor pe prima coordonată, deci B=A. Reciproc, B=A verifică egalitatea.",
+      "options": [
+        {
+          "text": "Numai B={2; 3}",
+          "is_correct": false
+        },
+        {
+          "text": "B=∅ sau B={2; 3}",
+          "is_correct": true
+        },
+        {
+          "text": "Numai B=∅",
+          "is_correct": false
+        },
+        {
+          "text": "Orice mulțime B",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 4,
+        "type_name": "Comutativitatea condiționată a produsului",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care punct aparține regiunii [−2, 4)×(0, 3]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condițiile sunt −2≤x<4 și 0<y≤3. Punctul (-2,3) le îndeplinește. Celelalte încalcă, în ordine, capătul drept exclus, capătul inferior exclus și limita stângă.",
+      "options": [
+        {
+          "text": "(4, 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(0, 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2, 3)",
+          "is_correct": true
+        },
+        {
+          "text": "(-3, 1)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 5,
+        "type_name": "Produsul a două intervale",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Alegem uniform o pereche din A×B, unde A={1,…,8} și B={1,…,9}. Care este probabilitatea ca prima coordonată să fie pară și a doua divizibilă cu 3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sunt 72 perechi echiprobabile. Prima coordonată are 4 alegeri favorabile, a doua 3; probabilitatea este (4·3)/72=1/6.",
+      "options": [
+        {
+          "text": "-5/6",
+          "is_correct": false
+        },
+        {
+          "text": "7/6",
+          "is_correct": false
+        },
+        {
+          "text": "13/6",
+          "is_correct": false
+        },
+        {
+          "text": "1/6",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 6,
+        "type_name": "Cardinal și probabilitate pe produs",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Ce mulțime de puncte reprezintă {2}×[−2, 3]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima coordonată este fixată la 2; a doua parcurge un interval închis și mărginit. Obținem segmentul vertical cu extremitățile (2,−2) și (2,3), incluse.",
+      "options": [
+        {
+          "text": "Segment vertical: x=2, −2≤y≤3",
+          "is_correct": true
+        },
+        {
+          "text": "Segment orizontal: y=2, −2≤x≤3",
+          "is_correct": false
+        },
+        {
+          "text": "Dreapta verticală x=2",
+          "is_correct": false
+        },
+        {
+          "text": "Dreapta orizontală y=2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 7,
+        "type_name": "Produse cu un singleton",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Ce dreaptă este descrisă în plan de ecuația 3x−12=0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Împărțim la 3≠0: x=4. Coordonata y este orice număr real, deci dreapta este verticală, paralelă cu Oy.",
+      "options": [
+        {
+          "text": "y=4, paralelă cu Ox",
+          "is_correct": false
+        },
+        {
+          "text": "x=4, paralelă cu Oy",
+          "is_correct": true
+        },
+        {
+          "text": "x=-4, paralelă cu Oy",
+          "is_correct": false
+        },
+        {
+          "text": "y=-4, paralelă cu Ox",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 8,
+        "type_name": "Drepte paralele cu axele",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Desenul schematic arată un dreptunghi hașurat cu toate cele patru laturi și vârfuri incluse. Etichetele indică abscisele și ordonatele extremelor. Scrieți regiunea ca produs cartezian. \\[\\begin{array}{r|ccc}4&\\bullet&\\rule{3em}{0.06em}&\\bullet\\\\&\\vert&\\text{hașurat}&\\vert\\\\1&\\bullet&\\rule{3em}{0.06em}&\\bullet\\\\\\hline y\\backslash x&-2&&3\\end{array}\\]",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Proiecția pe Ox este [−2,3], iar pe Oy este [1,4]. Frontiera este inclusă, așadar folosim paranteze pătrate la toate capetele. Interiorul și frontiera formează produsul acestor intervale.",
+      "options": [
+        {
+          "text": "(−2, 3)×(1, 4)",
+          "is_correct": false
+        },
+        {
+          "text": "[1, 4]×[−2, 3]",
+          "is_correct": false
+        },
+        {
+          "text": "[−2, 3]×[1, 4]",
+          "is_correct": true
+        },
+        {
+          "text": "[−2, 3]×(1, 4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 9,
+        "type_name": "Lectura unei regiuni desenate",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru A={1,…,4}, câte perechi are relația R={(x,y)∈A×A | x≤y}?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x=1 sunt 4 valori ale lui y, apoi 3,…,1. Totalul este 4·5/2=10.",
+      "options": [
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 10,
+        "type_name": "Relații ca submulțimi ale produsului",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie C={2}, D={2; 3; 4}. Câte perechi ordonate de mulțimi (A,B) satisfac C×C⊆A×B⊆D×D?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cum C este nevidă, proiecțiile impun C⊆A⊆D și C⊆B⊆D. Fiecare factor conține obligatoriu 2; celelalte două elemente sunt opționale. Există 2²·2²=16 alegeri independente.",
+      "options": [
+        {
+          "text": "16",
+          "is_correct": true
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 11,
+        "type_name": "Incluziuni între produse",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1,…,9}. Care submulțime M⊆A×A are proprietatea ad=bc pentru ORICARE două perechi (a,b),(c,d)∈M?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În mulțimea corectă fiecare pereche (a,b) are b=2a. Astfel ad=a·2c=2a·c=bc pentru oricare două perechi. În celelalte variante, cele două perechi au raporturi diferite ale coordonatelor și nu satisfac egalitatea.",
+      "options": [
+        {
+          "text": "{(2, 4); (3, 7)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(2, 4); (3, 6)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(2, 4); (3, 3)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(2, 4); (3, 9)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 12,
+        "type_name": "Submulțimi stabile la o relație",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe A={1,…,4}, definim E={(x,y) | x=y}, L={(x,y) | x≤y} și S={(x,y) | x<y}. Care relație este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Orice pereche cu x≤y are exact una dintre proprietățile x=y și x<y. Așadar L este reuniunea disjunctă a lui E și S. E este nevidă, în timp ce intersecția E∩S este vidă.",
+      "options": [
+        {
+          "text": "E=L∪S",
+          "is_correct": false
+        },
+        {
+          "text": "S=E∪L",
+          "is_correct": false
+        },
+        {
+          "text": "L=E∪S și E∩S=∅",
+          "is_correct": true
+        },
+        {
+          "text": "E∩S=E",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 13,
+        "type_name": "Compararea relațiilor finite",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1,…,4}, B={2;4;6;8}, C={4;8;10}. Calculați card((A×B)∖(A×C)).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(A×B)∖(A×C)=A×(B∖C). B∖C={2;6}, deci cardinalul este 4·2=8.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 14,
+        "type_name": "Cardinale de produse și diferențe",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={3; 4} și B={-3; 0; 3}. Care este A×B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A×B conține toate perechile ordonate cu prima coordonată în A și a doua în B. Fiecare dintre cele două elemente ale lui A se asociază cu fiecare dintre cele trei elemente ale lui B: șase perechi.",
+      "options": [
+        {
+          "text": "{(3, -3); (3, 0); (3, 3); (4, -3); (4, 0); (4, 3)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(-3, 3); (-3, 4); (0, 3); (0, 4); (3, 3); (3, 4)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(3, -3); (3, 3); (4, -3); (4, 3)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(3, -3); (3, 0); (3, 3)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 1,
+        "type_name": "Produs cartezian finit",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe o tablă de șah goală, coloanele și liniile sunt numerotate de la 1 la 8. Un cal se află în (3, 3). Câte destinații distincte poate atinge printr-o singură mutare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mutările au deplasări (±1,±2) sau (±2,±1). Păstrăm numai coordonatele din 1,…,8: {(1, 2); (1, 4); (2, 1); (2, 5); (4, 1); (4, 5); (5, 2); (5, 4)}. Sunt 8 destinații.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 2,
+        "type_name": "Poziții pe tabla de șah",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Știind că A×B={(3, 6); (3, 7); (4, 6); (4, 7)}, aflați A și B.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este nevid. Proiecția pe prima coordonată este A={3; 4}; proiecția pe a doua coordonată este B={6; 7}.",
+      "options": [
+        {
+          "text": "A={6; 7}, B={3; 4}",
+          "is_correct": false
+        },
+        {
+          "text": "A={3}, B={6; 7}",
+          "is_correct": false
+        },
+        {
+          "text": "A={3; 4}, B={6; 7}",
+          "is_correct": true
+        },
+        {
+          "text": "A={3; 4}, B={6}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 3,
+        "type_name": "Recuperarea factorilor produsului",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={3; 4}. Care sunt toate mulțimile B pentru care A×B=B×A?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă B=∅, ambele produse sunt vide. Dacă B este nevidă, și A este nevidă; egalitatea produselor impune egalitatea proiecțiilor pe prima coordonată, deci B=A. Reciproc, B=A verifică egalitatea.",
+      "options": [
+        {
+          "text": "Numai B={3; 4}",
+          "is_correct": false
+        },
+        {
+          "text": "Numai B=∅",
+          "is_correct": false
+        },
+        {
+          "text": "Orice mulțime B",
+          "is_correct": false
+        },
+        {
+          "text": "B=∅ sau B={3; 4}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 4,
+        "type_name": "Comutativitatea condiționată a produsului",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care punct aparține regiunii [−3, 5)×(0, 4]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condițiile sunt −3≤x<5 și 0<y≤4. Punctul (-3,4) le îndeplinește. Celelalte încalcă, în ordine, capătul drept exclus, capătul inferior exclus și limita stângă.",
+      "options": [
+        {
+          "text": "(-3, 4)",
+          "is_correct": true
+        },
+        {
+          "text": "(5, 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(0, 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4, 1)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 5,
+        "type_name": "Produsul a două intervale",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Alegem uniform o pereche din A×B, unde A={1,…,10} și B={1,…,12}. Care este probabilitatea ca prima coordonată să fie pară și a doua divizibilă cu 3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sunt 120 perechi echiprobabile. Prima coordonată are 5 alegeri favorabile, a doua 4; probabilitatea este (5·4)/120=1/6.",
+      "options": [
+        {
+          "text": "-5/6",
+          "is_correct": false
+        },
+        {
+          "text": "1/6",
+          "is_correct": true
+        },
+        {
+          "text": "7/6",
+          "is_correct": false
+        },
+        {
+          "text": "13/6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 6,
+        "type_name": "Cardinal și probabilitate pe produs",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Ce mulțime de puncte reprezintă {3}×[−3, 4]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima coordonată este fixată la 3; a doua parcurge un interval închis și mărginit. Obținem segmentul vertical cu extremitățile (3,−3) și (3,4), incluse.",
+      "options": [
+        {
+          "text": "Segment orizontal: y=3, −3≤x≤4",
+          "is_correct": false
+        },
+        {
+          "text": "Dreapta verticală x=3",
+          "is_correct": false
+        },
+        {
+          "text": "Segment vertical: x=3, −3≤y≤4",
+          "is_correct": true
+        },
+        {
+          "text": "Dreapta orizontală y=3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 7,
+        "type_name": "Produse cu un singleton",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Ce dreaptă este descrisă în plan de ecuația 4x−20=0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Împărțim la 4≠0: x=5. Coordonata y este orice număr real, deci dreapta este verticală, paralelă cu Oy.",
+      "options": [
+        {
+          "text": "y=5, paralelă cu Ox",
+          "is_correct": false
+        },
+        {
+          "text": "x=-5, paralelă cu Oy",
+          "is_correct": false
+        },
+        {
+          "text": "y=-5, paralelă cu Ox",
+          "is_correct": false
+        },
+        {
+          "text": "x=5, paralelă cu Oy",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 8,
+        "type_name": "Drepte paralele cu axele",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Desenul schematic arată un dreptunghi hașurat cu toate cele patru laturi și vârfuri incluse. Etichetele indică abscisele și ordonatele extremelor. Scrieți regiunea ca produs cartezian. \\[\\begin{array}{r|ccc}5&\\bullet&\\rule{3em}{0.06em}&\\bullet\\\\&\\vert&\\text{hașurat}&\\vert\\\\1&\\bullet&\\rule{3em}{0.06em}&\\bullet\\\\\\hline y\\backslash x&-3&&4\\end{array}\\]",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Proiecția pe Ox este [−3,4], iar pe Oy este [1,5]. Frontiera este inclusă, așadar folosim paranteze pătrate la toate capetele. Interiorul și frontiera formează produsul acestor intervale.",
+      "options": [
+        {
+          "text": "[−3, 4]×[1, 5]",
+          "is_correct": true
+        },
+        {
+          "text": "(−3, 4)×(1, 5)",
+          "is_correct": false
+        },
+        {
+          "text": "[1, 5]×[−3, 4]",
+          "is_correct": false
+        },
+        {
+          "text": "[−3, 4]×(1, 5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 9,
+        "type_name": "Lectura unei regiuni desenate",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru A={1,…,5}, câte perechi are relația R={(x,y)∈A×A | x≤y}?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x=1 sunt 5 valori ale lui y, apoi 4,…,1. Totalul este 5·6/2=15.",
+      "options": [
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": true
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 10,
+        "type_name": "Relații ca submulțimi ale produsului",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie C={3}, D={3; 4; 5}. Câte perechi ordonate de mulțimi (A,B) satisfac C×C⊆A×B⊆D×D?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cum C este nevidă, proiecțiile impun C⊆A⊆D și C⊆B⊆D. Fiecare factor conține obligatoriu 3; celelalte două elemente sunt opționale. Există 2²·2²=16 alegeri independente.",
+      "options": [
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": true
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 11,
+        "type_name": "Incluziuni între produse",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1,…,12}. Care submulțime M⊆A×A are proprietatea ad=bc pentru ORICARE două perechi (a,b),(c,d)∈M?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În mulțimea corectă fiecare pereche (a,b) are b=2a. Astfel ad=a·2c=2a·c=bc pentru oricare două perechi. În celelalte variante, cele două perechi au raporturi diferite ale coordonatelor și nu satisfac egalitatea.",
+      "options": [
+        {
+          "text": "{(3, 6); (4, 9)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(3, 6); (4, 4)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(3, 6); (4, 12)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(3, 6); (4, 8)}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 12,
+        "type_name": "Submulțimi stabile la o relație",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe A={1,…,5}, definim E={(x,y) | x=y}, L={(x,y) | x≤y} și S={(x,y) | x<y}. Care relație este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Orice pereche cu x≤y are exact una dintre proprietățile x=y și x<y. Așadar L este reuniunea disjunctă a lui E și S. E este nevidă, în timp ce intersecția E∩S este vidă.",
+      "options": [
+        {
+          "text": "L=E∪S și E∩S=∅",
+          "is_correct": true
+        },
+        {
+          "text": "E=L∪S",
+          "is_correct": false
+        },
+        {
+          "text": "S=E∪L",
+          "is_correct": false
+        },
+        {
+          "text": "E∩S=E",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 13,
+        "type_name": "Compararea relațiilor finite",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1,…,5}, B={2;4;6;8}, C={4;8;10}. Calculați card((A×B)∖(A×C)).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(A×B)∖(A×C)=A×(B∖C). B∖C={2;6}, deci cardinalul este 5·2=10.",
+      "options": [
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": true
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 14,
+        "type_name": "Cardinale de produse și diferențe",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={4; 5} și B={-4; 0; 4}. Care este A×B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A×B conține toate perechile ordonate cu prima coordonată în A și a doua în B. Fiecare dintre cele două elemente ale lui A se asociază cu fiecare dintre cele trei elemente ale lui B: șase perechi.",
+      "options": [
+        {
+          "text": "{(-4, 4); (-4, 5); (0, 4); (0, 5); (4, 4); (4, 5)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(4, -4); (4, 4); (5, -4); (5, 4)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(4, -4); (4, 0); (4, 4); (5, -4); (5, 0); (5, 4)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(4, -4); (4, 0); (4, 4)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 1,
+        "type_name": "Produs cartezian finit",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe o tablă de șah goală, coloanele și liniile sunt numerotate de la 1 la 8. Un cal se află în (4, 4). Câte destinații distincte poate atinge printr-o singură mutare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mutările au deplasări (±1,±2) sau (±2,±1). Păstrăm numai coordonatele din 1,…,8: {(2, 3); (2, 5); (3, 2); (3, 6); (5, 2); (5, 6); (6, 3); (6, 5)}. Sunt 8 destinații.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 2,
+        "type_name": "Poziții pe tabla de șah",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Știind că A×B={(4, 7); (4, 8); (5, 7); (5, 8)}, aflați A și B.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este nevid. Proiecția pe prima coordonată este A={4; 5}; proiecția pe a doua coordonată este B={7; 8}.",
+      "options": [
+        {
+          "text": "A={4; 5}, B={7; 8}",
+          "is_correct": true
+        },
+        {
+          "text": "A={7; 8}, B={4; 5}",
+          "is_correct": false
+        },
+        {
+          "text": "A={4}, B={7; 8}",
+          "is_correct": false
+        },
+        {
+          "text": "A={4; 5}, B={7}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 3,
+        "type_name": "Recuperarea factorilor produsului",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={4; 5}. Care sunt toate mulțimile B pentru care A×B=B×A?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă B=∅, ambele produse sunt vide. Dacă B este nevidă, și A este nevidă; egalitatea produselor impune egalitatea proiecțiilor pe prima coordonată, deci B=A. Reciproc, B=A verifică egalitatea.",
+      "options": [
+        {
+          "text": "Numai B={4; 5}",
+          "is_correct": false
+        },
+        {
+          "text": "B=∅ sau B={4; 5}",
+          "is_correct": true
+        },
+        {
+          "text": "Numai B=∅",
+          "is_correct": false
+        },
+        {
+          "text": "Orice mulțime B",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 4,
+        "type_name": "Comutativitatea condiționată a produsului",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care punct aparține regiunii [−4, 6)×(0, 5]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condițiile sunt −4≤x<6 și 0<y≤5. Punctul (-4,5) le îndeplinește. Celelalte încalcă, în ordine, capătul drept exclus, capătul inferior exclus și limita stângă.",
+      "options": [
+        {
+          "text": "(6, 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(0, 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4, 5)",
+          "is_correct": true
+        },
+        {
+          "text": "(-5, 1)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 5,
+        "type_name": "Produsul a două intervale",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Alegem uniform o pereche din A×B, unde A={1,…,12} și B={1,…,15}. Care este probabilitatea ca prima coordonată să fie pară și a doua divizibilă cu 3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sunt 180 perechi echiprobabile. Prima coordonată are 6 alegeri favorabile, a doua 5; probabilitatea este (6·5)/180=1/6.",
+      "options": [
+        {
+          "text": "-5/6",
+          "is_correct": false
+        },
+        {
+          "text": "7/6",
+          "is_correct": false
+        },
+        {
+          "text": "13/6",
+          "is_correct": false
+        },
+        {
+          "text": "1/6",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 6,
+        "type_name": "Cardinal și probabilitate pe produs",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Ce mulțime de puncte reprezintă {4}×[−4, 5]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima coordonată este fixată la 4; a doua parcurge un interval închis și mărginit. Obținem segmentul vertical cu extremitățile (4,−4) și (4,5), incluse.",
+      "options": [
+        {
+          "text": "Segment vertical: x=4, −4≤y≤5",
+          "is_correct": true
+        },
+        {
+          "text": "Segment orizontal: y=4, −4≤x≤5",
+          "is_correct": false
+        },
+        {
+          "text": "Dreapta verticală x=4",
+          "is_correct": false
+        },
+        {
+          "text": "Dreapta orizontală y=4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 7,
+        "type_name": "Produse cu un singleton",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Ce dreaptă este descrisă în plan de ecuația 5x−30=0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Împărțim la 5≠0: x=6. Coordonata y este orice număr real, deci dreapta este verticală, paralelă cu Oy.",
+      "options": [
+        {
+          "text": "y=6, paralelă cu Ox",
+          "is_correct": false
+        },
+        {
+          "text": "x=6, paralelă cu Oy",
+          "is_correct": true
+        },
+        {
+          "text": "x=-6, paralelă cu Oy",
+          "is_correct": false
+        },
+        {
+          "text": "y=-6, paralelă cu Ox",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 8,
+        "type_name": "Drepte paralele cu axele",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Desenul schematic arată un dreptunghi hașurat cu toate cele patru laturi și vârfuri incluse. Etichetele indică abscisele și ordonatele extremelor. Scrieți regiunea ca produs cartezian. \\[\\begin{array}{r|ccc}6&\\bullet&\\rule{3em}{0.06em}&\\bullet\\\\&\\vert&\\text{hașurat}&\\vert\\\\1&\\bullet&\\rule{3em}{0.06em}&\\bullet\\\\\\hline y\\backslash x&-4&&5\\end{array}\\]",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Proiecția pe Ox este [−4,5], iar pe Oy este [1,6]. Frontiera este inclusă, așadar folosim paranteze pătrate la toate capetele. Interiorul și frontiera formează produsul acestor intervale.",
+      "options": [
+        {
+          "text": "(−4, 5)×(1, 6)",
+          "is_correct": false
+        },
+        {
+          "text": "[1, 6]×[−4, 5]",
+          "is_correct": false
+        },
+        {
+          "text": "[−4, 5]×[1, 6]",
+          "is_correct": true
+        },
+        {
+          "text": "[−4, 5]×(1, 6)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 9,
+        "type_name": "Lectura unei regiuni desenate",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru A={1,…,6}, câte perechi are relația R={(x,y)∈A×A | x≤y}?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x=1 sunt 6 valori ale lui y, apoi 5,…,1. Totalul este 6·7/2=21.",
+      "options": [
+        {
+          "text": "20",
+          "is_correct": false
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        },
+        {
+          "text": "23",
+          "is_correct": false
+        },
+        {
+          "text": "21",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 10,
+        "type_name": "Relații ca submulțimi ale produsului",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie C={4}, D={4; 5; 6}. Câte perechi ordonate de mulțimi (A,B) satisfac C×C⊆A×B⊆D×D?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cum C este nevidă, proiecțiile impun C⊆A⊆D și C⊆B⊆D. Fiecare factor conține obligatoriu 4; celelalte două elemente sunt opționale. Există 2²·2²=16 alegeri independente.",
+      "options": [
+        {
+          "text": "16",
+          "is_correct": true
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 11,
+        "type_name": "Incluziuni între produse",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1,…,15}. Care submulțime M⊆A×A are proprietatea ad=bc pentru ORICARE două perechi (a,b),(c,d)∈M?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În mulțimea corectă fiecare pereche (a,b) are b=2a. Astfel ad=a·2c=2a·c=bc pentru oricare două perechi. În celelalte variante, cele două perechi au raporturi diferite ale coordonatelor și nu satisfac egalitatea.",
+      "options": [
+        {
+          "text": "{(4, 8); (5, 11)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(4, 8); (5, 10)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(4, 8); (5, 5)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(4, 8); (5, 15)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 12,
+        "type_name": "Submulțimi stabile la o relație",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe A={1,…,6}, definim E={(x,y) | x=y}, L={(x,y) | x≤y} și S={(x,y) | x<y}. Care relație este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Orice pereche cu x≤y are exact una dintre proprietățile x=y și x<y. Așadar L este reuniunea disjunctă a lui E și S. E este nevidă, în timp ce intersecția E∩S este vidă.",
+      "options": [
+        {
+          "text": "E=L∪S",
+          "is_correct": false
+        },
+        {
+          "text": "S=E∪L",
+          "is_correct": false
+        },
+        {
+          "text": "L=E∪S și E∩S=∅",
+          "is_correct": true
+        },
+        {
+          "text": "E∩S=E",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 13,
+        "type_name": "Compararea relațiilor finite",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1,…,6}, B={2;4;6;8}, C={4;8;10}. Calculați card((A×B)∖(A×C)).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(A×B)∖(A×C)=A×(B∖C). B∖C={2;6}, deci cardinalul este 6·2=12.",
+      "options": [
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 14,
+        "type_name": "Cardinale de produse și diferențe",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={5; 6} și B={-5; 0; 5}. Care este A×B?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A×B conține toate perechile ordonate cu prima coordonată în A și a doua în B. Fiecare dintre cele două elemente ale lui A se asociază cu fiecare dintre cele trei elemente ale lui B: șase perechi.",
+      "options": [
+        {
+          "text": "{(5, -5); (5, 0); (5, 5); (6, -5); (6, 0); (6, 5)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(-5, 5); (-5, 6); (0, 5); (0, 6); (5, 5); (5, 6)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(5, -5); (5, 5); (6, -5); (6, 5)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(5, -5); (5, 0); (5, 5)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 1,
+        "type_name": "Produs cartezian finit",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe o tablă de șah goală, coloanele și liniile sunt numerotate de la 1 la 8. Un cal se află în (8, 7). Câte destinații distincte poate atinge printr-o singură mutare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mutările au deplasări (±1,±2) sau (±2,±1). Păstrăm numai coordonatele din 1,…,8: {(6, 6); (6, 8); (7, 5)}. Sunt 3 destinații.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 2,
+        "type_name": "Poziții pe tabla de șah",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Știind că A×B={(5, 8); (5, 9); (6, 8); (6, 9)}, aflați A și B.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Produsul este nevid. Proiecția pe prima coordonată este A={5; 6}; proiecția pe a doua coordonată este B={8; 9}.",
+      "options": [
+        {
+          "text": "A={8; 9}, B={5; 6}",
+          "is_correct": false
+        },
+        {
+          "text": "A={5}, B={8; 9}",
+          "is_correct": false
+        },
+        {
+          "text": "A={5; 6}, B={8; 9}",
+          "is_correct": true
+        },
+        {
+          "text": "A={5; 6}, B={8}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 3,
+        "type_name": "Recuperarea factorilor produsului",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={5; 6}. Care sunt toate mulțimile B pentru care A×B=B×A?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă B=∅, ambele produse sunt vide. Dacă B este nevidă, și A este nevidă; egalitatea produselor impune egalitatea proiecțiilor pe prima coordonată, deci B=A. Reciproc, B=A verifică egalitatea.",
+      "options": [
+        {
+          "text": "Numai B={5; 6}",
+          "is_correct": false
+        },
+        {
+          "text": "Numai B=∅",
+          "is_correct": false
+        },
+        {
+          "text": "Orice mulțime B",
+          "is_correct": false
+        },
+        {
+          "text": "B=∅ sau B={5; 6}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 4,
+        "type_name": "Comutativitatea condiționată a produsului",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care punct aparține regiunii [−5, 7)×(0, 6]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condițiile sunt −5≤x<7 și 0<y≤6. Punctul (-5,6) le îndeplinește. Celelalte încalcă, în ordine, capătul drept exclus, capătul inferior exclus și limita stângă.",
+      "options": [
+        {
+          "text": "(-5, 6)",
+          "is_correct": true
+        },
+        {
+          "text": "(7, 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(0, 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(-6, 1)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 5,
+        "type_name": "Produsul a două intervale",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Alegem uniform o pereche din A×B, unde A={1,…,14} și B={1,…,18}. Care este probabilitatea ca prima coordonată să fie pară și a doua divizibilă cu 3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sunt 252 perechi echiprobabile. Prima coordonată are 7 alegeri favorabile, a doua 6; probabilitatea este (7·6)/252=1/6.",
+      "options": [
+        {
+          "text": "-5/6",
+          "is_correct": false
+        },
+        {
+          "text": "1/6",
+          "is_correct": true
+        },
+        {
+          "text": "7/6",
+          "is_correct": false
+        },
+        {
+          "text": "13/6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 6,
+        "type_name": "Cardinal și probabilitate pe produs",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Ce mulțime de puncte reprezintă {5}×[−5, 6]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima coordonată este fixată la 5; a doua parcurge un interval închis și mărginit. Obținem segmentul vertical cu extremitățile (5,−5) și (5,6), incluse.",
+      "options": [
+        {
+          "text": "Segment orizontal: y=5, −5≤x≤6",
+          "is_correct": false
+        },
+        {
+          "text": "Dreapta verticală x=5",
+          "is_correct": false
+        },
+        {
+          "text": "Segment vertical: x=5, −5≤y≤6",
+          "is_correct": true
+        },
+        {
+          "text": "Dreapta orizontală y=5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 7,
+        "type_name": "Produse cu un singleton",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Ce dreaptă este descrisă în plan de ecuația 6x−42=0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Împărțim la 6≠0: x=7. Coordonata y este orice număr real, deci dreapta este verticală, paralelă cu Oy.",
+      "options": [
+        {
+          "text": "y=7, paralelă cu Ox",
+          "is_correct": false
+        },
+        {
+          "text": "x=-7, paralelă cu Oy",
+          "is_correct": false
+        },
+        {
+          "text": "y=-7, paralelă cu Ox",
+          "is_correct": false
+        },
+        {
+          "text": "x=7, paralelă cu Oy",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 8,
+        "type_name": "Drepte paralele cu axele",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Desenul schematic arată un dreptunghi hașurat cu toate cele patru laturi și vârfuri incluse. Etichetele indică abscisele și ordonatele extremelor. Scrieți regiunea ca produs cartezian. \\[\\begin{array}{r|ccc}7&\\bullet&\\rule{3em}{0.06em}&\\bullet\\\\&\\vert&\\text{hașurat}&\\vert\\\\1&\\bullet&\\rule{3em}{0.06em}&\\bullet\\\\\\hline y\\backslash x&-5&&6\\end{array}\\]",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Proiecția pe Ox este [−5,6], iar pe Oy este [1,7]. Frontiera este inclusă, așadar folosim paranteze pătrate la toate capetele. Interiorul și frontiera formează produsul acestor intervale.",
+      "options": [
+        {
+          "text": "[−5, 6]×[1, 7]",
+          "is_correct": true
+        },
+        {
+          "text": "(−5, 6)×(1, 7)",
+          "is_correct": false
+        },
+        {
+          "text": "[1, 7]×[−5, 6]",
+          "is_correct": false
+        },
+        {
+          "text": "[−5, 6]×(1, 7)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 9,
+        "type_name": "Lectura unei regiuni desenate",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru A={1,…,7}, câte perechi are relația R={(x,y)∈A×A | x≤y}?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x=1 sunt 7 valori ale lui y, apoi 6,…,1. Totalul este 7·8/2=28.",
+      "options": [
+        {
+          "text": "27",
+          "is_correct": false
+        },
+        {
+          "text": "28",
+          "is_correct": true
+        },
+        {
+          "text": "29",
+          "is_correct": false
+        },
+        {
+          "text": "30",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 10,
+        "type_name": "Relații ca submulțimi ale produsului",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie C={5}, D={5; 6; 7}. Câte perechi ordonate de mulțimi (A,B) satisfac C×C⊆A×B⊆D×D?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cum C este nevidă, proiecțiile impun C⊆A⊆D și C⊆B⊆D. Fiecare factor conține obligatoriu 5; celelalte două elemente sunt opționale. Există 2²·2²=16 alegeri independente.",
+      "options": [
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": true
+        },
+        {
+          "text": "18",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 11,
+        "type_name": "Incluziuni între produse",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1,…,18}. Care submulțime M⊆A×A are proprietatea ad=bc pentru ORICARE două perechi (a,b),(c,d)∈M?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În mulțimea corectă fiecare pereche (a,b) are b=2a. Astfel ad=a·2c=2a·c=bc pentru oricare două perechi. În celelalte variante, cele două perechi au raporturi diferite ale coordonatelor și nu satisfac egalitatea.",
+      "options": [
+        {
+          "text": "{(5, 10); (6, 13)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(5, 10); (6, 6)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(5, 10); (6, 18)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(5, 10); (6, 12)}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 12,
+        "type_name": "Submulțimi stabile la o relație",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe A={1,…,7}, definim E={(x,y) | x=y}, L={(x,y) | x≤y} și S={(x,y) | x<y}. Care relație este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Orice pereche cu x≤y are exact una dintre proprietățile x=y și x<y. Așadar L este reuniunea disjunctă a lui E și S. E este nevidă, în timp ce intersecția E∩S este vidă.",
+      "options": [
+        {
+          "text": "L=E∪S și E∩S=∅",
+          "is_correct": true
+        },
+        {
+          "text": "E=L∪S",
+          "is_correct": false
+        },
+        {
+          "text": "S=E∪L",
+          "is_correct": false
+        },
+        {
+          "text": "E∩S=E",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 13,
+        "type_name": "Compararea relațiilor finite",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1,…,7}, B={2;4;6;8}, C={4;8;10}. Calculați card((A×B)∖(A×C)).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "(A×B)∖(A×C)=A×(B∖C). B∖C={2;6}, deci cardinalul este 7·2=14.",
+      "options": [
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": true
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.1",
+        "type": 14,
+        "type_name": "Cardinale de produse și diferențe",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    }
+  ]
 }

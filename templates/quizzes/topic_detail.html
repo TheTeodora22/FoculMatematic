@@ -3,33 +3,43 @@
 
 {% block title %}{{ topic.title }} - Focul Matematic{% endblock %}
 
+{% block page_styles %}{% include "includes/page_styles.html" %}{% endblock %}
+
 {% block content %}
-<div class="page-content">
+<div class="page-content journey-page">
     {% if topic.chapter %}
-        <p class="muted" style="margin:0 0 0.5rem;">
+        <nav class="page-trail" aria-label="Traseu de navigare">
+            <a href="{% url 'quiz_list' %}">Chestionare</a><span aria-hidden="true">/</span>
             <a href="{% url 'class_chapters' topic.chapter.class_level %}">Clasa a {{ topic.chapter.class_level }}-a</a>
             &middot;
             <a href="{% url 'chapter_topics' topic.chapter.class_level topic.chapter.slug %}">{{ topic.chapter.title }}</a>
-        </p>
+            {% if progressions_title %}
+            &middot; <a href="{% url 'progression_topics' topic.chapter.class_level topic.chapter.slug %}">{{ progressions_title }}</a>
+            {% endif %}
+            {% if properties_title %}
+            &middot; <a href="{% url 'property_topics' topic.chapter.class_level topic.chapter.slug %}">{{ properties_title }}</a>
+            {% endif %}
+        </nav>
     {% endif %}
 
     {% render_lesson_tags topic %}
     <h1>{{ topic.title }}</h1>
-    <p class="muted">Dificultate: {{ topic.get_difficulty_display }} &middot; {{ question_count }} intrebari</p>
+    <p class="muted">Dificultate: {{ topic.get_difficulty_display }} &middot; {{ question_count }} întrebări</p>
     {% if topic.description %}
         <p>{{ topic.description }}</p>
     {% endif %}
 
+    {% if question_count %}
     <section class="card learning-summary">
         <div class="learning-summary__header">
             <div>
-                <h2 style="margin:0 0 0.35rem;">Parcursul tau</h2>
-                <p class="muted" style="margin:0;">{{ learning_state.training_percent }}% din antrenare este rezolvata corect.</p>
+                <h2 style="margin:0 0 0.35rem;">Parcursul tău</h2>
+                <p class="muted" style="margin:0;">{{ learning_state.training_percent }}% din antrenare este rezolvată corect.</p>
             </div>
             <a class="btn btn-press" href="{{ learning_state.next_action.url }}">{{ learning_state.next_action.label }}</a>
         </div>
 
-        <div class="learning-progress learning-progress--large" aria-label="Progres antrenare {{ learning_state.training_percent }}%">
+        <div class="learning-progress learning-progress--large" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ learning_state.training_percent }}" aria-label="Progres antrenare {{ learning_state.training_percent }}%">
             <div class="learning-progress__fill" style="width: {{ learning_state.training_percent }}%;"></div>
         </div>
 
@@ -50,7 +60,7 @@
 
         {% if learning_state.in_progress %}
             <p class="muted learning-summary__note">
-                Ai un chestionar generat in progres: {{ learning_state.in_progress.answered_count }}/{{ learning_state.in_progress.total_count }} raspunsuri.
+                Ai un chestionar generat în progres: {{ learning_state.in_progress.answered_count }}/{{ learning_state.in_progress.total_count }} răspunsuri.
             </p>
         {% elif learning_state.last_completed %}
             <p class="muted learning-summary__note">
@@ -60,17 +70,25 @@
     </section>
 
     <div class="auth-actions-row topic-actions">
-        <a class="btn" href="{% url 'generated_quiz' topic.pk %}">
-            {% if in_progress %}Continua chestionarul{% else %}Genereaza chestionar{% endif %}
+        <a class="btn btn--secondary" href="{% url 'generated_quiz' topic.pk %}">
+            {% if in_progress %}Continuă chestionarul{% else %}Generează chestionar{% endif %}
         </a>
-        <a class="btn" href="{% url 'training' topic.pk %}">Antrenare</a>
+        <a class="btn btn--secondary" href="{% url 'training' topic.pk %}">Antrenare</a>
     </div>
-
-    <form method="post" action="{% url 'training_reset' topic.pk %}" style="margin-top:1.5rem;">
+    <p class="muted">În Antrenare alegi exercițiile și le poți relua. Chestionarul generat îți oferă un test cu întrebări din lecție.</p>
+    <details class="lesson-reset">
+    <summary>Opțiuni pentru progres</summary>
+    <p>Resetarea șterge progresul de Antrenare pentru această lecție. Va fi cerută confirmarea înainte de resetare.</p>
+    <form method="post" action="{% url 'training_reset' topic.pk %}">
         {% csrf_token %}
         <button type="submit" class="btn btn--secondary" onclick="return confirm('Resetezi progresul de antrenare pentru acest subiect?');">
-            Reseteaza progres antrenare
+            Resetează progresul de antrenare
         </button>
     </form>
+    </details>
+    {% else %}
+        {% url 'quiz_list' as empty_url %}
+        {% include "includes/state_panel.html" with state_title="Exercițiile sunt în pregătire" state_text="Această lecție nu are încă întrebări. Alege o altă lecție pentru a continua să exersezi." action_url=empty_url action_label="Vezi chestionarele" %}
+    {% endif %}
 </div>
 {% endblock %}

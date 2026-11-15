@@ -1,6 +1,5472 @@
 {
   "title": "Aplicații vectoriale în geometria plană. Coliniaritate și relația lui Leibniz",
   "description": "Clasa a 9-a · Aplicații ale trigonometriei în geometrie",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "hard",
+  "questions": [
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(14; 0), C(5; 12), M este mijlocul lui BC. Calculați AM².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=225, b²=169, c²=196. Teorema medianei (Apollonius) dă 4AM²=2AB²+2AC²−BC². Prin urmare AM²=[2·196+2·169−225]/4=505/4. Formula rezultă și din AM=(AB+AC)/2 și dezvoltarea pătratului normei.",
+      "options": [
+        {
+          "text": "505/4",
+          "is_correct": true
+        },
+        {
+          "text": "509/4",
+          "is_correct": false
+        },
+        {
+          "text": "501/4",
+          "is_correct": false
+        },
+        {
+          "text": "513/4",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 1,
+        "family_name": "Teorema medianei",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 1,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "14",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(21; 0), C(5; 12), M este mijlocul lui BC. Calculați AM².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=400, b²=169, c²=441. Teorema medianei (Apollonius) dă 4AM²=2AB²+2AC²−BC². Prin urmare AM²=[2·441+2·169−400]/4=205. Formula rezultă și din AM=(AB+AC)/2 și dezvoltarea pătratului normei.",
+      "options": [
+        {
+          "text": "206",
+          "is_correct": false
+        },
+        {
+          "text": "205",
+          "is_correct": true
+        },
+        {
+          "text": "204",
+          "is_correct": false
+        },
+        {
+          "text": "207",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 1,
+        "family_name": "Teorema medianei",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 1,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "21",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(36; 0), C(15; 20), M este mijlocul lui BC. Calculați AM².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=841, b²=625, c²=1296. Teorema medianei (Apollonius) dă 4AM²=2AB²+2AC²−BC². Prin urmare AM²=[2·1296+2·625−841]/4=3001/4. Formula rezultă și din AM=(AB+AC)/2 și dezvoltarea pătratului normei.",
+      "options": [
+        {
+          "text": "3005/4",
+          "is_correct": false
+        },
+        {
+          "text": "2997/4",
+          "is_correct": false
+        },
+        {
+          "text": "3001/4",
+          "is_correct": true
+        },
+        {
+          "text": "3009/4",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 1,
+        "family_name": "Teorema medianei",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 1,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "15",
+          "20"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(17; 0), C(7; 24), M este mijlocul lui BC. Calculați AM².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=676, b²=625, c²=289. Teorema medianei (Apollonius) dă 4AM²=2AB²+2AC²−BC². Prin urmare AM²=[2·289+2·625−676]/4=288. Formula rezultă și din AM=(AB+AC)/2 și dezvoltarea pătratului normei.",
+      "options": [
+        {
+          "text": "289",
+          "is_correct": false
+        },
+        {
+          "text": "287",
+          "is_correct": false
+        },
+        {
+          "text": "290",
+          "is_correct": false
+        },
+        {
+          "text": "288",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 1,
+        "family_name": "Teorema medianei",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 1,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "17",
+          "0"
+        ],
+        "C": [
+          "7",
+          "24"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(28; 0), C(8; 15), M este mijlocul lui BC. Calculați AM².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=625, b²=289, c²=784. Teorema medianei (Apollonius) dă 4AM²=2AB²+2AC²−BC². Prin urmare AM²=[2·784+2·289−625]/4=1521/4. Formula rezultă și din AM=(AB+AC)/2 și dezvoltarea pătratului normei.",
+      "options": [
+        {
+          "text": "1521/4",
+          "is_correct": true
+        },
+        {
+          "text": "1525/4",
+          "is_correct": false
+        },
+        {
+          "text": "1517/4",
+          "is_correct": false
+        },
+        {
+          "text": "1529/4",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 1,
+        "family_name": "Teorema medianei",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 1,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "28",
+          "0"
+        ],
+        "C": [
+          "8",
+          "15"
+        ]
+      }
+    },
+    {
+      "text": "Într-un triunghi ABC, AB=6, BC=10, iar mediana din A are lungimea 5. Calculați AC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm b=AC, c=AB=6, a=BC=10. Din m_a=a/2 și 4m_a²=2b²+2c²−a² rezultă a²=b²+c², deci unghiul A este drept prin reciproca lui Pitagora. Astfel AC²=100−36=64. Laturile 6,8,10 sunt pozitive și formează un triunghi necoliniar.",
+      "options": [
+        {
+          "text": "65",
+          "is_correct": false
+        },
+        {
+          "text": "64",
+          "is_correct": true
+        },
+        {
+          "text": "63",
+          "is_correct": false
+        },
+        {
+          "text": "66",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 2,
+        "family_name": "Unghi drept caracterizat prin mediane",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 2,
+        "answer_kind": "number",
+        "AB": "6",
+        "BC": "10",
+        "median_A": "5"
+      }
+    },
+    {
+      "text": "Într-un triunghi ABC, AB=9, BC=15, iar mediana din A are lungimea 15/2. Calculați AC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm b=AC, c=AB=9, a=BC=15. Din m_a=a/2 și 4m_a²=2b²+2c²−a² rezultă a²=b²+c², deci unghiul A este drept prin reciproca lui Pitagora. Astfel AC²=225−81=144. Laturile 9,12,15 sunt pozitive și formează un triunghi necoliniar.",
+      "options": [
+        {
+          "text": "145",
+          "is_correct": false
+        },
+        {
+          "text": "143",
+          "is_correct": false
+        },
+        {
+          "text": "144",
+          "is_correct": true
+        },
+        {
+          "text": "146",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 2,
+        "family_name": "Unghi drept caracterizat prin mediane",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 2,
+        "answer_kind": "number",
+        "AB": "9",
+        "BC": "15",
+        "median_A": "15/2"
+      }
+    },
+    {
+      "text": "Într-un triunghi ABC, AB=12, BC=20, iar mediana din A are lungimea 10. Calculați AC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm b=AC, c=AB=12, a=BC=20. Din m_a=a/2 și 4m_a²=2b²+2c²−a² rezultă a²=b²+c², deci unghiul A este drept prin reciproca lui Pitagora. Astfel AC²=400−144=256. Laturile 12,16,20 sunt pozitive și formează un triunghi necoliniar.",
+      "options": [
+        {
+          "text": "257",
+          "is_correct": false
+        },
+        {
+          "text": "255",
+          "is_correct": false
+        },
+        {
+          "text": "258",
+          "is_correct": false
+        },
+        {
+          "text": "256",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 2,
+        "family_name": "Unghi drept caracterizat prin mediane",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 2,
+        "answer_kind": "number",
+        "AB": "12",
+        "BC": "20",
+        "median_A": "10"
+      }
+    },
+    {
+      "text": "Într-un triunghi ABC, AB=15, BC=25, iar mediana din A are lungimea 25/2. Calculați AC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm b=AC, c=AB=15, a=BC=25. Din m_a=a/2 și 4m_a²=2b²+2c²−a² rezultă a²=b²+c², deci unghiul A este drept prin reciproca lui Pitagora. Astfel AC²=625−225=400. Laturile 15,20,25 sunt pozitive și formează un triunghi necoliniar.",
+      "options": [
+        {
+          "text": "400",
+          "is_correct": true
+        },
+        {
+          "text": "401",
+          "is_correct": false
+        },
+        {
+          "text": "399",
+          "is_correct": false
+        },
+        {
+          "text": "402",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 2,
+        "family_name": "Unghi drept caracterizat prin mediane",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 2,
+        "answer_kind": "number",
+        "AB": "15",
+        "BC": "25",
+        "median_A": "25/2"
+      }
+    },
+    {
+      "text": "Într-un triunghi ABC, AB=18, BC=30, iar mediana din A are lungimea 15. Calculați AC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm b=AC, c=AB=18, a=BC=30. Din m_a=a/2 și 4m_a²=2b²+2c²−a² rezultă a²=b²+c², deci unghiul A este drept prin reciproca lui Pitagora. Astfel AC²=900−324=576. Laturile 18,24,30 sunt pozitive și formează un triunghi necoliniar.",
+      "options": [
+        {
+          "text": "577",
+          "is_correct": false
+        },
+        {
+          "text": "576",
+          "is_correct": true
+        },
+        {
+          "text": "575",
+          "is_correct": false
+        },
+        {
+          "text": "578",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 2,
+        "family_name": "Unghi drept caracterizat prin mediane",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 2,
+        "answer_kind": "number",
+        "AB": "18",
+        "BC": "30",
+        "median_A": "15"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(14; 0), C(5; 12), m_a,m_b,m_c sunt lungimile celor trei mediane. Calculați m_a²+m_b²+m_c².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=225, b²=169, c²=196. Însumând formulele 4m_a²=2b²+2c²−a² și variantele ciclice, obținem 4(m_a²+m_b²+m_c²)=3(a²+b²+c²). Suma este deci 3·590/4=885/2. Fiecare pătrat al unei laturi apare cu coeficientul total 2+2−1=3.",
+      "options": [
+        {
+          "text": "887/2",
+          "is_correct": false
+        },
+        {
+          "text": "883/2",
+          "is_correct": false
+        },
+        {
+          "text": "885/2",
+          "is_correct": true
+        },
+        {
+          "text": "889/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 3,
+        "family_name": "Relații globale între mediane",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 3,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "14",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(21; 0), C(5; 12), m_a,m_b,m_c sunt lungimile celor trei mediane. Calculați m_a²+m_b²+m_c².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=400, b²=169, c²=441. Însumând formulele 4m_a²=2b²+2c²−a² și variantele ciclice, obținem 4(m_a²+m_b²+m_c²)=3(a²+b²+c²). Suma este deci 3·1010/4=1515/2. Fiecare pătrat al unei laturi apare cu coeficientul total 2+2−1=3.",
+      "options": [
+        {
+          "text": "1517/2",
+          "is_correct": false
+        },
+        {
+          "text": "1513/2",
+          "is_correct": false
+        },
+        {
+          "text": "1519/2",
+          "is_correct": false
+        },
+        {
+          "text": "1515/2",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 3,
+        "family_name": "Relații globale între mediane",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 3,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "21",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(36; 0), C(15; 20), m_a,m_b,m_c sunt lungimile celor trei mediane. Calculați m_a²+m_b²+m_c².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=841, b²=625, c²=1296. Însumând formulele 4m_a²=2b²+2c²−a² și variantele ciclice, obținem 4(m_a²+m_b²+m_c²)=3(a²+b²+c²). Suma este deci 3·2762/4=4143/2. Fiecare pătrat al unei laturi apare cu coeficientul total 2+2−1=3.",
+      "options": [
+        {
+          "text": "4143/2",
+          "is_correct": true
+        },
+        {
+          "text": "4145/2",
+          "is_correct": false
+        },
+        {
+          "text": "4141/2",
+          "is_correct": false
+        },
+        {
+          "text": "4147/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 3,
+        "family_name": "Relații globale între mediane",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 3,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "15",
+          "20"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(17; 0), C(7; 24), m_a,m_b,m_c sunt lungimile celor trei mediane. Calculați m_a²+m_b²+m_c².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=676, b²=625, c²=289. Însumând formulele 4m_a²=2b²+2c²−a² și variantele ciclice, obținem 4(m_a²+m_b²+m_c²)=3(a²+b²+c²). Suma este deci 3·1590/4=2385/2. Fiecare pătrat al unei laturi apare cu coeficientul total 2+2−1=3.",
+      "options": [
+        {
+          "text": "2387/2",
+          "is_correct": false
+        },
+        {
+          "text": "2385/2",
+          "is_correct": true
+        },
+        {
+          "text": "2383/2",
+          "is_correct": false
+        },
+        {
+          "text": "2389/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 3,
+        "family_name": "Relații globale între mediane",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 3,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "17",
+          "0"
+        ],
+        "C": [
+          "7",
+          "24"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(28; 0), C(8; 15), m_a,m_b,m_c sunt lungimile celor trei mediane. Calculați m_a²+m_b²+m_c².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=625, b²=289, c²=784. Însumând formulele 4m_a²=2b²+2c²−a² și variantele ciclice, obținem 4(m_a²+m_b²+m_c²)=3(a²+b²+c²). Suma este deci 3·1698/4=2547/2. Fiecare pătrat al unei laturi apare cu coeficientul total 2+2−1=3.",
+      "options": [
+        {
+          "text": "2549/2",
+          "is_correct": false
+        },
+        {
+          "text": "2545/2",
+          "is_correct": false
+        },
+        {
+          "text": "2547/2",
+          "is_correct": true
+        },
+        {
+          "text": "2551/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 3,
+        "family_name": "Relații globale între mediane",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 3,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "28",
+          "0"
+        ],
+        "C": [
+          "8",
+          "15"
+        ]
+      }
+    },
+    {
+      "text": "ABCD este un dreptunghi cu A(0;0), B(4;0), C(4;3), D(0;3). Pentru un punct M oarecare din plan, calculați MA²+MC²−MB²−MD².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem M=(u;v). Cele patru pătrate de distanțe se obțin din diferențele coordonatelor. În MA²+MC²−MB²−MD², termenii u²,v² și termenii liniari se anulează, iar termenul constant este tot 0. Echivalent, diagonalele au același mijloc O și aceeași lungime: fiecare sumă către două vârfuri opuse este 2MO²+AC²/2. Identitatea este valabilă pentru orice M, interior sau exterior.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 4,
+        "family_name": "Invariant metric în dreptunghi",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 4,
+        "answer_kind": "number",
+        "width": "4",
+        "height": "3"
+      }
+    },
+    {
+      "text": "ABCD este un dreptunghi cu A(0;0), B(5;0), C(5;5), D(0;5). Pentru un punct M oarecare din plan, calculați MA²+MC²−MB²−MD².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem M=(u;v). Cele patru pătrate de distanțe se obțin din diferențele coordonatelor. În MA²+MC²−MB²−MD², termenii u²,v² și termenii liniari se anulează, iar termenul constant este tot 0. Echivalent, diagonalele au același mijloc O și aceeași lungime: fiecare sumă către două vârfuri opuse este 2MO²+AC²/2. Identitatea este valabilă pentru orice M, interior sau exterior.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 4,
+        "family_name": "Invariant metric în dreptunghi",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 4,
+        "answer_kind": "number",
+        "width": "5",
+        "height": "5"
+      }
+    },
+    {
+      "text": "ABCD este un dreptunghi cu A(0;0), B(6;0), C(6;7), D(0;7). Pentru un punct M oarecare din plan, calculați MA²+MC²−MB²−MD².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem M=(u;v). Cele patru pătrate de distanțe se obțin din diferențele coordonatelor. În MA²+MC²−MB²−MD², termenii u²,v² și termenii liniari se anulează, iar termenul constant este tot 0. Echivalent, diagonalele au același mijloc O și aceeași lungime: fiecare sumă către două vârfuri opuse este 2MO²+AC²/2. Identitatea este valabilă pentru orice M, interior sau exterior.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 4,
+        "family_name": "Invariant metric în dreptunghi",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 4,
+        "answer_kind": "number",
+        "width": "6",
+        "height": "7"
+      }
+    },
+    {
+      "text": "ABCD este un dreptunghi cu A(0;0), B(7;0), C(7;9), D(0;9). Pentru un punct M oarecare din plan, calculați MA²+MC²−MB²−MD².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem M=(u;v). Cele patru pătrate de distanțe se obțin din diferențele coordonatelor. În MA²+MC²−MB²−MD², termenii u²,v² și termenii liniari se anulează, iar termenul constant este tot 0. Echivalent, diagonalele au același mijloc O și aceeași lungime: fiecare sumă către două vârfuri opuse este 2MO²+AC²/2. Identitatea este valabilă pentru orice M, interior sau exterior.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 4,
+        "family_name": "Invariant metric în dreptunghi",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 4,
+        "answer_kind": "number",
+        "width": "7",
+        "height": "9"
+      }
+    },
+    {
+      "text": "ABCD este un dreptunghi cu A(0;0), B(8;0), C(8;11), D(0;11). Pentru un punct M oarecare din plan, calculați MA²+MC²−MB²−MD².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem M=(u;v). Cele patru pătrate de distanțe se obțin din diferențele coordonatelor. În MA²+MC²−MB²−MD², termenii u²,v² și termenii liniari se anulează, iar termenul constant este tot 0. Echivalent, diagonalele au același mijloc O și aceeași lungime: fiecare sumă către două vârfuri opuse este 2MO²+AC²/2. Identitatea este valabilă pentru orice M, interior sau exterior.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 4,
+        "family_name": "Invariant metric în dreptunghi",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 4,
+        "answer_kind": "number",
+        "width": "8",
+        "height": "11"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(14; 0), C(5; 12), D∈BC și BD:DC=2:3. Calculați AD².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=225, b²=169, c²=196. Avem BD=ap/(p+q) și DC=aq/(p+q). Stewart dă b²·BD+c²·DC=a(AD²+BD·DC). Așadar AD²=(p·b²+q·c²)/(p+q)−a²pq/(p+q)²=656/5. Același rezultat rezultă din D=(qB+pC)/(p+q)=(52/5; 24/5) și distanța față de A. Raportul este pozitiv, deci D este interior laturii.",
+      "options": [
+        {
+          "text": "656/5",
+          "is_correct": true
+        },
+        {
+          "text": "661/5",
+          "is_correct": false
+        },
+        {
+          "text": "651/5",
+          "is_correct": false
+        },
+        {
+          "text": "666/5",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 5,
+        "family_name": "Lungimea unei ceviene cu raport dat",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 5,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "14",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ],
+        "BD_DC": [
+          "2",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(21; 0), C(5; 12), D∈BC și BD:DC=3:4. Calculați AD².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=400, b²=169, c²=441. Avem BD=ap/(p+q) și DC=aq/(p+q). Stewart dă b²·BD+c²·DC=a(AD²+BD·DC). Așadar AD²=(p·b²+q·c²)/(p+q)−a²pq/(p+q)²=11097/49. Același rezultat rezultă din D=(qB+pC)/(p+q)=(99/7; 36/7) și distanța față de A. Raportul este pozitiv, deci D este interior laturii.",
+      "options": [
+        {
+          "text": "11146/49",
+          "is_correct": false
+        },
+        {
+          "text": "11097/49",
+          "is_correct": true
+        },
+        {
+          "text": "11048/49",
+          "is_correct": false
+        },
+        {
+          "text": "11195/49",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 5,
+        "family_name": "Lungimea unei ceviene cu raport dat",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 5,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "21",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ],
+        "BD_DC": [
+          "3",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(36; 0), C(15; 20), D∈BC și BD:DC=4:5. Calculați AD².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=841, b²=625, c²=1296. Avem BD=ap/(p+q) și DC=aq/(p+q). Stewart dă b²·BD+c²·DC=a(AD²+BD·DC). Așadar AD²=(p·b²+q·c²)/(p+q)−a²pq/(p+q)²=64000/81. Același rezultat rezultă din D=(qB+pC)/(p+q)=(80/3; 80/9) și distanța față de A. Raportul este pozitiv, deci D este interior laturii.",
+      "options": [
+        {
+          "text": "64081/81",
+          "is_correct": false
+        },
+        {
+          "text": "63919/81",
+          "is_correct": false
+        },
+        {
+          "text": "64000/81",
+          "is_correct": true
+        },
+        {
+          "text": "64162/81",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 5,
+        "family_name": "Lungimea unei ceviene cu raport dat",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 5,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "15",
+          "20"
+        ],
+        "BD_DC": [
+          "4",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(17; 0), C(7; 24), D∈BC și BD:DC=5:6. Calculați AD².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=676, b²=625, c²=289. Avem BD=ap/(p+q) și DC=aq/(p+q). Stewart dă b²·BD+c²·DC=a(AD²+BD·DC). Așadar AD²=(p·b²+q·c²)/(p+q)−a²pq/(p+q)²=33169/121. Același rezultat rezultă din D=(qB+pC)/(p+q)=(137/11; 120/11) și distanța față de A. Raportul este pozitiv, deci D este interior laturii.",
+      "options": [
+        {
+          "text": "33290/121",
+          "is_correct": false
+        },
+        {
+          "text": "33048/121",
+          "is_correct": false
+        },
+        {
+          "text": "33411/121",
+          "is_correct": false
+        },
+        {
+          "text": "33169/121",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 5,
+        "family_name": "Lungimea unei ceviene cu raport dat",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 5,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "17",
+          "0"
+        ],
+        "C": [
+          "7",
+          "24"
+        ],
+        "BD_DC": [
+          "5",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(28; 0), C(8; 15), D∈BC și BD:DC=6:7. Calculați AD².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=625, b²=289, c²=784. Avem BD=ap/(p+q) și DC=aq/(p+q). Stewart dă b²·BD+c²·DC=a(AD²+BD·DC). Așadar AD²=(p·b²+q·c²)/(p+q)−a²pq/(p+q)²=67636/169. Același rezultat rezultă din D=(qB+pC)/(p+q)=(244/13; 90/13) și distanța față de A. Raportul este pozitiv, deci D este interior laturii.",
+      "options": [
+        {
+          "text": "67636/169",
+          "is_correct": true
+        },
+        {
+          "text": "67805/169",
+          "is_correct": false
+        },
+        {
+          "text": "67467/169",
+          "is_correct": false
+        },
+        {
+          "text": "67974/169",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 5,
+        "family_name": "Lungimea unei ceviene cu raport dat",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 5,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "28",
+          "0"
+        ],
+        "C": [
+          "8",
+          "15"
+        ],
+        "BD_DC": [
+          "6",
+          "7"
+        ]
+      }
+    },
+    {
+      "text": "Într-un triunghi, a²=11, b²=13, c²=15. Dacă m_a²,m_b²,m_c² sunt considerate în această ordine, care este rația progresiei lor aritmetice?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratele laturilor sunt în PA cu rația d=2. Din formula medianei, m_b²−m_a²=3(a²−b²)/4=−3d/4, iar m_c²−m_b²=3(b²−c²)/4=−3d/4. Rația cerută este -3/2, cu semn opus rației pătratelor laturilor. Toate laturile sunt pozitive și verifică inegalitățile stricte ale triunghiului.",
+      "options": [
+        {
+          "text": "-1/2",
+          "is_correct": false
+        },
+        {
+          "text": "-3/2",
+          "is_correct": true
+        },
+        {
+          "text": "-5/2",
+          "is_correct": false
+        },
+        {
+          "text": "1/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 6,
+        "family_name": "Progresii ale pătratelor laturilor și medianelor",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 6,
+        "answer_kind": "number",
+        "sides_squared": [
+          "11",
+          "13",
+          "15"
+        ]
+      }
+    },
+    {
+      "text": "Într-un triunghi, a²=13, b²=16, c²=19. Dacă m_a²,m_b²,m_c² sunt considerate în această ordine, care este rația progresiei lor aritmetice?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratele laturilor sunt în PA cu rația d=3. Din formula medianei, m_b²−m_a²=3(a²−b²)/4=−3d/4, iar m_c²−m_b²=3(b²−c²)/4=−3d/4. Rația cerută este -9/4, cu semn opus rației pătratelor laturilor. Toate laturile sunt pozitive și verifică inegalitățile stricte ale triunghiului.",
+      "options": [
+        {
+          "text": "-5/4",
+          "is_correct": false
+        },
+        {
+          "text": "-13/4",
+          "is_correct": false
+        },
+        {
+          "text": "-9/4",
+          "is_correct": true
+        },
+        {
+          "text": "-1/4",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 6,
+        "family_name": "Progresii ale pătratelor laturilor și medianelor",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 6,
+        "answer_kind": "number",
+        "sides_squared": [
+          "13",
+          "16",
+          "19"
+        ]
+      }
+    },
+    {
+      "text": "Într-un triunghi, a²=15, b²=19, c²=23. Dacă m_a²,m_b²,m_c² sunt considerate în această ordine, care este rația progresiei lor aritmetice?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratele laturilor sunt în PA cu rația d=4. Din formula medianei, m_b²−m_a²=3(a²−b²)/4=−3d/4, iar m_c²−m_b²=3(b²−c²)/4=−3d/4. Rația cerută este -3, cu semn opus rației pătratelor laturilor. Toate laturile sunt pozitive și verifică inegalitățile stricte ale triunghiului.",
+      "options": [
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "-4",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "-3",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 6,
+        "family_name": "Progresii ale pătratelor laturilor și medianelor",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 6,
+        "answer_kind": "number",
+        "sides_squared": [
+          "15",
+          "19",
+          "23"
+        ]
+      }
+    },
+    {
+      "text": "Într-un triunghi, a²=17, b²=22, c²=27. Dacă m_a²,m_b²,m_c² sunt considerate în această ordine, care este rația progresiei lor aritmetice?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratele laturilor sunt în PA cu rația d=5. Din formula medianei, m_b²−m_a²=3(a²−b²)/4=−3d/4, iar m_c²−m_b²=3(b²−c²)/4=−3d/4. Rația cerută este -15/4, cu semn opus rației pătratelor laturilor. Toate laturile sunt pozitive și verifică inegalitățile stricte ale triunghiului.",
+      "options": [
+        {
+          "text": "-15/4",
+          "is_correct": true
+        },
+        {
+          "text": "-11/4",
+          "is_correct": false
+        },
+        {
+          "text": "-19/4",
+          "is_correct": false
+        },
+        {
+          "text": "-7/4",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 6,
+        "family_name": "Progresii ale pătratelor laturilor și medianelor",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 6,
+        "answer_kind": "number",
+        "sides_squared": [
+          "17",
+          "22",
+          "27"
+        ]
+      }
+    },
+    {
+      "text": "Într-un triunghi, a²=19, b²=25, c²=31. Dacă m_a²,m_b²,m_c² sunt considerate în această ordine, care este rația progresiei lor aritmetice?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratele laturilor sunt în PA cu rația d=6. Din formula medianei, m_b²−m_a²=3(a²−b²)/4=−3d/4, iar m_c²−m_b²=3(b²−c²)/4=−3d/4. Rația cerută este -9/2, cu semn opus rației pătratelor laturilor. Toate laturile sunt pozitive și verifică inegalitățile stricte ale triunghiului.",
+      "options": [
+        {
+          "text": "-7/2",
+          "is_correct": false
+        },
+        {
+          "text": "-9/2",
+          "is_correct": true
+        },
+        {
+          "text": "-11/2",
+          "is_correct": false
+        },
+        {
+          "text": "-5/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 6,
+        "family_name": "Progresii ale pătratelor laturilor și medianelor",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 6,
+        "answer_kind": "number",
+        "sides_squared": [
+          "19",
+          "25",
+          "31"
+        ]
+      }
+    },
+    {
+      "text": "ABC este dreptunghic în A. Se cunosc m_b²=52 și m_c²=73, unde m_b este mediana din B și m_c mediana din C. Care este perechea (AC²; AB²)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm b=AC, c=AB. Deoarece a²=b²+c², formulele medianelor devin b²+4c²=4m_b²=208 și 4b²+c²=4m_c²=292. Rezolvând sistemul cu determinant −15≠0, obținem b²=64, c²=36, iar a²=100. Rădăcinile pozitive 8,6,10 satisfac Pitagora și inegalitățile triunghiului; rădăcinile negative nu sunt lungimi.",
+      "options": [
+        {
+          "text": "(65; 36)",
+          "is_correct": false
+        },
+        {
+          "text": "(64; 35)",
+          "is_correct": false
+        },
+        {
+          "text": "(64; 36)",
+          "is_correct": true
+        },
+        {
+          "text": "(63; 37)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 7,
+        "family_name": "Triunghi dreptunghic din mediane",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 7,
+        "answer_kind": "pair",
+        "median_b_squared": "52",
+        "median_c_squared": "73"
+      }
+    },
+    {
+      "text": "ABC este dreptunghic în A. Se cunosc m_b²=117 și m_c²=657/4, unde m_b este mediana din B și m_c mediana din C. Care este perechea (AC²; AB²)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm b=AC, c=AB. Deoarece a²=b²+c², formulele medianelor devin b²+4c²=4m_b²=468 și 4b²+c²=4m_c²=657. Rezolvând sistemul cu determinant −15≠0, obținem b²=144, c²=81, iar a²=225. Rădăcinile pozitive 12,9,15 satisfac Pitagora și inegalitățile triunghiului; rădăcinile negative nu sunt lungimi.",
+      "options": [
+        {
+          "text": "(145; 81)",
+          "is_correct": false
+        },
+        {
+          "text": "(144; 80)",
+          "is_correct": false
+        },
+        {
+          "text": "(143; 82)",
+          "is_correct": false
+        },
+        {
+          "text": "(144; 81)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 7,
+        "family_name": "Triunghi dreptunghic din mediane",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 7,
+        "answer_kind": "pair",
+        "median_b_squared": "117",
+        "median_c_squared": "657/4"
+      }
+    },
+    {
+      "text": "ABC este dreptunghic în A. Se cunosc m_b²=208 și m_c²=292, unde m_b este mediana din B și m_c mediana din C. Care este perechea (AC²; AB²)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm b=AC, c=AB. Deoarece a²=b²+c², formulele medianelor devin b²+4c²=4m_b²=832 și 4b²+c²=4m_c²=1168. Rezolvând sistemul cu determinant −15≠0, obținem b²=256, c²=144, iar a²=400. Rădăcinile pozitive 16,12,20 satisfac Pitagora și inegalitățile triunghiului; rădăcinile negative nu sunt lungimi.",
+      "options": [
+        {
+          "text": "(256; 144)",
+          "is_correct": true
+        },
+        {
+          "text": "(257; 144)",
+          "is_correct": false
+        },
+        {
+          "text": "(256; 143)",
+          "is_correct": false
+        },
+        {
+          "text": "(255; 145)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 7,
+        "family_name": "Triunghi dreptunghic din mediane",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 7,
+        "answer_kind": "pair",
+        "median_b_squared": "208",
+        "median_c_squared": "292"
+      }
+    },
+    {
+      "text": "ABC este dreptunghic în A. Se cunosc m_b²=325 și m_c²=1825/4, unde m_b este mediana din B și m_c mediana din C. Care este perechea (AC²; AB²)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm b=AC, c=AB. Deoarece a²=b²+c², formulele medianelor devin b²+4c²=4m_b²=1300 și 4b²+c²=4m_c²=1825. Rezolvând sistemul cu determinant −15≠0, obținem b²=400, c²=225, iar a²=625. Rădăcinile pozitive 20,15,25 satisfac Pitagora și inegalitățile triunghiului; rădăcinile negative nu sunt lungimi.",
+      "options": [
+        {
+          "text": "(401; 225)",
+          "is_correct": false
+        },
+        {
+          "text": "(400; 225)",
+          "is_correct": true
+        },
+        {
+          "text": "(400; 224)",
+          "is_correct": false
+        },
+        {
+          "text": "(399; 226)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 7,
+        "family_name": "Triunghi dreptunghic din mediane",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 7,
+        "answer_kind": "pair",
+        "median_b_squared": "325",
+        "median_c_squared": "1825/4"
+      }
+    },
+    {
+      "text": "ABC este dreptunghic în A. Se cunosc m_b²=468 și m_c²=657, unde m_b este mediana din B și m_c mediana din C. Care este perechea (AC²; AB²)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm b=AC, c=AB. Deoarece a²=b²+c², formulele medianelor devin b²+4c²=4m_b²=1872 și 4b²+c²=4m_c²=2628. Rezolvând sistemul cu determinant −15≠0, obținem b²=576, c²=324, iar a²=900. Rădăcinile pozitive 24,18,30 satisfac Pitagora și inegalitățile triunghiului; rădăcinile negative nu sunt lungimi.",
+      "options": [
+        {
+          "text": "(577; 324)",
+          "is_correct": false
+        },
+        {
+          "text": "(576; 323)",
+          "is_correct": false
+        },
+        {
+          "text": "(576; 324)",
+          "is_correct": true
+        },
+        {
+          "text": "(575; 325)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 7,
+        "family_name": "Triunghi dreptunghic din mediane",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 7,
+        "answer_kind": "pair",
+        "median_b_squared": "468",
+        "median_c_squared": "657"
+      }
+    },
+    {
+      "text": "În triunghiul ABC se cunosc AB=14, BC=15. M este mijlocul lui AC și BM²=673/4. Calculați pătratul distanței de la M la dreapta BC.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema medianei din B dă AC²=2AB²+2BC²−4BM²=169, deci AC=13>0. Cele trei laturi formează un triunghi. Formula lui Heron dă aria S cu S²=7056. Înălțimea din A are pătratul 4S²/BC². Deoarece M este mijlocul lui AC și C∈BC, distanța lui M la BC este jumătate din înălțimea din A. Pătratul cerut este S²/BC²=784/25.",
+      "options": [
+        {
+          "text": "809/25",
+          "is_correct": false
+        },
+        {
+          "text": "759/25",
+          "is_correct": false
+        },
+        {
+          "text": "834/25",
+          "is_correct": false
+        },
+        {
+          "text": "784/25",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 8,
+        "family_name": "Distanță dedusă dintr-o mediană",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 8,
+        "answer_kind": "number",
+        "AB": "14",
+        "BC": "15",
+        "median_b_squared": "673/4"
+      }
+    },
+    {
+      "text": "În triunghiul ABC se cunosc AB=21, BC=20. M este mijlocul lui AC și BM²=1513/4. Calculați pătratul distanței de la M la dreapta BC.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema medianei din B dă AC²=2AB²+2BC²−4BM²=169, deci AC=13>0. Cele trei laturi formează un triunghi. Formula lui Heron dă aria S cu S²=15876. Înălțimea din A are pătratul 4S²/BC². Deoarece M este mijlocul lui AC și C∈BC, distanța lui M la BC este jumătate din înălțimea din A. Pătratul cerut este S²/BC²=3969/100.",
+      "options": [
+        {
+          "text": "3969/100",
+          "is_correct": true
+        },
+        {
+          "text": "4069/100",
+          "is_correct": false
+        },
+        {
+          "text": "3869/100",
+          "is_correct": false
+        },
+        {
+          "text": "4169/100",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 8,
+        "family_name": "Distanță dedusă dintr-o mediană",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 8,
+        "answer_kind": "number",
+        "AB": "21",
+        "BC": "20",
+        "median_b_squared": "1513/4"
+      }
+    },
+    {
+      "text": "În triunghiul ABC se cunosc AB=36, BC=29. M este mijlocul lui AC și BM²=3649/4. Calculați pătratul distanței de la M la dreapta BC.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema medianei din B dă AC²=2AB²+2BC²−4BM²=625, deci AC=25>0. Cele trei laturi formează un triunghi. Formula lui Heron dă aria S cu S²=129600. Înălțimea din A are pătratul 4S²/BC². Deoarece M este mijlocul lui AC și C∈BC, distanța lui M la BC este jumătate din înălțimea din A. Pătratul cerut este S²/BC²=129600/841.",
+      "options": [
+        {
+          "text": "130441/841",
+          "is_correct": false
+        },
+        {
+          "text": "129600/841",
+          "is_correct": true
+        },
+        {
+          "text": "128759/841",
+          "is_correct": false
+        },
+        {
+          "text": "131282/841",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 8,
+        "family_name": "Distanță dedusă dintr-o mediană",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 8,
+        "answer_kind": "number",
+        "AB": "36",
+        "BC": "29",
+        "median_b_squared": "3649/4"
+      }
+    },
+    {
+      "text": "În triunghiul ABC se cunosc AB=17, BC=26. M este mijlocul lui AC și BM²=1305/4. Calculați pătratul distanței de la M la dreapta BC.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema medianei din B dă AC²=2AB²+2BC²−4BM²=625, deci AC=25>0. Cele trei laturi formează un triunghi. Formula lui Heron dă aria S cu S²=41616. Înălțimea din A are pătratul 4S²/BC². Deoarece M este mijlocul lui AC și C∈BC, distanța lui M la BC este jumătate din înălțimea din A. Pătratul cerut este S²/BC²=10404/169.",
+      "options": [
+        {
+          "text": "10573/169",
+          "is_correct": false
+        },
+        {
+          "text": "10235/169",
+          "is_correct": false
+        },
+        {
+          "text": "10404/169",
+          "is_correct": true
+        },
+        {
+          "text": "10742/169",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 8,
+        "family_name": "Distanță dedusă dintr-o mediană",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 8,
+        "answer_kind": "number",
+        "AB": "17",
+        "BC": "26",
+        "median_b_squared": "1305/4"
+      }
+    },
+    {
+      "text": "În triunghiul ABC se cunosc AB=28, BC=25. M este mijlocul lui AC și BM²=2529/4. Calculați pătratul distanței de la M la dreapta BC.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema medianei din B dă AC²=2AB²+2BC²−4BM²=289, deci AC=17>0. Cele trei laturi formează un triunghi. Formula lui Heron dă aria S cu S²=44100. Înălțimea din A are pătratul 4S²/BC². Deoarece M este mijlocul lui AC și C∈BC, distanța lui M la BC este jumătate din înălțimea din A. Pătratul cerut este S²/BC²=1764/25.",
+      "options": [
+        {
+          "text": "1789/25",
+          "is_correct": false
+        },
+        {
+          "text": "1739/25",
+          "is_correct": false
+        },
+        {
+          "text": "1814/25",
+          "is_correct": false
+        },
+        {
+          "text": "1764/25",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 8,
+        "family_name": "Distanță dedusă dintr-o mediană",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 8,
+        "answer_kind": "number",
+        "AB": "28",
+        "BC": "25",
+        "median_b_squared": "2529/4"
+      }
+    },
+    {
+      "text": "În triunghiul ABC, BC²=16 și AB²=40. Medianele din B și C sunt perpendiculare. Calculați AC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă N și P sunt mijloacele lui AC și AB, dezvoltarea produsului scalar dă BN·CP=(b²+c²−5a²)/8. Medianele sunt nenule și perpendiculare exact când b²+c²=5a². Prin urmare AC²=5BC²−AB²=5·16−40=40. Laturile pozitive rezultate formează un triunghi isoscel necoliniar; substituirea în produsul scalar dă 0.",
+      "options": [
+        {
+          "text": "40",
+          "is_correct": true
+        },
+        {
+          "text": "41",
+          "is_correct": false
+        },
+        {
+          "text": "39",
+          "is_correct": false
+        },
+        {
+          "text": "42",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 9,
+        "family_name": "Medianele perpendiculare",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 9,
+        "answer_kind": "number",
+        "BC_squared": "16",
+        "AB_squared": "40"
+      }
+    },
+    {
+      "text": "În triunghiul ABC, BC²=36 și AB²=90. Medianele din B și C sunt perpendiculare. Calculați AC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă N și P sunt mijloacele lui AC și AB, dezvoltarea produsului scalar dă BN·CP=(b²+c²−5a²)/8. Medianele sunt nenule și perpendiculare exact când b²+c²=5a². Prin urmare AC²=5BC²−AB²=5·36−90=90. Laturile pozitive rezultate formează un triunghi isoscel necoliniar; substituirea în produsul scalar dă 0.",
+      "options": [
+        {
+          "text": "91",
+          "is_correct": false
+        },
+        {
+          "text": "90",
+          "is_correct": true
+        },
+        {
+          "text": "89",
+          "is_correct": false
+        },
+        {
+          "text": "92",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 9,
+        "family_name": "Medianele perpendiculare",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 9,
+        "answer_kind": "number",
+        "BC_squared": "36",
+        "AB_squared": "90"
+      }
+    },
+    {
+      "text": "În triunghiul ABC, BC²=64 și AB²=160. Medianele din B și C sunt perpendiculare. Calculați AC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă N și P sunt mijloacele lui AC și AB, dezvoltarea produsului scalar dă BN·CP=(b²+c²−5a²)/8. Medianele sunt nenule și perpendiculare exact când b²+c²=5a². Prin urmare AC²=5BC²−AB²=5·64−160=160. Laturile pozitive rezultate formează un triunghi isoscel necoliniar; substituirea în produsul scalar dă 0.",
+      "options": [
+        {
+          "text": "161",
+          "is_correct": false
+        },
+        {
+          "text": "159",
+          "is_correct": false
+        },
+        {
+          "text": "160",
+          "is_correct": true
+        },
+        {
+          "text": "162",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 9,
+        "family_name": "Medianele perpendiculare",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 9,
+        "answer_kind": "number",
+        "BC_squared": "64",
+        "AB_squared": "160"
+      }
+    },
+    {
+      "text": "În triunghiul ABC, BC²=100 și AB²=250. Medianele din B și C sunt perpendiculare. Calculați AC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă N și P sunt mijloacele lui AC și AB, dezvoltarea produsului scalar dă BN·CP=(b²+c²−5a²)/8. Medianele sunt nenule și perpendiculare exact când b²+c²=5a². Prin urmare AC²=5BC²−AB²=5·100−250=250. Laturile pozitive rezultate formează un triunghi isoscel necoliniar; substituirea în produsul scalar dă 0.",
+      "options": [
+        {
+          "text": "251",
+          "is_correct": false
+        },
+        {
+          "text": "249",
+          "is_correct": false
+        },
+        {
+          "text": "252",
+          "is_correct": false
+        },
+        {
+          "text": "250",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 9,
+        "family_name": "Medianele perpendiculare",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 9,
+        "answer_kind": "number",
+        "BC_squared": "100",
+        "AB_squared": "250"
+      }
+    },
+    {
+      "text": "În triunghiul ABC, BC²=144 și AB²=360. Medianele din B și C sunt perpendiculare. Calculați AC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă N și P sunt mijloacele lui AC și AB, dezvoltarea produsului scalar dă BN·CP=(b²+c²−5a²)/8. Medianele sunt nenule și perpendiculare exact când b²+c²=5a². Prin urmare AC²=5BC²−AB²=5·144−360=360. Laturile pozitive rezultate formează un triunghi isoscel necoliniar; substituirea în produsul scalar dă 0.",
+      "options": [
+        {
+          "text": "360",
+          "is_correct": true
+        },
+        {
+          "text": "361",
+          "is_correct": false
+        },
+        {
+          "text": "359",
+          "is_correct": false
+        },
+        {
+          "text": "362",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 9,
+        "family_name": "Medianele perpendiculare",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 9,
+        "answer_kind": "number",
+        "BC_squared": "144",
+        "AB_squared": "360"
+      }
+    },
+    {
+      "text": "Într-un triunghi ABC, pătratele medianelor din A,B,C sunt, în această ordine, 505/4, 673/4, 148. Calculați BC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Inversarea sistemului celor trei formule ale medianelor dă a²=4(2m_b²+2m_c²−m_a²)/9 și formulele ciclice pentru b²,c². Înlocuind, obținem a²=225, b²=169, c²=196. Toate sunt pozitive; rădăcinile pozitive sunt 15,13,14 și satisfac inegalitățile stricte ale triunghiului. Astfel datele medianelor sunt realizabile, iar BC²=225.",
+      "options": [
+        {
+          "text": "226",
+          "is_correct": false
+        },
+        {
+          "text": "225",
+          "is_correct": true
+        },
+        {
+          "text": "224",
+          "is_correct": false
+        },
+        {
+          "text": "227",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 10,
+        "family_name": "Reconstrucția laturilor din mediane",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 10,
+        "answer_kind": "number",
+        "medians_squared": [
+          "505/4",
+          "673/4",
+          "148"
+        ]
+      }
+    },
+    {
+      "text": "Într-un triunghi ABC, pătratele medianelor din A,B,C sunt, în această ordine, 205, 1513/4, 697/4. Calculați BC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Inversarea sistemului celor trei formule ale medianelor dă a²=4(2m_b²+2m_c²−m_a²)/9 și formulele ciclice pentru b²,c². Înlocuind, obținem a²=400, b²=169, c²=441. Toate sunt pozitive; rădăcinile pozitive sunt 20,13,21 și satisfac inegalitățile stricte ale triunghiului. Astfel datele medianelor sunt realizabile, iar BC²=400.",
+      "options": [
+        {
+          "text": "401",
+          "is_correct": false
+        },
+        {
+          "text": "399",
+          "is_correct": false
+        },
+        {
+          "text": "400",
+          "is_correct": true
+        },
+        {
+          "text": "402",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 10,
+        "family_name": "Reconstrucția laturilor din mediane",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 10,
+        "answer_kind": "number",
+        "medians_squared": [
+          "205",
+          "1513/4",
+          "697/4"
+        ]
+      }
+    },
+    {
+      "text": "Într-un triunghi ABC, pătratele medianelor din A,B,C sunt, în această ordine, 3001/4, 3649/4, 409. Calculați BC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Inversarea sistemului celor trei formule ale medianelor dă a²=4(2m_b²+2m_c²−m_a²)/9 și formulele ciclice pentru b²,c². Înlocuind, obținem a²=841, b²=625, c²=1296. Toate sunt pozitive; rădăcinile pozitive sunt 29,25,36 și satisfac inegalitățile stricte ale triunghiului. Astfel datele medianelor sunt realizabile, iar BC²=841.",
+      "options": [
+        {
+          "text": "842",
+          "is_correct": false
+        },
+        {
+          "text": "840",
+          "is_correct": false
+        },
+        {
+          "text": "843",
+          "is_correct": false
+        },
+        {
+          "text": "841",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 10,
+        "family_name": "Reconstrucția laturilor din mediane",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 10,
+        "answer_kind": "number",
+        "medians_squared": [
+          "3001/4",
+          "3649/4",
+          "409"
+        ]
+      }
+    },
+    {
+      "text": "Într-un triunghi ABC, pătratele medianelor din A,B,C sunt, în această ordine, 288, 1305/4, 2313/4. Calculați BC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Inversarea sistemului celor trei formule ale medianelor dă a²=4(2m_b²+2m_c²−m_a²)/9 și formulele ciclice pentru b²,c². Înlocuind, obținem a²=676, b²=625, c²=289. Toate sunt pozitive; rădăcinile pozitive sunt 26,25,17 și satisfac inegalitățile stricte ale triunghiului. Astfel datele medianelor sunt realizabile, iar BC²=676.",
+      "options": [
+        {
+          "text": "676",
+          "is_correct": true
+        },
+        {
+          "text": "677",
+          "is_correct": false
+        },
+        {
+          "text": "675",
+          "is_correct": false
+        },
+        {
+          "text": "678",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 10,
+        "family_name": "Reconstrucția laturilor din mediane",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 10,
+        "answer_kind": "number",
+        "medians_squared": [
+          "288",
+          "1305/4",
+          "2313/4"
+        ]
+      }
+    },
+    {
+      "text": "Într-un triunghi ABC, pătratele medianelor din A,B,C sunt, în această ordine, 1521/4, 2529/4, 261. Calculați BC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Inversarea sistemului celor trei formule ale medianelor dă a²=4(2m_b²+2m_c²−m_a²)/9 și formulele ciclice pentru b²,c². Înlocuind, obținem a²=625, b²=289, c²=784. Toate sunt pozitive; rădăcinile pozitive sunt 25,17,28 și satisfac inegalitățile stricte ale triunghiului. Astfel datele medianelor sunt realizabile, iar BC²=625.",
+      "options": [
+        {
+          "text": "626",
+          "is_correct": false
+        },
+        {
+          "text": "625",
+          "is_correct": true
+        },
+        {
+          "text": "624",
+          "is_correct": false
+        },
+        {
+          "text": "627",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 10,
+        "family_name": "Reconstrucția laturilor din mediane",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 10,
+        "answer_kind": "number",
+        "medians_squared": [
+          "1521/4",
+          "2529/4",
+          "261"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(14; 0), C(5; 12), D,E,F sunt mijloacele lui BC,CA,AB. Pentru M oarecare, calculați constanta MA²+MB²+MC²−MD²−ME²−MF².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=225, b²=169, c²=196. Aplicând teorema medianei în triunghiurile MBC,MCA,MAB, avem MD²=(MB²+MC²)/2−BC²/4 și relațiile ciclice. Prin însumare, MD²+ME²+MF²=MA²+MB²+MC²−(a²+b²+c²)/4. Diferența cerută este deci 590/4=295/2, independent de poziția lui M.",
+      "options": [
+        {
+          "text": "297/2",
+          "is_correct": false
+        },
+        {
+          "text": "293/2",
+          "is_correct": false
+        },
+        {
+          "text": "295/2",
+          "is_correct": true
+        },
+        {
+          "text": "299/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 11,
+        "family_name": "Identități între vârfuri și mijloace",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 11,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "14",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(21; 0), C(5; 12), D,E,F sunt mijloacele lui BC,CA,AB. Pentru M oarecare, calculați constanta MA²+MB²+MC²−MD²−ME²−MF².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=400, b²=169, c²=441. Aplicând teorema medianei în triunghiurile MBC,MCA,MAB, avem MD²=(MB²+MC²)/2−BC²/4 și relațiile ciclice. Prin însumare, MD²+ME²+MF²=MA²+MB²+MC²−(a²+b²+c²)/4. Diferența cerută este deci 1010/4=505/2, independent de poziția lui M.",
+      "options": [
+        {
+          "text": "507/2",
+          "is_correct": false
+        },
+        {
+          "text": "503/2",
+          "is_correct": false
+        },
+        {
+          "text": "509/2",
+          "is_correct": false
+        },
+        {
+          "text": "505/2",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 11,
+        "family_name": "Identități între vârfuri și mijloace",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 11,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "21",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(36; 0), C(15; 20), D,E,F sunt mijloacele lui BC,CA,AB. Pentru M oarecare, calculați constanta MA²+MB²+MC²−MD²−ME²−MF².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=841, b²=625, c²=1296. Aplicând teorema medianei în triunghiurile MBC,MCA,MAB, avem MD²=(MB²+MC²)/2−BC²/4 și relațiile ciclice. Prin însumare, MD²+ME²+MF²=MA²+MB²+MC²−(a²+b²+c²)/4. Diferența cerută este deci 2762/4=1381/2, independent de poziția lui M.",
+      "options": [
+        {
+          "text": "1381/2",
+          "is_correct": true
+        },
+        {
+          "text": "1383/2",
+          "is_correct": false
+        },
+        {
+          "text": "1379/2",
+          "is_correct": false
+        },
+        {
+          "text": "1385/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 11,
+        "family_name": "Identități între vârfuri și mijloace",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 11,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "15",
+          "20"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(17; 0), C(7; 24), D,E,F sunt mijloacele lui BC,CA,AB. Pentru M oarecare, calculați constanta MA²+MB²+MC²−MD²−ME²−MF².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=676, b²=625, c²=289. Aplicând teorema medianei în triunghiurile MBC,MCA,MAB, avem MD²=(MB²+MC²)/2−BC²/4 și relațiile ciclice. Prin însumare, MD²+ME²+MF²=MA²+MB²+MC²−(a²+b²+c²)/4. Diferența cerută este deci 1590/4=795/2, independent de poziția lui M.",
+      "options": [
+        {
+          "text": "797/2",
+          "is_correct": false
+        },
+        {
+          "text": "795/2",
+          "is_correct": true
+        },
+        {
+          "text": "793/2",
+          "is_correct": false
+        },
+        {
+          "text": "799/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 11,
+        "family_name": "Identități între vârfuri și mijloace",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 11,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "17",
+          "0"
+        ],
+        "C": [
+          "7",
+          "24"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(28; 0), C(8; 15), D,E,F sunt mijloacele lui BC,CA,AB. Pentru M oarecare, calculați constanta MA²+MB²+MC²−MD²−ME²−MF².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=625, b²=289, c²=784. Aplicând teorema medianei în triunghiurile MBC,MCA,MAB, avem MD²=(MB²+MC²)/2−BC²/4 și relațiile ciclice. Prin însumare, MD²+ME²+MF²=MA²+MB²+MC²−(a²+b²+c²)/4. Diferența cerută este deci 1698/4=849/2, independent de poziția lui M.",
+      "options": [
+        {
+          "text": "851/2",
+          "is_correct": false
+        },
+        {
+          "text": "847/2",
+          "is_correct": false
+        },
+        {
+          "text": "849/2",
+          "is_correct": true
+        },
+        {
+          "text": "853/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 11,
+        "family_name": "Identități între vârfuri și mijloace",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 11,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "28",
+          "0"
+        ],
+        "C": [
+          "8",
+          "15"
+        ]
+      }
+    },
+    {
+      "text": "Cercul cu centrul O are raza 4. A și B sunt puncte interioare simetrice față de O, cu OA=OB=2. O secantă prin A taie cercul în P,Q, iar o secantă prin B în U,V. Folosind lungimi pozitive, calculați 1/(AP·AQ)+1/(BU·BV).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punctele sunt strict interioare deoarece 2<4; fiecare secantă are două intersecții distincte și distanțele sunt nenule. Puterea punctului dă AP·AQ=R²−OA²=12, pentru lungimi pozitive; la fel BU·BV=R²−OB². Suma este 2/(R²−OA²)=1/6, independent de direcțiile celor două secante. Aceasta este o configurație proprie cu inverse de produse, nu o atribuire a expresiei de catalog nespecificate.",
+      "options": [
+        {
+          "text": "7/6",
+          "is_correct": false
+        },
+        {
+          "text": "-5/6",
+          "is_correct": false
+        },
+        {
+          "text": "13/6",
+          "is_correct": false
+        },
+        {
+          "text": "1/6",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 12,
+        "family_name": "Invariant cu punct mobil pe cerc",
+        "variant": 1,
+        "coverage": "partial_explicit_case",
+        "adaptation": "Configurație proprie de secante prin puncte simetrice: inverse de produse de distanțe, nu expresia originală de inverse de pătrate nespecificată în catalog."
+      },
+      "verification": {
+        "family": 12,
+        "answer_kind": "number",
+        "radius": "4",
+        "offset": "2"
+      }
+    },
+    {
+      "text": "Cercul cu centrul O are raza 5. A și B sunt puncte interioare simetrice față de O, cu OA=OB=3. O secantă prin A taie cercul în P,Q, iar o secantă prin B în U,V. Folosind lungimi pozitive, calculați 1/(AP·AQ)+1/(BU·BV).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punctele sunt strict interioare deoarece 3<5; fiecare secantă are două intersecții distincte și distanțele sunt nenule. Puterea punctului dă AP·AQ=R²−OA²=16, pentru lungimi pozitive; la fel BU·BV=R²−OB². Suma este 2/(R²−OA²)=1/8, independent de direcțiile celor două secante. Aceasta este o configurație proprie cu inverse de produse, nu o atribuire a expresiei de catalog nespecificate.",
+      "options": [
+        {
+          "text": "1/8",
+          "is_correct": true
+        },
+        {
+          "text": "9/8",
+          "is_correct": false
+        },
+        {
+          "text": "-7/8",
+          "is_correct": false
+        },
+        {
+          "text": "17/8",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 12,
+        "family_name": "Invariant cu punct mobil pe cerc",
+        "variant": 2,
+        "coverage": "partial_explicit_case",
+        "adaptation": "Configurație proprie de secante prin puncte simetrice: inverse de produse de distanțe, nu expresia originală de inverse de pătrate nespecificată în catalog."
+      },
+      "verification": {
+        "family": 12,
+        "answer_kind": "number",
+        "radius": "5",
+        "offset": "3"
+      }
+    },
+    {
+      "text": "Cercul cu centrul O are raza 6. A și B sunt puncte interioare simetrice față de O, cu OA=OB=4. O secantă prin A taie cercul în P,Q, iar o secantă prin B în U,V. Folosind lungimi pozitive, calculați 1/(AP·AQ)+1/(BU·BV).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punctele sunt strict interioare deoarece 4<6; fiecare secantă are două intersecții distincte și distanțele sunt nenule. Puterea punctului dă AP·AQ=R²−OA²=20, pentru lungimi pozitive; la fel BU·BV=R²−OB². Suma este 2/(R²−OA²)=1/10, independent de direcțiile celor două secante. Aceasta este o configurație proprie cu inverse de produse, nu o atribuire a expresiei de catalog nespecificate.",
+      "options": [
+        {
+          "text": "11/10",
+          "is_correct": false
+        },
+        {
+          "text": "1/10",
+          "is_correct": true
+        },
+        {
+          "text": "-9/10",
+          "is_correct": false
+        },
+        {
+          "text": "21/10",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 12,
+        "family_name": "Invariant cu punct mobil pe cerc",
+        "variant": 3,
+        "coverage": "partial_explicit_case",
+        "adaptation": "Configurație proprie de secante prin puncte simetrice: inverse de produse de distanțe, nu expresia originală de inverse de pătrate nespecificată în catalog."
+      },
+      "verification": {
+        "family": 12,
+        "answer_kind": "number",
+        "radius": "6",
+        "offset": "4"
+      }
+    },
+    {
+      "text": "Cercul cu centrul O are raza 7. A și B sunt puncte interioare simetrice față de O, cu OA=OB=5. O secantă prin A taie cercul în P,Q, iar o secantă prin B în U,V. Folosind lungimi pozitive, calculați 1/(AP·AQ)+1/(BU·BV).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punctele sunt strict interioare deoarece 5<7; fiecare secantă are două intersecții distincte și distanțele sunt nenule. Puterea punctului dă AP·AQ=R²−OA²=24, pentru lungimi pozitive; la fel BU·BV=R²−OB². Suma este 2/(R²−OA²)=1/12, independent de direcțiile celor două secante. Aceasta este o configurație proprie cu inverse de produse, nu o atribuire a expresiei de catalog nespecificate.",
+      "options": [
+        {
+          "text": "13/12",
+          "is_correct": false
+        },
+        {
+          "text": "-11/12",
+          "is_correct": false
+        },
+        {
+          "text": "1/12",
+          "is_correct": true
+        },
+        {
+          "text": "25/12",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 12,
+        "family_name": "Invariant cu punct mobil pe cerc",
+        "variant": 4,
+        "coverage": "partial_explicit_case",
+        "adaptation": "Configurație proprie de secante prin puncte simetrice: inverse de produse de distanțe, nu expresia originală de inverse de pătrate nespecificată în catalog."
+      },
+      "verification": {
+        "family": 12,
+        "answer_kind": "number",
+        "radius": "7",
+        "offset": "5"
+      }
+    },
+    {
+      "text": "Cercul cu centrul O are raza 8. A și B sunt puncte interioare simetrice față de O, cu OA=OB=6. O secantă prin A taie cercul în P,Q, iar o secantă prin B în U,V. Folosind lungimi pozitive, calculați 1/(AP·AQ)+1/(BU·BV).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punctele sunt strict interioare deoarece 6<8; fiecare secantă are două intersecții distincte și distanțele sunt nenule. Puterea punctului dă AP·AQ=R²−OA²=28, pentru lungimi pozitive; la fel BU·BV=R²−OB². Suma este 2/(R²−OA²)=1/14, independent de direcțiile celor două secante. Aceasta este o configurație proprie cu inverse de produse, nu o atribuire a expresiei de catalog nespecificate.",
+      "options": [
+        {
+          "text": "15/14",
+          "is_correct": false
+        },
+        {
+          "text": "-13/14",
+          "is_correct": false
+        },
+        {
+          "text": "29/14",
+          "is_correct": false
+        },
+        {
+          "text": "1/14",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 12,
+        "family_name": "Invariant cu punct mobil pe cerc",
+        "variant": 5,
+        "coverage": "partial_explicit_case",
+        "adaptation": "Configurație proprie de secante prin puncte simetrice: inverse de produse de distanțe, nu expresia originală de inverse de pătrate nespecificată în catalog."
+      },
+      "verification": {
+        "family": 12,
+        "answer_kind": "number",
+        "radius": "8",
+        "offset": "6"
+      }
+    },
+    {
+      "text": "În patrulaterul convex ABCD cu A(0; 0), B(5; 0), C(7; 4), D(-1; 3), M și N sunt mijloacele diagonalelor AC și BD. Calculați MN².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Identitatea lui Euler pentru un patrulater este AB²+BC²+CD²+DA²=AC²+BD²+4MN². Ea rezultă aplicând repetat teorema medianei sau dezvoltând diferențele de coordonate. Aici M=(7/2; 2), N=(2; 3/2), deci MN²=5/2. Valoarea coincide cu un sfert din diferența dintre suma pătratelor laturilor și cea a diagonalelor.",
+      "options": [
+        {
+          "text": "5/2",
+          "is_correct": true
+        },
+        {
+          "text": "7/2",
+          "is_correct": false
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "9/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 13,
+        "family_name": "Identități metrice în patrulater",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 13,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "5",
+          "0"
+        ],
+        "C": [
+          "7",
+          "4"
+        ],
+        "D": [
+          "-1",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "În patrulaterul convex ABCD cu A(0; 0), B(6; 0), C(8; 5), D(-1; 4), M și N sunt mijloacele diagonalelor AC și BD. Calculați MN².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Identitatea lui Euler pentru un patrulater este AB²+BC²+CD²+DA²=AC²+BD²+4MN². Ea rezultă aplicând repetat teorema medianei sau dezvoltând diferențele de coordonate. Aici M=(4; 5/2), N=(5/2; 2), deci MN²=5/2. Valoarea coincide cu un sfert din diferența dintre suma pătratelor laturilor și cea a diagonalelor.",
+      "options": [
+        {
+          "text": "7/2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": true
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "9/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 13,
+        "family_name": "Identități metrice în patrulater",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 13,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "6",
+          "0"
+        ],
+        "C": [
+          "8",
+          "5"
+        ],
+        "D": [
+          "-1",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "În patrulaterul convex ABCD cu A(0; 0), B(7; 0), C(9; 6), D(-1; 5), M și N sunt mijloacele diagonalelor AC și BD. Calculați MN².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Identitatea lui Euler pentru un patrulater este AB²+BC²+CD²+DA²=AC²+BD²+4MN². Ea rezultă aplicând repetat teorema medianei sau dezvoltând diferențele de coordonate. Aici M=(9/2; 3), N=(3; 5/2), deci MN²=5/2. Valoarea coincide cu un sfert din diferența dintre suma pătratelor laturilor și cea a diagonalelor.",
+      "options": [
+        {
+          "text": "7/2",
+          "is_correct": false
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": true
+        },
+        {
+          "text": "9/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 13,
+        "family_name": "Identități metrice în patrulater",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 13,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "7",
+          "0"
+        ],
+        "C": [
+          "9",
+          "6"
+        ],
+        "D": [
+          "-1",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "În patrulaterul convex ABCD cu A(0; 0), B(8; 0), C(10; 7), D(-1; 6), M și N sunt mijloacele diagonalelor AC și BD. Calculați MN².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Identitatea lui Euler pentru un patrulater este AB²+BC²+CD²+DA²=AC²+BD²+4MN². Ea rezultă aplicând repetat teorema medianei sau dezvoltând diferențele de coordonate. Aici M=(5; 7/2), N=(7/2; 3), deci MN²=5/2. Valoarea coincide cu un sfert din diferența dintre suma pătratelor laturilor și cea a diagonalelor.",
+      "options": [
+        {
+          "text": "7/2",
+          "is_correct": false
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "9/2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 13,
+        "family_name": "Identități metrice în patrulater",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 13,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "8",
+          "0"
+        ],
+        "C": [
+          "10",
+          "7"
+        ],
+        "D": [
+          "-1",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "În patrulaterul convex ABCD cu A(0; 0), B(9; 0), C(11; 8), D(-1; 7), M și N sunt mijloacele diagonalelor AC și BD. Calculați MN².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Identitatea lui Euler pentru un patrulater este AB²+BC²+CD²+DA²=AC²+BD²+4MN². Ea rezultă aplicând repetat teorema medianei sau dezvoltând diferențele de coordonate. Aici M=(11/2; 4), N=(4; 7/2), deci MN²=5/2. Valoarea coincide cu un sfert din diferența dintre suma pătratelor laturilor și cea a diagonalelor.",
+      "options": [
+        {
+          "text": "5/2",
+          "is_correct": true
+        },
+        {
+          "text": "7/2",
+          "is_correct": false
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "9/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 13,
+        "family_name": "Identități metrice în patrulater",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 13,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "9",
+          "0"
+        ],
+        "C": [
+          "11",
+          "8"
+        ],
+        "D": [
+          "-1",
+          "7"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(14; 0), C(5; 12), punctul D este ales astfel încât ABCD să fie un patrulater și AB²+BC²+CD²+DA²=AC²+BD². Care sunt coordonatele lui D?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru orice patrulater, diferența dintre suma pătratelor laturilor și suma pătratelor diagonalelor este 4MN², unde M,N sunt mijloacele diagonalelor. Egalitatea dată impune MN²=0, deci M=N: A+C=B+D. Prin urmare D=A+C−B=(-9; 12). Cele două diagonale au același mijloc, astfel ABCD este paralelogram; necoliniaritatea lui A,B,C exclude degenerarea.",
+      "options": [
+        {
+          "text": "(-8; 12)",
+          "is_correct": false
+        },
+        {
+          "text": "(-9; 12)",
+          "is_correct": true
+        },
+        {
+          "text": "(-9; 11)",
+          "is_correct": false
+        },
+        {
+          "text": "(-10; 13)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 14,
+        "family_name": "Caracterizarea paralelogramului prin Apollonius",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 14,
+        "answer_kind": "pair",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "14",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(21; 0), C(5; 12), punctul D este ales astfel încât ABCD să fie un patrulater și AB²+BC²+CD²+DA²=AC²+BD². Care sunt coordonatele lui D?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru orice patrulater, diferența dintre suma pătratelor laturilor și suma pătratelor diagonalelor este 4MN², unde M,N sunt mijloacele diagonalelor. Egalitatea dată impune MN²=0, deci M=N: A+C=B+D. Prin urmare D=A+C−B=(-16; 12). Cele două diagonale au același mijloc, astfel ABCD este paralelogram; necoliniaritatea lui A,B,C exclude degenerarea.",
+      "options": [
+        {
+          "text": "(-15; 12)",
+          "is_correct": false
+        },
+        {
+          "text": "(-16; 11)",
+          "is_correct": false
+        },
+        {
+          "text": "(-16; 12)",
+          "is_correct": true
+        },
+        {
+          "text": "(-17; 13)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 14,
+        "family_name": "Caracterizarea paralelogramului prin Apollonius",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 14,
+        "answer_kind": "pair",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "21",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(36; 0), C(15; 20), punctul D este ales astfel încât ABCD să fie un patrulater și AB²+BC²+CD²+DA²=AC²+BD². Care sunt coordonatele lui D?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru orice patrulater, diferența dintre suma pătratelor laturilor și suma pătratelor diagonalelor este 4MN², unde M,N sunt mijloacele diagonalelor. Egalitatea dată impune MN²=0, deci M=N: A+C=B+D. Prin urmare D=A+C−B=(-21; 20). Cele două diagonale au același mijloc, astfel ABCD este paralelogram; necoliniaritatea lui A,B,C exclude degenerarea.",
+      "options": [
+        {
+          "text": "(-20; 20)",
+          "is_correct": false
+        },
+        {
+          "text": "(-21; 19)",
+          "is_correct": false
+        },
+        {
+          "text": "(-22; 21)",
+          "is_correct": false
+        },
+        {
+          "text": "(-21; 20)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 14,
+        "family_name": "Caracterizarea paralelogramului prin Apollonius",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 14,
+        "answer_kind": "pair",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "15",
+          "20"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(17; 0), C(7; 24), punctul D este ales astfel încât ABCD să fie un patrulater și AB²+BC²+CD²+DA²=AC²+BD². Care sunt coordonatele lui D?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru orice patrulater, diferența dintre suma pătratelor laturilor și suma pătratelor diagonalelor este 4MN², unde M,N sunt mijloacele diagonalelor. Egalitatea dată impune MN²=0, deci M=N: A+C=B+D. Prin urmare D=A+C−B=(-10; 24). Cele două diagonale au același mijloc, astfel ABCD este paralelogram; necoliniaritatea lui A,B,C exclude degenerarea.",
+      "options": [
+        {
+          "text": "(-10; 24)",
+          "is_correct": true
+        },
+        {
+          "text": "(-9; 24)",
+          "is_correct": false
+        },
+        {
+          "text": "(-10; 23)",
+          "is_correct": false
+        },
+        {
+          "text": "(-11; 25)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 14,
+        "family_name": "Caracterizarea paralelogramului prin Apollonius",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 14,
+        "answer_kind": "pair",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "17",
+          "0"
+        ],
+        "C": [
+          "7",
+          "24"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(28; 0), C(8; 15), punctul D este ales astfel încât ABCD să fie un patrulater și AB²+BC²+CD²+DA²=AC²+BD². Care sunt coordonatele lui D?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru orice patrulater, diferența dintre suma pătratelor laturilor și suma pătratelor diagonalelor este 4MN², unde M,N sunt mijloacele diagonalelor. Egalitatea dată impune MN²=0, deci M=N: A+C=B+D. Prin urmare D=A+C−B=(-20; 15). Cele două diagonale au același mijloc, astfel ABCD este paralelogram; necoliniaritatea lui A,B,C exclude degenerarea.",
+      "options": [
+        {
+          "text": "(-19; 15)",
+          "is_correct": false
+        },
+        {
+          "text": "(-20; 15)",
+          "is_correct": true
+        },
+        {
+          "text": "(-20; 14)",
+          "is_correct": false
+        },
+        {
+          "text": "(-21; 16)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 14,
+        "family_name": "Caracterizarea paralelogramului prin Apollonius",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 14,
+        "answer_kind": "pair",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "28",
+          "0"
+        ],
+        "C": [
+          "8",
+          "15"
+        ]
+      }
+    },
+    {
+      "text": "ABCD este un pătrat de latură 3. M este un punct oarecare pe cercul circumscris pătratului. Calculați MA²+MB²+MC²+MD².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm O centrul pătratului și R raza circumcercului, cu R²=l²/2=9/2. Grupând vârfurile opuse, teorema medianei dă MA²+MC²=2MO²+2R² și MB²+MD²=2MO²+2R². Deoarece M este pe circumcerc, MO²=R². Suma este 8R²=4l²=36, inclusiv când M coincide cu un vârf.",
+      "options": [
+        {
+          "text": "37",
+          "is_correct": false
+        },
+        {
+          "text": "35",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": true
+        },
+        {
+          "text": "38",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 15,
+        "family_name": "Sumă de pătrate pe circumcercul pătratului",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 15,
+        "answer_kind": "number",
+        "side": "3"
+      }
+    },
+    {
+      "text": "ABCD este un pătrat de latură 4. M este un punct oarecare pe cercul circumscris pătratului. Calculați MA²+MB²+MC²+MD².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm O centrul pătratului și R raza circumcercului, cu R²=l²/2=8. Grupând vârfurile opuse, teorema medianei dă MA²+MC²=2MO²+2R² și MB²+MD²=2MO²+2R². Deoarece M este pe circumcerc, MO²=R². Suma este 8R²=4l²=64, inclusiv când M coincide cu un vârf.",
+      "options": [
+        {
+          "text": "65",
+          "is_correct": false
+        },
+        {
+          "text": "63",
+          "is_correct": false
+        },
+        {
+          "text": "66",
+          "is_correct": false
+        },
+        {
+          "text": "64",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 15,
+        "family_name": "Sumă de pătrate pe circumcercul pătratului",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 15,
+        "answer_kind": "number",
+        "side": "4"
+      }
+    },
+    {
+      "text": "ABCD este un pătrat de latură 5. M este un punct oarecare pe cercul circumscris pătratului. Calculați MA²+MB²+MC²+MD².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm O centrul pătratului și R raza circumcercului, cu R²=l²/2=25/2. Grupând vârfurile opuse, teorema medianei dă MA²+MC²=2MO²+2R² și MB²+MD²=2MO²+2R². Deoarece M este pe circumcerc, MO²=R². Suma este 8R²=4l²=100, inclusiv când M coincide cu un vârf.",
+      "options": [
+        {
+          "text": "100",
+          "is_correct": true
+        },
+        {
+          "text": "101",
+          "is_correct": false
+        },
+        {
+          "text": "99",
+          "is_correct": false
+        },
+        {
+          "text": "102",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 15,
+        "family_name": "Sumă de pătrate pe circumcercul pătratului",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 15,
+        "answer_kind": "number",
+        "side": "5"
+      }
+    },
+    {
+      "text": "ABCD este un pătrat de latură 6. M este un punct oarecare pe cercul circumscris pătratului. Calculați MA²+MB²+MC²+MD².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm O centrul pătratului și R raza circumcercului, cu R²=l²/2=18. Grupând vârfurile opuse, teorema medianei dă MA²+MC²=2MO²+2R² și MB²+MD²=2MO²+2R². Deoarece M este pe circumcerc, MO²=R². Suma este 8R²=4l²=144, inclusiv când M coincide cu un vârf.",
+      "options": [
+        {
+          "text": "145",
+          "is_correct": false
+        },
+        {
+          "text": "144",
+          "is_correct": true
+        },
+        {
+          "text": "143",
+          "is_correct": false
+        },
+        {
+          "text": "146",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 15,
+        "family_name": "Sumă de pătrate pe circumcercul pătratului",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 15,
+        "answer_kind": "number",
+        "side": "6"
+      }
+    },
+    {
+      "text": "ABCD este un pătrat de latură 7. M este un punct oarecare pe cercul circumscris pătratului. Calculați MA²+MB²+MC²+MD².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm O centrul pătratului și R raza circumcercului, cu R²=l²/2=49/2. Grupând vârfurile opuse, teorema medianei dă MA²+MC²=2MO²+2R² și MB²+MD²=2MO²+2R². Deoarece M este pe circumcerc, MO²=R². Suma este 8R²=4l²=196, inclusiv când M coincide cu un vârf.",
+      "options": [
+        {
+          "text": "197",
+          "is_correct": false
+        },
+        {
+          "text": "195",
+          "is_correct": false
+        },
+        {
+          "text": "196",
+          "is_correct": true
+        },
+        {
+          "text": "198",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 15,
+        "family_name": "Sumă de pătrate pe circumcercul pătratului",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 15,
+        "answer_kind": "number",
+        "side": "7"
+      }
+    },
+    {
+      "text": "Punctele considerate sunt A(-2;0), B(2;0), C(0;4). Punctul M(x;y) aparține cercului x²+(y+4)²=24. Calculați raportul (MA²+MB²)/MC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem MA²+MB²=2(x²+y²)+8, iar MC²=x²+y²−8y+16. Diferența lor este x²+(y+4)²−24=0, prin ecuația cercului. Deci MA²+MB²=MC² și raportul este 1. A și B nu aparțin cercului: distanța lor la centrul (0;-4) are pătratul 20≠24; nici C nu îi aparține. Cele trei distanțe sunt pozitive, astfel formează un triunghi dreptunghic cu ipotenuza MC.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 16,
+        "family_name": "Distanțe care formează un triunghi dreptunghic",
+        "variant": 1,
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz circular explicit care produce trei distanțe pitagoreice; nu reproduce configurația originală nespecificată."
+      },
+      "verification": {
+        "family": 16,
+        "answer_kind": "number",
+        "scale": "2"
+      }
+    },
+    {
+      "text": "Punctele considerate sunt A(-3;0), B(3;0), C(0;6). Punctul M(x;y) aparține cercului x²+(y+6)²=54. Calculați raportul (MA²+MB²)/MC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem MA²+MB²=2(x²+y²)+18, iar MC²=x²+y²−12y+36. Diferența lor este x²+(y+6)²−54=0, prin ecuația cercului. Deci MA²+MB²=MC² și raportul este 1. A și B nu aparțin cercului: distanța lor la centrul (0;-6) are pătratul 45≠54; nici C nu îi aparține. Cele trei distanțe sunt pozitive, astfel formează un triunghi dreptunghic cu ipotenuza MC.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 16,
+        "family_name": "Distanțe care formează un triunghi dreptunghic",
+        "variant": 2,
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz circular explicit care produce trei distanțe pitagoreice; nu reproduce configurația originală nespecificată."
+      },
+      "verification": {
+        "family": 16,
+        "answer_kind": "number",
+        "scale": "3"
+      }
+    },
+    {
+      "text": "Punctele considerate sunt A(-4;0), B(4;0), C(0;8). Punctul M(x;y) aparține cercului x²+(y+8)²=96. Calculați raportul (MA²+MB²)/MC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem MA²+MB²=2(x²+y²)+32, iar MC²=x²+y²−16y+64. Diferența lor este x²+(y+8)²−96=0, prin ecuația cercului. Deci MA²+MB²=MC² și raportul este 1. A și B nu aparțin cercului: distanța lor la centrul (0;-8) are pătratul 80≠96; nici C nu îi aparține. Cele trei distanțe sunt pozitive, astfel formează un triunghi dreptunghic cu ipotenuza MC.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 16,
+        "family_name": "Distanțe care formează un triunghi dreptunghic",
+        "variant": 3,
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz circular explicit care produce trei distanțe pitagoreice; nu reproduce configurația originală nespecificată."
+      },
+      "verification": {
+        "family": 16,
+        "answer_kind": "number",
+        "scale": "4"
+      }
+    },
+    {
+      "text": "Punctele considerate sunt A(-5;0), B(5;0), C(0;10). Punctul M(x;y) aparține cercului x²+(y+10)²=150. Calculați raportul (MA²+MB²)/MC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem MA²+MB²=2(x²+y²)+50, iar MC²=x²+y²−20y+100. Diferența lor este x²+(y+10)²−150=0, prin ecuația cercului. Deci MA²+MB²=MC² și raportul este 1. A și B nu aparțin cercului: distanța lor la centrul (0;-10) are pătratul 125≠150; nici C nu îi aparține. Cele trei distanțe sunt pozitive, astfel formează un triunghi dreptunghic cu ipotenuza MC.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 16,
+        "family_name": "Distanțe care formează un triunghi dreptunghic",
+        "variant": 4,
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz circular explicit care produce trei distanțe pitagoreice; nu reproduce configurația originală nespecificată."
+      },
+      "verification": {
+        "family": 16,
+        "answer_kind": "number",
+        "scale": "5"
+      }
+    },
+    {
+      "text": "Punctele considerate sunt A(-6;0), B(6;0), C(0;12). Punctul M(x;y) aparține cercului x²+(y+12)²=216. Calculați raportul (MA²+MB²)/MC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem MA²+MB²=2(x²+y²)+72, iar MC²=x²+y²−24y+144. Diferența lor este x²+(y+12)²−216=0, prin ecuația cercului. Deci MA²+MB²=MC² și raportul este 1. A și B nu aparțin cercului: distanța lor la centrul (0;-12) are pătratul 180≠216; nici C nu îi aparține. Cele trei distanțe sunt pozitive, astfel formează un triunghi dreptunghic cu ipotenuza MC.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 16,
+        "family_name": "Distanțe care formează un triunghi dreptunghic",
+        "variant": 5,
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz circular explicit care produce trei distanțe pitagoreice; nu reproduce configurația originală nespecificată."
+      },
+      "verification": {
+        "family": 16,
+        "answer_kind": "number",
+        "scale": "6"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(14; 0), C(5; 12), G este centrul de greutate. Dacă MG²=481/9, calculați MA²+MB²+MC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=225, b²=169, c²=196. Relația lui Leibniz este MA²+MB²+MC²=3MG²+GA²+GB²+GC². Termenii micști se anulează deoarece GA+GB+GC=0. În plus GA²+GB²+GC²=(a²+b²+c²)/3. Rezultă suma 3·(481/9)+590/3=357. Condiția MG²≥0 este îndeplinită și descrie un cerc sau un punct în jurul lui G.",
+      "options": [
+        {
+          "text": "357",
+          "is_correct": true
+        },
+        {
+          "text": "358",
+          "is_correct": false
+        },
+        {
+          "text": "356",
+          "is_correct": false
+        },
+        {
+          "text": "359",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 17,
+        "family_name": "Relația lui Leibniz",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 17,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "14",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ],
+        "M": [
+          "1",
+          "-1"
+        ],
+        "MG_squared": "481/9"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(21; 0), C(5; 12), G este centrul de greutate. Dacă MG²=724/9, calculați MA²+MB²+MC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=400, b²=169, c²=441. Relația lui Leibniz este MA²+MB²+MC²=3MG²+GA²+GB²+GC². Termenii micști se anulează deoarece GA+GB+GC=0. În plus GA²+GB²+GC²=(a²+b²+c²)/3. Rezultă suma 3·(724/9)+1010/3=578. Condiția MG²≥0 este îndeplinită și descrie un cerc sau un punct în jurul lui G.",
+      "options": [
+        {
+          "text": "579",
+          "is_correct": false
+        },
+        {
+          "text": "578",
+          "is_correct": true
+        },
+        {
+          "text": "577",
+          "is_correct": false
+        },
+        {
+          "text": "580",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 17,
+        "family_name": "Relația lui Leibniz",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 17,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "21",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ],
+        "M": [
+          "2",
+          "-2"
+        ],
+        "MG_squared": "724/9"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(36; 0), C(15; 20), G este centrul de greutate. Dacă MG²=2605/9, calculați MA²+MB²+MC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=841, b²=625, c²=1296. Relația lui Leibniz este MA²+MB²+MC²=3MG²+GA²+GB²+GC². Termenii micști se anulează deoarece GA+GB+GC=0. În plus GA²+GB²+GC²=(a²+b²+c²)/3. Rezultă suma 3·(2605/9)+2762/3=1789. Condiția MG²≥0 este îndeplinită și descrie un cerc sau un punct în jurul lui G.",
+      "options": [
+        {
+          "text": "1790",
+          "is_correct": false
+        },
+        {
+          "text": "1788",
+          "is_correct": false
+        },
+        {
+          "text": "1789",
+          "is_correct": true
+        },
+        {
+          "text": "1791",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 17,
+        "family_name": "Relația lui Leibniz",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 17,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "15",
+          "20"
+        ],
+        "M": [
+          "3",
+          "-3"
+        ],
+        "MG_squared": "2605/9"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(17; 0), C(7; 24), G este centrul de greutate. Dacă MG²=160, calculați MA²+MB²+MC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=676, b²=625, c²=289. Relația lui Leibniz este MA²+MB²+MC²=3MG²+GA²+GB²+GC². Termenii micști se anulează deoarece GA+GB+GC=0. În plus GA²+GB²+GC²=(a²+b²+c²)/3. Rezultă suma 3·(160)+1590/3=1010. Condiția MG²≥0 este îndeplinită și descrie un cerc sau un punct în jurul lui G.",
+      "options": [
+        {
+          "text": "1011",
+          "is_correct": false
+        },
+        {
+          "text": "1009",
+          "is_correct": false
+        },
+        {
+          "text": "1012",
+          "is_correct": false
+        },
+        {
+          "text": "1010",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 17,
+        "family_name": "Relația lui Leibniz",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 17,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "17",
+          "0"
+        ],
+        "C": [
+          "7",
+          "24"
+        ],
+        "M": [
+          "4",
+          "-4"
+        ],
+        "MG_squared": "160"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(28; 0), C(8; 15), G este centrul de greutate. Dacă MG²=149, calculați MA²+MB²+MC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=625, b²=289, c²=784. Relația lui Leibniz este MA²+MB²+MC²=3MG²+GA²+GB²+GC². Termenii micști se anulează deoarece GA+GB+GC=0. În plus GA²+GB²+GC²=(a²+b²+c²)/3. Rezultă suma 3·(149)+1698/3=1013. Condiția MG²≥0 este îndeplinită și descrie un cerc sau un punct în jurul lui G.",
+      "options": [
+        {
+          "text": "1013",
+          "is_correct": true
+        },
+        {
+          "text": "1014",
+          "is_correct": false
+        },
+        {
+          "text": "1012",
+          "is_correct": false
+        },
+        {
+          "text": "1015",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 17,
+        "family_name": "Relația lui Leibniz",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 17,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "28",
+          "0"
+        ],
+        "C": [
+          "8",
+          "15"
+        ],
+        "M": [
+          "5",
+          "-5"
+        ],
+        "MG_squared": "149"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(14; 0), C(5; 12), O,G,H sunt circumcentrul, centrul de greutate și ortocentrul. Calculați OG².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=225, b²=169, c²=196. R²=OA²=4225/64. Aplicând Leibniz pentru M=O, obținem 3R²=3OG²+(a²+b²+c²)/3, deci OG²=R²−(a²+b²+c²)/9. Din Sylvester, OH=3OG ca vectori, iar GH=2OG. Astfel OH²=9OG² și GH²=4OG². Valoarea cerută este 265/576. Aceste formule rămân valide și în cazul echilateral, când toate trei sunt zero, dar aici centrele sunt distincte.",
+      "options": [
+        {
+          "text": "841/576",
+          "is_correct": false
+        },
+        {
+          "text": "265/576",
+          "is_correct": true
+        },
+        {
+          "text": "-311/576",
+          "is_correct": false
+        },
+        {
+          "text": "1417/576",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 18,
+        "family_name": "Distanțe între centrele triunghiului",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 18,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "14",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ],
+        "target": "OG²"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(21; 0), C(5; 12), O,G,H sunt circumcentrul, centrul de greutate și ortocentrul. Calculați GH².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=400, b²=169, c²=441. R²=OA²=4225/36. Aplicând Leibniz pentru M=O, obținem 3R²=3OG²+(a²+b²+c²)/3, deci OG²=R²−(a²+b²+c²)/9. Din Sylvester, OH=3OG ca vectori, iar GH=2OG. Astfel OH²=9OG² și GH²=4OG². Valoarea cerută este 185/9. Aceste formule rămân valide și în cazul echilateral, când toate trei sunt zero, dar aici centrele sunt distincte.",
+      "options": [
+        {
+          "text": "194/9",
+          "is_correct": false
+        },
+        {
+          "text": "176/9",
+          "is_correct": false
+        },
+        {
+          "text": "185/9",
+          "is_correct": true
+        },
+        {
+          "text": "203/9",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 18,
+        "family_name": "Distanțe între centrele triunghiului",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 18,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "21",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ],
+        "target": "GH²"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(36; 0), C(15; 20), O,G,H sunt circumcentrul, centrul de greutate și ortocentrul. Calculați OH².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=841, b²=625, c²=1296. R²=OA²=21025/64. Aplicând Leibniz pentru M=O, obținem 3R²=3OG²+(a²+b²+c²)/3, deci OG²=R²−(a²+b²+c²)/9. Din Sylvester, OH=3OG ca vectori, iar GH=2OG. Astfel OH²=9OG² și GH²=4OG². Valoarea cerută este 12457/64. Aceste formule rămân valide și în cazul echilateral, când toate trei sunt zero, dar aici centrele sunt distincte.",
+      "options": [
+        {
+          "text": "12521/64",
+          "is_correct": false
+        },
+        {
+          "text": "12393/64",
+          "is_correct": false
+        },
+        {
+          "text": "12585/64",
+          "is_correct": false
+        },
+        {
+          "text": "12457/64",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 18,
+        "family_name": "Distanțe între centrele triunghiului",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 18,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "15",
+          "20"
+        ],
+        "target": "OH²"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(17; 0), C(7; 24), O,G,H sunt circumcentrul, centrul de greutate și ortocentrul. Calculați OG².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=676, b²=625, c²=289. R²=OA²=105625/576. Aplicând Leibniz pentru M=O, obținem 3R²=3OG²+(a²+b²+c²)/3, deci OG²=R²−(a²+b²+c²)/9. Din Sylvester, OH=3OG ca vectori, iar GH=2OG. Astfel OH²=9OG² și GH²=4OG². Valoarea cerută este 3865/576. Aceste formule rămân valide și în cazul echilateral, când toate trei sunt zero, dar aici centrele sunt distincte.",
+      "options": [
+        {
+          "text": "3865/576",
+          "is_correct": true
+        },
+        {
+          "text": "4441/576",
+          "is_correct": false
+        },
+        {
+          "text": "3289/576",
+          "is_correct": false
+        },
+        {
+          "text": "5017/576",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 18,
+        "family_name": "Distanțe între centrele triunghiului",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 18,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "17",
+          "0"
+        ],
+        "C": [
+          "7",
+          "24"
+        ],
+        "target": "OG²"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(28; 0), C(8; 15), O,G,H sunt circumcentrul, centrul de greutate și ortocentrul. Calculați GH².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu a=BC, b=CA, c=AB, avem a²=625, b²=289, c²=784. R²=OA²=7225/36. Aplicând Leibniz pentru M=O, obținem 3R²=3OG²+(a²+b²+c²)/3, deci OG²=R²−(a²+b²+c²)/9. Din Sylvester, OH=3OG ca vectori, iar GH=2OG. Astfel OH²=9OG² și GH²=4OG². Valoarea cerută este 433/9. Aceste formule rămân valide și în cazul echilateral, când toate trei sunt zero, dar aici centrele sunt distincte.",
+      "options": [
+        {
+          "text": "442/9",
+          "is_correct": false
+        },
+        {
+          "text": "433/9",
+          "is_correct": true
+        },
+        {
+          "text": "424/9",
+          "is_correct": false
+        },
+        {
+          "text": "451/9",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 18,
+        "family_name": "Distanțe între centrele triunghiului",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 18,
+        "answer_kind": "number",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "28",
+          "0"
+        ],
+        "C": [
+          "8",
+          "15"
+        ],
+        "target": "GH²"
+      }
+    },
+    {
+      "text": "Într-un triunghi ABC, toate cele trei mediane au aceeași lungime 3. Calculați BC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scăzând formulele medianelor, 4(m_a²−m_b²)=3(b²−a²). Egalitatea celor trei mediane implică a²=b²=c²; fiind lungimi pozitive, a=b=c și triunghiul este echilateral. Într-un triunghi echilateral, m²=3a²/4. Cu m=3, rezultă BC²=4m²/3=12. Reciproc, un triunghi echilateral are medianele egale, deci configurația există.",
+      "options": [
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 19,
+        "family_name": "Echilateralitate din egalitate metrică",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 19,
+        "answer_kind": "number",
+        "median": "3"
+      }
+    },
+    {
+      "text": "Într-un triunghi ABC, toate cele trei mediane au aceeași lungime 4. Calculați BC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scăzând formulele medianelor, 4(m_a²−m_b²)=3(b²−a²). Egalitatea celor trei mediane implică a²=b²=c²; fiind lungimi pozitive, a=b=c și triunghiul este echilateral. Într-un triunghi echilateral, m²=3a²/4. Cu m=4, rezultă BC²=4m²/3=64/3. Reciproc, un triunghi echilateral are medianele egale, deci configurația există.",
+      "options": [
+        {
+          "text": "67/3",
+          "is_correct": false
+        },
+        {
+          "text": "61/3",
+          "is_correct": false
+        },
+        {
+          "text": "70/3",
+          "is_correct": false
+        },
+        {
+          "text": "64/3",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 19,
+        "family_name": "Echilateralitate din egalitate metrică",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 19,
+        "answer_kind": "number",
+        "median": "4"
+      }
+    },
+    {
+      "text": "Într-un triunghi ABC, toate cele trei mediane au aceeași lungime 5. Calculați BC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scăzând formulele medianelor, 4(m_a²−m_b²)=3(b²−a²). Egalitatea celor trei mediane implică a²=b²=c²; fiind lungimi pozitive, a=b=c și triunghiul este echilateral. Într-un triunghi echilateral, m²=3a²/4. Cu m=5, rezultă BC²=4m²/3=100/3. Reciproc, un triunghi echilateral are medianele egale, deci configurația există.",
+      "options": [
+        {
+          "text": "100/3",
+          "is_correct": true
+        },
+        {
+          "text": "103/3",
+          "is_correct": false
+        },
+        {
+          "text": "97/3",
+          "is_correct": false
+        },
+        {
+          "text": "106/3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 19,
+        "family_name": "Echilateralitate din egalitate metrică",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 19,
+        "answer_kind": "number",
+        "median": "5"
+      }
+    },
+    {
+      "text": "Într-un triunghi ABC, toate cele trei mediane au aceeași lungime 6. Calculați BC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scăzând formulele medianelor, 4(m_a²−m_b²)=3(b²−a²). Egalitatea celor trei mediane implică a²=b²=c²; fiind lungimi pozitive, a=b=c și triunghiul este echilateral. Într-un triunghi echilateral, m²=3a²/4. Cu m=6, rezultă BC²=4m²/3=48. Reciproc, un triunghi echilateral are medianele egale, deci configurația există.",
+      "options": [
+        {
+          "text": "49",
+          "is_correct": false
+        },
+        {
+          "text": "48",
+          "is_correct": true
+        },
+        {
+          "text": "47",
+          "is_correct": false
+        },
+        {
+          "text": "50",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 19,
+        "family_name": "Echilateralitate din egalitate metrică",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 19,
+        "answer_kind": "number",
+        "median": "6"
+      }
+    },
+    {
+      "text": "Într-un triunghi ABC, toate cele trei mediane au aceeași lungime 7. Calculați BC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scăzând formulele medianelor, 4(m_a²−m_b²)=3(b²−a²). Egalitatea celor trei mediane implică a²=b²=c²; fiind lungimi pozitive, a=b=c și triunghiul este echilateral. Într-un triunghi echilateral, m²=3a²/4. Cu m=7, rezultă BC²=4m²/3=196/3. Reciproc, un triunghi echilateral are medianele egale, deci configurația există.",
+      "options": [
+        {
+          "text": "199/3",
+          "is_correct": false
+        },
+        {
+          "text": "193/3",
+          "is_correct": false
+        },
+        {
+          "text": "196/3",
+          "is_correct": true
+        },
+        {
+          "text": "202/3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 19,
+        "family_name": "Echilateralitate din egalitate metrică",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 19,
+        "answer_kind": "number",
+        "median": "7"
+      }
+    },
+    {
+      "text": "Se dau punctele fixe A(-1; -1), B(3; -1). Care este locul geometric al punctelor M cu MA²+MB²=6?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mijlocul lui AB este O(1; -1), iar AB²=16. Teorema medianei dă MA²+MB²=2MO²+AB²/2. Prin urmare MO²=(6−8)/2=-1. Valoarea este negativă, deci nu există puncte reale: mulțimea este vidă.",
+      "options": [
+        {
+          "text": "Punctul (1; -1)",
+          "is_correct": false
+        },
+        {
+          "text": "Cercul cu centrul (1; -1) și raza la pătrat 1",
+          "is_correct": false
+        },
+        {
+          "text": "Întregul plan",
+          "is_correct": false
+        },
+        {
+          "text": "Mulțimea vidă",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 20,
+        "family_name": "Loc geometric de sumă a două pătrate de distanțe",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 20,
+        "answer_kind": "locus",
+        "A": [
+          "-1",
+          "-1"
+        ],
+        "B": [
+          "3",
+          "-1"
+        ],
+        "constant": "6"
+      }
+    },
+    {
+      "text": "Se dau punctele fixe A(-1; -2), B(5; -2). Care este locul geometric al punctelor M cu MA²+MB²=18?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mijlocul lui AB este O(2; -2), iar AB²=36. Teorema medianei dă MA²+MB²=2MO²+AB²/2. Prin urmare MO²=(18−18)/2=0. Valoarea este zero, deci singurul punct este O.",
+      "options": [
+        {
+          "text": "Punctul (2; -2)",
+          "is_correct": true
+        },
+        {
+          "text": "Mulțimea vidă",
+          "is_correct": false
+        },
+        {
+          "text": "Cercul cu centrul (2; -2) și raza la pătrat 1",
+          "is_correct": false
+        },
+        {
+          "text": "Întregul plan",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 20,
+        "family_name": "Loc geometric de sumă a două pătrate de distanțe",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 20,
+        "answer_kind": "locus",
+        "A": [
+          "-1",
+          "-2"
+        ],
+        "B": [
+          "5",
+          "-2"
+        ],
+        "constant": "18"
+      }
+    },
+    {
+      "text": "Se dau punctele fixe A(-1; -3), B(7; -3). Care este locul geometric al punctelor M cu MA²+MB²=34?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mijlocul lui AB este O(3; -3), iar AB²=64. Teorema medianei dă MA²+MB²=2MO²+AB²/2. Prin urmare MO²=(34−32)/2=1. Valoarea este pozitivă, deci locul este cercul de centru O și rază la pătrat 1.",
+      "options": [
+        {
+          "text": "Mulțimea vidă",
+          "is_correct": false
+        },
+        {
+          "text": "Cercul cu centrul (3; -3) și raza la pătrat 1",
+          "is_correct": true
+        },
+        {
+          "text": "Punctul (3; -3)",
+          "is_correct": false
+        },
+        {
+          "text": "Cercul cu centrul (3; -3) și raza la pătrat 2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 20,
+        "family_name": "Loc geometric de sumă a două pătrate de distanțe",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 20,
+        "answer_kind": "locus",
+        "A": [
+          "-1",
+          "-3"
+        ],
+        "B": [
+          "7",
+          "-3"
+        ],
+        "constant": "34"
+      }
+    },
+    {
+      "text": "Se dau punctele fixe A(-1; -4), B(9; -4). Care este locul geometric al punctelor M cu MA²+MB²=58?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mijlocul lui AB este O(4; -4), iar AB²=100. Teorema medianei dă MA²+MB²=2MO²+AB²/2. Prin urmare MO²=(58−50)/2=4. Valoarea este pozitivă, deci locul este cercul de centru O și rază la pătrat 4.",
+      "options": [
+        {
+          "text": "Mulțimea vidă",
+          "is_correct": false
+        },
+        {
+          "text": "Punctul (4; -4)",
+          "is_correct": false
+        },
+        {
+          "text": "Cercul cu centrul (4; -4) și raza la pătrat 4",
+          "is_correct": true
+        },
+        {
+          "text": "Cercul cu centrul (4; -4) și raza la pătrat 5",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 20,
+        "family_name": "Loc geometric de sumă a două pătrate de distanțe",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 20,
+        "answer_kind": "locus",
+        "A": [
+          "-1",
+          "-4"
+        ],
+        "B": [
+          "9",
+          "-4"
+        ],
+        "constant": "58"
+      }
+    },
+    {
+      "text": "Se dau punctele fixe A(-1; -5), B(11; -5). Care este locul geometric al punctelor M cu MA²+MB²=90?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mijlocul lui AB este O(5; -5), iar AB²=144. Teorema medianei dă MA²+MB²=2MO²+AB²/2. Prin urmare MO²=(90−72)/2=9. Valoarea este pozitivă, deci locul este cercul de centru O și rază la pătrat 9.",
+      "options": [
+        {
+          "text": "Mulțimea vidă",
+          "is_correct": false
+        },
+        {
+          "text": "Punctul (5; -5)",
+          "is_correct": false
+        },
+        {
+          "text": "Cercul cu centrul (5; -5) și raza la pătrat 10",
+          "is_correct": false
+        },
+        {
+          "text": "Cercul cu centrul (5; -5) și raza la pătrat 9",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 20,
+        "family_name": "Loc geometric de sumă a două pătrate de distanțe",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 20,
+        "answer_kind": "locus",
+        "A": [
+          "-1",
+          "-5"
+        ],
+        "B": [
+          "11",
+          "-5"
+        ],
+        "constant": "90"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(14; 0), C(5; 12). Care este locul geometric al punctelor M cu MA²+MB²+MC²=572/3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Centrul de greutate este G(19/3; 4). Prin Leibniz, suma distanțelor la pătrat este 3MG²+(a²+b²+c²)/3=3MG²+590/3. Ecuația se reduce la MG²=(572/3−590/3)/3=-2. Un pătrat de distanță nu poate fi negativ, deci locul este mulțimea vidă.",
+      "options": [
+        {
+          "text": "Mulțimea vidă",
+          "is_correct": true
+        },
+        {
+          "text": "Punctul (19/3; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "Cercul cu centrul (19/3; 4) și raza la pătrat 1",
+          "is_correct": false
+        },
+        {
+          "text": "Întregul plan",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 21,
+        "family_name": "Loc geometric de sumă a trei pătrate",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 21,
+        "answer_kind": "locus",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "14",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ],
+        "constant": "572/3"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(21; 0), C(5; 12). Care este locul geometric al punctelor M cu MA²+MB²+MC²=1010/3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Centrul de greutate este G(26/3; 4). Prin Leibniz, suma distanțelor la pătrat este 3MG²+(a²+b²+c²)/3=3MG²+1010/3. Ecuația se reduce la MG²=(1010/3−1010/3)/3=0. Rezultă MG=0: locul este punctul G, nu un cerc cu rază pozitivă.",
+      "options": [
+        {
+          "text": "Mulțimea vidă",
+          "is_correct": false
+        },
+        {
+          "text": "Punctul (26/3; 4)",
+          "is_correct": true
+        },
+        {
+          "text": "Cercul cu centrul (26/3; 4) și raza la pătrat 1",
+          "is_correct": false
+        },
+        {
+          "text": "Întregul plan",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 21,
+        "family_name": "Loc geometric de sumă a trei pătrate",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 21,
+        "answer_kind": "locus",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "21",
+          "0"
+        ],
+        "C": [
+          "5",
+          "12"
+        ],
+        "constant": "1010/3"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(36; 0), C(15; 20). Care este locul geometric al punctelor M cu MA²+MB²+MC²=2771/3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Centrul de greutate este G(17; 20/3). Prin Leibniz, suma distanțelor la pătrat este 3MG²+(a²+b²+c²)/3=3MG²+2762/3. Ecuația se reduce la MG²=(2771/3−2762/3)/3=1. Rezultă un cerc cu centrul G și raza la pătrat 1.",
+      "options": [
+        {
+          "text": "Mulțimea vidă",
+          "is_correct": false
+        },
+        {
+          "text": "Punctul (17; 20/3)",
+          "is_correct": false
+        },
+        {
+          "text": "Cercul cu centrul (17; 20/3) și raza la pătrat 1",
+          "is_correct": true
+        },
+        {
+          "text": "Cercul cu centrul (17; 20/3) și raza la pătrat 2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 21,
+        "family_name": "Loc geometric de sumă a trei pătrate",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 21,
+        "answer_kind": "locus",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "15",
+          "20"
+        ],
+        "constant": "2771/3"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(17; 0), C(7; 24). Care este locul geometric al punctelor M cu MA²+MB²+MC²=542?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Centrul de greutate este G(8; 8). Prin Leibniz, suma distanțelor la pătrat este 3MG²+(a²+b²+c²)/3=3MG²+530. Ecuația se reduce la MG²=(542−530)/3=4. Rezultă un cerc cu centrul G și raza la pătrat 4.",
+      "options": [
+        {
+          "text": "Mulțimea vidă",
+          "is_correct": false
+        },
+        {
+          "text": "Punctul (8; 8)",
+          "is_correct": false
+        },
+        {
+          "text": "Cercul cu centrul (8; 8) și raza la pătrat 5",
+          "is_correct": false
+        },
+        {
+          "text": "Cercul cu centrul (8; 8) și raza la pătrat 4",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 21,
+        "family_name": "Loc geometric de sumă a trei pătrate",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 21,
+        "answer_kind": "locus",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "17",
+          "0"
+        ],
+        "C": [
+          "7",
+          "24"
+        ],
+        "constant": "542"
+      }
+    },
+    {
+      "text": "În triunghiul ABC cu A(0; 0), B(28; 0), C(8; 15). Care este locul geometric al punctelor M cu MA²+MB²+MC²=593?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Centrul de greutate este G(12; 5). Prin Leibniz, suma distanțelor la pătrat este 3MG²+(a²+b²+c²)/3=3MG²+566. Ecuația se reduce la MG²=(593−566)/3=9. Rezultă un cerc cu centrul G și raza la pătrat 9.",
+      "options": [
+        {
+          "text": "Cercul cu centrul (12; 5) și raza la pătrat 9",
+          "is_correct": true
+        },
+        {
+          "text": "Mulțimea vidă",
+          "is_correct": false
+        },
+        {
+          "text": "Punctul (12; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "Cercul cu centrul (12; 5) și raza la pătrat 10",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 21,
+        "family_name": "Loc geometric de sumă a trei pătrate",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 21,
+        "answer_kind": "locus",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "28",
+          "0"
+        ],
+        "C": [
+          "8",
+          "15"
+        ],
+        "constant": "593"
+      }
+    },
+    {
+      "text": "Punctele considerate sunt A(0; 0), B(-8; 2), C(6; 0). Pentru M pe segmentul închis [AC], determinați coordonatele punctului care minimizează MB²+MC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm K mijlocul lui BC: K(-1; 1). Teorema medianei dă MB²+MC²=2MK²+BC²/2. Parametrizăm M=A+t(C−A), 0≤t≤1. Proiecția lui K pe dreapta AC corespunde lui t₀=-1/6. Deoarece t₀≤0, minimul pe segment este la A, adică t=0. Punctul unic de minim este M(0; 0), iar valoarea minimă este 104. Convexitatea strictă a pătratului distanței justifică alegerea proiecției sau a capătului apropiat; nu folosim proiecția din afara segmentului.",
+      "options": [
+        {
+          "text": "(1; 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 0)",
+          "is_correct": true
+        },
+        {
+          "text": "(0; -1)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 1)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 22,
+        "family_name": "Optimizare pe latură",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 22,
+        "answer_kind": "pair",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "-8",
+          "2"
+        ],
+        "C": [
+          "6",
+          "0"
+        ]
+      }
+    },
+    {
+      "text": "Punctele considerate sunt A(0; 0), B(-6; 3), C(6; 0). Pentru M pe segmentul închis [AC], determinați coordonatele punctului care minimizează MB²+MC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm K mijlocul lui BC: K(0; 3/2). Teorema medianei dă MB²+MC²=2MK²+BC²/2. Parametrizăm M=A+t(C−A), 0≤t≤1. Proiecția lui K pe dreapta AC corespunde lui t₀=0. Deoarece t₀≤0, minimul pe segment este la A, adică t=0. Punctul unic de minim este M(0; 0), iar valoarea minimă este 81. Convexitatea strictă a pătratului distanței justifică alegerea proiecției sau a capătului apropiat; nu folosim proiecția din afara segmentului.",
+      "options": [
+        {
+          "text": "(1; 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; -1)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 0)",
+          "is_correct": true
+        },
+        {
+          "text": "(-1; 1)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 22,
+        "family_name": "Optimizare pe latură",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 22,
+        "answer_kind": "pair",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "-6",
+          "3"
+        ],
+        "C": [
+          "6",
+          "0"
+        ]
+      }
+    },
+    {
+      "text": "Punctele considerate sunt A(0; 0), B(0; 4), C(6; 0). Pentru M pe segmentul închis [AC], determinați coordonatele punctului care minimizează MB²+MC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm K mijlocul lui BC: K(3; 2). Teorema medianei dă MB²+MC²=2MK²+BC²/2. Parametrizăm M=A+t(C−A), 0≤t≤1. Proiecția lui K pe dreapta AC corespunde lui t₀=1/2. Deoarece 0<t₀<1, proiecția este interioară și t=t₀=1/2. Punctul unic de minim este M(3; 0), iar valoarea minimă este 34. Convexitatea strictă a pătratului distanței justifică alegerea proiecției sau a capătului apropiat; nu folosim proiecția din afara segmentului.",
+      "options": [
+        {
+          "text": "(4; 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; -1)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 0)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 22,
+        "family_name": "Optimizare pe latură",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 22,
+        "answer_kind": "pair",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "0",
+          "4"
+        ],
+        "C": [
+          "6",
+          "0"
+        ]
+      }
+    },
+    {
+      "text": "Punctele considerate sunt A(0; 0), B(3; 5), C(6; 0). Pentru M pe segmentul închis [AC], determinați coordonatele punctului care minimizează MB²+MC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm K mijlocul lui BC: K(9/2; 5/2). Teorema medianei dă MB²+MC²=2MK²+BC²/2. Parametrizăm M=A+t(C−A), 0≤t≤1. Proiecția lui K pe dreapta AC corespunde lui t₀=3/4. Deoarece 0<t₀<1, proiecția este interioară și t=t₀=3/4. Punctul unic de minim este M(9/2; 0), iar valoarea minimă este 59/2. Convexitatea strictă a pătratului distanței justifică alegerea proiecției sau a capătului apropiat; nu folosim proiecția din afara segmentului.",
+      "options": [
+        {
+          "text": "(9/2; 0)",
+          "is_correct": true
+        },
+        {
+          "text": "(11/2; 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(9/2; -1)",
+          "is_correct": false
+        },
+        {
+          "text": "(7/2; 1)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 22,
+        "family_name": "Optimizare pe latură",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 22,
+        "answer_kind": "pair",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "3",
+          "5"
+        ],
+        "C": [
+          "6",
+          "0"
+        ]
+      }
+    },
+    {
+      "text": "Punctele considerate sunt A(0; 0), B(12; 6), C(6; 0). Pentru M pe segmentul închis [AC], determinați coordonatele punctului care minimizează MB²+MC².",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm K mijlocul lui BC: K(9; 3). Teorema medianei dă MB²+MC²=2MK²+BC²/2. Parametrizăm M=A+t(C−A), 0≤t≤1. Proiecția lui K pe dreapta AC corespunde lui t₀=3/2. Deoarece t₀≥1, minimul pe segment este la C, adică t=1. Punctul unic de minim este M(6; 0), iar valoarea minimă este 72. Convexitatea strictă a pătratului distanței justifică alegerea proiecției sau a capătului apropiat; nu folosim proiecția din afara segmentului.",
+      "options": [
+        {
+          "text": "(7; 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(6; 0)",
+          "is_correct": true
+        },
+        {
+          "text": "(6; -1)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 1)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 22,
+        "family_name": "Optimizare pe latură",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 22,
+        "answer_kind": "pair",
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "12",
+          "6"
+        ],
+        "C": [
+          "6",
+          "0"
+        ]
+      }
+    },
+    {
+      "text": "Se consideră paralelogramul ABCD cu A(0;0), B(3;0), D(t;3), C(t+3;3). Pentru ce valoare a lui t avem MA²+MC²=MB²+MD² pentru orice punct M din plan?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriind M=(x;y) și dezvoltând pătratele distanțelor, diferența MA²+MC²−MB²−MD² se reduce la 2·3·t. Deoarece 3>0, identitatea pentru orice M este echivalentă cu t=0. Atunci AB este orizontală și AD verticală, deci paralelogramul este dreptunghi (posibil pătrat). Înălțimea 3>0 exclude degenerarea; condiția dată nu trebuie aplicată unui patrulater arbitrar fără ipoteza de paralelogram.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 23,
+        "family_name": "Caracterizarea paralelismului sau dreptunghiului",
+        "variant": 1,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 23,
+        "answer_kind": "number",
+        "width": "3",
+        "height": "3"
+      }
+    },
+    {
+      "text": "Se consideră paralelogramul ABCD cu A(0;0), B(4;0), D(t;5), C(t+4;5). Pentru ce valoare a lui t avem MA²+MC²=MB²+MD² pentru orice punct M din plan?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriind M=(x;y) și dezvoltând pătratele distanțelor, diferența MA²+MC²−MB²−MD² se reduce la 2·4·t. Deoarece 4>0, identitatea pentru orice M este echivalentă cu t=0. Atunci AB este orizontală și AD verticală, deci paralelogramul este dreptunghi (posibil pătrat). Înălțimea 5>0 exclude degenerarea; condiția dată nu trebuie aplicată unui patrulater arbitrar fără ipoteza de paralelogram.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 23,
+        "family_name": "Caracterizarea paralelismului sau dreptunghiului",
+        "variant": 2,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 23,
+        "answer_kind": "number",
+        "width": "4",
+        "height": "5"
+      }
+    },
+    {
+      "text": "Se consideră paralelogramul ABCD cu A(0;0), B(5;0), D(t;7), C(t+5;7). Pentru ce valoare a lui t avem MA²+MC²=MB²+MD² pentru orice punct M din plan?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriind M=(x;y) și dezvoltând pătratele distanțelor, diferența MA²+MC²−MB²−MD² se reduce la 2·5·t. Deoarece 5>0, identitatea pentru orice M este echivalentă cu t=0. Atunci AB este orizontală și AD verticală, deci paralelogramul este dreptunghi (posibil pătrat). Înălțimea 7>0 exclude degenerarea; condiția dată nu trebuie aplicată unui patrulater arbitrar fără ipoteza de paralelogram.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 23,
+        "family_name": "Caracterizarea paralelismului sau dreptunghiului",
+        "variant": 3,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 23,
+        "answer_kind": "number",
+        "width": "5",
+        "height": "7"
+      }
+    },
+    {
+      "text": "Se consideră paralelogramul ABCD cu A(0;0), B(6;0), D(t;9), C(t+6;9). Pentru ce valoare a lui t avem MA²+MC²=MB²+MD² pentru orice punct M din plan?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriind M=(x;y) și dezvoltând pătratele distanțelor, diferența MA²+MC²−MB²−MD² se reduce la 2·6·t. Deoarece 6>0, identitatea pentru orice M este echivalentă cu t=0. Atunci AB este orizontală și AD verticală, deci paralelogramul este dreptunghi (posibil pătrat). Înălțimea 9>0 exclude degenerarea; condiția dată nu trebuie aplicată unui patrulater arbitrar fără ipoteza de paralelogram.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 23,
+        "family_name": "Caracterizarea paralelismului sau dreptunghiului",
+        "variant": 4,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 23,
+        "answer_kind": "number",
+        "width": "6",
+        "height": "9"
+      }
+    },
+    {
+      "text": "Se consideră paralelogramul ABCD cu A(0;0), B(7;0), D(t;11), C(t+7;11). Pentru ce valoare a lui t avem MA²+MC²=MB²+MD² pentru orice punct M din plan?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriind M=(x;y) și dezvoltând pătratele distanțelor, diferența MA²+MC²−MB²−MD² se reduce la 2·7·t. Deoarece 7>0, identitatea pentru orice M este echivalentă cu t=0. Atunci AB este orizontală și AD verticală, deci paralelogramul este dreptunghi (posibil pătrat). Înălțimea 11>0 exclude degenerarea; condiția dată nu trebuie aplicată unui patrulater arbitrar fără ipoteza de paralelogram.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g4_vectoriale_leibniz_v1",
+        "catalog": "G4_catalog.md",
+        "section": "3",
+        "pages": "236–238",
+        "family": 23,
+        "family_name": "Caracterizarea paralelismului sau dreptunghiului",
+        "variant": 5,
+        "coverage": "original_grid_adaptation",
+        "adaptation": "Problemă originală de calcul/recunoaștere; demonstrațiile de catalog sunt adaptate în grile cu justificare în explicație."
+      },
+      "verification": {
+        "family": 23,
+        "answer_kind": "number",
+        "width": "7",
+        "height": "11"
+      }
+    }
+  ]
 }

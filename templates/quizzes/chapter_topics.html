@@ -1,40 +1,66 @@
 {% extends "base.html" %}
 {% load lesson_tags %}
 
-{% block title %}{{ chapter.title }} - Focul Matematic{% endblock %}
+{% block title %}{{ group_title|default:chapter.title }} - Focul Matematic{% endblock %}
+
+{% block page_styles %}{% include "includes/page_styles.html" %}{% endblock %}
 
 {% block content %}
-<div class="page-content">
-    <p class="muted" style="margin:0 0 0.5rem;">
+<div class="page-content journey-page">
+    <nav class="page-trail" aria-label="Traseu de navigare">
+        <a href="{% url 'quiz_list' %}">Chestionare</a><span aria-hidden="true">/</span>
         <a href="{% url 'class_chapters' class_level %}">Clasa a {{ class_level }}-a</a>
-    </p>
-    <h1>{{ chapter.title }}</h1>
+        {% if group_title %}
+        &middot; <a href="{% url 'chapter_topics' class_level chapter.slug %}">{{ chapter.title }}</a>
+        {% endif %}
+    </nav>
+    <h1>{{ group_title|default:chapter.title }}</h1>
+    {% if topic_states %}<p class="page-intro muted">Alege o lecție. Poți începe antrenarea sau continua parcursul deja început.</p>{% endif %}
 
     {% if not topic_states %}
-        <p class="muted">Nu exista inca subiecte in acest capitol.</p>
+        {% url 'class_chapters' class_level as empty_url %}
+        {% include "includes/state_panel.html" with state_title="Capitolul este în pregătire" state_text="Nu există încă lecții în acest capitol. Alege un alt capitol pentru a continua." action_url=empty_url action_label="Vezi capitolele" %}
     {% else %}
         {% for state in topic_states %}
+            {% if state.is_group %}
+            <article class="card learning-card">
+                <div class="learning-card__main">
+                    <h2 style="margin:0 0 0.25rem;">{{ state.title }}</h2>
+                    <p class="muted">Dificultate: {{ state.difficulty }} &middot; {{ state.child_count }} subcategorii &middot; {{ state.question_count }} întrebări</p>
+                    {% if state.question_count %}
+                    <div class="learning-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ state.training_percent }}" aria-label="Progres antrenare {{ state.training_percent }}%">
+                        <div class="learning-progress__fill" style="width: {{ state.training_percent }}%;"></div>
+                    </div>
+                    <p class="muted learning-card__meta">{{ state.training_percent }}% antrenare</p>
+                    {% else %}<p class="muted learning-card__meta">Exercițiile sunt în pregătire.</p>{% endif %}
+                </div>
+                <a class="btn btn-press" href="{{ state.next_action_url }}">Deschide categoria</a>
+            </article>
+            {% else %}
             <article class="card learning-card">
                 <div class="learning-card__main">
                     {% render_lesson_tags state.topic %}
                     <h2 style="margin:0 0 0.25rem;">{{ state.topic.title }}</h2>
                     <p class="muted" style="margin:0 0 0.75rem;">
-                        Dificultate: {{ state.topic.get_difficulty_display }} &middot; {{ state.question_count }} intrebari
+                        Dificultate: {{ state.topic.get_difficulty_display }} &middot; {{ state.question_count }} întrebări
                     </p>
                     {% if state.topic.description %}
                         <p style="margin:0 0 1rem;">{{ state.topic.description }}</p>
                     {% endif %}
-                    <div class="learning-progress" aria-label="Progres antrenare {{ state.training_percent }}%">
+                    {% if state.question_count %}
+                    <div class="learning-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ state.training_percent }}" aria-label="Progres antrenare {{ state.training_percent }}%">
                         <div class="learning-progress__fill" style="width: {{ state.training_percent }}%;"></div>
                     </div>
                     <p class="muted learning-card__meta">
                         {{ state.training_percent }}% antrenare
-                        {% if state.training_wrong %}&middot; {{ state.training_wrong }} greseli de reluat{% endif %}
-                        {% if state.in_progress %}&middot; chestionar inceput{% endif %}
+                        {% if state.training_wrong %}&middot; {{ state.training_wrong }} greșeli de reluat{% endif %}
+                        {% if state.in_progress %}&middot; chestionar început{% endif %}
                     </p>
+                    {% else %}<p class="muted learning-card__meta">Exercițiile sunt în pregătire.</p>{% endif %}
                 </div>
-                <a class="btn btn-press" href="{{ state.next_action_url }}">{{ state.next_action_label }}</a>
+                <a class="btn btn-press" href="{{ state.next_action_url }}">{% if state.question_count %}{{ state.next_action_label }}{% else %}Vezi lecția{% endif %}</a>
             </article>
+            {% endif %}
         {% endfor %}
     {% endif %}
 </div>

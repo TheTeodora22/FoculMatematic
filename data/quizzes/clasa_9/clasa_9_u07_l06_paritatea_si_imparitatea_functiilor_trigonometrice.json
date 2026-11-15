@@ -1,6 +1,2377 @@
 {
   "title": "Paritatea și imparitatea funcțiilor trigonometrice",
   "description": "Clasa a 9-a · Elemente de trigonometrie",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "hard",
+  "questions": [
+    {
+      "text": "Clasificați paritatea funcției f(x)=\\(\\sin{\\left(x \\right)}\\) pe domeniul ℝ; argumentele trigonometrice sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul este simetric. Folosim sin(−x)=−sin x și cos(−x)=cos x, apoi comparăm f(−x) cu f(x) și −f(x). Funcția identic nulă satisface ambele egalități și trebuie tratată separat. Rezultatul cerut este Impară, dar nu pară.",
+      "options": [
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 1,
+        "type_name": "Paritatea expresiilor trigonometrice",
+        "variant": 1,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "parity",
+        "expression": "sin(x)",
+        "expression_latex": "\\sin{\\left(x \\right)}",
+        "domain": "Reals",
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Nici pară, nici impară",
+          "1": "Pară, dar nu impară",
+          "2": "Impară, dar nu pară",
+          "3": "Atât pară, cât și impară"
+        }
+      }
+    },
+    {
+      "text": "Clasificați funcția f(x)=\\(\\cos{\\left(1 x \\right)}\\) definită NUMAI pe (0;2). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul nu este simetric față de zero: pentru x admis, −x nu este admis. Prin definiția funcțiilor pare/impare este necesar −D=D, deci funcția restrânsă nu este nici pară, nici impară, indiferent de simetria formulei cosinusului. Rezultatul cerut este Nici pară, nici impară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": true
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 2,
+        "type_name": "Paritate și domeniu",
+        "variant": 1,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "parity",
+        "expression": "cos(1*x)",
+        "expression_latex": "\\cos{\\left(1 x \\right)}",
+        "domain": "positive_interval",
+        "upper": 2,
+        "option_values": [
+          "1",
+          "0",
+          "2",
+          "3"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Nici pară, nici impară",
+          "1": "Pară, dar nu impară",
+          "2": "Impară, dar nu pară",
+          "3": "Atât pară, cât și impară"
+        }
+      }
+    },
+    {
+      "text": "Pentru ce valoare a lui a este funcția f(x)=a sin x+2cos x pară pe ℝ? Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Componenta a sin x este impară, iar componenta cosinusului este pară. Egalitatea f(−x)=f(x) impune 2a sin x=0 pentru orice x; luând x=π/2 obținem a=0. Coeficientul cosinusului este nenul. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 3,
+        "type_name": "Coeficienți pentru paritate",
+        "variant": 1,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "parity_parameter",
+        "cos_coefficient": 2,
+        "target": "even",
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Este T=\\(2 \\pi\\) o perioadă a funcției f(x)=sin(x/2) pe ℝ? Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Deplasarea cu T schimbă argumentul sinusului cu T/2. Pentru o perioadă, această deplasare trebuie să fie un multiplu întreg de 2π. Funcția este neconstantă și periodică, dar nu orice multiplu de 2π în x este o perioadă. Rezultatul cerut este Nu, T nu este o perioadă.",
+      "options": [
+        {
+          "text": "Da, T este o perioadă",
+          "is_correct": false
+        },
+        {
+          "text": "Funcția nu este periodică",
+          "is_correct": false
+        },
+        {
+          "text": "Funcția este constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, T nu este o perioadă",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 4,
+        "type_name": "Verificarea unei perioade candidate",
+        "variant": 1,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "candidate_period",
+        "expression": "sin(x/2)",
+        "period": "2*pi",
+        "option_values": [
+          "1",
+          "2",
+          "3",
+          "0"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Nu, T nu este o perioadă",
+          "1": "Da, T este o perioadă",
+          "2": "Funcția nu este periodică",
+          "3": "Funcția este constantă"
+        }
+      }
+    },
+    {
+      "text": "Aflați perioada principală pozitivă a funcției f(x)=\\(\\sin{\\left(a x \\right)}\\) pe ℝ, pentru a=\\(\\frac{2}{3}\\). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sinusul și cosinusul au perioada principală 2π, tangenta și cotangenta π pe domeniul natural. Împărțim perioada de bază la |a|, iar coeficientul este strict pozitiv; deplasarea păstrează și domeniul de definiție. Rezultatul cerut este \\(3 \\pi\\).",
+      "options": [
+        {
+          "text": "\\(3 \\pi\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + 3 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + 3 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + 3 \\pi\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 5,
+        "type_name": "Perioada principală a unei funcții elementare",
+        "variant": 1,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "period",
+        "function": "sin",
+        "frequency": "2/3",
+        "mode": "plain",
+        "option_values": [
+          "3*pi",
+          "1 + 3*pi",
+          "-1 + 3*pi",
+          "2 + 3*pi"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Determinați perioada principală pozitivă a lui f(x)=sin(1x/2)+cos(1x/3), pe ℝ. Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două frecvențe nenule sunt distincte, a/2 și a/3, cu a coeficientul întreg din enunț. Pentru o perioadă comună, (a/2)T și (a/3)T trebuie să fie multipli de 2π. Cea mai mică valoare pozitivă este 12π/a. Minimalitatea urmează din independența componentelor armonice cu frecvențe distincte. Rezultatul cerut este \\(12 \\pi\\).",
+      "options": [
+        {
+          "text": "\\(1 + 12 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(12 \\pi\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + 12 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + 12 \\pi\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 6,
+        "type_name": "Perioade comune în sume și produse",
+        "variant": 1,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "period_sum",
+        "frequencies": [
+          "1/2",
+          "1/3"
+        ],
+        "functions": [
+          "sin",
+          "cos"
+        ],
+        "option_values": [
+          "1 + 12*pi",
+          "12*pi",
+          "-1 + 12*pi",
+          "2 + 12*pi"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați perioada principală pozitivă a funcției f(x)=\\(\\left|{\\sin{\\left(1 x \\right)}}\\right|\\) pe ℝ, cu argumentele în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Modulul sinusului și pătratul cosinusului au fiecare perioada principală π în argument, nu 2π. Deplasarea cu π schimbă semnul funcției de bază, eliminat de modul sau pătrat. Zerourile sau formula cos²u=(1+cos2u)/2 exclud o perioadă pozitivă mai mică. Rezultatul cerut este \\(\\pi\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\pi\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 + \\pi\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 7,
+        "type_name": "Perioade micșorate prin puteri sau modul",
+        "variant": 1,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "period",
+        "function": "sin",
+        "frequency": 1,
+        "mode": "absolute",
+        "option_values": [
+          "1 + pi",
+          "-1 + pi",
+          "pi",
+          "2 + pi"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ verifică f(x)+2f(−x)=1cos(2x) pentru orice x. Determinați perioada sa principală pozitivă. Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim x cu −x și folosim paritatea cosinusului. Sistemul pentru f(x),f(−x) are determinant −3≠0 și dă f(x)=(a/3)cos(bx), cu a,b numerele pozitive din enunț. Amplitudinea nenulă nu schimbă perioada principală 2π/b. Rezultatul cerut este \\(\\pi\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\pi\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 8,
+        "type_name": "Periodicitate din ecuație funcțională trigonometrică",
+        "variant": 1,
+        "reference_pages": "212–214",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "functional_period",
+        "amplitude": 1,
+        "frequency": 2,
+        "reflection_coefficient": 2,
+        "option_values": [
+          "1 + pi",
+          "-1 + pi",
+          "2 + pi",
+          "pi"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Studiați periodicitatea funcției f(x)=sin(1x)+cos(1√2·x), x∈ℝ. Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm a=1. Dacă T>0 ar fi o perioadă, f(−x) ar avea aceeași perioadă. Atunci partea impară [f(x)−f(−x)]/2=sin(ax) și partea pară [f(x)+f(−x)]/2=cos(a√2·x) ar fi ambele T-periodice. Ar rezulta aT=2kπ și a√2T=2mπ cu k,m întregi și k≠0; împărțirea ar da √2=m/k, imposibil. Acest argument folosește paritatea și perioadele funcțiilor elementare. Exemplul este o sumă proprie, nu produsul nespecificat al catalogului. Rezultatul cerut este Funcția nu este periodică.",
+      "options": [
+        {
+          "text": "Funcția nu este periodică",
+          "is_correct": true
+        },
+        {
+          "text": "Perioada principală este 2π",
+          "is_correct": false
+        },
+        {
+          "text": "Perioada principală este π",
+          "is_correct": false
+        },
+        {
+          "text": "Funcția este constantă",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 9,
+        "type_name": "Neperiodicitate cu frecvențe incomensurabile",
+        "variant": 1,
+        "reference_pages": "212–214",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "nonperiodic_sum",
+        "frequencies": [
+          1,
+          "sqrt(2)"
+        ],
+        "functions": [
+          "sin",
+          "cos"
+        ],
+        "option_values": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Funcția nu este periodică",
+          "1": "Perioada principală este 2π",
+          "2": "Perioada principală este π",
+          "3": "Funcția este constantă"
+        }
+      }
+    },
+    {
+      "text": "Clasificați paritatea funcției f(x)=\\(\\cos{\\left(x \\right)}\\) pe domeniul ℝ; argumentele trigonometrice sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul este simetric. Folosim sin(−x)=−sin x și cos(−x)=cos x, apoi comparăm f(−x) cu f(x) și −f(x). Funcția identic nulă satisface ambele egalități și trebuie tratată separat. Rezultatul cerut este Pară, dar nu impară.",
+      "options": [
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": true
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 1,
+        "type_name": "Paritatea expresiilor trigonometrice",
+        "variant": 2,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "parity",
+        "expression": "cos(x)",
+        "expression_latex": "\\cos{\\left(x \\right)}",
+        "domain": "Reals",
+        "option_values": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Nici pară, nici impară",
+          "1": "Pară, dar nu impară",
+          "2": "Impară, dar nu pară",
+          "3": "Atât pară, cât și impară"
+        }
+      }
+    },
+    {
+      "text": "Clasificați funcția f(x)=\\(\\cos{\\left(2 x \\right)}\\) definită NUMAI pe (0;3). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul nu este simetric față de zero: pentru x admis, −x nu este admis. Prin definiția funcțiilor pare/impare este necesar −D=D, deci funcția restrânsă nu este nici pară, nici impară, indiferent de simetria formulei cosinusului. Rezultatul cerut este Nici pară, nici impară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": true
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 2,
+        "type_name": "Paritate și domeniu",
+        "variant": 2,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "parity",
+        "expression": "cos(2*x)",
+        "expression_latex": "\\cos{\\left(2 x \\right)}",
+        "domain": "positive_interval",
+        "upper": 3,
+        "option_values": [
+          "1",
+          "2",
+          "0",
+          "3"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Nici pară, nici impară",
+          "1": "Pară, dar nu impară",
+          "2": "Impară, dar nu pară",
+          "3": "Atât pară, cât și impară"
+        }
+      }
+    },
+    {
+      "text": "Pentru ce valoare a lui a este funcția f(x)=a sin x+3cos x pară pe ℝ? Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Componenta a sin x este impară, iar componenta cosinusului este pară. Egalitatea f(−x)=f(x) impune 2a sin x=0 pentru orice x; luând x=π/2 obținem a=0. Coeficientul cosinusului este nenul. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 3,
+        "type_name": "Coeficienți pentru paritate",
+        "variant": 2,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "parity_parameter",
+        "cos_coefficient": 3,
+        "target": "even",
+        "option_values": [
+          "1",
+          "-1",
+          "2",
+          "0"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Este T=\\(4 \\pi\\) o perioadă a funcției f(x)=sin(x/2) pe ℝ? Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Deplasarea cu T schimbă argumentul sinusului cu T/2. Pentru o perioadă, această deplasare trebuie să fie un multiplu întreg de 2π. Funcția este neconstantă și periodică, dar nu orice multiplu de 2π în x este o perioadă. Rezultatul cerut este Da, T este o perioadă.",
+      "options": [
+        {
+          "text": "Da, T este o perioadă",
+          "is_correct": true
+        },
+        {
+          "text": "Nu, T nu este o perioadă",
+          "is_correct": false
+        },
+        {
+          "text": "Funcția nu este periodică",
+          "is_correct": false
+        },
+        {
+          "text": "Funcția este constantă",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 4,
+        "type_name": "Verificarea unei perioade candidate",
+        "variant": 2,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "candidate_period",
+        "expression": "sin(x/2)",
+        "period": "4*pi",
+        "option_values": [
+          "1",
+          "0",
+          "2",
+          "3"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Nu, T nu este o perioadă",
+          "1": "Da, T este o perioadă",
+          "2": "Funcția nu este periodică",
+          "3": "Funcția este constantă"
+        }
+      }
+    },
+    {
+      "text": "Aflați perioada principală pozitivă a funcției f(x)=\\(\\cos{\\left(a x \\right)}\\) pe ℝ, pentru a=\\(\\frac{3}{4}\\). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sinusul și cosinusul au perioada principală 2π, tangenta și cotangenta π pe domeniul natural. Împărțim perioada de bază la |a|, iar coeficientul este strict pozitiv; deplasarea păstrează și domeniul de definiție. Rezultatul cerut este \\(\\frac{8 \\pi}{3}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{8 \\pi}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{8 \\pi}{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{8 \\pi}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{8 \\pi}{3}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 5,
+        "type_name": "Perioada principală a unei funcții elementare",
+        "variant": 2,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "period",
+        "function": "cos",
+        "frequency": "3/4",
+        "mode": "plain",
+        "option_values": [
+          "1 + 8*pi/3",
+          "8*pi/3",
+          "-1 + 8*pi/3",
+          "2 + 8*pi/3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Determinați perioada principală pozitivă a lui f(x)=sin(2x/2)+cos(2x/3), pe ℝ. Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două frecvențe nenule sunt distincte, a/2 și a/3, cu a coeficientul întreg din enunț. Pentru o perioadă comună, (a/2)T și (a/3)T trebuie să fie multipli de 2π. Cea mai mică valoare pozitivă este 12π/a. Minimalitatea urmează din independența componentelor armonice cu frecvențe distincte. Rezultatul cerut este \\(6 \\pi\\).",
+      "options": [
+        {
+          "text": "\\(1 + 6 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + 6 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 \\pi\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 + 6 \\pi\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 6,
+        "type_name": "Perioade comune în sume și produse",
+        "variant": 2,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "period_sum",
+        "frequencies": [
+          "1",
+          "2/3"
+        ],
+        "functions": [
+          "sin",
+          "cos"
+        ],
+        "option_values": [
+          "1 + 6*pi",
+          "-1 + 6*pi",
+          "6*pi",
+          "2 + 6*pi"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați perioada principală pozitivă a funcției f(x)=\\(\\cos^{2}{\\left(2 x \\right)}\\) pe ℝ, cu argumentele în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Modulul sinusului și pătratul cosinusului au fiecare perioada principală π în argument, nu 2π. Deplasarea cu π schimbă semnul funcției de bază, eliminat de modul sau pătrat. Zerourile sau formula cos²u=(1+cos2u)/2 exclud o perioadă pozitivă mai mică. Rezultatul cerut este \\(\\frac{\\pi}{2}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{\\pi}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\pi}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\pi}{2} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\pi}{2}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 7,
+        "type_name": "Perioade micșorate prin puteri sau modul",
+        "variant": 2,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "period",
+        "function": "cos",
+        "frequency": 2,
+        "mode": "square",
+        "option_values": [
+          "1 + pi/2",
+          "-1 + pi/2",
+          "pi/2 + 2",
+          "pi/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ verifică f(x)+2f(−x)=2cos(3x) pentru orice x. Determinați perioada sa principală pozitivă. Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim x cu −x și folosim paritatea cosinusului. Sistemul pentru f(x),f(−x) are determinant −3≠0 și dă f(x)=(a/3)cos(bx), cu a,b numerele pozitive din enunț. Amplitudinea nenulă nu schimbă perioada principală 2π/b. Rezultatul cerut este \\(\\frac{2 \\pi}{3}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{2 \\pi}{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + \\frac{2 \\pi}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{2 \\pi}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{2 \\pi}{3}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 8,
+        "type_name": "Periodicitate din ecuație funcțională trigonometrică",
+        "variant": 2,
+        "reference_pages": "212–214",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "functional_period",
+        "amplitude": 2,
+        "frequency": 3,
+        "reflection_coefficient": 2,
+        "option_values": [
+          "2*pi/3",
+          "1 + 2*pi/3",
+          "-1 + 2*pi/3",
+          "2 + 2*pi/3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Studiați periodicitatea funcției f(x)=sin(2x)+cos(2√2·x), x∈ℝ. Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm a=2. Dacă T>0 ar fi o perioadă, f(−x) ar avea aceeași perioadă. Atunci partea impară [f(x)−f(−x)]/2=sin(ax) și partea pară [f(x)+f(−x)]/2=cos(a√2·x) ar fi ambele T-periodice. Ar rezulta aT=2kπ și a√2T=2mπ cu k,m întregi și k≠0; împărțirea ar da √2=m/k, imposibil. Acest argument folosește paritatea și perioadele funcțiilor elementare. Exemplul este o sumă proprie, nu produsul nespecificat al catalogului. Rezultatul cerut este Funcția nu este periodică.",
+      "options": [
+        {
+          "text": "Perioada principală este 2π",
+          "is_correct": false
+        },
+        {
+          "text": "Funcția nu este periodică",
+          "is_correct": true
+        },
+        {
+          "text": "Perioada principală este π",
+          "is_correct": false
+        },
+        {
+          "text": "Funcția este constantă",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 9,
+        "type_name": "Neperiodicitate cu frecvențe incomensurabile",
+        "variant": 2,
+        "reference_pages": "212–214",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "nonperiodic_sum",
+        "frequencies": [
+          2,
+          "2*sqrt(2)"
+        ],
+        "functions": [
+          "sin",
+          "cos"
+        ],
+        "option_values": [
+          "1",
+          "0",
+          "2",
+          "3"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Funcția nu este periodică",
+          "1": "Perioada principală este 2π",
+          "2": "Perioada principală este π",
+          "3": "Funcția este constantă"
+        }
+      }
+    },
+    {
+      "text": "Clasificați paritatea funcției f(x)=\\(x \\sin{\\left(x \\right)}\\) pe domeniul ℝ; argumentele trigonometrice sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul este simetric. Folosim sin(−x)=−sin x și cos(−x)=cos x, apoi comparăm f(−x) cu f(x) și −f(x). Funcția identic nulă satisface ambele egalități și trebuie tratată separat. Rezultatul cerut este Pară, dar nu impară.",
+      "options": [
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": true
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 1,
+        "type_name": "Paritatea expresiilor trigonometrice",
+        "variant": 3,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "parity",
+        "expression": "x*sin(x)",
+        "expression_latex": "x \\sin{\\left(x \\right)}",
+        "domain": "Reals",
+        "option_values": [
+          "0",
+          "2",
+          "1",
+          "3"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Nici pară, nici impară",
+          "1": "Pară, dar nu impară",
+          "2": "Impară, dar nu pară",
+          "3": "Atât pară, cât și impară"
+        }
+      }
+    },
+    {
+      "text": "Clasificați funcția f(x)=\\(\\cos{\\left(3 x \\right)}\\) definită NUMAI pe (0;4). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul nu este simetric față de zero: pentru x admis, −x nu este admis. Prin definiția funcțiilor pare/impare este necesar −D=D, deci funcția restrânsă nu este nici pară, nici impară, indiferent de simetria formulei cosinusului. Rezultatul cerut este Nici pară, nici impară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 2,
+        "type_name": "Paritate și domeniu",
+        "variant": 3,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "parity",
+        "expression": "cos(3*x)",
+        "expression_latex": "\\cos{\\left(3 x \\right)}",
+        "domain": "positive_interval",
+        "upper": 4,
+        "option_values": [
+          "1",
+          "2",
+          "3",
+          "0"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Nici pară, nici impară",
+          "1": "Pară, dar nu impară",
+          "2": "Impară, dar nu pară",
+          "3": "Atât pară, cât și impară"
+        }
+      }
+    },
+    {
+      "text": "Pentru ce valoare a lui a este funcția f(x)=a sin x+4cos x pară pe ℝ? Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Componenta a sin x este impară, iar componenta cosinusului este pară. Egalitatea f(−x)=f(x) impune 2a sin x=0 pentru orice x; luând x=π/2 obținem a=0. Coeficientul cosinusului este nenul. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 3,
+        "type_name": "Coeficienți pentru paritate",
+        "variant": 3,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "parity_parameter",
+        "cos_coefficient": 4,
+        "target": "even",
+        "option_values": [
+          "0",
+          "1",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Este T=\\(6 \\pi\\) o perioadă a funcției f(x)=sin(x/2) pe ℝ? Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Deplasarea cu T schimbă argumentul sinusului cu T/2. Pentru o perioadă, această deplasare trebuie să fie un multiplu întreg de 2π. Funcția este neconstantă și periodică, dar nu orice multiplu de 2π în x este o perioadă. Rezultatul cerut este Nu, T nu este o perioadă.",
+      "options": [
+        {
+          "text": "Da, T este o perioadă",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, T nu este o perioadă",
+          "is_correct": true
+        },
+        {
+          "text": "Funcția nu este periodică",
+          "is_correct": false
+        },
+        {
+          "text": "Funcția este constantă",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 4,
+        "type_name": "Verificarea unei perioade candidate",
+        "variant": 3,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "candidate_period",
+        "expression": "sin(x/2)",
+        "period": "6*pi",
+        "option_values": [
+          "1",
+          "0",
+          "2",
+          "3"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Nu, T nu este o perioadă",
+          "1": "Da, T este o perioadă",
+          "2": "Funcția nu este periodică",
+          "3": "Funcția este constantă"
+        }
+      }
+    },
+    {
+      "text": "Aflați perioada principală pozitivă a funcției f(x)=\\(\\tan{\\left(a x \\right)}\\) pe domeniul său natural, pentru a=\\(\\frac{4}{5}\\). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sinusul și cosinusul au perioada principală 2π, tangenta și cotangenta π pe domeniul natural. Împărțim perioada de bază la |a|, iar coeficientul este strict pozitiv; deplasarea păstrează și domeniul de definiție. Rezultatul cerut este \\(\\frac{5 \\pi}{4}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{5 \\pi}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{5 \\pi}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5 \\pi}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 + \\frac{5 \\pi}{4}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 5,
+        "type_name": "Perioada principală a unei funcții elementare",
+        "variant": 3,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "period",
+        "function": "tan",
+        "frequency": "4/5",
+        "mode": "plain",
+        "option_values": [
+          "1 + 5*pi/4",
+          "-1 + 5*pi/4",
+          "5*pi/4",
+          "2 + 5*pi/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Determinați perioada principală pozitivă a lui f(x)=sin(3x/2)+cos(3x/3), pe ℝ. Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două frecvențe nenule sunt distincte, a/2 și a/3, cu a coeficientul întreg din enunț. Pentru o perioadă comună, (a/2)T și (a/3)T trebuie să fie multipli de 2π. Cea mai mică valoare pozitivă este 12π/a. Minimalitatea urmează din independența componentelor armonice cu frecvențe distincte. Rezultatul cerut este \\(4 \\pi\\).",
+      "options": [
+        {
+          "text": "\\(1 + 4 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + 4 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + 4 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 \\pi\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 6,
+        "type_name": "Perioade comune în sume și produse",
+        "variant": 3,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "period_sum",
+        "frequencies": [
+          "3/2",
+          "1"
+        ],
+        "functions": [
+          "sin",
+          "cos"
+        ],
+        "option_values": [
+          "1 + 4*pi",
+          "-1 + 4*pi",
+          "2 + 4*pi",
+          "4*pi"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați perioada principală pozitivă a funcției f(x)=\\(\\left|{\\sin{\\left(3 x \\right)}}\\right|\\) pe ℝ, cu argumentele în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Modulul sinusului și pătratul cosinusului au fiecare perioada principală π în argument, nu 2π. Deplasarea cu π schimbă semnul funcției de bază, eliminat de modul sau pătrat. Zerourile sau formula cos²u=(1+cos2u)/2 exclud o perioadă pozitivă mai mică. Rezultatul cerut este \\(\\frac{\\pi}{3}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\pi}{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + \\frac{\\pi}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\pi}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\pi}{3} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 7,
+        "type_name": "Perioade micșorate prin puteri sau modul",
+        "variant": 3,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "period",
+        "function": "sin",
+        "frequency": 3,
+        "mode": "absolute",
+        "option_values": [
+          "pi/3",
+          "1 + pi/3",
+          "-1 + pi/3",
+          "pi/3 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ verifică f(x)+2f(−x)=3cos(4x) pentru orice x. Determinați perioada sa principală pozitivă. Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim x cu −x și folosim paritatea cosinusului. Sistemul pentru f(x),f(−x) are determinant −3≠0 și dă f(x)=(a/3)cos(bx), cu a,b numerele pozitive din enunț. Amplitudinea nenulă nu schimbă perioada principală 2π/b. Rezultatul cerut este \\(\\frac{\\pi}{2}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{\\pi}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\pi}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{\\pi}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\pi}{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 8,
+        "type_name": "Periodicitate din ecuație funcțională trigonometrică",
+        "variant": 3,
+        "reference_pages": "212–214",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "functional_period",
+        "amplitude": 3,
+        "frequency": 4,
+        "reflection_coefficient": 2,
+        "option_values": [
+          "1 + pi/2",
+          "pi/2",
+          "-1 + pi/2",
+          "pi/2 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Studiați periodicitatea funcției f(x)=sin(3x)+cos(3√2·x), x∈ℝ. Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm a=3. Dacă T>0 ar fi o perioadă, f(−x) ar avea aceeași perioadă. Atunci partea impară [f(x)−f(−x)]/2=sin(ax) și partea pară [f(x)+f(−x)]/2=cos(a√2·x) ar fi ambele T-periodice. Ar rezulta aT=2kπ și a√2T=2mπ cu k,m întregi și k≠0; împărțirea ar da √2=m/k, imposibil. Acest argument folosește paritatea și perioadele funcțiilor elementare. Exemplul este o sumă proprie, nu produsul nespecificat al catalogului. Rezultatul cerut este Funcția nu este periodică.",
+      "options": [
+        {
+          "text": "Perioada principală este 2π",
+          "is_correct": false
+        },
+        {
+          "text": "Perioada principală este π",
+          "is_correct": false
+        },
+        {
+          "text": "Funcția nu este periodică",
+          "is_correct": true
+        },
+        {
+          "text": "Funcția este constantă",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 9,
+        "type_name": "Neperiodicitate cu frecvențe incomensurabile",
+        "variant": 3,
+        "reference_pages": "212–214",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "nonperiodic_sum",
+        "frequencies": [
+          3,
+          "3*sqrt(2)"
+        ],
+        "functions": [
+          "sin",
+          "cos"
+        ],
+        "option_values": [
+          "1",
+          "2",
+          "0",
+          "3"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Funcția nu este periodică",
+          "1": "Perioada principală este 2π",
+          "2": "Perioada principală este π",
+          "3": "Funcția este constantă"
+        }
+      }
+    },
+    {
+      "text": "Clasificați paritatea funcției f(x)=\\(x^{2} \\sin{\\left(x \\right)}\\) pe domeniul ℝ; argumentele trigonometrice sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul este simetric. Folosim sin(−x)=−sin x și cos(−x)=cos x, apoi comparăm f(−x) cu f(x) și −f(x). Funcția identic nulă satisface ambele egalități și trebuie tratată separat. Rezultatul cerut este Impară, dar nu pară.",
+      "options": [
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 1,
+        "type_name": "Paritatea expresiilor trigonometrice",
+        "variant": 4,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "parity",
+        "expression": "x**2*sin(x)",
+        "expression_latex": "x^{2} \\sin{\\left(x \\right)}",
+        "domain": "Reals",
+        "option_values": [
+          "0",
+          "1",
+          "3",
+          "2"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Nici pară, nici impară",
+          "1": "Pară, dar nu impară",
+          "2": "Impară, dar nu pară",
+          "3": "Atât pară, cât și impară"
+        }
+      }
+    },
+    {
+      "text": "Clasificați funcția f(x)=\\(\\cos{\\left(4 x \\right)}\\) definită NUMAI pe (0;5). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul nu este simetric față de zero: pentru x admis, −x nu este admis. Prin definiția funcțiilor pare/impare este necesar −D=D, deci funcția restrânsă nu este nici pară, nici impară, indiferent de simetria formulei cosinusului. Rezultatul cerut este Nici pară, nici impară.",
+      "options": [
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": true
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 2,
+        "type_name": "Paritate și domeniu",
+        "variant": 4,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "parity",
+        "expression": "cos(4*x)",
+        "expression_latex": "\\cos{\\left(4 x \\right)}",
+        "domain": "positive_interval",
+        "upper": 5,
+        "option_values": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Nici pară, nici impară",
+          "1": "Pară, dar nu impară",
+          "2": "Impară, dar nu pară",
+          "3": "Atât pară, cât și impară"
+        }
+      }
+    },
+    {
+      "text": "Pentru ce valoare a lui a este funcția f(x)=a sin x+5cos x pară pe ℝ? Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Componenta a sin x este impară, iar componenta cosinusului este pară. Egalitatea f(−x)=f(x) impune 2a sin x=0 pentru orice x; luând x=π/2 obținem a=0. Coeficientul cosinusului este nenul. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 3,
+        "type_name": "Coeficienți pentru paritate",
+        "variant": 4,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "parity_parameter",
+        "cos_coefficient": 5,
+        "target": "even",
+        "option_values": [
+          "1",
+          "0",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Este T=\\(8 \\pi\\) o perioadă a funcției f(x)=sin(x/2) pe ℝ? Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Deplasarea cu T schimbă argumentul sinusului cu T/2. Pentru o perioadă, această deplasare trebuie să fie un multiplu întreg de 2π. Funcția este neconstantă și periodică, dar nu orice multiplu de 2π în x este o perioadă. Rezultatul cerut este Da, T este o perioadă.",
+      "options": [
+        {
+          "text": "Nu, T nu este o perioadă",
+          "is_correct": false
+        },
+        {
+          "text": "Funcția nu este periodică",
+          "is_correct": false
+        },
+        {
+          "text": "Da, T este o perioadă",
+          "is_correct": true
+        },
+        {
+          "text": "Funcția este constantă",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 4,
+        "type_name": "Verificarea unei perioade candidate",
+        "variant": 4,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "candidate_period",
+        "expression": "sin(x/2)",
+        "period": "8*pi",
+        "option_values": [
+          "0",
+          "2",
+          "1",
+          "3"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Nu, T nu este o perioadă",
+          "1": "Da, T este o perioadă",
+          "2": "Funcția nu este periodică",
+          "3": "Funcția este constantă"
+        }
+      }
+    },
+    {
+      "text": "Aflați perioada principală pozitivă a funcției f(x)=\\(\\sin{\\left(a x \\right)}\\) pe ℝ, pentru a=\\(\\frac{5}{6}\\). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sinusul și cosinusul au perioada principală 2π, tangenta și cotangenta π pe domeniul natural. Împărțim perioada de bază la |a|, iar coeficientul este strict pozitiv; deplasarea păstrează și domeniul de definiție. Rezultatul cerut este \\(\\frac{12 \\pi}{5}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{12 \\pi}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{12 \\pi}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{12 \\pi}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{12 \\pi}{5}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 5,
+        "type_name": "Perioada principală a unei funcții elementare",
+        "variant": 4,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "period",
+        "function": "sin",
+        "frequency": "5/6",
+        "mode": "plain",
+        "option_values": [
+          "1 + 12*pi/5",
+          "-1 + 12*pi/5",
+          "2 + 12*pi/5",
+          "12*pi/5"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Determinați perioada principală pozitivă a lui f(x)=sin(4x/2)+cos(4x/3), pe ℝ. Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două frecvențe nenule sunt distincte, a/2 și a/3, cu a coeficientul întreg din enunț. Pentru o perioadă comună, (a/2)T și (a/3)T trebuie să fie multipli de 2π. Cea mai mică valoare pozitivă este 12π/a. Minimalitatea urmează din independența componentelor armonice cu frecvențe distincte. Rezultatul cerut este \\(3 \\pi\\).",
+      "options": [
+        {
+          "text": "\\(3 \\pi\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + 3 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + 3 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + 3 \\pi\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 6,
+        "type_name": "Perioade comune în sume și produse",
+        "variant": 4,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "period_sum",
+        "frequencies": [
+          "2",
+          "4/3"
+        ],
+        "functions": [
+          "sin",
+          "cos"
+        ],
+        "option_values": [
+          "3*pi",
+          "1 + 3*pi",
+          "-1 + 3*pi",
+          "2 + 3*pi"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați perioada principală pozitivă a funcției f(x)=\\(\\cos^{2}{\\left(4 x \\right)}\\) pe ℝ, cu argumentele în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Modulul sinusului și pătratul cosinusului au fiecare perioada principală π în argument, nu 2π. Deplasarea cu π schimbă semnul funcției de bază, eliminat de modul sau pătrat. Zerourile sau formula cos²u=(1+cos2u)/2 exclud o perioadă pozitivă mai mică. Rezultatul cerut este \\(\\frac{\\pi}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\pi}{4} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\pi}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{\\pi}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\pi}{4} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 7,
+        "type_name": "Perioade micșorate prin puteri sau modul",
+        "variant": 4,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "period",
+        "function": "cos",
+        "frequency": 4,
+        "mode": "square",
+        "option_values": [
+          "pi/4 + 1",
+          "pi/4",
+          "-1 + pi/4",
+          "pi/4 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ verifică f(x)+2f(−x)=4cos(5x) pentru orice x. Determinați perioada sa principală pozitivă. Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim x cu −x și folosim paritatea cosinusului. Sistemul pentru f(x),f(−x) are determinant −3≠0 și dă f(x)=(a/3)cos(bx), cu a,b numerele pozitive din enunț. Amplitudinea nenulă nu schimbă perioada principală 2π/b. Rezultatul cerut este \\(\\frac{2 \\pi}{5}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{2 \\pi}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{2 \\pi}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{2 \\pi}{5}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{2 \\pi}{5} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 8,
+        "type_name": "Periodicitate din ecuație funcțională trigonometrică",
+        "variant": 4,
+        "reference_pages": "212–214",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "functional_period",
+        "amplitude": 4,
+        "frequency": 5,
+        "reflection_coefficient": 2,
+        "option_values": [
+          "1 + 2*pi/5",
+          "-1 + 2*pi/5",
+          "2*pi/5",
+          "2*pi/5 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Studiați periodicitatea funcției f(x)=sin(4x)+cos(4√2·x), x∈ℝ. Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm a=4. Dacă T>0 ar fi o perioadă, f(−x) ar avea aceeași perioadă. Atunci partea impară [f(x)−f(−x)]/2=sin(ax) și partea pară [f(x)+f(−x)]/2=cos(a√2·x) ar fi ambele T-periodice. Ar rezulta aT=2kπ și a√2T=2mπ cu k,m întregi și k≠0; împărțirea ar da √2=m/k, imposibil. Acest argument folosește paritatea și perioadele funcțiilor elementare. Exemplul este o sumă proprie, nu produsul nespecificat al catalogului. Rezultatul cerut este Funcția nu este periodică.",
+      "options": [
+        {
+          "text": "Perioada principală este 2π",
+          "is_correct": false
+        },
+        {
+          "text": "Perioada principală este π",
+          "is_correct": false
+        },
+        {
+          "text": "Funcția este constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Funcția nu este periodică",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 9,
+        "type_name": "Neperiodicitate cu frecvențe incomensurabile",
+        "variant": 4,
+        "reference_pages": "212–214",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "nonperiodic_sum",
+        "frequencies": [
+          4,
+          "4*sqrt(2)"
+        ],
+        "functions": [
+          "sin",
+          "cos"
+        ],
+        "option_values": [
+          "1",
+          "2",
+          "3",
+          "0"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Funcția nu este periodică",
+          "1": "Perioada principală este 2π",
+          "2": "Perioada principală este π",
+          "3": "Funcția este constantă"
+        }
+      }
+    },
+    {
+      "text": "Clasificați paritatea funcției f(x)=\\(- \\sin{\\left(x \\right)} + \\sin{\\left(x \\right)}\\) pe domeniul ℝ; argumentele trigonometrice sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul este simetric. Folosim sin(−x)=−sin x și cos(−x)=cos x, apoi comparăm f(−x) cu f(x) și −f(x). Funcția identic nulă satisface ambele egalități și trebuie tratată separat. Rezultatul cerut este Atât pară, cât și impară.",
+      "options": [
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": true
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 1,
+        "type_name": "Paritatea expresiilor trigonometrice",
+        "variant": 5,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "parity",
+        "expression": "sin(x)-sin(x)",
+        "expression_latex": "- \\sin{\\left(x \\right)} + \\sin{\\left(x \\right)}",
+        "domain": "Reals",
+        "option_values": [
+          "3",
+          "0",
+          "1",
+          "2"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Nici pară, nici impară",
+          "1": "Pară, dar nu impară",
+          "2": "Impară, dar nu pară",
+          "3": "Atât pară, cât și impară"
+        }
+      }
+    },
+    {
+      "text": "Clasificați funcția f(x)=\\(\\cos{\\left(5 x \\right)}\\) definită NUMAI pe (0;6). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul nu este simetric față de zero: pentru x admis, −x nu este admis. Prin definiția funcțiilor pare/impare este necesar −D=D, deci funcția restrânsă nu este nici pară, nici impară, indiferent de simetria formulei cosinusului. Rezultatul cerut este Nici pară, nici impară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": true
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 2,
+        "type_name": "Paritate și domeniu",
+        "variant": 5,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "parity",
+        "expression": "cos(5*x)",
+        "expression_latex": "\\cos{\\left(5 x \\right)}",
+        "domain": "positive_interval",
+        "upper": 6,
+        "option_values": [
+          "1",
+          "0",
+          "2",
+          "3"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Nici pară, nici impară",
+          "1": "Pară, dar nu impară",
+          "2": "Impară, dar nu pară",
+          "3": "Atât pară, cât și impară"
+        }
+      }
+    },
+    {
+      "text": "Pentru ce valoare a lui a este funcția f(x)=a sin x+6cos x pară pe ℝ? Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Componenta a sin x este impară, iar componenta cosinusului este pară. Egalitatea f(−x)=f(x) impune 2a sin x=0 pentru orice x; luând x=π/2 obținem a=0. Coeficientul cosinusului este nenul. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 3,
+        "type_name": "Coeficienți pentru paritate",
+        "variant": 5,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "parity_parameter",
+        "cos_coefficient": 6,
+        "target": "even",
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Este T=\\(10 \\pi\\) o perioadă a funcției f(x)=sin(x/2) pe ℝ? Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Deplasarea cu T schimbă argumentul sinusului cu T/2. Pentru o perioadă, această deplasare trebuie să fie un multiplu întreg de 2π. Funcția este neconstantă și periodică, dar nu orice multiplu de 2π în x este o perioadă. Rezultatul cerut este Nu, T nu este o perioadă.",
+      "options": [
+        {
+          "text": "Da, T este o perioadă",
+          "is_correct": false
+        },
+        {
+          "text": "Funcția nu este periodică",
+          "is_correct": false
+        },
+        {
+          "text": "Funcția este constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, T nu este o perioadă",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 4,
+        "type_name": "Verificarea unei perioade candidate",
+        "variant": 5,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "candidate_period",
+        "expression": "sin(x/2)",
+        "period": "10*pi",
+        "option_values": [
+          "1",
+          "2",
+          "3",
+          "0"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Nu, T nu este o perioadă",
+          "1": "Da, T este o perioadă",
+          "2": "Funcția nu este periodică",
+          "3": "Funcția este constantă"
+        }
+      }
+    },
+    {
+      "text": "Aflați perioada principală pozitivă a funcției f(x)=\\(\\cot{\\left(a x \\right)}\\) pe domeniul său natural, pentru a=\\(\\frac{6}{7}\\). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sinusul și cosinusul au perioada principală 2π, tangenta și cotangenta π pe domeniul natural. Împărțim perioada de bază la |a|, iar coeficientul este strict pozitiv; deplasarea păstrează și domeniul de definiție. Rezultatul cerut este \\(\\frac{7 \\pi}{6}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{7 \\pi}{6}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + \\frac{7 \\pi}{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{7 \\pi}{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{7 \\pi}{6}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 5,
+        "type_name": "Perioada principală a unei funcții elementare",
+        "variant": 5,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "period",
+        "function": "cot",
+        "frequency": "6/7",
+        "mode": "plain",
+        "option_values": [
+          "7*pi/6",
+          "1 + 7*pi/6",
+          "-1 + 7*pi/6",
+          "2 + 7*pi/6"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Determinați perioada principală pozitivă a lui f(x)=sin(5x/2)+cos(5x/3), pe ℝ. Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cele două frecvențe nenule sunt distincte, a/2 și a/3, cu a coeficientul întreg din enunț. Pentru o perioadă comună, (a/2)T și (a/3)T trebuie să fie multipli de 2π. Cea mai mică valoare pozitivă este 12π/a. Minimalitatea urmează din independența componentelor armonice cu frecvențe distincte. Rezultatul cerut este \\(\\frac{12 \\pi}{5}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{12 \\pi}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{12 \\pi}{5}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{12 \\pi}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{12 \\pi}{5}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 6,
+        "type_name": "Perioade comune în sume și produse",
+        "variant": 5,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "period_sum",
+        "frequencies": [
+          "5/2",
+          "5/3"
+        ],
+        "functions": [
+          "sin",
+          "cos"
+        ],
+        "option_values": [
+          "1 + 12*pi/5",
+          "12*pi/5",
+          "-1 + 12*pi/5",
+          "2 + 12*pi/5"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați perioada principală pozitivă a funcției f(x)=\\(\\left|{\\sin{\\left(5 x \\right)}}\\right|\\) pe ℝ, cu argumentele în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Modulul sinusului și pătratul cosinusului au fiecare perioada principală π în argument, nu 2π. Deplasarea cu π schimbă semnul funcției de bază, eliminat de modul sau pătrat. Zerourile sau formula cos²u=(1+cos2u)/2 exclud o perioadă pozitivă mai mică. Rezultatul cerut este \\(\\frac{\\pi}{5}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\pi}{5} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\pi}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\pi}{5}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\pi}{5} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 7,
+        "type_name": "Perioade micșorate prin puteri sau modul",
+        "variant": 5,
+        "reference_pages": "212–214",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "period",
+        "function": "sin",
+        "frequency": 5,
+        "mode": "absolute",
+        "option_values": [
+          "pi/5 + 1",
+          "-1 + pi/5",
+          "pi/5",
+          "pi/5 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ verifică f(x)+2f(−x)=5cos(6x) pentru orice x. Determinați perioada sa principală pozitivă. Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim x cu −x și folosim paritatea cosinusului. Sistemul pentru f(x),f(−x) are determinant −3≠0 și dă f(x)=(a/3)cos(bx), cu a,b numerele pozitive din enunț. Amplitudinea nenulă nu schimbă perioada principală 2π/b. Rezultatul cerut este \\(\\frac{\\pi}{3}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{\\pi}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\pi}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\pi}{3} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\pi}{3}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 8,
+        "type_name": "Periodicitate din ecuație funcțională trigonometrică",
+        "variant": 5,
+        "reference_pages": "212–214",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "functional_period",
+        "amplitude": 5,
+        "frequency": 6,
+        "reflection_coefficient": 2,
+        "option_values": [
+          "1 + pi/3",
+          "-1 + pi/3",
+          "pi/3 + 2",
+          "pi/3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Studiați periodicitatea funcției f(x)=sin(5x)+cos(5√2·x), x∈ℝ. Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm a=5. Dacă T>0 ar fi o perioadă, f(−x) ar avea aceeași perioadă. Atunci partea impară [f(x)−f(−x)]/2=sin(ax) și partea pară [f(x)+f(−x)]/2=cos(a√2·x) ar fi ambele T-periodice. Ar rezulta aT=2kπ și a√2T=2mπ cu k,m întregi și k≠0; împărțirea ar da √2=m/k, imposibil. Acest argument folosește paritatea și perioadele funcțiilor elementare. Exemplul este o sumă proprie, nu produsul nespecificat al catalogului. Rezultatul cerut este Funcția nu este periodică.",
+      "options": [
+        {
+          "text": "Funcția nu este periodică",
+          "is_correct": true
+        },
+        {
+          "text": "Perioada principală este 2π",
+          "is_correct": false
+        },
+        {
+          "text": "Perioada principală este π",
+          "is_correct": false
+        },
+        {
+          "text": "Funcția este constantă",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.4",
+        "type": 9,
+        "type_name": "Neperiodicitate cu frecvențe incomensurabile",
+        "variant": 5,
+        "reference_pages": "212–214",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "nonperiodic_sum",
+        "frequencies": [
+          5,
+          "5*sqrt(2)"
+        ],
+        "functions": [
+          "sin",
+          "cos"
+        ],
+        "option_values": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "answer_kind": "label",
+        "option_labels": {
+          "0": "Funcția nu este periodică",
+          "1": "Perioada principală este 2π",
+          "2": "Perioada principală este π",
+          "3": "Funcția este constantă"
+        }
+      }
+    }
+  ]
 }

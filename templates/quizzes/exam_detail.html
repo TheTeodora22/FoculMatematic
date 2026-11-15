@@ -3,8 +3,11 @@
 
 {% block title %}{{ exam.title }} — Focul Matematic{% endblock %}
 
+{% block page_styles %}{% include "includes/page_styles.html" %}{% endblock %}
+
 {% block content %}
-<div class="page-content">
+<div class="page-content journey-page">
+    <nav class="page-trail" aria-label="Traseu de navigare"><a href="{% url 'quiz_list' %}">Chestionare</a><span aria-hidden="true">/</span><span aria-current="page">{{ exam.title }}</span></nav>
     <h1>{{ exam.title }}</h1>
     <p>{{ exam.description }}</p>
 
@@ -13,7 +16,7 @@
         {% for chapter in chapters %}
             <article class="card">
                 <h2 style="margin:0 0 0.75rem;">{{ chapter.title }}</h2>
-                <a class="btn btn-press" href="{% url 'exam_chapter_topics' exam.slug chapter.slug %}">Deschide lecția</a>
+                <a class="btn btn-press" href="{% url 'exam_chapter_topics' exam.slug chapter.slug %}">Vezi lecțiile</a>
             </article>
         {% endfor %}
     {% endif %}
@@ -32,10 +35,8 @@
             </article>
         {% endfor %}
     {% elif not chapters %}
-        <p class="muted">Subiectele dedicate acestui examen vor fi disponibile curând.</p>
-        <a class="btn btn-press" href="{% url 'class_chapters' exam.fallback_class %}">
-            Vezi materia pentru clasa a {{ exam.fallback_class }}-a
-        </a>
+        {% url 'class_chapters' exam.fallback_class as empty_url %}
+        {% include "includes/state_panel.html" with state_title="Subiectele sunt în pregătire" state_text="Subiectele dedicate acestui examen vor fi disponibile curând." action_url=empty_url action_label="Vezi materia clasei" %}
     {% endif %}
 </div>
 {% endblock %}

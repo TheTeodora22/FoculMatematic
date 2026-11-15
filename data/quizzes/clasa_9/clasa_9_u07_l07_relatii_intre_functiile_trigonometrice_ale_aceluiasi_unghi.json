@@ -1,6 +1,3712 @@
 {
   "title": "Relații între funcțiile trigonometrice ale aceluiași unghi",
   "description": "Clasa a 9-a · Elemente de trigonometrie",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "hard",
+  "questions": [
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\sin^{4}{\\left(x \\right)} - \\sin^{2}{\\left(x \\right)} - \\cos^{4}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Factorizăm sin⁴x−cos⁴x=(sin²x−cos²x)(sin²x+cos²x); relația fundamentală arată anularea expresiei. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 1,
+        "type_name": "Reducerea la relația fundamentală",
+        "variant": 1,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)**4+cos(x)**2-cos(x)**4-sin(x)**2",
+        "expression_latex": "\\sin^{4}{\\left(x \\right)} - \\sin^{2}{\\left(x \\right)} - \\cos^{4}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "0",
+          "1",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\tan^{2}{\\left(x \\right)} + \\cot^{2}{\\left(x \\right)} + 2\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia este (tan x+cot x)²=1/(sin²x cos²x), deoarece sin²x+cos²x=1. Numitorii sunt nenuli pentru x ascuțit. Rezultatul cerut este \\(\\frac{16}{3}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{19}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{16}{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{13}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{22}{3}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 2,
+        "type_name": "Identități cu tangentă și cotangentă",
+        "variant": 1,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(x)**2+cot(x)**2+2",
+        "expression_latex": "\\tan^{2}{\\left(x \\right)} + \\cot^{2}{\\left(x \\right)} + 2",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "19/3",
+          "16/3",
+          "13/3",
+          "22/3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunoaște sin x=\\(\\frac{3}{5}\\), iar punctul unghiului x este în cadranul 2. Aflați (cos x;tan x;cot x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația fundamentală dă cos²x=1−sin²x. Cadranul fixează semnul cosinusului. Apoi tan x=sin x/cos x și cot x=cos x/sin x; valorile sinusului și cosinusului sunt nenule. Rezultatul cerut este \\(\\left( - \\frac{4}{5}, \\  - \\frac{3}{4}, \\  - \\frac{4}{3}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{1}{5}, \\  - \\frac{3}{4}, \\  - \\frac{4}{3}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( - \\frac{9}{5}, \\  - \\frac{3}{4}, \\  - \\frac{4}{3}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( - \\frac{4}{5}, \\  - \\frac{3}{4}, \\  - \\frac{4}{3}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( \\frac{6}{5}, \\  - \\frac{3}{4}, \\  - \\frac{4}{3}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 3,
+        "type_name": "Recuperarea tuturor funcțiilor din una",
+        "variant": 1,
+        "reference_pages": "214–218",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "recover_functions",
+        "sine": "3/5",
+        "quadrant": 2,
+        "option_values": [
+          "(1/5, -3/4, -4/3)",
+          "(-9/5, -3/4, -4/3)",
+          "(-4/5, -3/4, -4/3)",
+          "(6/5, -3/4, -4/3)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiul x este în (0;π/4), cu sin x+cos x=\\(\\frac{7}{5}\\). Aflați perechea (sin x;cos x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul sumei dă produsul sin x cos x=(m²−1)/2. Cele două valori sunt rădăcinile ecuației t²−mt+(m²−1)/2=0. Intervalul impune sin x<cos x și fixează ordinea; ambele rădăcini sunt pozitive. Rezultatul cerut este \\(\\left( \\frac{3}{5}, \\  \\frac{4}{5}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{8}{5}, \\  \\frac{4}{5}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( - \\frac{2}{5}, \\  \\frac{4}{5}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{13}{5}, \\  \\frac{4}{5}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{3}{5}, \\  \\frac{4}{5}\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 4,
+        "type_name": "Recuperare din suma sin+cos",
+        "variant": 1,
+        "reference_pages": "214–218",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "recover_sum",
+        "sum": "7/5",
+        "sine_less_cosine": true,
+        "option_values": [
+          "(8/5, 4/5)",
+          "(-2/5, 4/5)",
+          "(13/5, 4/5)",
+          "(3/5, 4/5)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\sin{\\left(x \\right)} - \\sin{\\left(- x + \\frac{\\pi}{2} \\right)} + \\cos{\\left(x \\right)} - \\cos{\\left(- x + \\frac{\\pi}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Perechile complementare dau sin(π/2−x)=cos x și cos(π/2−x)=sin x, astfel cele două sume sunt egale. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 5,
+        "type_name": "Compararea sumelor la argumente simetrice",
+        "variant": 1,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)+cos(x)-sin(pi/2-x)-cos(pi/2-x)",
+        "expression_latex": "\\sin{\\left(x \\right)} - \\sin{\\left(- x + \\frac{\\pi}{2} \\right)} + \\cos{\\left(x \\right)} - \\cos{\\left(- x + \\frac{\\pi}{2} \\right)}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "0",
+          "1",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\frac{\\cos^{2}{\\left(x \\right)}}{1 - \\sin{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim cu 1+sin x și folosim cos²x=(1−sin x)(1+sin x). Pe domeniul dat 1−sin x>0, deci reducerea este legitimă; rezultă 1+sin x. Rezultatul cerut este \\(\\frac{3}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{5}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{7}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 6,
+        "type_name": "Simplificarea fracțiilor trigonometrice",
+        "variant": 1,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x)**2/(1-sin(x))",
+        "expression_latex": "\\frac{\\cos^{2}{\\left(x \\right)}}{1 - \\sin{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "5/2",
+          "3/2",
+          "1/2",
+          "7/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\sin^{6}{\\left(x \\right)} + \\cos^{6}{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm u=sin²x,v=cos²x, u+v=1. Formula u³+v³=(u+v)³−3uv(u+v) reduce expresia la 1−3sin²x cos²x. Rezultatul cerut este \\(\\frac{7}{16}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{23}{16}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{9}{16}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{7}{16}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{39}{16}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 7,
+        "type_name": "Sume de puteri pare",
+        "variant": 1,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)**6+cos(x)**6",
+        "expression_latex": "\\sin^{6}{\\left(x \\right)} + \\cos^{6}{\\left(x \\right)}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "23/16",
+          "-9/16",
+          "7/16",
+          "39/16"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\sin^{8}{\\left(x \\right)} - 2 \\sin^{4}{\\left(x \\right)} \\cos^{4}{\\left(x \\right)} + 4 \\sin^{2}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)} + \\cos^{8}{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u+v=1, u⁴+v⁴=1−4uv+2u²v². Termenii suplimentari se anulează și rămâne constanta 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 8,
+        "type_name": "Expresie independentă de argument",
+        "variant": 1,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)**8+cos(x)**8+4*sin(x)**2*cos(x)**2-2*sin(x)**4*cos(x)**4",
+        "expression_latex": "\\sin^{8}{\\left(x \\right)} - 2 \\sin^{4}{\\left(x \\right)} \\cos^{4}{\\left(x \\right)} + 4 \\sin^{2}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)} + \\cos^{8}{\\left(x \\right)}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\frac{\\sin^{3}{\\left(x \\right)} + \\cos^{3}{\\left(x \\right)}}{\\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorul este pozitiv pentru x ascuțit. Factorizarea sumei de cuburi dă sin²x−sin x cos x+cos²x=1−sin x cos x. Rezultatul cerut este \\(1 - \\frac{\\sqrt{3}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(1 - \\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 - \\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3 - \\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 9,
+        "type_name": "Identități cu puteri și rapoarte",
+        "variant": 1,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(sin(x)**3+cos(x)**3)/(sin(x)+cos(x))",
+        "expression_latex": "\\frac{\\sin^{3}{\\left(x \\right)} + \\cos^{3}{\\left(x \\right)}}{\\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "1 - sqrt(3)/4",
+          "2 - sqrt(3)/4",
+          "-sqrt(3)/4",
+          "3 - sqrt(3)/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "a=2, b=4 și x∈(0;π/2) satisfac sin x=(b−a)/(a+b). Calculați cos x+tan x+cot x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Datele au 0<a<b, deci sinusul este în (0,1). Cosinusul pozitiv se recuperează ca 2√(ab)/(a+b). Aplicăm apoi definițiile tangentei și cotangentei; niciun numitor nu este zero. Rezultatul cerut este \\(\\frac{35 \\sqrt{2}}{12}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{35 \\sqrt{2}}{12}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{35 \\sqrt{2}}{12}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{35 \\sqrt{2}}{12}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{35 \\sqrt{2}}{12}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 10,
+        "type_name": "Parametru algebric în valoare trigonometrică",
+        "variant": 1,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "recover_parameter",
+        "a": "2",
+        "b": "4",
+        "expression": "cos(x)+tan(x)+cot(x)",
+        "option_values": [
+          "1 + 35*sqrt(2)/12",
+          "35*sqrt(2)/12",
+          "-1 + 35*sqrt(2)/12",
+          "2 + 35*sqrt(2)/12"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru α=\\(\\frac{\\pi}{6}\\) radiani, care este minimul pe t∈ℝ al trinomului (1−sin α)t²−2t cos α+1+sin α?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Coeficientul principal este strict pozitiv în datele date. Discriminantul este 4cos²α−4(1−sin α)(1+sin α)=0. Trinomul este un pătrat cu minimul 0, atins la t=cos α/(1−sin α). Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 11,
+        "type_name": "Trinom cu coeficienți trigonometrice",
+        "variant": 1,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "trig_quadratic_min",
+        "angle": "pi/6",
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Care este minimul pe ℝ al lui 1(sin⁴x+cos⁴x)? Argumentul este în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u=sin²x,v=cos²x avem u+v=1. Din (u−v)²≥0 rezultă u²+v²≥1/2; egalitatea este atinsă la x=π/4. Coeficientul pozitiv multiplică minimul. Rezultatul cerut este \\(\\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 12,
+        "type_name": "Inegalități pentru puteri trigonometrice",
+        "variant": 1,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "minimum_even_power",
+        "coefficient": 1,
+        "power": 4,
+        "option_values": [
+          "3/2",
+          "-1/2",
+          "5/2",
+          "1/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați imaginea funcției f(x)=1−2sin x+(1+sin x)², x∈ℝ. Argumentul este în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltarea pătratului simplifică funcția la a+1+sin²x, cu a constanta din enunț. Deoarece sin²x parcurge [0,1] pe ℝ, imaginea este intervalul închis [a+1,a+2]; ambele capete se ating. Rezultatul cerut este \\(\\left[2, 3\\right]\\).",
+      "options": [
+        {
+          "text": "\\(\\left[2, 3\\right]\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left[3, 4\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[1, 2\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[4, 5\\right]\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 13,
+        "type_name": "Imaginea unui polinom trigonometric",
+        "variant": 1,
+        "reference_pages": "214–218",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "range_polynomial_sine",
+        "offset": 1,
+        "polynomial": "a+1+t**2",
+        "option_values": [
+          "Interval(2, 3)",
+          "Interval(3, 4)",
+          "Interval(1, 2)",
+          "Interval(4, 5)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați cea mai mică bornă C pentru care |3sin x+4cos x|≤C pentru orice x∈ℝ, în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cauchy–Schwarz dă |a sin x+b cos x|≤√(a²+b²). Borna este atinsă când (sin x,cos x) este vectorul unitate proporțional cu (a,b), deci nu poate fi micșorată. Rezultatul cerut este \\(5\\).",
+      "options": [
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(7\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 14,
+        "type_name": "Estimarea unei combinații liniare",
+        "variant": 1,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "linear_trig_bound",
+        "sin_coefficient": 3,
+        "cos_coefficient": 4,
+        "option_values": [
+          "6",
+          "5",
+          "4",
+          "7"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se știe sin x+cos x=\\(1\\). Calculați sin⁵x+cos⁵x; x este real, în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=sin x,v=cos x. Avem u+v=m, u²+v²=1 și uv=(m²−1)/2. Identitatea u⁵+v⁵=m⁵−5uv·m³+5(uv)²m dă rezultatul. Valorile date ale lui m aparțin [−√2,√2], deci există unghiuri reale. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 15,
+        "type_name": "Puteri din suma sin+cos cu parametru",
+        "variant": 1,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "power_from_sum",
+        "sum": "1",
+        "power": 5,
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{4}\\). Calculați \\(\\sin^{4}{\\left(x \\right)} - \\sin^{2}{\\left(x \\right)} - \\cos^{4}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Factorizăm sin⁴x−cos⁴x=(sin²x−cos²x)(sin²x+cos²x); relația fundamentală arată anularea expresiei. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 1,
+        "type_name": "Reducerea la relația fundamentală",
+        "variant": 2,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)**4+cos(x)**2-cos(x)**4-sin(x)**2",
+        "expression_latex": "\\sin^{4}{\\left(x \\right)} - \\sin^{2}{\\left(x \\right)} - \\cos^{4}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}",
+        "givens": {
+          "x": "pi/4"
+        },
+        "option_values": [
+          "1",
+          "-1",
+          "2",
+          "0"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{4}\\). Calculați \\(\\tan^{2}{\\left(x \\right)} + \\cot^{2}{\\left(x \\right)} + 2\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia este (tan x+cot x)²=1/(sin²x cos²x), deoarece sin²x+cos²x=1. Numitorii sunt nenuli pentru x ascuțit. Rezultatul cerut este \\(4\\).",
+      "options": [
+        {
+          "text": "\\(4\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 2,
+        "type_name": "Identități cu tangentă și cotangentă",
+        "variant": 2,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(x)**2+cot(x)**2+2",
+        "expression_latex": "\\tan^{2}{\\left(x \\right)} + \\cot^{2}{\\left(x \\right)} + 2",
+        "givens": {
+          "x": "pi/4"
+        },
+        "option_values": [
+          "4",
+          "5",
+          "3",
+          "6"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunoaște sin x=\\(- \\frac{5}{13}\\), iar punctul unghiului x este în cadranul 3. Aflați (cos x;tan x;cot x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația fundamentală dă cos²x=1−sin²x. Cadranul fixează semnul cosinusului. Apoi tan x=sin x/cos x și cot x=cos x/sin x; valorile sinusului și cosinusului sunt nenule. Rezultatul cerut este \\(\\left( - \\frac{12}{13}, \\  \\frac{5}{12}, \\  \\frac{12}{5}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{1}{13}, \\  \\frac{5}{12}, \\  \\frac{12}{5}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( - \\frac{12}{13}, \\  \\frac{5}{12}, \\  \\frac{12}{5}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( - \\frac{25}{13}, \\  \\frac{5}{12}, \\  \\frac{12}{5}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{14}{13}, \\  \\frac{5}{12}, \\  \\frac{12}{5}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 3,
+        "type_name": "Recuperarea tuturor funcțiilor din una",
+        "variant": 2,
+        "reference_pages": "214–218",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "recover_functions",
+        "sine": "-5/13",
+        "quadrant": 3,
+        "option_values": [
+          "(1/13, 5/12, 12/5)",
+          "(-12/13, 5/12, 12/5)",
+          "(-25/13, 5/12, 12/5)",
+          "(14/13, 5/12, 12/5)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiul x este în (0;π/4), cu sin x+cos x=\\(\\frac{17}{13}\\). Aflați perechea (sin x;cos x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul sumei dă produsul sin x cos x=(m²−1)/2. Cele două valori sunt rădăcinile ecuației t²−mt+(m²−1)/2=0. Intervalul impune sin x<cos x și fixează ordinea; ambele rădăcini sunt pozitive. Rezultatul cerut este \\(\\left( \\frac{5}{13}, \\  \\frac{12}{13}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{18}{13}, \\  \\frac{12}{13}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( - \\frac{8}{13}, \\  \\frac{12}{13}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{5}{13}, \\  \\frac{12}{13}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( \\frac{31}{13}, \\  \\frac{12}{13}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 4,
+        "type_name": "Recuperare din suma sin+cos",
+        "variant": 2,
+        "reference_pages": "214–218",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "recover_sum",
+        "sum": "17/13",
+        "sine_less_cosine": true,
+        "option_values": [
+          "(18/13, 12/13)",
+          "(-8/13, 12/13)",
+          "(5/13, 12/13)",
+          "(31/13, 12/13)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{4}\\). Calculați \\(\\sin{\\left(x \\right)} - \\sin{\\left(- x + \\frac{\\pi}{2} \\right)} + \\cos{\\left(x \\right)} - \\cos{\\left(- x + \\frac{\\pi}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Perechile complementare dau sin(π/2−x)=cos x și cos(π/2−x)=sin x, astfel cele două sume sunt egale. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 5,
+        "type_name": "Compararea sumelor la argumente simetrice",
+        "variant": 2,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)+cos(x)-sin(pi/2-x)-cos(pi/2-x)",
+        "expression_latex": "\\sin{\\left(x \\right)} - \\sin{\\left(- x + \\frac{\\pi}{2} \\right)} + \\cos{\\left(x \\right)} - \\cos{\\left(- x + \\frac{\\pi}{2} \\right)}",
+        "givens": {
+          "x": "pi/4"
+        },
+        "option_values": [
+          "1",
+          "-1",
+          "2",
+          "0"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{4}\\). Calculați \\(\\frac{\\cos^{2}{\\left(x \\right)}}{1 - \\sin{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim cu 1+sin x și folosim cos²x=(1−sin x)(1+sin x). Pe domeniul dat 1−sin x>0, deci reducerea este legitimă; rezultă 1+sin x. Rezultatul cerut este \\(\\frac{\\sqrt{2}}{2} + 1\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 6,
+        "type_name": "Simplificarea fracțiilor trigonometrice",
+        "variant": 2,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x)**2/(1-sin(x))",
+        "expression_latex": "\\frac{\\cos^{2}{\\left(x \\right)}}{1 - \\sin{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/4"
+        },
+        "option_values": [
+          "sqrt(2)/2 + 1",
+          "sqrt(2)/2 + 2",
+          "sqrt(2)/2",
+          "sqrt(2)/2 + 3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{4}\\). Calculați \\(\\sin^{6}{\\left(x \\right)} + \\cos^{6}{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm u=sin²x,v=cos²x, u+v=1. Formula u³+v³=(u+v)³−3uv(u+v) reduce expresia la 1−3sin²x cos²x. Rezultatul cerut este \\(\\frac{1}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{5}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{3}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{9}{4}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 7,
+        "type_name": "Sume de puteri pare",
+        "variant": 2,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)**6+cos(x)**6",
+        "expression_latex": "\\sin^{6}{\\left(x \\right)} + \\cos^{6}{\\left(x \\right)}",
+        "givens": {
+          "x": "pi/4"
+        },
+        "option_values": [
+          "5/4",
+          "1/4",
+          "-3/4",
+          "9/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{4}\\). Calculați \\(\\sin^{8}{\\left(x \\right)} - 2 \\sin^{4}{\\left(x \\right)} \\cos^{4}{\\left(x \\right)} + 4 \\sin^{2}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)} + \\cos^{8}{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u+v=1, u⁴+v⁴=1−4uv+2u²v². Termenii suplimentari se anulează și rămâne constanta 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 8,
+        "type_name": "Expresie independentă de argument",
+        "variant": 2,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)**8+cos(x)**8+4*sin(x)**2*cos(x)**2-2*sin(x)**4*cos(x)**4",
+        "expression_latex": "\\sin^{8}{\\left(x \\right)} - 2 \\sin^{4}{\\left(x \\right)} \\cos^{4}{\\left(x \\right)} + 4 \\sin^{2}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)} + \\cos^{8}{\\left(x \\right)}",
+        "givens": {
+          "x": "pi/4"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{4}\\). Calculați \\(\\frac{\\sin^{3}{\\left(x \\right)} + \\cos^{3}{\\left(x \\right)}}{\\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorul este pozitiv pentru x ascuțit. Factorizarea sumei de cuburi dă sin²x−sin x cos x+cos²x=1−sin x cos x. Rezultatul cerut este \\(\\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 9,
+        "type_name": "Identități cu puteri și rapoarte",
+        "variant": 2,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(sin(x)**3+cos(x)**3)/(sin(x)+cos(x))",
+        "expression_latex": "\\frac{\\sin^{3}{\\left(x \\right)} + \\cos^{3}{\\left(x \\right)}}{\\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/4"
+        },
+        "option_values": [
+          "3/2",
+          "-1/2",
+          "5/2",
+          "1/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "a=3, b=5 și x∈(0;π/2) satisfac sin x=(b−a)/(a+b). Calculați cos x+tan x+cot x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Datele au 0<a<b, deci sinusul este în (0,1). Cosinusul pozitiv se recuperează ca 2√(ab)/(a+b). Aplicăm apoi definițiile tangentei și cotangentei; niciun numitor nu este zero. Rezultatul cerut este \\(\\frac{79 \\sqrt{15}}{60}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{79 \\sqrt{15}}{60}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + \\frac{79 \\sqrt{15}}{60}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{79 \\sqrt{15}}{60}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{79 \\sqrt{15}}{60}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 10,
+        "type_name": "Parametru algebric în valoare trigonometrică",
+        "variant": 2,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "recover_parameter",
+        "a": "3",
+        "b": "5",
+        "expression": "cos(x)+tan(x)+cot(x)",
+        "option_values": [
+          "79*sqrt(15)/60",
+          "1 + 79*sqrt(15)/60",
+          "-1 + 79*sqrt(15)/60",
+          "2 + 79*sqrt(15)/60"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru α=\\(\\frac{\\pi}{4}\\) radiani, care este minimul pe t∈ℝ al trinomului (1−sin α)t²−2t cos α+1+sin α?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Coeficientul principal este strict pozitiv în datele date. Discriminantul este 4cos²α−4(1−sin α)(1+sin α)=0. Trinomul este un pătrat cu minimul 0, atins la t=cos α/(1−sin α). Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 11,
+        "type_name": "Trinom cu coeficienți trigonometrice",
+        "variant": 2,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "trig_quadratic_min",
+        "angle": "pi/4",
+        "option_values": [
+          "1",
+          "0",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Care este minimul pe ℝ al lui 2(sin⁴x+cos⁴x)? Argumentul este în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u=sin²x,v=cos²x avem u+v=1. Din (u−v)²≥0 rezultă u²+v²≥1/2; egalitatea este atinsă la x=π/4. Coeficientul pozitiv multiplică minimul. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 12,
+        "type_name": "Inegalități pentru puteri trigonometrice",
+        "variant": 2,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "minimum_even_power",
+        "coefficient": 2,
+        "power": 4,
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați imaginea funcției f(x)=2−2sin x+(1+sin x)², x∈ℝ. Argumentul este în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltarea pătratului simplifică funcția la a+1+sin²x, cu a constanta din enunț. Deoarece sin²x parcurge [0,1] pe ℝ, imaginea este intervalul închis [a+1,a+2]; ambele capete se ating. Rezultatul cerut este \\(\\left[3, 4\\right]\\).",
+      "options": [
+        {
+          "text": "\\(\\left[4, 5\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[2, 3\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[5, 6\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[3, 4\\right]\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 13,
+        "type_name": "Imaginea unui polinom trigonometric",
+        "variant": 2,
+        "reference_pages": "214–218",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "range_polynomial_sine",
+        "offset": 2,
+        "polynomial": "a+1+t**2",
+        "option_values": [
+          "Interval(4, 5)",
+          "Interval(2, 3)",
+          "Interval(5, 6)",
+          "Interval(3, 4)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați cea mai mică bornă C pentru care |5sin x+12cos x|≤C pentru orice x∈ℝ, în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cauchy–Schwarz dă |a sin x+b cos x|≤√(a²+b²). Borna este atinsă când (sin x,cos x) este vectorul unitate proporțional cu (a,b), deci nu poate fi micșorată. Rezultatul cerut este \\(13\\).",
+      "options": [
+        {
+          "text": "\\(13\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(14\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(12\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(15\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 14,
+        "type_name": "Estimarea unei combinații liniare",
+        "variant": 2,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "linear_trig_bound",
+        "sin_coefficient": 5,
+        "cos_coefficient": 12,
+        "option_values": [
+          "13",
+          "14",
+          "12",
+          "15"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se știe sin x+cos x=\\(\\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\). Calculați sin⁵x+cos⁵x; x este real, în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=sin x,v=cos x. Avem u+v=m, u²+v²=1 și uv=(m²−1)/2. Identitatea u⁵+v⁵=m⁵−5uv·m³+5(uv)²m dă rezultatul. Valorile date ale lui m aparțin [−√2,√2], deci există unghiuri reale. Rezultatul cerut este \\(\\frac{1}{32} + \\frac{9 \\sqrt{3}}{32}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{9 \\sqrt{3}}{32} + \\frac{33}{32}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{32} + \\frac{9 \\sqrt{3}}{32}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{31}{32} + \\frac{9 \\sqrt{3}}{32}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{9 \\sqrt{3}}{32} + \\frac{65}{32}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 15,
+        "type_name": "Puteri din suma sin+cos cu parametru",
+        "variant": 2,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "power_from_sum",
+        "sum": "1/2 + sqrt(3)/2",
+        "power": 5,
+        "option_values": [
+          "9*sqrt(3)/32 + 33/32",
+          "1/32 + 9*sqrt(3)/32",
+          "-31/32 + 9*sqrt(3)/32",
+          "9*sqrt(3)/32 + 65/32"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\sin^{4}{\\left(x \\right)} - \\sin^{2}{\\left(x \\right)} - \\cos^{4}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Factorizăm sin⁴x−cos⁴x=(sin²x−cos²x)(sin²x+cos²x); relația fundamentală arată anularea expresiei. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 1,
+        "type_name": "Reducerea la relația fundamentală",
+        "variant": 3,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)**4+cos(x)**2-cos(x)**4-sin(x)**2",
+        "expression_latex": "\\sin^{4}{\\left(x \\right)} - \\sin^{2}{\\left(x \\right)} - \\cos^{4}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\tan^{2}{\\left(x \\right)} + \\cot^{2}{\\left(x \\right)} + 2\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia este (tan x+cot x)²=1/(sin²x cos²x), deoarece sin²x+cos²x=1. Numitorii sunt nenuli pentru x ascuțit. Rezultatul cerut este \\(\\frac{16}{3}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{19}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{13}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{22}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{16}{3}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 2,
+        "type_name": "Identități cu tangentă și cotangentă",
+        "variant": 3,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(x)**2+cot(x)**2+2",
+        "expression_latex": "\\tan^{2}{\\left(x \\right)} + \\cot^{2}{\\left(x \\right)} + 2",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "19/3",
+          "13/3",
+          "22/3",
+          "16/3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunoaște sin x=\\(- \\frac{8}{17}\\), iar punctul unghiului x este în cadranul 4. Aflați (cos x;tan x;cot x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația fundamentală dă cos²x=1−sin²x. Cadranul fixează semnul cosinusului. Apoi tan x=sin x/cos x și cot x=cos x/sin x; valorile sinusului și cosinusului sunt nenule. Rezultatul cerut este \\(\\left( \\frac{15}{17}, \\  - \\frac{8}{15}, \\  - \\frac{15}{8}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{15}{17}, \\  - \\frac{8}{15}, \\  - \\frac{15}{8}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( \\frac{32}{17}, \\  - \\frac{8}{15}, \\  - \\frac{15}{8}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( - \\frac{2}{17}, \\  - \\frac{8}{15}, \\  - \\frac{15}{8}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{49}{17}, \\  - \\frac{8}{15}, \\  - \\frac{15}{8}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 3,
+        "type_name": "Recuperarea tuturor funcțiilor din una",
+        "variant": 3,
+        "reference_pages": "214–218",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "recover_functions",
+        "sine": "-8/17",
+        "quadrant": 4,
+        "option_values": [
+          "(15/17, -8/15, -15/8)",
+          "(32/17, -8/15, -15/8)",
+          "(-2/17, -8/15, -15/8)",
+          "(49/17, -8/15, -15/8)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiul x este în (0;π/4), cu sin x+cos x=\\(\\frac{23}{17}\\). Aflați perechea (sin x;cos x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul sumei dă produsul sin x cos x=(m²−1)/2. Cele două valori sunt rădăcinile ecuației t²−mt+(m²−1)/2=0. Intervalul impune sin x<cos x și fixează ordinea; ambele rădăcini sunt pozitive. Rezultatul cerut este \\(\\left( \\frac{8}{17}, \\  \\frac{15}{17}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{25}{17}, \\  \\frac{15}{17}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{8}{17}, \\  \\frac{15}{17}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( - \\frac{9}{17}, \\  \\frac{15}{17}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{42}{17}, \\  \\frac{15}{17}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 4,
+        "type_name": "Recuperare din suma sin+cos",
+        "variant": 3,
+        "reference_pages": "214–218",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "recover_sum",
+        "sum": "23/17",
+        "sine_less_cosine": true,
+        "option_values": [
+          "(25/17, 15/17)",
+          "(8/17, 15/17)",
+          "(-9/17, 15/17)",
+          "(42/17, 15/17)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\sin{\\left(x \\right)} - \\sin{\\left(- x + \\frac{\\pi}{2} \\right)} + \\cos{\\left(x \\right)} - \\cos{\\left(- x + \\frac{\\pi}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Perechile complementare dau sin(π/2−x)=cos x și cos(π/2−x)=sin x, astfel cele două sume sunt egale. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 5,
+        "type_name": "Compararea sumelor la argumente simetrice",
+        "variant": 3,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)+cos(x)-sin(pi/2-x)-cos(pi/2-x)",
+        "expression_latex": "\\sin{\\left(x \\right)} - \\sin{\\left(- x + \\frac{\\pi}{2} \\right)} + \\cos{\\left(x \\right)} - \\cos{\\left(- x + \\frac{\\pi}{2} \\right)}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\frac{\\cos^{2}{\\left(x \\right)}}{1 - \\sin{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim cu 1+sin x și folosim cos²x=(1−sin x)(1+sin x). Pe domeniul dat 1−sin x>0, deci reducerea este legitimă; rezultă 1+sin x. Rezultatul cerut este \\(\\frac{\\sqrt{3}}{2} + 1\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + 3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + 1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 6,
+        "type_name": "Simplificarea fracțiilor trigonometrice",
+        "variant": 3,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x)**2/(1-sin(x))",
+        "expression_latex": "\\frac{\\cos^{2}{\\left(x \\right)}}{1 - \\sin{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "sqrt(3)/2 + 2",
+          "sqrt(3)/2",
+          "sqrt(3)/2 + 3",
+          "sqrt(3)/2 + 1"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\sin^{6}{\\left(x \\right)} + \\cos^{6}{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm u=sin²x,v=cos²x, u+v=1. Formula u³+v³=(u+v)³−3uv(u+v) reduce expresia la 1−3sin²x cos²x. Rezultatul cerut este \\(\\frac{7}{16}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{7}{16}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{23}{16}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{9}{16}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{39}{16}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 7,
+        "type_name": "Sume de puteri pare",
+        "variant": 3,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)**6+cos(x)**6",
+        "expression_latex": "\\sin^{6}{\\left(x \\right)} + \\cos^{6}{\\left(x \\right)}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "7/16",
+          "23/16",
+          "-9/16",
+          "39/16"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\sin^{8}{\\left(x \\right)} - 2 \\sin^{4}{\\left(x \\right)} \\cos^{4}{\\left(x \\right)} + 4 \\sin^{2}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)} + \\cos^{8}{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u+v=1, u⁴+v⁴=1−4uv+2u²v². Termenii suplimentari se anulează și rămâne constanta 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 8,
+        "type_name": "Expresie independentă de argument",
+        "variant": 3,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)**8+cos(x)**8+4*sin(x)**2*cos(x)**2-2*sin(x)**4*cos(x)**4",
+        "expression_latex": "\\sin^{8}{\\left(x \\right)} - 2 \\sin^{4}{\\left(x \\right)} \\cos^{4}{\\left(x \\right)} + 4 \\sin^{2}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)} + \\cos^{8}{\\left(x \\right)}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "2",
+          "1",
+          "0",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\frac{\\sin^{3}{\\left(x \\right)} + \\cos^{3}{\\left(x \\right)}}{\\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorul este pozitiv pentru x ascuțit. Factorizarea sumei de cuburi dă sin²x−sin x cos x+cos²x=1−sin x cos x. Rezultatul cerut este \\(1 - \\frac{\\sqrt{3}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(2 - \\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1 - \\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3 - \\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 9,
+        "type_name": "Identități cu puteri și rapoarte",
+        "variant": 3,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(sin(x)**3+cos(x)**3)/(sin(x)+cos(x))",
+        "expression_latex": "\\frac{\\sin^{3}{\\left(x \\right)} + \\cos^{3}{\\left(x \\right)}}{\\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "2 - sqrt(3)/4",
+          "-sqrt(3)/4",
+          "1 - sqrt(3)/4",
+          "3 - sqrt(3)/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "a=4, b=6 și x∈(0;π/2) satisfac sin x=(b−a)/(a+b). Calculați cos x+tan x+cot x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Datele au 0<a<b, deci sinusul este în (0,1). Cosinusul pozitiv se recuperează ca 2√(ab)/(a+b). Aplicăm apoi definițiile tangentei și cotangentei; niciun numitor nu este zero. Rezultatul cerut este \\(\\frac{149 \\sqrt{6}}{60}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{149 \\sqrt{6}}{60}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{149 \\sqrt{6}}{60}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{149 \\sqrt{6}}{60}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{149 \\sqrt{6}}{60}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 10,
+        "type_name": "Parametru algebric în valoare trigonometrică",
+        "variant": 3,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "recover_parameter",
+        "a": "4",
+        "b": "6",
+        "expression": "cos(x)+tan(x)+cot(x)",
+        "option_values": [
+          "1 + 149*sqrt(6)/60",
+          "-1 + 149*sqrt(6)/60",
+          "2 + 149*sqrt(6)/60",
+          "149*sqrt(6)/60"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru α=\\(\\frac{\\pi}{3}\\) radiani, care este minimul pe t∈ℝ al trinomului (1−sin α)t²−2t cos α+1+sin α?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Coeficientul principal este strict pozitiv în datele date. Discriminantul este 4cos²α−4(1−sin α)(1+sin α)=0. Trinomul este un pătrat cu minimul 0, atins la t=cos α/(1−sin α). Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 11,
+        "type_name": "Trinom cu coeficienți trigonometrice",
+        "variant": 3,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "trig_quadratic_min",
+        "angle": "pi/3",
+        "option_values": [
+          "0",
+          "1",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Care este minimul pe ℝ al lui 3(sin⁴x+cos⁴x)? Argumentul este în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u=sin²x,v=cos²x avem u+v=1. Din (u−v)²≥0 rezultă u²+v²≥1/2; egalitatea este atinsă la x=π/4. Coeficientul pozitiv multiplică minimul. Rezultatul cerut este \\(\\frac{3}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{5}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{7}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 12,
+        "type_name": "Inegalități pentru puteri trigonometrice",
+        "variant": 3,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "minimum_even_power",
+        "coefficient": 3,
+        "power": 4,
+        "option_values": [
+          "5/2",
+          "3/2",
+          "1/2",
+          "7/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați imaginea funcției f(x)=3−2sin x+(1+sin x)², x∈ℝ. Argumentul este în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltarea pătratului simplifică funcția la a+1+sin²x, cu a constanta din enunț. Deoarece sin²x parcurge [0,1] pe ℝ, imaginea este intervalul închis [a+1,a+2]; ambele capete se ating. Rezultatul cerut este \\(\\left[4, 5\\right]\\).",
+      "options": [
+        {
+          "text": "\\(\\left[5, 6\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[3, 4\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[4, 5\\right]\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left[6, 7\\right]\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 13,
+        "type_name": "Imaginea unui polinom trigonometric",
+        "variant": 3,
+        "reference_pages": "214–218",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "range_polynomial_sine",
+        "offset": 3,
+        "polynomial": "a+1+t**2",
+        "option_values": [
+          "Interval(5, 6)",
+          "Interval(3, 4)",
+          "Interval(4, 5)",
+          "Interval(6, 7)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați cea mai mică bornă C pentru care |8sin x+15cos x|≤C pentru orice x∈ℝ, în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cauchy–Schwarz dă |a sin x+b cos x|≤√(a²+b²). Borna este atinsă când (sin x,cos x) este vectorul unitate proporțional cu (a,b), deci nu poate fi micșorată. Rezultatul cerut este \\(17\\).",
+      "options": [
+        {
+          "text": "\\(18\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(16\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(19\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(17\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 14,
+        "type_name": "Estimarea unei combinații liniare",
+        "variant": 3,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "linear_trig_bound",
+        "sin_coefficient": 8,
+        "cos_coefficient": 15,
+        "option_values": [
+          "18",
+          "16",
+          "19",
+          "17"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se știe sin x+cos x=\\(\\sqrt{2}\\). Calculați sin⁵x+cos⁵x; x este real, în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=sin x,v=cos x. Avem u+v=m, u²+v²=1 și uv=(m²−1)/2. Identitatea u⁵+v⁵=m⁵−5uv·m³+5(uv)²m dă rezultatul. Valorile date ale lui m aparțin [−√2,√2], deci există unghiuri reale. Rezultatul cerut este \\(\\frac{\\sqrt{2}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{2}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 15,
+        "type_name": "Puteri din suma sin+cos cu parametru",
+        "variant": 3,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "power_from_sum",
+        "sum": "sqrt(2)",
+        "power": 5,
+        "option_values": [
+          "sqrt(2)/4",
+          "sqrt(2)/4 + 1",
+          "-1 + sqrt(2)/4",
+          "sqrt(2)/4 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\sin^{4}{\\left(x \\right)} - \\sin^{2}{\\left(x \\right)} - \\cos^{4}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Factorizăm sin⁴x−cos⁴x=(sin²x−cos²x)(sin²x+cos²x); relația fundamentală arată anularea expresiei. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 1,
+        "type_name": "Reducerea la relația fundamentală",
+        "variant": 4,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)**4+cos(x)**2-cos(x)**4-sin(x)**2",
+        "expression_latex": "\\sin^{4}{\\left(x \\right)} - \\sin^{2}{\\left(x \\right)} - \\cos^{4}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "1",
+          "0",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\tan^{2}{\\left(x \\right)} + \\cot^{2}{\\left(x \\right)} + 2\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia este (tan x+cot x)²=1/(sin²x cos²x), deoarece sin²x+cos²x=1. Numitorii sunt nenuli pentru x ascuțit. Rezultatul cerut este \\(16\\).",
+      "options": [
+        {
+          "text": "\\(17\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(15\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(16\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(18\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 2,
+        "type_name": "Identități cu tangentă și cotangentă",
+        "variant": 4,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(x)**2+cot(x)**2+2",
+        "expression_latex": "\\tan^{2}{\\left(x \\right)} + \\cot^{2}{\\left(x \\right)} + 2",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "17",
+          "15",
+          "16",
+          "18"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunoaște sin x=\\(\\frac{7}{25}\\), iar punctul unghiului x este în cadranul 2. Aflați (cos x;tan x;cot x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația fundamentală dă cos²x=1−sin²x. Cadranul fixează semnul cosinusului. Apoi tan x=sin x/cos x și cot x=cos x/sin x; valorile sinusului și cosinusului sunt nenule. Rezultatul cerut este \\(\\left( - \\frac{24}{25}, \\  - \\frac{7}{24}, \\  - \\frac{24}{7}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{1}{25}, \\  - \\frac{7}{24}, \\  - \\frac{24}{7}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( - \\frac{49}{25}, \\  - \\frac{7}{24}, \\  - \\frac{24}{7}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{26}{25}, \\  - \\frac{7}{24}, \\  - \\frac{24}{7}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( - \\frac{24}{25}, \\  - \\frac{7}{24}, \\  - \\frac{24}{7}\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 3,
+        "type_name": "Recuperarea tuturor funcțiilor din una",
+        "variant": 4,
+        "reference_pages": "214–218",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "recover_functions",
+        "sine": "7/25",
+        "quadrant": 2,
+        "option_values": [
+          "(1/25, -7/24, -24/7)",
+          "(-49/25, -7/24, -24/7)",
+          "(26/25, -7/24, -24/7)",
+          "(-24/25, -7/24, -24/7)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiul x este în (0;π/4), cu sin x+cos x=\\(\\frac{31}{25}\\). Aflați perechea (sin x;cos x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul sumei dă produsul sin x cos x=(m²−1)/2. Cele două valori sunt rădăcinile ecuației t²−mt+(m²−1)/2=0. Intervalul impune sin x<cos x și fixează ordinea; ambele rădăcini sunt pozitive. Rezultatul cerut este \\(\\left( \\frac{7}{25}, \\  \\frac{24}{25}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{7}{25}, \\  \\frac{24}{25}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( \\frac{32}{25}, \\  \\frac{24}{25}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( - \\frac{18}{25}, \\  \\frac{24}{25}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{57}{25}, \\  \\frac{24}{25}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 4,
+        "type_name": "Recuperare din suma sin+cos",
+        "variant": 4,
+        "reference_pages": "214–218",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "recover_sum",
+        "sum": "31/25",
+        "sine_less_cosine": true,
+        "option_values": [
+          "(7/25, 24/25)",
+          "(32/25, 24/25)",
+          "(-18/25, 24/25)",
+          "(57/25, 24/25)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\sin{\\left(x \\right)} - \\sin{\\left(- x + \\frac{\\pi}{2} \\right)} + \\cos{\\left(x \\right)} - \\cos{\\left(- x + \\frac{\\pi}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Perechile complementare dau sin(π/2−x)=cos x și cos(π/2−x)=sin x, astfel cele două sume sunt egale. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 5,
+        "type_name": "Compararea sumelor la argumente simetrice",
+        "variant": 4,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)+cos(x)-sin(pi/2-x)-cos(pi/2-x)",
+        "expression_latex": "\\sin{\\left(x \\right)} - \\sin{\\left(- x + \\frac{\\pi}{2} \\right)} + \\cos{\\left(x \\right)} - \\cos{\\left(- x + \\frac{\\pi}{2} \\right)}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "1",
+          "0",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\frac{\\cos^{2}{\\left(x \\right)}}{1 - \\sin{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim cu 1+sin x și folosim cos²x=(1−sin x)(1+sin x). Pe domeniul dat 1−sin x>0, deci reducerea este legitimă; rezultă 1+sin x. Rezultatul cerut este \\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 1\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 6,
+        "type_name": "Simplificarea fracțiilor trigonometrice",
+        "variant": 4,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x)**2/(1-sin(x))",
+        "expression_latex": "\\frac{\\cos^{2}{\\left(x \\right)}}{1 - \\sin{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "-sqrt(2)/4 + sqrt(6)/4 + 2",
+          "-sqrt(2)/4 + sqrt(6)/4",
+          "-sqrt(2)/4 + sqrt(6)/4 + 1",
+          "-sqrt(2)/4 + sqrt(6)/4 + 3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\sin^{6}{\\left(x \\right)} + \\cos^{6}{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm u=sin²x,v=cos²x, u+v=1. Formula u³+v³=(u+v)³−3uv(u+v) reduce expresia la 1−3sin²x cos²x. Rezultatul cerut este \\(\\frac{13}{16}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{29}{16}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{3}{16}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{45}{16}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{13}{16}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 7,
+        "type_name": "Sume de puteri pare",
+        "variant": 4,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)**6+cos(x)**6",
+        "expression_latex": "\\sin^{6}{\\left(x \\right)} + \\cos^{6}{\\left(x \\right)}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "29/16",
+          "-3/16",
+          "45/16",
+          "13/16"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\sin^{8}{\\left(x \\right)} - 2 \\sin^{4}{\\left(x \\right)} \\cos^{4}{\\left(x \\right)} + 4 \\sin^{2}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)} + \\cos^{8}{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u+v=1, u⁴+v⁴=1−4uv+2u²v². Termenii suplimentari se anulează și rămâne constanta 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 8,
+        "type_name": "Expresie independentă de argument",
+        "variant": 4,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)**8+cos(x)**8+4*sin(x)**2*cos(x)**2-2*sin(x)**4*cos(x)**4",
+        "expression_latex": "\\sin^{8}{\\left(x \\right)} - 2 \\sin^{4}{\\left(x \\right)} \\cos^{4}{\\left(x \\right)} + 4 \\sin^{2}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)} + \\cos^{8}{\\left(x \\right)}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "1",
+          "2",
+          "0",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\frac{\\sin^{3}{\\left(x \\right)} + \\cos^{3}{\\left(x \\right)}}{\\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorul este pozitiv pentru x ascuțit. Factorizarea sumei de cuburi dă sin²x−sin x cos x+cos²x=1−sin x cos x. Rezultatul cerut este \\(\\frac{3}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{7}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{3}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{1}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{11}{4}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 9,
+        "type_name": "Identități cu puteri și rapoarte",
+        "variant": 4,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(sin(x)**3+cos(x)**3)/(sin(x)+cos(x))",
+        "expression_latex": "\\frac{\\sin^{3}{\\left(x \\right)} + \\cos^{3}{\\left(x \\right)}}{\\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "7/4",
+          "3/4",
+          "-1/4",
+          "11/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "a=5, b=7 și x∈(0;π/2) satisfac sin x=(b−a)/(a+b). Calculați cos x+tan x+cot x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Datele au 0<a<b, deci sinusul este în (0,1). Cosinusul pozitiv se recuperează ca 2√(ab)/(a+b). Aplicăm apoi definițiile tangentei și cotangentei; niciun numitor nu este zero. Rezultatul cerut este \\(\\frac{251 \\sqrt{35}}{210}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{251 \\sqrt{35}}{210}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{251 \\sqrt{35}}{210}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{251 \\sqrt{35}}{210}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 + \\frac{251 \\sqrt{35}}{210}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 10,
+        "type_name": "Parametru algebric în valoare trigonometrică",
+        "variant": 4,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "recover_parameter",
+        "a": "5",
+        "b": "7",
+        "expression": "cos(x)+tan(x)+cot(x)",
+        "option_values": [
+          "1 + 251*sqrt(35)/210",
+          "-1 + 251*sqrt(35)/210",
+          "251*sqrt(35)/210",
+          "2 + 251*sqrt(35)/210"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru α=\\(\\frac{\\pi}{12}\\) radiani, care este minimul pe t∈ℝ al trinomului (1−sin α)t²−2t cos α+1+sin α?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Coeficientul principal este strict pozitiv în datele date. Discriminantul este 4cos²α−4(1−sin α)(1+sin α)=0. Trinomul este un pătrat cu minimul 0, atins la t=cos α/(1−sin α). Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 11,
+        "type_name": "Trinom cu coeficienți trigonometrice",
+        "variant": 4,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "trig_quadratic_min",
+        "angle": "pi/12",
+        "option_values": [
+          "1",
+          "-1",
+          "2",
+          "0"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Care este minimul pe ℝ al lui 4(sin⁴x+cos⁴x)? Argumentul este în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u=sin²x,v=cos²x avem u+v=1. Din (u−v)²≥0 rezultă u²+v²≥1/2; egalitatea este atinsă la x=π/4. Coeficientul pozitiv multiplică minimul. Rezultatul cerut este \\(2\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 12,
+        "type_name": "Inegalități pentru puteri trigonometrice",
+        "variant": 4,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "minimum_even_power",
+        "coefficient": 4,
+        "power": 4,
+        "option_values": [
+          "2",
+          "3",
+          "1",
+          "4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați imaginea funcției f(x)=4−2sin x+(1+sin x)², x∈ℝ. Argumentul este în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltarea pătratului simplifică funcția la a+1+sin²x, cu a constanta din enunț. Deoarece sin²x parcurge [0,1] pe ℝ, imaginea este intervalul închis [a+1,a+2]; ambele capete se ating. Rezultatul cerut este \\(\\left[5, 6\\right]\\).",
+      "options": [
+        {
+          "text": "\\(\\left[6, 7\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[5, 6\\right]\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left[4, 5\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[7, 8\\right]\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 13,
+        "type_name": "Imaginea unui polinom trigonometric",
+        "variant": 4,
+        "reference_pages": "214–218",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "range_polynomial_sine",
+        "offset": 4,
+        "polynomial": "a+1+t**2",
+        "option_values": [
+          "Interval(6, 7)",
+          "Interval(5, 6)",
+          "Interval(4, 5)",
+          "Interval(7, 8)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați cea mai mică bornă C pentru care |7sin x+24cos x|≤C pentru orice x∈ℝ, în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cauchy–Schwarz dă |a sin x+b cos x|≤√(a²+b²). Borna este atinsă când (sin x,cos x) este vectorul unitate proporțional cu (a,b), deci nu poate fi micșorată. Rezultatul cerut este \\(25\\).",
+      "options": [
+        {
+          "text": "\\(26\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(24\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(25\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(27\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 14,
+        "type_name": "Estimarea unei combinații liniare",
+        "variant": 4,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "linear_trig_bound",
+        "sin_coefficient": 7,
+        "cos_coefficient": 24,
+        "option_values": [
+          "26",
+          "24",
+          "25",
+          "27"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se știe sin x+cos x=\\(-1\\). Calculați sin⁵x+cos⁵x; x este real, în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=sin x,v=cos x. Avem u+v=m, u²+v²=1 și uv=(m²−1)/2. Identitatea u⁵+v⁵=m⁵−5uv·m³+5(uv)²m dă rezultatul. Valorile date ale lui m aparțin [−√2,√2], deci există unghiuri reale. Rezultatul cerut este \\(-1\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 15,
+        "type_name": "Puteri din suma sin+cos cu parametru",
+        "variant": 4,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "power_from_sum",
+        "sum": "-1",
+        "power": 5,
+        "option_values": [
+          "0",
+          "-2",
+          "1",
+          "-1"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\sin^{4}{\\left(x \\right)} - \\sin^{2}{\\left(x \\right)} - \\cos^{4}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Factorizăm sin⁴x−cos⁴x=(sin²x−cos²x)(sin²x+cos²x); relația fundamentală arată anularea expresiei. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 1,
+        "type_name": "Reducerea la relația fundamentală",
+        "variant": 5,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)**4+cos(x)**2-cos(x)**4-sin(x)**2",
+        "expression_latex": "\\sin^{4}{\\left(x \\right)} - \\sin^{2}{\\left(x \\right)} - \\cos^{4}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "0",
+          "1",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\tan^{2}{\\left(x \\right)} + \\cot^{2}{\\left(x \\right)} + 2\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Expresia este (tan x+cot x)²=1/(sin²x cos²x), deoarece sin²x+cos²x=1. Numitorii sunt nenuli pentru x ascuțit. Rezultatul cerut este \\(16\\).",
+      "options": [
+        {
+          "text": "\\(17\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(16\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(15\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(18\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 2,
+        "type_name": "Identități cu tangentă și cotangentă",
+        "variant": 5,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(x)**2+cot(x)**2+2",
+        "expression_latex": "\\tan^{2}{\\left(x \\right)} + \\cot^{2}{\\left(x \\right)} + 2",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "17",
+          "16",
+          "15",
+          "18"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunoaște sin x=\\(- \\frac{20}{29}\\), iar punctul unghiului x este în cadranul 3. Aflați (cos x;tan x;cot x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația fundamentală dă cos²x=1−sin²x. Cadranul fixează semnul cosinusului. Apoi tan x=sin x/cos x și cot x=cos x/sin x; valorile sinusului și cosinusului sunt nenule. Rezultatul cerut este \\(\\left( - \\frac{21}{29}, \\  \\frac{20}{21}, \\  \\frac{21}{20}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{8}{29}, \\  \\frac{20}{21}, \\  \\frac{21}{20}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( - \\frac{50}{29}, \\  \\frac{20}{21}, \\  \\frac{21}{20}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( - \\frac{21}{29}, \\  \\frac{20}{21}, \\  \\frac{21}{20}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( \\frac{37}{29}, \\  \\frac{20}{21}, \\  \\frac{21}{20}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 3,
+        "type_name": "Recuperarea tuturor funcțiilor din una",
+        "variant": 5,
+        "reference_pages": "214–218",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "recover_functions",
+        "sine": "-20/29",
+        "quadrant": 3,
+        "option_values": [
+          "(8/29, 20/21, 21/20)",
+          "(-50/29, 20/21, 21/20)",
+          "(-21/29, 20/21, 21/20)",
+          "(37/29, 20/21, 21/20)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiul x este în (0;π/4), cu sin x+cos x=\\(\\frac{41}{29}\\). Aflați perechea (sin x;cos x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul sumei dă produsul sin x cos x=(m²−1)/2. Cele două valori sunt rădăcinile ecuației t²−mt+(m²−1)/2=0. Intervalul impune sin x<cos x și fixează ordinea; ambele rădăcini sunt pozitive. Rezultatul cerut este \\(\\left( \\frac{20}{29}, \\  \\frac{21}{29}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{49}{29}, \\  \\frac{21}{29}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( - \\frac{9}{29}, \\  \\frac{21}{29}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{78}{29}, \\  \\frac{21}{29}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{20}{29}, \\  \\frac{21}{29}\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 4,
+        "type_name": "Recuperare din suma sin+cos",
+        "variant": 5,
+        "reference_pages": "214–218",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "recover_sum",
+        "sum": "41/29",
+        "sine_less_cosine": true,
+        "option_values": [
+          "(49/29, 21/29)",
+          "(-9/29, 21/29)",
+          "(78/29, 21/29)",
+          "(20/29, 21/29)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\sin{\\left(x \\right)} - \\sin{\\left(- x + \\frac{\\pi}{2} \\right)} + \\cos{\\left(x \\right)} - \\cos{\\left(- x + \\frac{\\pi}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Perechile complementare dau sin(π/2−x)=cos x și cos(π/2−x)=sin x, astfel cele două sume sunt egale. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 5,
+        "type_name": "Compararea sumelor la argumente simetrice",
+        "variant": 5,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)+cos(x)-sin(pi/2-x)-cos(pi/2-x)",
+        "expression_latex": "\\sin{\\left(x \\right)} - \\sin{\\left(- x + \\frac{\\pi}{2} \\right)} + \\cos{\\left(x \\right)} - \\cos{\\left(- x + \\frac{\\pi}{2} \\right)}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "0",
+          "1",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\frac{\\cos^{2}{\\left(x \\right)}}{1 - \\sin{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim cu 1+sin x și folosim cos²x=(1−sin x)(1+sin x). Pe domeniul dat 1−sin x>0, deci reducerea este legitimă; rezultă 1+sin x. Rezultatul cerut este \\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 1\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 6,
+        "type_name": "Simplificarea fracțiilor trigonometrice",
+        "variant": 5,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x)**2/(1-sin(x))",
+        "expression_latex": "\\frac{\\cos^{2}{\\left(x \\right)}}{1 - \\sin{\\left(x \\right)}}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "sqrt(2)/4 + sqrt(6)/4 + 2",
+          "sqrt(2)/4 + sqrt(6)/4 + 1",
+          "sqrt(2)/4 + sqrt(6)/4",
+          "sqrt(2)/4 + sqrt(6)/4 + 3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\sin^{6}{\\left(x \\right)} + \\cos^{6}{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm u=sin²x,v=cos²x, u+v=1. Formula u³+v³=(u+v)³−3uv(u+v) reduce expresia la 1−3sin²x cos²x. Rezultatul cerut este \\(\\frac{13}{16}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{29}{16}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{3}{16}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{13}{16}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{45}{16}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 7,
+        "type_name": "Sume de puteri pare",
+        "variant": 5,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)**6+cos(x)**6",
+        "expression_latex": "\\sin^{6}{\\left(x \\right)} + \\cos^{6}{\\left(x \\right)}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "29/16",
+          "-3/16",
+          "13/16",
+          "45/16"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\sin^{8}{\\left(x \\right)} - 2 \\sin^{4}{\\left(x \\right)} \\cos^{4}{\\left(x \\right)} + 4 \\sin^{2}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)} + \\cos^{8}{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u+v=1, u⁴+v⁴=1−4uv+2u²v². Termenii suplimentari se anulează și rămâne constanta 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 8,
+        "type_name": "Expresie independentă de argument",
+        "variant": 5,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)**8+cos(x)**8+4*sin(x)**2*cos(x)**2-2*sin(x)**4*cos(x)**4",
+        "expression_latex": "\\sin^{8}{\\left(x \\right)} - 2 \\sin^{4}{\\left(x \\right)} \\cos^{4}{\\left(x \\right)} + 4 \\sin^{2}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)} + \\cos^{8}{\\left(x \\right)}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani, iar x este ascuțit. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\frac{\\sin^{3}{\\left(x \\right)} + \\cos^{3}{\\left(x \\right)}}{\\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numitorul este pozitiv pentru x ascuțit. Factorizarea sumei de cuburi dă sin²x−sin x cos x+cos²x=1−sin x cos x. Rezultatul cerut este \\(\\frac{3}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{3}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{7}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{11}{4}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 9,
+        "type_name": "Identități cu puteri și rapoarte",
+        "variant": 5,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(sin(x)**3+cos(x)**3)/(sin(x)+cos(x))",
+        "expression_latex": "\\frac{\\sin^{3}{\\left(x \\right)} + \\cos^{3}{\\left(x \\right)}}{\\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "3/4",
+          "7/4",
+          "-1/4",
+          "11/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "a=6, b=8 și x∈(0;π/2) satisfac sin x=(b−a)/(a+b). Calculați cos x+tan x+cot x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Datele au 0<a<b, deci sinusul este în (0,1). Cosinusul pozitiv se recuperează ca 2√(ab)/(a+b). Aplicăm apoi definițiile tangentei și cotangentei; niciun numitor nu este zero. Rezultatul cerut este \\(\\frac{391 \\sqrt{3}}{84}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{391 \\sqrt{3}}{84}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{391 \\sqrt{3}}{84}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{391 \\sqrt{3}}{84}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{391 \\sqrt{3}}{84}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 10,
+        "type_name": "Parametru algebric în valoare trigonometrică",
+        "variant": 5,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "recover_parameter",
+        "a": "6",
+        "b": "8",
+        "expression": "cos(x)+tan(x)+cot(x)",
+        "option_values": [
+          "1 + 391*sqrt(3)/84",
+          "391*sqrt(3)/84",
+          "-1 + 391*sqrt(3)/84",
+          "2 + 391*sqrt(3)/84"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru α=\\(\\frac{5 \\pi}{12}\\) radiani, care este minimul pe t∈ℝ al trinomului (1−sin α)t²−2t cos α+1+sin α?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Coeficientul principal este strict pozitiv în datele date. Discriminantul este 4cos²α−4(1−sin α)(1+sin α)=0. Trinomul este un pătrat cu minimul 0, atins la t=cos α/(1−sin α). Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 11,
+        "type_name": "Trinom cu coeficienți trigonometrice",
+        "variant": 5,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "trig_quadratic_min",
+        "angle": "5*pi/12",
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Care este minimul pe ℝ al lui 5(sin⁴x+cos⁴x)? Argumentul este în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u=sin²x,v=cos²x avem u+v=1. Din (u−v)²≥0 rezultă u²+v²≥1/2; egalitatea este atinsă la x=π/4. Coeficientul pozitiv multiplică minimul. Rezultatul cerut este \\(\\frac{5}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{7}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{9}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5}{2}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 12,
+        "type_name": "Inegalități pentru puteri trigonometrice",
+        "variant": 5,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "minimum_even_power",
+        "coefficient": 5,
+        "power": 4,
+        "option_values": [
+          "7/2",
+          "3/2",
+          "9/2",
+          "5/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați imaginea funcției f(x)=5−2sin x+(1+sin x)², x∈ℝ. Argumentul este în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltarea pătratului simplifică funcția la a+1+sin²x, cu a constanta din enunț. Deoarece sin²x parcurge [0,1] pe ℝ, imaginea este intervalul închis [a+1,a+2]; ambele capete se ating. Rezultatul cerut este \\(\\left[6, 7\\right]\\).",
+      "options": [
+        {
+          "text": "\\(\\left[6, 7\\right]\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left[7, 8\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[5, 6\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[8, 9\\right]\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 13,
+        "type_name": "Imaginea unui polinom trigonometric",
+        "variant": 5,
+        "reference_pages": "214–218",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "range_polynomial_sine",
+        "offset": 5,
+        "polynomial": "a+1+t**2",
+        "option_values": [
+          "Interval(6, 7)",
+          "Interval(7, 8)",
+          "Interval(5, 6)",
+          "Interval(8, 9)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați cea mai mică bornă C pentru care |20sin x+21cos x|≤C pentru orice x∈ℝ, în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cauchy–Schwarz dă |a sin x+b cos x|≤√(a²+b²). Borna este atinsă când (sin x,cos x) este vectorul unitate proporțional cu (a,b), deci nu poate fi micșorată. Rezultatul cerut este \\(29\\).",
+      "options": [
+        {
+          "text": "\\(30\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(29\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(28\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(31\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 14,
+        "type_name": "Estimarea unei combinații liniare",
+        "variant": 5,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "linear_trig_bound",
+        "sin_coefficient": 20,
+        "cos_coefficient": 21,
+        "option_values": [
+          "30",
+          "29",
+          "28",
+          "31"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se știe sin x+cos x=\\(- \\sqrt{2}\\). Calculați sin⁵x+cos⁵x; x este real, în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=sin x,v=cos x. Avem u+v=m, u²+v²=1 și uv=(m²−1)/2. Identitatea u⁵+v⁵=m⁵−5uv·m³+5(uv)²m dă rezultatul. Valorile date ale lui m aparțin [−√2,√2], deci există unghiuri reale. Rezultatul cerut este \\(- \\frac{\\sqrt{2}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(1 - \\frac{\\sqrt{2}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 - \\frac{\\sqrt{2}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 - \\frac{\\sqrt{2}}{4}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "4",
+        "type": 15,
+        "type_name": "Puteri din suma sin+cos cu parametru",
+        "variant": 5,
+        "reference_pages": "214–218",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "power_from_sum",
+        "sum": "-sqrt(2)",
+        "power": 5,
+        "option_values": [
+          "1 - sqrt(2)/4",
+          "-1 - sqrt(2)/4",
+          "-sqrt(2)/4",
+          "2 - sqrt(2)/4"
+        ],
+        "answer_kind": "math"
+      }
+    }
+  ]
 }

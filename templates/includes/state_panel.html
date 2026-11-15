@@ -1,0 +1,5 @@
+<section class="ui-state ui-state--{{ tone|default:'empty' }}">
+    <h2 class="ui-state__title">{{ state_title }}</h2>
+    <p>{{ state_text }}</p>
+    {% if action_url %}<a class="btn btn--secondary" href="{{ action_url }}">{{ action_label }}</a>{% endif %}
+</section>

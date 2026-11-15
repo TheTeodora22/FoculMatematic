@@ -1,0 +1,746 @@
+[
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/accounts/login/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/accounts/profile/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/accounts/profile/edit/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/battlepass/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/feedback/raporteaza/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/laborator-matematic/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/clasa/5/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/clasa/8/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/clasa/5/divizibilitate/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/examene/bacalaureat/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/examene/evaluare-nationala/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/18/antrenare/0/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/19/antrenare/14/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/2/antrenare/0/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/213/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/213/antrenare/2/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/29/antrenare/24/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/39/antrenare/0/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/5/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/57/antrenare/0/",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_register.html",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_generated.html",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_generated_result.html",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_classic.html",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_classic_result.html",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_analytics.html",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_feedback_sent.html",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_404.html",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_500.html",
+    "width": 320
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/accounts/login/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/accounts/profile/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/accounts/profile/edit/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/battlepass/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/feedback/raporteaza/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/laborator-matematic/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/clasa/5/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/clasa/8/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/clasa/5/divizibilitate/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/examene/bacalaureat/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/examene/evaluare-nationala/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/18/antrenare/0/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/19/antrenare/14/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/2/antrenare/0/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/213/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/213/antrenare/2/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/29/antrenare/24/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/39/antrenare/0/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/5/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/57/antrenare/0/",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_register.html",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_generated.html",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_generated_result.html",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_classic.html",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_classic_result.html",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_analytics.html",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_feedback_sent.html",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_404.html",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_500.html",
+    "width": 887
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/accounts/login/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/accounts/profile/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/accounts/profile/edit/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/battlepass/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/feedback/raporteaza/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/laborator-matematic/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/clasa/5/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/clasa/8/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/clasa/5/divizibilitate/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/examene/bacalaureat/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/examene/evaluare-nationala/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/18/antrenare/0/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/19/antrenare/14/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/2/antrenare/0/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/213/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/213/antrenare/2/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/29/antrenare/24/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/39/antrenare/0/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/5/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/quizzes/subiect/57/antrenare/0/",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_register.html",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_generated.html",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_generated_result.html",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_classic.html",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_classic_result.html",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_analytics.html",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_feedback_sent.html",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_404.html",
+    "width": 1366
+  },
+  {
+    "brokenRefs": [],
+    "h1": 1,
+    "main": 1,
+    "overflow": false,
+    "path": "/static/_phase11_500.html",
+    "width": 1366
+  }
+]

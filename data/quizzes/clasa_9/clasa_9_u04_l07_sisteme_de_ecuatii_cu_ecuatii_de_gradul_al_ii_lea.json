@@ -1,6 +1,2632 @@
 {
   "title": "Sisteme de ecuații cu ecuații de gradul al II-lea",
   "description": "Clasa a 9-a · Funcția de gradul al II-lea",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "hard",
+  "questions": [
+    {
+      "text": "Rezolvați în ℝ² sistemul x+y=4, xy=3. Răspundeți prin mulțimea perechilor (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x și y sunt rădăcinile aceleiași ecuații t²−St+P=0. După aflarea celor două valori, ambele ordini sunt admise și sunt verificate în sistem. Rezultatul cerut este \\(\\left\\{\\left( 1, \\  3\\right), \\left( 3, \\  1\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 1, \\  3\\right), \\left( 3, \\  1\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 2, \\  3\\right), \\left( 4, \\  1\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 0, \\  3\\right), \\left( 2, \\  1\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 3, \\  3\\right), \\left( 5, \\  1\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 16,
+        "type_name": "Sisteme simetrice în două necunoscute",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "system",
+        "equations": [
+          "x + y - 4",
+          "x*y - 3"
+        ],
+        "variables": [
+          "x",
+          "y"
+        ],
+        "option_values": [
+          "{(1, 3), (3, 1)}",
+          "{(2, 3), (4, 1)}",
+          "{(0, 3), (2, 1)}",
+          "{(3, 3), (5, 1)}"
+        ]
+      }
+    },
+    {
+      "text": "Pentru x,y≥0, rezolvați √x+√y=4, √(xy)=3. Răspundeți prin mulțimea perechilor (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=√x≥0 și v=√y≥0. Atunci u+v=S, uv=P; cele două rădăcini pozitive sunt admise. Ridicarea la pătrat dă x=u²,y=v², fără soluții străine, deoarece u,v sunt nenegative. Rezultatul cerut este \\(\\left\\{\\left( 1, \\  9\\right), \\left( 9, \\  1\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 2, \\  9\\right), \\left( 10, \\  1\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 1, \\  9\\right), \\left( 9, \\  1\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 0, \\  9\\right), \\left( 8, \\  1\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 3, \\  9\\right), \\left( 11, \\  1\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 17,
+        "type_name": "Sisteme cu substituții înaintea simetrizării",
+        "pages": "134–137",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "sqrt_system",
+        "sum": 4,
+        "product": 3,
+        "option_values": [
+          "{(2, 9), (10, 1)}",
+          "{(1, 9), (9, 1)}",
+          "{(0, 9), (8, 1)}",
+          "{(3, 9), (11, 1)}"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul \\(y = x^{2} + 1\\) și \\(y = 2 x^{2} - 4 x + 4\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem ecuațiile și rezolvăm ecuația pătratică pentru x. Pentru fiecare abscisă revenim în prima parabolă, apoi verificăm și a doua ecuație. Rezultatul cerut este \\(\\left\\{\\left( 1, \\  2\\right), \\left( 3, \\  10\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 2, \\  2\\right), \\left( 4, \\  10\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 0, \\  2\\right), \\left( 2, \\  10\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 1, \\  2\\right), \\left( 3, \\  10\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 3, \\  2\\right), \\left( 5, \\  10\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 1,
+        "type_name": "Sisteme de două parabole explicite",
+        "pages": "146–149",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "intersection",
+        "first": "x**2 + 1",
+        "second": "2*x**2 - 4*x + 4",
+        "option_values": [
+          "{(2, 2), (4, 10)}",
+          "{(0, 2), (2, 10)}",
+          "{(1, 2), (3, 10)}",
+          "{(3, 2), (5, 10)}"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m parabolele y=x² și y=2x²−2x+m sunt tangente?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este x²−2(1)x+m. Coeficienții principali sunt diferiți, deci diferența are gradul al doilea; tangența este echivalentă cu Δ=0, de unde m=(1)². Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 2,
+        "type_name": "Poziția a două parabole cu parametru",
+        "pages": "146–149",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "x**2",
+        "line": "m + 2*x**2 - 2*x",
+        "variable": "m",
+        "option_values": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ]
+      }
+    },
+    {
+      "text": "Parabolele \\(y = \\left(x - 1\\right)^{2} + 1\\) și \\(y = 2 \\left(x - 1\\right)^{2} + 1\\) au același vârf. Determinați punctul lor comun.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este (x−(1))², deci unica abscisă comună este (1). Ambele valori sunt (1), iar tangenta comună este orizontală în vârful comun. Rezultatul cerut este \\(\\left( 1, \\  1\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 1, \\  1\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 2, \\  1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 3, \\  1\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 3,
+        "type_name": "Tangență în vârful comun",
+        "pages": "146–149",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "contact",
+        "f": "(x - 1)**2 + 1",
+        "line": "2*(x - 1)**2 + 1",
+        "option_values": [
+          "(1, 1)",
+          "(2, 1)",
+          "(0, 1)",
+          "(3, 1)"
+        ]
+      }
+    },
+    {
+      "text": "Determinați expresia dreptei tangente comune în punctul de contact al parabolelor \\(y = x^{2}\\) și \\(y = 2 x^{2} - 2 x + 1\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența parabolelor este un pătrat, deci contactul are abscisa (1). Scăzând dreapta indicată de partea afină, ambele expresii devin multipli nenuli ai lui (x−(1))²: contact dublu cu aceeași dreaptă. Rezultatul cerut este \\(2 x - 1\\).",
+      "options": [
+        {
+          "text": "\\(2 x\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x - 1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 x - 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x + 1\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 4,
+        "type_name": "Tangenta comună în punctul de contact",
+        "pages": "146–149",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_contact_tangent",
+        "first": "x**2",
+        "second": "2*x**2 - 2*x + 1",
+        "option_values": [
+          "2*x",
+          "2*x - 1",
+          "2*x - 2",
+          "2*x + 1"
+        ]
+      }
+    },
+    {
+      "text": "Găsiți expresia ℓ(x) a dreptei tangente simultan la y=x² și \\(y = x^{2} - 4 x + 8\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru dreapta y=px+q, condițiile de discriminant nul impun q=−p²/4 și p=2(1). Interceptul rezultă apoi unic. Fiecare ecuație de intersecție are o rădăcină dublă reală. Rezultatul cerut este \\(2 x - 1\\).",
+      "options": [
+        {
+          "text": "\\(2 x\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x - 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x - 1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 x + 1\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 5,
+        "type_name": "Tangente simultane la două parabole",
+        "pages": "146–149",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_tangent",
+        "first": "x**2",
+        "second": "x**2 - 4*x + 8",
+        "option_values": [
+          "2*x",
+          "2*x - 2",
+          "2*x - 1",
+          "2*x + 1"
+        ]
+      }
+    },
+    {
+      "text": "Parabola y=x²+c este tangentă ambelor parabole \\(y = 2 x^{2} - 2 x + 2\\) și \\(y = 2 x^{2} + 2 x + 2\\). Aflați c.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferențele sunt (x−(1))²+(1)−c și (x+(1))²+(1)−c. Fiecare are rădăcină dublă exact când c=(1). Contactele sunt la abscise opuse, ambele reale. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 6,
+        "type_name": "Parabole simultan tangente la două parabole",
+        "pages": "146–149",
+        "variant": 1,
+        "coverage": "partial_case",
+        "adaptation": "O secțiune cu un parametru a problemei de construire a familiilor; nu se pretinde întreaga familie infinită."
+      },
+      "verification": {
+        "task": "double_parabola_parameter",
+        "first": "2*x**2 - 2*x + 2",
+        "second": "2*x**2 + 2*x + 2",
+        "candidate": "x**2+c",
+        "variable": "c",
+        "option_values": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați în ℝ² sistemul y=x², x²+y²=2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Substituind y=x² și punând t=x²≥0, ecuația devine t²+t=(1)⁴+(1)². Rădăcina t=(1)² este admisă, iar cealaltă este negativă și se respinge. Revenirea dă x=±(1), y=(1)², ambele perechi verificând sistemul. Rezultatul cerut este \\(\\left\\{\\left( -1, \\  1\\right), \\left( 1, \\  1\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( -1, \\  1\\right), \\left( 1, \\  1\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 0, \\  1\\right), \\left( 2, \\  1\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( -2, \\  1\\right), \\left( 0, \\  1\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 1, \\  1\\right), \\left( 3, \\  1\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 7,
+        "type_name": "Sisteme pătratice cu expresii mixte",
+        "pages": "146–149",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "mixed_system",
+        "constant": 2,
+        "option_values": [
+          "{(-1, 1), (1, 1)}",
+          "{(0, 1), (2, 1)}",
+          "{(-2, 1), (0, 1)}",
+          "{(1, 1), (3, 1)}"
+        ]
+      }
+    },
+    {
+      "text": "Ecuațiile \\(x^{2} - 4 x + 3 = 0\\) și \\(b x + c + 2 x^{2} = 0\\) au aceeași mulțime de rădăcini reale. Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima ecuație are două rădăcini reale distincte. Cum gradul celei de-a doua este tot doi și coeficientul principal este fixat nenul, polinoamele sunt proporționale. Înmulțim primul polinom cu (1)+1 și identificăm coeficienții. Rezultatul cerut este \\(\\left( -8, \\  6\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -7, \\  6\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -8, \\  6\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -9, \\  6\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -6, \\  6\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 8,
+        "type_name": "Ecuații cu aceeași mulțime de rădăcini",
+        "pages": "146–149",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "proportional_coefficients",
+        "f": "x**2 - 4*x + 3",
+        "a": 2,
+        "option_values": [
+          "(-7, 6)",
+          "(-8, 6)",
+          "(-9, 6)",
+          "(-6, 6)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru x,y,z∈ℝ cu x+y+z=3 și xy+yz+zx=3, determinați (x;y;z).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din pătratul sumei rezultă x²+y²+z²=3(1)². Atunci (x−(1))²+(y−(1))²+(z−(1))²=0. Fiecare termen este nenegativ, deci toate trei variabilele sunt (1). Perechea de condiții se verifică direct. Rezultatul cerut este \\(\\left( 1, \\  1, \\  1\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 2, \\  1, \\  1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  1, \\  1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 1, \\  1, \\  1\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 3, \\  1, \\  1\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 9,
+        "type_name": "Sisteme de sinteză în trei necunoscute",
+        "pages": "146–149",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Sistem de sinteză ales astfel încât identitatea sumei de pătrate asigură unicitatea."
+      },
+      "verification": {
+        "task": "three_equal",
+        "sum": 3,
+        "pairs": 3,
+        "option_values": [
+          "(2, 1, 1)",
+          "(0, 1, 1)",
+          "(1, 1, 1)",
+          "(3, 1, 1)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați în ℝ² sistemul x+y=6, xy=8. Răspundeți prin mulțimea perechilor (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x și y sunt rădăcinile aceleiași ecuații t²−St+P=0. După aflarea celor două valori, ambele ordini sunt admise și sunt verificate în sistem. Rezultatul cerut este \\(\\left\\{\\left( 2, \\  4\\right), \\left( 4, \\  2\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 3, \\  4\\right), \\left( 5, \\  2\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 1, \\  4\\right), \\left( 3, \\  2\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 4, \\  4\\right), \\left( 6, \\  2\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 2, \\  4\\right), \\left( 4, \\  2\\right)\\right\\}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 16,
+        "type_name": "Sisteme simetrice în două necunoscute",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "system",
+        "equations": [
+          "x + y - 6",
+          "x*y - 8"
+        ],
+        "variables": [
+          "x",
+          "y"
+        ],
+        "option_values": [
+          "{(3, 4), (5, 2)}",
+          "{(1, 4), (3, 2)}",
+          "{(4, 4), (6, 2)}",
+          "{(2, 4), (4, 2)}"
+        ]
+      }
+    },
+    {
+      "text": "Pentru x,y≥0, rezolvați √x+√y=6, √(xy)=8. Răspundeți prin mulțimea perechilor (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=√x≥0 și v=√y≥0. Atunci u+v=S, uv=P; cele două rădăcini pozitive sunt admise. Ridicarea la pătrat dă x=u²,y=v², fără soluții străine, deoarece u,v sunt nenegative. Rezultatul cerut este \\(\\left\\{\\left( 4, \\  16\\right), \\left( 16, \\  4\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 4, \\  16\\right), \\left( 16, \\  4\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 5, \\  16\\right), \\left( 17, \\  4\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 3, \\  16\\right), \\left( 15, \\  4\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 6, \\  16\\right), \\left( 18, \\  4\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 17,
+        "type_name": "Sisteme cu substituții înaintea simetrizării",
+        "pages": "134–137",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "sqrt_system",
+        "sum": 6,
+        "product": 8,
+        "option_values": [
+          "{(4, 16), (16, 4)}",
+          "{(5, 16), (17, 4)}",
+          "{(3, 16), (15, 4)}",
+          "{(6, 16), (18, 4)}"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul \\(y = x^{2} + 2\\) și \\(y = 2 x^{2} - 6 x + 10\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem ecuațiile și rezolvăm ecuația pătratică pentru x. Pentru fiecare abscisă revenim în prima parabolă, apoi verificăm și a doua ecuație. Rezultatul cerut este \\(\\left\\{\\left( 2, \\  6\\right), \\left( 4, \\  18\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 3, \\  6\\right), \\left( 5, \\  18\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 2, \\  6\\right), \\left( 4, \\  18\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 1, \\  6\\right), \\left( 3, \\  18\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 4, \\  6\\right), \\left( 6, \\  18\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 1,
+        "type_name": "Sisteme de două parabole explicite",
+        "pages": "146–149",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "intersection",
+        "first": "x**2 + 2",
+        "second": "2*x**2 - 6*x + 10",
+        "option_values": [
+          "{(3, 6), (5, 18)}",
+          "{(2, 6), (4, 18)}",
+          "{(1, 6), (3, 18)}",
+          "{(4, 6), (6, 18)}"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m parabolele y=x² și y=2x²−4x+m sunt tangente?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este x²−2(2)x+m. Coeficienții principali sunt diferiți, deci diferența are gradul al doilea; tangența este echivalentă cu Δ=0, de unde m=(2)². Rezultatul cerut este \\(4\\).",
+      "options": [
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 2,
+        "type_name": "Poziția a două parabole cu parametru",
+        "pages": "146–149",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "x**2",
+        "line": "m + 2*x**2 - 4*x",
+        "variable": "m",
+        "option_values": [
+          "5",
+          "3",
+          "4",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "Parabolele \\(y = \\left(x - 2\\right)^{2} + 2\\) și \\(y = 2 \\left(x - 2\\right)^{2} + 2\\) au același vârf. Determinați punctul lor comun.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este (x−(2))², deci unica abscisă comună este (2). Ambele valori sunt (2), iar tangenta comună este orizontală în vârful comun. Rezultatul cerut este \\(\\left( 2, \\  2\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 3, \\  2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 1, \\  2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  2\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 3,
+        "type_name": "Tangență în vârful comun",
+        "pages": "146–149",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "contact",
+        "f": "(x - 2)**2 + 2",
+        "line": "2*(x - 2)**2 + 2",
+        "option_values": [
+          "(3, 2)",
+          "(1, 2)",
+          "(4, 2)",
+          "(2, 2)"
+        ]
+      }
+    },
+    {
+      "text": "Determinați expresia dreptei tangente comune în punctul de contact al parabolelor \\(y = x^{2} - 2\\) și \\(y = 2 x^{2} - 4 x + 2\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența parabolelor este un pătrat, deci contactul are abscisa (2). Scăzând dreapta indicată de partea afină, ambele expresii devin multipli nenuli ai lui (x−(2))²: contact dublu cu aceeași dreaptă. Rezultatul cerut este \\(4 x - 6\\).",
+      "options": [
+        {
+          "text": "\\(4 x - 6\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4 x - 5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x - 7\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x - 4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 4,
+        "type_name": "Tangenta comună în punctul de contact",
+        "pages": "146–149",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_contact_tangent",
+        "first": "x**2 - 2",
+        "second": "2*x**2 - 4*x + 2",
+        "option_values": [
+          "4*x - 6",
+          "4*x - 5",
+          "4*x - 7",
+          "4*x - 4"
+        ]
+      }
+    },
+    {
+      "text": "Găsiți expresia ℓ(x) a dreptei tangente simultan la y=x² și \\(y = x^{2} - 6 x + 21\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru dreapta y=px+q, condițiile de discriminant nul impun q=−p²/4 și p=2(2). Interceptul rezultă apoi unic. Fiecare ecuație de intersecție are o rădăcină dublă reală. Rezultatul cerut este \\(4 x - 4\\).",
+      "options": [
+        {
+          "text": "\\(4 x - 3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x - 4\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4 x - 5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x - 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 5,
+        "type_name": "Tangente simultane la două parabole",
+        "pages": "146–149",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_tangent",
+        "first": "x**2",
+        "second": "x**2 - 6*x + 21",
+        "option_values": [
+          "4*x - 3",
+          "4*x - 4",
+          "4*x - 5",
+          "4*x - 2"
+        ]
+      }
+    },
+    {
+      "text": "Parabola y=x²+c este tangentă ambelor parabole \\(y = 2 x^{2} - 4 x + 6\\) și \\(y = 2 x^{2} + 4 x + 6\\). Aflați c.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferențele sunt (x−(2))²+(2)−c și (x+(2))²+(2)−c. Fiecare are rădăcină dublă exact când c=(2). Contactele sunt la abscise opuse, ambele reale. Rezultatul cerut este \\(2\\).",
+      "options": [
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 6,
+        "type_name": "Parabole simultan tangente la două parabole",
+        "pages": "146–149",
+        "variant": 2,
+        "coverage": "partial_case",
+        "adaptation": "O secțiune cu un parametru a problemei de construire a familiilor; nu se pretinde întreaga familie infinită."
+      },
+      "verification": {
+        "task": "double_parabola_parameter",
+        "first": "2*x**2 - 4*x + 6",
+        "second": "2*x**2 + 4*x + 6",
+        "candidate": "x**2+c",
+        "variable": "c",
+        "option_values": [
+          "3",
+          "1",
+          "2",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați în ℝ² sistemul y=x², x²+y²=20.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Substituind y=x² și punând t=x²≥0, ecuația devine t²+t=(2)⁴+(2)². Rădăcina t=(2)² este admisă, iar cealaltă este negativă și se respinge. Revenirea dă x=±(2), y=(2)², ambele perechi verificând sistemul. Rezultatul cerut este \\(\\left\\{\\left( -2, \\  4\\right), \\left( 2, \\  4\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( -1, \\  4\\right), \\left( 3, \\  4\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( -3, \\  4\\right), \\left( 1, \\  4\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 0, \\  4\\right), \\left( 4, \\  4\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( -2, \\  4\\right), \\left( 2, \\  4\\right)\\right\\}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 7,
+        "type_name": "Sisteme pătratice cu expresii mixte",
+        "pages": "146–149",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "mixed_system",
+        "constant": 20,
+        "option_values": [
+          "{(-1, 4), (3, 4)}",
+          "{(-3, 4), (1, 4)}",
+          "{(0, 4), (4, 4)}",
+          "{(-2, 4), (2, 4)}"
+        ]
+      }
+    },
+    {
+      "text": "Ecuațiile \\(x^{2} - 6 x + 8 = 0\\) și \\(b x + c + 3 x^{2} = 0\\) au aceeași mulțime de rădăcini reale. Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima ecuație are două rădăcini reale distincte. Cum gradul celei de-a doua este tot doi și coeficientul principal este fixat nenul, polinoamele sunt proporționale. Înmulțim primul polinom cu (2)+1 și identificăm coeficienții. Rezultatul cerut este \\(\\left( -18, \\  24\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -18, \\  24\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -17, \\  24\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -19, \\  24\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -16, \\  24\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 8,
+        "type_name": "Ecuații cu aceeași mulțime de rădăcini",
+        "pages": "146–149",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "proportional_coefficients",
+        "f": "x**2 - 6*x + 8",
+        "a": 3,
+        "option_values": [
+          "(-18, 24)",
+          "(-17, 24)",
+          "(-19, 24)",
+          "(-16, 24)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru x,y,z∈ℝ cu x+y+z=6 și xy+yz+zx=12, determinați (x;y;z).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din pătratul sumei rezultă x²+y²+z²=3(2)². Atunci (x−(2))²+(y−(2))²+(z−(2))²=0. Fiecare termen este nenegativ, deci toate trei variabilele sunt (2). Perechea de condiții se verifică direct. Rezultatul cerut este \\(\\left( 2, \\  2, \\  2\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 3, \\  2, \\  2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  2, \\  2\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 1, \\  2, \\  2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  2, \\  2\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 9,
+        "type_name": "Sisteme de sinteză în trei necunoscute",
+        "pages": "146–149",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Sistem de sinteză ales astfel încât identitatea sumei de pătrate asigură unicitatea."
+      },
+      "verification": {
+        "task": "three_equal",
+        "sum": 6,
+        "pairs": 12,
+        "option_values": [
+          "(3, 2, 2)",
+          "(2, 2, 2)",
+          "(1, 2, 2)",
+          "(4, 2, 2)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați în ℝ² sistemul x+y=8, xy=15. Răspundeți prin mulțimea perechilor (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x și y sunt rădăcinile aceleiași ecuații t²−St+P=0. După aflarea celor două valori, ambele ordini sunt admise și sunt verificate în sistem. Rezultatul cerut este \\(\\left\\{\\left( 3, \\  5\\right), \\left( 5, \\  3\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 4, \\  5\\right), \\left( 6, \\  3\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 2, \\  5\\right), \\left( 4, \\  3\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 3, \\  5\\right), \\left( 5, \\  3\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 5, \\  5\\right), \\left( 7, \\  3\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 16,
+        "type_name": "Sisteme simetrice în două necunoscute",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "system",
+        "equations": [
+          "x + y - 8",
+          "x*y - 15"
+        ],
+        "variables": [
+          "x",
+          "y"
+        ],
+        "option_values": [
+          "{(4, 5), (6, 3)}",
+          "{(2, 5), (4, 3)}",
+          "{(3, 5), (5, 3)}",
+          "{(5, 5), (7, 3)}"
+        ]
+      }
+    },
+    {
+      "text": "Pentru x,y≥0, rezolvați √x+√y=8, √(xy)=15. Răspundeți prin mulțimea perechilor (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=√x≥0 și v=√y≥0. Atunci u+v=S, uv=P; cele două rădăcini pozitive sunt admise. Ridicarea la pătrat dă x=u²,y=v², fără soluții străine, deoarece u,v sunt nenegative. Rezultatul cerut este \\(\\left\\{\\left( 9, \\  25\\right), \\left( 25, \\  9\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 10, \\  25\\right), \\left( 26, \\  9\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 8, \\  25\\right), \\left( 24, \\  9\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 11, \\  25\\right), \\left( 27, \\  9\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 9, \\  25\\right), \\left( 25, \\  9\\right)\\right\\}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 17,
+        "type_name": "Sisteme cu substituții înaintea simetrizării",
+        "pages": "134–137",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "sqrt_system",
+        "sum": 8,
+        "product": 15,
+        "option_values": [
+          "{(10, 25), (26, 9)}",
+          "{(8, 25), (24, 9)}",
+          "{(11, 25), (27, 9)}",
+          "{(9, 25), (25, 9)}"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul \\(y = x^{2} + 3\\) și \\(y = 2 x^{2} - 8 x + 18\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem ecuațiile și rezolvăm ecuația pătratică pentru x. Pentru fiecare abscisă revenim în prima parabolă, apoi verificăm și a doua ecuație. Rezultatul cerut este \\(\\left\\{\\left( 3, \\  12\\right), \\left( 5, \\  28\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 3, \\  12\\right), \\left( 5, \\  28\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 4, \\  12\\right), \\left( 6, \\  28\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 2, \\  12\\right), \\left( 4, \\  28\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 5, \\  12\\right), \\left( 7, \\  28\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 1,
+        "type_name": "Sisteme de două parabole explicite",
+        "pages": "146–149",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "intersection",
+        "first": "x**2 + 3",
+        "second": "2*x**2 - 8*x + 18",
+        "option_values": [
+          "{(3, 12), (5, 28)}",
+          "{(4, 12), (6, 28)}",
+          "{(2, 12), (4, 28)}",
+          "{(5, 12), (7, 28)}"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m parabolele y=x² și y=2x²−6x+m sunt tangente?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este x²−2(3)x+m. Coeficienții principali sunt diferiți, deci diferența are gradul al doilea; tangența este echivalentă cu Δ=0, de unde m=(3)². Rezultatul cerut este \\(9\\).",
+      "options": [
+        {
+          "text": "\\(10\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(9\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(8\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(11\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 2,
+        "type_name": "Poziția a două parabole cu parametru",
+        "pages": "146–149",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "x**2",
+        "line": "m + 2*x**2 - 6*x",
+        "variable": "m",
+        "option_values": [
+          "10",
+          "9",
+          "8",
+          "11"
+        ]
+      }
+    },
+    {
+      "text": "Parabolele \\(y = \\left(x - 3\\right)^{2} + 3\\) și \\(y = 2 \\left(x - 3\\right)^{2} + 3\\) au același vârf. Determinați punctul lor comun.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este (x−(3))², deci unica abscisă comună este (3). Ambele valori sunt (3), iar tangenta comună este orizontală în vârful comun. Rezultatul cerut este \\(\\left( 3, \\  3\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 4, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 3, \\  3\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 5, \\  3\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 3,
+        "type_name": "Tangență în vârful comun",
+        "pages": "146–149",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "contact",
+        "f": "(x - 3)**2 + 3",
+        "line": "2*(x - 3)**2 + 3",
+        "option_values": [
+          "(4, 3)",
+          "(2, 3)",
+          "(3, 3)",
+          "(5, 3)"
+        ]
+      }
+    },
+    {
+      "text": "Determinați expresia dreptei tangente comune în punctul de contact al parabolelor \\(y = x^{2} - 6\\) și \\(y = 2 x^{2} - 6 x + 3\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența parabolelor este un pătrat, deci contactul are abscisa (3). Scăzând dreapta indicată de partea afină, ambele expresii devin multipli nenuli ai lui (x−(3))²: contact dublu cu aceeași dreaptă. Rezultatul cerut este \\(6 x - 15\\).",
+      "options": [
+        {
+          "text": "\\(6 x - 14\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 x - 16\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 x - 13\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 x - 15\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 4,
+        "type_name": "Tangenta comună în punctul de contact",
+        "pages": "146–149",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_contact_tangent",
+        "first": "x**2 - 6",
+        "second": "2*x**2 - 6*x + 3",
+        "option_values": [
+          "6*x - 14",
+          "6*x - 16",
+          "6*x - 13",
+          "6*x - 15"
+        ]
+      }
+    },
+    {
+      "text": "Găsiți expresia ℓ(x) a dreptei tangente simultan la y=x² și \\(y = x^{2} - 8 x + 40\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru dreapta y=px+q, condițiile de discriminant nul impun q=−p²/4 și p=2(3). Interceptul rezultă apoi unic. Fiecare ecuație de intersecție are o rădăcină dublă reală. Rezultatul cerut este \\(6 x - 9\\).",
+      "options": [
+        {
+          "text": "\\(6 x - 9\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(6 x - 8\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 x - 10\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 x - 7\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 5,
+        "type_name": "Tangente simultane la două parabole",
+        "pages": "146–149",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_tangent",
+        "first": "x**2",
+        "second": "x**2 - 8*x + 40",
+        "option_values": [
+          "6*x - 9",
+          "6*x - 8",
+          "6*x - 10",
+          "6*x - 7"
+        ]
+      }
+    },
+    {
+      "text": "Parabola y=x²+c este tangentă ambelor parabole \\(y = 2 x^{2} - 6 x + 12\\) și \\(y = 2 x^{2} + 6 x + 12\\). Aflați c.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferențele sunt (x−(3))²+(3)−c și (x+(3))²+(3)−c. Fiecare are rădăcină dublă exact când c=(3). Contactele sunt la abscise opuse, ambele reale. Rezultatul cerut este \\(3\\).",
+      "options": [
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 6,
+        "type_name": "Parabole simultan tangente la două parabole",
+        "pages": "146–149",
+        "variant": 3,
+        "coverage": "partial_case",
+        "adaptation": "O secțiune cu un parametru a problemei de construire a familiilor; nu se pretinde întreaga familie infinită."
+      },
+      "verification": {
+        "task": "double_parabola_parameter",
+        "first": "2*x**2 - 6*x + 12",
+        "second": "2*x**2 + 6*x + 12",
+        "candidate": "x**2+c",
+        "variable": "c",
+        "option_values": [
+          "4",
+          "3",
+          "2",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați în ℝ² sistemul y=x², x²+y²=90.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Substituind y=x² și punând t=x²≥0, ecuația devine t²+t=(3)⁴+(3)². Rădăcina t=(3)² este admisă, iar cealaltă este negativă și se respinge. Revenirea dă x=±(3), y=(3)², ambele perechi verificând sistemul. Rezultatul cerut este \\(\\left\\{\\left( -3, \\  9\\right), \\left( 3, \\  9\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( -2, \\  9\\right), \\left( 4, \\  9\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( -4, \\  9\\right), \\left( 2, \\  9\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( -3, \\  9\\right), \\left( 3, \\  9\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( -1, \\  9\\right), \\left( 5, \\  9\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 7,
+        "type_name": "Sisteme pătratice cu expresii mixte",
+        "pages": "146–149",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "mixed_system",
+        "constant": 90,
+        "option_values": [
+          "{(-2, 9), (4, 9)}",
+          "{(-4, 9), (2, 9)}",
+          "{(-3, 9), (3, 9)}",
+          "{(-1, 9), (5, 9)}"
+        ]
+      }
+    },
+    {
+      "text": "Ecuațiile \\(x^{2} - 8 x + 15 = 0\\) și \\(b x + c + 4 x^{2} = 0\\) au aceeași mulțime de rădăcini reale. Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima ecuație are două rădăcini reale distincte. Cum gradul celei de-a doua este tot doi și coeficientul principal este fixat nenul, polinoamele sunt proporționale. Înmulțim primul polinom cu (3)+1 și identificăm coeficienții. Rezultatul cerut este \\(\\left( -32, \\  60\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -31, \\  60\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -33, \\  60\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -30, \\  60\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -32, \\  60\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 8,
+        "type_name": "Ecuații cu aceeași mulțime de rădăcini",
+        "pages": "146–149",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "proportional_coefficients",
+        "f": "x**2 - 8*x + 15",
+        "a": 4,
+        "option_values": [
+          "(-31, 60)",
+          "(-33, 60)",
+          "(-30, 60)",
+          "(-32, 60)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru x,y,z∈ℝ cu x+y+z=9 și xy+yz+zx=27, determinați (x;y;z).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din pătratul sumei rezultă x²+y²+z²=3(3)². Atunci (x−(3))²+(y−(3))²+(z−(3))²=0. Fiecare termen este nenegativ, deci toate trei variabilele sunt (3). Perechea de condiții se verifică direct. Rezultatul cerut este \\(\\left( 3, \\  3, \\  3\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 3, \\  3, \\  3\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 4, \\  3, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  3, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 5, \\  3, \\  3\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 9,
+        "type_name": "Sisteme de sinteză în trei necunoscute",
+        "pages": "146–149",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Sistem de sinteză ales astfel încât identitatea sumei de pătrate asigură unicitatea."
+      },
+      "verification": {
+        "task": "three_equal",
+        "sum": 9,
+        "pairs": 27,
+        "option_values": [
+          "(3, 3, 3)",
+          "(4, 3, 3)",
+          "(2, 3, 3)",
+          "(5, 3, 3)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați în ℝ² sistemul x+y=10, xy=24. Răspundeți prin mulțimea perechilor (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x și y sunt rădăcinile aceleiași ecuații t²−St+P=0. După aflarea celor două valori, ambele ordini sunt admise și sunt verificate în sistem. Rezultatul cerut este \\(\\left\\{\\left( 4, \\  6\\right), \\left( 6, \\  4\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 5, \\  6\\right), \\left( 7, \\  4\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 4, \\  6\\right), \\left( 6, \\  4\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 3, \\  6\\right), \\left( 5, \\  4\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 6, \\  6\\right), \\left( 8, \\  4\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 16,
+        "type_name": "Sisteme simetrice în două necunoscute",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "system",
+        "equations": [
+          "x + y - 10",
+          "x*y - 24"
+        ],
+        "variables": [
+          "x",
+          "y"
+        ],
+        "option_values": [
+          "{(5, 6), (7, 4)}",
+          "{(4, 6), (6, 4)}",
+          "{(3, 6), (5, 4)}",
+          "{(6, 6), (8, 4)}"
+        ]
+      }
+    },
+    {
+      "text": "Pentru x,y≥0, rezolvați √x+√y=10, √(xy)=24. Răspundeți prin mulțimea perechilor (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=√x≥0 și v=√y≥0. Atunci u+v=S, uv=P; cele două rădăcini pozitive sunt admise. Ridicarea la pătrat dă x=u²,y=v², fără soluții străine, deoarece u,v sunt nenegative. Rezultatul cerut este \\(\\left\\{\\left( 16, \\  36\\right), \\left( 36, \\  16\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 17, \\  36\\right), \\left( 37, \\  16\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 15, \\  36\\right), \\left( 35, \\  16\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 16, \\  36\\right), \\left( 36, \\  16\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 18, \\  36\\right), \\left( 38, \\  16\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 17,
+        "type_name": "Sisteme cu substituții înaintea simetrizării",
+        "pages": "134–137",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "sqrt_system",
+        "sum": 10,
+        "product": 24,
+        "option_values": [
+          "{(17, 36), (37, 16)}",
+          "{(15, 36), (35, 16)}",
+          "{(16, 36), (36, 16)}",
+          "{(18, 36), (38, 16)}"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul \\(y = x^{2} + 4\\) și \\(y = 2 x^{2} - 10 x + 28\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem ecuațiile și rezolvăm ecuația pătratică pentru x. Pentru fiecare abscisă revenim în prima parabolă, apoi verificăm și a doua ecuație. Rezultatul cerut este \\(\\left\\{\\left( 4, \\  20\\right), \\left( 6, \\  40\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 5, \\  20\\right), \\left( 7, \\  40\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 3, \\  20\\right), \\left( 5, \\  40\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 6, \\  20\\right), \\left( 8, \\  40\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 4, \\  20\\right), \\left( 6, \\  40\\right)\\right\\}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 1,
+        "type_name": "Sisteme de două parabole explicite",
+        "pages": "146–149",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "intersection",
+        "first": "x**2 + 4",
+        "second": "2*x**2 - 10*x + 28",
+        "option_values": [
+          "{(5, 20), (7, 40)}",
+          "{(3, 20), (5, 40)}",
+          "{(6, 20), (8, 40)}",
+          "{(4, 20), (6, 40)}"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m parabolele y=x² și y=2x²−8x+m sunt tangente?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este x²−2(4)x+m. Coeficienții principali sunt diferiți, deci diferența are gradul al doilea; tangența este echivalentă cu Δ=0, de unde m=(4)². Rezultatul cerut este \\(16\\).",
+      "options": [
+        {
+          "text": "\\(16\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(17\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(15\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(18\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 2,
+        "type_name": "Poziția a două parabole cu parametru",
+        "pages": "146–149",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "x**2",
+        "line": "m + 2*x**2 - 8*x",
+        "variable": "m",
+        "option_values": [
+          "16",
+          "17",
+          "15",
+          "18"
+        ]
+      }
+    },
+    {
+      "text": "Parabolele \\(y = \\left(x - 4\\right)^{2} + 4\\) și \\(y = 2 \\left(x - 4\\right)^{2} + 4\\) au același vârf. Determinați punctul lor comun.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este (x−(4))², deci unica abscisă comună este (4). Ambele valori sunt (4), iar tangenta comună este orizontală în vârful comun. Rezultatul cerut este \\(\\left( 4, \\  4\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 5, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  4\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 3, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 6, \\  4\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 3,
+        "type_name": "Tangență în vârful comun",
+        "pages": "146–149",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "contact",
+        "f": "(x - 4)**2 + 4",
+        "line": "2*(x - 4)**2 + 4",
+        "option_values": [
+          "(5, 4)",
+          "(4, 4)",
+          "(3, 4)",
+          "(6, 4)"
+        ]
+      }
+    },
+    {
+      "text": "Determinați expresia dreptei tangente comune în punctul de contact al parabolelor \\(y = x^{2} - 12\\) și \\(y = 2 x^{2} - 8 x + 4\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența parabolelor este un pătrat, deci contactul are abscisa (4). Scăzând dreapta indicată de partea afină, ambele expresii devin multipli nenuli ai lui (x−(4))²: contact dublu cu aceeași dreaptă. Rezultatul cerut este \\(8 x - 28\\).",
+      "options": [
+        {
+          "text": "\\(8 x - 27\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(8 x - 29\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(8 x - 28\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(8 x - 26\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 4,
+        "type_name": "Tangenta comună în punctul de contact",
+        "pages": "146–149",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_contact_tangent",
+        "first": "x**2 - 12",
+        "second": "2*x**2 - 8*x + 4",
+        "option_values": [
+          "8*x - 27",
+          "8*x - 29",
+          "8*x - 28",
+          "8*x - 26"
+        ]
+      }
+    },
+    {
+      "text": "Găsiți expresia ℓ(x) a dreptei tangente simultan la y=x² și \\(y = x^{2} - 10 x + 65\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru dreapta y=px+q, condițiile de discriminant nul impun q=−p²/4 și p=2(4). Interceptul rezultă apoi unic. Fiecare ecuație de intersecție are o rădăcină dublă reală. Rezultatul cerut este \\(8 x - 16\\).",
+      "options": [
+        {
+          "text": "\\(8 x - 15\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(8 x - 17\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(8 x - 14\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(8 x - 16\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 5,
+        "type_name": "Tangente simultane la două parabole",
+        "pages": "146–149",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_tangent",
+        "first": "x**2",
+        "second": "x**2 - 10*x + 65",
+        "option_values": [
+          "8*x - 15",
+          "8*x - 17",
+          "8*x - 14",
+          "8*x - 16"
+        ]
+      }
+    },
+    {
+      "text": "Parabola y=x²+c este tangentă ambelor parabole \\(y = 2 x^{2} - 8 x + 20\\) și \\(y = 2 x^{2} + 8 x + 20\\). Aflați c.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferențele sunt (x−(4))²+(4)−c și (x+(4))²+(4)−c. Fiecare are rădăcină dublă exact când c=(4). Contactele sunt la abscise opuse, ambele reale. Rezultatul cerut este \\(4\\).",
+      "options": [
+        {
+          "text": "\\(4\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 6,
+        "type_name": "Parabole simultan tangente la două parabole",
+        "pages": "146–149",
+        "variant": 4,
+        "coverage": "partial_case",
+        "adaptation": "O secțiune cu un parametru a problemei de construire a familiilor; nu se pretinde întreaga familie infinită."
+      },
+      "verification": {
+        "task": "double_parabola_parameter",
+        "first": "2*x**2 - 8*x + 20",
+        "second": "2*x**2 + 8*x + 20",
+        "candidate": "x**2+c",
+        "variable": "c",
+        "option_values": [
+          "4",
+          "5",
+          "3",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați în ℝ² sistemul y=x², x²+y²=272.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Substituind y=x² și punând t=x²≥0, ecuația devine t²+t=(4)⁴+(4)². Rădăcina t=(4)² este admisă, iar cealaltă este negativă și se respinge. Revenirea dă x=±(4), y=(4)², ambele perechi verificând sistemul. Rezultatul cerut este \\(\\left\\{\\left( -4, \\  16\\right), \\left( 4, \\  16\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( -3, \\  16\\right), \\left( 5, \\  16\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( -4, \\  16\\right), \\left( 4, \\  16\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( -5, \\  16\\right), \\left( 3, \\  16\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( -2, \\  16\\right), \\left( 6, \\  16\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 7,
+        "type_name": "Sisteme pătratice cu expresii mixte",
+        "pages": "146–149",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "mixed_system",
+        "constant": 272,
+        "option_values": [
+          "{(-3, 16), (5, 16)}",
+          "{(-4, 16), (4, 16)}",
+          "{(-5, 16), (3, 16)}",
+          "{(-2, 16), (6, 16)}"
+        ]
+      }
+    },
+    {
+      "text": "Ecuațiile \\(x^{2} - 10 x + 24 = 0\\) și \\(b x + c + 5 x^{2} = 0\\) au aceeași mulțime de rădăcini reale. Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima ecuație are două rădăcini reale distincte. Cum gradul celei de-a doua este tot doi și coeficientul principal este fixat nenul, polinoamele sunt proporționale. Înmulțim primul polinom cu (4)+1 și identificăm coeficienții. Rezultatul cerut este \\(\\left( -50, \\  120\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -49, \\  120\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -51, \\  120\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -50, \\  120\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -48, \\  120\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 8,
+        "type_name": "Ecuații cu aceeași mulțime de rădăcini",
+        "pages": "146–149",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "proportional_coefficients",
+        "f": "x**2 - 10*x + 24",
+        "a": 5,
+        "option_values": [
+          "(-49, 120)",
+          "(-51, 120)",
+          "(-50, 120)",
+          "(-48, 120)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru x,y,z∈ℝ cu x+y+z=12 și xy+yz+zx=48, determinați (x;y;z).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din pătratul sumei rezultă x²+y²+z²=3(4)². Atunci (x−(4))²+(y−(4))²+(z−(4))²=0. Fiecare termen este nenegativ, deci toate trei variabilele sunt (4). Perechea de condiții se verifică direct. Rezultatul cerut este \\(\\left( 4, \\  4, \\  4\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 5, \\  4, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 3, \\  4, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 6, \\  4, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  4, \\  4\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 9,
+        "type_name": "Sisteme de sinteză în trei necunoscute",
+        "pages": "146–149",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Sistem de sinteză ales astfel încât identitatea sumei de pătrate asigură unicitatea."
+      },
+      "verification": {
+        "task": "three_equal",
+        "sum": 12,
+        "pairs": 48,
+        "option_values": [
+          "(5, 4, 4)",
+          "(3, 4, 4)",
+          "(6, 4, 4)",
+          "(4, 4, 4)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați în ℝ² sistemul x+y=12, xy=35. Răspundeți prin mulțimea perechilor (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "x și y sunt rădăcinile aceleiași ecuații t²−St+P=0. După aflarea celor două valori, ambele ordini sunt admise și sunt verificate în sistem. Rezultatul cerut este \\(\\left\\{\\left( 5, \\  7\\right), \\left( 7, \\  5\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 5, \\  7\\right), \\left( 7, \\  5\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 6, \\  7\\right), \\left( 8, \\  5\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 4, \\  7\\right), \\left( 6, \\  5\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 7, \\  7\\right), \\left( 9, \\  5\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 16,
+        "type_name": "Sisteme simetrice în două necunoscute",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "system",
+        "equations": [
+          "x + y - 12",
+          "x*y - 35"
+        ],
+        "variables": [
+          "x",
+          "y"
+        ],
+        "option_values": [
+          "{(5, 7), (7, 5)}",
+          "{(6, 7), (8, 5)}",
+          "{(4, 7), (6, 5)}",
+          "{(7, 7), (9, 5)}"
+        ]
+      }
+    },
+    {
+      "text": "Pentru x,y≥0, rezolvați √x+√y=12, √(xy)=35. Răspundeți prin mulțimea perechilor (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=√x≥0 și v=√y≥0. Atunci u+v=S, uv=P; cele două rădăcini pozitive sunt admise. Ridicarea la pătrat dă x=u²,y=v², fără soluții străine, deoarece u,v sunt nenegative. Rezultatul cerut este \\(\\left\\{\\left( 25, \\  49\\right), \\left( 49, \\  25\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 26, \\  49\\right), \\left( 50, \\  25\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 25, \\  49\\right), \\left( 49, \\  25\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 24, \\  49\\right), \\left( 48, \\  25\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 27, \\  49\\right), \\left( 51, \\  25\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 2,
+        "type": 17,
+        "type_name": "Sisteme cu substituții înaintea simetrizării",
+        "pages": "134–137",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "sqrt_system",
+        "sum": 12,
+        "product": 35,
+        "option_values": [
+          "{(26, 49), (50, 25)}",
+          "{(25, 49), (49, 25)}",
+          "{(24, 49), (48, 25)}",
+          "{(27, 49), (51, 25)}"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul \\(y = x^{2} + 5\\) și \\(y = 2 x^{2} - 12 x + 40\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem ecuațiile și rezolvăm ecuația pătratică pentru x. Pentru fiecare abscisă revenim în prima parabolă, apoi verificăm și a doua ecuație. Rezultatul cerut este \\(\\left\\{\\left( 5, \\  30\\right), \\left( 7, \\  54\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 6, \\  30\\right), \\left( 8, \\  54\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 4, \\  30\\right), \\left( 6, \\  54\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 5, \\  30\\right), \\left( 7, \\  54\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 7, \\  30\\right), \\left( 9, \\  54\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 1,
+        "type_name": "Sisteme de două parabole explicite",
+        "pages": "146–149",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "intersection",
+        "first": "x**2 + 5",
+        "second": "2*x**2 - 12*x + 40",
+        "option_values": [
+          "{(6, 30), (8, 54)}",
+          "{(4, 30), (6, 54)}",
+          "{(5, 30), (7, 54)}",
+          "{(7, 30), (9, 54)}"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m parabolele y=x² și y=2x²−10x+m sunt tangente?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este x²−2(5)x+m. Coeficienții principali sunt diferiți, deci diferența are gradul al doilea; tangența este echivalentă cu Δ=0, de unde m=(5)². Rezultatul cerut este \\(25\\).",
+      "options": [
+        {
+          "text": "\\(26\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(24\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(27\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(25\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 2,
+        "type_name": "Poziția a două parabole cu parametru",
+        "pages": "146–149",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "x**2",
+        "line": "m + 2*x**2 - 10*x",
+        "variable": "m",
+        "option_values": [
+          "26",
+          "24",
+          "27",
+          "25"
+        ]
+      }
+    },
+    {
+      "text": "Parabolele \\(y = \\left(x - 5\\right)^{2} + 5\\) și \\(y = 2 \\left(x - 5\\right)^{2} + 5\\) au același vârf. Determinați punctul lor comun.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este (x−(5))², deci unica abscisă comună este (5). Ambele valori sunt (5), iar tangenta comună este orizontală în vârful comun. Rezultatul cerut este \\(\\left( 5, \\  5\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 5, \\  5\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 6, \\  5\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  5\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 7, \\  5\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 3,
+        "type_name": "Tangență în vârful comun",
+        "pages": "146–149",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "contact",
+        "f": "(x - 5)**2 + 5",
+        "line": "2*(x - 5)**2 + 5",
+        "option_values": [
+          "(5, 5)",
+          "(6, 5)",
+          "(4, 5)",
+          "(7, 5)"
+        ]
+      }
+    },
+    {
+      "text": "Determinați expresia dreptei tangente comune în punctul de contact al parabolelor \\(y = x^{2} - 20\\) și \\(y = 2 x^{2} - 10 x + 5\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența parabolelor este un pătrat, deci contactul are abscisa (5). Scăzând dreapta indicată de partea afină, ambele expresii devin multipli nenuli ai lui (x−(5))²: contact dublu cu aceeași dreaptă. Rezultatul cerut este \\(10 x - 45\\).",
+      "options": [
+        {
+          "text": "\\(10 x - 44\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(10 x - 45\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(10 x - 46\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(10 x - 43\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 4,
+        "type_name": "Tangenta comună în punctul de contact",
+        "pages": "146–149",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_contact_tangent",
+        "first": "x**2 - 20",
+        "second": "2*x**2 - 10*x + 5",
+        "option_values": [
+          "10*x - 44",
+          "10*x - 45",
+          "10*x - 46",
+          "10*x - 43"
+        ]
+      }
+    },
+    {
+      "text": "Găsiți expresia ℓ(x) a dreptei tangente simultan la y=x² și \\(y = x^{2} - 12 x + 96\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru dreapta y=px+q, condițiile de discriminant nul impun q=−p²/4 și p=2(5). Interceptul rezultă apoi unic. Fiecare ecuație de intersecție are o rădăcină dublă reală. Rezultatul cerut este \\(10 x - 25\\).",
+      "options": [
+        {
+          "text": "\\(10 x - 24\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(10 x - 26\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(10 x - 25\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(10 x - 23\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 5,
+        "type_name": "Tangente simultane la două parabole",
+        "pages": "146–149",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_tangent",
+        "first": "x**2",
+        "second": "x**2 - 12*x + 96",
+        "option_values": [
+          "10*x - 24",
+          "10*x - 26",
+          "10*x - 25",
+          "10*x - 23"
+        ]
+      }
+    },
+    {
+      "text": "Parabola y=x²+c este tangentă ambelor parabole \\(y = 2 x^{2} - 10 x + 30\\) și \\(y = 2 x^{2} + 10 x + 30\\). Aflați c.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferențele sunt (x−(5))²+(5)−c și (x+(5))²+(5)−c. Fiecare are rădăcină dublă exact când c=(5). Contactele sunt la abscise opuse, ambele reale. Rezultatul cerut este \\(5\\).",
+      "options": [
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(7\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 6,
+        "type_name": "Parabole simultan tangente la două parabole",
+        "pages": "146–149",
+        "variant": 5,
+        "coverage": "partial_case",
+        "adaptation": "O secțiune cu un parametru a problemei de construire a familiilor; nu se pretinde întreaga familie infinită."
+      },
+      "verification": {
+        "task": "double_parabola_parameter",
+        "first": "2*x**2 - 10*x + 30",
+        "second": "2*x**2 + 10*x + 30",
+        "candidate": "x**2+c",
+        "variable": "c",
+        "option_values": [
+          "6",
+          "4",
+          "7",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați în ℝ² sistemul y=x², x²+y²=650.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Substituind y=x² și punând t=x²≥0, ecuația devine t²+t=(5)⁴+(5)². Rădăcina t=(5)² este admisă, iar cealaltă este negativă și se respinge. Revenirea dă x=±(5), y=(5)², ambele perechi verificând sistemul. Rezultatul cerut este \\(\\left\\{\\left( -5, \\  25\\right), \\left( 5, \\  25\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( -5, \\  25\\right), \\left( 5, \\  25\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( -4, \\  25\\right), \\left( 6, \\  25\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( -6, \\  25\\right), \\left( 4, \\  25\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( -3, \\  25\\right), \\left( 7, \\  25\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 7,
+        "type_name": "Sisteme pătratice cu expresii mixte",
+        "pages": "146–149",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "mixed_system",
+        "constant": 650,
+        "option_values": [
+          "{(-5, 25), (5, 25)}",
+          "{(-4, 25), (6, 25)}",
+          "{(-6, 25), (4, 25)}",
+          "{(-3, 25), (7, 25)}"
+        ]
+      }
+    },
+    {
+      "text": "Ecuațiile \\(x^{2} - 12 x + 35 = 0\\) și \\(b x + c + 6 x^{2} = 0\\) au aceeași mulțime de rădăcini reale. Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima ecuație are două rădăcini reale distincte. Cum gradul celei de-a doua este tot doi și coeficientul principal este fixat nenul, polinoamele sunt proporționale. Înmulțim primul polinom cu (5)+1 și identificăm coeficienții. Rezultatul cerut este \\(\\left( -72, \\  210\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -71, \\  210\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -72, \\  210\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -73, \\  210\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -70, \\  210\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 8,
+        "type_name": "Ecuații cu aceeași mulțime de rădăcini",
+        "pages": "146–149",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "proportional_coefficients",
+        "f": "x**2 - 12*x + 35",
+        "a": 6,
+        "option_values": [
+          "(-71, 210)",
+          "(-72, 210)",
+          "(-73, 210)",
+          "(-70, 210)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru x,y,z∈ℝ cu x+y+z=15 și xy+yz+zx=75, determinați (x;y;z).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din pătratul sumei rezultă x²+y²+z²=3(5)². Atunci (x−(5))²+(y−(5))²+(z−(5))²=0. Fiecare termen este nenegativ, deci toate trei variabilele sunt (5). Perechea de condiții se verifică direct. Rezultatul cerut este \\(\\left( 5, \\  5, \\  5\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 6, \\  5, \\  5\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  5, \\  5\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 5, \\  5, \\  5\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 7, \\  5, \\  5\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 6,
+        "type": 9,
+        "type_name": "Sisteme de sinteză în trei necunoscute",
+        "pages": "146–149",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Sistem de sinteză ales astfel încât identitatea sumei de pătrate asigură unicitatea."
+      },
+      "verification": {
+        "task": "three_equal",
+        "sum": 15,
+        "pairs": 75,
+        "option_values": [
+          "(6, 5, 5)",
+          "(4, 5, 5)",
+          "(5, 5, 5)",
+          "(7, 5, 5)"
+        ]
+      }
+    }
+  ]
 }

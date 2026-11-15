@@ -1,23 +1,30 @@
 {% extends "base.html" %}
 {% load lesson_tags %}
+{% block math_assets %}{% include "includes/math_assets.html" %}{% endblock %}
 
 {% block title %}Chestionar — {{ topic.title }}{% endblock %}
 
+{% block page_styles %}{% include "includes/page_styles.html" %}{% endblock %}
+
 {% block content %}
-<div class="page-content">
+<div class="page-content journey-page">
     <p class="muted" style="margin:0 0 0.5rem;">
         <a href="{% url 'topic_detail' topic.pk %}">{{ topic.title }}</a>
     </p>
     {% render_lesson_tags topic %}
     <h1>Chestionar generat</h1>
-    <p class="muted">Întrebarea {{ question_number }} din {{ total_count }}</p>
+    <div class="quiz-session-progress">
+        <p class="muted" id="session-progress-label">Întrebarea {{ question_number }} din {{ total_count }}</p>
+        <progress value="{{ question_number|add:'-1' }}" max="{{ total_count }}" aria-label="Întrebări parcurse" aria-describedby="session-progress-label"></progress>
+    </div>
 
     <article class="card">
         <h2 data-math-content style="margin:0 0 1rem;">{{ item.question.text }}</h2>
-        <form method="post">
+        <form data-ui-form data-status-id="form-submit-status" data-busy-label="Se trimit răspunsurile…" method="post">
             {% csrf_token %}
             <input type="hidden" name="item_id" value="{{ item.pk }}">
             <fieldset style="border:none;padding:0;margin:0;">
+<legend class="visually-hidden">Variante de răspuns</legend>
                 {% for option in item.question.options.all %}
                     <label class="quiz-option" style="display:block;margin-bottom:0.75rem;cursor:pointer;">
                         <input type="radio" name="option_id" value="{{ option.pk }}" required>
@@ -29,6 +36,7 @@
                 {% if question_number == total_count %}Finalizează{% else %}Următoarea întrebare{% endif %}
             </button>
         </form>
+    {% include "includes/form_status.html" %}
     </article>
 </div>
 {% endblock %}

@@ -1,6 +1,1967 @@
 {
   "title": "Poziția relativă a două drepte",
   "description": "Clasa a 9-a · Funcția de gradul I",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Fie A(1; 0), B(1; 2), C(2; -1), D(2; 3). Care este poziția dreptelor AB și CD?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "AB este verticala x=1, iar CD este verticala x=2. Sunt drepte verticale distincte, deci paralele; nu folosim pante finite.",
+      "options": [
+        {
+          "text": "Paralele distincte.",
+          "is_correct": true
+        },
+        {
+          "text": "Coincidente.",
+          "is_correct": false
+        },
+        {
+          "text": "Perpendiculare.",
+          "is_correct": false
+        },
+        {
+          "text": "Secante, dar nu perpendiculare.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 1,
+        "type_name": "Poziția dreptelor date prin puncte",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 1,
+        "variant": 1,
+        "candidates": [
+          "Paralele distincte.",
+          "Coincidente.",
+          "Perpendiculare.",
+          "Secante, dar nu perpendiculare."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul x+y=3, 2x−y=0 și indicați punctul de intersecție.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunând ecuațiile, 3x=3, deci x=1; apoi y=3−1=2. Determinantul coeficienților este −3≠0, deci dreptele au exact acest punct comun.",
+      "options": [
+        {
+          "text": "(2; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 2)",
+          "is_correct": true
+        },
+        {
+          "text": "(1; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 2,
+        "type_name": "Sistem liniar și interpretare geometrică",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 2,
+        "variant": 1,
+        "candidates": [
+          [
+            "2",
+            "2"
+          ],
+          [
+            "1",
+            "2"
+          ],
+          [
+            "1",
+            "3"
+          ],
+          [
+            "2",
+            "3"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul 2(x−1)+y=2, x−(y+1)=−2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm: 2x+y=4 și x−y=−1. Adunând, 3x=3, deci x=1, iar y=x+1=2. Înlocuirea în relațiile inițiale confirmă soluția.",
+      "options": [
+        {
+          "text": "(2; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 2)",
+          "is_correct": true
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 3,
+        "type_name": "Sisteme liniare după dezvoltare",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 3,
+        "variant": 1,
+        "candidates": [
+          [
+            "2",
+            "2"
+          ],
+          [
+            "1",
+            "3"
+          ],
+          [
+            "1",
+            "2"
+          ],
+          [
+            "2",
+            "3"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați în ℝ², cu x,y≠0: \\(1/x+1/y=3/2,\\quad1/x-1/y=1/2\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=1/x, v=1/y. Adunarea ecuațiilor dă 2u=2, deci u=1/1; scăderea dă 2v=1, deci v=1/2. Ambele sunt nenule, așadar x=1, y=2.",
+      "options": [
+        {
+          "text": "(2; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 2)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 4,
+        "type_name": "Sisteme cu reciproce",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 4,
+        "variant": 1,
+        "candidates": [
+          [
+            "2",
+            "2"
+          ],
+          [
+            "1",
+            "3"
+          ],
+          [
+            "2",
+            "3"
+          ],
+          [
+            "1",
+            "2"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Care este mulțimea soluțiilor sistemului |x|+|y|=3, |x|−|y|=−1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u=|x|≥0 și v=|y|≥0, sistemul devine u+v=3, u−v=−1, de unde u=1, v=2. Ambele sunt strict pozitive; fiecare necunoscută are independent două semne, rezultând toate cele patru perechi.",
+      "options": [
+        {
+          "text": "{(1; 2); (1; -2); (-1; 2); (-1; -2)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(1; 2)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(1; 2); (1; -2)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(-1; 2); (-1; -2)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 5,
+        "type_name": "Sisteme cu module",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 5,
+        "variant": 1,
+        "candidates": [
+          "{(1; 2); (1; -2); (-1; 2); (-1; -2)}",
+          "{(1; 2)}",
+          "{(1; 2); (1; -2)}",
+          "{(-1; 2); (-1; -2)}"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați \\(1/(x+y)+1/(x-y)=3,\\quad1/(x+y)-1/(x-y)=-1\\), cu x+y≠0 și x−y≠0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm u=1/(x+y), v=1/(x−y). Adunând, 2u=2, deci u=1/1; apoi v=2/1. Rezultă x+y=1, x−y=1/2, de unde x=3/4, y=1/4. Blocurile sunt nenule, deci soluția este admisă.",
+      "options": [
+        {
+          "text": "(7/4; 1/4)",
+          "is_correct": false
+        },
+        {
+          "text": "(3/4; 1/4)",
+          "is_correct": true
+        },
+        {
+          "text": "(3/4; 5/4)",
+          "is_correct": false
+        },
+        {
+          "text": "(7/4; 5/4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 6,
+        "type_name": "Sisteme cu expresii raționale comune",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 6,
+        "variant": 1,
+        "candidates": [
+          [
+            "7/4",
+            "1/4"
+          ],
+          [
+            "3/4",
+            "1/4"
+          ],
+          [
+            "3/4",
+            "5/4"
+          ],
+          [
+            "7/4",
+            "5/4"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Discutați sistemul mx+y=1, x+my=1, după m∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Determinantul este m²−1. Pentru m≠±1 este nenul. La m=1 ecuațiile coincid: x+y=1. La m=−1, adunarea ecuațiilor ar da 0=2, imposibil deoarece 1>0.",
+      "options": [
+        {
+          "text": "m≠±1: soluție unică; m=−1: infinit de multe; m=1: nicio soluție.",
+          "is_correct": false
+        },
+        {
+          "text": "Soluție unică pentru orice m.",
+          "is_correct": false
+        },
+        {
+          "text": "m≠±1: soluție unică; m=1: infinit de multe soluții; m=−1: nicio soluție.",
+          "is_correct": true
+        },
+        {
+          "text": "m≠±1: nicio soluție; m=±1: infinit de multe soluții.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 7,
+        "type_name": "Discuția sistemului cu parametru",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 7,
+        "variant": 1,
+        "candidates": [
+          "m≠±1: soluție unică; m=−1: infinit de multe; m=1: nicio soluție.",
+          "Soluție unică pentru orice m.",
+          "m≠±1: soluție unică; m=1: infinit de multe soluții; m=−1: nicio soluție.",
+          "m≠±1: nicio soluție; m=±1: infinit de multe soluții."
+        ]
+      }
+    },
+    {
+      "text": "Alegem uniform m din mulțimea întregilor {−1,…,1}. Care este probabilitatea ca mx+y=1, x+my=1 să aibă soluție unică?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sunt 3 valori echiprobabile. Determinantul m²−1 este nul numai la m=−1 și m=1, ambele în mulțime. Rămân 1 valori favorabile; probabilitatea este 1/3.",
+      "options": [
+        {
+          "text": "2/3",
+          "is_correct": false
+        },
+        {
+          "text": "1/4",
+          "is_correct": false
+        },
+        {
+          "text": "3/4",
+          "is_correct": false
+        },
+        {
+          "text": "1/3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 8,
+        "type_name": "Probabilitatea tipului de sistem",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 8,
+        "variant": 1,
+        "candidates": [
+          "2/3",
+          "1/4",
+          "3/4",
+          "1/3"
+        ]
+      }
+    },
+    {
+      "text": "Fie A(2; 0), B(2; 2), C(0; 3), D(4; 3). Care este poziția dreptelor AB și CD?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "AB este verticala x=2, iar CD este orizontala y=3. O verticală și o orizontală se intersectează într-un unghi drept.",
+      "options": [
+        {
+          "text": "Perpendiculare.",
+          "is_correct": true
+        },
+        {
+          "text": "Paralele distincte.",
+          "is_correct": false
+        },
+        {
+          "text": "Coincidente.",
+          "is_correct": false
+        },
+        {
+          "text": "Secante, dar nu perpendiculare.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 1,
+        "type_name": "Poziția dreptelor date prin puncte",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 1,
+        "variant": 2,
+        "candidates": [
+          "Perpendiculare.",
+          "Paralele distincte.",
+          "Coincidente.",
+          "Secante, dar nu perpendiculare."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul x+y=5, 2x−y=1 și indicați punctul de intersecție.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunând ecuațiile, 3x=6, deci x=2; apoi y=5−2=3. Determinantul coeficienților este −3≠0, deci dreptele au exact acest punct comun.",
+      "options": [
+        {
+          "text": "(3; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "(2; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 2,
+        "type_name": "Sistem liniar și interpretare geometrică",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 2,
+        "variant": 2,
+        "candidates": [
+          [
+            "3",
+            "3"
+          ],
+          [
+            "2",
+            "3"
+          ],
+          [
+            "2",
+            "4"
+          ],
+          [
+            "3",
+            "4"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul 2(x−1)+y=5, x−(y+1)=−2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm: 2x+y=7 și x−y=−1. Adunând, 3x=6, deci x=2, iar y=x+1=3. Înlocuirea în relațiile inițiale confirmă soluția.",
+      "options": [
+        {
+          "text": "(3; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "(3; 4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 3,
+        "type_name": "Sisteme liniare după dezvoltare",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 3,
+        "variant": 2,
+        "candidates": [
+          [
+            "3",
+            "3"
+          ],
+          [
+            "2",
+            "4"
+          ],
+          [
+            "2",
+            "3"
+          ],
+          [
+            "3",
+            "4"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați în ℝ², cu x,y≠0: \\(1/x+1/y=5/6,\\quad1/x-1/y=1/6\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=1/x, v=1/y. Adunarea ecuațiilor dă 2u=1, deci u=1/2; scăderea dă 2v=2/3, deci v=1/3. Ambele sunt nenule, așadar x=2, y=3.",
+      "options": [
+        {
+          "text": "(3; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 4,
+        "type_name": "Sisteme cu reciproce",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 4,
+        "variant": 2,
+        "candidates": [
+          [
+            "3",
+            "3"
+          ],
+          [
+            "2",
+            "4"
+          ],
+          [
+            "3",
+            "4"
+          ],
+          [
+            "2",
+            "3"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Care este mulțimea soluțiilor sistemului |x|+|y|=5, |x|−|y|=−1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u=|x|≥0 și v=|y|≥0, sistemul devine u+v=5, u−v=−1, de unde u=2, v=3. Ambele sunt strict pozitive; fiecare necunoscută are independent două semne, rezultând toate cele patru perechi.",
+      "options": [
+        {
+          "text": "{(2; 3); (2; -3); (-2; 3); (-2; -3)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(2; 3)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(2; 3); (2; -3)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(-2; 3); (-2; -3)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 5,
+        "type_name": "Sisteme cu module",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 5,
+        "variant": 2,
+        "candidates": [
+          "{(2; 3); (2; -3); (-2; 3); (-2; -3)}",
+          "{(2; 3)}",
+          "{(2; 3); (2; -3)}",
+          "{(-2; 3); (-2; -3)}"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați \\(1/(x+y)+1/(x-y)=3/2,\\quad1/(x+y)-1/(x-y)=-1/2\\), cu x+y≠0 și x−y≠0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm u=1/(x+y), v=1/(x−y). Adunând, 2u=1, deci u=1/2; apoi v=2/2. Rezultă x+y=2, x−y=1, de unde x=3/2, y=1/2. Blocurile sunt nenule, deci soluția este admisă.",
+      "options": [
+        {
+          "text": "(5/2; 1/2)",
+          "is_correct": false
+        },
+        {
+          "text": "(3/2; 1/2)",
+          "is_correct": true
+        },
+        {
+          "text": "(3/2; 3/2)",
+          "is_correct": false
+        },
+        {
+          "text": "(5/2; 3/2)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 6,
+        "type_name": "Sisteme cu expresii raționale comune",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 6,
+        "variant": 2,
+        "candidates": [
+          [
+            "5/2",
+            "1/2"
+          ],
+          [
+            "3/2",
+            "1/2"
+          ],
+          [
+            "3/2",
+            "3/2"
+          ],
+          [
+            "5/2",
+            "3/2"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Discutați sistemul mx+y=2, x+my=2, după m∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Determinantul este m²−1. Pentru m≠±1 este nenul. La m=1 ecuațiile coincid: x+y=2. La m=−1, adunarea ecuațiilor ar da 0=4, imposibil deoarece 2>0.",
+      "options": [
+        {
+          "text": "m≠±1: soluție unică; m=−1: infinit de multe; m=1: nicio soluție.",
+          "is_correct": false
+        },
+        {
+          "text": "Soluție unică pentru orice m.",
+          "is_correct": false
+        },
+        {
+          "text": "m≠±1: soluție unică; m=1: infinit de multe soluții; m=−1: nicio soluție.",
+          "is_correct": true
+        },
+        {
+          "text": "m≠±1: nicio soluție; m=±1: infinit de multe soluții.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 7,
+        "type_name": "Discuția sistemului cu parametru",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 7,
+        "variant": 2,
+        "candidates": [
+          "m≠±1: soluție unică; m=−1: infinit de multe; m=1: nicio soluție.",
+          "Soluție unică pentru orice m.",
+          "m≠±1: soluție unică; m=1: infinit de multe soluții; m=−1: nicio soluție.",
+          "m≠±1: nicio soluție; m=±1: infinit de multe soluții."
+        ]
+      }
+    },
+    {
+      "text": "Alegem uniform m din mulțimea întregilor {−2,…,2}. Care este probabilitatea ca mx+y=1, x+my=1 să aibă soluție unică?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sunt 5 valori echiprobabile. Determinantul m²−1 este nul numai la m=−1 și m=1, ambele în mulțime. Rămân 3 valori favorabile; probabilitatea este 3/5.",
+      "options": [
+        {
+          "text": "4/5",
+          "is_correct": false
+        },
+        {
+          "text": "1/2",
+          "is_correct": false
+        },
+        {
+          "text": "5/6",
+          "is_correct": false
+        },
+        {
+          "text": "3/5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 8,
+        "type_name": "Probabilitatea tipului de sistem",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 8,
+        "variant": 2,
+        "candidates": [
+          "4/5",
+          "1/2",
+          "5/6",
+          "3/5"
+        ]
+      }
+    },
+    {
+      "text": "Fie A(3; 0), B(4; 1), C(5; 2), D(6; 3). Care este poziția dreptelor AB și CD?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "AB și CD au ambele panta 1 și ecuația y=x−3. Toate cele patru puncte sunt pe aceeași dreaptă, deci dreptele coincid.",
+      "options": [
+        {
+          "text": "Coincidente.",
+          "is_correct": true
+        },
+        {
+          "text": "Paralele distincte.",
+          "is_correct": false
+        },
+        {
+          "text": "Perpendiculare.",
+          "is_correct": false
+        },
+        {
+          "text": "Secante, dar nu perpendiculare.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 1,
+        "type_name": "Poziția dreptelor date prin puncte",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 1,
+        "variant": 3,
+        "candidates": [
+          "Coincidente.",
+          "Paralele distincte.",
+          "Perpendiculare.",
+          "Secante, dar nu perpendiculare."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul x+y=7, 2x−y=2 și indicați punctul de intersecție.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunând ecuațiile, 3x=9, deci x=3; apoi y=7−3=4. Determinantul coeficienților este −3≠0, deci dreptele au exact acest punct comun.",
+      "options": [
+        {
+          "text": "(4; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 4)",
+          "is_correct": true
+        },
+        {
+          "text": "(3; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 2,
+        "type_name": "Sistem liniar și interpretare geometrică",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 2,
+        "variant": 3,
+        "candidates": [
+          [
+            "4",
+            "4"
+          ],
+          [
+            "3",
+            "4"
+          ],
+          [
+            "3",
+            "5"
+          ],
+          [
+            "4",
+            "5"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul 2(x−1)+y=8, x−(y+1)=−2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm: 2x+y=10 și x−y=−1. Adunând, 3x=9, deci x=3, iar y=x+1=4. Înlocuirea în relațiile inițiale confirmă soluția.",
+      "options": [
+        {
+          "text": "(4; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 4)",
+          "is_correct": true
+        },
+        {
+          "text": "(4; 5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 3,
+        "type_name": "Sisteme liniare după dezvoltare",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 3,
+        "variant": 3,
+        "candidates": [
+          [
+            "4",
+            "4"
+          ],
+          [
+            "3",
+            "5"
+          ],
+          [
+            "3",
+            "4"
+          ],
+          [
+            "4",
+            "5"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați în ℝ², cu x,y≠0: \\(1/x+1/y=7/12,\\quad1/x-1/y=1/12\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=1/x, v=1/y. Adunarea ecuațiilor dă 2u=2/3, deci u=1/3; scăderea dă 2v=1/2, deci v=1/4. Ambele sunt nenule, așadar x=3, y=4.",
+      "options": [
+        {
+          "text": "(4; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 4)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 4,
+        "type_name": "Sisteme cu reciproce",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 4,
+        "variant": 3,
+        "candidates": [
+          [
+            "4",
+            "4"
+          ],
+          [
+            "3",
+            "5"
+          ],
+          [
+            "4",
+            "5"
+          ],
+          [
+            "3",
+            "4"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Care este mulțimea soluțiilor sistemului |x|+|y|=7, |x|−|y|=−1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u=|x|≥0 și v=|y|≥0, sistemul devine u+v=7, u−v=−1, de unde u=3, v=4. Ambele sunt strict pozitive; fiecare necunoscută are independent două semne, rezultând toate cele patru perechi.",
+      "options": [
+        {
+          "text": "{(3; 4); (3; -4); (-3; 4); (-3; -4)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(3; 4)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(3; 4); (3; -4)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(-3; 4); (-3; -4)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 5,
+        "type_name": "Sisteme cu module",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 5,
+        "variant": 3,
+        "candidates": [
+          "{(3; 4); (3; -4); (-3; 4); (-3; -4)}",
+          "{(3; 4)}",
+          "{(3; 4); (3; -4)}",
+          "{(-3; 4); (-3; -4)}"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați \\(1/(x+y)+1/(x-y)=1,\\quad1/(x+y)-1/(x-y)=-1/3\\), cu x+y≠0 și x−y≠0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm u=1/(x+y), v=1/(x−y). Adunând, 2u=2/3, deci u=1/3; apoi v=2/3. Rezultă x+y=3, x−y=3/2, de unde x=9/4, y=3/4. Blocurile sunt nenule, deci soluția este admisă.",
+      "options": [
+        {
+          "text": "(13/4; 3/4)",
+          "is_correct": false
+        },
+        {
+          "text": "(9/4; 3/4)",
+          "is_correct": true
+        },
+        {
+          "text": "(9/4; 7/4)",
+          "is_correct": false
+        },
+        {
+          "text": "(13/4; 7/4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 6,
+        "type_name": "Sisteme cu expresii raționale comune",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 6,
+        "variant": 3,
+        "candidates": [
+          [
+            "13/4",
+            "3/4"
+          ],
+          [
+            "9/4",
+            "3/4"
+          ],
+          [
+            "9/4",
+            "7/4"
+          ],
+          [
+            "13/4",
+            "7/4"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Discutați sistemul mx+y=3, x+my=3, după m∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Determinantul este m²−1. Pentru m≠±1 este nenul. La m=1 ecuațiile coincid: x+y=3. La m=−1, adunarea ecuațiilor ar da 0=6, imposibil deoarece 3>0.",
+      "options": [
+        {
+          "text": "m≠±1: soluție unică; m=−1: infinit de multe; m=1: nicio soluție.",
+          "is_correct": false
+        },
+        {
+          "text": "Soluție unică pentru orice m.",
+          "is_correct": false
+        },
+        {
+          "text": "m≠±1: soluție unică; m=1: infinit de multe soluții; m=−1: nicio soluție.",
+          "is_correct": true
+        },
+        {
+          "text": "m≠±1: nicio soluție; m=±1: infinit de multe soluții.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 7,
+        "type_name": "Discuția sistemului cu parametru",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 7,
+        "variant": 3,
+        "candidates": [
+          "m≠±1: soluție unică; m=−1: infinit de multe; m=1: nicio soluție.",
+          "Soluție unică pentru orice m.",
+          "m≠±1: soluție unică; m=1: infinit de multe soluții; m=−1: nicio soluție.",
+          "m≠±1: nicio soluție; m=±1: infinit de multe soluții."
+        ]
+      }
+    },
+    {
+      "text": "Alegem uniform m din mulțimea întregilor {−3,…,3}. Care este probabilitatea ca mx+y=1, x+my=1 să aibă soluție unică?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sunt 7 valori echiprobabile. Determinantul m²−1 este nul numai la m=−1 și m=1, ambele în mulțime. Rămân 5 valori favorabile; probabilitatea este 5/7.",
+      "options": [
+        {
+          "text": "6/7",
+          "is_correct": false
+        },
+        {
+          "text": "5/8",
+          "is_correct": false
+        },
+        {
+          "text": "7/8",
+          "is_correct": false
+        },
+        {
+          "text": "5/7",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 8,
+        "type_name": "Probabilitatea tipului de sistem",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 8,
+        "variant": 3,
+        "candidates": [
+          "6/7",
+          "5/8",
+          "7/8",
+          "5/7"
+        ]
+      }
+    },
+    {
+      "text": "Fie A(4; 0), B(5; 1), C(4; 1), D(5; 3). Care este poziția dreptelor AB și CD?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pantele sunt 1 și 2: diferite, deci există o intersecție unică. Produsul pantelor este 2, diferit de −1, deci unghiul nu este drept.",
+      "options": [
+        {
+          "text": "Secante, dar nu perpendiculare.",
+          "is_correct": true
+        },
+        {
+          "text": "Paralele distincte.",
+          "is_correct": false
+        },
+        {
+          "text": "Coincidente.",
+          "is_correct": false
+        },
+        {
+          "text": "Perpendiculare.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 1,
+        "type_name": "Poziția dreptelor date prin puncte",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 1,
+        "variant": 4,
+        "candidates": [
+          "Secante, dar nu perpendiculare.",
+          "Paralele distincte.",
+          "Coincidente.",
+          "Perpendiculare."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul x+y=9, 2x−y=3 și indicați punctul de intersecție.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunând ecuațiile, 3x=12, deci x=4; apoi y=9−4=5. Determinantul coeficienților este −3≠0, deci dreptele au exact acest punct comun.",
+      "options": [
+        {
+          "text": "(5; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 5)",
+          "is_correct": true
+        },
+        {
+          "text": "(4; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 6)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 2,
+        "type_name": "Sistem liniar și interpretare geometrică",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 2,
+        "variant": 4,
+        "candidates": [
+          [
+            "5",
+            "5"
+          ],
+          [
+            "4",
+            "5"
+          ],
+          [
+            "4",
+            "6"
+          ],
+          [
+            "5",
+            "6"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul 2(x−1)+y=11, x−(y+1)=−2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm: 2x+y=13 și x−y=−1. Adunând, 3x=12, deci x=4, iar y=x+1=5. Înlocuirea în relațiile inițiale confirmă soluția.",
+      "options": [
+        {
+          "text": "(5; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 5)",
+          "is_correct": true
+        },
+        {
+          "text": "(5; 6)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 3,
+        "type_name": "Sisteme liniare după dezvoltare",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 3,
+        "variant": 4,
+        "candidates": [
+          [
+            "5",
+            "5"
+          ],
+          [
+            "4",
+            "6"
+          ],
+          [
+            "4",
+            "5"
+          ],
+          [
+            "5",
+            "6"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați în ℝ², cu x,y≠0: \\(1/x+1/y=9/20,\\quad1/x-1/y=1/20\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=1/x, v=1/y. Adunarea ecuațiilor dă 2u=1/2, deci u=1/4; scăderea dă 2v=2/5, deci v=1/5. Ambele sunt nenule, așadar x=4, y=5.",
+      "options": [
+        {
+          "text": "(5; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 5)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 4,
+        "type_name": "Sisteme cu reciproce",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 4,
+        "variant": 4,
+        "candidates": [
+          [
+            "5",
+            "5"
+          ],
+          [
+            "4",
+            "6"
+          ],
+          [
+            "5",
+            "6"
+          ],
+          [
+            "4",
+            "5"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Care este mulțimea soluțiilor sistemului |x|+|y|=9, |x|−|y|=−1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u=|x|≥0 și v=|y|≥0, sistemul devine u+v=9, u−v=−1, de unde u=4, v=5. Ambele sunt strict pozitive; fiecare necunoscută are independent două semne, rezultând toate cele patru perechi.",
+      "options": [
+        {
+          "text": "{(4; 5); (4; -5); (-4; 5); (-4; -5)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(4; 5)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(4; 5); (4; -5)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(-4; 5); (-4; -5)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 5,
+        "type_name": "Sisteme cu module",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 5,
+        "variant": 4,
+        "candidates": [
+          "{(4; 5); (4; -5); (-4; 5); (-4; -5)}",
+          "{(4; 5)}",
+          "{(4; 5); (4; -5)}",
+          "{(-4; 5); (-4; -5)}"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați \\(1/(x+y)+1/(x-y)=3/4,\\quad1/(x+y)-1/(x-y)=-1/4\\), cu x+y≠0 și x−y≠0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm u=1/(x+y), v=1/(x−y). Adunând, 2u=1/2, deci u=1/4; apoi v=2/4. Rezultă x+y=4, x−y=2, de unde x=3, y=1. Blocurile sunt nenule, deci soluția este admisă.",
+      "options": [
+        {
+          "text": "(4; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 1)",
+          "is_correct": true
+        },
+        {
+          "text": "(3; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 2)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 6,
+        "type_name": "Sisteme cu expresii raționale comune",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 6,
+        "variant": 4,
+        "candidates": [
+          [
+            "4",
+            "1"
+          ],
+          [
+            "3",
+            "1"
+          ],
+          [
+            "3",
+            "2"
+          ],
+          [
+            "4",
+            "2"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Discutați sistemul mx+y=4, x+my=4, după m∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Determinantul este m²−1. Pentru m≠±1 este nenul. La m=1 ecuațiile coincid: x+y=4. La m=−1, adunarea ecuațiilor ar da 0=8, imposibil deoarece 4>0.",
+      "options": [
+        {
+          "text": "m≠±1: soluție unică; m=−1: infinit de multe; m=1: nicio soluție.",
+          "is_correct": false
+        },
+        {
+          "text": "Soluție unică pentru orice m.",
+          "is_correct": false
+        },
+        {
+          "text": "m≠±1: soluție unică; m=1: infinit de multe soluții; m=−1: nicio soluție.",
+          "is_correct": true
+        },
+        {
+          "text": "m≠±1: nicio soluție; m=±1: infinit de multe soluții.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 7,
+        "type_name": "Discuția sistemului cu parametru",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 7,
+        "variant": 4,
+        "candidates": [
+          "m≠±1: soluție unică; m=−1: infinit de multe; m=1: nicio soluție.",
+          "Soluție unică pentru orice m.",
+          "m≠±1: soluție unică; m=1: infinit de multe soluții; m=−1: nicio soluție.",
+          "m≠±1: nicio soluție; m=±1: infinit de multe soluții."
+        ]
+      }
+    },
+    {
+      "text": "Alegem uniform m din mulțimea întregilor {−4,…,4}. Care este probabilitatea ca mx+y=1, x+my=1 să aibă soluție unică?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sunt 9 valori echiprobabile. Determinantul m²−1 este nul numai la m=−1 și m=1, ambele în mulțime. Rămân 7 valori favorabile; probabilitatea este 7/9.",
+      "options": [
+        {
+          "text": "8/9",
+          "is_correct": false
+        },
+        {
+          "text": "7/10",
+          "is_correct": false
+        },
+        {
+          "text": "9/10",
+          "is_correct": false
+        },
+        {
+          "text": "7/9",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 8,
+        "type_name": "Probabilitatea tipului de sistem",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 8,
+        "variant": 4,
+        "candidates": [
+          "8/9",
+          "7/10",
+          "9/10",
+          "7/9"
+        ]
+      }
+    },
+    {
+      "text": "Fie A(5; 0), B(6; 1), C(5; 1), D(6; 2). Care este poziția dreptelor AB și CD?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele pante sunt 1. Ecuațiile sunt y=x−5 și y=x−4; ordonatele la origine diferă, deci dreptele sunt paralele distincte.",
+      "options": [
+        {
+          "text": "Paralele distincte.",
+          "is_correct": true
+        },
+        {
+          "text": "Coincidente.",
+          "is_correct": false
+        },
+        {
+          "text": "Perpendiculare.",
+          "is_correct": false
+        },
+        {
+          "text": "Secante, dar nu perpendiculare.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 1,
+        "type_name": "Poziția dreptelor date prin puncte",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 1,
+        "variant": 5,
+        "candidates": [
+          "Paralele distincte.",
+          "Coincidente.",
+          "Perpendiculare.",
+          "Secante, dar nu perpendiculare."
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul x+y=11, 2x−y=4 și indicați punctul de intersecție.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunând ecuațiile, 3x=15, deci x=5; apoi y=11−5=6. Determinantul coeficienților este −3≠0, deci dreptele au exact acest punct comun.",
+      "options": [
+        {
+          "text": "(6; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 6)",
+          "is_correct": true
+        },
+        {
+          "text": "(5; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(6; 7)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 2,
+        "type_name": "Sistem liniar și interpretare geometrică",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 2,
+        "variant": 5,
+        "candidates": [
+          [
+            "6",
+            "6"
+          ],
+          [
+            "5",
+            "6"
+          ],
+          [
+            "5",
+            "7"
+          ],
+          [
+            "6",
+            "7"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul 2(x−1)+y=14, x−(y+1)=−2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm: 2x+y=16 și x−y=−1. Adunând, 3x=15, deci x=5, iar y=x+1=6. Înlocuirea în relațiile inițiale confirmă soluția.",
+      "options": [
+        {
+          "text": "(6; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 6)",
+          "is_correct": true
+        },
+        {
+          "text": "(6; 7)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 3,
+        "type_name": "Sisteme liniare după dezvoltare",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 3,
+        "variant": 5,
+        "candidates": [
+          [
+            "6",
+            "6"
+          ],
+          [
+            "5",
+            "7"
+          ],
+          [
+            "5",
+            "6"
+          ],
+          [
+            "6",
+            "7"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați în ℝ², cu x,y≠0: \\(1/x+1/y=11/30,\\quad1/x-1/y=1/30\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=1/x, v=1/y. Adunarea ecuațiilor dă 2u=2/5, deci u=1/5; scăderea dă 2v=1/3, deci v=1/6. Ambele sunt nenule, așadar x=5, y=6.",
+      "options": [
+        {
+          "text": "(6; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(6; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 6)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 4,
+        "type_name": "Sisteme cu reciproce",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 4,
+        "variant": 5,
+        "candidates": [
+          [
+            "6",
+            "6"
+          ],
+          [
+            "5",
+            "7"
+          ],
+          [
+            "6",
+            "7"
+          ],
+          [
+            "5",
+            "6"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Care este mulțimea soluțiilor sistemului |x|+|y|=11, |x|−|y|=−1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cu u=|x|≥0 și v=|y|≥0, sistemul devine u+v=11, u−v=−1, de unde u=5, v=6. Ambele sunt strict pozitive; fiecare necunoscută are independent două semne, rezultând toate cele patru perechi.",
+      "options": [
+        {
+          "text": "{(5; 6); (5; -6); (-5; 6); (-5; -6)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(5; 6)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(5; 6); (5; -6)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(-5; 6); (-5; -6)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 5,
+        "type_name": "Sisteme cu module",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 5,
+        "variant": 5,
+        "candidates": [
+          "{(5; 6); (5; -6); (-5; 6); (-5; -6)}",
+          "{(5; 6)}",
+          "{(5; 6); (5; -6)}",
+          "{(-5; 6); (-5; -6)}"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați \\(1/(x+y)+1/(x-y)=3/5,\\quad1/(x+y)-1/(x-y)=-1/5\\), cu x+y≠0 și x−y≠0.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Notăm u=1/(x+y), v=1/(x−y). Adunând, 2u=2/5, deci u=1/5; apoi v=2/5. Rezultă x+y=5, x−y=5/2, de unde x=15/4, y=5/4. Blocurile sunt nenule, deci soluția este admisă.",
+      "options": [
+        {
+          "text": "(19/4; 5/4)",
+          "is_correct": false
+        },
+        {
+          "text": "(15/4; 5/4)",
+          "is_correct": true
+        },
+        {
+          "text": "(15/4; 9/4)",
+          "is_correct": false
+        },
+        {
+          "text": "(19/4; 9/4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 6,
+        "type_name": "Sisteme cu expresii raționale comune",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 6,
+        "variant": 5,
+        "candidates": [
+          [
+            "19/4",
+            "5/4"
+          ],
+          [
+            "15/4",
+            "5/4"
+          ],
+          [
+            "15/4",
+            "9/4"
+          ],
+          [
+            "19/4",
+            "9/4"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "Discutați sistemul mx+y=5, x+my=5, după m∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Determinantul este m²−1. Pentru m≠±1 este nenul. La m=1 ecuațiile coincid: x+y=5. La m=−1, adunarea ecuațiilor ar da 0=10, imposibil deoarece 5>0.",
+      "options": [
+        {
+          "text": "m≠±1: soluție unică; m=−1: infinit de multe; m=1: nicio soluție.",
+          "is_correct": false
+        },
+        {
+          "text": "Soluție unică pentru orice m.",
+          "is_correct": false
+        },
+        {
+          "text": "m≠±1: soluție unică; m=1: infinit de multe soluții; m=−1: nicio soluție.",
+          "is_correct": true
+        },
+        {
+          "text": "m≠±1: nicio soluție; m=±1: infinit de multe soluții.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 7,
+        "type_name": "Discuția sistemului cu parametru",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 7,
+        "variant": 5,
+        "candidates": [
+          "m≠±1: soluție unică; m=−1: infinit de multe; m=1: nicio soluție.",
+          "Soluție unică pentru orice m.",
+          "m≠±1: soluție unică; m=1: infinit de multe soluții; m=−1: nicio soluție.",
+          "m≠±1: nicio soluție; m=±1: infinit de multe soluții."
+        ]
+      }
+    },
+    {
+      "text": "Alegem uniform m din mulțimea întregilor {−5,…,5}. Care este probabilitatea ca mx+y=1, x+my=1 să aibă soluție unică?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Sunt 11 valori echiprobabile. Determinantul m²−1 este nul numai la m=−1 și m=1, ambele în mulțime. Rămân 9 valori favorabile; probabilitatea este 9/11.",
+      "options": [
+        {
+          "text": "10/11",
+          "is_correct": false
+        },
+        {
+          "text": "3/4",
+          "is_correct": false
+        },
+        {
+          "text": "11/12",
+          "is_correct": false
+        },
+        {
+          "text": "9/11",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.4",
+        "type": 8,
+        "type_name": "Probabilitatea tipului de sistem",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 4,
+        "type": 8,
+        "variant": 5,
+        "candidates": [
+          "10/11",
+          "3/4",
+          "11/12",
+          "9/11"
+        ]
+      }
+    }
+  ]
 }

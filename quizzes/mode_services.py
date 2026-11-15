@@ -1030,6 +1030,17 @@ def submit_fraction_percent_answer(user, question: Question, values: dict) -> di
     return _submit_expected_values(user, question, Question.TYPE_FRACTION_PERCENT, values)
 
 
+def submit_vector_workbench_answer(user, question: Question, values: dict) -> dict:
+    from .vector_workbench import VectorValidationError, check_answer
+    if question.question_type != Question.TYPE_VECTOR_WORKBENCH:
+        raise TopicModeError("Acest exercițiu nu folosește atelierul de vectori.")
+    try:
+        is_correct = check_answer(question.interactive_data, values)
+    except VectorValidationError as exc:
+        raise TopicModeError(str(exc)) from exc
+    return _save_interactive_result(user, question, is_correct)
+
+
 def reset_training_progress(user, topic: Quiz) -> int:
     question_ids = list(topic.questions.values_list("id", flat=True))
     updated = UserQuestionProgress.objects.filter(
@@ -1058,19 +1069,28 @@ def build_training_payload(
         )
         options = list(question.options.all())
         correct_option = next((o for o in options if o.is_correct), None)
+        is_vector = question.question_type == Question.TYPE_VECTOR_WORKBENCH
+        if is_vector:
+            from .vector_workbench import public_config
+            interactive = public_config(question.interactive_data)
+        else:
+            interactive = question.interactive_data
         payload_questions.append(
             {
                 "id": question.id,
                 "text": question.text,
-                "explanation": question.explanation,
+                "explanation": (question.explanation if not is_vector or status == UserQuestionProgress.TRAINING_CORRECT else ""),
                 "type": question.question_type,
                 "format": question.format_tag,
-                "interactive": question.interactive_data,
+                "interactive": interactive,
                 "correctOptionId": correct_option.id if correct_option else None,
                 "status": status,
                 "options": [{"id": o.id, "text": o.text} for o in options],
             }
         )
+        if is_vector and status == UserQuestionProgress.TRAINING_CORRECT:
+            from .vector_workbench import solved_values
+            payload_questions[-1]["solvedValues"] = solved_values(question.interactive_data)
 
     return {
         "topicId": topic.pk,

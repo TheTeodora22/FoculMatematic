@@ -1,6 +1,1287 @@
 {
-  "title": "Proprietăți generale ale funcțiilor: mărginire, paritate, periodicitate și monotonie",
+  "title": "Mărginirea funcțiilor",
   "description": "Clasa a 9-a · Funcții",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Fie f:{−2;−1;0;1;2}→ℝ, f(x)=x²−1. Aflați (min f; max f).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Imaginea este {−1; 0; 3}. Minimul -1 se atinge la 0, iar maximul 3 la ±2. Domeniul finit asigură mărginirea.",
+      "options": [
+        {
+          "text": "(-1; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "(-2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; -1)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 1,
+        "type_name": "Mărginire pe domeniu finit",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(n)=cmmdc(n,12), n∈ℕ*, unde cmmdc este cel mai mare divizor comun. Care este maximul funcției?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "cmmdc(n,12) este un divizor pozitiv al lui 12, deci 1≤f(n)≤12. Pentru n=12 se atinge valoarea 12; aceasta este maximul.",
+      "options": [
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": true
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 2,
+        "type_name": "Funcții cu valori aritmetice limitate",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:[0,+∞)→ℝ, f(x)=min(x,2). Care este imaginea sa?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru 0≤x≤2, f(x)=x; pentru x≥2, f(x)=2. Se obțin exact valorile din [0,2], ambele capete fiind atinse.",
+      "options": [
+        {
+          "text": "[0, 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(0, 2]",
+          "is_correct": false
+        },
+        {
+          "text": "[0, 2]",
+          "is_correct": true
+        },
+        {
+          "text": "[0, 3]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 3,
+        "type_name": "Trunchiere prin minim",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Notăm {x}=x−⌊x⌋. Pentru f:ℝ→ℝ, f(x)=1+2{x}, care este imaginea?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0≤{x}<1 implică 1≤f(x)<3. Orice valoare din interval se obține alegând x∈[0,1) corespunzător. Capătul inferior este atins la întregi; cel superior nu este atins.",
+      "options": [
+        {
+          "text": "[1, 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(1, 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(1, 3]",
+          "is_correct": false
+        },
+        {
+          "text": "[1, 3)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 4,
+        "type_name": "Mărginire prin parte fracționară",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=2x²/(1+x²). Care este imaginea?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(x)=2−2/(1+x²), deci 0≤f(x)<2. Minimul 0 se atinge la x=0. Pentru 0≤y<2, ecuația x²=y/(2−y) are soluții reale, deci toate aceste valori sunt atinse.",
+      "options": [
+        {
+          "text": "[0, 2)",
+          "is_correct": true
+        },
+        {
+          "text": "[0, 2]",
+          "is_correct": false
+        },
+        {
+          "text": "(0, 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-∞, 2)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 5,
+        "type_name": "Mărginire a funcțiilor raționale",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:(0,1]→ℝ, f(x)=1/x+1. Calculați f(1/4); acest șir de argumente ilustrează nemărginirea superioară.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În general, pentru xₙ=1/n, avem f(xₙ)=n+1. Pentru orice prag M alegem întregul n>M−1, deci nu există o margine superioară. La n=4, valoarea este 5.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 6,
+        "type_name": "Nemărginire prin șir de argumente",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a∈ℝ funcția f(x)=2{x}+(a−1)⌊x⌋, x∈ℝ, este mărginită? Aici {x}=x−⌊x⌋.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La întregul n, f(n)=(a−1)n. Dacă a≠1, valorile sunt nemărginite când n parcurge ℤ. Pentru a=1, rămâne 2{x}, cu valori în [0,2).",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 7,
+        "type_name": "Parametri pentru mărginire",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n≥1, f(n) este rădăcina pozitivă t a ecuației t²+2t−n²=0. Care afirmație este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rădăcina pozitivă este f(n)=√(n²+1)−1>0. Cum √(n²+1)≥n, avem f(n)≥n−1, deci funcția depășește orice prag. Cealaltă rădăcină este negativă și nu este selectată.",
+      "options": [
+        {
+          "text": "Mărginită superior și inferior",
+          "is_correct": false
+        },
+        {
+          "text": "Nemărginită inferior",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Mărginită inferior, nemărginită superior",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 8,
+        "type_name": "Funcții definite prin soluția unei ecuații",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:{−2;−1;0;1;2}→ℝ, f(x)=x²−2. Aflați (min f; max f).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Imaginea este {−2; −1; 2}. Minimul -2 se atinge la 0, iar maximul 2 la ±2. Domeniul finit asigură mărginirea.",
+      "options": [
+        {
+          "text": "(-2; 2)",
+          "is_correct": true
+        },
+        {
+          "text": "(-3; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; -2)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 1,
+        "type_name": "Mărginire pe domeniu finit",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(n)=cmmdc(n,18), n∈ℕ*, unde cmmdc este cel mai mare divizor comun. Care este maximul funcției?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "cmmdc(n,18) este un divizor pozitiv al lui 18, deci 1≤f(n)≤18. Pentru n=18 se atinge valoarea 18; aceasta este maximul.",
+      "options": [
+        {
+          "text": "17",
+          "is_correct": false
+        },
+        {
+          "text": "18",
+          "is_correct": true
+        },
+        {
+          "text": "19",
+          "is_correct": false
+        },
+        {
+          "text": "20",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 2,
+        "type_name": "Funcții cu valori aritmetice limitate",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:[0,+∞)→ℝ, f(x)=min(x,3). Care este imaginea sa?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru 0≤x≤3, f(x)=x; pentru x≥3, f(x)=3. Se obțin exact valorile din [0,3], ambele capete fiind atinse.",
+      "options": [
+        {
+          "text": "[0, 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(0, 3]",
+          "is_correct": false
+        },
+        {
+          "text": "[0, 3]",
+          "is_correct": true
+        },
+        {
+          "text": "[0, 4]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 3,
+        "type_name": "Trunchiere prin minim",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Notăm {x}=x−⌊x⌋. Pentru f:ℝ→ℝ, f(x)=2+3{x}, care este imaginea?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0≤{x}<1 implică 2≤f(x)<5. Orice valoare din interval se obține alegând x∈[0,1) corespunzător. Capătul inferior este atins la întregi; cel superior nu este atins.",
+      "options": [
+        {
+          "text": "[2, 5]",
+          "is_correct": false
+        },
+        {
+          "text": "(2, 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(2, 5]",
+          "is_correct": false
+        },
+        {
+          "text": "[2, 5)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 4,
+        "type_name": "Mărginire prin parte fracționară",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=3x²/(1+x²). Care este imaginea?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(x)=3−3/(1+x²), deci 0≤f(x)<3. Minimul 0 se atinge la x=0. Pentru 0≤y<3, ecuația x²=y/(3−y) are soluții reale, deci toate aceste valori sunt atinse.",
+      "options": [
+        {
+          "text": "[0, 3)",
+          "is_correct": true
+        },
+        {
+          "text": "[0, 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(0, 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(-∞, 3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 5,
+        "type_name": "Mărginire a funcțiilor raționale",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:(0,1]→ℝ, f(x)=1/x+2. Calculați f(1/5); acest șir de argumente ilustrează nemărginirea superioară.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În general, pentru xₙ=1/n, avem f(xₙ)=n+2. Pentru orice prag M alegem întregul n>M−2, deci nu există o margine superioară. La n=5, valoarea este 7.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 6,
+        "type_name": "Nemărginire prin șir de argumente",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a∈ℝ funcția f(x)=3{x}+(a−2)⌊x⌋, x∈ℝ, este mărginită? Aici {x}=x−⌊x⌋.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La întregul n, f(n)=(a−2)n. Dacă a≠2, valorile sunt nemărginite când n parcurge ℤ. Pentru a=2, rămâne 3{x}, cu valori în [0,3).",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 7,
+        "type_name": "Parametri pentru mărginire",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n≥1, f(n) este rădăcina pozitivă t a ecuației t²+4t−n²=0. Care afirmație este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rădăcina pozitivă este f(n)=√(n²+4)−2>0. Cum √(n²+4)≥n, avem f(n)≥n−2, deci funcția depășește orice prag. Cealaltă rădăcină este negativă și nu este selectată.",
+      "options": [
+        {
+          "text": "Mărginită superior și inferior",
+          "is_correct": false
+        },
+        {
+          "text": "Nemărginită inferior",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Mărginită inferior, nemărginită superior",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 8,
+        "type_name": "Funcții definite prin soluția unei ecuații",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:{−2;−1;0;1;2}→ℝ, f(x)=x²−3. Aflați (min f; max f).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Imaginea este {−3; −2; 1}. Minimul -3 se atinge la 0, iar maximul 1 la ±2. Domeniul finit asigură mărginirea.",
+      "options": [
+        {
+          "text": "(-3; 1)",
+          "is_correct": true
+        },
+        {
+          "text": "(-4; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; -3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 1,
+        "type_name": "Mărginire pe domeniu finit",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(n)=cmmdc(n,24), n∈ℕ*, unde cmmdc este cel mai mare divizor comun. Care este maximul funcției?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "cmmdc(n,24) este un divizor pozitiv al lui 24, deci 1≤f(n)≤24. Pentru n=24 se atinge valoarea 24; aceasta este maximul.",
+      "options": [
+        {
+          "text": "23",
+          "is_correct": false
+        },
+        {
+          "text": "24",
+          "is_correct": true
+        },
+        {
+          "text": "25",
+          "is_correct": false
+        },
+        {
+          "text": "26",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 2,
+        "type_name": "Funcții cu valori aritmetice limitate",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:[0,+∞)→ℝ, f(x)=min(x,4). Care este imaginea sa?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru 0≤x≤4, f(x)=x; pentru x≥4, f(x)=4. Se obțin exact valorile din [0,4], ambele capete fiind atinse.",
+      "options": [
+        {
+          "text": "[0, 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(0, 4]",
+          "is_correct": false
+        },
+        {
+          "text": "[0, 4]",
+          "is_correct": true
+        },
+        {
+          "text": "[0, 5]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 3,
+        "type_name": "Trunchiere prin minim",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Notăm {x}=x−⌊x⌋. Pentru f:ℝ→ℝ, f(x)=3+4{x}, care este imaginea?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0≤{x}<1 implică 3≤f(x)<7. Orice valoare din interval se obține alegând x∈[0,1) corespunzător. Capătul inferior este atins la întregi; cel superior nu este atins.",
+      "options": [
+        {
+          "text": "[3, 7]",
+          "is_correct": false
+        },
+        {
+          "text": "(3, 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(3, 7]",
+          "is_correct": false
+        },
+        {
+          "text": "[3, 7)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 4,
+        "type_name": "Mărginire prin parte fracționară",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=4x²/(1+x²). Care este imaginea?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(x)=4−4/(1+x²), deci 0≤f(x)<4. Minimul 0 se atinge la x=0. Pentru 0≤y<4, ecuația x²=y/(4−y) are soluții reale, deci toate aceste valori sunt atinse.",
+      "options": [
+        {
+          "text": "[0, 4)",
+          "is_correct": true
+        },
+        {
+          "text": "[0, 4]",
+          "is_correct": false
+        },
+        {
+          "text": "(0, 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(-∞, 4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 5,
+        "type_name": "Mărginire a funcțiilor raționale",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:(0,1]→ℝ, f(x)=1/x+3. Calculați f(1/6); acest șir de argumente ilustrează nemărginirea superioară.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În general, pentru xₙ=1/n, avem f(xₙ)=n+3. Pentru orice prag M alegem întregul n>M−3, deci nu există o margine superioară. La n=6, valoarea este 9.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 6,
+        "type_name": "Nemărginire prin șir de argumente",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a∈ℝ funcția f(x)=4{x}+(a−3)⌊x⌋, x∈ℝ, este mărginită? Aici {x}=x−⌊x⌋.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La întregul n, f(n)=(a−3)n. Dacă a≠3, valorile sunt nemărginite când n parcurge ℤ. Pentru a=3, rămâne 4{x}, cu valori în [0,4).",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 7,
+        "type_name": "Parametri pentru mărginire",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n≥1, f(n) este rădăcina pozitivă t a ecuației t²+6t−n²=0. Care afirmație este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rădăcina pozitivă este f(n)=√(n²+9)−3>0. Cum √(n²+9)≥n, avem f(n)≥n−3, deci funcția depășește orice prag. Cealaltă rădăcină este negativă și nu este selectată.",
+      "options": [
+        {
+          "text": "Mărginită superior și inferior",
+          "is_correct": false
+        },
+        {
+          "text": "Nemărginită inferior",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Mărginită inferior, nemărginită superior",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 8,
+        "type_name": "Funcții definite prin soluția unei ecuații",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:{−2;−1;0;1;2}→ℝ, f(x)=x²−4. Aflați (min f; max f).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Imaginea este {−4; −3; 0}. Minimul -4 se atinge la 0, iar maximul 0 la ±2. Domeniul finit asigură mărginirea.",
+      "options": [
+        {
+          "text": "(-4; 0)",
+          "is_correct": true
+        },
+        {
+          "text": "(-5; 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4; 1)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; -4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 1,
+        "type_name": "Mărginire pe domeniu finit",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(n)=cmmdc(n,30), n∈ℕ*, unde cmmdc este cel mai mare divizor comun. Care este maximul funcției?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "cmmdc(n,30) este un divizor pozitiv al lui 30, deci 1≤f(n)≤30. Pentru n=30 se atinge valoarea 30; aceasta este maximul.",
+      "options": [
+        {
+          "text": "29",
+          "is_correct": false
+        },
+        {
+          "text": "30",
+          "is_correct": true
+        },
+        {
+          "text": "31",
+          "is_correct": false
+        },
+        {
+          "text": "32",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 2,
+        "type_name": "Funcții cu valori aritmetice limitate",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:[0,+∞)→ℝ, f(x)=min(x,5). Care este imaginea sa?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru 0≤x≤5, f(x)=x; pentru x≥5, f(x)=5. Se obțin exact valorile din [0,5], ambele capete fiind atinse.",
+      "options": [
+        {
+          "text": "[0, 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(0, 5]",
+          "is_correct": false
+        },
+        {
+          "text": "[0, 5]",
+          "is_correct": true
+        },
+        {
+          "text": "[0, 6]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 3,
+        "type_name": "Trunchiere prin minim",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Notăm {x}=x−⌊x⌋. Pentru f:ℝ→ℝ, f(x)=4+5{x}, care este imaginea?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0≤{x}<1 implică 4≤f(x)<9. Orice valoare din interval se obține alegând x∈[0,1) corespunzător. Capătul inferior este atins la întregi; cel superior nu este atins.",
+      "options": [
+        {
+          "text": "[4, 9]",
+          "is_correct": false
+        },
+        {
+          "text": "(4, 9)",
+          "is_correct": false
+        },
+        {
+          "text": "(4, 9]",
+          "is_correct": false
+        },
+        {
+          "text": "[4, 9)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 4,
+        "type_name": "Mărginire prin parte fracționară",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=5x²/(1+x²). Care este imaginea?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(x)=5−5/(1+x²), deci 0≤f(x)<5. Minimul 0 se atinge la x=0. Pentru 0≤y<5, ecuația x²=y/(5−y) are soluții reale, deci toate aceste valori sunt atinse.",
+      "options": [
+        {
+          "text": "[0, 5)",
+          "is_correct": true
+        },
+        {
+          "text": "[0, 5]",
+          "is_correct": false
+        },
+        {
+          "text": "(0, 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(-∞, 5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 5,
+        "type_name": "Mărginire a funcțiilor raționale",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:(0,1]→ℝ, f(x)=1/x+4. Calculați f(1/7); acest șir de argumente ilustrează nemărginirea superioară.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În general, pentru xₙ=1/n, avem f(xₙ)=n+4. Pentru orice prag M alegem întregul n>M−4, deci nu există o margine superioară. La n=7, valoarea este 11.",
+      "options": [
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": true
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 6,
+        "type_name": "Nemărginire prin șir de argumente",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a∈ℝ funcția f(x)=5{x}+(a−4)⌊x⌋, x∈ℝ, este mărginită? Aici {x}=x−⌊x⌋.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La întregul n, f(n)=(a−4)n. Dacă a≠4, valorile sunt nemărginite când n parcurge ℤ. Pentru a=4, rămâne 5{x}, cu valori în [0,5).",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 7,
+        "type_name": "Parametri pentru mărginire",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n≥1, f(n) este rădăcina pozitivă t a ecuației t²+8t−n²=0. Care afirmație este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rădăcina pozitivă este f(n)=√(n²+16)−4>0. Cum √(n²+16)≥n, avem f(n)≥n−4, deci funcția depășește orice prag. Cealaltă rădăcină este negativă și nu este selectată.",
+      "options": [
+        {
+          "text": "Mărginită superior și inferior",
+          "is_correct": false
+        },
+        {
+          "text": "Nemărginită inferior",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Mărginită inferior, nemărginită superior",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 8,
+        "type_name": "Funcții definite prin soluția unei ecuații",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:{−2;−1;0;1;2}→ℝ, f(x)=x²−5. Aflați (min f; max f).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Imaginea este {−5; −4; −1}. Minimul -5 se atinge la 0, iar maximul -1 la ±2. Domeniul finit asigură mărginirea.",
+      "options": [
+        {
+          "text": "(-5; -1)",
+          "is_correct": true
+        },
+        {
+          "text": "(-6; -1)",
+          "is_correct": false
+        },
+        {
+          "text": "(-5; 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; -5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 1,
+        "type_name": "Mărginire pe domeniu finit",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(n)=cmmdc(n,36), n∈ℕ*, unde cmmdc este cel mai mare divizor comun. Care este maximul funcției?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "cmmdc(n,36) este un divizor pozitiv al lui 36, deci 1≤f(n)≤36. Pentru n=36 se atinge valoarea 36; aceasta este maximul.",
+      "options": [
+        {
+          "text": "35",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": true
+        },
+        {
+          "text": "37",
+          "is_correct": false
+        },
+        {
+          "text": "38",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 2,
+        "type_name": "Funcții cu valori aritmetice limitate",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:[0,+∞)→ℝ, f(x)=min(x,6). Care este imaginea sa?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru 0≤x≤6, f(x)=x; pentru x≥6, f(x)=6. Se obțin exact valorile din [0,6], ambele capete fiind atinse.",
+      "options": [
+        {
+          "text": "[0, 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(0, 6]",
+          "is_correct": false
+        },
+        {
+          "text": "[0, 6]",
+          "is_correct": true
+        },
+        {
+          "text": "[0, 7]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 3,
+        "type_name": "Trunchiere prin minim",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Notăm {x}=x−⌊x⌋. Pentru f:ℝ→ℝ, f(x)=5+6{x}, care este imaginea?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "0≤{x}<1 implică 5≤f(x)<11. Orice valoare din interval se obține alegând x∈[0,1) corespunzător. Capătul inferior este atins la întregi; cel superior nu este atins.",
+      "options": [
+        {
+          "text": "[5, 11]",
+          "is_correct": false
+        },
+        {
+          "text": "(5, 11)",
+          "is_correct": false
+        },
+        {
+          "text": "(5, 11]",
+          "is_correct": false
+        },
+        {
+          "text": "[5, 11)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 4,
+        "type_name": "Mărginire prin parte fracționară",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=6x²/(1+x²). Care este imaginea?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(x)=6−6/(1+x²), deci 0≤f(x)<6. Minimul 0 se atinge la x=0. Pentru 0≤y<6, ecuația x²=y/(6−y) are soluții reale, deci toate aceste valori sunt atinse.",
+      "options": [
+        {
+          "text": "[0, 6)",
+          "is_correct": true
+        },
+        {
+          "text": "[0, 6]",
+          "is_correct": false
+        },
+        {
+          "text": "(0, 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(-∞, 6)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 5,
+        "type_name": "Mărginire a funcțiilor raționale",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:(0,1]→ℝ, f(x)=1/x+5. Calculați f(1/8); acest șir de argumente ilustrează nemărginirea superioară.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În general, pentru xₙ=1/n, avem f(xₙ)=n+5. Pentru orice prag M alegem întregul n>M−5, deci nu există o margine superioară. La n=8, valoarea este 13.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": true
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 6,
+        "type_name": "Nemărginire prin șir de argumente",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a∈ℝ funcția f(x)=6{x}+(a−5)⌊x⌋, x∈ℝ, este mărginită? Aici {x}=x−⌊x⌋.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La întregul n, f(n)=(a−5)n. Dacă a≠5, valorile sunt nemărginite când n parcurge ℤ. Pentru a=5, rămâne 6{x}, cu valori în [0,6).",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 7,
+        "type_name": "Parametri pentru mărginire",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru n≥1, f(n) este rădăcina pozitivă t a ecuației t²+10t−n²=0. Care afirmație este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rădăcina pozitivă este f(n)=√(n²+25)−5>0. Cum √(n²+25)≥n, avem f(n)≥n−5, deci funcția depășește orice prag. Cealaltă rădăcină este negativă și nu este selectată.",
+      "options": [
+        {
+          "text": "Mărginită superior și inferior",
+          "is_correct": false
+        },
+        {
+          "text": "Nemărginită inferior",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Mărginită inferior, nemărginită superior",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.1",
+        "type": 8,
+        "type_name": "Funcții definite prin soluția unei ecuații",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    }
+  ]
 }

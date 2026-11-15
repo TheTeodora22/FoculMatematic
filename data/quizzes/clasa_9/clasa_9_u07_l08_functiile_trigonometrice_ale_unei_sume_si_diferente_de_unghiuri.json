@@ -1,6 +1,5392 @@
 {
   "title": "Funcțiile trigonometrice ale unei sume și diferențe de unghiuri",
   "description": "Clasa a 9-a · Elemente de trigonometrie",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "hard",
+  "questions": [
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{4}\\), y=\\(\\frac{\\pi}{6}\\). Calculați \\(\\sin{\\left(x - y \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula sinusului diferenței este sin x cos y−cos x sin y. Folosim valori remarcabile ale unghiurilor date și păstrăm semnul diferenței. Acesta este un calcul exact, fără aproximări. Rezultatul cerut este \\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 - \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 1,
+        "type_name": "Valori exacte prin sumă de unghiuri",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x-y)",
+        "expression_latex": "\\sin{\\left(x - y \\right)}",
+        "givens": {
+          "x": "pi/4",
+          "y": "pi/6"
+        },
+        "option_values": [
+          "-sqrt(2)/4 + sqrt(6)/4",
+          "-sqrt(2)/4 + sqrt(6)/4 + 1",
+          "-1 - sqrt(2)/4 + sqrt(6)/4",
+          "-sqrt(2)/4 + sqrt(6)/4 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\sin{\\left(- x + \\frac{\\pi}{4} \\right)} + \\cos{\\left(- x + \\frac{\\pi}{4} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm cele două funcții ale diferenței. Termenii cu sin x se anulează, iar expresia devine √2 cos x. Rezultatul cerut este \\(\\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + \\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + \\frac{5}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 2,
+        "type_name": "Argument decalat cu π/4",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(pi/4-x)+sin(pi/4-x)",
+        "expression_latex": "\\sin{\\left(- x + \\frac{\\pi}{4} \\right)} + \\cos{\\left(- x + \\frac{\\pi}{4} \\right)}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "sqrt(3)/2 + 3/2",
+          "1/2 + sqrt(3)/2",
+          "-1/2 + sqrt(3)/2",
+          "sqrt(3)/2 + 5/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunosc sin x=\\(\\frac{3}{5}\\) și cos y=\\(- \\frac{4}{5}\\), cu x în cadranul I și y în cadranul II. Calculați sin(x+y). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația fundamentală și cadranele dau cos x>0 și sin y>0. Apoi sin(x+y)=sin x cos y+cos x sin y. Semnul cos y este negativ și nu poate fi înlocuit cu rădăcina pozitivă. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 3,
+        "type_name": "Funcțiile sumei și diferenței din date separate",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "angle_sum_from_values",
+        "sine_x": "3/5",
+        "cosine_y": "-4/5",
+        "quadrant_x": 1,
+        "quadrant_y": 2,
+        "requested": "sin_sum",
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{4}\\). Calculați \\(\\cos{\\left(\\frac{x}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Folosim cos²(x/2)=(1+cos x)/2. Semnul lui cos(x/2) se alege după intervalul lui x/2; pentru x=3π/2 jumătatea este în cadranul II și cosinusul este negativ. Rezultatul cerut este \\(\\frac{\\sqrt{\\sqrt{2} + 2}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{\\sqrt{2} + 2}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{\\sqrt{2} + 2}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{\\sqrt{2} + 2}}{2} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{\\sqrt{2} + 2}}{2}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 4,
+        "type_name": "Unghiuri de jumătate ale unghiurilor remarcabile",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x/2)",
+        "expression_latex": "\\cos{\\left(\\frac{x}{2} \\right)}",
+        "givens": {
+          "x": "pi/4"
+        },
+        "option_values": [
+          "sqrt(sqrt(2) + 2)/2 + 1",
+          "-1 + sqrt(sqrt(2) + 2)/2",
+          "sqrt(sqrt(2) + 2)/2 + 2",
+          "sqrt(sqrt(2) + 2)/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{1}{7}\\). Calculați \\(\\sin{\\left(x \\right)} + \\sin{\\left(x + \\frac{2 \\pi}{3} \\right)} + \\sin{\\left(x + \\frac{4 \\pi}{3} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm termenii decalați. Coeficientul lui sin x este 1+cos(2π/3)+cos(4π/3)=0, iar coeficientul lui cos x este sin(2π/3)+sin(4π/3)=0. Suma este identic zero. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 5,
+        "type_name": "Sume de termeni cu decalaje regulate",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)+sin(x+2*pi/3)+sin(x+4*pi/3)",
+        "expression_latex": "\\sin{\\left(x \\right)} + \\sin{\\left(x + \\frac{2 \\pi}{3} \\right)} + \\sin{\\left(x + \\frac{4 \\pi}{3} \\right)}",
+        "givens": {
+          "x": "1/7"
+        },
+        "option_values": [
+          "0",
+          "1",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Două unghiuri reale satisfac sin x+sin y=\\(- \\frac{\\sqrt{2}}{4} + \\frac{1}{2} + \\frac{\\sqrt{6}}{4}\\) și cos x+cos y=\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{3}}{2}\\). Calculați cos(x−y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunăm pătratele celor două sume. Relațiile fundamentale pentru x și y dau 2+2(sin x sin y+cos x cos y)=2+2cos(x−y). Izolăm cosinusul diferenței; nu este nevoie să recuperăm separat unghiurile. Rezultatul cerut este \\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 6,
+        "type_name": "Diferența unghiurilor din relații combinate",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "difference_from_sums",
+        "sine_sum": "-sqrt(2)/4 + 1/2 + sqrt(6)/4",
+        "cosine_sum": "sqrt(2)/4 + sqrt(6)/4 + sqrt(3)/2",
+        "option_values": [
+          "sqrt(2)/4 + sqrt(6)/4 + 1",
+          "sqrt(2)/4 + sqrt(6)/4",
+          "-1 + sqrt(2)/4 + sqrt(6)/4",
+          "sqrt(2)/4 + sqrt(6)/4 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{12}\\), a=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\sin{\\left(- a + x \\right)} + \\sin{\\left(a + x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula sumă–produs sau dezvoltarea adunării reduce expresia la 2sin x cos a. Unghiul fix este precizat și toate funcțiile există. Rezultatul cerut este \\(1 - \\frac{\\sqrt{3}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(2 - \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1 - \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3 - \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 7,
+        "type_name": "Transformarea la o singură funcție",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x+a)+sin(x-a)",
+        "expression_latex": "\\sin{\\left(- a + x \\right)} + \\sin{\\left(a + x \\right)}",
+        "givens": {
+          "x": "pi/12",
+          "a": "5*pi/12"
+        },
+        "option_values": [
+          "2 - sqrt(3)/2",
+          "-sqrt(3)/2",
+          "1 - sqrt(3)/2",
+          "3 - sqrt(3)/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{12}\\), y=\\(\\frac{\\pi}{6}\\). Calculați \\(\\cos{\\left(x - y \\right)} \\cos{\\left(x + y \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin formulele de adunare, produsul este cos²x cos²y−sin²x sin²y=cos²x−sin²y. Nu se impun condiții suplimentare de numitor. Rezultatul cerut este \\(\\frac{1}{4} + \\frac{\\sqrt{3}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{4} + \\frac{5}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{3}{4} + \\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{4} + \\frac{9}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{4} + \\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 8,
+        "type_name": "Produse de funcții cu argumente simetrice",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x+y)*cos(x-y)",
+        "expression_latex": "\\cos{\\left(x - y \\right)} \\cos{\\left(x + y \\right)}",
+        "givens": {
+          "x": "pi/12",
+          "y": "pi/6"
+        },
+        "option_values": [
+          "sqrt(3)/4 + 5/4",
+          "-3/4 + sqrt(3)/4",
+          "sqrt(3)/4 + 9/4",
+          "1/4 + sqrt(3)/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\sin{\\left(2 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunarea cu argumente egale dă sin2x=2sin x cos x. Înlocuim valorile exacte ale unghiului din această variantă. Rezultatul cerut este \\(\\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 9,
+        "type_name": "Unghi dublu în sin și cos",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(2*x)",
+        "expression_latex": "\\sin{\\left(2 x \\right)}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "1/2",
+          "3/2",
+          "-1/2",
+          "5/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\frac{2 \\tan{\\left(x \\right)}}{1 - \\tan^{2}{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tangenta unghiului dublu este 2tan x/(1−tan²x). Se verifică atât cos x≠0, cât și 1−tan²x≠0 în datele acestei variante; nu sunt admise argumente la care tan2x nu există. Rezultatul cerut este \\(\\frac{\\sqrt{3}}{3}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 10,
+        "type_name": "Unghi dublu pentru tangentă",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "2*tan(x)/(1-tan(x)**2)",
+        "expression_latex": "\\frac{2 \\tan{\\left(x \\right)}}{1 - \\tan^{2}{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "sqrt(3)/3 + 1",
+          "sqrt(3)/3",
+          "-1 + sqrt(3)/3",
+          "sqrt(3)/3 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\frac{\\sin{\\left(2 x \\right)}}{\\cos{\\left(2 x \\right)} + 1}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din sin2x=2sin x cos x și 1+cos2x=2cos²x rezultă tan x. Numitorul cere cos x≠0; datele satisfac această restricție. Rezultatul cerut este \\(2 - \\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(3 - \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1 - \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 - \\sqrt{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4 - \\sqrt{3}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 11,
+        "type_name": "Tangenta din unghi dublu",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(2*x)/(1+cos(2*x))",
+        "expression_latex": "\\frac{\\sin{\\left(2 x \\right)}}{\\cos{\\left(2 x \\right)} + 1}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "3 - sqrt(3)",
+          "1 - sqrt(3)",
+          "2 - sqrt(3)",
+          "4 - sqrt(3)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunoaște cos x=\\(\\frac{4}{5}\\), cu x în cadranul 1 și 0<x<2π. Determinați (sin(x/2);cos(x/2)).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formulele de înjumătățire dau pătratele celor două valori. Din 0<x<2π rezultă sin(x/2)>0; cos(x/2) este pozitiv pentru x<π și negativ pentru x>π. Aceste condiții aleg ramurile corecte ale radicalilor. Rezultatul cerut este \\(\\left( \\frac{\\sqrt{10}}{10}, \\  \\frac{3 \\sqrt{10}}{10}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{\\sqrt{10}}{10} + 1, \\  \\frac{3 \\sqrt{10}}{10}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -1 + \\frac{\\sqrt{10}}{10}, \\  \\frac{3 \\sqrt{10}}{10}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{\\sqrt{10}}{10} + 2, \\  \\frac{3 \\sqrt{10}}{10}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{\\sqrt{10}}{10}, \\  \\frac{3 \\sqrt{10}}{10}\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 12,
+        "type_name": "Funcțiile unghiului pe jumătate",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "half_angle_from_cos",
+        "cosine": "4/5",
+        "quadrant": 1,
+        "option_values": [
+          "(sqrt(10)/10 + 1, 3*sqrt(10)/10)",
+          "(-1 + sqrt(10)/10, 3*sqrt(10)/10)",
+          "(sqrt(10)/10 + 2, 3*sqrt(10)/10)",
+          "(sqrt(10)/10, 3*sqrt(10)/10)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\sin{\\left(3 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem 3x=2x+x și aplicăm formulele de adunare și dublare. După sin²x+cos²x=1 rezultă sin3x=3sin x−4sin³x. Rezultatul cerut este \\(\\frac{\\sqrt{2}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 13,
+        "type_name": "Unghi triplu",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(3*x)",
+        "expression_latex": "\\sin{\\left(3 x \\right)}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "sqrt(2)/2",
+          "sqrt(2)/2 + 1",
+          "-1 + sqrt(2)/2",
+          "sqrt(2)/2 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\cos{\\left(4 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm de două ori formula cos2u=2cos²u−1, obținând cos4x=8cos⁴x−8cos²x+1. Rezultatul cerut este \\(\\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 14,
+        "type_name": "Unghi cvadruplu și puteri",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(4*x)",
+        "expression_latex": "\\cos{\\left(4 x \\right)}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "3/2",
+          "1/2",
+          "-1/2",
+          "5/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiurile x,y sunt ascuțite, cu tan x=\\(\\frac{1}{2}\\) și tan y=\\(\\frac{1}{3}\\). Calculați tan(2x+y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi tan2x=2a/(1−a²), apoi tan(2x+y)=(tan2x+b)/(1−b tan2x). Echivalent, rezultatul este [2a+b(1−a²)]/[1−a²−2ab]. Ambele formule au numitori nenuli pentru valorile date. Rezultatul cerut este \\(3\\).",
+      "options": [
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 15,
+        "type_name": "Combinarea unghiului dublu cu un alt unghi",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "double_sum_from_tangents",
+        "tangent_x": "1/2",
+        "tangent_y": "1/3",
+        "option_values": [
+          "4",
+          "2",
+          "3",
+          "5"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\tan{\\left(x \\right)} + 2 \\tan{\\left(2 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația cot u−2cot2u=tan u, aplicată pentru u=x și u=2x, produce tan x+2tan2x=cot x−4cot4x. În această variantă toate tangentele/cotangentele folosite sunt definite. Rezultatul cerut este \\(2 - \\frac{\\sqrt{3}}{3}\\).",
+      "options": [
+        {
+          "text": "\\(3 - \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1 - \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 - \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 - \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 16,
+        "type_name": "Identități cu tangente la argumente dublate",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(x)+2*tan(2*x)",
+        "expression_latex": "\\tan{\\left(x \\right)} + 2 \\tan{\\left(2 x \\right)}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "3 - sqrt(3)/3",
+          "1 - sqrt(3)/3",
+          "4 - sqrt(3)/3",
+          "2 - sqrt(3)/3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunosc (sin x;sin y;sin z)=\\(\\left( \\frac{3}{5}, \\  \\frac{3}{5}, \\  - \\frac{3}{5}\\right)\\), iar x,y,z sunt în cadranele I,II,IV, în această ordine. Calculați sin(x+y+z).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Recuperăm cosinușii din relația fundamentală, cu semnele +,−,+ impuse de cadrane. Aplicăm adunarea de două ori: sin(x+y+z)=sin x cos y cos z+cos x sin y cos z+cos x cos y sin z−sin x sin y sin z. Rezultatul cerut este \\(\\frac{3}{5}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{3}{5}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{8}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{2}{5}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{13}{5}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 17,
+        "type_name": "Funcțiile sumei a trei unghiuri",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "three_angle_sum",
+        "sines": [
+          "3/5",
+          "3/5",
+          "-3/5"
+        ],
+        "quadrants": [
+          1,
+          2,
+          4
+        ],
+        "requested": "sin_sum",
+        "option_values": [
+          "3/5",
+          "8/5",
+          "-2/5",
+          "13/5"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\frac{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)} + \\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}{- \\sin^{2}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numărătorul este sin2x, iar numitorul cos2x. Raportul este tan2x; pentru valorile date cos2x≠0, deci fracția inițială este definită. Rezultatul cerut este \\(\\frac{\\sqrt{3}}{3}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 18,
+        "type_name": "Fracții cu sume și diferențe de argumente",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(sin(x)*cos(x)+cos(x)*sin(x))/(cos(x)**2-sin(x)**2)",
+        "expression_latex": "\\frac{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)} + \\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}{- \\sin^{2}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "sqrt(3)/3 + 1",
+          "sqrt(3)/3",
+          "-1 + sqrt(3)/3",
+          "sqrt(3)/3 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{1}{4}\\). Calculați \\(- \\sin{\\left(x^{2} \\right)} \\sin{\\left(- x^{2} + x \\right)} - \\cos{\\left(x \\right)} + \\cos{\\left(x^{2} \\right)} \\cos{\\left(- x^{2} + x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tratăm u=x−x² și v=x² ca două argumente reale. Primele două produse sunt cos(u+v)=cos x; scăderea lui cos x dă zero pentru orice x. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 19,
+        "type_name": "Identități cu argumente dependente neliniar",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x-x**2)*cos(x**2)-sin(x-x**2)*sin(x**2)-cos(x)",
+        "expression_latex": "- \\sin{\\left(x^{2} \\right)} \\sin{\\left(- x^{2} + x \\right)} - \\cos{\\left(x \\right)} + \\cos{\\left(x^{2} \\right)} \\cos{\\left(- x^{2} + x \\right)}",
+        "givens": {
+          "x": "1/4"
+        },
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\prod_{k=0}^{1}\\left(\\cos{\\left(2^{k} x \\right)}\\right)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dublările succesive dau sin(2ⁿx)=2ⁿsin x·∏cos(2ᵏx), pentru n numărul de factori. Aici sin x≠0 și niciun pas nu împarte la un sinus nul; evaluarea directă confirmă produsul. Rezultatul cerut este \\(- \\frac{1}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{3}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{5}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{7}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{4}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 20,
+        "type_name": "Produse de cosinusuri pe scară geometrică",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "finite_product",
+        "term": "cos(2**k*x)",
+        "term_latex": "\\cos{\\left(2^{k} x \\right)}",
+        "index": "k",
+        "lower": 0,
+        "upper": 1,
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "3/4",
+          "-5/4",
+          "7/4",
+          "-1/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\prod_{k=0}^{1}\\left(\\frac{\\left(\\cos{\\left(\\frac{x}{2^{k}} \\right)} + 1\\right) \\sin{\\left(\\frac{x}{2^{k + 1}} \\right)}}{\\sin{\\left(\\frac{x}{2^{k}} \\right)}}\\right)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Folosind 1+cos u=2cos²(u/2) și sin u=2sin(u/2)cos(u/2), fiecare factor devine cos(u/2). Sinusurile din numitorii inițiali sunt nenule în această variantă. Produsul rămas se calculează exact; este un produs finit explicit cu argumente înjumătățite. Rezultatul cerut este \\(\\frac{\\sqrt{6}}{8} + \\frac{3 \\sqrt{2}}{8}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{6}}{8} + \\frac{3 \\sqrt{2}}{8}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{6}}{8} + \\frac{3 \\sqrt{2}}{8} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{6}}{8} + \\frac{3 \\sqrt{2}}{8}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{6}}{8} + \\frac{3 \\sqrt{2}}{8} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 21,
+        "type_name": "Rapoarte la unghiuri înjumătățite",
+        "variant": 1,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "finite_product",
+        "term": "(1+cos(x/2**k))*sin(x/2**(k+1))/sin(x/2**k)",
+        "term_latex": "\\frac{\\left(\\cos{\\left(\\frac{x}{2^{k}} \\right)} + 1\\right) \\sin{\\left(\\frac{x}{2^{k + 1}} \\right)}}{\\sin{\\left(\\frac{x}{2^{k}} \\right)}}",
+        "index": "k",
+        "lower": 0,
+        "upper": 1,
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "sqrt(6)/8 + 3*sqrt(2)/8",
+          "sqrt(6)/8 + 3*sqrt(2)/8 + 1",
+          "-1 + sqrt(6)/8 + 3*sqrt(2)/8",
+          "sqrt(6)/8 + 3*sqrt(2)/8 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\), y=\\(\\frac{\\pi}{4}\\). Calculați \\(\\sin{\\left(x - y \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula sinusului diferenței este sin x cos y−cos x sin y. Folosim valori remarcabile ale unghiurilor date și păstrăm semnul diferenței. Acesta este un calcul exact, fără aproximări. Rezultatul cerut este \\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 - \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 1,
+        "type_name": "Valori exacte prin sumă de unghiuri",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x-y)",
+        "expression_latex": "\\sin{\\left(x - y \\right)}",
+        "givens": {
+          "x": "pi/3",
+          "y": "pi/4"
+        },
+        "option_values": [
+          "-sqrt(2)/4 + sqrt(6)/4 + 1",
+          "-sqrt(2)/4 + sqrt(6)/4",
+          "-1 - sqrt(2)/4 + sqrt(6)/4",
+          "-sqrt(2)/4 + sqrt(6)/4 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{8}\\). Calculați \\(\\sin{\\left(- x + \\frac{\\pi}{4} \\right)} + \\cos{\\left(- x + \\frac{\\pi}{4} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm cele două funcții ale diferenței. Termenii cu sin x se anulează, iar expresia devine √2 cos x. Rezultatul cerut este \\(\\frac{\\sqrt{2 \\sqrt{2} + 4}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{\\sqrt{2 \\sqrt{2} + 4}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{2 \\sqrt{2} + 4}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2 \\sqrt{2} + 4}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2 \\sqrt{2} + 4}}{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 2,
+        "type_name": "Argument decalat cu π/4",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(pi/4-x)+sin(pi/4-x)",
+        "expression_latex": "\\sin{\\left(- x + \\frac{\\pi}{4} \\right)} + \\cos{\\left(- x + \\frac{\\pi}{4} \\right)}",
+        "givens": {
+          "x": "pi/8"
+        },
+        "option_values": [
+          "1 + sqrt(2*sqrt(2) + 4)/2",
+          "-1 + sqrt(2*sqrt(2) + 4)/2",
+          "sqrt(2*sqrt(2) + 4)/2",
+          "sqrt(2*sqrt(2) + 4)/2 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunosc sin x=\\(\\frac{5}{13}\\) și cos y=\\(- \\frac{12}{13}\\), cu x în cadranul I și y în cadranul II. Calculați sin(x+y). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația fundamentală și cadranele dau cos x>0 și sin y>0. Apoi sin(x+y)=sin x cos y+cos x sin y. Semnul cos y este negativ și nu poate fi înlocuit cu rădăcina pozitivă. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 3,
+        "type_name": "Funcțiile sumei și diferenței din date separate",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "angle_sum_from_values",
+        "sine_x": "5/13",
+        "cosine_y": "-12/13",
+        "quadrant_x": 1,
+        "quadrant_y": 2,
+        "requested": "sin_sum",
+        "option_values": [
+          "1",
+          "-1",
+          "2",
+          "0"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{2}\\). Calculați \\(\\cos{\\left(\\frac{x}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Folosim cos²(x/2)=(1+cos x)/2. Semnul lui cos(x/2) se alege după intervalul lui x/2; pentru x=3π/2 jumătatea este în cadranul II și cosinusul este negativ. Rezultatul cerut este \\(\\frac{\\sqrt{2}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 4,
+        "type_name": "Unghiuri de jumătate ale unghiurilor remarcabile",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x/2)",
+        "expression_latex": "\\cos{\\left(\\frac{x}{2} \\right)}",
+        "givens": {
+          "x": "pi/2"
+        },
+        "option_values": [
+          "sqrt(2)/2",
+          "sqrt(2)/2 + 1",
+          "-1 + sqrt(2)/2",
+          "sqrt(2)/2 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{2}{7}\\). Calculați \\(\\sin{\\left(x \\right)} + \\sin{\\left(x + \\frac{2 \\pi}{3} \\right)} + \\sin{\\left(x + \\frac{4 \\pi}{3} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm termenii decalați. Coeficientul lui sin x este 1+cos(2π/3)+cos(4π/3)=0, iar coeficientul lui cos x este sin(2π/3)+sin(4π/3)=0. Suma este identic zero. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 5,
+        "type_name": "Sume de termeni cu decalaje regulate",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)+sin(x+2*pi/3)+sin(x+4*pi/3)",
+        "expression_latex": "\\sin{\\left(x \\right)} + \\sin{\\left(x + \\frac{2 \\pi}{3} \\right)} + \\sin{\\left(x + \\frac{4 \\pi}{3} \\right)}",
+        "givens": {
+          "x": "2/7"
+        },
+        "option_values": [
+          "1",
+          "0",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Două unghiuri reale satisfac sin x+sin y=\\(1\\) și cos x+cos y=\\(\\sqrt{3}\\). Calculați cos(x−y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunăm pătratele celor două sume. Relațiile fundamentale pentru x și y dau 2+2(sin x sin y+cos x cos y)=2+2cos(x−y). Izolăm cosinusul diferenței; nu este nevoie să recuperăm separat unghiurile. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 6,
+        "type_name": "Diferența unghiurilor din relații combinate",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "difference_from_sums",
+        "sine_sum": "1",
+        "cosine_sum": "sqrt(3)",
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{6}\\), a=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\sin{\\left(- a + x \\right)} + \\sin{\\left(a + x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula sumă–produs sau dezvoltarea adunării reduce expresia la 2sin x cos a. Unghiul fix este precizat și toate funcțiile există. Rezultatul cerut este \\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 - \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 7,
+        "type_name": "Transformarea la o singură funcție",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x+a)+sin(x-a)",
+        "expression_latex": "\\sin{\\left(- a + x \\right)} + \\sin{\\left(a + x \\right)}",
+        "givens": {
+          "x": "pi/6",
+          "a": "5*pi/12"
+        },
+        "option_values": [
+          "-sqrt(2)/4 + sqrt(6)/4 + 1",
+          "-1 - sqrt(2)/4 + sqrt(6)/4",
+          "-sqrt(2)/4 + sqrt(6)/4 + 2",
+          "-sqrt(2)/4 + sqrt(6)/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{6}\\), y=\\(\\frac{\\pi}{6}\\). Calculați \\(\\cos{\\left(x - y \\right)} \\cos{\\left(x + y \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin formulele de adunare, produsul este cos²x cos²y−sin²x sin²y=cos²x−sin²y. Nu se impun condiții suplimentare de numitor. Rezultatul cerut este \\(\\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 8,
+        "type_name": "Produse de funcții cu argumente simetrice",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x+y)*cos(x-y)",
+        "expression_latex": "\\cos{\\left(x - y \\right)} \\cos{\\left(x + y \\right)}",
+        "givens": {
+          "x": "pi/6",
+          "y": "pi/6"
+        },
+        "option_values": [
+          "1/2",
+          "3/2",
+          "-1/2",
+          "5/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\sin{\\left(2 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunarea cu argumente egale dă sin2x=2sin x cos x. Înlocuim valorile exacte ale unghiului din această variantă. Rezultatul cerut este \\(\\frac{\\sqrt{3}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 9,
+        "type_name": "Unghi dublu în sin și cos",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(2*x)",
+        "expression_latex": "\\sin{\\left(2 x \\right)}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "sqrt(3)/2 + 1",
+          "sqrt(3)/2",
+          "-1 + sqrt(3)/2",
+          "sqrt(3)/2 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{8}\\). Calculați \\(\\frac{2 \\tan{\\left(x \\right)}}{1 - \\tan^{2}{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tangenta unghiului dublu este 2tan x/(1−tan²x). Se verifică atât cos x≠0, cât și 1−tan²x≠0 în datele acestei variante; nu sunt admise argumente la care tan2x nu există. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 10,
+        "type_name": "Unghi dublu pentru tangentă",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "2*tan(x)/(1-tan(x)**2)",
+        "expression_latex": "\\frac{2 \\tan{\\left(x \\right)}}{1 - \\tan^{2}{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/8"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{8}\\). Calculați \\(\\frac{\\sin{\\left(2 x \\right)}}{\\cos{\\left(2 x \\right)} + 1}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din sin2x=2sin x cos x și 1+cos2x=2cos²x rezultă tan x. Numitorul cere cos x≠0; datele satisfac această restricție. Rezultatul cerut este \\(-1 + \\sqrt{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\sqrt{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-2 + \\sqrt{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1 + \\sqrt{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\sqrt{2}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 11,
+        "type_name": "Tangenta din unghi dublu",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(2*x)/(1+cos(2*x))",
+        "expression_latex": "\\frac{\\sin{\\left(2 x \\right)}}{\\cos{\\left(2 x \\right)} + 1}",
+        "givens": {
+          "x": "pi/8"
+        },
+        "option_values": [
+          "sqrt(2)",
+          "-2 + sqrt(2)",
+          "1 + sqrt(2)",
+          "-1 + sqrt(2)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunoaște cos x=\\(- \\frac{12}{13}\\), cu x în cadranul 2 și 0<x<2π. Determinați (sin(x/2);cos(x/2)).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formulele de înjumătățire dau pătratele celor două valori. Din 0<x<2π rezultă sin(x/2)>0; cos(x/2) este pozitiv pentru x<π și negativ pentru x>π. Aceste condiții aleg ramurile corecte ale radicalilor. Rezultatul cerut este \\(\\left( \\frac{5 \\sqrt{26}}{26}, \\  \\frac{\\sqrt{26}}{26}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{5 \\sqrt{26}}{26}, \\  \\frac{\\sqrt{26}}{26}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( \\frac{5 \\sqrt{26}}{26} + 1, \\  \\frac{\\sqrt{26}}{26}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -1 + \\frac{5 \\sqrt{26}}{26}, \\  \\frac{\\sqrt{26}}{26}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{5 \\sqrt{26}}{26} + 2, \\  \\frac{\\sqrt{26}}{26}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 12,
+        "type_name": "Funcțiile unghiului pe jumătate",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "half_angle_from_cos",
+        "cosine": "-12/13",
+        "quadrant": 2,
+        "option_values": [
+          "(5*sqrt(26)/26, sqrt(26)/26)",
+          "(5*sqrt(26)/26 + 1, sqrt(26)/26)",
+          "(-1 + 5*sqrt(26)/26, sqrt(26)/26)",
+          "(5*sqrt(26)/26 + 2, sqrt(26)/26)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{8}\\). Calculați \\(\\sin{\\left(3 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem 3x=2x+x și aplicăm formulele de adunare și dublare. După sin²x+cos²x=1 rezultă sin3x=3sin x−4sin³x. Rezultatul cerut este \\(\\frac{\\sqrt{\\sqrt{2} + 2}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{\\sqrt{2} + 2}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{\\sqrt{2} + 2}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{\\sqrt{2} + 2}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{\\sqrt{2} + 2}}{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 13,
+        "type_name": "Unghi triplu",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(3*x)",
+        "expression_latex": "\\sin{\\left(3 x \\right)}",
+        "givens": {
+          "x": "pi/8"
+        },
+        "option_values": [
+          "sqrt(sqrt(2) + 2)/2 + 1",
+          "sqrt(sqrt(2) + 2)/2",
+          "-1 + sqrt(sqrt(2) + 2)/2",
+          "sqrt(sqrt(2) + 2)/2 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{8}\\). Calculați \\(\\cos{\\left(4 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm de două ori formula cos2u=2cos²u−1, obținând cos4x=8cos⁴x−8cos²x+1. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 14,
+        "type_name": "Unghi cvadruplu și puteri",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(4*x)",
+        "expression_latex": "\\cos{\\left(4 x \\right)}",
+        "givens": {
+          "x": "pi/8"
+        },
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiurile x,y sunt ascuțite, cu tan x=\\(\\frac{2}{3}\\) și tan y=\\(\\frac{1}{4}\\). Calculați tan(2x+y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi tan2x=2a/(1−a²), apoi tan(2x+y)=(tan2x+b)/(1−b tan2x). Echivalent, rezultatul este [2a+b(1−a²)]/[1−a²−2ab]. Ambele formule au numitori nenuli pentru valorile date. Rezultatul cerut este \\(\\frac{53}{8}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{61}{8}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{45}{8}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{69}{8}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{53}{8}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 15,
+        "type_name": "Combinarea unghiului dublu cu un alt unghi",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "double_sum_from_tangents",
+        "tangent_x": "2/3",
+        "tangent_y": "1/4",
+        "option_values": [
+          "61/8",
+          "45/8",
+          "69/8",
+          "53/8"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{8}\\). Calculați \\(\\tan{\\left(x \\right)} + 2 \\tan{\\left(2 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația cot u−2cot2u=tan u, aplicată pentru u=x și u=2x, produce tan x+2tan2x=cot x−4cot4x. În această variantă toate tangentele/cotangentele folosite sunt definite. Rezultatul cerut este \\(1 + \\sqrt{2}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\sqrt{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\sqrt{2} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\sqrt{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\sqrt{2} + 3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 16,
+        "type_name": "Identități cu tangente la argumente dublate",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(x)+2*tan(2*x)",
+        "expression_latex": "\\tan{\\left(x \\right)} + 2 \\tan{\\left(2 x \\right)}",
+        "givens": {
+          "x": "pi/8"
+        },
+        "option_values": [
+          "1 + sqrt(2)",
+          "sqrt(2) + 2",
+          "sqrt(2)",
+          "sqrt(2) + 3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunosc (sin x;sin y;sin z)=\\(\\left( \\frac{5}{13}, \\  \\frac{5}{13}, \\  - \\frac{5}{13}\\right)\\), iar x,y,z sunt în cadranele I,II,IV, în această ordine. Calculați sin(x+y+z).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Recuperăm cosinușii din relația fundamentală, cu semnele +,−,+ impuse de cadrane. Aplicăm adunarea de două ori: sin(x+y+z)=sin x cos y cos z+cos x sin y cos z+cos x cos y sin z−sin x sin y sin z. Rezultatul cerut este \\(\\frac{5}{13}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{18}{13}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5}{13}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{8}{13}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{31}{13}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 17,
+        "type_name": "Funcțiile sumei a trei unghiuri",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "three_angle_sum",
+        "sines": [
+          "5/13",
+          "5/13",
+          "-5/13"
+        ],
+        "quadrants": [
+          1,
+          2,
+          4
+        ],
+        "requested": "sin_sum",
+        "option_values": [
+          "18/13",
+          "5/13",
+          "-8/13",
+          "31/13"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{8}\\). Calculați \\(\\frac{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)} + \\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}{- \\sin^{2}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numărătorul este sin2x, iar numitorul cos2x. Raportul este tan2x; pentru valorile date cos2x≠0, deci fracția inițială este definită. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 18,
+        "type_name": "Fracții cu sume și diferențe de argumente",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(sin(x)*cos(x)+cos(x)*sin(x))/(cos(x)**2-sin(x)**2)",
+        "expression_latex": "\\frac{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)} + \\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}{- \\sin^{2}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/8"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{1}{2}\\). Calculați \\(- \\sin{\\left(x^{2} \\right)} \\sin{\\left(- x^{2} + x \\right)} - \\cos{\\left(x \\right)} + \\cos{\\left(x^{2} \\right)} \\cos{\\left(- x^{2} + x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tratăm u=x−x² și v=x² ca două argumente reale. Primele două produse sunt cos(u+v)=cos x; scăderea lui cos x dă zero pentru orice x. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 19,
+        "type_name": "Identități cu argumente dependente neliniar",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x-x**2)*cos(x**2)-sin(x-x**2)*sin(x**2)-cos(x)",
+        "expression_latex": "- \\sin{\\left(x^{2} \\right)} \\sin{\\left(- x^{2} + x \\right)} - \\cos{\\left(x \\right)} + \\cos{\\left(x^{2} \\right)} \\cos{\\left(- x^{2} + x \\right)}",
+        "givens": {
+          "x": "1/2"
+        },
+        "option_values": [
+          "1",
+          "-1",
+          "2",
+          "0"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\prod_{k=0}^{2}\\left(\\cos{\\left(2^{k} x \\right)}\\right)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dublările succesive dau sin(2ⁿx)=2ⁿsin x·∏cos(2ᵏx), pentru n numărul de factori. Aici sin x≠0 și niciun pas nu împarte la un sinus nul; evaluarea directă confirmă produsul. Rezultatul cerut este \\(\\frac{1}{8}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{1}{8}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{9}{8}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{7}{8}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{17}{8}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 20,
+        "type_name": "Produse de cosinusuri pe scară geometrică",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "finite_product",
+        "term": "cos(2**k*x)",
+        "term_latex": "\\cos{\\left(2^{k} x \\right)}",
+        "index": "k",
+        "lower": 0,
+        "upper": 2,
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "1/8",
+          "9/8",
+          "-7/8",
+          "17/8"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{2}\\). Calculați \\(\\prod_{k=0}^{1}\\left(\\frac{\\left(\\cos{\\left(\\frac{x}{2^{k}} \\right)} + 1\\right) \\sin{\\left(\\frac{x}{2^{k + 1}} \\right)}}{\\sin{\\left(\\frac{x}{2^{k}} \\right)}}\\right)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Folosind 1+cos u=2cos²(u/2) și sin u=2sin(u/2)cos(u/2), fiecare factor devine cos(u/2). Sinusurile din numitorii inițiali sunt nenule în această variantă. Produsul rămas se calculează exact; este un produs finit explicit cu argumente înjumătățite. Rezultatul cerut este \\(\\frac{\\sqrt{2 - \\sqrt{2}} \\left(\\sqrt{2} + 2\\right)}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2 - \\sqrt{2}} \\left(\\sqrt{2} + 2\\right)}{4} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2 - \\sqrt{2}} \\left(\\sqrt{2} + 2\\right)}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{2 - \\sqrt{2}} \\left(\\sqrt{2} + 2\\right)}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2 - \\sqrt{2}} \\left(\\sqrt{2} + 2\\right)}{4} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 21,
+        "type_name": "Rapoarte la unghiuri înjumătățite",
+        "variant": 2,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "finite_product",
+        "term": "(1+cos(x/2**k))*sin(x/2**(k+1))/sin(x/2**k)",
+        "term_latex": "\\frac{\\left(\\cos{\\left(\\frac{x}{2^{k}} \\right)} + 1\\right) \\sin{\\left(\\frac{x}{2^{k + 1}} \\right)}}{\\sin{\\left(\\frac{x}{2^{k}} \\right)}}",
+        "index": "k",
+        "lower": 0,
+        "upper": 1,
+        "givens": {
+          "x": "pi/2"
+        },
+        "option_values": [
+          "sqrt(2 - sqrt(2))*(sqrt(2) + 2)/4 + 1",
+          "sqrt(2 - sqrt(2))*(sqrt(2) + 2)/4",
+          "-1 + sqrt(2 - sqrt(2))*(sqrt(2) + 2)/4",
+          "sqrt(2 - sqrt(2))*(sqrt(2) + 2)/4 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{4}\\), y=\\(\\frac{\\pi}{3}\\). Calculați \\(\\sin{\\left(x - y \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula sinusului diferenței este sin x cos y−cos x sin y. Folosim valori remarcabile ale unghiurilor date și păstrăm semnul diferenței. Acesta este un calcul exact, fără aproximări. Rezultatul cerut este \\(- \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 - \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 1,
+        "type_name": "Valori exacte prin sumă de unghiuri",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x-y)",
+        "expression_latex": "\\sin{\\left(x - y \\right)}",
+        "givens": {
+          "x": "pi/4",
+          "y": "pi/3"
+        },
+        "option_values": [
+          "-sqrt(6)/4 + sqrt(2)/4 + 1",
+          "-1 - sqrt(6)/4 + sqrt(2)/4",
+          "-sqrt(6)/4 + sqrt(2)/4",
+          "-sqrt(6)/4 + sqrt(2)/4 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\sin{\\left(- x + \\frac{\\pi}{4} \\right)} + \\cos{\\left(- x + \\frac{\\pi}{4} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm cele două funcții ale diferenței. Termenii cu sin x se anulează, iar expresia devine √2 cos x. Rezultatul cerut este \\(\\frac{\\sqrt{6}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{\\sqrt{6}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{6}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{6}}{2} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{6}}{2}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 2,
+        "type_name": "Argument decalat cu π/4",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(pi/4-x)+sin(pi/4-x)",
+        "expression_latex": "\\sin{\\left(- x + \\frac{\\pi}{4} \\right)} + \\cos{\\left(- x + \\frac{\\pi}{4} \\right)}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "1 + sqrt(6)/2",
+          "-1 + sqrt(6)/2",
+          "sqrt(6)/2 + 2",
+          "sqrt(6)/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunosc sin x=\\(\\frac{8}{17}\\) și cos y=\\(- \\frac{15}{17}\\), cu x în cadranul I și y în cadranul II. Calculați sin(x+y). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația fundamentală și cadranele dau cos x>0 și sin y>0. Apoi sin(x+y)=sin x cos y+cos x sin y. Semnul cos y este negativ și nu poate fi înlocuit cu rădăcina pozitivă. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 3,
+        "type_name": "Funcțiile sumei și diferenței din date separate",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "angle_sum_from_values",
+        "sine_x": "8/17",
+        "cosine_y": "-15/17",
+        "quadrant_x": 1,
+        "quadrant_y": 2,
+        "requested": "sin_sum",
+        "option_values": [
+          "0",
+          "1",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{3 \\pi}{4}\\). Calculați \\(\\cos{\\left(\\frac{x}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Folosim cos²(x/2)=(1+cos x)/2. Semnul lui cos(x/2) se alege după intervalul lui x/2; pentru x=3π/2 jumătatea este în cadranul II și cosinusul este negativ. Rezultatul cerut este \\(\\frac{\\sqrt{2 - \\sqrt{2}}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2 - \\sqrt{2}}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2 - \\sqrt{2}}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{2 - \\sqrt{2}}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2 - \\sqrt{2}}}{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 4,
+        "type_name": "Unghiuri de jumătate ale unghiurilor remarcabile",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x/2)",
+        "expression_latex": "\\cos{\\left(\\frac{x}{2} \\right)}",
+        "givens": {
+          "x": "3*pi/4"
+        },
+        "option_values": [
+          "sqrt(2 - sqrt(2))/2 + 1",
+          "sqrt(2 - sqrt(2))/2",
+          "-1 + sqrt(2 - sqrt(2))/2",
+          "sqrt(2 - sqrt(2))/2 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{3}{7}\\). Calculați \\(\\sin{\\left(x \\right)} + \\sin{\\left(x + \\frac{2 \\pi}{3} \\right)} + \\sin{\\left(x + \\frac{4 \\pi}{3} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm termenii decalați. Coeficientul lui sin x este 1+cos(2π/3)+cos(4π/3)=0, iar coeficientul lui cos x este sin(2π/3)+sin(4π/3)=0. Suma este identic zero. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 5,
+        "type_name": "Sume de termeni cu decalaje regulate",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)+sin(x+2*pi/3)+sin(x+4*pi/3)",
+        "expression_latex": "\\sin{\\left(x \\right)} + \\sin{\\left(x + \\frac{2 \\pi}{3} \\right)} + \\sin{\\left(x + \\frac{4 \\pi}{3} \\right)}",
+        "givens": {
+          "x": "3/7"
+        },
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Două unghiuri reale satisfac sin x+sin y=\\(\\frac{1}{2} + \\frac{\\sqrt{2}}{2}\\) și cos x+cos y=\\(\\frac{\\sqrt{2}}{2} + \\frac{\\sqrt{3}}{2}\\). Calculați cos(x−y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunăm pătratele celor două sume. Relațiile fundamentale pentru x și y dau 2+2(sin x sin y+cos x cos y)=2+2cos(x−y). Izolăm cosinusul diferenței; nu este nevoie să recuperăm separat unghiurile. Rezultatul cerut este \\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 6,
+        "type_name": "Diferența unghiurilor din relații combinate",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "difference_from_sums",
+        "sine_sum": "1/2 + sqrt(2)/2",
+        "cosine_sum": "sqrt(2)/2 + sqrt(3)/2",
+        "option_values": [
+          "sqrt(2)/4 + sqrt(6)/4 + 1",
+          "-1 + sqrt(2)/4 + sqrt(6)/4",
+          "sqrt(2)/4 + sqrt(6)/4 + 2",
+          "sqrt(2)/4 + sqrt(6)/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{4}\\), a=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\sin{\\left(- a + x \\right)} + \\sin{\\left(a + x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula sumă–produs sau dezvoltarea adunării reduce expresia la 2sin x cos a. Unghiul fix este precizat și toate funcțiile există. Rezultatul cerut este \\(- \\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{3}{2} + \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + \\frac{3}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 7,
+        "type_name": "Transformarea la o singură funcție",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x+a)+sin(x-a)",
+        "expression_latex": "\\sin{\\left(- a + x \\right)} + \\sin{\\left(a + x \\right)}",
+        "givens": {
+          "x": "pi/4",
+          "a": "5*pi/12"
+        },
+        "option_values": [
+          "-1/2 + sqrt(3)/2",
+          "1/2 + sqrt(3)/2",
+          "-3/2 + sqrt(3)/2",
+          "sqrt(3)/2 + 3/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{4}\\), y=\\(\\frac{\\pi}{6}\\). Calculați \\(\\cos{\\left(x - y \\right)} \\cos{\\left(x + y \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin formulele de adunare, produsul este cos²x cos²y−sin²x sin²y=cos²x−sin²y. Nu se impun condiții suplimentare de numitor. Rezultatul cerut este \\(\\frac{1}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{5}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{3}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{9}{4}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 8,
+        "type_name": "Produse de funcții cu argumente simetrice",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x+y)*cos(x-y)",
+        "expression_latex": "\\cos{\\left(x - y \\right)} \\cos{\\left(x + y \\right)}",
+        "givens": {
+          "x": "pi/4",
+          "y": "pi/6"
+        },
+        "option_values": [
+          "5/4",
+          "1/4",
+          "-3/4",
+          "9/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{4}\\). Calculați \\(\\sin{\\left(2 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunarea cu argumente egale dă sin2x=2sin x cos x. Înlocuim valorile exacte ale unghiului din această variantă. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 9,
+        "type_name": "Unghi dublu în sin și cos",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(2*x)",
+        "expression_latex": "\\sin{\\left(2 x \\right)}",
+        "givens": {
+          "x": "pi/4"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\frac{2 \\tan{\\left(x \\right)}}{1 - \\tan^{2}{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tangenta unghiului dublu este 2tan x/(1−tan²x). Se verifică atât cos x≠0, cât și 1−tan²x≠0 în datele acestei variante; nu sunt admise argumente la care tan2x nu există. Rezultatul cerut este \\(\\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\sqrt{3} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\sqrt{3}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 10,
+        "type_name": "Unghi dublu pentru tangentă",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "2*tan(x)/(1-tan(x)**2)",
+        "expression_latex": "\\frac{2 \\tan{\\left(x \\right)}}{1 - \\tan^{2}{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "1 + sqrt(3)",
+          "-1 + sqrt(3)",
+          "sqrt(3) + 2",
+          "sqrt(3)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\frac{\\sin{\\left(2 x \\right)}}{\\cos{\\left(2 x \\right)} + 1}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din sin2x=2sin x cos x și 1+cos2x=2cos²x rezultă tan x. Numitorul cere cos x≠0; datele satisfac această restricție. Rezultatul cerut este \\(\\frac{\\sqrt{3}}{3}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 11,
+        "type_name": "Tangenta din unghi dublu",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(2*x)/(1+cos(2*x))",
+        "expression_latex": "\\frac{\\sin{\\left(2 x \\right)}}{\\cos{\\left(2 x \\right)} + 1}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "sqrt(3)/3",
+          "sqrt(3)/3 + 1",
+          "-1 + sqrt(3)/3",
+          "sqrt(3)/3 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunoaște cos x=\\(- \\frac{15}{17}\\), cu x în cadranul 3 și 0<x<2π. Determinați (sin(x/2);cos(x/2)).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formulele de înjumătățire dau pătratele celor două valori. Din 0<x<2π rezultă sin(x/2)>0; cos(x/2) este pozitiv pentru x<π și negativ pentru x>π. Aceste condiții aleg ramurile corecte ale radicalilor. Rezultatul cerut este \\(\\left( \\frac{4 \\sqrt{17}}{17}, \\  - \\frac{\\sqrt{17}}{17}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{4 \\sqrt{17}}{17} + 1, \\  - \\frac{\\sqrt{17}}{17}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{4 \\sqrt{17}}{17}, \\  - \\frac{\\sqrt{17}}{17}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -1 + \\frac{4 \\sqrt{17}}{17}, \\  - \\frac{\\sqrt{17}}{17}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{4 \\sqrt{17}}{17} + 2, \\  - \\frac{\\sqrt{17}}{17}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 12,
+        "type_name": "Funcțiile unghiului pe jumătate",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "half_angle_from_cos",
+        "cosine": "-15/17",
+        "quadrant": 3,
+        "option_values": [
+          "(4*sqrt(17)/17 + 1, -sqrt(17)/17)",
+          "(4*sqrt(17)/17, -sqrt(17)/17)",
+          "(-1 + 4*sqrt(17)/17, -sqrt(17)/17)",
+          "(4*sqrt(17)/17 + 2, -sqrt(17)/17)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\sin{\\left(3 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem 3x=2x+x și aplicăm formulele de adunare și dublare. După sin²x+cos²x=1 rezultă sin3x=3sin x−4sin³x. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 13,
+        "type_name": "Unghi triplu",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(3*x)",
+        "expression_latex": "\\sin{\\left(3 x \\right)}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\cos{\\left(4 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm de două ori formula cos2u=2cos²u−1, obținând cos4x=8cos⁴x−8cos²x+1. Rezultatul cerut este \\(- \\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 14,
+        "type_name": "Unghi cvadruplu și puteri",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(4*x)",
+        "expression_latex": "\\cos{\\left(4 x \\right)}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "1/2",
+          "-3/2",
+          "3/2",
+          "-1/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiurile x,y sunt ascuțite, cu tan x=\\(\\frac{3}{4}\\) și tan y=\\(\\frac{1}{5}\\). Calculați tan(2x+y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi tan2x=2a/(1−a²), apoi tan(2x+y)=(tan2x+b)/(1−b tan2x). Echivalent, rezultatul este [2a+b(1−a²)]/[1−a²−2ab]. Ambele formule au numitori nenuli pentru valorile date. Rezultatul cerut este \\(\\frac{127}{11}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{127}{11}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{138}{11}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{116}{11}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{149}{11}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 15,
+        "type_name": "Combinarea unghiului dublu cu un alt unghi",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "double_sum_from_tangents",
+        "tangent_x": "3/4",
+        "tangent_y": "1/5",
+        "option_values": [
+          "127/11",
+          "138/11",
+          "116/11",
+          "149/11"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\tan{\\left(x \\right)} + 2 \\tan{\\left(2 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația cot u−2cot2u=tan u, aplicată pentru u=x și u=2x, produce tan x+2tan2x=cot x−4cot4x. În această variantă toate tangentele/cotangentele folosite sunt definite. Rezultatul cerut este \\(\\frac{7 \\sqrt{3}}{3}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{7 \\sqrt{3}}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{7 \\sqrt{3}}{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{7 \\sqrt{3}}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{7 \\sqrt{3}}{3}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 16,
+        "type_name": "Identități cu tangente la argumente dublate",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(x)+2*tan(2*x)",
+        "expression_latex": "\\tan{\\left(x \\right)} + 2 \\tan{\\left(2 x \\right)}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "1 + 7*sqrt(3)/3",
+          "7*sqrt(3)/3",
+          "-1 + 7*sqrt(3)/3",
+          "2 + 7*sqrt(3)/3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunosc (sin x;sin y;sin z)=\\(\\left( \\frac{8}{17}, \\  \\frac{8}{17}, \\  - \\frac{8}{17}\\right)\\), iar x,y,z sunt în cadranele I,II,IV, în această ordine. Calculați sin(x+y+z).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Recuperăm cosinușii din relația fundamentală, cu semnele +,−,+ impuse de cadrane. Aplicăm adunarea de două ori: sin(x+y+z)=sin x cos y cos z+cos x sin y cos z+cos x cos y sin z−sin x sin y sin z. Rezultatul cerut este \\(\\frac{8}{17}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{25}{17}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{9}{17}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{8}{17}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{42}{17}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 17,
+        "type_name": "Funcțiile sumei a trei unghiuri",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "three_angle_sum",
+        "sines": [
+          "8/17",
+          "8/17",
+          "-8/17"
+        ],
+        "quadrants": [
+          1,
+          2,
+          4
+        ],
+        "requested": "sin_sum",
+        "option_values": [
+          "25/17",
+          "-9/17",
+          "8/17",
+          "42/17"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\frac{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)} + \\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}{- \\sin^{2}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numărătorul este sin2x, iar numitorul cos2x. Raportul este tan2x; pentru valorile date cos2x≠0, deci fracția inițială este definită. Rezultatul cerut este \\(\\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\sqrt{3} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\sqrt{3}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 18,
+        "type_name": "Fracții cu sume și diferențe de argumente",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(sin(x)*cos(x)+cos(x)*sin(x))/(cos(x)**2-sin(x)**2)",
+        "expression_latex": "\\frac{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)} + \\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}{- \\sin^{2}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "1 + sqrt(3)",
+          "-1 + sqrt(3)",
+          "sqrt(3) + 2",
+          "sqrt(3)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{3}{4}\\). Calculați \\(- \\sin{\\left(x^{2} \\right)} \\sin{\\left(- x^{2} + x \\right)} - \\cos{\\left(x \\right)} + \\cos{\\left(x^{2} \\right)} \\cos{\\left(- x^{2} + x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tratăm u=x−x² și v=x² ca două argumente reale. Primele două produse sunt cos(u+v)=cos x; scăderea lui cos x dă zero pentru orice x. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 19,
+        "type_name": "Identități cu argumente dependente neliniar",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x-x**2)*cos(x**2)-sin(x-x**2)*sin(x**2)-cos(x)",
+        "expression_latex": "- \\sin{\\left(x^{2} \\right)} \\sin{\\left(- x^{2} + x \\right)} - \\cos{\\left(x \\right)} + \\cos{\\left(x^{2} \\right)} \\cos{\\left(- x^{2} + x \\right)}",
+        "givens": {
+          "x": "3/4"
+        },
+        "option_values": [
+          "0",
+          "1",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\prod_{k=0}^{3}\\left(\\cos{\\left(2^{k} x \\right)}\\right)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dublările succesive dau sin(2ⁿx)=2ⁿsin x·∏cos(2ᵏx), pentru n numărul de factori. Aici sin x≠0 și niciun pas nu împarte la un sinus nul; evaluarea directă confirmă produsul. Rezultatul cerut este \\(- \\frac{1}{16}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{15}{16}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{16}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{17}{16}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{31}{16}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 20,
+        "type_name": "Produse de cosinusuri pe scară geometrică",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "finite_product",
+        "term": "cos(2**k*x)",
+        "term_latex": "\\cos{\\left(2^{k} x \\right)}",
+        "index": "k",
+        "lower": 0,
+        "upper": 3,
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "15/16",
+          "-1/16",
+          "-17/16",
+          "31/16"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani. Date: x=\\(\\frac{2 \\pi}{3}\\). Calculați \\(\\prod_{k=0}^{1}\\left(\\frac{\\left(\\cos{\\left(\\frac{x}{2^{k}} \\right)} + 1\\right) \\sin{\\left(\\frac{x}{2^{k + 1}} \\right)}}{\\sin{\\left(\\frac{x}{2^{k}} \\right)}}\\right)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Folosind 1+cos u=2cos²(u/2) și sin u=2sin(u/2)cos(u/2), fiecare factor devine cos(u/2). Sinusurile din numitorii inițiali sunt nenule în această variantă. Produsul rămas se calculează exact; este un produs finit explicit cu argumente înjumătățite. Rezultatul cerut este \\(\\frac{\\sqrt{3}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{4} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{4} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 21,
+        "type_name": "Rapoarte la unghiuri înjumătățite",
+        "variant": 3,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "finite_product",
+        "term": "(1+cos(x/2**k))*sin(x/2**(k+1))/sin(x/2**k)",
+        "term_latex": "\\frac{\\left(\\cos{\\left(\\frac{x}{2^{k}} \\right)} + 1\\right) \\sin{\\left(\\frac{x}{2^{k + 1}} \\right)}}{\\sin{\\left(\\frac{x}{2^{k}} \\right)}}",
+        "index": "k",
+        "lower": 0,
+        "upper": 1,
+        "givens": {
+          "x": "2*pi/3"
+        },
+        "option_values": [
+          "sqrt(3)/4 + 1",
+          "-1 + sqrt(3)/4",
+          "sqrt(3)/4",
+          "sqrt(3)/4 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{5 \\pi}{12}\\), y=\\(\\frac{\\pi}{6}\\). Calculați \\(\\sin{\\left(x - y \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula sinusului diferenței este sin x cos y−cos x sin y. Folosim valori remarcabile ale unghiurilor date și păstrăm semnul diferenței. Acesta este un calcul exact, fără aproximări. Rezultatul cerut este \\(\\frac{\\sqrt{2}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 1,
+        "type_name": "Valori exacte prin sumă de unghiuri",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x-y)",
+        "expression_latex": "\\sin{\\left(x - y \\right)}",
+        "givens": {
+          "x": "5*pi/12",
+          "y": "pi/6"
+        },
+        "option_values": [
+          "sqrt(2)/2 + 1",
+          "-1 + sqrt(2)/2",
+          "sqrt(2)/2 + 2",
+          "sqrt(2)/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\sin{\\left(- x + \\frac{\\pi}{4} \\right)} + \\cos{\\left(- x + \\frac{\\pi}{4} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm cele două funcții ale diferenței. Termenii cu sin x se anulează, iar expresia devine √2 cos x. Rezultatul cerut este \\(\\frac{\\sqrt{2}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 2,
+        "type_name": "Argument decalat cu π/4",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(pi/4-x)+sin(pi/4-x)",
+        "expression_latex": "\\sin{\\left(- x + \\frac{\\pi}{4} \\right)} + \\cos{\\left(- x + \\frac{\\pi}{4} \\right)}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "sqrt(2)/2",
+          "sqrt(2)/2 + 1",
+          "-1 + sqrt(2)/2",
+          "sqrt(2)/2 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunosc sin x=\\(\\frac{7}{25}\\) și cos y=\\(- \\frac{24}{25}\\), cu x în cadranul I și y în cadranul II. Calculați sin(x+y). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația fundamentală și cadranele dau cos x>0 și sin y>0. Apoi sin(x+y)=sin x cos y+cos x sin y. Semnul cos y este negativ și nu poate fi înlocuit cu rădăcina pozitivă. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 3,
+        "type_name": "Funcțiile sumei și diferenței din date separate",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "angle_sum_from_values",
+        "sine_x": "7/25",
+        "cosine_y": "-24/25",
+        "quadrant_x": 1,
+        "quadrant_y": 2,
+        "requested": "sin_sum",
+        "option_values": [
+          "1",
+          "0",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\pi\\). Calculați \\(\\cos{\\left(\\frac{x}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Folosim cos²(x/2)=(1+cos x)/2. Semnul lui cos(x/2) se alege după intervalul lui x/2; pentru x=3π/2 jumătatea este în cadranul II și cosinusul este negativ. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 4,
+        "type_name": "Unghiuri de jumătate ale unghiurilor remarcabile",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x/2)",
+        "expression_latex": "\\cos{\\left(\\frac{x}{2} \\right)}",
+        "givens": {
+          "x": "pi"
+        },
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{4}{7}\\). Calculați \\(\\sin{\\left(x \\right)} + \\sin{\\left(x + \\frac{2 \\pi}{3} \\right)} + \\sin{\\left(x + \\frac{4 \\pi}{3} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm termenii decalați. Coeficientul lui sin x este 1+cos(2π/3)+cos(4π/3)=0, iar coeficientul lui cos x este sin(2π/3)+sin(4π/3)=0. Suma este identic zero. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 5,
+        "type_name": "Sume de termeni cu decalaje regulate",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)+sin(x+2*pi/3)+sin(x+4*pi/3)",
+        "expression_latex": "\\sin{\\left(x \\right)} + \\sin{\\left(x + \\frac{2 \\pi}{3} \\right)} + \\sin{\\left(x + \\frac{4 \\pi}{3} \\right)}",
+        "givens": {
+          "x": "4/7"
+        },
+        "option_values": [
+          "1",
+          "-1",
+          "2",
+          "0"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Două unghiuri reale satisfac sin x+sin y=\\(\\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\) și cos x+cos y=\\(\\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\). Calculați cos(x−y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunăm pătratele celor două sume. Relațiile fundamentale pentru x și y dau 2+2(sin x sin y+cos x cos y)=2+2cos(x−y). Izolăm cosinusul diferenței; nu este nevoie să recuperăm separat unghiurile. Rezultatul cerut este \\(\\frac{\\sqrt{3}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 6,
+        "type_name": "Diferența unghiurilor din relații combinate",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "difference_from_sums",
+        "sine_sum": "1/2 + sqrt(3)/2",
+        "cosine_sum": "1/2 + sqrt(3)/2",
+        "option_values": [
+          "sqrt(3)/2",
+          "sqrt(3)/2 + 1",
+          "-1 + sqrt(3)/2",
+          "sqrt(3)/2 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\), a=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\sin{\\left(- a + x \\right)} + \\sin{\\left(a + x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula sumă–produs sau dezvoltarea adunării reduce expresia la 2sin x cos a. Unghiul fix este precizat și toate funcțiile există. Rezultatul cerut este \\(- \\frac{\\sqrt{6}}{4} + \\frac{3 \\sqrt{2}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{\\sqrt{6}}{4} + 1 + \\frac{3 \\sqrt{2}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{6}}{4} + \\frac{3 \\sqrt{2}}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 - \\frac{\\sqrt{6}}{4} + \\frac{3 \\sqrt{2}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{6}}{4} + \\frac{3 \\sqrt{2}}{4} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 7,
+        "type_name": "Transformarea la o singură funcție",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x+a)+sin(x-a)",
+        "expression_latex": "\\sin{\\left(- a + x \\right)} + \\sin{\\left(a + x \\right)}",
+        "givens": {
+          "x": "pi/3",
+          "a": "5*pi/12"
+        },
+        "option_values": [
+          "-sqrt(6)/4 + 1 + 3*sqrt(2)/4",
+          "-sqrt(6)/4 + 3*sqrt(2)/4",
+          "-1 - sqrt(6)/4 + 3*sqrt(2)/4",
+          "-sqrt(6)/4 + 3*sqrt(2)/4 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\), y=\\(\\frac{\\pi}{6}\\). Calculați \\(\\cos{\\left(x - y \\right)} \\cos{\\left(x + y \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin formulele de adunare, produsul este cos²x cos²y−sin²x sin²y=cos²x−sin²y. Nu se impun condiții suplimentare de numitor. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 8,
+        "type_name": "Produse de funcții cu argumente simetrice",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x+y)*cos(x-y)",
+        "expression_latex": "\\cos{\\left(x - y \\right)} \\cos{\\left(x + y \\right)}",
+        "givens": {
+          "x": "pi/3",
+          "y": "pi/6"
+        },
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\sin{\\left(2 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunarea cu argumente egale dă sin2x=2sin x cos x. Înlocuim valorile exacte ale unghiului din această variantă. Rezultatul cerut este \\(\\frac{\\sqrt{3}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 9,
+        "type_name": "Unghi dublu în sin și cos",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(2*x)",
+        "expression_latex": "\\sin{\\left(2 x \\right)}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "sqrt(3)/2 + 1",
+          "-1 + sqrt(3)/2",
+          "sqrt(3)/2 + 2",
+          "sqrt(3)/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\frac{2 \\tan{\\left(x \\right)}}{1 - \\tan^{2}{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tangenta unghiului dublu este 2tan x/(1−tan²x). Se verifică atât cos x≠0, cât și 1−tan²x≠0 în datele acestei variante; nu sunt admise argumente la care tan2x nu există. Rezultatul cerut este \\(- \\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(- \\sqrt{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 - \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\sqrt{3} - 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 - \\sqrt{3}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 10,
+        "type_name": "Unghi dublu pentru tangentă",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "2*tan(x)/(1-tan(x)**2)",
+        "expression_latex": "\\frac{2 \\tan{\\left(x \\right)}}{1 - \\tan^{2}{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "-sqrt(3)",
+          "1 - sqrt(3)",
+          "-sqrt(3) - 1",
+          "2 - sqrt(3)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\frac{\\sin{\\left(2 x \\right)}}{\\cos{\\left(2 x \\right)} + 1}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din sin2x=2sin x cos x și 1+cos2x=2cos²x rezultă tan x. Numitorul cere cos x≠0; datele satisfac această restricție. Rezultatul cerut este \\(\\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\sqrt{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\sqrt{3} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 11,
+        "type_name": "Tangenta din unghi dublu",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(2*x)/(1+cos(2*x))",
+        "expression_latex": "\\frac{\\sin{\\left(2 x \\right)}}{\\cos{\\left(2 x \\right)} + 1}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "1 + sqrt(3)",
+          "sqrt(3)",
+          "-1 + sqrt(3)",
+          "sqrt(3) + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunoaște cos x=\\(\\frac{24}{25}\\), cu x în cadranul 4 și 0<x<2π. Determinați (sin(x/2);cos(x/2)).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formulele de înjumătățire dau pătratele celor două valori. Din 0<x<2π rezultă sin(x/2)>0; cos(x/2) este pozitiv pentru x<π și negativ pentru x>π. Aceste condiții aleg ramurile corecte ale radicalilor. Rezultatul cerut este \\(\\left( \\frac{\\sqrt{2}}{10}, \\  - \\frac{7 \\sqrt{2}}{10}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{\\sqrt{2}}{10} + 1, \\  - \\frac{7 \\sqrt{2}}{10}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -1 + \\frac{\\sqrt{2}}{10}, \\  - \\frac{7 \\sqrt{2}}{10}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{\\sqrt{2}}{10}, \\  - \\frac{7 \\sqrt{2}}{10}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( \\frac{\\sqrt{2}}{10} + 2, \\  - \\frac{7 \\sqrt{2}}{10}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 12,
+        "type_name": "Funcțiile unghiului pe jumătate",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "half_angle_from_cos",
+        "cosine": "24/25",
+        "quadrant": 4,
+        "option_values": [
+          "(sqrt(2)/10 + 1, -7*sqrt(2)/10)",
+          "(-1 + sqrt(2)/10, -7*sqrt(2)/10)",
+          "(sqrt(2)/10, -7*sqrt(2)/10)",
+          "(sqrt(2)/10 + 2, -7*sqrt(2)/10)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\sin{\\left(3 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem 3x=2x+x și aplicăm formulele de adunare și dublare. După sin²x+cos²x=1 rezultă sin3x=3sin x−4sin³x. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 13,
+        "type_name": "Unghi triplu",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(3*x)",
+        "expression_latex": "\\sin{\\left(3 x \\right)}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "1",
+          "-1",
+          "2",
+          "0"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\cos{\\left(4 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm de două ori formula cos2u=2cos²u−1, obținând cos4x=8cos⁴x−8cos²x+1. Rezultatul cerut este \\(- \\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 14,
+        "type_name": "Unghi cvadruplu și puteri",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(4*x)",
+        "expression_latex": "\\cos{\\left(4 x \\right)}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "-1/2",
+          "1/2",
+          "-3/2",
+          "3/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiurile x,y sunt ascuțite, cu tan x=\\(\\frac{4}{5}\\) și tan y=\\(\\frac{1}{6}\\). Calculați tan(2x+y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi tan2x=2a/(1−a²), apoi tan(2x+y)=(tan2x+b)/(1−b tan2x). Echivalent, rezultatul este [2a+b(1−a²)]/[1−a²−2ab]. Ambele formule au numitori nenuli pentru valorile date. Rezultatul cerut este \\(\\frac{249}{14}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{263}{14}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{249}{14}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{235}{14}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{277}{14}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 15,
+        "type_name": "Combinarea unghiului dublu cu un alt unghi",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "double_sum_from_tangents",
+        "tangent_x": "4/5",
+        "tangent_y": "1/6",
+        "option_values": [
+          "263/14",
+          "249/14",
+          "235/14",
+          "277/14"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\tan{\\left(x \\right)} + 2 \\tan{\\left(2 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația cot u−2cot2u=tan u, aplicată pentru u=x și u=2x, produce tan x+2tan2x=cot x−4cot4x. În această variantă toate tangentele/cotangentele folosite sunt definite. Rezultatul cerut este \\(- \\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(1 - \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\sqrt{3} - 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\sqrt{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 - \\sqrt{3}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 16,
+        "type_name": "Identități cu tangente la argumente dublate",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(x)+2*tan(2*x)",
+        "expression_latex": "\\tan{\\left(x \\right)} + 2 \\tan{\\left(2 x \\right)}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "1 - sqrt(3)",
+          "-sqrt(3) - 1",
+          "-sqrt(3)",
+          "2 - sqrt(3)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunosc (sin x;sin y;sin z)=\\(\\left( \\frac{7}{25}, \\  \\frac{7}{25}, \\  - \\frac{7}{25}\\right)\\), iar x,y,z sunt în cadranele I,II,IV, în această ordine. Calculați sin(x+y+z).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Recuperăm cosinușii din relația fundamentală, cu semnele +,−,+ impuse de cadrane. Aplicăm adunarea de două ori: sin(x+y+z)=sin x cos y cos z+cos x sin y cos z+cos x cos y sin z−sin x sin y sin z. Rezultatul cerut este \\(\\frac{7}{25}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{32}{25}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{18}{25}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{57}{25}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{7}{25}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 17,
+        "type_name": "Funcțiile sumei a trei unghiuri",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "three_angle_sum",
+        "sines": [
+          "7/25",
+          "7/25",
+          "-7/25"
+        ],
+        "quadrants": [
+          1,
+          2,
+          4
+        ],
+        "requested": "sin_sum",
+        "option_values": [
+          "32/25",
+          "-18/25",
+          "57/25",
+          "7/25"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\frac{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)} + \\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}{- \\sin^{2}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numărătorul este sin2x, iar numitorul cos2x. Raportul este tan2x; pentru valorile date cos2x≠0, deci fracția inițială este definită. Rezultatul cerut este \\(- \\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(- \\sqrt{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 - \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\sqrt{3} - 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 - \\sqrt{3}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 18,
+        "type_name": "Fracții cu sume și diferențe de argumente",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(sin(x)*cos(x)+cos(x)*sin(x))/(cos(x)**2-sin(x)**2)",
+        "expression_latex": "\\frac{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)} + \\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}{- \\sin^{2}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "-sqrt(3)",
+          "1 - sqrt(3)",
+          "-sqrt(3) - 1",
+          "2 - sqrt(3)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(1\\). Calculați \\(- \\sin{\\left(x^{2} \\right)} \\sin{\\left(- x^{2} + x \\right)} - \\cos{\\left(x \\right)} + \\cos{\\left(x^{2} \\right)} \\cos{\\left(- x^{2} + x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tratăm u=x−x² și v=x² ca două argumente reale. Primele două produse sunt cos(u+v)=cos x; scăderea lui cos x dă zero pentru orice x. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 19,
+        "type_name": "Identități cu argumente dependente neliniar",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x-x**2)*cos(x**2)-sin(x-x**2)*sin(x**2)-cos(x)",
+        "expression_latex": "- \\sin{\\left(x^{2} \\right)} \\sin{\\left(- x^{2} + x \\right)} - \\cos{\\left(x \\right)} + \\cos{\\left(x^{2} \\right)} \\cos{\\left(- x^{2} + x \\right)}",
+        "givens": {
+          "x": "1"
+        },
+        "option_values": [
+          "1",
+          "0",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\prod_{k=0}^{4}\\left(\\cos{\\left(2^{k} x \\right)}\\right)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dublările succesive dau sin(2ⁿx)=2ⁿsin x·∏cos(2ᵏx), pentru n numărul de factori. Aici sin x≠0 și niciun pas nu împarte la un sinus nul; evaluarea directă confirmă produsul. Rezultatul cerut este \\(\\frac{1}{32}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{33}{32}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{31}{32}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{32}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{65}{32}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 20,
+        "type_name": "Produse de cosinusuri pe scară geometrică",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "finite_product",
+        "term": "cos(2**k*x)",
+        "term_latex": "\\cos{\\left(2^{k} x \\right)}",
+        "index": "k",
+        "lower": 0,
+        "upper": 4,
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "33/32",
+          "-31/32",
+          "1/32",
+          "65/32"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani. Date: x=\\(\\frac{3 \\pi}{2}\\). Calculați \\(\\prod_{k=0}^{1}\\left(\\frac{\\left(\\cos{\\left(\\frac{x}{2^{k}} \\right)} + 1\\right) \\sin{\\left(\\frac{x}{2^{k + 1}} \\right)}}{\\sin{\\left(\\frac{x}{2^{k}} \\right)}}\\right)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Folosind 1+cos u=2cos²(u/2) și sin u=2sin(u/2)cos(u/2), fiecare factor devine cos(u/2). Sinusurile din numitorii inițiali sunt nenule în această variantă. Produsul rămas se calculează exact; este un produs finit explicit cu argumente înjumătățite. Rezultatul cerut este \\(\\frac{\\left(-2 + \\sqrt{2}\\right) \\sqrt{\\sqrt{2} + 2}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\left(-2 + \\sqrt{2}\\right) \\sqrt{\\sqrt{2} + 2}}{4} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 - \\frac{\\left(2 - \\sqrt{2}\\right) \\sqrt{\\sqrt{2} + 2}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\left(-2 + \\sqrt{2}\\right) \\sqrt{\\sqrt{2} + 2}}{4} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\left(-2 + \\sqrt{2}\\right) \\sqrt{\\sqrt{2} + 2}}{4}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 21,
+        "type_name": "Rapoarte la unghiuri înjumătățite",
+        "variant": 4,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "finite_product",
+        "term": "(1+cos(x/2**k))*sin(x/2**(k+1))/sin(x/2**k)",
+        "term_latex": "\\frac{\\left(\\cos{\\left(\\frac{x}{2^{k}} \\right)} + 1\\right) \\sin{\\left(\\frac{x}{2^{k + 1}} \\right)}}{\\sin{\\left(\\frac{x}{2^{k}} \\right)}}",
+        "index": "k",
+        "lower": 0,
+        "upper": 1,
+        "givens": {
+          "x": "3*pi/2"
+        },
+        "option_values": [
+          "(-2 + sqrt(2))*sqrt(sqrt(2) + 2)/4 + 1",
+          "-1 - (2 - sqrt(2))*sqrt(sqrt(2) + 2)/4",
+          "(-2 + sqrt(2))*sqrt(sqrt(2) + 2)/4 + 2",
+          "(-2 + sqrt(2))*sqrt(sqrt(2) + 2)/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{6}\\), y=\\(\\frac{\\pi}{4}\\). Calculați \\(\\sin{\\left(x - y \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula sinusului diferenței este sin x cos y−cos x sin y. Folosim valori remarcabile ale unghiurilor date și păstrăm semnul diferenței. Acesta este un calcul exact, fără aproximări. Rezultatul cerut este \\(- \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 - \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 1,
+        "type_name": "Valori exacte prin sumă de unghiuri",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x-y)",
+        "expression_latex": "\\sin{\\left(x - y \\right)}",
+        "givens": {
+          "x": "pi/6",
+          "y": "pi/4"
+        },
+        "option_values": [
+          "-sqrt(6)/4 + sqrt(2)/4",
+          "-sqrt(6)/4 + sqrt(2)/4 + 1",
+          "-1 - sqrt(6)/4 + sqrt(2)/4",
+          "-sqrt(6)/4 + sqrt(2)/4 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\sin{\\left(- x + \\frac{\\pi}{4} \\right)} + \\cos{\\left(- x + \\frac{\\pi}{4} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm cele două funcții ale diferenței. Termenii cu sin x se anulează, iar expresia devine √2 cos x. Rezultatul cerut este \\(- \\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{3}{2} + \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + \\frac{3}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 2,
+        "type_name": "Argument decalat cu π/4",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(pi/4-x)+sin(pi/4-x)",
+        "expression_latex": "\\sin{\\left(- x + \\frac{\\pi}{4} \\right)} + \\cos{\\left(- x + \\frac{\\pi}{4} \\right)}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "1/2 + sqrt(3)/2",
+          "-1/2 + sqrt(3)/2",
+          "-3/2 + sqrt(3)/2",
+          "sqrt(3)/2 + 3/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunosc sin x=\\(\\frac{20}{29}\\) și cos y=\\(- \\frac{21}{29}\\), cu x în cadranul I și y în cadranul II. Calculați sin(x+y). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația fundamentală și cadranele dau cos x>0 și sin y>0. Apoi sin(x+y)=sin x cos y+cos x sin y. Semnul cos y este negativ și nu poate fi înlocuit cu rădăcina pozitivă. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 3,
+        "type_name": "Funcțiile sumei și diferenței din date separate",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "angle_sum_from_values",
+        "sine_x": "20/29",
+        "cosine_y": "-21/29",
+        "quadrant_x": 1,
+        "quadrant_y": 2,
+        "requested": "sin_sum",
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{3 \\pi}{2}\\). Calculați \\(\\cos{\\left(\\frac{x}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Folosim cos²(x/2)=(1+cos x)/2. Semnul lui cos(x/2) se alege după intervalul lui x/2; pentru x=3π/2 jumătatea este în cadranul II și cosinusul este negativ. Rezultatul cerut este \\(- \\frac{\\sqrt{2}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(1 - \\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 - \\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 - \\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 4,
+        "type_name": "Unghiuri de jumătate ale unghiurilor remarcabile",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x/2)",
+        "expression_latex": "\\cos{\\left(\\frac{x}{2} \\right)}",
+        "givens": {
+          "x": "3*pi/2"
+        },
+        "option_values": [
+          "1 - sqrt(2)/2",
+          "-1 - sqrt(2)/2",
+          "2 - sqrt(2)/2",
+          "-sqrt(2)/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{5}{7}\\). Calculați \\(\\sin{\\left(x \\right)} + \\sin{\\left(x + \\frac{2 \\pi}{3} \\right)} + \\sin{\\left(x + \\frac{4 \\pi}{3} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dezvoltăm termenii decalați. Coeficientul lui sin x este 1+cos(2π/3)+cos(4π/3)=0, iar coeficientul lui cos x este sin(2π/3)+sin(4π/3)=0. Suma este identic zero. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 5,
+        "type_name": "Sume de termeni cu decalaje regulate",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)+sin(x+2*pi/3)+sin(x+4*pi/3)",
+        "expression_latex": "\\sin{\\left(x \\right)} + \\sin{\\left(x + \\frac{2 \\pi}{3} \\right)} + \\sin{\\left(x + \\frac{4 \\pi}{3} \\right)}",
+        "givens": {
+          "x": "5/7"
+        },
+        "option_values": [
+          "0",
+          "1",
+          "-1",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Două unghiuri reale satisfac sin x+sin y=\\(\\frac{\\sqrt{2}}{4} + \\frac{1}{2} + \\frac{\\sqrt{6}}{4}\\) și cos x+cos y=\\(- \\frac{\\sqrt{2}}{4} + \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{3}}{2}\\). Calculați cos(x−y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunăm pătratele celor două sume. Relațiile fundamentale pentru x și y dau 2+2(sin x sin y+cos x cos y)=2+2cos(x−y). Izolăm cosinusul diferenței; nu este nevoie să recuperăm separat unghiurile. Rezultatul cerut este \\(\\frac{\\sqrt{2}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 6,
+        "type_name": "Diferența unghiurilor din relații combinate",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "difference_from_sums",
+        "sine_sum": "sqrt(2)/4 + 1/2 + sqrt(6)/4",
+        "cosine_sum": "-sqrt(2)/4 + sqrt(6)/4 + sqrt(3)/2",
+        "option_values": [
+          "sqrt(2)/2 + 1",
+          "sqrt(2)/2",
+          "-1 + sqrt(2)/2",
+          "sqrt(2)/2 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{5 \\pi}{12}\\), a=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\sin{\\left(- a + x \\right)} + \\sin{\\left(a + x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formula sumă–produs sau dezvoltarea adunării reduce expresia la 2sin x cos a. Unghiul fix este precizat și toate funcțiile există. Rezultatul cerut este \\(\\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{5}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 7,
+        "type_name": "Transformarea la o singură funcție",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x+a)+sin(x-a)",
+        "expression_latex": "\\sin{\\left(- a + x \\right)} + \\sin{\\left(a + x \\right)}",
+        "givens": {
+          "x": "5*pi/12",
+          "a": "5*pi/12"
+        },
+        "option_values": [
+          "3/2",
+          "-1/2",
+          "1/2",
+          "5/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{5 \\pi}{12}\\), y=\\(\\frac{\\pi}{6}\\). Calculați \\(\\cos{\\left(x - y \\right)} \\cos{\\left(x + y \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin formulele de adunare, produsul este cos²x cos²y−sin²x sin²y=cos²x−sin²y. Nu se impun condiții suplimentare de numitor. Rezultatul cerut este \\(\\frac{1}{4} - \\frac{\\sqrt{3}}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{5}{4} - \\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{3}{4} - \\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{9}{4} - \\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{4} - \\frac{\\sqrt{3}}{4}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 8,
+        "type_name": "Produse de funcții cu argumente simetrice",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x+y)*cos(x-y)",
+        "expression_latex": "\\cos{\\left(x - y \\right)} \\cos{\\left(x + y \\right)}",
+        "givens": {
+          "x": "5*pi/12",
+          "y": "pi/6"
+        },
+        "option_values": [
+          "5/4 - sqrt(3)/4",
+          "-3/4 - sqrt(3)/4",
+          "9/4 - sqrt(3)/4",
+          "1/4 - sqrt(3)/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\sin{\\left(2 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunarea cu argumente egale dă sin2x=2sin x cos x. Înlocuim valorile exacte ale unghiului din această variantă. Rezultatul cerut este \\(\\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 9,
+        "type_name": "Unghi dublu în sin și cos",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(2*x)",
+        "expression_latex": "\\sin{\\left(2 x \\right)}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "1/2",
+          "3/2",
+          "-1/2",
+          "5/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\frac{2 \\tan{\\left(x \\right)}}{1 - \\tan^{2}{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tangenta unghiului dublu este 2tan x/(1−tan²x). Se verifică atât cos x≠0, cât și 1−tan²x≠0 în datele acestei variante; nu sunt admise argumente la care tan2x nu există. Rezultatul cerut este \\(- \\frac{\\sqrt{3}}{3}\\).",
+      "options": [
+        {
+          "text": "\\(1 - \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 - \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 - \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 10,
+        "type_name": "Unghi dublu pentru tangentă",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "2*tan(x)/(1-tan(x)**2)",
+        "expression_latex": "\\frac{2 \\tan{\\left(x \\right)}}{1 - \\tan^{2}{\\left(x \\right)}}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "1 - sqrt(3)/3",
+          "-sqrt(3)/3",
+          "-1 - sqrt(3)/3",
+          "2 - sqrt(3)/3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\frac{\\sin{\\left(2 x \\right)}}{\\cos{\\left(2 x \\right)} + 1}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din sin2x=2sin x cos x și 1+cos2x=2cos²x rezultă tan x. Numitorul cere cos x≠0; datele satisfac această restricție. Rezultatul cerut este \\(\\sqrt{3} + 2\\).",
+      "options": [
+        {
+          "text": "\\(\\sqrt{3} + 3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1 + \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\sqrt{3} + 2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\sqrt{3} + 4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 11,
+        "type_name": "Tangenta din unghi dublu",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(2*x)/(1+cos(2*x))",
+        "expression_latex": "\\frac{\\sin{\\left(2 x \\right)}}{\\cos{\\left(2 x \\right)} + 1}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "sqrt(3) + 3",
+          "1 + sqrt(3)",
+          "sqrt(3) + 2",
+          "sqrt(3) + 4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunoaște cos x=\\(- \\frac{21}{29}\\), cu x în cadranul 3 și 0<x<2π. Determinați (sin(x/2);cos(x/2)).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Formulele de înjumătățire dau pătratele celor două valori. Din 0<x<2π rezultă sin(x/2)>0; cos(x/2) este pozitiv pentru x<π și negativ pentru x>π. Aceste condiții aleg ramurile corecte ale radicalilor. Rezultatul cerut este \\(\\left( \\frac{5 \\sqrt{29}}{29}, \\  - \\frac{2 \\sqrt{29}}{29}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{5 \\sqrt{29}}{29} + 1, \\  - \\frac{2 \\sqrt{29}}{29}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -1 + \\frac{5 \\sqrt{29}}{29}, \\  - \\frac{2 \\sqrt{29}}{29}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{5 \\sqrt{29}}{29} + 2, \\  - \\frac{2 \\sqrt{29}}{29}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{5 \\sqrt{29}}{29}, \\  - \\frac{2 \\sqrt{29}}{29}\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 12,
+        "type_name": "Funcțiile unghiului pe jumătate",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "half_angle_from_cos",
+        "cosine": "-21/29",
+        "quadrant": 3,
+        "option_values": [
+          "(5*sqrt(29)/29 + 1, -2*sqrt(29)/29)",
+          "(-1 + 5*sqrt(29)/29, -2*sqrt(29)/29)",
+          "(5*sqrt(29)/29 + 2, -2*sqrt(29)/29)",
+          "(5*sqrt(29)/29, -2*sqrt(29)/29)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\sin{\\left(3 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem 3x=2x+x și aplicăm formulele de adunare și dublare. După sin²x+cos²x=1 rezultă sin3x=3sin x−4sin³x. Rezultatul cerut este \\(- \\frac{\\sqrt{2}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 - \\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 - \\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 - \\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 13,
+        "type_name": "Unghi triplu",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(3*x)",
+        "expression_latex": "\\sin{\\left(3 x \\right)}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "-sqrt(2)/2",
+          "1 - sqrt(2)/2",
+          "-1 - sqrt(2)/2",
+          "2 - sqrt(2)/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\cos{\\left(4 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm de două ori formula cos2u=2cos²u−1, obținând cos4x=8cos⁴x−8cos²x+1. Rezultatul cerut este \\(\\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 14,
+        "type_name": "Unghi cvadruplu și puteri",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(4*x)",
+        "expression_latex": "\\cos{\\left(4 x \\right)}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "3/2",
+          "1/2",
+          "-1/2",
+          "5/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Unghiurile x,y sunt ascuțite, cu tan x=\\(\\frac{5}{6}\\) și tan y=\\(\\frac{1}{7}\\). Calculați tan(2x+y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi tan2x=2a/(1−a²), apoi tan(2x+y)=(tan2x+b)/(1−b tan2x). Echivalent, rezultatul este [2a+b(1−a²)]/[1−a²−2ab]. Ambele formule au numitori nenuli pentru valorile date. Rezultatul cerut este \\(\\frac{431}{17}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{448}{17}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{414}{17}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{431}{17}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{465}{17}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 15,
+        "type_name": "Combinarea unghiului dublu cu un alt unghi",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "double_sum_from_tangents",
+        "tangent_x": "5/6",
+        "tangent_y": "1/7",
+        "option_values": [
+          "448/17",
+          "414/17",
+          "431/17",
+          "465/17"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\tan{\\left(x \\right)} + 2 \\tan{\\left(2 x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația cot u−2cot2u=tan u, aplicată pentru u=x și u=2x, produce tan x+2tan2x=cot x−4cot4x. În această variantă toate tangentele/cotangentele folosite sunt definite. Rezultatul cerut este \\(\\frac{\\sqrt{3}}{3} + 2\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3} + 3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3} + 4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{3} + 2\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 16,
+        "type_name": "Identități cu tangente la argumente dublate",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(x)+2*tan(2*x)",
+        "expression_latex": "\\tan{\\left(x \\right)} + 2 \\tan{\\left(2 x \\right)}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "sqrt(3)/3 + 3",
+          "sqrt(3)/3 + 1",
+          "sqrt(3)/3 + 4",
+          "sqrt(3)/3 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Se cunosc (sin x;sin y;sin z)=\\(\\left( \\frac{20}{29}, \\  \\frac{20}{29}, \\  - \\frac{20}{29}\\right)\\), iar x,y,z sunt în cadranele I,II,IV, în această ordine. Calculați sin(x+y+z).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Recuperăm cosinușii din relația fundamentală, cu semnele +,−,+ impuse de cadrane. Aplicăm adunarea de două ori: sin(x+y+z)=sin x cos y cos z+cos x sin y cos z+cos x cos y sin z−sin x sin y sin z. Rezultatul cerut este \\(\\frac{20}{29}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{20}{29}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{49}{29}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{9}{29}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{78}{29}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 17,
+        "type_name": "Funcțiile sumei a trei unghiuri",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "three_angle_sum",
+        "sines": [
+          "20/29",
+          "20/29",
+          "-20/29"
+        ],
+        "quadrants": [
+          1,
+          2,
+          4
+        ],
+        "requested": "sin_sum",
+        "option_values": [
+          "20/29",
+          "49/29",
+          "-9/29",
+          "78/29"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\frac{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)} + \\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}{- \\sin^{2}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Numărătorul este sin2x, iar numitorul cos2x. Raportul este tan2x; pentru valorile date cos2x≠0, deci fracția inițială este definită. Rezultatul cerut este \\(- \\frac{\\sqrt{3}}{3}\\).",
+      "options": [
+        {
+          "text": "\\(1 - \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 - \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 - \\frac{\\sqrt{3}}{3}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 18,
+        "type_name": "Fracții cu sume și diferențe de argumente",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "(sin(x)*cos(x)+cos(x)*sin(x))/(cos(x)**2-sin(x)**2)",
+        "expression_latex": "\\frac{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)} + \\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}{- \\sin^{2}{\\left(x \\right)} + \\cos^{2}{\\left(x \\right)}}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "1 - sqrt(3)/3",
+          "-sqrt(3)/3",
+          "-1 - sqrt(3)/3",
+          "2 - sqrt(3)/3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentele sunt în radiani. Date: x=\\(\\frac{5}{4}\\). Calculați \\(- \\sin{\\left(x^{2} \\right)} \\sin{\\left(- x^{2} + x \\right)} - \\cos{\\left(x \\right)} + \\cos{\\left(x^{2} \\right)} \\cos{\\left(- x^{2} + x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Tratăm u=x−x² și v=x² ca două argumente reale. Primele două produse sunt cos(u+v)=cos x; scăderea lui cos x dă zero pentru orice x. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 19,
+        "type_name": "Identități cu argumente dependente neliniar",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "cos(x-x**2)*cos(x**2)-sin(x-x**2)*sin(x**2)-cos(x)",
+        "expression_latex": "- \\sin{\\left(x^{2} \\right)} \\sin{\\left(- x^{2} + x \\right)} - \\cos{\\left(x \\right)} + \\cos{\\left(x^{2} \\right)} \\cos{\\left(- x^{2} + x \\right)}",
+        "givens": {
+          "x": "5/4"
+        },
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\prod_{k=0}^{5}\\left(\\cos{\\left(2^{k} x \\right)}\\right)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dublările succesive dau sin(2ⁿx)=2ⁿsin x·∏cos(2ᵏx), pentru n numărul de factori. Aici sin x≠0 și niciun pas nu împarte la un sinus nul; evaluarea directă confirmă produsul. Rezultatul cerut este \\(- \\frac{1}{64}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{63}{64}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{65}{64}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{127}{64}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{64}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 20,
+        "type_name": "Produse de cosinusuri pe scară geometrică",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "finite_product",
+        "term": "cos(2**k*x)",
+        "term_latex": "\\cos{\\left(2^{k} x \\right)}",
+        "index": "k",
+        "lower": 0,
+        "upper": 5,
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "63/64",
+          "-65/64",
+          "127/64",
+          "-1/64"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Toate argumentele sunt în radiani. Date: x=\\(\\frac{5 \\pi}{3}\\). Calculați \\(\\prod_{k=0}^{1}\\left(\\frac{\\left(\\cos{\\left(\\frac{x}{2^{k}} \\right)} + 1\\right) \\sin{\\left(\\frac{x}{2^{k + 1}} \\right)}}{\\sin{\\left(\\frac{x}{2^{k}} \\right)}}\\right)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Folosind 1+cos u=2cos²(u/2) și sin u=2sin(u/2)cos(u/2), fiecare factor devine cos(u/2). Sinusurile din numitorii inițiali sunt nenule în această variantă. Produsul rămas se calculează exact; este un produs finit explicit cu argumente înjumătățite. Rezultatul cerut este \\(- \\frac{3 \\sqrt{2}}{8} + \\frac{\\sqrt{6}}{8}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{3 \\sqrt{2}}{8} + \\frac{\\sqrt{6}}{8}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{3 \\sqrt{2}}{8} + \\frac{\\sqrt{6}}{8} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 - \\frac{3 \\sqrt{2}}{8} + \\frac{\\sqrt{6}}{8}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{3 \\sqrt{2}}{8} + \\frac{\\sqrt{6}}{8} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "5",
+        "type": 21,
+        "type_name": "Rapoarte la unghiuri înjumătățite",
+        "variant": 5,
+        "reference_pages": "219–222",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "finite_product",
+        "term": "(1+cos(x/2**k))*sin(x/2**(k+1))/sin(x/2**k)",
+        "term_latex": "\\frac{\\left(\\cos{\\left(\\frac{x}{2^{k}} \\right)} + 1\\right) \\sin{\\left(\\frac{x}{2^{k + 1}} \\right)}}{\\sin{\\left(\\frac{x}{2^{k}} \\right)}}",
+        "index": "k",
+        "lower": 0,
+        "upper": 1,
+        "givens": {
+          "x": "5*pi/3"
+        },
+        "option_values": [
+          "-3*sqrt(2)/8 + sqrt(6)/8",
+          "-3*sqrt(2)/8 + sqrt(6)/8 + 1",
+          "-1 - 3*sqrt(2)/8 + sqrt(6)/8",
+          "-3*sqrt(2)/8 + sqrt(6)/8 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    }
+  ]
 }

@@ -214,15 +214,32 @@
         const container = document.querySelector(".container");
         if (!container) return;
         let scheduled = false;
-        const observer = new MutationObserver(() => {
-            if (scheduled) return;
+        const pending = new Set(container.querySelectorAll("[data-math-content]"));
+        function enqueue(node) {
+            const element = node.nodeType === 1 ? node : node.parentElement;
+            if (!element) return;
+            const root = element.closest("[data-math-content]");
+            if (root) pending.add(root);
+            else element.querySelectorAll("[data-math-content]").forEach(root => pending.add(root));
+        }
+        const observer = new MutationObserver(records => {
+            records.forEach(record => {
+                if (record.type === "characterData") enqueue(record.target);
+                else {
+                    const root = record.target.closest?.("[data-math-content]");
+                    if (root) pending.add(root);
+                    record.addedNodes.forEach(enqueue);
+                }
+            });
+            if (scheduled || !pending.size) return;
             scheduled = true;
             requestAnimationFrame(update);
         });
         function update() {
             scheduled = false;
             observer.disconnect();
-            container.querySelectorAll("[data-math-content]").forEach(render);
+            pending.forEach(root => {if (root.isConnected) render(root);});
+            pending.clear();
             observer.observe(container, { childList: true, subtree: true, characterData: true });
         }
         update();

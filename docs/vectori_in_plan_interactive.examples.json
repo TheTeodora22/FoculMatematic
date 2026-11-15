@@ -1,0 +1,18 @@
+{
+  "status": "design_only_not_importable",
+  "chapter": "vectori-plan",
+  "examples": [
+    {"id":"V01","lesson":1,"mode":"same_displacement","catalog":"G1.1 tip 3","prompt":"Selectează segmentele orientate echipolente cu AB.","points":{"A":[0,0],"B":[3,2],"C":[-2,1],"D":[1,3],"E":[4,4],"F":[1,2]},"reference":["A","B"],"candidates":[["C","D"],["D","C"],["E","F"]],"expected":{"selected":["CD"]}},
+    {"id":"V02","lesson":1,"mode":"classify_vector","catalog":"G1.1 tip 5","prompt":"Clasifică EF față de AB: egal, opus sau doar coliniar.","points":{"A":[0,0],"B":[3,2],"E":[4,4],"F":[1,2]},"reference":["A","B"],"candidate":["E","F"],"expected":{"relation":"opposite"}},
+    {"id":"V03","lesson":1,"mode":"translate_endpoint","catalog":"G1.1 tip 6","prompt":"Fixează D astfel încât CD să fie echipolent cu AB.","points":{"A":[1,1],"B":[4,3],"C":[-2,0]},"reference":["A","B"],"anchor":"C","expected":{"endpoint":[1,2]}},
+    {"id":"V04","lesson":2,"mode":"position_from_origin","catalog":"Mapare de lecție; sursa exactă de confirmat","prompt":"Cu originea O(1,−2), construiește vectorul de poziție al lui A(4,3).","points":{"O":[1,-2],"A":[4,3]},"origin":"O","target":"A","expected":{"vector":[3,5]}},
+    {"id":"V05","lesson":2,"mode":"change_origin","catalog":"Mapare de lecție; sursa exactă de confirmat","prompt":"Păstrează A(4,3) și mută originea de la O(1,−2) la P(−1,1). Care este noul vector PA?","points":{"O":[1,-2],"P":[-1,1],"A":[4,3]},"old_origin":"O","new_origin":"P","target":"A","expected":{"vector":[5,2]}},
+    {"id":"V06","lesson":2,"mode":"midpoint","catalog":"G1.2.2 tip 1","prompt":"Plasează mijlocul M al lui AB și compară OM cu (OA+OB)/2, pentru O(0,0).","points":{"A":[0,0],"B":[6,4]},"segment":["A","B"],"expected":{"midpoint":[3,2]}},
+    {"id":"V07","lesson":3,"mode":"head_to_tail","catalog":"G1.2.1 tip 1","prompt":"Transportă v la vârful lui u și construiește rezultanta u+v.","u":[3,1],"v":[-1,2],"expected":{"vector":[2,3]}},
+    {"id":"V08","lesson":3,"mode":"scale_vector","catalog":"G1.2.2 tip 4","prompt":"Construiește −2u pentru u=(3,1); urmărește schimbarea sensului și lungimii.","u":[3,1],"scalar":-2,"expected":{"vector":[-6,-2]}},
+    {"id":"V09","lesson":3,"mode":"close_polygon","catalog":"G1.2.1 tip 16","prompt":"Alege w astfel încât u+v+w=0, dacă u=(2,1), v=(−1,3).","u":[2,1],"v":[-1,3],"expected":{"vector":[-1,-4]}},
+    {"id":"V10","lesson":4,"mode":"basis_decomposition","catalog":"Exercițiu pregătitor pentru G1.3; nu este un tip catalogat distinct","prompt":"Ajustează a și b astfel încât w=au+bv, cu u=(2,0), v=(1,2), w=(5,6).","u":[2,0],"v":[1,2],"w":[5,6],"expected":{"coefficients":[1,3]}},
+    {"id":"V11","lesson":4,"mode":"basis_decomposition","catalog":"G1.3 tip 1","prompt":"În triunghiul ABC, AB=(4,0), AC=(0,6). Descompune mediana AM după AB și AC.","u":[4,0],"v":[0,6],"w":[2,3],"expected":{"coefficients":["1/2","1/2"]}},
+    {"id":"V12","lesson":4,"mode":"basis_decomposition","catalog":"G1.3 tip 4","prompt":"În pătratul ABCD cu A(0,0), B(6,0), C(6,6), D(0,6), M este mijlocul BC, N mijlocul CD. Scrie AB=a·AM+b·AN.","u":[6,3],"v":[3,6],"w":[6,0],"expected":{"coefficients":["4/3","-2/3"]}}
+  ]
+}

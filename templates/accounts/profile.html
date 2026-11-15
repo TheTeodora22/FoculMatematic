@@ -5,6 +5,7 @@
 
 {% block content %}
 <div class="page-content profile-page">
+    <h1 class="visually-hidden">Profilul meu</h1>
     <section class="profile-hero card">
         <div class="profile-hero__main">
             <img
@@ -23,7 +24,7 @@
                 {% endwith %}
                 <div class="profile-hero__badges">
                     <span class="profile-level-badge">Nivel {{ dashboard.profile.level }}</span>
-                    <span class="profile-class-pill">Clasa a {{ dashboard.profile.clasa }}-a</span>
+                    <span class="profile-class-pill">{% if dashboard.has_valid_class %}Clasa a {{ dashboard.profile.clasa }}-a{% else %}Alege clasa{% endif %}</span>
                 </div>
                 <p class="profile-xp-label muted">
                     {{ dashboard.xp_progress.xp_in_level }} / {{ dashboard.xp_progress.xp_needed }} XP până la nivelul {{ dashboard.xp_progress.next_level }}
@@ -31,6 +32,7 @@
                 <div
                     class="profile-xp-bar"
                     role="progressbar"
+                    aria-label="XP până la următorul nivel"
                     aria-valuenow="{{ dashboard.xp_progress.xp_in_level }}"
                     aria-valuemin="0"
                     aria-valuemax="{{ dashboard.xp_progress.xp_needed }}"
@@ -41,7 +43,7 @@
             </div>
         </div>
         <div class="profile-hero__actions">
-            <a class="btn btn-press" href="{% url 'battlepass' %}">Battle Pass</a>
+            <a class="btn btn--secondary" href="{% url 'battlepass' %}">Battle Pass</a>
             <a class="btn btn-press" href="{{ dashboard.class_url }}">Clasa mea</a>
             <a class="profile-edit-link" href="{% url 'profile_edit' %}">Editează profil</a>
         </div>
@@ -50,7 +52,7 @@
     {% if dashboard.next_learning_step %}
         <section class="card learning-next-card">
             <div class="learning-next-card__copy">
-                <p class="learning-eyebrow">Urmatorul pas</p>
+                <p class="learning-eyebrow">Următorul pas</p>
                 <h2 class="profile-section-title">{{ dashboard.next_learning_step.title }}</h2>
                 <p class="muted" style="margin:0;">{{ dashboard.next_learning_step.subtitle }}</p>
             </div>
@@ -60,9 +62,9 @@
 
     <section class="card learning-review-card">
         <div class="learning-review-card__header">
-            <h2 class="profile-section-title">Greseli de recapitulat</h2>
+            <h2 class="profile-section-title">Greșeli de recapitulat</h2>
             {% if dashboard.mistake_review_items %}
-                <span class="muted">{{ dashboard.mistake_review_items|length }} recomandari</span>
+                <span class="muted">{{ dashboard.mistake_review_items|length }} recomandări</span>
             {% endif %}
         </div>
         {% if dashboard.mistake_review_items %}
@@ -79,7 +81,7 @@
                 {% endfor %}
             </div>
         {% else %}
-            <p class="muted" style="margin:0;">Nu ai greseli marcate pentru recapitulare. Cand apar, le strangem aici.</p>
+            <p class="muted" style="margin:0;">Nu ai greșeli marcate pentru recapitulare. Când apar, le strângem aici.</p>
         {% endif %}
     </section>
 
@@ -91,7 +93,7 @@
         </article>
         <article class="card profile-stat-card">
             <p class="profile-stat-card__label muted">Clasă</p>
-            <p class="profile-stat-card__value">a {{ dashboard.profile.clasa }}-a</p>
+            <p class="profile-stat-card__value">{% if dashboard.has_valid_class %}a {{ dashboard.profile.clasa }}-a{% else %}Neselectată{% endif %}</p>
             <p class="profile-stat-card__hint muted">Materia ta</p>
         </article>
         <article class="card profile-stat-card">
@@ -136,10 +138,10 @@
                 <table class="profile-activity-table">
                     <thead>
                         <tr>
-                            <th>Subiect</th>
-                            <th>Scor</th>
-                            <th>Dată</th>
-                            <th></th>
+                            <th scope="col">Subiect</th>
+                            <th scope="col">Scor</th>
+                            <th scope="col">Dată</th>
+                            <th scope="col"><span class="visually-hidden">Acțiuni</span></th>
                         </tr>
                     </thead>
                     <tbody>

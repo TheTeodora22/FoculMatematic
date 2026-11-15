@@ -1,6 +1,1157 @@
 {
   "title": "Teorema lui Thales",
   "description": "Clasa a 9-a · Coliniaritate, concurență și paralelism",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "În triunghiul ABC, AB=9 cm și AC=12 cm. M este interior segmentului AB, AM=2 cm, iar paralela prin M la BC intersectează AC în N. Calculați AN, în cm.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din MN∥BC, triunghiurile AMN și ABC sunt asemenea. Avem AM/AB=AN/AC; înmulțim raportul AM/AB cu AC. Originea comună A și ordinea interioară a punctelor justifică rapoartele de lungimi pozitive. Rezultatul este 8/3.",
+      "options": [
+        {
+          "text": "8/3",
+          "is_correct": true
+        },
+        {
+          "text": "11/3",
+          "is_correct": false
+        },
+        {
+          "text": "5/3",
+          "is_correct": false
+        },
+        {
+          "text": "14/3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 1,
+        "family_name": "Thales direct: lungime necunoscută",
+        "variant": 1,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "AB": 9,
+        "AC": 12,
+        "AM": 2
+      }
+    },
+    {
+      "text": "În reperul cartezian sunt A(1; -1), B(3; 3), C(-5; 5) și M(2; 1). Punctul N are poziția N=A+t(C−A), cu t real. Pentru ce t este dreapta MN paralelă cu BC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vectorii AB și AC sunt necoliniari. Dacă AM=r·AB și AN=t·AC, atunci MN=t·AC−r·AB. Paralelismul cu BC=AC−AB impune t=r prin egalarea coeficienților în baza (AB,AC). Raportul r se obține din coordonatele lui M. Rezultatul este 1/2.",
+      "options": [
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "1/2",
+          "is_correct": true
+        },
+        {
+          "text": "-1/2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 2,
+        "family_name": "Reciproca lui Thales: parametru pentru paralelism",
+        "variant": 1,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "A": [
+          "1",
+          "-1"
+        ],
+        "B": [
+          "3",
+          "3"
+        ],
+        "C": [
+          "-5",
+          "5"
+        ],
+        "M": [
+          "2",
+          "1"
+        ]
+      }
+    },
+    {
+      "text": "A(1; -1), B(3; 3), C(-5; 5) determină un triunghi. Punctul M este pe semidreapta opusă lui AB și AM=(-1/2)AB ca vectori. Paralela prin M la BC intersectează dreapta AC în N. Aflați coordonatele lui N.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Forma orientată a lui Thales păstrează coeficientul k=-1/2: AN=k·AC. Prin urmare N=A+k(C−A). Coeficientul negativ pune N pe semidreapta opusă lui AC; nu se înlocuiește cu valoarea absolută. Vectorul MN=k·BC este nenul și paralel cu BC. Rezultatul este (4; -4).",
+      "options": [
+        {
+          "text": "(5; -4)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; -5)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; -4)",
+          "is_correct": true
+        },
+        {
+          "text": "(3; -3)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 3,
+        "family_name": "Paralele pe prelungiri și rapoarte orientate",
+        "variant": 1,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "A": [
+          "1",
+          "-1"
+        ],
+        "B": [
+          "3",
+          "3"
+        ],
+        "C": [
+          "-5",
+          "5"
+        ],
+        "k": "-1/2",
+        "M": [
+          "0",
+          "-3"
+        ]
+      }
+    },
+    {
+      "text": "Trei drepte distincte paralele taie două transversale în A,B,C și A′,B′,C′, în această ordine pe fiecare transversală. AB=2 cm, BC=5 cm, A′B′=3 cm. Calculați B′C′, în cm.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema lui Thales pentru trei paralele dă AB/BC=A′B′/B′C′. Segmentele sunt consecutive și în ordine corespunzătoare. Rezolvăm produsul în cruce AB·B′C′=BC·A′B′; AB este strict pozitiv. Rezultatul este 15/2.",
+      "options": [
+        {
+          "text": "17/2",
+          "is_correct": false
+        },
+        {
+          "text": "13/2",
+          "is_correct": false
+        },
+        {
+          "text": "19/2",
+          "is_correct": false
+        },
+        {
+          "text": "15/2",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 4,
+        "family_name": "Trei paralele și două transversale",
+        "variant": 1,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "AB": 2,
+        "BC": 5,
+        "ApBp": 3
+      }
+    },
+    {
+      "text": "Trapezul convex ABCD are A=(0;0), B=(7;0), D=(1;4), C=(4;4). Diagonalele AC și BD se intersectează în O. Care este raportul lungimilor AO/OC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "AB și DC sunt paralele. Triunghiurile AOB și COD sunt asemenea, deci AO/OC=AB/DC. Bazele au lungimile pozitive p și q; intersecția este interioară ambelor diagonale. Echivalent, pe AC parametrul lui O este p/(p+q), astfel AO/OC=[p/(p+q)]/[q/(p+q)]. Rezultatul este 7/3.",
+      "options": [
+        {
+          "text": "7/3",
+          "is_correct": true
+        },
+        {
+          "text": "10/3",
+          "is_correct": false
+        },
+        {
+          "text": "4/3",
+          "is_correct": false
+        },
+        {
+          "text": "13/3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 5,
+        "family_name": "Raportul diagonalelor într-un trapez",
+        "variant": 1,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "7",
+          "0"
+        ],
+        "C": [
+          "4",
+          "4"
+        ],
+        "D": [
+          "1",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC, AB=12 cm și AC=16 cm. M este interior segmentului AB, AM=3 cm, iar paralela prin M la BC intersectează AC în N. Calculați AN, în cm.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din MN∥BC, triunghiurile AMN și ABC sunt asemenea. Avem AM/AB=AN/AC; înmulțim raportul AM/AB cu AC. Originea comună A și ordinea interioară a punctelor justifică rapoartele de lungimi pozitive. Rezultatul este 4.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 1,
+        "family_name": "Thales direct: lungime necunoscută",
+        "variant": 2,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "AB": 12,
+        "AC": 16,
+        "AM": 3
+      }
+    },
+    {
+      "text": "În reperul cartezian sunt A(2; -2), B(4; 5), C(-7; 6) și M(16/5; 11/5). Punctul N are poziția N=A+t(C−A), cu t real. Pentru ce t este dreapta MN paralelă cu BC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vectorii AB și AC sunt necoliniari. Dacă AM=r·AB și AN=t·AC, atunci MN=t·AC−r·AB. Paralelismul cu BC=AC−AB impune t=r prin egalarea coeficienților în baza (AB,AC). Raportul r se obține din coordonatele lui M. Rezultatul este 3/5.",
+      "options": [
+        {
+          "text": "8/5",
+          "is_correct": false
+        },
+        {
+          "text": "-2/5",
+          "is_correct": false
+        },
+        {
+          "text": "3/5",
+          "is_correct": true
+        },
+        {
+          "text": "13/5",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 2,
+        "family_name": "Reciproca lui Thales: parametru pentru paralelism",
+        "variant": 2,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "A": [
+          "2",
+          "-2"
+        ],
+        "B": [
+          "4",
+          "5"
+        ],
+        "C": [
+          "-7",
+          "6"
+        ],
+        "M": [
+          "16/5",
+          "11/5"
+        ]
+      }
+    },
+    {
+      "text": "A(2; -2), B(4; 5), C(-7; 6) determină un triunghi. Punctul M este pe semidreapta opusă lui AB și AM=(-1)AB ca vectori. Paralela prin M la BC intersectează dreapta AC în N. Aflați coordonatele lui N.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Forma orientată a lui Thales păstrează coeficientul k=-1: AN=k·AC. Prin urmare N=A+k(C−A). Coeficientul negativ pune N pe semidreapta opusă lui AC; nu se înlocuiește cu valoarea absolută. Vectorul MN=k·BC este nenul și paralel cu BC. Rezultatul este (11; -10).",
+      "options": [
+        {
+          "text": "(12; -10)",
+          "is_correct": false
+        },
+        {
+          "text": "(11; -11)",
+          "is_correct": false
+        },
+        {
+          "text": "(10; -9)",
+          "is_correct": false
+        },
+        {
+          "text": "(11; -10)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 3,
+        "family_name": "Paralele pe prelungiri și rapoarte orientate",
+        "variant": 2,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "A": [
+          "2",
+          "-2"
+        ],
+        "B": [
+          "4",
+          "5"
+        ],
+        "C": [
+          "-7",
+          "6"
+        ],
+        "k": "-1",
+        "M": [
+          "0",
+          "-9"
+        ]
+      }
+    },
+    {
+      "text": "Trei drepte distincte paralele taie două transversale în A,B,C și A′,B′,C′, în această ordine pe fiecare transversală. AB=3 cm, BC=7 cm, A′B′=4 cm. Calculați B′C′, în cm.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema lui Thales pentru trei paralele dă AB/BC=A′B′/B′C′. Segmentele sunt consecutive și în ordine corespunzătoare. Rezolvăm produsul în cruce AB·B′C′=BC·A′B′; AB este strict pozitiv. Rezultatul este 28/3.",
+      "options": [
+        {
+          "text": "28/3",
+          "is_correct": true
+        },
+        {
+          "text": "31/3",
+          "is_correct": false
+        },
+        {
+          "text": "25/3",
+          "is_correct": false
+        },
+        {
+          "text": "34/3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 4,
+        "family_name": "Trei paralele și două transversale",
+        "variant": 2,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "AB": 3,
+        "BC": 7,
+        "ApBp": 4
+      }
+    },
+    {
+      "text": "Trapezul convex ABCD are A=(0;0), B=(10;0), D=(2;5), C=(6;5). Diagonalele AC și BD se intersectează în O. Care este raportul lungimilor AO/OC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "AB și DC sunt paralele. Triunghiurile AOB și COD sunt asemenea, deci AO/OC=AB/DC. Bazele au lungimile pozitive p și q; intersecția este interioară ambelor diagonale. Echivalent, pe AC parametrul lui O este p/(p+q), astfel AO/OC=[p/(p+q)]/[q/(p+q)]. Rezultatul este 5/2.",
+      "options": [
+        {
+          "text": "7/2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": true
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "9/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 5,
+        "family_name": "Raportul diagonalelor într-un trapez",
+        "variant": 2,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "10",
+          "0"
+        ],
+        "C": [
+          "6",
+          "5"
+        ],
+        "D": [
+          "2",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC, AB=15 cm și AC=20 cm. M este interior segmentului AB, AM=4 cm, iar paralela prin M la BC intersectează AC în N. Calculați AN, în cm.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din MN∥BC, triunghiurile AMN și ABC sunt asemenea. Avem AM/AB=AN/AC; înmulțim raportul AM/AB cu AC. Originea comună A și ordinea interioară a punctelor justifică rapoartele de lungimi pozitive. Rezultatul este 16/3.",
+      "options": [
+        {
+          "text": "19/3",
+          "is_correct": false
+        },
+        {
+          "text": "13/3",
+          "is_correct": false
+        },
+        {
+          "text": "16/3",
+          "is_correct": true
+        },
+        {
+          "text": "22/3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 1,
+        "family_name": "Thales direct: lungime necunoscută",
+        "variant": 3,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "AB": 15,
+        "AC": 20,
+        "AM": 4
+      }
+    },
+    {
+      "text": "În reperul cartezian sunt A(3; -3), B(5; 7), C(-9; 7) și M(13/3; 11/3). Punctul N are poziția N=A+t(C−A), cu t real. Pentru ce t este dreapta MN paralelă cu BC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vectorii AB și AC sunt necoliniari. Dacă AM=r·AB și AN=t·AC, atunci MN=t·AC−r·AB. Paralelismul cu BC=AC−AB impune t=r prin egalarea coeficienților în baza (AB,AC). Raportul r se obține din coordonatele lui M. Rezultatul este 2/3.",
+      "options": [
+        {
+          "text": "5/3",
+          "is_correct": false
+        },
+        {
+          "text": "-1/3",
+          "is_correct": false
+        },
+        {
+          "text": "8/3",
+          "is_correct": false
+        },
+        {
+          "text": "2/3",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 2,
+        "family_name": "Reciproca lui Thales: parametru pentru paralelism",
+        "variant": 3,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "A": [
+          "3",
+          "-3"
+        ],
+        "B": [
+          "5",
+          "7"
+        ],
+        "C": [
+          "-9",
+          "7"
+        ],
+        "M": [
+          "13/3",
+          "11/3"
+        ]
+      }
+    },
+    {
+      "text": "A(3; -3), B(5; 7), C(-9; 7) determină un triunghi. Punctul M este pe semidreapta opusă lui AB și AM=(-3/2)AB ca vectori. Paralela prin M la BC intersectează dreapta AC în N. Aflați coordonatele lui N.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Forma orientată a lui Thales păstrează coeficientul k=-3/2: AN=k·AC. Prin urmare N=A+k(C−A). Coeficientul negativ pune N pe semidreapta opusă lui AC; nu se înlocuiește cu valoarea absolută. Vectorul MN=k·BC este nenul și paralel cu BC. Rezultatul este (21; -18).",
+      "options": [
+        {
+          "text": "(21; -18)",
+          "is_correct": true
+        },
+        {
+          "text": "(22; -18)",
+          "is_correct": false
+        },
+        {
+          "text": "(21; -19)",
+          "is_correct": false
+        },
+        {
+          "text": "(20; -17)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 3,
+        "family_name": "Paralele pe prelungiri și rapoarte orientate",
+        "variant": 3,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "A": [
+          "3",
+          "-3"
+        ],
+        "B": [
+          "5",
+          "7"
+        ],
+        "C": [
+          "-9",
+          "7"
+        ],
+        "k": "-3/2",
+        "M": [
+          "0",
+          "-18"
+        ]
+      }
+    },
+    {
+      "text": "Trei drepte distincte paralele taie două transversale în A,B,C și A′,B′,C′, în această ordine pe fiecare transversală. AB=4 cm, BC=9 cm, A′B′=5 cm. Calculați B′C′, în cm.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema lui Thales pentru trei paralele dă AB/BC=A′B′/B′C′. Segmentele sunt consecutive și în ordine corespunzătoare. Rezolvăm produsul în cruce AB·B′C′=BC·A′B′; AB este strict pozitiv. Rezultatul este 45/4.",
+      "options": [
+        {
+          "text": "49/4",
+          "is_correct": false
+        },
+        {
+          "text": "45/4",
+          "is_correct": true
+        },
+        {
+          "text": "41/4",
+          "is_correct": false
+        },
+        {
+          "text": "53/4",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 4,
+        "family_name": "Trei paralele și două transversale",
+        "variant": 3,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "AB": 4,
+        "BC": 9,
+        "ApBp": 5
+      }
+    },
+    {
+      "text": "Trapezul convex ABCD are A=(0;0), B=(13;0), D=(3;6), C=(8;6). Diagonalele AC și BD se intersectează în O. Care este raportul lungimilor AO/OC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "AB și DC sunt paralele. Triunghiurile AOB și COD sunt asemenea, deci AO/OC=AB/DC. Bazele au lungimile pozitive p și q; intersecția este interioară ambelor diagonale. Echivalent, pe AC parametrul lui O este p/(p+q), astfel AO/OC=[p/(p+q)]/[q/(p+q)]. Rezultatul este 13/5.",
+      "options": [
+        {
+          "text": "18/5",
+          "is_correct": false
+        },
+        {
+          "text": "8/5",
+          "is_correct": false
+        },
+        {
+          "text": "13/5",
+          "is_correct": true
+        },
+        {
+          "text": "23/5",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 5,
+        "family_name": "Raportul diagonalelor într-un trapez",
+        "variant": 3,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "13",
+          "0"
+        ],
+        "C": [
+          "8",
+          "6"
+        ],
+        "D": [
+          "3",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC, AB=18 cm și AC=24 cm. M este interior segmentului AB, AM=5 cm, iar paralela prin M la BC intersectează AC în N. Calculați AN, în cm.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din MN∥BC, triunghiurile AMN și ABC sunt asemenea. Avem AM/AB=AN/AC; înmulțim raportul AM/AB cu AC. Originea comună A și ordinea interioară a punctelor justifică rapoartele de lungimi pozitive. Rezultatul este 20/3.",
+      "options": [
+        {
+          "text": "23/3",
+          "is_correct": false
+        },
+        {
+          "text": "17/3",
+          "is_correct": false
+        },
+        {
+          "text": "26/3",
+          "is_correct": false
+        },
+        {
+          "text": "20/3",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 1,
+        "family_name": "Thales direct: lungime necunoscută",
+        "variant": 4,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "AB": 18,
+        "AC": 24,
+        "AM": 5
+      }
+    },
+    {
+      "text": "În reperul cartezian sunt A(4; -4), B(6; 9), C(-11; 8) și M(38/7; 37/7). Punctul N are poziția N=A+t(C−A), cu t real. Pentru ce t este dreapta MN paralelă cu BC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vectorii AB și AC sunt necoliniari. Dacă AM=r·AB și AN=t·AC, atunci MN=t·AC−r·AB. Paralelismul cu BC=AC−AB impune t=r prin egalarea coeficienților în baza (AB,AC). Raportul r se obține din coordonatele lui M. Rezultatul este 5/7.",
+      "options": [
+        {
+          "text": "5/7",
+          "is_correct": true
+        },
+        {
+          "text": "12/7",
+          "is_correct": false
+        },
+        {
+          "text": "-2/7",
+          "is_correct": false
+        },
+        {
+          "text": "19/7",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 2,
+        "family_name": "Reciproca lui Thales: parametru pentru paralelism",
+        "variant": 4,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "A": [
+          "4",
+          "-4"
+        ],
+        "B": [
+          "6",
+          "9"
+        ],
+        "C": [
+          "-11",
+          "8"
+        ],
+        "M": [
+          "38/7",
+          "37/7"
+        ]
+      }
+    },
+    {
+      "text": "A(4; -4), B(6; 9), C(-11; 8) determină un triunghi. Punctul M este pe semidreapta opusă lui AB și AM=(-2)AB ca vectori. Paralela prin M la BC intersectează dreapta AC în N. Aflați coordonatele lui N.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Forma orientată a lui Thales păstrează coeficientul k=-2: AN=k·AC. Prin urmare N=A+k(C−A). Coeficientul negativ pune N pe semidreapta opusă lui AC; nu se înlocuiește cu valoarea absolută. Vectorul MN=k·BC este nenul și paralel cu BC. Rezultatul este (34; -28).",
+      "options": [
+        {
+          "text": "(35; -28)",
+          "is_correct": false
+        },
+        {
+          "text": "(34; -28)",
+          "is_correct": true
+        },
+        {
+          "text": "(34; -29)",
+          "is_correct": false
+        },
+        {
+          "text": "(33; -27)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 3,
+        "family_name": "Paralele pe prelungiri și rapoarte orientate",
+        "variant": 4,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "A": [
+          "4",
+          "-4"
+        ],
+        "B": [
+          "6",
+          "9"
+        ],
+        "C": [
+          "-11",
+          "8"
+        ],
+        "k": "-2",
+        "M": [
+          "0",
+          "-30"
+        ]
+      }
+    },
+    {
+      "text": "Trei drepte distincte paralele taie două transversale în A,B,C și A′,B′,C′, în această ordine pe fiecare transversală. AB=5 cm, BC=11 cm, A′B′=6 cm. Calculați B′C′, în cm.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema lui Thales pentru trei paralele dă AB/BC=A′B′/B′C′. Segmentele sunt consecutive și în ordine corespunzătoare. Rezolvăm produsul în cruce AB·B′C′=BC·A′B′; AB este strict pozitiv. Rezultatul este 66/5.",
+      "options": [
+        {
+          "text": "71/5",
+          "is_correct": false
+        },
+        {
+          "text": "61/5",
+          "is_correct": false
+        },
+        {
+          "text": "66/5",
+          "is_correct": true
+        },
+        {
+          "text": "76/5",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 4,
+        "family_name": "Trei paralele și două transversale",
+        "variant": 4,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "AB": 5,
+        "BC": 11,
+        "ApBp": 6
+      }
+    },
+    {
+      "text": "Trapezul convex ABCD are A=(0;0), B=(16;0), D=(4;7), C=(10;7). Diagonalele AC și BD se intersectează în O. Care este raportul lungimilor AO/OC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "AB și DC sunt paralele. Triunghiurile AOB și COD sunt asemenea, deci AO/OC=AB/DC. Bazele au lungimile pozitive p și q; intersecția este interioară ambelor diagonale. Echivalent, pe AC parametrul lui O este p/(p+q), astfel AO/OC=[p/(p+q)]/[q/(p+q)]. Rezultatul este 8/3.",
+      "options": [
+        {
+          "text": "11/3",
+          "is_correct": false
+        },
+        {
+          "text": "5/3",
+          "is_correct": false
+        },
+        {
+          "text": "14/3",
+          "is_correct": false
+        },
+        {
+          "text": "8/3",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 5,
+        "family_name": "Raportul diagonalelor într-un trapez",
+        "variant": 4,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "16",
+          "0"
+        ],
+        "C": [
+          "10",
+          "7"
+        ],
+        "D": [
+          "4",
+          "7"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul ABC, AB=21 cm și AC=28 cm. M este interior segmentului AB, AM=6 cm, iar paralela prin M la BC intersectează AC în N. Calculați AN, în cm.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din MN∥BC, triunghiurile AMN și ABC sunt asemenea. Avem AM/AB=AN/AC; înmulțim raportul AM/AB cu AC. Originea comună A și ordinea interioară a punctelor justifică rapoartele de lungimi pozitive. Rezultatul este 8.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 1,
+        "family_name": "Thales direct: lungime necunoscută",
+        "variant": 5,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "AB": 21,
+        "AC": 28,
+        "AM": 6
+      }
+    },
+    {
+      "text": "În reperul cartezian sunt A(5; -5), B(7; 11), C(-13; 9) și M(13/2; 7). Punctul N are poziția N=A+t(C−A), cu t real. Pentru ce t este dreapta MN paralelă cu BC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vectorii AB și AC sunt necoliniari. Dacă AM=r·AB și AN=t·AC, atunci MN=t·AC−r·AB. Paralelismul cu BC=AC−AB impune t=r prin egalarea coeficienților în baza (AB,AC). Raportul r se obține din coordonatele lui M. Rezultatul este 3/4.",
+      "options": [
+        {
+          "text": "7/4",
+          "is_correct": false
+        },
+        {
+          "text": "3/4",
+          "is_correct": true
+        },
+        {
+          "text": "-1/4",
+          "is_correct": false
+        },
+        {
+          "text": "11/4",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 2,
+        "family_name": "Reciproca lui Thales: parametru pentru paralelism",
+        "variant": 5,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "A": [
+          "5",
+          "-5"
+        ],
+        "B": [
+          "7",
+          "11"
+        ],
+        "C": [
+          "-13",
+          "9"
+        ],
+        "M": [
+          "13/2",
+          "7"
+        ]
+      }
+    },
+    {
+      "text": "A(5; -5), B(7; 11), C(-13; 9) determină un triunghi. Punctul M este pe semidreapta opusă lui AB și AM=(-5/2)AB ca vectori. Paralela prin M la BC intersectează dreapta AC în N. Aflați coordonatele lui N.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Forma orientată a lui Thales păstrează coeficientul k=-5/2: AN=k·AC. Prin urmare N=A+k(C−A). Coeficientul negativ pune N pe semidreapta opusă lui AC; nu se înlocuiește cu valoarea absolută. Vectorul MN=k·BC este nenul și paralel cu BC. Rezultatul este (50; -40).",
+      "options": [
+        {
+          "text": "(51; -40)",
+          "is_correct": false
+        },
+        {
+          "text": "(50; -41)",
+          "is_correct": false
+        },
+        {
+          "text": "(50; -40)",
+          "is_correct": true
+        },
+        {
+          "text": "(49; -39)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 3,
+        "family_name": "Paralele pe prelungiri și rapoarte orientate",
+        "variant": 5,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "A": [
+          "5",
+          "-5"
+        ],
+        "B": [
+          "7",
+          "11"
+        ],
+        "C": [
+          "-13",
+          "9"
+        ],
+        "k": "-5/2",
+        "M": [
+          "0",
+          "-45"
+        ]
+      }
+    },
+    {
+      "text": "Trei drepte distincte paralele taie două transversale în A,B,C și A′,B′,C′, în această ordine pe fiecare transversală. AB=6 cm, BC=13 cm, A′B′=7 cm. Calculați B′C′, în cm.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema lui Thales pentru trei paralele dă AB/BC=A′B′/B′C′. Segmentele sunt consecutive și în ordine corespunzătoare. Rezolvăm produsul în cruce AB·B′C′=BC·A′B′; AB este strict pozitiv. Rezultatul este 91/6.",
+      "options": [
+        {
+          "text": "97/6",
+          "is_correct": false
+        },
+        {
+          "text": "85/6",
+          "is_correct": false
+        },
+        {
+          "text": "103/6",
+          "is_correct": false
+        },
+        {
+          "text": "91/6",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 4,
+        "family_name": "Trei paralele și două transversale",
+        "variant": 5,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "AB": 6,
+        "BC": 13,
+        "ApBp": 7
+      }
+    },
+    {
+      "text": "Trapezul convex ABCD are A=(0;0), B=(19;0), D=(5;8), C=(12;8). Diagonalele AC și BD se intersectează în O. Care este raportul lungimilor AO/OC?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "AB și DC sunt paralele. Triunghiurile AOB și COD sunt asemenea, deci AO/OC=AB/DC. Bazele au lungimile pozitive p și q; intersecția este interioară ambelor diagonale. Echivalent, pe AC parametrul lui O este p/(p+q), astfel AO/OC=[p/(p+q)]/[q/(p+q)]. Rezultatul este 19/7.",
+      "options": [
+        {
+          "text": "19/7",
+          "is_correct": true
+        },
+        {
+          "text": "26/7",
+          "is_correct": false
+        },
+        {
+          "text": "12/7",
+          "is_correct": false
+        },
+        {
+          "text": "33/7",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_thales_original_v1",
+        "family": 5,
+        "family_name": "Raportul diagonalelor într-un trapez",
+        "variant": 5,
+        "catalog": null,
+        "adaptation": "Exercițiu original de consolidare; fără atribuire de tip G2."
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "19",
+          "0"
+        ],
+        "C": [
+          "12",
+          "8"
+        ],
+        "D": [
+          "5",
+          "8"
+        ]
+      }
+    }
+  ]
 }

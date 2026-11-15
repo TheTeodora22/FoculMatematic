@@ -1,6 +1,1417 @@
 {
   "title": "Graficul funcției de gradul al II-lea. Simetrie și intersecții cu axele",
   "description": "Clasa a 9-a · Funcția de gradul al II-lea",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "hard",
+  "questions": [
+    {
+      "text": "Care este abscisa axei de simetrie a parabolei \\(y = 2 x^{2} + 8 x + 9\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În forma canonică, valorile la h−t și h+t sunt egale. Axa este x=h=−b/(2a). Rezultatul cerut este \\(-2\\).",
+      "options": [
+        {
+          "text": "\\(-2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 10,
+        "type_name": "Axa de simetrie",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_x",
+        "f": "2*x**2 + 8*x + 9",
+        "option_values": [
+          "-2",
+          "-1",
+          "-3",
+          "0"
+        ]
+      }
+    },
+    {
+      "text": "Câte rădăcini reale distincte are ecuația \\(x^{2} - 4 x + 2 = 0\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La x=(1) valoarea este −1, iar coeficientul principal este pozitiv. Forma canonică are minim strict negativ și tinde la +∞ pe ambele ramuri, deci sunt două rădăcini reale distincte; echivalent Δ>0. Rezultatul cerut este \\(2\\).",
+      "options": [
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 19,
+        "type_name": "Existența unei rădăcini prin valori speciale",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "partial_case",
+        "adaptation": "Existența unei rădăcini este adaptată în numărul de rădăcini pentru o familie explicită."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x**2 - 4*x + 2",
+        "domain": "Reals",
+        "option_values": [
+          "3",
+          "2",
+          "1",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "Vârfurile familiei \\(y = m^{2} - 2 m x + m + x^{2} + 1\\) (m∈ℝ) aparțin unei drepte y=g(x). Determinați g(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Forma canonică dă V=(m,(1)m+1). Eliminarea lui m=xV produce yV=(1)xV+1. Deoarece m parcurge ℝ, se obține întreaga dreaptă. Rezultatul cerut este \\(x + 1\\).",
+      "options": [
+        {
+          "text": "\\(x + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x + 1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(x + 3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 20,
+        "type_name": "Vârfuri coliniare",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_locus",
+        "f": "m**2 - 2*m*x + m + x**2 + 1",
+        "parameter": "m",
+        "option_values": [
+          "x + 2",
+          "x",
+          "x + 1",
+          "x + 3"
+        ]
+      }
+    },
+    {
+      "text": "Determinați g(x) pentru locul vârfurilor familiei \\(y = 2 m^{2} - 2 m x + x^{2} + 1\\) (m∈ℝ), scris y=g(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vârful este (m,m²+(1)). Eliminarea parametrului dă y=x²+(1). Toate abscisele reale sunt parcurse deoarece m este arbitrar. Rezultatul cerut este \\(x^{2} + 1\\).",
+      "options": [
+        {
+          "text": "\\(x^{2} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} + 3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} + 1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 21,
+        "type_name": "Locul parabolic al vârfurilor",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_locus",
+        "f": "2*m**2 - 2*m*x + x**2 + 1",
+        "parameter": "m",
+        "option_values": [
+          "x**2 + 2",
+          "x**2",
+          "x**2 + 3",
+          "x**2 + 1"
+        ]
+      }
+    },
+    {
+      "text": "Aflați punctul fix comun tuturor graficelor familiei \\(y = m \\left(x - 1\\right) + x^{2} + 1\\) (m∈ℝ). Răspundeți (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru ca valoarea să nu depindă de m, coeficientul lui m trebuie să fie zero: x−(1)=0. Înlocuirea în termenul fără m dă ordonata fixă. Rezultatul cerut este \\(\\left( 1, \\  2\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 1, \\  2\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 2, \\  2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 3, \\  2\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 22,
+        "type_name": "Puncte fixe ale familiei",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "fixed_point",
+        "f": "m*(x - 1) + x**2 + 1",
+        "parameter": "m",
+        "option_values": [
+          "(1, 2)",
+          "(2, 2)",
+          "(0, 2)",
+          "(3, 2)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m vârful parabolei \\(y = m + \\left(- m + x\\right)^{2} + 1\\) se află strict în cadranul I?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vârful este (m,m+(1)). Condițiile sunt m>0 și m+(1)>0. Cum (1) este pozitiv, a doua condiție este automată când prima este adevărată; axele sunt excluse. Rezultatul cerut este \\(\\left(0, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(0, \\infty\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 23,
+        "type_name": "Poziția vârfului în cadrane",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_quadrant",
+        "f": "m + (-m + x)**2 + 1",
+        "parameter": "m",
+        "quadrant": 1,
+        "option_values": [
+          "Reals",
+          "Interval.open(0, oo)",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Care este abscisa axei de simetrie a parabolei \\(y = - 3 x^{2} - 6 x - 3\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În forma canonică, valorile la h−t și h+t sunt egale. Axa este x=h=−b/(2a). Rezultatul cerut este \\(-1\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 10,
+        "type_name": "Axa de simetrie",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_x",
+        "f": "-3*x**2 - 6*x - 3",
+        "option_values": [
+          "0",
+          "-2",
+          "-1",
+          "1"
+        ]
+      }
+    },
+    {
+      "text": "Câte rădăcini reale distincte are ecuația \\(x^{2} - 6 x + 7 = 0\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La x=(2) valoarea este −1, iar coeficientul principal este pozitiv. Forma canonică are minim strict negativ și tinde la +∞ pe ambele ramuri, deci sunt două rădăcini reale distincte; echivalent Δ>0. Rezultatul cerut este \\(2\\).",
+      "options": [
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 19,
+        "type_name": "Existența unei rădăcini prin valori speciale",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "partial_case",
+        "adaptation": "Existența unei rădăcini este adaptată în numărul de rădăcini pentru o familie explicită."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x**2 - 6*x + 7",
+        "domain": "Reals",
+        "option_values": [
+          "3",
+          "1",
+          "4",
+          "2"
+        ]
+      }
+    },
+    {
+      "text": "Vârfurile familiei \\(y = m^{2} - 2 m x + 2 m + x^{2} + 1\\) (m∈ℝ) aparțin unei drepte y=g(x). Determinați g(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Forma canonică dă V=(m,(2)m+1). Eliminarea lui m=xV produce yV=(2)xV+1. Deoarece m parcurge ℝ, se obține întreaga dreaptă. Rezultatul cerut este \\(2 x + 1\\).",
+      "options": [
+        {
+          "text": "\\(2 x + 1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 x + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x + 3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 20,
+        "type_name": "Vârfuri coliniare",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_locus",
+        "f": "m**2 - 2*m*x + 2*m + x**2 + 1",
+        "parameter": "m",
+        "option_values": [
+          "2*x + 1",
+          "2*x + 2",
+          "2*x",
+          "2*x + 3"
+        ]
+      }
+    },
+    {
+      "text": "Determinați g(x) pentru locul vârfurilor familiei \\(y = 2 m^{2} - 2 m x + x^{2} + 2\\) (m∈ℝ), scris y=g(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vârful este (m,m²+(2)). Eliminarea parametrului dă y=x²+(2). Toate abscisele reale sunt parcurse deoarece m este arbitrar. Rezultatul cerut este \\(x^{2} + 2\\).",
+      "options": [
+        {
+          "text": "\\(x^{2} + 3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} + 2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(x^{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} + 4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 21,
+        "type_name": "Locul parabolic al vârfurilor",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_locus",
+        "f": "2*m**2 - 2*m*x + x**2 + 2",
+        "parameter": "m",
+        "option_values": [
+          "x**2 + 3",
+          "x**2 + 2",
+          "x**2 + 1",
+          "x**2 + 4"
+        ]
+      }
+    },
+    {
+      "text": "Aflați punctul fix comun tuturor graficelor familiei \\(y = m \\left(x - 2\\right) + x^{2} + 2\\) (m∈ℝ). Răspundeți (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru ca valoarea să nu depindă de m, coeficientul lui m trebuie să fie zero: x−(2)=0. Înlocuirea în termenul fără m dă ordonata fixă. Rezultatul cerut este \\(\\left( 2, \\  6\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 3, \\  6\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 1, \\  6\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  6\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 4, \\  6\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 22,
+        "type_name": "Puncte fixe ale familiei",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "fixed_point",
+        "f": "m*(x - 2) + x**2 + 2",
+        "parameter": "m",
+        "option_values": [
+          "(3, 6)",
+          "(1, 6)",
+          "(2, 6)",
+          "(4, 6)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m vârful parabolei \\(y = m + \\left(- m + x\\right)^{2} + 2\\) se află strict în cadranul I?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vârful este (m,m+(2)). Condițiile sunt m>0 și m+(2)>0. Cum (2) este pozitiv, a doua condiție este automată când prima este adevărată; axele sunt excluse. Rezultatul cerut este \\(\\left(0, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(0, \\infty\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 23,
+        "type_name": "Poziția vârfului în cadrane",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_quadrant",
+        "f": "m + (-m + x)**2 + 2",
+        "parameter": "m",
+        "quadrant": 1,
+        "option_values": [
+          "Reals",
+          "{0}",
+          "EmptySet",
+          "Interval.open(0, oo)"
+        ]
+      }
+    },
+    {
+      "text": "Care este abscisa axei de simetrie a parabolei \\(y = 4 x^{2} - 1\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În forma canonică, valorile la h−t și h+t sunt egale. Axa este x=h=−b/(2a). Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 10,
+        "type_name": "Axa de simetrie",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_x",
+        "f": "4*x**2 - 1",
+        "option_values": [
+          "0",
+          "1",
+          "-1",
+          "2"
+        ]
+      }
+    },
+    {
+      "text": "Câte rădăcini reale distincte are ecuația \\(x^{2} - 8 x + 14 = 0\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La x=(3) valoarea este −1, iar coeficientul principal este pozitiv. Forma canonică are minim strict negativ și tinde la +∞ pe ambele ramuri, deci sunt două rădăcini reale distincte; echivalent Δ>0. Rezultatul cerut este \\(2\\).",
+      "options": [
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 19,
+        "type_name": "Existența unei rădăcini prin valori speciale",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "partial_case",
+        "adaptation": "Existența unei rădăcini este adaptată în numărul de rădăcini pentru o familie explicită."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x**2 - 8*x + 14",
+        "domain": "Reals",
+        "option_values": [
+          "3",
+          "2",
+          "1",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "Vârfurile familiei \\(y = m^{2} - 2 m x + 3 m + x^{2} + 1\\) (m∈ℝ) aparțin unei drepte y=g(x). Determinați g(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Forma canonică dă V=(m,(3)m+1). Eliminarea lui m=xV produce yV=(3)xV+1. Deoarece m parcurge ℝ, se obține întreaga dreaptă. Rezultatul cerut este \\(3 x + 1\\).",
+      "options": [
+        {
+          "text": "\\(3 x + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3 x\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3 x + 1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3 x + 3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 20,
+        "type_name": "Vârfuri coliniare",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_locus",
+        "f": "m**2 - 2*m*x + 3*m + x**2 + 1",
+        "parameter": "m",
+        "option_values": [
+          "3*x + 2",
+          "3*x",
+          "3*x + 1",
+          "3*x + 3"
+        ]
+      }
+    },
+    {
+      "text": "Determinați g(x) pentru locul vârfurilor familiei \\(y = 2 m^{2} - 2 m x + x^{2} + 3\\) (m∈ℝ), scris y=g(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vârful este (m,m²+(3)). Eliminarea parametrului dă y=x²+(3). Toate abscisele reale sunt parcurse deoarece m este arbitrar. Rezultatul cerut este \\(x^{2} + 3\\).",
+      "options": [
+        {
+          "text": "\\(x^{2} + 4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} + 5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} + 3\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 21,
+        "type_name": "Locul parabolic al vârfurilor",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_locus",
+        "f": "2*m**2 - 2*m*x + x**2 + 3",
+        "parameter": "m",
+        "option_values": [
+          "x**2 + 4",
+          "x**2 + 2",
+          "x**2 + 5",
+          "x**2 + 3"
+        ]
+      }
+    },
+    {
+      "text": "Aflați punctul fix comun tuturor graficelor familiei \\(y = m \\left(x - 3\\right) + x^{2} + 3\\) (m∈ℝ). Răspundeți (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru ca valoarea să nu depindă de m, coeficientul lui m trebuie să fie zero: x−(3)=0. Înlocuirea în termenul fără m dă ordonata fixă. Rezultatul cerut este \\(\\left( 3, \\  12\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 3, \\  12\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 4, \\  12\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  12\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 5, \\  12\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 22,
+        "type_name": "Puncte fixe ale familiei",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "fixed_point",
+        "f": "m*(x - 3) + x**2 + 3",
+        "parameter": "m",
+        "option_values": [
+          "(3, 12)",
+          "(4, 12)",
+          "(2, 12)",
+          "(5, 12)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m vârful parabolei \\(y = m + \\left(- m + x\\right)^{2} + 3\\) se află strict în cadranul I?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vârful este (m,m+(3)). Condițiile sunt m>0 și m+(3)>0. Cum (3) este pozitiv, a doua condiție este automată când prima este adevărată; axele sunt excluse. Rezultatul cerut este \\(\\left(0, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(0, \\infty\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 23,
+        "type_name": "Poziția vârfului în cadrane",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_quadrant",
+        "f": "m + (-m + x)**2 + 3",
+        "parameter": "m",
+        "quadrant": 1,
+        "option_values": [
+          "Reals",
+          "Interval.open(0, oo)",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Care este abscisa axei de simetrie a parabolei \\(y = - 5 x^{2} + 10 x - 7\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În forma canonică, valorile la h−t și h+t sunt egale. Axa este x=h=−b/(2a). Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 10,
+        "type_name": "Axa de simetrie",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_x",
+        "f": "-5*x**2 + 10*x - 7",
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Câte rădăcini reale distincte are ecuația \\(x^{2} - 10 x + 23 = 0\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La x=(4) valoarea este −1, iar coeficientul principal este pozitiv. Forma canonică are minim strict negativ și tinde la +∞ pe ambele ramuri, deci sunt două rădăcini reale distincte; echivalent Δ>0. Rezultatul cerut este \\(2\\).",
+      "options": [
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 19,
+        "type_name": "Existența unei rădăcini prin valori speciale",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "partial_case",
+        "adaptation": "Existența unei rădăcini este adaptată în numărul de rădăcini pentru o familie explicită."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x**2 - 10*x + 23",
+        "domain": "Reals",
+        "option_values": [
+          "3",
+          "1",
+          "4",
+          "2"
+        ]
+      }
+    },
+    {
+      "text": "Vârfurile familiei \\(y = m^{2} - 2 m x + 4 m + x^{2} + 1\\) (m∈ℝ) aparțin unei drepte y=g(x). Determinați g(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Forma canonică dă V=(m,(4)m+1). Eliminarea lui m=xV produce yV=(4)xV+1. Deoarece m parcurge ℝ, se obține întreaga dreaptă. Rezultatul cerut este \\(4 x + 1\\).",
+      "options": [
+        {
+          "text": "\\(4 x + 1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4 x + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x + 3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 20,
+        "type_name": "Vârfuri coliniare",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_locus",
+        "f": "m**2 - 2*m*x + 4*m + x**2 + 1",
+        "parameter": "m",
+        "option_values": [
+          "4*x + 1",
+          "4*x + 2",
+          "4*x",
+          "4*x + 3"
+        ]
+      }
+    },
+    {
+      "text": "Determinați g(x) pentru locul vârfurilor familiei \\(y = 2 m^{2} - 2 m x + x^{2} + 4\\) (m∈ℝ), scris y=g(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vârful este (m,m²+(4)). Eliminarea parametrului dă y=x²+(4). Toate abscisele reale sunt parcurse deoarece m este arbitrar. Rezultatul cerut este \\(x^{2} + 4\\).",
+      "options": [
+        {
+          "text": "\\(x^{2} + 5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} + 4\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(x^{2} + 3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} + 6\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 21,
+        "type_name": "Locul parabolic al vârfurilor",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_locus",
+        "f": "2*m**2 - 2*m*x + x**2 + 4",
+        "parameter": "m",
+        "option_values": [
+          "x**2 + 5",
+          "x**2 + 4",
+          "x**2 + 3",
+          "x**2 + 6"
+        ]
+      }
+    },
+    {
+      "text": "Aflați punctul fix comun tuturor graficelor familiei \\(y = m \\left(x - 4\\right) + x^{2} + 4\\) (m∈ℝ). Răspundeți (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru ca valoarea să nu depindă de m, coeficientul lui m trebuie să fie zero: x−(4)=0. Înlocuirea în termenul fără m dă ordonata fixă. Rezultatul cerut este \\(\\left( 4, \\  20\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 5, \\  20\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 3, \\  20\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  20\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 6, \\  20\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 22,
+        "type_name": "Puncte fixe ale familiei",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "fixed_point",
+        "f": "m*(x - 4) + x**2 + 4",
+        "parameter": "m",
+        "option_values": [
+          "(5, 20)",
+          "(3, 20)",
+          "(4, 20)",
+          "(6, 20)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m vârful parabolei \\(y = m + \\left(- m + x\\right)^{2} + 4\\) se află strict în cadranul I?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vârful este (m,m+(4)). Condițiile sunt m>0 și m+(4)>0. Cum (4) este pozitiv, a doua condiție este automată când prima este adevărată; axele sunt excluse. Rezultatul cerut este \\(\\left(0, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(0, \\infty\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 23,
+        "type_name": "Poziția vârfului în cadrane",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_quadrant",
+        "f": "m + (-m + x)**2 + 4",
+        "parameter": "m",
+        "quadrant": 1,
+        "option_values": [
+          "Reals",
+          "{0}",
+          "EmptySet",
+          "Interval.open(0, oo)"
+        ]
+      }
+    },
+    {
+      "text": "Care este abscisa axei de simetrie a parabolei \\(y = 6 x^{2} - 24 x + 21\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "În forma canonică, valorile la h−t și h+t sunt egale. Axa este x=h=−b/(2a). Rezultatul cerut este \\(2\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 10,
+        "type_name": "Axa de simetrie",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_x",
+        "f": "6*x**2 - 24*x + 21",
+        "option_values": [
+          "2",
+          "3",
+          "1",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "Câte rădăcini reale distincte are ecuația \\(x^{2} - 12 x + 34 = 0\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La x=(5) valoarea este −1, iar coeficientul principal este pozitiv. Forma canonică are minim strict negativ și tinde la +∞ pe ambele ramuri, deci sunt două rădăcini reale distincte; echivalent Δ>0. Rezultatul cerut este \\(2\\).",
+      "options": [
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 19,
+        "type_name": "Existența unei rădăcini prin valori speciale",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "partial_case",
+        "adaptation": "Existența unei rădăcini este adaptată în numărul de rădăcini pentru o familie explicită."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x**2 - 12*x + 34",
+        "domain": "Reals",
+        "option_values": [
+          "3",
+          "2",
+          "1",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "Vârfurile familiei \\(y = m^{2} - 2 m x + 5 m + x^{2} + 1\\) (m∈ℝ) aparțin unei drepte y=g(x). Determinați g(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Forma canonică dă V=(m,(5)m+1). Eliminarea lui m=xV produce yV=(5)xV+1. Deoarece m parcurge ℝ, se obține întreaga dreaptă. Rezultatul cerut este \\(5 x + 1\\).",
+      "options": [
+        {
+          "text": "\\(5 x + 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5 x\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5 x + 1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(5 x + 3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 20,
+        "type_name": "Vârfuri coliniare",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_locus",
+        "f": "m**2 - 2*m*x + 5*m + x**2 + 1",
+        "parameter": "m",
+        "option_values": [
+          "5*x + 2",
+          "5*x",
+          "5*x + 1",
+          "5*x + 3"
+        ]
+      }
+    },
+    {
+      "text": "Determinați g(x) pentru locul vârfurilor familiei \\(y = 2 m^{2} - 2 m x + x^{2} + 5\\) (m∈ℝ), scris y=g(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vârful este (m,m²+(5)). Eliminarea parametrului dă y=x²+(5). Toate abscisele reale sunt parcurse deoarece m este arbitrar. Rezultatul cerut este \\(x^{2} + 5\\).",
+      "options": [
+        {
+          "text": "\\(x^{2} + 6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} + 4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} + 7\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(x^{2} + 5\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 21,
+        "type_name": "Locul parabolic al vârfurilor",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_locus",
+        "f": "2*m**2 - 2*m*x + x**2 + 5",
+        "parameter": "m",
+        "option_values": [
+          "x**2 + 6",
+          "x**2 + 4",
+          "x**2 + 7",
+          "x**2 + 5"
+        ]
+      }
+    },
+    {
+      "text": "Aflați punctul fix comun tuturor graficelor familiei \\(y = m \\left(x - 5\\right) + x^{2} + 5\\) (m∈ℝ). Răspundeți (x;y).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru ca valoarea să nu depindă de m, coeficientul lui m trebuie să fie zero: x−(5)=0. Înlocuirea în termenul fără m dă ordonata fixă. Rezultatul cerut este \\(\\left( 5, \\  30\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 5, \\  30\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 6, \\  30\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  30\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 7, \\  30\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 22,
+        "type_name": "Puncte fixe ale familiei",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "fixed_point",
+        "f": "m*(x - 5) + x**2 + 5",
+        "parameter": "m",
+        "option_values": [
+          "(5, 30)",
+          "(6, 30)",
+          "(4, 30)",
+          "(7, 30)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m vârful parabolei \\(y = m + \\left(- m + x\\right)^{2} + 5\\) se află strict în cadranul I?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vârful este (m,m+(5)). Condițiile sunt m>0 și m+(5)>0. Cum (5) este pozitiv, a doua condiție este automată când prima este adevărată; axele sunt excluse. Rezultatul cerut este \\(\\left(0, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(0, \\infty\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 23,
+        "type_name": "Poziția vârfului în cadrane",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "vertex_quadrant",
+        "f": "m + (-m + x)**2 + 5",
+        "parameter": "m",
+        "quadrant": 1,
+        "option_values": [
+          "Reals",
+          "Interval.open(0, oo)",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    }
+  ]
 }

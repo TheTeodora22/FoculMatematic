@@ -1,6 +1,1442 @@
 {
   "title": "Reprezentarea grafică și imaginea funcției de gradul al II-lea",
   "description": "Clasa a 9-a · Funcția de gradul al II-lea",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "hard",
+  "questions": [
+    {
+      "text": "Determinați imaginea pe ℝ a funcției \\(y = 2 x^{2} + 8 x + 9\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Forma canonică este \\(2 \\left(x + 2\\right)^{2} + 1\\). Pătratul poate lua orice valoare nenegativă. Pentru a>0 imaginea începe la minim; pentru a<0 se termină la maxim, iar extremul este atins. Rezultatul cerut este \\(\\left[1, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left[1, \\infty\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 3,
+        "type_name": "Imaginea pe ℝ",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "range",
+        "f": "2*x**2 + 8*x + 9",
+        "domain": "Reals",
+        "option_values": [
+          "Interval(1, oo)",
+          "Reals",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Pentru trasarea parabolei \\(y = 2 x^{2} + 8 x + 9\\), care este perechea (xV;yV)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Determinăm vârful prin h=−b/(2a), k=f(h). Pentru desen se adaugă axa x=h, sensul ramurilor din semnul lui a și intersecțiile cu axele. Rezultatul cerut este \\(\\left( -2, \\  1\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -1, \\  1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -2, \\  1\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -3, \\  1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  1\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 11,
+        "type_name": "Reprezentare standard",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "partial_case",
+        "adaptation": "Trasarea este adaptată în identificarea vârfului; nu se cere desen interactiv."
+      },
+      "verification": {
+        "task": "vertex",
+        "f": "2*x**2 + 8*x + 9",
+        "option_values": [
+          "(-1, 1)",
+          "(-2, 1)",
+          "(-3, 1)",
+          "(0, 1)"
+        ]
+      }
+    },
+    {
+      "text": "f(x)=x² pentru x≤0 și f(x)=2x+1 pentru x>0. Calculați f(-1)+f(1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Argumentul negativ folosește ramura pătratică; cel pozitiv folosește ramura afină. Pragul 0 aparține primei ramuri, conform enunțului. Rezultatul cerut este \\(4\\).",
+      "options": [
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 15,
+        "type_name": "Funcție pătratică pe ramuri",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "partial_case",
+        "adaptation": "Graficul pe ramuri este adaptat într-o evaluare cu validarea ramurilor."
+      },
+      "verification": {
+        "task": "piecewise_values",
+        "threshold": 0,
+        "left": "x**2",
+        "right": "2*x + 1",
+        "arguments": [
+          -1,
+          1
+        ],
+        "option_values": [
+          "5",
+          "3",
+          "4",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "f(x)=x²+m pentru x≤0 și f(x)=2x−m pentru x>0. Punctul (1;3) aparține graficului. Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Abscisa dată este pozitivă, deci se impune 2x−m=y pe ramura din dreapta. Soluția este validă pe această ramură; folosirea celeilalte formule ar fi incorectă. Rezultatul cerut este \\(-1\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 16,
+        "type_name": "Parametru într-un grafic pe ramuri",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "parameter_root",
+        "equation": "-m - 1",
+        "variable": "m",
+        "option_values": [
+          "0",
+          "-2",
+          "1",
+          "-1"
+        ]
+      }
+    },
+    {
+      "text": "Aflați imaginea lui \\(y = x^{2} + 4 x + 5\\) pe intervalul \\(\\left(-2, 0\\right)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe intervalul de la dreapta vârfului funcția este strict crescătoare. Nici vârful, nici celălalt capăt nu aparțin domeniului, deci nici valorile lor limită nu sunt atinse. Rezultatul cerut este \\(\\left(1, 5\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left(1, 5\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 17,
+        "type_name": "Imaginea pe interval restrâns",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "range",
+        "f": "x**2 + 4*x + 5",
+        "domain": "Interval.open(-2, 0)",
+        "option_values": [
+          "Interval.open(1, 5)",
+          "Reals",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Pentru f(x)=x², A={−1;0} și B={0;1}, determinați mulțimea (f(A)∩f(B))∖f(A∩B).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A∩B={0}, deci f(A∩B)={0}. Totuși f(A)=f(B)={0,(1)²}, deoarece −(1) și (1) au aceeași imagine. Diferența cerută conține numai (1)²; imaginea nu păstrează în general intersecția. Rezultatul cerut este \\(\\left\\{1\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{2\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{1\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{3\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 18,
+        "type_name": "Imaginea reuniunii și intersecției",
+        "pages": "129–133",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "image_sets",
+        "f": "x**2",
+        "A": "{-1, 0}",
+        "B": "{0, 1}",
+        "option_values": [
+          "{2}",
+          "{1}",
+          "{0}",
+          "{3}"
+        ]
+      }
+    },
+    {
+      "text": "Determinați imaginea pe ℝ a funcției \\(y = - 3 x^{2} - 6 x - 3\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Forma canonică este \\(- 3 \\left(x + 1\\right)^{2}\\). Pătratul poate lua orice valoare nenegativă. Pentru a>0 imaginea începe la minim; pentru a<0 se termină la maxim, iar extremul este atins. Rezultatul cerut este \\(\\left(-\\infty, 0\\right]\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(-\\infty, 0\\right]\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 3,
+        "type_name": "Imaginea pe ℝ",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "range",
+        "f": "-3*x**2 - 6*x - 3",
+        "domain": "Reals",
+        "option_values": [
+          "Reals",
+          "{0}",
+          "Interval(-oo, 0)",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Pentru trasarea parabolei \\(y = - 3 x^{2} - 6 x - 3\\), care este perechea (xV;yV)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Determinăm vârful prin h=−b/(2a), k=f(h). Pentru desen se adaugă axa x=h, sensul ramurilor din semnul lui a și intersecțiile cu axele. Rezultatul cerut este \\(\\left( -1, \\  0\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 0, \\  0\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -2, \\  0\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 1, \\  0\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -1, \\  0\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 11,
+        "type_name": "Reprezentare standard",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "partial_case",
+        "adaptation": "Trasarea este adaptată în identificarea vârfului; nu se cere desen interactiv."
+      },
+      "verification": {
+        "task": "vertex",
+        "f": "-3*x**2 - 6*x - 3",
+        "option_values": [
+          "(0, 0)",
+          "(-2, 0)",
+          "(1, 0)",
+          "(-1, 0)"
+        ]
+      }
+    },
+    {
+      "text": "f(x)=x² pentru x≤0 și f(x)=2x+2 pentru x>0. Calculați f(-2)+f(2).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Argumentul negativ folosește ramura pătratică; cel pozitiv folosește ramura afină. Pragul 0 aparține primei ramuri, conform enunțului. Rezultatul cerut este \\(10\\).",
+      "options": [
+        {
+          "text": "\\(10\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(11\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(12\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 15,
+        "type_name": "Funcție pătratică pe ramuri",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "partial_case",
+        "adaptation": "Graficul pe ramuri este adaptat într-o evaluare cu validarea ramurilor."
+      },
+      "verification": {
+        "task": "piecewise_values",
+        "threshold": 0,
+        "left": "x**2",
+        "right": "2*x + 2",
+        "arguments": [
+          -2,
+          2
+        ],
+        "option_values": [
+          "10",
+          "11",
+          "9",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "f(x)=x²+m pentru x≤0 și f(x)=2x−m pentru x>0. Punctul (2;6) aparține graficului. Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Abscisa dată este pozitivă, deci se impune 2x−m=y pe ramura din dreapta. Soluția este validă pe această ramură; folosirea celeilalte formule ar fi incorectă. Rezultatul cerut este \\(-2\\).",
+      "options": [
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 16,
+        "type_name": "Parametru într-un grafic pe ramuri",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "parameter_root",
+        "equation": "-m - 2",
+        "variable": "m",
+        "option_values": [
+          "-1",
+          "-2",
+          "-3",
+          "0"
+        ]
+      }
+    },
+    {
+      "text": "Aflați imaginea lui \\(y = x^{2} + 2 x + 1\\) pe intervalul \\(\\left(-1, 1\\right)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe intervalul de la dreapta vârfului funcția este strict crescătoare. Nici vârful, nici celălalt capăt nu aparțin domeniului, deci nici valorile lor limită nu sunt atinse. Rezultatul cerut este \\(\\left(0, 4\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(0, 4\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 17,
+        "type_name": "Imaginea pe interval restrâns",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "range",
+        "f": "x**2 + 2*x + 1",
+        "domain": "Interval.open(-1, 1)",
+        "option_values": [
+          "Reals",
+          "{0}",
+          "Interval.open(0, 4)",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Pentru f(x)=x², A={−2;0} și B={0;2}, determinați mulțimea (f(A)∩f(B))∖f(A∩B).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A∩B={0}, deci f(A∩B)={0}. Totuși f(A)=f(B)={0,(2)²}, deoarece −(2) și (2) au aceeași imagine. Diferența cerută conține numai (2)²; imaginea nu păstrează în general intersecția. Rezultatul cerut este \\(\\left\\{4\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{5\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{3\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{6\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{4\\right\\}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 18,
+        "type_name": "Imaginea reuniunii și intersecției",
+        "pages": "129–133",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "image_sets",
+        "f": "x**2",
+        "A": "{-2, 0}",
+        "B": "{0, 2}",
+        "option_values": [
+          "{5}",
+          "{3}",
+          "{6}",
+          "{4}"
+        ]
+      }
+    },
+    {
+      "text": "Determinați imaginea pe ℝ a funcției \\(y = 4 x^{2} - 1\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Forma canonică este \\(4 x^{2} - 1\\). Pătratul poate lua orice valoare nenegativă. Pentru a>0 imaginea începe la minim; pentru a<0 se termină la maxim, iar extremul este atins. Rezultatul cerut este \\(\\left[-1, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left[-1, \\infty\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 3,
+        "type_name": "Imaginea pe ℝ",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "range",
+        "f": "4*x**2 - 1",
+        "domain": "Reals",
+        "option_values": [
+          "Interval(-1, oo)",
+          "Reals",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Pentru trasarea parabolei \\(y = 4 x^{2} - 1\\), care este perechea (xV;yV)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Determinăm vârful prin h=−b/(2a), k=f(h). Pentru desen se adaugă axa x=h, sensul ramurilor din semnul lui a și intersecțiile cu axele. Rezultatul cerut este \\(\\left( 0, \\  -1\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 1, \\  -1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  -1\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -1, \\  -1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  -1\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 11,
+        "type_name": "Reprezentare standard",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "partial_case",
+        "adaptation": "Trasarea este adaptată în identificarea vârfului; nu se cere desen interactiv."
+      },
+      "verification": {
+        "task": "vertex",
+        "f": "4*x**2 - 1",
+        "option_values": [
+          "(1, -1)",
+          "(0, -1)",
+          "(-1, -1)",
+          "(2, -1)"
+        ]
+      }
+    },
+    {
+      "text": "f(x)=x² pentru x≤0 și f(x)=2x+3 pentru x>0. Calculați f(-3)+f(3).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Argumentul negativ folosește ramura pătratică; cel pozitiv folosește ramura afină. Pragul 0 aparține primei ramuri, conform enunțului. Rezultatul cerut este \\(18\\).",
+      "options": [
+        {
+          "text": "\\(19\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(17\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(18\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(20\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 15,
+        "type_name": "Funcție pătratică pe ramuri",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "partial_case",
+        "adaptation": "Graficul pe ramuri este adaptat într-o evaluare cu validarea ramurilor."
+      },
+      "verification": {
+        "task": "piecewise_values",
+        "threshold": 0,
+        "left": "x**2",
+        "right": "2*x + 3",
+        "arguments": [
+          -3,
+          3
+        ],
+        "option_values": [
+          "19",
+          "17",
+          "18",
+          "20"
+        ]
+      }
+    },
+    {
+      "text": "f(x)=x²+m pentru x≤0 și f(x)=2x−m pentru x>0. Punctul (3;9) aparține graficului. Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Abscisa dată este pozitivă, deci se impune 2x−m=y pe ramura din dreapta. Soluția este validă pe această ramură; folosirea celeilalte formule ar fi incorectă. Rezultatul cerut este \\(-3\\).",
+      "options": [
+        {
+          "text": "\\(-2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-3\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 16,
+        "type_name": "Parametru într-un grafic pe ramuri",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "parameter_root",
+        "equation": "-m - 3",
+        "variable": "m",
+        "option_values": [
+          "-2",
+          "-4",
+          "-1",
+          "-3"
+        ]
+      }
+    },
+    {
+      "text": "Aflați imaginea lui \\(y = x^{2} - 1\\) pe intervalul \\(\\left(0, 2\\right)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe intervalul de la dreapta vârfului funcția este strict crescătoare. Nici vârful, nici celălalt capăt nu aparțin domeniului, deci nici valorile lor limită nu sunt atinse. Rezultatul cerut este \\(\\left(-1, 3\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left(-1, 3\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 17,
+        "type_name": "Imaginea pe interval restrâns",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "range",
+        "f": "x**2 - 1",
+        "domain": "Interval.open(0, 2)",
+        "option_values": [
+          "Interval.open(-1, 3)",
+          "Reals",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Pentru f(x)=x², A={−3;0} și B={0;3}, determinați mulțimea (f(A)∩f(B))∖f(A∩B).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A∩B={0}, deci f(A∩B)={0}. Totuși f(A)=f(B)={0,(3)²}, deoarece −(3) și (3) au aceeași imagine. Diferența cerută conține numai (3)²; imaginea nu păstrează în general intersecția. Rezultatul cerut este \\(\\left\\{9\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{10\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{9\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{8\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{11\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 18,
+        "type_name": "Imaginea reuniunii și intersecției",
+        "pages": "129–133",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "image_sets",
+        "f": "x**2",
+        "A": "{-3, 0}",
+        "B": "{0, 3}",
+        "option_values": [
+          "{10}",
+          "{9}",
+          "{8}",
+          "{11}"
+        ]
+      }
+    },
+    {
+      "text": "Determinați imaginea pe ℝ a funcției \\(y = - 5 x^{2} + 10 x - 7\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Forma canonică este \\(- 5 \\left(x - 1\\right)^{2} - 2\\). Pătratul poate lua orice valoare nenegativă. Pentru a>0 imaginea începe la minim; pentru a<0 se termină la maxim, iar extremul este atins. Rezultatul cerut este \\(\\left(-\\infty, -2\\right]\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(-\\infty, -2\\right]\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 3,
+        "type_name": "Imaginea pe ℝ",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "range",
+        "f": "-5*x**2 + 10*x - 7",
+        "domain": "Reals",
+        "option_values": [
+          "Reals",
+          "{0}",
+          "Interval(-oo, -2)",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Pentru trasarea parabolei \\(y = - 5 x^{2} + 10 x - 7\\), care este perechea (xV;yV)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Determinăm vârful prin h=−b/(2a), k=f(h). Pentru desen se adaugă axa x=h, sensul ramurilor din semnul lui a și intersecțiile cu axele. Rezultatul cerut este \\(\\left( 1, \\  -2\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 2, \\  -2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  -2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 3, \\  -2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 1, \\  -2\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 11,
+        "type_name": "Reprezentare standard",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "partial_case",
+        "adaptation": "Trasarea este adaptată în identificarea vârfului; nu se cere desen interactiv."
+      },
+      "verification": {
+        "task": "vertex",
+        "f": "-5*x**2 + 10*x - 7",
+        "option_values": [
+          "(2, -2)",
+          "(0, -2)",
+          "(3, -2)",
+          "(1, -2)"
+        ]
+      }
+    },
+    {
+      "text": "f(x)=x² pentru x≤0 și f(x)=2x+4 pentru x>0. Calculați f(-4)+f(4).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Argumentul negativ folosește ramura pătratică; cel pozitiv folosește ramura afină. Pragul 0 aparține primei ramuri, conform enunțului. Rezultatul cerut este \\(28\\).",
+      "options": [
+        {
+          "text": "\\(28\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(29\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(27\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(30\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 15,
+        "type_name": "Funcție pătratică pe ramuri",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "partial_case",
+        "adaptation": "Graficul pe ramuri este adaptat într-o evaluare cu validarea ramurilor."
+      },
+      "verification": {
+        "task": "piecewise_values",
+        "threshold": 0,
+        "left": "x**2",
+        "right": "2*x + 4",
+        "arguments": [
+          -4,
+          4
+        ],
+        "option_values": [
+          "28",
+          "29",
+          "27",
+          "30"
+        ]
+      }
+    },
+    {
+      "text": "f(x)=x²+m pentru x≤0 și f(x)=2x−m pentru x>0. Punctul (4;12) aparține graficului. Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Abscisa dată este pozitivă, deci se impune 2x−m=y pe ramura din dreapta. Soluția este validă pe această ramură; folosirea celeilalte formule ar fi incorectă. Rezultatul cerut este \\(-4\\).",
+      "options": [
+        {
+          "text": "\\(-3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-4\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 16,
+        "type_name": "Parametru într-un grafic pe ramuri",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "parameter_root",
+        "equation": "-m - 4",
+        "variable": "m",
+        "option_values": [
+          "-3",
+          "-4",
+          "-5",
+          "-2"
+        ]
+      }
+    },
+    {
+      "text": "Aflați imaginea lui \\(y = x^{2} - 2 x - 1\\) pe intervalul \\(\\left(1, 3\\right)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe intervalul de la dreapta vârfului funcția este strict crescătoare. Nici vârful, nici celălalt capăt nu aparțin domeniului, deci nici valorile lor limită nu sunt atinse. Rezultatul cerut este \\(\\left(-2, 2\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(-2, 2\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 17,
+        "type_name": "Imaginea pe interval restrâns",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "range",
+        "f": "x**2 - 2*x - 1",
+        "domain": "Interval.open(1, 3)",
+        "option_values": [
+          "Reals",
+          "{0}",
+          "Interval.open(-2, 2)",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Pentru f(x)=x², A={−4;0} și B={0;4}, determinați mulțimea (f(A)∩f(B))∖f(A∩B).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A∩B={0}, deci f(A∩B)={0}. Totuși f(A)=f(B)={0,(4)²}, deoarece −(4) și (4) au aceeași imagine. Diferența cerută conține numai (4)²; imaginea nu păstrează în general intersecția. Rezultatul cerut este \\(\\left\\{16\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{17\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{15\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{18\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{16\\right\\}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 18,
+        "type_name": "Imaginea reuniunii și intersecției",
+        "pages": "129–133",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "image_sets",
+        "f": "x**2",
+        "A": "{-4, 0}",
+        "B": "{0, 4}",
+        "option_values": [
+          "{17}",
+          "{15}",
+          "{18}",
+          "{16}"
+        ]
+      }
+    },
+    {
+      "text": "Determinați imaginea pe ℝ a funcției \\(y = 6 x^{2} - 24 x + 21\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Forma canonică este \\(6 \\left(x - 2\\right)^{2} - 3\\). Pătratul poate lua orice valoare nenegativă. Pentru a>0 imaginea începe la minim; pentru a<0 se termină la maxim, iar extremul este atins. Rezultatul cerut este \\(\\left[-3, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left[-3, \\infty\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 3,
+        "type_name": "Imaginea pe ℝ",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "range",
+        "f": "6*x**2 - 24*x + 21",
+        "domain": "Reals",
+        "option_values": [
+          "Interval(-3, oo)",
+          "Reals",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Pentru trasarea parabolei \\(y = 6 x^{2} - 24 x + 21\\), care este perechea (xV;yV)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Determinăm vârful prin h=−b/(2a), k=f(h). Pentru desen se adaugă axa x=h, sensul ramurilor din semnul lui a și intersecțiile cu axele. Rezultatul cerut este \\(\\left( 2, \\  -3\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 3, \\  -3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  -3\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 1, \\  -3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  -3\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 11,
+        "type_name": "Reprezentare standard",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "partial_case",
+        "adaptation": "Trasarea este adaptată în identificarea vârfului; nu se cere desen interactiv."
+      },
+      "verification": {
+        "task": "vertex",
+        "f": "6*x**2 - 24*x + 21",
+        "option_values": [
+          "(3, -3)",
+          "(2, -3)",
+          "(1, -3)",
+          "(4, -3)"
+        ]
+      }
+    },
+    {
+      "text": "f(x)=x² pentru x≤0 și f(x)=2x+5 pentru x>0. Calculați f(-5)+f(5).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Argumentul negativ folosește ramura pătratică; cel pozitiv folosește ramura afină. Pragul 0 aparține primei ramuri, conform enunțului. Rezultatul cerut este \\(40\\).",
+      "options": [
+        {
+          "text": "\\(41\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(39\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(40\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(42\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 15,
+        "type_name": "Funcție pătratică pe ramuri",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "partial_case",
+        "adaptation": "Graficul pe ramuri este adaptat într-o evaluare cu validarea ramurilor."
+      },
+      "verification": {
+        "task": "piecewise_values",
+        "threshold": 0,
+        "left": "x**2",
+        "right": "2*x + 5",
+        "arguments": [
+          -5,
+          5
+        ],
+        "option_values": [
+          "41",
+          "39",
+          "40",
+          "42"
+        ]
+      }
+    },
+    {
+      "text": "f(x)=x²+m pentru x≤0 și f(x)=2x−m pentru x>0. Punctul (5;15) aparține graficului. Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Abscisa dată este pozitivă, deci se impune 2x−m=y pe ramura din dreapta. Soluția este validă pe această ramură; folosirea celeilalte formule ar fi incorectă. Rezultatul cerut este \\(-5\\).",
+      "options": [
+        {
+          "text": "\\(-4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-5\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 16,
+        "type_name": "Parametru într-un grafic pe ramuri",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "parameter_root",
+        "equation": "-m - 5",
+        "variable": "m",
+        "option_values": [
+          "-4",
+          "-6",
+          "-3",
+          "-5"
+        ]
+      }
+    },
+    {
+      "text": "Aflați imaginea lui \\(y = x^{2} - 4 x + 1\\) pe intervalul \\(\\left(2, 4\\right)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe intervalul de la dreapta vârfului funcția este strict crescătoare. Nici vârful, nici celălalt capăt nu aparțin domeniului, deci nici valorile lor limită nu sunt atinse. Rezultatul cerut este \\(\\left(-3, 1\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left(-3, 1\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 17,
+        "type_name": "Imaginea pe interval restrâns",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "range",
+        "f": "x**2 - 4*x + 1",
+        "domain": "Interval.open(2, 4)",
+        "option_values": [
+          "Interval.open(-3, 1)",
+          "Reals",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Pentru f(x)=x², A={−5;0} și B={0;5}, determinați mulțimea (f(A)∩f(B))∖f(A∩B).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A∩B={0}, deci f(A∩B)={0}. Totuși f(A)=f(B)={0,(5)²}, deoarece −(5) și (5) au aceeași imagine. Diferența cerută conține numai (5)²; imaginea nu păstrează în general intersecția. Rezultatul cerut este \\(\\left\\{25\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{26\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{25\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{24\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{27\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 1,
+        "type": 18,
+        "type_name": "Imaginea reuniunii și intersecției",
+        "pages": "129–133",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "image_sets",
+        "f": "x**2",
+        "A": "{-5, 0}",
+        "B": "{0, 5}",
+        "option_values": [
+          "{26}",
+          "{25}",
+          "{24}",
+          "{27}"
+        ]
+      }
+    }
+  ]
 }

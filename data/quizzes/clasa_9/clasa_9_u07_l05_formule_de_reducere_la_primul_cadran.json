@@ -1,6 +1,2082 @@
 {
   "title": "Formule de reducere la primul cadran",
   "description": "Clasa a 9-a · Elemente de trigonometrie",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Reduceți argumentul la primul cadran și calculați valoarea; toate argumentele sunt în radiani. Date: x=\\(\\frac{13 \\pi}{6}\\). Calculați \\(\\sin{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Periodicitatea și simetriile cercului transformă sinusul într-un sinus sau cosinus al unui unghi ascuțit, cu semnul cadranului original. Rezultatul cerut este \\(\\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 1,
+        "type_name": "Reducerea la unghi ascuțit",
+        "variant": 1,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)",
+        "expression_latex": "\\sin{\\left(x \\right)}",
+        "givens": {
+          "x": "13*pi/6"
+        },
+        "option_values": [
+          "1/2",
+          "3/2",
+          "-1/2",
+          "5/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Calculați exact folosind unghiuri remarcabile, în radiani. Date: a=\\(2\\), b=\\(3\\), c=\\(4\\), x=\\(\\frac{\\pi}{6}\\), y=\\(\\frac{\\pi}{3}\\), z=\\(\\frac{\\pi}{4}\\). Calculați \\(a \\sin{\\left(x \\right)} + b \\tan{\\left(y \\right)} + c \\tan{\\left(z \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Valorile sunt sin(π/6)=1/2, tan(π/3)=√3 și tan(π/4)=1. Toate tangentele există; înlocuim fără aproximări zecimale. Rezultatul cerut este \\(5 + 3 \\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(3 \\sqrt{3} + 6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5 + 3 \\sqrt{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4 + 3 \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3 \\sqrt{3} + 7\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 2,
+        "type_name": "Calcul exact la unghiuri remarcabile",
+        "variant": 1,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*sin(x)+b*tan(y)+c*tan(z)",
+        "expression_latex": "a \\sin{\\left(x \\right)} + b \\tan{\\left(y \\right)} + c \\tan{\\left(z \\right)}",
+        "givens": {
+          "a": "2",
+          "b": "3",
+          "c": "4",
+          "x": "pi/6",
+          "y": "pi/3",
+          "z": "pi/4"
+        },
+        "option_values": [
+          "3*sqrt(3) + 6",
+          "5 + 3*sqrt(3)",
+          "4 + 3*sqrt(3)",
+          "3*sqrt(3) + 7"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru a=\\(1\\), x parcurge mulțimea \\(\\left\\{0, \\frac{\\pi}{6}, \\frac{\\pi}{3}, \\frac{\\pi}{2}\\right\\}\\). Aflați (minim;maxim) pentru \\(a \\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Calculăm expresia la toate cele patru argumente admise. Minimul și maximul se compară în această mulțime finită, nu pe întreg cercul. Rezultatul cerut este \\(\\left( 1, \\  \\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 2, \\  \\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  \\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 1, \\  \\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 3, \\  \\frac{1}{2} + \\frac{\\sqrt{3}}{2}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 3,
+        "type_name": "Extreme pe o mulțime finită de unghiuri",
+        "variant": 1,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "finite_extrema",
+        "expression": "a*sin(x)+cos(x)",
+        "expression_latex": "a \\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}",
+        "givens": {
+          "a": "1"
+        },
+        "angles": [
+          0,
+          "pi/6",
+          "pi/3",
+          "pi/2"
+        ],
+        "option_values": [
+          "(2, 1/2 + sqrt(3)/2)",
+          "(0, 1/2 + sqrt(3)/2)",
+          "(1, 1/2 + sqrt(3)/2)",
+          "(3, 1/2 + sqrt(3)/2)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru unghiul ascuțit x în radiani, calculați raportul. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\frac{\\sin{\\left(\\pi - x \\right)} \\cos{\\left(- x + 2 \\pi \\right)}}{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Simetriile dau sin(π−x)=sin x și cos(2π−x)=cos x. Numitorul este nenul pentru unghiul ascuțit, deci raportul este 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 4,
+        "type_name": "Identități prin reducere",
+        "variant": 1,
+        "reference_pages": "210–211",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(pi-x)*cos(2*pi-x)/(sin(x)*cos(x))",
+        "expression_latex": "\\frac{\\sin{\\left(\\pi - x \\right)} \\cos{\\left(- x + 2 \\pi \\right)}}{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentul x este ascuțit, în radiani. Calculați produsul complementar. Date: x=\\(\\frac{\\pi}{6}\\). Calculați \\(\\tan{\\left(x \\right)} \\tan{\\left(- x + \\frac{\\pi}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "tan(π/2−x)=cot x=1/tan x; toate valorile sunt definite și nenule pe intervalul ascuțit. Produsul este 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 5,
+        "type_name": "Produse de unghiuri complementare",
+        "variant": 1,
+        "reference_pages": "210–211",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(x)*tan(pi/2-x)",
+        "expression_latex": "\\tan{\\left(x \\right)} \\tan{\\left(- x + \\frac{\\pi}{2} \\right)}",
+        "givens": {
+          "x": "pi/6"
+        },
+        "option_values": [
+          "1",
+          "2",
+          "0",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "x este în radiani, iar n este întreg. Calculați valoarea după translația cu nπ. Date: x=\\(\\frac{\\pi}{6}\\), n=\\(-3\\). Calculați \\(\\sin{\\left(\\pi n + x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un număr par de semicercuri păstrează sinusul, iar un număr impar îl schimbă în opusul său: sin(x+nπ)=(−1)^n sin x, inclusiv pentru n negativ. Rezultatul cerut este \\(- \\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 6,
+        "type_name": "Translație cu nπ",
+        "variant": 1,
+        "reference_pages": "210–211",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x+n*pi)",
+        "expression_latex": "\\sin{\\left(\\pi n + x \\right)}",
+        "givens": {
+          "x": "pi/6",
+          "n": "-3"
+        },
+        "option_values": [
+          "1/2",
+          "-1/2",
+          "-3/2",
+          "3/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Determinați imaginea funcției f(x)=\\(a \\left(- \\sin{\\left(x \\right)} + \\left|{\\sin{\\left(x \\right)}}\\right|\\right)\\) pe ℝ, pentru a=\\(1\\). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem t=sin x∈[−1,1]. Dacă t≥0, |t|−t=0; dacă t<0, expresia este −2t și parcurge [0,2]. Coeficientul a>0 multiplică ambele capete; fiecare valoare este atinsă. Rezultatul cerut este \\(\\left[0, 2\\right]\\).",
+      "options": [
+        {
+          "text": "\\(\\left[1, 3\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[-1, 1\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[0, 2\\right]\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left[2, 4\\right]\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 7,
+        "type_name": "Imaginea unei expresii în sin sau cos",
+        "variant": 1,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "range_abs_sine",
+        "coefficient": 1,
+        "expression": "a*(Abs(sin(x))-sin(x))",
+        "option_values": [
+          "Interval(1, 3)",
+          "Interval(-1, 1)",
+          "Interval(0, 2)",
+          "Interval(2, 4)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Care este minimul pe ℝ² al expresiei 2−1sin x+cos y? Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din −1≤sin x≤1 și −1≤cos y≤1 rezultă expresia≥2−1−1=0. Minimul este atins simultan la x=π/2 și y=π, deoarece variabilele sunt independente. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 8,
+        "type_name": "Nenegativitate și estimări uniforme",
+        "variant": 1,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "linear_trig_min",
+        "constant": 2,
+        "sin_coefficient": -1,
+        "cos_coefficient": 1,
+        "option_values": [
+          "1",
+          "-1",
+          "2",
+          "0"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Reduceți argumentul la primul cadran și calculați valoarea; toate argumentele sunt în radiani. Date: x=\\(- \\frac{7 \\pi}{4}\\). Calculați \\(\\sin{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Periodicitatea și simetriile cercului transformă sinusul într-un sinus sau cosinus al unui unghi ascuțit, cu semnul cadranului original. Rezultatul cerut este \\(\\frac{\\sqrt{2}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{2}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{2}}{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 1,
+        "type_name": "Reducerea la unghi ascuțit",
+        "variant": 2,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)",
+        "expression_latex": "\\sin{\\left(x \\right)}",
+        "givens": {
+          "x": "-7*pi/4"
+        },
+        "option_values": [
+          "sqrt(2)/2",
+          "sqrt(2)/2 + 1",
+          "-1 + sqrt(2)/2",
+          "sqrt(2)/2 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Calculați exact folosind unghiuri remarcabile, în radiani. Date: a=\\(3\\), b=\\(4\\), c=\\(5\\), x=\\(\\frac{\\pi}{6}\\), y=\\(\\frac{\\pi}{3}\\), z=\\(\\frac{\\pi}{4}\\). Calculați \\(a \\sin{\\left(x \\right)} + b \\tan{\\left(y \\right)} + c \\tan{\\left(z \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Valorile sunt sin(π/6)=1/2, tan(π/3)=√3 și tan(π/4)=1. Toate tangentele există; înlocuim fără aproximări zecimale. Rezultatul cerut este \\(\\frac{13}{2} + 4 \\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(4 \\sqrt{3} + \\frac{15}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{13}{2} + 4 \\sqrt{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{11}{2} + 4 \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 \\sqrt{3} + \\frac{17}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 2,
+        "type_name": "Calcul exact la unghiuri remarcabile",
+        "variant": 2,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*sin(x)+b*tan(y)+c*tan(z)",
+        "expression_latex": "a \\sin{\\left(x \\right)} + b \\tan{\\left(y \\right)} + c \\tan{\\left(z \\right)}",
+        "givens": {
+          "a": "3",
+          "b": "4",
+          "c": "5",
+          "x": "pi/6",
+          "y": "pi/3",
+          "z": "pi/4"
+        },
+        "option_values": [
+          "4*sqrt(3) + 15/2",
+          "13/2 + 4*sqrt(3)",
+          "11/2 + 4*sqrt(3)",
+          "4*sqrt(3) + 17/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru a=\\(2\\), x parcurge mulțimea \\(\\left\\{0, \\frac{\\pi}{6}, \\frac{\\pi}{3}, \\frac{\\pi}{2}\\right\\}\\). Aflați (minim;maxim) pentru \\(a \\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Calculăm expresia la toate cele patru argumente admise. Minimul și maximul se compară în această mulțime finită, nu pe întreg cercul. Rezultatul cerut este \\(\\left( 1, \\  \\frac{1}{2} + \\sqrt{3}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 2, \\  \\frac{1}{2} + \\sqrt{3}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  \\frac{1}{2} + \\sqrt{3}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 1, \\  \\frac{1}{2} + \\sqrt{3}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 3, \\  \\frac{1}{2} + \\sqrt{3}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 3,
+        "type_name": "Extreme pe o mulțime finită de unghiuri",
+        "variant": 2,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "finite_extrema",
+        "expression": "a*sin(x)+cos(x)",
+        "expression_latex": "a \\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}",
+        "givens": {
+          "a": "2"
+        },
+        "angles": [
+          0,
+          "pi/6",
+          "pi/3",
+          "pi/2"
+        ],
+        "option_values": [
+          "(2, 1/2 + sqrt(3))",
+          "(0, 1/2 + sqrt(3))",
+          "(1, 1/2 + sqrt(3))",
+          "(3, 1/2 + sqrt(3))"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru unghiul ascuțit x în radiani, calculați raportul. Date: x=\\(\\frac{\\pi}{4}\\). Calculați \\(\\frac{\\sin{\\left(\\pi - x \\right)} \\cos{\\left(- x + 2 \\pi \\right)}}{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Simetriile dau sin(π−x)=sin x și cos(2π−x)=cos x. Numitorul este nenul pentru unghiul ascuțit, deci raportul este 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 4,
+        "type_name": "Identități prin reducere",
+        "variant": 2,
+        "reference_pages": "210–211",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(pi-x)*cos(2*pi-x)/(sin(x)*cos(x))",
+        "expression_latex": "\\frac{\\sin{\\left(\\pi - x \\right)} \\cos{\\left(- x + 2 \\pi \\right)}}{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/4"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentul x este ascuțit, în radiani. Calculați produsul complementar. Date: x=\\(\\frac{\\pi}{4}\\). Calculați \\(\\tan{\\left(x \\right)} \\tan{\\left(- x + \\frac{\\pi}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "tan(π/2−x)=cot x=1/tan x; toate valorile sunt definite și nenule pe intervalul ascuțit. Produsul este 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 5,
+        "type_name": "Produse de unghiuri complementare",
+        "variant": 2,
+        "reference_pages": "210–211",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(x)*tan(pi/2-x)",
+        "expression_latex": "\\tan{\\left(x \\right)} \\tan{\\left(- x + \\frac{\\pi}{2} \\right)}",
+        "givens": {
+          "x": "pi/4"
+        },
+        "option_values": [
+          "1",
+          "2",
+          "0",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "x este în radiani, iar n este întreg. Calculați valoarea după translația cu nπ. Date: x=\\(\\frac{\\pi}{6}\\), n=\\(-2\\). Calculați \\(\\sin{\\left(\\pi n + x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un număr par de semicercuri păstrează sinusul, iar un număr impar îl schimbă în opusul său: sin(x+nπ)=(−1)^n sin x, inclusiv pentru n negativ. Rezultatul cerut este \\(\\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 6,
+        "type_name": "Translație cu nπ",
+        "variant": 2,
+        "reference_pages": "210–211",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x+n*pi)",
+        "expression_latex": "\\sin{\\left(\\pi n + x \\right)}",
+        "givens": {
+          "x": "pi/6",
+          "n": "-2"
+        },
+        "option_values": [
+          "3/2",
+          "1/2",
+          "-1/2",
+          "5/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Determinați imaginea funcției f(x)=\\(a \\left(- \\sin{\\left(x \\right)} + \\left|{\\sin{\\left(x \\right)}}\\right|\\right)\\) pe ℝ, pentru a=\\(2\\). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem t=sin x∈[−1,1]. Dacă t≥0, |t|−t=0; dacă t<0, expresia este −2t și parcurge [0,2]. Coeficientul a>0 multiplică ambele capete; fiecare valoare este atinsă. Rezultatul cerut este \\(\\left[0, 4\\right]\\).",
+      "options": [
+        {
+          "text": "\\(\\left[1, 5\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[-1, 3\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[0, 4\\right]\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left[2, 6\\right]\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 7,
+        "type_name": "Imaginea unei expresii în sin sau cos",
+        "variant": 2,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "range_abs_sine",
+        "coefficient": 2,
+        "expression": "a*(Abs(sin(x))-sin(x))",
+        "option_values": [
+          "Interval(1, 5)",
+          "Interval(-1, 3)",
+          "Interval(0, 4)",
+          "Interval(2, 6)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Care este minimul pe ℝ² al expresiei 3−2sin x+cos y? Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din −1≤sin x≤1 și −1≤cos y≤1 rezultă expresia≥3−2−1=0. Minimul este atins simultan la x=π/2 și y=π, deoarece variabilele sunt independente. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 8,
+        "type_name": "Nenegativitate și estimări uniforme",
+        "variant": 2,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "linear_trig_min",
+        "constant": 3,
+        "sin_coefficient": -2,
+        "cos_coefficient": 1,
+        "option_values": [
+          "1",
+          "-1",
+          "2",
+          "0"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Reduceți argumentul la primul cadran și calculați valoarea; toate argumentele sunt în radiani. Date: x=\\(\\frac{8 \\pi}{3}\\). Calculați \\(\\sin{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Periodicitatea și simetriile cercului transformă sinusul într-un sinus sau cosinus al unui unghi ascuțit, cu semnul cadranului original. Rezultatul cerut este \\(\\frac{\\sqrt{3}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 1,
+        "type_name": "Reducerea la unghi ascuțit",
+        "variant": 3,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)",
+        "expression_latex": "\\sin{\\left(x \\right)}",
+        "givens": {
+          "x": "8*pi/3"
+        },
+        "option_values": [
+          "sqrt(3)/2",
+          "sqrt(3)/2 + 1",
+          "-1 + sqrt(3)/2",
+          "sqrt(3)/2 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Calculați exact folosind unghiuri remarcabile, în radiani. Date: a=\\(4\\), b=\\(5\\), c=\\(6\\), x=\\(\\frac{\\pi}{6}\\), y=\\(\\frac{\\pi}{3}\\), z=\\(\\frac{\\pi}{4}\\). Calculați \\(a \\sin{\\left(x \\right)} + b \\tan{\\left(y \\right)} + c \\tan{\\left(z \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Valorile sunt sin(π/6)=1/2, tan(π/3)=√3 și tan(π/4)=1. Toate tangentele există; înlocuim fără aproximări zecimale. Rezultatul cerut este \\(8 + 5 \\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(5 \\sqrt{3} + 9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(8 + 5 \\sqrt{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(7 + 5 \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5 \\sqrt{3} + 10\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 2,
+        "type_name": "Calcul exact la unghiuri remarcabile",
+        "variant": 3,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*sin(x)+b*tan(y)+c*tan(z)",
+        "expression_latex": "a \\sin{\\left(x \\right)} + b \\tan{\\left(y \\right)} + c \\tan{\\left(z \\right)}",
+        "givens": {
+          "a": "4",
+          "b": "5",
+          "c": "6",
+          "x": "pi/6",
+          "y": "pi/3",
+          "z": "pi/4"
+        },
+        "option_values": [
+          "5*sqrt(3) + 9",
+          "8 + 5*sqrt(3)",
+          "7 + 5*sqrt(3)",
+          "5*sqrt(3) + 10"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru a=\\(3\\), x parcurge mulțimea \\(\\left\\{0, \\frac{\\pi}{6}, \\frac{\\pi}{3}, \\frac{\\pi}{2}\\right\\}\\). Aflați (minim;maxim) pentru \\(a \\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Calculăm expresia la toate cele patru argumente admise. Minimul și maximul se compară în această mulțime finită, nu pe întreg cercul. Rezultatul cerut este \\(\\left( 1, \\  \\frac{1}{2} + \\frac{3 \\sqrt{3}}{2}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 2, \\  \\frac{1}{2} + \\frac{3 \\sqrt{3}}{2}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  \\frac{1}{2} + \\frac{3 \\sqrt{3}}{2}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 1, \\  \\frac{1}{2} + \\frac{3 \\sqrt{3}}{2}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 3, \\  \\frac{1}{2} + \\frac{3 \\sqrt{3}}{2}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 3,
+        "type_name": "Extreme pe o mulțime finită de unghiuri",
+        "variant": 3,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "finite_extrema",
+        "expression": "a*sin(x)+cos(x)",
+        "expression_latex": "a \\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}",
+        "givens": {
+          "a": "3"
+        },
+        "angles": [
+          0,
+          "pi/6",
+          "pi/3",
+          "pi/2"
+        ],
+        "option_values": [
+          "(2, 1/2 + 3*sqrt(3)/2)",
+          "(0, 1/2 + 3*sqrt(3)/2)",
+          "(1, 1/2 + 3*sqrt(3)/2)",
+          "(3, 1/2 + 3*sqrt(3)/2)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru unghiul ascuțit x în radiani, calculați raportul. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\frac{\\sin{\\left(\\pi - x \\right)} \\cos{\\left(- x + 2 \\pi \\right)}}{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Simetriile dau sin(π−x)=sin x și cos(2π−x)=cos x. Numitorul este nenul pentru unghiul ascuțit, deci raportul este 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 4,
+        "type_name": "Identități prin reducere",
+        "variant": 3,
+        "reference_pages": "210–211",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(pi-x)*cos(2*pi-x)/(sin(x)*cos(x))",
+        "expression_latex": "\\frac{\\sin{\\left(\\pi - x \\right)} \\cos{\\left(- x + 2 \\pi \\right)}}{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentul x este ascuțit, în radiani. Calculați produsul complementar. Date: x=\\(\\frac{\\pi}{3}\\). Calculați \\(\\tan{\\left(x \\right)} \\tan{\\left(- x + \\frac{\\pi}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "tan(π/2−x)=cot x=1/tan x; toate valorile sunt definite și nenule pe intervalul ascuțit. Produsul este 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 5,
+        "type_name": "Produse de unghiuri complementare",
+        "variant": 3,
+        "reference_pages": "210–211",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(x)*tan(pi/2-x)",
+        "expression_latex": "\\tan{\\left(x \\right)} \\tan{\\left(- x + \\frac{\\pi}{2} \\right)}",
+        "givens": {
+          "x": "pi/3"
+        },
+        "option_values": [
+          "1",
+          "2",
+          "0",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "x este în radiani, iar n este întreg. Calculați valoarea după translația cu nπ. Date: x=\\(\\frac{\\pi}{6}\\), n=\\(1\\). Calculați \\(\\sin{\\left(\\pi n + x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un număr par de semicercuri păstrează sinusul, iar un număr impar îl schimbă în opusul său: sin(x+nπ)=(−1)^n sin x, inclusiv pentru n negativ. Rezultatul cerut este \\(- \\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 6,
+        "type_name": "Translație cu nπ",
+        "variant": 3,
+        "reference_pages": "210–211",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x+n*pi)",
+        "expression_latex": "\\sin{\\left(\\pi n + x \\right)}",
+        "givens": {
+          "x": "pi/6",
+          "n": "1"
+        },
+        "option_values": [
+          "1/2",
+          "-1/2",
+          "-3/2",
+          "3/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Determinați imaginea funcției f(x)=\\(a \\left(- \\sin{\\left(x \\right)} + \\left|{\\sin{\\left(x \\right)}}\\right|\\right)\\) pe ℝ, pentru a=\\(3\\). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem t=sin x∈[−1,1]. Dacă t≥0, |t|−t=0; dacă t<0, expresia este −2t și parcurge [0,2]. Coeficientul a>0 multiplică ambele capete; fiecare valoare este atinsă. Rezultatul cerut este \\(\\left[0, 6\\right]\\).",
+      "options": [
+        {
+          "text": "\\(\\left[1, 7\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[-1, 5\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[0, 6\\right]\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left[2, 8\\right]\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 7,
+        "type_name": "Imaginea unei expresii în sin sau cos",
+        "variant": 3,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "range_abs_sine",
+        "coefficient": 3,
+        "expression": "a*(Abs(sin(x))-sin(x))",
+        "option_values": [
+          "Interval(1, 7)",
+          "Interval(-1, 5)",
+          "Interval(0, 6)",
+          "Interval(2, 8)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Care este minimul pe ℝ² al expresiei 4−3sin x+cos y? Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din −1≤sin x≤1 și −1≤cos y≤1 rezultă expresia≥4−3−1=0. Minimul este atins simultan la x=π/2 și y=π, deoarece variabilele sunt independente. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 8,
+        "type_name": "Nenegativitate și estimări uniforme",
+        "variant": 3,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "linear_trig_min",
+        "constant": 4,
+        "sin_coefficient": -3,
+        "cos_coefficient": 1,
+        "option_values": [
+          "1",
+          "-1",
+          "2",
+          "0"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Reduceți argumentul la primul cadran și calculați valoarea; toate argumentele sunt în radiani. Date: x=\\(\\frac{19 \\pi}{6}\\). Calculați \\(\\sin{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Periodicitatea și simetriile cercului transformă sinusul într-un sinus sau cosinus al unui unghi ascuțit, cu semnul cadranului original. Rezultatul cerut este \\(- \\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 1,
+        "type_name": "Reducerea la unghi ascuțit",
+        "variant": 4,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)",
+        "expression_latex": "\\sin{\\left(x \\right)}",
+        "givens": {
+          "x": "19*pi/6"
+        },
+        "option_values": [
+          "-1/2",
+          "1/2",
+          "-3/2",
+          "3/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Calculați exact folosind unghiuri remarcabile, în radiani. Date: a=\\(5\\), b=\\(6\\), c=\\(7\\), x=\\(\\frac{\\pi}{6}\\), y=\\(\\frac{\\pi}{3}\\), z=\\(\\frac{\\pi}{4}\\). Calculați \\(a \\sin{\\left(x \\right)} + b \\tan{\\left(y \\right)} + c \\tan{\\left(z \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Valorile sunt sin(π/6)=1/2, tan(π/3)=√3 și tan(π/4)=1. Toate tangentele există; înlocuim fără aproximări zecimale. Rezultatul cerut este \\(\\frac{19}{2} + 6 \\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(6 \\sqrt{3} + \\frac{21}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{19}{2} + 6 \\sqrt{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{17}{2} + 6 \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 \\sqrt{3} + \\frac{23}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 2,
+        "type_name": "Calcul exact la unghiuri remarcabile",
+        "variant": 4,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*sin(x)+b*tan(y)+c*tan(z)",
+        "expression_latex": "a \\sin{\\left(x \\right)} + b \\tan{\\left(y \\right)} + c \\tan{\\left(z \\right)}",
+        "givens": {
+          "a": "5",
+          "b": "6",
+          "c": "7",
+          "x": "pi/6",
+          "y": "pi/3",
+          "z": "pi/4"
+        },
+        "option_values": [
+          "6*sqrt(3) + 21/2",
+          "19/2 + 6*sqrt(3)",
+          "17/2 + 6*sqrt(3)",
+          "6*sqrt(3) + 23/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru a=\\(4\\), x parcurge mulțimea \\(\\left\\{0, \\frac{\\pi}{6}, \\frac{\\pi}{3}, \\frac{\\pi}{2}\\right\\}\\). Aflați (minim;maxim) pentru \\(a \\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Calculăm expresia la toate cele patru argumente admise. Minimul și maximul se compară în această mulțime finită, nu pe întreg cercul. Rezultatul cerut este \\(\\left( 1, \\  4\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 2, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 1, \\  4\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 3, \\  4\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 3,
+        "type_name": "Extreme pe o mulțime finită de unghiuri",
+        "variant": 4,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "finite_extrema",
+        "expression": "a*sin(x)+cos(x)",
+        "expression_latex": "a \\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}",
+        "givens": {
+          "a": "4"
+        },
+        "angles": [
+          0,
+          "pi/6",
+          "pi/3",
+          "pi/2"
+        ],
+        "option_values": [
+          "(2, 4)",
+          "(0, 4)",
+          "(1, 4)",
+          "(3, 4)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru unghiul ascuțit x în radiani, calculați raportul. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\frac{\\sin{\\left(\\pi - x \\right)} \\cos{\\left(- x + 2 \\pi \\right)}}{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Simetriile dau sin(π−x)=sin x și cos(2π−x)=cos x. Numitorul este nenul pentru unghiul ascuțit, deci raportul este 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 4,
+        "type_name": "Identități prin reducere",
+        "variant": 4,
+        "reference_pages": "210–211",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(pi-x)*cos(2*pi-x)/(sin(x)*cos(x))",
+        "expression_latex": "\\frac{\\sin{\\left(\\pi - x \\right)} \\cos{\\left(- x + 2 \\pi \\right)}}{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentul x este ascuțit, în radiani. Calculați produsul complementar. Date: x=\\(\\frac{\\pi}{12}\\). Calculați \\(\\tan{\\left(x \\right)} \\tan{\\left(- x + \\frac{\\pi}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "tan(π/2−x)=cot x=1/tan x; toate valorile sunt definite și nenule pe intervalul ascuțit. Produsul este 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 5,
+        "type_name": "Produse de unghiuri complementare",
+        "variant": 4,
+        "reference_pages": "210–211",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(x)*tan(pi/2-x)",
+        "expression_latex": "\\tan{\\left(x \\right)} \\tan{\\left(- x + \\frac{\\pi}{2} \\right)}",
+        "givens": {
+          "x": "pi/12"
+        },
+        "option_values": [
+          "1",
+          "2",
+          "0",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "x este în radiani, iar n este întreg. Calculați valoarea după translația cu nπ. Date: x=\\(\\frac{\\pi}{6}\\), n=\\(2\\). Calculați \\(\\sin{\\left(\\pi n + x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un număr par de semicercuri păstrează sinusul, iar un număr impar îl schimbă în opusul său: sin(x+nπ)=(−1)^n sin x, inclusiv pentru n negativ. Rezultatul cerut este \\(\\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 6,
+        "type_name": "Translație cu nπ",
+        "variant": 4,
+        "reference_pages": "210–211",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x+n*pi)",
+        "expression_latex": "\\sin{\\left(\\pi n + x \\right)}",
+        "givens": {
+          "x": "pi/6",
+          "n": "2"
+        },
+        "option_values": [
+          "3/2",
+          "1/2",
+          "-1/2",
+          "5/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Determinați imaginea funcției f(x)=\\(a \\left(- \\sin{\\left(x \\right)} + \\left|{\\sin{\\left(x \\right)}}\\right|\\right)\\) pe ℝ, pentru a=\\(4\\). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem t=sin x∈[−1,1]. Dacă t≥0, |t|−t=0; dacă t<0, expresia este −2t și parcurge [0,2]. Coeficientul a>0 multiplică ambele capete; fiecare valoare este atinsă. Rezultatul cerut este \\(\\left[0, 8\\right]\\).",
+      "options": [
+        {
+          "text": "\\(\\left[1, 9\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[-1, 7\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[0, 8\\right]\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left[2, 10\\right]\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 7,
+        "type_name": "Imaginea unei expresii în sin sau cos",
+        "variant": 4,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "range_abs_sine",
+        "coefficient": 4,
+        "expression": "a*(Abs(sin(x))-sin(x))",
+        "option_values": [
+          "Interval(1, 9)",
+          "Interval(-1, 7)",
+          "Interval(0, 8)",
+          "Interval(2, 10)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Care este minimul pe ℝ² al expresiei 5−4sin x+cos y? Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din −1≤sin x≤1 și −1≤cos y≤1 rezultă expresia≥5−4−1=0. Minimul este atins simultan la x=π/2 și y=π, deoarece variabilele sunt independente. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 8,
+        "type_name": "Nenegativitate și estimări uniforme",
+        "variant": 4,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "linear_trig_min",
+        "constant": 5,
+        "sin_coefficient": -4,
+        "cos_coefficient": 1,
+        "option_values": [
+          "1",
+          "-1",
+          "2",
+          "0"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Reduceți argumentul la primul cadran și calculați valoarea; toate argumentele sunt în radiani. Date: x=\\(- \\frac{17 \\pi}{3}\\). Calculați \\(\\sin{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Periodicitatea și simetriile cercului transformă sinusul într-un sinus sau cosinus al unui unghi ascuțit, cu semnul cadranului original. Rezultatul cerut este \\(\\frac{\\sqrt{3}}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + 1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{\\sqrt{3}}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{\\sqrt{3}}{2} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 1,
+        "type_name": "Reducerea la unghi ascuțit",
+        "variant": 5,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x)",
+        "expression_latex": "\\sin{\\left(x \\right)}",
+        "givens": {
+          "x": "-17*pi/3"
+        },
+        "option_values": [
+          "sqrt(3)/2",
+          "sqrt(3)/2 + 1",
+          "-1 + sqrt(3)/2",
+          "sqrt(3)/2 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Calculați exact folosind unghiuri remarcabile, în radiani. Date: a=\\(6\\), b=\\(7\\), c=\\(8\\), x=\\(\\frac{\\pi}{6}\\), y=\\(\\frac{\\pi}{3}\\), z=\\(\\frac{\\pi}{4}\\). Calculați \\(a \\sin{\\left(x \\right)} + b \\tan{\\left(y \\right)} + c \\tan{\\left(z \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Valorile sunt sin(π/6)=1/2, tan(π/3)=√3 și tan(π/4)=1. Toate tangentele există; înlocuim fără aproximări zecimale. Rezultatul cerut este \\(11 + 7 \\sqrt{3}\\).",
+      "options": [
+        {
+          "text": "\\(12 + 7 \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(11 + 7 \\sqrt{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(10 + 7 \\sqrt{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(7 \\sqrt{3} + 13\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 2,
+        "type_name": "Calcul exact la unghiuri remarcabile",
+        "variant": 5,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "a*sin(x)+b*tan(y)+c*tan(z)",
+        "expression_latex": "a \\sin{\\left(x \\right)} + b \\tan{\\left(y \\right)} + c \\tan{\\left(z \\right)}",
+        "givens": {
+          "a": "6",
+          "b": "7",
+          "c": "8",
+          "x": "pi/6",
+          "y": "pi/3",
+          "z": "pi/4"
+        },
+        "option_values": [
+          "12 + 7*sqrt(3)",
+          "11 + 7*sqrt(3)",
+          "10 + 7*sqrt(3)",
+          "7*sqrt(3) + 13"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru a=\\(5\\), x parcurge mulțimea \\(\\left\\{0, \\frac{\\pi}{6}, \\frac{\\pi}{3}, \\frac{\\pi}{2}\\right\\}\\). Aflați (minim;maxim) pentru \\(a \\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Calculăm expresia la toate cele patru argumente admise. Minimul și maximul se compară în această mulțime finită, nu pe întreg cercul. Rezultatul cerut este \\(\\left( 1, \\  5\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 2, \\  5\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  5\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 1, \\  5\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 3, \\  5\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 3,
+        "type_name": "Extreme pe o mulțime finită de unghiuri",
+        "variant": 5,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "finite_extrema",
+        "expression": "a*sin(x)+cos(x)",
+        "expression_latex": "a \\sin{\\left(x \\right)} + \\cos{\\left(x \\right)}",
+        "givens": {
+          "a": "5"
+        },
+        "angles": [
+          0,
+          "pi/6",
+          "pi/3",
+          "pi/2"
+        ],
+        "option_values": [
+          "(2, 5)",
+          "(0, 5)",
+          "(1, 5)",
+          "(3, 5)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Pentru unghiul ascuțit x în radiani, calculați raportul. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\frac{\\sin{\\left(\\pi - x \\right)} \\cos{\\left(- x + 2 \\pi \\right)}}{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Simetriile dau sin(π−x)=sin x și cos(2π−x)=cos x. Numitorul este nenul pentru unghiul ascuțit, deci raportul este 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 4,
+        "type_name": "Identități prin reducere",
+        "variant": 5,
+        "reference_pages": "210–211",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(pi-x)*cos(2*pi-x)/(sin(x)*cos(x))",
+        "expression_latex": "\\frac{\\sin{\\left(\\pi - x \\right)} \\cos{\\left(- x + 2 \\pi \\right)}}{\\sin{\\left(x \\right)} \\cos{\\left(x \\right)}}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Argumentul x este ascuțit, în radiani. Calculați produsul complementar. Date: x=\\(\\frac{5 \\pi}{12}\\). Calculați \\(\\tan{\\left(x \\right)} \\tan{\\left(- x + \\frac{\\pi}{2} \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "tan(π/2−x)=cot x=1/tan x; toate valorile sunt definite și nenule pe intervalul ascuțit. Produsul este 1. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 5,
+        "type_name": "Produse de unghiuri complementare",
+        "variant": 5,
+        "reference_pages": "210–211",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "tan(x)*tan(pi/2-x)",
+        "expression_latex": "\\tan{\\left(x \\right)} \\tan{\\left(- x + \\frac{\\pi}{2} \\right)}",
+        "givens": {
+          "x": "5*pi/12"
+        },
+        "option_values": [
+          "1",
+          "2",
+          "0",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "x este în radiani, iar n este întreg. Calculați valoarea după translația cu nπ. Date: x=\\(\\frac{\\pi}{6}\\), n=\\(5\\). Calculați \\(\\sin{\\left(\\pi n + x \\right)}\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un număr par de semicercuri păstrează sinusul, iar un număr impar îl schimbă în opusul său: sin(x+nπ)=(−1)^n sin x, inclusiv pentru n negativ. Rezultatul cerut este \\(- \\frac{1}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{1}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{1}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{3}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{3}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 6,
+        "type_name": "Translație cu nπ",
+        "variant": 5,
+        "reference_pages": "210–211",
+        "coverage": "partial_explicit_case",
+        "adaptation": "Caz original explicit de calcul/concluzie; nu înlocuiește demonstrația generală a catalogului."
+      },
+      "verification": {
+        "operation": "evaluate",
+        "expression": "sin(x+n*pi)",
+        "expression_latex": "\\sin{\\left(\\pi n + x \\right)}",
+        "givens": {
+          "x": "pi/6",
+          "n": "5"
+        },
+        "option_values": [
+          "1/2",
+          "-1/2",
+          "-3/2",
+          "3/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Determinați imaginea funcției f(x)=\\(a \\left(- \\sin{\\left(x \\right)} + \\left|{\\sin{\\left(x \\right)}}\\right|\\right)\\) pe ℝ, pentru a=\\(5\\). Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem t=sin x∈[−1,1]. Dacă t≥0, |t|−t=0; dacă t<0, expresia este −2t și parcurge [0,2]. Coeficientul a>0 multiplică ambele capete; fiecare valoare este atinsă. Rezultatul cerut este \\(\\left[0, 10\\right]\\).",
+      "options": [
+        {
+          "text": "\\(\\left[1, 11\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[-1, 9\\right]\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[0, 10\\right]\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left[2, 12\\right]\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 7,
+        "type_name": "Imaginea unei expresii în sin sau cos",
+        "variant": 5,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "range_abs_sine",
+        "coefficient": 5,
+        "expression": "a*(Abs(sin(x))-sin(x))",
+        "option_values": [
+          "Interval(1, 11)",
+          "Interval(-1, 9)",
+          "Interval(0, 10)",
+          "Interval(2, 12)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Care este minimul pe ℝ² al expresiei 6−5sin x+cos y? Argumentele sunt în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din −1≤sin x≤1 și −1≤cos y≤1 rezultă expresia≥6−5−1=0. Minimul este atins simultan la x=π/2 și y=π, deoarece variabilele sunt independente. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "3.3",
+        "type": 8,
+        "type_name": "Nenegativitate și estimări uniforme",
+        "variant": 5,
+        "reference_pages": "210–211",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "linear_trig_min",
+        "constant": 6,
+        "sin_coefficient": -5,
+        "cos_coefficient": 1,
+        "option_values": [
+          "1",
+          "-1",
+          "2",
+          "0"
+        ],
+        "answer_kind": "math"
+      }
+    }
+  ]
 }

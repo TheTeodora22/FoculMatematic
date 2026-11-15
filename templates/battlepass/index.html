@@ -6,10 +6,10 @@
 <style>
     .tier-card { margin-bottom: 0.75rem; }
     .tier-card.unlocked { border-color: #2d6a4f; }
-    .tier-card.locked { opacity: 0.75; }
+    .tier-card.locked { border-style: dashed; }
     .tier-status { font-weight: 600; margin-top: 0.35rem; }
-    .tier-status.unlocked { color: #52b788; }
-    .tier-status.locked { color: #a89f94; }
+    .tier-status.unlocked { color: var(--fm-success); }
+    .tier-status.locked { color: var(--fm-text-muted); }
 </style>
 {% endblock %}
 
@@ -18,7 +18,8 @@
 <h1>Battle Pass</h1>
 
 {% if not season %}
-    <p class="muted">Nu există un sezon activ momentan. Revino curând!</p>
+    {% url 'quiz_list' as empty_url %}
+    {% include "includes/state_panel.html" with state_title="Momentan nu există un sezon activ" state_text="Poți continua să exersezi. Revino aici pentru următorul sezon de recompense." action_url=empty_url action_label="Continuă învățarea" %}
 {% else %}
     <div class="card">
         <p style="margin:0;"><strong>{{ season.name }}</strong></p>
@@ -46,7 +47,7 @@
             {% endif %}
         </div>
     {% empty %}
-        <p class="muted">Acest sezon nu are încă recompense configurate.</p>
+        {% include "includes/state_panel.html" with state_title="Recompensele sunt în pregătire" state_text="Acest sezon nu are încă recompense configurate. Detaliile vor apărea aici când sunt disponibile." %}
     {% endfor %}
 {% endif %}
 

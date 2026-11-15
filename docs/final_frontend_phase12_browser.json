@@ -1,0 +1,30 @@
+{
+  "expanded": {
+    "gradient": "linear-gradient(120deg, rgb(124, 10, 2), rgb(168, 30, 30) 58%, rgb(184, 64, 33))",
+    "height": "88px"
+  },
+  "compact": {
+    "compact": true,
+    "gradient": "linear-gradient(120deg, rgb(124, 10, 2), rgb(168, 30, 30) 58%, rgb(184, 64, 33))",
+    "height": "68px"
+  },
+  "dropdown": {
+    "expanded": "false",
+    "focus": "Clase ⌄"
+  },
+  "motion": {
+    "menuHidden": true,
+    "paused": true
+  },
+  "dialog": {
+    "containsFocus": true,
+    "open": true
+  },
+  "mobile": {
+    "classCards": 8,
+    "columns": "128.5px 128.5px",
+    "dialogOpen": false,
+    "focus": "Deschide meniul",
+    "overflow": false
+  }
+}

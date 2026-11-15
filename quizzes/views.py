@@ -1,4 +1,14 @@
 import json
+from .catalog_reorganization import PROGRESSIONS_FILES
+
+PROGRESSIONS_TITLE = "Progresii aritmetice și geometrice. Aplicații"
+PROPERTIES_TITLE = "Proprietățile funcțiilor"
+PROPERTIES_FILES = [
+    "clasa_9_u02_l06_proprietati_generale_ale_functiilor_marginire_paritate_periodicitate_s.json",
+    "clasa_9_u02_l06b_paritatea_functiilor.json",
+    "clasa_9_u02_l06c_periodicitatea_functiilor.json",
+    "clasa_9_u02_l06d_monotonia_functiilor.json",
+]
 
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -59,6 +69,7 @@ from .mode_services import (
     submit_reverse_method_answer,
     submit_false_hypothesis_method_answer,
     submit_geometry_canvas_answer,
+    submit_vector_workbench_answer,
     submit_operation_sequence_answer,
     submit_operation_workbench_answer,
     submit_divisibility_values_answer,
@@ -95,6 +106,10 @@ VALID_CLASS_LEVELS = range(5, 13)
 
 
 def _submit_training_request(user, question, post_data):
+    if question.question_type == Question.TYPE_VECTOR_WORKBENCH:
+        return submit_vector_workbench_answer(
+            user, question, json.loads(post_data.get("values", "{}"))
+        )
     if question.question_type in {
         Question.TYPE_PARENTHESES_DRAG,
         Question.TYPE_PARENTHESES_TARGET,
@@ -421,6 +436,37 @@ def chapter_topics(request, class_level, slug):
     chapter = get_object_or_404(Chapter, class_level=class_level, slug=slug)
     topics = chapter.topics.order_by("order", "title")
     topic_states = get_topics_learning_states(request.user, topics)
+    if class_level == 9 and slug == "functii":
+        original_states = topic_states
+        replacements = {}
+        for files, title, route in [
+            (PROGRESSIONS_FILES, PROGRESSIONS_TITLE, "progression_topics"),
+            (PROPERTIES_FILES, PROPERTIES_TITLE, "property_topics"),
+        ]:
+            children = [s for s in original_states if s["topic"].source_file in files]
+            if not children:
+                continue
+            total = sum(s["question_count"] for s in children)
+            correct = sum(s["training_correct"] for s in children)
+            group = {
+                "is_group": True, "title": title,
+                "difficulty": max((s["topic"] for s in children),
+                    key=lambda topic: {"easy": 0, "medium": 1, "hard": 2}.get(topic.difficulty, 0)).get_difficulty_display(),
+                "question_count": total, "child_count": len(children),
+                "training_percent": round(100 * correct / total) if total else 0,
+                "next_action_url": reverse(route, args=[class_level, slug]),
+            }
+            for child in children:
+                replacements[child["topic"].pk] = group
+        topic_states = []
+        inserted = set()
+        for state in original_states:
+            group = replacements.get(state["topic"].pk)
+            if group is None:
+                topic_states.append(state)
+            elif group["next_action_url"] not in inserted:
+                topic_states.append(group)
+                inserted.add(group["next_action_url"])
     return render(
         request,
         "quizzes/chapter_topics.html",
@@ -430,6 +476,32 @@ def chapter_topics(request, class_level, slug):
             "topic_states": topic_states,
         },
     )
+
+
+@login_required
+def property_topics(request, class_level, slug):
+    if class_level != 9 or slug != "functii":
+        raise Http404
+    chapter = get_object_or_404(Chapter, class_level=class_level, slug=slug)
+    topics = chapter.topics.filter(source_file__in=PROPERTIES_FILES).order_by("order", "title")
+    return render(request, "quizzes/chapter_topics.html", {
+        "class_level": class_level, "chapter": chapter,
+        "group_title": PROPERTIES_TITLE,
+        "topic_states": get_topics_learning_states(request.user, topics),
+    })
+
+
+@login_required
+def progression_topics(request, class_level, slug):
+    if class_level != 9 or slug != "functii":
+        raise Http404
+    chapter = get_object_or_404(Chapter, class_level=class_level, slug=slug)
+    topics = chapter.topics.filter(source_file__in=PROGRESSIONS_FILES).order_by("order", "title")
+    return render(request, "quizzes/chapter_topics.html", {
+        "class_level": class_level, "chapter": chapter,
+        "group_title": PROGRESSIONS_TITLE,
+        "topic_states": get_topics_learning_states(request.user, topics),
+    })
 
 
 @login_required
@@ -474,6 +546,8 @@ def topic_detail(request, pk):
             "in_progress": in_progress,
             "question_count": question_count,
             "learning_state": learning_state,
+            "progressions_title": PROGRESSIONS_TITLE if topic.source_file in PROGRESSIONS_FILES else None,
+            "properties_title": PROPERTIES_TITLE if topic.source_file in PROPERTIES_FILES else None,
         },
     )
 

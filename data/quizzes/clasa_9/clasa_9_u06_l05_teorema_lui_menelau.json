@@ -1,6 +1,4757 @@
 {
   "title": "Teorema lui Menelau",
   "description": "Clasa a 9-a · Coliniaritate, concurență și paralelism",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "hard",
+  "questions": [
+    {
+      "text": "În triunghiul dreptunghic A(0; 0), B(8; 0), C(0; 6), D∈dreapta BC, E∈dreapta CA, F∈dreapta AB sunt picioarele bisectoarelor exterioare din A,B,C. Determinați coordonatele lui D și folosiți explicația pentru a verifica alinierea D,E,F.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Laturile sunt AB=8, AC=6, BC=10, toate diferite, deci picioarele exterioare sunt finite. Cu convenția UX/XV=t/(1−t), teorema bisectoarei exterioare dă BD/DC=−AB/AC=−4/3. D=B+t(C−B), t/(1−t)=−4/3, deci t=4. Celelalte rapoarte sunt CE/EA=−5/4 și AF/FB=−3/5; produsul este −1, deci Menelau dă coliniaritatea. În acest caz E(0; -24), F(-12; 0), iar F este chiar mijlocul lui DE. Rezultatul este (-24; 24).",
+      "options": [
+        {
+          "text": "(-24; 24)",
+          "is_correct": true
+        },
+        {
+          "text": "(-23; 24)",
+          "is_correct": false
+        },
+        {
+          "text": "(-24; 25)",
+          "is_correct": false
+        },
+        {
+          "text": "(-25; 23)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 1,
+        "type_name": "Picioarele bisectoarelor exterioare",
+        "variant": 1,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "8",
+          "0"
+        ],
+        "C": [
+          "0",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(12; 0), C(0; 12). M este mijlocul lui BC, P∈AM are AP:PM=2:1, iar X∈AB are AX:XB=1:5. Dreapta XP taie CA în Y și BC în Z. Calculați raportul orientat CY/YA (negativ pentru Y exterior lui CA).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem M(6; 6), P(4; 4), X(2; 0). Intersecțiile sunt Y(0; -4), Z(16/3; 20/3). Y este exterior segmentului CA. Menelau în ABC dă (AX/XB)(BZ/ZC)(CY/YA)=−1. Aici AX/XB=1/5 și BZ/ZC=5/4, deci CY/YA=-4.  Rezultatul este -4.",
+      "options": [
+        {
+          "text": "-3",
+          "is_correct": false
+        },
+        {
+          "text": "-4",
+          "is_correct": true
+        },
+        {
+          "text": "-5",
+          "is_correct": false
+        },
+        {
+          "text": "-2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 2,
+        "type_name": "Raportul unei transversale",
+        "variant": 1,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "12",
+          "0"
+        ],
+        "C": [
+          "0",
+          "12"
+        ],
+        "P": [
+          "4",
+          "4"
+        ],
+        "X": [
+          "2",
+          "0"
+        ],
+        "median_parameter": "2/3"
+      }
+    },
+    {
+      "text": "A(0; 0), B(8; 0), C(0; 6). AD este bisectoarea interioară, D∈BC. E∈AC verifică AE:EC=1:1, iar P=BE∩AD. Calculați raportul pozitiv AP/PD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Bisectoarea dă BD/DC=AB/AC=4/3 și D(24/7; 24/7). Din AE:EC=1:1 rezultă E(0; 3). P(24/11; 24/11) este interior lui AD. Aplicăm Menelau în ADC cu transversala B,E,P: (DB/BC)(CE/EA)(AP/PD)=−1. DB/BC=−4/7 și CE/EA=1/1, de unde AP/PD=7·1/4. Rezultatul este 7/4.",
+      "options": [
+        {
+          "text": "11/4",
+          "is_correct": false
+        },
+        {
+          "text": "3/4",
+          "is_correct": false
+        },
+        {
+          "text": "7/4",
+          "is_correct": true
+        },
+        {
+          "text": "15/4",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 3,
+        "type_name": "Bisectoare și transversală",
+        "variant": 1,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "8",
+          "0"
+        ],
+        "C": [
+          "0",
+          "6"
+        ],
+        "E": [
+          "0",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Trapezul isoscel ABCD are A(-12; 0), B(12; 0), C(4; 6), D(-4; 6). M este mijlocul lui AB, iar P(0; 4) este pe axa de simetrie. Notăm X=AP∩dreapta CD și Y=BP∩dreapta CD. Care este raportul lungimilor MX/MY?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin parametrizare sau Thales rezultă X(6; 6), Y(-6; 6). Ele au ordonate egale și abscise opuse. Cum M=(0;0), pătratele distanțelor MX și MY sunt egale și strict pozitive. Este un caz particular simetric al configurațiilor cu trapez și punct mobil; nu demonstrează afirmația olimpică generală a catalogului. Rezultatul este 1.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 4,
+        "type_name": "Configurație de trapez cu punct mobil",
+        "variant": 1,
+        "reference_pages": "201",
+        "adaptation": "adaptare parțială: trapez isoscel și punct pe axa de simetrie"
+      },
+      "verification": {
+        "A": [
+          "-12",
+          "0"
+        ],
+        "B": [
+          "12",
+          "0"
+        ],
+        "C": [
+          "4",
+          "6"
+        ],
+        "D": [
+          "-4",
+          "6"
+        ],
+        "P": [
+          "0",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "O transversală neparalelă cu AC taie dreptele AB,BC,CD,DA ale unui patrulater convex în E,F,G,H, fără a trece prin vârfuri. Se cunosc rapoartele orientate AE/EB=1/11, BF/FC=-11/3, CG/GD=1/3. Determinați DH/HA; convenția este UX/XV=t/(1−t) pentru X=U+t(V−U).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă T este intersecția transversalei cu AC, Menelau în ABC și ACD dă două produse egale cu −1. Înmulțind, rapoartele CT/TA și AT/TC se simplifică. Rezultă (AE/EB)(BF/FC)(CG/GD)(DH/HA)=1. Înlocuind cele trei valori, obținem DH/HA=-9; semnul negativ arată că H este exterior lui DA. Există configurația explicită A(0; 0), B(12; 0), C(12; 8), D(0; 8) și transversală y=x−(1). Rezultatul este -9.",
+      "options": [
+        {
+          "text": "-9",
+          "is_correct": true
+        },
+        {
+          "text": "-8",
+          "is_correct": false
+        },
+        {
+          "text": "-10",
+          "is_correct": false
+        },
+        {
+          "text": "-7",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 5,
+        "type_name": "Relație multiplicativă într-un patrulater",
+        "variant": 1,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "12",
+          "0"
+        ],
+        "C": [
+          "12",
+          "8"
+        ],
+        "D": [
+          "0",
+          "8"
+        ],
+        "line": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "2",
+            "1"
+          ]
+        ],
+        "ratios": [
+          "1/11",
+          "-11/3",
+          "1/3"
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(12; 0), C(0; 8). P∈BC are BP:PC=1:2. M,N sunt mijloacele lui AB,AC. D și E sunt simetricele lui P față de M,N. Punctele A,D,E sunt coliniare. Calculați raportul lungimilor AD/AE.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Simetria centrală dă D=A+B−P și E=A+C−P. Așadar AD=B−P, AE=C−P; deoarece B,P,C sunt coliniare, și A,D,E sunt coliniare. Cum P este interior lui BC, AD=BP și AE=PC ca lungimi, deci AD/AE=1/2. În acest caz D(4; -8/3), E(-8; 16/3). Rezultatul este 1/2.",
+      "options": [
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "1/2",
+          "is_correct": true
+        },
+        {
+          "text": "-1/2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 6,
+        "type_name": "Coliniaritate din simetrii centrale",
+        "variant": 1,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "12",
+          "0"
+        ],
+        "C": [
+          "0",
+          "8"
+        ],
+        "P": [
+          "8",
+          "8/3"
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(12; 0), C(0; 8). P∈BC are BP:PC=1:2. M,N,Q sunt mijloacele lui AB,AC,AP. Determinați MQ/QN, ca raport de lungimi, și consultați explicația pentru alinierea mijloacelor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Omotetia de centru A și raport 1/2 trimite B,P,C în M,Q,N. Deci M,Q,N sunt coliniare, Q este interior lui MN și MQ/QN=BP/PC. Explicit M(6; 0), Q(4; 4/3), N(0; 4). Este o adaptare în triunghi de mijloace, fără reproducerea configurației complete din culegere. Rezultatul este 1/2.",
+      "options": [
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "-1/2",
+          "is_correct": false
+        },
+        {
+          "text": "1/2",
+          "is_correct": true
+        },
+        {
+          "text": "5/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 7,
+        "type_name": "Mijloace coliniare ale segmentelor",
+        "variant": 1,
+        "reference_pages": "202",
+        "adaptation": "adaptare parțială: aliniere într-un triunghi de mijloace"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "12",
+          "0"
+        ],
+        "C": [
+          "0",
+          "8"
+        ],
+        "P": [
+          "8",
+          "8/3"
+        ]
+      }
+    },
+    {
+      "text": "ABCD este dreptunghiul A(0; 0), B(12; 0), C(12; 8), D(0; 8). T(24/5; 16/5)∈AC, M(2; 0)∈AB și P(6; 8)∈CD. N=MT∩dreapta BC și Q=PT∩dreapta DA. Aflați V=NP∩MQ; explicația verifică faptul că V∈BD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin intersecții finite obținem N(12; 80/7), Q(0; -16), apoi V(36/13; 80/13). Ecuația diagonalei BD este x/(12)+y/(8)=1, verificată de V. Astfel concurența MN,PQ,AC în T se transferă, în acest caz explicit, la NP,MQ,BD în V. Rezultatul este (36/13; 80/13).",
+      "options": [
+        {
+          "text": "(49/13; 80/13)",
+          "is_correct": false
+        },
+        {
+          "text": "(36/13; 93/13)",
+          "is_correct": false
+        },
+        {
+          "text": "(23/13; 67/13)",
+          "is_correct": false
+        },
+        {
+          "text": "(36/13; 80/13)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 8,
+        "type_name": "Transferul concurenței într-un patrulater",
+        "variant": 1,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "12",
+          "0"
+        ],
+        "C": [
+          "12",
+          "8"
+        ],
+        "D": [
+          "0",
+          "8"
+        ],
+        "T": [
+          "24/5",
+          "16/5"
+        ],
+        "M": [
+          "2",
+          "0"
+        ],
+        "P": [
+          "6",
+          "8"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul A(0; 0), B(8; 0), C(0; 6), BE și CF sunt bisectoarele interioare, E∈CA, F∈AB. AD este a treia bisectoare. Aflați P=BE∩CF și verificați în explicație P∈AD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema bisectoarei dă CE/EA=5/4 și AF/FB=3/5, deci E(0; 8/3), F(3; 0). Intersecția este P(2; 2). Deoarece AB și AC sunt perpendiculare pe axe, bisectoarea interioară din A are ecuația y=x, pe care P o satisface. Produsul cu BD/DC=4/3 este 1, în acord cu Ceva. Este cazul particular al bisectoarelor triunghiului inițial, nu o demonstrație a oricărei configurații auxiliare. Rezultatul este (2; 2).",
+      "options": [
+        {
+          "text": "(2; 2)",
+          "is_correct": true
+        },
+        {
+          "text": "(3; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 1)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 9,
+        "type_name": "Concurență din bisectoare în triunghiuri auxiliare",
+        "variant": 1,
+        "reference_pages": "202",
+        "adaptation": "adaptare parțială: concurența bisectoarelor în triunghiul dreptunghic 3-4-5"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "8",
+          "0"
+        ],
+        "C": [
+          "0",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "Patrulaterul complet este determinat de dreptele AB,BC,CD,DA, unde A(0; 0), B(12; 0), C(10; 8), D(2; 6). E=AB∩CD și F=AD∩BC. Aflați mijlocul K al lui EF; verificați dreapta Newton–Gauss prin mijloacele lui AC și BD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Intersecțiile sunt E(-22; 0), F(48/7; 144/7), deci K=(E+F)/2=(-53/7; 72/7). Mijloacele diagonalelor AC și BD sunt M(5; 4), N(7; 3). Calculul determinantului (N−M,K−M) dă zero; M,N sunt distincte. Acesta verifică efectiv dreapta Newton–Gauss în configurația dată. Rezultatul este (-53/7; 72/7).",
+      "options": [
+        {
+          "text": "(-46/7; 72/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(-53/7; 72/7)",
+          "is_correct": true
+        },
+        {
+          "text": "(-53/7; 79/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(-60/7; 65/7)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 10,
+        "type_name": "Dreapta Newton–Gauss",
+        "variant": 1,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "12",
+          "0"
+        ],
+        "C": [
+          "10",
+          "8"
+        ],
+        "D": [
+          "2",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul A(0; 0), B(12; 0), C(0; 8), cevienele AD,BE,CF sunt concurente în punctul interior P; D∈BC,E∈CA,F∈AB. Dacă AE/EC=3/2 și AF/FB=1, aflați AP/PD (rapoarte pozitive de lungimi).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația lui Van Aubel este AP/PD=AE/EC+AF/FB, deci suma este 3/2+1=5/2. O justificare afină: pentru P cu ponderi pozitive (2,2,3) la A,B,C, cele trei rapoarte sunt (2+3)/2, 3/2, 2/2; identitatea urmează prin adunare. Configurația efectivă are P(24/7; 24/7). Rezultatul este 5/2.",
+      "options": [
+        {
+          "text": "7/2",
+          "is_correct": false
+        },
+        {
+          "text": "3/2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": true
+        },
+        {
+          "text": "9/2",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 11,
+        "type_name": "Relația lui Van Aubel",
+        "variant": 1,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "12",
+          "0"
+        ],
+        "C": [
+          "0",
+          "8"
+        ],
+        "weights": [
+          2,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(4; 0), C(10; 0) sunt pe o dreaptă; A′(2; 10), B′(8; 10), C′(16; 10) pe alta. X=AB′∩A′B, Y=AC′∩A′C, Z=BC′∩B′C. Determinați Z și verificați în explicație coliniaritatea Pappus.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rezolvând sistemele liniilor se obțin X(16/5; 4), Y(20/3; 25/6), Z(64/7; 30/7); toate intersecțiile sunt finite și distincte. Determinantul (Y−X,Z−X) este zero, confirmând teorema lui Pappus pentru cele două triplete date. Acest calcul explicit nu ține locul demonstrației generale. Rezultatul este (64/7; 30/7).",
+      "options": [
+        {
+          "text": "(71/7; 30/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(64/7; 37/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(57/7; 23/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(64/7; 30/7)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 12,
+        "type_name": "Teorema lui Pappus",
+        "variant": 1,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "4",
+          "0"
+        ],
+        "C": [
+          "10",
+          "0"
+        ],
+        "A_prime": [
+          "2",
+          "10"
+        ],
+        "B_prime": [
+          "8",
+          "10"
+        ],
+        "C_prime": [
+          "16",
+          "10"
+        ]
+      }
+    },
+    {
+      "text": "O=(0;0), A(2; 2), B(8; 2), C(4; 8). A′=2A, B′=3B, C′=4C (vectori de poziție față de O), deci AA′,BB′,CC′ sunt concurente în O. X=AB∩A′B′, Y=BC∩B′C′, Z=CA∩C′A′. Aflați Z și verificați axa de perspectivă.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Triunghiurile sunt nedegenerate, iar intersecțiile laturilor omoloage sunt finite: X(-16; 2), Y(40; -46), Z(-2; -10). Determinantul (Y−X,Z−X) este zero; astfel cele trei puncte sunt coliniare, în acord cu Desargues. Este verificarea unui caz în perspectivă, nu demonstrația generală. Rezultatul este (-2; -10).",
+      "options": [
+        {
+          "text": "(-2; -10)",
+          "is_correct": true
+        },
+        {
+          "text": "(-1; -10)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2; -9)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3; -11)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 13,
+        "type_name": "Teorema lui Desargues",
+        "variant": 1,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "2",
+          "2"
+        ],
+        "B": [
+          "8",
+          "2"
+        ],
+        "C": [
+          "4",
+          "8"
+        ],
+        "factors": [
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(12; 0), C(0; 8). Dreapta y=x−2 taie BC,CA,AB în D,E,F. Reflectăm D,E,F față de mijloacele laturilor corespunzătoare, obținând D′,E′,F′. Aflați raportul orientat AF′/F′B și verificați alinierea simetricelor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din intersecții rezultă D(6; 4), E(0; -2), F(2; 0). Simetriile dau D′(6; 4), E′(0; 10), F′(10; 0). Reflectarea față de mijloc schimbă parametrul t în 1−t, deci inversează raportul orientat. Produsul Menelau −1 rămâne −1 după inversare, iar simetricele sunt coliniare. Aici F′ este interior lui AB, iar AF′/F′B=5. Rezultatul este 5.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 14,
+        "type_name": "Simetrice ale unei transversale",
+        "variant": 1,
+        "reference_pages": "203",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "12",
+          "0"
+        ],
+        "C": [
+          "0",
+          "8"
+        ],
+        "line": [
+          [
+            "2",
+            "0"
+          ],
+          [
+            "3",
+            "1"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "P(2; 2) este interior triunghiului A(0; 0), B(8; 0), C(0; 6). Bisectoarele interioare din P în triunghiurile PBC,PCA,PAB taie BC,CA,AB în D,E,F. Ce rezultă despre AD,BE,CF?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema bisectoarei în cele trei triunghiuri auxiliare dă BD/DC=PB/PC, CE/EA=PC/PA și AF/FB=PA/PB. Toate lungimile sunt pozitive și produsul este 1. Reciproca lui Ceva dă concurența. Picioarele sunt interioare laturilor, iar primele două ceviene au intersecție interioară, deci concurența este finită. Nu se afirmă că punctul comun este P. Rezultatul este Sunt concurente într-un punct finit interior triunghiului ABC..",
+      "options": [
+        {
+          "text": "Sunt toate paralele.",
+          "is_correct": false
+        },
+        {
+          "text": "Sunt concurente obligatoriu în P.",
+          "is_correct": false
+        },
+        {
+          "text": "Sunt concurente într-un punct finit interior triunghiului ABC.",
+          "is_correct": true
+        },
+        {
+          "text": "Nu pot fi concurente.",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 15,
+        "type_name": "Concurență prin teorema lui Ceva",
+        "variant": 1,
+        "reference_pages": "203",
+        "adaptation": "concluzie Ceva cu demonstrație pentru bisectoarele unghiurilor auxiliare dintr-un punct interior"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "8",
+          "0"
+        ],
+        "C": [
+          "0",
+          "6"
+        ],
+        "P": [
+          "2",
+          "2"
+        ]
+      }
+    },
+    {
+      "text": "A(-6; 0), B(6; 0), C(0; 8). Aflați unicul punct M pentru care rapoartele lungimilor MA/MB și MB/MC sunt ambele 1. Lungimile din numitori trebuie să fie nenule.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Egalitățile rapoartelor înseamnă MA=MB=MC>0, adică M este circumcentrul. Din MA²=MB² rezultă xM=0. Apoi 9·(2)²+yM²=(4·2−yM)², de unde yM=7/4. Triunghiul este nedegenerat și punctul obținut are toate cele trei distanțe nenule. Aceasta este numai o caracterizare explicită prin rapoarte de distanțe; nu pretinde echivalența olimpică cu rapoarte pe ceviene și Van Aubel din catalog. Rezultatul este (0; 7/4).",
+      "options": [
+        {
+          "text": "(1; 7/4)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 11/4)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 3/4)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 7/4)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 16,
+        "type_name": "Caracterizarea circumcentrului din rapoarte",
+        "variant": 1,
+        "reference_pages": "203",
+        "adaptation": "adaptare parțială declarată: circumcentru din rapoarte de distanțe egale cu 1; fără echivalența Van Aubel neprecizată de catalog"
+      },
+      "verification": {
+        "A": [
+          "-6",
+          "0"
+        ],
+        "B": [
+          "6",
+          "0"
+        ],
+        "C": [
+          "0",
+          "8"
+        ]
+      }
+    },
+    {
+      "text": "Cele șase puncte distincte A(-8/5; -6/5), B(0; -2), C(2; 0), D(0; 2), E(-6/5; 8/5), F(-30/17; 16/17) sunt pe cercul x²+y²=4. X=AB∩DE, Y=BC∩EF și Z=CD∩FA. Determinați Z și verificați în explicație coliniaritatea Pascal.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare punct verifică x²+y²=4. Intersecțiile finite sunt X(-24/5; 2/5), Y(-30; -32), Z(-2; 4). Calculând determinantul (Y−X,Z−X) obținem zero; X și Y sunt distincte. Acesta verifică teorema lui Pascal pentru hexagonul înscris dat, fără a înlocui demonstrația generală bazată pe Menelau și puterea punctului. Rezultatul este (-2; 4).",
+      "options": [
+        {
+          "text": "(-2; 4)",
+          "is_correct": true
+        },
+        {
+          "text": "(-1; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3; 3)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 17,
+        "type_name": "Teorema lui Pascal",
+        "variant": 1,
+        "reference_pages": "203",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "-8/5",
+          "-6/5"
+        ],
+        "B": [
+          "0",
+          "-2"
+        ],
+        "C": [
+          "2",
+          "0"
+        ],
+        "D": [
+          "0",
+          "2"
+        ],
+        "E": [
+          "-6/5",
+          "8/5"
+        ],
+        "F": [
+          "-30/17",
+          "16/17"
+        ],
+        "radius": 2
+      }
+    },
+    {
+      "text": "În triunghiul dreptunghic A(0; 0), B(12; 0), C(0; 9), D∈dreapta BC, E∈dreapta CA, F∈dreapta AB sunt picioarele bisectoarelor exterioare din A,B,C. Determinați coordonatele lui D și folosiți explicația pentru a verifica alinierea D,E,F.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Laturile sunt AB=12, AC=9, BC=15, toate diferite, deci picioarele exterioare sunt finite. Cu convenția UX/XV=t/(1−t), teorema bisectoarei exterioare dă BD/DC=−AB/AC=−4/3. D=B+t(C−B), t/(1−t)=−4/3, deci t=4. Celelalte rapoarte sunt CE/EA=−5/4 și AF/FB=−3/5; produsul este −1, deci Menelau dă coliniaritatea. În acest caz E(0; -36), F(-18; 0), iar F este chiar mijlocul lui DE. Rezultatul este (-36; 36).",
+      "options": [
+        {
+          "text": "(-35; 36)",
+          "is_correct": false
+        },
+        {
+          "text": "(-36; 36)",
+          "is_correct": true
+        },
+        {
+          "text": "(-36; 37)",
+          "is_correct": false
+        },
+        {
+          "text": "(-37; 35)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 1,
+        "type_name": "Picioarele bisectoarelor exterioare",
+        "variant": 2,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "12",
+          "0"
+        ],
+        "C": [
+          "0",
+          "9"
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(18; 0), C(0; 18). M este mijlocul lui BC, P∈AM are AP:PM=3:1, iar X∈AB are AX:XB=1:5. Dreapta XP taie CA în Y și BC în Z. Calculați raportul orientat CY/YA (negativ pentru Y exterior lui CA).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem M(9; 9), P(27/4; 27/4), X(3; 0). Intersecțiile sunt Y(0; -27/5), Z(117/14; 135/14). Y este exterior segmentului CA. Menelau în ABC dă (AX/XB)(BZ/ZC)(CY/YA)=−1. Aici AX/XB=1/5 și BZ/ZC=15/13, deci CY/YA=-13/3.  Rezultatul este -13/3.",
+      "options": [
+        {
+          "text": "-10/3",
+          "is_correct": false
+        },
+        {
+          "text": "-16/3",
+          "is_correct": false
+        },
+        {
+          "text": "-13/3",
+          "is_correct": true
+        },
+        {
+          "text": "-7/3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 2,
+        "type_name": "Raportul unei transversale",
+        "variant": 2,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "18",
+          "0"
+        ],
+        "C": [
+          "0",
+          "18"
+        ],
+        "P": [
+          "27/4",
+          "27/4"
+        ],
+        "X": [
+          "3",
+          "0"
+        ],
+        "median_parameter": "3/4"
+      }
+    },
+    {
+      "text": "A(0; 0), B(12; 0), C(0; 9). AD este bisectoarea interioară, D∈BC. E∈AC verifică AE:EC=2:1, iar P=BE∩AD. Calculați raportul pozitiv AP/PD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Bisectoarea dă BD/DC=AB/AC=4/3 și D(36/7; 36/7). Din AE:EC=2:1 rezultă E(0; 6). P(4; 4) este interior lui AD. Aplicăm Menelau în ADC cu transversala B,E,P: (DB/BC)(CE/EA)(AP/PD)=−1. DB/BC=−4/7 și CE/EA=1/2, de unde AP/PD=7·2/4. Rezultatul este 7/2.",
+      "options": [
+        {
+          "text": "9/2",
+          "is_correct": false
+        },
+        {
+          "text": "5/2",
+          "is_correct": false
+        },
+        {
+          "text": "11/2",
+          "is_correct": false
+        },
+        {
+          "text": "7/2",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 3,
+        "type_name": "Bisectoare și transversală",
+        "variant": 2,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "12",
+          "0"
+        ],
+        "C": [
+          "0",
+          "9"
+        ],
+        "E": [
+          "0",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "Trapezul isoscel ABCD are A(-18; 0), B(18; 0), C(6; 9), D(-6; 9). M este mijlocul lui AB, iar P(0; 27/4) este pe axa de simetrie. Notăm X=AP∩dreapta CD și Y=BP∩dreapta CD. Care este raportul lungimilor MX/MY?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin parametrizare sau Thales rezultă X(6; 9), Y(-6; 9). Ele au ordonate egale și abscise opuse. Cum M=(0;0), pătratele distanțelor MX și MY sunt egale și strict pozitive. Este un caz particular simetric al configurațiilor cu trapez și punct mobil; nu demonstrează afirmația olimpică generală a catalogului. Rezultatul este 1.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 4,
+        "type_name": "Configurație de trapez cu punct mobil",
+        "variant": 2,
+        "reference_pages": "201",
+        "adaptation": "adaptare parțială: trapez isoscel și punct pe axa de simetrie"
+      },
+      "verification": {
+        "A": [
+          "-18",
+          "0"
+        ],
+        "B": [
+          "18",
+          "0"
+        ],
+        "C": [
+          "6",
+          "9"
+        ],
+        "D": [
+          "-6",
+          "9"
+        ],
+        "P": [
+          "0",
+          "27/4"
+        ]
+      }
+    },
+    {
+      "text": "O transversală neparalelă cu AC taie dreptele AB,BC,CD,DA ale unui patrulater convex în E,F,G,H, fără a trece prin vârfuri. Se cunosc rapoartele orientate AE/EB=1/8, BF/FC=-4, CG/GD=2/7. Determinați DH/HA; convenția este UX/XV=t/(1−t) pentru X=U+t(V−U).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă T este intersecția transversalei cu AC, Menelau în ABC și ACD dă două produse egale cu −1. Înmulțind, rapoartele CT/TA și AT/TC se simplifică. Rezultă (AE/EB)(BF/FC)(CG/GD)(DH/HA)=1. Înlocuind cele trei valori, obținem DH/HA=-7; semnul negativ arată că H este exterior lui DA. Există configurația explicită A(0; 0), B(18; 0), C(18; 12), D(0; 12) și transversală y=x−(2). Rezultatul este -7.",
+      "options": [
+        {
+          "text": "-6",
+          "is_correct": false
+        },
+        {
+          "text": "-7",
+          "is_correct": true
+        },
+        {
+          "text": "-8",
+          "is_correct": false
+        },
+        {
+          "text": "-5",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 5,
+        "type_name": "Relație multiplicativă într-un patrulater",
+        "variant": 2,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "18",
+          "0"
+        ],
+        "C": [
+          "18",
+          "12"
+        ],
+        "D": [
+          "0",
+          "12"
+        ],
+        "line": [
+          [
+            "2",
+            "0"
+          ],
+          [
+            "3",
+            "1"
+          ]
+        ],
+        "ratios": [
+          "1/8",
+          "-4",
+          "2/7"
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(18; 0), C(0; 12). P∈BC are BP:PC=2:3. M,N sunt mijloacele lui AB,AC. D și E sunt simetricele lui P față de M,N. Punctele A,D,E sunt coliniare. Calculați raportul lungimilor AD/AE.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Simetria centrală dă D=A+B−P și E=A+C−P. Așadar AD=B−P, AE=C−P; deoarece B,P,C sunt coliniare, și A,D,E sunt coliniare. Cum P este interior lui BC, AD=BP și AE=PC ca lungimi, deci AD/AE=2/3. În acest caz D(36/5; -24/5), E(-54/5; 36/5). Rezultatul este 2/3.",
+      "options": [
+        {
+          "text": "5/3",
+          "is_correct": false
+        },
+        {
+          "text": "-1/3",
+          "is_correct": false
+        },
+        {
+          "text": "2/3",
+          "is_correct": true
+        },
+        {
+          "text": "8/3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 6,
+        "type_name": "Coliniaritate din simetrii centrale",
+        "variant": 2,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "18",
+          "0"
+        ],
+        "C": [
+          "0",
+          "12"
+        ],
+        "P": [
+          "54/5",
+          "24/5"
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(18; 0), C(0; 12). P∈BC are BP:PC=2:3. M,N,Q sunt mijloacele lui AB,AC,AP. Determinați MQ/QN, ca raport de lungimi, și consultați explicația pentru alinierea mijloacelor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Omotetia de centru A și raport 1/2 trimite B,P,C în M,Q,N. Deci M,Q,N sunt coliniare, Q este interior lui MN și MQ/QN=BP/PC. Explicit M(9; 0), Q(27/5; 12/5), N(0; 6). Este o adaptare în triunghi de mijloace, fără reproducerea configurației complete din culegere. Rezultatul este 2/3.",
+      "options": [
+        {
+          "text": "5/3",
+          "is_correct": false
+        },
+        {
+          "text": "-1/3",
+          "is_correct": false
+        },
+        {
+          "text": "8/3",
+          "is_correct": false
+        },
+        {
+          "text": "2/3",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 7,
+        "type_name": "Mijloace coliniare ale segmentelor",
+        "variant": 2,
+        "reference_pages": "202",
+        "adaptation": "adaptare parțială: aliniere într-un triunghi de mijloace"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "18",
+          "0"
+        ],
+        "C": [
+          "0",
+          "12"
+        ],
+        "P": [
+          "54/5",
+          "24/5"
+        ]
+      }
+    },
+    {
+      "text": "ABCD este dreptunghiul A(0; 0), B(18; 0), C(18; 12), D(0; 12). T(36/5; 24/5)∈AC, M(3; 0)∈AB și P(9; 12)∈CD. N=MT∩dreapta BC și Q=PT∩dreapta DA. Aflați V=NP∩MQ; explicația verifică faptul că V∈BD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin intersecții finite obținem N(18; 120/7), Q(0; -24), apoi V(54/13; 120/13). Ecuația diagonalei BD este x/(18)+y/(12)=1, verificată de V. Astfel concurența MN,PQ,AC în T se transferă, în acest caz explicit, la NP,MQ,BD în V. Rezultatul este (54/13; 120/13).",
+      "options": [
+        {
+          "text": "(54/13; 120/13)",
+          "is_correct": true
+        },
+        {
+          "text": "(67/13; 120/13)",
+          "is_correct": false
+        },
+        {
+          "text": "(54/13; 133/13)",
+          "is_correct": false
+        },
+        {
+          "text": "(41/13; 107/13)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 8,
+        "type_name": "Transferul concurenței într-un patrulater",
+        "variant": 2,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "18",
+          "0"
+        ],
+        "C": [
+          "18",
+          "12"
+        ],
+        "D": [
+          "0",
+          "12"
+        ],
+        "T": [
+          "36/5",
+          "24/5"
+        ],
+        "M": [
+          "3",
+          "0"
+        ],
+        "P": [
+          "9",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul A(0; 0), B(12; 0), C(0; 9), BE și CF sunt bisectoarele interioare, E∈CA, F∈AB. AD este a treia bisectoare. Aflați P=BE∩CF și verificați în explicație P∈AD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema bisectoarei dă CE/EA=5/4 și AF/FB=3/5, deci E(0; 4), F(9/2; 0). Intersecția este P(3; 3). Deoarece AB și AC sunt perpendiculare pe axe, bisectoarea interioară din A are ecuația y=x, pe care P o satisface. Produsul cu BD/DC=4/3 este 1, în acord cu Ceva. Este cazul particular al bisectoarelor triunghiului inițial, nu o demonstrație a oricărei configurații auxiliare. Rezultatul este (3; 3).",
+      "options": [
+        {
+          "text": "(4; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 3)",
+          "is_correct": true
+        },
+        {
+          "text": "(3; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 2)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 9,
+        "type_name": "Concurență din bisectoare în triunghiuri auxiliare",
+        "variant": 2,
+        "reference_pages": "202",
+        "adaptation": "adaptare parțială: concurența bisectoarelor în triunghiul dreptunghic 3-4-5"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "12",
+          "0"
+        ],
+        "C": [
+          "0",
+          "9"
+        ]
+      }
+    },
+    {
+      "text": "Patrulaterul complet este determinat de dreptele AB,BC,CD,DA, unde A(0; 0), B(18; 0), C(15; 12), D(3; 9). E=AB∩CD și F=AD∩BC. Aflați mijlocul K al lui EF; verificați dreapta Newton–Gauss prin mijloacele lui AC și BD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Intersecțiile sunt E(-33; 0), F(72/7; 216/7), deci K=(E+F)/2=(-159/14; 108/7). Mijloacele diagonalelor AC și BD sunt M(15/2; 6), N(21/2; 9/2). Calculul determinantului (N−M,K−M) dă zero; M,N sunt distincte. Acesta verifică efectiv dreapta Newton–Gauss în configurația dată. Rezultatul este (-159/14; 108/7).",
+      "options": [
+        {
+          "text": "(-145/14; 108/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(-159/14; 115/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(-159/14; 108/7)",
+          "is_correct": true
+        },
+        {
+          "text": "(-173/14; 101/7)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 10,
+        "type_name": "Dreapta Newton–Gauss",
+        "variant": 2,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "18",
+          "0"
+        ],
+        "C": [
+          "15",
+          "12"
+        ],
+        "D": [
+          "3",
+          "9"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul A(0; 0), B(18; 0), C(0; 12), cevienele AD,BE,CF sunt concurente în punctul interior P; D∈BC,E∈CA,F∈AB. Dacă AE/EC=1 și AF/FB=2/3, aflați AP/PD (rapoarte pozitive de lungimi).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația lui Van Aubel este AP/PD=AE/EC+AF/FB, deci suma este 1+2/3=5/3. O justificare afină: pentru P cu ponderi pozitive (3,2,3) la A,B,C, cele trei rapoarte sunt (2+3)/3, 3/3, 2/3; identitatea urmează prin adunare. Configurația efectivă are P(9/2; 9/2). Rezultatul este 5/3.",
+      "options": [
+        {
+          "text": "8/3",
+          "is_correct": false
+        },
+        {
+          "text": "2/3",
+          "is_correct": false
+        },
+        {
+          "text": "11/3",
+          "is_correct": false
+        },
+        {
+          "text": "5/3",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 11,
+        "type_name": "Relația lui Van Aubel",
+        "variant": 2,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "18",
+          "0"
+        ],
+        "C": [
+          "0",
+          "12"
+        ],
+        "weights": [
+          3,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(6; 0), C(15; 0) sunt pe o dreaptă; A′(3; 15), B′(12; 15), C′(24; 15) pe alta. X=AB′∩A′B, Y=AC′∩A′C, Z=BC′∩B′C. Determinați Z și verificați în explicație coliniaritatea Pappus.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rezolvând sistemele liniilor se obțin X(24/5; 6), Y(10; 25/4), Z(96/7; 45/7); toate intersecțiile sunt finite și distincte. Determinantul (Y−X,Z−X) este zero, confirmând teorema lui Pappus pentru cele două triplete date. Acest calcul explicit nu ține locul demonstrației generale. Rezultatul este (96/7; 45/7).",
+      "options": [
+        {
+          "text": "(96/7; 45/7)",
+          "is_correct": true
+        },
+        {
+          "text": "(103/7; 45/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(96/7; 52/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(89/7; 38/7)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 12,
+        "type_name": "Teorema lui Pappus",
+        "variant": 2,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "6",
+          "0"
+        ],
+        "C": [
+          "15",
+          "0"
+        ],
+        "A_prime": [
+          "3",
+          "15"
+        ],
+        "B_prime": [
+          "12",
+          "15"
+        ],
+        "C_prime": [
+          "24",
+          "15"
+        ]
+      }
+    },
+    {
+      "text": "O=(0;0), A(3; 3), B(12; 3), C(6; 12). A′=2A, B′=3B, C′=4C (vectori de poziție față de O), deci AA′,BB′,CC′ sunt concurente în O. X=AB∩A′B′, Y=BC∩B′C′, Z=CA∩C′A′. Aflați Z și verificați axa de perspectivă.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Triunghiurile sunt nedegenerate, iar intersecțiile laturilor omoloage sunt finite: X(-24; 3), Y(60; -69), Z(-3; -15). Determinantul (Y−X,Z−X) este zero; astfel cele trei puncte sunt coliniare, în acord cu Desargues. Este verificarea unui caz în perspectivă, nu demonstrația generală. Rezultatul este (-3; -15).",
+      "options": [
+        {
+          "text": "(-2; -15)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3; -15)",
+          "is_correct": true
+        },
+        {
+          "text": "(-3; -14)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4; -16)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 13,
+        "type_name": "Teorema lui Desargues",
+        "variant": 2,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "3",
+          "3"
+        ],
+        "B": [
+          "12",
+          "3"
+        ],
+        "C": [
+          "6",
+          "12"
+        ],
+        "factors": [
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(18; 0), C(0; 12). Dreapta y=x−3 taie BC,CA,AB în D,E,F. Reflectăm D,E,F față de mijloacele laturilor corespunzătoare, obținând D′,E′,F′. Aflați raportul orientat AF′/F′B și verificați alinierea simetricelor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din intersecții rezultă D(9; 6), E(0; -3), F(3; 0). Simetriile dau D′(9; 6), E′(0; 15), F′(15; 0). Reflectarea față de mijloc schimbă parametrul t în 1−t, deci inversează raportul orientat. Produsul Menelau −1 rămâne −1 după inversare, iar simetricele sunt coliniare. Aici F′ este interior lui AB, iar AF′/F′B=5. Rezultatul este 5.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 14,
+        "type_name": "Simetrice ale unei transversale",
+        "variant": 2,
+        "reference_pages": "203",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "18",
+          "0"
+        ],
+        "C": [
+          "0",
+          "12"
+        ],
+        "line": [
+          [
+            "3",
+            "0"
+          ],
+          [
+            "4",
+            "1"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "P(3; 3) este interior triunghiului A(0; 0), B(12; 0), C(0; 9). Bisectoarele interioare din P în triunghiurile PBC,PCA,PAB taie BC,CA,AB în D,E,F. Ce rezultă despre AD,BE,CF?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema bisectoarei în cele trei triunghiuri auxiliare dă BD/DC=PB/PC, CE/EA=PC/PA și AF/FB=PA/PB. Toate lungimile sunt pozitive și produsul este 1. Reciproca lui Ceva dă concurența. Picioarele sunt interioare laturilor, iar primele două ceviene au intersecție interioară, deci concurența este finită. Nu se afirmă că punctul comun este P. Rezultatul este Sunt concurente într-un punct finit interior triunghiului ABC..",
+      "options": [
+        {
+          "text": "Sunt toate paralele.",
+          "is_correct": false
+        },
+        {
+          "text": "Sunt concurente obligatoriu în P.",
+          "is_correct": false
+        },
+        {
+          "text": "Nu pot fi concurente.",
+          "is_correct": false
+        },
+        {
+          "text": "Sunt concurente într-un punct finit interior triunghiului ABC.",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 15,
+        "type_name": "Concurență prin teorema lui Ceva",
+        "variant": 2,
+        "reference_pages": "203",
+        "adaptation": "concluzie Ceva cu demonstrație pentru bisectoarele unghiurilor auxiliare dintr-un punct interior"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "12",
+          "0"
+        ],
+        "C": [
+          "0",
+          "9"
+        ],
+        "P": [
+          "3",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "A(-9; 0), B(9; 0), C(0; 12). Aflați unicul punct M pentru care rapoartele lungimilor MA/MB și MB/MC sunt ambele 1. Lungimile din numitori trebuie să fie nenule.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Egalitățile rapoartelor înseamnă MA=MB=MC>0, adică M este circumcentrul. Din MA²=MB² rezultă xM=0. Apoi 9·(3)²+yM²=(4·3−yM)², de unde yM=21/8. Triunghiul este nedegenerat și punctul obținut are toate cele trei distanțe nenule. Aceasta este numai o caracterizare explicită prin rapoarte de distanțe; nu pretinde echivalența olimpică cu rapoarte pe ceviene și Van Aubel din catalog. Rezultatul este (0; 21/8).",
+      "options": [
+        {
+          "text": "(0; 21/8)",
+          "is_correct": true
+        },
+        {
+          "text": "(1; 21/8)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 29/8)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 13/8)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 16,
+        "type_name": "Caracterizarea circumcentrului din rapoarte",
+        "variant": 2,
+        "reference_pages": "203",
+        "adaptation": "adaptare parțială declarată: circumcentru din rapoarte de distanțe egale cu 1; fără echivalența Van Aubel neprecizată de catalog"
+      },
+      "verification": {
+        "A": [
+          "-9",
+          "0"
+        ],
+        "B": [
+          "9",
+          "0"
+        ],
+        "C": [
+          "0",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "Cele șase puncte distincte A(-12/5; -9/5), B(0; -3), C(3; 0), D(0; 3), E(-9/5; 12/5), F(-45/17; 24/17) sunt pe cercul x²+y²=9. X=AB∩DE, Y=BC∩EF și Z=CD∩FA. Determinați Z și verificați în explicație coliniaritatea Pascal.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare punct verifică x²+y²=9. Intersecțiile finite sunt X(-36/5; 3/5), Y(-45; -48), Z(-3; 6). Calculând determinantul (Y−X,Z−X) obținem zero; X și Y sunt distincte. Acesta verifică teorema lui Pascal pentru hexagonul înscris dat, fără a înlocui demonstrația generală bazată pe Menelau și puterea punctului. Rezultatul este (-3; 6).",
+      "options": [
+        {
+          "text": "(-2; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3; 6)",
+          "is_correct": true
+        },
+        {
+          "text": "(-3; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4; 5)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 17,
+        "type_name": "Teorema lui Pascal",
+        "variant": 2,
+        "reference_pages": "203",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "-12/5",
+          "-9/5"
+        ],
+        "B": [
+          "0",
+          "-3"
+        ],
+        "C": [
+          "3",
+          "0"
+        ],
+        "D": [
+          "0",
+          "3"
+        ],
+        "E": [
+          "-9/5",
+          "12/5"
+        ],
+        "F": [
+          "-45/17",
+          "24/17"
+        ],
+        "radius": 3
+      }
+    },
+    {
+      "text": "În triunghiul dreptunghic A(0; 0), B(16; 0), C(0; 12), D∈dreapta BC, E∈dreapta CA, F∈dreapta AB sunt picioarele bisectoarelor exterioare din A,B,C. Determinați coordonatele lui D și folosiți explicația pentru a verifica alinierea D,E,F.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Laturile sunt AB=16, AC=12, BC=20, toate diferite, deci picioarele exterioare sunt finite. Cu convenția UX/XV=t/(1−t), teorema bisectoarei exterioare dă BD/DC=−AB/AC=−4/3. D=B+t(C−B), t/(1−t)=−4/3, deci t=4. Celelalte rapoarte sunt CE/EA=−5/4 și AF/FB=−3/5; produsul este −1, deci Menelau dă coliniaritatea. În acest caz E(0; -48), F(-24; 0), iar F este chiar mijlocul lui DE. Rezultatul este (-48; 48).",
+      "options": [
+        {
+          "text": "(-47; 48)",
+          "is_correct": false
+        },
+        {
+          "text": "(-48; 49)",
+          "is_correct": false
+        },
+        {
+          "text": "(-48; 48)",
+          "is_correct": true
+        },
+        {
+          "text": "(-49; 47)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 1,
+        "type_name": "Picioarele bisectoarelor exterioare",
+        "variant": 3,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "16",
+          "0"
+        ],
+        "C": [
+          "0",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(24; 0), C(0; 24). M este mijlocul lui BC, P∈AM are AP:PM=4:1, iar X∈AB are AX:XB=1:5. Dreapta XP taie CA în Y și BC în Z. Calculați raportul orientat CY/YA (negativ pentru Y exterior lui CA).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem M(12; 12), P(48/5; 48/5), X(4; 0). Intersecțiile sunt Y(0; -48/7), Z(216/19; 240/19). Y este exterior segmentului CA. Menelau în ABC dă (AX/XB)(BZ/ZC)(CY/YA)=−1. Aici AX/XB=1/5 și BZ/ZC=10/9, deci CY/YA=-9/2.  Rezultatul este -9/2.",
+      "options": [
+        {
+          "text": "-7/2",
+          "is_correct": false
+        },
+        {
+          "text": "-11/2",
+          "is_correct": false
+        },
+        {
+          "text": "-5/2",
+          "is_correct": false
+        },
+        {
+          "text": "-9/2",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 2,
+        "type_name": "Raportul unei transversale",
+        "variant": 3,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "24",
+          "0"
+        ],
+        "C": [
+          "0",
+          "24"
+        ],
+        "P": [
+          "48/5",
+          "48/5"
+        ],
+        "X": [
+          "4",
+          "0"
+        ],
+        "median_parameter": "4/5"
+      }
+    },
+    {
+      "text": "A(0; 0), B(16; 0), C(0; 12). AD este bisectoarea interioară, D∈BC. E∈AC verifică AE:EC=3:1, iar P=BE∩AD. Calculați raportul pozitiv AP/PD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Bisectoarea dă BD/DC=AB/AC=4/3 și D(48/7; 48/7). Din AE:EC=3:1 rezultă E(0; 9). P(144/25; 144/25) este interior lui AD. Aplicăm Menelau în ADC cu transversala B,E,P: (DB/BC)(CE/EA)(AP/PD)=−1. DB/BC=−4/7 și CE/EA=1/3, de unde AP/PD=7·3/4. Rezultatul este 21/4.",
+      "options": [
+        {
+          "text": "21/4",
+          "is_correct": true
+        },
+        {
+          "text": "25/4",
+          "is_correct": false
+        },
+        {
+          "text": "17/4",
+          "is_correct": false
+        },
+        {
+          "text": "29/4",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 3,
+        "type_name": "Bisectoare și transversală",
+        "variant": 3,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "16",
+          "0"
+        ],
+        "C": [
+          "0",
+          "12"
+        ],
+        "E": [
+          "0",
+          "9"
+        ]
+      }
+    },
+    {
+      "text": "Trapezul isoscel ABCD are A(-24; 0), B(24; 0), C(8; 12), D(-8; 12). M este mijlocul lui AB, iar P(0; 48/5) este pe axa de simetrie. Notăm X=AP∩dreapta CD și Y=BP∩dreapta CD. Care este raportul lungimilor MX/MY?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin parametrizare sau Thales rezultă X(6; 12), Y(-6; 12). Ele au ordonate egale și abscise opuse. Cum M=(0;0), pătratele distanțelor MX și MY sunt egale și strict pozitive. Este un caz particular simetric al configurațiilor cu trapez și punct mobil; nu demonstrează afirmația olimpică generală a catalogului. Rezultatul este 1.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 4,
+        "type_name": "Configurație de trapez cu punct mobil",
+        "variant": 3,
+        "reference_pages": "201",
+        "adaptation": "adaptare parțială: trapez isoscel și punct pe axa de simetrie"
+      },
+      "verification": {
+        "A": [
+          "-24",
+          "0"
+        ],
+        "B": [
+          "24",
+          "0"
+        ],
+        "C": [
+          "8",
+          "12"
+        ],
+        "D": [
+          "-8",
+          "12"
+        ],
+        "P": [
+          "0",
+          "48/5"
+        ]
+      }
+    },
+    {
+      "text": "O transversală neparalelă cu AC taie dreptele AB,BC,CD,DA ale unui patrulater convex în E,F,G,H, fără a trece prin vârfuri. Se cunosc rapoartele orientate AE/EB=1/7, BF/FC=-21/5, CG/GD=5/19. Determinați DH/HA; convenția este UX/XV=t/(1−t) pentru X=U+t(V−U).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă T este intersecția transversalei cu AC, Menelau în ABC și ACD dă două produse egale cu −1. Înmulțind, rapoartele CT/TA și AT/TC se simplifică. Rezultă (AE/EB)(BF/FC)(CG/GD)(DH/HA)=1. Înlocuind cele trei valori, obținem DH/HA=-19/3; semnul negativ arată că H este exterior lui DA. Există configurația explicită A(0; 0), B(24; 0), C(24; 16), D(0; 16) și transversală y=x−(3). Rezultatul este -19/3.",
+      "options": [
+        {
+          "text": "-16/3",
+          "is_correct": false
+        },
+        {
+          "text": "-22/3",
+          "is_correct": false
+        },
+        {
+          "text": "-19/3",
+          "is_correct": true
+        },
+        {
+          "text": "-13/3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 5,
+        "type_name": "Relație multiplicativă într-un patrulater",
+        "variant": 3,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "24",
+          "0"
+        ],
+        "C": [
+          "24",
+          "16"
+        ],
+        "D": [
+          "0",
+          "16"
+        ],
+        "line": [
+          [
+            "3",
+            "0"
+          ],
+          [
+            "4",
+            "1"
+          ]
+        ],
+        "ratios": [
+          "1/7",
+          "-21/5",
+          "5/19"
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(24; 0), C(0; 16). P∈BC are BP:PC=3:4. M,N sunt mijloacele lui AB,AC. D și E sunt simetricele lui P față de M,N. Punctele A,D,E sunt coliniare. Calculați raportul lungimilor AD/AE.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Simetria centrală dă D=A+B−P și E=A+C−P. Așadar AD=B−P, AE=C−P; deoarece B,P,C sunt coliniare, și A,D,E sunt coliniare. Cum P este interior lui BC, AD=BP și AE=PC ca lungimi, deci AD/AE=3/4. În acest caz D(72/7; -48/7), E(-96/7; 64/7). Rezultatul este 3/4.",
+      "options": [
+        {
+          "text": "7/4",
+          "is_correct": false
+        },
+        {
+          "text": "-1/4",
+          "is_correct": false
+        },
+        {
+          "text": "11/4",
+          "is_correct": false
+        },
+        {
+          "text": "3/4",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 6,
+        "type_name": "Coliniaritate din simetrii centrale",
+        "variant": 3,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "24",
+          "0"
+        ],
+        "C": [
+          "0",
+          "16"
+        ],
+        "P": [
+          "96/7",
+          "48/7"
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(24; 0), C(0; 16). P∈BC are BP:PC=3:4. M,N,Q sunt mijloacele lui AB,AC,AP. Determinați MQ/QN, ca raport de lungimi, și consultați explicația pentru alinierea mijloacelor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Omotetia de centru A și raport 1/2 trimite B,P,C în M,Q,N. Deci M,Q,N sunt coliniare, Q este interior lui MN și MQ/QN=BP/PC. Explicit M(12; 0), Q(48/7; 24/7), N(0; 8). Este o adaptare în triunghi de mijloace, fără reproducerea configurației complete din culegere. Rezultatul este 3/4.",
+      "options": [
+        {
+          "text": "3/4",
+          "is_correct": true
+        },
+        {
+          "text": "7/4",
+          "is_correct": false
+        },
+        {
+          "text": "-1/4",
+          "is_correct": false
+        },
+        {
+          "text": "11/4",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 7,
+        "type_name": "Mijloace coliniare ale segmentelor",
+        "variant": 3,
+        "reference_pages": "202",
+        "adaptation": "adaptare parțială: aliniere într-un triunghi de mijloace"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "24",
+          "0"
+        ],
+        "C": [
+          "0",
+          "16"
+        ],
+        "P": [
+          "96/7",
+          "48/7"
+        ]
+      }
+    },
+    {
+      "text": "ABCD este dreptunghiul A(0; 0), B(24; 0), C(24; 16), D(0; 16). T(48/5; 32/5)∈AC, M(4; 0)∈AB și P(12; 16)∈CD. N=MT∩dreapta BC și Q=PT∩dreapta DA. Aflați V=NP∩MQ; explicația verifică faptul că V∈BD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin intersecții finite obținem N(24; 160/7), Q(0; -32), apoi V(72/13; 160/13). Ecuația diagonalei BD este x/(24)+y/(16)=1, verificată de V. Astfel concurența MN,PQ,AC în T se transferă, în acest caz explicit, la NP,MQ,BD în V. Rezultatul este (72/13; 160/13).",
+      "options": [
+        {
+          "text": "(85/13; 160/13)",
+          "is_correct": false
+        },
+        {
+          "text": "(72/13; 160/13)",
+          "is_correct": true
+        },
+        {
+          "text": "(72/13; 173/13)",
+          "is_correct": false
+        },
+        {
+          "text": "(59/13; 147/13)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 8,
+        "type_name": "Transferul concurenței într-un patrulater",
+        "variant": 3,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "24",
+          "0"
+        ],
+        "C": [
+          "24",
+          "16"
+        ],
+        "D": [
+          "0",
+          "16"
+        ],
+        "T": [
+          "48/5",
+          "32/5"
+        ],
+        "M": [
+          "4",
+          "0"
+        ],
+        "P": [
+          "12",
+          "16"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul A(0; 0), B(16; 0), C(0; 12), BE și CF sunt bisectoarele interioare, E∈CA, F∈AB. AD este a treia bisectoare. Aflați P=BE∩CF și verificați în explicație P∈AD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema bisectoarei dă CE/EA=5/4 și AF/FB=3/5, deci E(0; 16/3), F(6; 0). Intersecția este P(4; 4). Deoarece AB și AC sunt perpendiculare pe axe, bisectoarea interioară din A are ecuația y=x, pe care P o satisface. Produsul cu BD/DC=4/3 este 1, în acord cu Ceva. Este cazul particular al bisectoarelor triunghiului inițial, nu o demonstrație a oricărei configurații auxiliare. Rezultatul este (4; 4).",
+      "options": [
+        {
+          "text": "(5; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 4)",
+          "is_correct": true
+        },
+        {
+          "text": "(3; 3)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 9,
+        "type_name": "Concurență din bisectoare în triunghiuri auxiliare",
+        "variant": 3,
+        "reference_pages": "202",
+        "adaptation": "adaptare parțială: concurența bisectoarelor în triunghiul dreptunghic 3-4-5"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "16",
+          "0"
+        ],
+        "C": [
+          "0",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "Patrulaterul complet este determinat de dreptele AB,BC,CD,DA, unde A(0; 0), B(24; 0), C(20; 16), D(4; 12). E=AB∩CD și F=AD∩BC. Aflați mijlocul K al lui EF; verificați dreapta Newton–Gauss prin mijloacele lui AC și BD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Intersecțiile sunt E(-44; 0), F(96/7; 288/7), deci K=(E+F)/2=(-106/7; 144/7). Mijloacele diagonalelor AC și BD sunt M(10; 8), N(14; 6). Calculul determinantului (N−M,K−M) dă zero; M,N sunt distincte. Acesta verifică efectiv dreapta Newton–Gauss în configurația dată. Rezultatul este (-106/7; 144/7).",
+      "options": [
+        {
+          "text": "(-99/7; 144/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(-106/7; 151/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(-113/7; 137/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(-106/7; 144/7)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 10,
+        "type_name": "Dreapta Newton–Gauss",
+        "variant": 3,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "24",
+          "0"
+        ],
+        "C": [
+          "20",
+          "16"
+        ],
+        "D": [
+          "4",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul A(0; 0), B(24; 0), C(0; 16), cevienele AD,BE,CF sunt concurente în punctul interior P; D∈BC,E∈CA,F∈AB. Dacă AE/EC=3/4 și AF/FB=1/2, aflați AP/PD (rapoarte pozitive de lungimi).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația lui Van Aubel este AP/PD=AE/EC+AF/FB, deci suma este 3/4+1/2=5/4. O justificare afină: pentru P cu ponderi pozitive (4,2,3) la A,B,C, cele trei rapoarte sunt (2+3)/4, 3/4, 2/4; identitatea urmează prin adunare. Configurația efectivă are P(16/3; 16/3). Rezultatul este 5/4.",
+      "options": [
+        {
+          "text": "5/4",
+          "is_correct": true
+        },
+        {
+          "text": "9/4",
+          "is_correct": false
+        },
+        {
+          "text": "1/4",
+          "is_correct": false
+        },
+        {
+          "text": "13/4",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 11,
+        "type_name": "Relația lui Van Aubel",
+        "variant": 3,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "24",
+          "0"
+        ],
+        "C": [
+          "0",
+          "16"
+        ],
+        "weights": [
+          4,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(8; 0), C(20; 0) sunt pe o dreaptă; A′(4; 20), B′(16; 20), C′(32; 20) pe alta. X=AB′∩A′B, Y=AC′∩A′C, Z=BC′∩B′C. Determinați Z și verificați în explicație coliniaritatea Pappus.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rezolvând sistemele liniilor se obțin X(32/5; 8), Y(40/3; 25/3), Z(128/7; 60/7); toate intersecțiile sunt finite și distincte. Determinantul (Y−X,Z−X) este zero, confirmând teorema lui Pappus pentru cele două triplete date. Acest calcul explicit nu ține locul demonstrației generale. Rezultatul este (128/7; 60/7).",
+      "options": [
+        {
+          "text": "(135/7; 60/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(128/7; 60/7)",
+          "is_correct": true
+        },
+        {
+          "text": "(128/7; 67/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(121/7; 53/7)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 12,
+        "type_name": "Teorema lui Pappus",
+        "variant": 3,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "8",
+          "0"
+        ],
+        "C": [
+          "20",
+          "0"
+        ],
+        "A_prime": [
+          "4",
+          "20"
+        ],
+        "B_prime": [
+          "16",
+          "20"
+        ],
+        "C_prime": [
+          "32",
+          "20"
+        ]
+      }
+    },
+    {
+      "text": "O=(0;0), A(4; 4), B(16; 4), C(8; 16). A′=2A, B′=3B, C′=4C (vectori de poziție față de O), deci AA′,BB′,CC′ sunt concurente în O. X=AB∩A′B′, Y=BC∩B′C′, Z=CA∩C′A′. Aflați Z și verificați axa de perspectivă.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Triunghiurile sunt nedegenerate, iar intersecțiile laturilor omoloage sunt finite: X(-32; 4), Y(80; -92), Z(-4; -20). Determinantul (Y−X,Z−X) este zero; astfel cele trei puncte sunt coliniare, în acord cu Desargues. Este verificarea unui caz în perspectivă, nu demonstrația generală. Rezultatul este (-4; -20).",
+      "options": [
+        {
+          "text": "(-3; -20)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4; -19)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4; -20)",
+          "is_correct": true
+        },
+        {
+          "text": "(-5; -21)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 13,
+        "type_name": "Teorema lui Desargues",
+        "variant": 3,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "4",
+          "4"
+        ],
+        "B": [
+          "16",
+          "4"
+        ],
+        "C": [
+          "8",
+          "16"
+        ],
+        "factors": [
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(24; 0), C(0; 16). Dreapta y=x−4 taie BC,CA,AB în D,E,F. Reflectăm D,E,F față de mijloacele laturilor corespunzătoare, obținând D′,E′,F′. Aflați raportul orientat AF′/F′B și verificați alinierea simetricelor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din intersecții rezultă D(12; 8), E(0; -4), F(4; 0). Simetriile dau D′(12; 8), E′(0; 20), F′(20; 0). Reflectarea față de mijloc schimbă parametrul t în 1−t, deci inversează raportul orientat. Produsul Menelau −1 rămâne −1 după inversare, iar simetricele sunt coliniare. Aici F′ este interior lui AB, iar AF′/F′B=5. Rezultatul este 5.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 14,
+        "type_name": "Simetrice ale unei transversale",
+        "variant": 3,
+        "reference_pages": "203",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "24",
+          "0"
+        ],
+        "C": [
+          "0",
+          "16"
+        ],
+        "line": [
+          [
+            "4",
+            "0"
+          ],
+          [
+            "5",
+            "1"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "P(4; 4) este interior triunghiului A(0; 0), B(16; 0), C(0; 12). Bisectoarele interioare din P în triunghiurile PBC,PCA,PAB taie BC,CA,AB în D,E,F. Ce rezultă despre AD,BE,CF?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema bisectoarei în cele trei triunghiuri auxiliare dă BD/DC=PB/PC, CE/EA=PC/PA și AF/FB=PA/PB. Toate lungimile sunt pozitive și produsul este 1. Reciproca lui Ceva dă concurența. Picioarele sunt interioare laturilor, iar primele două ceviene au intersecție interioară, deci concurența este finită. Nu se afirmă că punctul comun este P. Rezultatul este Sunt concurente într-un punct finit interior triunghiului ABC..",
+      "options": [
+        {
+          "text": "Sunt concurente într-un punct finit interior triunghiului ABC.",
+          "is_correct": true
+        },
+        {
+          "text": "Sunt toate paralele.",
+          "is_correct": false
+        },
+        {
+          "text": "Sunt concurente obligatoriu în P.",
+          "is_correct": false
+        },
+        {
+          "text": "Nu pot fi concurente.",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 15,
+        "type_name": "Concurență prin teorema lui Ceva",
+        "variant": 3,
+        "reference_pages": "203",
+        "adaptation": "concluzie Ceva cu demonstrație pentru bisectoarele unghiurilor auxiliare dintr-un punct interior"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "16",
+          "0"
+        ],
+        "C": [
+          "0",
+          "12"
+        ],
+        "P": [
+          "4",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "A(-12; 0), B(12; 0), C(0; 16). Aflați unicul punct M pentru care rapoartele lungimilor MA/MB și MB/MC sunt ambele 1. Lungimile din numitori trebuie să fie nenule.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Egalitățile rapoartelor înseamnă MA=MB=MC>0, adică M este circumcentrul. Din MA²=MB² rezultă xM=0. Apoi 9·(4)²+yM²=(4·4−yM)², de unde yM=7/2. Triunghiul este nedegenerat și punctul obținut are toate cele trei distanțe nenule. Aceasta este numai o caracterizare explicită prin rapoarte de distanțe; nu pretinde echivalența olimpică cu rapoarte pe ceviene și Van Aubel din catalog. Rezultatul este (0; 7/2).",
+      "options": [
+        {
+          "text": "(1; 7/2)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 7/2)",
+          "is_correct": true
+        },
+        {
+          "text": "(0; 9/2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 5/2)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 16,
+        "type_name": "Caracterizarea circumcentrului din rapoarte",
+        "variant": 3,
+        "reference_pages": "203",
+        "adaptation": "adaptare parțială declarată: circumcentru din rapoarte de distanțe egale cu 1; fără echivalența Van Aubel neprecizată de catalog"
+      },
+      "verification": {
+        "A": [
+          "-12",
+          "0"
+        ],
+        "B": [
+          "12",
+          "0"
+        ],
+        "C": [
+          "0",
+          "16"
+        ]
+      }
+    },
+    {
+      "text": "Cele șase puncte distincte A(-16/5; -12/5), B(0; -4), C(4; 0), D(0; 4), E(-12/5; 16/5), F(-60/17; 32/17) sunt pe cercul x²+y²=16. X=AB∩DE, Y=BC∩EF și Z=CD∩FA. Determinați Z și verificați în explicație coliniaritatea Pascal.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare punct verifică x²+y²=16. Intersecțiile finite sunt X(-48/5; 4/5), Y(-60; -64), Z(-4; 8). Calculând determinantul (Y−X,Z−X) obținem zero; X și Y sunt distincte. Acesta verifică teorema lui Pascal pentru hexagonul înscris dat, fără a înlocui demonstrația generală bazată pe Menelau și puterea punctului. Rezultatul este (-4; 8).",
+      "options": [
+        {
+          "text": "(-3; 8)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4; 9)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4; 8)",
+          "is_correct": true
+        },
+        {
+          "text": "(-5; 7)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 17,
+        "type_name": "Teorema lui Pascal",
+        "variant": 3,
+        "reference_pages": "203",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "-16/5",
+          "-12/5"
+        ],
+        "B": [
+          "0",
+          "-4"
+        ],
+        "C": [
+          "4",
+          "0"
+        ],
+        "D": [
+          "0",
+          "4"
+        ],
+        "E": [
+          "-12/5",
+          "16/5"
+        ],
+        "F": [
+          "-60/17",
+          "32/17"
+        ],
+        "radius": 4
+      }
+    },
+    {
+      "text": "În triunghiul dreptunghic A(0; 0), B(20; 0), C(0; 15), D∈dreapta BC, E∈dreapta CA, F∈dreapta AB sunt picioarele bisectoarelor exterioare din A,B,C. Determinați coordonatele lui D și folosiți explicația pentru a verifica alinierea D,E,F.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Laturile sunt AB=20, AC=15, BC=25, toate diferite, deci picioarele exterioare sunt finite. Cu convenția UX/XV=t/(1−t), teorema bisectoarei exterioare dă BD/DC=−AB/AC=−4/3. D=B+t(C−B), t/(1−t)=−4/3, deci t=4. Celelalte rapoarte sunt CE/EA=−5/4 și AF/FB=−3/5; produsul este −1, deci Menelau dă coliniaritatea. În acest caz E(0; -60), F(-30; 0), iar F este chiar mijlocul lui DE. Rezultatul este (-60; 60).",
+      "options": [
+        {
+          "text": "(-59; 60)",
+          "is_correct": false
+        },
+        {
+          "text": "(-60; 61)",
+          "is_correct": false
+        },
+        {
+          "text": "(-61; 59)",
+          "is_correct": false
+        },
+        {
+          "text": "(-60; 60)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 1,
+        "type_name": "Picioarele bisectoarelor exterioare",
+        "variant": 4,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "20",
+          "0"
+        ],
+        "C": [
+          "0",
+          "15"
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(30; 0), C(0; 30). M este mijlocul lui BC, P∈AM are AP:PM=5:1, iar X∈AB are AX:XB=1:5. Dreapta XP taie CA în Y și BC în Z. Calculați raportul orientat CY/YA (negativ pentru Y exterior lui CA).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem M(15; 15), P(25/2; 25/2), X(5; 0). Intersecțiile sunt Y(0; -25/3), Z(115/8; 125/8). Y este exterior segmentului CA. Menelau în ABC dă (AX/XB)(BZ/ZC)(CY/YA)=−1. Aici AX/XB=1/5 și BZ/ZC=25/23, deci CY/YA=-23/5.  Rezultatul este -23/5.",
+      "options": [
+        {
+          "text": "-23/5",
+          "is_correct": true
+        },
+        {
+          "text": "-18/5",
+          "is_correct": false
+        },
+        {
+          "text": "-28/5",
+          "is_correct": false
+        },
+        {
+          "text": "-13/5",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 2,
+        "type_name": "Raportul unei transversale",
+        "variant": 4,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "30",
+          "0"
+        ],
+        "C": [
+          "0",
+          "30"
+        ],
+        "P": [
+          "25/2",
+          "25/2"
+        ],
+        "X": [
+          "5",
+          "0"
+        ],
+        "median_parameter": "5/6"
+      }
+    },
+    {
+      "text": "A(0; 0), B(20; 0), C(0; 15). AD este bisectoarea interioară, D∈BC. E∈AC verifică AE:EC=4:1, iar P=BE∩AD. Calculați raportul pozitiv AP/PD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Bisectoarea dă BD/DC=AB/AC=4/3 și D(60/7; 60/7). Din AE:EC=4:1 rezultă E(0; 12). P(15/2; 15/2) este interior lui AD. Aplicăm Menelau în ADC cu transversala B,E,P: (DB/BC)(CE/EA)(AP/PD)=−1. DB/BC=−4/7 și CE/EA=1/4, de unde AP/PD=7·4/4. Rezultatul este 7.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 3,
+        "type_name": "Bisectoare și transversală",
+        "variant": 4,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "20",
+          "0"
+        ],
+        "C": [
+          "0",
+          "15"
+        ],
+        "E": [
+          "0",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "Trapezul isoscel ABCD are A(-30; 0), B(30; 0), C(10; 15), D(-10; 15). M este mijlocul lui AB, iar P(0; 25/2) este pe axa de simetrie. Notăm X=AP∩dreapta CD și Y=BP∩dreapta CD. Care este raportul lungimilor MX/MY?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin parametrizare sau Thales rezultă X(6; 15), Y(-6; 15). Ele au ordonate egale și abscise opuse. Cum M=(0;0), pătratele distanțelor MX și MY sunt egale și strict pozitive. Este un caz particular simetric al configurațiilor cu trapez și punct mobil; nu demonstrează afirmația olimpică generală a catalogului. Rezultatul este 1.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 4,
+        "type_name": "Configurație de trapez cu punct mobil",
+        "variant": 4,
+        "reference_pages": "201",
+        "adaptation": "adaptare parțială: trapez isoscel și punct pe axa de simetrie"
+      },
+      "verification": {
+        "A": [
+          "-30",
+          "0"
+        ],
+        "B": [
+          "30",
+          "0"
+        ],
+        "C": [
+          "10",
+          "15"
+        ],
+        "D": [
+          "-10",
+          "15"
+        ],
+        "P": [
+          "0",
+          "25/2"
+        ]
+      }
+    },
+    {
+      "text": "O transversală neparalelă cu AC taie dreptele AB,BC,CD,DA ale unui patrulater convex în E,F,G,H, fără a trece prin vârfuri. Se cunosc rapoartele orientate AE/EB=2/13, BF/FC=-13/3, CG/GD=1/4. Determinați DH/HA; convenția este UX/XV=t/(1−t) pentru X=U+t(V−U).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă T este intersecția transversalei cu AC, Menelau în ABC și ACD dă două produse egale cu −1. Înmulțind, rapoartele CT/TA și AT/TC se simplifică. Rezultă (AE/EB)(BF/FC)(CG/GD)(DH/HA)=1. Înlocuind cele trei valori, obținem DH/HA=-6; semnul negativ arată că H este exterior lui DA. Există configurația explicită A(0; 0), B(30; 0), C(30; 20), D(0; 20) și transversală y=x−(4). Rezultatul este -6.",
+      "options": [
+        {
+          "text": "-5",
+          "is_correct": false
+        },
+        {
+          "text": "-7",
+          "is_correct": false
+        },
+        {
+          "text": "-4",
+          "is_correct": false
+        },
+        {
+          "text": "-6",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 5,
+        "type_name": "Relație multiplicativă într-un patrulater",
+        "variant": 4,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "30",
+          "0"
+        ],
+        "C": [
+          "30",
+          "20"
+        ],
+        "D": [
+          "0",
+          "20"
+        ],
+        "line": [
+          [
+            "4",
+            "0"
+          ],
+          [
+            "5",
+            "1"
+          ]
+        ],
+        "ratios": [
+          "2/13",
+          "-13/3",
+          "1/4"
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(30; 0), C(0; 20). P∈BC are BP:PC=4:5. M,N sunt mijloacele lui AB,AC. D și E sunt simetricele lui P față de M,N. Punctele A,D,E sunt coliniare. Calculați raportul lungimilor AD/AE.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Simetria centrală dă D=A+B−P și E=A+C−P. Așadar AD=B−P, AE=C−P; deoarece B,P,C sunt coliniare, și A,D,E sunt coliniare. Cum P este interior lui BC, AD=BP și AE=PC ca lungimi, deci AD/AE=4/5. În acest caz D(40/3; -80/9), E(-50/3; 100/9). Rezultatul este 4/5.",
+      "options": [
+        {
+          "text": "4/5",
+          "is_correct": true
+        },
+        {
+          "text": "9/5",
+          "is_correct": false
+        },
+        {
+          "text": "-1/5",
+          "is_correct": false
+        },
+        {
+          "text": "14/5",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 6,
+        "type_name": "Coliniaritate din simetrii centrale",
+        "variant": 4,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "30",
+          "0"
+        ],
+        "C": [
+          "0",
+          "20"
+        ],
+        "P": [
+          "50/3",
+          "80/9"
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(30; 0), C(0; 20). P∈BC are BP:PC=4:5. M,N,Q sunt mijloacele lui AB,AC,AP. Determinați MQ/QN, ca raport de lungimi, și consultați explicația pentru alinierea mijloacelor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Omotetia de centru A și raport 1/2 trimite B,P,C în M,Q,N. Deci M,Q,N sunt coliniare, Q este interior lui MN și MQ/QN=BP/PC. Explicit M(15; 0), Q(25/3; 40/9), N(0; 10). Este o adaptare în triunghi de mijloace, fără reproducerea configurației complete din culegere. Rezultatul este 4/5.",
+      "options": [
+        {
+          "text": "9/5",
+          "is_correct": false
+        },
+        {
+          "text": "4/5",
+          "is_correct": true
+        },
+        {
+          "text": "-1/5",
+          "is_correct": false
+        },
+        {
+          "text": "14/5",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 7,
+        "type_name": "Mijloace coliniare ale segmentelor",
+        "variant": 4,
+        "reference_pages": "202",
+        "adaptation": "adaptare parțială: aliniere într-un triunghi de mijloace"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "30",
+          "0"
+        ],
+        "C": [
+          "0",
+          "20"
+        ],
+        "P": [
+          "50/3",
+          "80/9"
+        ]
+      }
+    },
+    {
+      "text": "ABCD este dreptunghiul A(0; 0), B(30; 0), C(30; 20), D(0; 20). T(12; 8)∈AC, M(5; 0)∈AB și P(15; 20)∈CD. N=MT∩dreapta BC și Q=PT∩dreapta DA. Aflați V=NP∩MQ; explicația verifică faptul că V∈BD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin intersecții finite obținem N(30; 200/7), Q(0; -40), apoi V(90/13; 200/13). Ecuația diagonalei BD este x/(30)+y/(20)=1, verificată de V. Astfel concurența MN,PQ,AC în T se transferă, în acest caz explicit, la NP,MQ,BD în V. Rezultatul este (90/13; 200/13).",
+      "options": [
+        {
+          "text": "(103/13; 200/13)",
+          "is_correct": false
+        },
+        {
+          "text": "(90/13; 213/13)",
+          "is_correct": false
+        },
+        {
+          "text": "(90/13; 200/13)",
+          "is_correct": true
+        },
+        {
+          "text": "(77/13; 187/13)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 8,
+        "type_name": "Transferul concurenței într-un patrulater",
+        "variant": 4,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "30",
+          "0"
+        ],
+        "C": [
+          "30",
+          "20"
+        ],
+        "D": [
+          "0",
+          "20"
+        ],
+        "T": [
+          "12",
+          "8"
+        ],
+        "M": [
+          "5",
+          "0"
+        ],
+        "P": [
+          "15",
+          "20"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul A(0; 0), B(20; 0), C(0; 15), BE și CF sunt bisectoarele interioare, E∈CA, F∈AB. AD este a treia bisectoare. Aflați P=BE∩CF și verificați în explicație P∈AD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema bisectoarei dă CE/EA=5/4 și AF/FB=3/5, deci E(0; 20/3), F(15/2; 0). Intersecția este P(5; 5). Deoarece AB și AC sunt perpendiculare pe axe, bisectoarea interioară din A are ecuația y=x, pe care P o satisface. Produsul cu BD/DC=4/3 este 1, în acord cu Ceva. Este cazul particular al bisectoarelor triunghiului inițial, nu o demonstrație a oricărei configurații auxiliare. Rezultatul este (5; 5).",
+      "options": [
+        {
+          "text": "(6; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 5)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 9,
+        "type_name": "Concurență din bisectoare în triunghiuri auxiliare",
+        "variant": 4,
+        "reference_pages": "202",
+        "adaptation": "adaptare parțială: concurența bisectoarelor în triunghiul dreptunghic 3-4-5"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "20",
+          "0"
+        ],
+        "C": [
+          "0",
+          "15"
+        ]
+      }
+    },
+    {
+      "text": "Patrulaterul complet este determinat de dreptele AB,BC,CD,DA, unde A(0; 0), B(30; 0), C(25; 20), D(5; 15). E=AB∩CD și F=AD∩BC. Aflați mijlocul K al lui EF; verificați dreapta Newton–Gauss prin mijloacele lui AC și BD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Intersecțiile sunt E(-55; 0), F(120/7; 360/7), deci K=(E+F)/2=(-265/14; 180/7). Mijloacele diagonalelor AC și BD sunt M(25/2; 10), N(35/2; 15/2). Calculul determinantului (N−M,K−M) dă zero; M,N sunt distincte. Acesta verifică efectiv dreapta Newton–Gauss în configurația dată. Rezultatul este (-265/14; 180/7).",
+      "options": [
+        {
+          "text": "(-265/14; 180/7)",
+          "is_correct": true
+        },
+        {
+          "text": "(-251/14; 180/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(-265/14; 187/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(-279/14; 173/7)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 10,
+        "type_name": "Dreapta Newton–Gauss",
+        "variant": 4,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "30",
+          "0"
+        ],
+        "C": [
+          "25",
+          "20"
+        ],
+        "D": [
+          "5",
+          "15"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul A(0; 0), B(30; 0), C(0; 20), cevienele AD,BE,CF sunt concurente în punctul interior P; D∈BC,E∈CA,F∈AB. Dacă AE/EC=3/5 și AF/FB=2/5, aflați AP/PD (rapoarte pozitive de lungimi).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația lui Van Aubel este AP/PD=AE/EC+AF/FB, deci suma este 3/5+2/5=1. O justificare afină: pentru P cu ponderi pozitive (5,2,3) la A,B,C, cele trei rapoarte sunt (2+3)/5, 3/5, 2/5; identitatea urmează prin adunare. Configurația efectivă are P(6; 6). Rezultatul este 1.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 11,
+        "type_name": "Relația lui Van Aubel",
+        "variant": 4,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "30",
+          "0"
+        ],
+        "C": [
+          "0",
+          "20"
+        ],
+        "weights": [
+          5,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(10; 0), C(25; 0) sunt pe o dreaptă; A′(5; 25), B′(20; 25), C′(40; 25) pe alta. X=AB′∩A′B, Y=AC′∩A′C, Z=BC′∩B′C. Determinați Z și verificați în explicație coliniaritatea Pappus.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rezolvând sistemele liniilor se obțin X(8; 10), Y(50/3; 125/12), Z(160/7; 75/7); toate intersecțiile sunt finite și distincte. Determinantul (Y−X,Z−X) este zero, confirmând teorema lui Pappus pentru cele două triplete date. Acest calcul explicit nu ține locul demonstrației generale. Rezultatul este (160/7; 75/7).",
+      "options": [
+        {
+          "text": "(167/7; 75/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(160/7; 82/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(160/7; 75/7)",
+          "is_correct": true
+        },
+        {
+          "text": "(153/7; 68/7)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 12,
+        "type_name": "Teorema lui Pappus",
+        "variant": 4,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "10",
+          "0"
+        ],
+        "C": [
+          "25",
+          "0"
+        ],
+        "A_prime": [
+          "5",
+          "25"
+        ],
+        "B_prime": [
+          "20",
+          "25"
+        ],
+        "C_prime": [
+          "40",
+          "25"
+        ]
+      }
+    },
+    {
+      "text": "O=(0;0), A(5; 5), B(20; 5), C(10; 20). A′=2A, B′=3B, C′=4C (vectori de poziție față de O), deci AA′,BB′,CC′ sunt concurente în O. X=AB∩A′B′, Y=BC∩B′C′, Z=CA∩C′A′. Aflați Z și verificați axa de perspectivă.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Triunghiurile sunt nedegenerate, iar intersecțiile laturilor omoloage sunt finite: X(-40; 5), Y(100; -115), Z(-5; -25). Determinantul (Y−X,Z−X) este zero; astfel cele trei puncte sunt coliniare, în acord cu Desargues. Este verificarea unui caz în perspectivă, nu demonstrația generală. Rezultatul este (-5; -25).",
+      "options": [
+        {
+          "text": "(-4; -25)",
+          "is_correct": false
+        },
+        {
+          "text": "(-5; -24)",
+          "is_correct": false
+        },
+        {
+          "text": "(-6; -26)",
+          "is_correct": false
+        },
+        {
+          "text": "(-5; -25)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 13,
+        "type_name": "Teorema lui Desargues",
+        "variant": 4,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "5",
+          "5"
+        ],
+        "B": [
+          "20",
+          "5"
+        ],
+        "C": [
+          "10",
+          "20"
+        ],
+        "factors": [
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(30; 0), C(0; 20). Dreapta y=x−5 taie BC,CA,AB în D,E,F. Reflectăm D,E,F față de mijloacele laturilor corespunzătoare, obținând D′,E′,F′. Aflați raportul orientat AF′/F′B și verificați alinierea simetricelor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din intersecții rezultă D(15; 10), E(0; -5), F(5; 0). Simetriile dau D′(15; 10), E′(0; 25), F′(25; 0). Reflectarea față de mijloc schimbă parametrul t în 1−t, deci inversează raportul orientat. Produsul Menelau −1 rămâne −1 după inversare, iar simetricele sunt coliniare. Aici F′ este interior lui AB, iar AF′/F′B=5. Rezultatul este 5.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 14,
+        "type_name": "Simetrice ale unei transversale",
+        "variant": 4,
+        "reference_pages": "203",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "30",
+          "0"
+        ],
+        "C": [
+          "0",
+          "20"
+        ],
+        "line": [
+          [
+            "5",
+            "0"
+          ],
+          [
+            "6",
+            "1"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "P(5; 5) este interior triunghiului A(0; 0), B(20; 0), C(0; 15). Bisectoarele interioare din P în triunghiurile PBC,PCA,PAB taie BC,CA,AB în D,E,F. Ce rezultă despre AD,BE,CF?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema bisectoarei în cele trei triunghiuri auxiliare dă BD/DC=PB/PC, CE/EA=PC/PA și AF/FB=PA/PB. Toate lungimile sunt pozitive și produsul este 1. Reciproca lui Ceva dă concurența. Picioarele sunt interioare laturilor, iar primele două ceviene au intersecție interioară, deci concurența este finită. Nu se afirmă că punctul comun este P. Rezultatul este Sunt concurente într-un punct finit interior triunghiului ABC..",
+      "options": [
+        {
+          "text": "Sunt toate paralele.",
+          "is_correct": false
+        },
+        {
+          "text": "Sunt concurente într-un punct finit interior triunghiului ABC.",
+          "is_correct": true
+        },
+        {
+          "text": "Sunt concurente obligatoriu în P.",
+          "is_correct": false
+        },
+        {
+          "text": "Nu pot fi concurente.",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 15,
+        "type_name": "Concurență prin teorema lui Ceva",
+        "variant": 4,
+        "reference_pages": "203",
+        "adaptation": "concluzie Ceva cu demonstrație pentru bisectoarele unghiurilor auxiliare dintr-un punct interior"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "20",
+          "0"
+        ],
+        "C": [
+          "0",
+          "15"
+        ],
+        "P": [
+          "5",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "A(-15; 0), B(15; 0), C(0; 20). Aflați unicul punct M pentru care rapoartele lungimilor MA/MB și MB/MC sunt ambele 1. Lungimile din numitori trebuie să fie nenule.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Egalitățile rapoartelor înseamnă MA=MB=MC>0, adică M este circumcentrul. Din MA²=MB² rezultă xM=0. Apoi 9·(5)²+yM²=(4·5−yM)², de unde yM=35/8. Triunghiul este nedegenerat și punctul obținut are toate cele trei distanțe nenule. Aceasta este numai o caracterizare explicită prin rapoarte de distanțe; nu pretinde echivalența olimpică cu rapoarte pe ceviene și Van Aubel din catalog. Rezultatul este (0; 35/8).",
+      "options": [
+        {
+          "text": "(1; 35/8)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 43/8)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 35/8)",
+          "is_correct": true
+        },
+        {
+          "text": "(-1; 27/8)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 16,
+        "type_name": "Caracterizarea circumcentrului din rapoarte",
+        "variant": 4,
+        "reference_pages": "203",
+        "adaptation": "adaptare parțială declarată: circumcentru din rapoarte de distanțe egale cu 1; fără echivalența Van Aubel neprecizată de catalog"
+      },
+      "verification": {
+        "A": [
+          "-15",
+          "0"
+        ],
+        "B": [
+          "15",
+          "0"
+        ],
+        "C": [
+          "0",
+          "20"
+        ]
+      }
+    },
+    {
+      "text": "Cele șase puncte distincte A(-4; -3), B(0; -5), C(5; 0), D(0; 5), E(-3; 4), F(-75/17; 40/17) sunt pe cercul x²+y²=25. X=AB∩DE, Y=BC∩EF și Z=CD∩FA. Determinați Z și verificați în explicație coliniaritatea Pascal.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare punct verifică x²+y²=25. Intersecțiile finite sunt X(-12; 1), Y(-75; -80), Z(-5; 10). Calculând determinantul (Y−X,Z−X) obținem zero; X și Y sunt distincte. Acesta verifică teorema lui Pascal pentru hexagonul înscris dat, fără a înlocui demonstrația generală bazată pe Menelau și puterea punctului. Rezultatul este (-5; 10).",
+      "options": [
+        {
+          "text": "(-4; 10)",
+          "is_correct": false
+        },
+        {
+          "text": "(-5; 11)",
+          "is_correct": false
+        },
+        {
+          "text": "(-6; 9)",
+          "is_correct": false
+        },
+        {
+          "text": "(-5; 10)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 17,
+        "type_name": "Teorema lui Pascal",
+        "variant": 4,
+        "reference_pages": "203",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "-4",
+          "-3"
+        ],
+        "B": [
+          "0",
+          "-5"
+        ],
+        "C": [
+          "5",
+          "0"
+        ],
+        "D": [
+          "0",
+          "5"
+        ],
+        "E": [
+          "-3",
+          "4"
+        ],
+        "F": [
+          "-75/17",
+          "40/17"
+        ],
+        "radius": 5
+      }
+    },
+    {
+      "text": "În triunghiul dreptunghic A(0; 0), B(24; 0), C(0; 18), D∈dreapta BC, E∈dreapta CA, F∈dreapta AB sunt picioarele bisectoarelor exterioare din A,B,C. Determinați coordonatele lui D și folosiți explicația pentru a verifica alinierea D,E,F.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Laturile sunt AB=24, AC=18, BC=30, toate diferite, deci picioarele exterioare sunt finite. Cu convenția UX/XV=t/(1−t), teorema bisectoarei exterioare dă BD/DC=−AB/AC=−4/3. D=B+t(C−B), t/(1−t)=−4/3, deci t=4. Celelalte rapoarte sunt CE/EA=−5/4 și AF/FB=−3/5; produsul este −1, deci Menelau dă coliniaritatea. În acest caz E(0; -72), F(-36; 0), iar F este chiar mijlocul lui DE. Rezultatul este (-72; 72).",
+      "options": [
+        {
+          "text": "(-72; 72)",
+          "is_correct": true
+        },
+        {
+          "text": "(-71; 72)",
+          "is_correct": false
+        },
+        {
+          "text": "(-72; 73)",
+          "is_correct": false
+        },
+        {
+          "text": "(-73; 71)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 1,
+        "type_name": "Picioarele bisectoarelor exterioare",
+        "variant": 5,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "24",
+          "0"
+        ],
+        "C": [
+          "0",
+          "18"
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(36; 0), C(0; 36). M este mijlocul lui BC, P∈AM are AP:PM=6:1, iar X∈AB are AX:XB=1:5. Dreapta XP taie CA în Y și BC în Z. Calculați raportul orientat CY/YA (negativ pentru Y exterior lui CA).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem M(18; 18), P(108/7; 108/7), X(6; 0). Intersecțiile sunt Y(0; -108/11), Z(504/29; 540/29). Y este exterior segmentului CA. Menelau în ABC dă (AX/XB)(BZ/ZC)(CY/YA)=−1. Aici AX/XB=1/5 și BZ/ZC=15/14, deci CY/YA=-14/3.  Rezultatul este -14/3.",
+      "options": [
+        {
+          "text": "-11/3",
+          "is_correct": false
+        },
+        {
+          "text": "-14/3",
+          "is_correct": true
+        },
+        {
+          "text": "-17/3",
+          "is_correct": false
+        },
+        {
+          "text": "-8/3",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 2,
+        "type_name": "Raportul unei transversale",
+        "variant": 5,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "0",
+          "36"
+        ],
+        "P": [
+          "108/7",
+          "108/7"
+        ],
+        "X": [
+          "6",
+          "0"
+        ],
+        "median_parameter": "6/7"
+      }
+    },
+    {
+      "text": "A(0; 0), B(24; 0), C(0; 18). AD este bisectoarea interioară, D∈BC. E∈AC verifică AE:EC=5:1, iar P=BE∩AD. Calculați raportul pozitiv AP/PD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Bisectoarea dă BD/DC=AB/AC=4/3 și D(72/7; 72/7). Din AE:EC=5:1 rezultă E(0; 15). P(120/13; 120/13) este interior lui AD. Aplicăm Menelau în ADC cu transversala B,E,P: (DB/BC)(CE/EA)(AP/PD)=−1. DB/BC=−4/7 și CE/EA=1/5, de unde AP/PD=7·5/4. Rezultatul este 35/4.",
+      "options": [
+        {
+          "text": "39/4",
+          "is_correct": false
+        },
+        {
+          "text": "31/4",
+          "is_correct": false
+        },
+        {
+          "text": "35/4",
+          "is_correct": true
+        },
+        {
+          "text": "43/4",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 3,
+        "type_name": "Bisectoare și transversală",
+        "variant": 5,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "24",
+          "0"
+        ],
+        "C": [
+          "0",
+          "18"
+        ],
+        "E": [
+          "0",
+          "15"
+        ]
+      }
+    },
+    {
+      "text": "Trapezul isoscel ABCD are A(-36; 0), B(36; 0), C(12; 18), D(-12; 18). M este mijlocul lui AB, iar P(0; 108/7) este pe axa de simetrie. Notăm X=AP∩dreapta CD și Y=BP∩dreapta CD. Care este raportul lungimilor MX/MY?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin parametrizare sau Thales rezultă X(6; 18), Y(-6; 18). Ele au ordonate egale și abscise opuse. Cum M=(0;0), pătratele distanțelor MX și MY sunt egale și strict pozitive. Este un caz particular simetric al configurațiilor cu trapez și punct mobil; nu demonstrează afirmația olimpică generală a catalogului. Rezultatul este 1.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 4,
+        "type_name": "Configurație de trapez cu punct mobil",
+        "variant": 5,
+        "reference_pages": "201",
+        "adaptation": "adaptare parțială: trapez isoscel și punct pe axa de simetrie"
+      },
+      "verification": {
+        "A": [
+          "-36",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "12",
+          "18"
+        ],
+        "D": [
+          "-12",
+          "18"
+        ],
+        "P": [
+          "0",
+          "108/7"
+        ]
+      }
+    },
+    {
+      "text": "O transversală neparalelă cu AC taie dreptele AB,BC,CD,DA ale unui patrulater convex în E,F,G,H, fără a trece prin vârfuri. Se cunosc rapoartele orientate AE/EB=5/31, BF/FC=-31/7, CG/GD=7/29. Determinați DH/HA; convenția este UX/XV=t/(1−t) pentru X=U+t(V−U).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă T este intersecția transversalei cu AC, Menelau în ABC și ACD dă două produse egale cu −1. Înmulțind, rapoartele CT/TA și AT/TC se simplifică. Rezultă (AE/EB)(BF/FC)(CG/GD)(DH/HA)=1. Înlocuind cele trei valori, obținem DH/HA=-29/5; semnul negativ arată că H este exterior lui DA. Există configurația explicită A(0; 0), B(36; 0), C(36; 24), D(0; 24) și transversală y=x−(5). Rezultatul este -29/5.",
+      "options": [
+        {
+          "text": "-29/5",
+          "is_correct": true
+        },
+        {
+          "text": "-24/5",
+          "is_correct": false
+        },
+        {
+          "text": "-34/5",
+          "is_correct": false
+        },
+        {
+          "text": "-19/5",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 5,
+        "type_name": "Relație multiplicativă într-un patrulater",
+        "variant": 5,
+        "reference_pages": "201",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "36",
+          "24"
+        ],
+        "D": [
+          "0",
+          "24"
+        ],
+        "line": [
+          [
+            "5",
+            "0"
+          ],
+          [
+            "6",
+            "1"
+          ]
+        ],
+        "ratios": [
+          "5/31",
+          "-31/7",
+          "7/29"
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(36; 0), C(0; 24). P∈BC are BP:PC=5:6. M,N sunt mijloacele lui AB,AC. D și E sunt simetricele lui P față de M,N. Punctele A,D,E sunt coliniare. Calculați raportul lungimilor AD/AE.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Simetria centrală dă D=A+B−P și E=A+C−P. Așadar AD=B−P, AE=C−P; deoarece B,P,C sunt coliniare, și A,D,E sunt coliniare. Cum P este interior lui BC, AD=BP și AE=PC ca lungimi, deci AD/AE=5/6. În acest caz D(180/11; -120/11), E(-216/11; 144/11). Rezultatul este 5/6.",
+      "options": [
+        {
+          "text": "11/6",
+          "is_correct": false
+        },
+        {
+          "text": "5/6",
+          "is_correct": true
+        },
+        {
+          "text": "-1/6",
+          "is_correct": false
+        },
+        {
+          "text": "17/6",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 6,
+        "type_name": "Coliniaritate din simetrii centrale",
+        "variant": 5,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "0",
+          "24"
+        ],
+        "P": [
+          "216/11",
+          "120/11"
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(36; 0), C(0; 24). P∈BC are BP:PC=5:6. M,N,Q sunt mijloacele lui AB,AC,AP. Determinați MQ/QN, ca raport de lungimi, și consultați explicația pentru alinierea mijloacelor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Omotetia de centru A și raport 1/2 trimite B,P,C în M,Q,N. Deci M,Q,N sunt coliniare, Q este interior lui MN și MQ/QN=BP/PC. Explicit M(18; 0), Q(108/11; 60/11), N(0; 12). Este o adaptare în triunghi de mijloace, fără reproducerea configurației complete din culegere. Rezultatul este 5/6.",
+      "options": [
+        {
+          "text": "11/6",
+          "is_correct": false
+        },
+        {
+          "text": "-1/6",
+          "is_correct": false
+        },
+        {
+          "text": "5/6",
+          "is_correct": true
+        },
+        {
+          "text": "17/6",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 7,
+        "type_name": "Mijloace coliniare ale segmentelor",
+        "variant": 5,
+        "reference_pages": "202",
+        "adaptation": "adaptare parțială: aliniere într-un triunghi de mijloace"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "0",
+          "24"
+        ],
+        "P": [
+          "216/11",
+          "120/11"
+        ]
+      }
+    },
+    {
+      "text": "ABCD este dreptunghiul A(0; 0), B(36; 0), C(36; 24), D(0; 24). T(72/5; 48/5)∈AC, M(6; 0)∈AB și P(18; 24)∈CD. N=MT∩dreapta BC și Q=PT∩dreapta DA. Aflați V=NP∩MQ; explicația verifică faptul că V∈BD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prin intersecții finite obținem N(36; 240/7), Q(0; -48), apoi V(108/13; 240/13). Ecuația diagonalei BD este x/(36)+y/(24)=1, verificată de V. Astfel concurența MN,PQ,AC în T se transferă, în acest caz explicit, la NP,MQ,BD în V. Rezultatul este (108/13; 240/13).",
+      "options": [
+        {
+          "text": "(121/13; 240/13)",
+          "is_correct": false
+        },
+        {
+          "text": "(108/13; 253/13)",
+          "is_correct": false
+        },
+        {
+          "text": "(95/13; 227/13)",
+          "is_correct": false
+        },
+        {
+          "text": "(108/13; 240/13)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 8,
+        "type_name": "Transferul concurenței într-un patrulater",
+        "variant": 5,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "36",
+          "24"
+        ],
+        "D": [
+          "0",
+          "24"
+        ],
+        "T": [
+          "72/5",
+          "48/5"
+        ],
+        "M": [
+          "6",
+          "0"
+        ],
+        "P": [
+          "18",
+          "24"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul A(0; 0), B(24; 0), C(0; 18), BE și CF sunt bisectoarele interioare, E∈CA, F∈AB. AD este a treia bisectoare. Aflați P=BE∩CF și verificați în explicație P∈AD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema bisectoarei dă CE/EA=5/4 și AF/FB=3/5, deci E(0; 8), F(9; 0). Intersecția este P(6; 6). Deoarece AB și AC sunt perpendiculare pe axe, bisectoarea interioară din A are ecuația y=x, pe care P o satisface. Produsul cu BD/DC=4/3 este 1, în acord cu Ceva. Este cazul particular al bisectoarelor triunghiului inițial, nu o demonstrație a oricărei configurații auxiliare. Rezultatul este (6; 6).",
+      "options": [
+        {
+          "text": "(6; 6)",
+          "is_correct": true
+        },
+        {
+          "text": "(7; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(6; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 5)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 9,
+        "type_name": "Concurență din bisectoare în triunghiuri auxiliare",
+        "variant": 5,
+        "reference_pages": "202",
+        "adaptation": "adaptare parțială: concurența bisectoarelor în triunghiul dreptunghic 3-4-5"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "24",
+          "0"
+        ],
+        "C": [
+          "0",
+          "18"
+        ]
+      }
+    },
+    {
+      "text": "Patrulaterul complet este determinat de dreptele AB,BC,CD,DA, unde A(0; 0), B(36; 0), C(30; 24), D(6; 18). E=AB∩CD și F=AD∩BC. Aflați mijlocul K al lui EF; verificați dreapta Newton–Gauss prin mijloacele lui AC și BD.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Intersecțiile sunt E(-66; 0), F(144/7; 432/7), deci K=(E+F)/2=(-159/7; 216/7). Mijloacele diagonalelor AC și BD sunt M(15; 12), N(21; 9). Calculul determinantului (N−M,K−M) dă zero; M,N sunt distincte. Acesta verifică efectiv dreapta Newton–Gauss în configurația dată. Rezultatul este (-159/7; 216/7).",
+      "options": [
+        {
+          "text": "(-152/7; 216/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(-159/7; 216/7)",
+          "is_correct": true
+        },
+        {
+          "text": "(-159/7; 223/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(-166/7; 209/7)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 10,
+        "type_name": "Dreapta Newton–Gauss",
+        "variant": 5,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "30",
+          "24"
+        ],
+        "D": [
+          "6",
+          "18"
+        ]
+      }
+    },
+    {
+      "text": "În triunghiul A(0; 0), B(36; 0), C(0; 24), cevienele AD,BE,CF sunt concurente în punctul interior P; D∈BC,E∈CA,F∈AB. Dacă AE/EC=1/2 și AF/FB=1/3, aflați AP/PD (rapoarte pozitive de lungimi).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația lui Van Aubel este AP/PD=AE/EC+AF/FB, deci suma este 1/2+1/3=5/6. O justificare afină: pentru P cu ponderi pozitive (6,2,3) la A,B,C, cele trei rapoarte sunt (2+3)/6, 3/6, 2/6; identitatea urmează prin adunare. Configurația efectivă are P(72/11; 72/11). Rezultatul este 5/6.",
+      "options": [
+        {
+          "text": "11/6",
+          "is_correct": false
+        },
+        {
+          "text": "-1/6",
+          "is_correct": false
+        },
+        {
+          "text": "5/6",
+          "is_correct": true
+        },
+        {
+          "text": "17/6",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 11,
+        "type_name": "Relația lui Van Aubel",
+        "variant": 5,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "0",
+          "24"
+        ],
+        "weights": [
+          6,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(12; 0), C(30; 0) sunt pe o dreaptă; A′(6; 30), B′(24; 30), C′(48; 30) pe alta. X=AB′∩A′B, Y=AC′∩A′C, Z=BC′∩B′C. Determinați Z și verificați în explicație coliniaritatea Pappus.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Rezolvând sistemele liniilor se obțin X(48/5; 12), Y(20; 25/2), Z(192/7; 90/7); toate intersecțiile sunt finite și distincte. Determinantul (Y−X,Z−X) este zero, confirmând teorema lui Pappus pentru cele două triplete date. Acest calcul explicit nu ține locul demonstrației generale. Rezultatul este (192/7; 90/7).",
+      "options": [
+        {
+          "text": "(199/7; 90/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(192/7; 97/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(185/7; 83/7)",
+          "is_correct": false
+        },
+        {
+          "text": "(192/7; 90/7)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 12,
+        "type_name": "Teorema lui Pappus",
+        "variant": 5,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "12",
+          "0"
+        ],
+        "C": [
+          "30",
+          "0"
+        ],
+        "A_prime": [
+          "6",
+          "30"
+        ],
+        "B_prime": [
+          "24",
+          "30"
+        ],
+        "C_prime": [
+          "48",
+          "30"
+        ]
+      }
+    },
+    {
+      "text": "O=(0;0), A(6; 6), B(24; 6), C(12; 24). A′=2A, B′=3B, C′=4C (vectori de poziție față de O), deci AA′,BB′,CC′ sunt concurente în O. X=AB∩A′B′, Y=BC∩B′C′, Z=CA∩C′A′. Aflați Z și verificați axa de perspectivă.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Triunghiurile sunt nedegenerate, iar intersecțiile laturilor omoloage sunt finite: X(-48; 6), Y(120; -138), Z(-6; -30). Determinantul (Y−X,Z−X) este zero; astfel cele trei puncte sunt coliniare, în acord cu Desargues. Este verificarea unui caz în perspectivă, nu demonstrația generală. Rezultatul este (-6; -30).",
+      "options": [
+        {
+          "text": "(-6; -30)",
+          "is_correct": true
+        },
+        {
+          "text": "(-5; -30)",
+          "is_correct": false
+        },
+        {
+          "text": "(-6; -29)",
+          "is_correct": false
+        },
+        {
+          "text": "(-7; -31)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 13,
+        "type_name": "Teorema lui Desargues",
+        "variant": 5,
+        "reference_pages": "202",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "6",
+          "6"
+        ],
+        "B": [
+          "24",
+          "6"
+        ],
+        "C": [
+          "12",
+          "24"
+        ],
+        "factors": [
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "text": "A(0; 0), B(36; 0), C(0; 24). Dreapta y=x−6 taie BC,CA,AB în D,E,F. Reflectăm D,E,F față de mijloacele laturilor corespunzătoare, obținând D′,E′,F′. Aflați raportul orientat AF′/F′B și verificați alinierea simetricelor.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din intersecții rezultă D(18; 12), E(0; -6), F(6; 0). Simetriile dau D′(18; 12), E′(0; 30), F′(30; 0). Reflectarea față de mijloc schimbă parametrul t în 1−t, deci inversează raportul orientat. Produsul Menelau −1 rămâne −1 după inversare, iar simetricele sunt coliniare. Aici F′ este interior lui AB, iar AF′/F′B=5. Rezultatul este 5.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 14,
+        "type_name": "Simetrice ale unei transversale",
+        "variant": 5,
+        "reference_pages": "203",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "36",
+          "0"
+        ],
+        "C": [
+          "0",
+          "24"
+        ],
+        "line": [
+          [
+            "6",
+            "0"
+          ],
+          [
+            "7",
+            "1"
+          ]
+        ]
+      }
+    },
+    {
+      "text": "P(6; 6) este interior triunghiului A(0; 0), B(24; 0), C(0; 18). Bisectoarele interioare din P în triunghiurile PBC,PCA,PAB taie BC,CA,AB în D,E,F. Ce rezultă despre AD,BE,CF?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Teorema bisectoarei în cele trei triunghiuri auxiliare dă BD/DC=PB/PC, CE/EA=PC/PA și AF/FB=PA/PB. Toate lungimile sunt pozitive și produsul este 1. Reciproca lui Ceva dă concurența. Picioarele sunt interioare laturilor, iar primele două ceviene au intersecție interioară, deci concurența este finită. Nu se afirmă că punctul comun este P. Rezultatul este Sunt concurente într-un punct finit interior triunghiului ABC..",
+      "options": [
+        {
+          "text": "Sunt toate paralele.",
+          "is_correct": false
+        },
+        {
+          "text": "Sunt concurente obligatoriu în P.",
+          "is_correct": false
+        },
+        {
+          "text": "Sunt concurente într-un punct finit interior triunghiului ABC.",
+          "is_correct": true
+        },
+        {
+          "text": "Nu pot fi concurente.",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 15,
+        "type_name": "Concurență prin teorema lui Ceva",
+        "variant": 5,
+        "reference_pages": "203",
+        "adaptation": "concluzie Ceva cu demonstrație pentru bisectoarele unghiurilor auxiliare dintr-un punct interior"
+      },
+      "verification": {
+        "A": [
+          "0",
+          "0"
+        ],
+        "B": [
+          "24",
+          "0"
+        ],
+        "C": [
+          "0",
+          "18"
+        ],
+        "P": [
+          "6",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "A(-18; 0), B(18; 0), C(0; 24). Aflați unicul punct M pentru care rapoartele lungimilor MA/MB și MB/MC sunt ambele 1. Lungimile din numitori trebuie să fie nenule.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Egalitățile rapoartelor înseamnă MA=MB=MC>0, adică M este circumcentrul. Din MA²=MB² rezultă xM=0. Apoi 9·(6)²+yM²=(4·6−yM)², de unde yM=21/4. Triunghiul este nedegenerat și punctul obținut are toate cele trei distanțe nenule. Aceasta este numai o caracterizare explicită prin rapoarte de distanțe; nu pretinde echivalența olimpică cu rapoarte pe ceviene și Van Aubel din catalog. Rezultatul este (0; 21/4).",
+      "options": [
+        {
+          "text": "(1; 21/4)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 25/4)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 17/4)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 21/4)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 16,
+        "type_name": "Caracterizarea circumcentrului din rapoarte",
+        "variant": 5,
+        "reference_pages": "203",
+        "adaptation": "adaptare parțială declarată: circumcentru din rapoarte de distanțe egale cu 1; fără echivalența Van Aubel neprecizată de catalog"
+      },
+      "verification": {
+        "A": [
+          "-18",
+          "0"
+        ],
+        "B": [
+          "18",
+          "0"
+        ],
+        "C": [
+          "0",
+          "24"
+        ]
+      }
+    },
+    {
+      "text": "Cele șase puncte distincte A(-24/5; -18/5), B(0; -6), C(6; 0), D(0; 6), E(-18/5; 24/5), F(-90/17; 48/17) sunt pe cercul x²+y²=36. X=AB∩DE, Y=BC∩EF și Z=CD∩FA. Determinați Z și verificați în explicație coliniaritatea Pascal.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecare punct verifică x²+y²=36. Intersecțiile finite sunt X(-72/5; 6/5), Y(-90; -96), Z(-6; 12). Calculând determinantul (Y−X,Z−X) obținem zero; X și Y sunt distincte. Acesta verifică teorema lui Pascal pentru hexagonul înscris dat, fără a înlocui demonstrația generală bazată pe Menelau și puterea punctului. Rezultatul este (-6; 12).",
+      "options": [
+        {
+          "text": "(-6; 12)",
+          "is_correct": true
+        },
+        {
+          "text": "(-5; 12)",
+          "is_correct": false
+        },
+        {
+          "text": "(-6; 13)",
+          "is_correct": false
+        },
+        {
+          "text": "(-7; 11)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g2_menelau_v1",
+        "catalog": "G2",
+        "section": "4",
+        "type": 17,
+        "type_name": "Teorema lui Pascal",
+        "variant": 5,
+        "reference_pages": "203",
+        "adaptation": "caz numeric explicit; nu este demonstrația generală a tipului din catalog"
+      },
+      "verification": {
+        "A": [
+          "-24/5",
+          "-18/5"
+        ],
+        "B": [
+          "0",
+          "-6"
+        ],
+        "C": [
+          "6",
+          "0"
+        ],
+        "D": [
+          "0",
+          "6"
+        ],
+        "E": [
+          "-18/5",
+          "24/5"
+        ],
+        "F": [
+          "-90/17",
+          "48/17"
+        ],
+        "radius": 6
+      }
+    }
+  ]
 }

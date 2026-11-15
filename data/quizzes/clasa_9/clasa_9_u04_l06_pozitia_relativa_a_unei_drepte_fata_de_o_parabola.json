@@ -1,6 +1,3572 @@
 {
   "title": "Poziția relativă a unei drepte față de o parabolă",
   "description": "Clasa a 9-a · Funcția de gradul al II-lea",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "hard",
+  "questions": [
+    {
+      "text": "Determinați punctele comune parabolei \\(y = x^{2} - 3 x + 4\\) și dreptei \\(y = x + 1\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Egalăm cele două expresii ale lui y. Diferența este o ecuație de gradul al doilea cu două rădăcini reale distincte; pentru fiecare abscisă revenim în ecuația dreptei. Rezultatul cerut este \\(\\left\\{\\left( 1, \\  2\\right), \\left( 3, \\  4\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 1, \\  2\\right), \\left( 3, \\  4\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 2, \\  2\\right), \\left( 4, \\  4\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 0, \\  2\\right), \\left( 2, \\  4\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 3, \\  2\\right), \\left( 5, \\  4\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 1,
+        "type_name": "Intersecția dreptei cu parabola",
+        "pages": "144–146",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "intersection",
+        "first": "x**2 - 3*x + 4",
+        "second": "x + 1",
+        "option_values": [
+          "{(1, 2), (3, 4)}",
+          "{(2, 2), (4, 4)}",
+          "{(0, 2), (2, 4)}",
+          "{(3, 2), (5, 4)}"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m dreapta y=m este tangentă parabolei \\(y = \\left(x - 1\\right)^{2} + 1\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O dreaptă orizontală este tangentă acestei parabole în vârf. Echivalent, ecuația (x−(1))²+(1)−m=0 are o rădăcină dublă exact când m=(1). Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 2,
+        "type_name": "Parametru pentru tangentă, secantă sau exterioară",
+        "pages": "144–146",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "(x - 1)**2 + 1",
+        "line": "m",
+        "variable": "m",
+        "option_values": [
+          "2",
+          "1",
+          "0",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Familia \\(y = \\left(- m + x\\right)^{2} + 1\\) are, pentru fiecare m∈ℝ, o tangentă orizontală comună y=n. Aflați n.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Completarea pătratului arată că toate vârfurile au aceeași ordonată (1). Diferența f_m(x)−n are discriminant nul pentru orice m exact când n=(1). Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 3,
+        "type_name": "Tangență uniformă într-o familie",
+        "pages": "144–146",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "uniform_horizontal_tangent",
+        "f": "(-m + x)**2 + 1",
+        "parameter": "m",
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m axa Ox este tangentă parabolei \\(y = m + x^{2} - 2 x\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Coeficientul principal este 1, deci nu apare degenerarea. Tangența la Ox este echivalentă cu Δ=0; la această valoare polinomul devine pătrat perfect. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 4,
+        "type_name": "Axa Ox față de familii de parabole",
+        "pages": "144–146",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "m + x**2 - 2*x",
+        "line": "0",
+        "variable": "m",
+        "option_values": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ]
+      }
+    },
+    {
+      "text": "Determinați expresia dreptei y=ℓ(x) tangentă ambelor parabole \\(y = x^{2}\\) și \\(y = \\left(x - 2\\right)^{2} + 4\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem dreapta y=px+q. Pentru prima parabolă condiția Δ=0 dă q=−p²/4. Pentru cea translatată, aceeași condiție determină unic p. Substituția în ambele diferențe produce pătrate perfecte, cu rădăcini duble reale. Rezultatul cerut este \\(2 x - 1\\).",
+      "options": [
+        {
+          "text": "\\(2 x - 1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 x\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x - 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x + 1\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 5,
+        "type_name": "Tangentă comună la două parabole",
+        "pages": "144–146",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_tangent",
+        "first": "x**2",
+        "second": "(x - 2)**2 + 4",
+        "option_values": [
+          "2*x - 1",
+          "2*x",
+          "2*x - 2",
+          "2*x + 1"
+        ]
+      }
+    },
+    {
+      "text": "Aflați expresia ℓ(x) a tangentei y=ℓ(x) la \\(y = 2 x^{2} - 2 x + 1\\) în punctul de abscisă 1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru ca diferența dintre parabolă și dreaptă să fie a(x−r)², coeficientul liniar impune p=2ar+b. Ordonata punctului fixează interceptul. Această metodă este algebrică, fără derivate. Rezultatul cerut este \\(2 x - 1\\).",
+      "options": [
+        {
+          "text": "\\(2 x\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x - 1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 x - 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 x + 1\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 6,
+        "type_name": "Tangenta într-un punct dat",
+        "pages": "144–146",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_at",
+        "f": "2*x**2 - 2*x + 1",
+        "at": 1,
+        "option_values": [
+          "2*x",
+          "2*x - 1",
+          "2*x - 2",
+          "2*x + 1"
+        ]
+      }
+    },
+    {
+      "text": "Pentru familia \\(y = \\left(- m + x\\right)^{2} + 1\\) și orice m∈ℝ, câte puncte comune are graficul cu axa Ox?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul familiei este (1)>0, independent de m, deci fiecare parabolă este strict deasupra lui Ox. Ecuația de intersecție nu are soluții reale. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 7,
+        "type_name": "Exterioritate uniformă",
+        "pages": "144–146",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "uniform_root_count",
+        "f": "(-m + x)**2 + 1",
+        "parameter": "m",
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ]
+      }
+    },
+    {
+      "text": "Parabola y=1x²+c este tangentă ambelor bisectoare y=x și y=−x. Aflați c.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru (1)x²−x+c=0 și (1)x²+x+c=0 discriminantul este în ambele cazuri 1−4(1)c. Tangența la ambele drepte este echivalentă cu anularea acestui discriminant, deci c=1/(4(1)). Coeficientul principal (1) este pozitiv. Rezultatul cerut este \\(\\frac{1}{4}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{5}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{3}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{9}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{4}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 8,
+        "type_name": "Tangență la ambele bisectoare",
+        "pages": "144–146",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "bisector_parameter",
+        "a": 1,
+        "option_values": [
+          "5/4",
+          "-3/4",
+          "9/4",
+          "1/4"
+        ]
+      }
+    },
+    {
+      "text": "O parabolă monică y=x²+bx+c este tangentă dreptelor \\(y = 2 x\\) și \\(y = - 2 x\\). Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Anulăm discriminantul celor două ecuații de intersecție. Scăderea condițiilor dă b=0; apoi prima condiție determină c. Verificarea produce rădăcini duble pentru ambele drepte. Rezultatul cerut este \\(\\left( 0, \\  1\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 0, \\  1\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 1, \\  1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -1, \\  1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  1\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 9,
+        "type_name": "Parabole tangente la două drepte date",
+        "pages": "144–146",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "two_lines_parabola",
+        "a": 1,
+        "lines": [
+          "2*x",
+          "-2*x"
+        ],
+        "option_values": [
+          "(0, 1)",
+          "(1, 1)",
+          "(-1, 1)",
+          "(2, 1)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru x≥0, graficul y=x²+c este tangent ramurii y=2|x|. Aflați c, validând abscisa de contact.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe x≥0, |x|=x. Diferența x²−2(1)x+c are rădăcină dublă la x=(1)≥0 exact când c=(1)². Contactul aparține ramurii cerute; pentru modul trebuie verificată această restricție. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 10,
+        "type_name": "Tangență la o curbă cu modul",
+        "pages": "144–146",
+        "variant": 1,
+        "coverage": "partial_case",
+        "adaptation": "Tangență pe semidreapta pozitivă a unei curbe cu modul; nu se afirmă unicitate pe întregul grafic."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "c + x**2",
+        "line": "2*x",
+        "variable": "c",
+        "contact_domain": "Interval(0, oo)",
+        "option_values": [
+          "2",
+          "1",
+          "0",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Parabola monică y=x²+bx+c trece prin (0;2) și este tangentă dreptei y=1. Determinați (b;c), știind că abscisa contactului este pozitivă.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punctul dat fixează c. Tangența la dreapta orizontală impune Δ=0 pentru f(x)−(1), deci b²=4(1)². Condiția abscisei −b/2>0 selectează b=−2(1), fără ambiguitatea celor două semne. Rezultatul cerut este \\(\\left( -2, \\  2\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -1, \\  2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -3, \\  2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -2, \\  2\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 0, \\  2\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 11,
+        "type_name": "Parabolă prin puncte și tangentă",
+        "pages": "144–146",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "point_tangent_positive",
+        "intercept": 2,
+        "line": 1,
+        "option_values": [
+          "(-1, 2)",
+          "(-3, 2)",
+          "(-2, 2)",
+          "(0, 2)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru unghiul \\(\\alpha = \\frac{\\pi}{6}\\), exprimat în radiani, dreapta este y=2cos(α)x−cos²(α). Câte puncte comune are cu parabola y=x²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este (x−cos α)². Identitatea Δ=4cos²α−4cos²α=0 este valabilă inclusiv când cos α=0, deci există un singur punct comun, de tangență. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 12,
+        "type_name": "Parametru trigonometric în poziția relativă",
+        "pages": "144–146",
+        "variant": 1,
+        "coverage": "partial_case",
+        "adaptation": "Parametrul trigonometric este fixat la un unghi explicit; se verifică identitatea discriminantului."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x**2 - sqrt(3)*x + 3/4",
+        "domain": "Reals",
+        "option_values": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ]
+      }
+    },
+    {
+      "text": "Punctul de contact al tangentei y=2tx−t² la y=x² are abscisa t. Dacă t=1, determinați perechea (x;y) a contactului.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația de intersecție este (x−t)²=0, deci contactul este (t,t²). Eliminarea parametrului produce locul y=x², parcurs pe toate abscisele reale. Rezultatul cerut este \\(\\left( 1, \\  1\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 1, \\  1\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 2, \\  1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  1\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 3, \\  1\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 13,
+        "type_name": "Locul punctelor de tangență",
+        "pages": "144–146",
+        "variant": 1,
+        "coverage": "partial_case",
+        "adaptation": "Locul de tangență este explicat; grila cere un punct explicit al acestuia."
+      },
+      "verification": {
+        "task": "contact",
+        "f": "x**2",
+        "line": "2*x - 1",
+        "option_values": [
+          "(1, 1)",
+          "(2, 1)",
+          "(0, 1)",
+          "(3, 1)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m parabola y=x²+m este strict deasupra dreptei y=2x pentru orice x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este (x−(1))²+m−(1)². Stricta pozitivitate globală cere ca minimul să fie strict pozitiv; egalitatea ar produce tangență și nu satisface enunțul. Rezultatul cerut este \\(\\left(1, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(1, \\infty\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 14,
+        "type_name": "Parabola deasupra sau sub o dreaptă",
+        "pages": "144–146",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "global_sign_parameter",
+        "offset": 1,
+        "strict": true,
+        "option_values": [
+          "Reals",
+          "Interval.open(1, oo)",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m parabola y=x²+m este deasupra sau pe ambele drepte y=2x și y=−4x pentru orice x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru o dreaptă y=px, diferența are minimul m−p²/4. Ambele minime trebuie să fie nenegative, deci intersectăm m≥(1)² cu m≥((1)+1)². Condiția mai puternică este a doua. Rezultatul cerut este \\(\\left[4, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[4, \\infty\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 15,
+        "type_name": "Parabola deasupra a două drepte",
+        "pages": "144–146",
+        "variant": 1,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "above_two_lines",
+        "slopes": [
+          2,
+          -4
+        ],
+        "option_values": [
+          "Reals",
+          "{0}",
+          "Interval(4, oo)",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Determinați punctele comune parabolei \\(y = x^{2} - 4 x + 9\\) și dreptei \\(y = 2 x + 1\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Egalăm cele două expresii ale lui y. Diferența este o ecuație de gradul al doilea cu două rădăcini reale distincte; pentru fiecare abscisă revenim în ecuația dreptei. Rezultatul cerut este \\(\\left\\{\\left( 2, \\  5\\right), \\left( 4, \\  9\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 3, \\  5\\right), \\left( 5, \\  9\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 1, \\  5\\right), \\left( 3, \\  9\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 4, \\  5\\right), \\left( 6, \\  9\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 2, \\  5\\right), \\left( 4, \\  9\\right)\\right\\}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 1,
+        "type_name": "Intersecția dreptei cu parabola",
+        "pages": "144–146",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "intersection",
+        "first": "x**2 - 4*x + 9",
+        "second": "2*x + 1",
+        "option_values": [
+          "{(3, 5), (5, 9)}",
+          "{(1, 5), (3, 9)}",
+          "{(4, 5), (6, 9)}",
+          "{(2, 5), (4, 9)}"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m dreapta y=m este tangentă parabolei \\(y = \\left(x - 2\\right)^{2} + 2\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O dreaptă orizontală este tangentă acestei parabole în vârf. Echivalent, ecuația (x−(2))²+(2)−m=0 are o rădăcină dublă exact când m=(2). Rezultatul cerut este \\(2\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 2,
+        "type_name": "Parametru pentru tangentă, secantă sau exterioară",
+        "pages": "144–146",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "(x - 2)**2 + 2",
+        "line": "m",
+        "variable": "m",
+        "option_values": [
+          "2",
+          "3",
+          "1",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "Familia \\(y = \\left(- m + x\\right)^{2} + 2\\) are, pentru fiecare m∈ℝ, o tangentă orizontală comună y=n. Aflați n.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Completarea pătratului arată că toate vârfurile au aceeași ordonată (2). Diferența f_m(x)−n are discriminant nul pentru orice m exact când n=(2). Rezultatul cerut este \\(2\\).",
+      "options": [
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 3,
+        "type_name": "Tangență uniformă într-o familie",
+        "pages": "144–146",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "uniform_horizontal_tangent",
+        "f": "(-m + x)**2 + 2",
+        "parameter": "m",
+        "option_values": [
+          "3",
+          "2",
+          "1",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m axa Ox este tangentă parabolei \\(y = m + x^{2} - 4 x\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Coeficientul principal este 1, deci nu apare degenerarea. Tangența la Ox este echivalentă cu Δ=0; la această valoare polinomul devine pătrat perfect. Rezultatul cerut este \\(4\\).",
+      "options": [
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 4,
+        "type_name": "Axa Ox față de familii de parabole",
+        "pages": "144–146",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "m + x**2 - 4*x",
+        "line": "0",
+        "variable": "m",
+        "option_values": [
+          "5",
+          "3",
+          "4",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "Determinați expresia dreptei y=ℓ(x) tangentă ambelor parabole \\(y = x^{2}\\) și \\(y = \\left(x - 3\\right)^{2} + 12\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem dreapta y=px+q. Pentru prima parabolă condiția Δ=0 dă q=−p²/4. Pentru cea translatată, aceeași condiție determină unic p. Substituția în ambele diferențe produce pătrate perfecte, cu rădăcini duble reale. Rezultatul cerut este \\(4 x - 4\\).",
+      "options": [
+        {
+          "text": "\\(4 x - 3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x - 5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x - 2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 x - 4\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 5,
+        "type_name": "Tangentă comună la două parabole",
+        "pages": "144–146",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_tangent",
+        "first": "x**2",
+        "second": "(x - 3)**2 + 12",
+        "option_values": [
+          "4*x - 3",
+          "4*x - 5",
+          "4*x - 2",
+          "4*x - 4"
+        ]
+      }
+    },
+    {
+      "text": "Aflați expresia ℓ(x) a tangentei y=ℓ(x) la \\(y = 3 x^{2} - 2 x + 2\\) în punctul de abscisă 2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru ca diferența dintre parabolă și dreaptă să fie a(x−r)², coeficientul liniar impune p=2ar+b. Ordonata punctului fixează interceptul. Această metodă este algebrică, fără derivate. Rezultatul cerut este \\(10 x - 10\\).",
+      "options": [
+        {
+          "text": "\\(10 x - 10\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(10 x - 9\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(10 x - 11\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(10 x - 8\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 6,
+        "type_name": "Tangenta într-un punct dat",
+        "pages": "144–146",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_at",
+        "f": "3*x**2 - 2*x + 2",
+        "at": 2,
+        "option_values": [
+          "10*x - 10",
+          "10*x - 9",
+          "10*x - 11",
+          "10*x - 8"
+        ]
+      }
+    },
+    {
+      "text": "Pentru familia \\(y = \\left(- m + x\\right)^{2} + 2\\) și orice m∈ℝ, câte puncte comune are graficul cu axa Ox?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul familiei este (2)>0, independent de m, deci fiecare parabolă este strict deasupra lui Ox. Ecuația de intersecție nu are soluții reale. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 7,
+        "type_name": "Exterioritate uniformă",
+        "pages": "144–146",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "uniform_root_count",
+        "f": "(-m + x)**2 + 2",
+        "parameter": "m",
+        "option_values": [
+          "1",
+          "0",
+          "-1",
+          "2"
+        ]
+      }
+    },
+    {
+      "text": "Parabola y=2x²+c este tangentă ambelor bisectoare y=x și y=−x. Aflați c.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru (2)x²−x+c=0 și (2)x²+x+c=0 discriminantul este în ambele cazuri 1−4(2)c. Tangența la ambele drepte este echivalentă cu anularea acestui discriminant, deci c=1/(4(2)). Coeficientul principal (2) este pozitiv. Rezultatul cerut este \\(\\frac{1}{8}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{9}{8}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{7}{8}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{8}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{17}{8}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 8,
+        "type_name": "Tangență la ambele bisectoare",
+        "pages": "144–146",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "bisector_parameter",
+        "a": 2,
+        "option_values": [
+          "9/8",
+          "-7/8",
+          "1/8",
+          "17/8"
+        ]
+      }
+    },
+    {
+      "text": "O parabolă monică y=x²+bx+c este tangentă dreptelor \\(y = 2 x + 1\\) și \\(y = 1 - 2 x\\). Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Anulăm discriminantul celor două ecuații de intersecție. Scăderea condițiilor dă b=0; apoi prima condiție determină c. Verificarea produce rădăcini duble pentru ambele drepte. Rezultatul cerut este \\(\\left( 0, \\  2\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 1, \\  2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -1, \\  2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  2\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  2\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 9,
+        "type_name": "Parabole tangente la două drepte date",
+        "pages": "144–146",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "two_lines_parabola",
+        "a": 1,
+        "lines": [
+          "2*x + 1",
+          "1 - 2*x"
+        ],
+        "option_values": [
+          "(1, 2)",
+          "(-1, 2)",
+          "(2, 2)",
+          "(0, 2)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru x≥0, graficul y=x²+c este tangent ramurii y=4|x|. Aflați c, validând abscisa de contact.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe x≥0, |x|=x. Diferența x²−2(2)x+c are rădăcină dublă la x=(2)≥0 exact când c=(2)². Contactul aparține ramurii cerute; pentru modul trebuie verificată această restricție. Rezultatul cerut este \\(4\\).",
+      "options": [
+        {
+          "text": "\\(4\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 10,
+        "type_name": "Tangență la o curbă cu modul",
+        "pages": "144–146",
+        "variant": 2,
+        "coverage": "partial_case",
+        "adaptation": "Tangență pe semidreapta pozitivă a unei curbe cu modul; nu se afirmă unicitate pe întregul grafic."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "c + x**2",
+        "line": "4*x",
+        "variable": "c",
+        "contact_domain": "Interval(0, oo)",
+        "option_values": [
+          "4",
+          "5",
+          "3",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "Parabola monică y=x²+bx+c trece prin (0;6) și este tangentă dreptei y=2. Determinați (b;c), știind că abscisa contactului este pozitivă.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punctul dat fixează c. Tangența la dreapta orizontală impune Δ=0 pentru f(x)−(2), deci b²=4(2)². Condiția abscisei −b/2>0 selectează b=−2(2), fără ambiguitatea celor două semne. Rezultatul cerut este \\(\\left( -4, \\  6\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -3, \\  6\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -4, \\  6\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -5, \\  6\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -2, \\  6\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 11,
+        "type_name": "Parabolă prin puncte și tangentă",
+        "pages": "144–146",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "point_tangent_positive",
+        "intercept": 6,
+        "line": 2,
+        "option_values": [
+          "(-3, 6)",
+          "(-4, 6)",
+          "(-5, 6)",
+          "(-2, 6)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru unghiul \\(\\alpha = \\frac{\\pi}{3}\\), exprimat în radiani, dreapta este y=2cos(α)x−cos²(α). Câte puncte comune are cu parabola y=x²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este (x−cos α)². Identitatea Δ=4cos²α−4cos²α=0 este valabilă inclusiv când cos α=0, deci există un singur punct comun, de tangență. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 12,
+        "type_name": "Parametru trigonometric în poziția relativă",
+        "pages": "144–146",
+        "variant": 2,
+        "coverage": "partial_case",
+        "adaptation": "Parametrul trigonometric este fixat la un unghi explicit; se verifică identitatea discriminantului."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x**2 - x + 1/4",
+        "domain": "Reals",
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Punctul de contact al tangentei y=2tx−t² la y=x² are abscisa t. Dacă t=2, determinați perechea (x;y) a contactului.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația de intersecție este (x−t)²=0, deci contactul este (t,t²). Eliminarea parametrului produce locul y=x², parcurs pe toate abscisele reale. Rezultatul cerut este \\(\\left( 2, \\  4\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 3, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 1, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  4\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 13,
+        "type_name": "Locul punctelor de tangență",
+        "pages": "144–146",
+        "variant": 2,
+        "coverage": "partial_case",
+        "adaptation": "Locul de tangență este explicat; grila cere un punct explicit al acestuia."
+      },
+      "verification": {
+        "task": "contact",
+        "f": "x**2",
+        "line": "4*x - 4",
+        "option_values": [
+          "(3, 4)",
+          "(1, 4)",
+          "(4, 4)",
+          "(2, 4)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m parabola y=x²+m este strict deasupra dreptei y=4x pentru orice x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este (x−(2))²+m−(2)². Stricta pozitivitate globală cere ca minimul să fie strict pozitiv; egalitatea ar produce tangență și nu satisface enunțul. Rezultatul cerut este \\(\\left(4, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left(4, \\infty\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 14,
+        "type_name": "Parabola deasupra sau sub o dreaptă",
+        "pages": "144–146",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "global_sign_parameter",
+        "offset": 2,
+        "strict": true,
+        "option_values": [
+          "Interval.open(4, oo)",
+          "Reals",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m parabola y=x²+m este deasupra sau pe ambele drepte y=4x și y=−6x pentru orice x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru o dreaptă y=px, diferența are minimul m−p²/4. Ambele minime trebuie să fie nenegative, deci intersectăm m≥(2)² cu m≥((2)+1)². Condiția mai puternică este a doua. Rezultatul cerut este \\(\\left[9, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[9, \\infty\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 15,
+        "type_name": "Parabola deasupra a două drepte",
+        "pages": "144–146",
+        "variant": 2,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "above_two_lines",
+        "slopes": [
+          4,
+          -6
+        ],
+        "option_values": [
+          "Reals",
+          "Interval(9, oo)",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Determinați punctele comune parabolei \\(y = x^{2} - 5 x + 16\\) și dreptei \\(y = 3 x + 1\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Egalăm cele două expresii ale lui y. Diferența este o ecuație de gradul al doilea cu două rădăcini reale distincte; pentru fiecare abscisă revenim în ecuația dreptei. Rezultatul cerut este \\(\\left\\{\\left( 3, \\  10\\right), \\left( 5, \\  16\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 4, \\  10\\right), \\left( 6, \\  16\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 2, \\  10\\right), \\left( 4, \\  16\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 3, \\  10\\right), \\left( 5, \\  16\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 5, \\  10\\right), \\left( 7, \\  16\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 1,
+        "type_name": "Intersecția dreptei cu parabola",
+        "pages": "144–146",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "intersection",
+        "first": "x**2 - 5*x + 16",
+        "second": "3*x + 1",
+        "option_values": [
+          "{(4, 10), (6, 16)}",
+          "{(2, 10), (4, 16)}",
+          "{(3, 10), (5, 16)}",
+          "{(5, 10), (7, 16)}"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m dreapta y=m este tangentă parabolei \\(y = \\left(x - 3\\right)^{2} + 3\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O dreaptă orizontală este tangentă acestei parabole în vârf. Echivalent, ecuația (x−(3))²+(3)−m=0 are o rădăcină dublă exact când m=(3). Rezultatul cerut este \\(3\\).",
+      "options": [
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 2,
+        "type_name": "Parametru pentru tangentă, secantă sau exterioară",
+        "pages": "144–146",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "(x - 3)**2 + 3",
+        "line": "m",
+        "variable": "m",
+        "option_values": [
+          "4",
+          "2",
+          "5",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Familia \\(y = \\left(- m + x\\right)^{2} + 3\\) are, pentru fiecare m∈ℝ, o tangentă orizontală comună y=n. Aflați n.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Completarea pătratului arată că toate vârfurile au aceeași ordonată (3). Diferența f_m(x)−n are discriminant nul pentru orice m exact când n=(3). Rezultatul cerut este \\(3\\).",
+      "options": [
+        {
+          "text": "\\(3\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 3,
+        "type_name": "Tangență uniformă într-o familie",
+        "pages": "144–146",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "uniform_horizontal_tangent",
+        "f": "(-m + x)**2 + 3",
+        "parameter": "m",
+        "option_values": [
+          "3",
+          "4",
+          "2",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m axa Ox este tangentă parabolei \\(y = m + x^{2} - 6 x\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Coeficientul principal este 1, deci nu apare degenerarea. Tangența la Ox este echivalentă cu Δ=0; la această valoare polinomul devine pătrat perfect. Rezultatul cerut este \\(9\\).",
+      "options": [
+        {
+          "text": "\\(10\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(9\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(8\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(11\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 4,
+        "type_name": "Axa Ox față de familii de parabole",
+        "pages": "144–146",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "m + x**2 - 6*x",
+        "line": "0",
+        "variable": "m",
+        "option_values": [
+          "10",
+          "9",
+          "8",
+          "11"
+        ]
+      }
+    },
+    {
+      "text": "Determinați expresia dreptei y=ℓ(x) tangentă ambelor parabole \\(y = x^{2}\\) și \\(y = \\left(x - 4\\right)^{2} + 24\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem dreapta y=px+q. Pentru prima parabolă condiția Δ=0 dă q=−p²/4. Pentru cea translatată, aceeași condiție determină unic p. Substituția în ambele diferențe produce pătrate perfecte, cu rădăcini duble reale. Rezultatul cerut este \\(6 x - 9\\).",
+      "options": [
+        {
+          "text": "\\(6 x - 8\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 x - 10\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6 x - 9\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(6 x - 7\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 5,
+        "type_name": "Tangentă comună la două parabole",
+        "pages": "144–146",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_tangent",
+        "first": "x**2",
+        "second": "(x - 4)**2 + 24",
+        "option_values": [
+          "6*x - 8",
+          "6*x - 10",
+          "6*x - 9",
+          "6*x - 7"
+        ]
+      }
+    },
+    {
+      "text": "Aflați expresia ℓ(x) a tangentei y=ℓ(x) la \\(y = 4 x^{2} - 2 x + 3\\) în punctul de abscisă 3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru ca diferența dintre parabolă și dreaptă să fie a(x−r)², coeficientul liniar impune p=2ar+b. Ordonata punctului fixează interceptul. Această metodă este algebrică, fără derivate. Rezultatul cerut este \\(22 x - 33\\).",
+      "options": [
+        {
+          "text": "\\(22 x - 32\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(22 x - 34\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(22 x - 31\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(22 x - 33\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 6,
+        "type_name": "Tangenta într-un punct dat",
+        "pages": "144–146",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_at",
+        "f": "4*x**2 - 2*x + 3",
+        "at": 3,
+        "option_values": [
+          "22*x - 32",
+          "22*x - 34",
+          "22*x - 31",
+          "22*x - 33"
+        ]
+      }
+    },
+    {
+      "text": "Pentru familia \\(y = \\left(- m + x\\right)^{2} + 3\\) și orice m∈ℝ, câte puncte comune are graficul cu axa Ox?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul familiei este (3)>0, independent de m, deci fiecare parabolă este strict deasupra lui Ox. Ecuația de intersecție nu are soluții reale. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 7,
+        "type_name": "Exterioritate uniformă",
+        "pages": "144–146",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "uniform_root_count",
+        "f": "(-m + x)**2 + 3",
+        "parameter": "m",
+        "option_values": [
+          "0",
+          "1",
+          "-1",
+          "2"
+        ]
+      }
+    },
+    {
+      "text": "Parabola y=3x²+c este tangentă ambelor bisectoare y=x și y=−x. Aflați c.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru (3)x²−x+c=0 și (3)x²+x+c=0 discriminantul este în ambele cazuri 1−4(3)c. Tangența la ambele drepte este echivalentă cu anularea acestui discriminant, deci c=1/(4(3)). Coeficientul principal (3) este pozitiv. Rezultatul cerut este \\(\\frac{1}{12}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{13}{12}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{12}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(- \\frac{11}{12}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{25}{12}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 8,
+        "type_name": "Tangență la ambele bisectoare",
+        "pages": "144–146",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "bisector_parameter",
+        "a": 3,
+        "option_values": [
+          "13/12",
+          "1/12",
+          "-11/12",
+          "25/12"
+        ]
+      }
+    },
+    {
+      "text": "O parabolă monică y=x²+bx+c este tangentă dreptelor \\(y = 2 x + 2\\) și \\(y = 2 - 2 x\\). Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Anulăm discriminantul celor două ecuații de intersecție. Scăderea condițiilor dă b=0; apoi prima condiție determină c. Verificarea produce rădăcini duble pentru ambele drepte. Rezultatul cerut este \\(\\left( 0, \\  3\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 1, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -1, \\  3\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  3\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 2, \\  3\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 9,
+        "type_name": "Parabole tangente la două drepte date",
+        "pages": "144–146",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "two_lines_parabola",
+        "a": 1,
+        "lines": [
+          "2*x + 2",
+          "2 - 2*x"
+        ],
+        "option_values": [
+          "(1, 3)",
+          "(-1, 3)",
+          "(0, 3)",
+          "(2, 3)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru x≥0, graficul y=x²+c este tangent ramurii y=6|x|. Aflați c, validând abscisa de contact.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe x≥0, |x|=x. Diferența x²−2(3)x+c are rădăcină dublă la x=(3)≥0 exact când c=(3)². Contactul aparține ramurii cerute; pentru modul trebuie verificată această restricție. Rezultatul cerut este \\(9\\).",
+      "options": [
+        {
+          "text": "\\(10\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(8\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(11\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(9\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 10,
+        "type_name": "Tangență la o curbă cu modul",
+        "pages": "144–146",
+        "variant": 3,
+        "coverage": "partial_case",
+        "adaptation": "Tangență pe semidreapta pozitivă a unei curbe cu modul; nu se afirmă unicitate pe întregul grafic."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "c + x**2",
+        "line": "6*x",
+        "variable": "c",
+        "contact_domain": "Interval(0, oo)",
+        "option_values": [
+          "10",
+          "8",
+          "11",
+          "9"
+        ]
+      }
+    },
+    {
+      "text": "Parabola monică y=x²+bx+c trece prin (0;12) și este tangentă dreptei y=3. Determinați (b;c), știind că abscisa contactului este pozitivă.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punctul dat fixează c. Tangența la dreapta orizontală impune Δ=0 pentru f(x)−(3), deci b²=4(3)². Condiția abscisei −b/2>0 selectează b=−2(3), fără ambiguitatea celor două semne. Rezultatul cerut este \\(\\left( -6, \\  12\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -6, \\  12\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -5, \\  12\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -7, \\  12\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -4, \\  12\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 11,
+        "type_name": "Parabolă prin puncte și tangentă",
+        "pages": "144–146",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "point_tangent_positive",
+        "intercept": 12,
+        "line": 3,
+        "option_values": [
+          "(-6, 12)",
+          "(-5, 12)",
+          "(-7, 12)",
+          "(-4, 12)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru unghiul \\(\\alpha = \\frac{\\pi}{2}\\), exprimat în radiani, dreapta este y=2cos(α)x−cos²(α). Câte puncte comune are cu parabola y=x²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este (x−cos α)². Identitatea Δ=4cos²α−4cos²α=0 este valabilă inclusiv când cos α=0, deci există un singur punct comun, de tangență. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 12,
+        "type_name": "Parametru trigonometric în poziția relativă",
+        "pages": "144–146",
+        "variant": 3,
+        "coverage": "partial_case",
+        "adaptation": "Parametrul trigonometric este fixat la un unghi explicit; se verifică identitatea discriminantului."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x**2",
+        "domain": "Reals",
+        "option_values": [
+          "2",
+          "1",
+          "0",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Punctul de contact al tangentei y=2tx−t² la y=x² are abscisa t. Dacă t=3, determinați perechea (x;y) a contactului.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația de intersecție este (x−t)²=0, deci contactul este (t,t²). Eliminarea parametrului produce locul y=x², parcurs pe toate abscisele reale. Rezultatul cerut este \\(\\left( 3, \\  9\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 4, \\  9\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  9\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 3, \\  9\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 5, \\  9\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 13,
+        "type_name": "Locul punctelor de tangență",
+        "pages": "144–146",
+        "variant": 3,
+        "coverage": "partial_case",
+        "adaptation": "Locul de tangență este explicat; grila cere un punct explicit al acestuia."
+      },
+      "verification": {
+        "task": "contact",
+        "f": "x**2",
+        "line": "6*x - 9",
+        "option_values": [
+          "(4, 9)",
+          "(2, 9)",
+          "(3, 9)",
+          "(5, 9)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m parabola y=x²+m este strict deasupra dreptei y=6x pentru orice x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este (x−(3))²+m−(3)². Stricta pozitivitate globală cere ca minimul să fie strict pozitiv; egalitatea ar produce tangență și nu satisface enunțul. Rezultatul cerut este \\(\\left(9, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(9, \\infty\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 14,
+        "type_name": "Parabola deasupra sau sub o dreaptă",
+        "pages": "144–146",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "global_sign_parameter",
+        "offset": 3,
+        "strict": true,
+        "option_values": [
+          "Reals",
+          "{0}",
+          "EmptySet",
+          "Interval.open(9, oo)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m parabola y=x²+m este deasupra sau pe ambele drepte y=6x și y=−8x pentru orice x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru o dreaptă y=px, diferența are minimul m−p²/4. Ambele minime trebuie să fie nenegative, deci intersectăm m≥(3)² cu m≥((3)+1)². Condiția mai puternică este a doua. Rezultatul cerut este \\(\\left[16, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left[16, \\infty\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 15,
+        "type_name": "Parabola deasupra a două drepte",
+        "pages": "144–146",
+        "variant": 3,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "above_two_lines",
+        "slopes": [
+          6,
+          -8
+        ],
+        "option_values": [
+          "Interval(16, oo)",
+          "Reals",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Determinați punctele comune parabolei \\(y = x^{2} - 6 x + 25\\) și dreptei \\(y = 4 x + 1\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Egalăm cele două expresii ale lui y. Diferența este o ecuație de gradul al doilea cu două rădăcini reale distincte; pentru fiecare abscisă revenim în ecuația dreptei. Rezultatul cerut este \\(\\left\\{\\left( 4, \\  17\\right), \\left( 6, \\  25\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 5, \\  17\\right), \\left( 7, \\  25\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 4, \\  17\\right), \\left( 6, \\  25\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 3, \\  17\\right), \\left( 5, \\  25\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 6, \\  17\\right), \\left( 8, \\  25\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 1,
+        "type_name": "Intersecția dreptei cu parabola",
+        "pages": "144–146",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "intersection",
+        "first": "x**2 - 6*x + 25",
+        "second": "4*x + 1",
+        "option_values": [
+          "{(5, 17), (7, 25)}",
+          "{(4, 17), (6, 25)}",
+          "{(3, 17), (5, 25)}",
+          "{(6, 17), (8, 25)}"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m dreapta y=m este tangentă parabolei \\(y = \\left(x - 4\\right)^{2} + 4\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O dreaptă orizontală este tangentă acestei parabole în vârf. Echivalent, ecuația (x−(4))²+(4)−m=0 are o rădăcină dublă exact când m=(4). Rezultatul cerut este \\(4\\).",
+      "options": [
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 2,
+        "type_name": "Parametru pentru tangentă, secantă sau exterioară",
+        "pages": "144–146",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "(x - 4)**2 + 4",
+        "line": "m",
+        "variable": "m",
+        "option_values": [
+          "5",
+          "3",
+          "4",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "Familia \\(y = \\left(- m + x\\right)^{2} + 4\\) are, pentru fiecare m∈ℝ, o tangentă orizontală comună y=n. Aflați n.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Completarea pătratului arată că toate vârfurile au aceeași ordonată (4). Diferența f_m(x)−n are discriminant nul pentru orice m exact când n=(4). Rezultatul cerut este \\(4\\).",
+      "options": [
+        {
+          "text": "\\(5\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 3,
+        "type_name": "Tangență uniformă într-o familie",
+        "pages": "144–146",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "uniform_horizontal_tangent",
+        "f": "(-m + x)**2 + 4",
+        "parameter": "m",
+        "option_values": [
+          "5",
+          "3",
+          "6",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m axa Ox este tangentă parabolei \\(y = m + x^{2} - 8 x\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Coeficientul principal este 1, deci nu apare degenerarea. Tangența la Ox este echivalentă cu Δ=0; la această valoare polinomul devine pătrat perfect. Rezultatul cerut este \\(16\\).",
+      "options": [
+        {
+          "text": "\\(16\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(17\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(15\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(18\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 4,
+        "type_name": "Axa Ox față de familii de parabole",
+        "pages": "144–146",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "m + x**2 - 8*x",
+        "line": "0",
+        "variable": "m",
+        "option_values": [
+          "16",
+          "17",
+          "15",
+          "18"
+        ]
+      }
+    },
+    {
+      "text": "Determinați expresia dreptei y=ℓ(x) tangentă ambelor parabole \\(y = x^{2}\\) și \\(y = \\left(x - 5\\right)^{2} + 40\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem dreapta y=px+q. Pentru prima parabolă condiția Δ=0 dă q=−p²/4. Pentru cea translatată, aceeași condiție determină unic p. Substituția în ambele diferențe produce pătrate perfecte, cu rădăcini duble reale. Rezultatul cerut este \\(8 x - 16\\).",
+      "options": [
+        {
+          "text": "\\(8 x - 15\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(8 x - 16\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(8 x - 17\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(8 x - 14\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 5,
+        "type_name": "Tangentă comună la două parabole",
+        "pages": "144–146",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_tangent",
+        "first": "x**2",
+        "second": "(x - 5)**2 + 40",
+        "option_values": [
+          "8*x - 15",
+          "8*x - 16",
+          "8*x - 17",
+          "8*x - 14"
+        ]
+      }
+    },
+    {
+      "text": "Aflați expresia ℓ(x) a tangentei y=ℓ(x) la \\(y = 5 x^{2} - 2 x + 4\\) în punctul de abscisă 4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru ca diferența dintre parabolă și dreaptă să fie a(x−r)², coeficientul liniar impune p=2ar+b. Ordonata punctului fixează interceptul. Această metodă este algebrică, fără derivate. Rezultatul cerut este \\(38 x - 76\\).",
+      "options": [
+        {
+          "text": "\\(38 x - 75\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(38 x - 77\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(38 x - 76\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(38 x - 74\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 6,
+        "type_name": "Tangenta într-un punct dat",
+        "pages": "144–146",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_at",
+        "f": "5*x**2 - 2*x + 4",
+        "at": 4,
+        "option_values": [
+          "38*x - 75",
+          "38*x - 77",
+          "38*x - 76",
+          "38*x - 74"
+        ]
+      }
+    },
+    {
+      "text": "Pentru familia \\(y = \\left(- m + x\\right)^{2} + 4\\) și orice m∈ℝ, câte puncte comune are graficul cu axa Ox?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul familiei este (4)>0, independent de m, deci fiecare parabolă este strict deasupra lui Ox. Ecuația de intersecție nu are soluții reale. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 7,
+        "type_name": "Exterioritate uniformă",
+        "pages": "144–146",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "uniform_root_count",
+        "f": "(-m + x)**2 + 4",
+        "parameter": "m",
+        "option_values": [
+          "1",
+          "-1",
+          "2",
+          "0"
+        ]
+      }
+    },
+    {
+      "text": "Parabola y=4x²+c este tangentă ambelor bisectoare y=x și y=−x. Aflați c.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru (4)x²−x+c=0 și (4)x²+x+c=0 discriminantul este în ambele cazuri 1−4(4)c. Tangența la ambele drepte este echivalentă cu anularea acestui discriminant, deci c=1/(4(4)). Coeficientul principal (4) este pozitiv. Rezultatul cerut este \\(\\frac{1}{16}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{1}{16}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\frac{17}{16}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{15}{16}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{33}{16}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 8,
+        "type_name": "Tangență la ambele bisectoare",
+        "pages": "144–146",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "bisector_parameter",
+        "a": 4,
+        "option_values": [
+          "1/16",
+          "17/16",
+          "-15/16",
+          "33/16"
+        ]
+      }
+    },
+    {
+      "text": "O parabolă monică y=x²+bx+c este tangentă dreptelor \\(y = 2 x + 3\\) și \\(y = 3 - 2 x\\). Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Anulăm discriminantul celor două ecuații de intersecție. Scăderea condițiilor dă b=0; apoi prima condiție determină c. Verificarea produce rădăcini duble pentru ambele drepte. Rezultatul cerut este \\(\\left( 0, \\  4\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 1, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 0, \\  4\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -1, \\  4\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  4\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 9,
+        "type_name": "Parabole tangente la două drepte date",
+        "pages": "144–146",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "two_lines_parabola",
+        "a": 1,
+        "lines": [
+          "2*x + 3",
+          "3 - 2*x"
+        ],
+        "option_values": [
+          "(1, 4)",
+          "(0, 4)",
+          "(-1, 4)",
+          "(2, 4)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru x≥0, graficul y=x²+c este tangent ramurii y=8|x|. Aflați c, validând abscisa de contact.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe x≥0, |x|=x. Diferența x²−2(4)x+c are rădăcină dublă la x=(4)≥0 exact când c=(4)². Contactul aparține ramurii cerute; pentru modul trebuie verificată această restricție. Rezultatul cerut este \\(16\\).",
+      "options": [
+        {
+          "text": "\\(17\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(15\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(16\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(18\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 10,
+        "type_name": "Tangență la o curbă cu modul",
+        "pages": "144–146",
+        "variant": 4,
+        "coverage": "partial_case",
+        "adaptation": "Tangență pe semidreapta pozitivă a unei curbe cu modul; nu se afirmă unicitate pe întregul grafic."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "c + x**2",
+        "line": "8*x",
+        "variable": "c",
+        "contact_domain": "Interval(0, oo)",
+        "option_values": [
+          "17",
+          "15",
+          "16",
+          "18"
+        ]
+      }
+    },
+    {
+      "text": "Parabola monică y=x²+bx+c trece prin (0;20) și este tangentă dreptei y=4. Determinați (b;c), știind că abscisa contactului este pozitivă.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punctul dat fixează c. Tangența la dreapta orizontală impune Δ=0 pentru f(x)−(4), deci b²=4(4)². Condiția abscisei −b/2>0 selectează b=−2(4), fără ambiguitatea celor două semne. Rezultatul cerut este \\(\\left( -8, \\  20\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -7, \\  20\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -9, \\  20\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -6, \\  20\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -8, \\  20\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 11,
+        "type_name": "Parabolă prin puncte și tangentă",
+        "pages": "144–146",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "point_tangent_positive",
+        "intercept": 20,
+        "line": 4,
+        "option_values": [
+          "(-7, 20)",
+          "(-9, 20)",
+          "(-6, 20)",
+          "(-8, 20)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru unghiul \\(\\alpha = \\frac{2 \\pi}{3}\\), exprimat în radiani, dreapta este y=2cos(α)x−cos²(α). Câte puncte comune are cu parabola y=x²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este (x−cos α)². Identitatea Δ=4cos²α−4cos²α=0 este valabilă inclusiv când cos α=0, deci există un singur punct comun, de tangență. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 12,
+        "type_name": "Parametru trigonometric în poziția relativă",
+        "pages": "144–146",
+        "variant": 4,
+        "coverage": "partial_case",
+        "adaptation": "Parametrul trigonometric este fixat la un unghi explicit; se verifică identitatea discriminantului."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x**2 + x + 1/4",
+        "domain": "Reals",
+        "option_values": [
+          "1",
+          "2",
+          "0",
+          "3"
+        ]
+      }
+    },
+    {
+      "text": "Punctul de contact al tangentei y=2tx−t² la y=x² are abscisa t. Dacă t=4, determinați perechea (x;y) a contactului.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația de intersecție este (x−t)²=0, deci contactul este (t,t²). Eliminarea parametrului produce locul y=x², parcurs pe toate abscisele reale. Rezultatul cerut este \\(\\left( 4, \\  16\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 5, \\  16\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  16\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 3, \\  16\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 6, \\  16\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 13,
+        "type_name": "Locul punctelor de tangență",
+        "pages": "144–146",
+        "variant": 4,
+        "coverage": "partial_case",
+        "adaptation": "Locul de tangență este explicat; grila cere un punct explicit al acestuia."
+      },
+      "verification": {
+        "task": "contact",
+        "f": "x**2",
+        "line": "8*x - 16",
+        "option_values": [
+          "(5, 16)",
+          "(4, 16)",
+          "(3, 16)",
+          "(6, 16)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m parabola y=x²+m este strict deasupra dreptei y=8x pentru orice x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este (x−(4))²+m−(4)². Stricta pozitivitate globală cere ca minimul să fie strict pozitiv; egalitatea ar produce tangență și nu satisface enunțul. Rezultatul cerut este \\(\\left(16, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(16, \\infty\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 14,
+        "type_name": "Parabola deasupra sau sub o dreaptă",
+        "pages": "144–146",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "global_sign_parameter",
+        "offset": 4,
+        "strict": true,
+        "option_values": [
+          "Reals",
+          "{0}",
+          "Interval.open(16, oo)",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m parabola y=x²+m este deasupra sau pe ambele drepte y=8x și y=−10x pentru orice x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru o dreaptă y=px, diferența are minimul m−p²/4. Ambele minime trebuie să fie nenegative, deci intersectăm m≥(4)² cu m≥((4)+1)². Condiția mai puternică este a doua. Rezultatul cerut este \\(\\left[25, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[25, \\infty\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 15,
+        "type_name": "Parabola deasupra a două drepte",
+        "pages": "144–146",
+        "variant": 4,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "above_two_lines",
+        "slopes": [
+          8,
+          -10
+        ],
+        "option_values": [
+          "Reals",
+          "{0}",
+          "EmptySet",
+          "Interval(25, oo)"
+        ]
+      }
+    },
+    {
+      "text": "Determinați punctele comune parabolei \\(y = x^{2} - 7 x + 36\\) și dreptei \\(y = 5 x + 1\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Egalăm cele două expresii ale lui y. Diferența este o ecuație de gradul al doilea cu două rădăcini reale distincte; pentru fiecare abscisă revenim în ecuația dreptei. Rezultatul cerut este \\(\\left\\{\\left( 5, \\  26\\right), \\left( 7, \\  36\\right)\\right\\}\\).",
+      "options": [
+        {
+          "text": "\\(\\left\\{\\left( 5, \\  26\\right), \\left( 7, \\  36\\right)\\right\\}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{\\left( 6, \\  26\\right), \\left( 8, \\  36\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 4, \\  26\\right), \\left( 6, \\  36\\right)\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{\\left( 7, \\  26\\right), \\left( 9, \\  36\\right)\\right\\}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 1,
+        "type_name": "Intersecția dreptei cu parabola",
+        "pages": "144–146",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "intersection",
+        "first": "x**2 - 7*x + 36",
+        "second": "5*x + 1",
+        "option_values": [
+          "{(5, 26), (7, 36)}",
+          "{(6, 26), (8, 36)}",
+          "{(4, 26), (6, 36)}",
+          "{(7, 26), (9, 36)}"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m dreapta y=m este tangentă parabolei \\(y = \\left(x - 5\\right)^{2} + 5\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O dreaptă orizontală este tangentă acestei parabole în vârf. Echivalent, ecuația (x−(5))²+(5)−m=0 are o rădăcină dublă exact când m=(5). Rezultatul cerut este \\(5\\).",
+      "options": [
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(7\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 2,
+        "type_name": "Parametru pentru tangentă, secantă sau exterioară",
+        "pages": "144–146",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "(x - 5)**2 + 5",
+        "line": "m",
+        "variable": "m",
+        "option_values": [
+          "6",
+          "5",
+          "4",
+          "7"
+        ]
+      }
+    },
+    {
+      "text": "Familia \\(y = \\left(- m + x\\right)^{2} + 5\\) are, pentru fiecare m∈ℝ, o tangentă orizontală comună y=n. Aflați n.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Completarea pătratului arată că toate vârfurile au aceeași ordonată (5). Diferența f_m(x)−n are discriminant nul pentru orice m exact când n=(5). Rezultatul cerut este \\(5\\).",
+      "options": [
+        {
+          "text": "\\(6\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(7\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 3,
+        "type_name": "Tangență uniformă într-o familie",
+        "pages": "144–146",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "uniform_horizontal_tangent",
+        "f": "(-m + x)**2 + 5",
+        "parameter": "m",
+        "option_values": [
+          "6",
+          "4",
+          "5",
+          "7"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m axa Ox este tangentă parabolei \\(y = m + x^{2} - 10 x\\)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Coeficientul principal este 1, deci nu apare degenerarea. Tangența la Ox este echivalentă cu Δ=0; la această valoare polinomul devine pătrat perfect. Rezultatul cerut este \\(25\\).",
+      "options": [
+        {
+          "text": "\\(26\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(24\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(27\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(25\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 4,
+        "type_name": "Axa Ox față de familii de parabole",
+        "pages": "144–146",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "m + x**2 - 10*x",
+        "line": "0",
+        "variable": "m",
+        "option_values": [
+          "26",
+          "24",
+          "27",
+          "25"
+        ]
+      }
+    },
+    {
+      "text": "Determinați expresia dreptei y=ℓ(x) tangentă ambelor parabole \\(y = x^{2}\\) și \\(y = \\left(x - 6\\right)^{2} + 60\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem dreapta y=px+q. Pentru prima parabolă condiția Δ=0 dă q=−p²/4. Pentru cea translatată, aceeași condiție determină unic p. Substituția în ambele diferențe produce pătrate perfecte, cu rădăcini duble reale. Rezultatul cerut este \\(10 x - 25\\).",
+      "options": [
+        {
+          "text": "\\(10 x - 25\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(10 x - 24\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(10 x - 26\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(10 x - 23\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 5,
+        "type_name": "Tangentă comună la două parabole",
+        "pages": "144–146",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "common_tangent",
+        "first": "x**2",
+        "second": "(x - 6)**2 + 60",
+        "option_values": [
+          "10*x - 25",
+          "10*x - 24",
+          "10*x - 26",
+          "10*x - 23"
+        ]
+      }
+    },
+    {
+      "text": "Aflați expresia ℓ(x) a tangentei y=ℓ(x) la \\(y = 6 x^{2} - 2 x + 5\\) în punctul de abscisă 5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru ca diferența dintre parabolă și dreaptă să fie a(x−r)², coeficientul liniar impune p=2ar+b. Ordonata punctului fixează interceptul. Această metodă este algebrică, fără derivate. Rezultatul cerut este \\(58 x - 145\\).",
+      "options": [
+        {
+          "text": "\\(58 x - 144\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(58 x - 145\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(58 x - 146\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(58 x - 143\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 6,
+        "type_name": "Tangenta într-un punct dat",
+        "pages": "144–146",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "tangent_at",
+        "f": "6*x**2 - 2*x + 5",
+        "at": 5,
+        "option_values": [
+          "58*x - 144",
+          "58*x - 145",
+          "58*x - 146",
+          "58*x - 143"
+        ]
+      }
+    },
+    {
+      "text": "Pentru familia \\(y = \\left(- m + x\\right)^{2} + 5\\) și orice m∈ℝ, câte puncte comune are graficul cu axa Ox?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul familiei este (5)>0, independent de m, deci fiecare parabolă este strict deasupra lui Ox. Ecuația de intersecție nu are soluții reale. Rezultatul cerut este \\(0\\).",
+      "options": [
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 7,
+        "type_name": "Exterioritate uniformă",
+        "pages": "144–146",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "uniform_root_count",
+        "f": "(-m + x)**2 + 5",
+        "parameter": "m",
+        "option_values": [
+          "1",
+          "-1",
+          "0",
+          "2"
+        ]
+      }
+    },
+    {
+      "text": "Parabola y=5x²+c este tangentă ambelor bisectoare y=x și y=−x. Aflați c.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru (5)x²−x+c=0 și (5)x²+x+c=0 discriminantul este în ambele cazuri 1−4(5)c. Tangența la ambele drepte este echivalentă cu anularea acestui discriminant, deci c=1/(4(5)). Coeficientul principal (5) este pozitiv. Rezultatul cerut este \\(\\frac{1}{20}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{21}{20}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(- \\frac{19}{20}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{41}{20}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{1}{20}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 8,
+        "type_name": "Tangență la ambele bisectoare",
+        "pages": "144–146",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "bisector_parameter",
+        "a": 5,
+        "option_values": [
+          "21/20",
+          "-19/20",
+          "41/20",
+          "1/20"
+        ]
+      }
+    },
+    {
+      "text": "O parabolă monică y=x²+bx+c este tangentă dreptelor \\(y = 2 x + 4\\) și \\(y = 4 - 2 x\\). Determinați (b;c).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Anulăm discriminantul celor două ecuații de intersecție. Scăderea condițiilor dă b=0; apoi prima condiție determină c. Verificarea produce rădăcini duble pentru ambele drepte. Rezultatul cerut este \\(\\left( 0, \\  5\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 0, \\  5\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 1, \\  5\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -1, \\  5\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 2, \\  5\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 9,
+        "type_name": "Parabole tangente la două drepte date",
+        "pages": "144–146",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "two_lines_parabola",
+        "a": 1,
+        "lines": [
+          "2*x + 4",
+          "4 - 2*x"
+        ],
+        "option_values": [
+          "(0, 5)",
+          "(1, 5)",
+          "(-1, 5)",
+          "(2, 5)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru x≥0, graficul y=x²+c este tangent ramurii y=10|x|. Aflați c, validând abscisa de contact.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe x≥0, |x|=x. Diferența x²−2(5)x+c are rădăcină dublă la x=(5)≥0 exact când c=(5)². Contactul aparține ramurii cerute; pentru modul trebuie verificată această restricție. Rezultatul cerut este \\(25\\).",
+      "options": [
+        {
+          "text": "\\(26\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(25\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(24\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(27\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 10,
+        "type_name": "Tangență la o curbă cu modul",
+        "pages": "144–146",
+        "variant": 5,
+        "coverage": "partial_case",
+        "adaptation": "Tangență pe semidreapta pozitivă a unei curbe cu modul; nu se afirmă unicitate pe întregul grafic."
+      },
+      "verification": {
+        "task": "tangent_parameter",
+        "first": "c + x**2",
+        "line": "10*x",
+        "variable": "c",
+        "contact_domain": "Interval(0, oo)",
+        "option_values": [
+          "26",
+          "25",
+          "24",
+          "27"
+        ]
+      }
+    },
+    {
+      "text": "Parabola monică y=x²+bx+c trece prin (0;30) și este tangentă dreptei y=5. Determinați (b;c), știind că abscisa contactului este pozitivă.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punctul dat fixează c. Tangența la dreapta orizontală impune Δ=0 pentru f(x)−(5), deci b²=4(5)². Condiția abscisei −b/2>0 selectează b=−2(5), fără ambiguitatea celor două semne. Rezultatul cerut este \\(\\left( -10, \\  30\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( -9, \\  30\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -11, \\  30\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( -10, \\  30\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( -8, \\  30\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 11,
+        "type_name": "Parabolă prin puncte și tangentă",
+        "pages": "144–146",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "point_tangent_positive",
+        "intercept": 30,
+        "line": 5,
+        "option_values": [
+          "(-9, 30)",
+          "(-11, 30)",
+          "(-10, 30)",
+          "(-8, 30)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru unghiul \\(\\alpha = \\frac{5 \\pi}{6}\\), exprimat în radiani, dreapta este y=2cos(α)x−cos²(α). Câte puncte comune are cu parabola y=x²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este (x−cos α)². Identitatea Δ=4cos²α−4cos²α=0 este valabilă inclusiv când cos α=0, deci există un singur punct comun, de tangență. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 12,
+        "type_name": "Parametru trigonometric în poziția relativă",
+        "pages": "144–146",
+        "variant": 5,
+        "coverage": "partial_case",
+        "adaptation": "Parametrul trigonometric este fixat la un unghi explicit; se verifică identitatea discriminantului."
+      },
+      "verification": {
+        "task": "root_count",
+        "f": "x**2 + sqrt(3)*x + 3/4",
+        "domain": "Reals",
+        "option_values": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ]
+      }
+    },
+    {
+      "text": "Punctul de contact al tangentei y=2tx−t² la y=x² are abscisa t. Dacă t=5, determinați perechea (x;y) a contactului.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația de intersecție este (x−t)²=0, deci contactul este (t,t²). Eliminarea parametrului produce locul y=x², parcurs pe toate abscisele reale. Rezultatul cerut este \\(\\left( 5, \\  25\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 5, \\  25\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 6, \\  25\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 4, \\  25\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 7, \\  25\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 13,
+        "type_name": "Locul punctelor de tangență",
+        "pages": "144–146",
+        "variant": 5,
+        "coverage": "partial_case",
+        "adaptation": "Locul de tangență este explicat; grila cere un punct explicit al acestuia."
+      },
+      "verification": {
+        "task": "contact",
+        "f": "x**2",
+        "line": "10*x - 25",
+        "option_values": [
+          "(5, 25)",
+          "(6, 25)",
+          "(4, 25)",
+          "(7, 25)"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m parabola y=x²+m este strict deasupra dreptei y=10x pentru orice x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Diferența este (x−(5))²+m−(5)². Stricta pozitivitate globală cere ca minimul să fie strict pozitiv; egalitatea ar produce tangență și nu satisface enunțul. Rezultatul cerut este \\(\\left(25, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left(25, \\infty\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 14,
+        "type_name": "Parabola deasupra sau sub o dreaptă",
+        "pages": "144–146",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "global_sign_parameter",
+        "offset": 5,
+        "strict": true,
+        "option_values": [
+          "Reals",
+          "Interval.open(25, oo)",
+          "{0}",
+          "EmptySet"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m parabola y=x²+m este deasupra sau pe ambele drepte y=10x și y=−12x pentru orice x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru o dreaptă y=px, diferența are minimul m−p²/4. Ambele minime trebuie să fie nenegative, deci intersectăm m≥(5)² cu m≥((5)+1)². Condiția mai puternică este a doua. Rezultatul cerut este \\(\\left[36, \\infty\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\mathbb{R}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left\\{0\\right\\}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left[36, \\infty\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\emptyset\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "gradul_ii_a4_v1",
+        "catalog": "A4",
+        "section": 5,
+        "type": 15,
+        "type_name": "Parabola deasupra a două drepte",
+        "pages": "144–146",
+        "variant": 5,
+        "coverage": "adapted_grid",
+        "adaptation": "Exercițiu original de calcul sau concluzie; justificarea este în explicație."
+      },
+      "verification": {
+        "task": "above_two_lines",
+        "slopes": [
+          10,
+          -12
+        ],
+        "option_values": [
+          "Reals",
+          "{0}",
+          "Interval(36, oo)",
+          "EmptySet"
+        ]
+      }
+    }
+  ]
 }

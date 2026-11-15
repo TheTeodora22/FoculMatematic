@@ -1,6 +1,2157 @@
 {
   "title": "Interpretarea grafică a proprietăților algebrice. Monotonie și semn",
   "description": "Clasa a 9-a · Funcția de gradul I",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Care este monotonia funcției f(x)=−1x+2 pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x₁<x₂, f(x₂)−f(x₁)=−1(x₂−x₁)<0. Prin definiție, funcția este strict descrescătoare.",
+      "options": [
+        {
+          "text": "Strict descrescătoare.",
+          "is_correct": true
+        },
+        {
+          "text": "Strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă.",
+          "is_correct": false
+        },
+        {
+          "text": "Nu este monotonă pe ℝ.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 1,
+        "type_name": "Monotonie din pantă",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 1,
+        "variant": 1,
+        "candidates": [
+          "Strict descrescătoare.",
+          "Strict crescătoare.",
+          "Constantă.",
+          "Nu este monotonă pe ℝ."
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția f(x)=(m−1)x+2 este strict crescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O funcție afină este strict crescătoare exact când panta este pozitivă: m−1>0. La m=1 este constantă, nu strict crescătoare.",
+      "options": [
+        {
+          "text": "m<1",
+          "is_correct": false
+        },
+        {
+          "text": "m>1",
+          "is_correct": true
+        },
+        {
+          "text": "m≥1",
+          "is_correct": false
+        },
+        {
+          "text": "m=1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 2,
+        "type_name": "Monotonie în funcție de parametru",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 2,
+        "variant": 1,
+        "candidates": [
+          "m<1",
+          "m>1",
+          "m≥1",
+          "m=1"
+        ]
+      }
+    },
+    {
+      "text": "Graficul f(x)=(m−1)x+1 conține A(2; -1). Care sunt m și monotonia?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim A: 2(m−1)+1=-1, deci 2m=0 și m=0. Panta devine −1<0, astfel f este strict descrescătoare.",
+      "options": [
+        {
+          "text": "m=0; strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "m=1; constantă.",
+          "is_correct": false
+        },
+        {
+          "text": "m=0; strict descrescătoare.",
+          "is_correct": true
+        },
+        {
+          "text": "m=2; strict crescătoare.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 3,
+        "type_name": "Pantă determinată prin punct",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 3,
+        "variant": 1,
+        "candidates": [
+          "m=0; strict crescătoare.",
+          "m=1; constantă.",
+          "m=0; strict descrescătoare.",
+          "m=2; strict crescătoare."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=mx+1. Graficul conține A(m; 5), iar f este strict descrescătoare. Determinați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Apartenența dă m²+1=5, deci m=±2. Stricta descreștere cere m<0, astfel rămâne m=−2.",
+      "options": [
+        {
+          "text": "-3",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "-2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 4,
+        "type_name": "Monotonie ca filtru al soluțiilor",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 4,
+        "variant": 1,
+        "candidates": [
+          "-3",
+          "-1",
+          "0",
+          "-2"
+        ]
+      }
+    },
+    {
+      "text": "Pentru m real, studiați monotonia lui f(x)=((m−1)²+1)x−2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul (m−1)² este nenegativ, deci panta este cel puțin 1 pentru orice m. Pentru x₂>x₁, diferența f(x₂)−f(x₁) este strict pozitivă, inclusiv când m=1.",
+      "options": [
+        {
+          "text": "Strict crescătoare pentru orice m∈ℝ.",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare pentru orice m∈ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pentru m=1.",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare numai pentru m>1.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 5,
+        "type_name": "Pantă cu semn algebric cert",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 5,
+        "variant": 1,
+        "candidates": [
+          "Strict crescătoare pentru orice m∈ℝ.",
+          "Strict descrescătoare pentru orice m∈ℝ.",
+          "Constantă pentru m=1.",
+          "Strict crescătoare numai pentru m>1."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=−x pentru x<0, respectiv f(x)=−2x+m−1 pentru x≥0. Pentru ce m este f strict descrescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele ramuri au pante negative. Pentru x<0≤y, avem f(x)>0 și f(y)≤m−1; condiția m≤1 asigură ordinea strictă. Dacă m>1, alegem x<0 suficient de aproape de 0 și y=0: f(x)<f(0), contradicție.",
+      "options": [
+        {
+          "text": "m<1",
+          "is_correct": false
+        },
+        {
+          "text": "m≤1",
+          "is_correct": true
+        },
+        {
+          "text": "m≥1",
+          "is_correct": false
+        },
+        {
+          "text": "m>1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 6,
+        "type_name": "Monotonie globală pe ramuri afine",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 6,
+        "variant": 1,
+        "candidates": [
+          "m<1",
+          "m≤1",
+          "m≥1",
+          "m>1"
+        ]
+      }
+    },
+    {
+      "text": "Câte funcții f(x)=ax+b cu a,b∈ℤ sunt strict descrescătoare, satisfac f(2)=1 și 0≤b≤7?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem a<0 și 2a+b=1, deci b=1−2a. Din b≤7 rezultă a≥−3. Sunt exact a=−3,−2,−1, iar b=7,5,3, toate admise.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 7,
+        "type_name": "Coeficienți întregi și monotonie",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 7,
+        "variant": 1,
+        "candidates": [
+          "2",
+          "4",
+          "3",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția f(x)=1x+(m−1)[x], unde [x]=⌊x⌋, este strict crescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Între doi întregi panta este 1>0. La fiecare întreg, saltul este m−1, deci nu trebuie să fie negativ. Pentru m≥1, ambele componente sunt nedescrescătoare și termenul 1x este strict crescător. Dacă m<1, saltul negativ distruge monotonia.",
+      "options": [
+        {
+          "text": "m>1",
+          "is_correct": false
+        },
+        {
+          "text": "m≤1",
+          "is_correct": false
+        },
+        {
+          "text": "m<1",
+          "is_correct": false
+        },
+        {
+          "text": "m≥1",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 8,
+        "type_name": "Monotonie cu parte întreagă",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 8,
+        "variant": 1,
+        "candidates": [
+          "m>1",
+          "m≤1",
+          "m<1",
+          "m≥1"
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=−1x+1 și g(x)=2x−1. Care sunt, în ordine, monotoniile lui f∘f, f∘g, g∘f, g∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pantele compunerilor sunt produsele pantelor: 1>0, −2<0, −2<0 și 4>0. Semnul lor dă exact ordinea indicată.",
+      "options": [
+        {
+          "text": "Crescătoare, descrescătoare, descrescătoare, crescătoare (toate strict).",
+          "is_correct": true
+        },
+        {
+          "text": "Descrescătoare, crescătoare, crescătoare, descrescătoare (toate strict).",
+          "is_correct": false
+        },
+        {
+          "text": "Toate sunt strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "Toate sunt strict descrescătoare.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 9,
+        "type_name": "Monotonia compunerilor afine",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 9,
+        "variant": 1,
+        "candidates": [
+          "Crescătoare, descrescătoare, descrescătoare, crescătoare (toate strict).",
+          "Descrescătoare, crescătoare, crescătoare, descrescătoare (toate strict).",
+          "Toate sunt strict crescătoare.",
+          "Toate sunt strict descrescătoare."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=2x pentru x∈ℚ și f(x)=−2x pentru x∉ℚ. Care este f(f(x)) și monotonia sa pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțirea cu întregul nenul 2 păstrează raționalitatea și iraționalitatea. Dacă x este rațional, aplicăm de două ori prima ramură și obținem 4x. Dacă este irațional, aplicăm de două ori a doua ramură: −2(−2x)=4x. Panta este pozitivă.",
+      "options": [
+        {
+          "text": "f(f(x))=−4x; strict descrescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "f(f(x))=4x; strict crescătoare.",
+          "is_correct": true
+        },
+        {
+          "text": "f(f(x))=2x; strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "f(f(x)) nu este monotonă.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 10,
+        "type_name": "Monotonia iteratelor pe domenii mixte",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 10,
+        "variant": 1,
+        "candidates": [
+          "f(f(x))=−4x; strict descrescătoare.",
+          "f(f(x))=4x; strict crescătoare.",
+          "f(f(x))=2x; strict crescătoare.",
+          "f(f(x)) nu este monotonă."
+        ]
+      }
+    },
+    {
+      "text": "Care este monotonia funcției f(x)=−2x+3 pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x₁<x₂, f(x₂)−f(x₁)=−2(x₂−x₁)<0. Prin definiție, funcția este strict descrescătoare.",
+      "options": [
+        {
+          "text": "Strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă.",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare.",
+          "is_correct": true
+        },
+        {
+          "text": "Nu este monotonă pe ℝ.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 1,
+        "type_name": "Monotonie din pantă",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 1,
+        "variant": 2,
+        "candidates": [
+          "Strict crescătoare.",
+          "Constantă.",
+          "Strict descrescătoare.",
+          "Nu este monotonă pe ℝ."
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția f(x)=(m−2)x+3 este strict crescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O funcție afină este strict crescătoare exact când panta este pozitivă: m−2>0. La m=2 este constantă, nu strict crescătoare.",
+      "options": [
+        {
+          "text": "m<2",
+          "is_correct": false
+        },
+        {
+          "text": "m≥2",
+          "is_correct": false
+        },
+        {
+          "text": "m=2",
+          "is_correct": false
+        },
+        {
+          "text": "m>2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 2,
+        "type_name": "Monotonie în funcție de parametru",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 2,
+        "variant": 2,
+        "candidates": [
+          "m<2",
+          "m≥2",
+          "m=2",
+          "m>2"
+        ]
+      }
+    },
+    {
+      "text": "Graficul f(x)=(m−2)x+1 conține A(2; -3). Care sunt m și monotonia?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim A: 2(m−2)+1=-3, deci 2m=0 și m=0. Panta devine −2<0, astfel f este strict descrescătoare.",
+      "options": [
+        {
+          "text": "m=0; strict descrescătoare.",
+          "is_correct": true
+        },
+        {
+          "text": "m=0; strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "m=2; constantă.",
+          "is_correct": false
+        },
+        {
+          "text": "m=4; strict crescătoare.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 3,
+        "type_name": "Pantă determinată prin punct",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 3,
+        "variant": 2,
+        "candidates": [
+          "m=0; strict descrescătoare.",
+          "m=0; strict crescătoare.",
+          "m=2; constantă.",
+          "m=4; strict crescătoare."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=mx+2. Graficul conține A(m; 11), iar f este strict descrescătoare. Determinați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Apartenența dă m²+2=11, deci m=±3. Stricta descreștere cere m<0, astfel rămâne m=−3.",
+      "options": [
+        {
+          "text": "-4",
+          "is_correct": false
+        },
+        {
+          "text": "-3",
+          "is_correct": true
+        },
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 4,
+        "type_name": "Monotonie ca filtru al soluțiilor",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 4,
+        "variant": 2,
+        "candidates": [
+          "-4",
+          "-3",
+          "-2",
+          "-1"
+        ]
+      }
+    },
+    {
+      "text": "Pentru m real, studiați monotonia lui f(x)=((m−2)²+1)x−3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul (m−2)² este nenegativ, deci panta este cel puțin 1 pentru orice m. Pentru x₂>x₁, diferența f(x₂)−f(x₁) este strict pozitivă, inclusiv când m=2.",
+      "options": [
+        {
+          "text": "Strict descrescătoare pentru orice m∈ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pentru m=2.",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare pentru orice m∈ℝ.",
+          "is_correct": true
+        },
+        {
+          "text": "Strict crescătoare numai pentru m>2.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 5,
+        "type_name": "Pantă cu semn algebric cert",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 5,
+        "variant": 2,
+        "candidates": [
+          "Strict descrescătoare pentru orice m∈ℝ.",
+          "Constantă pentru m=2.",
+          "Strict crescătoare pentru orice m∈ℝ.",
+          "Strict crescătoare numai pentru m>2."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=−x pentru x<0, respectiv f(x)=−2x+m−2 pentru x≥0. Pentru ce m este f strict descrescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele ramuri au pante negative. Pentru x<0≤y, avem f(x)>0 și f(y)≤m−2; condiția m≤2 asigură ordinea strictă. Dacă m>2, alegem x<0 suficient de aproape de 0 și y=0: f(x)<f(0), contradicție.",
+      "options": [
+        {
+          "text": "m<2",
+          "is_correct": false
+        },
+        {
+          "text": "m≥2",
+          "is_correct": false
+        },
+        {
+          "text": "m>2",
+          "is_correct": false
+        },
+        {
+          "text": "m≤2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 6,
+        "type_name": "Monotonie globală pe ramuri afine",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 6,
+        "variant": 2,
+        "candidates": [
+          "m<2",
+          "m≥2",
+          "m>2",
+          "m≤2"
+        ]
+      }
+    },
+    {
+      "text": "Câte funcții f(x)=ax+b cu a,b∈ℤ sunt strict descrescătoare, satisfac f(2)=2 și 0≤b≤8?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem a<0 și 2a+b=2, deci b=2−2a. Din b≤8 rezultă a≥−3. Sunt exact a=−3,−2,−1, iar b=8,6,4, toate admise.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 7,
+        "type_name": "Coeficienți întregi și monotonie",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 7,
+        "variant": 2,
+        "candidates": [
+          "3",
+          "2",
+          "4",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția f(x)=2x+(m−2)[x], unde [x]=⌊x⌋, este strict crescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Între doi întregi panta este 2>0. La fiecare întreg, saltul este m−2, deci nu trebuie să fie negativ. Pentru m≥2, ambele componente sunt nedescrescătoare și termenul 2x este strict crescător. Dacă m<2, saltul negativ distruge monotonia.",
+      "options": [
+        {
+          "text": "m>2",
+          "is_correct": false
+        },
+        {
+          "text": "m≥2",
+          "is_correct": true
+        },
+        {
+          "text": "m≤2",
+          "is_correct": false
+        },
+        {
+          "text": "m<2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 8,
+        "type_name": "Monotonie cu parte întreagă",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 8,
+        "variant": 2,
+        "candidates": [
+          "m>2",
+          "m≥2",
+          "m≤2",
+          "m<2"
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=−2x+1 și g(x)=3x−1. Care sunt, în ordine, monotoniile lui f∘f, f∘g, g∘f, g∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pantele compunerilor sunt produsele pantelor: 4>0, −6<0, −6<0 și 9>0. Semnul lor dă exact ordinea indicată.",
+      "options": [
+        {
+          "text": "Descrescătoare, crescătoare, crescătoare, descrescătoare (toate strict).",
+          "is_correct": false
+        },
+        {
+          "text": "Toate sunt strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "Crescătoare, descrescătoare, descrescătoare, crescătoare (toate strict).",
+          "is_correct": true
+        },
+        {
+          "text": "Toate sunt strict descrescătoare.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 9,
+        "type_name": "Monotonia compunerilor afine",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 9,
+        "variant": 2,
+        "candidates": [
+          "Descrescătoare, crescătoare, crescătoare, descrescătoare (toate strict).",
+          "Toate sunt strict crescătoare.",
+          "Crescătoare, descrescătoare, descrescătoare, crescătoare (toate strict).",
+          "Toate sunt strict descrescătoare."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=3x pentru x∈ℚ și f(x)=−3x pentru x∉ℚ. Care este f(f(x)) și monotonia sa pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțirea cu întregul nenul 3 păstrează raționalitatea și iraționalitatea. Dacă x este rațional, aplicăm de două ori prima ramură și obținem 9x. Dacă este irațional, aplicăm de două ori a doua ramură: −3(−3x)=9x. Panta este pozitivă.",
+      "options": [
+        {
+          "text": "f(f(x))=−9x; strict descrescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "f(f(x))=3x; strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "f(f(x)) nu este monotonă.",
+          "is_correct": false
+        },
+        {
+          "text": "f(f(x))=9x; strict crescătoare.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 10,
+        "type_name": "Monotonia iteratelor pe domenii mixte",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 10,
+        "variant": 2,
+        "candidates": [
+          "f(f(x))=−9x; strict descrescătoare.",
+          "f(f(x))=3x; strict crescătoare.",
+          "f(f(x)) nu este monotonă.",
+          "f(f(x))=9x; strict crescătoare."
+        ]
+      }
+    },
+    {
+      "text": "Care este monotonia funcției f(x)=−3x+4 pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x₁<x₂, f(x₂)−f(x₁)=−3(x₂−x₁)<0. Prin definiție, funcția este strict descrescătoare.",
+      "options": [
+        {
+          "text": "Strict descrescătoare.",
+          "is_correct": true
+        },
+        {
+          "text": "Strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă.",
+          "is_correct": false
+        },
+        {
+          "text": "Nu este monotonă pe ℝ.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 1,
+        "type_name": "Monotonie din pantă",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 1,
+        "variant": 3,
+        "candidates": [
+          "Strict descrescătoare.",
+          "Strict crescătoare.",
+          "Constantă.",
+          "Nu este monotonă pe ℝ."
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția f(x)=(m−3)x+4 este strict crescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O funcție afină este strict crescătoare exact când panta este pozitivă: m−3>0. La m=3 este constantă, nu strict crescătoare.",
+      "options": [
+        {
+          "text": "m<3",
+          "is_correct": false
+        },
+        {
+          "text": "m>3",
+          "is_correct": true
+        },
+        {
+          "text": "m≥3",
+          "is_correct": false
+        },
+        {
+          "text": "m=3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 2,
+        "type_name": "Monotonie în funcție de parametru",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 2,
+        "variant": 3,
+        "candidates": [
+          "m<3",
+          "m>3",
+          "m≥3",
+          "m=3"
+        ]
+      }
+    },
+    {
+      "text": "Graficul f(x)=(m−3)x+1 conține A(2; -5). Care sunt m și monotonia?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim A: 2(m−3)+1=-5, deci 2m=0 și m=0. Panta devine −3<0, astfel f este strict descrescătoare.",
+      "options": [
+        {
+          "text": "m=0; strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "m=3; constantă.",
+          "is_correct": false
+        },
+        {
+          "text": "m=0; strict descrescătoare.",
+          "is_correct": true
+        },
+        {
+          "text": "m=6; strict crescătoare.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 3,
+        "type_name": "Pantă determinată prin punct",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 3,
+        "variant": 3,
+        "candidates": [
+          "m=0; strict crescătoare.",
+          "m=3; constantă.",
+          "m=0; strict descrescătoare.",
+          "m=6; strict crescătoare."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=mx+3. Graficul conține A(m; 19), iar f este strict descrescătoare. Determinați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Apartenența dă m²+3=19, deci m=±4. Stricta descreștere cere m<0, astfel rămâne m=−4.",
+      "options": [
+        {
+          "text": "-5",
+          "is_correct": false
+        },
+        {
+          "text": "-3",
+          "is_correct": false
+        },
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "-4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 4,
+        "type_name": "Monotonie ca filtru al soluțiilor",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 4,
+        "variant": 3,
+        "candidates": [
+          "-5",
+          "-3",
+          "-2",
+          "-4"
+        ]
+      }
+    },
+    {
+      "text": "Pentru m real, studiați monotonia lui f(x)=((m−3)²+1)x−4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul (m−3)² este nenegativ, deci panta este cel puțin 1 pentru orice m. Pentru x₂>x₁, diferența f(x₂)−f(x₁) este strict pozitivă, inclusiv când m=3.",
+      "options": [
+        {
+          "text": "Strict crescătoare pentru orice m∈ℝ.",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare pentru orice m∈ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pentru m=3.",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare numai pentru m>3.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 5,
+        "type_name": "Pantă cu semn algebric cert",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 5,
+        "variant": 3,
+        "candidates": [
+          "Strict crescătoare pentru orice m∈ℝ.",
+          "Strict descrescătoare pentru orice m∈ℝ.",
+          "Constantă pentru m=3.",
+          "Strict crescătoare numai pentru m>3."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=−x pentru x<0, respectiv f(x)=−2x+m−3 pentru x≥0. Pentru ce m este f strict descrescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele ramuri au pante negative. Pentru x<0≤y, avem f(x)>0 și f(y)≤m−3; condiția m≤3 asigură ordinea strictă. Dacă m>3, alegem x<0 suficient de aproape de 0 și y=0: f(x)<f(0), contradicție.",
+      "options": [
+        {
+          "text": "m<3",
+          "is_correct": false
+        },
+        {
+          "text": "m≤3",
+          "is_correct": true
+        },
+        {
+          "text": "m≥3",
+          "is_correct": false
+        },
+        {
+          "text": "m>3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 6,
+        "type_name": "Monotonie globală pe ramuri afine",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 6,
+        "variant": 3,
+        "candidates": [
+          "m<3",
+          "m≤3",
+          "m≥3",
+          "m>3"
+        ]
+      }
+    },
+    {
+      "text": "Câte funcții f(x)=ax+b cu a,b∈ℤ sunt strict descrescătoare, satisfac f(2)=3 și 0≤b≤9?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem a<0 și 2a+b=3, deci b=3−2a. Din b≤9 rezultă a≥−3. Sunt exact a=−3,−2,−1, iar b=9,7,5, toate admise.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 7,
+        "type_name": "Coeficienți întregi și monotonie",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 7,
+        "variant": 3,
+        "candidates": [
+          "2",
+          "4",
+          "3",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția f(x)=3x+(m−3)[x], unde [x]=⌊x⌋, este strict crescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Între doi întregi panta este 3>0. La fiecare întreg, saltul este m−3, deci nu trebuie să fie negativ. Pentru m≥3, ambele componente sunt nedescrescătoare și termenul 3x este strict crescător. Dacă m<3, saltul negativ distruge monotonia.",
+      "options": [
+        {
+          "text": "m>3",
+          "is_correct": false
+        },
+        {
+          "text": "m≤3",
+          "is_correct": false
+        },
+        {
+          "text": "m<3",
+          "is_correct": false
+        },
+        {
+          "text": "m≥3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 8,
+        "type_name": "Monotonie cu parte întreagă",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 8,
+        "variant": 3,
+        "candidates": [
+          "m>3",
+          "m≤3",
+          "m<3",
+          "m≥3"
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=−3x+1 și g(x)=4x−1. Care sunt, în ordine, monotoniile lui f∘f, f∘g, g∘f, g∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pantele compunerilor sunt produsele pantelor: 9>0, −12<0, −12<0 și 16>0. Semnul lor dă exact ordinea indicată.",
+      "options": [
+        {
+          "text": "Crescătoare, descrescătoare, descrescătoare, crescătoare (toate strict).",
+          "is_correct": true
+        },
+        {
+          "text": "Descrescătoare, crescătoare, crescătoare, descrescătoare (toate strict).",
+          "is_correct": false
+        },
+        {
+          "text": "Toate sunt strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "Toate sunt strict descrescătoare.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 9,
+        "type_name": "Monotonia compunerilor afine",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 9,
+        "variant": 3,
+        "candidates": [
+          "Crescătoare, descrescătoare, descrescătoare, crescătoare (toate strict).",
+          "Descrescătoare, crescătoare, crescătoare, descrescătoare (toate strict).",
+          "Toate sunt strict crescătoare.",
+          "Toate sunt strict descrescătoare."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=4x pentru x∈ℚ și f(x)=−4x pentru x∉ℚ. Care este f(f(x)) și monotonia sa pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțirea cu întregul nenul 4 păstrează raționalitatea și iraționalitatea. Dacă x este rațional, aplicăm de două ori prima ramură și obținem 16x. Dacă este irațional, aplicăm de două ori a doua ramură: −4(−4x)=16x. Panta este pozitivă.",
+      "options": [
+        {
+          "text": "f(f(x))=−16x; strict descrescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "f(f(x))=16x; strict crescătoare.",
+          "is_correct": true
+        },
+        {
+          "text": "f(f(x))=4x; strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "f(f(x)) nu este monotonă.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 10,
+        "type_name": "Monotonia iteratelor pe domenii mixte",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 10,
+        "variant": 3,
+        "candidates": [
+          "f(f(x))=−16x; strict descrescătoare.",
+          "f(f(x))=16x; strict crescătoare.",
+          "f(f(x))=4x; strict crescătoare.",
+          "f(f(x)) nu este monotonă."
+        ]
+      }
+    },
+    {
+      "text": "Care este monotonia funcției f(x)=−4x+5 pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x₁<x₂, f(x₂)−f(x₁)=−4(x₂−x₁)<0. Prin definiție, funcția este strict descrescătoare.",
+      "options": [
+        {
+          "text": "Strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă.",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare.",
+          "is_correct": true
+        },
+        {
+          "text": "Nu este monotonă pe ℝ.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 1,
+        "type_name": "Monotonie din pantă",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 1,
+        "variant": 4,
+        "candidates": [
+          "Strict crescătoare.",
+          "Constantă.",
+          "Strict descrescătoare.",
+          "Nu este monotonă pe ℝ."
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția f(x)=(m−4)x+5 este strict crescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O funcție afină este strict crescătoare exact când panta este pozitivă: m−4>0. La m=4 este constantă, nu strict crescătoare.",
+      "options": [
+        {
+          "text": "m<4",
+          "is_correct": false
+        },
+        {
+          "text": "m≥4",
+          "is_correct": false
+        },
+        {
+          "text": "m=4",
+          "is_correct": false
+        },
+        {
+          "text": "m>4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 2,
+        "type_name": "Monotonie în funcție de parametru",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 2,
+        "variant": 4,
+        "candidates": [
+          "m<4",
+          "m≥4",
+          "m=4",
+          "m>4"
+        ]
+      }
+    },
+    {
+      "text": "Graficul f(x)=(m−4)x+1 conține A(2; -7). Care sunt m și monotonia?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim A: 2(m−4)+1=-7, deci 2m=0 și m=0. Panta devine −4<0, astfel f este strict descrescătoare.",
+      "options": [
+        {
+          "text": "m=0; strict descrescătoare.",
+          "is_correct": true
+        },
+        {
+          "text": "m=0; strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "m=4; constantă.",
+          "is_correct": false
+        },
+        {
+          "text": "m=8; strict crescătoare.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 3,
+        "type_name": "Pantă determinată prin punct",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 3,
+        "variant": 4,
+        "candidates": [
+          "m=0; strict descrescătoare.",
+          "m=0; strict crescătoare.",
+          "m=4; constantă.",
+          "m=8; strict crescătoare."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=mx+4. Graficul conține A(m; 29), iar f este strict descrescătoare. Determinați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Apartenența dă m²+4=29, deci m=±5. Stricta descreștere cere m<0, astfel rămâne m=−5.",
+      "options": [
+        {
+          "text": "-6",
+          "is_correct": false
+        },
+        {
+          "text": "-5",
+          "is_correct": true
+        },
+        {
+          "text": "-4",
+          "is_correct": false
+        },
+        {
+          "text": "-3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 4,
+        "type_name": "Monotonie ca filtru al soluțiilor",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 4,
+        "variant": 4,
+        "candidates": [
+          "-6",
+          "-5",
+          "-4",
+          "-3"
+        ]
+      }
+    },
+    {
+      "text": "Pentru m real, studiați monotonia lui f(x)=((m−4)²+1)x−5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul (m−4)² este nenegativ, deci panta este cel puțin 1 pentru orice m. Pentru x₂>x₁, diferența f(x₂)−f(x₁) este strict pozitivă, inclusiv când m=4.",
+      "options": [
+        {
+          "text": "Strict descrescătoare pentru orice m∈ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pentru m=4.",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare pentru orice m∈ℝ.",
+          "is_correct": true
+        },
+        {
+          "text": "Strict crescătoare numai pentru m>4.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 5,
+        "type_name": "Pantă cu semn algebric cert",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 5,
+        "variant": 4,
+        "candidates": [
+          "Strict descrescătoare pentru orice m∈ℝ.",
+          "Constantă pentru m=4.",
+          "Strict crescătoare pentru orice m∈ℝ.",
+          "Strict crescătoare numai pentru m>4."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=−x pentru x<0, respectiv f(x)=−2x+m−4 pentru x≥0. Pentru ce m este f strict descrescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele ramuri au pante negative. Pentru x<0≤y, avem f(x)>0 și f(y)≤m−4; condiția m≤4 asigură ordinea strictă. Dacă m>4, alegem x<0 suficient de aproape de 0 și y=0: f(x)<f(0), contradicție.",
+      "options": [
+        {
+          "text": "m<4",
+          "is_correct": false
+        },
+        {
+          "text": "m≥4",
+          "is_correct": false
+        },
+        {
+          "text": "m>4",
+          "is_correct": false
+        },
+        {
+          "text": "m≤4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 6,
+        "type_name": "Monotonie globală pe ramuri afine",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 6,
+        "variant": 4,
+        "candidates": [
+          "m<4",
+          "m≥4",
+          "m>4",
+          "m≤4"
+        ]
+      }
+    },
+    {
+      "text": "Câte funcții f(x)=ax+b cu a,b∈ℤ sunt strict descrescătoare, satisfac f(2)=4 și 0≤b≤10?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem a<0 și 2a+b=4, deci b=4−2a. Din b≤10 rezultă a≥−3. Sunt exact a=−3,−2,−1, iar b=10,8,6, toate admise.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 7,
+        "type_name": "Coeficienți întregi și monotonie",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 7,
+        "variant": 4,
+        "candidates": [
+          "3",
+          "2",
+          "4",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția f(x)=4x+(m−4)[x], unde [x]=⌊x⌋, este strict crescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Între doi întregi panta este 4>0. La fiecare întreg, saltul este m−4, deci nu trebuie să fie negativ. Pentru m≥4, ambele componente sunt nedescrescătoare și termenul 4x este strict crescător. Dacă m<4, saltul negativ distruge monotonia.",
+      "options": [
+        {
+          "text": "m>4",
+          "is_correct": false
+        },
+        {
+          "text": "m≥4",
+          "is_correct": true
+        },
+        {
+          "text": "m≤4",
+          "is_correct": false
+        },
+        {
+          "text": "m<4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 8,
+        "type_name": "Monotonie cu parte întreagă",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 8,
+        "variant": 4,
+        "candidates": [
+          "m>4",
+          "m≥4",
+          "m≤4",
+          "m<4"
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=−4x+1 și g(x)=5x−1. Care sunt, în ordine, monotoniile lui f∘f, f∘g, g∘f, g∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pantele compunerilor sunt produsele pantelor: 16>0, −20<0, −20<0 și 25>0. Semnul lor dă exact ordinea indicată.",
+      "options": [
+        {
+          "text": "Descrescătoare, crescătoare, crescătoare, descrescătoare (toate strict).",
+          "is_correct": false
+        },
+        {
+          "text": "Toate sunt strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "Crescătoare, descrescătoare, descrescătoare, crescătoare (toate strict).",
+          "is_correct": true
+        },
+        {
+          "text": "Toate sunt strict descrescătoare.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 9,
+        "type_name": "Monotonia compunerilor afine",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 9,
+        "variant": 4,
+        "candidates": [
+          "Descrescătoare, crescătoare, crescătoare, descrescătoare (toate strict).",
+          "Toate sunt strict crescătoare.",
+          "Crescătoare, descrescătoare, descrescătoare, crescătoare (toate strict).",
+          "Toate sunt strict descrescătoare."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=5x pentru x∈ℚ și f(x)=−5x pentru x∉ℚ. Care este f(f(x)) și monotonia sa pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțirea cu întregul nenul 5 păstrează raționalitatea și iraționalitatea. Dacă x este rațional, aplicăm de două ori prima ramură și obținem 25x. Dacă este irațional, aplicăm de două ori a doua ramură: −5(−5x)=25x. Panta este pozitivă.",
+      "options": [
+        {
+          "text": "f(f(x))=−25x; strict descrescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "f(f(x))=5x; strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "f(f(x)) nu este monotonă.",
+          "is_correct": false
+        },
+        {
+          "text": "f(f(x))=25x; strict crescătoare.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 10,
+        "type_name": "Monotonia iteratelor pe domenii mixte",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 10,
+        "variant": 4,
+        "candidates": [
+          "f(f(x))=−25x; strict descrescătoare.",
+          "f(f(x))=5x; strict crescătoare.",
+          "f(f(x)) nu este monotonă.",
+          "f(f(x))=25x; strict crescătoare."
+        ]
+      }
+    },
+    {
+      "text": "Care este monotonia funcției f(x)=−5x+6 pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x₁<x₂, f(x₂)−f(x₁)=−5(x₂−x₁)<0. Prin definiție, funcția este strict descrescătoare.",
+      "options": [
+        {
+          "text": "Strict descrescătoare.",
+          "is_correct": true
+        },
+        {
+          "text": "Strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă.",
+          "is_correct": false
+        },
+        {
+          "text": "Nu este monotonă pe ℝ.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 1,
+        "type_name": "Monotonie din pantă",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 1,
+        "variant": 5,
+        "candidates": [
+          "Strict descrescătoare.",
+          "Strict crescătoare.",
+          "Constantă.",
+          "Nu este monotonă pe ℝ."
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția f(x)=(m−5)x+6 este strict crescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O funcție afină este strict crescătoare exact când panta este pozitivă: m−5>0. La m=5 este constantă, nu strict crescătoare.",
+      "options": [
+        {
+          "text": "m<5",
+          "is_correct": false
+        },
+        {
+          "text": "m>5",
+          "is_correct": true
+        },
+        {
+          "text": "m≥5",
+          "is_correct": false
+        },
+        {
+          "text": "m=5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 2,
+        "type_name": "Monotonie în funcție de parametru",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 2,
+        "variant": 5,
+        "candidates": [
+          "m<5",
+          "m>5",
+          "m≥5",
+          "m=5"
+        ]
+      }
+    },
+    {
+      "text": "Graficul f(x)=(m−5)x+1 conține A(2; -9). Care sunt m și monotonia?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înlocuim A: 2(m−5)+1=-9, deci 2m=0 și m=0. Panta devine −5<0, astfel f este strict descrescătoare.",
+      "options": [
+        {
+          "text": "m=0; strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "m=5; constantă.",
+          "is_correct": false
+        },
+        {
+          "text": "m=0; strict descrescătoare.",
+          "is_correct": true
+        },
+        {
+          "text": "m=10; strict crescătoare.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 3,
+        "type_name": "Pantă determinată prin punct",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 3,
+        "variant": 5,
+        "candidates": [
+          "m=0; strict crescătoare.",
+          "m=5; constantă.",
+          "m=0; strict descrescătoare.",
+          "m=10; strict crescătoare."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=mx+5. Graficul conține A(m; 41), iar f este strict descrescătoare. Determinați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Apartenența dă m²+5=41, deci m=±6. Stricta descreștere cere m<0, astfel rămâne m=−6.",
+      "options": [
+        {
+          "text": "-7",
+          "is_correct": false
+        },
+        {
+          "text": "-5",
+          "is_correct": false
+        },
+        {
+          "text": "-4",
+          "is_correct": false
+        },
+        {
+          "text": "-6",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 4,
+        "type_name": "Monotonie ca filtru al soluțiilor",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 4,
+        "variant": 5,
+        "candidates": [
+          "-7",
+          "-5",
+          "-4",
+          "-6"
+        ]
+      }
+    },
+    {
+      "text": "Pentru m real, studiați monotonia lui f(x)=((m−5)²+1)x−6.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pătratul (m−5)² este nenegativ, deci panta este cel puțin 1 pentru orice m. Pentru x₂>x₁, diferența f(x₂)−f(x₁) este strict pozitivă, inclusiv când m=5.",
+      "options": [
+        {
+          "text": "Strict crescătoare pentru orice m∈ℝ.",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare pentru orice m∈ℝ.",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pentru m=5.",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare numai pentru m>5.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 5,
+        "type_name": "Pantă cu semn algebric cert",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 5,
+        "variant": 5,
+        "candidates": [
+          "Strict crescătoare pentru orice m∈ℝ.",
+          "Strict descrescătoare pentru orice m∈ℝ.",
+          "Constantă pentru m=5.",
+          "Strict crescătoare numai pentru m>5."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=−x pentru x<0, respectiv f(x)=−2x+m−5 pentru x≥0. Pentru ce m este f strict descrescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele ramuri au pante negative. Pentru x<0≤y, avem f(x)>0 și f(y)≤m−5; condiția m≤5 asigură ordinea strictă. Dacă m>5, alegem x<0 suficient de aproape de 0 și y=0: f(x)<f(0), contradicție.",
+      "options": [
+        {
+          "text": "m<5",
+          "is_correct": false
+        },
+        {
+          "text": "m≤5",
+          "is_correct": true
+        },
+        {
+          "text": "m≥5",
+          "is_correct": false
+        },
+        {
+          "text": "m>5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 6,
+        "type_name": "Monotonie globală pe ramuri afine",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 6,
+        "variant": 5,
+        "candidates": [
+          "m<5",
+          "m≤5",
+          "m≥5",
+          "m>5"
+        ]
+      }
+    },
+    {
+      "text": "Câte funcții f(x)=ax+b cu a,b∈ℤ sunt strict descrescătoare, satisfac f(2)=5 și 0≤b≤11?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem a<0 și 2a+b=5, deci b=5−2a. Din b≤11 rezultă a≥−3. Sunt exact a=−3,−2,−1, iar b=11,9,7, toate admise.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 7,
+        "type_name": "Coeficienți întregi și monotonie",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 7,
+        "variant": 5,
+        "candidates": [
+          "2",
+          "4",
+          "3",
+          "5"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcția f(x)=5x+(m−5)[x], unde [x]=⌊x⌋, este strict crescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Între doi întregi panta este 5>0. La fiecare întreg, saltul este m−5, deci nu trebuie să fie negativ. Pentru m≥5, ambele componente sunt nedescrescătoare și termenul 5x este strict crescător. Dacă m<5, saltul negativ distruge monotonia.",
+      "options": [
+        {
+          "text": "m>5",
+          "is_correct": false
+        },
+        {
+          "text": "m≤5",
+          "is_correct": false
+        },
+        {
+          "text": "m<5",
+          "is_correct": false
+        },
+        {
+          "text": "m≥5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 8,
+        "type_name": "Monotonie cu parte întreagă",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 8,
+        "variant": 5,
+        "candidates": [
+          "m>5",
+          "m≤5",
+          "m<5",
+          "m≥5"
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=−5x+1 și g(x)=6x−1. Care sunt, în ordine, monotoniile lui f∘f, f∘g, g∘f, g∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pantele compunerilor sunt produsele pantelor: 25>0, −30<0, −30<0 și 36>0. Semnul lor dă exact ordinea indicată.",
+      "options": [
+        {
+          "text": "Crescătoare, descrescătoare, descrescătoare, crescătoare (toate strict).",
+          "is_correct": true
+        },
+        {
+          "text": "Descrescătoare, crescătoare, crescătoare, descrescătoare (toate strict).",
+          "is_correct": false
+        },
+        {
+          "text": "Toate sunt strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "Toate sunt strict descrescătoare.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 9,
+        "type_name": "Monotonia compunerilor afine",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 9,
+        "variant": 5,
+        "candidates": [
+          "Crescătoare, descrescătoare, descrescătoare, crescătoare (toate strict).",
+          "Descrescătoare, crescătoare, crescătoare, descrescătoare (toate strict).",
+          "Toate sunt strict crescătoare.",
+          "Toate sunt strict descrescătoare."
+        ]
+      }
+    },
+    {
+      "text": "Fie f(x)=6x pentru x∈ℚ și f(x)=−6x pentru x∉ℚ. Care este f(f(x)) și monotonia sa pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțirea cu întregul nenul 6 păstrează raționalitatea și iraționalitatea. Dacă x este rațional, aplicăm de două ori prima ramură și obținem 36x. Dacă este irațional, aplicăm de două ori a doua ramură: −6(−6x)=36x. Panta este pozitivă.",
+      "options": [
+        {
+          "text": "f(f(x))=−36x; strict descrescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "f(f(x))=36x; strict crescătoare.",
+          "is_correct": true
+        },
+        {
+          "text": "f(f(x))=6x; strict crescătoare.",
+          "is_correct": false
+        },
+        {
+          "text": "f(f(x)) nu este monotonă.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.2",
+        "type": 10,
+        "type_name": "Monotonia iteratelor pe domenii mixte",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 2,
+        "type": 10,
+        "variant": 5,
+        "candidates": [
+          "f(f(x))=−36x; strict descrescătoare.",
+          "f(f(x))=36x; strict crescătoare.",
+          "f(f(x))=6x; strict crescătoare.",
+          "f(f(x)) nu este monotonă."
+        ]
+      }
+    }
+  ]
 }

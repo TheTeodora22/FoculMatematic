@@ -38,7 +38,7 @@ Aplicație web Django pentru exersarea matematicii prin quiz-uri, cu conturi de 
    python manage.py migrate
    python manage.py seed_battlepass
 python manage.py seed_quizzes
-   python manage.py createsuperuser
+   # Conturile locale demo si admin sunt create automat cand DEBUG=True.
    ```
 
 5. **Pornește serverul:**
@@ -49,6 +49,23 @@ python manage.py seed_quizzes
 
    Web: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)  
    API: [http://127.0.0.1:8000/api/v1/](http://127.0.0.1:8000/api/v1/)
+
+### Conturi locale de test
+
+Cu `DEBUG=True`, `python manage.py migrate` creeaza automat conturile:
+
+| Utilizator | Parola | Drepturi |
+|------------|--------|----------|
+| `demo` | `DemoMatematic123!` | Utilizator obisnuit |
+| `admin` | `AdminMatematic123!` | Superuser (inclusiv `/admin/`) |
+
+Functioneaza la autentificarea web si in aplicatia mobila. Conturile si progresul
+raman in baza de date; nu trebuie sa te inregistrezi din nou. Pentru a le recrea
+sau a restaura parolele de mai sus, ruleaza `python manage.py seed_dev_users`.
+Comanda poate fi repetata fara a sterge progresul. Conturile cu aceste nume sunt
+rezervate testarii locale; comanda le restaureaza parolele si drepturile.
+Crearea automata si comanda sunt dezactivate cu `DEBUG=False`.
+In productie, creeaza un administrator propriu cu `python manage.py createsuperuser`.
 
 ## App mobilă (Expo)
 
@@ -163,6 +180,22 @@ python manage.py seed_quizzes
 python manage.py test
 python manage.py collectstatic --noinput
 ```
+
+## Verificare frontend
+
+Din mediul virtual al proiectului, cu Node.js și Git disponibile în PATH:
+
+```powershell
+python -X utf8 scripts/check_frontend.py
+```
+
+Comanda verifică configurația Django, compilează toate șabloanele HTML,
+verifică sintaxa JavaScript și rulează testele frontend și regresiile Django
+relevante. Se oprește la prima eroare. Verificările vizuale și de interacțiune
+în browser se fac separat.
+
+[Raportul consolidat al modernizării frontend](docs/modernizare_frontend_faza_12.md)
+include deciziile finale, probele și verificările manuale rămase.
 
 ## Setup si verificare Windows
 

@@ -391,11 +391,16 @@
     "order": 3,
     "topics": [
       "clasa_9/clasa_9_u02_l01_siruri_de_numere_reale_notatia_si_termenul_general.json",
-      "clasa_9/clasa_9_u02_l02_progresii_aritmetice_si_geometrice_aplicatii.json",
+      "clasa_9/clasa_9_u02_l02a_progresii_aritmetice.json",
+      "clasa_9/clasa_9_u02_l02b_progresii_geometrice.json",
+      "clasa_9/clasa_9_u02_l02c_aplicatii_progresii.json",
       "clasa_9/clasa_9_u02_l03_functii_reper_cartezian_produs_cartezian_si_reprezentare_grafica.json",
       "clasa_9/clasa_9_u02_l04_notiunea_imaginea_si_preimaginea_unei_functii.json",
       "clasa_9/clasa_9_u02_l05_graficul_restrictiile_si_prelungirile_unei_functii_functii_numerice.json",
       "clasa_9/clasa_9_u02_l06_proprietati_generale_ale_functiilor_marginire_paritate_periodicitate_s.json",
+      "clasa_9/clasa_9_u02_l06b_paritatea_functiilor.json",
+      "clasa_9/clasa_9_u02_l06c_periodicitatea_functiilor.json",
+      "clasa_9/clasa_9_u02_l06d_monotonia_functiilor.json",
       "clasa_9/clasa_9_u02_l07_compunerea_functiilor.json"
     ]
   },

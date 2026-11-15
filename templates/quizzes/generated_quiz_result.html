@@ -1,24 +1,32 @@
 {% extends "base.html" %}
 {% load lesson_tags %}
+{% block math_assets %}{% include "includes/math_assets.html" %}{% endblock %}
 
 {% block title %}Rezultat — {{ topic.title }}{% endblock %}
 
+{% block page_styles %}{% include "includes/page_styles.html" %}{% endblock %}
+
 {% block content %}
-<div class="page-content">
+<div class="page-content journey-page">
     <h1>Rezultat chestionar</h1>
     {% render_lesson_tags topic %}
     <p class="muted">{{ topic.title }}</p>
 
-    <article class="card">
-        <p style="font-size:1.25rem;margin:0 0 0.5rem;">
-            {{ result.correct_count }} / {{ result.total_count }} corecte
+    <article class="card result-summary">
+        <p class="result-score">
+            {{ result.correct_count }} / {{ result.total_count }}
         </p>
+        <p class="muted">Răspunsuri corecte</p>
         {% if result.xp_gained %}
             <p style="margin:0;">Ai câștigat {{ result.xp_gained }} XP.</p>
         {% else %}
             <p class="muted" style="margin:0;">Nu ai câștigat XP nou (întrebările corecte fuseseră deja recompensate).</p>
         {% endif %}
     </article>
+    <div class="result-actions">
+        <a class="btn btn-press" href="{% url 'training' topic.pk %}">Continuă în Antrenare</a>
+        <a class="btn btn--secondary" href="{% url 'topic_detail' topic.pk %}">Înapoi la lecție</a>
+    </div>
 
     {% if wrong_items %}
         <h2>Explicații — răspunsuri greșite</h2>
@@ -37,9 +45,8 @@
         {% endfor %}
     {% endif %}
 
-    <div class="auth-actions-row topic-actions" style="margin-top:1.5rem;">
-        <a class="btn" href="{% url 'topic_detail' topic.pk %}">Înapoi la subiect</a>
-        <a class="btn" href="{% url 'generated_quiz' topic.pk %}">Generează din nou</a>
+    <div class="result-actions">
+        <a class="btn btn--secondary" href="{% url 'generated_quiz' topic.pk %}">Generează din nou</a>
     </div>
 </div>
 {% endblock %}

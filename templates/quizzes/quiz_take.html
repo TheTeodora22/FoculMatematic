@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% block math_assets %}{% include "includes/math_assets.html" %}{% endblock %}
 
 {% block title %}{{ quiz.title }} — Focul Matematic{% endblock %}
 
@@ -11,10 +12,10 @@
 {% endif %}
 
 {% if not questions %}
-    <p class="muted">Acest chestionar nu are încă întrebări.</p>
-    <p><a href="{% url 'quiz_list' %}">Înapoi la listă</a></p>
+    {% url 'quiz_list' as empty_url %}
+    {% include "includes/state_panel.html" with state_title="Chestionarul este în pregătire" state_text="Acest chestionar nu are încă întrebări. Alege altul pentru a începe." action_url=empty_url action_label="Vezi chestionarele" %}
 {% else %}
-    <form method="post" action="">
+    <form data-ui-form data-status-id="form-submit-status" data-busy-label="Se trimit răspunsurile…" method="post" action="">
         {% csrf_token %}
         {% for question in questions %}
             <fieldset class="card" style="margin-top:1rem;">
@@ -47,6 +48,7 @@
             <a href="{% url 'quiz_list' %}" class="muted" style="margin-left:1rem;">Anulează</a>
         </p>
     </form>
+    {% include "includes/form_status.html" %}
 {% endif %}
 </div>
 {% endblock %}

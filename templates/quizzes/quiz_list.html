@@ -1,18 +1,13 @@
 {% extends "base.html" %}
 
 {% block title %}Chestionare — Focul Matematic{% endblock %}
+{% block page_styles %}{% include "includes/page_styles.html" %}{% endblock %}
 
 {% block content %}
-<div class="page-content">
+<div class="page-content journey-page">
+<nav class="page-trail" aria-label="Traseu de navigare"><a href="{% url 'index' %}">Acasă</a><span aria-hidden="true">/</span><span aria-current="page">Chestionare</span></nav>
 <h1>Chestionare</h1>
-
-<div class="class-grid">
-    {% for level in class_levels %}
-        <article class="card class-grid__item">
-            <h2 style="margin:0 0 0.75rem;">Clasa a {{ level }}-a</h2>
-            <a class="btn" href="{% url 'class_chapters' level %}">Vezi capitolele</a>
-        </article>
-    {% endfor %}
-</div>
+<p class="page-intro muted">Alege clasa, apoi capitolul și lecția. În fiecare lecție găsești modurile de lucru disponibile și progresul tău.</p>
+{% include "includes/class_choices.html" %}
 </div>
 {% endblock %}

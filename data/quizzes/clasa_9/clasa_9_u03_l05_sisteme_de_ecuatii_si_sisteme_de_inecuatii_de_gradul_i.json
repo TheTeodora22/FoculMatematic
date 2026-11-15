@@ -1,6 +1,2157 @@
 {
   "title": "Sisteme de ecuații și sisteme de inecuații de gradul I",
   "description": "Clasa a 9-a · Funcția de gradul I",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Rezolvați simultan x≥1 și 2x≤8.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A doua inecuație dă x≤4. Intersecția cu x≥1 este [1;4], ambele capete respectând ambele condiții.",
+      "options": [
+        {
+          "text": "[1; 4]",
+          "is_correct": true
+        },
+        {
+          "text": "(1; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "[1; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 1,
+        "type_name": "Intersecția soluțiilor inecuațiilor liniare",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 1,
+        "variant": 1,
+        "candidates": [
+          "[1; 4]",
+          "(1; 4)",
+          "(−∞; 4]",
+          "[1; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați |2x−1|≤x+1.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cerem x+1≥0 și −(x+1)≤2x−1≤x+1. Inegalitatea din stânga dă x≥0, cea din dreapta x≤2. Aceste condiții implică și x+1>0, deci soluția este [0;2].",
+      "options": [
+        {
+          "text": "(0; 2)",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 2]",
+          "is_correct": true
+        },
+        {
+          "text": "[-1; 2]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 2]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 2,
+        "type_name": "Inecuație cu modul și membru drept variabil",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 2,
+        "variant": 1,
+        "candidates": [
+          "(0; 2)",
+          "[0; 2]",
+          "[-1; 2]",
+          "(−∞; 2]"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați simultan \\((x-1)/(x-2)\\geq0\\) și \\((x-3)/(x-2)\\leq0\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul comun exclude 2. Prima inecuație dă (−∞;1]∪(2;+∞); a doua dă (2;3]. Intersecția este (2;3], cu polul exclus și rădăcina celei de-a doua fracții inclusă.",
+      "options": [
+        {
+          "text": "[1; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "[2; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 3]",
+          "is_correct": true
+        },
+        {
+          "text": "(2; 3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 3,
+        "type_name": "Sisteme de inecuații raționale",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 3,
+        "variant": 1,
+        "candidates": [
+          "[1; 3]",
+          "[2; 3]",
+          "(2; 3]",
+          "(2; 3)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul |x−1|≤2 și |x−2|<2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima condiție este x∈[-1;3], a doua x∈(0;4). Intersecția păstrează capătul stâng deschis din a doua și capătul drept închis din prima: (0;3].",
+      "options": [
+        {
+          "text": "[0; 3]",
+          "is_correct": false
+        },
+        {
+          "text": "(-1; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 3)",
+          "is_correct": false
+        },
+        {
+          "text": "(0; 3]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 4,
+        "type_name": "Sisteme cu mai multe module",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 4,
+        "variant": 1,
+        "candidates": [
+          "[0; 3]",
+          "(-1; 4)",
+          "(0; 3)",
+          "(0; 3]"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați ecuația max(x+1, 2x−1)=3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Maximul este 3 dacă ambele expresii sunt cel mult 3 și cel puțin una este egală. Ambele inecuații dau x≤2; oricare egalitate impune x=2. La această valoare ambele expresii sunt 3.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 5,
+        "type_name": "Ecuație cu maxim",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 5,
+        "variant": 1,
+        "candidates": [
+          "2",
+          "1",
+          "3",
+          "4"
+        ]
+      }
+    },
+    {
+      "text": "Care este formula valabilă pe ℝ pentru h(x)=min(x+1, −x+1, 2)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul primelor două expresii este 1−|x|: prima este activă pentru x≤0 și a doua pentru x≥0. Această valoare este cel mult 1<2, deci a treia expresie nu devine niciodată minimul.",
+      "options": [
+        {
+          "text": "h(x)=1+|x|",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=1−|x|",
+          "is_correct": true
+        },
+        {
+          "text": "h(x)=2−|x|",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 6,
+        "type_name": "Grafice anvelopă",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 6,
+        "variant": 1,
+        "candidates": [
+          "h(x)=1+|x|",
+          "h(x)=1−|x|",
+          "h(x)=2−|x|",
+          "h(x)=1"
+        ]
+      }
+    },
+    {
+      "text": "Aflați x real astfel încât \\(1/(x-1)\\in[0;x-1]\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Capătul drept al intervalului depinde de x. Domeniul exclude x=1; apartenența cere simultan 0≤1/(x−1) și 1/(x−1)≤x−1. Prima condiție impune x>1. Putem înmulți a doua cu x−1>0: 1≤(x−1)², deci x−1≥1 și x≥2.",
+      "options": [
+        {
+          "text": "(1; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "[2; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; 0]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 7,
+        "type_name": "Apartenențe la intervale cu capete variabile",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 7,
+        "variant": 1,
+        "candidates": [
+          "(1; +∞)",
+          "(2; +∞)",
+          "[2; +∞)",
+          "(−∞; 0]"
+        ]
+      }
+    },
+    {
+      "text": "Determinați, pentru orice x real, intersecția [x; x+1]∩[0; 1].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele intervale sunt bine definite deoarece 1>0. Intersecția este nevidă exact când x≤1 și x+1≥0, adică −1≤x≤1. În acest caz este [max(x,0); min(x+1,1)]; la extreme rămâne un singleton.",
+      "options": [
+        {
+          "text": "[min(x,0); max(x+1,1)] pentru −1≤x≤1; ∅ în rest.",
+          "is_correct": false
+        },
+        {
+          "text": "[max(x,0); min(x+1,1)] pentru −1<x<1; ∅ în rest.",
+          "is_correct": false
+        },
+        {
+          "text": "[max(x,0); min(x+1,1)] pentru 0≤x≤1; ∅ în rest.",
+          "is_correct": false
+        },
+        {
+          "text": "[max(x,0); min(x+1,1)] pentru −1≤x≤1; ∅ în rest.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 8,
+        "type_name": "Intersecții cu capete dependente de x",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 8,
+        "variant": 1,
+        "candidates": [
+          "[min(x,0); max(x+1,1)] pentru −1≤x≤1; ∅ în rest.",
+          "[max(x,0); min(x+1,1)] pentru −1<x<1; ∅ în rest.",
+          "[max(x,0); min(x+1,1)] pentru 0≤x≤1; ∅ în rest.",
+          "[max(x,0); min(x+1,1)] pentru −1≤x≤1; ∅ în rest."
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcțiile f(x)=x+m−1 și g(x)=−x+2 sunt ambele strict pozitive pe [−1;1]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul lui f este f(−1)=m−2, deci cerem m>2. Minimul lui g este g(1)=1=1>0, indiferent de m. Prin urmare prima condiție este necesară și suficientă.",
+      "options": [
+        {
+          "text": "m>2",
+          "is_correct": true
+        },
+        {
+          "text": "m≥2",
+          "is_correct": false
+        },
+        {
+          "text": "m<2",
+          "is_correct": false
+        },
+        {
+          "text": "m>0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 9,
+        "type_name": "Pozitivitatea simultană a două funcții",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 9,
+        "variant": 1,
+        "candidates": [
+          "m>2",
+          "m≥2",
+          "m<2",
+          "m>0"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcțiile f(x)=(m−1)x+1 și g(x)=−x−1 au semne contrare pentru orice x≥0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe x≥0, g este mereu strict negativă. Trebuie deci f(x)>0 pentru orice x≥0. Dacă m−1≥0, f(x)≥1. Dacă m−1<0, pentru x suficient de mare f devine negativă. Rezultă exact m≥1, inclusiv cazul f≡1.",
+      "options": [
+        {
+          "text": "m>1",
+          "is_correct": false
+        },
+        {
+          "text": "m≥1",
+          "is_correct": true
+        },
+        {
+          "text": "m<1",
+          "is_correct": false
+        },
+        {
+          "text": "m≤1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 10,
+        "type_name": "Semne contrare pe interval",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 10,
+        "variant": 1,
+        "candidates": [
+          "m>1",
+          "m≥1",
+          "m<1",
+          "m≤1"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați simultan x≥2 și 2x≤10.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A doua inecuație dă x≤5. Intersecția cu x≥2 este [2;5], ambele capete respectând ambele condiții.",
+      "options": [
+        {
+          "text": "(2; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 5]",
+          "is_correct": false
+        },
+        {
+          "text": "[2; 5]",
+          "is_correct": true
+        },
+        {
+          "text": "[2; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 1,
+        "type_name": "Intersecția soluțiilor inecuațiilor liniare",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 1,
+        "variant": 2,
+        "candidates": [
+          "(2; 5)",
+          "(−∞; 5]",
+          "[2; 5]",
+          "[2; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați |2x−2|≤x+2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cerem x+2≥0 și −(x+2)≤2x−2≤x+2. Inegalitatea din stânga dă x≥0, cea din dreapta x≤4. Aceste condiții implică și x+2>0, deci soluția este [0;4].",
+      "options": [
+        {
+          "text": "(0; 4)",
+          "is_correct": false
+        },
+        {
+          "text": "[-2; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 4]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 2,
+        "type_name": "Inecuație cu modul și membru drept variabil",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 2,
+        "variant": 2,
+        "candidates": [
+          "(0; 4)",
+          "[-2; 4]",
+          "(−∞; 4]",
+          "[0; 4]"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați simultan \\((x-2)/(x-3)\\geq0\\) și \\((x-4)/(x-3)\\leq0\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul comun exclude 3. Prima inecuație dă (−∞;2]∪(3;+∞); a doua dă (3;4]. Intersecția este (3;4], cu polul exclus și rădăcina celei de-a doua fracții inclusă.",
+      "options": [
+        {
+          "text": "(3; 4]",
+          "is_correct": true
+        },
+        {
+          "text": "[2; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "[3; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 3,
+        "type_name": "Sisteme de inecuații raționale",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 3,
+        "variant": 2,
+        "candidates": [
+          "(3; 4]",
+          "[2; 4]",
+          "[3; 4]",
+          "(3; 4)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul |x−2|≤2 și |x−3|<2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima condiție este x∈[0;4], a doua x∈(1;5). Intersecția păstrează capătul stâng deschis din a doua și capătul drept închis din prima: (1;4].",
+      "options": [
+        {
+          "text": "[1; 4]",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 4]",
+          "is_correct": true
+        },
+        {
+          "text": "(0; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 4,
+        "type_name": "Sisteme cu mai multe module",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 4,
+        "variant": 2,
+        "candidates": [
+          "[1; 4]",
+          "(1; 4]",
+          "(0; 5)",
+          "(1; 4)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați ecuația max(x+2, 2x−2)=6.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Maximul este 6 dacă ambele expresii sunt cel mult 6 și cel puțin una este egală. Ambele inecuații dau x≤4; oricare egalitate impune x=4. La această valoare ambele expresii sunt 6.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 5,
+        "type_name": "Ecuație cu maxim",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 5,
+        "variant": 2,
+        "candidates": [
+          "3",
+          "5",
+          "4",
+          "6"
+        ]
+      }
+    },
+    {
+      "text": "Care este formula valabilă pe ℝ pentru h(x)=min(x+2, −x+2, 4)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul primelor două expresii este 2−|x|: prima este activă pentru x≤0 și a doua pentru x≥0. Această valoare este cel mult 2<4, deci a treia expresie nu devine niciodată minimul.",
+      "options": [
+        {
+          "text": "h(x)=2+|x|",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=4−|x|",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=2",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=2−|x|",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 6,
+        "type_name": "Grafice anvelopă",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 6,
+        "variant": 2,
+        "candidates": [
+          "h(x)=2+|x|",
+          "h(x)=4−|x|",
+          "h(x)=2",
+          "h(x)=2−|x|"
+        ]
+      }
+    },
+    {
+      "text": "Aflați x real astfel încât \\(1/(x-2)\\in[0;x-2]\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Capătul drept al intervalului depinde de x. Domeniul exclude x=2; apartenența cere simultan 0≤1/(x−2) și 1/(x−2)≤x−2. Prima condiție impune x>2. Putem înmulți a doua cu x−2>0: 1≤(x−2)², deci x−2≥1 și x≥3.",
+      "options": [
+        {
+          "text": "[3; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(2; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 1]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 7,
+        "type_name": "Apartenențe la intervale cu capete variabile",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 7,
+        "variant": 2,
+        "candidates": [
+          "[3; +∞)",
+          "(2; +∞)",
+          "(3; +∞)",
+          "(−∞; 1]"
+        ]
+      }
+    },
+    {
+      "text": "Determinați, pentru orice x real, intersecția [x; x+2]∩[0; 2].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele intervale sunt bine definite deoarece 2>0. Intersecția este nevidă exact când x≤2 și x+2≥0, adică −2≤x≤2. În acest caz este [max(x,0); min(x+2,2)]; la extreme rămâne un singleton.",
+      "options": [
+        {
+          "text": "[min(x,0); max(x+2,2)] pentru −2≤x≤2; ∅ în rest.",
+          "is_correct": false
+        },
+        {
+          "text": "[max(x,0); min(x+2,2)] pentru −2≤x≤2; ∅ în rest.",
+          "is_correct": true
+        },
+        {
+          "text": "[max(x,0); min(x+2,2)] pentru −2<x<2; ∅ în rest.",
+          "is_correct": false
+        },
+        {
+          "text": "[max(x,0); min(x+2,2)] pentru 0≤x≤2; ∅ în rest.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 8,
+        "type_name": "Intersecții cu capete dependente de x",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 8,
+        "variant": 2,
+        "candidates": [
+          "[min(x,0); max(x+2,2)] pentru −2≤x≤2; ∅ în rest.",
+          "[max(x,0); min(x+2,2)] pentru −2≤x≤2; ∅ în rest.",
+          "[max(x,0); min(x+2,2)] pentru −2<x<2; ∅ în rest.",
+          "[max(x,0); min(x+2,2)] pentru 0≤x≤2; ∅ în rest."
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcțiile f(x)=x+m−2 și g(x)=−x+3 sunt ambele strict pozitive pe [−1;1]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul lui f este f(−1)=m−3, deci cerem m>3. Minimul lui g este g(1)=2=2>0, indiferent de m. Prin urmare prima condiție este necesară și suficientă.",
+      "options": [
+        {
+          "text": "m≥3",
+          "is_correct": false
+        },
+        {
+          "text": "m<3",
+          "is_correct": false
+        },
+        {
+          "text": "m>3",
+          "is_correct": true
+        },
+        {
+          "text": "m>1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 9,
+        "type_name": "Pozitivitatea simultană a două funcții",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 9,
+        "variant": 2,
+        "candidates": [
+          "m≥3",
+          "m<3",
+          "m>3",
+          "m>1"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcțiile f(x)=(m−2)x+1 și g(x)=−x−2 au semne contrare pentru orice x≥0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe x≥0, g este mereu strict negativă. Trebuie deci f(x)>0 pentru orice x≥0. Dacă m−2≥0, f(x)≥1. Dacă m−2<0, pentru x suficient de mare f devine negativă. Rezultă exact m≥2, inclusiv cazul f≡1.",
+      "options": [
+        {
+          "text": "m>2",
+          "is_correct": false
+        },
+        {
+          "text": "m<2",
+          "is_correct": false
+        },
+        {
+          "text": "m≤2",
+          "is_correct": false
+        },
+        {
+          "text": "m≥2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 10,
+        "type_name": "Semne contrare pe interval",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 10,
+        "variant": 2,
+        "candidates": [
+          "m>2",
+          "m<2",
+          "m≤2",
+          "m≥2"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați simultan x≥3 și 2x≤12.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A doua inecuație dă x≤6. Intersecția cu x≥3 este [3;6], ambele capete respectând ambele condiții.",
+      "options": [
+        {
+          "text": "[3; 6]",
+          "is_correct": true
+        },
+        {
+          "text": "(3; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 6]",
+          "is_correct": false
+        },
+        {
+          "text": "[3; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 1,
+        "type_name": "Intersecția soluțiilor inecuațiilor liniare",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 1,
+        "variant": 3,
+        "candidates": [
+          "[3; 6]",
+          "(3; 6)",
+          "(−∞; 6]",
+          "[3; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați |2x−3|≤x+3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cerem x+3≥0 și −(x+3)≤2x−3≤x+3. Inegalitatea din stânga dă x≥0, cea din dreapta x≤6. Aceste condiții implică și x+3>0, deci soluția este [0;6].",
+      "options": [
+        {
+          "text": "(0; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 6]",
+          "is_correct": true
+        },
+        {
+          "text": "[-3; 6]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 6]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 2,
+        "type_name": "Inecuație cu modul și membru drept variabil",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 2,
+        "variant": 3,
+        "candidates": [
+          "(0; 6)",
+          "[0; 6]",
+          "[-3; 6]",
+          "(−∞; 6]"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați simultan \\((x-3)/(x-4)\\geq0\\) și \\((x-5)/(x-4)\\leq0\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul comun exclude 4. Prima inecuație dă (−∞;3]∪(4;+∞); a doua dă (4;5]. Intersecția este (4;5], cu polul exclus și rădăcina celei de-a doua fracții inclusă.",
+      "options": [
+        {
+          "text": "[3; 5]",
+          "is_correct": false
+        },
+        {
+          "text": "[4; 5]",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 5]",
+          "is_correct": true
+        },
+        {
+          "text": "(4; 5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 3,
+        "type_name": "Sisteme de inecuații raționale",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 3,
+        "variant": 3,
+        "candidates": [
+          "[3; 5]",
+          "[4; 5]",
+          "(4; 5]",
+          "(4; 5)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul |x−3|≤2 și |x−4|<2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima condiție este x∈[1;5], a doua x∈(2;6). Intersecția păstrează capătul stâng deschis din a doua și capătul drept închis din prima: (2;5].",
+      "options": [
+        {
+          "text": "[2; 5]",
+          "is_correct": false
+        },
+        {
+          "text": "(1; 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 5)",
+          "is_correct": false
+        },
+        {
+          "text": "(2; 5]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 4,
+        "type_name": "Sisteme cu mai multe module",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 4,
+        "variant": 3,
+        "candidates": [
+          "[2; 5]",
+          "(1; 6)",
+          "(2; 5)",
+          "(2; 5]"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați ecuația max(x+3, 2x−3)=9.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Maximul este 9 dacă ambele expresii sunt cel mult 9 și cel puțin una este egală. Ambele inecuații dau x≤6; oricare egalitate impune x=6. La această valoare ambele expresii sunt 9.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 5,
+        "type_name": "Ecuație cu maxim",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 5,
+        "variant": 3,
+        "candidates": [
+          "6",
+          "5",
+          "7",
+          "8"
+        ]
+      }
+    },
+    {
+      "text": "Care este formula valabilă pe ℝ pentru h(x)=min(x+3, −x+3, 6)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul primelor două expresii este 3−|x|: prima este activă pentru x≤0 și a doua pentru x≥0. Această valoare este cel mult 3<6, deci a treia expresie nu devine niciodată minimul.",
+      "options": [
+        {
+          "text": "h(x)=3+|x|",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=3−|x|",
+          "is_correct": true
+        },
+        {
+          "text": "h(x)=6−|x|",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 6,
+        "type_name": "Grafice anvelopă",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 6,
+        "variant": 3,
+        "candidates": [
+          "h(x)=3+|x|",
+          "h(x)=3−|x|",
+          "h(x)=6−|x|",
+          "h(x)=3"
+        ]
+      }
+    },
+    {
+      "text": "Aflați x real astfel încât \\(1/(x-3)\\in[0;x-3]\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Capătul drept al intervalului depinde de x. Domeniul exclude x=3; apartenența cere simultan 0≤1/(x−3) și 1/(x−3)≤x−3. Prima condiție impune x>3. Putem înmulți a doua cu x−3>0: 1≤(x−3)², deci x−3≥1 și x≥4.",
+      "options": [
+        {
+          "text": "(3; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "[4; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; 2]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 7,
+        "type_name": "Apartenențe la intervale cu capete variabile",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 7,
+        "variant": 3,
+        "candidates": [
+          "(3; +∞)",
+          "(4; +∞)",
+          "[4; +∞)",
+          "(−∞; 2]"
+        ]
+      }
+    },
+    {
+      "text": "Determinați, pentru orice x real, intersecția [x; x+3]∩[0; 3].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele intervale sunt bine definite deoarece 3>0. Intersecția este nevidă exact când x≤3 și x+3≥0, adică −3≤x≤3. În acest caz este [max(x,0); min(x+3,3)]; la extreme rămâne un singleton.",
+      "options": [
+        {
+          "text": "[min(x,0); max(x+3,3)] pentru −3≤x≤3; ∅ în rest.",
+          "is_correct": false
+        },
+        {
+          "text": "[max(x,0); min(x+3,3)] pentru −3<x<3; ∅ în rest.",
+          "is_correct": false
+        },
+        {
+          "text": "[max(x,0); min(x+3,3)] pentru 0≤x≤3; ∅ în rest.",
+          "is_correct": false
+        },
+        {
+          "text": "[max(x,0); min(x+3,3)] pentru −3≤x≤3; ∅ în rest.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 8,
+        "type_name": "Intersecții cu capete dependente de x",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 8,
+        "variant": 3,
+        "candidates": [
+          "[min(x,0); max(x+3,3)] pentru −3≤x≤3; ∅ în rest.",
+          "[max(x,0); min(x+3,3)] pentru −3<x<3; ∅ în rest.",
+          "[max(x,0); min(x+3,3)] pentru 0≤x≤3; ∅ în rest.",
+          "[max(x,0); min(x+3,3)] pentru −3≤x≤3; ∅ în rest."
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcțiile f(x)=x+m−3 și g(x)=−x+4 sunt ambele strict pozitive pe [−1;1]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul lui f este f(−1)=m−4, deci cerem m>4. Minimul lui g este g(1)=3=3>0, indiferent de m. Prin urmare prima condiție este necesară și suficientă.",
+      "options": [
+        {
+          "text": "m>4",
+          "is_correct": true
+        },
+        {
+          "text": "m≥4",
+          "is_correct": false
+        },
+        {
+          "text": "m<4",
+          "is_correct": false
+        },
+        {
+          "text": "m>2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 9,
+        "type_name": "Pozitivitatea simultană a două funcții",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 9,
+        "variant": 3,
+        "candidates": [
+          "m>4",
+          "m≥4",
+          "m<4",
+          "m>2"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcțiile f(x)=(m−3)x+1 și g(x)=−x−3 au semne contrare pentru orice x≥0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe x≥0, g este mereu strict negativă. Trebuie deci f(x)>0 pentru orice x≥0. Dacă m−3≥0, f(x)≥1. Dacă m−3<0, pentru x suficient de mare f devine negativă. Rezultă exact m≥3, inclusiv cazul f≡1.",
+      "options": [
+        {
+          "text": "m>3",
+          "is_correct": false
+        },
+        {
+          "text": "m≥3",
+          "is_correct": true
+        },
+        {
+          "text": "m<3",
+          "is_correct": false
+        },
+        {
+          "text": "m≤3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 10,
+        "type_name": "Semne contrare pe interval",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 10,
+        "variant": 3,
+        "candidates": [
+          "m>3",
+          "m≥3",
+          "m<3",
+          "m≤3"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați simultan x≥4 și 2x≤14.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A doua inecuație dă x≤7. Intersecția cu x≥4 este [4;7], ambele capete respectând ambele condiții.",
+      "options": [
+        {
+          "text": "(4; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 7]",
+          "is_correct": false
+        },
+        {
+          "text": "[4; 7]",
+          "is_correct": true
+        },
+        {
+          "text": "[4; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 1,
+        "type_name": "Intersecția soluțiilor inecuațiilor liniare",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 1,
+        "variant": 4,
+        "candidates": [
+          "(4; 7)",
+          "(−∞; 7]",
+          "[4; 7]",
+          "[4; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați |2x−4|≤x+4.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cerem x+4≥0 și −(x+4)≤2x−4≤x+4. Inegalitatea din stânga dă x≥0, cea din dreapta x≤8. Aceste condiții implică și x+4>0, deci soluția este [0;8].",
+      "options": [
+        {
+          "text": "(0; 8)",
+          "is_correct": false
+        },
+        {
+          "text": "[-4; 8]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 8]",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 8]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 2,
+        "type_name": "Inecuație cu modul și membru drept variabil",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 2,
+        "variant": 4,
+        "candidates": [
+          "(0; 8)",
+          "[-4; 8]",
+          "(−∞; 8]",
+          "[0; 8]"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați simultan \\((x-4)/(x-5)\\geq0\\) și \\((x-6)/(x-5)\\leq0\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul comun exclude 5. Prima inecuație dă (−∞;4]∪(5;+∞); a doua dă (5;6]. Intersecția este (5;6], cu polul exclus și rădăcina celei de-a doua fracții inclusă.",
+      "options": [
+        {
+          "text": "(5; 6]",
+          "is_correct": true
+        },
+        {
+          "text": "[4; 6]",
+          "is_correct": false
+        },
+        {
+          "text": "[5; 6]",
+          "is_correct": false
+        },
+        {
+          "text": "(5; 6)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 3,
+        "type_name": "Sisteme de inecuații raționale",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 3,
+        "variant": 4,
+        "candidates": [
+          "(5; 6]",
+          "[4; 6]",
+          "[5; 6]",
+          "(5; 6)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul |x−4|≤2 și |x−5|<2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima condiție este x∈[2;6], a doua x∈(3;7). Intersecția păstrează capătul stâng deschis din a doua și capătul drept închis din prima: (3;6].",
+      "options": [
+        {
+          "text": "[3; 6]",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 6]",
+          "is_correct": true
+        },
+        {
+          "text": "(2; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 6)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 4,
+        "type_name": "Sisteme cu mai multe module",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 4,
+        "variant": 4,
+        "candidates": [
+          "[3; 6]",
+          "(3; 6]",
+          "(2; 7)",
+          "(3; 6)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați ecuația max(x+4, 2x−4)=12.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Maximul este 12 dacă ambele expresii sunt cel mult 12 și cel puțin una este egală. Ambele inecuații dau x≤8; oricare egalitate impune x=8. La această valoare ambele expresii sunt 12.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 5,
+        "type_name": "Ecuație cu maxim",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 5,
+        "variant": 4,
+        "candidates": [
+          "7",
+          "9",
+          "8",
+          "10"
+        ]
+      }
+    },
+    {
+      "text": "Care este formula valabilă pe ℝ pentru h(x)=min(x+4, −x+4, 8)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul primelor două expresii este 4−|x|: prima este activă pentru x≤0 și a doua pentru x≥0. Această valoare este cel mult 4<8, deci a treia expresie nu devine niciodată minimul.",
+      "options": [
+        {
+          "text": "h(x)=4+|x|",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=8−|x|",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=4",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=4−|x|",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 6,
+        "type_name": "Grafice anvelopă",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 6,
+        "variant": 4,
+        "candidates": [
+          "h(x)=4+|x|",
+          "h(x)=8−|x|",
+          "h(x)=4",
+          "h(x)=4−|x|"
+        ]
+      }
+    },
+    {
+      "text": "Aflați x real astfel încât \\(1/(x-4)\\in[0;x-4]\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Capătul drept al intervalului depinde de x. Domeniul exclude x=4; apartenența cere simultan 0≤1/(x−4) și 1/(x−4)≤x−4. Prima condiție impune x>4. Putem înmulți a doua cu x−4>0: 1≤(x−4)², deci x−4≥1 și x≥5.",
+      "options": [
+        {
+          "text": "[5; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(4; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(5; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 3]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 7,
+        "type_name": "Apartenențe la intervale cu capete variabile",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 7,
+        "variant": 4,
+        "candidates": [
+          "[5; +∞)",
+          "(4; +∞)",
+          "(5; +∞)",
+          "(−∞; 3]"
+        ]
+      }
+    },
+    {
+      "text": "Determinați, pentru orice x real, intersecția [x; x+4]∩[0; 4].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele intervale sunt bine definite deoarece 4>0. Intersecția este nevidă exact când x≤4 și x+4≥0, adică −4≤x≤4. În acest caz este [max(x,0); min(x+4,4)]; la extreme rămâne un singleton.",
+      "options": [
+        {
+          "text": "[min(x,0); max(x+4,4)] pentru −4≤x≤4; ∅ în rest.",
+          "is_correct": false
+        },
+        {
+          "text": "[max(x,0); min(x+4,4)] pentru −4≤x≤4; ∅ în rest.",
+          "is_correct": true
+        },
+        {
+          "text": "[max(x,0); min(x+4,4)] pentru −4<x<4; ∅ în rest.",
+          "is_correct": false
+        },
+        {
+          "text": "[max(x,0); min(x+4,4)] pentru 0≤x≤4; ∅ în rest.",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 8,
+        "type_name": "Intersecții cu capete dependente de x",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 8,
+        "variant": 4,
+        "candidates": [
+          "[min(x,0); max(x+4,4)] pentru −4≤x≤4; ∅ în rest.",
+          "[max(x,0); min(x+4,4)] pentru −4≤x≤4; ∅ în rest.",
+          "[max(x,0); min(x+4,4)] pentru −4<x<4; ∅ în rest.",
+          "[max(x,0); min(x+4,4)] pentru 0≤x≤4; ∅ în rest."
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcțiile f(x)=x+m−4 și g(x)=−x+5 sunt ambele strict pozitive pe [−1;1]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul lui f este f(−1)=m−5, deci cerem m>5. Minimul lui g este g(1)=4=4>0, indiferent de m. Prin urmare prima condiție este necesară și suficientă.",
+      "options": [
+        {
+          "text": "m≥5",
+          "is_correct": false
+        },
+        {
+          "text": "m<5",
+          "is_correct": false
+        },
+        {
+          "text": "m>5",
+          "is_correct": true
+        },
+        {
+          "text": "m>3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 9,
+        "type_name": "Pozitivitatea simultană a două funcții",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 9,
+        "variant": 4,
+        "candidates": [
+          "m≥5",
+          "m<5",
+          "m>5",
+          "m>3"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcțiile f(x)=(m−4)x+1 și g(x)=−x−4 au semne contrare pentru orice x≥0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe x≥0, g este mereu strict negativă. Trebuie deci f(x)>0 pentru orice x≥0. Dacă m−4≥0, f(x)≥1. Dacă m−4<0, pentru x suficient de mare f devine negativă. Rezultă exact m≥4, inclusiv cazul f≡1.",
+      "options": [
+        {
+          "text": "m>4",
+          "is_correct": false
+        },
+        {
+          "text": "m<4",
+          "is_correct": false
+        },
+        {
+          "text": "m≤4",
+          "is_correct": false
+        },
+        {
+          "text": "m≥4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 10,
+        "type_name": "Semne contrare pe interval",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 10,
+        "variant": 4,
+        "candidates": [
+          "m>4",
+          "m<4",
+          "m≤4",
+          "m≥4"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați simultan x≥5 și 2x≤16.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "A doua inecuație dă x≤8. Intersecția cu x≥5 este [5;8], ambele capete respectând ambele condiții.",
+      "options": [
+        {
+          "text": "[5; 8]",
+          "is_correct": true
+        },
+        {
+          "text": "(5; 8)",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 8]",
+          "is_correct": false
+        },
+        {
+          "text": "[5; +∞)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 1,
+        "type_name": "Intersecția soluțiilor inecuațiilor liniare",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 1,
+        "variant": 5,
+        "candidates": [
+          "[5; 8]",
+          "(5; 8)",
+          "(−∞; 8]",
+          "[5; +∞)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați |2x−5|≤x+5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Cerem x+5≥0 și −(x+5)≤2x−5≤x+5. Inegalitatea din stânga dă x≥0, cea din dreapta x≤10. Aceste condiții implică și x+5>0, deci soluția este [0;10].",
+      "options": [
+        {
+          "text": "(0; 10)",
+          "is_correct": false
+        },
+        {
+          "text": "[0; 10]",
+          "is_correct": true
+        },
+        {
+          "text": "[-5; 10]",
+          "is_correct": false
+        },
+        {
+          "text": "(−∞; 10]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 2,
+        "type_name": "Inecuație cu modul și membru drept variabil",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 2,
+        "variant": 5,
+        "candidates": [
+          "(0; 10)",
+          "[0; 10]",
+          "[-5; 10]",
+          "(−∞; 10]"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați simultan \\((x-5)/(x-6)\\geq0\\) și \\((x-7)/(x-6)\\leq0\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Domeniul comun exclude 6. Prima inecuație dă (−∞;5]∪(6;+∞); a doua dă (6;7]. Intersecția este (6;7], cu polul exclus și rădăcina celei de-a doua fracții inclusă.",
+      "options": [
+        {
+          "text": "[5; 7]",
+          "is_correct": false
+        },
+        {
+          "text": "[6; 7]",
+          "is_correct": false
+        },
+        {
+          "text": "(6; 7]",
+          "is_correct": true
+        },
+        {
+          "text": "(6; 7)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 3,
+        "type_name": "Sisteme de inecuații raționale",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 3,
+        "variant": 5,
+        "candidates": [
+          "[5; 7]",
+          "[6; 7]",
+          "(6; 7]",
+          "(6; 7)"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați sistemul |x−5|≤2 și |x−6|<2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima condiție este x∈[3;7], a doua x∈(4;8). Intersecția păstrează capătul stâng deschis din a doua și capătul drept închis din prima: (4;7].",
+      "options": [
+        {
+          "text": "[4; 7]",
+          "is_correct": false
+        },
+        {
+          "text": "(3; 8)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 7)",
+          "is_correct": false
+        },
+        {
+          "text": "(4; 7]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 4,
+        "type_name": "Sisteme cu mai multe module",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 4,
+        "variant": 5,
+        "candidates": [
+          "[4; 7]",
+          "(3; 8)",
+          "(4; 7)",
+          "(4; 7]"
+        ]
+      }
+    },
+    {
+      "text": "Rezolvați ecuația max(x+5, 2x−5)=15.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Maximul este 15 dacă ambele expresii sunt cel mult 15 și cel puțin una este egală. Ambele inecuații dau x≤10; oricare egalitate impune x=10. La această valoare ambele expresii sunt 15.",
+      "options": [
+        {
+          "text": "10",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 5,
+        "type_name": "Ecuație cu maxim",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 5,
+        "variant": 5,
+        "candidates": [
+          "10",
+          "9",
+          "11",
+          "12"
+        ]
+      }
+    },
+    {
+      "text": "Care este formula valabilă pe ℝ pentru h(x)=min(x+5, −x+5, 10)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul primelor două expresii este 5−|x|: prima este activă pentru x≤0 și a doua pentru x≥0. Această valoare este cel mult 5<10, deci a treia expresie nu devine niciodată minimul.",
+      "options": [
+        {
+          "text": "h(x)=5+|x|",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=5−|x|",
+          "is_correct": true
+        },
+        {
+          "text": "h(x)=10−|x|",
+          "is_correct": false
+        },
+        {
+          "text": "h(x)=5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 6,
+        "type_name": "Grafice anvelopă",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 6,
+        "variant": 5,
+        "candidates": [
+          "h(x)=5+|x|",
+          "h(x)=5−|x|",
+          "h(x)=10−|x|",
+          "h(x)=5"
+        ]
+      }
+    },
+    {
+      "text": "Aflați x real astfel încât \\(1/(x-5)\\in[0;x-5]\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Capătul drept al intervalului depinde de x. Domeniul exclude x=5; apartenența cere simultan 0≤1/(x−5) și 1/(x−5)≤x−5. Prima condiție impune x>5. Putem înmulți a doua cu x−5>0: 1≤(x−5)², deci x−5≥1 și x≥6.",
+      "options": [
+        {
+          "text": "(5; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "(6; +∞)",
+          "is_correct": false
+        },
+        {
+          "text": "[6; +∞)",
+          "is_correct": true
+        },
+        {
+          "text": "(−∞; 4]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 7,
+        "type_name": "Apartenențe la intervale cu capete variabile",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 7,
+        "variant": 5,
+        "candidates": [
+          "(5; +∞)",
+          "(6; +∞)",
+          "[6; +∞)",
+          "(−∞; 4]"
+        ]
+      }
+    },
+    {
+      "text": "Determinați, pentru orice x real, intersecția [x; x+5]∩[0; 5].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele intervale sunt bine definite deoarece 5>0. Intersecția este nevidă exact când x≤5 și x+5≥0, adică −5≤x≤5. În acest caz este [max(x,0); min(x+5,5)]; la extreme rămâne un singleton.",
+      "options": [
+        {
+          "text": "[min(x,0); max(x+5,5)] pentru −5≤x≤5; ∅ în rest.",
+          "is_correct": false
+        },
+        {
+          "text": "[max(x,0); min(x+5,5)] pentru −5<x<5; ∅ în rest.",
+          "is_correct": false
+        },
+        {
+          "text": "[max(x,0); min(x+5,5)] pentru 0≤x≤5; ∅ în rest.",
+          "is_correct": false
+        },
+        {
+          "text": "[max(x,0); min(x+5,5)] pentru −5≤x≤5; ∅ în rest.",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 8,
+        "type_name": "Intersecții cu capete dependente de x",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 8,
+        "variant": 5,
+        "candidates": [
+          "[min(x,0); max(x+5,5)] pentru −5≤x≤5; ∅ în rest.",
+          "[max(x,0); min(x+5,5)] pentru −5<x<5; ∅ în rest.",
+          "[max(x,0); min(x+5,5)] pentru 0≤x≤5; ∅ în rest.",
+          "[max(x,0); min(x+5,5)] pentru −5≤x≤5; ∅ în rest."
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcțiile f(x)=x+m−5 și g(x)=−x+6 sunt ambele strict pozitive pe [−1;1]?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Minimul lui f este f(−1)=m−6, deci cerem m>6. Minimul lui g este g(1)=5=5>0, indiferent de m. Prin urmare prima condiție este necesară și suficientă.",
+      "options": [
+        {
+          "text": "m>6",
+          "is_correct": true
+        },
+        {
+          "text": "m≥6",
+          "is_correct": false
+        },
+        {
+          "text": "m<6",
+          "is_correct": false
+        },
+        {
+          "text": "m>4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 9,
+        "type_name": "Pozitivitatea simultană a două funcții",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 9,
+        "variant": 5,
+        "candidates": [
+          "m>6",
+          "m≥6",
+          "m<6",
+          "m>4"
+        ]
+      }
+    },
+    {
+      "text": "Pentru ce m funcțiile f(x)=(m−5)x+1 și g(x)=−x−5 au semne contrare pentru orice x≥0?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe x≥0, g este mereu strict negativă. Trebuie deci f(x)>0 pentru orice x≥0. Dacă m−5≥0, f(x)≥1. Dacă m−5<0, pentru x suficient de mare f devine negativă. Rezultă exact m≥5, inclusiv cazul f≡1.",
+      "options": [
+        {
+          "text": "m>5",
+          "is_correct": false
+        },
+        {
+          "text": "m≥5",
+          "is_correct": true
+        },
+        {
+          "text": "m<5",
+          "is_correct": false
+        },
+        {
+          "text": "m≤5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A3.5",
+        "type": 10,
+        "type_name": "Semne contrare pe interval",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      },
+      "verification": {
+        "section": 5,
+        "type": 10,
+        "variant": 5,
+        "candidates": [
+          "m>5",
+          "m≥5",
+          "m<5",
+          "m≤5"
+        ]
+      }
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 # Registru de progres al exercițiilor
 
-Ultima actualizare: 24 octombrie 2026
+Ultima actualizare: 30 octombrie 2026
 
 Acest fișier ține evidența lecțiilor pentru care au fost create exerciții. Nu conține enunțurile sau răspunsurile exercițiilor, ci doar numărul lor și formatul folosit.
 
@@ -275,3 +275,82 @@ După fiecare lecție nouă sau după modificarea numărului de exerciții:
 2. se actualizează subtotalul clasei;
 3. se actualizează rezumatul general și data ultimei actualizări;
 4. lecțiile care au doar structură JSON, dar zero exerciții, nu se trec în registru.
+
+
+## 29 octombrie 2026 — Funcții: șiruri, notație și termen general
+
+Adăugate și încărcate local 80 de grile, câte 5 pentru cele 16 tipuri din A2 §1.1 (p. 63–66), conform A2_catalog.md din D:/Carti Mate/output/catalog. Enunțuri originale după tipologiile catalogului, cu patru variante, un răspuns corect și explicație. Cerințele de demonstrație sunt adaptate în grile de identificare sau calcul, cu metoda în explicație; acoperirea este tipologică. Generator reproductibil: generators/gen_clasa_9_siruri.py. Verificate structura tuturor grilelor, 45 de răspunsuri numerice prin recalculare independentă, importul țintit și manage.py check.
+
+
+## 29 octombrie 2026 — Progresii aritmetice și geometrice. Aplicații
+
+Adăugate 310 grile originale după catalogul A2 din D:/Carti Mate/output/catalog: 90 pentru cele 18 tipuri din §2.1 (p. 71–73), 100 pentru cele 20 din §2.2 (p. 73–77) și 120 pentru cele 24 din §2.3 (p. 77–85). Fiecare tip are cinci variante, cu patru opțiuni, un răspuns corect și explicație. Cerințele de demonstrație sunt adaptate în grile de identificare sau aplicații numerice: acoperirea este tipologică, nu o reproducere integrală a dificultății din culegere. Generator: generators/gen_clasa_9_progresii.py. Verificare: scripts/verify_clasa_9_progresii.py (structură, acoperire, 275 de răspunsuri numerice recalculate prin recurențe, enumerări și fracții exacte); validatorul importului și manage.py check.
+
+
+### Împărțirea lecției de progresii
+
+Lecția reunită a fost înlocuită în manifest cu trei lecții: Progresii aritmetice (90), Progresii geometrice (100), Aplicații (120). Generatorul scrie trei JSON-uri distincte; generatorul structurii păstrează separarea și numele celorlalte lecții. Importul mută întrebările în tranzacție, reutilizează lecția veche pentru PA și păstrează ID-urile întrebărilor, opțiunilor și progresul. Verificate în baza locală toate cele 310 întrebări, 1240 de opțiuni și înregistrările de progres. Testele acoperă importul repetat și anularea la întrebări fără destinație.
+
+
+## 29 octombrie 2026 — Reper cartezian, produs cartezian și reprezentare grafică
+
+Lecția rămâne unică: 70 de grile originale, câte 5 pentru cele 14 tipuri din A2 §3.1, p. 86–89. Nu include §3.2 (Noțiunea de funcție), care aparține lecției următoare. Grilele au patru variante, un răspuns corect și explicații. Cele cinci lecturi grafice folosesc schițe de dreptunghi cu frontiera inclusă, redate în LaTeX. Tipologiile abstracte sunt adaptate în identificări de proprietăți sau cazuri finite explicite, nu reproduceri integrale ale demonstrațiilor din culegere. Generator: generators/gen_clasa_9_reper_cartezian.py. Audit: scripts/verify_clasa_9_reper_cartezian.py (produse, relații, stabilitate, probabilități și cardinalități prin enumerare independentă). Cele cinci schițe au trecut randarea KaTeX strictă; importul țintit și manage.py check au trecut.
+
+
+## 29 octombrie 2026 — Imaginea și preimaginea unei funcții
+
+Lecția 4 din Funcții este redenumită la cererea utilizatorului, păstrând fișierul sursă și ID-ul 194. Încărcate 30 de grile originale, câte cinci pentru tipurile 1–6 din A2 §3.3 (p. 95): imagine și preimagine din corespondențe finite, imagine și preimagine de intervale prin funcții afine, recuperarea coeficienților din imagine sau preimagine. Nu s-au inclus cele 23 de tipuri despre noțiunea de funcție din §3.2; tipurile despre grafice și restricții din §3.3 rămân pentru lecția următoare. Generator: generators/gen_clasa_9_imagine_preimagine.py. Verificare independentă: scripts/verify_clasa_9_imagine_preimagine.py, cu mulțimi, coeficienți și inegalități exacte. Importul țintit și manage.py check au trecut.
+
+
+## 30 octombrie 2026 — Graficul, restricțiile și prelungirile unei funcții. Funcții numerice
+
+Încărcate 55 de grile originale în lecția 5 din Funcții (ID 195): câte cinci pentru tipurile 7–11 din A2 §3.3 (p. 96–97) și tipurile 1–6 din §3.4 (p. 98–99). Lecția rămâne unică. Sunt acoperite graficele finite, reconstrucția domeniului și a codomeniului minim, apartenența la grafic, restricțiile și prelungirile, graficele constante și pe ramuri, intersecțiile cu axele, recuperarea coeficienților și numărul rădăcinilor, inclusiv degenerarea gradului. Cerințele de trasare sunt adaptate în grile de identificare a mulțimii de puncte și a capetelor incluse sau excluse; nu sunt exerciții de desen interactiv. Generator: generators/gen_clasa_9_grafic_restrictii.py. Audit independent: scripts/verify_clasa_9_grafic_restrictii.py; 435 de fragmente matematice au trecut randarea KaTeX strictă. Importul țintit a trecut.
+
+
+## 30 octombrie 2026 — Proprietăți ale funcțiilor: lecții separate
+
+Categoria reunită este înlocuită în Funcții cu patru lecții independente: Mărginirea funcțiilor, Paritatea funcțiilor, Periodicitatea funcțiilor, Monotonia funcțiilor. Lecția veche era goală; identitatea sa este păstrată pentru Mărginire, iar celelalte trei sunt create separat. Nu s-au adăugat exerciții în această etapă. Manifestul și generatorul de structură păstrează ordinea și separarea, inclusiv după regenerare; Compunerea funcțiilor urmează după cele patru. Verificate pagina serverului și titlurile celor patru lecții.
+
+
+### Gruparea proprietăților în navigare
+
+La clarificarea utilizatorului, cele patru lecții apar în interiorul categoriei Proprietățile funcțiilor: Funcții → Proprietățile funcțiilor → Mărginire / Paritate / Periodicitate / Monotonie. Gruparea de navigare nu modifică lecțiile sau progresul; sunt agregate numărul de întrebări și progresul în categoria părinte. Verificate pe server pagina părinte, cele patru lecții și legăturile de întoarcere. Gruparea de progresii rămâne funcțională.
+
+
+## 30 octombrie 2026 — Exerciții pentru proprietățile funcțiilor
+
+Încărcate 330 de grile originale, câte cinci pentru cele 66 de tipuri A2 §4: Mărginire 8×5=40 (Mediu), Paritate 17×5=85 (Greu), Periodicitate 19×5=95 (Greu), Monotonie 22×5=110 (Greu). Păstrată ierarhia Funcții → Proprietățile funcțiilor → cele patru lecții. Categoriile părinte afișează dificultatea maximă dintre lecțiile lor; proprietățile afișează Greu. Generator reproductibil: generators/gen_clasa_9_proprietati.py, cu denumirile tipurilor din property_type_names.json și fișierele din clasa_9_property_lessons.py.
+
+Cerințele catalogului de demonstrație sau construcție sunt adaptate în grile de concluzie, parametru, formulă ori caz explicit, cu metoda în explicație. Acoperirea este tipologică; nu pretinde aceeași dificultate integrală ca demonstrațiile originale. Se disting perioadele garantate de cele principale, periodicitatea eventuală de cea globală, monotonia pe componente de cea globală și strictețea de monotonia slabă. Domeniile simetrice și restricțiile numitorilor sunt precizate.
+
+Audit: scripts/verify_clasa_9_proprietati.py — structură și acoperire 66×5, fracții exacte, simetrii, cicluri, relația Hermite, inegalități și contraexemple. 1984 de fragmente matematice randate cu KaTeX strict, importuri țintite tranzacționale și manage.py check trecute. Pe server sunt verificate dificultățile, totalul 330 și paginile de antrenare ale celor patru lecții.
+
+
+## 30 octombrie 2026 — Compunerea funcțiilor
+
+Încărcate 115 grile originale, câte cinci pentru cele 23 de tipuri din A2 §5 (p. 111–115), în lecția existentă ID 197; dificultate Greu. Include compuneri explicite, module, ultime cifre, funcții pe ramuri, inverse cu radicali, comutare, iterații, monotonie și paritate, involuții și funcții finite, ecuații funcționale și argument reflectat. Problemele de demonstrație și construcție sunt adaptate în grile de concluzie ori caz explicit, cu metoda în explicație; acoperirea este tipologică. Generator: generators/gen_clasa_9_compunere.py, denumiri din composition_type_names.json. Audit: scripts/verify_clasa_9_compunere.py — compuneri directe, enumerări finite, calcule exacte și praguri; radicalii sunt verificați numeric suplimentar explicației algebrice. 947 de fragmente matematice randate strict cu KaTeX. Importul, manage.py check și afișarea live a dificultății, totalului și paginii de antrenare au trecut.
+
+
+## 30 octombrie 2026 — Vectori în plan: primul lot interactiv
+
+Implementat atelierul vector_workbench și importate 12 interactive, câte trei în lecțiile cu ID 210–213. Include echipolență, sens opus, transport, vector de poziție, mijloc, adunare, scalar negativ, închiderea poligonului și descompunere în bază oblică. Verificare exactă pe server cu fracții, fără soluții în payload înainte de răspunsul corect. Au trecut 50 de teste backend și 40 JavaScript; cele 12 exemple au fost parcurse în browser pe o bază separată. Corectate vârfurile supradimensionate, suprapunerile de etichete și redimensionarea planșei. Lot introductiv, fără acoperire integrală G1 și fără test fizic mobil/NVDA. Detalii: docs/vectori_in_plan_interactive.md.
+
+## 30 octombrie 2026 — Vectori în plan: extindere cu 325 de grile
+
+Încărcate 325 de grile noi și păstrate cele 12 interactive: Segmente orientate 30+3=33 (ID 210), Vectorul de poziție 25+3=28 (ID 211), Operații 240+3=243 (ID 212, Greu), Descompunere 30+3=33 (ID 213), total 337. Sunt câte cinci adaptări pentru cele 60 de tipuri G1 relevante și 25 de grile originale de poziție fără atribuire fictivă. Demonstrațiile/construcțiile sunt adaptate în concluzii sau cazuri explicite cu justificare; în special semiplanul și alinierea pe prelungiri sunt cazuri particulare, nu acoperirea integrală a dificultății originale. Generator coordonator: generators/gen_clasa_9_vectori_grile.py. Audituri independente: scripts/verify_vectori_segmente_baze.py, verify_vectori_pozitie.py, verify_vectori_operatii.py; toate cele 325 de grile verificate exact, 2463 de fragmente randate strict cu KaTeX. Importuri țintite repetate, ID-urile și datele celor 12 interactive păstrate, fără progres existent pentru ele la import; numerele confirmate live. Detalii și limite: docs/vectori_in_plan_interactive.md.
+
+## 30 octombrie 2026 — Funcția de gradul al II-lea
+
+Încărcate 480 de grile originale în cele șapte lecții existente, ID 203–209: Formă canonică și extreme 60; Simetrie/intersecții 30; Grafic/imagine 30; Viète 75; Monotonie/semn 155; Dreaptă–parabolă 75; Sisteme 55. Sunt câte cinci variante asociate celor 96 de etichete A4 relevante, cu limitele adaptărilor marcate: demonstrațiile și trasările sunt transformate în calcule/concluzii; unele tipuri sunt cazuri particulare, inclusiv PA numai pentru rădăcini, nu pentru toți coeficienții și rădăcinile. Nu se pretinde acoperirea integrală a dificultății catalogului. Generator reproductibil generators/gen_clasa_9_gradul_ii.py și quadratic_type_names.json. Audit independent scripts/verify_clasa_9_gradul_ii.py: 480 de grile, 1920 de opțiuni distincte, 55 de operații matematice; 4313 fragmente KaTeX trecute. Importuri țintite tranzacționale repetate, ID-uri/opțiuni stabile; nu existau întrebări sau progres anterior în aceste lecții. Capitolul și prima/ultima întrebare din fiecare lecție au fost randate prin view-urile Django fără răspunsuri sau progres scris. Nicio modificare în alte capitole, frontend, backend sau schema DB. Detalii și limite: docs/clasa_9/functia_gradul_ii_acoperire.md.
+
+## 30 octombrie 2026 — Coliniaritate, concurență și paralelism
+
+Încărcate 425 de grile originale în cele cinci lecții existente, ID 214–218: Vectorul de poziție 85; Thales 25; Centre de greutate 100; Bisectoare/Sylvester 130; Menelau 85. Sunt 80 de etichete G2 × 5 variante și 25 de grile originale Thales, fără atribuire fictivă unei secțiuni inexistente în G2. Demonstrațiile și construcțiile sunt adaptate în calcule/concluzii sau cazuri explicite; adaptările parțiale și limitele sunt declarate în metadate și raport. Include configurații reale Pappus, Desargues, Pascal, Newton–Gauss, Van Aubel și Ceva, cu intersecții finite și rapoarte orientate verificate. Generator coordonator generators/gen_clasa_9_g2.py și patru module tematice. Audituri independente scripts/verify_g2_pozitie_centre.py, verify_g2_thales.py, verify_g2_bisectoare.py, verify_g2_menelau.py: toate cele 1700 de opțiuni verificate; 4531 de fragmente KaTeX trecute. Regenerare byte-identică și importuri țintite tranzacționale repetate cu ID-uri stabile; lecțiile erau goale, iar datele celorlalte capitole sunt intacte. Capitolul și prima/ultima întrebare din fiecare lecție au trecut randarea view-urilor Django; totalurile și ultima grilă Menelau sunt confirmate în browser, fără erori JavaScript. Detalii și limite: docs/clasa_9/coliniaritate_concurenta_paralelism_acoperire.md.
+
+## 30 octombrie 2026 — Aplicații ale trigonometriei în geometrie
+
+Încărcate 545 de grile originale în cele trei lecții existente, ID 228–230: Produs scalar/cosinus/sinusuri 230; Aplicații vectoriale și Leibniz 115; Rezolvarea triunghiurilor, raze și arii 200. Sunt 109 etichete G4 × 5 variante, cu adaptările parțiale declarate și fără pretenția dificultății integrale a demonstrațiilor olimpice. Sunt verificate unghiurile obtuze și semnul cosinusului, existența triunghiurilor, locurile vide/punct/cerc, minimele la capete/interior, numărul triunghiurilor din laturi și arie, razele subtriunghiurilor, orticul și Bretschneider pentru patrulatere convexe neinscriptibile. Generator coordonator generators/gen_clasa_9_g4.py și trei module tematice. Auditurile independente verify_g4_scalar_cosinus.py, verify_g4_vectoriale.py și verify_g4_triunghiuri.py verifică toate cele 2180 de opțiuni; 5789 de fragmente au trecut KaTeX strict. Regenerare byte-identică și importuri țintite tranzacționale repetate cu ID-uri/opțiuni stabile. Lecțiile erau goale; datele celorlalte capitole rămân intacte. Capitolul și prima/ultima întrebare din fiecare lecție se randează prin Django, iar totalurile și o grilă cu radicali sunt confirmate în browser, fără erori JavaScript. Detalii și limite: docs/clasa_9/aplicatii_trigonometrie_geometrie_acoperire.md.
+
+## 31 octombrie 2026 — Elemente de trigonometrie: autor și verificator separați
+
+Încărcate 585 de grile originale în cele nouă lecții existente, ID 219–227: Unghiuri/arce 35; Unghiuri generalizate 40; Funcții trigonometrice 80; Semne 25; Reducere la primul cadran 40; Paritate/periodicitate 45; Relații ale aceluiași unghi 75; Suma/diferența unghiurilor 105; Transformări/sume/produse 140. La cererea utilizatorului au lucrat doi agenți separați: unul autor, celălalt verificator independent. Catalog G3, 117 etichete × 5 variante; 355 de grile sunt cazuri parțiale declarate, fără pretenția demonstrațiilor integrale. Generator gen_clasa_9_trigonometrie.py și trigonometrie_advanced.py, audit verify_clasa_9_trigonometrie.py: toate cele 2340 de opțiuni verificate, domenii originale, semne/cadrane, paritate, perioade principale și sume finite. Corectate formularea cu ±, cinci duplicate și ramurile la x=2π. Sunt 585 de enunțuri distincte global; 4996 de fragmente KaTeX trecute; regenerare byte-identică. Importuri țintite tranzacționale repetate cu ID-uri/opțiuni stabile; lecțiile erau goale, datele celorlalte capitole rămân intacte. Capitolul și prima/ultima întrebare din fiecare lecție trec randarea Django; totalurile și o sumă finită sunt confirmate în browser, fără erori JavaScript. Rapoarte: docs/clasa_9/trigonometrie_acoperire.md, trigonometrie_autor.md, trigonometrie_verificare.md.

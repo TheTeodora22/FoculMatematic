@@ -171,7 +171,9 @@ def get_profile_dashboard(user) -> dict:
         "xp_progress": xp_progress(profile),
         "recent_activities": get_recent_quiz_activities(user),
         "avatar_path": get_avatar_static_path(profile.avatar),
-        "class_url": reverse("class_chapters", args=[profile.clasa]),
+        "has_valid_class": profile.clasa in profile.CLASS_LEVELS,
+        "class_url": (reverse("class_chapters", args=[profile.clasa])
+                      if profile.clasa in profile.CLASS_LEVELS else reverse("profile_edit")),
         "battlepass_preview": get_battlepass_preview(user),
         "next_learning_step": get_next_learning_step(user),
         "mistake_review_items": get_mistake_review_items(user),

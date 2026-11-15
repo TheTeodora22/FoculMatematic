@@ -20,13 +20,13 @@
 {% block content %}
 <div class="page-content">
 <h1>Editează profilul</h1>
-<form method="post" action="">
+<form method="post" class="profile-edit-form" data-ui-form data-status-id="form-submit-status" data-busy-label="Se salvează profilul…" action="">
+    {% if form.non_field_errors %}<div class="form-error-summary" role="alert">{{ form.non_field_errors }}</div>{% endif %}
     {% csrf_token %}
     <div class="card">
         {% for field in form %}
-            <p>
-                <label for="{{ field.id_for_label }}">{{ field.label }}</label><br>
-                {{ field }}
+            <div class="profile-edit-field">
+                {% include "includes/form_field.html" with field=field %}
                 {% if field.name == "theme" %}
                     <div class="theme-preview-grid" id="theme-preview">
                         <div class="theme-preview-card" data-theme="light">
@@ -52,14 +52,14 @@
                         </div>
                     </div>
                 {% endif %}
-                {% for error in field.errors %}
-                    <span class="muted" style="color:#e63946;display:block;">{{ error }}</span>
-                {% endfor %}
-            </p>
+            </div>
         {% endfor %}
     </div>
-    <button type="submit" class="btn">Salvează</button>
-    <a href="{% url 'profile' %}" style="margin-left:1rem;">Anulează</a>
+    <div class="form-actions">
+        <button type="submit" class="btn">Salvează</button>
+        <a href="{% url 'profile' %}" class="btn btn--secondary">Anulează</a>
+    </div>
 </form>
+{% include "includes/form_status.html" %}
 </div>
 {% endblock %}

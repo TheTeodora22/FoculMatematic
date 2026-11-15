@@ -1,6 +1,1767 @@
 {
   "title": "Graficul, restricțiile și prelungirile unei funcții. Funcții numerice",
   "description": "Clasa a 9-a · Funcții",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Fie f:{−1;0;2}→ℝ, f(x)=2x+1. Care este graficul G_f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Graficul este mulțimea perechilor (x,f(x)) cu x în domeniu. Calculăm f(−1)=−1, f(0)=1, f(2)=5; rezultă {(-1, -1); (0, 1); (2, 5)}. Nu includem alte abscise și nu inversăm coordonatele.",
+      "options": [
+        {
+          "text": "{(-1, -1); (0, 1); (2, 5)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(-1, -1); (1, 0); (5, 2)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(-1, -2); (0, 0); (2, 4)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(0, 1); (1, 3); (2, 5)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 7,
+        "type_name": "Graficul ca mulțime de perechi",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Graficul unei funcții este G={(1, 1); (2, 1); (3, 3)}. Care sunt domeniul D și cel mai mic codomeniu posibil C?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima proiecție a graficului este domeniul {1;2;3}. A doua proiecție este imaginea {1;3}, care este cel mai mic codomeniu posibil. Alte codomenii pot fi orice supramulțimi ale imaginii; codomeniul nu se determină unic doar din grafic.",
+      "options": [
+        {
+          "text": "D={1;3}, C={1;2;3}",
+          "is_correct": false
+        },
+        {
+          "text": "D={1;2;3}, C={1;3}",
+          "is_correct": true
+        },
+        {
+          "text": "D={1;2;3}, C={1}",
+          "is_correct": false
+        },
+        {
+          "text": "D={1;2}, C={1;3}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 8,
+        "type_name": "Reconstrucția funcției din grafic finit",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=2x+1. Pentru ce m punctul (m, 7) aparține lui G_f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este 7=f(m)=2m+1. Rezultă m=(7−1)/2=3. Domeniul este ℝ, deci soluția este admisă.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 9,
+        "type_name": "Apartenența unui punct la grafic",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=x²+1. Care este graficul restricției lui f la A={1;3;5}?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Restricția păstrează valorile și codomeniul lui f, dar are domeniul A. Valorile sunt 2, 10, 26; graficul conține exact cele trei perechi corespunzătoare.",
+      "options": [
+        {
+          "text": "{(1, 2); (3, 4); (5, 6)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(0, 1); (1, 2); (2, 5)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(2, 1); (10, 3); (26, 5)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(1, 2); (3, 10); (5, 26)}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 10,
+        "type_name": "Restricția unei funcții",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:[0,1]→ℝ, f(x)=x+1. Care funcție g:ℝ→ℝ este o prelungire a lui f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O prelungire are domeniu mai mare și coincide cu f pe ÎNTREGUL domeniu inițial. Varianta corectă dă x+1 pentru orice x∈[0,1], inclusiv 0 și 1; valorile pentru x<0 pot fi alese liber. Prima și ultima variantă eșuează la 0, iar g(x)=−x+1 eșuează la x=1>0. Prelungirea nu este unică.",
+      "options": [
+        {
+          "text": "\\(g(x)=\\begin{cases}x+1,&x\\ge0\\\\x^2,&x<0\\end{cases}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "g(x)=x+2 pentru orice x",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=−x+1 pentru orice x",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=x+1 dacă x<0 și g(x)=x+2 dacă x≥0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 11,
+        "type_name": "Extensia unei funcții",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:{−1;0;2}→ℝ, f(x)=3x+2. Care este graficul G_f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Graficul este mulțimea perechilor (x,f(x)) cu x în domeniu. Calculăm f(−1)=−1, f(0)=2, f(2)=8; rezultă {(-1, -1); (0, 2); (2, 8)}. Nu includem alte abscise și nu inversăm coordonatele.",
+      "options": [
+        {
+          "text": "{(-1, -1); (2, 0); (8, 2)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(-1, -1); (0, 2); (2, 8)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(-1, -3); (0, 0); (2, 6)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(0, 2); (1, 5); (2, 8)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 7,
+        "type_name": "Graficul ca mulțime de perechi",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Graficul unei funcții este G={(1, 2); (2, 2); (3, 4)}. Care sunt domeniul D și cel mai mic codomeniu posibil C?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima proiecție a graficului este domeniul {1;2;3}. A doua proiecție este imaginea {2;4}, care este cel mai mic codomeniu posibil. Alte codomenii pot fi orice supramulțimi ale imaginii; codomeniul nu se determină unic doar din grafic.",
+      "options": [
+        {
+          "text": "D={2;4}, C={1;2;3}",
+          "is_correct": false
+        },
+        {
+          "text": "D={1;2;3}, C={2}",
+          "is_correct": false
+        },
+        {
+          "text": "D={1;2;3}, C={2;4}",
+          "is_correct": true
+        },
+        {
+          "text": "D={1;2}, C={2;4}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 8,
+        "type_name": "Reconstrucția funcției din grafic finit",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=3x+2. Pentru ce m punctul (m, 14) aparține lui G_f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este 14=f(m)=3m+2. Rezultă m=(14−2)/3=4. Domeniul este ℝ, deci soluția este admisă.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 9,
+        "type_name": "Apartenența unui punct la grafic",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=x²+2. Care este graficul restricției lui f la A={1;3;5}?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Restricția păstrează valorile și codomeniul lui f, dar are domeniul A. Valorile sunt 3, 11, 27; graficul conține exact cele trei perechi corespunzătoare.",
+      "options": [
+        {
+          "text": "{(1, 3); (3, 11); (5, 27)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(1, 3); (3, 5); (5, 7)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(0, 2); (1, 3); (2, 6)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(3, 1); (11, 3); (27, 5)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 10,
+        "type_name": "Restricția unei funcții",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:[0,2]→ℝ, f(x)=x+2. Care funcție g:ℝ→ℝ este o prelungire a lui f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O prelungire are domeniu mai mare și coincide cu f pe ÎNTREGUL domeniu inițial. Varianta corectă dă x+2 pentru orice x∈[0,2], inclusiv 0 și 2; valorile pentru x<0 pot fi alese liber. Prima și ultima variantă eșuează la 0, iar g(x)=−x+2 eșuează la x=2>0. Prelungirea nu este unică.",
+      "options": [
+        {
+          "text": "g(x)=x+3 pentru orice x",
+          "is_correct": false
+        },
+        {
+          "text": "\\(g(x)=\\begin{cases}x+2,&x\\ge0\\\\x^2,&x<0\\end{cases}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "g(x)=−x+2 pentru orice x",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=x+2 dacă x<0 și g(x)=x+3 dacă x≥0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 11,
+        "type_name": "Extensia unei funcții",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:{−1;0;2}→ℝ, f(x)=4x+3. Care este graficul G_f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Graficul este mulțimea perechilor (x,f(x)) cu x în domeniu. Calculăm f(−1)=−1, f(0)=3, f(2)=11; rezultă {(-1, -1); (0, 3); (2, 11)}. Nu includem alte abscise și nu inversăm coordonatele.",
+      "options": [
+        {
+          "text": "{(-1, -1); (3, 0); (11, 2)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(-1, -4); (0, 0); (2, 8)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(-1, -1); (0, 3); (2, 11)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(0, 3); (1, 7); (2, 11)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 7,
+        "type_name": "Graficul ca mulțime de perechi",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Graficul unei funcții este G={(1, 3); (2, 3); (3, 5)}. Care sunt domeniul D și cel mai mic codomeniu posibil C?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima proiecție a graficului este domeniul {1;2;3}. A doua proiecție este imaginea {3;5}, care este cel mai mic codomeniu posibil. Alte codomenii pot fi orice supramulțimi ale imaginii; codomeniul nu se determină unic doar din grafic.",
+      "options": [
+        {
+          "text": "D={3;5}, C={1;2;3}",
+          "is_correct": false
+        },
+        {
+          "text": "D={1;2;3}, C={3}",
+          "is_correct": false
+        },
+        {
+          "text": "D={1;2}, C={3;5}",
+          "is_correct": false
+        },
+        {
+          "text": "D={1;2;3}, C={3;5}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 8,
+        "type_name": "Reconstrucția funcției din grafic finit",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=4x+3. Pentru ce m punctul (m, 23) aparține lui G_f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este 23=f(m)=4m+3. Rezultă m=(23−3)/4=5. Domeniul este ℝ, deci soluția este admisă.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 9,
+        "type_name": "Apartenența unui punct la grafic",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=x²+3. Care este graficul restricției lui f la A={1;3;5}?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Restricția păstrează valorile și codomeniul lui f, dar are domeniul A. Valorile sunt 4, 12, 28; graficul conține exact cele trei perechi corespunzătoare.",
+      "options": [
+        {
+          "text": "{(1, 4); (3, 6); (5, 8)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(1, 4); (3, 12); (5, 28)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(0, 3); (1, 4); (2, 7)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(4, 1); (12, 3); (28, 5)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 10,
+        "type_name": "Restricția unei funcții",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:[0,3]→ℝ, f(x)=x+3. Care funcție g:ℝ→ℝ este o prelungire a lui f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O prelungire are domeniu mai mare și coincide cu f pe ÎNTREGUL domeniu inițial. Varianta corectă dă x+3 pentru orice x∈[0,3], inclusiv 0 și 3; valorile pentru x<0 pot fi alese liber. Prima și ultima variantă eșuează la 0, iar g(x)=−x+3 eșuează la x=3>0. Prelungirea nu este unică.",
+      "options": [
+        {
+          "text": "g(x)=x+4 pentru orice x",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=−x+3 pentru orice x",
+          "is_correct": false
+        },
+        {
+          "text": "\\(g(x)=\\begin{cases}x+3,&x\\ge0\\\\x^2,&x<0\\end{cases}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "g(x)=x+3 dacă x<0 și g(x)=x+4 dacă x≥0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 11,
+        "type_name": "Extensia unei funcții",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:{−1;0;2}→ℝ, f(x)=5x+4. Care este graficul G_f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Graficul este mulțimea perechilor (x,f(x)) cu x în domeniu. Calculăm f(−1)=−1, f(0)=4, f(2)=14; rezultă {(-1, -1); (0, 4); (2, 14)}. Nu includem alte abscise și nu inversăm coordonatele.",
+      "options": [
+        {
+          "text": "{(-1, -1); (4, 0); (14, 2)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(-1, -5); (0, 0); (2, 10)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(0, 4); (1, 9); (2, 14)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(-1, -1); (0, 4); (2, 14)}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 7,
+        "type_name": "Graficul ca mulțime de perechi",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Graficul unei funcții este G={(1, 4); (2, 4); (3, 6)}. Care sunt domeniul D și cel mai mic codomeniu posibil C?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima proiecție a graficului este domeniul {1;2;3}. A doua proiecție este imaginea {4;6}, care este cel mai mic codomeniu posibil. Alte codomenii pot fi orice supramulțimi ale imaginii; codomeniul nu se determină unic doar din grafic.",
+      "options": [
+        {
+          "text": "D={1;2;3}, C={4;6}",
+          "is_correct": true
+        },
+        {
+          "text": "D={4;6}, C={1;2;3}",
+          "is_correct": false
+        },
+        {
+          "text": "D={1;2;3}, C={4}",
+          "is_correct": false
+        },
+        {
+          "text": "D={1;2}, C={4;6}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 8,
+        "type_name": "Reconstrucția funcției din grafic finit",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=5x+4. Pentru ce m punctul (m, 34) aparține lui G_f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este 34=f(m)=5m+4. Rezultă m=(34−4)/5=6. Domeniul este ℝ, deci soluția este admisă.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 9,
+        "type_name": "Apartenența unui punct la grafic",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=x²+4. Care este graficul restricției lui f la A={1;3;5}?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Restricția păstrează valorile și codomeniul lui f, dar are domeniul A. Valorile sunt 5, 13, 29; graficul conține exact cele trei perechi corespunzătoare.",
+      "options": [
+        {
+          "text": "{(1, 5); (3, 7); (5, 9)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(0, 4); (1, 5); (2, 8)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(1, 5); (3, 13); (5, 29)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(5, 1); (13, 3); (29, 5)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 10,
+        "type_name": "Restricția unei funcții",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:[0,4]→ℝ, f(x)=x+4. Care funcție g:ℝ→ℝ este o prelungire a lui f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O prelungire are domeniu mai mare și coincide cu f pe ÎNTREGUL domeniu inițial. Varianta corectă dă x+4 pentru orice x∈[0,4], inclusiv 0 și 4; valorile pentru x<0 pot fi alese liber. Prima și ultima variantă eșuează la 0, iar g(x)=−x+4 eșuează la x=4>0. Prelungirea nu este unică.",
+      "options": [
+        {
+          "text": "g(x)=x+5 pentru orice x",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=−x+4 pentru orice x",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=x+4 dacă x<0 și g(x)=x+5 dacă x≥0",
+          "is_correct": false
+        },
+        {
+          "text": "\\(g(x)=\\begin{cases}x+4,&x\\ge0\\\\x^2,&x<0\\end{cases}\\)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 11,
+        "type_name": "Extensia unei funcții",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:{−1;0;2}→ℝ, f(x)=6x+5. Care este graficul G_f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Graficul este mulțimea perechilor (x,f(x)) cu x în domeniu. Calculăm f(−1)=−1, f(0)=5, f(2)=17; rezultă {(-1, -1); (0, 5); (2, 17)}. Nu includem alte abscise și nu inversăm coordonatele.",
+      "options": [
+        {
+          "text": "{(-1, -1); (0, 5); (2, 17)}",
+          "is_correct": true
+        },
+        {
+          "text": "{(-1, -1); (5, 0); (17, 2)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(-1, -6); (0, 0); (2, 12)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(0, 5); (1, 11); (2, 17)}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 7,
+        "type_name": "Graficul ca mulțime de perechi",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Graficul unei funcții este G={(1, 5); (2, 5); (3, 7)}. Care sunt domeniul D și cel mai mic codomeniu posibil C?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Prima proiecție a graficului este domeniul {1;2;3}. A doua proiecție este imaginea {5;7}, care este cel mai mic codomeniu posibil. Alte codomenii pot fi orice supramulțimi ale imaginii; codomeniul nu se determină unic doar din grafic.",
+      "options": [
+        {
+          "text": "D={5;7}, C={1;2;3}",
+          "is_correct": false
+        },
+        {
+          "text": "D={1;2;3}, C={5;7}",
+          "is_correct": true
+        },
+        {
+          "text": "D={1;2;3}, C={5}",
+          "is_correct": false
+        },
+        {
+          "text": "D={1;2}, C={5;7}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 8,
+        "type_name": "Reconstrucția funcției din grafic finit",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=6x+5. Pentru ce m punctul (m, 47) aparține lui G_f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția este 47=f(m)=6m+5. Rezultă m=(47−5)/6=7. Domeniul este ℝ, deci soluția este admisă.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 9,
+        "type_name": "Apartenența unui punct la grafic",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=x²+5. Care este graficul restricției lui f la A={1;3;5}?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Restricția păstrează valorile și codomeniul lui f, dar are domeniul A. Valorile sunt 6, 14, 30; graficul conține exact cele trei perechi corespunzătoare.",
+      "options": [
+        {
+          "text": "{(1, 6); (3, 8); (5, 10)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(0, 5); (1, 6); (2, 9)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(6, 1); (14, 3); (30, 5)}",
+          "is_correct": false
+        },
+        {
+          "text": "{(1, 6); (3, 14); (5, 30)}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 10,
+        "type_name": "Restricția unei funcții",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:[0,5]→ℝ, f(x)=x+5. Care funcție g:ℝ→ℝ este o prelungire a lui f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O prelungire are domeniu mai mare și coincide cu f pe ÎNTREGUL domeniu inițial. Varianta corectă dă x+5 pentru orice x∈[0,5], inclusiv 0 și 5; valorile pentru x<0 pot fi alese liber. Prima și ultima variantă eșuează la 0, iar g(x)=−x+5 eșuează la x=5>0. Prelungirea nu este unică.",
+      "options": [
+        {
+          "text": "\\(g(x)=\\begin{cases}x+5,&x\\ge0\\\\x^2,&x<0\\end{cases}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "g(x)=x+6 pentru orice x",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=−x+5 pentru orice x",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=x+5 dacă x<0 și g(x)=x+6 dacă x≥0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.3",
+        "type": 11,
+        "type_name": "Extensia unei funcții",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:[−1,3)→ℝ, f(x)=2. Care este graficul său?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Toate punctele au ordonata 2, dar abscisele parcurg numai [−1,3). Graficul este segmentul orizontal cu extremitatea stângă inclusă și cea dreaptă exclusă. Nu este dreapta întreagă, deoarece domeniul este limitat.",
+      "options": [
+        {
+          "text": "Segment orizontal y=2, −1≤x<3",
+          "is_correct": true
+        },
+        {
+          "text": "Dreapta orizontală y=2",
+          "is_correct": false
+        },
+        {
+          "text": "Segment vertical x=2, −1≤y<3",
+          "is_correct": false
+        },
+        {
+          "text": "Segment orizontal y=2, −1<x≤3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 1,
+        "type_name": "Grafic de funcție constantă",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ este definită prin \\(f(x)=\\begin{cases}-1,&x<0\\\\2,&0\\le x<2\\\\0,&x\\ge2\\end{cases}\\). Care mulțime reprezintă graficul ei?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecărei ramuri îi corespunde o porțiune orizontală. La x=0 se aplică ramura mediană, deci (0,2) este inclus, iar (0,−1) este exclus. La x=2 se aplică ultima ramură: (2,0) este inclus și (2,2) exclus. Pentru x<0 ordonata este −1, nu 1.",
+      "options": [
+        {
+          "text": "{(x,−1) | x≤0} ∪ {(x,2) | 0<x<2} ∪ {(x,0) | x≥2}",
+          "is_correct": false
+        },
+        {
+          "text": "{(x,−1) | x<0} ∪ {(x,2) | 0≤x<2} ∪ {(x,0) | x≥2}",
+          "is_correct": true
+        },
+        {
+          "text": "{(x,−1) | x<0} ∪ {(x,2) | 0≤x≤2} ∪ {(x,0) | x>2}",
+          "is_correct": false
+        },
+        {
+          "text": "{(x,1) | x<0} ∪ {(x,2) | 0≤x<2} ∪ {(x,0) | x≥2}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 2,
+        "type_name": "Grafic constant pe ramuri",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=−2x+6. Care sunt intersecțiile graficului cu Ox, respectiv Oy?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe Ox avem y=0: −2x+6=0, deci x=3. Pe Oy avem x=0: y=f(0)=6. Rezultă (3,0), respectiv (0,6).",
+      "options": [
+        {
+          "text": "(0, 3), (6, 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3, 0), (0, 6)",
+          "is_correct": false
+        },
+        {
+          "text": "(3, 0), (0, 6)",
+          "is_correct": true
+        },
+        {
+          "text": "(3, 0), (0, -6)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 3,
+        "type_name": "Intersecții cu axele",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Graficul funcției afine f:ℝ→ℝ intersectează Ox în (3,0) și Oy în (0,6). Aflați (a;b) pentru f(x)=ax+b.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din f(0)=6 rezultă b=6. Apoi f(3)=0 dă 3a+6=0, deci a=−2. Ambele intersecții sunt astfel verificate.",
+      "options": [
+        {
+          "text": "(2;6)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2;-6)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3;6)",
+          "is_correct": false
+        },
+        {
+          "text": "(-2;6)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 4,
+        "type_name": "Funcție afină din interceptări",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f_m:ℝ→ℝ, f_m(x)=(m−1)x+2. Graficul trece prin (0,2) și intersectează Ox în (−1,0). Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția f_m(0)=2 este automată. Din f_m(−1)=0 obținem −(m−1)+2=0, deci m=3. Panta m−1=2≠0, astfel intersecția cu Ox este unică.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 5,
+        "type_name": "Funcție parametrizată din interceptări",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce valori reale ale lui m graficul lui f_m(x)=(m−1)x²+2x+1, x∈ℝ, intersectează Ox în exact un punct?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă m=1, termenul de grad doi dispare: 2x+1=0 are o singură soluție. Dacă m≠1, ecuația este de grad doi și are o singură rădăcină reală distinctă exact când Δ=4−4(m−1)=0, adică m=2. Ambele cazuri sunt necesare: mulțimea cerută este {1;2}.",
+      "options": [
+        {
+          "text": "{1}",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 2}",
+          "is_correct": true
+        },
+        {
+          "text": "{2}",
+          "is_correct": false
+        },
+        {
+          "text": "{0; 1}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 6,
+        "type_name": "Numărul intersecțiilor cu Ox",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:[−2,4)→ℝ, f(x)=3. Care este graficul său?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Toate punctele au ordonata 3, dar abscisele parcurg numai [−2,4). Graficul este segmentul orizontal cu extremitatea stângă inclusă și cea dreaptă exclusă. Nu este dreapta întreagă, deoarece domeniul este limitat.",
+      "options": [
+        {
+          "text": "Dreapta orizontală y=3",
+          "is_correct": false
+        },
+        {
+          "text": "Segment vertical x=3, −2≤y<4",
+          "is_correct": false
+        },
+        {
+          "text": "Segment orizontal y=3, −2≤x<4",
+          "is_correct": true
+        },
+        {
+          "text": "Segment orizontal y=3, −2<x≤4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 1,
+        "type_name": "Grafic de funcție constantă",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ este definită prin \\(f(x)=\\begin{cases}-2,&x<0\\\\3,&0\\le x<2\\\\0,&x\\ge2\\end{cases}\\). Care mulțime reprezintă graficul ei?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecărei ramuri îi corespunde o porțiune orizontală. La x=0 se aplică ramura mediană, deci (0,3) este inclus, iar (0,−2) este exclus. La x=2 se aplică ultima ramură: (2,0) este inclus și (2,3) exclus. Pentru x<0 ordonata este −2, nu 2.",
+      "options": [
+        {
+          "text": "{(x,−2) | x≤0} ∪ {(x,3) | 0<x<2} ∪ {(x,0) | x≥2}",
+          "is_correct": false
+        },
+        {
+          "text": "{(x,−2) | x<0} ∪ {(x,3) | 0≤x≤2} ∪ {(x,0) | x>2}",
+          "is_correct": false
+        },
+        {
+          "text": "{(x,2) | x<0} ∪ {(x,3) | 0≤x<2} ∪ {(x,0) | x≥2}",
+          "is_correct": false
+        },
+        {
+          "text": "{(x,−2) | x<0} ∪ {(x,3) | 0≤x<2} ∪ {(x,0) | x≥2}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 2,
+        "type_name": "Grafic constant pe ramuri",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=−3x+12. Care sunt intersecțiile graficului cu Ox, respectiv Oy?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe Ox avem y=0: −3x+12=0, deci x=4. Pe Oy avem x=0: y=f(0)=12. Rezultă (4,0), respectiv (0,12).",
+      "options": [
+        {
+          "text": "(4, 0), (0, 12)",
+          "is_correct": true
+        },
+        {
+          "text": "(0, 4), (12, 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4, 0), (0, 12)",
+          "is_correct": false
+        },
+        {
+          "text": "(4, 0), (0, -12)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 3,
+        "type_name": "Intersecții cu axele",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Graficul funcției afine f:ℝ→ℝ intersectează Ox în (4,0) și Oy în (0,12). Aflați (a;b) pentru f(x)=ax+b.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din f(0)=12 rezultă b=12. Apoi f(4)=0 dă 4a+12=0, deci a=−3. Ambele intersecții sunt astfel verificate.",
+      "options": [
+        {
+          "text": "(3;12)",
+          "is_correct": false
+        },
+        {
+          "text": "(-3;12)",
+          "is_correct": true
+        },
+        {
+          "text": "(-3;-12)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4;12)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 4,
+        "type_name": "Funcție afină din interceptări",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f_m:ℝ→ℝ, f_m(x)=(m−1)x+3. Graficul trece prin (0,3) și intersectează Ox în (−1,0). Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția f_m(0)=3 este automată. Din f_m(−1)=0 obținem −(m−1)+3=0, deci m=4. Panta m−1=3≠0, astfel intersecția cu Ox este unică.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 5,
+        "type_name": "Funcție parametrizată din interceptări",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce valori reale ale lui m graficul lui f_m(x)=(m−2)x²+2x+1, x∈ℝ, intersectează Ox în exact un punct?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă m=2, termenul de grad doi dispare: 2x+1=0 are o singură soluție. Dacă m≠2, ecuația este de grad doi și are o singură rădăcină reală distinctă exact când Δ=4−4(m−2)=0, adică m=3. Ambele cazuri sunt necesare: mulțimea cerută este {2;3}.",
+      "options": [
+        {
+          "text": "{2}",
+          "is_correct": false
+        },
+        {
+          "text": "{3}",
+          "is_correct": false
+        },
+        {
+          "text": "{1; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "{2; 3}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 6,
+        "type_name": "Numărul intersecțiilor cu Ox",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:[−3,5)→ℝ, f(x)=4. Care este graficul său?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Toate punctele au ordonata 4, dar abscisele parcurg numai [−3,5). Graficul este segmentul orizontal cu extremitatea stângă inclusă și cea dreaptă exclusă. Nu este dreapta întreagă, deoarece domeniul este limitat.",
+      "options": [
+        {
+          "text": "Segment orizontal y=4, −3≤x<5",
+          "is_correct": true
+        },
+        {
+          "text": "Dreapta orizontală y=4",
+          "is_correct": false
+        },
+        {
+          "text": "Segment vertical x=4, −3≤y<5",
+          "is_correct": false
+        },
+        {
+          "text": "Segment orizontal y=4, −3<x≤5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 1,
+        "type_name": "Grafic de funcție constantă",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ este definită prin \\(f(x)=\\begin{cases}-3,&x<0\\\\4,&0\\le x<2\\\\0,&x\\ge2\\end{cases}\\). Care mulțime reprezintă graficul ei?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecărei ramuri îi corespunde o porțiune orizontală. La x=0 se aplică ramura mediană, deci (0,4) este inclus, iar (0,−3) este exclus. La x=2 se aplică ultima ramură: (2,0) este inclus și (2,4) exclus. Pentru x<0 ordonata este −3, nu 3.",
+      "options": [
+        {
+          "text": "{(x,−3) | x≤0} ∪ {(x,4) | 0<x<2} ∪ {(x,0) | x≥2}",
+          "is_correct": false
+        },
+        {
+          "text": "{(x,−3) | x<0} ∪ {(x,4) | 0≤x<2} ∪ {(x,0) | x≥2}",
+          "is_correct": true
+        },
+        {
+          "text": "{(x,−3) | x<0} ∪ {(x,4) | 0≤x≤2} ∪ {(x,0) | x>2}",
+          "is_correct": false
+        },
+        {
+          "text": "{(x,3) | x<0} ∪ {(x,4) | 0≤x<2} ∪ {(x,0) | x≥2}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 2,
+        "type_name": "Grafic constant pe ramuri",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=−4x+20. Care sunt intersecțiile graficului cu Ox, respectiv Oy?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe Ox avem y=0: −4x+20=0, deci x=5. Pe Oy avem x=0: y=f(0)=20. Rezultă (5,0), respectiv (0,20).",
+      "options": [
+        {
+          "text": "(0, 5), (20, 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(-5, 0), (0, 20)",
+          "is_correct": false
+        },
+        {
+          "text": "(5, 0), (0, 20)",
+          "is_correct": true
+        },
+        {
+          "text": "(5, 0), (0, -20)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 3,
+        "type_name": "Intersecții cu axele",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Graficul funcției afine f:ℝ→ℝ intersectează Ox în (5,0) și Oy în (0,20). Aflați (a;b) pentru f(x)=ax+b.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din f(0)=20 rezultă b=20. Apoi f(5)=0 dă 5a+20=0, deci a=−4. Ambele intersecții sunt astfel verificate.",
+      "options": [
+        {
+          "text": "(4;20)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4;-20)",
+          "is_correct": false
+        },
+        {
+          "text": "(-5;20)",
+          "is_correct": false
+        },
+        {
+          "text": "(-4;20)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 4,
+        "type_name": "Funcție afină din interceptări",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f_m:ℝ→ℝ, f_m(x)=(m−1)x+4. Graficul trece prin (0,4) și intersectează Ox în (−1,0). Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția f_m(0)=4 este automată. Din f_m(−1)=0 obținem −(m−1)+4=0, deci m=5. Panta m−1=4≠0, astfel intersecția cu Ox este unică.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 5,
+        "type_name": "Funcție parametrizată din interceptări",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce valori reale ale lui m graficul lui f_m(x)=(m−3)x²+2x+1, x∈ℝ, intersectează Ox în exact un punct?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă m=3, termenul de grad doi dispare: 2x+1=0 are o singură soluție. Dacă m≠3, ecuația este de grad doi și are o singură rădăcină reală distinctă exact când Δ=4−4(m−3)=0, adică m=4. Ambele cazuri sunt necesare: mulțimea cerută este {3;4}.",
+      "options": [
+        {
+          "text": "{3}",
+          "is_correct": false
+        },
+        {
+          "text": "{3; 4}",
+          "is_correct": true
+        },
+        {
+          "text": "{4}",
+          "is_correct": false
+        },
+        {
+          "text": "{2; 3}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 6,
+        "type_name": "Numărul intersecțiilor cu Ox",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:[−4,6)→ℝ, f(x)=5. Care este graficul său?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Toate punctele au ordonata 5, dar abscisele parcurg numai [−4,6). Graficul este segmentul orizontal cu extremitatea stângă inclusă și cea dreaptă exclusă. Nu este dreapta întreagă, deoarece domeniul este limitat.",
+      "options": [
+        {
+          "text": "Dreapta orizontală y=5",
+          "is_correct": false
+        },
+        {
+          "text": "Segment vertical x=5, −4≤y<6",
+          "is_correct": false
+        },
+        {
+          "text": "Segment orizontal y=5, −4≤x<6",
+          "is_correct": true
+        },
+        {
+          "text": "Segment orizontal y=5, −4<x≤6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 1,
+        "type_name": "Grafic de funcție constantă",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ este definită prin \\(f(x)=\\begin{cases}-4,&x<0\\\\5,&0\\le x<2\\\\0,&x\\ge2\\end{cases}\\). Care mulțime reprezintă graficul ei?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecărei ramuri îi corespunde o porțiune orizontală. La x=0 se aplică ramura mediană, deci (0,5) este inclus, iar (0,−4) este exclus. La x=2 se aplică ultima ramură: (2,0) este inclus și (2,5) exclus. Pentru x<0 ordonata este −4, nu 4.",
+      "options": [
+        {
+          "text": "{(x,−4) | x≤0} ∪ {(x,5) | 0<x<2} ∪ {(x,0) | x≥2}",
+          "is_correct": false
+        },
+        {
+          "text": "{(x,−4) | x<0} ∪ {(x,5) | 0≤x≤2} ∪ {(x,0) | x>2}",
+          "is_correct": false
+        },
+        {
+          "text": "{(x,4) | x<0} ∪ {(x,5) | 0≤x<2} ∪ {(x,0) | x≥2}",
+          "is_correct": false
+        },
+        {
+          "text": "{(x,−4) | x<0} ∪ {(x,5) | 0≤x<2} ∪ {(x,0) | x≥2}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 2,
+        "type_name": "Grafic constant pe ramuri",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=−5x+30. Care sunt intersecțiile graficului cu Ox, respectiv Oy?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe Ox avem y=0: −5x+30=0, deci x=6. Pe Oy avem x=0: y=f(0)=30. Rezultă (6,0), respectiv (0,30).",
+      "options": [
+        {
+          "text": "(6, 0), (0, 30)",
+          "is_correct": true
+        },
+        {
+          "text": "(0, 6), (30, 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(-6, 0), (0, 30)",
+          "is_correct": false
+        },
+        {
+          "text": "(6, 0), (0, -30)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 3,
+        "type_name": "Intersecții cu axele",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Graficul funcției afine f:ℝ→ℝ intersectează Ox în (6,0) și Oy în (0,30). Aflați (a;b) pentru f(x)=ax+b.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din f(0)=30 rezultă b=30. Apoi f(6)=0 dă 6a+30=0, deci a=−5. Ambele intersecții sunt astfel verificate.",
+      "options": [
+        {
+          "text": "(5;30)",
+          "is_correct": false
+        },
+        {
+          "text": "(-5;30)",
+          "is_correct": true
+        },
+        {
+          "text": "(-5;-30)",
+          "is_correct": false
+        },
+        {
+          "text": "(-6;30)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 4,
+        "type_name": "Funcție afină din interceptări",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f_m:ℝ→ℝ, f_m(x)=(m−1)x+5. Graficul trece prin (0,5) și intersectează Ox în (−1,0). Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția f_m(0)=5 este automată. Din f_m(−1)=0 obținem −(m−1)+5=0, deci m=6. Panta m−1=5≠0, astfel intersecția cu Ox este unică.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 5,
+        "type_name": "Funcție parametrizată din interceptări",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce valori reale ale lui m graficul lui f_m(x)=(m−4)x²+2x+1, x∈ℝ, intersectează Ox în exact un punct?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă m=4, termenul de grad doi dispare: 2x+1=0 are o singură soluție. Dacă m≠4, ecuația este de grad doi și are o singură rădăcină reală distinctă exact când Δ=4−4(m−4)=0, adică m=5. Ambele cazuri sunt necesare: mulțimea cerută este {4;5}.",
+      "options": [
+        {
+          "text": "{4}",
+          "is_correct": false
+        },
+        {
+          "text": "{5}",
+          "is_correct": false
+        },
+        {
+          "text": "{3; 4}",
+          "is_correct": false
+        },
+        {
+          "text": "{4; 5}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 6,
+        "type_name": "Numărul intersecțiilor cu Ox",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:[−5,7)→ℝ, f(x)=6. Care este graficul său?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Toate punctele au ordonata 6, dar abscisele parcurg numai [−5,7). Graficul este segmentul orizontal cu extremitatea stângă inclusă și cea dreaptă exclusă. Nu este dreapta întreagă, deoarece domeniul este limitat.",
+      "options": [
+        {
+          "text": "Segment orizontal y=6, −5≤x<7",
+          "is_correct": true
+        },
+        {
+          "text": "Dreapta orizontală y=6",
+          "is_correct": false
+        },
+        {
+          "text": "Segment vertical x=6, −5≤y<7",
+          "is_correct": false
+        },
+        {
+          "text": "Segment orizontal y=6, −5<x≤7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 1,
+        "type_name": "Grafic de funcție constantă",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ este definită prin \\(f(x)=\\begin{cases}-5,&x<0\\\\6,&0\\le x<2\\\\0,&x\\ge2\\end{cases}\\). Care mulțime reprezintă graficul ei?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Fiecărei ramuri îi corespunde o porțiune orizontală. La x=0 se aplică ramura mediană, deci (0,6) este inclus, iar (0,−5) este exclus. La x=2 se aplică ultima ramură: (2,0) este inclus și (2,6) exclus. Pentru x<0 ordonata este −5, nu 5.",
+      "options": [
+        {
+          "text": "{(x,−5) | x≤0} ∪ {(x,6) | 0<x<2} ∪ {(x,0) | x≥2}",
+          "is_correct": false
+        },
+        {
+          "text": "{(x,−5) | x<0} ∪ {(x,6) | 0≤x<2} ∪ {(x,0) | x≥2}",
+          "is_correct": true
+        },
+        {
+          "text": "{(x,−5) | x<0} ∪ {(x,6) | 0≤x≤2} ∪ {(x,0) | x>2}",
+          "is_correct": false
+        },
+        {
+          "text": "{(x,5) | x<0} ∪ {(x,6) | 0≤x<2} ∪ {(x,0) | x≥2}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 2,
+        "type_name": "Grafic constant pe ramuri",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ, f(x)=−6x+42. Care sunt intersecțiile graficului cu Ox, respectiv Oy?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe Ox avem y=0: −6x+42=0, deci x=7. Pe Oy avem x=0: y=f(0)=42. Rezultă (7,0), respectiv (0,42).",
+      "options": [
+        {
+          "text": "(0, 7), (42, 0)",
+          "is_correct": false
+        },
+        {
+          "text": "(-7, 0), (0, 42)",
+          "is_correct": false
+        },
+        {
+          "text": "(7, 0), (0, 42)",
+          "is_correct": true
+        },
+        {
+          "text": "(7, 0), (0, -42)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 3,
+        "type_name": "Intersecții cu axele",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Graficul funcției afine f:ℝ→ℝ intersectează Ox în (7,0) și Oy în (0,42). Aflați (a;b) pentru f(x)=ax+b.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din f(0)=42 rezultă b=42. Apoi f(7)=0 dă 7a+42=0, deci a=−6. Ambele intersecții sunt astfel verificate.",
+      "options": [
+        {
+          "text": "(6;42)",
+          "is_correct": false
+        },
+        {
+          "text": "(-6;-42)",
+          "is_correct": false
+        },
+        {
+          "text": "(-7;42)",
+          "is_correct": false
+        },
+        {
+          "text": "(-6;42)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 4,
+        "type_name": "Funcție afină din interceptări",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f_m:ℝ→ℝ, f_m(x)=(m−1)x+6. Graficul trece prin (0,6) și intersectează Ox în (−1,0). Aflați m.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Condiția f_m(0)=6 este automată. Din f_m(−1)=0 obținem −(m−1)+6=0, deci m=7. Panta m−1=6≠0, astfel intersecția cu Ox este unică.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 5,
+        "type_name": "Funcție parametrizată din interceptări",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce valori reale ale lui m graficul lui f_m(x)=(m−5)x²+2x+1, x∈ℝ, intersectează Ox în exact un punct?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă m=5, termenul de grad doi dispare: 2x+1=0 are o singură soluție. Dacă m≠5, ecuația este de grad doi și are o singură rădăcină reală distinctă exact când Δ=4−4(m−5)=0, adică m=6. Ambele cazuri sunt necesare: mulțimea cerută este {5;6}.",
+      "options": [
+        {
+          "text": "{5}",
+          "is_correct": false
+        },
+        {
+          "text": "{5; 6}",
+          "is_correct": true
+        },
+        {
+          "text": "{6}",
+          "is_correct": false
+        },
+        {
+          "text": "{4; 5}",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.3.4",
+        "type": 6,
+        "type_name": "Numărul intersecțiilor cu Ox",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    }
+  ]
 }

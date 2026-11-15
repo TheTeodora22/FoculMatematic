@@ -1,0 +1,3527 @@
+{
+  "description": "Clasa a 9-a · Funcții",
+  "difficulty": "hard",
+  "questions": [
+    {
+      "text": "Clasificați monotonia lui f(x)=2x+1, x∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, f(y)−f(x)=2(y−x)>0, deci funcția este strict crescătoare.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 1,
+        "type_name": "Monotonie prin comparația a două valori",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(n)=4n+cmmdc(n,n+2), n∈ℕ*.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "cmmdc(n,n+2)=cmmdc(n,2)∈{1,2}. Diferența termenilor cmmdc este cel puțin −1, deci f(n+1)−f(n)≥4−1=3>0. Prin însumarea diferențelor, f crește strict pe ℕ*.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 2,
+        "type_name": "Monotonie a funcțiilor aritmetice",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care sunt intervalele maximale de monotonie ale lui f(x)=(x−1)², x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La stânga lui 1, distanța |x−1| scade când x crește; la dreapta crește. Pătratul păstrează ordinea distanțelor nenegative. Vârful separă cele două intervale maximale.",
+      "options": [
+        {
+          "text": "Strict crescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe (−∞,1], strict crescătoare pe [1,+∞)",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă pe [−1,1]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 3,
+        "type_name": "Intervale de monotonie pentru pătrate",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru f(x)=|x−2|−|x−1|, x∈ℝ, care descriere este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe x≤1, expresia este 1. Pe [1,2], este 3−2x, strict descrescătoare. Pe x≥2, este −1. Funcția este necreșcătoare global, dar nu strict pe intervalele constante.",
+      "options": [
+        {
+          "text": "Strict crescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pe (−∞,1] și [2,+∞); strict descrescătoare pe [1,2]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 4,
+        "type_name": "Monotonie cu valori absolute",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=(x−1)/(x−2), x≠2. Care afirmație este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(x)=1+1/(x−2). Pentru x<y pe aceeași componentă, f(y)−f(x)=(x−y)/((x−2)(y−2))<0. Global nu este descrescătoare: pentru x=1, y=3, valorile sunt 0 și 2.",
+      "options": [
+        {
+          "text": "Strict descrescătoare pe fiecare componentă a domeniului",
+          "is_correct": true
+        },
+        {
+          "text": "Strict crescătoare pe fiecare componentă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe întregul domeniu",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pe fiecare componentă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 5,
+        "type_name": "Funcții omografice",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(x)=1x/(1+x²) pe intervalul [0,1].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru 0≤x<y≤1, f(y)−f(x)=1(y−x)(1−xy)/((1+x²)(1+y²)). Toți factorii sunt pozitivi, inclusiv 1−xy deoarece x<y≤1; funcția crește strict.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 6,
+        "type_name": "Funcții raționale cu numitor pătratic",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(x)=2ˣ+3ˣ, x∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele baze 2 și 3 sunt mai mari ca 1. Pentru x<y, fiecare putere la x este strict mai mică decât cea la y; adunarea dă f(x)<f(y).",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 7,
+        "type_name": "Monotonie exponențială",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este cel mai mic m∈ℝ pentru care f_m(x)=x²+2mx+1 este crescătoare pe [2m+3,+∞)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vârful este la x=−m. Pentru ca întreaga semidreaptă să fie pe ramura crescătoare este necesar și suficient 2m+3≥−m, adică m≥−1. La egalitate, intervalul începe în vârf și funcția crește strict după acesta.",
+      "options": [
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 8,
+        "type_name": "Parametru și interval mobil",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(x)=x+1⌊x⌋, x∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y avem ⌊x⌋≤⌊y⌋, deci f(y)−f(x)=(y−x)+1(⌊y⌋−⌊x⌋)>0. Termenul x elimină segmentele constante ale părții întregi.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 9,
+        "type_name": "Strictă monotonie și trepte",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f:ℝ→ℝ este strict crescătoare, cum este g(x)=x³+1f(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y avem x³<y³ și 1f(x)<1f(y). Adunarea acestor inegalități arată că g(x)<g(y).",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 10,
+        "type_name": "Transformări ale unei funcții strict monotone",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ este strict crescătoare, iar g este ne-descrescătoare. Cum este h(x)=f(x)+1g(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, f(x)<f(y), g(x)≤g(y). Înmulțind a doua inegalitate cu 1>0 și adunând, obținem h(x)<h(y).",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 11,
+        "type_name": "Suma funcțiilor monotone",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcțiile f,g:ℝ→(0,+∞) sunt strict crescătoare. Cum este h(x)=1f(x)g(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, 0<f(x)<f(y) și 0<g(x)<g(y). Astfel f(x)g(x)<f(y)g(x)<f(y)g(y). Înmulțirea cu 1>0 păstrează strictețea.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 12,
+        "type_name": "Produsul funcțiilor pozitive monotone",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f:ℝ→ℝ este strict crescătoare, clasificați g(x)=f(−2x+1).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x<y, atunci −2x+1>−2y+1. Aplicarea funcției strict crescătoare f păstrează această ordine, deci g(x)>g(y).",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 13,
+        "type_name": "Schimbarea semnului argumentului",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f:ℝ→(0,+∞) este strict crescătoare, clasificați g(x)=1/f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, 0<f(x)<f(y). Trecerea la inverse pozitive schimbă sensul: 1/f(x)>1/f(y). Factorul 1>0 păstrează ordinea; condiția de pozitivitate evită traversarea lui zero.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 14,
+        "type_name": "Inversa multiplicativă a valorii",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O funcție f:ℝ→ℝ este ne-descrescătoare și periodică cu perioada 2>0. Ce concluzie este obligatorie?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y alegem n astfel încât y<x+n·2. Monotonia dă f(x)≤f(y)≤f(x+n·2)=f(x), deci f(y)=f(x). Astfel funcția este constantă pe ℝ.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 15,
+        "type_name": "Funcție monotonă și periodică",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a∈ℝ funcția \\(f(x)=\\begin{cases}x+1,&x<0\\\\2x+a,&x\\ge0\\end{cases}\\) este ne-descrescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele ramuri au pante pozitive. Pentru a nu apărea un salt în jos la 0, este necesar a=f(0)≥1, limita valorilor din stânga. Dacă a≥1, orice valoare din stânga este <1≤a și orice valoare din dreapta este ≥a, deci condiția este și suficientă.",
+      "options": [
+        {
+          "text": "a<1",
+          "is_correct": false
+        },
+        {
+          "text": "a≤1",
+          "is_correct": false
+        },
+        {
+          "text": "a>2",
+          "is_correct": false
+        },
+        {
+          "text": "a≥1",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 16,
+        "type_name": "Monotonie globală cu parametri pe ramuri",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ satisface f(x)+f(−x)=2x² și f(x)−f(−x)=2x, pentru orice x. Cum este g(x)=f(x)−x²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunând relațiile, 2f(x)=2x²+2x, deci f(x)=x²+1x. Atunci g(x)=1x, strict crescătoare deoarece 1>0.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 17,
+        "type_name": "Monotonie din ecuație funcțională",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=1 dacă x∈ℚ și f(x)=0 dacă x∉ℚ. Pe ce intervale cu lungime pozitivă este f monotonă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Raționalele și iraționalele sunt dense în orice interval de lungime pozitivă. Putem alege x<y cu valori (1,0), încălcând creșterea, și alte x<y cu valori (0,1), încălcând descreșterea. Alegerea capetelor intervalului nu schimbă argumentul.",
+      "options": [
+        {
+          "text": "Pe toate intervalele",
+          "is_correct": false
+        },
+        {
+          "text": "Pe niciun interval cu lungime pozitivă",
+          "is_correct": true
+        },
+        {
+          "text": "Numai pe intervale cu capete raționale",
+          "is_correct": false
+        },
+        {
+          "text": "Numai pe intervale cu capete iraționale",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 18,
+        "type_name": "Funcții discontinue nemonotone pe orice interval",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte funcții strict crescătoare f:{1;2;3}→{1;2;…;4} există?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Alegem trei valori distincte din cele 4; ordinea lor crescătoare fixează imaginile lui 1,2,3 în mod unic. Numărul este C(4,3)=4.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 19,
+        "type_name": "Funcții strict monotone pe mulțime finită",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ ne-descrescătoare, cu f(0)=1. Care descompunere f=g+h garantează că g este strict crescătoare și h strict descrescătoare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este f. Pentru x<y, g(y)−g(x)=f(y)−f(x)+1(y−x)>0. În același timp, h(y)−h(x)=−1(y−x)<0. Constanța posibilă a lui f nu afectează strictețea acestor două funcții.",
+      "options": [
+        {
+          "text": "g(x)=f(x)−1x, h(x)=1x",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=f(x), h(x)=0",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=f(x)+1, h(x)=−1",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=f(x)+1x, h(x)=−1x",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 20,
+        "type_name": "Descompunere în funcții strict monotone",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1;…;4} și f:A→A strict crescătoare. Calculați f(2).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O aplicație strict crescătoare este injectivă; pe o mulțime finită cu același codomeniu este bijectivă. Imaginile elementelor enumerate crescător sunt deci exact aceleași elemente, în aceeași ordine: f(k)=k. Astfel f(2)=2.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 21,
+        "type_name": "Aplicații monotone injective pe mulțimi finite",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ ne-descrescătoare, cu f(r)=r pentru orice r∈ℚ. Calculați f(1+√2)−√2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă f(x)>x, alegem un rațional r între x și f(x); monotonia ar da f(x)≤f(r)=r, contradicție. Dacă f(x)<x, alegem r între f(x) și x și obținem r=f(r)≤f(x), iarăși contradicție. Deci f(x)=x pentru orice real, inclusiv 1+√2; diferența cerută este 1.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 22,
+        "type_name": "Identitate impusă pe ℚ",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați monotonia lui f(x)=3x+2, x∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, f(y)−f(x)=3(y−x)>0, deci funcția este strict crescătoare.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 1,
+        "type_name": "Monotonie prin comparația a două valori",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(n)=5n+cmmdc(n,n+2), n∈ℕ*.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "cmmdc(n,n+2)=cmmdc(n,2)∈{1,2}. Diferența termenilor cmmdc este cel puțin −1, deci f(n+1)−f(n)≥5−1=4>0. Prin însumarea diferențelor, f crește strict pe ℕ*.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 2,
+        "type_name": "Monotonie a funcțiilor aritmetice",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care sunt intervalele maximale de monotonie ale lui f(x)=(x−2)², x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La stânga lui 2, distanța |x−2| scade când x crește; la dreapta crește. Pătratul păstrează ordinea distanțelor nenegative. Vârful separă cele două intervale maximale.",
+      "options": [
+        {
+          "text": "Strict descrescătoare pe (−∞,2], strict crescătoare pe [2,+∞)",
+          "is_correct": true
+        },
+        {
+          "text": "Strict crescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pe [−2,2]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 3,
+        "type_name": "Intervale de monotonie pentru pătrate",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru f(x)=|x−3|−|x−2|, x∈ℝ, care descriere este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe x≤2, expresia este 1. Pe [2,3], este 5−2x, strict descrescătoare. Pe x≥3, este −1. Funcția este necreșcătoare global, dar nu strict pe intervalele constante.",
+      "options": [
+        {
+          "text": "Strict crescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pe (−∞,2] și [3,+∞); strict descrescătoare pe [2,3]",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pe ℝ",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 4,
+        "type_name": "Monotonie cu valori absolute",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=(x−2)/(x−3), x≠3. Care afirmație este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(x)=1+1/(x−3). Pentru x<y pe aceeași componentă, f(y)−f(x)=(x−y)/((x−3)(y−3))<0. Global nu este descrescătoare: pentru x=2, y=4, valorile sunt 0 și 2.",
+      "options": [
+        {
+          "text": "Strict crescătoare pe fiecare componentă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe întregul domeniu",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe fiecare componentă a domeniului",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă pe fiecare componentă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 5,
+        "type_name": "Funcții omografice",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(x)=2x/(1+x²) pe intervalul [0,1].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru 0≤x<y≤1, f(y)−f(x)=2(y−x)(1−xy)/((1+x²)(1+y²)). Toți factorii sunt pozitivi, inclusiv 1−xy deoarece x<y≤1; funcția crește strict.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 6,
+        "type_name": "Funcții raționale cu numitor pătratic",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(x)=3ˣ+4ˣ, x∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele baze 3 și 4 sunt mai mari ca 1. Pentru x<y, fiecare putere la x este strict mai mică decât cea la y; adunarea dă f(x)<f(y).",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 7,
+        "type_name": "Monotonie exponențială",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este cel mai mic m∈ℝ pentru care f_m(x)=x²+2mx+2 este crescătoare pe [2m+6,+∞)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vârful este la x=−m. Pentru ca întreaga semidreaptă să fie pe ramura crescătoare este necesar și suficient 2m+6≥−m, adică m≥−2. La egalitate, intervalul începe în vârf și funcția crește strict după acesta.",
+      "options": [
+        {
+          "text": "-3",
+          "is_correct": false
+        },
+        {
+          "text": "-2",
+          "is_correct": true
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 8,
+        "type_name": "Parametru și interval mobil",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(x)=x+2⌊x⌋, x∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y avem ⌊x⌋≤⌊y⌋, deci f(y)−f(x)=(y−x)+2(⌊y⌋−⌊x⌋)>0. Termenul x elimină segmentele constante ale părții întregi.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 9,
+        "type_name": "Strictă monotonie și trepte",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f:ℝ→ℝ este strict crescătoare, cum este g(x)=x³+2f(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y avem x³<y³ și 2f(x)<2f(y). Adunarea acestor inegalități arată că g(x)<g(y).",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 10,
+        "type_name": "Transformări ale unei funcții strict monotone",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ este strict crescătoare, iar g este ne-descrescătoare. Cum este h(x)=f(x)+2g(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, f(x)<f(y), g(x)≤g(y). Înmulțind a doua inegalitate cu 2>0 și adunând, obținem h(x)<h(y).",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 11,
+        "type_name": "Suma funcțiilor monotone",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcțiile f,g:ℝ→(0,+∞) sunt strict crescătoare. Cum este h(x)=2f(x)g(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, 0<f(x)<f(y) și 0<g(x)<g(y). Astfel f(x)g(x)<f(y)g(x)<f(y)g(y). Înmulțirea cu 2>0 păstrează strictețea.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 12,
+        "type_name": "Produsul funcțiilor pozitive monotone",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f:ℝ→ℝ este strict crescătoare, clasificați g(x)=f(−3x+2).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x<y, atunci −3x+2>−3y+2. Aplicarea funcției strict crescătoare f păstrează această ordine, deci g(x)>g(y).",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 13,
+        "type_name": "Schimbarea semnului argumentului",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f:ℝ→(0,+∞) este strict crescătoare, clasificați g(x)=2/f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, 0<f(x)<f(y). Trecerea la inverse pozitive schimbă sensul: 1/f(x)>1/f(y). Factorul 2>0 păstrează ordinea; condiția de pozitivitate evită traversarea lui zero.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 14,
+        "type_name": "Inversa multiplicativă a valorii",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O funcție f:ℝ→ℝ este ne-descrescătoare și periodică cu perioada 3>0. Ce concluzie este obligatorie?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y alegem n astfel încât y<x+n·3. Monotonia dă f(x)≤f(y)≤f(x+n·3)=f(x), deci f(y)=f(x). Astfel funcția este constantă pe ℝ.",
+      "options": [
+        {
+          "text": "Constantă",
+          "is_correct": true
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 15,
+        "type_name": "Funcție monotonă și periodică",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a∈ℝ funcția \\(f(x)=\\begin{cases}x+2,&x<0\\\\2x+a,&x\\ge0\\end{cases}\\) este ne-descrescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele ramuri au pante pozitive. Pentru a nu apărea un salt în jos la 0, este necesar a=f(0)≥2, limita valorilor din stânga. Dacă a≥2, orice valoare din stânga este <2≤a și orice valoare din dreapta este ≥a, deci condiția este și suficientă.",
+      "options": [
+        {
+          "text": "a<2",
+          "is_correct": false
+        },
+        {
+          "text": "a≥2",
+          "is_correct": true
+        },
+        {
+          "text": "a≤2",
+          "is_correct": false
+        },
+        {
+          "text": "a>3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 16,
+        "type_name": "Monotonie globală cu parametri pe ramuri",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ satisface f(x)+f(−x)=2x² și f(x)−f(−x)=4x, pentru orice x. Cum este g(x)=f(x)−x²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunând relațiile, 2f(x)=2x²+4x, deci f(x)=x²+2x. Atunci g(x)=2x, strict crescătoare deoarece 2>0.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 17,
+        "type_name": "Monotonie din ecuație funcțională",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=2 dacă x∈ℚ și f(x)=0 dacă x∉ℚ. Pe ce intervale cu lungime pozitivă este f monotonă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Raționalele și iraționalele sunt dense în orice interval de lungime pozitivă. Putem alege x<y cu valori (2,0), încălcând creșterea, și alte x<y cu valori (0,2), încălcând descreșterea. Alegerea capetelor intervalului nu schimbă argumentul.",
+      "options": [
+        {
+          "text": "Pe toate intervalele",
+          "is_correct": false
+        },
+        {
+          "text": "Numai pe intervale cu capete raționale",
+          "is_correct": false
+        },
+        {
+          "text": "Numai pe intervale cu capete iraționale",
+          "is_correct": false
+        },
+        {
+          "text": "Pe niciun interval cu lungime pozitivă",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 18,
+        "type_name": "Funcții discontinue nemonotone pe orice interval",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte funcții strict crescătoare f:{1;2;3}→{1;2;…;5} există?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Alegem trei valori distincte din cele 5; ordinea lor crescătoare fixează imaginile lui 1,2,3 în mod unic. Numărul este C(5,3)=10.",
+      "options": [
+        {
+          "text": "10",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 19,
+        "type_name": "Funcții strict monotone pe mulțime finită",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ ne-descrescătoare, cu f(0)=2. Care descompunere f=g+h garantează că g este strict crescătoare și h strict descrescătoare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este f. Pentru x<y, g(y)−g(x)=f(y)−f(x)+2(y−x)>0. În același timp, h(y)−h(x)=−2(y−x)<0. Constanța posibilă a lui f nu afectează strictețea acestor două funcții.",
+      "options": [
+        {
+          "text": "g(x)=f(x)−2x, h(x)=2x",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=f(x)+2x, h(x)=−2x",
+          "is_correct": true
+        },
+        {
+          "text": "g(x)=f(x), h(x)=0",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=f(x)+2, h(x)=−2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 20,
+        "type_name": "Descompunere în funcții strict monotone",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1;…;5} și f:A→A strict crescătoare. Calculați f(3).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O aplicație strict crescătoare este injectivă; pe o mulțime finită cu același codomeniu este bijectivă. Imaginile elementelor enumerate crescător sunt deci exact aceleași elemente, în aceeași ordine: f(k)=k. Astfel f(3)=3.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 21,
+        "type_name": "Aplicații monotone injective pe mulțimi finite",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ ne-descrescătoare, cu f(r)=r pentru orice r∈ℚ. Calculați f(2+√2)−√2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă f(x)>x, alegem un rațional r între x și f(x); monotonia ar da f(x)≤f(r)=r, contradicție. Dacă f(x)<x, alegem r între f(x) și x și obținem r=f(r)≤f(x), iarăși contradicție. Deci f(x)=x pentru orice real, inclusiv 2+√2; diferența cerută este 2.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 22,
+        "type_name": "Identitate impusă pe ℚ",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați monotonia lui f(x)=4x+3, x∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, f(y)−f(x)=4(y−x)>0, deci funcția este strict crescătoare.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 1,
+        "type_name": "Monotonie prin comparația a două valori",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(n)=6n+cmmdc(n,n+2), n∈ℕ*.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "cmmdc(n,n+2)=cmmdc(n,2)∈{1,2}. Diferența termenilor cmmdc este cel puțin −1, deci f(n+1)−f(n)≥6−1=5>0. Prin însumarea diferențelor, f crește strict pe ℕ*.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 2,
+        "type_name": "Monotonie a funcțiilor aritmetice",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care sunt intervalele maximale de monotonie ale lui f(x)=(x−3)², x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La stânga lui 3, distanța |x−3| scade când x crește; la dreapta crește. Pătratul păstrează ordinea distanțelor nenegative. Vârful separă cele două intervale maximale.",
+      "options": [
+        {
+          "text": "Strict crescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe (−∞,3], strict crescătoare pe [3,+∞)",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă pe [−3,3]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 3,
+        "type_name": "Intervale de monotonie pentru pătrate",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru f(x)=|x−4|−|x−3|, x∈ℝ, care descriere este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe x≤3, expresia este 1. Pe [3,4], este 7−2x, strict descrescătoare. Pe x≥4, este −1. Funcția este necreșcătoare global, dar nu strict pe intervalele constante.",
+      "options": [
+        {
+          "text": "Strict crescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pe (−∞,3] și [4,+∞); strict descrescătoare pe [3,4]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 4,
+        "type_name": "Monotonie cu valori absolute",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=(x−3)/(x−4), x≠4. Care afirmație este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(x)=1+1/(x−4). Pentru x<y pe aceeași componentă, f(y)−f(x)=(x−y)/((x−4)(y−4))<0. Global nu este descrescătoare: pentru x=3, y=5, valorile sunt 0 și 2.",
+      "options": [
+        {
+          "text": "Strict descrescătoare pe fiecare componentă a domeniului",
+          "is_correct": true
+        },
+        {
+          "text": "Strict crescătoare pe fiecare componentă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe întregul domeniu",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pe fiecare componentă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 5,
+        "type_name": "Funcții omografice",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(x)=3x/(1+x²) pe intervalul [0,1].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru 0≤x<y≤1, f(y)−f(x)=3(y−x)(1−xy)/((1+x²)(1+y²)). Toți factorii sunt pozitivi, inclusiv 1−xy deoarece x<y≤1; funcția crește strict.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 6,
+        "type_name": "Funcții raționale cu numitor pătratic",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(x)=4ˣ+5ˣ, x∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele baze 4 și 5 sunt mai mari ca 1. Pentru x<y, fiecare putere la x este strict mai mică decât cea la y; adunarea dă f(x)<f(y).",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 7,
+        "type_name": "Monotonie exponențială",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este cel mai mic m∈ℝ pentru care f_m(x)=x²+2mx+3 este crescătoare pe [2m+9,+∞)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vârful este la x=−m. Pentru ca întreaga semidreaptă să fie pe ramura crescătoare este necesar și suficient 2m+9≥−m, adică m≥−3. La egalitate, intervalul începe în vârf și funcția crește strict după acesta.",
+      "options": [
+        {
+          "text": "-4",
+          "is_correct": false
+        },
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "-3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 8,
+        "type_name": "Parametru și interval mobil",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(x)=x+3⌊x⌋, x∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y avem ⌊x⌋≤⌊y⌋, deci f(y)−f(x)=(y−x)+3(⌊y⌋−⌊x⌋)>0. Termenul x elimină segmentele constante ale părții întregi.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 9,
+        "type_name": "Strictă monotonie și trepte",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f:ℝ→ℝ este strict crescătoare, cum este g(x)=x³+3f(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y avem x³<y³ și 3f(x)<3f(y). Adunarea acestor inegalități arată că g(x)<g(y).",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 10,
+        "type_name": "Transformări ale unei funcții strict monotone",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ este strict crescătoare, iar g este ne-descrescătoare. Cum este h(x)=f(x)+3g(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, f(x)<f(y), g(x)≤g(y). Înmulțind a doua inegalitate cu 3>0 și adunând, obținem h(x)<h(y).",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 11,
+        "type_name": "Suma funcțiilor monotone",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcțiile f,g:ℝ→(0,+∞) sunt strict crescătoare. Cum este h(x)=3f(x)g(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, 0<f(x)<f(y) și 0<g(x)<g(y). Astfel f(x)g(x)<f(y)g(x)<f(y)g(y). Înmulțirea cu 3>0 păstrează strictețea.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 12,
+        "type_name": "Produsul funcțiilor pozitive monotone",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f:ℝ→ℝ este strict crescătoare, clasificați g(x)=f(−4x+3).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x<y, atunci −4x+3>−4y+3. Aplicarea funcției strict crescătoare f păstrează această ordine, deci g(x)>g(y).",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 13,
+        "type_name": "Schimbarea semnului argumentului",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f:ℝ→(0,+∞) este strict crescătoare, clasificați g(x)=3/f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, 0<f(x)<f(y). Trecerea la inverse pozitive schimbă sensul: 1/f(x)>1/f(y). Factorul 3>0 păstrează ordinea; condiția de pozitivitate evită traversarea lui zero.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 14,
+        "type_name": "Inversa multiplicativă a valorii",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O funcție f:ℝ→ℝ este ne-descrescătoare și periodică cu perioada 4>0. Ce concluzie este obligatorie?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y alegem n astfel încât y<x+n·4. Monotonia dă f(x)≤f(y)≤f(x+n·4)=f(x), deci f(y)=f(x). Astfel funcția este constantă pe ℝ.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 15,
+        "type_name": "Funcție monotonă și periodică",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a∈ℝ funcția \\(f(x)=\\begin{cases}x+3,&x<0\\\\2x+a,&x\\ge0\\end{cases}\\) este ne-descrescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele ramuri au pante pozitive. Pentru a nu apărea un salt în jos la 0, este necesar a=f(0)≥3, limita valorilor din stânga. Dacă a≥3, orice valoare din stânga este <3≤a și orice valoare din dreapta este ≥a, deci condiția este și suficientă.",
+      "options": [
+        {
+          "text": "a<3",
+          "is_correct": false
+        },
+        {
+          "text": "a≤3",
+          "is_correct": false
+        },
+        {
+          "text": "a>4",
+          "is_correct": false
+        },
+        {
+          "text": "a≥3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 16,
+        "type_name": "Monotonie globală cu parametri pe ramuri",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ satisface f(x)+f(−x)=2x² și f(x)−f(−x)=6x, pentru orice x. Cum este g(x)=f(x)−x²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunând relațiile, 2f(x)=2x²+6x, deci f(x)=x²+3x. Atunci g(x)=3x, strict crescătoare deoarece 3>0.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 17,
+        "type_name": "Monotonie din ecuație funcțională",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=3 dacă x∈ℚ și f(x)=0 dacă x∉ℚ. Pe ce intervale cu lungime pozitivă este f monotonă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Raționalele și iraționalele sunt dense în orice interval de lungime pozitivă. Putem alege x<y cu valori (3,0), încălcând creșterea, și alte x<y cu valori (0,3), încălcând descreșterea. Alegerea capetelor intervalului nu schimbă argumentul.",
+      "options": [
+        {
+          "text": "Pe toate intervalele",
+          "is_correct": false
+        },
+        {
+          "text": "Pe niciun interval cu lungime pozitivă",
+          "is_correct": true
+        },
+        {
+          "text": "Numai pe intervale cu capete raționale",
+          "is_correct": false
+        },
+        {
+          "text": "Numai pe intervale cu capete iraționale",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 18,
+        "type_name": "Funcții discontinue nemonotone pe orice interval",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte funcții strict crescătoare f:{1;2;3}→{1;2;…;6} există?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Alegem trei valori distincte din cele 6; ordinea lor crescătoare fixează imaginile lui 1,2,3 în mod unic. Numărul este C(6,3)=20.",
+      "options": [
+        {
+          "text": "19",
+          "is_correct": false
+        },
+        {
+          "text": "21",
+          "is_correct": false
+        },
+        {
+          "text": "20",
+          "is_correct": true
+        },
+        {
+          "text": "22",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 19,
+        "type_name": "Funcții strict monotone pe mulțime finită",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ ne-descrescătoare, cu f(0)=3. Care descompunere f=g+h garantează că g este strict crescătoare și h strict descrescătoare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este f. Pentru x<y, g(y)−g(x)=f(y)−f(x)+3(y−x)>0. În același timp, h(y)−h(x)=−3(y−x)<0. Constanța posibilă a lui f nu afectează strictețea acestor două funcții.",
+      "options": [
+        {
+          "text": "g(x)=f(x)−3x, h(x)=3x",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=f(x), h(x)=0",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=f(x)+3, h(x)=−3",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=f(x)+3x, h(x)=−3x",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 20,
+        "type_name": "Descompunere în funcții strict monotone",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1;…;6} și f:A→A strict crescătoare. Calculați f(4).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O aplicație strict crescătoare este injectivă; pe o mulțime finită cu același codomeniu este bijectivă. Imaginile elementelor enumerate crescător sunt deci exact aceleași elemente, în aceeași ordine: f(k)=k. Astfel f(4)=4.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 21,
+        "type_name": "Aplicații monotone injective pe mulțimi finite",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ ne-descrescătoare, cu f(r)=r pentru orice r∈ℚ. Calculați f(3+√2)−√2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă f(x)>x, alegem un rațional r între x și f(x); monotonia ar da f(x)≤f(r)=r, contradicție. Dacă f(x)<x, alegem r între f(x) și x și obținem r=f(r)≤f(x), iarăși contradicție. Deci f(x)=x pentru orice real, inclusiv 3+√2; diferența cerută este 3.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 22,
+        "type_name": "Identitate impusă pe ℚ",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați monotonia lui f(x)=5x+4, x∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, f(y)−f(x)=5(y−x)>0, deci funcția este strict crescătoare.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 1,
+        "type_name": "Monotonie prin comparația a două valori",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(n)=7n+cmmdc(n,n+2), n∈ℕ*.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "cmmdc(n,n+2)=cmmdc(n,2)∈{1,2}. Diferența termenilor cmmdc este cel puțin −1, deci f(n+1)−f(n)≥7−1=6>0. Prin însumarea diferențelor, f crește strict pe ℕ*.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 2,
+        "type_name": "Monotonie a funcțiilor aritmetice",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care sunt intervalele maximale de monotonie ale lui f(x)=(x−4)², x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La stânga lui 4, distanța |x−4| scade când x crește; la dreapta crește. Pătratul păstrează ordinea distanțelor nenegative. Vârful separă cele două intervale maximale.",
+      "options": [
+        {
+          "text": "Strict descrescătoare pe (−∞,4], strict crescătoare pe [4,+∞)",
+          "is_correct": true
+        },
+        {
+          "text": "Strict crescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pe [−4,4]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 3,
+        "type_name": "Intervale de monotonie pentru pătrate",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru f(x)=|x−5|−|x−4|, x∈ℝ, care descriere este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe x≤4, expresia este 1. Pe [4,5], este 9−2x, strict descrescătoare. Pe x≥5, este −1. Funcția este necreșcătoare global, dar nu strict pe intervalele constante.",
+      "options": [
+        {
+          "text": "Strict crescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pe (−∞,4] și [5,+∞); strict descrescătoare pe [4,5]",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pe ℝ",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 4,
+        "type_name": "Monotonie cu valori absolute",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=(x−4)/(x−5), x≠5. Care afirmație este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(x)=1+1/(x−5). Pentru x<y pe aceeași componentă, f(y)−f(x)=(x−y)/((x−5)(y−5))<0. Global nu este descrescătoare: pentru x=4, y=6, valorile sunt 0 și 2.",
+      "options": [
+        {
+          "text": "Strict crescătoare pe fiecare componentă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe întregul domeniu",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe fiecare componentă a domeniului",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă pe fiecare componentă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 5,
+        "type_name": "Funcții omografice",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(x)=4x/(1+x²) pe intervalul [0,1].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru 0≤x<y≤1, f(y)−f(x)=4(y−x)(1−xy)/((1+x²)(1+y²)). Toți factorii sunt pozitivi, inclusiv 1−xy deoarece x<y≤1; funcția crește strict.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 6,
+        "type_name": "Funcții raționale cu numitor pătratic",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(x)=5ˣ+6ˣ, x∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele baze 5 și 6 sunt mai mari ca 1. Pentru x<y, fiecare putere la x este strict mai mică decât cea la y; adunarea dă f(x)<f(y).",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 7,
+        "type_name": "Monotonie exponențială",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este cel mai mic m∈ℝ pentru care f_m(x)=x²+2mx+4 este crescătoare pe [2m+12,+∞)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vârful este la x=−m. Pentru ca întreaga semidreaptă să fie pe ramura crescătoare este necesar și suficient 2m+12≥−m, adică m≥−4. La egalitate, intervalul începe în vârf și funcția crește strict după acesta.",
+      "options": [
+        {
+          "text": "-5",
+          "is_correct": false
+        },
+        {
+          "text": "-4",
+          "is_correct": true
+        },
+        {
+          "text": "-3",
+          "is_correct": false
+        },
+        {
+          "text": "-2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 8,
+        "type_name": "Parametru și interval mobil",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(x)=x+4⌊x⌋, x∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y avem ⌊x⌋≤⌊y⌋, deci f(y)−f(x)=(y−x)+4(⌊y⌋−⌊x⌋)>0. Termenul x elimină segmentele constante ale părții întregi.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 9,
+        "type_name": "Strictă monotonie și trepte",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f:ℝ→ℝ este strict crescătoare, cum este g(x)=x³+4f(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y avem x³<y³ și 4f(x)<4f(y). Adunarea acestor inegalități arată că g(x)<g(y).",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 10,
+        "type_name": "Transformări ale unei funcții strict monotone",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ este strict crescătoare, iar g este ne-descrescătoare. Cum este h(x)=f(x)+4g(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, f(x)<f(y), g(x)≤g(y). Înmulțind a doua inegalitate cu 4>0 și adunând, obținem h(x)<h(y).",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 11,
+        "type_name": "Suma funcțiilor monotone",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcțiile f,g:ℝ→(0,+∞) sunt strict crescătoare. Cum este h(x)=4f(x)g(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, 0<f(x)<f(y) și 0<g(x)<g(y). Astfel f(x)g(x)<f(y)g(x)<f(y)g(y). Înmulțirea cu 4>0 păstrează strictețea.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 12,
+        "type_name": "Produsul funcțiilor pozitive monotone",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f:ℝ→ℝ este strict crescătoare, clasificați g(x)=f(−5x+4).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x<y, atunci −5x+4>−5y+4. Aplicarea funcției strict crescătoare f păstrează această ordine, deci g(x)>g(y).",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 13,
+        "type_name": "Schimbarea semnului argumentului",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f:ℝ→(0,+∞) este strict crescătoare, clasificați g(x)=4/f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, 0<f(x)<f(y). Trecerea la inverse pozitive schimbă sensul: 1/f(x)>1/f(y). Factorul 4>0 păstrează ordinea; condiția de pozitivitate evită traversarea lui zero.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 14,
+        "type_name": "Inversa multiplicativă a valorii",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O funcție f:ℝ→ℝ este ne-descrescătoare și periodică cu perioada 5>0. Ce concluzie este obligatorie?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y alegem n astfel încât y<x+n·5. Monotonia dă f(x)≤f(y)≤f(x+n·5)=f(x), deci f(y)=f(x). Astfel funcția este constantă pe ℝ.",
+      "options": [
+        {
+          "text": "Constantă",
+          "is_correct": true
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 15,
+        "type_name": "Funcție monotonă și periodică",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a∈ℝ funcția \\(f(x)=\\begin{cases}x+4,&x<0\\\\2x+a,&x\\ge0\\end{cases}\\) este ne-descrescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele ramuri au pante pozitive. Pentru a nu apărea un salt în jos la 0, este necesar a=f(0)≥4, limita valorilor din stânga. Dacă a≥4, orice valoare din stânga este <4≤a și orice valoare din dreapta este ≥a, deci condiția este și suficientă.",
+      "options": [
+        {
+          "text": "a<4",
+          "is_correct": false
+        },
+        {
+          "text": "a≥4",
+          "is_correct": true
+        },
+        {
+          "text": "a≤4",
+          "is_correct": false
+        },
+        {
+          "text": "a>5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 16,
+        "type_name": "Monotonie globală cu parametri pe ramuri",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ satisface f(x)+f(−x)=2x² și f(x)−f(−x)=8x, pentru orice x. Cum este g(x)=f(x)−x²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunând relațiile, 2f(x)=2x²+8x, deci f(x)=x²+4x. Atunci g(x)=4x, strict crescătoare deoarece 4>0.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 17,
+        "type_name": "Monotonie din ecuație funcțională",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=4 dacă x∈ℚ și f(x)=0 dacă x∉ℚ. Pe ce intervale cu lungime pozitivă este f monotonă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Raționalele și iraționalele sunt dense în orice interval de lungime pozitivă. Putem alege x<y cu valori (4,0), încălcând creșterea, și alte x<y cu valori (0,4), încălcând descreșterea. Alegerea capetelor intervalului nu schimbă argumentul.",
+      "options": [
+        {
+          "text": "Pe toate intervalele",
+          "is_correct": false
+        },
+        {
+          "text": "Numai pe intervale cu capete raționale",
+          "is_correct": false
+        },
+        {
+          "text": "Numai pe intervale cu capete iraționale",
+          "is_correct": false
+        },
+        {
+          "text": "Pe niciun interval cu lungime pozitivă",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 18,
+        "type_name": "Funcții discontinue nemonotone pe orice interval",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte funcții strict crescătoare f:{1;2;3}→{1;2;…;7} există?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Alegem trei valori distincte din cele 7; ordinea lor crescătoare fixează imaginile lui 1,2,3 în mod unic. Numărul este C(7,3)=35.",
+      "options": [
+        {
+          "text": "35",
+          "is_correct": true
+        },
+        {
+          "text": "34",
+          "is_correct": false
+        },
+        {
+          "text": "36",
+          "is_correct": false
+        },
+        {
+          "text": "37",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 19,
+        "type_name": "Funcții strict monotone pe mulțime finită",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ ne-descrescătoare, cu f(0)=4. Care descompunere f=g+h garantează că g este strict crescătoare și h strict descrescătoare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este f. Pentru x<y, g(y)−g(x)=f(y)−f(x)+4(y−x)>0. În același timp, h(y)−h(x)=−4(y−x)<0. Constanța posibilă a lui f nu afectează strictețea acestor două funcții.",
+      "options": [
+        {
+          "text": "g(x)=f(x)−4x, h(x)=4x",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=f(x)+4x, h(x)=−4x",
+          "is_correct": true
+        },
+        {
+          "text": "g(x)=f(x), h(x)=0",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=f(x)+4, h(x)=−4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 20,
+        "type_name": "Descompunere în funcții strict monotone",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1;…;7} și f:A→A strict crescătoare. Calculați f(5).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O aplicație strict crescătoare este injectivă; pe o mulțime finită cu același codomeniu este bijectivă. Imaginile elementelor enumerate crescător sunt deci exact aceleași elemente, în aceeași ordine: f(k)=k. Astfel f(5)=5.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 21,
+        "type_name": "Aplicații monotone injective pe mulțimi finite",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ ne-descrescătoare, cu f(r)=r pentru orice r∈ℚ. Calculați f(4+√2)−√2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă f(x)>x, alegem un rațional r între x și f(x); monotonia ar da f(x)≤f(r)=r, contradicție. Dacă f(x)<x, alegem r între f(x) și x și obținem r=f(r)≤f(x), iarăși contradicție. Deci f(x)=x pentru orice real, inclusiv 4+√2; diferența cerută este 4.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 22,
+        "type_name": "Identitate impusă pe ℚ",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați monotonia lui f(x)=6x+5, x∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, f(y)−f(x)=6(y−x)>0, deci funcția este strict crescătoare.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 1,
+        "type_name": "Monotonie prin comparația a două valori",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(n)=8n+cmmdc(n,n+2), n∈ℕ*.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "cmmdc(n,n+2)=cmmdc(n,2)∈{1,2}. Diferența termenilor cmmdc este cel puțin −1, deci f(n+1)−f(n)≥8−1=7>0. Prin însumarea diferențelor, f crește strict pe ℕ*.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 2,
+        "type_name": "Monotonie a funcțiilor aritmetice",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care sunt intervalele maximale de monotonie ale lui f(x)=(x−5)², x∈ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "La stânga lui 5, distanța |x−5| scade când x crește; la dreapta crește. Pătratul păstrează ordinea distanțelor nenegative. Vârful separă cele două intervale maximale.",
+      "options": [
+        {
+          "text": "Strict crescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe (−∞,5], strict crescătoare pe [5,+∞)",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă pe [−5,5]",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 3,
+        "type_name": "Intervale de monotonie pentru pătrate",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru f(x)=|x−6|−|x−5|, x∈ℝ, care descriere este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pe x≤5, expresia este 1. Pe [5,6], este 11−2x, strict descrescătoare. Pe x≥6, este −1. Funcția este necreșcătoare global, dar nu strict pe intervalele constante.",
+      "options": [
+        {
+          "text": "Strict crescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pe ℝ",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pe (−∞,5] și [6,+∞); strict descrescătoare pe [5,6]",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 4,
+        "type_name": "Monotonie cu valori absolute",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=(x−5)/(x−6), x≠6. Care afirmație este corectă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(x)=1+1/(x−6). Pentru x<y pe aceeași componentă, f(y)−f(x)=(x−y)/((x−6)(y−6))<0. Global nu este descrescătoare: pentru x=5, y=7, valorile sunt 0 și 2.",
+      "options": [
+        {
+          "text": "Strict descrescătoare pe fiecare componentă a domeniului",
+          "is_correct": true
+        },
+        {
+          "text": "Strict crescătoare pe fiecare componentă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare pe întregul domeniu",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă pe fiecare componentă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 5,
+        "type_name": "Funcții omografice",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(x)=5x/(1+x²) pe intervalul [0,1].",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru 0≤x<y≤1, f(y)−f(x)=5(y−x)(1−xy)/((1+x²)(1+y²)). Toți factorii sunt pozitivi, inclusiv 1−xy deoarece x<y≤1; funcția crește strict.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 6,
+        "type_name": "Funcții raționale cu numitor pătratic",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(x)=6ˣ+7ˣ, x∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele baze 6 și 7 sunt mai mari ca 1. Pentru x<y, fiecare putere la x este strict mai mică decât cea la y; adunarea dă f(x)<f(y).",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 7,
+        "type_name": "Monotonie exponențială",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Care este cel mai mic m∈ℝ pentru care f_m(x)=x²+2mx+5 este crescătoare pe [2m+15,+∞)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Vârful este la x=−m. Pentru ca întreaga semidreaptă să fie pe ramura crescătoare este necesar și suficient 2m+15≥−m, adică m≥−5. La egalitate, intervalul începe în vârf și funcția crește strict după acesta.",
+      "options": [
+        {
+          "text": "-6",
+          "is_correct": false
+        },
+        {
+          "text": "-4",
+          "is_correct": false
+        },
+        {
+          "text": "-3",
+          "is_correct": false
+        },
+        {
+          "text": "-5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 8,
+        "type_name": "Parametru și interval mobil",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Clasificați f(x)=x+5⌊x⌋, x∈ℝ.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y avem ⌊x⌋≤⌊y⌋, deci f(y)−f(x)=(y−x)+5(⌊y⌋−⌊x⌋)>0. Termenul x elimină segmentele constante ale părții întregi.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 9,
+        "type_name": "Strictă monotonie și trepte",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f:ℝ→ℝ este strict crescătoare, cum este g(x)=x³+5f(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y avem x³<y³ și 5f(x)<5f(y). Adunarea acestor inegalități arată că g(x)<g(y).",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 10,
+        "type_name": "Transformări ale unei funcții strict monotone",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ este strict crescătoare, iar g este ne-descrescătoare. Cum este h(x)=f(x)+5g(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, f(x)<f(y), g(x)≤g(y). Înmulțind a doua inegalitate cu 5>0 și adunând, obținem h(x)<h(y).",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 11,
+        "type_name": "Suma funcțiilor monotone",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcțiile f,g:ℝ→(0,+∞) sunt strict crescătoare. Cum este h(x)=5f(x)g(x)?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, 0<f(x)<f(y) și 0<g(x)<g(y). Astfel f(x)g(x)<f(y)g(x)<f(y)g(y). Înmulțirea cu 5>0 păstrează strictețea.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 12,
+        "type_name": "Produsul funcțiilor pozitive monotone",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f:ℝ→ℝ este strict crescătoare, clasificați g(x)=f(−6x+5).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă x<y, atunci −6x+5>−6y+5. Aplicarea funcției strict crescătoare f păstrează această ordine, deci g(x)>g(y).",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 13,
+        "type_name": "Schimbarea semnului argumentului",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f:ℝ→(0,+∞) este strict crescătoare, clasificați g(x)=5/f(x).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y, 0<f(x)<f(y). Trecerea la inverse pozitive schimbă sensul: 1/f(x)>1/f(y). Factorul 5>0 păstrează ordinea; condiția de pozitivitate evită traversarea lui zero.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 14,
+        "type_name": "Inversa multiplicativă a valorii",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O funcție f:ℝ→ℝ este ne-descrescătoare și periodică cu perioada 6>0. Ce concluzie este obligatorie?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y alegem n astfel încât y<x+n·6. Monotonia dă f(x)≤f(y)≤f(x+n·6)=f(x), deci f(y)=f(x). Astfel funcția este constantă pe ℝ.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": true
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 15,
+        "type_name": "Funcție monotonă și periodică",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a∈ℝ funcția \\(f(x)=\\begin{cases}x+5,&x<0\\\\2x+a,&x\\ge0\\end{cases}\\) este ne-descrescătoare pe ℝ?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ambele ramuri au pante pozitive. Pentru a nu apărea un salt în jos la 0, este necesar a=f(0)≥5, limita valorilor din stânga. Dacă a≥5, orice valoare din stânga este <5≤a și orice valoare din dreapta este ≥a, deci condiția este și suficientă.",
+      "options": [
+        {
+          "text": "a<5",
+          "is_correct": false
+        },
+        {
+          "text": "a≤5",
+          "is_correct": false
+        },
+        {
+          "text": "a>6",
+          "is_correct": false
+        },
+        {
+          "text": "a≥5",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 16,
+        "type_name": "Monotonie globală cu parametri pe ramuri",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcția f:ℝ→ℝ satisface f(x)+f(−x)=2x² și f(x)−f(−x)=10x, pentru orice x. Cum este g(x)=f(x)−x²?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Adunând relațiile, 2f(x)=2x²+10x, deci f(x)=x²+5x. Atunci g(x)=5x, strict crescătoare deoarece 5>0.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 17,
+        "type_name": "Monotonie din ecuație funcțională",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=5 dacă x∈ℚ și f(x)=0 dacă x∉ℚ. Pe ce intervale cu lungime pozitivă este f monotonă?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Raționalele și iraționalele sunt dense în orice interval de lungime pozitivă. Putem alege x<y cu valori (5,0), încălcând creșterea, și alte x<y cu valori (0,5), încălcând descreșterea. Alegerea capetelor intervalului nu schimbă argumentul.",
+      "options": [
+        {
+          "text": "Pe toate intervalele",
+          "is_correct": false
+        },
+        {
+          "text": "Pe niciun interval cu lungime pozitivă",
+          "is_correct": true
+        },
+        {
+          "text": "Numai pe intervale cu capete raționale",
+          "is_correct": false
+        },
+        {
+          "text": "Numai pe intervale cu capete iraționale",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 18,
+        "type_name": "Funcții discontinue nemonotone pe orice interval",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte funcții strict crescătoare f:{1;2;3}→{1;2;…;8} există?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Alegem trei valori distincte din cele 8; ordinea lor crescătoare fixează imaginile lui 1,2,3 în mod unic. Numărul este C(8,3)=56.",
+      "options": [
+        {
+          "text": "55",
+          "is_correct": false
+        },
+        {
+          "text": "57",
+          "is_correct": false
+        },
+        {
+          "text": "56",
+          "is_correct": true
+        },
+        {
+          "text": "58",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 19,
+        "type_name": "Funcții strict monotone pe mulțime finită",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ ne-descrescătoare, cu f(0)=5. Care descompunere f=g+h garantează că g este strict crescătoare și h strict descrescătoare?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma este f. Pentru x<y, g(y)−g(x)=f(y)−f(x)+5(y−x)>0. În același timp, h(y)−h(x)=−5(y−x)<0. Constanța posibilă a lui f nu afectează strictețea acestor două funcții.",
+      "options": [
+        {
+          "text": "g(x)=f(x)−5x, h(x)=5x",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=f(x), h(x)=0",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=f(x)+5, h(x)=−5",
+          "is_correct": false
+        },
+        {
+          "text": "g(x)=f(x)+5x, h(x)=−5x",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 20,
+        "type_name": "Descompunere în funcții strict monotone",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie A={1;…;8} și f:A→A strict crescătoare. Calculați f(6).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "O aplicație strict crescătoare este injectivă; pe o mulțime finită cu același codomeniu este bijectivă. Imaginile elementelor enumerate crescător sunt deci exact aceleași elemente, în aceeași ordine: f(k)=k. Astfel f(6)=6.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 21,
+        "type_name": "Aplicații monotone injective pe mulțimi finite",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ ne-descrescătoare, cu f(r)=r pentru orice r∈ℚ. Calculați f(5+√2)−√2.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă f(x)>x, alegem un rațional r între x și f(x); monotonia ar da f(x)≤f(r)=r, contradicție. Dacă f(x)<x, alegem r între f(x) și x și obținem r=f(r)≤f(x), iarăși contradicție. Deci f(x)=x pentru orice real, inclusiv 5+√2; diferența cerută este 5.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.4.4",
+        "type": 22,
+        "type_name": "Identitate impusă pe ℚ",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    }
+  ],
+  "title": "Monotonia funcțiilor"
+}

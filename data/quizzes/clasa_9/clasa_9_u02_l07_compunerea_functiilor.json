@@ -1,6 +1,3687 @@
 {
   "title": "Compunerea funcțiilor",
   "description": "Clasa a 9-a · Funcții",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "hard",
+  "questions": [
+    {
+      "text": "Fie \\(f:(0,2)\\to(-1,1),\\ f(x)=\\frac{2(x-1)}{1+(x-1)^2}\\) și \\(g:(-1,1)\\to(0,2),\\ g(y)=1+\\frac{\\sqrt{1+y}-\\sqrt{1-y}}{\\sqrt{1+y}+\\sqrt{1-y}}\\). Calculați \\((g\\circ f)(1+1/3)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=x−1∈(−1,1). Pentru y=2u/(1+u²), avem √(1±y)=(1±u)/√(1+u²), deoarece 1±u>0. Raportul din g devine u, deci g(f(x))=1+u=x. Argumentul 1+1/3 este în domeniu, astfel rezultatul este 4/3. Radicalii și numitorul sunt strict pozitivi. Reciproc, raportul v din g satisface |v|<1 și 2v/(1+v²)=y, deci și f(g(y))=y.",
+      "options": [
+        {
+          "text": "4/3",
+          "is_correct": true
+        },
+        {
+          "text": "1/3",
+          "is_correct": false
+        },
+        {
+          "text": "7/3",
+          "is_correct": false
+        },
+        {
+          "text": "10/3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 1,
+        "type_name": "Compunere de funcții inverse cu radicali",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=2x+1, g(x)=x−1, ambele pe ℝ. Care este formula lui f∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm întâi g, apoi f: f(g(x))=2(x−1)+1=2x−1. În ordinea inversă, g(f(x))=2x, deci compunerea nu este în general comutativă. Ambele compuneri sunt definite pe tot ℝ.",
+      "options": [
+        {
+          "text": "(f∘g)(x)=2x+1",
+          "is_correct": false
+        },
+        {
+          "text": "(f∘g)(x)=2x−1",
+          "is_correct": true
+        },
+        {
+          "text": "(f∘g)(x)=2x",
+          "is_correct": false
+        },
+        {
+          "text": "(f∘g)(x)=2x−2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 2,
+        "type_name": "Compunerea funcțiilor explicite",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=|x| și g(x)=x−1, pe ℝ. Calculați (f∘g)(−2)−(g∘f)(−2).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(g(−2))=|−2−1|=3. În schimb, g(f(−2))=2−1=1. Diferența este 3−(1)=2.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 3,
+        "type_name": "Compunerea cu module",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe ℕ={0,1,…}, f(n) este ultima cifră a lui 3ⁿ, iar g(n) ultima cifră a lui 2ⁿ. Calculați (f∘g)(4).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Întâi g(4)=6. Apoi calculăm ultima cifră a lui 3^6, care este 9. Se folosesc succesiv cele două reguli, nu ultima cifră a unui produs.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 4,
+        "type_name": "Compunerea funcțiilor aritmetice",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie \\(f(t)=\\begin{cases}t^2,&t<0\\\\t+1,&t\\ge0\\end{cases}\\), t∈ℝ, și g(x)=x−1. Care este f∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ramura se alege după g(x), nu după x: g(x)<0 exact când x<1. Pentru x≥1, inclusiv x=1, folosim ramura t+1, obținând x−1+1. La prag valoarea este 1, nu 0.",
+      "options": [
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}(x-1)^2,&x<1\\\\x-1+1,&x\\ge 1\\end{cases}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}(x-1)^2,&x<0\\\\x-1+1,&x\\ge0\\end{cases}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}(x-1)^2,&x\\le 1\\\\x-1+1,&x>1\\end{cases}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}x^2-1,&x<1\\\\x-1+1,&x\\ge 1\\end{cases}\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 5,
+        "type_name": "Compunerea funcțiilor pe ramuri",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=2x+1 și g(x)=2x+a, x∈ℝ. Pentru ce a avem f∘g=g∘f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(g(x))=4x+2a+1; g(f(x))=4x+2+a. Egalitatea termenilor liberi dă (2−1)a=1, deci a=1.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 6,
+        "type_name": "Comutarea compunerilor",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=2x+1, x∈ℝ. Calculați f aplicată succesiv de 3 ori argumentului 1. Iterarea înseamnă compunere, nu ridicare la putere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Iterata de ordin n este fⁿ(x)=2ⁿx+1(1+2+⋯+2ⁿ⁻¹), obținută prin inducție din fⁿ⁺¹(x)=2fⁿ(x)+1. Pentru n=3, x=1, rezultatul este 15.",
+      "options": [
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": true
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 7,
+        "type_name": "Iterarea unei funcții afine",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Există o funcție monotonă f:ℝ→ℝ care satisface f(f(x))=−x+1 pentru orice x?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă f este ne-descrescătoare, compunerea cu ea însăși este ne-descrescătoare. Dacă f este ne-crescătoare, cele două inversări ale ordinii dau tot o compunere ne-descrescătoare. Dar −x plus o constantă este strict descrescătoare pe ℝ, deci egalitatea este imposibilă.",
+      "options": [
+        {
+          "text": "Da, f(x)=−x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, f(x)=x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, orice funcție constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, compunerea f∘f ar fi ne-descrescătoare",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 8,
+        "type_name": "Imposibilitate prin monotonie a compunerii",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f,g:ℝ→ℝ sunt strict descrescătoare, ce monotonie are h(x)=f(g(x))+1?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y avem g(x)>g(y), apoi f(g(x))<f(g(y)), deoarece f inversează ordinea. Adăugarea lui 1 păstrează comparația, deci h este strict crescătoare.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Obligatoriu nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 9,
+        "type_name": "Monotonia compunerii",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcțiile f,g:ℝ→ℝ sunt impare și satisfac f(2)=2, g(2)=2. Ce paritate are h=f∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "h(−x)=f(g(−x))=f(−g(x))=−f(g(x))=−h(x). În plus h(2)=2≠0; o funcție simultan pară și impară ar fi nulă, deci h nu este pară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 10,
+        "type_name": "Paritatea compunerii",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Definim f:ℝ→ℝ prin f(x)=x dacă x∈ℚ și f(x)=2−x dacă x∉ℚ. Ce proprietăți au f și f∘f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Raționalele sunt fixate; pentru x irațional, 2−x rămâne irațional și a doua aplicare dă x. Deci f(f(x))=x. Pe (2,3), raționalele au imagini >1, iar iraționalele au imagini <1. Densitatea ambelor mulțimi permite atât creșteri, cât și descreșteri, deci f nu este monotonă.",
+      "options": [
+        {
+          "text": "f este strict crescătoare, iar f∘f este constantă",
+          "is_correct": false
+        },
+        {
+          "text": "f este strict descrescătoare, iar f∘f este identitatea",
+          "is_correct": false
+        },
+        {
+          "text": "f este nemonotonă, iar f∘f este identitatea",
+          "is_correct": true
+        },
+        {
+          "text": "f∘f este strict descrescătoare",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 11,
+        "type_name": "Funcție nemonotonă cu pătrat compozițional monoton",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=2x+1, g(x)=ax+b, pe ℝ. Determinați (a;b) astfel încât f(g(x))=x pentru orice x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem f(g(x))=2ax+2b+1. Identificăm coeficienții: 2a=1 și 2b+1=0, deci a=1/2, b=-1/2. Panta este nenulă, iar aceste funcții sunt inverse în ambele sensuri.",
+      "options": [
+        {
+          "text": "(2;-1)",
+          "is_correct": false
+        },
+        {
+          "text": "(1/2;1/2)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1/2;-1/2)",
+          "is_correct": false
+        },
+        {
+          "text": "(1/2;-1/2)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 12,
+        "type_name": "Inversare compozițională afină",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=2x+1, pe ℝ. Dacă f(g(x))=4x+3 pentru orice x, calculați g(3).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația devine 2g(x)+1=4x+3. Scădem 1 și împărțim la 2≠0: g(x)=2x+1. Deci g(3)=7.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 13,
+        "type_name": "Recuperarea unei funcții interioare",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x²+1, x∈ℝ. Rezolvați ecuația f(f(x))=5.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația este (x²+1)²+1=5, deci (x²+1)²=4. Cum x²+1>0, alegem numai x²+1=2. Rezultă x²=1 și x=±1. Ambele verifică ecuația; ramura negativă a rădăcinii nu este admisă.",
+      "options": [
+        {
+          "text": "{1}",
+          "is_correct": false
+        },
+        {
+          "text": "{−1; 1}",
+          "is_correct": true
+        },
+        {
+          "text": "{−2; 2}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 14,
+        "type_name": "Ecuații cu iterații",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ strict crescătoare și f(f(x))=x pentru orice x. Calculați f(3).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă f(x)>x, aplicarea strictei creșteri dă f(f(x))>f(x), adică x>f(x), contradicție. Dacă f(x)<x, obținem invers x<f(x), tot contradicție. Așadar f(x)=x pentru orice x.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 15,
+        "type_name": "Iterată identică și monotonie",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe ℕ={0,1,…}, fie f(n)=2n și g(n)=⌊n/2⌋. Care relație este adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "g(f(n))=⌊2n/2⌋=n. În schimb, f(g(1))=2⌊1/2⌋=0≠1. În plus, nicio funcție h:ℕ→ℕ nu poate satisface f∘h=Id, deoarece 1 nu este în imaginea lui f.",
+      "options": [
+        {
+          "text": "f∘g=Id, dar g∘f≠Id",
+          "is_correct": false
+        },
+        {
+          "text": "Ambele compuneri sunt Id",
+          "is_correct": false
+        },
+        {
+          "text": "Niciuna dintre compuneri nu este Id",
+          "is_correct": false
+        },
+        {
+          "text": "g∘f=Id, dar f∘g≠Id",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 16,
+        "type_name": "Inverse într-un singur sens pe ℕ",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Poate exista f:ℝ→ℝ cu f²(x)=2x și f³(x)=3x pentru orice x? Aici f² și f³ sunt iterate prin compunere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din f² rezultă f⁶(x)=8x, prin trei compuneri; din f³ rezultă f⁶(x)=9x, prin două compuneri. La x=1 acestea sunt distincte (8≠9), deci nu poate exista f.",
+      "options": [
+        {
+          "text": "Nu, cele două moduri de a calcula f⁶ sunt incompatibile",
+          "is_correct": true
+        },
+        {
+          "text": "Da, f(x)=2x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, f(x)=3x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, f(x)=0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 17,
+        "type_name": "Compatibilitatea a două iterate",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a∈ℝ există f:ℝ→ℝ cu f²(x)=x și f³(x)=ax+1 pentru orice x? Puterile desemnează iterate.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din f²=Id rezultă f³=f, deci f(x)=ax+1. Atunci f²(x)=a²x+1(a+1). Pentru egalitate cu x sunt necesare a²=1 și 1(a+1)=0; cum 1>0, a=−1. Funcția f(x)=−x+1 verifică ambele relații, deci valoarea este și suficientă.",
+      "options": [
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 18,
+        "type_name": "Parametru în ecuații de iterare",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O mulțime A are 3 elemente. O funcție f:A→A satisface f(f(x))=x pentru orice x∈A. Care este numărul MINIM posibil de puncte fixe?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Elementele nefixate se împart în perechi distincte {x,f(x)}. Cum 3 este impar, rămâne cel puțin un punct fix. Minimul 1 se atinge fixând un element și împerechind celelalte 2.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 19,
+        "type_name": "Punct fix pentru involuții finite impare",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x+1⌊x⌋, x∈ℝ. Calculați iterata de ordin 3 în x=−4/3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem x=k+r, k=⌊x⌋, 0≤r<1. Atunci f(x)=2k+r; partea fracționară r rămâne aceeași, iar partea întreagă se înmulțește cu 2. Prin inducție, fⁿ(x)=2ⁿk+r. Aici k=-2, r=2/3, n=3, deci valoarea este -46/3. Formula este valabilă și pentru x negativ.",
+      "options": [
+        {
+          "text": "-49/3",
+          "is_correct": false
+        },
+        {
+          "text": "-43/3",
+          "is_correct": false
+        },
+        {
+          "text": "-40/3",
+          "is_correct": false
+        },
+        {
+          "text": "-46/3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 20,
+        "type_name": "Iterarea unei funcții cu parte întreagă",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:{−1,…,1}→ℝ, f(x)=x. Câte restricții la subdomenii NEVIDE A au numai valori strict pozitive?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Argumentele cu imagine pozitivă sunt exact {1,…,1}. Orice submulțime nevidă a acestei mulțimi dă o restricție admisă și nu există altele. Numărul este 2^1−1=1; am exclus domeniul vid.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 21,
+        "type_name": "Numărarea restricțiilor cu imagini impuse",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte funcții f:{1;2;3}→{1;2;4} satisfac f(1)+f(2)+f(3)=6?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem 1 din fiecare valoare: cele trei valori noi aparțin {0,1,3} și au suma 3. Posibilitățile sunt (1,1,1) și cele trei permutări distincte ale lui (3,0,0). Total: 1+3=4 funcții. Repetarea imaginilor este permisă.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 22,
+        "type_name": "Funcții finite cu suma imaginilor prescrisă",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ cu f(x)+2f(2−x)=x pentru orice x. Calculați f(2).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem relația și la 2−x: f(2−x)+2f(x)=2−x. Înmulțim aceasta cu 2 și scădem prima relație: 3f(x)=4−3x. Deci f(x)=4/3−x, care verifică relația inițială. Rezultă f(2)=-2/3. În plus f(f(x))=x.",
+      "options": [
+        {
+          "text": "-5/3",
+          "is_correct": false
+        },
+        {
+          "text": "1/3",
+          "is_correct": false
+        },
+        {
+          "text": "-2/3",
+          "is_correct": true
+        },
+        {
+          "text": "4/3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 23,
+        "type_name": "Recuperarea funcțiilor cu argument reflectat",
+        "variant": 1,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie \\(f:(1,3)\\to(-1,1),\\ f(x)=\\frac{2(x-2)}{1+(x-2)^2}\\) și \\(g:(-1,1)\\to(1,3),\\ g(y)=2+\\frac{\\sqrt{1+y}-\\sqrt{1-y}}{\\sqrt{1+y}+\\sqrt{1-y}}\\). Calculați \\((g\\circ f)(2+1/4)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=x−2∈(−1,1). Pentru y=2u/(1+u²), avem √(1±y)=(1±u)/√(1+u²), deoarece 1±u>0. Raportul din g devine u, deci g(f(x))=2+u=x. Argumentul 2+1/4 este în domeniu, astfel rezultatul este 9/4. Radicalii și numitorul sunt strict pozitivi. Reciproc, raportul v din g satisface |v|<1 și 2v/(1+v²)=y, deci și f(g(y))=y.",
+      "options": [
+        {
+          "text": "5/4",
+          "is_correct": false
+        },
+        {
+          "text": "13/4",
+          "is_correct": false
+        },
+        {
+          "text": "17/4",
+          "is_correct": false
+        },
+        {
+          "text": "9/4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 1,
+        "type_name": "Compunere de funcții inverse cu radicali",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=3x+2, g(x)=x−2, ambele pe ℝ. Care este formula lui f∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm întâi g, apoi f: f(g(x))=3(x−2)+2=3x−4. În ordinea inversă, g(f(x))=3x, deci compunerea nu este în general comutativă. Ambele compuneri sunt definite pe tot ℝ.",
+      "options": [
+        {
+          "text": "(f∘g)(x)=3x−4",
+          "is_correct": true
+        },
+        {
+          "text": "(f∘g)(x)=3x+2",
+          "is_correct": false
+        },
+        {
+          "text": "(f∘g)(x)=3x",
+          "is_correct": false
+        },
+        {
+          "text": "(f∘g)(x)=3x−5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 2,
+        "type_name": "Compunerea funcțiilor explicite",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=|x| și g(x)=x−2, pe ℝ. Calculați (f∘g)(−2)−(g∘f)(−2).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(g(−2))=|−2−2|=4. În schimb, g(f(−2))=2−2=0. Diferența este 4−(0)=4.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 3,
+        "type_name": "Compunerea cu module",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe ℕ={0,1,…}, f(n) este ultima cifră a lui 3ⁿ, iar g(n) ultima cifră a lui 2ⁿ. Calculați (f∘g)(5).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Întâi g(5)=2. Apoi calculăm ultima cifră a lui 3^2, care este 9. Se folosesc succesiv cele două reguli, nu ultima cifră a unui produs.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 4,
+        "type_name": "Compunerea funcțiilor aritmetice",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie \\(f(t)=\\begin{cases}t^2,&t<0\\\\t+1,&t\\ge0\\end{cases}\\), t∈ℝ, și g(x)=x−2. Care este f∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ramura se alege după g(x), nu după x: g(x)<0 exact când x<2. Pentru x≥2, inclusiv x=2, folosim ramura t+1, obținând x−2+1. La prag valoarea este 1, nu 0.",
+      "options": [
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}(x-2)^2,&x<0\\\\x-2+1,&x\\ge0\\end{cases}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}(x-2)^2,&x\\le 2\\\\x-2+1,&x>2\\end{cases}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}x^2-2,&x<2\\\\x-2+1,&x\\ge 2\\end{cases}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}(x-2)^2,&x<2\\\\x-2+1,&x\\ge 2\\end{cases}\\)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 5,
+        "type_name": "Compunerea funcțiilor pe ramuri",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=3x+2 și g(x)=2x+a, x∈ℝ. Pentru ce a avem f∘g=g∘f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(g(x))=6x+3a+2; g(f(x))=6x+4+a. Egalitatea termenilor liberi dă (3−1)a=2, deci a=1.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 6,
+        "type_name": "Comutarea compunerilor",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=3x+2, x∈ℝ. Calculați f aplicată succesiv de 4 ori argumentului 1. Iterarea înseamnă compunere, nu ridicare la putere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Iterata de ordin n este fⁿ(x)=3ⁿx+2(1+3+⋯+3ⁿ⁻¹), obținută prin inducție din fⁿ⁺¹(x)=3fⁿ(x)+2. Pentru n=4, x=1, rezultatul este 161.",
+      "options": [
+        {
+          "text": "160",
+          "is_correct": false
+        },
+        {
+          "text": "161",
+          "is_correct": true
+        },
+        {
+          "text": "162",
+          "is_correct": false
+        },
+        {
+          "text": "163",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 7,
+        "type_name": "Iterarea unei funcții afine",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Există o funcție monotonă f:ℝ→ℝ care satisface f(f(x))=−x+2 pentru orice x?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă f este ne-descrescătoare, compunerea cu ea însăși este ne-descrescătoare. Dacă f este ne-crescătoare, cele două inversări ale ordinii dau tot o compunere ne-descrescătoare. Dar −x plus o constantă este strict descrescătoare pe ℝ, deci egalitatea este imposibilă.",
+      "options": [
+        {
+          "text": "Da, f(x)=−x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, f(x)=x",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, compunerea f∘f ar fi ne-descrescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Da, orice funcție constantă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 8,
+        "type_name": "Imposibilitate prin monotonie a compunerii",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f,g:ℝ→ℝ sunt strict descrescătoare, ce monotonie are h(x)=f(g(x))+2?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y avem g(x)>g(y), apoi f(g(x))<f(g(y)), deoarece f inversează ordinea. Adăugarea lui 2 păstrează comparația, deci h este strict crescătoare.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Obligatoriu nemonotonă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 9,
+        "type_name": "Monotonia compunerii",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcțiile f,g:ℝ→ℝ sunt impare și satisfac f(3)=3, g(3)=3. Ce paritate are h=f∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "h(−x)=f(g(−x))=f(−g(x))=−f(g(x))=−h(x). În plus h(3)=3≠0; o funcție simultan pară și impară ar fi nulă, deci h nu este pară.",
+      "options": [
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 10,
+        "type_name": "Paritatea compunerii",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Definim f:ℝ→ℝ prin f(x)=x dacă x∈ℚ și f(x)=4−x dacă x∉ℚ. Ce proprietăți au f și f∘f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Raționalele sunt fixate; pentru x irațional, 4−x rămâne irațional și a doua aplicare dă x. Deci f(f(x))=x. Pe (3,4), raționalele au imagini >2, iar iraționalele au imagini <2. Densitatea ambelor mulțimi permite atât creșteri, cât și descreșteri, deci f nu este monotonă.",
+      "options": [
+        {
+          "text": "f este strict crescătoare, iar f∘f este constantă",
+          "is_correct": false
+        },
+        {
+          "text": "f este nemonotonă, iar f∘f este identitatea",
+          "is_correct": true
+        },
+        {
+          "text": "f este strict descrescătoare, iar f∘f este identitatea",
+          "is_correct": false
+        },
+        {
+          "text": "f∘f este strict descrescătoare",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 11,
+        "type_name": "Funcție nemonotonă cu pătrat compozițional monoton",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=3x+2, g(x)=ax+b, pe ℝ. Determinați (a;b) astfel încât f(g(x))=x pentru orice x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem f(g(x))=3ax+3b+2. Identificăm coeficienții: 3a=1 și 3b+2=0, deci a=1/3, b=-2/3. Panta este nenulă, iar aceste funcții sunt inverse în ambele sensuri.",
+      "options": [
+        {
+          "text": "(3;-2)",
+          "is_correct": false
+        },
+        {
+          "text": "(1/3;2/3)",
+          "is_correct": false
+        },
+        {
+          "text": "(1/3;-2/3)",
+          "is_correct": true
+        },
+        {
+          "text": "(-1/3;-2/3)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 12,
+        "type_name": "Inversare compozițională afină",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=3x+2, pe ℝ. Dacă f(g(x))=6x+5 pentru orice x, calculați g(4).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația devine 3g(x)+2=6x+5. Scădem 2 și împărțim la 3≠0: g(x)=2x+1. Deci g(4)=9.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 13,
+        "type_name": "Recuperarea unei funcții interioare",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x²+2, x∈ℝ. Rezolvați ecuația f(f(x))=11.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația este (x²+2)²+2=11, deci (x²+2)²=9. Cum x²+2>0, alegem numai x²+2=3. Rezultă x²=1 și x=±1. Ambele verifică ecuația; ramura negativă a rădăcinii nu este admisă.",
+      "options": [
+        {
+          "text": "{−1; 1}",
+          "is_correct": true
+        },
+        {
+          "text": "{1}",
+          "is_correct": false
+        },
+        {
+          "text": "{−3; 3}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 14,
+        "type_name": "Ecuații cu iterații",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ strict crescătoare și f(f(x))=x pentru orice x. Calculați f(4).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă f(x)>x, aplicarea strictei creșteri dă f(f(x))>f(x), adică x>f(x), contradicție. Dacă f(x)<x, obținem invers x<f(x), tot contradicție. Așadar f(x)=x pentru orice x.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 15,
+        "type_name": "Iterată identică și monotonie",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe ℕ={0,1,…}, fie f(n)=3n și g(n)=⌊n/3⌋. Care relație este adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "g(f(n))=⌊3n/3⌋=n. În schimb, f(g(1))=3⌊1/3⌋=0≠1. În plus, nicio funcție h:ℕ→ℕ nu poate satisface f∘h=Id, deoarece 1 nu este în imaginea lui f.",
+      "options": [
+        {
+          "text": "f∘g=Id, dar g∘f≠Id",
+          "is_correct": false
+        },
+        {
+          "text": "Ambele compuneri sunt Id",
+          "is_correct": false
+        },
+        {
+          "text": "g∘f=Id, dar f∘g≠Id",
+          "is_correct": true
+        },
+        {
+          "text": "Niciuna dintre compuneri nu este Id",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 16,
+        "type_name": "Inverse într-un singur sens pe ℕ",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Poate exista f:ℝ→ℝ cu f²(x)=3x și f³(x)=4x pentru orice x? Aici f² și f³ sunt iterate prin compunere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din f² rezultă f⁶(x)=27x, prin trei compuneri; din f³ rezultă f⁶(x)=16x, prin două compuneri. La x=1 acestea sunt distincte (27≠16), deci nu poate exista f.",
+      "options": [
+        {
+          "text": "Da, f(x)=3x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, f(x)=4x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, f(x)=0",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, cele două moduri de a calcula f⁶ sunt incompatibile",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 17,
+        "type_name": "Compatibilitatea a două iterate",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a∈ℝ există f:ℝ→ℝ cu f²(x)=x și f³(x)=ax+2 pentru orice x? Puterile desemnează iterate.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din f²=Id rezultă f³=f, deci f(x)=ax+2. Atunci f²(x)=a²x+2(a+1). Pentru egalitate cu x sunt necesare a²=1 și 2(a+1)=0; cum 2>0, a=−1. Funcția f(x)=−x+2 verifică ambele relații, deci valoarea este și suficientă.",
+      "options": [
+        {
+          "text": "-1",
+          "is_correct": true
+        },
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 18,
+        "type_name": "Parametru în ecuații de iterare",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O mulțime A are 5 elemente. O funcție f:A→A satisface f(f(x))=x pentru orice x∈A. Care este numărul MINIM posibil de puncte fixe?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Elementele nefixate se împart în perechi distincte {x,f(x)}. Cum 5 este impar, rămâne cel puțin un punct fix. Minimul 1 se atinge fixând un element și împerechind celelalte 4.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 19,
+        "type_name": "Punct fix pentru involuții finite impare",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x+2⌊x⌋, x∈ℝ. Calculați iterata de ordin 4 în x=−7/3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem x=k+r, k=⌊x⌋, 0≤r<1. Atunci f(x)=3k+r; partea fracționară r rămâne aceeași, iar partea întreagă se înmulțește cu 3. Prin inducție, fⁿ(x)=3ⁿk+r. Aici k=-3, r=2/3, n=4, deci valoarea este -727/3. Formula este valabilă și pentru x negativ.",
+      "options": [
+        {
+          "text": "-730/3",
+          "is_correct": false
+        },
+        {
+          "text": "-724/3",
+          "is_correct": false
+        },
+        {
+          "text": "-727/3",
+          "is_correct": true
+        },
+        {
+          "text": "-721/3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 20,
+        "type_name": "Iterarea unei funcții cu parte întreagă",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:{−2,…,2}→ℝ, f(x)=x. Câte restricții la subdomenii NEVIDE A au numai valori strict pozitive?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Argumentele cu imagine pozitivă sunt exact {1,…,2}. Orice submulțime nevidă a acestei mulțimi dă o restricție admisă și nu există altele. Numărul este 2^2−1=3; am exclus domeniul vid.",
+      "options": [
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 21,
+        "type_name": "Numărarea restricțiilor cu imagini impuse",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte funcții f:{1;2;3}→{2;3;5} satisfac f(1)+f(2)+f(3)=9?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem 2 din fiecare valoare: cele trei valori noi aparțin {0,1,3} și au suma 3. Posibilitățile sunt (1,1,1) și cele trei permutări distincte ale lui (3,0,0). Total: 1+3=4 funcții. Repetarea imaginilor este permisă.",
+      "options": [
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 22,
+        "type_name": "Funcții finite cu suma imaginilor prescrisă",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ cu f(x)+2f(4−x)=x pentru orice x. Calculați f(3).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem relația și la 4−x: f(4−x)+2f(x)=4−x. Înmulțim aceasta cu 2 și scădem prima relație: 3f(x)=8−3x. Deci f(x)=8/3−x, care verifică relația inițială. Rezultă f(3)=-1/3. În plus f(f(x))=x.",
+      "options": [
+        {
+          "text": "-4/3",
+          "is_correct": false
+        },
+        {
+          "text": "-1/3",
+          "is_correct": true
+        },
+        {
+          "text": "2/3",
+          "is_correct": false
+        },
+        {
+          "text": "5/3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 23,
+        "type_name": "Recuperarea funcțiilor cu argument reflectat",
+        "variant": 2,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie \\(f:(2,4)\\to(-1,1),\\ f(x)=\\frac{2(x-3)}{1+(x-3)^2}\\) și \\(g:(-1,1)\\to(2,4),\\ g(y)=3+\\frac{\\sqrt{1+y}-\\sqrt{1-y}}{\\sqrt{1+y}+\\sqrt{1-y}}\\). Calculați \\((g\\circ f)(3+1/5)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=x−3∈(−1,1). Pentru y=2u/(1+u²), avem √(1±y)=(1±u)/√(1+u²), deoarece 1±u>0. Raportul din g devine u, deci g(f(x))=3+u=x. Argumentul 3+1/5 este în domeniu, astfel rezultatul este 16/5. Radicalii și numitorul sunt strict pozitivi. Reciproc, raportul v din g satisface |v|<1 și 2v/(1+v²)=y, deci și f(g(y))=y.",
+      "options": [
+        {
+          "text": "11/5",
+          "is_correct": false
+        },
+        {
+          "text": "21/5",
+          "is_correct": false
+        },
+        {
+          "text": "16/5",
+          "is_correct": true
+        },
+        {
+          "text": "26/5",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 1,
+        "type_name": "Compunere de funcții inverse cu radicali",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=4x+3, g(x)=x−3, ambele pe ℝ. Care este formula lui f∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm întâi g, apoi f: f(g(x))=4(x−3)+3=4x−9. În ordinea inversă, g(f(x))=4x, deci compunerea nu este în general comutativă. Ambele compuneri sunt definite pe tot ℝ.",
+      "options": [
+        {
+          "text": "(f∘g)(x)=4x+3",
+          "is_correct": false
+        },
+        {
+          "text": "(f∘g)(x)=4x",
+          "is_correct": false
+        },
+        {
+          "text": "(f∘g)(x)=4x−10",
+          "is_correct": false
+        },
+        {
+          "text": "(f∘g)(x)=4x−9",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 2,
+        "type_name": "Compunerea funcțiilor explicite",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=|x| și g(x)=x−3, pe ℝ. Calculați (f∘g)(−2)−(g∘f)(−2).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(g(−2))=|−2−3|=5. În schimb, g(f(−2))=2−3=-1. Diferența este 5−(-1)=6.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 3,
+        "type_name": "Compunerea cu module",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe ℕ={0,1,…}, f(n) este ultima cifră a lui 3ⁿ, iar g(n) ultima cifră a lui 2ⁿ. Calculați (f∘g)(6).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Întâi g(6)=4. Apoi calculăm ultima cifră a lui 3^4, care este 1. Se folosesc succesiv cele două reguli, nu ultima cifră a unui produs.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 4,
+        "type_name": "Compunerea funcțiilor aritmetice",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie \\(f(t)=\\begin{cases}t^2,&t<0\\\\t+1,&t\\ge0\\end{cases}\\), t∈ℝ, și g(x)=x−3. Care este f∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ramura se alege după g(x), nu după x: g(x)<0 exact când x<3. Pentru x≥3, inclusiv x=3, folosim ramura t+1, obținând x−3+1. La prag valoarea este 1, nu 0.",
+      "options": [
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}(x-3)^2,&x<0\\\\x-3+1,&x\\ge0\\end{cases}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}(x-3)^2,&x\\le 3\\\\x-3+1,&x>3\\end{cases}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}(x-3)^2,&x<3\\\\x-3+1,&x\\ge 3\\end{cases}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}x^2-3,&x<3\\\\x-3+1,&x\\ge 3\\end{cases}\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 5,
+        "type_name": "Compunerea funcțiilor pe ramuri",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=4x+3 și g(x)=2x+a, x∈ℝ. Pentru ce a avem f∘g=g∘f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(g(x))=8x+4a+3; g(f(x))=8x+6+a. Egalitatea termenilor liberi dă (4−1)a=3, deci a=1.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 6,
+        "type_name": "Comutarea compunerilor",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=4x+3, x∈ℝ. Calculați f aplicată succesiv de 5 ori argumentului 1. Iterarea înseamnă compunere, nu ridicare la putere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Iterata de ordin n este fⁿ(x)=4ⁿx+3(1+4+⋯+4ⁿ⁻¹), obținută prin inducție din fⁿ⁺¹(x)=4fⁿ(x)+3. Pentru n=5, x=1, rezultatul este 2047.",
+      "options": [
+        {
+          "text": "2047",
+          "is_correct": true
+        },
+        {
+          "text": "2046",
+          "is_correct": false
+        },
+        {
+          "text": "2048",
+          "is_correct": false
+        },
+        {
+          "text": "2049",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 7,
+        "type_name": "Iterarea unei funcții afine",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Există o funcție monotonă f:ℝ→ℝ care satisface f(f(x))=−x+3 pentru orice x?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă f este ne-descrescătoare, compunerea cu ea însăși este ne-descrescătoare. Dacă f este ne-crescătoare, cele două inversări ale ordinii dau tot o compunere ne-descrescătoare. Dar −x plus o constantă este strict descrescătoare pe ℝ, deci egalitatea este imposibilă.",
+      "options": [
+        {
+          "text": "Da, f(x)=−x",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, compunerea f∘f ar fi ne-descrescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Da, f(x)=x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, orice funcție constantă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 8,
+        "type_name": "Imposibilitate prin monotonie a compunerii",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f,g:ℝ→ℝ sunt strict descrescătoare, ce monotonie are h(x)=f(g(x))+3?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y avem g(x)>g(y), apoi f(g(x))<f(g(y)), deoarece f inversează ordinea. Adăugarea lui 3 păstrează comparația, deci h este strict crescătoare.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Obligatoriu nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 9,
+        "type_name": "Monotonia compunerii",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcțiile f,g:ℝ→ℝ sunt impare și satisfac f(4)=4, g(4)=4. Ce paritate are h=f∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "h(−x)=f(g(−x))=f(−g(x))=−f(g(x))=−h(x). În plus h(4)=4≠0; o funcție simultan pară și impară ar fi nulă, deci h nu este pară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 10,
+        "type_name": "Paritatea compunerii",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Definim f:ℝ→ℝ prin f(x)=x dacă x∈ℚ și f(x)=6−x dacă x∉ℚ. Ce proprietăți au f și f∘f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Raționalele sunt fixate; pentru x irațional, 6−x rămâne irațional și a doua aplicare dă x. Deci f(f(x))=x. Pe (4,5), raționalele au imagini >3, iar iraționalele au imagini <3. Densitatea ambelor mulțimi permite atât creșteri, cât și descreșteri, deci f nu este monotonă.",
+      "options": [
+        {
+          "text": "f este nemonotonă, iar f∘f este identitatea",
+          "is_correct": true
+        },
+        {
+          "text": "f este strict crescătoare, iar f∘f este constantă",
+          "is_correct": false
+        },
+        {
+          "text": "f este strict descrescătoare, iar f∘f este identitatea",
+          "is_correct": false
+        },
+        {
+          "text": "f∘f este strict descrescătoare",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 11,
+        "type_name": "Funcție nemonotonă cu pătrat compozițional monoton",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=4x+3, g(x)=ax+b, pe ℝ. Determinați (a;b) astfel încât f(g(x))=x pentru orice x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem f(g(x))=4ax+4b+3. Identificăm coeficienții: 4a=1 și 4b+3=0, deci a=1/4, b=-3/4. Panta este nenulă, iar aceste funcții sunt inverse în ambele sensuri.",
+      "options": [
+        {
+          "text": "(4;-3)",
+          "is_correct": false
+        },
+        {
+          "text": "(1/4;-3/4)",
+          "is_correct": true
+        },
+        {
+          "text": "(1/4;3/4)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1/4;-3/4)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 12,
+        "type_name": "Inversare compozițională afină",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=4x+3, pe ℝ. Dacă f(g(x))=8x+7 pentru orice x, calculați g(5).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația devine 4g(x)+3=8x+7. Scădem 3 și împărțim la 4≠0: g(x)=2x+1. Deci g(5)=11.",
+      "options": [
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": true
+        },
+        {
+          "text": "13",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 13,
+        "type_name": "Recuperarea unei funcții interioare",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x²+3, x∈ℝ. Rezolvați ecuația f(f(x))=19.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația este (x²+3)²+3=19, deci (x²+3)²=16. Cum x²+3>0, alegem numai x²+3=4. Rezultă x²=1 și x=±1. Ambele verifică ecuația; ramura negativă a rădăcinii nu este admisă.",
+      "options": [
+        {
+          "text": "{1}",
+          "is_correct": false
+        },
+        {
+          "text": "{−4; 4}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        },
+        {
+          "text": "{−1; 1}",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 14,
+        "type_name": "Ecuații cu iterații",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ strict crescătoare și f(f(x))=x pentru orice x. Calculați f(5).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă f(x)>x, aplicarea strictei creșteri dă f(f(x))>f(x), adică x>f(x), contradicție. Dacă f(x)<x, obținem invers x<f(x), tot contradicție. Așadar f(x)=x pentru orice x.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": true
+        },
+        {
+          "text": "4",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 15,
+        "type_name": "Iterată identică și monotonie",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe ℕ={0,1,…}, fie f(n)=4n și g(n)=⌊n/4⌋. Care relație este adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "g(f(n))=⌊4n/4⌋=n. În schimb, f(g(1))=4⌊1/4⌋=0≠1. În plus, nicio funcție h:ℕ→ℕ nu poate satisface f∘h=Id, deoarece 1 nu este în imaginea lui f.",
+      "options": [
+        {
+          "text": "f∘g=Id, dar g∘f≠Id",
+          "is_correct": false
+        },
+        {
+          "text": "g∘f=Id, dar f∘g≠Id",
+          "is_correct": true
+        },
+        {
+          "text": "Ambele compuneri sunt Id",
+          "is_correct": false
+        },
+        {
+          "text": "Niciuna dintre compuneri nu este Id",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 16,
+        "type_name": "Inverse într-un singur sens pe ℕ",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Poate exista f:ℝ→ℝ cu f²(x)=4x și f³(x)=5x pentru orice x? Aici f² și f³ sunt iterate prin compunere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din f² rezultă f⁶(x)=64x, prin trei compuneri; din f³ rezultă f⁶(x)=25x, prin două compuneri. La x=1 acestea sunt distincte (64≠25), deci nu poate exista f.",
+      "options": [
+        {
+          "text": "Da, f(x)=4x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, f(x)=5x",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, cele două moduri de a calcula f⁶ sunt incompatibile",
+          "is_correct": true
+        },
+        {
+          "text": "Da, f(x)=0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 17,
+        "type_name": "Compatibilitatea a două iterate",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a∈ℝ există f:ℝ→ℝ cu f²(x)=x și f³(x)=ax+3 pentru orice x? Puterile desemnează iterate.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din f²=Id rezultă f³=f, deci f(x)=ax+3. Atunci f²(x)=a²x+3(a+1). Pentru egalitate cu x sunt necesare a²=1 și 3(a+1)=0; cum 3>0, a=−1. Funcția f(x)=−x+3 verifică ambele relații, deci valoarea este și suficientă.",
+      "options": [
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 18,
+        "type_name": "Parametru în ecuații de iterare",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O mulțime A are 7 elemente. O funcție f:A→A satisface f(f(x))=x pentru orice x∈A. Care este numărul MINIM posibil de puncte fixe?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Elementele nefixate se împart în perechi distincte {x,f(x)}. Cum 7 este impar, rămâne cel puțin un punct fix. Minimul 1 se atinge fixând un element și împerechind celelalte 6.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 19,
+        "type_name": "Punct fix pentru involuții finite impare",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x+3⌊x⌋, x∈ℝ. Calculați iterata de ordin 5 în x=−10/3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem x=k+r, k=⌊x⌋, 0≤r<1. Atunci f(x)=4k+r; partea fracționară r rămâne aceeași, iar partea întreagă se înmulțește cu 4. Prin inducție, fⁿ(x)=4ⁿk+r. Aici k=-4, r=2/3, n=5, deci valoarea este -12286/3. Formula este valabilă și pentru x negativ.",
+      "options": [
+        {
+          "text": "-12289/3",
+          "is_correct": false
+        },
+        {
+          "text": "-12286/3",
+          "is_correct": true
+        },
+        {
+          "text": "-12283/3",
+          "is_correct": false
+        },
+        {
+          "text": "-12280/3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 20,
+        "type_name": "Iterarea unei funcții cu parte întreagă",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:{−3,…,3}→ℝ, f(x)=x. Câte restricții la subdomenii NEVIDE A au numai valori strict pozitive?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Argumentele cu imagine pozitivă sunt exact {1,…,3}. Orice submulțime nevidă a acestei mulțimi dă o restricție admisă și nu există altele. Numărul este 2^3−1=7; am exclus domeniul vid.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 21,
+        "type_name": "Numărarea restricțiilor cu imagini impuse",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte funcții f:{1;2;3}→{3;4;6} satisfac f(1)+f(2)+f(3)=12?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem 3 din fiecare valoare: cele trei valori noi aparțin {0,1,3} și au suma 3. Posibilitățile sunt (1,1,1) și cele trei permutări distincte ale lui (3,0,0). Total: 1+3=4 funcții. Repetarea imaginilor este permisă.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 22,
+        "type_name": "Funcții finite cu suma imaginilor prescrisă",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ cu f(x)+2f(6−x)=x pentru orice x. Calculați f(4).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem relația și la 6−x: f(6−x)+2f(x)=6−x. Înmulțim aceasta cu 2 și scădem prima relație: 3f(x)=12−3x. Deci f(x)=4−x, care verifică relația inițială. Rezultă f(4)=0. În plus f(f(x))=x.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": true
+        },
+        {
+          "text": "-1",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 23,
+        "type_name": "Recuperarea funcțiilor cu argument reflectat",
+        "variant": 3,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie \\(f:(3,5)\\to(-1,1),\\ f(x)=\\frac{2(x-4)}{1+(x-4)^2}\\) și \\(g:(-1,1)\\to(3,5),\\ g(y)=4+\\frac{\\sqrt{1+y}-\\sqrt{1-y}}{\\sqrt{1+y}+\\sqrt{1-y}}\\). Calculați \\((g\\circ f)(4+1/6)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=x−4∈(−1,1). Pentru y=2u/(1+u²), avem √(1±y)=(1±u)/√(1+u²), deoarece 1±u>0. Raportul din g devine u, deci g(f(x))=4+u=x. Argumentul 4+1/6 este în domeniu, astfel rezultatul este 25/6. Radicalii și numitorul sunt strict pozitivi. Reciproc, raportul v din g satisface |v|<1 și 2v/(1+v²)=y, deci și f(g(y))=y.",
+      "options": [
+        {
+          "text": "19/6",
+          "is_correct": false
+        },
+        {
+          "text": "25/6",
+          "is_correct": true
+        },
+        {
+          "text": "31/6",
+          "is_correct": false
+        },
+        {
+          "text": "37/6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 1,
+        "type_name": "Compunere de funcții inverse cu radicali",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=5x+4, g(x)=x−4, ambele pe ℝ. Care este formula lui f∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm întâi g, apoi f: f(g(x))=5(x−4)+4=5x−16. În ordinea inversă, g(f(x))=5x, deci compunerea nu este în general comutativă. Ambele compuneri sunt definite pe tot ℝ.",
+      "options": [
+        {
+          "text": "(f∘g)(x)=5x+4",
+          "is_correct": false
+        },
+        {
+          "text": "(f∘g)(x)=5x",
+          "is_correct": false
+        },
+        {
+          "text": "(f∘g)(x)=5x−16",
+          "is_correct": true
+        },
+        {
+          "text": "(f∘g)(x)=5x−17",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 2,
+        "type_name": "Compunerea funcțiilor explicite",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=|x| și g(x)=x−4, pe ℝ. Calculați (f∘g)(−2)−(g∘f)(−2).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(g(−2))=|−2−4|=6. În schimb, g(f(−2))=2−4=-2. Diferența este 6−(-2)=8.",
+      "options": [
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 3,
+        "type_name": "Compunerea cu module",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe ℕ={0,1,…}, f(n) este ultima cifră a lui 3ⁿ, iar g(n) ultima cifră a lui 2ⁿ. Calculați (f∘g)(7).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Întâi g(7)=8. Apoi calculăm ultima cifră a lui 3^8, care este 1. Se folosesc succesiv cele două reguli, nu ultima cifră a unui produs.",
+      "options": [
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 4,
+        "type_name": "Compunerea funcțiilor aritmetice",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie \\(f(t)=\\begin{cases}t^2,&t<0\\\\t+1,&t\\ge0\\end{cases}\\), t∈ℝ, și g(x)=x−4. Care este f∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ramura se alege după g(x), nu după x: g(x)<0 exact când x<4. Pentru x≥4, inclusiv x=4, folosim ramura t+1, obținând x−4+1. La prag valoarea este 1, nu 0.",
+      "options": [
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}(x-4)^2,&x<0\\\\x-4+1,&x\\ge0\\end{cases}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}(x-4)^2,&x<4\\\\x-4+1,&x\\ge 4\\end{cases}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}(x-4)^2,&x\\le 4\\\\x-4+1,&x>4\\end{cases}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}x^2-4,&x<4\\\\x-4+1,&x\\ge 4\\end{cases}\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 5,
+        "type_name": "Compunerea funcțiilor pe ramuri",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=5x+4 și g(x)=2x+a, x∈ℝ. Pentru ce a avem f∘g=g∘f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(g(x))=10x+5a+4; g(f(x))=10x+8+a. Egalitatea termenilor liberi dă (5−1)a=4, deci a=1.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 6,
+        "type_name": "Comutarea compunerilor",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=5x+4, x∈ℝ. Calculați f aplicată succesiv de 6 ori argumentului 1. Iterarea înseamnă compunere, nu ridicare la putere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Iterata de ordin n este fⁿ(x)=5ⁿx+4(1+5+⋯+5ⁿ⁻¹), obținută prin inducție din fⁿ⁺¹(x)=5fⁿ(x)+4. Pentru n=6, x=1, rezultatul este 31249.",
+      "options": [
+        {
+          "text": "31248",
+          "is_correct": false
+        },
+        {
+          "text": "31250",
+          "is_correct": false
+        },
+        {
+          "text": "31251",
+          "is_correct": false
+        },
+        {
+          "text": "31249",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 7,
+        "type_name": "Iterarea unei funcții afine",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Există o funcție monotonă f:ℝ→ℝ care satisface f(f(x))=−x+4 pentru orice x?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă f este ne-descrescătoare, compunerea cu ea însăși este ne-descrescătoare. Dacă f este ne-crescătoare, cele două inversări ale ordinii dau tot o compunere ne-descrescătoare. Dar −x plus o constantă este strict descrescătoare pe ℝ, deci egalitatea este imposibilă.",
+      "options": [
+        {
+          "text": "Nu, compunerea f∘f ar fi ne-descrescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Da, f(x)=−x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, f(x)=x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, orice funcție constantă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 8,
+        "type_name": "Imposibilitate prin monotonie a compunerii",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f,g:ℝ→ℝ sunt strict descrescătoare, ce monotonie are h(x)=f(g(x))+4?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y avem g(x)>g(y), apoi f(g(x))<f(g(y)), deoarece f inversează ordinea. Adăugarea lui 4 păstrează comparația, deci h este strict crescătoare.",
+      "options": [
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Obligatoriu nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 9,
+        "type_name": "Monotonia compunerii",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcțiile f,g:ℝ→ℝ sunt impare și satisfac f(5)=5, g(5)=5. Ce paritate are h=f∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "h(−x)=f(g(−x))=f(−g(x))=−f(g(x))=−h(x). În plus h(5)=5≠0; o funcție simultan pară și impară ar fi nulă, deci h nu este pară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 10,
+        "type_name": "Paritatea compunerii",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Definim f:ℝ→ℝ prin f(x)=x dacă x∈ℚ și f(x)=8−x dacă x∉ℚ. Ce proprietăți au f și f∘f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Raționalele sunt fixate; pentru x irațional, 8−x rămâne irațional și a doua aplicare dă x. Deci f(f(x))=x. Pe (5,6), raționalele au imagini >4, iar iraționalele au imagini <4. Densitatea ambelor mulțimi permite atât creșteri, cât și descreșteri, deci f nu este monotonă.",
+      "options": [
+        {
+          "text": "f este strict crescătoare, iar f∘f este constantă",
+          "is_correct": false
+        },
+        {
+          "text": "f este strict descrescătoare, iar f∘f este identitatea",
+          "is_correct": false
+        },
+        {
+          "text": "f∘f este strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "f este nemonotonă, iar f∘f este identitatea",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 11,
+        "type_name": "Funcție nemonotonă cu pătrat compozițional monoton",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=5x+4, g(x)=ax+b, pe ℝ. Determinați (a;b) astfel încât f(g(x))=x pentru orice x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem f(g(x))=5ax+5b+4. Identificăm coeficienții: 5a=1 și 5b+4=0, deci a=1/5, b=-4/5. Panta este nenulă, iar aceste funcții sunt inverse în ambele sensuri.",
+      "options": [
+        {
+          "text": "(1/5;-4/5)",
+          "is_correct": true
+        },
+        {
+          "text": "(5;-4)",
+          "is_correct": false
+        },
+        {
+          "text": "(1/5;4/5)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1/5;-4/5)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 12,
+        "type_name": "Inversare compozițională afină",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=5x+4, pe ℝ. Dacă f(g(x))=10x+9 pentru orice x, calculați g(6).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația devine 5g(x)+4=10x+9. Scădem 4 și împărțim la 5≠0: g(x)=2x+1. Deci g(6)=13.",
+      "options": [
+        {
+          "text": "12",
+          "is_correct": false
+        },
+        {
+          "text": "13",
+          "is_correct": true
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 13,
+        "type_name": "Recuperarea unei funcții interioare",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x²+4, x∈ℝ. Rezolvați ecuația f(f(x))=29.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația este (x²+4)²+4=29, deci (x²+4)²=25. Cum x²+4>0, alegem numai x²+4=5. Rezultă x²=1 și x=±1. Ambele verifică ecuația; ramura negativă a rădăcinii nu este admisă.",
+      "options": [
+        {
+          "text": "{1}",
+          "is_correct": false
+        },
+        {
+          "text": "{−5; 5}",
+          "is_correct": false
+        },
+        {
+          "text": "{−1; 1}",
+          "is_correct": true
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 14,
+        "type_name": "Ecuații cu iterații",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ strict crescătoare și f(f(x))=x pentru orice x. Calculați f(6).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă f(x)>x, aplicarea strictei creșteri dă f(f(x))>f(x), adică x>f(x), contradicție. Dacă f(x)<x, obținem invers x<f(x), tot contradicție. Așadar f(x)=x pentru orice x.",
+      "options": [
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 15,
+        "type_name": "Iterată identică și monotonie",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe ℕ={0,1,…}, fie f(n)=5n și g(n)=⌊n/5⌋. Care relație este adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "g(f(n))=⌊5n/5⌋=n. În schimb, f(g(1))=5⌊1/5⌋=0≠1. În plus, nicio funcție h:ℕ→ℕ nu poate satisface f∘h=Id, deoarece 1 nu este în imaginea lui f.",
+      "options": [
+        {
+          "text": "g∘f=Id, dar f∘g≠Id",
+          "is_correct": true
+        },
+        {
+          "text": "f∘g=Id, dar g∘f≠Id",
+          "is_correct": false
+        },
+        {
+          "text": "Ambele compuneri sunt Id",
+          "is_correct": false
+        },
+        {
+          "text": "Niciuna dintre compuneri nu este Id",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 16,
+        "type_name": "Inverse într-un singur sens pe ℕ",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Poate exista f:ℝ→ℝ cu f²(x)=5x și f³(x)=6x pentru orice x? Aici f² și f³ sunt iterate prin compunere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din f² rezultă f⁶(x)=125x, prin trei compuneri; din f³ rezultă f⁶(x)=36x, prin două compuneri. La x=1 acestea sunt distincte (125≠36), deci nu poate exista f.",
+      "options": [
+        {
+          "text": "Da, f(x)=5x",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, cele două moduri de a calcula f⁶ sunt incompatibile",
+          "is_correct": true
+        },
+        {
+          "text": "Da, f(x)=6x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, f(x)=0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 17,
+        "type_name": "Compatibilitatea a două iterate",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a∈ℝ există f:ℝ→ℝ cu f²(x)=x și f³(x)=ax+4 pentru orice x? Puterile desemnează iterate.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din f²=Id rezultă f³=f, deci f(x)=ax+4. Atunci f²(x)=a²x+4(a+1). Pentru egalitate cu x sunt necesare a²=1 și 4(a+1)=0; cum 4>0, a=−1. Funcția f(x)=−x+4 verifică ambele relații, deci valoarea este și suficientă.",
+      "options": [
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": true
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 18,
+        "type_name": "Parametru în ecuații de iterare",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O mulțime A are 9 elemente. O funcție f:A→A satisface f(f(x))=x pentru orice x∈A. Care este numărul MINIM posibil de puncte fixe?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Elementele nefixate se împart în perechi distincte {x,f(x)}. Cum 9 este impar, rămâne cel puțin un punct fix. Minimul 1 se atinge fixând un element și împerechind celelalte 8.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 19,
+        "type_name": "Punct fix pentru involuții finite impare",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x+4⌊x⌋, x∈ℝ. Calculați iterata de ordin 6 în x=−13/3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem x=k+r, k=⌊x⌋, 0≤r<1. Atunci f(x)=5k+r; partea fracționară r rămâne aceeași, iar partea întreagă se înmulțește cu 5. Prin inducție, fⁿ(x)=5ⁿk+r. Aici k=-5, r=2/3, n=6, deci valoarea este -234373/3. Formula este valabilă și pentru x negativ.",
+      "options": [
+        {
+          "text": "-234373/3",
+          "is_correct": true
+        },
+        {
+          "text": "-234376/3",
+          "is_correct": false
+        },
+        {
+          "text": "-234370/3",
+          "is_correct": false
+        },
+        {
+          "text": "-234367/3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 20,
+        "type_name": "Iterarea unei funcții cu parte întreagă",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:{−4,…,4}→ℝ, f(x)=x. Câte restricții la subdomenii NEVIDE A au numai valori strict pozitive?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Argumentele cu imagine pozitivă sunt exact {1,…,4}. Orice submulțime nevidă a acestei mulțimi dă o restricție admisă și nu există altele. Numărul este 2^4−1=15; am exclus domeniul vid.",
+      "options": [
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "15",
+          "is_correct": true
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 21,
+        "type_name": "Numărarea restricțiilor cu imagini impuse",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte funcții f:{1;2;3}→{4;5;7} satisfac f(1)+f(2)+f(3)=15?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem 4 din fiecare valoare: cele trei valori noi aparțin {0,1,3} și au suma 3. Posibilitățile sunt (1,1,1) și cele trei permutări distincte ale lui (3,0,0). Total: 1+3=4 funcții. Repetarea imaginilor este permisă.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 22,
+        "type_name": "Funcții finite cu suma imaginilor prescrisă",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ cu f(x)+2f(8−x)=x pentru orice x. Calculați f(5).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem relația și la 8−x: f(8−x)+2f(x)=8−x. Înmulțim aceasta cu 2 și scădem prima relație: 3f(x)=16−3x. Deci f(x)=16/3−x, care verifică relația inițială. Rezultă f(5)=1/3. În plus f(f(x))=x.",
+      "options": [
+        {
+          "text": "-2/3",
+          "is_correct": false
+        },
+        {
+          "text": "4/3",
+          "is_correct": false
+        },
+        {
+          "text": "7/3",
+          "is_correct": false
+        },
+        {
+          "text": "1/3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 23,
+        "type_name": "Recuperarea funcțiilor cu argument reflectat",
+        "variant": 4,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie \\(f:(4,6)\\to(-1,1),\\ f(x)=\\frac{2(x-5)}{1+(x-5)^2}\\) și \\(g:(-1,1)\\to(4,6),\\ g(y)=5+\\frac{\\sqrt{1+y}-\\sqrt{1-y}}{\\sqrt{1+y}+\\sqrt{1-y}}\\). Calculați \\((g\\circ f)(5+1/7)\\).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Punem u=x−5∈(−1,1). Pentru y=2u/(1+u²), avem √(1±y)=(1±u)/√(1+u²), deoarece 1±u>0. Raportul din g devine u, deci g(f(x))=5+u=x. Argumentul 5+1/7 este în domeniu, astfel rezultatul este 36/7. Radicalii și numitorul sunt strict pozitivi. Reciproc, raportul v din g satisface |v|<1 și 2v/(1+v²)=y, deci și f(g(y))=y.",
+      "options": [
+        {
+          "text": "36/7",
+          "is_correct": true
+        },
+        {
+          "text": "29/7",
+          "is_correct": false
+        },
+        {
+          "text": "43/7",
+          "is_correct": false
+        },
+        {
+          "text": "50/7",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 1,
+        "type_name": "Compunere de funcții inverse cu radicali",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=6x+5, g(x)=x−5, ambele pe ℝ. Care este formula lui f∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Aplicăm întâi g, apoi f: f(g(x))=6(x−5)+5=6x−25. În ordinea inversă, g(f(x))=6x, deci compunerea nu este în general comutativă. Ambele compuneri sunt definite pe tot ℝ.",
+      "options": [
+        {
+          "text": "(f∘g)(x)=6x+5",
+          "is_correct": false
+        },
+        {
+          "text": "(f∘g)(x)=6x−25",
+          "is_correct": true
+        },
+        {
+          "text": "(f∘g)(x)=6x",
+          "is_correct": false
+        },
+        {
+          "text": "(f∘g)(x)=6x−26",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 2,
+        "type_name": "Compunerea funcțiilor explicite",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=|x| și g(x)=x−5, pe ℝ. Calculați (f∘g)(−2)−(g∘f)(−2).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(g(−2))=|−2−5|=7. În schimb, g(f(−2))=2−5=-3. Diferența este 7−(-3)=10.",
+      "options": [
+        {
+          "text": "9",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": true
+        },
+        {
+          "text": "12",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 3,
+        "type_name": "Compunerea cu module",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe ℕ={0,1,…}, f(n) este ultima cifră a lui 3ⁿ, iar g(n) ultima cifră a lui 2ⁿ. Calculați (f∘g)(8).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Întâi g(8)=6. Apoi calculăm ultima cifră a lui 3^6, care este 9. Se folosesc succesiv cele două reguli, nu ultima cifră a unui produs.",
+      "options": [
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "10",
+          "is_correct": false
+        },
+        {
+          "text": "11",
+          "is_correct": false
+        },
+        {
+          "text": "9",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 4,
+        "type_name": "Compunerea funcțiilor aritmetice",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie \\(f(t)=\\begin{cases}t^2,&t<0\\\\t+1,&t\\ge0\\end{cases}\\), t∈ℝ, și g(x)=x−5. Care este f∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ramura se alege după g(x), nu după x: g(x)<0 exact când x<5. Pentru x≥5, inclusiv x=5, folosim ramura t+1, obținând x−5+1. La prag valoarea este 1, nu 0.",
+      "options": [
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}(x-5)^2,&x<5\\\\x-5+1,&x\\ge 5\\end{cases}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}(x-5)^2,&x<0\\\\x-5+1,&x\\ge0\\end{cases}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}(x-5)^2,&x\\le 5\\\\x-5+1,&x>5\\end{cases}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\((f\\circ g)(x)=\\begin{cases}x^2-5,&x<5\\\\x-5+1,&x\\ge 5\\end{cases}\\)",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 5,
+        "type_name": "Compunerea funcțiilor pe ramuri",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=6x+5 și g(x)=2x+a, x∈ℝ. Pentru ce a avem f∘g=g∘f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "f(g(x))=12x+6a+5; g(f(x))=12x+10+a. Egalitatea termenilor liberi dă (6−1)a=5, deci a=1.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 6,
+        "type_name": "Comutarea compunerilor",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=6x+5, x∈ℝ. Calculați f aplicată succesiv de 7 ori argumentului 1. Iterarea înseamnă compunere, nu ridicare la putere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Iterata de ordin n este fⁿ(x)=6ⁿx+5(1+6+⋯+6ⁿ⁻¹), obținută prin inducție din fⁿ⁺¹(x)=6fⁿ(x)+5. Pentru n=7, x=1, rezultatul este 559871.",
+      "options": [
+        {
+          "text": "559870",
+          "is_correct": false
+        },
+        {
+          "text": "559872",
+          "is_correct": false
+        },
+        {
+          "text": "559871",
+          "is_correct": true
+        },
+        {
+          "text": "559873",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 7,
+        "type_name": "Iterarea unei funcții afine",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Există o funcție monotonă f:ℝ→ℝ care satisface f(f(x))=−x+5 pentru orice x?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă f este ne-descrescătoare, compunerea cu ea însăși este ne-descrescătoare. Dacă f este ne-crescătoare, cele două inversări ale ordinii dau tot o compunere ne-descrescătoare. Dar −x plus o constantă este strict descrescătoare pe ℝ, deci egalitatea este imposibilă.",
+      "options": [
+        {
+          "text": "Da, f(x)=−x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, f(x)=x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, orice funcție constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Nu, compunerea f∘f ar fi ne-descrescătoare",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 8,
+        "type_name": "Imposibilitate prin monotonie a compunerii",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Dacă f,g:ℝ→ℝ sunt strict descrescătoare, ce monotonie are h(x)=f(g(x))+5?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Pentru x<y avem g(x)>g(y), apoi f(g(x))<f(g(y)), deoarece f inversează ordinea. Adăugarea lui 5 păstrează comparația, deci h este strict crescătoare.",
+      "options": [
+        {
+          "text": "Strict crescătoare",
+          "is_correct": true
+        },
+        {
+          "text": "Strict descrescătoare",
+          "is_correct": false
+        },
+        {
+          "text": "Constantă",
+          "is_correct": false
+        },
+        {
+          "text": "Obligatoriu nemonotonă",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 9,
+        "type_name": "Monotonia compunerii",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Funcțiile f,g:ℝ→ℝ sunt impare și satisfac f(6)=6, g(6)=6. Ce paritate are h=f∘g?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "h(−x)=f(g(−x))=f(−g(x))=−f(g(x))=−h(x). În plus h(6)=6≠0; o funcție simultan pară și impară ar fi nulă, deci h nu este pară.",
+      "options": [
+        {
+          "text": "Pară, dar nu impară",
+          "is_correct": false
+        },
+        {
+          "text": "Impară, dar nu pară",
+          "is_correct": true
+        },
+        {
+          "text": "Atât pară, cât și impară",
+          "is_correct": false
+        },
+        {
+          "text": "Nici pară, nici impară",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 10,
+        "type_name": "Paritatea compunerii",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Definim f:ℝ→ℝ prin f(x)=x dacă x∈ℚ și f(x)=10−x dacă x∉ℚ. Ce proprietăți au f și f∘f?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Raționalele sunt fixate; pentru x irațional, 10−x rămâne irațional și a doua aplicare dă x. Deci f(f(x))=x. Pe (6,7), raționalele au imagini >5, iar iraționalele au imagini <5. Densitatea ambelor mulțimi permite atât creșteri, cât și descreșteri, deci f nu este monotonă.",
+      "options": [
+        {
+          "text": "f este strict crescătoare, iar f∘f este constantă",
+          "is_correct": false
+        },
+        {
+          "text": "f este strict descrescătoare, iar f∘f este identitatea",
+          "is_correct": false
+        },
+        {
+          "text": "f este nemonotonă, iar f∘f este identitatea",
+          "is_correct": true
+        },
+        {
+          "text": "f∘f este strict descrescătoare",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 11,
+        "type_name": "Funcție nemonotonă cu pătrat compozițional monoton",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=6x+5, g(x)=ax+b, pe ℝ. Determinați (a;b) astfel încât f(g(x))=x pentru orice x.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Avem f(g(x))=6ax+6b+5. Identificăm coeficienții: 6a=1 și 6b+5=0, deci a=1/6, b=-5/6. Panta este nenulă, iar aceste funcții sunt inverse în ambele sensuri.",
+      "options": [
+        {
+          "text": "(6;-5)",
+          "is_correct": false
+        },
+        {
+          "text": "(1/6;5/6)",
+          "is_correct": false
+        },
+        {
+          "text": "(-1/6;-5/6)",
+          "is_correct": false
+        },
+        {
+          "text": "(1/6;-5/6)",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 12,
+        "type_name": "Inversare compozițională afină",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=6x+5, pe ℝ. Dacă f(g(x))=12x+11 pentru orice x, calculați g(7).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Relația devine 6g(x)+5=12x+11. Scădem 5 și împărțim la 6≠0: g(x)=2x+1. Deci g(7)=15.",
+      "options": [
+        {
+          "text": "15",
+          "is_correct": true
+        },
+        {
+          "text": "14",
+          "is_correct": false
+        },
+        {
+          "text": "16",
+          "is_correct": false
+        },
+        {
+          "text": "17",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 13,
+        "type_name": "Recuperarea unei funcții interioare",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x²+5, x∈ℝ. Rezolvați ecuația f(f(x))=41.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Ecuația este (x²+5)²+5=41, deci (x²+5)²=36. Cum x²+5>0, alegem numai x²+5=6. Rezultă x²=1 și x=±1. Ambele verifică ecuația; ramura negativă a rădăcinii nu este admisă.",
+      "options": [
+        {
+          "text": "{1}",
+          "is_correct": false
+        },
+        {
+          "text": "{−1; 1}",
+          "is_correct": true
+        },
+        {
+          "text": "{−6; 6}",
+          "is_correct": false
+        },
+        {
+          "text": "∅",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 14,
+        "type_name": "Ecuații cu iterații",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ strict crescătoare și f(f(x))=x pentru orice x. Calculați f(7).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Dacă f(x)>x, aplicarea strictei creșteri dă f(f(x))>f(x), adică x>f(x), contradicție. Dacă f(x)<x, obținem invers x<f(x), tot contradicție. Așadar f(x)=x pentru orice x.",
+      "options": [
+        {
+          "text": "6",
+          "is_correct": false
+        },
+        {
+          "text": "8",
+          "is_correct": false
+        },
+        {
+          "text": "7",
+          "is_correct": true
+        },
+        {
+          "text": "9",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 15,
+        "type_name": "Iterată identică și monotonie",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pe ℕ={0,1,…}, fie f(n)=6n și g(n)=⌊n/6⌋. Care relație este adevărată?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "g(f(n))=⌊6n/6⌋=n. În schimb, f(g(1))=6⌊1/6⌋=0≠1. În plus, nicio funcție h:ℕ→ℕ nu poate satisface f∘h=Id, deoarece 1 nu este în imaginea lui f.",
+      "options": [
+        {
+          "text": "f∘g=Id, dar g∘f≠Id",
+          "is_correct": false
+        },
+        {
+          "text": "Ambele compuneri sunt Id",
+          "is_correct": false
+        },
+        {
+          "text": "Niciuna dintre compuneri nu este Id",
+          "is_correct": false
+        },
+        {
+          "text": "g∘f=Id, dar f∘g≠Id",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 16,
+        "type_name": "Inverse într-un singur sens pe ℕ",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Poate exista f:ℝ→ℝ cu f²(x)=6x și f³(x)=7x pentru orice x? Aici f² și f³ sunt iterate prin compunere.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din f² rezultă f⁶(x)=216x, prin trei compuneri; din f³ rezultă f⁶(x)=49x, prin două compuneri. La x=1 acestea sunt distincte (216≠49), deci nu poate exista f.",
+      "options": [
+        {
+          "text": "Nu, cele două moduri de a calcula f⁶ sunt incompatibile",
+          "is_correct": true
+        },
+        {
+          "text": "Da, f(x)=6x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, f(x)=7x",
+          "is_correct": false
+        },
+        {
+          "text": "Da, f(x)=0",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 17,
+        "type_name": "Compatibilitatea a două iterate",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Pentru ce a∈ℝ există f:ℝ→ℝ cu f²(x)=x și f³(x)=ax+5 pentru orice x? Puterile desemnează iterate.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Din f²=Id rezultă f³=f, deci f(x)=ax+5. Atunci f²(x)=a²x+5(a+1). Pentru egalitate cu x sunt necesare a²=1 și 5(a+1)=0; cum 5>0, a=−1. Funcția f(x)=−x+5 verifică ambele relații, deci valoarea este și suficientă.",
+      "options": [
+        {
+          "text": "-2",
+          "is_correct": false
+        },
+        {
+          "text": "-1",
+          "is_correct": true
+        },
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 18,
+        "type_name": "Parametru în ecuații de iterare",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "O mulțime A are 11 elemente. O funcție f:A→A satisface f(f(x))=x pentru orice x∈A. Care este numărul MINIM posibil de puncte fixe?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Elementele nefixate se împart în perechi distincte {x,f(x)}. Cum 11 este impar, rămâne cel puțin un punct fix. Minimul 1 se atinge fixând un element și împerechind celelalte 10.",
+      "options": [
+        {
+          "text": "0",
+          "is_correct": false
+        },
+        {
+          "text": "2",
+          "is_correct": false
+        },
+        {
+          "text": "1",
+          "is_correct": true
+        },
+        {
+          "text": "3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 19,
+        "type_name": "Punct fix pentru involuții finite impare",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f(x)=x+5⌊x⌋, x∈ℝ. Calculați iterata de ordin 7 în x=−16/3.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem x=k+r, k=⌊x⌋, 0≤r<1. Atunci f(x)=6k+r; partea fracționară r rămâne aceeași, iar partea întreagă se înmulțește cu 6. Prin inducție, fⁿ(x)=6ⁿk+r. Aici k=-6, r=2/3, n=7, deci valoarea este -5038846/3. Formula este valabilă și pentru x negativ.",
+      "options": [
+        {
+          "text": "-5038849/3",
+          "is_correct": false
+        },
+        {
+          "text": "-5038843/3",
+          "is_correct": false
+        },
+        {
+          "text": "-5038840/3",
+          "is_correct": false
+        },
+        {
+          "text": "-5038846/3",
+          "is_correct": true
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 20,
+        "type_name": "Iterarea unei funcții cu parte întreagă",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:{−5,…,5}→ℝ, f(x)=x. Câte restricții la subdomenii NEVIDE A au numai valori strict pozitive?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Argumentele cu imagine pozitivă sunt exact {1,…,5}. Orice submulțime nevidă a acestei mulțimi dă o restricție admisă și nu există altele. Numărul este 2^5−1=31; am exclus domeniul vid.",
+      "options": [
+        {
+          "text": "31",
+          "is_correct": true
+        },
+        {
+          "text": "30",
+          "is_correct": false
+        },
+        {
+          "text": "32",
+          "is_correct": false
+        },
+        {
+          "text": "33",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 21,
+        "type_name": "Numărarea restricțiilor cu imagini impuse",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Câte funcții f:{1;2;3}→{5;6;8} satisfac f(1)+f(2)+f(3)=18?",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scădem 5 din fiecare valoare: cele trei valori noi aparțin {0,1,3} și au suma 3. Posibilitățile sunt (1,1,1) și cele trei permutări distincte ale lui (3,0,0). Total: 1+3=4 funcții. Repetarea imaginilor este permisă.",
+      "options": [
+        {
+          "text": "3",
+          "is_correct": false
+        },
+        {
+          "text": "4",
+          "is_correct": true
+        },
+        {
+          "text": "5",
+          "is_correct": false
+        },
+        {
+          "text": "6",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 22,
+        "type_name": "Funcții finite cu suma imaginilor prescrisă",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    },
+    {
+      "text": "Fie f:ℝ→ℝ cu f(x)+2f(10−x)=x pentru orice x. Calculați f(6).",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Scriem relația și la 10−x: f(10−x)+2f(x)=10−x. Înmulțim aceasta cu 2 și scădem prima relație: 3f(x)=20−3x. Deci f(x)=20/3−x, care verifică relația inițială. Rezultă f(6)=2/3. În plus f(f(x))=x.",
+      "options": [
+        {
+          "text": "-1/3",
+          "is_correct": false
+        },
+        {
+          "text": "5/3",
+          "is_correct": false
+        },
+        {
+          "text": "2/3",
+          "is_correct": true
+        },
+        {
+          "text": "8/3",
+          "is_correct": false
+        }
+      ],
+      "catalog": {
+        "section": "A2.5",
+        "type": 23,
+        "type_name": "Recuperarea funcțiilor cu argument reflectat",
+        "variant": 5,
+        "origin": "Exercițiu nou după tipologia catalogului Burtea IX"
+      }
+    }
+  ]
 }

@@ -263,6 +263,14 @@ def get_next_learning_step(user) -> dict | None:
     from accounts.utils import get_or_create_profile
 
     profile = get_or_create_profile(user)
+    if profile.clasa not in profile.CLASS_LEVELS:
+        return {
+            "title": "Alege clasa",
+            "subtitle": "Selectează clasa ta pentru a vedea lecțiile potrivite.",
+            "url": reverse("profile_edit"),
+            "action": "Alege clasa",
+            "kind": "profile",
+        }
 
     in_progress = (
         GeneratedQuizSession.objects.filter(

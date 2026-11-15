@@ -1,6 +1,1667 @@
 {
   "title": "Unghiuri și arce. Măsura unghiurilor și arcelor",
   "description": "Clasa a 9-a · Elemente de trigonometrie",
-  "difficulty": "easy",
-  "questions": []
+  "difficulty": "medium",
+  "questions": [
+    {
+      "text": "Convertiți măsura de 75° în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un unghi de 180° măsoară π radiani. Înmulțim numărul de grade cu π/180; sensul rotației este pozitiv. Rezultatul cerut este \\(\\frac{5 \\pi}{12}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{5 \\pi}{12}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + \\frac{5 \\pi}{12}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{5 \\pi}{12}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5 \\pi}{12} + 2\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 1,
+        "type_name": "Grade în radiani",
+        "variant": 1,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "degrees_to_rad",
+        "degrees": 75,
+        "option_values": [
+          "5*pi/12",
+          "1 + 5*pi/12",
+          "-1 + 5*pi/12",
+          "5*pi/12 + 2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Convertiți \\(\\frac{7 \\pi}{12}\\) radiani în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim măsura în radiani cu 180/π. Factorul π se simplifică; nu se reduce modulo un tur deoarece se cere măsura completă. Rezultatul cerut este \\(105\\).",
+      "options": [
+        {
+          "text": "\\(106\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(105\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(104\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(107\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 2,
+        "type_name": "Radiani în grade",
+        "variant": 1,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "rad_to_degrees",
+        "radians": "7*pi/12",
+        "option_values": [
+          "106",
+          "105",
+          "104",
+          "107"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Două unghiuri pozitive au suma \\(\\frac{7 \\pi}{12}\\) radiani și diferența α−β=10°. Aflați perechea (α;β) în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Convertim suma în grade: α+β=105°. Adunarea și scăderea celor două ecuații dau α=(sumă+diferență)/2, β=(sumă−diferență)/2. Ambele valori sunt pozitive. Rezultatul cerut este \\(\\left( \\frac{115}{2}, \\  \\frac{95}{2}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{117}{2}, \\  \\frac{95}{2}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{113}{2}, \\  \\frac{95}{2}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{115}{2}, \\  \\frac{95}{2}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( \\frac{119}{2}, \\  \\frac{95}{2}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 3,
+        "type_name": "Sistem cu unități unghiulare diferite",
+        "variant": 1,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "angle_system",
+        "sum_radians": "7*pi/12",
+        "difference_degrees": 10,
+        "option_values": [
+          "(117/2, 95/2)",
+          "(113/2, 95/2)",
+          "(115/2, 95/2)",
+          "(119/2, 95/2)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un cerc are raza R=4 cm. Aflați lungimea arcului de măsură 30°.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi convertim unghiul la radiani. Lungimea arcului este l=Rα, cu α în radiani; nu se înmulțește direct raza cu numărul de grade. Rezultatul cerut este \\(\\frac{2 \\pi}{3}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{2 \\pi}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{2 \\pi}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{2 \\pi}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{2 \\pi}{3}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 4,
+        "type_name": "Lungimea arcului",
+        "variant": 1,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "arc_length",
+        "radius": 4,
+        "angle_radians": "pi/6",
+        "option_values": [
+          "1 + 2*pi/3",
+          "-1 + 2*pi/3",
+          "2 + 2*pi/3",
+          "2*pi/3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "ABC este înscris într-un cerc de rază 3 cm, iar A=35°. Aflați lungimea arcului BC care NU conține A.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Arcul opus lui A are măsura dublă a unghiului înscris A, inclusiv când acest arc este mai mare decât un semicerc. Îl convertim în radiani și folosim l=Rα. Rezultatul cerut este \\(\\frac{7 \\pi}{6}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{7 \\pi}{6}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + \\frac{7 \\pi}{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{7 \\pi}{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{7 \\pi}{6}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 5,
+        "type_name": "Arce într-un triunghi înscris",
+        "variant": 1,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "inscribed_arc",
+        "radius": 3,
+        "inscribed_degrees": 35,
+        "option_values": [
+          "7*pi/6",
+          "1 + 7*pi/6",
+          "-1 + 7*pi/6",
+          "2 + 7*pi/6"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați (măsura în grade; măsura în radiani) a unui unghi interior al unui poligon regulat convex cu 5 laturi.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma unghiurilor interioare este (n−2)·180°. Regularitatea le face egale, deci împărțim la n; conversia în radiani înlocuiește 180° cu π. Rezultatul cerut este \\(\\left( 108, \\  \\frac{3 \\pi}{5}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 109, \\  \\frac{3 \\pi}{5}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 108, \\  \\frac{3 \\pi}{5}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 107, \\  \\frac{3 \\pi}{5}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 110, \\  \\frac{3 \\pi}{5}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 6,
+        "type_name": "Unghiurile poligonului regulat",
+        "variant": 1,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "regular_polygon",
+        "sides": 5,
+        "option_values": [
+          "(109, 3*pi/5)",
+          "(108, 3*pi/5)",
+          "(107, 3*pi/5)",
+          "(110, 3*pi/5)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi isoscel nedegenerat are un unghi de 20°. Câte triplete neordonate de unghiuri sunt posibile? Triunghiul echilateral este admis ca isoscel.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Separăm cazul în care unghiul dat este la vârf de cazul în care este la bază. În al doilea caz, unghiul de la vârf trebuie să rămână strict pozitiv. Tripletele identice se numără o singură dată; pentru 60° ambele construcții sunt același triunghi echilateral. Rezultatul cerut este \\(2\\).",
+      "options": [
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 7,
+        "type_name": "Ambiguitate într-un triunghi isoscel",
+        "variant": 1,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "isosceles_angle_count",
+        "angle_degrees": 20,
+        "option_values": [
+          "3",
+          "1",
+          "2",
+          "4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Convertiți măsura de 135° în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un unghi de 180° măsoară π radiani. Înmulțim numărul de grade cu π/180; sensul rotației este pozitiv. Rezultatul cerut este \\(\\frac{3 \\pi}{4}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{3 \\pi}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{3 \\pi}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{3 \\pi}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{3 \\pi}{4}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 1,
+        "type_name": "Grade în radiani",
+        "variant": 2,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "degrees_to_rad",
+        "degrees": 135,
+        "option_values": [
+          "1 + 3*pi/4",
+          "-1 + 3*pi/4",
+          "2 + 3*pi/4",
+          "3*pi/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Convertiți \\(\\frac{5 \\pi}{6}\\) radiani în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim măsura în radiani cu 180/π. Factorul π se simplifică; nu se reduce modulo un tur deoarece se cere măsura completă. Rezultatul cerut este \\(150\\).",
+      "options": [
+        {
+          "text": "\\(150\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(151\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(149\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(152\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 2,
+        "type_name": "Radiani în grade",
+        "variant": 2,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "rad_to_degrees",
+        "radians": "5*pi/6",
+        "option_values": [
+          "150",
+          "151",
+          "149",
+          "152"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Două unghiuri pozitive au suma \\(\\frac{2 \\pi}{3}\\) radiani și diferența α−β=20°. Aflați perechea (α;β) în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Convertim suma în grade: α+β=120°. Adunarea și scăderea celor două ecuații dau α=(sumă+diferență)/2, β=(sumă−diferență)/2. Ambele valori sunt pozitive. Rezultatul cerut este \\(\\left( 70, \\  50\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 71, \\  50\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 70, \\  50\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 69, \\  50\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 72, \\  50\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 3,
+        "type_name": "Sistem cu unități unghiulare diferite",
+        "variant": 2,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "angle_system",
+        "sum_radians": "2*pi/3",
+        "difference_degrees": 20,
+        "option_values": [
+          "(71, 50)",
+          "(70, 50)",
+          "(69, 50)",
+          "(72, 50)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un cerc are raza R=5 cm. Aflați lungimea arcului de măsură 45°.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi convertim unghiul la radiani. Lungimea arcului este l=Rα, cu α în radiani; nu se înmulțește direct raza cu numărul de grade. Rezultatul cerut este \\(\\frac{5 \\pi}{4}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{5 \\pi}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{5 \\pi}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{5 \\pi}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 + \\frac{5 \\pi}{4}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 4,
+        "type_name": "Lungimea arcului",
+        "variant": 2,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "arc_length",
+        "radius": 5,
+        "angle_radians": "pi/4",
+        "option_values": [
+          "1 + 5*pi/4",
+          "-1 + 5*pi/4",
+          "5*pi/4",
+          "2 + 5*pi/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "ABC este înscris într-un cerc de rază 4 cm, iar A=45°. Aflați lungimea arcului BC care NU conține A.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Arcul opus lui A are măsura dublă a unghiului înscris A, inclusiv când acest arc este mai mare decât un semicerc. Îl convertim în radiani și folosim l=Rα. Rezultatul cerut este \\(2 \\pi\\).",
+      "options": [
+        {
+          "text": "\\(1 + 2 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + 2 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + 2 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 \\pi\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 5,
+        "type_name": "Arce într-un triunghi înscris",
+        "variant": 2,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "inscribed_arc",
+        "radius": 4,
+        "inscribed_degrees": 45,
+        "option_values": [
+          "1 + 2*pi",
+          "-1 + 2*pi",
+          "2 + 2*pi",
+          "2*pi"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați (măsura în grade; măsura în radiani) a unui unghi interior al unui poligon regulat convex cu 6 laturi.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma unghiurilor interioare este (n−2)·180°. Regularitatea le face egale, deci împărțim la n; conversia în radiani înlocuiește 180° cu π. Rezultatul cerut este \\(\\left( 120, \\  \\frac{2 \\pi}{3}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 120, \\  \\frac{2 \\pi}{3}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 121, \\  \\frac{2 \\pi}{3}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 119, \\  \\frac{2 \\pi}{3}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 122, \\  \\frac{2 \\pi}{3}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 6,
+        "type_name": "Unghiurile poligonului regulat",
+        "variant": 2,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "regular_polygon",
+        "sides": 6,
+        "option_values": [
+          "(120, 2*pi/3)",
+          "(121, 2*pi/3)",
+          "(119, 2*pi/3)",
+          "(122, 2*pi/3)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi isoscel nedegenerat are un unghi de 30°. Câte triplete neordonate de unghiuri sunt posibile? Triunghiul echilateral este admis ca isoscel.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Separăm cazul în care unghiul dat este la vârf de cazul în care este la bază. În al doilea caz, unghiul de la vârf trebuie să rămână strict pozitiv. Tripletele identice se numără o singură dată; pentru 60° ambele construcții sunt același triunghi echilateral. Rezultatul cerut este \\(2\\).",
+      "options": [
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 7,
+        "type_name": "Ambiguitate într-un triunghi isoscel",
+        "variant": 2,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "isosceles_angle_count",
+        "angle_degrees": 30,
+        "option_values": [
+          "3",
+          "2",
+          "1",
+          "4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Convertiți măsura de 210° în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un unghi de 180° măsoară π radiani. Înmulțim numărul de grade cu π/180; sensul rotației este pozitiv. Rezultatul cerut este \\(\\frac{7 \\pi}{6}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{7 \\pi}{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{7 \\pi}{6}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{7 \\pi}{6}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 + \\frac{7 \\pi}{6}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 1,
+        "type_name": "Grade în radiani",
+        "variant": 3,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "degrees_to_rad",
+        "degrees": 210,
+        "option_values": [
+          "1 + 7*pi/6",
+          "-1 + 7*pi/6",
+          "7*pi/6",
+          "2 + 7*pi/6"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Convertiți \\(\\frac{11 \\pi}{8}\\) radiani în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim măsura în radiani cu 180/π. Factorul π se simplifică; nu se reduce modulo un tur deoarece se cere măsura completă. Rezultatul cerut este \\(\\frac{495}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{497}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{493}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{499}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{495}{2}\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 2,
+        "type_name": "Radiani în grade",
+        "variant": 3,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "rad_to_degrees",
+        "radians": "11*pi/8",
+        "option_values": [
+          "497/2",
+          "493/2",
+          "499/2",
+          "495/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Două unghiuri pozitive au suma \\(\\frac{3 \\pi}{4}\\) radiani și diferența α−β=30°. Aflați perechea (α;β) în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Convertim suma în grade: α+β=135°. Adunarea și scăderea celor două ecuații dau α=(sumă+diferență)/2, β=(sumă−diferență)/2. Ambele valori sunt pozitive. Rezultatul cerut este \\(\\left( \\frac{165}{2}, \\  \\frac{105}{2}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{165}{2}, \\  \\frac{105}{2}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( \\frac{167}{2}, \\  \\frac{105}{2}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{163}{2}, \\  \\frac{105}{2}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{169}{2}, \\  \\frac{105}{2}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 3,
+        "type_name": "Sistem cu unități unghiulare diferite",
+        "variant": 3,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "angle_system",
+        "sum_radians": "3*pi/4",
+        "difference_degrees": 30,
+        "option_values": [
+          "(165/2, 105/2)",
+          "(167/2, 105/2)",
+          "(163/2, 105/2)",
+          "(169/2, 105/2)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un cerc are raza R=6 cm. Aflați lungimea arcului de măsură 60°.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi convertim unghiul la radiani. Lungimea arcului este l=Rα, cu α în radiani; nu se înmulțește direct raza cu numărul de grade. Rezultatul cerut este \\(2 \\pi\\).",
+      "options": [
+        {
+          "text": "\\(1 + 2 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 \\pi\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + 2 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + 2 \\pi\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 4,
+        "type_name": "Lungimea arcului",
+        "variant": 3,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "arc_length",
+        "radius": 6,
+        "angle_radians": "pi/3",
+        "option_values": [
+          "1 + 2*pi",
+          "2*pi",
+          "-1 + 2*pi",
+          "2 + 2*pi"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "ABC este înscris într-un cerc de rază 5 cm, iar A=60°. Aflați lungimea arcului BC care NU conține A.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Arcul opus lui A are măsura dublă a unghiului înscris A, inclusiv când acest arc este mai mare decât un semicerc. Îl convertim în radiani și folosim l=Rα. Rezultatul cerut este \\(\\frac{10 \\pi}{3}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{10 \\pi}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{10 \\pi}{3}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{10 \\pi}{3}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(2 + \\frac{10 \\pi}{3}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 5,
+        "type_name": "Arce într-un triunghi înscris",
+        "variant": 3,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "inscribed_arc",
+        "radius": 5,
+        "inscribed_degrees": 60,
+        "option_values": [
+          "1 + 10*pi/3",
+          "-1 + 10*pi/3",
+          "10*pi/3",
+          "2 + 10*pi/3"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați (măsura în grade; măsura în radiani) a unui unghi interior al unui poligon regulat convex cu 8 laturi.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma unghiurilor interioare este (n−2)·180°. Regularitatea le face egale, deci împărțim la n; conversia în radiani înlocuiește 180° cu π. Rezultatul cerut este \\(\\left( 135, \\  \\frac{3 \\pi}{4}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 136, \\  \\frac{3 \\pi}{4}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 134, \\  \\frac{3 \\pi}{4}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 137, \\  \\frac{3 \\pi}{4}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 135, \\  \\frac{3 \\pi}{4}\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 6,
+        "type_name": "Unghiurile poligonului regulat",
+        "variant": 3,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "regular_polygon",
+        "sides": 8,
+        "option_values": [
+          "(136, 3*pi/4)",
+          "(134, 3*pi/4)",
+          "(137, 3*pi/4)",
+          "(135, 3*pi/4)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi isoscel nedegenerat are un unghi de 45°. Câte triplete neordonate de unghiuri sunt posibile? Triunghiul echilateral este admis ca isoscel.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Separăm cazul în care unghiul dat este la vârf de cazul în care este la bază. În al doilea caz, unghiul de la vârf trebuie să rămână strict pozitiv. Tripletele identice se numără o singură dată; pentru 60° ambele construcții sunt același triunghi echilateral. Rezultatul cerut este \\(2\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 7,
+        "type_name": "Ambiguitate într-un triunghi isoscel",
+        "variant": 3,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "isosceles_angle_count",
+        "angle_degrees": 45,
+        "option_values": [
+          "2",
+          "3",
+          "1",
+          "4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Convertiți măsura de 315° în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un unghi de 180° măsoară π radiani. Înmulțim numărul de grade cu π/180; sensul rotației este pozitiv. Rezultatul cerut este \\(\\frac{7 \\pi}{4}\\).",
+      "options": [
+        {
+          "text": "\\(1 + \\frac{7 \\pi}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\frac{7 \\pi}{4}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + \\frac{7 \\pi}{4}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{7 \\pi}{4}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 1,
+        "type_name": "Grade în radiani",
+        "variant": 4,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "degrees_to_rad",
+        "degrees": 315,
+        "option_values": [
+          "1 + 7*pi/4",
+          "7*pi/4",
+          "-1 + 7*pi/4",
+          "2 + 7*pi/4"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Convertiți \\(\\frac{13 \\pi}{6}\\) radiani în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim măsura în radiani cu 180/π. Factorul π se simplifică; nu se reduce modulo un tur deoarece se cere măsura completă. Rezultatul cerut este \\(390\\).",
+      "options": [
+        {
+          "text": "\\(391\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(389\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(390\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(392\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 2,
+        "type_name": "Radiani în grade",
+        "variant": 4,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "rad_to_degrees",
+        "radians": "13*pi/6",
+        "option_values": [
+          "391",
+          "389",
+          "390",
+          "392"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Două unghiuri pozitive au suma \\(\\frac{5 \\pi}{6}\\) radiani și diferența α−β=40°. Aflați perechea (α;β) în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Convertim suma în grade: α+β=150°. Adunarea și scăderea celor două ecuații dau α=(sumă+diferență)/2, β=(sumă−diferență)/2. Ambele valori sunt pozitive. Rezultatul cerut este \\(\\left( 95, \\  55\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 96, \\  55\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 94, \\  55\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 97, \\  55\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 95, \\  55\\right)\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 3,
+        "type_name": "Sistem cu unități unghiulare diferite",
+        "variant": 4,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "angle_system",
+        "sum_radians": "5*pi/6",
+        "difference_degrees": 40,
+        "option_values": [
+          "(96, 55)",
+          "(94, 55)",
+          "(97, 55)",
+          "(95, 55)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un cerc are raza R=7 cm. Aflați lungimea arcului de măsură 75°.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi convertim unghiul la radiani. Lungimea arcului este l=Rα, cu α în radiani; nu se înmulțește direct raza cu numărul de grade. Rezultatul cerut este \\(\\frac{35 \\pi}{12}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{35 \\pi}{12}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + \\frac{35 \\pi}{12}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{35 \\pi}{12}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{35 \\pi}{12}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 4,
+        "type_name": "Lungimea arcului",
+        "variant": 4,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "arc_length",
+        "radius": 7,
+        "angle_radians": "5*pi/12",
+        "option_values": [
+          "35*pi/12",
+          "1 + 35*pi/12",
+          "-1 + 35*pi/12",
+          "2 + 35*pi/12"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "ABC este înscris într-un cerc de rază 6 cm, iar A=75°. Aflați lungimea arcului BC care NU conține A.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Arcul opus lui A are măsura dublă a unghiului înscris A, inclusiv când acest arc este mai mare decât un semicerc. Îl convertim în radiani și folosim l=Rα. Rezultatul cerut este \\(5 \\pi\\).",
+      "options": [
+        {
+          "text": "\\(1 + 5 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(5 \\pi\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(-1 + 5 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + 5 \\pi\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 5,
+        "type_name": "Arce într-un triunghi înscris",
+        "variant": 4,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "inscribed_arc",
+        "radius": 6,
+        "inscribed_degrees": 75,
+        "option_values": [
+          "1 + 5*pi",
+          "5*pi",
+          "-1 + 5*pi",
+          "2 + 5*pi"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați (măsura în grade; măsura în radiani) a unui unghi interior al unui poligon regulat convex cu 10 laturi.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma unghiurilor interioare este (n−2)·180°. Regularitatea le face egale, deci împărțim la n; conversia în radiani înlocuiește 180° cu π. Rezultatul cerut este \\(\\left( 144, \\  \\frac{4 \\pi}{5}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 145, \\  \\frac{4 \\pi}{5}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 143, \\  \\frac{4 \\pi}{5}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 144, \\  \\frac{4 \\pi}{5}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 146, \\  \\frac{4 \\pi}{5}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 6,
+        "type_name": "Unghiurile poligonului regulat",
+        "variant": 4,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "regular_polygon",
+        "sides": 10,
+        "option_values": [
+          "(145, 4*pi/5)",
+          "(143, 4*pi/5)",
+          "(144, 4*pi/5)",
+          "(146, 4*pi/5)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi isoscel nedegenerat are un unghi de 60°. Câte triplete neordonate de unghiuri sunt posibile? Triunghiul echilateral este admis ca isoscel.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Separăm cazul în care unghiul dat este la vârf de cazul în care este la bază. În al doilea caz, unghiul de la vârf trebuie să rămână strict pozitiv. Tripletele identice se numără o singură dată; pentru 60° ambele construcții sunt același triunghi echilateral. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 7,
+        "type_name": "Ambiguitate într-un triunghi isoscel",
+        "variant": 4,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "isosceles_angle_count",
+        "angle_degrees": 60,
+        "option_values": [
+          "2",
+          "0",
+          "3",
+          "1"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Convertiți măsura de 450° în radiani.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Un unghi de 180° măsoară π radiani. Înmulțim numărul de grade cu π/180; sensul rotației este pozitiv. Rezultatul cerut este \\(\\frac{5 \\pi}{2}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{5 \\pi}{2}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + \\frac{5 \\pi}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{5 \\pi}{2}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{5 \\pi}{2}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 1,
+        "type_name": "Grade în radiani",
+        "variant": 5,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "degrees_to_rad",
+        "degrees": 450,
+        "option_values": [
+          "5*pi/2",
+          "1 + 5*pi/2",
+          "-1 + 5*pi/2",
+          "2 + 5*pi/2"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Convertiți \\(\\frac{17 \\pi}{4}\\) radiani în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Înmulțim măsura în radiani cu 180/π. Factorul π se simplifică; nu se reduce modulo un tur deoarece se cere măsura completă. Rezultatul cerut este \\(765\\).",
+      "options": [
+        {
+          "text": "\\(766\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(765\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(764\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(767\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 2,
+        "type_name": "Radiani în grade",
+        "variant": 5,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "rad_to_degrees",
+        "radians": "17*pi/4",
+        "option_values": [
+          "766",
+          "765",
+          "764",
+          "767"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Două unghiuri pozitive au suma \\(\\frac{11 \\pi}{12}\\) radiani și diferența α−β=50°. Aflați perechea (α;β) în grade.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Convertim suma în grade: α+β=165°. Adunarea și scăderea celor două ecuații dau α=(sumă+diferență)/2, β=(sumă−diferență)/2. Ambele valori sunt pozitive. Rezultatul cerut este \\(\\left( \\frac{215}{2}, \\  \\frac{115}{2}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( \\frac{217}{2}, \\  \\frac{115}{2}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{213}{2}, \\  \\frac{115}{2}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( \\frac{215}{2}, \\  \\frac{115}{2}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( \\frac{219}{2}, \\  \\frac{115}{2}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 3,
+        "type_name": "Sistem cu unități unghiulare diferite",
+        "variant": 5,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "angle_system",
+        "sum_radians": "11*pi/12",
+        "difference_degrees": 50,
+        "option_values": [
+          "(217/2, 115/2)",
+          "(213/2, 115/2)",
+          "(215/2, 115/2)",
+          "(219/2, 115/2)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un cerc are raza R=8 cm. Aflați lungimea arcului de măsură 90°.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Mai întâi convertim unghiul la radiani. Lungimea arcului este l=Rα, cu α în radiani; nu se înmulțește direct raza cu numărul de grade. Rezultatul cerut este \\(4 \\pi\\).",
+      "options": [
+        {
+          "text": "\\(1 + 4 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + 4 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + 4 \\pi\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(4 \\pi\\)",
+          "is_correct": true
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 4,
+        "type_name": "Lungimea arcului",
+        "variant": 5,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "arc_length",
+        "radius": 8,
+        "angle_radians": "pi/2",
+        "option_values": [
+          "1 + 4*pi",
+          "-1 + 4*pi",
+          "2 + 4*pi",
+          "4*pi"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "ABC este înscris într-un cerc de rază 7 cm, iar A=110°. Aflați lungimea arcului BC care NU conține A.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Arcul opus lui A are măsura dublă a unghiului înscris A, inclusiv când acest arc este mai mare decât un semicerc. Îl convertim în radiani și folosim l=Rα. Rezultatul cerut este \\(\\frac{77 \\pi}{9}\\).",
+      "options": [
+        {
+          "text": "\\(\\frac{77 \\pi}{9}\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(1 + \\frac{77 \\pi}{9}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(-1 + \\frac{77 \\pi}{9}\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(2 + \\frac{77 \\pi}{9}\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 5,
+        "type_name": "Arce într-un triunghi înscris",
+        "variant": 5,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "inscribed_arc",
+        "radius": 7,
+        "inscribed_degrees": 110,
+        "option_values": [
+          "77*pi/9",
+          "1 + 77*pi/9",
+          "-1 + 77*pi/9",
+          "2 + 77*pi/9"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Aflați (măsura în grade; măsura în radiani) a unui unghi interior al unui poligon regulat convex cu 12 laturi.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Suma unghiurilor interioare este (n−2)·180°. Regularitatea le face egale, deci împărțim la n; conversia în radiani înlocuiește 180° cu π. Rezultatul cerut este \\(\\left( 150, \\  \\frac{5 \\pi}{6}\\right)\\).",
+      "options": [
+        {
+          "text": "\\(\\left( 151, \\  \\frac{5 \\pi}{6}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 150, \\  \\frac{5 \\pi}{6}\\right)\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(\\left( 149, \\  \\frac{5 \\pi}{6}\\right)\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(\\left( 152, \\  \\frac{5 \\pi}{6}\\right)\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 6,
+        "type_name": "Unghiurile poligonului regulat",
+        "variant": 5,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "regular_polygon",
+        "sides": 12,
+        "option_values": [
+          "(151, 5*pi/6)",
+          "(150, 5*pi/6)",
+          "(149, 5*pi/6)",
+          "(152, 5*pi/6)"
+        ],
+        "answer_kind": "math"
+      }
+    },
+    {
+      "text": "Un triunghi isoscel nedegenerat are un unghi de 100°. Câte triplete neordonate de unghiuri sunt posibile? Triunghiul echilateral este admis ca isoscel.",
+      "type": "multiple_choice",
+      "format": "grid",
+      "points": 10,
+      "explanation": "Separăm cazul în care unghiul dat este la vârf de cazul în care este la bază. În al doilea caz, unghiul de la vârf trebuie să rămână strict pozitiv. Tripletele identice se numără o singură dată; pentru 60° ambele construcții sunt același triunghi echilateral. Rezultatul cerut este \\(1\\).",
+      "options": [
+        {
+          "text": "\\(2\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(0\\)",
+          "is_correct": false
+        },
+        {
+          "text": "\\(1\\)",
+          "is_correct": true
+        },
+        {
+          "text": "\\(3\\)",
+          "is_correct": false
+        }
+      ],
+      "practice_scope": {
+        "bank": "g3_trigo_v1",
+        "catalog": "G3",
+        "section": "1",
+        "type": 7,
+        "type_name": "Ambiguitate într-un triunghi isoscel",
+        "variant": 5,
+        "reference_pages": "204",
+        "coverage": "adapted_grid",
+        "adaptation": "Grilă originală de calcul sau concluzie; metoda este justificată în explicație."
+      },
+      "verification": {
+        "operation": "isosceles_angle_count",
+        "angle_degrees": 100,
+        "option_values": [
+          "2",
+          "0",
+          "1",
+          "3"
+        ],
+        "answer_kind": "math"
+      }
+    }
+  ]
 }
